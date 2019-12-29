@@ -1,7 +1,8 @@
 #%%
 import pandas as pd
-file = pd.read_csv('schmidt2016_dataset.csv')
-rates = pd.read_csv('schmidt2016_rates.csv')
+file = pd.read_csv('../../data/schmidt2016_dataset.csv')
+rates = pd.read_csv('../../data/schmidt2016_growth_rates.csv')
+
 # %% 
 # Generate sets of keys for renaming
 fg_keys = [key for key in file.keys() if '_fg' in key]

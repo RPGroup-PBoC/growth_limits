@@ -46,18 +46,23 @@ renamed_conds = {'Glucose': 'glucose',
                'Glycerol': 'glycerol',
                'stationary_1day': 'stationary_1day',
                'stationary_3day': 'stationary_3day'}
+
+# Generate keys for the growth rates.
+rate_keys = {g: d['Growth rate (h-1)'].unique()[0] for g, d in rates.groupby('Growth condition')}
+
 # %% ITerate through each data set and make a new data frame with proper names. 
 dfs = []
 for quants, vals in keys.items():
-    _df = pd.DataFrame([])
     for k in vals:
+        _df = pd.DataFrame([])
         _split = k.split('_')[-1]
         split = k.split(f'_{_split}')[0]
         _df[quants] = file[k]
         _df['condition'] = renamed_conds[split]
+        _df['growth_rate_hr'] = rate_keys[split]
         for _k, _v, in renamed_cols.items():
             _df[_v] = file[_k]
         dfs.append(_df)
 df = pd.concat(dfs)
-df.to_csv('schmidt2016_longform.csv', index=False)
-# %%
+df.to_csv('../../data/schmidt2016_longform.csv', index=False)
+

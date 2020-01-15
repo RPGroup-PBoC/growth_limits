@@ -63,6 +63,9 @@ for quants, vals in keys.items():
         for _k, _v, in renamed_cols.items():
             _df[_v] = file[_k]
         dfs.append(_df)
-df = pd.concat(dfs)
+df = pd.concat(dfs, sort=False)
+
+# Recalculate the fg per cell to deal with a naming issue.
+df.fillna(value={'fg_per_cell':0, 'tot_per_cell':0}, inplace=True)
 df.to_csv('../../data/schmidt2016_longform.csv', index=False)
 

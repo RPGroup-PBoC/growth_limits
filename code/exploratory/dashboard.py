@@ -51,7 +51,7 @@ cog_desc_source = ColumnDataSource(cog_desc_df)
 # Define the group filter on the condition. 
 condition_filter = GroupFilter(column_name='condition', group='lb_miller')
 cog_class_filter = GroupFilter(column_name='cog_class', 
-                group='INFORMATION STORAGE AND PROCESSING')
+                group='')
 
 # Define the view with the assigned filter
 condition_view = CDSView(source=cog_class_source, filters=[condition_filter])
@@ -59,16 +59,21 @@ cog_desc_view = CDSView(source=cog_desc_source, filters=[condition_filter,
                                                     cog_class_filter])
 tooltips = [('COG class', '@group'),
             ('Mass fraction', '@frac_mass'),
-            ('Count fraction', '@frac_count')]
+            ('Count fraction', '@frac_count'),
+            ('Growth condition', '@condition'),
+            ('Growth rate (hr^-1)', '@growth_rate_hr')]
 class_treemap = bokeh.plotting.figure(width=600, height=600, 
                tools=['tap', 'hover', 'wheel_zoom', 'pan'], 
-               tooltips=tooltips)
+               tooltips=tooltips, title='Proteome occupancy by COG class')
 desc_treemap = bokeh.plotting.figure(width=600, height=600,
                tools=['hover', 'wheel_zoom', 'pan'], 
                tooltips = [('COG class', '@cog_class'),
                            ('Description', '@group'),
                            ('Mass fraction', '@frac_mass'),
-                           ('Count fraction', '@frac_count')])
+                           ('Count fraction', '@frac_count'), 
+                           ('Growth condition', '@condition'),
+                           ('Growth rate (hr^-1)', '@growth_rate_hr')],
+                title='COG class occupancy by subgroup')
 # Set the cog_class treemap
 class_treemap.quad(top='top', bottom='bottom', left='left', right='right',
                 source=cog_class_source, color='color', line_color='white', 
@@ -76,6 +81,15 @@ class_treemap.quad(top='top', bottom='bottom', left='left', right='right',
 desc_treemap.quad(top='top', bottom='bottom', left='left', right='right',
                   source=cog_desc_source, color='color', line_color='white',
                   view=cog_desc_view)
+
+for a in [class_treemap, desc_treemap]:
+    a.xaxis.major_tick_line_color = None
+    a.yaxis.major_tick_line_color = None
+    a.xaxis.major_label_text_font_size = "0pt"
+    a.yaxis.major_label_text_font_size = "0pt"
+
+# ##############################################################################
+
 # ##############################################################################
 # Interactivity
 # ##############################################################################
@@ -83,10 +97,9 @@ desc_treemap.quad(top='top', bottom='bottom', left='left', right='right',
 # Identify the selection
 click_cb = """
 var cog_class_ind = cog_class_source.selected['1d'].indices[0];
-var cog_class = cog_desc_source.data['cog_class'][cog_class_ind];
-console.log(cog_class)
+var cog_class = cog_class_source.data['group'][cog_class_ind];
 cog_class_filter.group = cog_class;
-cog_desc_view.filters = [condition_filter, class_filter];
+cog_desc_view.filters = [condition_filter, cog_class_filter];
 cog_desc_source.data.view = cog_desc_view;
 cog_desc_source.change.emit();
 """
@@ -112,8 +125,9 @@ click_event = class_treemap.select(type=TapTool)
 click_event.callback = click_callback
 selection.js_on_change('value', selection_callback)
 
-col = bokeh.layouts.column(class_treemap, desc_treemap)
-lay = bokeh.layouts.row(col, selection)
+row = bokeh.layouts.row(class_treemap, desc_treemap)
+col = bokeh.layouts.column(selection, row)
+lay = bokeh.layouts.row(col)
 bokeh.io.save(lay)
 
 # %%

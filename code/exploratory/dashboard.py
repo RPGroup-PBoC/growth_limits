@@ -73,7 +73,8 @@ tooltips = [('COG class', '@group'),
             ('Growth rate (hr^-1)', '@growth_rate_hr')]
 class_treemap = bokeh.plotting.figure(width=400, height=400, 
                tools=['tap', 'hover', 'wheel_zoom', 'pan'], 
-               tooltips=tooltips, title='Proteome occupancy by COG class')
+               tooltips=tooltips, title='Proteome occupancy by COG class',
+               x_range=[0, 500], y_range=[0, 500])
 desc_treemap = bokeh.plotting.figure(width=400, height=400,
                tools=['tap', 'hover', 'wheel_zoom', 'pan'], 
                tooltips = [('COG class', '@cog_class'),
@@ -82,7 +83,8 @@ desc_treemap = bokeh.plotting.figure(width=400, height=400,
                            ('Count fraction', '@frac_count'), 
                            ('Growth condition', '@condition'),
                            ('Growth rate (hr^-1)', '@growth_rate_hr')],
-                title='COG class occupancy by subgroup')
+                title='COG class occupancy by subgroup',
+                x_range=[0, 500], y_range=[0, 500])
 gene_treemap = bokeh.plotting.figure(width=400, height=400,
                tools=['hover', 'wheel_zoom', 'pan'], 
                tooltips = [('COG class', '@cog_class'),
@@ -93,7 +95,8 @@ gene_treemap = bokeh.plotting.figure(width=400, height=400,
                            ('Count fraction', '@frac_count'), 
                            ('Growth condition', '@condition'),
                            ('Growth rate (hr^-1)', '@growth_rate_hr')],
-                title='Subgroup occupancy by protein gene product')
+                title='Subgroup occupancy by protein gene product',
+                x_range=[0, 500], y_range=[0, 500])
 
 # Set the cog_class treemap
 class_treemap.quad(top='top', bottom='bottom', left='left', right='right',
@@ -154,9 +157,9 @@ args={'cog_class_source':cog_class_source, 'cog_desc_source':cog_desc_source,
       'condition_filter':condition_filter, 'cog_class_filter':cog_class_filter, 
       'condition_view':condition_view, 'cog_desc_view':cog_desc_view,
       'selection':selection, 'cog_class_treemap':class_treemap}
-selection_callback = CustomJS(args=args, code=selection_cb + click_cb + desc_click_cb)
-class_click_callback = CustomJS(args=args, code=click_cb + desc_click_cb + selection_cb)
-desc_click_callback = CustomJS(args=args, code=desc_click_cb + click_cb + selection_cb)
+selection_callback = CustomJS(args=args, code=selection_cb + class_click_cb + desc_click_cb)
+class_click_callback = CustomJS(args=args, code=class_click_cb + desc_click_cb + selection_cb)
+desc_click_callback = CustomJS(args=args, code=desc_click_cb + class_click_cb + selection_cb)
 
 # Assign the callbacks to the interactions
 class_click_event = class_treemap.select(type=TapTool)

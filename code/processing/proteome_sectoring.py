@@ -1,3 +1,4 @@
+#%%
 import pandas as pd
 import prot.stats
 from tqdm import tqdm
@@ -34,6 +35,12 @@ for g, d in tqdm(data.groupby(['condition', 'growth_rate_hr']),
             cog_gene_frac['growth_rate_hr'] = g[1]
             cog_gene_frac['cog_class'] = _g
             cog_gene_frac['cog_desc'] = __g
+            cog_gene_frac['desc'] = __d['desc']
+
+            # ITerate through each gene, get the description, and prune. 
+            for ___g, ___d in __d.groupby('gene'):
+                _desc = ___d['desc'].unique()[0].split('OS')[0]
+                cog_gene_frac.loc[cog_gene_frac['group']==___g, 'desc'] = _desc
             cog_gene_dfs.append(cog_gene_frac)
 
 cog_class_df = pd.concat(cog_class_dfs, sort=False)
@@ -43,3 +50,6 @@ cog_desc_df.to_csv('../../data/schmidt2016_cog_desc_sectoring.csv', index=False)
 cog_gene_df = pd.concat(cog_gene_dfs, sort=False)
 cog_gene_df.to_csv('../../data/schmidt2016_cog_gene_sectoring.csv', index=False)
 
+
+
+# %%

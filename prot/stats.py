@@ -30,8 +30,8 @@ def compute_fraction(df, groupby, mass_key='fg_per_cell', count_key='tot_per_cel
         raise ValueError(f'Group not found in dataframe keys')
 
     # Compute the total mass
-    tot_mass = df['fg_per_cell'].sum()
-    tot_number = df['tot_per_cell'].sum()
+    tot_mass = df[mass_key].sum()
+    tot_number = df[count_key].sum()
 
     # Instantiate a storage list of dataframes
     frac_df = pd.DataFrame([])

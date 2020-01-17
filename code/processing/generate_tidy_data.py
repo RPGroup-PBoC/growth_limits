@@ -26,7 +26,7 @@ for condition in conditions:
     # Populate the dataframe with measured quantities
     _df['fg_per_cell'] = quant[condition + '_fg'].values
     _df['coeff_var'] = quant[condition + '_cv'].values
-    _df['tot_per_cell'] = quant[condition + '_cv'].values
+    _df['tot_per_cell'] = quant[condition + '_tot'].values
 
     # Populate the dataframe with identifying information
     _df['condition'] = condition

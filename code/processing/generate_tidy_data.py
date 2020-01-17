@@ -1,71 +1,59 @@
 #%%
 import pandas as pd
-file = pd.read_csv('../../data/schmidt2016_dataset.csv')
+import tqdm
+
+# Load the quantification measurements
+quant = pd.read_csv('../../data/schmidt2016_dataset.csv')
+
+# Load the COG assignments
+cog = pd.read_csv('../../data/schmidt2016_cog_assignment.csv')
+
+# Load the growth rate information
 rates = pd.read_csv('../../data/schmidt2016_growth_rates.csv')
 
 # %% 
 # Generate sets of keys for renaming
-fg_keys = [key for key in file.keys() if '_fg' in key]
-cv_keys = [key for key in file.keys() if '_cv' in key]
-tot_keys = [key for key in file.keys() if '_tot' in key]
-others = [key for key in file.keys() if ('_fg' not in key) &
-                                        ('_cv' not in key) &
-                                        ('_tot' not in key)]
-keys = {'fg_per_cell': fg_keys, 'coeff_var': cv_keys, 'tot_per_cell':tot_keys} 
+conditions = [key.split('_fg')[0] for key in quant.keys() if '_fg' in key]
 
-# Define the renamed conditions.
-renamed_cols = {'Uniprot Accession': 'uniprot', 'Description':'desc', 
-               'Bnumber':'b_number', 'Gene':'gene', 
-               'Annotated functional COG groups (letter)': 'cog_class_letter',
-               'Annotated functional COG group (description)': 'cog_desc',
-               'Annotated functional COG class': 'cog_class', 
-               'Peptides.used.for.quantitation': 'peptide',
-               'Confidence.score':'confidence_score', 
-               'Molecular weight (Da)': 'mw_da', 
-               'Dataset': 'dataset'}
+# Prune the descriptions
+descs = [key.split('OS=')[0] for key in quant['desc'].values]
 
-renamed_conds = {'Glucose': 'glucose',
-               'LB': 'lb_miller', 
-               'Glycerol + AA': 'glycerol_pAA',
-               'Pyruvate': 'pyruvate',
-               'Chemostat µ=0.5': 'chemostat_u0.5',
-               'Chemostat µ=0.35': 'chemostat_u0.35',
-               'Chemostat µ=0.20': 'chemostat_u0.2',
-               'Chemostat µ=0.12': 'chemostat_u0.12',
-               'Osmotic-stress glucose': 'osmotic_stress_glucose',
-               '42°C glucose':'glucose_42C',
-               'pH6 glucose': 'glucose_pH6',
-               'Acetate': 'acetate',
-               'Xylose': 'xylose',
-               'Mannose': 'mannose',
-               'Galactose': 'galactose',
-               'Succinate': 'succinate',
-               'Fructose': 'fructose',
-               'Fumarate': 'fumarate',
-               'Glucosamine': 'glucosamine',
-               'Glycerol': 'glycerol',
-               'stationary_1day': 'stationary_1day',
-               'stationary_3day': 'stationary_3day'}
-
-# Generate keys for the growth rates.
-rate_keys = {g: d['Growth rate (h-1)'].unique()[0] for g, d in rates.groupby('Growth condition')}
-
-# %% ITerate through each data set and make a new data frame with proper names. 
+# Make an empty list for the data frames
 dfs = []
-for quants, vals in keys.items():
-    for k in vals:
-        _df = pd.DataFrame([])
-        _split = k.split('_')[-1]
-        split = k.split(f'_{_split}')[0]
-        _df[quants] = file[k]
-        _df['condition'] = renamed_conds[split]
-        _df['growth_rate_hr'] = rate_keys[split]
-        for _k, _v, in renamed_cols.items():
-            _df[_v] = file[_k]
-        dfs.append(_df)
-df = pd.concat(dfs, sort=False)
+for condition in conditions:
+    _df = pd.DataFrame([])
+    
+    # Populate the dataframe with measured quantities
+    _df['fg_per_cell'] = quant[condition + '_fg'].values
+    _df['coeff_var'] = quant[condition + '_cv'].values
+    _df['tot_per_cell'] = quant[condition + '_cv'].values
 
-# Recalculate the fg per cell to deal with a naming issue.
-df.fillna(value={'fg_per_cell':0, 'tot_per_cell':0}, inplace=True)
-df.to_csv('../../data/schmidt2016_longform.csv', index=False)
+    # Populate the dataframe with identifying information
+    _df['condition'] = condition
+    _df['uniprot'] = quant['uniprot'].values
+    _df['desc'] = descs
+    _df['gene'] = quant['gene'].values
+    _df['n_peptides'] = quant['n_peptides'].values
+    _df['mw_da'] = quant['mw_da'].values
 
+    # Find the growth rate for each condition.
+    _df['growth_rate_hr'] = rates[
+                    rates['condition']==condition]['growth_rate_hr'].values[0]
+    
+    # Append to the list and concatenate
+    dfs.append(_df)
+quant_longform = pd.concat(dfs)
+
+# Iterate through each unique gene product and populate with the COG class information
+for uniprot_id in quant_longform['uniprot'].unique():
+    protein_cog = cog[cog['uniprot']==uniprot_id]
+    quant_longform.loc[quant_longform['uniprot']==uniprot_id, 
+                        'cog_class'] = protein_cog['cog_class'].values[0]
+    quant_longform.loc[quant_longform['uniprot']==uniprot_id, 
+                        'cog_desc'] = protein_cog['cog_desc'].values[0]
+    quant_longform.loc[quant_longform['uniprot']==uniprot_id, 
+                        'cog_class_letter'] = protein_cog['cog_desc'].values[0]
+
+quant_longform.to_csv('../../data/schmidt2016_longform.csv', index=False)
+
+# %%

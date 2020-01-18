@@ -10,39 +10,50 @@ from bokeh.models import (ColumnDataSource, CDSView, GroupFilter, CustomJS,
                           TapTool)
 from bokeh.models.widgets import Dropdown, Select
 import bokeh.palettes
+color, palette = prot.viz.bokeh_theme()
 
 # Define the color palettes
 viridis = bokeh.palettes.viridis
 
 # For each condition, compute the rect bounds and assign colors
-def assign_and_color(df, groupby='condition', key='frac_mass', palette=viridis,
+def group_and_assign(df, groupby='condition', key='frac_mass', palette=viridis,
                     **kwargs):
+    """
+    Function to assign rectangular bounds for treemaps and colors each sector
+    """
     dfs = []
     for g, d in df.groupby(groupby):
         _df = prot.viz.assign_rect_bounds(d, key, **kwargs)
-        if len(_df) > 254:
-            _palette = np.random.choice(palette(256), replace=True, size=len(_df))
-            _df['color'] = _palette
-        else:
-            _palette = np.random.choice(palette(len(_df) + 10), 
-                                replace=True, size=len(_df))
-            _df['color'] = _palette
-
         dfs.append(_df)
     return pd.concat(dfs)
 
+def assign_color(df, key, palette):
+    if len(df[key].unique()) > 254:
+        _palette = np.random.choice(palette(256), replace=True, size=len(df[key].unique()))
+    else:
+        _palette = palette(len(df[key].unique()) + 2)
+    for i, k in enumerate(df[key].unique()):
+        df.loc[df[key]==k, 'color'] = _palette[i]
+    return df
+
 # Load the datasets
 cog_class_df = pd.read_csv('../../data/schmidt2016_cog_class_sectoring.csv')
-cog_class_df = assign_and_color(cog_class_df, groupby=['condition'])
+cog_class_df = group_and_assign(cog_class_df, groupby=['condition'])
+cog_class_df = assign_color(cog_class_df, 'group', viridis)
 cog_desc_df = pd.read_csv('../../data/schmidt2016_cog_desc_sectoring.csv')
-cog_desc_df = assign_and_color(cog_desc_df, groupby=['condition', 'cog_class'])
+cog_desc_df = group_and_assign(cog_desc_df, groupby=['condition', 'cog_class'])
+cog_desc_df = assign_color(cog_desc_df, 'group', viridis)
 cog_gene_df = pd.read_csv('../../data/schmidt2016_cog_gene_sectoring.csv')
 cog_gene_df = assign_and_color(cog_gene_df, groupby=['condition', 'cog_desc'])
+cog_gene_df = assign_color(cog_gene_df, 'group', viridis)
 
+
+#%%
+# Define the bokeh output
 bokeh.io.output_file('./cog_dashboard.html')
-color, palette = prot.viz.bokeh_theme()
 
 # Define a selector for the conditions
+cog_class_df.sort_values(by='growth_rate_hr', inplace=True)
 selection = Select(title='growth condition', 
     value='lb_miller', options=list(cog_class_df['condition'].unique()))
 

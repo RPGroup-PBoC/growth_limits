@@ -38,6 +38,7 @@ def assign_and_color(df, groupby='condition', key='frac_mass', palette=viridis,
 processes = pd.read_csv('../../data/schmidt2016_uniprot_process_sectoring.csv')
 genes = pd.read_csv('../../data/schmidt2016_uniprot_process_gene_sectoring.csv')
 
+#%%
 # Build the treemap for the genes
 genes = assign_and_color(genes, groupby=['condition', 'uniprot_bio_process'])
 #%%

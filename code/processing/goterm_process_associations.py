@@ -8,11 +8,6 @@ data = pd.read_csv('../../data/schmidt2016_longform.csv')
 # Load the raw data 
 uniprot_data = pd.read_csv('../../data/schmidt2016_uniprot.tab', delimiter='\t')
 
-# Load the keyword id list. 
-keywords = pd.read_csv('../../data/go_terms.csv')
-
-# Restrict to the biological processes
-processes = keywords[keywords['namespace']=='biological_process']
 #%%
 # Load the keyword ids.
 gene_name_dict = {}
@@ -39,29 +34,35 @@ for g, d in uniprot_data.groupby(['search']):
         g = 'P00452'
     if g == 'P02919,P02919-2':
         g = 'P02919'
-
-    # Get the list of keywords
-    keys = d['Gene ontology IDs'].values[0]
+    
+    # Get the list of biological processes
+    keys = d['Gene ontology (biological process)'].values[0]
     if str(keys) != 'nan':
-        keyIDs = d['Gene ontology IDs'].values[0].split('; ')
+        processes = d['Gene ontology (biological process)'].values[0].split(';')
     else:
-        keyIDS = []
+        processes = []
     # Iterate through each keyword ID, determine if it's a process, and store.  
-    for key in keyIDs:
-        val = keywords[keywords['id']==key]
-        if len(val) != 0:
-            if val['namespace'].values[0].lower() == 'biological_process':
-                 # Get the process, cog names, and other inportant info.
-                 process_dict = {
-                     'process':val['name'].values[0],
-                     'uniprot':g,
-                     'go_id': key,
+    for proc in processes:
+        # Split the process from the GO id key
+        _proc, GO_id = proc.split('[GO:')
+        GO_id = f'GO:{GO_id[:-1]}'
+
+        # Fix weird spacing issues
+        if _proc[0] == ' ':
+            _proc = _proc[1:]
+        if _proc[-1] == ' ':
+            _proc = _proc[:-1]
+
+        # Set the up dictionary. 
+        process_dict = {'uniprot':g,
+                     'go_id': GO_id,
                      'gene': gene_name_dict[g],
                      'desc': gene_desc_dict[g],
                      'cog_desc':  cog_desc_dict[g],
                      'cog_class': cog_class_dict[g],
-                     'cog_class_letter': cog_letter_dict[g]}
-                 process_df = process_df.append(process_dict, ignore_index=True)
+                     'cog_class_letter': cog_letter_dict[g],
+                     'go_biological_process': _proc}
+        process_df = process_df.append(process_dict, ignore_index=True)
 process_df.to_csv('../../data/go_biological_processes.csv', index=False)
 
 

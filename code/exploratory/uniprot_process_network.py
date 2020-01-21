@@ -18,6 +18,18 @@ gene_data = pd.read_csv('../../data/uniprot_biological_processes.csv')
 network_data = pd.read_csv('../../data/uniprot_process_gene_network.csv')
 network_data = network_data[network_data['n_genes'] != 0]
 
+# Sort the network data by number of shared genes
+network_data.sort_values('n_genes', inplace=True, ascending=False)
+
+# Define the shell order for shell representation
+shells = []
+for g, d in network_data.groupby(['n_genes']):
+    _nodes = []
+    for _g, _d in d.groupby(['process_1', 'process_2']):
+        _nodes.append(_g[0])
+        _nodes.append(_g[1])
+    shells.append(_nodes)
+        
 # Set up a list of nodes and edges. 
 nodes = [(p1, {'process': p1}) for p1 in gene_data['process'].values]
 edges = [(p1, p2, {'weight':np.log10(n) + 0.1}) for p1, p2, n in zip(network_data['process_1'].values,
@@ -25,7 +37,6 @@ edges = [(p1, p2, {'weight':np.log10(n) + 0.1}) for p1, p2, n in zip(network_dat
                                        network_data['n_genes'].values)]
 
 # Convert the network data to a networkx object
-
 graph = nx.Graph()
 graph.add_nodes_from(nodes)
 graph.add_edges_from(edges)
@@ -40,7 +51,7 @@ p = bokeh.plotting.figure(width=800, height=800, x_range=[-40, 40],
                         tooltips=[('UniProt Biological Process', '@process')])
 
 # Define the graph
-graph_renderer = from_networkx(graph, nx.spring_layout, scale=35, center=(0, 0), weight='weight')
+graph_renderer = from_networkx(graph, nx.,  scale=35, center=(0, 0))
 
 # Style the nodes
 graph_renderer.node_renderer.glyph = Circle(size=10, fill_color=colors['blue'], line_color='black', line_width=0.75)

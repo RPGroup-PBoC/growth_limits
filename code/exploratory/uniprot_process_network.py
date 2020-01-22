@@ -51,7 +51,7 @@ p = bokeh.plotting.figure(width=800, height=800, x_range=[-40, 40],
                         tooltips=[('UniProt Biological Process', '@process')])
 
 # Define the graph
-graph_renderer = from_networkx(graph, nx.,  scale=35, center=(0, 0))
+graph_renderer = from_networkx(graph, nx.circular_layout,  scale=35, center=(0, 0))
 
 # Style the nodes
 graph_renderer.node_renderer.glyph = Circle(size=10, fill_color=colors['blue'], line_color='black', line_width=0.75)
@@ -61,7 +61,7 @@ graph_renderer.node_renderer.selection_glyph = Circle(size=14, fill_color=colors
                                                   line_color='black', line_width=0.75)
 
 # Style the edges
-graph_renderer.edge_renderer.glyph = MultiLine(line_color='black')
+graph_renderer.edge_renderer.glyph = MultiLine(line_color='black', line_width='weight')
 graph_renderer.edge_renderer.hover_glyph = MultiLine(line_color=colors['green'], line_width=2)
 graph_renderer.edge_renderer.selection_glyph = MultiLine(line_color=colors['red'], line_width=2)
 

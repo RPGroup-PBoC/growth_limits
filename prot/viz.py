@@ -33,7 +33,6 @@ def assign_rect_bounds(df, key, width=500, height=500, text_pad=0,
 
     return df
 
-
 def bokeh_theme():
     """A custom bokeh theme to match PBoC 2e colors"""
     theme_json = {'attrs':

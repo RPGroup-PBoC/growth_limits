@@ -18,11 +18,7 @@ for i, process_i in enumerate(data['process'].unique()):
         # If the process is the same, move on
         if process_i == process_j:
             continue
-        # If two processes have already been examined, move on
-        if ((process_i, process_j) in connected_pairs) | ((process_j, process_i) in connected_pairs):
-            continue 
-        else:
-            connected_pairs.append((process_i, process_j))
+
         # Find the number of common genes
         n_genes = len(set(data[data['process']==process_i]['gene'].values).intersection(
                 data[data['process']==process_j]['gene'].values))

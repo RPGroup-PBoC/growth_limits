@@ -1,4 +1,18 @@
 go_number,go_term,go_namespace,gene_name
+GO:0016021,integral component of membrane,cellular_component,aas
+GO:0008779,acyl-[acyl-carrier-protein]-phospholipid O-acyltransferase activity,molecular_function,aas
+GO:0008922,long-chain fatty acid [acyl-carrier-protein] ligase activity,molecular_function,aas
+GO:0008654,phospholipid biosynthetic process,biological_process,aas
+GO:0006631,fatty acid metabolic process,biological_process,aas
+GO:0016874,ligase activity,molecular_function,aas
+GO:0016746,"transferase activity, transferring acyl groups",molecular_function,aas
+GO:0016740,transferase activity,molecular_function,aas
+GO:0016020,membrane,cellular_component,aas
+GO:0003824,catalytic activity,molecular_function,aas
+GO:0008152,metabolic process,biological_process,aas
+GO:0005886,plasma membrane,cellular_component,aas
+GO:0005524,ATP binding,molecular_function,aas
+GO:0000166,nucleotide binding,molecular_function,aas
 GO:0008914,leucyltransferase activity,molecular_function,aat
 GO:0005737,cytoplasm,cellular_component,aat
 GO:0016755,"transferase activity, transferring amino-acyl groups",molecular_function,aat
@@ -318,6 +332,26 @@ GO:0005524,ATP binding,molecular_function,acs
 GO:0000166,nucleotide binding,molecular_function,acs
 GO:0003987,acetate-CoA ligase activity,molecular_function,acs
 GO:0050218,propionate-CoA ligase activity,molecular_function,acs
+GO:0008270,zinc ion binding,molecular_function,ada
+GO:0003908,methylated-DNA-[protein]-cysteine S-methyltransferase activity,molecular_function,ada
+GO:0080111,DNA demethylation,biological_process,ada
+GO:0006307,DNA dealkylation involved in DNA repair,biological_process,ada
+GO:0018125,peptidyl-cysteine methylation,biological_process,ada
+GO:0045893,"positive regulation of transcription, DNA-templated",biological_process,ada
+GO:0045892,"negative regulation of transcription, DNA-templated",biological_process,ada
+GO:0005515,protein binding,molecular_function,ada
+GO:0016740,transferase activity,molecular_function,ada
+GO:0008168,methyltransferase activity,molecular_function,ada
+GO:0008152,metabolic process,biological_process,ada
+GO:0046872,metal ion binding,molecular_function,ada
+GO:0043565,sequence-specific DNA binding,molecular_function,ada
+GO:0003700,DNA-binding transcription factor activity,molecular_function,ada
+GO:0006355,"regulation of transcription, DNA-templated",biological_process,ada
+GO:0032259,methylation,biological_process,ada
+GO:0006974,cellular response to DNA damage stimulus,biological_process,ada
+GO:0003824,catalytic activity,molecular_function,ada
+GO:0003677,DNA binding,molecular_function,ada
+GO:0006281,DNA repair,biological_process,ada
 GO:0004000,adenosine deaminase activity,molecular_function,add
 GO:0015950,purine nucleotide interconversion,biological_process,add
 GO:0009168,purine ribonucleoside monophosphate biosynthetic process,biological_process,add
@@ -333,6 +367,20 @@ GO:0009117,nucleotide metabolic process,biological_process,add
 GO:0005829,cytosol,cellular_component,add
 GO:0046872,metal ion binding,molecular_function,add
 GO:0046103,inosine biosynthetic process,biological_process,add
+GO:0004022,alcohol dehydrogenase (NAD+) activity,molecular_function,adhE
+GO:0008774,acetaldehyde dehydrogenase (acetylating) activity,molecular_function,adhE
+GO:0006115,ethanol biosynthetic process,biological_process,adhE
+GO:0016620,"oxidoreductase activity, acting on the aldehyde or oxo group of donors, NAD or NADP as acceptor",molecular_function,adhE
+GO:0005515,protein binding,molecular_function,adhE
+GO:0016491,oxidoreductase activity,molecular_function,adhE
+GO:0008152,metabolic process,biological_process,adhE
+GO:0006066,alcohol metabolic process,biological_process,adhE
+GO:0003824,catalytic activity,molecular_function,adhE
+GO:0046872,metal ion binding,molecular_function,adhE
+GO:0015976,carbon utilization,biological_process,adhE
+GO:0042802,identical protein binding,molecular_function,adhE
+GO:0055114,oxidation-reduction process,biological_process,adhE
+GO:0005829,cytosol,cellular_component,adhE
 GO:0006974,cellular response to DNA damage stimulus,biological_process,adhP
 GO:0047639,alcohol oxidase activity,molecular_function,adhP
 GO:0045471,response to ethanol,biological_process,adhP
@@ -378,6 +426,22 @@ GO:0016208,AMP binding,molecular_function,adk
 GO:0015951,purine ribonucleotide interconversion,biological_process,adk
 GO:0005524,ATP binding,molecular_function,adk
 GO:0005515,protein binding,molecular_function,adk
+GO:0016639,"oxidoreductase activity, acting on the CH-NH2 group of donors, NAD or NADP as acceptor",molecular_function,aegA
+GO:0006537,glutamate biosynthetic process,biological_process,aegA
+GO:0055114,oxidation-reduction process,biological_process,aegA
+GO:0051539,"4 iron, 4 sulfur cluster binding",molecular_function,aegA
+GO:0051536,iron-sulfur cluster binding,molecular_function,aegA
+GO:0046872,metal ion binding,molecular_function,aegA
+GO:0016491,oxidoreductase activity,molecular_function,aegA
+GO:0004888,transmembrane signaling receptor activity,molecular_function,aer
+GO:0006935,chemotaxis,biological_process,aer
+GO:0042802,identical protein binding,molecular_function,aer
+GO:0052131,positive aerotaxis,biological_process,aer
+GO:0005886,plasma membrane,cellular_component,aer
+GO:0016021,integral component of membrane,cellular_component,aer
+GO:0016020,membrane,cellular_component,aer
+GO:0007165,signal transduction,biological_process,aer
+GO:0005887,integral component of plasma membrane,cellular_component,aer
 GO:0034338,short-chain carboxylesterase activity,molecular_function,aes
 GO:0005737,cytoplasm,cellular_component,aes
 GO:0016787,hydrolase activity,molecular_function,aes
@@ -953,6 +1017,32 @@ GO:0006355,"regulation of transcription, DNA-templated",biological_process,arcA
 GO:0005737,cytoplasm,cellular_component,arcA
 GO:0000160,phosphorelay signal transduction system,biological_process,arcA
 GO:0000156,phosphorelay response regulator activity,molecular_function,arcA
+GO:0000160,phosphorelay signal transduction system,biological_process,arcB
+GO:0023014,signal transduction by protein phosphorylation,biological_process,arcB
+GO:0018106,peptidyl-histidine phosphorylation,biological_process,arcB
+GO:0016772,"transferase activity, transferring phosphorus-containing groups",molecular_function,arcB
+GO:0016740,transferase activity,molecular_function,arcB
+GO:0016310,phosphorylation,biological_process,arcB
+GO:0016301,kinase activity,molecular_function,arcB
+GO:0016020,membrane,cellular_component,arcB
+GO:0007165,signal transduction,biological_process,arcB
+GO:0004673,protein histidine kinase activity,molecular_function,arcB
+GO:0006355,"regulation of transcription, DNA-templated",biological_process,arcB
+GO:0009927,histidine phosphotransfer kinase activity,molecular_function,arcB
+GO:0046777,protein autophosphorylation,biological_process,arcB
+GO:0000166,nucleotide binding,molecular_function,arcB
+GO:0005886,plasma membrane,cellular_component,arcB
+GO:0016021,integral component of membrane,cellular_component,arcB
+GO:0005524,ATP binding,molecular_function,arcB
+GO:0000155,phosphorelay sensor kinase activity,molecular_function,arcB
+GO:0004358,glutamate N-acetyltransferase activity,molecular_function,argA
+GO:0103045,methione N-acyltransferase activity,molecular_function,argA
+GO:0016746,"transferase activity, transferring acyl groups",molecular_function,argA
+GO:0016740,transferase activity,molecular_function,argA
+GO:0008652,cellular amino acid biosynthetic process,biological_process,argA
+GO:0004042,acetyl-CoA:L-glutamate N-acetyltransferase activity,molecular_function,argA
+GO:0006526,arginine biosynthetic process,biological_process,argA
+GO:0005737,cytoplasm,cellular_component,argA
 GO:0006974,cellular response to DNA damage stimulus,biological_process,argB
 GO:0042450,arginine biosynthetic process via ornithine,biological_process,argB
 GO:0016740,transferase activity,molecular_function,argB
@@ -1278,6 +1368,17 @@ GO:0008706,6-phospho-beta-glucosidase activity,molecular_function,ascB
 GO:0008422,beta-glucosidase activity,molecular_function,ascB
 GO:0005829,cytosol,cellular_component,ascB
 GO:0016052,carbohydrate catabolic process,biological_process,ascB
+GO:0016310,phosphorylation,biological_process,ascF
+GO:0009401,phosphoenolpyruvate-dependent sugar phosphotransferase system,biological_process,ascF
+GO:0008643,carbohydrate transport,biological_process,ascF
+GO:0008982,protein-N(PI)-phosphohistidine-sugar phosphotransferase activity,molecular_function,ascF
+GO:0016020,membrane,cellular_component,ascF
+GO:0016021,integral component of membrane,cellular_component,ascF
+GO:0016740,transferase activity,molecular_function,ascF
+GO:0005886,plasma membrane,cellular_component,ascF
+GO:0016301,kinase activity,molecular_function,ascF
+GO:0034219,carbohydrate transmembrane transport,biological_process,ascF
+GO:0090563,protein-phosphocysteine-sugar phosphotransferase activity,molecular_function,ascF
 GO:0006355,"regulation of transcription, DNA-templated",biological_process,ascG
 GO:0003677,DNA binding,molecular_function,ascG
 GO:0043565,sequence-specific DNA binding,molecular_function,ascG
@@ -1459,6 +1560,23 @@ GO:0008775,acetate CoA-transferase activity,molecular_function,atoD
 GO:0005886,plasma membrane,cellular_component,atoE
 GO:0016021,integral component of membrane,cellular_component,atoE
 GO:0016020,membrane,cellular_component,atoE
+GO:0000160,phosphorelay signal transduction system,biological_process,atoS
+GO:0023014,signal transduction by protein phosphorylation,biological_process,atoS
+GO:0018106,peptidyl-histidine phosphorylation,biological_process,atoS
+GO:0016772,"transferase activity, transferring phosphorus-containing groups",molecular_function,atoS
+GO:0016740,transferase activity,molecular_function,atoS
+GO:0016310,phosphorylation,biological_process,atoS
+GO:0016301,kinase activity,molecular_function,atoS
+GO:0007165,signal transduction,biological_process,atoS
+GO:0004673,protein histidine kinase activity,molecular_function,atoS
+GO:0000166,nucleotide binding,molecular_function,atoS
+GO:0006355,"regulation of transcription, DNA-templated",biological_process,atoS
+GO:0046777,protein autophosphorylation,biological_process,atoS
+GO:0005886,plasma membrane,cellular_component,atoS
+GO:0016021,integral component of membrane,cellular_component,atoS
+GO:0016020,membrane,cellular_component,atoS
+GO:0005524,ATP binding,molecular_function,atoS
+GO:0000155,phosphorelay sensor kinase activity,molecular_function,atoS
 GO:0015986,ATP synthesis coupled proton transport,biological_process,atpA
 GO:0045261,"proton-transporting ATP synthase complex, catalytic core F(1)",cellular_component,atpA
 GO:0046961,"proton-transporting ATPase activity, rotational mechanism",molecular_function,atpA
@@ -1621,6 +1739,29 @@ GO:0016020,membrane,cellular_component,baeS
 GO:0005524,ATP binding,molecular_function,baeS
 GO:0004673,protein histidine kinase activity,molecular_function,baeS
 GO:0000155,phosphorelay sensor kinase activity,molecular_function,baeS
+GO:0009927,histidine phosphotransfer kinase activity,molecular_function,barA
+GO:0046777,protein autophosphorylation,biological_process,barA
+GO:0006468,protein phosphorylation,biological_process,barA
+GO:0042542,response to hydrogen peroxide,biological_process,barA
+GO:0005515,protein binding,molecular_function,barA
+GO:0023014,signal transduction by protein phosphorylation,biological_process,barA
+GO:0018106,peptidyl-histidine phosphorylation,biological_process,barA
+GO:0016772,"transferase activity, transferring phosphorus-containing groups",molecular_function,barA
+GO:0016740,transferase activity,molecular_function,barA
+GO:0016310,phosphorylation,biological_process,barA
+GO:0016301,kinase activity,molecular_function,barA
+GO:0007165,signal transduction,biological_process,barA
+GO:0004673,protein histidine kinase activity,molecular_function,barA
+GO:0071310,cellular response to organic substance,biological_process,barA
+GO:0016868,"intramolecular transferase activity, phosphotransferases",molecular_function,barA
+GO:0005887,integral component of plasma membrane,cellular_component,barA
+GO:0000166,nucleotide binding,molecular_function,barA
+GO:0005886,plasma membrane,cellular_component,barA
+GO:0016021,integral component of membrane,cellular_component,barA
+GO:0016020,membrane,cellular_component,barA
+GO:0005524,ATP binding,molecular_function,barA
+GO:0000160,phosphorelay signal transduction system,biological_process,barA
+GO:0000155,phosphorelay sensor kinase activity,molecular_function,barA
 GO:0010041,response to iron(III) ion,biological_process,basR
 GO:0046677,response to antibiotic,biological_process,basR
 GO:0006355,"regulation of transcription, DNA-templated",biological_process,basR
@@ -1759,6 +1900,17 @@ GO:0008706,6-phospho-beta-glucosidase activity,molecular_function,bglB
 GO:0016052,carbohydrate catabolic process,biological_process,bglB
 GO:0005829,cytosol,cellular_component,bglB
 GO:0008422,beta-glucosidase activity,molecular_function,bglB
+GO:0016310,phosphorylation,biological_process,bglF
+GO:0016301,kinase activity,molecular_function,bglF
+GO:0005886,plasma membrane,cellular_component,bglF
+GO:0016740,transferase activity,molecular_function,bglF
+GO:0016021,integral component of membrane,cellular_component,bglF
+GO:0016020,membrane,cellular_component,bglF
+GO:0008982,protein-N(PI)-phosphohistidine-sugar phosphotransferase activity,molecular_function,bglF
+GO:0008643,carbohydrate transport,biological_process,bglF
+GO:0009401,phosphoenolpyruvate-dependent sugar phosphotransferase system,biological_process,bglF
+GO:0034219,carbohydrate transmembrane transport,biological_process,bglF
+GO:0090563,protein-phosphocysteine-sugar phosphotransferase activity,molecular_function,bglF
 GO:0005515,protein binding,molecular_function,bglG
 GO:0045893,"positive regulation of transcription, DNA-templated",biological_process,bglG
 GO:0006355,"regulation of transcription, DNA-templated",biological_process,bglG
@@ -1824,6 +1976,20 @@ GO:0090499,pimelyl-[acyl-carrier protein] methyl ester esterase activity,molecul
 GO:0005737,cytoplasm,cellular_component,bioH
 GO:0052689,carboxylic ester hydrolase activity,molecular_function,bioH
 GO:0009102,biotin biosynthetic process,biological_process,bioH
+GO:0009102,biotin biosynthetic process,biological_process,birA
+GO:0003677,DNA binding,molecular_function,birA
+GO:0004077,biotin-[acetyl-CoA-carboxylase] ligase activity,molecular_function,birA
+GO:0005515,protein binding,molecular_function,birA
+GO:0017053,transcriptional repressor complex,cellular_component,birA
+GO:0009374,biotin binding,molecular_function,birA
+GO:0006768,biotin metabolic process,biological_process,birA
+GO:0000984,bacterial-type RNA polymerase regulatory region sequence-specific DNA binding,molecular_function,birA
+GO:0009305,protein biotinylation,biological_process,birA
+GO:0016874,ligase activity,molecular_function,birA
+GO:0006464,cellular protein modification process,biological_process,birA
+GO:0006355,"regulation of transcription, DNA-templated",biological_process,birA
+GO:0005524,ATP binding,molecular_function,birA
+GO:0000166,nucleotide binding,molecular_function,birA
 GO:0043546,molybdopterin cofactor binding,molecular_function,bisC
 GO:0022900,electron transport chain,biological_process,bisC
 GO:0046872,metal ion binding,molecular_function,bisC
@@ -1947,6 +2113,20 @@ GO:0016021,integral component of membrane,cellular_component,cadB
 GO:0016020,membrane,cellular_component,cadB
 GO:0015295,solute:proton symporter activity,molecular_function,cadB
 GO:0043872,lysine:cadaverine antiporter activity,molecular_function,cadB
+GO:0005515,protein binding,molecular_function,cadC
+GO:0045893,"positive regulation of transcription, DNA-templated",biological_process,cadC
+GO:0006355,"regulation of transcription, DNA-templated",biological_process,cadC
+GO:0005886,plasma membrane,cellular_component,cadC
+GO:0016021,integral component of membrane,cellular_component,cadC
+GO:0016020,membrane,cellular_component,cadC
+GO:0003677,DNA binding,molecular_function,cadC
+GO:0000160,phosphorelay signal transduction system,biological_process,cadC
+GO:0003700,DNA-binding transcription factor activity,molecular_function,cadC
+GO:0005829,cytosol,cellular_component,cadC
+GO:0000156,phosphorelay response regulator activity,molecular_function,cadC
+GO:0032993,protein-DNA complex,cellular_component,cadC
+GO:0001216,DNA-binding transcription activator activity,molecular_function,cadC
+GO:0000976,transcription regulatory region sequence-specific DNA binding,molecular_function,cadC
 GO:0052890,"oxidoreductase activity, acting on the CH-CH group of donors, with a flavin as acceptor",molecular_function,caiA
 GO:0050660,flavin adenine dinucleotide binding,molecular_function,caiA
 GO:0016627,"oxidoreductase activity, acting on the CH-CH group of donors",molecular_function,caiA
@@ -2132,6 +2312,16 @@ GO:0005886,plasma membrane,cellular_component,ccmF
 GO:0016021,integral component of membrane,cellular_component,ccmF
 GO:0016020,membrane,cellular_component,ccmF
 GO:0017004,cytochrome complex assembly,biological_process,ccmF
+GO:0055114,oxidation-reduction process,biological_process,ccmH
+GO:0015035,protein disulfide oxidoreductase activity,molecular_function,ccmH
+GO:0031237,intrinsic component of periplasmic side of plasma membrane,cellular_component,ccmH
+GO:0005515,protein binding,molecular_function,ccmH
+GO:0005886,plasma membrane,cellular_component,ccmH
+GO:0046872,metal ion binding,molecular_function,ccmH
+GO:0016021,integral component of membrane,cellular_component,ccmH
+GO:0016020,membrane,cellular_component,ccmH
+GO:0017004,cytochrome complex assembly,biological_process,ccmH
+GO:0018378,cytochrome c-heme linkage via heme-L-cysteine,biological_process,ccmH
 GO:0008270,zinc ion binding,molecular_function,cdd
 GO:0001884,pyrimidine nucleoside binding,molecular_function,cdd
 GO:0004126,cytidine deaminase activity,molecular_function,cdd
@@ -2575,6 +2765,18 @@ GO:0009166,nucleotide catabolic process,biological_process,cpdB
 GO:0000166,nucleotide binding,molecular_function,cpdB
 GO:0008254,3'-nucleotidase activity,molecular_function,cpdB
 GO:0008663,"2',3'-cyclic-nucleotide 2'-phosphodiesterase activity",molecular_function,cpdB
+GO:0016779,nucleotidyltransferase activity,molecular_function,cpsB
+GO:0016740,transferase activity,molecular_function,cpsB
+GO:0009058,biosynthetic process,biological_process,cpsB
+GO:0005976,polysaccharide metabolic process,biological_process,cpsB
+GO:0000271,polysaccharide biosynthetic process,biological_process,cpsB
+GO:0009298,GDP-mannose biosynthetic process,biological_process,cpsB
+GO:0005525,GTP binding,molecular_function,cpsB
+GO:0000166,nucleotide binding,molecular_function,cpsB
+GO:0004475,mannose-1-phosphate guanylyltransferase activity,molecular_function,cpsB
+GO:0006972,hyperosmotic response,biological_process,cpsB
+GO:0009103,lipopolysaccharide biosynthetic process,biological_process,cpsB
+GO:0009242,colanic acid biosynthetic process,biological_process,cpsB
 GO:0071704,organic substance metabolic process,biological_process,cpsG
 GO:0016868,"intramolecular transferase activity, phosphotransferases",molecular_function,cpsG
 GO:0005975,carbohydrate metabolic process,biological_process,cpsG
@@ -3077,6 +3279,23 @@ GO:0005829,cytosol,cellular_component,cysE
 GO:0006535,cysteine biosynthetic process from serine,biological_process,cysE
 GO:0009001,serine O-acetyltransferase activity,molecular_function,cysE
 GO:0009333,cysteine synthase complex,cellular_component,cysE
+GO:0004325,ferrochelatase activity,molecular_function,cysG
+GO:0006970,response to osmotic stress,biological_process,cysG
+GO:0051287,NAD binding,molecular_function,cysG
+GO:0019354,siroheme biosynthetic process,biological_process,cysG
+GO:0032259,methylation,biological_process,cysG
+GO:0055114,oxidation-reduction process,biological_process,cysG
+GO:0016829,lyase activity,molecular_function,cysG
+GO:0016740,transferase activity,molecular_function,cysG
+GO:0016491,oxidoreductase activity,molecular_function,cysG
+GO:0009236,cobalamin biosynthetic process,biological_process,cysG
+GO:0008168,methyltransferase activity,molecular_function,cysG
+GO:0008152,metabolic process,biological_process,cysG
+GO:0003824,catalytic activity,molecular_function,cysG
+GO:0043115,precorrin-2 dehydrogenase activity,molecular_function,cysG
+GO:0004851,uroporphyrin-III C-methyltransferase activity,molecular_function,cysG
+GO:0051266,sirohydrochlorin ferrochelatase activity,molecular_function,cysG
+GO:0006779,porphyrin-containing compound biosynthetic process,biological_process,cysG
 GO:0019379,"sulfate assimilation, phosphoadenylyl sulfate reduction by phosphoadenylyl-sulfate reductase (thioredoxin)",biological_process,cysH
 GO:0003824,catalytic activity,molecular_function,cysH
 GO:0070814,hydrogen sulfide biosynthetic process,biological_process,cysH
@@ -3726,6 +3945,10 @@ GO:0016021,integral component of membrane,cellular_component,dgkA
 GO:0016020,membrane,cellular_component,dgkA
 GO:0004143,diacylglycerol kinase activity,molecular_function,dgkA
 GO:0006654,phosphatidic acid biosynthetic process,biological_process,dgkA
+GO:0016829,lyase activity,molecular_function,dgoA
+GO:0003824,catalytic activity,molecular_function,dgoA
+GO:0034194,D-galactonate catabolic process,biological_process,dgoA
+GO:0008674,2-dehydro-3-deoxy-6-phosphogalactonate aldolase activity,molecular_function,dgoA
 GO:0046835,carbohydrate phosphorylation,biological_process,dgoK
 GO:0016740,transferase activity,molecular_function,dgoK
 GO:0016301,kinase activity,molecular_function,dgoK
@@ -4390,6 +4613,22 @@ GO:0042802,identical protein binding,molecular_function,entA
 GO:0055114,oxidation-reduction process,biological_process,entA
 GO:0008667,"2,3-dihydro-2,3-dihydroxybenzoate dehydrogenase activity",molecular_function,entA
 GO:0009239,enterobactin biosynthetic process,biological_process,entA
+GO:0016765,"transferase activity, transferring alkyl or aryl (other than methyl) groups",molecular_function,entB
+GO:0046872,metal ion binding,molecular_function,entB
+GO:0016874,ligase activity,molecular_function,entB
+GO:0005737,cytoplasm,cellular_component,entB
+GO:0047527,"2,3-dihydroxybenzoate-serine ligase activity",molecular_function,entB
+GO:0031177,phosphopantetheine binding,molecular_function,entB
+GO:0000287,magnesium ion binding,molecular_function,entB
+GO:0042802,identical protein binding,molecular_function,entB
+GO:0003824,catalytic activity,molecular_function,entB
+GO:0005515,protein binding,molecular_function,entB
+GO:0008152,metabolic process,biological_process,entB
+GO:0009239,enterobactin biosynthetic process,biological_process,entB
+GO:0005886,plasma membrane,cellular_component,entB
+GO:0005829,cytosol,cellular_component,entB
+GO:0016787,hydrolase activity,molecular_function,entB
+GO:0008908,isochorismatase activity,molecular_function,entB
 GO:0009239,enterobactin biosynthetic process,biological_process,entC
 GO:0008909,isochorismate synthase activity,molecular_function,entC
 GO:0046872,metal ion binding,molecular_function,entC
@@ -4420,6 +4659,24 @@ GO:0016874,ligase activity,molecular_function,entE
 GO:0016746,"transferase activity, transferring acyl groups",molecular_function,entE
 GO:0008668,"(2,3-dihydroxybenzoyl)adenylate synthase activity",molecular_function,entE
 GO:0009239,enterobactin biosynthetic process,biological_process,entE
+GO:0043041,amino acid activation for nonribosomal peptide biosynthetic process,biological_process,entF
+GO:0031177,phosphopantetheine binding,molecular_function,entF
+GO:0009239,enterobactin biosynthetic process,biological_process,entF
+GO:0009366,enterobactin synthetase complex,cellular_component,entF
+GO:0047527,"2,3-dihydroxybenzoate-serine ligase activity",molecular_function,entF
+GO:0016779,nucleotidyltransferase activity,molecular_function,entF
+GO:0009058,biosynthetic process,biological_process,entF
+GO:0008152,metabolic process,biological_process,entF
+GO:0016788,"hydrolase activity, acting on ester bonds",molecular_function,entF
+GO:0005886,plasma membrane,cellular_component,entF
+GO:0005829,cytosol,cellular_component,entF
+GO:0005524,ATP binding,molecular_function,entF
+GO:0000166,nucleotide binding,molecular_function,entF
+GO:0016874,ligase activity,molecular_function,entF
+GO:0016740,transferase activity,molecular_function,entF
+GO:0003824,catalytic activity,molecular_function,entF
+GO:0005737,cytoplasm,cellular_component,entF
+GO:0044550,secondary metabolite biosynthetic process,biological_process,entF
 GO:0003677,DNA binding,molecular_function,envR
 GO:0045892,"negative regulation of transcription, DNA-templated",biological_process,envR
 GO:0003700,DNA-binding transcription factor activity,molecular_function,envR
@@ -4538,6 +4795,25 @@ GO:0043565,sequence-specific DNA binding,molecular_function,evgA
 GO:0006355,"regulation of transcription, DNA-templated",biological_process,evgA
 GO:0005737,cytoplasm,cellular_component,evgA
 GO:0000160,phosphorelay signal transduction system,biological_process,evgA
+GO:0007165,signal transduction,biological_process,evgS
+GO:0023014,signal transduction by protein phosphorylation,biological_process,evgS
+GO:0018106,peptidyl-histidine phosphorylation,biological_process,evgS
+GO:0010447,response to acidic pH,biological_process,evgS
+GO:0010038,response to metal ion,biological_process,evgS
+GO:0016772,"transferase activity, transferring phosphorus-containing groups",molecular_function,evgS
+GO:0016740,transferase activity,molecular_function,evgS
+GO:0016310,phosphorylation,biological_process,evgS
+GO:0016301,kinase activity,molecular_function,evgS
+GO:0004673,protein histidine kinase activity,molecular_function,evgS
+GO:0000166,nucleotide binding,molecular_function,evgS
+GO:0046777,protein autophosphorylation,biological_process,evgS
+GO:0009927,histidine phosphotransfer kinase activity,molecular_function,evgS
+GO:0005886,plasma membrane,cellular_component,evgS
+GO:0016021,integral component of membrane,cellular_component,evgS
+GO:0016020,membrane,cellular_component,evgS
+GO:0005524,ATP binding,molecular_function,evgS
+GO:0000160,phosphorelay signal transduction system,biological_process,evgS
+GO:0000155,phosphorelay sensor kinase activity,molecular_function,evgS
 GO:0055085,transmembrane transport,biological_process,exbB
 GO:0022857,transmembrane transporter activity,molecular_function,exbB
 GO:0042802,identical protein binding,molecular_function,exbB
@@ -4690,6 +4966,23 @@ GO:0006629,lipid metabolic process,biological_process,fadA
 GO:0003988,acetyl-CoA C-acyltransferase activity,molecular_function,fadA
 GO:0005737,cytoplasm,cellular_component,fadA
 GO:0010124,phenylacetate catabolic process,biological_process,fadA
+GO:0036125,fatty acid beta-oxidation multienzyme complex,cellular_component,fadB
+GO:0004165,dodecenoyl-CoA delta-isomerase activity,molecular_function,fadB
+GO:0009062,fatty acid catabolic process,biological_process,fadB
+GO:0006635,fatty acid beta-oxidation,biological_process,fadB
+GO:0055114,oxidation-reduction process,biological_process,fadB
+GO:0016853,isomerase activity,molecular_function,fadB
+GO:0016829,lyase activity,molecular_function,fadB
+GO:0016491,oxidoreductase activity,molecular_function,fadB
+GO:0016042,lipid catabolic process,biological_process,fadB
+GO:0008152,metabolic process,biological_process,fadB
+GO:0006631,fatty acid metabolic process,biological_process,fadB
+GO:0006629,lipid metabolic process,biological_process,fadB
+GO:0003824,catalytic activity,molecular_function,fadB
+GO:0003857,3-hydroxyacyl-CoA dehydrogenase activity,molecular_function,fadB
+GO:0004300,enoyl-CoA hydratase activity,molecular_function,fadB
+GO:0008692,3-hydroxybutyryl-CoA epimerase activity,molecular_function,fadB
+GO:0016509,long-chain-3-hydroxyacyl-CoA dehydrogenase activity,molecular_function,fadB
 GO:0004467,long-chain fatty acid-CoA ligase activity,molecular_function,fadD
 GO:0006631,fatty acid metabolic process,biological_process,fadD
 GO:0008654,phospholipid biosynthetic process,biological_process,fadD
@@ -4711,6 +5004,18 @@ GO:0006637,acyl-CoA metabolic process,biological_process,fadD
 GO:0006635,fatty acid beta-oxidation,biological_process,fadD
 GO:0005524,ATP binding,molecular_function,fadD
 GO:0000166,nucleotide binding,molecular_function,fadD
+GO:0005515,protein binding,molecular_function,fadH
+GO:0006635,fatty acid beta-oxidation,biological_process,fadH
+GO:0071949,FAD binding,molecular_function,fadH
+GO:0033543,"fatty acid beta-oxidation, unsaturated, even number, reductase/isomerase pathway",biological_process,fadH
+GO:0010181,FMN binding,molecular_function,fadH
+GO:0003824,catalytic activity,molecular_function,fadH
+GO:0055114,oxidation-reduction process,biological_process,fadH
+GO:0051539,"4 iron, 4 sulfur cluster binding",molecular_function,fadH
+GO:0051536,iron-sulfur cluster binding,molecular_function,fadH
+GO:0046872,metal ion binding,molecular_function,fadH
+GO:0016491,oxidoreductase activity,molecular_function,fadH
+GO:0008670,"2,4-dienoyl-CoA reductase (NADPH) activity",molecular_function,fadH
 GO:0015908,fatty acid transport,biological_process,fadL
 GO:0055085,transmembrane transport,biological_process,fadL
 GO:0022834,ligand-gated channel activity,molecular_function,fadL
@@ -5376,6 +5681,15 @@ GO:0005198,structural molecule activity,molecular_function,flgI
 GO:0009288,bacterial-type flagellum,cellular_component,flgI
 GO:0009425,bacterial-type flagellum basal body,cellular_component,flgI
 GO:0042597,periplasmic space,cellular_component,flgI
+GO:0071973,bacterial-type flagellum-dependent cell motility,biological_process,flgJ
+GO:0071555,cell wall organization,biological_process,flgJ
+GO:0044781,bacterial-type flagellum organization,biological_process,flgJ
+GO:0044780,bacterial-type flagellum assembly,biological_process,flgJ
+GO:0004040,amidase activity,molecular_function,flgJ
+GO:0042597,periplasmic space,cellular_component,flgJ
+GO:0016798,"hydrolase activity, acting on glycosyl bonds",molecular_function,flgJ
+GO:0016787,hydrolase activity,molecular_function,flgJ
+GO:0008152,metabolic process,biological_process,flgJ
 GO:0044780,bacterial-type flagellum assembly,biological_process,flgK
 GO:0071973,bacterial-type flagellum-dependent cell motility,biological_process,flgK
 GO:0005515,protein binding,molecular_function,flgK
@@ -5785,6 +6099,35 @@ GO:0002184,cytoplasmic translational termination,biological_process,frr
 GO:0005829,cytosol,cellular_component,frr
 GO:0006412,translation,biological_process,frr
 GO:0005737,cytoplasm,cellular_component,frr
+GO:1902600,proton transmembrane transport,biological_process,fruA
+GO:0015755,fructose transmembrane transport,biological_process,fruA
+GO:0034219,carbohydrate transmembrane transport,biological_process,fruA
+GO:0022877,protein-N(PI)-phosphohistidine-fructose phosphotransferase system transporter activity,molecular_function,fruA
+GO:0005351,carbohydrate:proton symporter activity,molecular_function,fruA
+GO:0090582,protein-phosphocysteine-D-fructose-phosphotransferase system transporter activity,molecular_function,fruA
+GO:0005887,integral component of plasma membrane,cellular_component,fruA
+GO:0032445,fructose import,biological_process,fruA
+GO:0016310,phosphorylation,biological_process,fruA
+GO:0005886,plasma membrane,cellular_component,fruA
+GO:0016740,transferase activity,molecular_function,fruA
+GO:0016301,kinase activity,molecular_function,fruA
+GO:0016021,integral component of membrane,cellular_component,fruA
+GO:0016020,membrane,cellular_component,fruA
+GO:0008982,protein-N(PI)-phosphohistidine-sugar phosphotransferase activity,molecular_function,fruA
+GO:0008643,carbohydrate transport,biological_process,fruA
+GO:0009401,phosphoenolpyruvate-dependent sugar phosphotransferase system,biological_process,fruA
+GO:0090563,protein-phosphocysteine-sugar phosphotransferase activity,molecular_function,fruA
+GO:0019897,extrinsic component of plasma membrane,cellular_component,fruB
+GO:0032445,fructose import,biological_process,fruB
+GO:0022877,protein-N(PI)-phosphohistidine-fructose phosphotransferase system transporter activity,molecular_function,fruB
+GO:0016310,phosphorylation,biological_process,fruB
+GO:0016740,transferase activity,molecular_function,fruB
+GO:0016301,kinase activity,molecular_function,fruB
+GO:0008643,carbohydrate transport,biological_process,fruB
+GO:0005737,cytoplasm,cellular_component,fruB
+GO:0009401,phosphoenolpyruvate-dependent sugar phosphotransferase system,biological_process,fruB
+GO:0090563,protein-phosphocysteine-sugar phosphotransferase activity,molecular_function,fruB
+GO:0005886,plasma membrane,cellular_component,fruB
 GO:0046835,carbohydrate phosphorylation,biological_process,fruK
 GO:0016773,"phosphotransferase activity, alcohol group as acceptor",molecular_function,fruK
 GO:0016740,transferase activity,molecular_function,fruK
@@ -5806,6 +6149,26 @@ GO:0016301,kinase activity,molecular_function,frvA
 GO:0008643,carbohydrate transport,biological_process,frvA
 GO:0005737,cytoplasm,cellular_component,frvA
 GO:0009401,phosphoenolpyruvate-dependent sugar phosphotransferase system,biological_process,frvA
+GO:1902600,proton transmembrane transport,biological_process,frvB
+GO:0034219,carbohydrate transmembrane transport,biological_process,frvB
+GO:0022877,protein-N(PI)-phosphohistidine-fructose phosphotransferase system transporter activity,molecular_function,frvB
+GO:0015755,fructose transmembrane transport,biological_process,frvB
+GO:0005351,carbohydrate:proton symporter activity,molecular_function,frvB
+GO:0016310,phosphorylation,biological_process,frvB
+GO:0005886,plasma membrane,cellular_component,frvB
+GO:0016740,transferase activity,molecular_function,frvB
+GO:0016301,kinase activity,molecular_function,frvB
+GO:0016021,integral component of membrane,cellular_component,frvB
+GO:0016020,membrane,cellular_component,frvB
+GO:0008982,protein-N(PI)-phosphohistidine-sugar phosphotransferase activity,molecular_function,frvB
+GO:0008643,carbohydrate transport,biological_process,frvB
+GO:0009401,phosphoenolpyruvate-dependent sugar phosphotransferase system,biological_process,frvB
+GO:0090563,protein-phosphocysteine-sugar phosphotransferase activity,molecular_function,frvB
+GO:0016310,phosphorylation,biological_process,frvR
+GO:0016740,transferase activity,molecular_function,frvR
+GO:0016301,kinase activity,molecular_function,frvR
+GO:0003677,DNA binding,molecular_function,frvR
+GO:0006351,"transcription, DNA-templated",biological_process,frvR
 GO:0006508,proteolysis,biological_process,frvX
 GO:0046872,metal ion binding,molecular_function,frvX
 GO:0008237,metallopeptidase activity,molecular_function,frvX
@@ -6098,6 +6461,30 @@ GO:0005975,carbohydrate metabolic process,biological_process,fucU
 GO:0016857,"racemase and epimerase activity, acting on carbohydrates and derivatives",molecular_function,fucU
 GO:0005737,cytoplasm,cellular_component,fucU
 GO:0036065,fucosylation,biological_process,fucU
+GO:0004333,fumarate hydratase activity,molecular_function,fumA
+GO:0016853,isomerase activity,molecular_function,fumA
+GO:0042802,identical protein binding,molecular_function,fumA
+GO:0051536,iron-sulfur cluster binding,molecular_function,fumA
+GO:0016836,hydro-lyase activity,molecular_function,fumA
+GO:0016829,lyase activity,molecular_function,fumA
+GO:0006091,generation of precursor metabolites and energy,biological_process,fumA
+GO:0003824,catalytic activity,molecular_function,fumA
+GO:0050163,oxaloacetate tautomerase activity,molecular_function,fumA
+GO:0051539,"4 iron, 4 sulfur cluster binding",molecular_function,fumA
+GO:0046872,metal ion binding,molecular_function,fumA
+GO:0006099,tricarboxylic acid cycle,biological_process,fumA
+GO:0006974,cellular response to DNA damage stimulus,biological_process,fumB
+GO:0042710,biofilm formation,biological_process,fumB
+GO:0016836,hydro-lyase activity,molecular_function,fumB
+GO:0016829,lyase activity,molecular_function,fumB
+GO:0006091,generation of precursor metabolites and energy,biological_process,fumB
+GO:0003824,catalytic activity,molecular_function,fumB
+GO:0047808,D(-)-tartrate dehydratase activity,molecular_function,fumB
+GO:0051539,"4 iron, 4 sulfur cluster binding",molecular_function,fumB
+GO:0051536,iron-sulfur cluster binding,molecular_function,fumB
+GO:0046872,metal ion binding,molecular_function,fumB
+GO:0004333,fumarate hydratase activity,molecular_function,fumB
+GO:0006099,tricarboxylic acid cycle,biological_process,fumB
 GO:0016829,lyase activity,molecular_function,fumC
 GO:0003824,catalytic activity,molecular_function,fumC
 GO:0045239,tricarboxylic acid cycle enzyme complex,cellular_component,fumC
@@ -6373,6 +6760,18 @@ GO:0031405,lipoic acid binding,molecular_function,gcvH
 GO:0005737,cytoplasm,cellular_component,gcvH
 GO:0005829,cytosol,cellular_component,gcvH
 GO:0005960,glycine cleavage complex,cellular_component,gcvH
+GO:0019464,glycine decarboxylation via glycine cleavage system,biological_process,gcvP
+GO:0016491,oxidoreductase activity,molecular_function,gcvP
+GO:0003824,catalytic activity,molecular_function,gcvP
+GO:0042802,identical protein binding,molecular_function,gcvP
+GO:0006546,glycine catabolic process,biological_process,gcvP
+GO:0006544,glycine metabolic process,biological_process,gcvP
+GO:0055114,oxidation-reduction process,biological_process,gcvP
+GO:0005829,cytosol,cellular_component,gcvP
+GO:0004375,glycine dehydrogenase (decarboxylating) activity,molecular_function,gcvP
+GO:0005960,glycine cleavage complex,cellular_component,gcvP
+GO:0030170,pyridoxal phosphate binding,molecular_function,gcvP
+GO:0016594,glycine binding,molecular_function,gcvP
 GO:0006355,"regulation of transcription, DNA-templated",biological_process,gcvR
 GO:0005829,cytosol,cellular_component,gcvR
 GO:0006351,"transcription, DNA-templated",biological_process,gcvR
@@ -6433,6 +6832,12 @@ GO:0008891,glycolate oxidase activity,molecular_function,glcD
 GO:0055114,oxidation-reduction process,biological_process,glcD
 GO:0046296,glycolate catabolic process,biological_process,glcD
 GO:0019154,glycolate dehydrogenase activity,molecular_function,glcD
+GO:0055114,oxidation-reduction process,biological_process,glcF
+GO:0051539,"4 iron, 4 sulfur cluster binding",molecular_function,glcF
+GO:0051536,iron-sulfur cluster binding,molecular_function,glcF
+GO:0046872,metal ion binding,molecular_function,glcF
+GO:0019154,glycolate dehydrogenase activity,molecular_function,glcF
+GO:0046296,glycolate catabolic process,biological_process,glcF
 GO:0008888,glycerol dehydrogenase [NAD+] activity,molecular_function,gldA
 GO:0005829,cytosol,cellular_component,gldA
 GO:0055114,oxidation-reduction process,biological_process,gldA
@@ -6850,6 +7255,23 @@ GO:0005829,cytosol,cellular_component,gltA
 GO:0016740,transferase activity,molecular_function,gltA
 GO:0004108,citrate (Si)-synthase activity,molecular_function,gltA
 GO:0006099,tricarboxylic acid cycle,biological_process,gltA
+GO:0005829,cytosol,cellular_component,gltB
+GO:0016638,"oxidoreductase activity, acting on the CH-NH2 group of donors",molecular_function,gltB
+GO:0016491,oxidoreductase activity,molecular_function,gltB
+GO:0015930,glutamate synthase activity,molecular_function,gltB
+GO:0008652,cellular amino acid biosynthetic process,biological_process,gltB
+GO:0003824,catalytic activity,molecular_function,gltB
+GO:0097054,L-glutamate biosynthetic process,biological_process,gltB
+GO:0006807,nitrogen compound metabolic process,biological_process,gltB
+GO:0055114,oxidation-reduction process,biological_process,gltB
+GO:0051538,"3 iron, 4 sulfur cluster binding",molecular_function,gltB
+GO:0051536,iron-sulfur cluster binding,molecular_function,gltB
+GO:0046872,metal ion binding,molecular_function,gltB
+GO:0006541,glutamine metabolic process,biological_process,gltB
+GO:0005515,protein binding,molecular_function,gltB
+GO:0004355,glutamate synthase (NADPH) activity,molecular_function,gltB
+GO:0006537,glutamate biosynthetic process,biological_process,gltB
+GO:0019676,ammonia assimilation cycle,biological_process,gltB
 GO:0005829,cytosol,cellular_component,gltD
 GO:0016639,"oxidoreductase activity, acting on the CH-NH2 group of donors, NAD or NADP as acceptor",molecular_function,gltD
 GO:0016491,oxidoreductase activity,molecular_function,gltD
@@ -7286,6 +7708,33 @@ GO:0015031,protein transport,biological_process,gspL
 GO:0005886,plasma membrane,cellular_component,gspL
 GO:0016021,integral component of membrane,cellular_component,gspL
 GO:0016020,membrane,cellular_component,gspL
+GO:0016874,ligase activity,molecular_function,guaA
+GO:0006164,purine nucleotide biosynthetic process,biological_process,guaA
+GO:0042802,identical protein binding,molecular_function,guaA
+GO:0016462,pyrophosphatase activity,molecular_function,guaA
+GO:0005829,cytosol,cellular_component,guaA
+GO:0006541,glutamine metabolic process,biological_process,guaA
+GO:0005524,ATP binding,molecular_function,guaA
+GO:0000166,nucleotide binding,molecular_function,guaA
+GO:0006177,GMP biosynthetic process,biological_process,guaA
+GO:0003922,GMP synthase (glutamine-hydrolyzing) activity,molecular_function,guaA
+GO:0003921,GMP synthase activity,molecular_function,guaA
+GO:0000166,nucleotide binding,molecular_function,guaB
+GO:1990829,C-rich single-stranded DNA binding,molecular_function,guaB
+GO:0005524,ATP binding,molecular_function,guaB
+GO:0003697,single-stranded DNA binding,molecular_function,guaB
+GO:0051289,protein homotetramerization,biological_process,guaB
+GO:0009411,response to UV,biological_process,guaB
+GO:0016491,oxidoreductase activity,molecular_function,guaB
+GO:0003824,catalytic activity,molecular_function,guaB
+GO:0046872,metal ion binding,molecular_function,guaB
+GO:0042802,identical protein binding,molecular_function,guaB
+GO:0055114,oxidation-reduction process,biological_process,guaB
+GO:0005829,cytosol,cellular_component,guaB
+GO:0006177,GMP biosynthetic process,biological_process,guaB
+GO:0003938,IMP dehydrogenase activity,molecular_function,guaB
+GO:0006164,purine nucleotide biosynthetic process,biological_process,guaB
+GO:0006183,GTP biosynthetic process,biological_process,guaB
 GO:0006163,purine nucleotide metabolic process,biological_process,guaC
 GO:1902560,GMP reductase complex,cellular_component,guaC
 GO:0016491,oxidoreductase activity,molecular_function,guaC
@@ -7301,6 +7750,17 @@ GO:0003920,GMP reductase activity,molecular_function,guaC
 GO:0006355,"regulation of transcription, DNA-templated",biological_process,gutM
 GO:0009401,phosphoenolpyruvate-dependent sugar phosphotransferase system,biological_process,gutM
 GO:0003677,DNA binding,molecular_function,gutM
+GO:1901135,carbohydrate derivative metabolic process,biological_process,gutQ
+GO:0097367,carbohydrate derivative binding,molecular_function,gutQ
+GO:0016853,isomerase activity,molecular_function,gutQ
+GO:0009103,lipopolysaccharide biosynthetic process,biological_process,gutQ
+GO:0005975,carbohydrate metabolic process,biological_process,gutQ
+GO:0046872,metal ion binding,molecular_function,gutQ
+GO:0005524,ATP binding,molecular_function,gutQ
+GO:0000166,nucleotide binding,molecular_function,gutQ
+GO:0019294,keto-3-deoxy-D-manno-octulosonic acid biosynthetic process,biological_process,gutQ
+GO:0019146,arabinose-5-phosphate isomerase activity,molecular_function,gutQ
+GO:0042710,biofilm formation,biological_process,gutQ
 GO:0042493,response to drug,biological_process,gyrA
 GO:0003918,"DNA topoisomerase type II (double strand cut, ATP-hydrolyzing) activity",molecular_function,gyrA
 GO:0003677,DNA binding,molecular_function,gyrA
@@ -7576,6 +8036,20 @@ GO:0005737,cytoplasm,cellular_component,hisA
 GO:0003949,1-(5-phosphoribosyl)-5-[(5-phosphoribosylamino)methylideneamino]imidazole-4-carboxamide isomerase activity,molecular_function,hisA
 GO:0000105,histidine biosynthetic process,biological_process,hisA
 GO:0000162,tryptophan biosynthetic process,biological_process,hisA
+GO:0046872,metal ion binding,molecular_function,hisB
+GO:0016311,dephosphorylation,biological_process,hisB
+GO:0042802,identical protein binding,molecular_function,hisB
+GO:0005515,protein binding,molecular_function,hisB
+GO:0016829,lyase activity,molecular_function,hisB
+GO:0016791,phosphatase activity,molecular_function,hisB
+GO:0016787,hydrolase activity,molecular_function,hisB
+GO:0008652,cellular amino acid biosynthetic process,biological_process,hisB
+GO:0008152,metabolic process,biological_process,hisB
+GO:0003824,catalytic activity,molecular_function,hisB
+GO:0005737,cytoplasm,cellular_component,hisB
+GO:0004401,histidinol-phosphatase activity,molecular_function,hisB
+GO:0004424,imidazoleglycerol-phosphate dehydratase activity,molecular_function,hisB
+GO:0000105,histidine biosynthetic process,biological_process,hisB
 GO:0005829,cytosol,cellular_component,hisC
 GO:0042802,identical protein binding,molecular_function,hisC
 GO:0016740,transferase activity,molecular_function,hisC
@@ -7626,6 +8100,17 @@ GO:0006541,glutamine metabolic process,biological_process,hisH
 GO:0000107,imidazoleglycerol-phosphate synthase activity,molecular_function,hisH
 GO:0009382,imidazoleglycerol-phosphate synthase complex,cellular_component,hisH
 GO:0000105,histidine biosynthetic process,biological_process,hisH
+GO:0005829,cytosol,cellular_component,hisI
+GO:0016787,hydrolase activity,molecular_function,hisI
+GO:0003824,catalytic activity,molecular_function,hisI
+GO:0008152,metabolic process,biological_process,hisI
+GO:0005524,ATP binding,molecular_function,hisI
+GO:0000166,nucleotide binding,molecular_function,hisI
+GO:0008652,cellular amino acid biosynthetic process,biological_process,hisI
+GO:0005737,cytoplasm,cellular_component,hisI
+GO:0004636,phosphoribosyl-ATP diphosphatase activity,molecular_function,hisI
+GO:0004635,phosphoribosyl-AMP cyclohydrolase activity,molecular_function,hisI
+GO:0000105,histidine biosynthetic process,biological_process,hisI
 GO:0071705,nitrogen compound transport,biological_process,hisJ
 GO:0016597,amino acid binding,molecular_function,hisJ
 GO:0030288,outer membrane-bounded periplasmic space,cellular_component,hisJ
@@ -7675,6 +8160,22 @@ GO:0000166,nucleotide binding,molecular_function,hisS
 GO:0006427,histidyl-tRNA aminoacylation,biological_process,hisS
 GO:0004821,histidine-tRNA ligase activity,molecular_function,hisS
 GO:0005737,cytoplasm,cellular_component,hisS
+GO:0016491,oxidoreductase activity,molecular_function,hmp
+GO:0046872,metal ion binding,molecular_function,hmp
+GO:0019825,oxygen binding,molecular_function,hmp
+GO:0032843,hydroperoxide reductase activity,molecular_function,hmp
+GO:0005504,fatty acid binding,molecular_function,hmp
+GO:0071949,FAD binding,molecular_function,hmp
+GO:0051409,response to nitrosative stress,biological_process,hmp
+GO:0055114,oxidation-reduction process,biological_process,hmp
+GO:0020037,heme binding,molecular_function,hmp
+GO:0015671,oxygen transport,biological_process,hmp
+GO:0009636,response to toxic substance,biological_process,hmp
+GO:0005737,cytoplasm,cellular_component,hmp
+GO:0005344,oxygen carrier activity,molecular_function,hmp
+GO:0008941,nitric oxide dioxygenase activity,molecular_function,hmp
+GO:0071500,cellular response to nitrosative stress,biological_process,hmp
+GO:0046210,nitric oxide catabolic process,biological_process,hmp
 GO:0003681,bent DNA binding,molecular_function,hns
 GO:1900232,negative regulation of single-species biofilm formation on inanimate substrate,biological_process,hns
 GO:0045892,"negative regulation of transcription, DNA-templated",biological_process,hns
@@ -8085,6 +8586,18 @@ GO:0005886,plasma membrane,cellular_component,hycD
 GO:0016491,oxidoreductase activity,molecular_function,hycD
 GO:0016021,integral component of membrane,cellular_component,hycD
 GO:0016020,membrane,cellular_component,hycD
+GO:0046872,metal ion binding,molecular_function,hycE
+GO:0051287,NAD binding,molecular_function,hycE
+GO:0048038,quinone binding,molecular_function,hycE
+GO:0016651,"oxidoreductase activity, acting on NAD(P)H",molecular_function,hycE
+GO:0008137,NADH dehydrogenase (ubiquinone) activity,molecular_function,hycE
+GO:0005515,protein binding,molecular_function,hycE
+GO:0009375,ferredoxin hydrogenase complex,cellular_component,hycE
+GO:0055114,oxidation-reduction process,biological_process,hycE
+GO:0051539,"4 iron, 4 sulfur cluster binding",molecular_function,hycE
+GO:0051536,iron-sulfur cluster binding,molecular_function,hycE
+GO:0016491,oxidoreductase activity,molecular_function,hycE
+GO:0016151,nickel cation binding,molecular_function,hycE
 GO:0016651,"oxidoreductase activity, acting on NAD(P)H",molecular_function,hycF
 GO:0016020,membrane,cellular_component,hycF
 GO:0055114,oxidation-reduction process,biological_process,hycF
@@ -8163,6 +8676,17 @@ GO:0055114,oxidation-reduction process,biological_process,hyfF
 GO:0005886,plasma membrane,cellular_component,hyfF
 GO:0016491,oxidoreductase activity,molecular_function,hyfF
 GO:0016020,membrane,cellular_component,hyfF
+GO:0051287,NAD binding,molecular_function,hyfG
+GO:0048038,quinone binding,molecular_function,hyfG
+GO:0016651,"oxidoreductase activity, acting on NAD(P)H",molecular_function,hyfG
+GO:0016151,nickel cation binding,molecular_function,hyfG
+GO:0008137,NADH dehydrogenase (ubiquinone) activity,molecular_function,hyfG
+GO:0055114,oxidation-reduction process,biological_process,hyfG
+GO:0051539,"4 iron, 4 sulfur cluster binding",molecular_function,hyfG
+GO:0051536,iron-sulfur cluster binding,molecular_function,hyfG
+GO:0046872,metal ion binding,molecular_function,hyfG
+GO:0016491,oxidoreductase activity,molecular_function,hyfG
+GO:0005515,protein binding,molecular_function,hyfG
 GO:0016651,"oxidoreductase activity, acting on NAD(P)H",molecular_function,hyfH
 GO:0016020,membrane,cellular_component,hyfH
 GO:0055114,oxidation-reduction process,biological_process,hyfH
@@ -8724,6 +9248,43 @@ GO:0046872,metal ion binding,molecular_function,kduI
 GO:0045490,pectin catabolic process,biological_process,kduI
 GO:0016853,isomerase activity,molecular_function,kduI
 GO:0008697,4-deoxy-L-threo-5-hexosulose-uronate ketol-isomerase activity,molecular_function,kduI
+GO:0006813,potassium ion transport,biological_process,kefB
+GO:0098655,cation transmembrane transport,biological_process,kefB
+GO:0055085,transmembrane transport,biological_process,kefB
+GO:1902600,proton transmembrane transport,biological_process,kefB
+GO:0071805,potassium ion transmembrane transport,biological_process,kefB
+GO:0006812,cation transport,biological_process,kefB
+GO:0005887,integral component of plasma membrane,cellular_component,kefB
+GO:0015503,glutathione-regulated potassium exporter activity,molecular_function,kefB
+GO:0015299,solute:proton antiporter activity,molecular_function,kefB
+GO:0008324,cation transmembrane transporter activity,molecular_function,kefB
+GO:0005886,plasma membrane,cellular_component,kefB
+GO:0016021,integral component of membrane,cellular_component,kefB
+GO:0016020,membrane,cellular_component,kefB
+GO:0015297,antiporter activity,molecular_function,kefB
+GO:0006811,ion transport,biological_process,kefB
+GO:0006813,potassium ion transport,biological_process,kefC
+GO:0006885,regulation of pH,biological_process,kefC
+GO:0005887,integral component of plasma membrane,cellular_component,kefC
+GO:0055085,transmembrane transport,biological_process,kefC
+GO:1902600,proton transmembrane transport,biological_process,kefC
+GO:0098655,cation transmembrane transport,biological_process,kefC
+GO:0071805,potassium ion transmembrane transport,biological_process,kefC
+GO:0016021,integral component of membrane,cellular_component,kefC
+GO:0015079,potassium ion transmembrane transporter activity,molecular_function,kefC
+GO:0008324,cation transmembrane transporter activity,molecular_function,kefC
+GO:0006812,cation transport,biological_process,kefC
+GO:0006811,ion transport,biological_process,kefC
+GO:0005886,plasma membrane,cellular_component,kefC
+GO:0015299,solute:proton antiporter activity,molecular_function,kefC
+GO:0000166,nucleotide binding,molecular_function,kefC
+GO:0016020,membrane,cellular_component,kefC
+GO:0019899,enzyme binding,molecular_function,kefC
+GO:0015643,toxic substance binding,molecular_function,kefC
+GO:0051595,response to methylglyoxal,biological_process,kefC
+GO:0009636,response to toxic substance,biological_process,kefC
+GO:0015503,glutathione-regulated potassium exporter activity,molecular_function,kefC
+GO:0015297,antiporter activity,molecular_function,kefC
 GO:0016740,transferase activity,molecular_function,kptA
 GO:0016773,"phosphotransferase activity, alcohol group as acceptor",molecular_function,kptA
 GO:0006388,"tRNA splicing, via endonucleolytic cleavage and ligation",biological_process,kptA
@@ -9352,6 +9913,19 @@ GO:0005524,ATP binding,molecular_function,lyxK
 GO:0000166,nucleotide binding,molecular_function,lyxK
 GO:0019324,L-lyxose metabolic process,biological_process,lyxK
 GO:0008744,L-xylulokinase activity,molecular_function,lyxK
+GO:0004470,malic enzyme activity,molecular_function,maeB
+GO:0008948,oxaloacetate decarboxylase activity,molecular_function,maeB
+GO:0046872,metal ion binding,molecular_function,maeB
+GO:0016491,oxidoreductase activity,molecular_function,maeB
+GO:0003824,catalytic activity,molecular_function,maeB
+GO:0004471,malate dehydrogenase (decarboxylating) (NAD+) activity,molecular_function,maeB
+GO:0051287,NAD binding,molecular_function,maeB
+GO:0016746,"transferase activity, transferring acyl groups",molecular_function,maeB
+GO:0006108,malate metabolic process,biological_process,maeB
+GO:0030145,manganese ion binding,molecular_function,maeB
+GO:0055114,oxidation-reduction process,biological_process,maeB
+GO:0008152,metabolic process,biological_process,maeB
+GO:0004473,malate dehydrogenase (decarboxylating) (NADP+) activity,molecular_function,maeB
 GO:0006974,cellular response to DNA damage stimulus,biological_process,malE
 GO:0015768,maltose transport,biological_process,malE
 GO:0042597,periplasmic space,cellular_component,malE
@@ -9458,6 +10032,24 @@ GO:0005975,carbohydrate metabolic process,biological_process,malT
 GO:0005524,ATP binding,molecular_function,malT
 GO:0003677,DNA binding,molecular_function,malT
 GO:0000166,nucleotide binding,molecular_function,malT
+GO:0034219,carbohydrate transmembrane transport,biological_process,malX
+GO:0005515,protein binding,molecular_function,malX
+GO:0009758,carbohydrate utilization,biological_process,malX
+GO:0005887,integral component of plasma membrane,cellular_component,malX
+GO:0005363,maltose transmembrane transporter activity,molecular_function,malX
+GO:0015768,maltose transport,biological_process,malX
+GO:0055056,D-glucose transmembrane transporter activity,molecular_function,malX
+GO:0046323,glucose import,biological_process,malX
+GO:0016310,phosphorylation,biological_process,malX
+GO:0016301,kinase activity,molecular_function,malX
+GO:0005886,plasma membrane,cellular_component,malX
+GO:0016740,transferase activity,molecular_function,malX
+GO:0016021,integral component of membrane,cellular_component,malX
+GO:0016020,membrane,cellular_component,malX
+GO:0008982,protein-N(PI)-phosphohistidine-sugar phosphotransferase activity,molecular_function,malX
+GO:0008643,carbohydrate transport,biological_process,malX
+GO:0009401,phosphoenolpyruvate-dependent sugar phosphotransferase system,biological_process,malX
+GO:0090563,protein-phosphocysteine-sugar phosphotransferase activity,molecular_function,malX
 GO:0047804,cysteine-S-conjugate beta-lyase activity,molecular_function,malY
 GO:0043433,negative regulation of DNA-binding transcription factor activity,biological_process,malY
 GO:0016829,lyase activity,molecular_function,malY
@@ -9495,6 +10087,24 @@ GO:0009242,colanic acid biosynthetic process,biological_process,manA
 GO:0005737,cytoplasm,cellular_component,manA
 GO:0000032,cell wall mannoprotein biosynthetic process,biological_process,manA
 GO:0006486,protein glycosylation,biological_process,manA
+GO:0098708,glucose import across plasma membrane,biological_process,manX
+GO:0015761,mannose transmembrane transport,biological_process,manX
+GO:0032445,fructose import,biological_process,manX
+GO:0015764,N-acetylglucosamine transport,biological_process,manX
+GO:0016773,"phosphotransferase activity, alcohol group as acceptor",molecular_function,manX
+GO:0016740,transferase activity,molecular_function,manX
+GO:0016021,integral component of membrane,cellular_component,manX
+GO:0008982,protein-N(PI)-phosphohistidine-sugar phosphotransferase activity,molecular_function,manX
+GO:0008643,carbohydrate transport,biological_process,manX
+GO:0005886,plasma membrane,cellular_component,manX
+GO:0005829,cytosol,cellular_component,manX
+GO:0016310,phosphorylation,biological_process,manX
+GO:0022870,protein-N(PI)-phosphohistidine-mannose phosphotransferase system transporter activity,molecular_function,manX
+GO:0005887,integral component of plasma membrane,cellular_component,manX
+GO:0016301,kinase activity,molecular_function,manX
+GO:0016020,membrane,cellular_component,manX
+GO:0005737,cytoplasm,cellular_component,manX
+GO:0009401,phosphoenolpyruvate-dependent sugar phosphotransferase system,biological_process,manX
 GO:0098708,glucose import across plasma membrane,biological_process,manY
 GO:0015761,mannose transmembrane transport,biological_process,manY
 GO:0032445,fructose import,biological_process,manY
@@ -9766,6 +10376,38 @@ GO:0009086,methionine biosynthetic process,biological_process,metF
 GO:0008652,cellular amino acid biosynthetic process,biological_process,metF
 GO:0004489,methylenetetrahydrofolate reductase (NAD(P)H) activity,molecular_function,metF
 GO:0006730,one-carbon metabolic process,biological_process,metF
+GO:0008270,zinc ion binding,molecular_function,metG
+GO:0005515,protein binding,molecular_function,metG
+GO:0005737,cytoplasm,cellular_component,metG
+GO:0006431,methionyl-tRNA aminoacylation,biological_process,metG
+GO:0006418,tRNA aminoacylation for protein translation,biological_process,metG
+GO:0046872,metal ion binding,molecular_function,metG
+GO:0016874,ligase activity,molecular_function,metG
+GO:0006412,translation,biological_process,metG
+GO:0005524,ATP binding,molecular_function,metG
+GO:0004812,aminoacyl-tRNA ligase activity,molecular_function,metG
+GO:0003723,RNA binding,molecular_function,metG
+GO:0000166,nucleotide binding,molecular_function,metG
+GO:0000049,tRNA binding,molecular_function,metG
+GO:0004825,methionine-tRNA ligase activity,molecular_function,metG
+GO:0005829,cytosol,cellular_component,metG
+GO:0005737,cytoplasm,cellular_component,metH
+GO:0008705,methionine synthase activity,molecular_function,metH
+GO:0050667,homocysteine metabolic process,biological_process,metH
+GO:0035999,tetrahydrofolate interconversion,biological_process,metH
+GO:0008276,protein methyltransferase activity,molecular_function,metH
+GO:0006479,protein methylation,biological_process,metH
+GO:0005829,cytosol,cellular_component,metH
+GO:0016740,transferase activity,molecular_function,metH
+GO:0008168,methyltransferase activity,molecular_function,metH
+GO:0046872,metal ion binding,molecular_function,metH
+GO:0044237,cellular metabolic process,biological_process,metH
+GO:0042558,pteridine-containing compound metabolic process,biological_process,metH
+GO:0032259,methylation,biological_process,metH
+GO:0031419,cobalamin binding,molecular_function,metH
+GO:0008652,cellular amino acid biosynthetic process,biological_process,metH
+GO:0008270,zinc ion binding,molecular_function,metH
+GO:0009086,methionine biosynthetic process,biological_process,metH
 GO:0045892,"negative regulation of transcription, DNA-templated",biological_process,metJ
 GO:0005515,protein binding,molecular_function,metJ
 GO:0006555,methionine metabolic process,biological_process,metJ
@@ -9790,6 +10432,27 @@ GO:0000287,magnesium ion binding,molecular_function,metK
 GO:0000166,nucleotide binding,molecular_function,metK
 GO:0004478,methionine adenosyltransferase activity,molecular_function,metK
 GO:0006556,S-adenosylmethionine biosynthetic process,biological_process,metK
+GO:0005829,cytosol,cellular_component,metL
+GO:0016740,transferase activity,molecular_function,metL
+GO:0016491,oxidoreductase activity,molecular_function,metL
+GO:0016301,kinase activity,molecular_function,metL
+GO:0009067,aspartate family amino acid biosynthetic process,biological_process,metL
+GO:0008652,cellular amino acid biosynthetic process,biological_process,metL
+GO:0008152,metabolic process,biological_process,metL
+GO:0006520,cellular amino acid metabolic process,biological_process,metL
+GO:0003824,catalytic activity,molecular_function,metL
+GO:0050661,NADP binding,molecular_function,metL
+GO:0009088,threonine biosynthetic process,biological_process,metL
+GO:0016310,phosphorylation,biological_process,metL
+GO:0005524,ATP binding,molecular_function,metL
+GO:0000166,nucleotide binding,molecular_function,metL
+GO:0055114,oxidation-reduction process,biological_process,metL
+GO:0009086,methionine biosynthetic process,biological_process,metL
+GO:0004072,aspartate kinase activity,molecular_function,metL
+GO:0004412,homoserine dehydrogenase activity,molecular_function,metL
+GO:0009089,lysine biosynthetic process via diaminopimelate,biological_process,metL
+GO:0009090,homoserine biosynthetic process,biological_process,metL
+GO:0005737,cytoplasm,cellular_component,metL
 GO:0006281,DNA repair,biological_process,mfd
 GO:0006355,"regulation of transcription, DNA-templated",biological_process,mfd
 GO:0006974,cellular response to DNA damage stimulus,biological_process,mfd
@@ -10367,6 +11030,22 @@ GO:0043164,Gram-negative-bacterium-type cell wall biogenesis,biological_process,
 GO:0016021,integral component of membrane,cellular_component,mtgA
 GO:0008360,regulation of cell shape,biological_process,mtgA
 GO:0009252,peptidoglycan biosynthetic process,biological_process,mtgA
+GO:0034219,carbohydrate transmembrane transport,biological_process,mtlA
+GO:0022872,protein-N(PI)-phosphohistidine-mannitol phosphotransferase system transmembrane transporter activity,molecular_function,mtlA
+GO:0015795,sorbitol transport,biological_process,mtlA
+GO:0090565,protein-phosphocysteine-mannitol phosphotransferase system transporter activity,molecular_function,mtlA
+GO:0005887,integral component of plasma membrane,cellular_component,mtlA
+GO:0015797,mannitol transport,biological_process,mtlA
+GO:0016310,phosphorylation,biological_process,mtlA
+GO:0016301,kinase activity,molecular_function,mtlA
+GO:0005886,plasma membrane,cellular_component,mtlA
+GO:0016740,transferase activity,molecular_function,mtlA
+GO:0016021,integral component of membrane,cellular_component,mtlA
+GO:0016020,membrane,cellular_component,mtlA
+GO:0008982,protein-N(PI)-phosphohistidine-sugar phosphotransferase activity,molecular_function,mtlA
+GO:0008643,carbohydrate transport,biological_process,mtlA
+GO:0009401,phosphoenolpyruvate-dependent sugar phosphotransferase system,biological_process,mtlA
+GO:0090563,protein-phosphocysteine-sugar phosphotransferase activity,molecular_function,mtlA
 GO:0005829,cytosol,cellular_component,mtlD
 GO:0019592,mannitol catabolic process,biological_process,mtlD
 GO:0050662,coenzyme binding,molecular_function,mtlD
@@ -10671,6 +11350,29 @@ GO:0000166,nucleotide binding,molecular_function,nadE
 GO:0008795,NAD+ synthase activity,molecular_function,nadE
 GO:0003952,NAD+ synthase (glutamine-hydrolyzing) activity,molecular_function,nadE
 GO:0005737,cytoplasm,cellular_component,nadE
+GO:0071248,cellular response to metal ion,biological_process,nadR
+GO:0051289,protein homotetramerization,biological_process,nadR
+GO:0010446,response to alkaline pH,biological_process,nadR
+GO:0043565,sequence-specific DNA binding,molecular_function,nadR
+GO:0016740,transferase activity,molecular_function,nadR
+GO:0003824,catalytic activity,molecular_function,nadR
+GO:0003677,DNA binding,molecular_function,nadR
+GO:0045892,"negative regulation of transcription, DNA-templated",biological_process,nadR
+GO:0009058,biosynthetic process,biological_process,nadR
+GO:0009435,NAD biosynthetic process,biological_process,nadR
+GO:0000287,magnesium ion binding,molecular_function,nadR
+GO:0000986,bacterial-type cis-regulatory region sequence-specific DNA binding,molecular_function,nadR
+GO:0016310,phosphorylation,biological_process,nadR
+GO:0008152,metabolic process,biological_process,nadR
+GO:0016301,kinase activity,molecular_function,nadR
+GO:0005886,plasma membrane,cellular_component,nadR
+GO:0005524,ATP binding,molecular_function,nadR
+GO:0000166,nucleotide binding,molecular_function,nadR
+GO:0019363,pyridine nucleotide biosynthetic process,biological_process,nadR
+GO:0016020,membrane,cellular_component,nadR
+GO:0005737,cytoplasm,cellular_component,nadR
+GO:0050262,ribosylnicotinamide kinase activity,molecular_function,nadR
+GO:0000309,nicotinamide-nucleotide adenylyltransferase activity,molecular_function,nadR
 GO:0047419,N-acetylgalactosamine-6-phosphate deacetylase activity,molecular_function,nagA
 GO:0016810,"hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds",molecular_function,nagA
 GO:0016787,hydrolase activity,molecular_function,nagA
@@ -10699,6 +11401,26 @@ GO:0003700,DNA-binding transcription factor activity,molecular_function,nagC
 GO:0006355,"regulation of transcription, DNA-templated",biological_process,nagC
 GO:0005975,carbohydrate metabolic process,biological_process,nagC
 GO:0003677,DNA binding,molecular_function,nagC
+GO:0006974,cellular response to DNA damage stimulus,biological_process,nagE
+GO:0046872,metal ion binding,molecular_function,nagE
+GO:0034219,carbohydrate transmembrane transport,biological_process,nagE
+GO:0090587,protein-phosphocysteine-glucosamine phosphotransferase system transporter activity,molecular_function,nagE
+GO:0090586,protein-phosphocysteine-N-acetylglucosamine phosphotransferase system transporter activity,molecular_function,nagE
+GO:0019866,organelle inner membrane,cellular_component,nagE
+GO:0008643,carbohydrate transport,biological_process,nagE
+GO:0015764,N-acetylglucosamine transport,biological_process,nagE
+GO:0005887,integral component of plasma membrane,cellular_component,nagE
+GO:0009254,peptidoglycan turnover,biological_process,nagE
+GO:0015572,N-acetylglucosamine transmembrane transporter activity,molecular_function,nagE
+GO:0016310,phosphorylation,biological_process,nagE
+GO:0016301,kinase activity,molecular_function,nagE
+GO:0005886,plasma membrane,cellular_component,nagE
+GO:0016740,transferase activity,molecular_function,nagE
+GO:0016021,integral component of membrane,cellular_component,nagE
+GO:0016020,membrane,cellular_component,nagE
+GO:0008982,protein-N(PI)-phosphohistidine-sugar phosphotransferase activity,molecular_function,nagE
+GO:0009401,phosphoenolpyruvate-dependent sugar phosphotransferase system,biological_process,nagE
+GO:0090563,protein-phosphocysteine-sugar phosphotransferase activity,molecular_function,nagE
 GO:0005829,cytosol,cellular_component,nanA
 GO:0016829,lyase activity,molecular_function,nanA
 GO:0003824,catalytic activity,molecular_function,nanA
@@ -11435,6 +12157,21 @@ GO:0046872,metal ion binding,molecular_function,nuoB
 GO:0015990,electron transport coupled proton transport,biological_process,nuoB
 GO:0008137,NADH dehydrogenase (ubiquinone) activity,molecular_function,nuoB
 GO:0009060,aerobic respiration,biological_process,nuoB
+GO:0005886,plasma membrane,cellular_component,nuoC
+GO:0003954,NADH dehydrogenase activity,molecular_function,nuoC
+GO:0030964,NADH dehydrogenase complex,cellular_component,nuoC
+GO:0016655,"oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor",molecular_function,nuoC
+GO:0050136,NADH dehydrogenase (quinone) activity,molecular_function,nuoC
+GO:0016651,"oxidoreductase activity, acting on NAD(P)H",molecular_function,nuoC
+GO:0003824,catalytic activity,molecular_function,nuoC
+GO:0005515,protein binding,molecular_function,nuoC
+GO:0055114,oxidation-reduction process,biological_process,nuoC
+GO:0051287,NAD binding,molecular_function,nuoC
+GO:0008152,metabolic process,biological_process,nuoC
+GO:0016020,membrane,cellular_component,nuoC
+GO:0045272,plasma membrane respiratory chain complex I,cellular_component,nuoC
+GO:0048038,quinone binding,molecular_function,nuoC
+GO:0008137,NADH dehydrogenase (ubiquinone) activity,molecular_function,nuoC
 GO:0005886,plasma membrane,cellular_component,nuoE
 GO:0003954,NADH dehydrogenase activity,molecular_function,nuoE
 GO:0010181,FMN binding,molecular_function,nuoE
@@ -12365,6 +13102,18 @@ GO:0006655,phosphatidylglycerol biosynthetic process,biological_process,pgsA
 GO:0005886,plasma membrane,cellular_component,pgsA
 GO:0008654,phospholipid biosynthetic process,biological_process,pgsA
 GO:0046474,glycerophospholipid biosynthetic process,biological_process,pgsA
+GO:0016853,isomerase activity,molecular_function,pheA
+GO:0016829,lyase activity,molecular_function,pheA
+GO:0009073,aromatic amino acid family biosynthetic process,biological_process,pheA
+GO:0008652,cellular amino acid biosynthetic process,biological_process,pheA
+GO:0008152,metabolic process,biological_process,pheA
+GO:0003824,catalytic activity,molecular_function,pheA
+GO:0046417,chorismate metabolic process,biological_process,pheA
+GO:0004664,prephenate dehydratase activity,molecular_function,pheA
+GO:0004106,chorismate mutase activity,molecular_function,pheA
+GO:0006571,tyrosine biosynthetic process,biological_process,pheA
+GO:0009094,L-phenylalanine biosynthetic process,biological_process,pheA
+GO:0005737,cytoplasm,cellular_component,pheA
 GO:0015823,phenylalanine transport,biological_process,pheP
 GO:0022857,transmembrane transporter activity,molecular_function,pheP
 GO:0055085,transmembrane transport,biological_process,pheP
@@ -12387,6 +13136,22 @@ GO:0004812,aminoacyl-tRNA ligase activity,molecular_function,pheS
 GO:0000166,nucleotide binding,molecular_function,pheS
 GO:0004826,phenylalanine-tRNA ligase activity,molecular_function,pheS
 GO:0005737,cytoplasm,cellular_component,pheS
+GO:0009328,phenylalanine-tRNA ligase complex,cellular_component,pheT
+GO:0042802,identical protein binding,molecular_function,pheT
+GO:0006432,phenylalanyl-tRNA aminoacylation,biological_process,pheT
+GO:0000287,magnesium ion binding,molecular_function,pheT
+GO:0005829,cytosol,cellular_component,pheT
+GO:0046872,metal ion binding,molecular_function,pheT
+GO:0016874,ligase activity,molecular_function,pheT
+GO:0006412,translation,biological_process,pheT
+GO:0005524,ATP binding,molecular_function,pheT
+GO:0005515,protein binding,molecular_function,pheT
+GO:0004812,aminoacyl-tRNA ligase activity,molecular_function,pheT
+GO:0003723,RNA binding,molecular_function,pheT
+GO:0000166,nucleotide binding,molecular_function,pheT
+GO:0000049,tRNA binding,molecular_function,pheT
+GO:0004826,phenylalanine-tRNA ligase activity,molecular_function,pheT
+GO:0005737,cytoplasm,cellular_component,pheT
 GO:0098656,anion transmembrane transport,biological_process,phnC
 GO:0015748,organophosphate ester transport,biological_process,phnC
 GO:0015716,organic phosphonate transport,biological_process,phnC
@@ -12692,6 +13457,27 @@ GO:0005887,integral component of plasma membrane,cellular_component,pnuC
 GO:0005886,plasma membrane,cellular_component,pnuC
 GO:0016021,integral component of membrane,cellular_component,pnuC
 GO:0016020,membrane,cellular_component,pnuC
+GO:0003887,DNA-directed DNA polymerase activity,molecular_function,polA
+GO:0006139,nucleobase-containing compound metabolic process,biological_process,polA
+GO:0071897,DNA biosynthetic process,biological_process,polA
+GO:0090305,nucleic acid phosphodiester bond hydrolysis,biological_process,polA
+GO:0016787,hydrolase activity,molecular_function,polA
+GO:0016779,nucleotidyltransferase activity,molecular_function,polA
+GO:0016740,transferase activity,molecular_function,polA
+GO:0006974,cellular response to DNA damage stimulus,biological_process,polA
+GO:0004527,exonuclease activity,molecular_function,polA
+GO:0004518,nuclease activity,molecular_function,polA
+GO:0003824,catalytic activity,molecular_function,polA
+GO:0003676,nucleic acid binding,molecular_function,polA
+GO:0006284,base-excision repair,biological_process,polA
+GO:0005829,cytosol,cellular_component,polA
+GO:0006261,DNA-dependent DNA replication,biological_process,polA
+GO:0008409,5'-3' exonuclease activity,molecular_function,polA
+GO:0008408,3'-5' exonuclease activity,molecular_function,polA
+GO:0006281,DNA repair,biological_process,polA
+GO:0006260,DNA replication,biological_process,polA
+GO:0003677,DNA binding,molecular_function,polA
+GO:0005737,cytoplasm,cellular_component,polA
 GO:0090305,nucleic acid phosphodiester bond hydrolysis,biological_process,polB
 GO:0071897,DNA biosynthetic process,biological_process,polB
 GO:0016779,nucleotidyltransferase activity,molecular_function,polB
@@ -13271,6 +14057,20 @@ GO:0042301,phosphate ion binding,molecular_function,pstS
 GO:0030288,outer membrane-bounded periplasmic space,cellular_component,pstS
 GO:0042597,periplasmic space,cellular_component,pstS
 GO:0006817,phosphate ion transport,biological_process,pstS
+GO:0008270,zinc ion binding,molecular_function,pta
+GO:0005829,cytosol,cellular_component,pta
+GO:0006083,acetate metabolic process,biological_process,pta
+GO:0016746,"transferase activity, transferring acyl groups",molecular_function,pta
+GO:0016740,transferase activity,molecular_function,pta
+GO:0016407,acetyltransferase activity,molecular_function,pta
+GO:0006085,acetyl-CoA biosynthetic process,biological_process,pta
+GO:0019427,acetyl-CoA biosynthetic process from acetate,biological_process,pta
+GO:0019413,acetate biosynthetic process,biological_process,pta
+GO:0070689,L-threonine catabolic process to propionate,biological_process,pta
+GO:0005737,cytoplasm,cellular_component,pta
+GO:0005515,protein binding,molecular_function,pta
+GO:0008959,phosphate acetyltransferase activity,molecular_function,pta
+GO:0045733,acetate catabolic process,biological_process,pta
 GO:0006412,translation,biological_process,pth
 GO:0016787,hydrolase activity,molecular_function,pth
 GO:0006515,protein quality control for misfolded or incompletely synthesized proteins,biological_process,pth
@@ -13284,6 +14084,33 @@ GO:0004252,serine-type endopeptidase activity,molecular_function,ptrB
 GO:0005737,cytoplasm,cellular_component,ptrB
 GO:0008236,serine-type peptidase activity,molecular_function,ptrB
 GO:0006508,proteolysis,biological_process,ptrB
+GO:0016772,"transferase activity, transferring phosphorus-containing groups",molecular_function,ptsA
+GO:0003824,catalytic activity,molecular_function,ptsA
+GO:0046872,metal ion binding,molecular_function,ptsA
+GO:0016740,transferase activity,molecular_function,ptsA
+GO:0016310,phosphorylation,biological_process,ptsA
+GO:0016301,kinase activity,molecular_function,ptsA
+GO:0009401,phosphoenolpyruvate-dependent sugar phosphotransferase system,biological_process,ptsA
+GO:0008965,phosphoenolpyruvate-protein phosphotransferase activity,molecular_function,ptsA
+GO:0008643,carbohydrate transport,biological_process,ptsA
+GO:0005737,cytoplasm,cellular_component,ptsA
+GO:1904659,glucose transmembrane transport,biological_process,ptsG
+GO:0005515,protein binding,molecular_function,ptsG
+GO:0090564,protein-phosphocysteine-glucose phosphotransferase system transporter activity,molecular_function,ptsG
+GO:0005829,cytosol,cellular_component,ptsG
+GO:0098708,glucose import across plasma membrane,biological_process,ptsG
+GO:0005887,integral component of plasma membrane,cellular_component,ptsG
+GO:0005355,glucose transmembrane transporter activity,molecular_function,ptsG
+GO:0016310,phosphorylation,biological_process,ptsG
+GO:0005886,plasma membrane,cellular_component,ptsG
+GO:0016740,transferase activity,molecular_function,ptsG
+GO:0016301,kinase activity,molecular_function,ptsG
+GO:0016021,integral component of membrane,cellular_component,ptsG
+GO:0016020,membrane,cellular_component,ptsG
+GO:0008982,protein-N(PI)-phosphohistidine-sugar phosphotransferase activity,molecular_function,ptsG
+GO:0008643,carbohydrate transport,biological_process,ptsG
+GO:0009401,phosphoenolpyruvate-dependent sugar phosphotransferase system,biological_process,ptsG
+GO:0090563,protein-phosphocysteine-sugar phosphotransferase activity,molecular_function,ptsG
 GO:0008047,enzyme activator activity,molecular_function,ptsH
 GO:0005515,protein binding,molecular_function,ptsH
 GO:0045152,antisigma factor binding,molecular_function,ptsH
@@ -13420,6 +14247,18 @@ GO:0005829,cytosol,cellular_component,purK
 GO:0034028,5-(carboxyamino)imidazole ribonucleotide synthase activity,molecular_function,purK
 GO:0005524,ATP binding,molecular_function,purK
 GO:0006164,purine nucleotide biosynthetic process,biological_process,purK
+GO:0004642,phosphoribosylformylglycinamidine synthase activity,molecular_function,purL
+GO:0006189,'de novo' IMP biosynthetic process,biological_process,purL
+GO:0006541,glutamine metabolic process,biological_process,purL
+GO:0042623,"ATPase activity, coupled",molecular_function,purL
+GO:0005737,cytoplasm,cellular_component,purL
+GO:0005524,ATP binding,molecular_function,purL
+GO:0046872,metal ion binding,molecular_function,purL
+GO:0016874,ligase activity,molecular_function,purL
+GO:0005829,cytosol,cellular_component,purL
+GO:0000166,nucleotide binding,molecular_function,purL
+GO:0006164,purine nucleotide biosynthetic process,biological_process,purL
+GO:0009113,purine nucleobase biosynthetic process,biological_process,purL
 GO:0016874,ligase activity,molecular_function,purM
 GO:0006189,'de novo' IMP biosynthetic process,biological_process,purM
 GO:0005829,cytosol,cellular_component,purM
@@ -13464,6 +14303,29 @@ GO:0006730,one-carbon metabolic process,biological_process,purU
 GO:0008864,formyltetrahydrofolate deformylase activity,molecular_function,purU
 GO:0009257,10-formyltetrahydrofolate biosynthetic process,biological_process,purU
 GO:0009152,purine ribonucleotide biosynthetic process,biological_process,purU
+GO:0016620,"oxidoreductase activity, acting on the aldehyde or oxo group of donors, NAD or NADP as acceptor",molecular_function,putA
+GO:0006979,response to oxidative stress,biological_process,putA
+GO:0042802,identical protein binding,molecular_function,putA
+GO:0045892,"negative regulation of transcription, DNA-templated",biological_process,putA
+GO:0016491,oxidoreductase activity,molecular_function,putA
+GO:0008152,metabolic process,biological_process,putA
+GO:0006560,proline metabolic process,biological_process,putA
+GO:0003824,catalytic activity,molecular_function,putA
+GO:0003700,DNA-binding transcription factor activity,molecular_function,putA
+GO:0043565,sequence-specific DNA binding,molecular_function,putA
+GO:0006561,proline biosynthetic process,biological_process,putA
+GO:0006355,"regulation of transcription, DNA-templated",biological_process,putA
+GO:0005886,plasma membrane,cellular_component,putA
+GO:0005829,cytosol,cellular_component,putA
+GO:0009898,cytoplasmic side of plasma membrane,cellular_component,putA
+GO:0001217,DNA-binding transcription repressor activity,molecular_function,putA
+GO:0000986,bacterial-type cis-regulatory region sequence-specific DNA binding,molecular_function,putA
+GO:0050660,flavin adenine dinucleotide binding,molecular_function,putA
+GO:0010133,proline catabolic process to glutamate,biological_process,putA
+GO:0055114,oxidation-reduction process,biological_process,putA
+GO:0003677,DNA binding,molecular_function,putA
+GO:0003842,1-pyrroline-5-carboxylate dehydrogenase activity,molecular_function,putA
+GO:0004657,proline dehydrogenase activity,molecular_function,putA
 GO:1903825,organic acid transmembrane transport,biological_process,putP
 GO:0003333,amino acid transmembrane transport,biological_process,putP
 GO:0022857,transmembrane transporter activity,molecular_function,putP
@@ -13722,6 +14584,26 @@ GO:0003677,DNA binding,molecular_function,rcsB
 GO:0000160,phosphorelay signal transduction system,biological_process,rcsB
 GO:0005829,cytosol,cellular_component,rcsB
 GO:0006351,"transcription, DNA-templated",biological_process,rcsB
+GO:0005887,integral component of plasma membrane,cellular_component,rcsC
+GO:0023014,signal transduction by protein phosphorylation,biological_process,rcsC
+GO:0018106,peptidyl-histidine phosphorylation,biological_process,rcsC
+GO:0016772,"transferase activity, transferring phosphorus-containing groups",molecular_function,rcsC
+GO:0016740,transferase activity,molecular_function,rcsC
+GO:0016310,phosphorylation,biological_process,rcsC
+GO:0016301,kinase activity,molecular_function,rcsC
+GO:0016020,membrane,cellular_component,rcsC
+GO:0007165,signal transduction,biological_process,rcsC
+GO:0006355,"regulation of transcription, DNA-templated",biological_process,rcsC
+GO:0005524,ATP binding,molecular_function,rcsC
+GO:0004673,protein histidine kinase activity,molecular_function,rcsC
+GO:0000166,nucleotide binding,molecular_function,rcsC
+GO:0046777,protein autophosphorylation,biological_process,rcsC
+GO:0044010,single-species biofilm formation,biological_process,rcsC
+GO:0071470,cellular response to osmotic stress,biological_process,rcsC
+GO:0005886,plasma membrane,cellular_component,rcsC
+GO:0016021,integral component of membrane,cellular_component,rcsC
+GO:0000160,phosphorelay signal transduction system,biological_process,rcsC
+GO:0000155,phosphorelay sensor kinase activity,molecular_function,rcsC
 GO:0009295,nucleoid,cellular_component,rdgC
 GO:0005829,cytosol,cellular_component,rdgC
 GO:0043590,bacterial nucleoid,cellular_component,rdgC
@@ -14211,6 +15093,18 @@ GO:0005829,cytosol,cellular_component,ribC
 GO:0016740,transferase activity,molecular_function,ribC
 GO:0009231,riboflavin biosynthetic process,biological_process,ribC
 GO:0004746,riboflavin synthase activity,molecular_function,ribC
+GO:0005515,protein binding,molecular_function,ribD
+GO:0016787,hydrolase activity,molecular_function,ribD
+GO:0016491,oxidoreductase activity,molecular_function,ribD
+GO:0008152,metabolic process,biological_process,ribD
+GO:0003824,catalytic activity,molecular_function,ribD
+GO:0008270,zinc ion binding,molecular_function,ribD
+GO:0055114,oxidation-reduction process,biological_process,ribD
+GO:0050661,NADP binding,molecular_function,ribD
+GO:0046872,metal ion binding,molecular_function,ribD
+GO:0009231,riboflavin biosynthetic process,biological_process,ribD
+GO:0008835,diaminohydroxyphosphoribosylaminopyrimidine deaminase activity,molecular_function,ribD
+GO:0008703,5-amino-6-(5-phosphoribosylamino)uracil reductase activity,molecular_function,ribD
 GO:0005515,protein binding,molecular_function,ribF
 GO:0016779,nucleotidyltransferase activity,molecular_function,ribF
 GO:0016740,transferase activity,molecular_function,ribF
@@ -16679,6 +17573,20 @@ GO:0051539,"4 iron, 4 sulfur cluster binding",molecular_function,thiH
 GO:0051536,iron-sulfur cluster binding,molecular_function,thiH
 GO:0046872,metal ion binding,molecular_function,thiH
 GO:0009228,thiamine biosynthetic process,biological_process,thiH
+GO:0004810,tRNA adenylyltransferase activity,molecular_function,thiI
+GO:0005829,cytosol,cellular_component,thiI
+GO:0034227,tRNA thio-modification,biological_process,thiI
+GO:0016783,sulfurtransferase activity,molecular_function,thiI
+GO:0002937,tRNA 4-thiouridine biosynthesis,biological_process,thiI
+GO:0052837,thiazole biosynthetic process,biological_process,thiI
+GO:0009229,thiamine diphosphate biosynthetic process,biological_process,thiI
+GO:0016740,transferase activity,molecular_function,thiI
+GO:0005524,ATP binding,molecular_function,thiI
+GO:0000166,nucleotide binding,molecular_function,thiI
+GO:0000049,tRNA binding,molecular_function,thiI
+GO:0005737,cytoplasm,cellular_component,thiI
+GO:0003723,RNA binding,molecular_function,thiI
+GO:0009228,thiamine biosynthetic process,biological_process,thiI
 GO:0016740,transferase activity,molecular_function,thiL
 GO:0016301,kinase activity,molecular_function,thiL
 GO:0000287,magnesium ion binding,molecular_function,thiL
@@ -16729,6 +17637,24 @@ GO:0000166,nucleotide binding,molecular_function,thiQ
 GO:0009229,thiamine diphosphate biosynthetic process,biological_process,thiS
 GO:0009228,thiamine biosynthetic process,biological_process,thiS
 GO:0000166,nucleotide binding,molecular_function,thiS
+GO:0016740,transferase activity,molecular_function,thrA
+GO:0016491,oxidoreductase activity,molecular_function,thrA
+GO:0016301,kinase activity,molecular_function,thrA
+GO:0009067,aspartate family amino acid biosynthetic process,biological_process,thrA
+GO:0008652,cellular amino acid biosynthetic process,biological_process,thrA
+GO:0008152,metabolic process,biological_process,thrA
+GO:0006520,cellular amino acid metabolic process,biological_process,thrA
+GO:0003824,catalytic activity,molecular_function,thrA
+GO:0050661,NADP binding,molecular_function,thrA
+GO:0016310,phosphorylation,biological_process,thrA
+GO:0005524,ATP binding,molecular_function,thrA
+GO:0000166,nucleotide binding,molecular_function,thrA
+GO:0055114,oxidation-reduction process,biological_process,thrA
+GO:0009088,threonine biosynthetic process,biological_process,thrA
+GO:0004412,homoserine dehydrogenase activity,molecular_function,thrA
+GO:0004072,aspartate kinase activity,molecular_function,thrA
+GO:0009089,lysine biosynthetic process via diaminopimelate,biological_process,thrA
+GO:0009090,homoserine biosynthetic process,biological_process,thrA
 GO:0016740,transferase activity,molecular_function,thrB
 GO:0016301,kinase activity,molecular_function,thrB
 GO:0008652,cellular amino acid biosynthetic process,biological_process,thrB
@@ -16963,6 +17889,15 @@ GO:0005886,plasma membrane,cellular_component,tonB
 GO:0043213,bacteriocin transport,biological_process,tonB
 GO:0016021,integral component of membrane,cellular_component,tonB
 GO:0015031,protein transport,biological_process,tonB
+GO:0006265,DNA topological change,biological_process,topA
+GO:0005515,protein binding,molecular_function,topA
+GO:0016853,isomerase activity,molecular_function,topA
+GO:0003677,DNA binding,molecular_function,topA
+GO:0005694,chromosome,cellular_component,topA
+GO:0005829,cytosol,cellular_component,topA
+GO:0046872,metal ion binding,molecular_function,topA
+GO:0003916,DNA topoisomerase activity,molecular_function,topA
+GO:0003917,"DNA topoisomerase type I (single strand cut, ATP-independent) activity",molecular_function,topA
 GO:0003917,"DNA topoisomerase type I (single strand cut, ATP-independent) activity",molecular_function,topB
 GO:0006310,DNA recombination,biological_process,topB
 GO:0051304,chromosome separation,biological_process,topB
@@ -16998,6 +17933,29 @@ GO:0051604,protein maturation,biological_process,torD
 GO:0051259,protein complex oligomerization,biological_process,torD
 GO:0006457,protein folding,biological_process,torD
 GO:0042802,identical protein binding,molecular_function,torD
+GO:0005515,protein binding,molecular_function,torS
+GO:0042802,identical protein binding,molecular_function,torS
+GO:0006470,protein dephosphorylation,biological_process,torS
+GO:0023014,signal transduction by protein phosphorylation,biological_process,torS
+GO:0018106,peptidyl-histidine phosphorylation,biological_process,torS
+GO:0016740,transferase activity,molecular_function,torS
+GO:0016310,phosphorylation,biological_process,torS
+GO:0016301,kinase activity,molecular_function,torS
+GO:0007165,signal transduction,biological_process,torS
+GO:0004673,protein histidine kinase activity,molecular_function,torS
+GO:0046777,protein autophosphorylation,biological_process,torS
+GO:0071310,cellular response to organic substance,biological_process,torS
+GO:0009061,anaerobic respiration,biological_process,torS
+GO:0004721,phosphoprotein phosphatase activity,molecular_function,torS
+GO:0005887,integral component of plasma membrane,cellular_component,torS
+GO:0000166,nucleotide binding,molecular_function,torS
+GO:0005886,plasma membrane,cellular_component,torS
+GO:0016772,"transferase activity, transferring phosphorus-containing groups",molecular_function,torS
+GO:0016021,integral component of membrane,cellular_component,torS
+GO:0016020,membrane,cellular_component,torS
+GO:0005524,ATP binding,molecular_function,torS
+GO:0000160,phosphorelay signal transduction system,biological_process,torS
+GO:0000155,phosphorelay sensor kinase activity,molecular_function,torS
 GO:0009061,anaerobic respiration,biological_process,torT
 GO:0042597,periplasmic space,cellular_component,torT
 GO:0003700,DNA-binding transcription factor activity,molecular_function,torT
@@ -17040,6 +17998,21 @@ GO:0005993,trehalose catabolic process,biological_process,treA
 GO:0071474,cellular hyperosmotic response,biological_process,treA
 GO:0030288,outer membrane-bounded periplasmic space,cellular_component,treA
 GO:0004555,"alpha,alpha-trehalase activity",molecular_function,treA
+GO:0090589,protein-phosphocysteine-trehalose phosphotransferase system transporter activity,molecular_function,treB
+GO:0005887,integral component of plasma membrane,cellular_component,treB
+GO:0008982,protein-N(PI)-phosphohistidine-sugar phosphotransferase activity,molecular_function,treB
+GO:0015771,trehalose transport,biological_process,treB
+GO:0015574,trehalose transmembrane transporter activity,molecular_function,treB
+GO:0016310,phosphorylation,biological_process,treB
+GO:0016301,kinase activity,molecular_function,treB
+GO:0005886,plasma membrane,cellular_component,treB
+GO:0016740,transferase activity,molecular_function,treB
+GO:0016021,integral component of membrane,cellular_component,treB
+GO:0016020,membrane,cellular_component,treB
+GO:0008643,carbohydrate transport,biological_process,treB
+GO:0009401,phosphoenolpyruvate-dependent sugar phosphotransferase system,biological_process,treB
+GO:0034219,carbohydrate transmembrane transport,biological_process,treB
+GO:0090563,protein-phosphocysteine-sugar phosphotransferase activity,molecular_function,treB
 GO:0006974,cellular response to DNA damage stimulus,biological_process,treC
 GO:0016798,"hydrolase activity, acting on glycosyl bonds",molecular_function,treC
 GO:0016787,hydrolase activity,molecular_function,treC
@@ -17155,6 +18128,30 @@ GO:0016829,lyase activity,molecular_function,trpB
 GO:0008652,cellular amino acid biosynthetic process,biological_process,trpB
 GO:0006568,tryptophan metabolic process,biological_process,trpB
 GO:0005829,cytosol,cellular_component,trpB
+GO:0016853,isomerase activity,molecular_function,trpC
+GO:0016831,carboxy-lyase activity,molecular_function,trpC
+GO:0016829,lyase activity,molecular_function,trpC
+GO:0009073,aromatic amino acid family biosynthetic process,biological_process,trpC
+GO:0008652,cellular amino acid biosynthetic process,biological_process,trpC
+GO:0008152,metabolic process,biological_process,trpC
+GO:0006568,tryptophan metabolic process,biological_process,trpC
+GO:0003824,catalytic activity,molecular_function,trpC
+GO:0004425,indole-3-glycerol-phosphate synthase activity,molecular_function,trpC
+GO:0004640,phosphoribosylanthranilate isomerase activity,molecular_function,trpC
+GO:0000162,tryptophan biosynthetic process,biological_process,trpC
+GO:0004048,anthranilate phosphoribosyltransferase activity,molecular_function,trpD
+GO:0004049,anthranilate synthase activity,molecular_function,trpD
+GO:0000287,magnesium ion binding,molecular_function,trpD
+GO:0016829,lyase activity,molecular_function,trpD
+GO:0016757,"transferase activity, transferring glycosyl groups",molecular_function,trpD
+GO:0016740,transferase activity,molecular_function,trpD
+GO:0009073,aromatic amino acid family biosynthetic process,biological_process,trpD
+GO:0008652,cellular amino acid biosynthetic process,biological_process,trpD
+GO:0008152,metabolic process,biological_process,trpD
+GO:0003824,catalytic activity,molecular_function,trpD
+GO:0006541,glutamine metabolic process,biological_process,trpD
+GO:0000162,tryptophan biosynthetic process,biological_process,trpD
+GO:0002047,phenazine biosynthetic process,biological_process,trpD
 GO:0004049,anthranilate synthase activity,molecular_function,trpE
 GO:0005829,cytosol,cellular_component,trpE
 GO:0046872,metal ion binding,molecular_function,trpE
@@ -17327,6 +18324,21 @@ GO:0042597,periplasmic space,cellular_component,tynA
 GO:0005509,calcium ion binding,molecular_function,tynA
 GO:0005507,copper ion binding,molecular_function,tynA
 GO:0008131,primary amine oxidase activity,molecular_function,tynA
+GO:0016853,isomerase activity,molecular_function,tyrA
+GO:0016491,oxidoreductase activity,molecular_function,tyrA
+GO:0009073,aromatic amino acid family biosynthetic process,biological_process,tyrA
+GO:0008652,cellular amino acid biosynthetic process,biological_process,tyrA
+GO:0008152,metabolic process,biological_process,tyrA
+GO:0003824,catalytic activity,molecular_function,tyrA
+GO:0046417,chorismate metabolic process,biological_process,tyrA
+GO:0004665,prephenate dehydrogenase (NADP+) activity,molecular_function,tyrA
+GO:0055114,oxidation-reduction process,biological_process,tyrA
+GO:0008977,prephenate dehydrogenase (NAD+) activity,molecular_function,tyrA
+GO:0004106,chorismate mutase activity,molecular_function,tyrA
+GO:0006571,tyrosine biosynthetic process,biological_process,tyrA
+GO:0009094,L-phenylalanine biosynthetic process,biological_process,tyrA
+GO:0005737,cytoplasm,cellular_component,tyrA
+GO:0070403,NAD+ binding,molecular_function,tyrA
 GO:0004838,L-tyrosine:2-oxoglutarate aminotransferase activity,molecular_function,tyrB
 GO:0006532,aspartate biosynthetic process,biological_process,tyrB
 GO:0030170,pyridoxal phosphate binding,molecular_function,tyrB
@@ -17975,6 +18987,23 @@ GO:0016787,hydrolase activity,molecular_function,wzb
 GO:0004721,phosphoprotein phosphatase activity,molecular_function,wzb
 GO:0000271,polysaccharide biosynthetic process,biological_process,wzb
 GO:0009242,colanic acid biosynthetic process,biological_process,wzb
+GO:0042802,identical protein binding,molecular_function,wzc
+GO:0045226,extracellular polysaccharide biosynthetic process,biological_process,wzc
+GO:0016740,transferase activity,molecular_function,wzc
+GO:0016301,kinase activity,molecular_function,wzc
+GO:0000271,polysaccharide biosynthetic process,biological_process,wzc
+GO:0016887,ATPase activity,molecular_function,wzc
+GO:0005887,integral component of plasma membrane,cellular_component,wzc
+GO:0038083,peptidyl-tyrosine autophosphorylation,biological_process,wzc
+GO:0009103,lipopolysaccharide biosynthetic process,biological_process,wzc
+GO:0016310,phosphorylation,biological_process,wzc
+GO:0005524,ATP binding,molecular_function,wzc
+GO:0000166,nucleotide binding,molecular_function,wzc
+GO:0005886,plasma membrane,cellular_component,wzc
+GO:0016021,integral component of membrane,cellular_component,wzc
+GO:0016020,membrane,cellular_component,wzc
+GO:0004713,protein tyrosine kinase activity,molecular_function,wzc
+GO:0009242,colanic acid biosynthetic process,biological_process,wzc
 GO:0009242,colanic acid biosynthetic process,biological_process,wzxC
 GO:0005887,integral component of plasma membrane,cellular_component,wzxC
 GO:0005886,plasma membrane,cellular_component,wzxC
@@ -18348,6 +19377,19 @@ GO:0016829,lyase activity,molecular_function,ybaK
 GO:0043907,Cys-tRNA(Pro) hydrolase activity,molecular_function,ybaK
 GO:0005737,cytoplasm,cellular_component,ybaK
 GO:0002161,aminoacyl-tRNA editing activity,molecular_function,ybaK
+GO:0000166,nucleotide binding,molecular_function,ybaL
+GO:0055085,transmembrane transport,biological_process,ybaL
+GO:1902600,proton transmembrane transport,biological_process,ybaL
+GO:0098655,cation transmembrane transport,biological_process,ybaL
+GO:0015299,solute:proton antiporter activity,molecular_function,ybaL
+GO:0008324,cation transmembrane transporter activity,molecular_function,ybaL
+GO:0006813,potassium ion transport,biological_process,ybaL
+GO:0006812,cation transport,biological_process,ybaL
+GO:0005886,plasma membrane,cellular_component,ybaL
+GO:0016021,integral component of membrane,cellular_component,ybaL
+GO:0016020,membrane,cellular_component,ybaL
+GO:0015297,antiporter activity,molecular_function,ybaL
+GO:0006811,ion transport,biological_process,ybaL
 GO:0005886,plasma membrane,cellular_component,ybaN
 GO:0016021,integral component of membrane,cellular_component,ybaN
 GO:0016020,membrane,cellular_component,ybaN
@@ -18597,6 +19639,14 @@ GO:0000162,tryptophan biosynthetic process,biological_process,ybiB
 GO:0008270,zinc ion binding,molecular_function,ybiI
 GO:0046872,metal ion binding,molecular_function,ybiI
 GO:1900378,positive regulation of secondary metabolite biosynthetic process,biological_process,ybiI
+GO:0006811,ion transport,biological_process,ybiO
+GO:0055085,transmembrane transport,biological_process,ybiO
+GO:0071470,cellular response to osmotic stress,biological_process,ybiO
+GO:0008381,mechanosensitive ion channel activity,molecular_function,ybiO
+GO:0005887,integral component of plasma membrane,cellular_component,ybiO
+GO:0005886,plasma membrane,cellular_component,ybiO
+GO:0016021,integral component of membrane,cellular_component,ybiO
+GO:0016020,membrane,cellular_component,ybiO
 GO:0055085,transmembrane transport,biological_process,ybiR
 GO:0005886,plasma membrane,cellular_component,ybiR
 GO:0016021,integral component of membrane,cellular_component,ybiR
@@ -18682,6 +19732,10 @@ GO:0016829,lyase activity,molecular_function,ycaC
 GO:0042802,identical protein binding,molecular_function,ycaC
 GO:0003824,catalytic activity,molecular_function,ycaC
 GO:0016787,hydrolase activity,molecular_function,ycaC
+GO:0030420,establishment of competence for transformation,biological_process,ycaI
+GO:0005886,plasma membrane,cellular_component,ycaI
+GO:0016021,integral component of membrane,cellular_component,ycaI
+GO:0016020,membrane,cellular_component,ycaI
 GO:0022900,electron transport chain,biological_process,ycaK
 GO:0010181,FMN binding,molecular_function,ycaK
 GO:0055114,oxidation-reduction process,biological_process,ycaK
@@ -18717,6 +19771,16 @@ GO:0071555,cell wall organization,biological_process,ycbF
 GO:0043711,pilus organization,biological_process,ycbF
 GO:0030288,outer membrane-bounded periplasmic space,cellular_component,ycbF
 GO:0042597,periplasmic space,cellular_component,ycbF
+GO:0022900,electron transport chain,biological_process,ycbX
+GO:0009636,response to toxic substance,biological_process,ycbX
+GO:0051537,"2 iron, 2 sulfur cluster binding",molecular_function,ycbX
+GO:0051536,iron-sulfur cluster binding,molecular_function,ycbX
+GO:0030170,pyridoxal phosphate binding,molecular_function,ycbX
+GO:0030151,molybdenum ion binding,molecular_function,ycbX
+GO:0009055,electron transfer activity,molecular_function,ycbX
+GO:0003824,catalytic activity,molecular_function,ycbX
+GO:0009407,toxin catabolic process,biological_process,ycbX
+GO:0005515,protein binding,molecular_function,ycbX
 GO:0030163,protein catabolic process,biological_process,ycbZ
 GO:0005524,ATP binding,molecular_function,ycbZ
 GO:0004252,serine-type endopeptidase activity,molecular_function,ycbZ
@@ -18817,6 +19881,9 @@ GO:0009288,bacterial-type flagellum,cellular_component,ycgR
 GO:0035438,cyclic-di-GMP binding,molecular_function,ycgR
 GO:0005515,protein binding,molecular_function,ycgR
 GO:0051270,regulation of cellular component movement,biological_process,ycgR
+GO:0015475,adhesin autotransporter activity,molecular_function,ycgV
+GO:0019867,outer membrane,cellular_component,ycgV
+GO:0043708,cell adhesion involved in biofilm formation,biological_process,ycgV
 GO:0005886,plasma membrane,cellular_component,ychE
 GO:0016021,integral component of membrane,cellular_component,ychE
 GO:0016020,membrane,cellular_component,ychE
@@ -18948,6 +20015,18 @@ GO:0003677,DNA binding,molecular_function,ydaS
 GO:0005524,ATP binding,molecular_function,ydaV
 GO:0006271,DNA strand elongation involved in DNA replication,biological_process,ydaV
 GO:0006260,DNA replication,biological_process,ydaV
+GO:0043873,pyruvate-flavodoxin oxidoreductase activity,molecular_function,ydbK
+GO:0030976,thiamine pyrophosphate binding,molecular_function,ydbK
+GO:0016903,"oxidoreductase activity, acting on the aldehyde or oxo group of donors",molecular_function,ydbK
+GO:0005506,iron ion binding,molecular_function,ydbK
+GO:0003824,catalytic activity,molecular_function,ydbK
+GO:0006979,response to oxidative stress,biological_process,ydbK
+GO:0022900,electron transport chain,biological_process,ydbK
+GO:0055114,oxidation-reduction process,biological_process,ydbK
+GO:0051539,"4 iron, 4 sulfur cluster binding",molecular_function,ydbK
+GO:0051536,iron-sulfur cluster binding,molecular_function,ydbK
+GO:0046872,metal ion binding,molecular_function,ydbK
+GO:0016491,oxidoreductase activity,molecular_function,ydbK
 GO:0006313,"transposition, DNA-mediated",biological_process,ydcC
 GO:0004803,transposase activity,molecular_function,ydcC
 GO:0003677,DNA binding,molecular_function,ydcC
@@ -19146,6 +20225,17 @@ GO:0051289,protein homotetramerization,biological_process,ydiF
 GO:0046459,short-chain fatty acid metabolic process,biological_process,ydiF
 GO:0016740,transferase activity,molecular_function,ydiF
 GO:0008775,acetate CoA-transferase activity,molecular_function,ydiF
+GO:0071949,FAD binding,molecular_function,ydiJ
+GO:0051539,"4 iron, 4 sulfur cluster binding",molecular_function,ydiJ
+GO:0046872,metal ion binding,molecular_function,ydiJ
+GO:0055114,oxidation-reduction process,biological_process,ydiJ
+GO:0051536,iron-sulfur cluster binding,molecular_function,ydiJ
+GO:0050660,flavin adenine dinucleotide binding,molecular_function,ydiJ
+GO:0016491,oxidoreductase activity,molecular_function,ydiJ
+GO:0003824,catalytic activity,molecular_function,ydiJ
+GO:0008720,D-lactate dehydrogenase activity,molecular_function,ydiJ
+GO:0004458,D-lactate dehydrogenase (cytochrome) activity,molecular_function,ydiJ
+GO:1903457,lactate catabolic process,biological_process,ydiJ
 GO:0005886,plasma membrane,cellular_component,ydiK
 GO:0016021,integral component of membrane,cellular_component,ydiK
 GO:0016020,membrane,cellular_component,ydiK
@@ -19404,6 +20494,10 @@ GO:0006986,response to unfolded protein,biological_process,yegD
 GO:0031072,heat shock protein binding,molecular_function,yegD
 GO:0051085,chaperone cofactor-dependent protein refolding,biological_process,yegD
 GO:0042623,"ATPase activity, coupled",molecular_function,yegD
+GO:0050660,flavin adenine dinucleotide binding,molecular_function,yegH
+GO:0005886,plasma membrane,cellular_component,yegH
+GO:0016021,integral component of membrane,cellular_component,yegH
+GO:0016020,membrane,cellular_component,yegH
 GO:0016740,transferase activity,molecular_function,yegI
 GO:0016310,phosphorylation,biological_process,yegI
 GO:0016301,kinase activity,molecular_function,yegI
@@ -19503,6 +20597,12 @@ GO:0005829,cytosol,cellular_component,yeiG
 GO:0005886,plasma membrane,cellular_component,yeiH
 GO:0016021,integral component of membrane,cellular_component,yeiH
 GO:0016020,membrane,cellular_component,yeiH
+GO:0046835,carbohydrate phosphorylation,biological_process,yeiI
+GO:0016773,"phosphotransferase activity, alcohol group as acceptor",molecular_function,yeiI
+GO:0016310,phosphorylation,biological_process,yeiI
+GO:0016740,transferase activity,molecular_function,yeiI
+GO:0016301,kinase activity,molecular_function,yeiI
+GO:0019200,carbohydrate kinase activity,molecular_function,yeiI
 GO:0051539,"4 iron, 4 sulfur cluster binding",molecular_function,yeiL
 GO:0051536,iron-sulfur cluster binding,molecular_function,yeiL
 GO:0046872,metal ion binding,molecular_function,yeiL
@@ -19907,6 +21007,10 @@ GO:0016855,"racemase and epimerase activity, acting on amino acids and derivativ
 GO:0006807,nitrogen compound metabolic process,biological_process,ygeA
 GO:0006520,cellular amino acid metabolic process,biological_process,ygeA
 GO:0016853,isomerase activity,molecular_function,ygeA
+GO:0000160,phosphorelay signal transduction system,biological_process,ygeH
+GO:0006355,"regulation of transcription, DNA-templated",biological_process,ygeH
+GO:0005829,cytosol,cellular_component,ygeH
+GO:0003677,DNA binding,molecular_function,ygeH
 GO:0000920,septum digestion after cytokinesis,biological_process,ygeR
 GO:0006508,proteolysis,biological_process,ygeR
 GO:0005886,plasma membrane,cellular_component,ygeR
@@ -19944,6 +21048,12 @@ GO:0006508,proteolysis,biological_process,ygeY
 GO:0008777,acetylornithine deacetylase activity,molecular_function,ygeY
 GO:0006526,arginine biosynthetic process,biological_process,ygeY
 GO:0005829,cytosol,cellular_component,ygfB
+GO:0046872,metal ion binding,molecular_function,ygfK
+GO:0055114,oxidation-reduction process,biological_process,ygfK
+GO:0005506,iron ion binding,molecular_function,ygfK
+GO:0051539,"4 iron, 4 sulfur cluster binding",molecular_function,ygfK
+GO:0051536,iron-sulfur cluster binding,molecular_function,ygfK
+GO:0016491,oxidoreductase activity,molecular_function,ygfK
 GO:0003674,molecular_function,molecular_function,ygfM
 GO:0071949,FAD binding,molecular_function,ygfM
 GO:0055114,oxidation-reduction process,biological_process,ygfM
@@ -19953,6 +21063,13 @@ GO:0055114,oxidation-reduction process,biological_process,ygfS
 GO:0051539,"4 iron, 4 sulfur cluster binding",molecular_function,ygfS
 GO:0051536,iron-sulfur cluster binding,molecular_function,ygfS
 GO:0046872,metal ion binding,molecular_function,ygfS
+GO:0016639,"oxidoreductase activity, acting on the CH-NH2 group of donors, NAD or NADP as acceptor",molecular_function,ygfT
+GO:0006537,glutamate biosynthetic process,biological_process,ygfT
+GO:0055114,oxidation-reduction process,biological_process,ygfT
+GO:0051539,"4 iron, 4 sulfur cluster binding",molecular_function,ygfT
+GO:0051536,iron-sulfur cluster binding,molecular_function,ygfT
+GO:0046872,metal ion binding,molecular_function,ygfT
+GO:0016491,oxidoreductase activity,molecular_function,ygfT
 GO:0005829,cytosol,cellular_component,ygfZ
 GO:0009451,RNA modification,biological_process,ygfZ
 GO:0008033,tRNA processing,biological_process,ygfZ
@@ -20907,6 +22024,20 @@ GO:0005886,plasma membrane,cellular_component,ynbB
 GO:0016740,transferase activity,molecular_function,ynbB
 GO:0016021,integral component of membrane,cellular_component,ynbB
 GO:0016020,membrane,cellular_component,ynbB
+GO:0005515,protein binding,molecular_function,ynbC
+GO:0016298,lipase activity,molecular_function,ynbC
+GO:0016020,membrane,cellular_component,ynbC
+GO:0005887,integral component of plasma membrane,cellular_component,ynbD
+GO:0035335,peptidyl-tyrosine dephosphorylation,biological_process,ynbD
+GO:0005515,protein binding,molecular_function,ynbD
+GO:0016791,phosphatase activity,molecular_function,ynbD
+GO:0016311,dephosphorylation,biological_process,ynbD
+GO:0004725,protein tyrosine phosphatase activity,molecular_function,ynbD
+GO:0005886,plasma membrane,cellular_component,ynbD
+GO:0016021,integral component of membrane,cellular_component,ynbD
+GO:0016020,membrane,cellular_component,ynbD
+GO:0008138,protein tyrosine/serine/threonine phosphatase activity,molecular_function,ynbD
+GO:0006470,protein dephosphorylation,biological_process,ynbD
 GO:0038023,signaling receptor activity,molecular_function,yncD
 GO:0015891,siderophore transport,biological_process,yncD
 GO:0005506,iron ion binding,molecular_function,yncD
@@ -20987,6 +22118,10 @@ GO:0000166,nucleotide binding,molecular_function,yoaA
 GO:0003678,DNA helicase activity,molecular_function,yoaA
 GO:0005829,cytosol,cellular_component,yoaB
 GO:0042710,biofilm formation,biological_process,yoaB
+GO:0050660,flavin adenine dinucleotide binding,molecular_function,yoaE
+GO:0005886,plasma membrane,cellular_component,yoaE
+GO:0016021,integral component of membrane,cellular_component,yoaE
+GO:0016020,membrane,cellular_component,yoaE
 GO:0006825,copper ion transport,biological_process,yobA
 GO:0030288,outer membrane-bounded periplasmic space,cellular_component,yobA
 GO:0046688,response to copper ion,biological_process,yobA

@@ -1,5 +1,7 @@
 #%%
+import numpy as np
 import pandas as pd
+import tqdm
 
 # Load the count data. 
 counts = pd.read_csv('../../../data/tanguichi2010_raw_data/tanguichi2010_counts.csv')
@@ -30,7 +32,7 @@ for g, d in tqdm.tqdm(counts.groupby('Gene Name'), desc='Iterating through genes
                         'cog_letter': cog_letter,
                         'mass_da': mass,
                         'annotation': annotation,
-                        'growth_rate_hr': growth_rates[c]
+                        'growth_rate_hr': np.log(2) / (t_double / 60)
                         }
             df = df.append(gene_dict, ignore_index=True)
 

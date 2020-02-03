@@ -38,6 +38,8 @@ for entry in tqdm.tqdm(entries[1:-1], desc="Processing COG entries"):
             for ec_entry in ecoli_entries:
                 if len(ec_entry.split(' ')) > 1:
                     for gene in ec_entry.split(' '):
+                        if '_' in gene:
+                            gene = gene.split('_')[0]
                         if gene != '': 
                             entry_dict = {'cog_id': COG_number,
                                   'cog_letter': cog,
@@ -47,6 +49,8 @@ for entry in tqdm.tqdm(entries[1:-1], desc="Processing COG entries"):
                                   'annotation': annotation}
                             colicogs = colicogs.append(entry_dict, ignore_index=True) 
                 else:
+                    if '_' in ec_entry:
+                        ec_entry = ec_entry.split('_')[0]
                     entry_dict = {'cog_id': COG_number,
                                   'cog_letter': cog,
                                   'cog_class': cog_info[cog],

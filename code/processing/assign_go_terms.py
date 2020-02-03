@@ -27,3 +27,6 @@ if 'Unnamed: 0' in complete.keys():
 if 'growth_rate' in complete.keys():
     complete.drop(labels='growth_rate', axis=1, inplace=True)
 complete.to_csv('../../data/compiled_absolute_go_terms.csv', index=False)
+
+
+# %%

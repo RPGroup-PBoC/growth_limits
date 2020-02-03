@@ -1,6 +1,7 @@
 import pandas as pd
 import squarify as sq
 from bokeh.themes import Theme
+import altair as alt
 import bokeh.io
 
 def assign_rect_bounds(df, key, width=500, height=500, text_pad=0,
@@ -32,6 +33,27 @@ def assign_rect_bounds(df, key, width=500, height=500, text_pad=0,
     df['text_top'] = df['top'] - text_pad
 
     return df
+
+def altair_theme():
+    """
+    A cutsom theme applied to Altair to match the PBoC 2e colors. 
+    """
+    # define the theme by returning the dictionary of configurations
+    def _theme():
+        return {'config': {
+                'mark': {
+                    'stroke': 'black',
+                    'strokeWidth': alt.value(2)
+                    },
+                'axisX': {
+                    'labelFontSize': 10,
+                    'tickColor': 'white',
+                    }
+                  }
+               }
+    alt.themes.register('pboc', _theme)# enable the newly registered theme
+    alt.themes.enable('pboc')
+
 
 def bokeh_theme():
     """A custom bokeh theme to match PBoC 2e colors"""

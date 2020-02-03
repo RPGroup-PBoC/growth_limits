@@ -10,4 +10,20 @@ abundance
 #%%
 import numpy as np
 import pandas as pd 
-import tqdm as tqdm.
+import tqdm as tqdm
+
+# Load the compiled dataset of absolute measurements
+data = pd.read_csv('../../data/compiled_absolute_measurements.csv')
+
+# Load the go-ter look-up-table
+go_term = pd.read_csv('../../data/escherichia_coli_go_terms.csv')
+
+# Merge the two on the gene namees. 
+complete = data.merge(go_term, on='gene_name')
+
+# Save to disk
+if 'Unnamed: 0' in complete.keys():
+    complete.drop(labels='Unnamed: 0', axis=1, inplace=True)
+if 'growth_rate' in complete.keys():
+    complete.drop(labels='growth_rate', axis=1, inplace=True)
+complete.to_csv('../../data/compiled_absolute_go_terms.csv', index=False)

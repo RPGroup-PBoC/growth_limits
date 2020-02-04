@@ -13,6 +13,10 @@ conditions = counts['condition'].unique()[:2]
 # Load the annotation list.
 colicogs = pd.read_csv('../../../data/escherichia_coli_gene_annotations.csv')
 
+# cell volume esimate
+# Taheri-Araghi et al. 2015 best fit: Y = 0.27*2$^{0.76*\lambda}
+# vol = 0.27*2**(0.76*\lambda)
+
 # Instantiate a blank dataframe to which measurements and annotations will be
 # added
 df = pd.DataFrame([])
@@ -34,7 +38,7 @@ for g, d in tqdm.tqdm(counts.groupby(['gene', 'growth_rate_hr-1', 'condition']),
             gene_dict = {
                     'gene_name': gene['gene_name'].unique()[0],
                     'condition': g[2],
-                    'tot_per_cell': d[d['condition']==g[2]]['copy_number_molecule-per-fL'].values[0],
+                    'tot_per_cell': d[d['condition']==g[2]]['copy_number_molecule-per-fL'].values[0]*0.27*2**(0.76*g[1]),
                     'cog_class': cog_class,
                     'cog_category': cog_cat,
                     'cog_letter': cog_letter,
@@ -49,5 +53,5 @@ for g, d in tqdm.tqdm(counts.groupby(['gene', 'growth_rate_hr-1', 'condition']),
 df['fg_per_cell'] = df['mass_da'].values * df['tot_per_cell'].values * 6.022E-8
 df['dataset'] = 'peebo_2015'
 df['strain'] = 'BW25113'
-df.to_csv('../../../data/peboo2014_longform_annotated.csv')
+df.to_csv('../../../data/peebo2015_longform_annotated.csv')
 # %%

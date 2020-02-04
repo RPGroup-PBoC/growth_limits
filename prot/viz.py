@@ -41,16 +41,11 @@ def altair_theme():
     # define the theme by returning the dictionary of configurations
     def _theme():
         return {'config': {
-                'mark': {
-                    'stroke': 'black',
-                    'strokeWidth': alt.value(2)
-                    },
-                'axisX': {
-                    'labelFontSize': 10,
-                    'tickColor': 'white',
+                    'mark': {
+                        'stroke': 'black'
+                        }
                     }
-                  }
-               }
+                }
     alt.themes.register('pboc', _theme)# enable the newly registered theme
     alt.themes.enable('pboc')
 

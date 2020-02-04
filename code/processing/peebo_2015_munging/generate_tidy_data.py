@@ -51,7 +51,7 @@ for g, d in tqdm.tqdm(counts.groupby(['gene', 'growth_rate_hr-1', 'condition']),
 #%%
 # Compute the mass per cell and include dataset notation.
 df['fg_per_cell'] = df['mass_da'].values * df['tot_per_cell'].values * 6.022E-8
-df['dataset'] = 'peebo_2015'
+df['dataset'] = 'peebo2015'
 df['strain'] = 'BW25113'
 df.to_csv('../../../data/peebo2015_longform_annotated.csv')
 # %%

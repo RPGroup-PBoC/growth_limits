@@ -35,19 +35,65 @@ def assign_rect_bounds(df, key, width=500, height=500, text_pad=0,
     return df
 
 def altair_theme():
-    """
-    A cutsom theme applied to Altair to match the PBoC 2e colors. 
-    """
-    # define the theme by returning the dictionary of configurations
+    colors = {'green': '#7AA974', 'light_green': '#BFD598',
+              'pale_green': '#DCECCB', 'yellow': '#EAC264',
+              'light_yellow': '#F3DAA9', 'pale_yellow': '#FFEDCE',
+              'blue': '#738FC1', 'light_blue': '#A9BFE3',
+              'pale_blue': '#C9D7EE', 'red': '#D56C55', 'light_red': '#E8B19D',
+              'pale_red': '#F1D4C9', 'purple': '#AB85AC',
+              'light_purple': '#D4C2D9', 'dark_green':'#7E9D90', 'dark_brown':'#905426'}
+    palette = [colors['red'], colors['blue'], colors['green'], 
+               colors['purple'], colors['dark_green'], colors['dark_brown'],
+               colors['yellow']]
+    
     def _theme():
-        return {'config': {
-                    'mark': {
-                        'stroke': 'black'
-                        }
-                    }
+        return {
+            'config': {
+                'background': 'white',
+                    'group': { 
+                    'fill': '#E3DCD0'
+                    },
+                'view': {
+                    'strokeWidth': 0,
+                    'height': 300,
+                    'width': 400,
+                    'fill': '#E3DCD0'
+                    },
+                'mark': {
+                    'strokeWidth': 0.5,
+                    'stroke': 'black'
+                },
+                'axis': {
+                    'domainColor': None,
+                    'labelFont': 'Lucida Sans',
+                    'titleFont': 'Lucida Sans',
+                    'titleFontWeight': 400,
+                    'grid': False,
+                    'ticks': True,
+                    'tickColor': 'white',
+                    'tickOffset': 8,
+                    'tickWidth': 1.5
+                },
+                'range': {
+                    'category': palette
+                },
+                'legend': {
+                    'labelFont': 'Lucida Sans',
+                    'titleFont': 'Lucida Sans',
+                    'titleFontWeight': 400
+                },
+                'title' : { 
+                    'font': 'Lucida Sans',
+                    'fontWeight': 400,
+                    'anchor': 'middle'
+
                 }
+                  }
+                }
+
     alt.themes.register('pboc', _theme)# enable the newly registered theme
     alt.themes.enable('pboc')
+
 
 
 def bokeh_theme():

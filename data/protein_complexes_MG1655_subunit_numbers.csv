@@ -1,0 +1,2194 @@
+,formula,gene,object_id,subunit_count
+0,[AaeA][AaeB],aaeA,CPLX0-4,1.0
+1,[AaeA][AaeB],aaeB,CPLX0-4,1.0
+2,[AbgB]<sub>2</sub>[AbgA]<sub>2</sub>,abgB,CPLX0-7844,2.0
+3,[AbgB]<sub>2</sub>[AbgA]<sub>2</sub>,abgA,CPLX0-7844,2.0
+4,[AccA]<sub>2</sub>[AccD]<sub>2</sub>,accA,ACETYL-COA-CARBOXYLTRANSFER-CPLX,2.0
+5,[AccA]<sub>2</sub>[AccD]<sub>2</sub>,accD,ACETYL-COA-CARBOXYLTRANSFER-CPLX,2.0
+6,,accB,BCCP-CPLX,
+7,[AccC]&lt;SUB&gt;2&lt;/SUB&gt;,accC,BIOTIN-CARBOXYL-CPLX,2.0
+8,[(AccA)<sub>2</sub>(AccD)<sub>2</sub>][(AccC)<sub>2</sub>][(biotinylated biotin-carboxyl carrier protein)<sub>2</sub>],(AccA)<sub>2</sub>(AccD)<sub>2</sub>,ACETYL-COA-CARBOXYLMULTI-CPLX,2.0
+9,[(AccA)<sub>2</sub>(AccD)<sub>2</sub>][(AccC)<sub>2</sub>][(biotinylated biotin-carboxyl carrier protein)<sub>2</sub>],(AccC)<sub>2</sub>,ACETYL-COA-CARBOXYLMULTI-CPLX,2.0
+10,[(AccA)<sub>2</sub>(AccD)<sub>2</sub>][(AccC)<sub>2</sub>][(biotinylated biotin-carboxyl carrier protein)<sub>2</sub>],(biotinylated biotin-carboxyl carrier protein)<sub>2</sub>,ACETYL-COA-CARBOXYLMULTI-CPLX,2.0
+11,[AceA]&lt;SUB&gt;4&lt;/SUB&gt;,aceA,ISOCIT-LYASE,4.0
+12,[AceE]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       pyruvate dehydrogenase (AceE)&lt;SUB&gt;2&lt;/SUB&gt;]&lt;SUB&gt;12&lt;/SUB&gt;AceF]&lt;SUB&gt;24&lt;/SUB&gt;(Lpd)&lt;SUB&gt;2&lt;/SUB&gt;]&lt;SUB&gt;6&lt;/SUB&gt;,aceE,E1P-CPLX,2.0
+13,[(AceE)<sub>2</sub>]<sub>12</sub>[AceF]<sub>24</sub>[(Lpd)<sub>2</sub>]<sub>6</sub>,(AceE)<sub>2</sub>,PYRUVATEDEH-CPLX,2.0
+14,[(AceE)<sub>2</sub>]<sub>12</sub>[AceF]<sub>24</sub>[(Lpd)<sub>2</sub>]<sub>6</sub>,aceF,PYRUVATEDEH-CPLX,24.0
+15,[(AceE)<sub>2</sub>]<sub>12</sub>[AceF]<sub>24</sub>[(Lpd)<sub>2</sub>]<sub>6</sub>,(Lpd)<sub>2</sub>,PYRUVATEDEH-CPLX,2.0
+16,[AceK]&lt;SUB&gt;2&lt;/SUB&gt;,aceK,CPLX0-230,2.0
+17,[AceK]&lt;SUB&gt;2&lt;/SUB&gt;,aceK,CPLX0-230,2.0
+18,[a 4Fe-4S] iron-sulfur cluster]&lt;SUB&gt;2&lt;/SUB&gt;AcnB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       aconitate hydratase A AcnA]&lt;SUB&gt;2&lt;/SUB&gt;,acnA,CPLX0-7760,2.0
+19,[a 4Fe-4S] iron-sulfur cluster]&lt;SUB&gt;2&lt;/SUB&gt;AcnB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       aconitate hydratase A AcnA]&lt;SUB&gt;2&lt;/SUB&gt;,acnA,CPLX0-7760,2.0
+20,[acyl carrier protein] synthase 2 acpT&lt;br&gt;                       holo-acyl-carrier-protein] synthase AcpS]&lt;SUB&gt;2&lt;/SUB&gt;,acpS,HOLO-ACP-SYNTH-CPLX,2.0
+21,[ActP]&lt;SUB&gt;2&lt;/SUB&gt;,actP,CPLX0-7955,2.0
+22,[ActP]&lt;SUB&gt;2&lt;/SUB&gt;,actP,CPLX0-7955,2.0
+23,[ActP]&lt;SUB&gt;2&lt;/SUB&gt;,actP,CPLX0-7955,2.0
+24,[AdeD]&lt;SUB&gt;2&lt;/SUB&gt;,adeD,CPLX0-1683,2.0
+25,[AdeD]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       catalase/hydroperoxidase HPI KatG]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       catalase HPII KatE]&lt;SUB&gt;4&lt;/SUB&gt;,adeD,CPLX0-1683,2.0
+26,[AdhP]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       alcohol dehydrogenase/aldehyde-dehydrogenase AdhE]&lt;SUB&gt;40&lt;/SUB&gt;,adhE,ADHE-CPLX,4.0
+27,[AdhE]&lt;SUB&gt;40&lt;/SUB&gt;&lt;br&gt;                       acetaldehyde dehydrogenase (acetylating) EutE eutE,adhE,ADHE-CPLX,4.0
+28,[AdhE]&lt;SUB&gt;40&lt;/SUB&gt;&lt;br&gt;                       ethanol dehydrogenase / alcohol dehydrogenase AdhP]&lt;SUB&gt;4&lt;/SUB&gt;,adhE,ADHE-CPLX,4.0
+29,[AdhE]&lt;SUB&gt;40&lt;/SUB&gt;,adhE,ADHE-CPLX,4.0
+30,[AdhP]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       alcohol dehydrogenase/aldehyde-dehydrogenase AdhE]&lt;SUB&gt;40&lt;/SUB&gt;,adhP,CPLX0-8015,4.0
+31,[AdhE]&lt;SUB&gt;40&lt;/SUB&gt;&lt;br&gt;                       ethanol dehydrogenase / alcohol dehydrogenase AdhP]&lt;SUB&gt;4&lt;/SUB&gt;,adhP,CPLX0-8015,4.0
+32,"[AdiA]&lt;SUB&gt;10&lt;/SUB&gt;&lt;br&gt;                       arginine decarboxylase, biosynthetic SpeA]&lt;SUB&gt;4&lt;/SUB&gt;",adiA,ARGDECARBOXDEG-CPLX,1.0
+33,[AdiC]&lt;SUB&gt;2&lt;/SUB&gt;,adiC,CPLX0-7535,2.0
+34,[Aes]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       pimeloyl-acyl carrier protein methyl ester esterase bioH&lt;br&gt;                       carboxylesterase YjfP]&lt;SUB&gt;2&lt;/SUB&gt;,aes,CPLX0-8033,2.0
+35,[AgaB][AgaC][AgaD],agaB,CPLX-170,1.0
+36,[AgaB][AgaC][AgaD],agaC,CPLX-170,1.0
+37,[AgaB][AgaC][AgaD],agaD,CPLX-170,1.0
+38,[AgaV][AgaW],agaV,CPLX0-7610,1.0
+39,[AgaV][AgaW],agaW,CPLX0-7610,1.0
+40,[Agp]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       sugar phosphatase YbiV ybiV&lt;br&gt;                       sugar phosphatase YidA yidA&lt;br&gt;                       phosphosugar phosphatase YigL yigL + 1 isozymes],agp,GLUCOSE-1-PHOSPHAT-CPLX,2.0
+41,[Agp]&lt;SUB&gt;2&lt;/SUB&gt;,agp,GLUCOSE-1-PHOSPHAT-CPLX,2.0
+42,[AhpC]<sub>10</sub>[AhpF]<sub>2</sub>,ahpC,CPLX0-245,10.0
+43,[AhpC]<sub>10</sub>[AhpF]<sub>2</sub>,ahpF,CPLX0-245,2.0
+44,[AidB]&lt;SUB&gt;4&lt;/SUB&gt;,aidB,CPLX0-7691,4.0
+45,[AlaC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       glutamate—pyruvate aminotransferase AlaA AlaA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       glutamate—pyruvate aminotransferase AlaB alaB,alaA,CPLX0-7888,2.0
+46,[AlaC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       glutamate—pyruvate aminotransferase AlaA AlaA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       glutamate—pyruvate aminotransferase AlaB alaB,alaC,CPLX0-7887,2.0
+47,[AlaS]&lt;SUB&gt;2&lt;/SUB&gt;,alaS,ALAS-CPLX,2.0
+48,[AldA]&lt;SUB&gt;4&lt;/SUB&gt;,aldA,ALD-CPLX,4.0
+49,[AldA]&lt;SUB&gt;4&lt;/SUB&gt;,aldA,ALD-CPLX,4.0
+50,[AldB]&lt;SUB&gt;4&lt;/SUB&gt;,aldB,CPLX0-3482,4.0
+51,[AllB]&lt;SUB&gt;4&lt;/SUB&gt;,allB,CPLX-64,4.0
+52,[AllC]&lt;SUB&gt;2&lt;/SUB&gt;,allC,CPLX-7524,2.0
+53,[AllD]&lt;SUB&gt;2&lt;/SUB&gt;,allD,CPLX0-7993,2.0
+54,[DadX]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       alanine racemase 1 Alr]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       cystathionine β-lyase / L-cysteine desulfhydrase / alanine racemase MetC]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       negative regulator of MalT activity/cystathionine β-lyase MalY]&lt;SUB&gt;2&lt;/SUB&gt;,alr,CPLX0-8202,2.0
+55,[AlsA][AlsC]<sub>2</sub>[AlsB],alsA,ABC-42-CPLX,1.0
+56,[AlsA][AlsC]<sub>2</sub>[AlsB],alsC,ABC-42-CPLX,2.0
+57,[AlsA][AlsC]<sub>2</sub>[AlsB],alsB,ABC-42-CPLX,1.0
+58,[PpnN]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       AMP nucleosidase Amn]&lt;SUB&gt;6&lt;/SUB&gt;,amn,AMP-NUCLEOSID-CPLX,6.0
+59,[AmtB]&lt;SUB&gt;3&lt;/SUB&gt;,amtB,CPLX0-7532,3.0
+60,[IaaA]&lt;SUB&gt;2&lt;/SUB&gt;IaaA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       L-asparaginase 1 AnsA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       L-asparaginase 2 AnsB]&lt;SUB&gt;4&lt;/SUB&gt;,ansA,ANSA-CPLX,4.0
+61,[IaaA]&lt;SUB&gt;2&lt;/SUB&gt;IaaA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       L-asparaginase 1 AnsA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       L-asparaginase 2 AnsB]&lt;SUB&gt;4&lt;/SUB&gt;,ansB,ANSB-CPLX,4.0
+62,[AphA]&lt;SUB&gt;4&lt;/SUB&gt;,aphA,APHA-CPLX,4.0
+63,[AphA]&lt;SUB&gt;4&lt;/SUB&gt;,aphA,APHA-CPLX,4.0
+64,[AphA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       UMP phosphatase umpH&lt;br&gt;                       pyrimidine 5\'-nucleotidase YjjG yjjG&lt;br&gt;                       broad specificity 5\'(3\')-nucleotidase and polyphosphatase umpG&lt;br&gt;                       5\'-nucleotidase / UDP-sugar hydrolase ushA,aphA,APHA-CPLX,4.0
+65,[AphA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       broad specificity 5\'(3\')-nucleotidase and polyphosphatase umpG&lt;br&gt;                       2\'3\' cyclic nucleotide phosphodiesterase/3\' nucleotidase cpdB,aphA,APHA-CPLX,4.0
+66,[AphA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       5\'-nucleotidase / UDP-sugar hydrolase ushA&lt;br&gt;                       CPS-53 (KpLE1) prophage; 5\'-deoxynucleotidase yfdR&lt;br&gt;                       dCMP phosphohydrolase YfbR]&lt;SUB&gt;2&lt;/SUB&gt;,aphA,APHA-CPLX,4.0
+67,[AphA]&lt;SUB&gt;4&lt;/SUB&gt;,aphA,APHA-CPLX,4.0
+68,[AphA]&lt;SUB&gt;4&lt;/SUB&gt;,aphA,APHA-CPLX,4.0
+69,[AphA]&lt;SUB&gt;4&lt;/SUB&gt;,aphA,APHA-CPLX,4.0
+70,[AphA]&lt;SUB&gt;4&lt;/SUB&gt;,aphA,APHA-CPLX,4.0
+71,[AphA]&lt;SUB&gt;4&lt;/SUB&gt;,aphA,APHA-CPLX,4.0
+72,[AphA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       alkaline phosphatase PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,aphA,APHA-CPLX,4.0
+73,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       acid phosphatase / phosphotransferase AphA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       phosphoserine phosphatase serB,aphA,APHA-CPLX,4.0
+74,[AphA]&lt;SUB&gt;4&lt;/SUB&gt;,aphA,APHA-CPLX,4.0
+75,[AppA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       P-loop guanosine triphosphatase YjiA yjiA&lt;br&gt;                       zinc-binding GTPase YeiR yeiR + 6 isozymes],appA,CPLX-722,2.0
+76,[AppA]&lt;SUB&gt;2&lt;/SUB&gt;,appA,CPLX-722,2.0
+77,[AppA]&lt;SUB&gt;2&lt;/SUB&gt;,appA,CPLX-722,2.0
+78,[AppA]&lt;SUB&gt;2&lt;/SUB&gt;,appA,CPLX-722,2.0
+79,[AppA]&lt;SUB&gt;2&lt;/SUB&gt;,appA,CPLX-722,2.0
+80,[AppA]&lt;SUB&gt;2&lt;/SUB&gt;,appA,CPLX-722,2.0
+81,[AppC][AppB],appC,APP-UBIOX-CPLX,1.0
+82,[AppC][AppB],appB,APP-UBIOX-CPLX,1.0
+83,[Apt]&lt;SUB&gt;2&lt;/SUB&gt;,apt,ADENPRIBOSYLTRAN-CPLX,2.0
+84,[AqpZ]&lt;SUB&gt;4&lt;/SUB&gt;,aqpZ,CPLX0-7653,4.0
+85,[AraA]&lt;SUB&gt;6&lt;/SUB&gt;,araA,ARABISOM-CPLX,6.0
+86,[AraB]&lt;SUB&gt;2&lt;/SUB&gt;,araB,RIBULOKIN-CPLX,2.0
+87,,araC,PC00003,
+88,[AraD]&lt;SUB&gt;4&lt;/SUB&gt;,araD,RIBULPEPIM-CPLX,4.0
+89,[AraG]<sub>2</sub>[AraH]<sub>2</sub>[AraF],araG,ABC-2-CPLX,2.0
+90,[AraG]<sub>2</sub>[AraH]<sub>2</sub>[AraF],araH,ABC-2-CPLX,2.0
+91,[AraG]<sub>2</sub>[AraH]<sub>2</sub>[AraF],araF,ABC-2-CPLX,1.0
+92,[PhoR]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       sensor histidine kinase ArcB ArcB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       sensor histidine kinase AtoS AtoS]&lt;SUB&gt;2&lt;/SUB&gt; + 8 isozymes],arcB,ARCB-CPLX,2.0
+93,[ArgA]&lt;SUB&gt;6&lt;/SUB&gt;,argA,N-ACETYLTRANSFER-CPLX,6.0
+94,[ArgB]&lt;SUB&gt;2&lt;/SUB&gt;,argB,ACETYLGLUTKIN-CPLX,2.0
+95,[GabT]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       succinylornithine transaminase AstC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       &lt;i&gt;N&lt;/i&gt;-acetylornithine aminotransferase / &lt;i&gt;N&lt;/i&gt;-succinyldiaminopimelate aminotransferase ArgD]&lt;SUB&gt;2&lt;/SUB&gt;,argD,ACETYLORNTRANSAM-CPLX,2.0
+96,[SerC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       &lt;i&gt;N&lt;/i&gt;-acetylornithine aminotransferase / &lt;i&gt;N&lt;/i&gt;-succinyldiaminopimelate aminotransferase ArgD]&lt;SUB&gt;2&lt;/SUB&gt;,argD,ACETYLORNTRANSAM-CPLX,2.0
+97,[ArgE]&lt;SUB&gt;2&lt;/SUB&gt;,argE,ACETYLORNDEACET-CPLX,2.0
+98,[ArgF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       ornithine carbamoyltransferase ArgI]&lt;SUB&gt;3&lt;/SUB&gt;,argF,ORNCARBAMTRANSFERF-CPLX,3.0
+99,[ArgG]&lt;SUB&gt;4&lt;/SUB&gt;,argG,CPLX0-238,4.0
+100,[ArgF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       ornithine carbamoyltransferase ArgI]&lt;SUB&gt;3&lt;/SUB&gt;,argI,ORNCARBAMTRANSFERI-CPLX,3.0
+101,,argP,CPLX0-7669,
+102,,argR,PC00005,
+103,,ariR,CPLX0-7623,
+104,[ArnA]&lt;SUB&gt;6&lt;/SUB&gt;,arnA,CPLX0-7718,6.0
+105,[ArnA]&lt;SUB&gt;6&lt;/SUB&gt;,arnA,CPLX0-7718,6.0
+106,[ArnE][ArnF],arnE,CPLX0-7720,1.0
+107,[ArnE][ArnF],arnF,CPLX0-7720,1.0
+108,[AroC]&lt;SUB&gt;4&lt;/SUB&gt;,aroC,AROC-CPLX,4.0
+109,[AroD]&lt;SUB&gt;2&lt;/SUB&gt;,aroD,AROD-CPLX,2.0
+110,[AroF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-deoxy-7-phosphoheptulonate synthase AroH]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-deoxy-7-phosphoheptulonate synthase AroG]&lt;SUB&gt;4&lt;/SUB&gt;,aroF,AROF-CPLX,2.0
+111,[AroF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-deoxy-7-phosphoheptulonate synthase AroH]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-deoxy-7-phosphoheptulonate synthase AroG]&lt;SUB&gt;4&lt;/SUB&gt;,aroG,AROG-CPLX,4.0
+112,[AroF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-deoxy-7-phosphoheptulonate synthase AroH]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-deoxy-7-phosphoheptulonate synthase AroG]&lt;SUB&gt;4&lt;/SUB&gt;,aroH,AROH-CPLX,2.0
+113,[ArsB]&lt;SUB&gt;2&lt;/SUB&gt;,arsB,CPLX-7,2.0
+114,[ArsB]&lt;SUB&gt;2&lt;/SUB&gt;,arsB,CPLX-7,2.0
+115,,arsR,CPLX0-7734,
+116,[ArtI][ArtM][ArtQ][ArtP]<sub>2</sub>,artI,CPLX0-8120,1.0
+117,[ArtI][ArtM][ArtQ][ArtP]<sub>2</sub>,artM,CPLX0-8120,1.0
+118,[ArtI][ArtM][ArtQ][ArtP]<sub>2</sub>,artQ,CPLX0-8120,1.0
+119,[ArtI][ArtM][ArtQ][ArtP]<sub>2</sub>,artP,CPLX0-8120,2.0
+120,[ArtJ][ArtQ][ArtM][ArtP]<sub>2</sub>,artJ,ABC-4-CPLX,1.0
+121,[ArtJ][ArtQ][ArtM][ArtP]<sub>2</sub>,artQ,ABC-4-CPLX,1.0
+122,[ArtJ][ArtQ][ArtM][ArtP]<sub>2</sub>,artM,ABC-4-CPLX,1.0
+123,[ArtJ][ArtQ][ArtM][ArtP]<sub>2</sub>,artP,ABC-4-CPLX,2.0
+124,[ChbA]ChbC]ChbB]&lt;br&gt;                       β-glucoside specific PTS enzyme II AscF]&lt;SUB&gt;2&lt;/SUB&gt;,ascF,CPLX-153,2.0
+125,[BglF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       β-glucoside specific PTS enzyme II AscF]&lt;SUB&gt;2&lt;/SUB&gt;,ascF,CPLX-153,2.0
+126,[BglF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       β-glucoside specific PTS enzyme II AscF]&lt;SUB&gt;2&lt;/SUB&gt;,ascF,CPLX-153,2.0
+127,[Asd]&lt;SUB&gt;2&lt;/SUB&gt;,asd,ASP-SEMIALDEHYDE-DEHYDROGENASE-CPLX,2.0
+128,[AsnA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       asparagine synthetase B AsnB]&lt;SUB&gt;2&lt;/SUB&gt;,asnA,ASNSYNA-CPLX,2.0
+129,[AsnB]&lt;SUB&gt;2&lt;/SUB&gt;,asnB,ASNSYNB-CPLX,2.0
+130,[AsnA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       asparagine synthetase B AsnB]&lt;SUB&gt;2&lt;/SUB&gt;,asnB,ASNSYNB-CPLX,2.0
+131,,asnC,CPLX0-7733,
+132,[AsnS]&lt;SUB&gt;2&lt;/SUB&gt;,asnS,ASNS-CPLX,2.0
+133,[AspA]&lt;SUB&gt;4&lt;/SUB&gt;,aspA,ASPARTASE-CPLX,4.0
+134,[AspC]&lt;SUB&gt;2&lt;/SUB&gt;,aspC,ASPAMINOTRANS-DIMER,2.0
+135,[IlvE]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       aspartate aminotransferase AspC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       tyrosine aminotransferase TyrB]&lt;SUB&gt;2&lt;/SUB&gt;,aspC,ASPAMINOTRANS-DIMER,2.0
+136,[AspC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       tyrosine aminotransferase TyrB]&lt;SUB&gt;2&lt;/SUB&gt;,aspC,ASPAMINOTRANS-DIMER,2.0
+137,[AspC]&lt;SUB&gt;2&lt;/SUB&gt;,aspC,ASPAMINOTRANS-DIMER,2.0
+138,[AspC]&lt;SUB&gt;2&lt;/SUB&gt;,aspC,ASPAMINOTRANS-DIMER,2.0
+139,[AspS]&lt;SUB&gt;2&lt;/SUB&gt;,aspS,ASPS-CPLX,2.0
+140,[AstB]&lt;SUB&gt;2&lt;/SUB&gt;,astB,CPLX0-7947,2.0
+141,[AstC]&lt;SUB&gt;2&lt;/SUB&gt;,astC,SUCCORNTRANSAM-CPLX,2.0
+142,[GabT]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       succinylornithine transaminase AstC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       &lt;i&gt;N&lt;/i&gt;-acetylornithine aminotransferase / &lt;i&gt;N&lt;/i&gt;-succinyldiaminopimelate aminotransferase ArgD]&lt;SUB&gt;2&lt;/SUB&gt;,astC,SUCCORNTRANSAM-CPLX,2.0
+143,,atoA,ATOA-CPLX,
+144,[(AtoA)<sub>2</sub>][(AtoD)<sub>2</sub>],(AtoA)<sub>2</sub>,ACETOACETYL-COA-TRANSFER-CPLX,2.0
+145,[(AtoA)<sub>2</sub>][(AtoD)<sub>2</sub>],(AtoD)<sub>2</sub>,ACETOACETYL-COA-TRANSFER-CPLX,2.0
+146,[AtoB]&lt;SUB&gt;4&lt;/SUB&gt;,atoB,ACETYL-COA-ACETYLTRANSFER-CPLX,4.0
+147,,atoD,ATOD-CPLX,
+148,[PhoR]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       sensor histidine kinase ArcB ArcB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       sensor histidine kinase AtoS AtoS]&lt;SUB&gt;2&lt;/SUB&gt; + 8 isozymes],atoS,CPLX0-7870,2.0
+149,[(AtpE]&lt;SUB&gt;10&lt;/SUB&gt;)(AtpF]&lt;SUB&gt;2&lt;/SUB&gt;)(AtpB)](AtpC)(AtpH)(AtpA]&lt;SUB&gt;3&lt;/SUB&gt;)(AtpG)(AtpD]&lt;SUB&gt;3&lt;/SUB&gt;)],atpA,ATPA-CPLX,3.0
+150,[(AtpE]&lt;SUB&gt;10&lt;/SUB&gt;)(AtpF]&lt;SUB&gt;2&lt;/SUB&gt;)(AtpB)](AtpC)(AtpH)(AtpA]&lt;SUB&gt;3&lt;/SUB&gt;)(AtpG)(AtpD]&lt;SUB&gt;3&lt;/SUB&gt;)],atpA,ATPA-CPLX,3.0
+151,[([AtpE]<sub>10</sub>)([AtpF]<sub>2</sub>)(AtpB)][(AtpC)(AtpH)([AtpA]<sub>3</sub>)(AtpG)([AtpD]<sub>3</sub>)],(,ATPSYN-CPLX,1.0
+152,[([AtpE]<sub>10</sub>)([AtpF]<sub>2</sub>)(AtpB)][(AtpC)(AtpH)([AtpA]<sub>3</sub>)(AtpG)([AtpD]<sub>3</sub>)],atpE,ATPSYN-CPLX,10.0
+153,[([AtpE]<sub>10</sub>)([AtpF]<sub>2</sub>)(AtpB)][(AtpC)(AtpH)([AtpA]<sub>3</sub>)(AtpG)([AtpD]<sub>3</sub>)],atpF,ATPSYN-CPLX,2.0
+154,[([AtpE]<sub>10</sub>)([AtpF]<sub>2</sub>)(AtpB)][(AtpC)(AtpH)([AtpA]<sub>3</sub>)(AtpG)([AtpD]<sub>3</sub>)],(AtpC)(AtpH)(,ATPSYN-CPLX,1.0
+155,[([AtpE]<sub>10</sub>)([AtpF]<sub>2</sub>)(AtpB)][(AtpC)(AtpH)([AtpA]<sub>3</sub>)(AtpG)([AtpD]<sub>3</sub>)],atpA,ATPSYN-CPLX,3.0
+156,[([AtpE]<sub>10</sub>)([AtpF]<sub>2</sub>)(AtpB)][(AtpC)(AtpH)([AtpA]<sub>3</sub>)(AtpG)([AtpD]<sub>3</sub>)],atpD,ATPSYN-CPLX,3.0
+157,[AtpC][AtpH][(AtpA)<sub>3</sub>][AtpG][(AtpD)<sub>3</sub>],atpC,F-1-CPLX,1.0
+158,[AtpC][AtpH][(AtpA)<sub>3</sub>][AtpG][(AtpD)<sub>3</sub>],atpH,F-1-CPLX,1.0
+159,[AtpC][AtpH][(AtpA)<sub>3</sub>][AtpG][(AtpD)<sub>3</sub>],(AtpA)<sub>3</sub>,F-1-CPLX,3.0
+160,[AtpC][AtpH][(AtpA)<sub>3</sub>][AtpG][(AtpD)<sub>3</sub>],atpG,F-1-CPLX,1.0
+161,[AtpC][AtpH][(AtpA)<sub>3</sub>][AtpG][(AtpD)<sub>3</sub>],(AtpD)<sub>3</sub>,F-1-CPLX,3.0
+162,(AtpC)(AtpH)([AtpA]<sub>3</sub>)(AtpG)([AtpD]<sub>3</sub>) (summary available),atpA,F-1-CPLX,3.0
+163,(AtpC)(AtpH)([AtpA]<sub>3</sub>)(AtpG)([AtpD]<sub>3</sub>) (summary available),atpD,F-1-CPLX,3.0
+164,[(AtpE]&lt;SUB&gt;10&lt;/SUB&gt;)(AtpF]&lt;SUB&gt;2&lt;/SUB&gt;)(AtpB)](AtpC)(AtpH)(AtpA]&lt;SUB&gt;3&lt;/SUB&gt;)(AtpG)(AtpD]&lt;SUB&gt;3&lt;/SUB&gt;)],atpD,ATPD-CPLX,3.0
+165,[(AtpE]&lt;SUB&gt;10&lt;/SUB&gt;)(AtpF]&lt;SUB&gt;2&lt;/SUB&gt;)(AtpB)](AtpC)(AtpH)(AtpA]&lt;SUB&gt;3&lt;/SUB&gt;)(AtpG)(AtpD]&lt;SUB&gt;3&lt;/SUB&gt;)],atpD,ATPD-CPLX,3.0
+166,[(AtpE]&lt;SUB&gt;10&lt;/SUB&gt;)(AtpF]&lt;SUB&gt;2&lt;/SUB&gt;)(AtpB)](AtpC)(AtpH)(AtpA]&lt;SUB&gt;3&lt;/SUB&gt;)(AtpG)(AtpD]&lt;SUB&gt;3&lt;/SUB&gt;)],atpE,ATPE-CPLX,1.0
+167,[(AtpE]&lt;SUB&gt;10&lt;/SUB&gt;)(AtpF]&lt;SUB&gt;2&lt;/SUB&gt;)(AtpB)](AtpC)(AtpH)(AtpA]&lt;SUB&gt;3&lt;/SUB&gt;)(AtpG)(AtpD]&lt;SUB&gt;3&lt;/SUB&gt;)],atpE,ATPE-CPLX,1.0
+168,[(AtpE)<sub>10</sub>][(AtpF)<sub>2</sub>][AtpB],(AtpE)<sub>10</sub>,F-O-CPLX,10.0
+169,[(AtpE)<sub>10</sub>][(AtpF)<sub>2</sub>][AtpB],(AtpF)<sub>2</sub>,F-O-CPLX,2.0
+170,[(AtpE)<sub>10</sub>][(AtpF)<sub>2</sub>][AtpB],atpB,F-O-CPLX,1.0
+171,([AtpE]<sub>10</sub>)([AtpF]<sub>2</sub>)(AtpB) (summary available),atpE,F-O-CPLX,10.0
+172,([AtpE]<sub>10</sub>)([AtpF]<sub>2</sub>)(AtpB) (summary available),atpF,F-O-CPLX,2.0
+173,[(AtpE]&lt;SUB&gt;10&lt;/SUB&gt;)(AtpF]&lt;SUB&gt;2&lt;/SUB&gt;)(AtpB)](AtpC)(AtpH)(AtpA]&lt;SUB&gt;3&lt;/SUB&gt;)(AtpG)(AtpD]&lt;SUB&gt;3&lt;/SUB&gt;)],atpF,ATPF-CPLX,2.0
+174,[(AtpE]&lt;SUB&gt;10&lt;/SUB&gt;)(AtpF]&lt;SUB&gt;2&lt;/SUB&gt;)(AtpB)](AtpC)(AtpH)(AtpA]&lt;SUB&gt;3&lt;/SUB&gt;)(AtpG)(AtpD]&lt;SUB&gt;3&lt;/SUB&gt;)],atpF,ATPF-CPLX,2.0
+175,[AzoR]&lt;SUB&gt;2&lt;/SUB&gt;,azoR,CPLX0-7693,2.0
+176,[AzoR]&lt;SUB&gt;2&lt;/SUB&gt;,azoR,CPLX0-7693,2.0
+177,[BamE][BamC][BamD][BamA][BamB],bamE,CPLX0-3933,1.0
+178,[BamE][BamC][BamD][BamA][BamB],bamC,CPLX0-3933,1.0
+179,[BamE][BamC][BamD][BamA][BamB],bamD,CPLX0-3933,1.0
+180,[BamE][BamC][BamD][BamA][BamB],bamA,CPLX0-3933,1.0
+181,[BamE][BamC][BamD][BamA][BamB],bamB,CPLX0-3933,1.0
+182,,barA,CPLX0-8302,
+183,[BcsB][BcsA],bcsB,CPLX0-8125,1.0
+184,[BcsB][BcsA],bcsA,CPLX0-8125,1.0
+185,,bdcA,CPLX0-8154,
+186,[BetB]&lt;SUB&gt;4&lt;/SUB&gt;,betB,BADH-CPLX,4.0
+187,[Bfr]&lt;SUB&gt;24&lt;/SUB&gt;&lt;br&gt;                       multicopper oxidase CueO cueO,bfr,CPLX0-1421,2.0
+188,[BglF]&lt;SUB&gt;2&lt;/SUB&gt;,bglF,CPLX0-8115,2.0
+189,[BglF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       β-glucoside specific PTS enzyme II AscF]&lt;SUB&gt;2&lt;/SUB&gt;,bglF,CPLX0-8115,2.0
+190,[BglF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       β-glucoside specific PTS enzyme II AscF]&lt;SUB&gt;2&lt;/SUB&gt;,bglF,CPLX0-8115,2.0
+191,[BglF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       mannose-specific PTS enzyme II ManZ]&lt;SUB&gt;2&lt;/SUB&gt;ManY]ManX]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       glucose-specific PTS enzyme II PtsG]&lt;SUB&gt;2&lt;/SUB&gt;Crr],bglF,CPLX0-8115,2.0
+192,,bglG,CPLX0-2861,
+193,[BglJ][RcsB],bglJ,CPLX0-7916,1.0
+194,[BglJ][RcsB],rcsB,CPLX0-7916,1.0
+195,[BioA]&lt;SUB&gt;2&lt;/SUB&gt;,bioA,DAPASYN-CPLX,2.0
+196,[BioB]&lt;SUB&gt;2&lt;/SUB&gt;,bioB,BIOTIN-SYN-CPLX,2.0
+197,[BioD]&lt;SUB&gt;2&lt;/SUB&gt;,bioD,DETHIOBIOTIN-SYN-CPLX,2.0
+198,[BioF]&lt;SUB&gt;2&lt;/SUB&gt;,bioF,7KAPSYN-CPLX,2.0
+199,[BioF]&lt;SUB&gt;2&lt;/SUB&gt;,bioF,7KAPSYN-CPLX,2.0
+200,[BolA][GrxD],bolA,CPLX0-7942,1.0
+201,[BolA][GrxD],grxD,CPLX0-7942,1.0
+202,[BtuB][(TonB)(ExbB)(ExbD)],btuB,CPLX0-1924,1.0
+203,[BtuB][(TonB)(ExbB)(ExbD)],(TonB)(ExbB)(ExbD),CPLX0-1924,1.0
+204,[BtuD]<sub>2</sub>[BtuC]<sub>2</sub>[BtuF],btuD,ABC-5-CPLX,2.0
+205,[BtuD]<sub>2</sub>[BtuC]<sub>2</sub>[BtuF],btuC,ABC-5-CPLX,2.0
+206,[BtuD]<sub>2</sub>[BtuC]<sub>2</sub>[BtuF],btuF,ABC-5-CPLX,1.0
+207,[LdcC]&lt;SUB&gt;10&lt;/SUB&gt;&lt;br&gt;                       lysine decarboxylase 1 CadA]&lt;SUB&gt;10&lt;/SUB&gt;,cadA,LYSDECARBOX-CPLX,1.0
+208,[CaiB]&lt;SUB&gt;2&lt;/SUB&gt;,caiB,CARNDEHYDRA-CPLX,2.0
+209,,caiF,CPLX0-7666,
+210,[CaiT]&lt;SUB&gt;3&lt;/SUB&gt;,caiT,CPLX0-7906,3.0
+211,[CynT]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       carbonic anhydrase 2 Can]&lt;SUB&gt;4&lt;/SUB&gt;,can,CPLX0-7521,4.0
+212,[CarB]<sub>2</sub>[CarA]<sub>2</sub>,carB,CARBPSYN-CPLX,2.0
+213,[CarB]<sub>2</sub>[CarA]<sub>2</sub>,carA,CARBPSYN-CPLX,2.0
+214,,cas1,CPLX0-7914,
+215,,cas2,CPLX0-8173,
+216,[(Cas2)<sub>2</sub>][(Cas1)<sub>2</sub>],(Cas2)<sub>2</sub>,CPLX0-8174,2.0
+217,[(Cas2)<sub>2</sub>][(Cas1)<sub>2</sub>],(Cas1)<sub>2</sub>,CPLX0-8174,1.0
+218,[CasA][CasB]<sub>2</sub>[CasC]<sub>6</sub>[CasD][CasE],casA,CPLX0-7725,1.0
+219,[CasA][CasB]<sub>2</sub>[CasC]<sub>6</sub>[CasD][CasE],casB,CPLX0-7725,2.0
+220,[CasA][CasB]<sub>2</sub>[CasC]<sub>6</sub>[CasD][CasE],casC,CPLX0-7725,6.0
+221,[CasA][CasB]<sub>2</sub>[CasC]<sub>6</sub>[CasD][CasE],casD,CPLX0-7725,1.0
+222,[CasA][CasB]<sub>2</sub>[CasC]<sub>6</sub>[CasD][CasE],casE,CPLX0-7725,1.0
+223,,cbpA,CPLX0-2802,
+224,[CcmD][CcmB][CcmA]<sub>2</sub>[CcmE][CcmC],ccmD,ABC-35-CPLX,1.0
+225,[CcmD][CcmB][CcmA]<sub>2</sub>[CcmE][CcmC],ccmB,ABC-35-CPLX,1.0
+226,[CcmD][CcmB][CcmA]<sub>2</sub>[CcmE][CcmC],ccmA,ABC-35-CPLX,2.0
+227,[CcmD][CcmB][CcmA]<sub>2</sub>[CcmE][CcmC],ccmE,ABC-35-CPLX,1.0
+228,[CcmD][CcmB][CcmA]<sub>2</sub>[CcmE][CcmC],ccmC,ABC-35-CPLX,1.0
+229,[CcmE][CcmF][CcmG][CcmH],ccmE,CPLX0-3323,1.0
+230,[CcmE][CcmF][CcmG][CcmH],ccmF,CPLX0-3323,1.0
+231,[CcmE][CcmF][CcmG][CcmH],ccmG,CPLX0-3323,1.0
+232,[CcmE][CcmF][CcmG][CcmH],ccmH,CPLX0-3323,1.0
+233,[Cdd]&lt;SUB&gt;2&lt;/SUB&gt;,cdd,CYTIDEAM-CPLX,2.0
+234,[Cdd]&lt;SUB&gt;2&lt;/SUB&gt;,cdd,CYTIDEAM-CPLX,2.0
+235,[Cfa]&lt;SUB&gt;2&lt;/SUB&gt;,cfa,CFA-CPLX,2.0
+236,[ChbA][ChbC][ChbB],chbA,CPLX-155,1.0
+237,[ChbA][ChbC][ChbB],chbC,CPLX-155,1.0
+238,[ChbA][ChbC][ChbB],chbB,CPLX-155,1.0
+239,[ChbF]&lt;SUB&gt;4&lt;/SUB&gt;,chbF,CPLX0-7979,4.0
+240,[ChbF]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       6-phospho-β-glucosidase B bglB&lt;br&gt;                       6-phospho-β-glucosidase AscB ascB,chbF,CPLX0-7979,4.0
+241,,cheA,CHEA-CPLX,
+242,,cheA,TAP-GLU,
+243,,cheW,TAP-GLU,
+244,,tap,TAP-GLU,
+245,,cheA,TAR-GLU,
+246,,cheW,TAR-GLU,
+247,,tar,TAR-GLU,
+248,,cheA,TRG-GLU,
+249,,cheW,TRG-GLU,
+250,,trg,TRG-GLU,
+251,[CheW]<sub>2</sub>[(CheA)<sub>2</sub>][(Tsr)<sub>2</sub>]<sub>6</sub>,cheW,TSR-CPLX,2.0
+252,[CheW]<sub>2</sub>[(CheA)<sub>2</sub>][(Tsr)<sub>2</sub>]<sub>6</sub>,(CheA)<sub>2</sub>,TSR-CPLX,2.0
+253,[CheW]<sub>2</sub>[(CheA)<sub>2</sub>][(Tsr)<sub>2</sub>]<sub>6</sub>,(Tsr)<sub>2</sub>,TSR-CPLX,2.0
+254,[CheZ]&lt;SUB&gt;2&lt;/SUB&gt;,cheZ,CHEZ-CPLX,2.0
+255,[ChpB][ChpS],chpB,CPLX0-7561,1.0
+256,[ChpB][ChpS],chpS,CPLX0-7561,1.0
+257,,citD,ACPSUB-CPLX,
+258,[(CitD)<sub>6</sub>][(CitF)<sub>6</sub>][(CitE)<sub>6</sub>],(CitD)<sub>6</sub>,CITLY-CPLX,6.0
+259,[(CitD)<sub>6</sub>][(CitF)<sub>6</sub>][(CitE)<sub>6</sub>],(CitF)<sub>6</sub>,CITLY-CPLX,6.0
+260,[(CitD)<sub>6</sub>][(CitF)<sub>6</sub>][(CitE)<sub>6</sub>],(CitE)<sub>6</sub>,CITLY-CPLX,6.0
+261,,citE,CITRYLY-CPLX,
+262,,citF,CITTRANS-CPLX,
+263,[ClcA]&lt;SUB&gt;2&lt;/SUB&gt;,clcA,CPLX0-7961,2.0
+264,,clpA,CPLX0-881,
+265,,clpB,CPLX0-8180,
+266,[(ClpP)&lt;SUB&gt;14&lt;/SUB&gt;](ClpA)&lt;SUB&gt;6&lt;/SUB&gt;](ClpX)&lt;SUB&gt;6&lt;/SUB&gt;]&lt;br&gt;                       ClpXP (ClpP)&lt;SUB&gt;14&lt;/SUB&gt;](ClpX)&lt;SUB&gt;6&lt;/SUB&gt;]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       ClpAP (ClpP)&lt;SUB&gt;14&lt;/SUB&gt;](ClpA)&lt;SUB&gt;6&lt;/SUB&gt;]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       ClpP serine protease ClpP]&lt;SUB&gt;14&lt;/SUB&gt;,clpP,CPLX0-3101,1.0
+267,[(ClpP)<sub>14</sub>][(ClpA)<sub>6</sub>]<sub>2</sub>,(ClpP)<sub>14</sub>,CPLX0-3104,14.0
+268,[(ClpP)<sub>14</sub>][(ClpA)<sub>6</sub>]<sub>2</sub>,(ClpA)<sub>6</sub>,CPLX0-3104,6.0
+269,[(ClpP)<sub>14</sub>][(ClpA)<sub>6</sub>][(ClpX)<sub>6</sub>],(ClpP)<sub>14</sub>,CPLX0-3108,14.0
+270,[(ClpP)<sub>14</sub>][(ClpA)<sub>6</sub>][(ClpX)<sub>6</sub>],(ClpA)<sub>6</sub>,CPLX0-3108,6.0
+271,[(ClpP)<sub>14</sub>][(ClpA)<sub>6</sub>][(ClpX)<sub>6</sub>],(ClpX)<sub>6</sub>,CPLX0-3108,6.0
+272,[(ClpP)<sub>14</sub>][(ClpX)<sub>6</sub>]<sub>2</sub>,(ClpP)<sub>14</sub>,CPLX0-3107,14.0
+273,[(ClpP)<sub>14</sub>][(ClpX)<sub>6</sub>]<sub>2</sub>,(ClpX)<sub>6</sub>,CPLX0-3107,6.0
+274,,clpX,CPLX0-3102,
+275,[CmoA]&lt;SUB&gt;2&lt;/SUB&gt;,cmoA,CPLX0-8010,2.0
+276,[CmoB]&lt;SUB&gt;4&lt;/SUB&gt;,cmoB,CPLX0-8190,4.0
+277,[CmtB][CmtA],cmtB,CPLX-156,1.0
+278,[CmtB][CmtA],cmtA,CPLX-156,1.0
+279,[CoaA]&lt;SUB&gt;2&lt;/SUB&gt;,coaA,PANTOTHENATE-KIN-CPLX,2.0
+280,[CoaA]&lt;SUB&gt;2&lt;/SUB&gt;,coaA,PANTOTHENATE-KIN-CPLX,2.0
+281,[CoaD]&lt;SUB&gt;6&lt;/SUB&gt;,coaD,COADTRI-CPLX,6.0
+282,[CobT]&lt;SUB&gt;2&lt;/SUB&gt;,cobT,DMBPPRIBOSYLTRANS-CPLX,2.0
+283,[CobU]&lt;SUB&gt;2&lt;/SUB&gt;,cobU,COBU-CPLX,2.0
+284,[CobU]&lt;SUB&gt;2&lt;/SUB&gt;,cobU,COBU-CPLX,2.0
+285,[CodA]&lt;SUB&gt;6&lt;/SUB&gt;,codA,CPLX0-7932,6.0
+286,[CodA]&lt;SUB&gt;6&lt;/SUB&gt;,codA,CPLX0-7932,6.0
+287,[CusS]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       sensor histidine kinase CpxA CpxA]&lt;SUB&gt;2&lt;/SUB&gt;,cpxA,CPLX0-8270,2.0
+288,[CpxA]&lt;SUB&gt;2&lt;/SUB&gt;,cpxA,CPLX0-8270,2.0
+289,,cpxP,CPLX0-8155,
+290,,cpxR,CPLX0-7748,
+291,,cra,PC00061,
+292,[CrcB]&lt;SUB&gt;2&lt;/SUB&gt;,crcB,CPLX0-8271,2.0
+293,,creC,CREC-CPLX,
+294,,crp,PC00004,
+295,[SufS]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       cysteine sulfinate desulfinase CsdA]&lt;SUB&gt;2&lt;/SUB&gt;,csdA,CPLX0-7838,2.0
+296,,csdE,CPLX0-7839,
+297,[CsgE]<sub>9</sub>[CsgG]<sub>9</sub>,csgE,CPLX-3945,9.0
+298,[CsgE]<sub>9</sub>[CsgG]<sub>9</sub>,csgG,CPLX-3945,9.0
+299,,cspD,CPLX0-3301,
+300,,cspE,CPLX0-8223,
+301,,csrA,CPLX0-7956,
+302,,csrD,CPLX0-8245,
+303,[(CueR)(Cu<sup>+</sup>)]<sub>2</sub>,(CueR)(Cu<sup>+</sup>),CPLX0-7708,2.0
+304,[CurA]&lt;SUB&gt;2&lt;/SUB&gt;,curA,CPLX0-7927,2.0
+305,[CurA]&lt;SUB&gt;2&lt;/SUB&gt;,curA,CPLX0-7927,2.0
+306,[CusC]<sub>3</sub>[CusB]<sub>6</sub>[CusF][CusA]<sub>3</sub>,cusC,CPLX0-1721,3.0
+307,[CusC]<sub>3</sub>[CusB]<sub>6</sub>[CusF][CusA]<sub>3</sub>,cusB,CPLX0-1721,6.0
+308,[CusC]<sub>3</sub>[CusB]<sub>6</sub>[CusF][CusA]<sub>3</sub>,cusF,CPLX0-1721,1.0
+309,[CusC]<sub>3</sub>[CusB]<sub>6</sub>[CusF][CusA]<sub>3</sub>,cusA,CPLX0-1721,3.0
+310,[CusS]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       sensor histidine kinase CpxA CpxA]&lt;SUB&gt;2&lt;/SUB&gt;,cusS,CPLX0-8288,2.0
+311,,cutA,CPLX0-3938,
+312,[CydA][CydB][CydX],cydA,CYT-D-UBIOX-CPLX,1.0
+313,[CydA][CydB][CydX],cydB,CYT-D-UBIOX-CPLX,1.0
+314,[CydA][CydB][CydX],cydX,CYT-D-UBIOX-CPLX,1.0
+315,[CydD][CydC],cydD,ABC-6-CPLX,1.0
+316,[CydD][CydC],cydC,ABC-6-CPLX,1.0
+317,[CynS]&lt;SUB&gt;10&lt;/SUB&gt;,cynS,CYANLY-CPLX,1.0
+318,[CynT]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       carbonic anhydrase 2 Can]&lt;SUB&gt;4&lt;/SUB&gt;,cynT,CARBODEHYDRAT-CPLX,2.0
+319,[CyoD][CyoA][CyoB][CyoC],cyoD,CYT-O-UBIOX-CPLX,1.0
+320,[CyoD][CyoA][CyoB][CyoC],cyoA,CYT-O-UBIOX-CPLX,1.0
+321,[CyoD][CyoA][CyoB][CyoC],cyoB,CYT-O-UBIOX-CPLX,1.0
+322,[CyoD][CyoA][CyoB][CyoC],cyoC,CYT-O-UBIOX-CPLX,1.0
+323,[CysA]<sub>2</sub>[CysW][CysU][CysP],cysA,ABC-7-CPLX,2.0
+324,[CysA]<sub>2</sub>[CysW][CysU][CysP],cysW,ABC-7-CPLX,1.0
+325,[CysA]<sub>2</sub>[CysW][CysU][CysP],cysU,ABC-7-CPLX,1.0
+326,[CysA]<sub>2</sub>[CysW][CysU][CysP],cysP,ABC-7-CPLX,1.0
+327,,cysB,PC00040,
+328,[CysC]&lt;SUB&gt;2&lt;/SUB&gt;,cysC,ADENYLYLSULFKIN-CPLX,2.0
+329,[CysD]<sub>4</sub>[CysN]<sub>4</sub>,cysD,SULFATE-ADENYLYLTRANS-CPLX,4.0
+330,[CysD]<sub>4</sub>[CysN]<sub>4</sub>,cysN,SULFATE-ADENYLYLTRANS-CPLX,4.0
+331,[CysE]&lt;SUB&gt;6&lt;/SUB&gt;,cysE,CPLX0-237,6.0
+332,[(CysE)<sub>6</sub>][(CysK)<sub>2</sub>],(CysE)<sub>6</sub>,CYSSYNMULTI-CPLX,6.0
+333,[(CysE)<sub>6</sub>][(CysK)<sub>2</sub>],(CysK)<sub>2</sub>,CYSSYNMULTI-CPLX,2.0
+334,[CysG]&lt;SUB&gt;2&lt;/SUB&gt;,cysG,SIROHEMESYN-CPLX,2.0
+335,[CysG]&lt;SUB&gt;2&lt;/SUB&gt;,cysG,SIROHEMESYN-CPLX,2.0
+336,[CysG]&lt;SUB&gt;2&lt;/SUB&gt;,cysG,SIROHEMESYN-CPLX,2.0
+337,[CysG]&lt;SUB&gt;2&lt;/SUB&gt;,cysG,SIROHEMESYN-CPLX,2.0
+338,[CysG]&lt;SUB&gt;2&lt;/SUB&gt;,cysG,SIROHEMESYN-CPLX,2.0
+339,[CysH]&lt;SUB&gt;2&lt;/SUB&gt;,cysH,PAPSSULFOTRANS-CPLX,2.0
+340,[CysJ]&lt;SUB&gt;8&lt;/SUB&gt;&lt;br&gt;                       flavin reductase fre,cysJ,CPLX0-7841,8.0
+341,[(CysJ)<sub>8</sub>][CysI]<sub>4</sub>,(CysJ)<sub>8</sub>,SULFITE-REDUCT-CPLX,8.0
+342,[(CysJ)<sub>8</sub>][CysI]<sub>4</sub>,cysI,SULFITE-REDUCT-CPLX,4.0
+343,[CysM]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       cysteine synthase A CysK]&lt;SUB&gt;2&lt;/SUB&gt;,cysK,ACSERLYA-CPLX,2.0
+344,[TnaA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       cysteine synthase B CysM]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       cysteine synthase A CysK]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       negative regulator of MalT activity/cystathionine β-lyase MalY]&lt;SUB&gt;2&lt;/SUB&gt; + 1 isozymes],cysK,ACSERLYA-CPLX,2.0
+345,[CysM]&lt;SUB&gt;2&lt;/SUB&gt;,cysM,ACSERLYB-CPLX,2.0
+346,[CysM]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       cysteine synthase A CysK]&lt;SUB&gt;2&lt;/SUB&gt;,cysM,ACSERLYB-CPLX,2.0
+347,[TnaA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       cysteine synthase B CysM]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       cysteine synthase A CysK]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       negative regulator of MalT activity/cystathionine β-lyase MalY]&lt;SUB&gt;2&lt;/SUB&gt; + 1 isozymes],cysM,ACSERLYB-CPLX,2.0
+348,,cytR,CPLX0-7740,
+349,[MrcA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       peptidoglycan glycosyltransferase / peptidoglycan DD-transpeptidase MrcB MrcB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       D-alanyl-D-alanine carboxypeptidase DacA DacA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       D-alanyl-D-alanine carboxypeptidase DacD dacD&lt;br&gt;                       D-alanyl-D-alanine carboxypeptidase DacC DacC]&lt;SUB&gt;2&lt;/SUB&gt; + 2 isozymes],dacA,CPLX0-8252,2.0
+350,[DacA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       β-lactamase ampC,dacA,CPLX0-8252,2.0
+351,[DacC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       D-alanyl-D-alanine carboxypeptidase DacA DacA]&lt;SUB&gt;2&lt;/SUB&gt;,dacA,CPLX0-8252,2.0
+352,[DacC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       D-alanyl-D-alanine carboxypeptidase DacA DacA]&lt;SUB&gt;2&lt;/SUB&gt;,dacA,CPLX0-8252,2.0
+353,[DacA]&lt;SUB&gt;2&lt;/SUB&gt;,dacA,CPLX0-8252,2.0
+354,[MrcA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       peptidoglycan glycosyltransferase / peptidoglycan DD-transpeptidase MrcB MrcB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       D-alanyl-D-alanine carboxypeptidase DacA DacA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       D-alanyl-D-alanine carboxypeptidase DacD dacD&lt;br&gt;                       D-alanyl-D-alanine carboxypeptidase DacC DacC]&lt;SUB&gt;2&lt;/SUB&gt; + 2 isozymes],dacC,CPLX0-8254,2.0
+355,[DacC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       D-alanyl-D-alanine carboxypeptidase DacA DacA]&lt;SUB&gt;2&lt;/SUB&gt;,dacC,CPLX0-8254,2.0
+356,[DacC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       D-alanyl-D-alanine carboxypeptidase DacA DacA]&lt;SUB&gt;2&lt;/SUB&gt;,dacC,CPLX0-8254,2.0
+357,[DacC]&lt;SUB&gt;2&lt;/SUB&gt;,dacC,CPLX0-8254,2.0
+358,[DadA]&lt;SUB&gt;2&lt;/SUB&gt;,dadA,DALADEHYDROG-CPLX,2.0
+359,[DadA]&lt;SUB&gt;2&lt;/SUB&gt;,dadA,DALADEHYDROG-CPLX,2.0
+360,[DadX]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       alanine racemase 1 Alr]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       cystathionine β-lyase / L-cysteine desulfhydrase / alanine racemase MetC]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       negative regulator of MalT activity/cystathionine β-lyase MalY]&lt;SUB&gt;2&lt;/SUB&gt;,dadX,CPLX0-7465,2.0
+361,[DapA]&lt;SUB&gt;4&lt;/SUB&gt;,dapA,DIHYDRODIPICSYN-CPLX,4.0
+362,[DapB]&lt;SUB&gt;4&lt;/SUB&gt;,dapB,DIHYDROPICRED-CPLX,4.0
+363,[DapD]&lt;SUB&gt;2&lt;/SUB&gt;,dapD,CPLX0-3181,2.0
+364,[DapE]&lt;SUB&gt;2&lt;/SUB&gt;,dapE,CPLX0-3161,2.0
+365,[DapF]&lt;SUB&gt;2&lt;/SUB&gt;,dapF,CPLX0-7997,2.0
+366,[Dcd]&lt;SUB&gt;3&lt;/SUB&gt;,dcd,DCTP-DEAM-CPLX,3.0
+367,[DctA][DcuS],dctA,CPLX0-8306,1.0
+368,[DctA][DcuS],dcuS,CPLX0-8306,1.0
+369,[DcuB][DcuS],dcuB,CPLX0-8304,1.0
+370,[DcuB][DcuS],dcuS,CPLX0-8304,1.0
+371,,dcuR,CPLX0-7721,
+372,,dcuS,CPLX0-8307,
+373,[DcyD]&lt;SUB&gt;2&lt;/SUB&gt;,dcyD,DCYSDESULF-CPLX,2.0
+374,[DcyD]&lt;SUB&gt;2&lt;/SUB&gt;,dcyD,DCYSDESULF-CPLX,2.0
+375,[DdlB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       D-alanine—D-alanine ligase A ddlA,ddlB,DALADALALIGB-CPLX,2.0
+376,[DdpB][DdpC][DdpA][DdpD][DdpF],ddpB,ABC-59-CPLX,1.0
+377,[DdpB][DdpC][DdpA][DdpD][DdpF],ddpC,ABC-59-CPLX,1.0
+378,[DdpB][DdpC][DdpA][DdpD][DdpF],ddpA,ABC-59-CPLX,1.0
+379,[DdpB][DdpC][DdpA][DdpD][DdpF],ddpD,ABC-59-CPLX,1.0
+380,[DdpB][DdpC][DdpA][DdpD][DdpF],ddpF,ABC-59-CPLX,1.0
+381,[DegP]&lt;SUB&gt;12&lt;/SUB&gt;,degP,CPLX0-2921,1.0
+382,[DegQ]&lt;SUB&gt;12&lt;/SUB&gt;&lt;br&gt;                       serine endoprotease DegS]&lt;SUB&gt;3&lt;/SUB&gt;,degQ,CPLX0-8187,1.0
+383,[DegQ]&lt;SUB&gt;12&lt;/SUB&gt;&lt;br&gt;                       serine endoprotease DegS]&lt;SUB&gt;3&lt;/SUB&gt;,degS,CPLX0-8183,3.0
+384,[DeoA]&lt;SUB&gt;2&lt;/SUB&gt;,deoA,DEOA-CPLX,2.0
+385,[DeoA]&lt;SUB&gt;2&lt;/SUB&gt;,deoA,DEOA-CPLX,2.0
+386,[XapA]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       purine nucleoside phosphorylase DeoD]&lt;SUB&gt;6&lt;/SUB&gt;,deoD,DEOD-CPLX,6.0
+387,[DeoD]&lt;SUB&gt;6&lt;/SUB&gt;,deoD,DEOD-CPLX,6.0
+388,[DeoD]&lt;SUB&gt;6&lt;/SUB&gt;,deoD,DEOD-CPLX,6.0
+389,[XapA]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       purine nucleoside phosphorylase DeoD]&lt;SUB&gt;6&lt;/SUB&gt;,deoD,DEOD-CPLX,6.0
+390,[DeoD]&lt;SUB&gt;6&lt;/SUB&gt;,deoD,DEOD-CPLX,6.0
+391,[DeoD]&lt;SUB&gt;6&lt;/SUB&gt;,deoD,DEOD-CPLX,6.0
+392,[DeoD]&lt;SUB&gt;6&lt;/SUB&gt;,deoD,DEOD-CPLX,6.0
+393,[Dfp]&lt;SUB&gt;12&lt;/SUB&gt;,dfp,CPLX0-341,1.0
+394,[Dfp]&lt;SUB&gt;12&lt;/SUB&gt;,dfp,CPLX0-341,1.0
+395,[DgcM]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       diguanylate cyclase DgcZ DgcZ]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       probable diguanylate cyclase DgcT dgcT + 2 isozymes],dgcM,CPLX0-8090,4.0
+396,[DgcM]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       diguanylate cyclase DgcZ DgcZ]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       probable diguanylate cyclase DgcT dgcT + 2 isozymes],dgcZ,CPLX0-7802,2.0
+397,[DgkA]&lt;SUB&gt;3&lt;/SUB&gt;,dgkA,DIACYLGLYKIN-CPLX,3.0
+398,[Dgt]&lt;SUB&gt;6&lt;/SUB&gt;,dgt,DGTPTRIPHYDRO-CPLX,6.0
+399,[DhaK]<sub>2</sub>[DhaL]<sub>2</sub>[(DhaM)<sub>2</sub>],dhaK,CPLX0-2081,2.0
+400,[DhaK]<sub>2</sub>[DhaL]<sub>2</sub>[(DhaM)<sub>2</sub>],dhaL,CPLX0-2081,2.0
+401,[DhaK]<sub>2</sub>[DhaL]<sub>2</sub>[(DhaM)<sub>2</sub>],(DhaM)<sub>2</sub>,CPLX0-2081,2.0
+402,,dhaM,CPLX0-8206,
+403,,diaA,CPLX0-3221,
+404,[DmsA][DmsB][DmsC],dmsA,DIMESULFREDUCT-CPLX,1.0
+405,[DmsA][DmsB][DmsC],dmsB,DIMESULFREDUCT-CPLX,1.0
+406,[DmsA][DmsB][DmsC],dmsC,DIMESULFREDUCT-CPLX,1.0
+407,[DnaB]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       ATP-dependent DNA helicase DinG dinG,dnaB,CPLX0-3621,6.0
+408,[(DnaB)<sub>6</sub>][(DnaT)<sub>3</sub>][(PriB)<sub>2</sub>][PriA][PriC][DnaG],(DnaB)<sub>6</sub>,CPLX0-3922,6.0
+409,[(DnaB)<sub>6</sub>][(DnaT)<sub>3</sub>][(PriB)<sub>2</sub>][PriA][PriC][DnaG],(DnaT)<sub>3</sub>,CPLX0-3922,3.0
+410,[(DnaB)<sub>6</sub>][(DnaT)<sub>3</sub>][(PriB)<sub>2</sub>][PriA][PriC][DnaG],(PriB)<sub>2</sub>,CPLX0-3922,2.0
+411,[(DnaB)<sub>6</sub>][(DnaT)<sub>3</sub>][(PriB)<sub>2</sub>][PriA][PriC][DnaG],priA,CPLX0-3922,1.0
+412,[(DnaB)<sub>6</sub>][(DnaT)<sub>3</sub>][(PriB)<sub>2</sub>][PriA][PriC][DnaG],priC,CPLX0-3922,1.0
+413,[(DnaB)<sub>6</sub>][(DnaT)<sub>3</sub>][(PriB)<sub>2</sub>][PriA][PriC][DnaG],dnaG,CPLX0-3922,1.0
+414,[DnaE][DnaQ][HolE],dnaE,CPLX0-2361,1.0
+415,[DnaE][DnaQ][HolE],dnaQ,CPLX0-2361,1.0
+416,[DnaE][DnaQ][HolE],holE,CPLX0-2361,1.0
+417,[DnaJ]&lt;SUB&gt;2&lt;/SUB&gt;,dnaJ,CPLX0-8191,2.0
+418,,dnaN,CPLX0-3761,
+419,,dnaT,CPLX0-0,
+420,,dnaX,CPLX0-3802,
+421,[DnaX]<sub>3</sub>[HolB][HolA],dnaX,CPLX0-3801,3.0
+422,[DnaX]<sub>3</sub>[HolB][HolA],holB,CPLX0-3801,1.0
+423,[DnaX]<sub>3</sub>[HolB][HolA],holA,CPLX0-3801,1.0
+424,,dosC,CPLX0-8218,
+425,[PdeF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       c-di-GMP phosphodiesterase PdeH pdeH&lt;br&gt;                       cyclic di-GMP phosphodiesterase PdeR pdeR&lt;br&gt;                       oxygen-sensing c-di-GMP phosphodiesterase DosP DosP]&lt;SUB&gt;2&lt;/SUB&gt; + 1 isozymes],dosP,CPLX0-8199,2.0
+426,[DosP][DosC],dosP,CPLX0-7823,1.0
+427,[DosP][DosC],dosC,CPLX0-7823,1.0
+428,[DppD][DppF][DppB][DppC][DppA],dppD,ABC-8-CPLX,1.0
+429,[DppD][DppF][DppB][DppC][DppA],dppF,ABC-8-CPLX,1.0
+430,[DppD][DppF][DppB][DppC][DppA],dppB,ABC-8-CPLX,1.0
+431,[DppD][DppF][DppB][DppC][DppA],dppC,ABC-8-CPLX,1.0
+432,[DppD][DppF][DppB][DppC][DppA],dppA,ABC-8-CPLX,1.0
+433,,dps,CPLX0-1521,
+434,[DsbG]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       protein disulfide isomerase DsbC DsbC]&lt;SUB&gt;2&lt;/SUB&gt;,dsbC,DSBC-CPLX,2.0
+435,[DsbG]&lt;SUB&gt;2&lt;/SUB&gt;,dsbG,DSBG-CPLX,2.0
+436,[DsbG]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       protein disulfide isomerase DsbC DsbC]&lt;SUB&gt;2&lt;/SUB&gt;,dsbG,DSBG-CPLX,2.0
+437,,dsdC,CPLX0-7713,
+438,[Dtd]&lt;SUB&gt;2&lt;/SUB&gt;,dtd,CPLX0-3581,2.0
+439,[Dtd]&lt;SUB&gt;2&lt;/SUB&gt;,dtd,CPLX0-3581,2.0
+440,[Dut]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       nucleoside triphosphate pyrophosphohydrolase MazG]&lt;SUB&gt;2&lt;/SUB&gt;,dut,DUTP-PYROP-CPLX,3.0
+441,[Dxr]&lt;SUB&gt;2&lt;/SUB&gt;,dxr,DXPREDISOM-CPLX,2.0
+442,[Dxs]&lt;SUB&gt;2&lt;/SUB&gt;,dxs,CPLX0-743,2.0
+443,[EbgA]<sub>4</sub>[EbgC]<sub>4</sub>,ebgA,CPLX0-3937,4.0
+444,[EbgA]<sub>4</sub>[EbgC]<sub>4</sub>,ebgC,CPLX0-3937,4.0
+445,,eco,CPLX0-1441,
+446,[Eda]&lt;SUB&gt;3&lt;/SUB&gt;,eda,KDPGALDOL-4OH2OXOGLUTARALDOL-CPLX,3.0
+447,[Eda]&lt;SUB&gt;3&lt;/SUB&gt;,eda,KDPGALDOL-4OH2OXOGLUTARALDOL-CPLX,3.0
+448,[Eda]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       NADP&lt;sup&gt;+&lt;/sup&gt;-dependent malate dehydrogenase MaeB]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       NAD&lt;sup&gt;+&lt;/sup&gt;-dependent malate dehydrogenase MaeA]&lt;SUB&gt;4&lt;/SUB&gt;,eda,KDPGALDOL-4OH2OXOGLUTARALDOL-CPLX,3.0
+449,[EfeB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       ferrochelatase hemH,efeB,CPLX0-7810,2.0
+450,[EmrE]&lt;SUB&gt;2&lt;/SUB&gt;,emrE,CPLX0-7963,2.0
+451,[EmrE]&lt;SUB&gt;2&lt;/SUB&gt;,emrE,CPLX0-7963,2.0
+452,[EmrE]&lt;SUB&gt;2&lt;/SUB&gt;,emrE,CPLX0-7963,2.0
+453,[EmrE]&lt;SUB&gt;2&lt;/SUB&gt;,emrE,CPLX0-7963,2.0
+454,[EmrE]&lt;SUB&gt;2&lt;/SUB&gt;,emrE,CPLX0-7963,2.0
+455,[Eno]&lt;SUB&gt;2&lt;/SUB&gt;,eno,ENOLASE-CPLX,2.0
+456,[EntA]&lt;SUB&gt;4&lt;/SUB&gt;,entA,ENTA-CPLX,4.0
+457,[EntB]&lt;SUB&gt;2&lt;/SUB&gt;,entB,CPLX0-7849,2.0
+458,[(EntB)<sub>2</sub>][EntD][EntF][(EntE)<sub>2</sub>],(EntB)<sub>2</sub>,ENTMULTI-CPLX,2.0
+459,[(EntB)<sub>2</sub>][EntD][EntF][(EntE)<sub>2</sub>],entD,ENTMULTI-CPLX,1.0
+460,[(EntB)<sub>2</sub>][EntD][EntF][(EntE)<sub>2</sub>],entF,ENTMULTI-CPLX,1.0
+461,[(EntB)<sub>2</sub>][EntD][EntF][(EntE)<sub>2</sub>],(EntE)<sub>2</sub>,ENTMULTI-CPLX,2.0
+462,[aryl-carrier protein] ligase EntE]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       enterobactin synthase (EntB)&lt;SUB&gt;2&lt;/SUB&gt;]EntD]EntF](EntE)&lt;SUB&gt;2&lt;/SUB&gt;],entE,ENTE-CPLX,2.0
+463,[aryl-carrier protein] ligase EntE]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       lysine—tRNA ligase multifunctional] LysU]&lt;SUB&gt;2&lt;/SUB&gt;,entE,ENTE-CPLX,2.0
+464,[EntH]&lt;SUB&gt;4&lt;/SUB&gt;,entH,CPLX0-7766,4.0
+465,[EntH]&lt;SUB&gt;4&lt;/SUB&gt;,entH,CPLX0-7766,4.0
+466,[EnvZ]&lt;SUB&gt;2&lt;/SUB&gt;,envZ,ENVZ-CPLX,2.0
+467,[Epd]&lt;SUB&gt;4&lt;/SUB&gt;,epd,ERYTH4PDEHYDROG-CPLX,4.0
+468,[EpmA]&lt;SUB&gt;2&lt;/SUB&gt;,epmA,CPLX0-7889,2.0
+469,[EpmA]&lt;SUB&gt;2&lt;/SUB&gt;,epmA,CPLX0-7889,2.0
+470,,erpA,CPLX0-7617,
+471,[EutB]<sub>6</sub>[EutC]<sub>6</sub>,eutB,ETHAMLY-CPLX,6.0
+472,[EutB]<sub>6</sub>[EutC]<sub>6</sub>,eutC,ETHAMLY-CPLX,6.0
+473,[EutD]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       phosphate acetyltransferase Pta]&lt;SUB&gt;6&lt;/SUB&gt;,eutD,CPLX0-7912,2.0
+474,,eutL,CPLX0-7801,
+475,,eutM,CPLX0-7835,
+476,,eutN,CPLX0-7613,
+477,,eutS,CPLX0-7836,
+478,[(TonB)(ExbB)(ExbD)][FepA],(TonB)(ExbB)(ExbD),CPLX0-1941,1.0
+479,[(TonB)(ExbB)(ExbD)][FepA],fepA,CPLX0-1941,1.0
+480,[(TonB)(ExbB)(ExbD)][FhuA],(TonB)(ExbB)(ExbD),CPLX0-1942,1.0
+481,[(TonB)(ExbB)(ExbD)][FhuA],fhuA,CPLX0-1942,1.0
+482,[FabA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-hydroxy-acyl-acyl-carrier-protein] dehydratase FabZ]&lt;SUB&gt;6&lt;/SUB&gt;,fabA,FABA-CPLX,2.0
+483,[acyl-carrier-protein] dehydratase FabZ]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       β-hydroxyacyl-acyl carrier protein dehydratase/isomerase FabA]&lt;SUB&gt;2&lt;/SUB&gt;,fabA,FABA-CPLX,2.0
+484,[FabA]&lt;SUB&gt;2&lt;/SUB&gt;,fabA,FABA-CPLX,2.0
+485,[acyl carrier protein] synthase I FabB]&lt;SUB&gt;2&lt;/SUB&gt;,fabB,FABB-CPLX,2.0
+486,[acyl carrier protein] synthase I FabB]&lt;SUB&gt;2&lt;/SUB&gt;,fabB,FABB-CPLX,2.0
+487,[acyl carrier protein] synthase I FabB]&lt;SUB&gt;2&lt;/SUB&gt;,fabB,FABB-CPLX,2.0
+488,[acyl carrier protein] synthase I FabB]&lt;SUB&gt;2&lt;/SUB&gt;,fabB,FABB-CPLX,2.0
+489,[acyl carrier protein] synthase I FabB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       β-ketoacyl-acyl carrier protein] synthase II FabF]&lt;SUB&gt;2&lt;/SUB&gt;,fabB,FABB-CPLX,2.0
+490,[acyl carrier protein] synthase I FabB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       β-ketoacyl-acyl carrier protein] synthase II FabF]&lt;SUB&gt;2&lt;/SUB&gt;,fabB,FABB-CPLX,2.0
+491,[acyl carrier protein] synthase I FabB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       β-ketoacyl-acyl carrier protein] synthase II FabF]&lt;SUB&gt;2&lt;/SUB&gt;,fabB,FABB-CPLX,2.0
+492,[acyl carrier protein] synthase I FabB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       β-ketoacyl-acyl carrier protein] synthase II FabF]&lt;SUB&gt;2&lt;/SUB&gt;,fabB,FABB-CPLX,2.0
+493,[acyl carrier protein] synthase I FabB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       β-ketoacyl-acyl carrier protein] synthase II FabF]&lt;SUB&gt;2&lt;/SUB&gt;,fabB,FABB-CPLX,2.0
+494,[acyl carrier protein] synthase I FabB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       β-ketoacyl-acyl carrier protein] synthase II FabF]&lt;SUB&gt;2&lt;/SUB&gt;,fabB,FABB-CPLX,2.0
+495,[acyl carrier protein] synthase I FabB]&lt;SUB&gt;2&lt;/SUB&gt;,fabB,FABB-CPLX,2.0
+496,[acyl carrier protein] synthase I FabB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       β-ketoacyl-acyl carrier protein] synthase II FabF]&lt;SUB&gt;2&lt;/SUB&gt;,fabB,FABB-CPLX,2.0
+497,[acyl carrier protein] synthase II FabF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       β-ketoacyl-acyl carrier protein] synthase I FabB]&lt;SUB&gt;2&lt;/SUB&gt;,fabB,FABB-CPLX,2.0
+498,[acyl carrier protein] synthase I FabB]&lt;SUB&gt;2&lt;/SUB&gt;,fabB,FABB-CPLX,2.0
+499,[acyl carrier protein] synthase II FabF]&lt;SUB&gt;2&lt;/SUB&gt;,fabF,3-OXOACYL-ACP-SYNTHII-CPLX,2.0
+500,[acyl carrier protein] synthase I FabB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       β-ketoacyl-acyl carrier protein] synthase II FabF]&lt;SUB&gt;2&lt;/SUB&gt;,fabF,3-OXOACYL-ACP-SYNTHII-CPLX,2.0
+501,[acyl carrier protein] synthase II FabF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       β-ketoacyl-acyl carrier protein] synthase I FabB]&lt;SUB&gt;2&lt;/SUB&gt;,fabF,3-OXOACYL-ACP-SYNTHII-CPLX,2.0
+502,[acyl-carrier-protein] reductase FabG FabG]&lt;SUB&gt;4&lt;/SUB&gt;,fabG,CPLX0-8005,4.0
+503,[acyl-carrier-protein] reductase FabG FabG]&lt;SUB&gt;4&lt;/SUB&gt;,fabG,CPLX0-8005,4.0
+504,[acyl-carrier-protein] reductase FabG FabG]&lt;SUB&gt;4&lt;/SUB&gt;,fabG,CPLX0-8005,4.0
+505,[acyl-carrier-protein] reductase FabG FabG]&lt;SUB&gt;4&lt;/SUB&gt;,fabG,CPLX0-8005,4.0
+506,[acyl-carrier-protein] reductase FabG FabG]&lt;SUB&gt;4&lt;/SUB&gt;,fabG,CPLX0-8005,4.0
+507,[acyl-carrier-protein] reductase FabG FabG]&lt;SUB&gt;4&lt;/SUB&gt;,fabG,CPLX0-8005,4.0
+508,[acyl-carrier-protein] reductase FabG FabG]&lt;SUB&gt;4&lt;/SUB&gt;,fabG,CPLX0-8005,4.0
+509,[acyl-carrier-protein] reductase FabG FabG]&lt;SUB&gt;4&lt;/SUB&gt;,fabG,CPLX0-8005,4.0
+510,[acyl carrier protein] synthase III FabH]&lt;SUB&gt;2&lt;/SUB&gt;,fabH,CPLX0-252,2.0
+511,[acyl carrier protein] synthase III FabH]&lt;SUB&gt;2&lt;/SUB&gt;,fabH,CPLX0-252,2.0
+512,[acyl-carrier-protein] reductase FabI]&lt;SUB&gt;4&lt;/SUB&gt;,fabI,CPLX0-8006,4.0
+513,[acyl-carrier-protein] reductase FabI]&lt;SUB&gt;4&lt;/SUB&gt;,fabI,CPLX0-8006,4.0
+514,[acyl-carrier-protein] reductase FabI]&lt;SUB&gt;4&lt;/SUB&gt;,fabI,CPLX0-8006,4.0
+515,[acyl-carrier-protein] reductase FabI]&lt;SUB&gt;4&lt;/SUB&gt;,fabI,CPLX0-8006,4.0
+516,[acyl-carrier-protein] reductase FabI]&lt;SUB&gt;4&lt;/SUB&gt;,fabI,CPLX0-8006,4.0
+517,[acyl-carrier-protein] reductase FabI]&lt;SUB&gt;4&lt;/SUB&gt;,fabI,CPLX0-8006,4.0
+518,[acyl-carrier-protein] reductase FabI]&lt;SUB&gt;4&lt;/SUB&gt;,fabI,CPLX0-8006,4.0
+519,[acyl-carrier-protein] reductase FabI]&lt;SUB&gt;4&lt;/SUB&gt;,fabI,CPLX0-8006,4.0
+520,[acyl-carrier-protein] reductase FabI]&lt;SUB&gt;4&lt;/SUB&gt;,fabI,CPLX0-8006,4.0
+521,[acyl-carrier-protein] reductase FabI]&lt;SUB&gt;4&lt;/SUB&gt;,fabI,CPLX0-8006,4.0
+522,[acyl-carrier-protein] reductase FabI]&lt;SUB&gt;4&lt;/SUB&gt;,fabI,CPLX0-8006,4.0
+523,[acyl-carrier-protein] reductase FabI]&lt;SUB&gt;4&lt;/SUB&gt;,fabI,CPLX0-8006,4.0
+524,[acyl-carrier-protein] reductase FabI]&lt;SUB&gt;4&lt;/SUB&gt;,fabI,CPLX0-8006,4.0
+525,[acyl-carrier-protein] reductase FabI]&lt;SUB&gt;4&lt;/SUB&gt;,fabI,CPLX0-8006,4.0
+526,[acyl-carrier-protein] reductase FabI]&lt;SUB&gt;4&lt;/SUB&gt;,fabI,CPLX0-8006,4.0
+527,[acyl-carrier-protein] reductase FabI]&lt;SUB&gt;4&lt;/SUB&gt;,fabI,CPLX0-8006,4.0
+528,[FabA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-hydroxy-acyl-acyl-carrier-protein] dehydratase FabZ]&lt;SUB&gt;6&lt;/SUB&gt;,fabZ,FABZ-CPLX,6.0
+529,[FabA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-hydroxy-acyl-acyl-carrier-protein] dehydratase FabZ]&lt;SUB&gt;6&lt;/SUB&gt;,fabZ,FABZ-CPLX,6.0
+530,[FabA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-hydroxy-acyl-acyl-carrier-protein] dehydratase FabZ]&lt;SUB&gt;6&lt;/SUB&gt;,fabZ,FABZ-CPLX,6.0
+531,[FabA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-hydroxy-acyl-acyl-carrier-protein] dehydratase FabZ]&lt;SUB&gt;6&lt;/SUB&gt;,fabZ,FABZ-CPLX,6.0
+532,[FabA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-hydroxy-acyl-acyl-carrier-protein] dehydratase FabZ]&lt;SUB&gt;6&lt;/SUB&gt;,fabZ,FABZ-CPLX,6.0
+533,[FabA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-hydroxy-acyl-acyl-carrier-protein] dehydratase FabZ]&lt;SUB&gt;6&lt;/SUB&gt;,fabZ,FABZ-CPLX,6.0
+534,[FabA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-hydroxy-acyl-acyl-carrier-protein] dehydratase FabZ]&lt;SUB&gt;6&lt;/SUB&gt;,fabZ,FABZ-CPLX,6.0
+535,[acyl-carrier-protein] dehydratase FabZ]&lt;SUB&gt;6&lt;/SUB&gt;,fabZ,FABZ-CPLX,6.0
+536,[acyl-carrier-protein] dehydratase FabZ]&lt;SUB&gt;6&lt;/SUB&gt;,fabZ,FABZ-CPLX,6.0
+537,[acyl-carrier-protein] dehydratase FabZ]&lt;SUB&gt;6&lt;/SUB&gt;,fabZ,FABZ-CPLX,6.0
+538,[acyl-carrier-protein] dehydratase FabZ]&lt;SUB&gt;6&lt;/SUB&gt;,fabZ,FABZ-CPLX,6.0
+539,[acyl-carrier-protein] dehydratase FabZ]&lt;SUB&gt;6&lt;/SUB&gt;,fabZ,FABZ-CPLX,6.0
+540,[acyl-carrier-protein] dehydratase FabZ]&lt;SUB&gt;6&lt;/SUB&gt;,fabZ,FABZ-CPLX,6.0
+541,[acyl-carrier-protein] dehydratase FabZ]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       β-hydroxyacyl-acyl carrier protein dehydratase/isomerase FabA]&lt;SUB&gt;2&lt;/SUB&gt;,fabZ,FABZ-CPLX,6.0
+542,[FadA]&lt;SUB&gt;2&lt;/SUB&gt;,fadA,FADA-CPLX,2.0
+543,[FadA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-ketoacyl-CoA thiolase FadI fadI,fadA,FADA-CPLX,2.0
+544,[FadA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-ketoacyl-CoA thiolase FadI fadI,fadA,FADA-CPLX,2.0
+545,[FadA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-ketoacyl-CoA thiolase FadI fadI,fadA,FADA-CPLX,2.0
+546,[FadA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-ketoacyl-CoA thiolase FadI fadI,fadA,FADA-CPLX,2.0
+547,[FadA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-ketoacyl-CoA thiolase FadI fadI,fadA,FADA-CPLX,2.0
+548,[FadA]&lt;SUB&gt;2&lt;/SUB&gt;,fadA,FADA-CPLX,2.0
+549,[FadA]&lt;SUB&gt;2&lt;/SUB&gt;,fadA,FADA-CPLX,2.0
+550,[FadB]&lt;SUB&gt;2&lt;/SUB&gt;,fadB,FADB-CPLX,2.0
+551,[FadB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-hydroxyacyl-CoA dehydrogenase FadJ fadJ,fadB,FADB-CPLX,2.0
+552,[FadB]&lt;SUB&gt;2&lt;/SUB&gt;,fadB,FADB-CPLX,2.0
+553,[FadB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-hydroxyacyl-CoA dehydrogenase FadJ fadJ,fadB,FADB-CPLX,2.0
+554,[FadB]&lt;SUB&gt;2&lt;/SUB&gt;,fadB,FADB-CPLX,2.0
+555,[FadB]&lt;SUB&gt;2&lt;/SUB&gt;,fadB,FADB-CPLX,2.0
+556,[FadB]&lt;SUB&gt;2&lt;/SUB&gt;,fadB,FADB-CPLX,2.0
+557,[FadB]&lt;SUB&gt;2&lt;/SUB&gt;,fadB,FADB-CPLX,2.0
+558,[FadB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-hydroxyacyl-CoA dehydrogenase FadJ fadJ,fadB,FADB-CPLX,2.0
+559,[FadB]&lt;SUB&gt;2&lt;/SUB&gt;,fadB,FADB-CPLX,2.0
+560,[FadB]&lt;SUB&gt;2&lt;/SUB&gt;,fadB,FADB-CPLX,2.0
+561,[FadB]&lt;SUB&gt;2&lt;/SUB&gt;,fadB,FADB-CPLX,2.0
+562,[FadB]&lt;SUB&gt;2&lt;/SUB&gt;,fadB,FADB-CPLX,2.0
+563,[FadB]&lt;SUB&gt;2&lt;/SUB&gt;,fadB,FADB-CPLX,2.0
+564,[FadB]&lt;SUB&gt;2&lt;/SUB&gt;,fadB,FADB-CPLX,2.0
+565,[FadB]&lt;SUB&gt;2&lt;/SUB&gt;,fadB,FADB-CPLX,2.0
+566,[FadB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-hydroxyacyl-CoA dehydrogenase FadJ fadJ,fadB,FADB-CPLX,2.0
+567,[FadB]&lt;SUB&gt;2&lt;/SUB&gt;,fadB,FADB-CPLX,2.0
+568,[FadB]&lt;SUB&gt;2&lt;/SUB&gt;,fadB,FADB-CPLX,2.0
+569,[(FadB)<sub>2</sub>][(FadA)<sub>2</sub>],(FadB)<sub>2</sub>,FAO-CPLX,2.0
+570,[(FadB)<sub>2</sub>][(FadA)<sub>2</sub>],(FadA)<sub>2</sub>,FAO-CPLX,2.0
+571,[FadD]&lt;SUB&gt;2&lt;/SUB&gt;,fadD,ACYLCOASYN-CPLX,2.0
+572,[FadD]&lt;SUB&gt;2&lt;/SUB&gt;,fadD,ACYLCOASYN-CPLX,2.0
+573,[FadD]&lt;SUB&gt;2&lt;/SUB&gt;,fadD,ACYLCOASYN-CPLX,2.0
+574,[FadD]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       short chain acyl-CoA synthetase fadK,fadD,ACYLCOASYN-CPLX,2.0
+575,[FadD]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       short chain acyl-CoA synthetase fadK,fadD,ACYLCOASYN-CPLX,2.0
+576,[FadI][FadJ],fadI,CPLX0-1668,1.0
+577,[FadI][FadJ],fadJ,CPLX0-1668,1.0
+578,[FbaB]&lt;SUB&gt;10&lt;/SUB&gt;&lt;br&gt;                       fructose-bisphosphate aldolase class II FbaA]&lt;SUB&gt;2&lt;/SUB&gt;,fbaA,FRUCBISALD-CLASSII,2.0
+579,[FbaA]&lt;SUB&gt;2&lt;/SUB&gt;,fbaA,FRUCBISALD-CLASSII,2.0
+580,[FbaB]&lt;SUB&gt;10&lt;/SUB&gt;&lt;br&gt;                       fructose-bisphosphate aldolase class II FbaA]&lt;SUB&gt;2&lt;/SUB&gt;,fbaB,FRUCBISALD-CLASSI,1.0
+581,"[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fructose 1,6-bisphosphatase YggF YggF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       pyridoxal phosphate/fructose-1,6-bisphosphate phosphatase ybhA&lt;br&gt;                       fructose-1,6-bisphosphatase 2 GlpX]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fructose-1,6-bisphosphatase 1 Fbp]&lt;SUB&gt;4&lt;/SUB&gt;",fbp,F16B-CPLX,4.0
+582,[Fcl]&lt;SUB&gt;2&lt;/SUB&gt;,fcl,CPLX0-3881,2.0
+583,,fdhD,CPLX0-8175,
+584,,fdhE,CPLX0-7724,
+585,[FdhF][(HycD)(HycC)(HycF)(HycG)(HycB)(HycE)],fdhF,FHLMULTI-CPLX,1.0
+586,[FdhF][(HycD)(HycC)(HycF)(HycG)(HycB)(HycE)],(HycD)(HycC)(HycF)(HycG)(HycB)(HycE),FHLMULTI-CPLX,1.0
+587,[(FdnI)(FdnH)(FdnG)]<sub>3</sub>,(FdnI)(FdnH)(FdnG),FORMATEDEHYDROGN-CPLX,3.0
+588,,fdnI,ALPHA-SUBUNIT-CPLX,
+589,,fdnH,ALPHA-SUBUNIT-CPLX,
+590,,fdnG,ALPHA-SUBUNIT-CPLX,
+591,[FdoG][FdoH][FdoI],fdoG,FORMATEDEHYDROGO-CPLX,1.0
+592,[FdoG][FdoH][FdoI],fdoH,FORMATEDEHYDROGO-CPLX,1.0
+593,[FdoG][FdoH][FdoI],fdoI,FORMATEDEHYDROGO-CPLX,1.0
+594,[FeaB]&lt;SUB&gt;4&lt;/SUB&gt;,feaB,PHENDEHYD-CPLX,4.0
+595,[FecA][(TonB)(ExbB)(ExbD)],fecA,CPLX0-1943,1.0
+596,[FecA][(TonB)(ExbB)(ExbD)],(TonB)(ExbB)(ExbD),CPLX0-1943,1.0
+597,[FecA][FecR],fecA,CPLX-3944,1.0
+598,[FecA][FecR],fecR,CPLX-3944,1.0
+599,[FecE]<sub>2</sub>[FecC][FecD][FecB],fecE,ABC-9-CPLX,2.0
+600,[FecE]<sub>2</sub>[FecC][FecD][FecB],fecC,ABC-9-CPLX,1.0
+601,[FecE]<sub>2</sub>[FecC][FecD][FecB],fecD,ABC-9-CPLX,1.0
+602,[FecE]<sub>2</sub>[FecC][FecD][FecB],fecB,ABC-9-CPLX,1.0
+603,[FepC]<sub>2</sub>[FepD][FepG][FepB],fepC,ABC-10-CPLX,2.0
+604,[FepC]<sub>2</sub>[FepD][FepG][FepB],fepD,ABC-10-CPLX,1.0
+605,[FepC]<sub>2</sub>[FepD][FepG][FepB],fepG,ABC-10-CPLX,1.0
+606,[FepC]<sub>2</sub>[FepD][FepG][FepB],fepB,ABC-10-CPLX,1.0
+607,[FhuC]<sub>2</sub>[FhuB][FhuD],fhuC,ABC-11-CPLX,2.0
+608,[FhuC]<sub>2</sub>[FhuB][FhuD],fhuB,ABC-11-CPLX,1.0
+609,[FhuC]<sub>2</sub>[FhuB][FhuD],fhuD,ABC-11-CPLX,1.0
+610,[FhuE][(TonB)(ExbB)(ExbD)],fhuE,CPLX0-7952,1.0
+611,[FhuE][(TonB)(ExbB)(ExbD)],(TonB)(ExbB)(ExbD),CPLX0-7952,1.0
+612,[Fic][YhfG],fic,CPLX0-8227,1.0
+613,[Fic][YhfG],yhfG,CPLX0-8227,1.0
+614,[FieF]&lt;SUB&gt;2&lt;/SUB&gt;,fieF,CPLX0-7641,2.0
+615,[FieF]&lt;SUB&gt;2&lt;/SUB&gt;,fieF,CPLX0-7641,2.0
+616,[FieF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       Zn&lt;sup&gt;2+&lt;/sup&gt;/Cd&lt;sup&gt;2+&lt;/sup&gt;/Ni&lt;sup&gt;2+&lt;/sup&gt;/Cu&lt;sup&gt;2+&lt;/sup&gt; exporter zitB,fieF,CPLX0-7641,2.0
+617,[FimA][FimF][FimG][FimH],fimA,CPLX0-3401,1.0
+618,[FimA][FimF][FimG][FimH],fimF,CPLX0-3401,1.0
+619,[FimA][FimF][FimG][FimH],fimG,CPLX0-3401,1.0
+620,[FimA][FimF][FimG][FimH],fimH,CPLX0-3401,1.0
+621,,fis,CPLX0-7705,
+622,,fklB,CPLX0-3924,
+623,[FlhA][FlhB][FliO][FliP][FliQ][FliR][FliH]<sub>12</sub>[FliI]<sub>6</sub>[FliJ],flhA,CPLX0-7451,1.0
+624,[FlhA][FlhB][FliO][FliP][FliQ][FliR][FliH]<sub>12</sub>[FliI]<sub>6</sub>[FliJ],flhB,CPLX0-7451,1.0
+625,[FlhA][FlhB][FliO][FliP][FliQ][FliR][FliH]<sub>12</sub>[FliI]<sub>6</sub>[FliJ],fliO,CPLX0-7451,1.0
+626,[FlhA][FlhB][FliO][FliP][FliQ][FliR][FliH]<sub>12</sub>[FliI]<sub>6</sub>[FliJ],fliP,CPLX0-7451,1.0
+627,[FlhA][FlhB][FliO][FliP][FliQ][FliR][FliH]<sub>12</sub>[FliI]<sub>6</sub>[FliJ],fliQ,CPLX0-7451,1.0
+628,[FlhA][FlhB][FliO][FliP][FliQ][FliR][FliH]<sub>12</sub>[FliI]<sub>6</sub>[FliJ],fliR,CPLX0-7451,1.0
+629,[FlhA][FlhB][FliO][FliP][FliQ][FliR][FliH]<sub>12</sub>[FliI]<sub>6</sub>[FliJ],fliH,CPLX0-7451,12.0
+630,[FlhA][FlhB][FliO][FliP][FliQ][FliR][FliH]<sub>12</sub>[FliI]<sub>6</sub>[FliJ],fliI,CPLX0-7451,6.0
+631,[FlhA][FlhB][FliO][FliP][FliQ][FliR][FliH]<sub>12</sub>[FliI]<sub>6</sub>[FliJ],fliJ,CPLX0-7451,1.0
+632,[FlhD]<sub>4</sub>[FlhC]<sub>2</sub>,flhD,CPLX0-3930,4.0
+633,[FlhD]<sub>4</sub>[FlhC]<sub>2</sub>,flhC,CPLX0-3930,2.0
+634,[FliA][(RpoA)<sub>2</sub>(RpoC)(RpoB)],fliA,CPLX0-222,1.0
+635,[FliA][(RpoA)<sub>2</sub>(RpoC)(RpoB)],(RpoA)<sub>2</sub>(RpoC)(RpoB),CPLX0-222,2.0
+636,[FliG]<sub>26</sub>[FliM]<sub>34</sub>[FliN],fliG,CPLX0-7450,26.0
+637,[FliG]<sub>26</sub>[FliM]<sub>34</sub>[FliN],fliM,CPLX0-7450,34.0
+638,[FliG]<sub>26</sub>[FliM]<sub>34</sub>[FliN],fliN,CPLX0-7450,1.0
+639,[([FliG]<sub>26</sub>[FliM]<sub>34</sub>[FliN])(FlgH)(MotA)(MotB)(FlgB)(FlgC)(FlgF)(FlgG)(FlgI)(FliF)(FliE)(FliL)<sub>2</sub>][(FlhA)(FlhB)(FliO)(FliP)(FliQ)(FliR)(FliH)<sub>12</sub>(FliI)<sub>6</sub>(FliJ)][FlgE]<sub>120</sub>[FlgK][FlgL][FliC][FliD]<sub>5</sub>,(,CPLX0-7452,1.0
+640,[([FliG]<sub>26</sub>[FliM]<sub>34</sub>[FliN])(FlgH)(MotA)(MotB)(FlgB)(FlgC)(FlgF)(FlgG)(FlgI)(FliF)(FliE)(FliL)<sub>2</sub>][(FlhA)(FlhB)(FliO)(FliP)(FliQ)(FliR)(FliH)<sub>12</sub>(FliI)<sub>6</sub>(FliJ)][FlgE]<sub>120</sub>[FlgK][FlgL][FliC][FliD]<sub>5</sub>,fliG,CPLX0-7452,26.0
+641,[([FliG]<sub>26</sub>[FliM]<sub>34</sub>[FliN])(FlgH)(MotA)(MotB)(FlgB)(FlgC)(FlgF)(FlgG)(FlgI)(FliF)(FliE)(FliL)<sub>2</sub>][(FlhA)(FlhB)(FliO)(FliP)(FliQ)(FliR)(FliH)<sub>12</sub>(FliI)<sub>6</sub>(FliJ)][FlgE]<sub>120</sub>[FlgK][FlgL][FliC][FliD]<sub>5</sub>,fliM,CPLX0-7452,34.0
+642,[([FliG]<sub>26</sub>[FliM]<sub>34</sub>[FliN])(FlgH)(MotA)(MotB)(FlgB)(FlgC)(FlgF)(FlgG)(FlgI)(FliF)(FliE)(FliL)<sub>2</sub>][(FlhA)(FlhB)(FliO)(FliP)(FliQ)(FliR)(FliH)<sub>12</sub>(FliI)<sub>6</sub>(FliJ)][FlgE]<sub>120</sub>[FlgK][FlgL][FliC][FliD]<sub>5</sub>,fliN,CPLX0-7452,2.0
+643,[([FliG]<sub>26</sub>[FliM]<sub>34</sub>[FliN])(FlgH)(MotA)(MotB)(FlgB)(FlgC)(FlgF)(FlgG)(FlgI)(FliF)(FliE)(FliL)<sub>2</sub>][(FlhA)(FlhB)(FliO)(FliP)(FliQ)(FliR)(FliH)<sub>12</sub>(FliI)<sub>6</sub>(FliJ)][FlgE]<sub>120</sub>[FlgK][FlgL][FliC][FliD]<sub>5</sub>,(FlhA)(FlhB)(FliO)(FliP)(FliQ)(FliR)(FliH)<sub>12</sub>(FliI)<sub>6</sub>(FliJ),CPLX0-7452,12.0
+644,[([FliG]<sub>26</sub>[FliM]<sub>34</sub>[FliN])(FlgH)(MotA)(MotB)(FlgB)(FlgC)(FlgF)(FlgG)(FlgI)(FliF)(FliE)(FliL)<sub>2</sub>][(FlhA)(FlhB)(FliO)(FliP)(FliQ)(FliR)(FliH)<sub>12</sub>(FliI)<sub>6</sub>(FliJ)][FlgE]<sub>120</sub>[FlgK][FlgL][FliC][FliD]<sub>5</sub>,flgE,CPLX0-7452,120.0
+645,[([FliG]<sub>26</sub>[FliM]<sub>34</sub>[FliN])(FlgH)(MotA)(MotB)(FlgB)(FlgC)(FlgF)(FlgG)(FlgI)(FliF)(FliE)(FliL)<sub>2</sub>][(FlhA)(FlhB)(FliO)(FliP)(FliQ)(FliR)(FliH)<sub>12</sub>(FliI)<sub>6</sub>(FliJ)][FlgE]<sub>120</sub>[FlgK][FlgL][FliC][FliD]<sub>5</sub>,flgK,CPLX0-7452,1.0
+646,[([FliG]<sub>26</sub>[FliM]<sub>34</sub>[FliN])(FlgH)(MotA)(MotB)(FlgB)(FlgC)(FlgF)(FlgG)(FlgI)(FliF)(FliE)(FliL)<sub>2</sub>][(FlhA)(FlhB)(FliO)(FliP)(FliQ)(FliR)(FliH)<sub>12</sub>(FliI)<sub>6</sub>(FliJ)][FlgE]<sub>120</sub>[FlgK][FlgL][FliC][FliD]<sub>5</sub>,flgL,CPLX0-7452,1.0
+647,[([FliG]<sub>26</sub>[FliM]<sub>34</sub>[FliN])(FlgH)(MotA)(MotB)(FlgB)(FlgC)(FlgF)(FlgG)(FlgI)(FliF)(FliE)(FliL)<sub>2</sub>][(FlhA)(FlhB)(FliO)(FliP)(FliQ)(FliR)(FliH)<sub>12</sub>(FliI)<sub>6</sub>(FliJ)][FlgE]<sub>120</sub>[FlgK][FlgL][FliC][FliD]<sub>5</sub>,fliC,CPLX0-7452,1.0
+648,[([FliG]<sub>26</sub>[FliM]<sub>34</sub>[FliN])(FlgH)(MotA)(MotB)(FlgB)(FlgC)(FlgF)(FlgG)(FlgI)(FliF)(FliE)(FliL)<sub>2</sub>][(FlhA)(FlhB)(FliO)(FliP)(FliQ)(FliR)(FliH)<sub>12</sub>(FliI)<sub>6</sub>(FliJ)][FlgE]<sub>120</sub>[FlgK][FlgL][FliC][FliD]<sub>5</sub>,fliD,CPLX0-7452,5.0
+649,[(FliG)<sub>26</sub>(FliM)<sub>34</sub>(FliN)][FlgH][MotA][MotB][FlgB][FlgC][FlgF][FlgG][FlgI][FliF][FliE][FliL]<sub>2</sub>,(FliG)<sub>26</sub>(FliM)<sub>34</sub>(FliN),FLAGELLAR-MOTOR-COMPLEX,26.0
+650,[(FliG)<sub>26</sub>(FliM)<sub>34</sub>(FliN)][FlgH][MotA][MotB][FlgB][FlgC][FlgF][FlgG][FlgI][FliF][FliE][FliL]<sub>2</sub>,flgH,FLAGELLAR-MOTOR-COMPLEX,1.0
+651,[(FliG)<sub>26</sub>(FliM)<sub>34</sub>(FliN)][FlgH][MotA][MotB][FlgB][FlgC][FlgF][FlgG][FlgI][FliF][FliE][FliL]<sub>2</sub>,motA,FLAGELLAR-MOTOR-COMPLEX,1.0
+652,[(FliG)<sub>26</sub>(FliM)<sub>34</sub>(FliN)][FlgH][MotA][MotB][FlgB][FlgC][FlgF][FlgG][FlgI][FliF][FliE][FliL]<sub>2</sub>,motB,FLAGELLAR-MOTOR-COMPLEX,1.0
+653,[(FliG)<sub>26</sub>(FliM)<sub>34</sub>(FliN)][FlgH][MotA][MotB][FlgB][FlgC][FlgF][FlgG][FlgI][FliF][FliE][FliL]<sub>2</sub>,flgB,FLAGELLAR-MOTOR-COMPLEX,1.0
+654,[(FliG)<sub>26</sub>(FliM)<sub>34</sub>(FliN)][FlgH][MotA][MotB][FlgB][FlgC][FlgF][FlgG][FlgI][FliF][FliE][FliL]<sub>2</sub>,flgC,FLAGELLAR-MOTOR-COMPLEX,1.0
+655,[(FliG)<sub>26</sub>(FliM)<sub>34</sub>(FliN)][FlgH][MotA][MotB][FlgB][FlgC][FlgF][FlgG][FlgI][FliF][FliE][FliL]<sub>2</sub>,flgF,FLAGELLAR-MOTOR-COMPLEX,1.0
+656,[(FliG)<sub>26</sub>(FliM)<sub>34</sub>(FliN)][FlgH][MotA][MotB][FlgB][FlgC][FlgF][FlgG][FlgI][FliF][FliE][FliL]<sub>2</sub>,flgG,FLAGELLAR-MOTOR-COMPLEX,1.0
+657,[(FliG)<sub>26</sub>(FliM)<sub>34</sub>(FliN)][FlgH][MotA][MotB][FlgB][FlgC][FlgF][FlgG][FlgI][FliF][FliE][FliL]<sub>2</sub>,flgI,FLAGELLAR-MOTOR-COMPLEX,1.0
+658,[(FliG)<sub>26</sub>(FliM)<sub>34</sub>(FliN)][FlgH][MotA][MotB][FlgB][FlgC][FlgF][FlgG][FlgI][FliF][FliE][FliL]<sub>2</sub>,fliF,FLAGELLAR-MOTOR-COMPLEX,1.0
+659,[(FliG)<sub>26</sub>(FliM)<sub>34</sub>(FliN)][FlgH][MotA][MotB][FlgB][FlgC][FlgF][FlgG][FlgI][FliF][FliE][FliL]<sub>2</sub>,fliE,FLAGELLAR-MOTOR-COMPLEX,1.0
+660,[(FliG)<sub>26</sub>(FliM)<sub>34</sub>(FliN)][FlgH][MotA][MotB][FlgB][FlgC][FlgF][FlgG][FlgI][FliF][FliE][FliL]<sub>2</sub>,fliL,FLAGELLAR-MOTOR-COMPLEX,2.0
+661,([FliG]<sub>26</sub>[FliM]<sub>34</sub>[FliN])(FlgH)(MotA)(MotB)(FlgB)(FlgC)(FlgF)(FlgG)(FlgI)(FliF)(FliE)(FliL)<sub>2</sub> (extended summary available),fliG,FLAGELLAR-MOTOR-COMPLEX,26.0
+662,([FliG]<sub>26</sub>[FliM]<sub>34</sub>[FliN])(FlgH)(MotA)(MotB)(FlgB)(FlgC)(FlgF)(FlgG)(FlgI)(FliF)(FliE)(FliL)<sub>2</sub> (extended summary available),fliM,FLAGELLAR-MOTOR-COMPLEX,34.0
+663,([FliG]<sub>26</sub>[FliM]<sub>34</sub>[FliN])(FlgH)(MotA)(MotB)(FlgB)(FlgC)(FlgF)(FlgG)(FlgI)(FliF)(FliE)(FliL)<sub>2</sub> (extended summary available),fliN,FLAGELLAR-MOTOR-COMPLEX,2.0
+664,,fnr,CPLX0-7797,
+665,[FocA]&lt;SUB&gt;5&lt;/SUB&gt;&lt;br&gt;                       formate channel FocB focB,focA,CPLX0-7843,5.0
+666,[FocA]&lt;SUB&gt;5&lt;/SUB&gt;,focA,CPLX0-7843,5.0
+667,[FolB]&lt;SUB&gt;8&lt;/SUB&gt;,folB,CPLX0-3936,8.0
+668,[FolB]&lt;SUB&gt;8&lt;/SUB&gt;,folB,CPLX0-3936,8.0
+669,[FolD]&lt;SUB&gt;2&lt;/SUB&gt;,folD,FOLD-CPLX,2.0
+670,[FolD]&lt;SUB&gt;2&lt;/SUB&gt;,folD,FOLD-CPLX,2.0
+671,[FolE]&lt;SUB&gt;10&lt;/SUB&gt;,folE,FOLE-CPLX,1.0
+672,[FolP]&lt;SUB&gt;2&lt;/SUB&gt;,folP,H2PTEROATESYNTH-CPLX,2.0
+673,[FolX]&lt;SUB&gt;8&lt;/SUB&gt;,folX,FOLXTET-CPLX,8.0
+674,[Frc]&lt;SUB&gt;2&lt;/SUB&gt;,frc,CPLX0-1142,2.0
+675,[FrdA][FrdB][FrdC][FrdD],frdA,FUMARATE-REDUCTASE,1.0
+676,[FrdA][FrdB][FrdC][FrdD],frdB,FUMARATE-REDUCTASE,1.0
+677,[FrdA][FrdB][FrdC][FrdD],frdC,FUMARATE-REDUCTASE,1.0
+678,[FrdA][FrdB][FrdC][FrdD],frdD,FUMARATE-REDUCTASE,1.0
+679,[FrlB]&lt;SUB&gt;12&lt;/SUB&gt;,frlB,CPLX0-821,1.0
+680,[FrlC]&lt;SUB&gt;8&lt;/SUB&gt;,frlC,CPLX0-3861,8.0
+681,[FrmA]&lt;SUB&gt;2&lt;/SUB&gt;,frmA,ADHC-CPLX,2.0
+682,,frmR,CPLX0-8234,
+683,[FruB][FruA]<sub>2</sub>,fruB,CPLX-158,1.0
+684,[FruB][FruA]<sub>2</sub>,fruA,CPLX-158,2.0
+685,[FruK]&lt;SUB&gt;2&lt;/SUB&gt;,fruK,1-PFK,2.0
+686,[FrvB][FrvA],frvB,CPLX-159,1.0
+687,[FrvB][FrvA],frvA,CPLX-159,1.0
+688,[FrwC][FrwB][FrwD][PtsA],frwC,CPLX-160,1.0
+689,[FrwC][FrwB][FrwD][PtsA],frwB,CPLX-160,1.0
+690,[FrwC][FrwB][FrwD][PtsA],frwD,CPLX-160,1.0
+691,[FrwC][FrwB][FrwD][PtsA],ptsA,CPLX-160,1.0
+692,[FryC][FryB][FryA],fryC,CPLX0-8119,1.0
+693,[FryC][FryB][FryA],fryB,CPLX0-8119,1.0
+694,[FryC][FryB][FryA],fryA,CPLX0-8119,1.0
+695,[FsaA]&lt;SUB&gt;10&lt;/SUB&gt;,fsaA,CPLX0-201,1.0
+696,[FtnA]&lt;SUB&gt;24&lt;/SUB&gt;,ftnA,CPLX0-3969,2.0
+697,[FtsE]<sub>2</sub>[FtsX],ftsE,ABC-54-CPLX,2.0
+698,[FtsE]<sub>2</sub>[FtsX],ftsX,ABC-54-CPLX,1.0
+699,[FtsQ][FtsB][FtsL],ftsQ,CPLX0-7934,1.0
+700,[FtsQ][FtsB][FtsL],ftsB,CPLX0-7934,1.0
+701,[FtsQ][FtsB][FtsL],ftsL,CPLX0-7934,1.0
+702,[FucA]&lt;SUB&gt;4&lt;/SUB&gt;,fucA,CPLX0-7633,4.0
+703,[FucA]&lt;SUB&gt;4&lt;/SUB&gt;,fucA,CPLX0-7633,4.0
+704,[FucI]&lt;SUB&gt;6&lt;/SUB&gt;,fucI,CPLX0-7631,6.0
+705,[FucI]&lt;SUB&gt;6&lt;/SUB&gt;,fucI,CPLX0-7631,6.0
+706,[FucO]&lt;SUB&gt;2&lt;/SUB&gt;,fucO,LACTALDREDUCT-CPLX,2.0
+707,[FucO]&lt;SUB&gt;2&lt;/SUB&gt;,fucO,LACTALDREDUCT-CPLX,2.0
+708,[FucU]&lt;SUB&gt;6&lt;/SUB&gt;,fucU,CPLX0-7645,6.0
+709,[FumA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fumarase B FumB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fumarase C FumC]&lt;SUB&gt;4&lt;/SUB&gt;,fumA,FUMARASE-A,2.0
+710,[FumA]&lt;SUB&gt;2&lt;/SUB&gt;,fumA,FUMARASE-A,2.0
+711,[FumA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fumarase B FumB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fumarase C FumC]&lt;SUB&gt;4&lt;/SUB&gt;,fumB,FUMARASE-B,2.0
+712,[FumB]&lt;SUB&gt;2&lt;/SUB&gt;,fumB,FUMARASE-B,2.0
+713,[FumA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fumarase B FumB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fumarase C FumC]&lt;SUB&gt;4&lt;/SUB&gt;,fumC,FUMARASE-C,4.0
+714,[GabD]&lt;SUB&gt;4&lt;/SUB&gt;,gabD,CPLX0-7688,4.0
+715,[GabD]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       succinate semialdehyde dehydrogenase (NAD(P)&lt;sup&gt;+&lt;/sup&gt;) Sad Sad]&lt;SUB&gt;2&lt;/SUB&gt;,gabD,CPLX0-7688,4.0
+716,[GabT]&lt;SUB&gt;2&lt;/SUB&gt;,gabT,GABATRANSAM-CPLX,2.0
+717,[GabT]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       4-aminobutyrate aminotransferase PuuE puuE,gabT,GABATRANSAM-CPLX,2.0
+718,[GabT]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       succinylornithine transaminase AstC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       &lt;i&gt;N&lt;/i&gt;-acetylornithine aminotransferase / &lt;i&gt;N&lt;/i&gt;-succinyldiaminopimelate aminotransferase ArgD]&lt;SUB&gt;2&lt;/SUB&gt;,gabT,GABATRANSAM-CPLX,2.0
+719,[GadB]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       glutamate decarboxylase A GadA]&lt;SUB&gt;6&lt;/SUB&gt;,gadA,GLUTDECARBOXA-CPLX,6.0
+720,[GadB]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       glutamate decarboxylase A GadA]&lt;SUB&gt;6&lt;/SUB&gt;,gadB,GLUTDECARBOXB-CPLX,6.0
+721,[GalE]&lt;SUB&gt;2&lt;/SUB&gt;,galE,UDPGLUCEPIM-CPLX,2.0
+722,[GalT]&lt;SUB&gt;2&lt;/SUB&gt;,galT,GALACTURIDYLYLTRANS-CPLX,2.0
+723,[GalU]&lt;SUB&gt;4&lt;/SUB&gt;,galU,CPLX0-8205,4.0
+724,[GapA]&lt;SUB&gt;4&lt;/SUB&gt;,gapA,GAPDH-A-CPLX,4.0
+725,[GarL]&lt;SUB&gt;6&lt;/SUB&gt;,garL,CPLX0-7615,6.0
+726,[GatC]<sub>2</sub>[GatB][GatA],gatC,CPLX0-231,2.0
+727,[GatC]<sub>2</sub>[GatB][GatA],gatB,CPLX0-231,1.0
+728,[GatC]<sub>2</sub>[GatB][GatA],gatA,CPLX0-231,1.0
+729,[GatD]&lt;SUB&gt;2&lt;/SUB&gt;,gatD,CPLX0-8186,2.0
+730,[GatY][GatZ],gatY,CPLX0-241,1.0
+731,[GatY][GatZ],gatZ,CPLX0-241,1.0
+732,[Gcl]&lt;SUB&gt;2&lt;/SUB&gt;,gcl,GLYOCARBOLIG-CPLX,2.0
+733,[GcvP]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       glycine cleavage system (Lpd)&lt;SUB&gt;2&lt;/SUB&gt;](GcvP)&lt;SUB&gt;2&lt;/SUB&gt;]GcvH]GcvT],gcvP,GCVP-CPLX,2.0
+734,[GdhA]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       glutamate synthase (GltD)(GltB)]&lt;SUB&gt;4&lt;/SUB&gt;,gdhA,GDHA-CPLX,6.0
+735,[Gdx]&lt;SUB&gt;2&lt;/SUB&gt;,gdx,CPLX0-8263,2.0
+736,[Gdx]&lt;SUB&gt;2&lt;/SUB&gt;,gdx,CPLX0-8263,2.0
+737,[Ggt][Ggt],ggt,CPLX0-7885,1.0
+738,[Ggt][Ggt],ggt,CPLX0-7885,1.0
+739,[multifunctional] GhrB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       glyoxylate/hydroxypyruvate reductase A ghrA,ghrB,CPLX0-235,2.0
+740,[multifunctional] GhrB]&lt;SUB&gt;2&lt;/SUB&gt;,ghrB,CPLX0-235,2.0
+741,[multifunctional] GhrB]&lt;SUB&gt;2&lt;/SUB&gt;,ghrB,CPLX0-235,2.0
+742,[multifunctional] GhrB]&lt;SUB&gt;2&lt;/SUB&gt;,ghrB,CPLX0-235,2.0
+743,[multifunctional] GhrB]&lt;SUB&gt;2&lt;/SUB&gt;,ghrB,CPLX0-235,2.0
+744,[GlaH]&lt;SUB&gt;4&lt;/SUB&gt;,glaH,CPLX0-8201,4.0
+745,[GlcD][GlcE][GlcF],glcD,CPLX0-7458,1.0
+746,[GlcD][GlcE][GlcF],glcE,CPLX0-7458,1.0
+747,[GlcD][GlcE][GlcF],glcF,CPLX0-7458,1.0
+748,[GldA]&lt;SUB&gt;8&lt;/SUB&gt;,gldA,GLYCDEH-CPLX,8.0
+749,[GldA]&lt;SUB&gt;8&lt;/SUB&gt;,gldA,GLYCDEH-CPLX,8.0
+750,[GldA]&lt;SUB&gt;8&lt;/SUB&gt;,gldA,GLYCDEH-CPLX,8.0
+751,[GlgC]&lt;SUB&gt;4&lt;/SUB&gt;,glgC,GLUC1PADENYLTRANS-CPLX,4.0
+752,[GlgP]&lt;SUB&gt;2&lt;/SUB&gt;,glgP,GLYCOPHOSPHORYL-CPLX,2.0
+753,[GlmS]&lt;SUB&gt;2&lt;/SUB&gt;,glmS,L-GLN-FRUCT-6-P-AMINOTRANS-CPLX,2.0
+754,[GlmU]&lt;SUB&gt;3&lt;/SUB&gt;,glmU,NAG1P-URIDYLTRANS-CPLX,3.0
+755,[GlmU]&lt;SUB&gt;3&lt;/SUB&gt;,glmU,NAG1P-URIDYLTRANS-CPLX,3.0
+756,[GlnA]&lt;SUB&gt;12&lt;/SUB&gt;,glnA,GLUTAMINESYN-OLIGOMER,1.0
+757,,glnB,PIIPROTEIN-CPLX,
+758,,glnG,GLNG-CPLX,
+759,,glnK,PII2-CPLX,
+760,,glnL,PROTEIN-NRIIP,
+761,[GlnQ]<sub>2</sub>[GlnP]<sub>2</sub>[GlnH],glnQ,ABC-12-CPLX,2.0
+762,[GlnQ]<sub>2</sub>[GlnP]<sub>2</sub>[GlnH],glnP,ABC-12-CPLX,2.0
+763,[GlnQ]<sub>2</sub>[GlnP]<sub>2</sub>[GlnH],glnH,ABC-12-CPLX,1.0
+764,[GloA]&lt;SUB&gt;2&lt;/SUB&gt;,gloA,GLYOXI-CPLX,2.0
+765,[GlpA][GlpB][GlpC],glpA,ANGLYC3PDEHYDROG-CPLX,1.0
+766,[GlpA][GlpB][GlpC],glpB,ANGLYC3PDEHYDROG-CPLX,1.0
+767,[GlpA][GlpB][GlpC],glpC,ANGLYC3PDEHYDROG-CPLX,1.0
+768,[GlpD]&lt;SUB&gt;2&lt;/SUB&gt;,glpD,AERGLYC3PDEHYDROG-CPLX,2.0
+769,[GlpE]&lt;SUB&gt;2&lt;/SUB&gt;,glpE,CPLX0-242,2.0
+770,[YgaP]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-mercaptopyruvate sulfurtransferase sseA&lt;br&gt;                       thiosulfate sulfurtransferase PspE pspE&lt;br&gt;                       thiosulfate sulfurtransferase GlpE GlpE]&lt;SUB&gt;2&lt;/SUB&gt;,glpE,CPLX0-242,2.0
+771,[GlpF]&lt;SUB&gt;4&lt;/SUB&gt;,glpF,CPLX0-7654,4.0
+772,[GlpF]&lt;SUB&gt;4&lt;/SUB&gt;,glpF,CPLX0-7654,4.0
+773,[GlpF]&lt;SUB&gt;4&lt;/SUB&gt;,glpF,CPLX0-7654,4.0
+774,[GlpF]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       amino acid exporter YddG yddG,glpF,CPLX0-7654,4.0
+775,[GlpF]&lt;SUB&gt;4&lt;/SUB&gt;,glpF,CPLX0-7654,4.0
+776,[GlpF]&lt;SUB&gt;4&lt;/SUB&gt;,glpF,CPLX0-7654,4.0
+777,[GlpF]&lt;SUB&gt;4&lt;/SUB&gt;,glpF,CPLX0-7654,4.0
+778,[GlpK]&lt;SUB&gt;4&lt;/SUB&gt;,glpK,GLYCEROL-KIN-CPLX,4.0
+779,[GlpQ]&lt;SUB&gt;2&lt;/SUB&gt;,glpQ,GLYCPDIESTER-PERI-CPLX,2.0
+780,"[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fructose 1,6-bisphosphatase YggF YggF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       pyridoxal phosphate/fructose-1,6-bisphosphate phosphatase ybhA&lt;br&gt;                       fructose-1,6-bisphosphatase 2 GlpX]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fructose-1,6-bisphosphatase 1 Fbp]&lt;SUB&gt;4&lt;/SUB&gt;",glpX,CPLX0-303,2.0
+781,,glrK,CPLX0-8275,
+782,[GlsA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       glutaminase 2 GlsB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       imidazole glycerol phosphate synthase HisH]HisF]&lt;br&gt;                       GMP synthetase GuaA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       CTP synthetase PyrG]&lt;SUB&gt;4&lt;/SUB&gt; + 3 isozymes],glsA,CPLX0-7694,4.0
+783,[GlsA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       glutaminase 2 GlsB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       imidazole glycerol phosphate synthase HisH]HisF]&lt;br&gt;                       GMP synthetase GuaA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       CTP synthetase PyrG]&lt;SUB&gt;4&lt;/SUB&gt; + 3 isozymes],glsB,CPLX0-7695,2.0
+784,[PrpC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       citrate synthase GltA]&lt;SUB&gt;6&lt;/SUB&gt;,gltA,CITRATE-SI-SYNTHASE,6.0
+785,[(GltD)(GltB)]<sub>4</sub>,(GltD)(GltB),GLUTAMATESYN-CPLX,4.0
+786,,gltD,GLUTAMATESYN-DIMER,
+787,,gltB,GLUTAMATESYN-DIMER,
+788,[GltI][GltK][GltJ][GltL]<sub>2</sub>,gltI,ABC-13-CPLX,1.0
+789,[GltI][GltK][GltJ][GltL]<sub>2</sub>,gltK,ABC-13-CPLX,1.0
+790,[GltI][GltK][GltJ][GltL]<sub>2</sub>,gltJ,ABC-13-CPLX,1.0
+791,[GltI][GltK][GltJ][GltL]<sub>2</sub>,gltL,ABC-13-CPLX,2.0
+792,[GlxR]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       tartronate semialdehyde reductase garR,glxR,CPLX0-7616,4.0
+793,[GlyA]&lt;SUB&gt;2&lt;/SUB&gt;,glyA,GLYOHMETRANS-CPLX,2.0
+794,[GlyA]&lt;SUB&gt;2&lt;/SUB&gt;,glyA,GLYOHMETRANS-CPLX,2.0
+795,[GlyA]&lt;SUB&gt;2&lt;/SUB&gt;,glyA,GLYOHMETRANS-CPLX,2.0
+796,[GlyA]&lt;SUB&gt;2&lt;/SUB&gt;,glyA,GLYOHMETRANS-CPLX,2.0
+797,[GlyS]<sub>2</sub>[GlyQ]<sub>2</sub>,glyS,GLYS-CPLX,2.0
+798,[GlyS]<sub>2</sub>[GlyQ]<sub>2</sub>,glyQ,GLYS-CPLX,2.0
+799,[Gmd]&lt;SUB&gt;2&lt;/SUB&gt;,gmd,GDPMANDEHYDRA-CPLX,2.0
+800,[GmhA]&lt;SUB&gt;4&lt;/SUB&gt;,gmhA,CPLX0-7660,4.0
+801,[Gmk]&lt;SUB&gt;2&lt;/SUB&gt;,gmk,GUANYL-KIN-CPLX,2.0
+802,[Gmk]&lt;SUB&gt;2&lt;/SUB&gt;,gmk,GUANYL-KIN-CPLX,2.0
+803,[Gmm]&lt;SUB&gt;2&lt;/SUB&gt;,gmm,CPLX0-7712,2.0
+804,[Gmm]&lt;SUB&gt;2&lt;/SUB&gt;,gmm,CPLX0-7712,2.0
+805,[Gnd]&lt;SUB&gt;2&lt;/SUB&gt;,gnd,6PGLUCONDEHYDROG-CPLX,2.0
+806,,gnsA,CPLX0-8177,
+807,"[GntK]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       D-gluconate kinase, thermosensitive idnK",gntK,GLUCONOKINII-CPLX,2.0
+808,[Gor]&lt;SUB&gt;2&lt;/SUB&gt;,gor,GLUTATHIONE-REDUCT-NADPH-CPLX,2.0
+809,[GpmA]&lt;SUB&gt;2&lt;/SUB&gt;,gpmA,PHOSGLYCMUTASE,2.0
+810,[Gpp]&lt;SUB&gt;2&lt;/SUB&gt;,gpp,PPPGPPHYDRO-CPLX,2.0
+811,[GpsA]&lt;SUB&gt;2&lt;/SUB&gt;,gpsA,GLYC3PDEHYDROGBIOSYN-CPLX,2.0
+812,[Hpt]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       xanthine-guanine phosphoribosyltransferase Gpt]&lt;SUB&gt;4&lt;/SUB&gt;,gpt,GPT-CPLX,4.0
+813,[Gpt]&lt;SUB&gt;4&lt;/SUB&gt;,gpt,GPT-CPLX,4.0
+814,[Gpt]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       hypoxanthine phosphoribosyltransferase Hpt]&lt;SUB&gt;4&lt;/SUB&gt;,gpt,GPT-CPLX,4.0
+815,[GroL]<sub>14</sub>[GroS]<sub>14</sub>,groL,CPLX0-3934,14.0
+816,[GroL]<sub>14</sub>[GroS]<sub>14</sub>,groS,CPLX0-3934,14.0
+817,,grpE,CPLX0-8192,
+818,,grxD,CPLX0-7817,
+819,[GshB]&lt;SUB&gt;4&lt;/SUB&gt;,gshB,GLUTATHIONE-SYN-CPLX,4.0
+820,[GsiA][GsiB][GsiD][GsiC],gsiA,ABC-49-CPLX,1.0
+821,[GsiA][GsiB][GsiD][GsiC],gsiB,ABC-49-CPLX,1.0
+822,[GsiA][GsiB][GsiD][GsiC],gsiD,ABC-49-CPLX,1.0
+823,[GsiA][GsiB][GsiD][GsiC],gsiC,ABC-49-CPLX,1.0
+824,[Gsk]&lt;SUB&gt;2&lt;/SUB&gt;,gsk,CPLX0-322,2.0
+825,[Gsk]&lt;SUB&gt;2&lt;/SUB&gt;,gsk,CPLX0-322,2.0
+826,[GspC][GspD][GspE][GspF][GspG][GspH][GspI][GspJ][GspK][GspL][GspM][GspO],gspC,CPLX0-3382,1.0
+827,[GspC][GspD][GspE][GspF][GspG][GspH][GspI][GspJ][GspK][GspL][GspM][GspO],gspD,CPLX0-3382,1.0
+828,[GspC][GspD][GspE][GspF][GspG][GspH][GspI][GspJ][GspK][GspL][GspM][GspO],gspE,CPLX0-3382,1.0
+829,[GspC][GspD][GspE][GspF][GspG][GspH][GspI][GspJ][GspK][GspL][GspM][GspO],gspF,CPLX0-3382,1.0
+830,[GspC][GspD][GspE][GspF][GspG][GspH][GspI][GspJ][GspK][GspL][GspM][GspO],gspG,CPLX0-3382,1.0
+831,[GspC][GspD][GspE][GspF][GspG][GspH][GspI][GspJ][GspK][GspL][GspM][GspO],gspH,CPLX0-3382,1.0
+832,[GspC][GspD][GspE][GspF][GspG][GspH][GspI][GspJ][GspK][GspL][GspM][GspO],gspI,CPLX0-3382,1.0
+833,[GspC][GspD][GspE][GspF][GspG][GspH][GspI][GspJ][GspK][GspL][GspM][GspO],gspJ,CPLX0-3382,1.0
+834,[GspC][GspD][GspE][GspF][GspG][GspH][GspI][GspJ][GspK][GspL][GspM][GspO],gspK,CPLX0-3382,1.0
+835,[GspC][GspD][GspE][GspF][GspG][GspH][GspI][GspJ][GspK][GspL][GspM][GspO],gspL,CPLX0-3382,1.0
+836,[GspC][GspD][GspE][GspF][GspG][GspH][GspI][GspJ][GspK][GspL][GspM][GspO],gspM,CPLX0-3382,1.0
+837,[GspC][GspD][GspE][GspF][GspG][GspH][GspI][GspJ][GspK][GspL][GspM][GspO],gspO,CPLX0-3382,1.0
+838,[Gss]&lt;SUB&gt;2&lt;/SUB&gt;,gss,GSP-CPLX,2.0
+839,[Gss]&lt;SUB&gt;2&lt;/SUB&gt;,gss,GSP-CPLX,2.0
+840,[GstA]&lt;SUB&gt;2&lt;/SUB&gt;,gstA,GST-CPLX,2.0
+841,[GuaA]&lt;SUB&gt;2&lt;/SUB&gt;,guaA,GMP-SYN-CPLX,2.0
+842,[GuaA]&lt;SUB&gt;2&lt;/SUB&gt;,guaA,GMP-SYN-CPLX,2.0
+843,[GuaB]&lt;SUB&gt;4&lt;/SUB&gt;,guaB,IMP-DEHYDROG-CPLX,4.0
+844,[GuaC]&lt;SUB&gt;4&lt;/SUB&gt;,guaC,GMP-REDUCT-CPLX,4.0
+845,[GutQ]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       D-arabinose 5-phosphate isomerase KdsD KdsD]&lt;SUB&gt;4&lt;/SUB&gt;,gutQ,CPLX0-3929,4.0
+846,[GyrA]<sub>2</sub>[GyrB]<sub>2</sub>,gyrA,CPLX0-2425,2.0
+847,[GyrA]<sub>2</sub>[GyrB]<sub>2</sub>,gyrB,CPLX0-2425,2.0
+848,[HcaC][HcaD][HcaF][HcaE],hcaC,HCAMULTI-CPLX,1.0
+849,[HcaC][HcaD][HcaF][HcaE],hcaD,HCAMULTI-CPLX,1.0
+850,[HcaC][HcaD][HcaF][HcaE],hcaF,HCAMULTI-CPLX,1.0
+851,[HcaC][HcaD][HcaF][HcaE],hcaE,HCAMULTI-CPLX,1.0
+852,[HchA]&lt;SUB&gt;2&lt;/SUB&gt;,hchA,CPLX0-861,2.0
+853,[HchA]&lt;SUB&gt;2&lt;/SUB&gt;,hchA,CPLX0-861,2.0
+854,[HchA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       protein/nucleic acid deglycase 2 yhbO&lt;br&gt;                       protein/nucleic acid deglycase 3 YajL]&lt;SUB&gt;2&lt;/SUB&gt;,hchA,CPLX0-861,2.0
+855,[HchA]&lt;SUB&gt;2&lt;/SUB&gt;,hchA,CPLX0-861,2.0
+856,,hdeA,CPLX0-801,
+857,,hdeB,CPLX0-8207,
+858,[HdhA]&lt;SUB&gt;4&lt;/SUB&gt;,hdhA,7-ALPHA-HYDROXYSTEROID-DEH-CPLX,4.0
+859,[HemA]&lt;SUB&gt;2&lt;/SUB&gt;,hemA,CPLX0-3741,2.0
+860,[HemB]&lt;SUB&gt;8&lt;/SUB&gt;,hemB,PORPHOBILSYNTH-CPLX,8.0
+861,[HemF]&lt;SUB&gt;2&lt;/SUB&gt;,hemF,CPLX0-7808,2.0
+862,[HemG]&lt;SUB&gt;4&lt;/SUB&gt;,hemG,CPLX0-7811,4.0
+863,[HemG]&lt;SUB&gt;4&lt;/SUB&gt;,hemG,CPLX0-7811,4.0
+864,[HemL]&lt;SUB&gt;2&lt;/SUB&gt;,hemL,GSAAMINOTRANS-CPLX,2.0
+865,,hemW,CPLX0-8291,
+866,[(HflK)(HflC)]<sub>6</sub>[FtsH]<sub>6</sub>,(HflK)(HflC),CPLX0-2982,6.0
+867,[(HflK)(HflC)]<sub>6</sub>[FtsH]<sub>6</sub>,ftsH,CPLX0-2982,6.0
+868,[HflK][HflC],hflK,CPLX0-1321,1.0
+869,[HflK][HflC],hflC,CPLX0-1321,1.0
+870,,hfq,CPLX0-1461,
+871,,higA,CPLX0-8229,
+872,[HigB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       ribosome-dependent mRNA interferase toxin YafQ yafQ&lt;br&gt;                       Qin prophage; mRNA interferase toxin RelE relE&lt;br&gt;                       antitoxin of the GhoTS toxin-antitoxin system ghoS + 2 isozymes],higB,CPLX0-8228,2.0
+873,[(HigB)<sub>2</sub>]<sub>2</sub>[(HigA)<sub>2</sub>]<sub>2</sub>,(HigB)<sub>2</sub>,CPLX0-8230,2.0
+874,[(HigB)<sub>2</sub>]<sub>2</sub>[(HigA)<sub>2</sub>]<sub>2</sub>,(HigA)<sub>2</sub>,CPLX0-8230,2.0
+875,[HinT]&lt;SUB&gt;2&lt;/SUB&gt;,hinT,CPLX0-7755,2.0
+876,,hipB,CPLX0-7757,
+877,[(HipB)<sub>2</sub>][HipA],(HipB)<sub>2</sub>,CPLX0-7425,2.0
+878,[(HipB)<sub>2</sub>][HipA],hipA,CPLX0-7425,1.0
+879,[HisB]&lt;SUB&gt;2&lt;/SUB&gt;,hisB,IMIDHISTID-CPLX,2.0
+880,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       imidazoleglycerol-phosphate dehydratase / histidinol-phosphatase HisB]&lt;SUB&gt;2&lt;/SUB&gt;,hisB,IMIDHISTID-CPLX,2.0
+881,[HisC]&lt;SUB&gt;2&lt;/SUB&gt;,hisC,HISTPHOSTRANS-CPLX,2.0
+882,[HisD]&lt;SUB&gt;2&lt;/SUB&gt;,hisD,HISTDEHYD-CPLX,2.0
+883,[HisD]&lt;SUB&gt;2&lt;/SUB&gt;,hisD,HISTDEHYD-CPLX,2.0
+884,[HisG]&lt;SUB&gt;2&lt;/SUB&gt;,hisG,CPLX0-7614,2.0
+885,[HisH][HisF],hisH,GLUTAMIDOTRANS-CPLX,1.0
+886,[HisH][HisF],hisF,GLUTAMIDOTRANS-CPLX,1.0
+887,[HisP]<sub>2</sub>[HisM][HisQ][HisJ],hisP,ABC-14-CPLX,2.0
+888,[HisP]<sub>2</sub>[HisM][HisQ][HisJ],hisM,ABC-14-CPLX,1.0
+889,[HisP]<sub>2</sub>[HisM][HisQ][HisJ],hisQ,ABC-14-CPLX,1.0
+890,[HisP]<sub>2</sub>[HisM][HisQ][HisJ],hisJ,ABC-14-CPLX,1.0
+891,[HisQ][HisP]<sub>2</sub>[HisM][ArgT],hisQ,ABC-3-CPLX,1.0
+892,[HisQ][HisP]<sub>2</sub>[HisM][ArgT],hisP,ABC-3-CPLX,2.0
+893,[HisQ][HisP]<sub>2</sub>[HisM][ArgT],hisM,ABC-3-CPLX,1.0
+894,[HisQ][HisP]<sub>2</sub>[HisM][ArgT],argT,ABC-3-CPLX,1.0
+895,[HisS]&lt;SUB&gt;2&lt;/SUB&gt;,hisS,HISS-CPLX,2.0
+896,[HiuH]&lt;SUB&gt;4&lt;/SUB&gt;,hiuH,CPLX0-3961,4.0
+897,[HldE]&lt;SUB&gt;2&lt;/SUB&gt;,hldE,CPLX0-3661,2.0
+898,[HldE]&lt;SUB&gt;2&lt;/SUB&gt;,hldE,CPLX0-3661,2.0
+899,,hokC,CPLX0-2621,
+900,[HolC][HolD],holC,CPLX0-7910,1.0
+901,[HolC][HolD],holD,CPLX0-7910,1.0
+902,[(DnaE)(DnaQ)(HolE)]<sub>3</sub>[(DnaX)<sub>3</sub>(HolB)(HolA)][(DnaN)<sub>2</sub>]<sub>2</sub>[(DnaX)<sub>2</sub>][(HolC)(HolD)]<sub>4</sub>,(DnaE)(DnaQ)(HolE),CPLX0-3803,3.0
+903,[(DnaE)(DnaQ)(HolE)]<sub>3</sub>[(DnaX)<sub>3</sub>(HolB)(HolA)][(DnaN)<sub>2</sub>]<sub>2</sub>[(DnaX)<sub>2</sub>][(HolC)(HolD)]<sub>4</sub>,(DnaX)<sub>3</sub>(HolB)(HolA),CPLX0-3803,3.0
+904,[(DnaE)(DnaQ)(HolE)]<sub>3</sub>[(DnaX)<sub>3</sub>(HolB)(HolA)][(DnaN)<sub>2</sub>]<sub>2</sub>[(DnaX)<sub>2</sub>][(HolC)(HolD)]<sub>4</sub>,(DnaN)<sub>2</sub>,CPLX0-3803,2.0
+905,[(DnaE)(DnaQ)(HolE)]<sub>3</sub>[(DnaX)<sub>3</sub>(HolB)(HolA)][(DnaN)<sub>2</sub>]<sub>2</sub>[(DnaX)<sub>2</sub>][(HolC)(HolD)]<sub>4</sub>,(DnaX)<sub>2</sub>,CPLX0-3803,2.0
+906,[(DnaE)(DnaQ)(HolE)]<sub>3</sub>[(DnaX)<sub>3</sub>(HolB)(HolA)][(DnaN)<sub>2</sub>]<sub>2</sub>[(DnaX)<sub>2</sub>][(HolC)(HolD)]<sub>4</sub>,(HolC)(HolD),CPLX0-3803,4.0
+907,[Gpt]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       hypoxanthine phosphoribosyltransferase Hpt]&lt;SUB&gt;4&lt;/SUB&gt;,hpt,CPLX0-7685,4.0
+908,[Hpt]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       xanthine-guanine phosphoribosyltransferase Gpt]&lt;SUB&gt;4&lt;/SUB&gt;,hpt,CPLX0-7685,4.0
+909,[HsdM]<sub>2</sub>[HsdR]<sub>2</sub>[HsdS],hsdM,CPLX0-3958,2.0
+910,[HsdM]<sub>2</sub>[HsdR]<sub>2</sub>[HsdS],hsdR,CPLX0-3958,2.0
+911,[HsdM]<sub>2</sub>[HsdR]<sub>2</sub>[HsdS],hsdS,CPLX0-3958,1.0
+912,,hslU,CPLX0-1161,
+913,[(HslU)<sub>6</sub>]<sub>2</sub>[(HslV)<sub>6</sub>]<sub>2</sub>,(HslU)<sub>6</sub>,CPLX0-1163,6.0
+914,[(HslU)<sub>6</sub>]<sub>2</sub>[(HslV)<sub>6</sub>]<sub>2</sub>,(HslV)<sub>6</sub>,CPLX0-1163,6.0
+915,,hslV,CPLX0-1162,
+916,,hspQ,CPLX0-3921,
+917,,htpG,CPLX0-2641,
+918,,hupA,CPLX0-8256,
+919,[HupA][HupB],hupA,CPLX0-2021,1.0
+920,[HupA][HupB],hupB,CPLX0-2021,1.0
+921,,hyaA,FORMHYDROGI-CPLX,
+922,,hyaB,FORMHYDROGI-CPLX,
+923,,hyaC,FORMHYDROGI-CPLX,
+924,[(HyaA)<sub>2</sub>(HyaB)<sub>2</sub>(HyaC)]<sub>2</sub>,(HyaA)<sub>2</sub>(HyaB)<sub>2</sub>(HyaC),CPLX0-8167,2.0
+925,[HybA][HybB][HybO][HybC],hybA,FORMHYDROG2-CPLX,1.0
+926,[HybA][HybB][HybO][HybC],hybB,FORMHYDROG2-CPLX,1.0
+927,[HybA][HybB][HybO][HybC],hybO,FORMHYDROG2-CPLX,1.0
+928,[HybA][HybB][HybO][HybC],hybC,FORMHYDROG2-CPLX,1.0
+929,[HycD][HycC][HycF][HycG][HycB][HycE],hycD,HYDROG3-CPLX,1.0
+930,[HycD][HycC][HycF][HycG][HycB][HycE],hycC,HYDROG3-CPLX,1.0
+931,[HycD][HycC][HycF][HycG][HycB][HycE],hycF,HYDROG3-CPLX,1.0
+932,[HycD][HycC][HycF][HycG][HycB][HycE],hycG,HYDROG3-CPLX,1.0
+933,[HycD][HycC][HycF][HycG][HycB][HycE],hycB,HYDROG3-CPLX,1.0
+934,[HycD][HycC][HycF][HycG][HycB][HycE],hycE,HYDROG3-CPLX,1.0
+935,[HyfG][HyfI][HyfA][HyfB][HyfC][HyfD][HyfE][HyfF][HyfH],hyfG,CPLX0-250,1.0
+936,[HyfG][HyfI][HyfA][HyfB][HyfC][HyfD][HyfE][HyfF][HyfH],hyfI,CPLX0-250,1.0
+937,[HyfG][HyfI][HyfA][HyfB][HyfC][HyfD][HyfE][HyfF][HyfH],hyfA,CPLX0-250,1.0
+938,[HyfG][HyfI][HyfA][HyfB][HyfC][HyfD][HyfE][HyfF][HyfH],hyfB,CPLX0-250,1.0
+939,[HyfG][HyfI][HyfA][HyfB][HyfC][HyfD][HyfE][HyfF][HyfH],hyfC,CPLX0-250,1.0
+940,[HyfG][HyfI][HyfA][HyfB][HyfC][HyfD][HyfE][HyfF][HyfH],hyfD,CPLX0-250,1.0
+941,[HyfG][HyfI][HyfA][HyfB][HyfC][HyfD][HyfE][HyfF][HyfH],hyfE,CPLX0-250,1.0
+942,[HyfG][HyfI][HyfA][HyfB][HyfC][HyfD][HyfE][HyfF][HyfH],hyfF,CPLX0-250,1.0
+943,[HyfG][HyfI][HyfA][HyfB][HyfC][HyfD][HyfE][HyfF][HyfH],hyfH,CPLX0-250,1.0
+944,[Hyi]&lt;SUB&gt;2&lt;/SUB&gt;,hyi,CPLX-171,2.0
+945,[HypA][HypB],hypA,CPLX0-3821,1.0
+946,[HypA][HypB],hypB,CPLX0-3821,1.0
+947,,hypB,CPLX0-3561,
+948,[HypD][HypC],hypD,CPLX0-7986,1.0
+949,[HypD][HypC],hypC,CPLX0-7986,1.0
+950,,hypT,CPLX0-7970,
+951,[HyuA]&lt;SUB&gt;4&lt;/SUB&gt;,hyuA,CPLX0-255,4.0
+952,[IaaA]<sub>2</sub>[IaaA]<sub>2</sub>,iaaA,CPLX0-263,2.0
+953,[IaaA]<sub>2</sub>[IaaA]<sub>2</sub>,iaaA,CPLX0-263,2.0
+954,[IaaA]&lt;SUB&gt;2&lt;/SUB&gt;IaaA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       isoaspartyl dipeptidase IadA]&lt;SUB&gt;8&lt;/SUB&gt;,iadA,CPLX0-3021,8.0
+955,[IbaG][GrxD],ibaG,CPLX0-8239,1.0
+956,[IbaG][GrxD],grxD,CPLX0-8239,1.0
+957,,ibpA,CPLX0-8108,
+958,,ibpB,CPLX0-8107,
+959,[Icd]&lt;SUB&gt;2&lt;/SUB&gt;,icd,ISOCITHASE-CPLX,2.0
+960,[IdnO]&lt;SUB&gt;2&lt;/SUB&gt;,idnO,CPLX0-8292,2.0
+961,[IdnO]&lt;SUB&gt;2&lt;/SUB&gt;,idnO,CPLX0-8292,2.0
+962,[IhfA][IhfB],ihfA,PC00027,1.0
+963,[IhfA][IhfB],ihfB,PC00027,1.0
+964,[TdcB]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       threonine deaminase IlvA]&lt;SUB&gt;4&lt;/SUB&gt;,ilvA,THREDEHYDSYN-CPLX,4.0
+965,[IlvB]<sub>2</sub>[IlvN]<sub>2</sub>,ilvB,ACETOLACTSYNI-CPLX,2.0
+966,[IlvB]<sub>2</sub>[IlvN]<sub>2</sub>,ilvN,ACETOLACTSYNI-CPLX,2.0
+967,[IlvC]&lt;SUB&gt;4&lt;/SUB&gt;,ilvC,CPLX0-7643,4.0
+968,[IlvC]&lt;SUB&gt;4&lt;/SUB&gt;,ilvC,CPLX0-7643,4.0
+969,[IlvC]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       2-dehydropantoate 2-reductase panE,ilvC,CPLX0-7643,4.0
+970,[IlvD]&lt;SUB&gt;2&lt;/SUB&gt;,ilvD,DIHYDROXYACIDDEHYDRAT-CPLX,2.0
+971,[IlvD]&lt;SUB&gt;2&lt;/SUB&gt;,ilvD,DIHYDROXYACIDDEHYDRAT-CPLX,2.0
+972,[IlvE]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       aspartate aminotransferase AspC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       tyrosine aminotransferase TyrB]&lt;SUB&gt;2&lt;/SUB&gt;,ilvE,BRANCHED-CHAINAMINOTRANSFER-CPLX,6.0
+973,[IlvE]&lt;SUB&gt;6&lt;/SUB&gt;,ilvE,BRANCHED-CHAINAMINOTRANSFER-CPLX,6.0
+974,[IlvE]&lt;SUB&gt;6&lt;/SUB&gt;,ilvE,BRANCHED-CHAINAMINOTRANSFER-CPLX,6.0
+975,[TyrB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       branched-chain-amino-acid aminotransferase IlvE]&lt;SUB&gt;6&lt;/SUB&gt;,ilvE,BRANCHED-CHAINAMINOTRANSFER-CPLX,6.0
+976,[IlvG][IlvM],ilvG,ACETOLACTSYNII-CPLX,1.0
+977,[IlvG][IlvM],ilvM,ACETOLACTSYNII-CPLX,1.0
+978,[IlvI]<sub>2</sub>[IlvH]<sub>2</sub>,ilvI,ACETOLACTSYNIII-CPLX,2.0
+979,[IlvI]<sub>2</sub>[IlvH]<sub>2</sub>,ilvH,ACETOLACTSYNIII-CPLX,2.0
+980,,insC1,CPLX0-7417,
+981,,iscA,CPLX0-7908,
+982,[SufS]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       cysteine desulfurase IscS]&lt;SUB&gt;2&lt;/SUB&gt;,iscS,CPLX0-248,2.0
+983,[SufS]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       cysteine desulfurase IscS]&lt;SUB&gt;2&lt;/SUB&gt;,iscS,CPLX0-248,2.0
+984,[IscS]&lt;SUB&gt;2&lt;/SUB&gt;,iscS,CPLX0-248,2.0
+985,[SufS]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       cysteine desulfurase IscS]&lt;SUB&gt;2&lt;/SUB&gt;,iscS,CPLX0-248,2.0
+986,[IscS]&lt;SUB&gt;2&lt;/SUB&gt;,iscS,CPLX0-248,2.0
+987,[IspB]&lt;SUB&gt;2&lt;/SUB&gt;,ispB,CPLX0-7426,2.0
+988,[IspD]&lt;SUB&gt;2&lt;/SUB&gt;,ispD,CPLX0-234,2.0
+989,[IspE]&lt;SUB&gt;2&lt;/SUB&gt;,ispE,CPLX0-3841,2.0
+990,[IspF]&lt;SUB&gt;3&lt;/SUB&gt;,ispF,CPLX0-721,3.0
+991,[IspH]&lt;SUB&gt;2&lt;/SUB&gt;,ispH,CPLX0-7564,2.0
+992,[IspH]&lt;SUB&gt;2&lt;/SUB&gt;,ispH,CPLX0-7564,2.0
+993,,ivy,CPLX0-921,
+994,[AdeD]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       catalase/hydroperoxidase HPI KatG]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       catalase HPII KatE]&lt;SUB&gt;4&lt;/SUB&gt;,katE,HYDROPEROXIDII-CPLX,4.0
+995,[KatE]&lt;SUB&gt;4&lt;/SUB&gt;,katE,HYDROPEROXIDII-CPLX,4.0
+996,[AdeD]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       catalase/hydroperoxidase HPI KatG]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       catalase HPII KatE]&lt;SUB&gt;4&lt;/SUB&gt;,katG,HYDROPEROXIDI-CPLX,4.0
+997,[KatG]&lt;SUB&gt;4&lt;/SUB&gt;,katG,HYDROPEROXIDI-CPLX,4.0
+998,[KbaY]<sub>4</sub>[KbaZ],kbaY,CPLX0-240,4.0
+999,[KbaY]<sub>4</sub>[KbaZ],kbaZ,CPLX0-240,1.0
+1000,[Kbl]&lt;SUB&gt;2&lt;/SUB&gt;,kbl,AKBLIG-CPLX,2.0
+1001,,kch,CPLX0-7674,
+1002,,kdpD,KDPD-CPLX,
+1003,,kdpE,CPLX0-7795,
+1004,[KdpF][KdpA][KdpB][KdpC],kdpF,ATPASE-1-CPLX,1.0
+1005,[KdpF][KdpA][KdpB][KdpC],kdpA,ATPASE-1-CPLX,1.0
+1006,[KdpF][KdpA][KdpB][KdpC],kdpB,ATPASE-1-CPLX,1.0
+1007,[KdpF][KdpA][KdpB][KdpC],kdpC,ATPASE-1-CPLX,1.0
+1008,[KdsA]&lt;SUB&gt;4&lt;/SUB&gt;,kdsA,KDO-8PSYNTH-CPLX,4.0
+1009,[KdsC]&lt;SUB&gt;4&lt;/SUB&gt;,kdsC,KDO-8PPHOSPHAT-CPLX,4.0
+1010,[GutQ]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       D-arabinose 5-phosphate isomerase KdsD KdsD]&lt;SUB&gt;4&lt;/SUB&gt;,kdsD,CPLX0-1262,4.0
+1011,[KduI]&lt;SUB&gt;6&lt;/SUB&gt;,kduI,CPLX-8401,6.0
+1012,[KefC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       K&lt;sup&gt;+&lt;/sup&gt; : H&lt;sup&gt;+&lt;/sup&gt; antiporter KefB kefB,kefC,CPLX0-7819,2.0
+1013,[KefF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       NAD(P)H:quinone oxidoreductase WrbA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       chromate reductase YieF]&lt;SUB&gt;2&lt;/SUB&gt;,kefF,CPLX0-7939,2.0
+1014,[LacA]&lt;SUB&gt;3&lt;/SUB&gt;,lacA,GALACTOACETYLTRAN-CPLX,3.0
+1015,[LacZ]&lt;SUB&gt;4&lt;/SUB&gt;,lacZ,BETAGALACTOSID-CPLX,4.0
+1016,[LacZ]&lt;SUB&gt;4&lt;/SUB&gt;,lacZ,BETAGALACTOSID-CPLX,4.0
+1017,[LacZ]&lt;SUB&gt;4&lt;/SUB&gt;,lacZ,BETAGALACTOSID-CPLX,4.0
+1018,[LacZ]&lt;SUB&gt;4&lt;/SUB&gt;,lacZ,BETAGALACTOSID-CPLX,4.0
+1019,[LamB]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin PhoE PhoE]&lt;SUB&gt;3&lt;/SUB&gt;,lamB,CPLX0-7655,3.0
+1020,[LamB]&lt;SUB&gt;3&lt;/SUB&gt;,lamB,CPLX0-7655,3.0
+1021,[LdcC]&lt;SUB&gt;10&lt;/SUB&gt;&lt;br&gt;                       lysine decarboxylase 1 CadA]&lt;SUB&gt;10&lt;/SUB&gt;,ldcC,LDC2-CPLX,1.0
+1022,[LdhA]&lt;SUB&gt;4&lt;/SUB&gt;,ldhA,CPLX0-8158,4.0
+1023,[LeuB]&lt;SUB&gt;2&lt;/SUB&gt;,leuB,3-ISOPROPYLMALDEHYDROG-CPLX,2.0
+1024,[LeuC][LeuD],leuC,3-ISOPROPYLMALISOM-CPLX,1.0
+1025,[LeuC][LeuD],leuD,3-ISOPROPYLMALISOM-CPLX,1.0
+1026,,lexA,PC00010,
+1027,[LipA]&lt;SUB&gt;2&lt;/SUB&gt;,lipA,CPLX0-782,2.0
+1028,[LivF][LivG][LivH][LivM][LivJ],livF,ABC-15-CPLX,1.0
+1029,[LivF][LivG][LivH][LivM][LivJ],livG,ABC-15-CPLX,1.0
+1030,[LivF][LivG][LivH][LivM][LivJ],livH,ABC-15-CPLX,1.0
+1031,[LivF][LivG][LivH][LivM][LivJ],livM,ABC-15-CPLX,1.0
+1032,[LivF][LivG][LivH][LivM][LivJ],livJ,ABC-15-CPLX,1.0
+1033,[LivK][LivM][LivH][LivG][LivF],livK,ABC-304-CPLX,1.0
+1034,[LivK][LivM][LivH][LivG][LivF],livM,ABC-304-CPLX,1.0
+1035,[LivK][LivM][LivH][LivG][LivF],livH,ABC-304-CPLX,1.0
+1036,[LivK][LivM][LivH][LivG][LivF],livG,ABC-304-CPLX,1.0
+1037,[LivK][LivM][LivH][LivG][LivF],livF,ABC-304-CPLX,1.0
+1038,[LolE][LolD]<sub>2</sub>[LolC],lolE,ABC-62-CPLX,1.0
+1039,[LolE][LolD]<sub>2</sub>[LolC],lolD,ABC-62-CPLX,2.0
+1040,[LolE][LolD]<sub>2</sub>[LolC],lolC,ABC-62-CPLX,1.0
+1041,[Lon]&lt;SUB&gt;6&lt;/SUB&gt;,lon,CPLX0-2881,6.0
+1042,[Lpd]&lt;SUB&gt;2&lt;/SUB&gt;,lpd,E3-CPLX,2.0
+1043,[(Lpd)&lt;SUB&gt;2&lt;/SUB&gt;](GcvP)&lt;SUB&gt;2&lt;/SUB&gt;]GcvH]GcvT]&lt;br&gt;                       lipoamide dehydrogenase Lpd]&lt;SUB&gt;2&lt;/SUB&gt;,lpd,E3-CPLX,2.0
+1044,[(AceE)&lt;SUB&gt;2&lt;/SUB&gt;]&lt;SUB&gt;12&lt;/SUB&gt;AceF]&lt;SUB&gt;24&lt;/SUB&gt;(Lpd)&lt;SUB&gt;2&lt;/SUB&gt;]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       lipoamide dehydrogenase Lpd]&lt;SUB&gt;2&lt;/SUB&gt;,lpd,E3-CPLX,2.0
+1045,[(SucA)&lt;SUB&gt;12&lt;/SUB&gt;](SucB)&lt;SUB&gt;24&lt;/SUB&gt;](Lpd)&lt;SUB&gt;2&lt;/SUB&gt;]&lt;br&gt;                       lipoamide dehydrogenase Lpd]&lt;SUB&gt;2&lt;/SUB&gt;,lpd,E3-CPLX,2.0
+1046,[Lpd]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       nitrate reductase Z NarY]NarZ]NarV]&lt;br&gt;                       nitrate reductase A NarG]&lt;SUB&gt;2&lt;/SUB&gt;NarH]&lt;SUB&gt;2&lt;/SUB&gt;NarI]&lt;SUB&gt;2&lt;/SUB&gt;,lpd,E3-CPLX,2.0
+1047,[(Lpd)<sub>2</sub>][(GcvP)<sub>2</sub>][GcvH][GcvT],(Lpd)<sub>2</sub>,GCVMULTI-CPLX,2.0
+1048,[(Lpd)<sub>2</sub>][(GcvP)<sub>2</sub>][GcvH][GcvT],(GcvP)<sub>2</sub>,GCVMULTI-CPLX,2.0
+1049,[(Lpd)<sub>2</sub>][(GcvP)<sub>2</sub>][GcvH][GcvT],gcvH,GCVMULTI-CPLX,1.0
+1050,[(Lpd)<sub>2</sub>][(GcvP)<sub>2</sub>][GcvH][GcvT],gcvT,GCVMULTI-CPLX,1.0
+1051,,lpp,CPLX0-8279,
+1052,[LptD][LptE],lptD,CPLX0-7628,1.0
+1053,[LptD][LptE],lptE,CPLX0-7628,1.0
+1054,[(LptD)(LptE)][LptG][LptC][LptA][LptB]<sub>2</sub>[LptF],(LptD)(LptE),CPLX0-7992,1.0
+1055,[(LptD)(LptE)][LptG][LptC][LptA][LptB]<sub>2</sub>[LptF],lptG,CPLX0-7992,1.0
+1056,[(LptD)(LptE)][LptG][LptC][LptA][LptB]<sub>2</sub>[LptF],lptC,CPLX0-7992,1.0
+1057,[(LptD)(LptE)][LptG][LptC][LptA][LptB]<sub>2</sub>[LptF],lptA,CPLX0-7992,1.0
+1058,[(LptD)(LptE)][LptG][LptC][LptA][LptB]<sub>2</sub>[LptF],lptB,CPLX0-7992,2.0
+1059,[(LptD)(LptE)][LptG][LptC][LptA][LptB]<sub>2</sub>[LptF],lptF,CPLX0-7992,1.0
+1060,[acyl-carrier-protein]—UDP-&lt;i&gt;N&lt;/i&gt;-acetylglucosamine &lt;i&gt;O&lt;/i&gt;-acyltransferase LpxA]&lt;SUB&gt;3&lt;/SUB&gt;,lpxA,UDPNACETYLGLUCOSAMACYLTRANS-CPLX,3.0
+1061,[LpxB]&lt;SUB&gt;2&lt;/SUB&gt;,lpxB,CPLX0-7415,2.0
+1062,[LpxD]&lt;SUB&gt;3&lt;/SUB&gt;,lpxD,CPLX0-8016,3.0
+1063,[LsrB][LsrD][LsrC][LsrA]<sub>2</sub>,lsrB,ABC-58-CPLX,1.0
+1064,[LsrB][LsrD][LsrC][LsrA]<sub>2</sub>,lsrD,ABC-58-CPLX,1.0
+1065,[LsrB][LsrD][LsrC][LsrA]<sub>2</sub>,lsrC,ABC-58-CPLX,1.0
+1066,[LsrB][LsrD][LsrC][LsrA]<sub>2</sub>,lsrA,ABC-58-CPLX,2.0
+1067,[LsrF]&lt;SUB&gt;10&lt;/SUB&gt;,lsrF,CPLX0-7820,1.0
+1068,,lsrR,CPLX0-8043,
+1069,[LtaE]&lt;SUB&gt;4&lt;/SUB&gt;,ltaE,LTAA-CPLX,4.0
+1070,[LtaE]&lt;SUB&gt;4&lt;/SUB&gt;,ltaE,LTAA-CPLX,4.0
+1071,[LtaE]&lt;SUB&gt;4&lt;/SUB&gt;,ltaE,LTAA-CPLX,4.0
+1072,[LtaE]&lt;SUB&gt;4&lt;/SUB&gt;,ltaE,LTAA-CPLX,4.0
+1073,[LysA]&lt;SUB&gt;2&lt;/SUB&gt;,lysA,DIAMINOPIMDECARB-CPLX,2.0
+1074,[LysC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fused aspartate kinase/homoserine dehydrogenase 2 MetL]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fused aspartate kinase/homoserine dehydrogenase 1 ThrA]&lt;SUB&gt;4&lt;/SUB&gt;,lysC,ASPKINIII-CPLX,2.0
+1075,[LysS]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       lysine—tRNA ligase multifunctional] LysU]&lt;SUB&gt;2&lt;/SUB&gt;,lysS,LYSS-CPLX,2.0
+1076,[LysS]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       lysine—tRNA ligase multifunctional] LysU]&lt;SUB&gt;2&lt;/SUB&gt;,lysU,LYSU-CPLX,2.0
+1077,[aryl-carrier protein] ligase EntE]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       lysine—tRNA ligase multifunctional] LysU]&lt;SUB&gt;2&lt;/SUB&gt;,lysU,LYSU-CPLX,2.0
+1078,[multifunctional] LysU]&lt;SUB&gt;2&lt;/SUB&gt;,lysU,LYSU-CPLX,2.0
+1079,[LyxK]&lt;SUB&gt;2&lt;/SUB&gt;,lyxK,LYXK-CPLX,2.0
+1080,[LyxK]&lt;SUB&gt;2&lt;/SUB&gt;,lyxK,LYXK-CPLX,2.0
+1081,[Maa]&lt;SUB&gt;3&lt;/SUB&gt;,maa,MALTACETYLTRAN-CPLX,3.0
+1082,[MaeA]&lt;SUB&gt;4&lt;/SUB&gt;,maeA,MALIC-NAD-CPLX,4.0
+1083,[MaeB]&lt;SUB&gt;6&lt;/SUB&gt;,maeB,MALIC-NADP-CPLX,6.0
+1084,[MalK]<sub>2</sub>[MalF][MalG][MalE],malK,ABC-16-CPLX,2.0
+1085,[MalK]<sub>2</sub>[MalF][MalG][MalE],malF,ABC-16-CPLX,1.0
+1086,[MalK]<sub>2</sub>[MalF][MalG][MalE],malG,ABC-16-CPLX,1.0
+1087,[MalK]<sub>2</sub>[MalF][MalG][MalE],malE,ABC-16-CPLX,1.0
+1088,[MalP]&lt;SUB&gt;2&lt;/SUB&gt;,malP,MALDEXPHOSPHORYL-CPLX,2.0
+1089,[MalP]&lt;SUB&gt;2&lt;/SUB&gt;,malP,MALDEXPHOSPHORYL-CPLX,2.0
+1090,[MalP]&lt;SUB&gt;2&lt;/SUB&gt;,malP,MALDEXPHOSPHORYL-CPLX,2.0
+1091,[MalP]&lt;SUB&gt;2&lt;/SUB&gt;,malP,MALDEXPHOSPHORYL-CPLX,2.0
+1092,[MalP]&lt;SUB&gt;2&lt;/SUB&gt;,malP,MALDEXPHOSPHORYL-CPLX,2.0
+1093,[MalP]&lt;SUB&gt;2&lt;/SUB&gt;,malP,MALDEXPHOSPHORYL-CPLX,2.0
+1094,[MalY]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       cystathionine β-lyase / L-cysteine desulfhydrase / alanine racemase MetC]&lt;SUB&gt;4&lt;/SUB&gt;,malY,CPLX0-8092,2.0
+1095,[TnaA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       cysteine synthase B CysM]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       cysteine synthase A CysK]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       negative regulator of MalT activity/cystathionine β-lyase MalY]&lt;SUB&gt;2&lt;/SUB&gt; + 1 isozymes],malY,CPLX0-8092,2.0
+1096,[DadX]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       alanine racemase 1 Alr]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       cystathionine β-lyase / L-cysteine desulfhydrase / alanine racemase MetC]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       negative regulator of MalT activity/cystathionine β-lyase MalY]&lt;SUB&gt;2&lt;/SUB&gt;,malY,CPLX0-8092,2.0
+1097,[ManZ]&lt;SUB&gt;2&lt;/SUB&gt;ManY]ManX]&lt;SUB&gt;2&lt;/SUB&gt;,manX,CPLX0-7921,2.0
+1098,[ManZ]&lt;SUB&gt;2&lt;/SUB&gt;ManY]ManX]&lt;SUB&gt;2&lt;/SUB&gt;,manX,CPLX0-7921,2.0
+1099,[ManZ]&lt;SUB&gt;2&lt;/SUB&gt;ManY]ManX]&lt;SUB&gt;2&lt;/SUB&gt;,manX,CPLX0-7921,2.0
+1100,[NagE]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       mannose-specific PTS enzyme II ManZ]&lt;SUB&gt;2&lt;/SUB&gt;ManY]ManX]&lt;SUB&gt;2&lt;/SUB&gt;,manX,CPLX0-7921,2.0
+1101,[BglF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       mannose-specific PTS enzyme II ManZ]&lt;SUB&gt;2&lt;/SUB&gt;ManY]ManX]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       glucose-specific PTS enzyme II PtsG]&lt;SUB&gt;2&lt;/SUB&gt;Crr],manX,CPLX0-7921,2.0
+1102,[ManZ]&lt;SUB&gt;2&lt;/SUB&gt;ManY]ManX]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       N-acetylglucosamine-specific PTS enzyme II NagE]&lt;SUB&gt;2&lt;/SUB&gt;,manX,CPLX0-7921,2.0
+1103,[ManZ]&lt;SUB&gt;2&lt;/SUB&gt;ManY]ManX]&lt;SUB&gt;2&lt;/SUB&gt;,manX,CPLX0-7921,2.0
+1104,[ManZ]<sub>2</sub>[ManY][ManX]<sub>2</sub>,manZ,CPLX-165,2.0
+1105,[ManZ]<sub>2</sub>[ManY][ManX]<sub>2</sub>,manY,CPLX-165,1.0
+1106,[ManZ]<sub>2</sub>[ManY][ManX]<sub>2</sub>,manX,CPLX-165,2.0
+1107,,marR,CPLX0-7710,
+1108,,matP,CPLX0-7789,
+1109,,mazE,CPLX0-841,
+1110,,mazF,CPLX0-1241,
+1111,[(MazF)<sub>2</sub>]<sub>2</sub>[(MazE)<sub>2</sub>],(MazF)<sub>2</sub>,CPLX0-1242,2.0
+1112,[(MazF)<sub>2</sub>]<sub>2</sub>[(MazE)<sub>2</sub>],(MazE)<sub>2</sub>,CPLX0-1242,2.0
+1113,[MazG]&lt;SUB&gt;2&lt;/SUB&gt;,mazG,CPLX0-7692,2.0
+1114,[McrB][McrC],mcrB,CPLX0-2661,1.0
+1115,[McrB][McrC],mcrC,CPLX0-2661,1.0
+1116,[MdaB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       chromate reductase YieF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       NAD(P)H:quinone oxidoreductase WrbA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       regulator of KefC-mediated potassium transport and quinone oxidoreductase KefF]&lt;SUB&gt;2&lt;/SUB&gt;,mdaB,CPLX0-253,2.0
+1117,[Mdh]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       NAD&lt;sup&gt;+&lt;/sup&gt;-dependent malate dehydrogenase MaeA]&lt;SUB&gt;4&lt;/SUB&gt;,mdh,MALATE-DEHASE,2.0
+1118,[MdtJ][MdtI],mdtJ,YDGEF-CPLX,1.0
+1119,[MdtJ][MdtI],mdtI,YDGEF-CPLX,1.0
+1120,[MdtP][MdtO][MdtN],mdtP,CPLX0-7807,1.0
+1121,[MdtP][MdtO][MdtN],mdtO,CPLX0-7807,1.0
+1122,[MdtP][MdtO][MdtN],mdtN,CPLX0-7807,1.0
+1123,[MelA]&lt;SUB&gt;2&lt;/SUB&gt;,melA,ALPHAGALACTOSID-CPLX,2.0
+1124,[MelA]&lt;SUB&gt;2&lt;/SUB&gt;,melA,ALPHAGALACTOSID-CPLX,2.0
+1125,[MenB]&lt;SUB&gt;6&lt;/SUB&gt;,menB,CPLX0-7882,6.0
+1126,[MenD]&lt;SUB&gt;2&lt;/SUB&gt;,menD,CPLX0-7525,2.0
+1127,[MenE]&lt;SUB&gt;4&lt;/SUB&gt;,menE,MENE-CPLX,4.0
+1128,[MenF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       isochorismate synthase EntC entC,menF,MENF-CPLX,2.0
+1129,[MenI]&lt;SUB&gt;4&lt;/SUB&gt;,menI,CPLX0-8128,4.0
+1130,[MepA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       peptidoglycan LD-endopeptidase mepK,mepA,CPLX0-3201,2.0
+1131,[MepA]&lt;SUB&gt;2&lt;/SUB&gt; + 2 isozymes],mepA,CPLX0-3201,2.0
+1132,[MetA]&lt;SUB&gt;2&lt;/SUB&gt;,metA,HOMSUCTRAN-CPLX,2.0
+1133,[MetB]&lt;SUB&gt;4&lt;/SUB&gt;,metB,O-SUCCHOMOSERLYASE-CPLX,4.0
+1134,[MetB]&lt;SUB&gt;4&lt;/SUB&gt;,metB,O-SUCCHOMOSERLYASE-CPLX,4.0
+1135,[MalY]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       cystathionine β-lyase / L-cysteine desulfhydrase / alanine racemase MetC]&lt;SUB&gt;4&lt;/SUB&gt;,metC,CYSTATHIONINE-BETA-LYASE-CPLX,4.0
+1136,[DadX]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       alanine racemase 1 Alr]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       cystathionine β-lyase / L-cysteine desulfhydrase / alanine racemase MetC]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       negative regulator of MalT activity/cystathionine β-lyase MalY]&lt;SUB&gt;2&lt;/SUB&gt;,metC,CYSTATHIONINE-BETA-LYASE-CPLX,4.0
+1137,[MetF]&lt;SUB&gt;4&lt;/SUB&gt;,metF,METHYLENETHFREDUCT-CPLX,4.0
+1138,[MetG]&lt;SUB&gt;2&lt;/SUB&gt;,metG,METG-CPLX,2.0
+1139,[MetG]&lt;SUB&gt;2&lt;/SUB&gt;,metG,METG-CPLX,2.0
+1140,[(<i>S</i>-adenosyl-L-methionine)(MetJ)]<sub>2</sub>,(<i>S</i>-adenosyl-L-methionine)(MetJ),CPLX0-7796,2.0
+1141,[MetK]&lt;SUB&gt;4&lt;/SUB&gt;,metK,S-ADENMETSYN-CPLX,4.0
+1142,[LysC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fused aspartate kinase/homoserine dehydrogenase 2 MetL]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fused aspartate kinase/homoserine dehydrogenase 1 ThrA]&lt;SUB&gt;4&lt;/SUB&gt;,metL,ASPKINIIHOMOSERDEHYDROGII-CPLX,2.0
+1143,[MetL]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fused aspartate kinase/homoserine dehydrogenase 1 ThrA]&lt;SUB&gt;4&lt;/SUB&gt;,metL,ASPKINIIHOMOSERDEHYDROGII-CPLX,2.0
+1144,[MetN]<sub>2</sub>[MetI]<sub>2</sub>[MetQ],metN,METNIQ-METHIONINE-ABC-CPLX,2.0
+1145,[MetN]<sub>2</sub>[MetI]<sub>2</sub>[MetQ],metI,METNIQ-METHIONINE-ABC-CPLX,2.0
+1146,[MetN]<sub>2</sub>[MetI]<sub>2</sub>[MetQ],metQ,METNIQ-METHIONINE-ABC-CPLX,1.0
+1147,,metR,CPLX0-7759,
+1148,[MglA][MglC]<sub>2</sub>[MglB],mglA,ABC-18-CPLX,1.0
+1149,[MglA][MglC]<sub>2</sub>[MglB],mglC,ABC-18-CPLX,2.0
+1150,[MglA][MglC]<sub>2</sub>[MglB],mglB,ABC-18-CPLX,1.0
+1151,[MgsA]&lt;SUB&gt;6&lt;/SUB&gt;,mgsA,METHGLYSYN-CPLX,6.0
+1152,[MhpB]&lt;SUB&gt;4&lt;/SUB&gt;,mhpB,DHPDIOXYGEN-CPLX,4.0
+1153,[MhpB]&lt;SUB&gt;4&lt;/SUB&gt;,mhpB,DHPDIOXYGEN-CPLX,4.0
+1154,[MhpC]&lt;SUB&gt;2&lt;/SUB&gt;,mhpC,CPLX0-7950,2.0
+1155,[MhpC]&lt;SUB&gt;2&lt;/SUB&gt;,mhpC,CPLX0-7950,2.0
+1156,[MhpD]&lt;SUB&gt;5&lt;/SUB&gt;,mhpD,CPLX0-7951,5.0
+1157,,minC,CPLX0-8196,
+1158,[MinD]<sub>2</sub>[MinC]<sub>2</sub>,minD,CPLX0-8188,2.0
+1159,[MinD]<sub>2</sub>[MinC]<sub>2</sub>,minC,CPLX0-8188,2.0
+1160,[MlaB]<sub>2</sub>[MlaD]<sub>6</sub>[MlaE]<sub>2</sub>[MlaF]<sub>2</sub>,mlaB,ABC-45-CPLX,2.0
+1161,[MlaB]<sub>2</sub>[MlaD]<sub>6</sub>[MlaE]<sub>2</sub>[MlaF]<sub>2</sub>,mlaD,ABC-45-CPLX,6.0
+1162,[MlaB]<sub>2</sub>[MlaD]<sub>6</sub>[MlaE]<sub>2</sub>[MlaF]<sub>2</sub>,mlaE,ABC-45-CPLX,2.0
+1163,[MlaB]<sub>2</sub>[MlaD]<sub>6</sub>[MlaE]<sub>2</sub>[MlaF]<sub>2</sub>,mlaF,ABC-45-CPLX,2.0
+1164,[MnaT]&lt;SUB&gt;2&lt;/SUB&gt;,mnaT,CPLX0-7962,2.0
+1165,,mngR,PC00103,
+1166,,mnmE,CPLX0-7608,
+1167,[(MnmE)<sub>2</sub>][(MnmG)<sub>2</sub>],(MnmE)<sub>2</sub>,CPLX0-7609,2.0
+1168,[(MnmE)<sub>2</sub>][(MnmG)<sub>2</sub>],(MnmG)<sub>2</sub>,CPLX0-7609,2.0
+1169,,mnmG,CPLX0-7597,
+1170,[(MntR)(Mn<sup>2+</sup>)]<sub>2</sub>,(MntR)(Mn<sup>2+</sup>),CPLX0-7672,2.0
+1171,,moaB,CPLX0-2521,
+1172,[MoaC]&lt;SUB&gt;6&lt;/SUB&gt;,moaC,CPLX-8331,6.0
+1173,[MoaD]<sub>2</sub>[MoaE]<sub>2</sub>,moaD,CPLX0-2502,2.0
+1174,[MoaD]<sub>2</sub>[MoaE]<sub>2</sub>,moaE,CPLX0-2502,2.0
+1175,,mobB,CPLX0-8044,
+1176,[ModC][ModB]<sub>2</sub>[ModA],modC,ABC-19-CPLX,1.0
+1177,[ModC][ModB]<sub>2</sub>[ModA],modB,ABC-19-CPLX,2.0
+1178,[ModC][ModB]<sub>2</sub>[ModA],modA,ABC-19-CPLX,1.0
+1179,,modE,CPLX0-2541,
+1180,[MoeA]&lt;SUB&gt;2&lt;/SUB&gt;,moeA,CPLX0-8045,2.0
+1181,[MoeB]&lt;SUB&gt;2&lt;/SUB&gt;,moeB,CPLX0-8164,2.0
+1182,[Mog]&lt;SUB&gt;3&lt;/SUB&gt;,mog,CPLX0-8163,3.0
+1183,[MpaA]&lt;SUB&gt;2&lt;/SUB&gt;,mpaA,CPLX0-7989,2.0
+1184,,mprA,CPLX0-7418,
+1185,[MqsA]<sub>2</sub>[MqsR]<sub>4</sub>,mqsA,CPLX0-7822,2.0
+1186,[MqsA]<sub>2</sub>[MqsR]<sub>4</sub>,mqsR,CPLX0-7822,4.0
+1187,[MrcA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       peptidoglycan glycosyltransferase / peptidoglycan DD-transpeptidase MrcB MrcB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       peptidoglycan glycosyltransferase PbpC pbpC&lt;br&gt;                       peptidoglycan glycosyltransferase MtgA mtgA,mrcA,CPLX0-7717,2.0
+1188,[MrcA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       peptidoglycan glycosyltransferase / peptidoglycan DD-transpeptidase MrcB MrcB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       peptidoglycan DD-transpeptidase FtsI ftsI&lt;br&gt;                       peptidoglycan DD-transpeptidase MrdA mrdA,mrcA,CPLX0-7717,2.0
+1189,[MrcA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       peptidoglycan glycosyltransferase / peptidoglycan DD-transpeptidase MrcB MrcB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       D-alanyl-D-alanine carboxypeptidase DacA DacA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       D-alanyl-D-alanine carboxypeptidase DacD dacD&lt;br&gt;                       D-alanyl-D-alanine carboxypeptidase DacC DacC]&lt;SUB&gt;2&lt;/SUB&gt; + 2 isozymes],mrcA,CPLX0-7717,2.0
+1190,[MrcA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       peptidoglycan glycosyltransferase / peptidoglycan DD-transpeptidase MrcB MrcB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       peptidoglycan glycosyltransferase PbpC pbpC&lt;br&gt;                       peptidoglycan glycosyltransferase MtgA mtgA,mrcB,CPLX0-8300,2.0
+1191,[MrcA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       peptidoglycan glycosyltransferase / peptidoglycan DD-transpeptidase MrcB MrcB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       peptidoglycan DD-transpeptidase FtsI ftsI&lt;br&gt;                       peptidoglycan DD-transpeptidase MrdA mrdA,mrcB,CPLX0-8300,2.0
+1192,[MrcA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       peptidoglycan glycosyltransferase / peptidoglycan DD-transpeptidase MrcB MrcB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       D-alanyl-D-alanine carboxypeptidase DacA DacA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       D-alanyl-D-alanine carboxypeptidase DacD dacD&lt;br&gt;                       D-alanyl-D-alanine carboxypeptidase DacC DacC]&lt;SUB&gt;2&lt;/SUB&gt; + 2 isozymes],mrcB,CPLX0-8300,2.0
+1193,[MsbA]&lt;SUB&gt;2&lt;/SUB&gt;,msbA,CPLX0-7704,2.0
+1194,[MsbA]&lt;SUB&gt;2&lt;/SUB&gt;,msbA,CPLX0-7704,2.0
+1195,"[MscL]&lt;SUB&gt;5&lt;/SUB&gt;&lt;br&gt;                       small conductance mechanosensitive channel MscS MscS]&lt;SUB&gt;7&lt;/SUB&gt;&lt;br&gt;                       potassium dependent, small conductance mechanosensitive channel mscK",mscL,CPLX0-7627,5.0
+1196,,mscM,CPLX0-7985,
+1197,"[MscL]&lt;SUB&gt;5&lt;/SUB&gt;&lt;br&gt;                       small conductance mechanosensitive channel MscS MscS]&lt;SUB&gt;7&lt;/SUB&gt;&lt;br&gt;                       potassium dependent, small conductance mechanosensitive channel mscK",mscS,CPLX0-7626,7.0
+1198,[MsrC]&lt;SUB&gt;2&lt;/SUB&gt;,msrC,CPLX0-8217,2.0
+1199,[MsrQ][MsrP],msrQ,CPLX0-8213,1.0
+1200,[MsrQ][MsrP],msrP,CPLX0-8213,1.0
+1201,[SrlA]SrlB]SrlE]&lt;br&gt;                       mannitol-specific PTS enzyme II MtlA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       mannitol-specific PTS enzyme II CmtBA CmtB]CmtA],mtlA,CPLX-166,2.0
+1202,[MtlA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       galactitol-specific PTS enzyme II GatC]&lt;SUB&gt;2&lt;/SUB&gt;GatB]GatA]&lt;br&gt;                       sorbitol-specific PTS enzyme II SrlA]SrlB]SrlE],mtlA,CPLX-166,2.0
+1203,[MtlR]<sub>4</sub>[PtsH]<sub>4</sub>,mtlR,MONOMER0-2461,4.0
+1204,[MtlR]<sub>4</sub>[PtsH]<sub>4</sub>,ptsH,MONOMER0-2461,4.0
+1205,[Mtn]&lt;SUB&gt;2&lt;/SUB&gt;,mtn,CPLX0-1541,2.0
+1206,[Mtn]&lt;SUB&gt;2&lt;/SUB&gt;,mtn,CPLX0-1541,2.0
+1207,[Mtn]&lt;SUB&gt;2&lt;/SUB&gt;,mtn,CPLX0-1541,2.0
+1208,,mukB,CPLX0-7696,
+1209,[(MukB)<sub>2</sub>][(MukE)<sub>4</sub>([MukF]<sub>2</sub>)],(MukB)<sub>2</sub>,CPLX0-2561,2.0
+1210,[(MukB)<sub>2</sub>][(MukE)<sub>4</sub>([MukF]<sub>2</sub>)],(MukE)<sub>4</sub>(,CPLX0-2561,4.0
+1211,[(MukB)<sub>2</sub>][(MukE)<sub>4</sub>([MukF]<sub>2</sub>)],mukF,CPLX0-2561,2.0
+1212,[MukE]<sub>4</sub>[(MukF)<sub>2</sub>],mukE,CPLX0-7697,4.0
+1213,[MukE]<sub>4</sub>[(MukF)<sub>2</sub>],(MukF)<sub>2</sub>,CPLX0-7697,2.0
+1214,(MukE)<sub>4</sub>([MukF]<sub>2</sub>) (summary available),mukF,CPLX0-7697,2.0
+1215,,mukF,CPLX0-7698,
+1216,[MurC]&lt;SUB&gt;2&lt;/SUB&gt;,murC,CPLX0-8014,2.0
+1217,[MurP][Crr],murP,CPLX0-7,1.0
+1218,[MurP][Crr],crr,CPLX0-7,1.0
+1219,[MurQ]&lt;SUB&gt;2&lt;/SUB&gt;,murQ,CPLX0-7732,2.0
+1220,,murR,CPLX0-7745,
+1221,[MutL][MutS]<sub>2</sub>[MutH],mutL,MUTHLS-CPLX,1.0
+1222,[MutL][MutS]<sub>2</sub>[MutH],mutS,MUTHLS-CPLX,2.0
+1223,[MutL][MutS]<sub>2</sub>[MutH],mutH,MUTHLS-CPLX,1.0
+1224,[NadA]&lt;SUB&gt;2&lt;/SUB&gt;,nadA,CPLX0-7719,2.0
+1225,[NadC]&lt;SUB&gt;2&lt;/SUB&gt;,nadC,QUINOPRIBOTRANS-CPLX,2.0
+1226,[NadE]&lt;SUB&gt;2&lt;/SUB&gt;,nadE,NAD-SYNTH-CPLX,2.0
+1227,[NadE]&lt;SUB&gt;2&lt;/SUB&gt;,nadE,NAD-SYNTH-CPLX,2.0
+1228,[NadK]&lt;SUB&gt;6&lt;/SUB&gt;,nadK,CPLX0-682,6.0
+1229,[NadR]&lt;SUB&gt;4&lt;/SUB&gt;,nadR,CPLX0-7975,4.0
+1230,[NadR]&lt;SUB&gt;4&lt;/SUB&gt;,nadR,CPLX0-7975,4.0
+1231,[NagA]&lt;SUB&gt;4&lt;/SUB&gt;,nagA,NAG6PDEACET-CPLX,4.0
+1232,[NagB]&lt;SUB&gt;6&lt;/SUB&gt;,nagB,GLUCOSAMINE-6-P-DEAMIN-CPLX,6.0
+1233,[ManZ]&lt;SUB&gt;2&lt;/SUB&gt;ManY]ManX]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       N-acetylglucosamine-specific PTS enzyme II NagE]&lt;SUB&gt;2&lt;/SUB&gt;,nagE,CPLX-167,2.0
+1234,[NagE]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       mannose-specific PTS enzyme II ManZ]&lt;SUB&gt;2&lt;/SUB&gt;ManY]ManX]&lt;SUB&gt;2&lt;/SUB&gt;,nagE,CPLX-167,2.0
+1235,[NanA]&lt;SUB&gt;4&lt;/SUB&gt;,nanA,ACNEULY-CPLX,4.0
+1236,[NanA]&lt;SUB&gt;4&lt;/SUB&gt;,nanA,ACNEULY-CPLX,4.0
+1237,[NanM]&lt;SUB&gt;2&lt;/SUB&gt;,nanM,CPLX0-7658,2.0
+1238,[NapB][NapA],napB,NAP-CPLX,1.0
+1239,[NapB][NapA],napA,NAP-CPLX,1.0
+1240,[NapG][NapH],napG,CPLX0-3241,1.0
+1241,[NapG][NapH],napH,CPLX0-3241,1.0
+1242,[NarG]<sub>2</sub>[NarH]<sub>2</sub>[NarI]<sub>2</sub>,narG,NITRATREDUCTA-CPLX,2.0
+1243,[NarG]<sub>2</sub>[NarH]<sub>2</sub>[NarI]<sub>2</sub>,narH,NITRATREDUCTA-CPLX,2.0
+1244,[NarG]<sub>2</sub>[NarH]<sub>2</sub>[NarI]<sub>2</sub>,narI,NITRATREDUCTA-CPLX,2.0
+1245,,narQ,NARQ-CPLX,
+1246,[NarX]&lt;SUB&gt;2&lt;/SUB&gt;,narX,NARX-CPLX,2.0
+1247,[NarY][NarZ][NarV],narY,NITRATREDUCTZ-CPLX,1.0
+1248,[NarY][NarZ][NarV],narZ,NITRATREDUCTZ-CPLX,1.0
+1249,[NarY][NarZ][NarV],narV,NITRATREDUCTZ-CPLX,1.0
+1250,[Ndk]&lt;SUB&gt;4&lt;/SUB&gt;,ndk,NUCLEOSIDE-DIP-KIN-CPLX,4.0
+1251,[Ndk]&lt;SUB&gt;4&lt;/SUB&gt;,ndk,NUCLEOSIDE-DIP-KIN-CPLX,4.0
+1252,[Ndk]&lt;SUB&gt;4&lt;/SUB&gt;,ndk,NUCLEOSIDE-DIP-KIN-CPLX,4.0
+1253,[Ndk]&lt;SUB&gt;4&lt;/SUB&gt;,ndk,NUCLEOSIDE-DIP-KIN-CPLX,4.0
+1254,[Ndk]&lt;SUB&gt;4&lt;/SUB&gt;,ndk,NUCLEOSIDE-DIP-KIN-CPLX,4.0
+1255,[Ndk]&lt;SUB&gt;4&lt;/SUB&gt;,ndk,NUCLEOSIDE-DIP-KIN-CPLX,4.0
+1256,[Ndk]&lt;SUB&gt;4&lt;/SUB&gt;,ndk,NUCLEOSIDE-DIP-KIN-CPLX,4.0
+1257,[Ndk]&lt;SUB&gt;4&lt;/SUB&gt;,ndk,NUCLEOSIDE-DIP-KIN-CPLX,4.0
+1258,[Ndk]&lt;SUB&gt;4&lt;/SUB&gt;,ndk,NUCLEOSIDE-DIP-KIN-CPLX,4.0
+1259,[NfsA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       NAD(P)H nitroreductase NfsB NfsB]&lt;SUB&gt;2&lt;/SUB&gt;,nfsA,CPLX0-244,2.0
+1260,[NfsB]&lt;SUB&gt;2&lt;/SUB&gt;,nfsB,DIHYDROPTERIREDUCT-CPLX,2.0
+1261,[NfsB]&lt;SUB&gt;2&lt;/SUB&gt;,nfsB,DIHYDROPTERIREDUCT-CPLX,2.0
+1262,,nfuA,CPLX0-7682,
+1263,[NhaA]&lt;SUB&gt;2&lt;/SUB&gt;,nhaA,CPLX0-7629,2.0
+1264,[NhaA]&lt;SUB&gt;2&lt;/SUB&gt;,nhaA,CPLX0-7629,2.0
+1265,[NhoA]&lt;SUB&gt;2&lt;/SUB&gt;,nhoA,CPLX0-236,2.0
+1266,[NhoA]&lt;SUB&gt;2&lt;/SUB&gt;,nhoA,CPLX0-236,2.0
+1267,[NikD][NikE][NikB][NikC][NikA],nikD,ABC-20-CPLX,1.0
+1268,[NikD][NikE][NikB][NikC][NikA],nikE,ABC-20-CPLX,1.0
+1269,[NikD][NikE][NikB][NikC][NikA],nikB,ABC-20-CPLX,1.0
+1270,[NikD][NikE][NikB][NikC][NikA],nikC,ABC-20-CPLX,1.0
+1271,[NikD][NikE][NikB][NikC][NikA],nikA,ABC-20-CPLX,1.0
+1272,[(NikR)(Ni<sup>2+</sup>)]<sub>4</sub>,(NikR)(Ni<sup>2+</sup>),CPLX0-7707,2.0
+1273,[NirD][NirB],nirD,NITRITREDUCT-CPLX,1.0
+1274,[NirD][NirB],nirB,NITRITREDUCT-CPLX,1.0
+1275,,nlpI,CPLX0-8198,
+1276,,norV,CPLX0-1,
+1277,,nrdA,B1-CPLX,
+1278,[(NrdA)<sub>2</sub>][(NrdB)<sub>2</sub>],(NrdA)<sub>2</sub>,RIBONUCLEOSIDE-DIP-REDUCTI-CPLX,2.0
+1279,[(NrdA)<sub>2</sub>][(NrdB)<sub>2</sub>],(NrdB)<sub>2</sub>,RIBONUCLEOSIDE-DIP-REDUCTI-CPLX,2.0
+1280,,nrdB,B2-CPLX,
+1281,[NrdD]&lt;SUB&gt;2&lt;/SUB&gt;,nrdD,RIBONUCLEOSIDE-TRIP-REDUCT-CPLX,2.0
+1282,[NrdD]&lt;SUB&gt;2&lt;/SUB&gt;,nrdD,RIBONUCLEOSIDE-TRIP-REDUCT-CPLX,2.0
+1283,[NrdD]&lt;SUB&gt;2&lt;/SUB&gt;,nrdD,RIBONUCLEOSIDE-TRIP-REDUCT-CPLX,2.0
+1284,[NrdD]&lt;SUB&gt;2&lt;/SUB&gt;,nrdD,RIBONUCLEOSIDE-TRIP-REDUCT-CPLX,2.0
+1285,[NrdD]&lt;SUB&gt;2&lt;/SUB&gt;,nrdD,RIBONUCLEOSIDE-TRIP-REDUCT-CPLX,2.0
+1286,[(NrdD)<sub>2</sub>][(NrdG)<sub>2</sub>],(NrdD)<sub>2</sub>,NRDACTMULTI-CPLX,2.0
+1287,[(NrdD)<sub>2</sub>][(NrdG)<sub>2</sub>],(NrdG)<sub>2</sub>,NRDACTMULTI-CPLX,2.0
+1288,,nrdE,NRDE-CPLX,
+1289,[(NrdE)<sub>2</sub>][(NrdF)<sub>2</sub>],(NrdE)<sub>2</sub>,RIBONUCLEOSIDE-DIP-REDUCTII-CPLX,2.0
+1290,[(NrdE)<sub>2</sub>][(NrdF)<sub>2</sub>],(NrdF)<sub>2</sub>,RIBONUCLEOSIDE-DIP-REDUCTII-CPLX,2.0
+1291,,nrdF,NRDF-CPLX,
+1292,[NrdG]&lt;SUB&gt;2&lt;/SUB&gt;,nrdG,CPLX0-229,2.0
+1293,[NrfA][NrfB],nrfA,NRFMULTI-CPLX,1.0
+1294,[NrfA][NrfB],nrfB,NRFMULTI-CPLX,1.0
+1295,[NrfD][NrfC],nrfD,CPLX0-8238,1.0
+1296,[NrfD][NrfC],nrfC,CPLX0-8238,1.0
+1297,,nsrR,CPLX0-7756,
+1298,[NudC]&lt;SUB&gt;2&lt;/SUB&gt;,nudC,CPLX0-7974,2.0
+1299,[NudC]&lt;SUB&gt;2&lt;/SUB&gt;,nudC,CPLX0-7974,2.0
+1300,[NudE]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       ADP-sugar pyrophosphatase NudF]&lt;SUB&gt;2&lt;/SUB&gt;,nudE,CPLX0-1221,2.0
+1301,[NudF]&lt;SUB&gt;2&lt;/SUB&gt;,nudF,CPLX0-3721,2.0
+1302,[NudF]&lt;SUB&gt;2&lt;/SUB&gt;,nudF,CPLX0-3721,2.0
+1303,[NudE]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       ADP-sugar pyrophosphatase NudF]&lt;SUB&gt;2&lt;/SUB&gt;,nudF,CPLX0-3721,2.0
+1304,[NudK]&lt;SUB&gt;2&lt;/SUB&gt;,nudK,CPLX0-3971,2.0
+1305,[NuoA][NuoH][NuoJ][NuoK][NuoL][NuoM][NuoN][(NuoB)(NuoC)(NuoE)(NuoF)(NuoG)(NuoI)],nuoA,NADH-DHI-CPLX,1.0
+1306,[NuoA][NuoH][NuoJ][NuoK][NuoL][NuoM][NuoN][(NuoB)(NuoC)(NuoE)(NuoF)(NuoG)(NuoI)],nuoH,NADH-DHI-CPLX,1.0
+1307,[NuoA][NuoH][NuoJ][NuoK][NuoL][NuoM][NuoN][(NuoB)(NuoC)(NuoE)(NuoF)(NuoG)(NuoI)],nuoJ,NADH-DHI-CPLX,1.0
+1308,[NuoA][NuoH][NuoJ][NuoK][NuoL][NuoM][NuoN][(NuoB)(NuoC)(NuoE)(NuoF)(NuoG)(NuoI)],nuoK,NADH-DHI-CPLX,1.0
+1309,[NuoA][NuoH][NuoJ][NuoK][NuoL][NuoM][NuoN][(NuoB)(NuoC)(NuoE)(NuoF)(NuoG)(NuoI)],nuoL,NADH-DHI-CPLX,1.0
+1310,[NuoA][NuoH][NuoJ][NuoK][NuoL][NuoM][NuoN][(NuoB)(NuoC)(NuoE)(NuoF)(NuoG)(NuoI)],nuoM,NADH-DHI-CPLX,1.0
+1311,[NuoA][NuoH][NuoJ][NuoK][NuoL][NuoM][NuoN][(NuoB)(NuoC)(NuoE)(NuoF)(NuoG)(NuoI)],nuoN,NADH-DHI-CPLX,1.0
+1312,[NuoA][NuoH][NuoJ][NuoK][NuoL][NuoM][NuoN][(NuoB)(NuoC)(NuoE)(NuoF)(NuoG)(NuoI)],(NuoB)(NuoC)(NuoE)(NuoF)(NuoG)(NuoI),NADH-DHI-CPLX,1.0
+1313,[NuoB][NuoC][NuoE][NuoF][NuoG][NuoI],nuoB,CPLX0-3361,1.0
+1314,[NuoB][NuoC][NuoE][NuoF][NuoG][NuoI],nuoC,CPLX0-3361,1.0
+1315,[NuoB][NuoC][NuoE][NuoF][NuoG][NuoI],nuoE,CPLX0-3361,1.0
+1316,[NuoB][NuoC][NuoE][NuoF][NuoG][NuoI],nuoF,CPLX0-3361,1.0
+1317,[NuoB][NuoC][NuoE][NuoF][NuoG][NuoI],nuoG,CPLX0-3361,1.0
+1318,[NuoB][NuoC][NuoE][NuoF][NuoG][NuoI],nuoI,CPLX0-3361,1.0
+1319,[OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin PhoE PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin N ompN,ompC,CPLX0-7533,3.0
+1320,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1321,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1322,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1323,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1324,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1325,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1326,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1327,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1328,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1329,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1330,[OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin PhoE PhoE]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1331,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1332,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1333,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1334,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1335,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1336,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1337,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1338,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1339,[OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin PhoE PhoE]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1340,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1341,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1342,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1343,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1344,[OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin PhoE PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1345,[OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin PhoE PhoE]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1346,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1347,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1348,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1349,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1350,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1351,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompC,CPLX0-7533,3.0
+1352,[OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin PhoE PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin N ompN,ompF,CPLX0-7534,3.0
+1353,[OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin PhoE PhoE]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1354,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1355,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1356,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1357,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1358,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1359,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1360,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1361,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1362,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1363,[OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin PhoE PhoE]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1364,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1365,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1366,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1367,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1368,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1369,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1370,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1371,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1372,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1373,[OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin PhoE PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1374,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1375,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1376,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1377,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1378,[OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin PhoE PhoE]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1379,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1380,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1381,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1382,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1383,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1384,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1385,[OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin PhoE PhoE]&lt;SUB&gt;3&lt;/SUB&gt;,ompF,CPLX0-7534,3.0
+1386,,ompR,PHOSPHO-OMPR,
+1387,[OppB][OppC][OppD][OppF][MppA],oppB,CPLX0-3970,1.0
+1388,[OppB][OppC][OppD][OppF][MppA],oppC,CPLX0-3970,1.0
+1389,[OppB][OppC][OppD][OppF][MppA],oppD,CPLX0-3970,1.0
+1390,[OppB][OppC][OppD][OppF][MppA],oppF,CPLX0-3970,1.0
+1391,[OppB][OppC][OppD][OppF][MppA],mppA,CPLX0-3970,1.0
+1392,[OppC][OppD][OppF][OppB][OppA],oppC,ABC-22-CPLX,1.0
+1393,[OppC][OppD][OppF][OppB][OppA],oppD,ABC-22-CPLX,1.0
+1394,[OppC][OppD][OppF][OppB][OppA],oppF,ABC-22-CPLX,1.0
+1395,[OppC][OppD][OppF][OppB][OppA],oppB,ABC-22-CPLX,1.0
+1396,[OppC][OppD][OppF][OppB][OppA],oppA,ABC-22-CPLX,1.0
+1397,[Orn]&lt;SUB&gt;2&lt;/SUB&gt;,orn,CPLX0-1821,2.0
+1398,[Tpx]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       thiol peroxidase bcp&lt;br&gt;                       osmotically inducible peroxiredoxin OsmC OsmC]&lt;SUB&gt;2&lt;/SUB&gt;,osmC,CPLX0-8157,2.0
+1399,[OsmF][YehY][YehX][YehW],osmF,ABC-40-CPLX,1.0
+1400,[OsmF][YehY][YehX][YehW],yehY,ABC-40-CPLX,1.0
+1401,[OsmF][YehY][YehX][YehW],yehX,ABC-40-CPLX,1.0
+1402,[OsmF][YehY][YehX][YehW],yehW,ABC-40-CPLX,1.0
+1403,[Oxc]&lt;SUB&gt;4&lt;/SUB&gt;,oxc,CPLX0-7878,4.0
+1404,[PaaE][PaaA][PaaC][PaaB],paaE,CPLX0-1762,1.0
+1405,[PaaE][PaaA][PaaC][PaaB],paaA,CPLX0-1762,1.0
+1406,[PaaE][PaaA][PaaC][PaaB],paaC,CPLX0-1762,1.0
+1407,[PaaE][PaaA][PaaC][PaaB],paaB,CPLX0-1762,1.0
+1408,[PaaG]<sub>6</sub>[PaaF]<sub>6</sub>,paaG,CPLX0-7988,6.0
+1409,[PaaG]<sub>6</sub>[PaaF]<sub>6</sub>,paaF,CPLX0-7988,6.0
+1410,[PaaI]&lt;SUB&gt;4&lt;/SUB&gt;,paaI,CPLX0-3941,4.0
+1411,[PaaI]&lt;SUB&gt;4&lt;/SUB&gt;,paaI,CPLX0-3941,4.0
+1412,,paaX,CPLX0-7731,
+1413,[PaaY]&lt;SUB&gt;3&lt;/SUB&gt;,paaY,CPLX0-8127,3.0
+1414,[PabB][PabA],pabB,PABASYN-CPLX,1.0
+1415,[PabB][PabA],pabA,PABASYN-CPLX,1.0
+1416,[PabC]&lt;SUB&gt;2&lt;/SUB&gt;,pabC,ADCLY-CPLX,2.0
+1417,[Pal][TolA][TolB][TolR][TolQ],pal,CPLX0-2201,1.0
+1418,[Pal][TolA][TolB][TolR][TolQ],tolA,CPLX0-2201,1.0
+1419,[Pal][TolA][TolB][TolR][TolQ],tolB,CPLX0-2201,1.0
+1420,[Pal][TolA][TolB][TolR][TolQ],tolR,CPLX0-2201,1.0
+1421,[Pal][TolA][TolB][TolR][TolQ],tolQ,CPLX0-2201,1.0
+1422,[PanB]&lt;SUB&gt;10&lt;/SUB&gt;,panB,3-METHYL-2-OXOBUT-OHCH3XFER-CPLX,1.0
+1423,[PanC]&lt;SUB&gt;2&lt;/SUB&gt;,panC,PANTOATE-BETA-ALANINE-LIG-CPLX,2.0
+1424,[PanD]<sub>4</sub>[PanD]<sub>4</sub>,panD,CPLX0-2901,4.0
+1425,[PanD]<sub>4</sub>[PanD]<sub>4</sub>,panD,CPLX0-2901,4.0
+1426,[PaoA][PaoB][PaoC],paoA,CPLX0-7805,1.0
+1427,[PaoA][PaoB][PaoC],paoB,CPLX0-7805,1.0
+1428,[PaoA][PaoB][PaoC],paoC,CPLX0-7805,1.0
+1429,,paoD,CPLX0-8110,
+1430,,parC,CPLX0-2423,
+1431,[ParE]<sub>2</sub>[(ParC)<sub>2</sub>],parE,CPLX0-2424,2.0
+1432,[ParE]<sub>2</sub>[(ParC)<sub>2</sub>],(ParC)<sub>2</sub>,CPLX0-2424,2.0
+1433,[PatA]&lt;SUB&gt;2&lt;/SUB&gt;,patA,CPLX0-8159,2.0
+1434,[PatA]&lt;SUB&gt;2&lt;/SUB&gt;,patA,CPLX0-8159,2.0
+1435,[PatA]&lt;SUB&gt;2&lt;/SUB&gt;,patA,CPLX0-8159,2.0
+1436,[PatD]&lt;SUB&gt;4&lt;/SUB&gt;,patD,CPLX0-3641,4.0
+1437,[PatD]&lt;SUB&gt;4&lt;/SUB&gt;,patD,CPLX0-3641,4.0
+1438,[PatZ]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       protein &lt;i&gt;N&lt;/i&gt;-acetyltransferase RimI rimI&lt;br&gt;                       peptidyl-lysine &lt;i&gt;N&lt;/i&gt;-acetyltransferase YiaC yiaC&lt;br&gt;                       peptidyl-lysine &lt;i&gt;N&lt;/i&gt;-acetyltransferase YjaB yjaB&lt;br&gt;                       aminoalkylphosphonate &lt;i&gt;N&lt;/i&gt;-acetyltransferase phnO,patZ,CPLX0-8189,4.0
+1439,[PdeF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       c-di-GMP phosphodiesterase PdeH pdeH&lt;br&gt;                       cyclic di-GMP phosphodiesterase PdeR pdeR&lt;br&gt;                       oxygen-sensing c-di-GMP phosphodiesterase DosP DosP]&lt;SUB&gt;2&lt;/SUB&gt; + 1 isozymes],pdeF,CPLX0-8200,2.0
+1440,,pdeL,CPLX0-8109,
+1441,[PdxA]&lt;SUB&gt;2&lt;/SUB&gt;,pdxA,CPLX0-7847,2.0
+1442,[PdxB]&lt;SUB&gt;2&lt;/SUB&gt;,pdxB,CPLX0-8212,2.0
+1443,[PdxH]&lt;SUB&gt;2&lt;/SUB&gt;,pdxH,PDXH-CPLX,2.0
+1444,[PdxH]&lt;SUB&gt;2&lt;/SUB&gt;,pdxH,PDXH-CPLX,2.0
+1445,[PdxJ]&lt;SUB&gt;8&lt;/SUB&gt;,pdxJ,CPLX0-321,8.0
+1446,[PdxY]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       pyridoxal kinase I / hydroxymethylpyrimidine kinase PdxK]&lt;SUB&gt;2&lt;/SUB&gt;,pdxK,PDXK-CPLX,2.0
+1447,[PdxK]&lt;SUB&gt;2&lt;/SUB&gt;,pdxK,PDXK-CPLX,2.0
+1448,[PdxK]&lt;SUB&gt;2&lt;/SUB&gt;,pdxK,PDXK-CPLX,2.0
+1449,[ThiD]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       pyridoxal kinase I / hydroxymethylpyrimidine kinase PdxK]&lt;SUB&gt;2&lt;/SUB&gt;,pdxK,PDXK-CPLX,2.0
+1450,[PdxY]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       pyridoxal kinase I / hydroxymethylpyrimidine kinase PdxK]&lt;SUB&gt;2&lt;/SUB&gt;,pdxY,CPLX0-8031,2.0
+1451,[PepA]&lt;SUB&gt;6&lt;/SUB&gt;,pepA,CPLX0-3061,6.0
+1452,[PepB]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       aminopeptidase A/I and DNA-binding transcriptional repressor PepA]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       peptidase D PepD]&lt;SUB&gt;2&lt;/SUB&gt;,pepA,CPLX0-3061,6.0
+1453,[PepB]&lt;SUB&gt;6&lt;/SUB&gt;,pepB,CPLX0-8122,6.0
+1454,[PepB]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       aminopeptidase A/I and DNA-binding transcriptional repressor PepA]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       peptidase D PepD]&lt;SUB&gt;2&lt;/SUB&gt;,pepB,CPLX0-8122,6.0
+1455,[PepD]&lt;SUB&gt;2&lt;/SUB&gt;,pepD,CPLX0-3001,2.0
+1456,[PepD]&lt;SUB&gt;2&lt;/SUB&gt;,pepD,CPLX0-3001,2.0
+1457,[PepB]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       aminopeptidase A/I and DNA-binding transcriptional repressor PepA]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       peptidase D PepD]&lt;SUB&gt;2&lt;/SUB&gt;,pepD,CPLX0-3001,2.0
+1458,[PepP]&lt;SUB&gt;4&lt;/SUB&gt;,pepP,CPLX0-3081,4.0
+1459,[PepQ]&lt;SUB&gt;2&lt;/SUB&gt;,pepQ,CPLX0-8156,2.0
+1460,[PepT]&lt;SUB&gt;2&lt;/SUB&gt;,pepT,CPLX0-3041,2.0
+1461,[PfkA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       6-phosphofructokinase 2 PfkB]&lt;SUB&gt;2&lt;/SUB&gt;,pfkA,6PFK-1-CPX,4.0
+1462,[PfkA]&lt;SUB&gt;4&lt;/SUB&gt;,pfkA,6PFK-1-CPX,4.0
+1463,[PfkA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       6-phosphofructokinase 2 PfkB]&lt;SUB&gt;2&lt;/SUB&gt;,pfkB,6PFK-2-CPX,2.0
+1464,[PfkB]&lt;SUB&gt;2&lt;/SUB&gt;,pfkB,6PFK-2-CPX,2.0
+1465,,pflB,PYRUVFORMLY-INACTIVE-CPLX,
+1466,[PgaD][PgaC],pgaD,CPLX0-7994,1.0
+1467,[PgaD][PgaC],pgaC,CPLX0-7994,1.0
+1468,[Pgi]&lt;SUB&gt;2&lt;/SUB&gt;,pgi,CPLX0-7877,2.0
+1469,[TyrA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fused chorismate mutase/prephenate dehydratase PheA]&lt;SUB&gt;2&lt;/SUB&gt;,pheA,CHORISMUTPREPHENDEHYDRAT-CPLX,2.0
+1470,[PheA]&lt;SUB&gt;2&lt;/SUB&gt;,pheA,CHORISMUTPREPHENDEHYDRAT-CPLX,2.0
+1471,[PheS]<sub>2</sub>[PheT]<sub>2</sub>,pheS,PHES-CPLX,2.0
+1472,[PheS]<sub>2</sub>[PheT]<sub>2</sub>,pheT,PHES-CPLX,2.0
+1473,[PhnC]<sub>2</sub>[PhnE]<sub>2</sub>[PhnD],phnC,ABC-23-CPLX,2.0
+1474,[PhnC]<sub>2</sub>[PhnE]<sub>2</sub>[PhnD],phnE,ABC-23-CPLX,2.0
+1475,[PhnC]<sub>2</sub>[PhnE]<sub>2</sub>[PhnD],phnD,ABC-23-CPLX,1.0
+1476,[PhnJ]<sub>2</sub>[PhnI]<sub>2</sub>[PhnH]<sub>2</sub>[PhnG]<sub>2</sub>,phnJ,CPLX0-7935,2.0
+1477,[PhnJ]<sub>2</sub>[PhnI]<sub>2</sub>[PhnH]<sub>2</sub>[PhnG]<sub>2</sub>,phnI,CPLX0-7935,2.0
+1478,[PhnJ]<sub>2</sub>[PhnI]<sub>2</sub>[PhnH]<sub>2</sub>[PhnG]<sub>2</sub>,phnH,CPLX0-7935,2.0
+1479,[PhnJ]<sub>2</sub>[PhnI]<sub>2</sub>[PhnH]<sub>2</sub>[PhnG]<sub>2</sub>,phnG,CPLX0-7935,2.0
+1480,[PhnL][PhnH][PhnG][PhnI],phnL,CPLX0-7958,1.0
+1481,[PhnL][PhnH][PhnG][PhnI],phnH,CPLX0-7958,1.0
+1482,[PhnL][PhnH][PhnG][PhnI],phnG,CPLX0-7958,1.0
+1483,[PhnL][PhnH][PhnG][PhnI],phnI,CPLX0-7958,1.0
+1484,[PhnP]&lt;SUB&gt;2&lt;/SUB&gt;,phnP,CPLX0-7936,2.0
+1485,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1486,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1487,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1488,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1489,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1490,"[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       HMP-PP phosphatase cof&lt;br&gt;                       phosphosugar phosphatase YigL yigL&lt;br&gt;                       pyridoxal phosphate/fructose-1,6-bisphosphate phosphatase ybhA",phoA,ALKAPHOSPHA-CPLX,2.0
+1491,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1492,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       purine nucleotidase yrfG&lt;br&gt;                       UMP phosphatase umpH&lt;br&gt;                       acid phosphatase / phosphotransferase AphA]&lt;SUB&gt;4&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1493,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       5\'-nucleotidase / UDP-sugar hydrolase ushA&lt;br&gt;                       broad specificity 5\'(3\')-nucleotidase and polyphosphatase umpG&lt;br&gt;                       pyrimidine 5\'-nucleotidase YjjG yjjG&lt;br&gt;                       UMP phosphatase umpH + 1 isozymes],phoA,ALKAPHOSPHA-CPLX,2.0
+1494,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       2\'3\' cyclic nucleotide phosphodiesterase/3\' nucleotidase cpdB,phoA,ALKAPHOSPHA-CPLX,2.0
+1495,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1496,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       dCMP phosphohydrolase YfbR]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       CPS-53 (KpLE1) prophage; 5\'-deoxynucleotidase yfdR&lt;br&gt;                       5\'-nucleotidase / UDP-sugar hydrolase ushA&lt;br&gt;                       acid phosphatase / phosphotransferase AphA]&lt;SUB&gt;4&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1497,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       5\'-nucleotidase / UDP-sugar hydrolase ushA&lt;br&gt;                       broad specificity 5\'(3\')-nucleotidase and polyphosphatase umpG&lt;br&gt;                       pyrimidine 5\'-nucleotidase YjjG yjjG&lt;br&gt;                       UMP phosphatase umpH + 1 isozymes],phoA,ALKAPHOSPHA-CPLX,2.0
+1498,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       2\'3\' cyclic nucleotide phosphodiesterase/3\' nucleotidase cpdB&lt;br&gt;                       broad specificity 5\'(3\')-nucleotidase and polyphosphatase umpG&lt;br&gt;                       acid phosphatase / phosphotransferase AphA]&lt;SUB&gt;4&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1499,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1500,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1501,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       broad specificity 5\'(3\')-nucleotidase and polyphosphatase umpG&lt;br&gt;                       dCMP phosphohydrolase YfbR]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       CPS-53 (KpLE1) prophage; 5\'-deoxynucleotidase yfdR&lt;br&gt;                       5\'-nucleotidase / UDP-sugar hydrolase ushA + 1 isozymes],phoA,ALKAPHOSPHA-CPLX,2.0
+1502,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1503,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       2\'3\' cyclic nucleotide phosphodiesterase/3\' nucleotidase cpdB&lt;br&gt;                       broad specificity 5\'(3\')-nucleotidase and polyphosphatase umpG&lt;br&gt;                       acid phosphatase / phosphotransferase AphA]&lt;SUB&gt;4&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1504,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       dCMP phosphohydrolase YfbR]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       CPS-53 (KpLE1) prophage; 5\'-deoxynucleotidase yfdR&lt;br&gt;                       5\'-nucleotidase / UDP-sugar hydrolase ushA&lt;br&gt;                       acid phosphatase / phosphotransferase AphA]&lt;SUB&gt;4&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1505,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       5\'-nucleotidase / UDP-sugar hydrolase ushA&lt;br&gt;                       broad specificity 5\'(3\')-nucleotidase and polyphosphatase umpG&lt;br&gt;                       pyrimidine 5\'-nucleotidase YjjG yjjG&lt;br&gt;                       UMP phosphatase umpH + 1 isozymes],phoA,ALKAPHOSPHA-CPLX,2.0
+1506,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1507,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       imidazoleglycerol-phosphate dehydratase / histidinol-phosphatase HisB]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1508,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       5-amino-6-(5-phospho-D-ribitylamino)uracil phosphatase ybjI&lt;br&gt;                       5-amino-6-(5-phospho-D-ribitylamino)uracil phosphatase yigB,phoA,ALKAPHOSPHA-CPLX,2.0
+1509,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       NADP phosphatase,phoA,ALKAPHOSPHA-CPLX,2.0
+1510,"[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fructose 1,6-bisphosphatase YggF YggF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       pyridoxal phosphate/fructose-1,6-bisphosphate phosphatase ybhA&lt;br&gt;                       fructose-1,6-bisphosphatase 2 GlpX]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fructose-1,6-bisphosphatase 1 Fbp]&lt;SUB&gt;4&lt;/SUB&gt;",phoA,ALKAPHOSPHA-CPLX,2.0
+1511,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1512,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       inositol-phosphate phosphatase suhB,phoA,ALKAPHOSPHA-CPLX,2.0
+1513,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1514,[AphA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       alkaline phosphatase PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1515,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       acid phosphatase / phosphotransferase AphA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       phosphoserine phosphatase serB,phoA,ALKAPHOSPHA-CPLX,2.0
+1516,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       inorganic triphosphatase ygiF&lt;br&gt;                       inorganic pyrophosphatase Ppa]&lt;SUB&gt;6&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1517,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       inorganic pyrophosphatase Ppa]&lt;SUB&gt;6&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1518,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1519,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1520,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       phosphosugar phosphatase YigL yigL&lt;br&gt;                       sugar phosphatase YidA yidA&lt;br&gt;                       hexitol phosphatase A hxpA&lt;br&gt;                       sugar phosphatase YbiV ybiV,phoA,ALKAPHOSPHA-CPLX,2.0
+1521,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1522,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1523,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1524,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1525,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       phosphoglycolate phosphatase gph,phoA,ALKAPHOSPHA-CPLX,2.0
+1526,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       hexitol phosphatase B hxpB,phoA,ALKAPHOSPHA-CPLX,2.0
+1527,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1528,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       6-phosphogluconate phosphatase yieH,phoA,ALKAPHOSPHA-CPLX,2.0
+1529,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1530,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1531,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;,phoA,ALKAPHOSPHA-CPLX,2.0
+1532,[OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin PhoE PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin N ompN,phoE,CPLX0-7530,3.0
+1533,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1534,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1535,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1536,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1537,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1538,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1539,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1540,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1541,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1542,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1543,[OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin PhoE PhoE]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1544,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1545,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1546,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1547,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1548,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1549,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1550,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1551,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1552,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1553,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1554,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1555,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1556,[OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin PhoE PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1557,[OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin PhoE PhoE]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1558,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1559,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1560,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1561,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1562,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1563,[PhoE]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin F OmpF]&lt;SUB&gt;3&lt;/SUB&gt;&lt;br&gt;                       outer membrane porin C OmpC]&lt;SUB&gt;3&lt;/SUB&gt;,phoE,CPLX0-7530,3.0
+1564,,phoQ,PHOSPHO-PHOQ,
+1565,[PhoR]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       sensor histidine kinase ArcB ArcB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       sensor histidine kinase AtoS AtoS]&lt;SUB&gt;2&lt;/SUB&gt; + 8 isozymes],phoR,PHOSPHO-PHOR,2.0
+1566,[PhoR]&lt;SUB&gt;2&lt;/SUB&gt;,phoR,PHOSPHO-PHOR,2.0
+1567,,phoU,CPLX0-8113,
+1568,[PldA]&lt;SUB&gt;2&lt;/SUB&gt;,pldA,CPLX0-7944,2.0
+1569,[PldA]&lt;SUB&gt;2&lt;/SUB&gt;,pldA,CPLX0-7944,2.0
+1570,[PldA]&lt;SUB&gt;2&lt;/SUB&gt;,pldA,CPLX0-7944,2.0
+1571,[PldA]&lt;SUB&gt;2&lt;/SUB&gt;,pldA,CPLX0-7944,2.0
+1572,[PncC]&lt;SUB&gt;2&lt;/SUB&gt;,pncC,CPLXECOLI-7943,2.0
+1573,[Pnp]&lt;SUB&gt;3&lt;/SUB&gt;,pnp,CPLX0-3521,3.0
+1574,[Pnp]&lt;SUB&gt;3&lt;/SUB&gt;,pnp,CPLX0-3521,3.0
+1575,[PntB]<sub>2</sub>[PntA]<sub>2</sub>,pntB,PYRNUTRANSHYDROGEN-CPLX,2.0
+1576,[PntB]<sub>2</sub>[PntA]<sub>2</sub>,pntA,PYRNUTRANSHYDROGEN-CPLX,2.0
+1577,[PotA]<sub>2</sub>[PotB][PotC][PotD],potA,ABC-24-CPLX,2.0
+1578,[PotA]<sub>2</sub>[PotB][PotC][PotD],potB,ABC-24-CPLX,1.0
+1579,[PotA]<sub>2</sub>[PotB][PotC][PotD],potC,ABC-24-CPLX,1.0
+1580,[PotA]<sub>2</sub>[PotB][PotC][PotD],potD,ABC-24-CPLX,1.0
+1581,[PotG]<sub>2</sub>[PotH][PotI][PotF],potG,ABC-25-CPLX,2.0
+1582,[PotG]<sub>2</sub>[PotH][PotI][PotF],potH,ABC-25-CPLX,1.0
+1583,[PotG]<sub>2</sub>[PotH][PotI][PotF],potI,ABC-25-CPLX,1.0
+1584,[PotG]<sub>2</sub>[PotH][PotI][PotF],potF,ABC-25-CPLX,1.0
+1585,[PoxB]&lt;SUB&gt;4&lt;/SUB&gt;,poxB,PYRUVOXID-CPLX,4.0
+1586,[PoxB]&lt;SUB&gt;4&lt;/SUB&gt;,poxB,PYRUVOXID-CPLX,4.0
+1587,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       inorganic pyrophosphatase Ppa]&lt;SUB&gt;6&lt;/SUB&gt;,ppa,CPLX0-243,6.0
+1588,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       inorganic triphosphatase ygiF&lt;br&gt;                       inorganic pyrophosphatase Ppa]&lt;SUB&gt;6&lt;/SUB&gt;,ppa,CPLX0-243,6.0
+1589,[Ppc]&lt;SUB&gt;4&lt;/SUB&gt;,ppc,PEPCARBOX-CPLX,4.0
+1590,[Ppk]&lt;SUB&gt;2&lt;/SUB&gt;,ppk,PPK-CPLX,2.0
+1591,[(Ppk)<sub>2</sub>][(Rne)<sub>4</sub>][(RhlB)<sub>2</sub>][(Pnp)<sub>3</sub>][(Eno)<sub>2</sub>],(Ppk)<sub>2</sub>,CPLX0-2381,2.0
+1592,[(Ppk)<sub>2</sub>][(Rne)<sub>4</sub>][(RhlB)<sub>2</sub>][(Pnp)<sub>3</sub>][(Eno)<sub>2</sub>],(Rne)<sub>4</sub>,CPLX0-2381,4.0
+1593,[(Ppk)<sub>2</sub>][(Rne)<sub>4</sub>][(RhlB)<sub>2</sub>][(Pnp)<sub>3</sub>][(Eno)<sub>2</sub>],(RhlB)<sub>2</sub>,CPLX0-2381,2.0
+1594,[(Ppk)<sub>2</sub>][(Rne)<sub>4</sub>][(RhlB)<sub>2</sub>][(Pnp)<sub>3</sub>][(Eno)<sub>2</sub>],(Pnp)<sub>3</sub>,CPLX0-2381,3.0
+1595,[(Ppk)<sub>2</sub>][(Rne)<sub>4</sub>][(RhlB)<sub>2</sub>][(Pnp)<sub>3</sub>][(Eno)<sub>2</sub>],(Eno)<sub>2</sub>,CPLX0-2381,2.0
+1596,[PpnN]&lt;SUB&gt;4&lt;/SUB&gt;,ppnN,CPLX0-8262,4.0
+1597,[PpnN]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       AMP nucleosidase Amn]&lt;SUB&gt;6&lt;/SUB&gt;,ppnN,CPLX0-8262,4.0
+1598,[PpnN]&lt;SUB&gt;4&lt;/SUB&gt;,ppnN,CPLX0-8262,4.0
+1599,[PpnN]&lt;SUB&gt;4&lt;/SUB&gt;,ppnN,CPLX0-8262,4.0
+1600,[PpsA]&lt;SUB&gt;2&lt;/SUB&gt;,ppsA,PEPSYNTH-CPLX,2.0
+1601,,ppsR,CPLX0-7837,
+1602,,pptA,CPLX0-902,
+1603,[Ppx]&lt;SUB&gt;2&lt;/SUB&gt;,ppx,PPX-CPLX,2.0
+1604,,pqiB,CPLX0-8244,
+1605,[PreT]<sub>2</sub>[PreA]<sub>2</sub>,preT,CPLX0-7788,2.0
+1606,[PreT]<sub>2</sub>[PreA]<sub>2</sub>,preA,CPLX0-7788,2.0
+1607,,priB,CPLX0-3,
+1608,[PrlF]<sub>2</sub>[YhaV]<sub>4</sub>,prlF,CPLX0-7624,2.0
+1609,[PrlF]<sub>2</sub>[YhaV]<sub>4</sub>,yhaV,CPLX0-7624,4.0
+1610,[ProA]&lt;SUB&gt;4&lt;/SUB&gt;,proA,GLUTSEMIALDEHYDROG-CPLX,4.0
+1611,[ProB]&lt;SUB&gt;4&lt;/SUB&gt;,proB,GLUTKIN-CPLX,4.0
+1612,[ProC]&lt;SUB&gt;10&lt;/SUB&gt;,proC,PYRROLINECARBREDUCT-CPLX,1.0
+1613,[ProP]&lt;SUB&gt;2&lt;/SUB&gt;,proP,CPLX0-7642,2.0
+1614,[ProP]&lt;SUB&gt;2&lt;/SUB&gt;,proP,CPLX0-7642,2.0
+1615,[ProS]&lt;SUB&gt;2&lt;/SUB&gt;,proS,PROS-CPLX,2.0
+1616,[ProV]<sub>2</sub>[ProW]<sub>2</sub>[ProX],proV,ABC-26-CPLX,2.0
+1617,[ProV]<sub>2</sub>[ProW]<sub>2</sub>[ProX],proW,ABC-26-CPLX,2.0
+1618,[ProV]<sub>2</sub>[ProW]<sub>2</sub>[ProX],proX,ABC-26-CPLX,1.0
+1619,[PrpB]&lt;SUB&gt;4&lt;/SUB&gt;,prpB,CPLX0-1021,4.0
+1620,[PrpC]&lt;SUB&gt;2&lt;/SUB&gt;,prpC,CPLX0-251,2.0
+1621,[PrpC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       citrate synthase GltA]&lt;SUB&gt;6&lt;/SUB&gt;,prpC,CPLX0-251,2.0
+1622,[Prs]&lt;SUB&gt;6&lt;/SUB&gt;,prs,CPLX0-8299,6.0
+1623,[Psd][Psd],psd,PHOSPHASERDECARB-DIMER,1.0
+1624,[Psd][Psd],psd,PHOSPHASERDECARB-DIMER,1.0
+1625,,pspF,CPLX0-981,
+1626,[PstB]<sub>2</sub>[PstA][PstC][PstS],pstB,ABC-27-CPLX,2.0
+1627,[PstB]<sub>2</sub>[PstA][PstC][PstS],pstA,ABC-27-CPLX,1.0
+1628,[PstB]<sub>2</sub>[PstA][PstC][PstS],pstC,ABC-27-CPLX,1.0
+1629,[PstB]<sub>2</sub>[PstA][PstC][PstS],pstS,ABC-27-CPLX,1.0
+1630,[PsuG]&lt;SUB&gt;3&lt;/SUB&gt;,psuG,CPLX0-8233,3.0
+1631,[EutD]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       phosphate acetyltransferase Pta]&lt;SUB&gt;6&lt;/SUB&gt;,pta,PHOSACETYLTRANS-CPLX,6.0
+1632,[Pta]&lt;SUB&gt;6&lt;/SUB&gt;,pta,PHOSACETYLTRANS-CPLX,6.0
+1633,[PtsG]<sub>2</sub>[Crr],ptsG,CPLX-157,2.0
+1634,[PtsG]<sub>2</sub>[Crr],crr,CPLX-157,1.0
+1635,[PtsG][Mlc],ptsG,CPLX0-8255,1.0
+1636,[PtsG][Mlc],mlc,CPLX0-8255,1.0
+1637,,ptsI,CPLX0-7938,
+1638,[PurA]&lt;SUB&gt;2&lt;/SUB&gt;,purA,ADENYLOSUCCINATE-SYN-DIMER,2.0
+1639,[PurB]&lt;SUB&gt;4&lt;/SUB&gt;,purB,CPLX0-7959,4.0
+1640,[PurB]&lt;SUB&gt;4&lt;/SUB&gt;,purB,CPLX0-7959,4.0
+1641,[PurC]&lt;SUB&gt;3&lt;/SUB&gt;,purC,SAICARSYN-CPLX,3.0
+1642,[PurE]&lt;SUB&gt;8&lt;/SUB&gt;,purE,PURE-CPLX,8.0
+1643,[PurF]&lt;SUB&gt;4&lt;/SUB&gt;,purF,PRPPAMIDOTRANS-CPLX,4.0
+1644,[PurK]&lt;SUB&gt;2&lt;/SUB&gt;,purK,PURK-CPLX,2.0
+1645,[PurM]&lt;SUB&gt;2&lt;/SUB&gt;,purM,AIRS-CPLX,2.0
+1646,,purR,PC00033,
+1647,[PurU]&lt;SUB&gt;6&lt;/SUB&gt;,purU,FORMYLTHFDEFORMYL-CPLX,6.0
+1648,[PutA]&lt;SUB&gt;2&lt;/SUB&gt;,putA,PUTA-CPLX,2.0
+1649,[PutA]&lt;SUB&gt;2&lt;/SUB&gt;,putA,PUTA-CPLX,2.0
+1650,[PuuA]&lt;SUB&gt;12&lt;/SUB&gt;,puuA,CPLX0-7709,1.0
+1651,[PuuD]&lt;SUB&gt;2&lt;/SUB&gt;,puuD,CPLX0-3943,2.0
+1652,[PxpC][PxpB][PxpA],pxpC,CPLX0-8249,1.0
+1653,[PxpC][PxpB][PxpA],pxpB,CPLX0-8249,1.0
+1654,[PxpC][PxpB][PxpA],pxpA,CPLX0-8249,1.0
+1655,[PykF]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       pyruvate kinase II PykA]&lt;SUB&gt;4&lt;/SUB&gt;,pykA,PKII-CPLX,4.0
+1656,[PykF]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       pyruvate kinase II PykA]&lt;SUB&gt;4&lt;/SUB&gt;,pykF,PKI-COMPLEX,4.0
+1657,,pyrB,ASPCARBCAT-TRIMER,
+1658,[(PyrB)<sub>3</sub>]<sub>2</sub>[(PyrI)<sub>2</sub>]<sub>3</sub>,(PyrB)<sub>3</sub>,ASPCARBTRANS-CPLX,3.0
+1659,[(PyrB)<sub>3</sub>]<sub>2</sub>[(PyrI)<sub>2</sub>]<sub>3</sub>,(PyrI)<sub>2</sub>,ASPCARBTRANS-CPLX,2.0
+1660,[PyrC]&lt;SUB&gt;2&lt;/SUB&gt;,pyrC,DIHYDROOROT-CPLX,2.0
+1661,[PyrE]&lt;SUB&gt;2&lt;/SUB&gt;,pyrE,OROPRIBTRANS-CPLX,2.0
+1662,[PyrF]&lt;SUB&gt;2&lt;/SUB&gt;,pyrF,OROTPDECARB-CPLX,2.0
+1663,[PyrG]&lt;SUB&gt;4&lt;/SUB&gt;,pyrG,CTPSYN-CPLX,4.0
+1664,[PyrH]&lt;SUB&gt;6&lt;/SUB&gt;,pyrH,UMPKI-CPLX,6.0
+1665,,pyrI,ASPCARBREG-DIMER,
+1666,[QorA]&lt;SUB&gt;2&lt;/SUB&gt;,qorA,QOR-CPLX,2.0
+1667,[QueD]&lt;SUB&gt;6&lt;/SUB&gt;,queD,CPLX0-8123,6.0
+1668,[QueF]&lt;SUB&gt;2&lt;/SUB&gt;,queF,CPLX0-3501,2.0
+1669,,rapZ,CPLX0-7998,
+1670,[RavA]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       putative DNA repair helicase RadD radD,ravA,CPLX0-3927,6.0
+1671,[Rbn]&lt;SUB&gt;2&lt;/SUB&gt;,rbn,CPLX0-3601,2.0
+1672,[Rbn]&lt;SUB&gt;2&lt;/SUB&gt;,rbn,CPLX0-3601,2.0
+1673,[Rbn]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       RNase D rnd,rbn,CPLX0-3601,2.0
+1674,[RbsA][RbsC]<sub>2</sub>[RbsB],rbsA,ABC-28-CPLX,1.0
+1675,[RbsA][RbsC]<sub>2</sub>[RbsB],rbsC,ABC-28-CPLX,2.0
+1676,[RbsA][RbsC]<sub>2</sub>[RbsB],rbsB,ABC-28-CPLX,1.0
+1677,[RbsD]&lt;SUB&gt;10&lt;/SUB&gt;,rbsD,CPLX0-7646,1.0
+1678,[RbsK]&lt;SUB&gt;2&lt;/SUB&gt;,rbsK,CPLX0-7647,2.0
+1679,[RcsB][GadE],rcsB,CPLX0-7852,1.0
+1680,[RcsB][GadE],gadE,CPLX0-7852,1.0
+1681,[RcsB][RcsA],rcsB,PC00084,1.0
+1682,[RcsB][RcsA],rcsA,PC00084,1.0
+1683,[RdgB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       nucleoside triphosphate pyrophosphohydrolase MazG]&lt;SUB&gt;2&lt;/SUB&gt;,rdgB,CPLX0-7826,2.0
+1684,[RdgB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       nucleoside triphosphate pyrophosphohydrolase MazG]&lt;SUB&gt;2&lt;/SUB&gt;,rdgB,CPLX0-7826,2.0
+1685,[RdgB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       nucleoside triphosphate pyrophosphohydrolase MazG]&lt;SUB&gt;2&lt;/SUB&gt;,rdgB,CPLX0-7826,2.0
+1686,[RecD][RecC][RecB],recD,RECBCD,1.0
+1687,[RecD][RecC][RecB],recC,RECBCD,1.0
+1688,[RecD][RecC][RecB],recB,RECBCD,1.0
+1689,[RecF][RecR][RecO],recF,RECFOR-CPLX,1.0
+1690,[RecF][RecR][RecO],recR,RECFOR-CPLX,1.0
+1691,[RecF][RecR][RecO],recO,RECFOR-CPLX,1.0
+1692,,relB,CPLX0-7928,
+1693,[RelB]<sub>4</sub>[RelE]<sub>4</sub>,relB,CPLX0-7791,4.0
+1694,[RelB]<sub>4</sub>[RelE]<sub>4</sub>,relE,CPLX0-7791,4.0
+1695,[UvrD]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       ATP-dependent DNA helicase Rep Rep]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       exodeoxyribonuclease V subunit RecB recB&lt;br&gt;                       ATP-dependent DNA helicase RecQ recQ,rep,CPLX0-3931,2.0
+1696,[RfaD]&lt;SUB&gt;5&lt;/SUB&gt;,rfaD,CPLX0-3681,5.0
+1697,[RffH]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       dTDP-glucose pyrophosphorylase RfbA]&lt;SUB&gt;4&lt;/SUB&gt;,rfbA,CPLX0-8034,4.0
+1698,[RfbB]&lt;SUB&gt;2&lt;/SUB&gt;,rfbB,DTDPGLUCDEHYDRAT-CPLX,2.0
+1699,[Rfe]&lt;SUB&gt;2&lt;/SUB&gt;,rfe,CPLX0-8011,2.0
+1700,[RffH]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       dTDP-glucose pyrophosphorylase RfbA]&lt;SUB&gt;4&lt;/SUB&gt;,rffH,CPLX0-8012,4.0
+1701,[RhaA]&lt;SUB&gt;4&lt;/SUB&gt;,rhaA,CPLX0-7652,4.0
+1702,[RhaA]&lt;SUB&gt;4&lt;/SUB&gt;,rhaA,CPLX0-7652,4.0
+1703,[RhaD]&lt;SUB&gt;4&lt;/SUB&gt;,rhaD,RHAMNULPALDOL-CPLX,4.0
+1704,[RhaM]&lt;SUB&gt;2&lt;/SUB&gt;,rhaM,CPLX0-7649,2.0
+1705,,rhaS,PC00086,
+1706,[RhlB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       ATP-dependent RNA helicase DbpA dbpA,rhlB,CPLX0-3541,2.0
+1707,[RhmD]&lt;SUB&gt;8&lt;/SUB&gt;,rhmD,CPLX0-7722,8.0
+1708,,rho,CPLX0-2441,
+1709,[RibA]&lt;SUB&gt;2&lt;/SUB&gt;,ribA,GTP-CYCLOHYDRO-II-CPLX,2.0
+1710,[RibB]&lt;SUB&gt;2&lt;/SUB&gt;,ribB,DIOHBUTANONEPSYN-CPLX,2.0
+1711,[RibC]&lt;SUB&gt;3&lt;/SUB&gt;,ribC,CPLX0-3952,3.0
+1712,[RibD]&lt;SUB&gt;2&lt;/SUB&gt;,ribD,CPLX0-7659,2.0
+1713,[RibD]&lt;SUB&gt;2&lt;/SUB&gt;,ribD,CPLX0-7659,2.0
+1714,[RibE]&lt;SUB&gt;60&lt;/SUB&gt;,ribE,LUMAZINESYN-CPLX,6.0
+1715,,ridA,CPLX0-1881,
+1716,[RihB]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       pyrimidine-specific ribonucleoside hydrolase RihA RihA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       ribonucleoside hydrolase RihC rihC,rihA,CPLX0-8280,4.0
+1717,[RihB]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       pyrimidine-specific ribonucleoside hydrolase RihA RihA]&lt;SUB&gt;4&lt;/SUB&gt;,rihA,CPLX0-8280,4.0
+1718,[RihB]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       pyrimidine-specific ribonucleoside hydrolase RihA RihA]&lt;SUB&gt;4&lt;/SUB&gt;,rihB,CPLX0-7904,4.0
+1719,[RihB]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       pyrimidine-specific ribonucleoside hydrolase RihA RihA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       ribonucleoside hydrolase RihC rihC,rihB,CPLX0-7904,4.0
+1720,[RihB]&lt;SUB&gt;4&lt;/SUB&gt;,rihB,CPLX0-7904,4.0
+1721,[RimK]&lt;SUB&gt;4&lt;/SUB&gt;,rimK,CPLX0-7946,4.0
+1722,[RlmB]&lt;SUB&gt;2&lt;/SUB&gt;,rlmB,CPLX0-1121,2.0
+1723,[RlmH]&lt;SUB&gt;2&lt;/SUB&gt;,rlmH,CPLX0-7423,2.0
+1724,[RlmI]&lt;SUB&gt;2&lt;/SUB&gt;,rlmI,CPLX0-7726,2.0
+1725,[Rnc]&lt;SUB&gt;2&lt;/SUB&gt;,rnc,CPLX0-3281,2.0
+1726,[Rne]&lt;SUB&gt;4&lt;/SUB&gt;,rne,CPLX0-3461,4.0
+1727,[Rne]&lt;SUB&gt;4&lt;/SUB&gt;,rne,CPLX0-3461,4.0
+1728,[Rne]&lt;SUB&gt;4&lt;/SUB&gt;,rne,CPLX0-3461,4.0
+1729,[Rne]&lt;SUB&gt;4&lt;/SUB&gt;,rne,CPLX0-3461,4.0
+1730,[Rne]&lt;SUB&gt;4&lt;/SUB&gt;,rne,CPLX0-3461,4.0
+1731,[Rng]&lt;SUB&gt;2&lt;/SUB&gt;,rng,CPLX0-1621,2.0
+1732,,rnlA,CPLX0-8095,
+1733,[RnlB][RnlA],rnlB,CPLX0-7909,1.0
+1734,[RnlB][RnlA],rnlA,CPLX0-7909,1.0
+1735,[Rnt]&lt;SUB&gt;2&lt;/SUB&gt;,rnt,CPLX0-3602,2.0
+1736,[Rnt]&lt;SUB&gt;2&lt;/SUB&gt;,rnt,CPLX0-3602,2.0
+1737,[Rnt]&lt;SUB&gt;2&lt;/SUB&gt;,rnt,CPLX0-3602,2.0
+1738,[RoxA]&lt;SUB&gt;2&lt;/SUB&gt;,roxA,CPLX0-8112,2.0
+1739,[RpiA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       allose-6-phosphate isomerase / ribose-5-phosphate isomerase B RpiB]&lt;SUB&gt;2&lt;/SUB&gt;,rpiA,RIB5PISOMA-CPLX,2.0
+1740,[RpiB]&lt;SUB&gt;2&lt;/SUB&gt;,rpiB,RIB5PISOMB-CPLX,2.0
+1741,[RpiA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       allose-6-phosphate isomerase / ribose-5-phosphate isomerase B RpiB]&lt;SUB&gt;2&lt;/SUB&gt;,rpiB,RIB5PISOMB-CPLX,2.0
+1742,[RplJ][(RplL)<sub>2</sub>]<sub>2</sub>,rplJ,CPLX0-3956,1.0
+1743,[RplJ][(RplL)<sub>2</sub>]<sub>2</sub>,(RplL)<sub>2</sub>,CPLX0-3956,2.0
+1744,(RplJ)([RplL]<sub>2</sub>)<sub>2</sub> (summary available),rplL,CPLX0-3956,2.0
+1745,(RplJ)([RplL]<sub>2</sub>)<sub>2</sub> (summary available),rplL,CPLX0-3956,2.0
+1746,,rplL,CPLX0-3955,
+1747,[RpoA]<sub>2</sub>[RpoC][RpoB],rpoA,APORNAP-CPLX,2.0
+1748,[RpoA]<sub>2</sub>[RpoC][RpoB],rpoC,APORNAP-CPLX,1.0
+1749,[RpoA]<sub>2</sub>[RpoC][RpoB],rpoB,APORNAP-CPLX,1.0
+1750,[(RpoA)<sub>2</sub>(RpoC)(RpoB)][FecI],(RpoA)<sub>2</sub>(RpoC)(RpoB),CPLX0-221,2.0
+1751,[(RpoA)<sub>2</sub>(RpoC)(RpoB)][FecI],fecI,CPLX0-221,1.0
+1752,[(RpoA)<sub>2</sub>(RpoC)(RpoB)][RpoD],(RpoA)<sub>2</sub>(RpoC)(RpoB),RNAP70-CPLX,2.0
+1753,[(RpoA)<sub>2</sub>(RpoC)(RpoB)][RpoD],rpoD,RNAP70-CPLX,1.0
+1754,[(RpoA)<sub>2</sub>(RpoC)(RpoB)][RpoE],(RpoA)<sub>2</sub>(RpoC)(RpoB),RNAPE-CPLX,2.0
+1755,[(RpoA)<sub>2</sub>(RpoC)(RpoB)][RpoE],rpoE,RNAPE-CPLX,1.0
+1756,[(RpoA)<sub>2</sub>(RpoC)(RpoB)][RpoH],(RpoA)<sub>2</sub>(RpoC)(RpoB),RNAP32-CPLX,2.0
+1757,[(RpoA)<sub>2</sub>(RpoC)(RpoB)][RpoH],rpoH,RNAP32-CPLX,1.0
+1758,[(RpoA)<sub>2</sub>(RpoC)(RpoB)][RpoN],(RpoA)<sub>2</sub>(RpoC)(RpoB),RNAP54-CPLX,2.0
+1759,[(RpoA)<sub>2</sub>(RpoC)(RpoB)][RpoN],rpoN,RNAP54-CPLX,1.0
+1760,[(RpoA)<sub>2</sub>(RpoC)(RpoB)][RpoS],(RpoA)<sub>2</sub>(RpoC)(RpoB),RNAPS-CPLX,2.0
+1761,[(RpoA)<sub>2</sub>(RpoC)(RpoB)][RpoS],rpoS,RNAPS-CPLX,1.0
+1762,[RpsJ][NusB],rpsJ,CPLX0-7879,1.0
+1763,[RpsJ][NusB],nusB,CPLX0-7879,1.0
+1764,[RpsR][RpsF],rpsR,CPLX0-8208,1.0
+1765,[RpsR][RpsF],rpsF,CPLX0-8208,1.0
+1766,,rraA,CPLX0-1642,
+1767,,rraB,CPLX0-8096,
+1768,,rseB,CPLX0-7648,
+1769,[RsmE]&lt;SUB&gt;2&lt;/SUB&gt;,rsmE,CPLX0-7727,2.0
+1770,[RsmH]&lt;SUB&gt;2&lt;/SUB&gt;,rsmH,CPLX0-7977,2.0
+1771,[RsmI]&lt;SUB&gt;2&lt;/SUB&gt;,rsmI,CPLX0-8231,2.0
+1772,,rusA,CPLX0-8237,
+1773,[RutD]&lt;SUB&gt;2&lt;/SUB&gt;,rutD,CPLX0-8303,2.0
+1774,[RuvC]<sub>2</sub>[RuvB]<sub>12</sub>[RuvA]<sub>4</sub>,ruvC,RUVABC-CPLX,2.0
+1775,[RuvC]<sub>2</sub>[RuvB]<sub>12</sub>[RuvA]<sub>4</sub>,ruvB,RUVABC-CPLX,12.0
+1776,[RuvC]<sub>2</sub>[RuvB]<sub>12</sub>[RuvA]<sub>4</sub>,ruvA,RUVABC-CPLX,4.0
+1777,[Sad]&lt;SUB&gt;2&lt;/SUB&gt;,sad,CPLX0-7687,2.0
+1778,[GabD]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       succinate semialdehyde dehydrogenase (NAD(P)&lt;sup&gt;+&lt;/sup&gt;) Sad Sad]&lt;SUB&gt;2&lt;/SUB&gt;,sad,CPLX0-7687,2.0
+1779,[SapF][SapC][SapB][SapD],sapF,ABC-29-CPLX,1.0
+1780,[SapF][SapC][SapB][SapD],sapC,ABC-29-CPLX,1.0
+1781,[SapF][SapC][SapB][SapD],sapB,ABC-29-CPLX,1.0
+1782,[SapF][SapC][SapB][SapD],sapD,ABC-29-CPLX,1.0
+1783,[SbcC][SbcD]<sub>2</sub>,sbcC,CPLX0-3957,1.0
+1784,[SbcC][SbcD]<sub>2</sub>,sbcD,CPLX0-3957,2.0
+1785,[SbmA]&lt;SUB&gt;2&lt;/SUB&gt;,sbmA,CPLX0-8097,2.0
+1786,[Sbp][CysW][CysU][CysA]<sub>2</sub>,sbp,ABC-70-CPLX,1.0
+1787,[Sbp][CysW][CysU][CysA]<sub>2</sub>,cysW,ABC-70-CPLX,1.0
+1788,[Sbp][CysW][CysU][CysA]<sub>2</sub>,cysU,ABC-70-CPLX,1.0
+1789,[Sbp][CysW][CysU][CysA]<sub>2</sub>,cysA,ABC-70-CPLX,2.0
+1790,[ScpA]&lt;SUB&gt;2&lt;/SUB&gt;,scpA,CPLX0-7741,2.0
+1791,[ScpB]&lt;SUB&gt;6&lt;/SUB&gt;,scpB,CPLX0-254,6.0
+1792,,sdhA,SUCC-DEHASE,
+1793,,sdhB,SUCC-DEHASE,
+1794,,sdhC,SUCC-DEHASE,
+1795,,sdhD,SUCC-DEHASE,
+1796,[(SdhA)(SdhB)(SdhC)(SdhD)]<sub>3</sub>,(SdhA)(SdhB)(SdhC)(SdhD),CPLX0-8160,3.0
+1797,,secA,CPLX0-8089,
+1798,,secB,CPLX0-8046,
+1799,[(YidC)(YajC)(SecF)(SecD)][(SecE)(SecG)(SecY)],(YidC)(YajC)(SecF)(SecD),SEC-SECRETION-CPLX,1.0
+1800,[(YidC)(YajC)(SecF)(SecD)][(SecE)(SecG)(SecY)],(SecE)(SecG)(SecY),SEC-SECRETION-CPLX,1.0
+1801,[SecE][SecG][SecY],secE,SECE-G-Y-CPLX,1.0
+1802,[SecE][SecG][SecY],secG,SECE-G-Y-CPLX,1.0
+1803,[SecE][SecG][SecY],secY,SECE-G-Y-CPLX,1.0
+1804,[SelA]&lt;SUB&gt;10&lt;/SUB&gt;,selA,CPLX0-1141,1.0
+1805,[SelD]&lt;SUB&gt;2&lt;/SUB&gt;,selD,CPLX0-7957,2.0
+1806,[SerA]&lt;SUB&gt;4&lt;/SUB&gt;,serA,PGLYCDEHYDROG-CPLX,4.0
+1807,[SerA]&lt;SUB&gt;4&lt;/SUB&gt;,serA,PGLYCDEHYDROG-CPLX,4.0
+1808,[SerA]&lt;SUB&gt;4&lt;/SUB&gt;,serA,PGLYCDEHYDROG-CPLX,4.0
+1809,[SerC]&lt;SUB&gt;2&lt;/SUB&gt;,serC,PSERTRANSAM-CPLX,2.0
+1810,[SerC]&lt;SUB&gt;2&lt;/SUB&gt;,serC,PSERTRANSAM-CPLX,2.0
+1811,[SerC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       &lt;i&gt;N&lt;/i&gt;-acetylornithine aminotransferase / &lt;i&gt;N&lt;/i&gt;-succinyldiaminopimelate aminotransferase ArgD]&lt;SUB&gt;2&lt;/SUB&gt;,serC,PSERTRANSAM-CPLX,2.0
+1812,[SerS]&lt;SUB&gt;2&lt;/SUB&gt;,serS,SERS-CPLX,2.0
+1813,[SerS]&lt;SUB&gt;2&lt;/SUB&gt;,serS,SERS-CPLX,2.0
+1814,[SgcB][SgcC][SgcA],sgcB,EIISGC,1.0
+1815,[SgcB][SgcC][SgcA],sgcC,EIISGC,1.0
+1816,[SgcB][SgcC][SgcA],sgcA,EIISGC,1.0
+1817,,skp,CPLX0-7711,
+1818,,slmA,CPLX0-7922,
+1819,,slyD,CPLX0-7536,
+1820,[SodB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       superoxide dismutase (Mn) SodA]&lt;SUB&gt;2&lt;/SUB&gt;,sodA,SUPEROX-DISMUTMN-CPLX,2.0
+1821,[SodB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       superoxide dismutase (Mn) SodA]&lt;SUB&gt;2&lt;/SUB&gt;,sodB,SUPEROX-DISMUTFE-CPLX,2.0
+1822,"[AdiA]&lt;SUB&gt;10&lt;/SUB&gt;&lt;br&gt;                       arginine decarboxylase, biosynthetic SpeA]&lt;SUB&gt;4&lt;/SUB&gt;",speA,ARGDECARBOXBIO-CPLX,4.0
+1823,[SpeB]&lt;SUB&gt;2&lt;/SUB&gt;,speB,AGMATIN-CPLX,2.0
+1824,"[SpeF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       ornithine decarboxylase, biosynthetic SpeC]&lt;SUB&gt;2&lt;/SUB&gt;",speC,ORNDECARBOX-BIO-CPLX,2.0
+1825,[SpeD]<sub>4</sub>[SpeD]<sub>4</sub>,speD,SAMDECARB-CPLX,4.0
+1826,[SpeD]<sub>4</sub>[SpeD]<sub>4</sub>,speD,SAMDECARB-CPLX,4.0
+1827,[SpeE]&lt;SUB&gt;2&lt;/SUB&gt;,speE,SPERMIDINESYN-CPLX,2.0
+1828,[SpeE]&lt;SUB&gt;2&lt;/SUB&gt;,speE,SPERMIDINESYN-CPLX,2.0
+1829,"[SpeF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       ornithine decarboxylase, biosynthetic SpeC]&lt;SUB&gt;2&lt;/SUB&gt;",speF,ORNDECARBOXDEG-CPLX,2.0
+1830,[SpeG]&lt;SUB&gt;4&lt;/SUB&gt;,speG,SPERMACTRAN-CPLX,4.0
+1831,[SpeG]&lt;SUB&gt;4&lt;/SUB&gt;,speG,SPERMACTRAN-CPLX,4.0
+1832,[SpeG]&lt;SUB&gt;4&lt;/SUB&gt;,speG,SPERMACTRAN-CPLX,4.0
+1833,[SppA]&lt;SUB&gt;4&lt;/SUB&gt;,sppA,CPLX0-2941,4.0
+1834,,spy,CPLX0-7923,
+1835,[SrlA][SrlB][SrlE],srlA,CPLX-169,1.0
+1836,[SrlA][SrlB][SrlE],srlB,CPLX-169,1.0
+1837,[SrlA][SrlB][SrlE],srlE,CPLX-169,1.0
+1838,[SrlD]&lt;SUB&gt;4&lt;/SUB&gt;,srlD,SORB6PDEHYDROG-CPLX,4.0
+1839,,ssb,CPLX0-8165,
+1840,,sspB,CPLX0-2681,
+1841,[SsuA][SsuC]<sub>2</sub>[SsuB]<sub>2</sub>,ssuA,ABC-56-CPLX,1.0
+1842,[SsuA][SsuC]<sub>2</sub>[SsuB]<sub>2</sub>,ssuC,ABC-56-CPLX,2.0
+1843,[SsuA][SsuC]<sub>2</sub>[SsuB]<sub>2</sub>,ssuB,ABC-56-CPLX,2.0
+1844,[SsuD]&lt;SUB&gt;4&lt;/SUB&gt;,ssuD,CPLX0-225,4.0
+1845,[SsuD]&lt;SUB&gt;4&lt;/SUB&gt;,ssuD,CPLX0-225,4.0
+1846,[SsuE]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       flavin reductase fre,ssuE,CPLX0-224,2.0
+1847,[SthA]&lt;SUB&gt;8&lt;/SUB&gt;,sthA,UDHA-CPLX,8.0
+1848,[SucA]&lt;SUB&gt;12&lt;/SUB&gt;&lt;br&gt;                       2-oxoglutarate dehydrogenase complex (SucA)&lt;SUB&gt;12&lt;/SUB&gt;](SucB)&lt;SUB&gt;24&lt;/SUB&gt;](Lpd)&lt;SUB&gt;2&lt;/SUB&gt;],sucA,E1O,1.0
+1849,[(SucA)<sub>12</sub>][(SucB)<sub>24</sub>][(Lpd)<sub>2</sub>],(SucA)<sub>12</sub>,2OXOGLUTARATEDEH-CPLX,12.0
+1850,[(SucA)<sub>12</sub>][(SucB)<sub>24</sub>][(Lpd)<sub>2</sub>],(SucB)<sub>24</sub>,2OXOGLUTARATEDEH-CPLX,24.0
+1851,[(SucA)<sub>12</sub>][(SucB)<sub>24</sub>][(Lpd)<sub>2</sub>],(Lpd)<sub>2</sub>,2OXOGLUTARATEDEH-CPLX,2.0
+1852,[SucB]&lt;SUB&gt;24&lt;/SUB&gt;&lt;br&gt;                       2-oxoglutarate dehydrogenase complex (SucA)&lt;SUB&gt;12&lt;/SUB&gt;](SucB)&lt;SUB&gt;24&lt;/SUB&gt;](Lpd)&lt;SUB&gt;2&lt;/SUB&gt;],sucB,E2O,2.0
+1853,[SucD]<sub>2</sub>[SucC]<sub>2</sub>,sucD,SUCCCOASYN,2.0
+1854,[SucD]<sub>2</sub>[SucC]<sub>2</sub>,sucC,SUCCCOASYN,2.0
+1855,,sufA,CPLX0-7824,
+1856,[SufB][SufC]<sub>2</sub>[SufD],sufB,CPLX0-1341,1.0
+1857,[SufB][SufC]<sub>2</sub>[SufD],sufC,CPLX0-1341,2.0
+1858,[SufB][SufC]<sub>2</sub>[SufD],sufD,CPLX0-1341,1.0
+1859,[SufS]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       cysteine desulfurase IscS]&lt;SUB&gt;2&lt;/SUB&gt;,sufS,CPLX0-246,2.0
+1860,[SufS]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       cysteine sulfinate desulfinase CsdA]&lt;SUB&gt;2&lt;/SUB&gt;,sufS,CPLX0-246,2.0
+1861,[SufS]&lt;SUB&gt;2&lt;/SUB&gt;,sufS,CPLX0-246,2.0
+1862,[Sxy][Crp],sxy,CPLX0-8312,1.0
+1863,[Sxy][Crp],crp,CPLX0-8312,1.0
+1864,[TadA]&lt;SUB&gt;2&lt;/SUB&gt;,tadA,CPLX0-901,2.0
+1865,[TalB]&lt;SUB&gt;2&lt;/SUB&gt;,talB,TRANSALDOLB-CPLX,2.0
+1866,[TamB][TamA],tamB,CPLX0-7976,1.0
+1867,[TamB][TamA],tamA,CPLX0-7976,1.0
+1868,,tap,CPLX0-8104,
+1869,,tar,CPLX0-8102,
+1870,[TatB][TatC][TatE][TatA],tatB,TATABCE-CPLX,1.0
+1871,[TatB][TatC][TatE][TatA],tatC,TATABCE-CPLX,1.0
+1872,[TatB][TatC][TatE][TatA],tatE,TATABCE-CPLX,1.0
+1873,[TatB][TatC][TatE][TatA],tatA,TATABCE-CPLX,1.0
+1874,[TauA][TauC]<sub>2</sub>[TauB]<sub>2</sub>,tauA,ABC-64-CPLX,1.0
+1875,[TauA][TauC]<sub>2</sub>[TauB]<sub>2</sub>,tauC,ABC-64-CPLX,2.0
+1876,[TauA][TauC]<sub>2</sub>[TauB]<sub>2</sub>,tauB,ABC-64-CPLX,2.0
+1877,[TauD]&lt;SUB&gt;4&lt;/SUB&gt;,tauD,CPLX0-227,4.0
+1878,[TcdA]&lt;SUB&gt;2&lt;/SUB&gt;,tcdA,CPLX0-8176,2.0
+1879,[TcyN]<sub>2</sub>[TcyL]<sub>2</sub>[TcyJ],tcyN,CPLX0-8152,2.0
+1880,[TcyN]<sub>2</sub>[TcyL]<sub>2</sub>[TcyJ],tcyL,CPLX0-8152,2.0
+1881,[TcyN]<sub>2</sub>[TcyL]<sub>2</sub>[TcyJ],tcyJ,CPLX0-8152,1.0
+1882,[TdcG]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       L-serine deaminase I sdaA&lt;br&gt;                       catabolic threonine dehydratase TdcB]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       L-serine deaminase II sdaB,tdcB,THREDEHYDCAT-CPLX,4.0
+1883,[TdcB]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       threonine deaminase IlvA]&lt;SUB&gt;4&lt;/SUB&gt;,tdcB,THREDEHYDCAT-CPLX,4.0
+1884,,tdcF,CPLX0-7987,
+1885,[TdcG]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       L-serine deaminase I sdaA&lt;br&gt;                       catabolic threonine dehydratase TdcB]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       L-serine deaminase II sdaB,tdcG,CPLX0-7622,2.0
+1886,[Tdh]&lt;SUB&gt;4&lt;/SUB&gt;,tdh,THREODEHYD-CPLX,4.0
+1887,[Tdk],tdk,CPLX0-8261,1.0
+1888,[Tdk],tdk,CPLX0-8261,1.0
+1889,[TehB]&lt;SUB&gt;2&lt;/SUB&gt;,tehB,CPLX0-7913,2.0
+1890,[TesA]&lt;SUB&gt;4&lt;/SUB&gt;,tesA,CPLX0-7630,4.0
+1891,[TesA]&lt;SUB&gt;4&lt;/SUB&gt;,tesA,CPLX0-7630,4.0
+1892,[TesA]&lt;SUB&gt;4&lt;/SUB&gt;,tesA,CPLX0-7630,4.0
+1893,[TesA]&lt;SUB&gt;4&lt;/SUB&gt;,tesA,CPLX0-7630,4.0
+1894,[TesB]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       acyl-CoA thioesterase YciA yciA,tesB,THIOESTERII-CPLX,4.0
+1895,[TesB]&lt;SUB&gt;4&lt;/SUB&gt;,tesB,THIOESTERII-CPLX,4.0
+1896,[TesB]&lt;SUB&gt;4&lt;/SUB&gt;,tesB,THIOESTERII-CPLX,4.0
+1897,[Tgt]&lt;SUB&gt;3&lt;/SUB&gt;,tgt,CPLX0-1101,3.0
+1898,[ThiD]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       pyridoxal kinase I / hydroxymethylpyrimidine kinase PdxK]&lt;SUB&gt;2&lt;/SUB&gt;,thiD,HMP-P-KIN-CPLX,4.0
+1899,[ThiD]&lt;SUB&gt;4&lt;/SUB&gt;,thiD,HMP-P-KIN-CPLX,4.0
+1900,[ThiG]<sub>6</sub>[ThiH]<sub>6</sub>,thiG,CPLX0-3949,6.0
+1901,[ThiG]<sub>6</sub>[ThiH]<sub>6</sub>,thiH,CPLX0-3949,6.0
+1902,[ThiM]&lt;SUB&gt;2&lt;/SUB&gt;,thiM,CPLX0-8211,2.0
+1903,[ThiM]&lt;SUB&gt;2&lt;/SUB&gt;,thiM,CPLX0-8211,2.0
+1904,[ThiQ]<sub>2</sub>[ThiP]<sub>2</sub>[ThiB],thiQ,ABC-32-CPLX,2.0
+1905,[ThiQ]<sub>2</sub>[ThiP]<sub>2</sub>[ThiB],thiP,ABC-32-CPLX,2.0
+1906,[ThiQ]<sub>2</sub>[ThiP]<sub>2</sub>[ThiB],thiB,ABC-32-CPLX,1.0
+1907,[LysC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fused aspartate kinase/homoserine dehydrogenase 2 MetL]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fused aspartate kinase/homoserine dehydrogenase 1 ThrA]&lt;SUB&gt;4&lt;/SUB&gt;,thrA,ASPKINIHOMOSERDEHYDROGI-CPLX,4.0
+1908,[MetL]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fused aspartate kinase/homoserine dehydrogenase 1 ThrA]&lt;SUB&gt;4&lt;/SUB&gt;,thrA,ASPKINIHOMOSERDEHYDROGI-CPLX,4.0
+1909,[ThrB]&lt;SUB&gt;2&lt;/SUB&gt;,thrB,HOMOSERKIN-CPLX,2.0
+1910,[ThrB]&lt;SUB&gt;2&lt;/SUB&gt;,thrB,HOMOSERKIN-CPLX,2.0
+1911,[ThrS]&lt;SUB&gt;2&lt;/SUB&gt;,thrS,THRS-CPLX,2.0
+1912,[ThyA]&lt;SUB&gt;2&lt;/SUB&gt;,thyA,THYMIDYLATESYN-CPLX,2.0
+1913,[TktA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       transketolase 2 TktB],tktA,TRANSKETOI-CPLX,2.0
+1914,[TktB]&lt;br&gt;                       transketolase 1 TktA]&lt;SUB&gt;2&lt;/SUB&gt;,tktA,TRANSKETOI-CPLX,2.0
+1915,[TktB]&lt;br&gt;                       transketolase 1 TktA]&lt;SUB&gt;2&lt;/SUB&gt;,tktB,CPLX0-1261,1.0
+1916,[TktA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       transketolase 2 TktB],tktB,CPLX0-1261,1.0
+1917,[Tmk]&lt;SUB&gt;2&lt;/SUB&gt;,tmk,CPLX0-8260,2.0
+1918,[TnaA]&lt;SUB&gt;4&lt;/SUB&gt;,tnaA,TRYPTOPHAN-CPLX,4.0
+1919,[TnaA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       cysteine synthase B CysM]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       cysteine synthase A CysK]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       negative regulator of MalT activity/cystathionine β-lyase MalY]&lt;SUB&gt;2&lt;/SUB&gt; + 1 isozymes],tnaA,TRYPTOPHAN-CPLX,4.0
+1920,,tolC,CPLX0-7964,
+1921,[(TolC)<sub>3</sub>][AcrA]<sub>6</sub>[AcrB]<sub>3</sub>,(TolC)<sub>3</sub>,TRANS-CPLX-201,3.0
+1922,[(TolC)<sub>3</sub>][AcrA]<sub>6</sub>[AcrB]<sub>3</sub>,acrA,TRANS-CPLX-201,6.0
+1923,[(TolC)<sub>3</sub>][AcrA]<sub>6</sub>[AcrB]<sub>3</sub>,acrB,TRANS-CPLX-201,3.0
+1924,[(TolC)<sub>3</sub>][AcrD]<sub>3</sub>[AcrA]<sub>6</sub>,(TolC)<sub>3</sub>,CPLX0-3932,3.0
+1925,[(TolC)<sub>3</sub>][AcrD]<sub>3</sub>[AcrA]<sub>6</sub>,acrD,CPLX0-3932,3.0
+1926,[(TolC)<sub>3</sub>][AcrD]<sub>3</sub>[AcrA]<sub>6</sub>,acrA,CPLX0-3932,6.0
+1927,[(TolC)<sub>3</sub>][AcrE]<sub>6</sub>[AcrF]<sub>3</sub>,(TolC)<sub>3</sub>,CPLX0-2141,3.0
+1928,[(TolC)<sub>3</sub>][AcrE]<sub>6</sub>[AcrF]<sub>3</sub>,acrE,CPLX0-2141,6.0
+1929,[(TolC)<sub>3</sub>][AcrE]<sub>6</sub>[AcrF]<sub>3</sub>,acrF,CPLX0-2141,3.0
+1930,[(TolC)<sub>3</sub>][EmrA][EmrB],(TolC)<sub>3</sub>,CPLX0-2121,3.0
+1931,[(TolC)<sub>3</sub>][EmrA][EmrB],emrA,CPLX0-2121,1.0
+1932,[(TolC)<sub>3</sub>][EmrA][EmrB],emrB,CPLX0-2121,1.0
+1933,[(TolC)<sub>3</sub>][EmrK][EmrY],(TolC)<sub>3</sub>,CPLX0-2161,3.0
+1934,[(TolC)<sub>3</sub>][EmrK][EmrY],emrK,CPLX0-2161,1.0
+1935,[(TolC)<sub>3</sub>][EmrK][EmrY],emrY,CPLX0-2161,1.0
+1936,[(TolC)<sub>3</sub>][MacB]<sub>2</sub>[MacA]<sub>6</sub>,(TolC)<sub>3</sub>,TRANS-200-CPLX,3.0
+1937,[(TolC)<sub>3</sub>][MacB]<sub>2</sub>[MacA]<sub>6</sub>,macB,TRANS-200-CPLX,2.0
+1938,[(TolC)<sub>3</sub>][MacB]<sub>2</sub>[MacA]<sub>6</sub>,macA,TRANS-200-CPLX,6.0
+1939,[(TolC)<sub>3</sub>][MdtC][MdtB]<sub>2</sub>[MdtA],(TolC)<sub>3</sub>,TRANS-CPLX-202,3.0
+1940,[(TolC)<sub>3</sub>][MdtC][MdtB]<sub>2</sub>[MdtA],mdtC,TRANS-CPLX-202,1.0
+1941,[(TolC)<sub>3</sub>][MdtC][MdtB]<sub>2</sub>[MdtA],mdtB,TRANS-CPLX-202,2.0
+1942,[(TolC)<sub>3</sub>][MdtC][MdtB]<sub>2</sub>[MdtA],mdtA,TRANS-CPLX-202,1.0
+1943,[(TolC)<sub>3</sub>][MdtE][MdtF],(TolC)<sub>3</sub>,TRANS-CPLX-204,3.0
+1944,[(TolC)<sub>3</sub>][MdtE][MdtF],mdtE,TRANS-CPLX-204,1.0
+1945,[(TolC)<sub>3</sub>][MdtE][MdtF],mdtF,TRANS-CPLX-204,1.0
+1946,[TonB][ExbB][ExbD],tonB,CPLX0-1923,1.0
+1947,[TonB][ExbB][ExbD],exbB,CPLX0-1923,1.0
+1948,[TonB][ExbB][ExbD],exbD,CPLX0-1923,1.0
+1949,[TorC][TorA],torC,TMAOREDUCTI-CPLX,1.0
+1950,[TorC][TorA],torA,TMAOREDUCTI-CPLX,1.0
+1951,,torR,TORR-CPLX,
+1952,,torS,TORS-CPLX,
+1953,[TpiA]&lt;SUB&gt;2&lt;/SUB&gt;,tpiA,TPI,2.0
+1954,[Tpx]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       thiol peroxidase bcp&lt;br&gt;                       osmotically inducible peroxiredoxin OsmC OsmC]&lt;SUB&gt;2&lt;/SUB&gt;,tpx,CPLX0-7747,2.0
+1955,[TreB]<sub>2</sub>[Crr],treB,CPLX-168,2.0
+1956,[TreB]<sub>2</sub>[Crr],crr,CPLX-168,1.0
+1957,,treR,CPLX0-7854,
+1958,,trg,CPLX0-8105,
+1959,[TrmD]&lt;SUB&gt;2&lt;/SUB&gt;,trmD,CPLX0-3950,2.0
+1960,[TrmJ]&lt;SUB&gt;2&lt;/SUB&gt;,trmJ,CPLX0-7420,2.0
+1961,[TrmJ]&lt;SUB&gt;2&lt;/SUB&gt;,trmJ,CPLX0-7420,2.0
+1962,[TrmL]&lt;SUB&gt;2&lt;/SUB&gt;,trmL,CPLX0-7421,2.0
+1963,[TrmL]&lt;SUB&gt;2&lt;/SUB&gt;,trmL,CPLX0-7421,2.0
+1964,[TrmL]&lt;SUB&gt;2&lt;/SUB&gt;,trmL,CPLX0-7421,2.0
+1965,[TrpA]<sub>2</sub>[(TrpB)<sub>2</sub>],trpA,TRYPSYN,2.0
+1966,[TrpA]<sub>2</sub>[(TrpB)<sub>2</sub>],(TrpB)<sub>2</sub>,TRYPSYN,2.0
+1967,[TrpB]<sub>2</sub>,trpB,TRYPSYN,2.0
+1968,[TrpB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       tryptophan synthase TrpA]&lt;SUB&gt;2&lt;/SUB&gt;(TrpB)&lt;SUB&gt;2&lt;/SUB&gt;],trpB,CPLX0-2401,2.0
+1969,[TrpE]<sub>2</sub>[TrpD]<sub>2</sub>,trpE,ANTHRANSYN-CPLX,2.0
+1970,[TrpE]<sub>2</sub>[TrpD]<sub>2</sub>,trpD,ANTHRANSYN-CPLX,2.0
+1971,,trpR,PC00007,
+1972,[TrpS]&lt;SUB&gt;2&lt;/SUB&gt;,trpS,TRPS-CPLX,2.0
+1973,[TruA]&lt;SUB&gt;2&lt;/SUB&gt;,truA,CPLX0-7728,2.0
+1974,[TrxB]&lt;SUB&gt;2&lt;/SUB&gt;,trxB,THIOREDOXIN-REDUCT-NADPH-CPLX,2.0
+1975,[TsaB][TsaD],tsaB,CPLX0-8181,1.0
+1976,[TsaB][TsaD],tsaD,CPLX0-8181,1.0
+1977,[TsaE][(TsaB)(TsaD)],tsaE,CPLX0-8182,1.0
+1978,[TsaE][(TsaB)(TsaD)],(TsaB)(TsaD),CPLX0-8182,1.0
+1979,,tsr,CPLX0-8103,
+1980,[TtcA]&lt;SUB&gt;2&lt;/SUB&gt;,ttcA,CPLX0-8124,2.0
+1981,[TtdA]<sub>2</sub>[TtdB]<sub>2</sub>,ttdA,LTARTDEHYDRA-CPLX,2.0
+1982,[TtdA]<sub>2</sub>[TtdB]<sub>2</sub>,ttdB,LTARTDEHYDRA-CPLX,2.0
+1983,[TusB]<sub>2</sub>[TusC]<sub>2</sub>[TusD]<sub>2</sub>,tusB,CPLX-3942,2.0
+1984,[TusB]<sub>2</sub>[TusC]<sub>2</sub>[TusD]<sub>2</sub>,tusC,CPLX-3942,2.0
+1985,[TusB]<sub>2</sub>[TusC]<sub>2</sub>[TusD]<sub>2</sub>,tusD,CPLX-3942,2.0
+1986,[TynA]&lt;SUB&gt;2&lt;/SUB&gt;,tynA,AMINEOXID-CPLX,2.0
+1987,[TynA]&lt;SUB&gt;2&lt;/SUB&gt;,tynA,AMINEOXID-CPLX,2.0
+1988,[TynA]&lt;SUB&gt;2&lt;/SUB&gt;,tynA,AMINEOXID-CPLX,2.0
+1989,[TynA]&lt;SUB&gt;2&lt;/SUB&gt;,tynA,AMINEOXID-CPLX,2.0
+1990,[TyrA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fused chorismate mutase/prephenate dehydratase PheA]&lt;SUB&gt;2&lt;/SUB&gt;,tyrA,CHORISMUTPREPHENDEHYDROG-CPLX,2.0
+1991,[TyrA]&lt;SUB&gt;2&lt;/SUB&gt;,tyrA,CHORISMUTPREPHENDEHYDROG-CPLX,2.0
+1992,[TyrB]&lt;SUB&gt;2&lt;/SUB&gt;,tyrB,TYRB-DIMER,2.0
+1993,[TyrB]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       branched-chain-amino-acid aminotransferase IlvE]&lt;SUB&gt;6&lt;/SUB&gt;,tyrB,TYRB-DIMER,2.0
+1994,[AspC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       tyrosine aminotransferase TyrB]&lt;SUB&gt;2&lt;/SUB&gt;,tyrB,TYRB-DIMER,2.0
+1995,[IlvE]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       aspartate aminotransferase AspC]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       tyrosine aminotransferase TyrB]&lt;SUB&gt;2&lt;/SUB&gt;,tyrB,TYRB-DIMER,2.0
+1996,[TyrS]&lt;SUB&gt;2&lt;/SUB&gt;,tyrS,TYRS-CPLX,2.0
+1997,[UbiD]&lt;SUB&gt;6&lt;/SUB&gt;,ubiD,CPLX0-301,6.0
+1998,[UbiK][UbiJ][UbiI][UbiH][UbiG][UbiF][UbiE],ubiK,CPLX0-8301,1.0
+1999,[UbiK][UbiJ][UbiI][UbiH][UbiG][UbiF][UbiE],ubiJ,CPLX0-8301,1.0
+2000,[UbiK][UbiJ][UbiI][UbiH][UbiG][UbiF][UbiE],ubiI,CPLX0-8301,1.0
+2001,[UbiK][UbiJ][UbiI][UbiH][UbiG][UbiF][UbiE],ubiH,CPLX0-8301,1.0
+2002,[UbiK][UbiJ][UbiI][UbiH][UbiG][UbiF][UbiE],ubiG,CPLX0-8301,1.0
+2003,[UbiK][UbiJ][UbiI][UbiH][UbiG][UbiF][UbiE],ubiF,CPLX0-8301,1.0
+2004,[UbiK][UbiJ][UbiI][UbiH][UbiG][UbiF][UbiE],ubiE,CPLX0-8301,1.0
+2005,[UbiV][UbiU],ubiV,CPLX0-8308,1.0
+2006,[UbiV][UbiU],ubiU,CPLX0-8308,1.0
+2007,[Udp]&lt;SUB&gt;6&lt;/SUB&gt;,udp,URPHOS-CPLX,6.0
+2008,[Ugd]&lt;SUB&gt;2&lt;/SUB&gt;,ugd,CPLX0-8098,2.0
+2009,[UgpC]<sub>2</sub>[UgpA][UgpE][UgpB],ugpC,ABC-34-CPLX,2.0
+2010,[UgpC]<sub>2</sub>[UgpA][UgpE][UgpB],ugpA,ABC-34-CPLX,1.0
+2011,[UgpC]<sub>2</sub>[UgpA][UgpE][UgpB],ugpE,ABC-34-CPLX,1.0
+2012,[UgpC]<sub>2</sub>[UgpA][UgpE][UgpB],ugpB,ABC-34-CPLX,1.0
+2013,,uhpA,CPLX0-7754,
+2014,[UidA]&lt;SUB&gt;4&lt;/SUB&gt;,uidA,CPLX0-7662,4.0
+2015,[UlaC][UlaB][UlaA]<sub>2</sub>,ulaC,EIISGA,1.0
+2016,[UlaC][UlaB][UlaA]<sub>2</sub>,ulaB,EIISGA,1.0
+2017,[UlaC][UlaB][UlaA]<sub>2</sub>,ulaA,EIISGA,2.0
+2018,[UlaD]&lt;SUB&gt;2&lt;/SUB&gt;,ulaD,CPLX0-7744,2.0
+2019,[UlaG]&lt;SUB&gt;6&lt;/SUB&gt;,ulaG,CPLX0-7848,6.0
+2020,[UmuC][UmuD]<sub>2</sub>,umuC,CPLX0-3925,1.0
+2021,[UmuC][UmuD]<sub>2</sub>,umuD,CPLX0-3925,2.0
+2022,[Upp]&lt;SUB&gt;3&lt;/SUB&gt;,upp,URACIL-PRIBOSYLTRANS-CPLX,3.0
+2023,"[(2&lt;i&gt;E&lt;/i&gt;,6&lt;i&gt;E&lt;/i&gt;)-farnesyl-diphosphate specific] UppS]&lt;SUB&gt;2&lt;/SUB&gt;",uppS,UPPSYN-CPLX,2.0
+2024,[UraA]&lt;SUB&gt;2&lt;/SUB&gt;,uraA,CPLX0-8247,2.0
+2025,,uspG,CPLX0-3939,
+2026,[UvrB][UvrC][UvrA],uvrB,UVRABC-CPLX,1.0
+2027,[UvrB][UvrC][UvrA],uvrC,UVRABC-CPLX,1.0
+2028,[UvrB][UvrC][UvrA],uvrA,UVRABC-CPLX,1.0
+2029,[UvrD]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       ATP-dependent DNA helicase Rep Rep]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       exodeoxyribonuclease V subunit RecB recB&lt;br&gt;                       ATP-dependent DNA helicase RecQ recQ,uvrD,CPLX0-8111,2.0
+2030,[WecB]&lt;SUB&gt;2&lt;/SUB&gt;,wecB,CPLX0-8008,2.0
+2031,[WecC]&lt;SUB&gt;2&lt;/SUB&gt;,wecC,CPLX0-8013,2.0
+2032,[WecE]&lt;SUB&gt;4&lt;/SUB&gt;,wecE,CPLX0-7990,4.0
+2033,[KefF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       NAD(P)H:quinone oxidoreductase WrbA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       chromate reductase YieF]&lt;SUB&gt;2&lt;/SUB&gt;,wrbA,CPLX0-7632,4.0
+2034,[Wza]<sub>8</sub>[Wzc]<sub>4</sub>,wza,CPLX0-7529,8.0
+2035,[Wza]<sub>8</sub>[Wzc]<sub>4</sub>,wzc,CPLX0-7529,4.0
+2036,[WzxE][WzyE][WzzE],wzxE,CPLX0-3976,1.0
+2037,[WzxE][WzyE][WzzE],wzyE,CPLX0-3976,1.0
+2038,[WzxE][WzyE][WzzE],wzzE,CPLX0-3976,1.0
+2039,[XapA]&lt;SUB&gt;6&lt;/SUB&gt;,xapA,XANTHOSINEPHOSPHORY-CPLX,6.0
+2040,[XapA]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       purine nucleoside phosphorylase DeoD]&lt;SUB&gt;6&lt;/SUB&gt;,xapA,XANTHOSINEPHOSPHORY-CPLX,6.0
+2041,[XapA]&lt;SUB&gt;6&lt;/SUB&gt;&lt;br&gt;                       purine nucleoside phosphorylase DeoD]&lt;SUB&gt;6&lt;/SUB&gt;,xapA,XANTHOSINEPHOSPHORY-CPLX,6.0
+2042,[XapA]&lt;SUB&gt;6&lt;/SUB&gt;,xapA,XANTHOSINEPHOSPHORY-CPLX,6.0
+2043,[XdhA][XdhB][XdhC],xdhA,CPLX0-761,1.0
+2044,[XdhA][XdhB][XdhC],xdhB,CPLX0-761,1.0
+2045,[XdhA][XdhB][XdhC],xdhC,CPLX0-761,1.0
+2046,[XdhD][YgfM],xdhD,CPLX0-1841,1.0
+2047,[XdhD][YgfM],ygfM,CPLX0-1841,1.0
+2048,[XerC][XerD],xerC,CPLX0-3959,1.0
+2049,[XerC][XerD],xerD,CPLX0-3959,1.0
+2050,[XseA][XseB]<sub>4</sub>,xseA,CPLX-3946,1.0
+2051,[XseA][XseB]<sub>4</sub>,xseB,CPLX-3946,4.0
+2052,[XylA]&lt;SUB&gt;2&lt;/SUB&gt;,xylA,XYLISOM-CPLX,2.0
+2053,[XylB]&lt;SUB&gt;2&lt;/SUB&gt;,xylB,CPLX0-7466,2.0
+2054,[XylB]&lt;SUB&gt;2&lt;/SUB&gt;,xylB,CPLX0-7466,2.0
+2055,[XylG][XylH]<sub>2</sub>[XylF],xylG,ABC-33-CPLX,1.0
+2056,[XylG][XylH]<sub>2</sub>[XylF],xylH,ABC-33-CPLX,2.0
+2057,[XylG][XylH]<sub>2</sub>[XylF],xylF,ABC-33-CPLX,1.0
+2058,[YadG][YadH],yadG,ABC-21-CPLX,1.0
+2059,[YadG][YadH],yadH,ABC-21-CPLX,1.0
+2060,[YafQ]<sub>2</sub>[DinJ]<sub>2</sub>,yafQ,CPLX0-7787,2.0
+2061,[YafQ]<sub>2</sub>[DinJ]<sub>2</sub>,dinJ,CPLX0-7787,2.0
+2062,[YagE]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       KpLE2 phage-like element; putative 2-dehydro-3-deoxy-D-pentonate aldolase yjhH,yagE,CPLX0-7940,4.0
+2063,[YagE]&lt;SUB&gt;4&lt;/SUB&gt;,yagE,CPLX0-7940,4.0
+2064,[HchA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       protein/nucleic acid deglycase 2 yhbO&lt;br&gt;                       protein/nucleic acid deglycase 3 YajL]&lt;SUB&gt;2&lt;/SUB&gt;,yajL,CPLX0-7960,2.0
+2065,[YajL]&lt;SUB&gt;2&lt;/SUB&gt;,yajL,CPLX0-7960,2.0
+2066,,ybaB,CPLX0-7816,
+2067,[YbbP][YbbA],ybbP,ABC-61-CPLX,1.0
+2068,[YbbP][YbbA],ybbA,ABC-61-CPLX,1.0
+2069,,ybcN,CPLX0-8129,
+2070,,ybdG,CPLX0-7981,
+2071,,ybdK,CPLX0-7827,
+2072,,ybgI,CPLX0-1863,
+2073,[YbhS][YbhR][YbhF],ybhS,ABC-57-CPLX,1.0
+2074,[YbhS][YbhR][YbhF],ybhR,ABC-57-CPLX,1.0
+2075,[YbhS][YbhR][YbhF],ybhF,ABC-57-CPLX,1.0
+2076,,ybiB,CPLX0-8184,
+2077,,ybiO,CPLX0-7983,
+2078,,ycaC,CPLX0-661,
+2079,,ycdX,CPLX0-7945,
+2080,,ychF,CPLX0-8240,
+2081,,yciF,CPLX0-7444,
+2082,[YcjP][YcjO][YcjN][YcjV],ycjP,ABC-55-CPLX,1.0
+2083,[YcjP][YcjO][YcjN][YcjV],ycjO,ABC-55-CPLX,1.0
+2084,[YcjP][YcjO][YcjN][YcjV],ycjN,ABC-55-CPLX,1.0
+2085,[YcjP][YcjO][YcjN][YcjV],ycjV,ABC-55-CPLX,1.0
+2086,[YdcS][YdcT][YdcV][YdcU],ydcS,ABC-51-CPLX,1.0
+2087,[YdcS][YdcT][YdcV][YdcU],ydcT,ABC-51-CPLX,1.0
+2088,[YdcS][YdcT][YdcV][YdcU],ydcV,ABC-51-CPLX,1.0
+2089,[YdcS][YdcT][YdcV][YdcU],ydcU,ABC-51-CPLX,1.0
+2090,[YdfG]&lt;SUB&gt;4&lt;/SUB&gt;,ydfG,CPLX0-1962,4.0
+2091,[YdfG]&lt;SUB&gt;4&lt;/SUB&gt;,ydfG,CPLX0-1962,4.0
+2092,[YdfG]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       putative malonic semialdehyde reductase rutE,ydfG,CPLX0-1962,4.0
+2093,,ydgA,CPLX0-8281,
+2094,,ydhR,CPLX0-3923,
+2095,[YdiB]&lt;SUB&gt;2&lt;/SUB&gt;,ydiB,CPLX0-7462,2.0
+2096,[YdiB]&lt;SUB&gt;2&lt;/SUB&gt;,ydiB,CPLX0-7462,2.0
+2097,,ydiE,CPLX0-8185,
+2098,,ydjA,CPLX0-7668,
+2099,[YeaX]YeaW],yeaW,CPLX0-7675,1.0
+2100,[YeaX]YeaW],yeaW,CPLX0-7675,1.0
+2101,[YeaX]YeaW],yeaW,CPLX0-7675,1.0
+2102,[YeaX][YeaW],yeaX,CPLX0-8232,1.0
+2103,[YeaX][YeaW],yeaW,CPLX0-8232,1.0
+2104,,yefM,CPLX0-7929,
+2105,[YeiG]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       &lt;i&gt;S&lt;/i&gt;-formylglutathione hydrolase FrmB frmB,yeiG,CPLX0-3954,4.0
+2106,[YeiG]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       hydroxyacylglutathione hydrolase GloB gloB,yeiG,CPLX0-3954,4.0
+2107,[YejF][YejB][YejE][YejA],yejF,ABC-41-CPLX,1.0
+2108,[YejF][YejB][YejE][YejA],yejB,ABC-41-CPLX,1.0
+2109,[YejF][YejB][YejE][YejA],yejE,ABC-41-CPLX,1.0
+2110,[YejF][YejB][YejE][YejA],yejA,ABC-41-CPLX,1.0
+2111,[YfaU]&lt;SUB&gt;6&lt;/SUB&gt;,yfaU,CPLX0-7723,6.0
+2112,[AphA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       5\'-nucleotidase / UDP-sugar hydrolase ushA&lt;br&gt;                       CPS-53 (KpLE1) prophage; 5\'-deoxynucleotidase yfdR&lt;br&gt;                       dCMP phosphohydrolase YfbR]&lt;SUB&gt;2&lt;/SUB&gt;,yfbR,CPLX0-7625,2.0
+2113,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       dCMP phosphohydrolase YfbR]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       CPS-53 (KpLE1) prophage; 5\'-deoxynucleotidase yfdR&lt;br&gt;                       5\'-nucleotidase / UDP-sugar hydrolase ushA&lt;br&gt;                       acid phosphatase / phosphotransferase AphA]&lt;SUB&gt;4&lt;/SUB&gt;,yfbR,CPLX0-7625,2.0
+2114,[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       dCMP phosphohydrolase YfbR]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       CPS-53 (KpLE1) prophage; 5\'-deoxynucleotidase yfdR&lt;br&gt;                       5\'-nucleotidase / UDP-sugar hydrolase ushA&lt;br&gt;                       acid phosphatase / phosphotransferase AphA]&lt;SUB&gt;4&lt;/SUB&gt;,yfbR,CPLX0-7625,2.0
+2115,[YfbR]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       CPS-53 (KpLE1) prophage; 5\'-deoxynucleotidase yfdR&lt;br&gt;                       5\'-nucleotidase / UDP-sugar hydrolase ushA&lt;br&gt;                       acid phosphatase / phosphotransferase AphA]&lt;SUB&gt;4&lt;/SUB&gt;,yfbR,CPLX0-7625,2.0
+2116,,yfcE,CPLX0-8248,
+2117,[YghU]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       disulfide reductase YfcG]&lt;SUB&gt;2&lt;/SUB&gt;,yfcG,CPLX0-7806,2.0
+2118,[YfdE]&lt;SUB&gt;2&lt;/SUB&gt;,yfdE,CPLX0-8032,2.0
+2119,[YgaP]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       3-mercaptopyruvate sulfurtransferase sseA&lt;br&gt;                       thiosulfate sulfurtransferase PspE pspE&lt;br&gt;                       thiosulfate sulfurtransferase GlpE GlpE]&lt;SUB&gt;2&lt;/SUB&gt;,ygaP,CPLX0-8219,2.0
+2120,[YgaZ][YgaH],ygaZ,CPLX0-7684,1.0
+2121,[YgaZ][YgaH],ygaH,CPLX0-7684,1.0
+2122,[YgeA]&lt;SUB&gt;2&lt;/SUB&gt;,ygeA,CPLX0-8251,2.0
+2123,,ygeW,CPLX0-7933,
+2124,[YgeX]&lt;SUB&gt;2&lt;/SUB&gt;,ygeX,CPLX0-1401,2.0
+2125,"[PhoA]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fructose 1,6-bisphosphatase YggF YggF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       pyridoxal phosphate/fructose-1,6-bisphosphate phosphatase ybhA&lt;br&gt;                       fructose-1,6-bisphosphatase 2 GlpX]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       fructose-1,6-bisphosphatase 1 Fbp]&lt;SUB&gt;4&lt;/SUB&gt;",yggF,CPLX0-7776,2.0
+2126,[YghU]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       disulfide reductase YfcG]&lt;SUB&gt;2&lt;/SUB&gt;,yghU,CPLX0-7917,2.0
+2127,,ygiN,CPLX0-3141,
+2128,,ygjH,CPLX0-8269,
+2129,[YhdE]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       pyrimidine deoxynucleotide diphosphatase NudI nudI&lt;br&gt;                       nucleoside triphosphate pyrophosphohydrolase MazG]&lt;SUB&gt;2&lt;/SUB&gt;,yhdE,CPLX0-8106,2.0
+2130,[YhdE]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       nucleoside triphosphate pyrophosphohydrolase MazG]&lt;SUB&gt;2&lt;/SUB&gt;,yhdE,CPLX0-8106,2.0
+2131,[YhdH]&lt;SUB&gt;2&lt;/SUB&gt;,yhdH,CPLX0-8121,2.0
+2132,[YhdZ][YhdY][YhdX][YhdW],yhdZ,ABC-52-CPLX,1.0
+2133,[YhdZ][YhdY][YhdX][YhdW],yhdY,ABC-52-CPLX,1.0
+2134,[YhdZ][YhdY][YhdX][YhdW],yhdX,ABC-52-CPLX,1.0
+2135,[YhdZ][YhdY][YhdX][YhdW],yhdW,ABC-52-CPLX,1.0
+2136,[YiaK]&lt;SUB&gt;2&lt;/SUB&gt;,yiaK,CPLX0-2061,2.0
+2137,[YiaO][YiaN][YiaM],yiaO,TRANS-CPLX-203,1.0
+2138,[YiaO][YiaN][YiaM],yiaN,TRANS-CPLX-203,1.0
+2139,[YiaO][YiaN][YiaM],yiaM,TRANS-CPLX-203,1.0
+2140,[YicI]&lt;SUB&gt;6&lt;/SUB&gt;,yicI,CPLX0-3901,6.0
+2141,[YicI]&lt;SUB&gt;6&lt;/SUB&gt;,yicI,CPLX0-3901,6.0
+2142,[YidC][YajC][SecF][SecD],yidC,SECD-SECF-YAJC-YIDC-CPLX,1.0
+2143,[YidC][YajC][SecF][SecD],yajC,SECD-SECF-YAJC-YIDC-CPLX,1.0
+2144,[YidC][YajC][SecF][SecD],secF,SECD-SECF-YAJC-YIDC-CPLX,1.0
+2145,[YidC][YajC][SecF][SecD],secD,SECD-SECF-YAJC-YIDC-CPLX,1.0
+2146,[KefF]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       NAD(P)H:quinone oxidoreductase WrbA]&lt;SUB&gt;4&lt;/SUB&gt;&lt;br&gt;                       chromate reductase YieF]&lt;SUB&gt;2&lt;/SUB&gt;,yieF,CPLX0-3121,2.0
+2147,[YieF]&lt;SUB&gt;2&lt;/SUB&gt;,yieF,CPLX0-3121,2.0
+2148,,yihI,CPLX0-7853,
+2149,[YihS]&lt;SUB&gt;6&lt;/SUB&gt;,yihS,CPLX0-7683,6.0
+2150,[YihS]&lt;SUB&gt;6&lt;/SUB&gt;,yihS,CPLX0-7683,6.0
+2151,[YihU]&lt;SUB&gt;4&lt;/SUB&gt;,yihU,CPLX0-7794,4.0
+2152,[YihU]&lt;SUB&gt;4&lt;/SUB&gt;,yihU,CPLX0-7794,4.0
+2153,,yiiM,CPLX0-8259,
+2154,[YjfF][YtfR][YtfT][YtfQ],yjfF,ABC-46-CPLX,1.0
+2155,[YjfF][YtfR][YtfT][YtfQ],ytfR,ABC-46-CPLX,1.0
+2156,[YjfF][YtfR][YtfT][YtfQ],ytfT,ABC-46-CPLX,1.0
+2157,[YjfF][YtfR][YtfT][YtfQ],ytfQ,ABC-46-CPLX,1.0
+2158,[YjfP]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       pimeloyl-acyl carrier protein methyl ester esterase bioH,yjfP,CPLX0-8214,2.0
+2159,[YjjX]&lt;SUB&gt;2&lt;/SUB&gt;,yjjX,CPLX0-3948,2.0
+2160,[YjjX]&lt;SUB&gt;2&lt;/SUB&gt;,yjjX,CPLX0-3948,2.0
+2161,,yjtD,CPLX0-7422,
+2162,[YmdB]&lt;SUB&gt;2&lt;/SUB&gt;,ymdB,CPLX0-7758,2.0
+2163,,ynaI,CPLX0-7982,
+2164,[YnfE][YnfF][YnfG][YnfH],ynfE,CPLX0-1601,1.0
+2165,[YnfE][YnfF][YnfG][YnfH],ynfF,CPLX0-1601,1.0
+2166,[YnfE][YnfF][YnfG][YnfH],ynfG,CPLX0-1601,1.0
+2167,[YnfE][YnfF][YnfG][YnfH],ynfH,CPLX0-1601,1.0
+2168,[YnjC][YnjD][YnjB],ynjC,ABC-48-CPLX,1.0
+2169,[YnjC][YnjD][YnjB],ynjD,ABC-48-CPLX,1.0
+2170,[YnjC][YnjD][YnjB],ynjB,ABC-48-CPLX,1.0
+2171,[YoeB]&lt;SUB&gt;2&lt;/SUB&gt;,yoeB,CPLX0-8311,2.0
+2172,[YoeB][YefM]<sub>2</sub>,yoeB,CPLX0-3781,1.0
+2173,[YoeB][YefM]<sub>2</sub>,yefM,CPLX0-3781,2.0
+2174,[YpdF]&lt;SUB&gt;2&lt;/SUB&gt;,ypdF,CPLX0-8290,2.0
+2175,[YphD][YphF][YphE],yphD,ABC-60-CPLX,1.0
+2176,[YphD][YphF][YphE],yphF,ABC-60-CPLX,1.0
+2177,[YphD][YphF][YphE],yphE,ABC-60-CPLX,1.0
+2178,[YqhD]&lt;SUB&gt;2&lt;/SUB&gt;,yqhD,CPLX0-7667,2.0
+2179,[YqhD]&lt;SUB&gt;2&lt;/SUB&gt;&lt;br&gt;                       methylglyoxal reductase YeaE yeaE&lt;br&gt;                       methylglyoxal reductase DkgA dkgA&lt;br&gt;                       methylglyoxal reductase DkgB dkgB&lt;br&gt;                       L-glyceraldehyde 3-phosphate reductase gpr,yqhD,CPLX0-7667,2.0
+2180,[YqhD]&lt;SUB&gt;2&lt;/SUB&gt;,yqhD,CPLX0-7667,2.0
+2181,[YqhD]&lt;SUB&gt;2&lt;/SUB&gt;,yqhD,CPLX0-7667,2.0
+2182,[YqhD]&lt;SUB&gt;2&lt;/SUB&gt;,yqhD,CPLX0-7667,2.0
+2183,[YqjG]&lt;SUB&gt;2&lt;/SUB&gt;,yqjG,CPLX0-7984,2.0
+2184,,zapA,CPLX0-7538,
+2185,,zapB,CPLX0-7686,
+2186,,zapD,CPLX0-7973,
+2187,[(ZntR)(Zn<sup>2+</sup>)]<sub>2</sub>,(ZntR)(Zn<sup>2+</sup>),CPLX0-7678,2.0
+2188,[ZnuC]<sub>2</sub>[ZnuB]<sub>2</sub>[ZnuA],znuC,ABC-63-CPLX,2.0
+2189,[ZnuC]<sub>2</sub>[ZnuB]<sub>2</sub>[ZnuA],znuB,ABC-63-CPLX,2.0
+2190,[ZnuC]<sub>2</sub>[ZnuB]<sub>2</sub>[ZnuA],znuA,ABC-63-CPLX,1.0
+2191,,zraP,CPLX0-8204,
+2192,,zur,CPLX0-7679,

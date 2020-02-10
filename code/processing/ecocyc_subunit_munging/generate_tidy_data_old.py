@@ -16,9 +16,7 @@ from bs4 import BeautifulSoup
 import re
 
 # Grab all enzyme/ protein complexes in Ecocyc.
-########################## Website scraping
-##################################################
-df_complex = pd.read_csv('../../../data/ecocyc_raw_data/Ecocyc_20200205_All_protein_complexes_of_E._coli_K-12_substr._MG1655.txt', delimiter='	')
+df_complex = pd.read_csv('../../../data/Ecocyc_20200205_All_protein_complexes_of_E._coli_K-12_substr._MG1655.txt', delimiter='	')
 
 # clean up and save as .csv
 df_complex_ = pd.DataFrame()
@@ -53,13 +51,7 @@ for item, data in tqdm.tqdm(df_complex.groupby('Genes'), desc='Cleaning up Ecocy
 df_complex_.to_csv('../../../data/Ecocyc_20200205_All_protein_complexes_of_E._coli_K-12_substr_MG1655.csv')
 
 
-########################## Website scraping
-##################################################
-
-##########
-# Identify formula associated with each object_id
-##########
-
+# Website scraping
 df_subunits = pd.DataFrame()
 for object_id in tqdm.tqdm(df_complex_.object_id.unique(), desc='Iterating through complexes'):
     URL = 'https://ecocyc.org/ECOLI/NEW-IMAGE?type=ENZYME&object=' + object_id
@@ -73,46 +65,50 @@ for object_id in tqdm.tqdm(df_complex_.object_id.unique(), desc='Iterating throu
     # attempt to find details in 'POLYPEPTIDE' class
     for string in soup.find_all(class_='POLYPEPTIDE'):
         if object_id in repr(string):
-
             ## get formula
             full_seq = repr(string).split('=  ')[1].split(']')[:-1]
             full_seq = re.split("(])",repr(string).split('=  ')[1])
             full_seq = ''.join(full_seq)
             full_seq = ''.join(full_seq.split('\n')[:-1])
-            if '<sub>' in full_seq:
-                full_seq = full_seq.replace('<sub>', '$_{')
-                full_seq = full_seq.replace('</sub>', '}$')
+            ####
+            for obj in repr(string).split('=  ')[1].split('[')[1:]:
 
-            data_list = {'object_id' : object_id,
-                      'formula' : full_seq}
-            df_subunits = df_subunits.append(data_list,ignore_index=True)
-            check = 1
+                if re.findall(r'\d+', obj) == []:
+                    subunit_count = 1
+                else:
+                    subunit_count = int(re.findall(r'\d+', obj)[0])
 
+                data_list = {'object_id' : object_id,
+                          'gene' : obj.split(']')[0][0].lower() + obj.split(']')[0][1:],
+                          'subunit_count' : subunit_count,
+                          'formula' : full_seq}
+                df_subunits = df_subunits.append(data_list,ignore_index=True)
+                check = 1
 
     if check == 0:
-
         # attempt to find details in 'ENZYME' class
         for string in soup.find_all(class_='ENZYME'):
             if object_id in repr(string):
-
                 if '=  ' in repr(string):
                     ## get formula
                     full_seq = repr(string).split('=  ')[1].split(']')[:-1]
                     full_seq = re.split("(])",repr(string).split('=  ')[1])
                     full_seq = ''.join(full_seq)
                     full_seq = ''.join(full_seq.split('\n')[:-1])
-                    if '<sub>' in full_seq:
-                        full_seq = full_seq.replace('<sub>', '$_{')
-                        full_seq = full_seq.replace('</sub>', '}$')
-
-                    data_list = {'object_id' : object_id,
-                              'formula' : full_seq}
-                    df_subunits = df_subunits.append(data_list,ignore_index=True)
-                    check = 1
-
-
+                    ####
+                    for obj in repr(string).split('=  ')[1].split('[')[1:]:
+#                             print(obj)
+                        if re.findall(r'\d+', obj) == []:
+                            subunit_count = 1
+                        else:
+                            subunit_count = int(re.findall(r'\d+', obj)[0])
+                        data_list = {'object_id' : object_id,
+                                  'gene' : obj.split(']')[0][0].lower() + obj.split(']')[0][1:],
+                                  'subunit_count' : subunit_count ,
+                                  'formula' : full_seq}
+                        df_subunits = df_subunits.append(data_list,ignore_index=True)
+                        check = 1
     if check == 0:
-
         # attempt to find details in ECOLI general orgid from object_ID
         URL = 'https://ecocyc.org/gene?orgid=ECOLI&id=' + object_id
         for gene in df_complex_[df_complex_.object_id == object_id].gene.unique():
@@ -123,85 +119,36 @@ for object_id in tqdm.tqdm(df_complex_.object_id.unique(), desc='Iterating throu
             for items in test:
 
                 if '['+gene[0].upper()+gene[1:]+']' in repr(items):
-                    content = repr(items).split('&lt;br&gt;')
+                    content = repr(items).split(';/b&gt;      ')
                     for sec in content:
                         if '['+gene[0].upper()+gene[1:]+']' in sec:
-
                             ## get formula
-
                             full_seq = '[' + ''.join(sec.split('[')[1:])
-#                             print(full_seq)
-                            full_seq = ''.join(full_seq.split(', WIDTH')[0])
+                            full_seq = ''.join(full_seq.split(', WIDTH')[0][:-1])
+                            ####
+                            test = repr(items).split('['+gene[0].upper()+gene[1:]+']')[1][:12]
 
-                            if '&lt;SUB&gt;' in full_seq:
-                                full_seq = full_seq.replace('&lt;SUB&gt;', '$_{')
-                                full_seq = full_seq.replace('&lt;/SUB&gt;', '}$')
-
-                            if full_seq[-1] == '\'':
-                                full_seq = full_seq[:-1]
+                            if re.findall(r'\d+', test.split(',')[0]) == []:
+                                subunit_count = 1
+                            else:############ need to double check
+                                subunit_count = int(re.findall(r'\d+', test)[0])
                             data_in = {'object_id' : object_id,
+                              'gene' : gene,
+                              'subunit_count' : subunit_count,
                               'formula' : full_seq}
                             df_subunits = df_subunits.append(data_in, ignore_index=True)
                             check = 1
-                        if check == 1:
                             break
 
     if check == 0:
         # details not found; set values to np.nan
         print('Did not find object: ', object_id)
         for gene in df_complex_[df_complex_.object_id == object_id].gene.unique():
-            data_list = {'object_id' : object_id,'formula' : ''}
+            data_list = {'object_id' : object_id,
+              'gene' : gene,
+              'subunit_count' : np.nan}
             df_subunits = df_subunits.append(data_list, ignore_index=True)
-
-##########
-# Use formula to determine subunit counts
-##########
-
-df_subunits_nums = pd.DataFrame()
-
-for obj, data in df_subunits.groupby(['object_id', 'formula']):
-    obj_genes = df_complex_[df_complex_.object_id==obj[0]].gene.unique()
-    formula_ = data.formula.unique()[0]
-    formula_ = formula_.replace('$_{', '')
-    formula_ = formula_.replace('}$', '')
-    formula_ = formula_.replace(' ', '')
-
-    for gene in re.split("[^a-zA-Z]*",formula_)[1:-1]:
-
-        if gene.lower() not in [name.lower() for name in obj_genes]:
-            continue
-        formula = formula_
-#         print(formula)
-        for item in re.split("[^a-zA-Z]*",formula)[1:-1]:
-
-            if item != gene:
-                ind = formula.find(item)
-
-#                 print(formula[(ind-1):(ind+len(item)+1)][-1])
-                if formula[np.max([0,(ind-1)]):(ind+len(item)+1)][-1] == ')':
-                    step = 1
-#                     print(step)
-                else:
-                    step = 0
-#                 print( formula[(ind-1):])
-                if formula[(ind-1):(ind+len(item)+step+1)] == formula[(ind-1):]:
-                    formula = formula.replace(formula[(ind-1-step):], '')
-
-                elif formula[np.max([0,(ind-1)]):(ind+len(item)+step+2)][-1].isnumeric():
-                    if formula[np.max([0,(ind-1)]):(ind+len(item)+step+3)][-1].isnumeric():
-                        formula = formula.replace(formula[np.max([0,(ind-1-step)]):(ind+len(item)+step+3)], '')
-                    else:
-                        formula = formula.replace(formula[np.max([0,(ind-1-step)]):(ind+len(item)+step+2)], '')
-                else:
-                    formula = formula.replace(formula[np.max([0,(ind-1-step)]):(ind+len(item)+step+2)][:-1], '')
-#                 print(formula)
-
-
-#         print('final: ',gene, np.prod([ int(x) for x in re.findall(r'[0-9]+', formula)] ))
-        data_list = {'object_id':  obj[0], 'formula' : obj[1],
-                    'gene' : gene, 'subunit_count': np.prod([ int(x) for x in re.findall(r'[0-9]+', formula)] ) }
-        df_subunits_nums = df_subunits_nums.append(data_list, ignore_index=True)
 
 
 # save to file
-df_subunits_nums.to_csv('../../../data/protein_complexes_MG1655_subunit_numbers.csv')
+df_subunits.to_csv('../../../data/protein_complexes_MG1655_subunit_numbers.csv')

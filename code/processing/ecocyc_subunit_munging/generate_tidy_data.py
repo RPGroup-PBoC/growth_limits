@@ -158,8 +158,7 @@ for object_id in tqdm.tqdm(df_complex_.object_id.unique(), desc='Iterating throu
 ##########
 
 df_subunits_nums = pd.DataFrame()
-
-for obj, data in df_subunits.groupby(['object_id', 'formula']):
+for obj, data  in tqdm.tqdm(df_subunits.groupby(['object_id', 'formula']), desc='Calculating subunit numbers'):
     obj_genes = df_complex_[df_complex_.object_id==obj[0]].gene.unique()
     formula_ = data.formula.unique()[0]
     formula_ = formula_.replace('$_{', '')
@@ -167,23 +166,18 @@ for obj, data in df_subunits.groupby(['object_id', 'formula']):
     formula_ = formula_.replace(' ', '')
 
     for gene in re.split("[^a-zA-Z]*",formula_)[1:-1]:
-
+        # check that gene identified is actually expected; otherwise skip
         if gene.lower() not in [name.lower() for name in obj_genes]:
             continue
         formula = formula_
-#         print(formula)
+        # remove all other genes in the formula and calculate subunit total count.
         for item in re.split("[^a-zA-Z]*",formula)[1:-1]:
-
             if item != gene:
                 ind = formula.find(item)
-
-#                 print(formula[(ind-1):(ind+len(item)+1)][-1])
                 if formula[np.max([0,(ind-1)]):(ind+len(item)+1)][-1] == ')':
                     step = 1
-#                     print(step)
                 else:
                     step = 0
-#                 print( formula[(ind-1):])
                 if formula[(ind-1):(ind+len(item)+step+1)] == formula[(ind-1):]:
                     formula = formula.replace(formula[(ind-1-step):], '')
 
@@ -194,10 +188,7 @@ for obj, data in df_subunits.groupby(['object_id', 'formula']):
                         formula = formula.replace(formula[np.max([0,(ind-1-step)]):(ind+len(item)+step+2)], '')
                 else:
                     formula = formula.replace(formula[np.max([0,(ind-1-step)]):(ind+len(item)+step+2)][:-1], '')
-#                 print(formula)
 
-
-#         print('final: ',gene, np.prod([ int(x) for x in re.findall(r'[0-9]+', formula)] ))
         data_list = {'object_id':  obj[0], 'formula' : obj[1],
                     'gene' : gene, 'subunit_count': np.prod([ int(x) for x in re.findall(r'[0-9]+', formula)] ) }
         df_subunits_nums = df_subunits_nums.append(data_list, ignore_index=True)

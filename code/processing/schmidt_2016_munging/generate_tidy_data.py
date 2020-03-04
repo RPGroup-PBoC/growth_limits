@@ -2,6 +2,7 @@
 import numpy as np
 import pandas as pd
 import tqdm
+from scipy import constants
 
 # Load the longform schmidt 2016 count data, growth rates, and cog associations
 counts = pd.read_csv('../../../data/schmidt2016_raw_data/schmidt2016_dataset.csv')
@@ -15,9 +16,9 @@ conditions = rates['condition'].unique()
 # Set up an empty dataframe
 df = pd.DataFrame([])
 
-# Iterate through each gene in the count data. 
+# Iterate through each gene in the count data.
 for g, d in tqdm.tqdm(counts.groupby('gene'), desc="Iterating through genes..."):
-    
+
     # Determine number of entries per gene
     gene = colicogs[colicogs['gene_name']==g]
     if len(g) > 0:
@@ -28,7 +29,7 @@ for g, d in tqdm.tqdm(counts.groupby('gene'), desc="Iterating through genes...")
             cog_letter = _gene['cog_letter']
             mass = _gene['mass_da']
             annotation = _gene['annotation']
-            # Iterate through each condition and extract relevant information. 
+            # Iterate through each condition and extract relevant information.
             for c in conditions:
                 gene_dict = {
                         'gene_name': g,
@@ -43,8 +44,8 @@ for g, d in tqdm.tqdm(counts.groupby('gene'), desc="Iterating through genes...")
                         }
                 df = df.append(gene_dict, ignore_index=True)
 
-# Compute the mass per cell. 
-df['fg_per_cell'] = df['tot_per_cell'].values * df['mass_da'] * 6.022E-8
+# Compute the mass per cell.
+df['fg_per_cell'] = (df['tot_per_cell'].values * df['mass_da'] * 1E15 ) / constants.Avogadro 
 df['dataset'] = 'schmidt_2016'
 df['strain'] = 'BW25153'
 df.to_csv('../../../data/schmidt2016_longform_annotated.csv', index=False)

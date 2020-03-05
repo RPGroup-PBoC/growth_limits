@@ -1,4 +1,4 @@
-﻿bnuber,gene,gene_description,copy_number,growth_rate_hr-1
+bnuber,gene,gene_description,copy_number,growth_rate_hr-1
 b0002,"thra, eck0002, hs, jw0001, thra1, thra2, thrd","fused aspartokinase i and homoserine dehydrogenase i (ec:2,7,2,4",932,0.11
 b0003,"thrb, eck0003, jw0002","homoserine kinase (ec:2,7,1,39)",112,0.11
 b0004,"thrc, eck0004, jw0003","threonine synthase (ec:4,2,3,1)",2347,0.11
@@ -235,7 +235,7 @@ b0251,"yafy, eck0253, jw0240",cp4-6 prophage; predicted dna-binding transcriptio
 b0252,"yafz, eck0254, jw0242",cp4-6 prophage; conserved protein,,0.11
 b0253,"ykfa, eck0255, jw0243",cp4-6 prophage; predicted gtp-binding protein,,0.11
 b0254,"perr, eck0256, jw0244",cp4-6 prophage; predicted dna-binding transcriptional regulator,,0.11
-b0256,"insi, eck0258",kple2 phage-like element; is30 transposase,232,0.11
+b0256,"insi-1, eck0258",kple2 phage-like element; is30 transposase,232,0.11
 b0258,"ykfc, eck0260, jw5813",pseudogene,,0.11
 b0260,"mmup, eck0262, jw5027, ykfd",cp4-6 prophage; predicted s-methylmethionine transporter,,0.11
 b0261,"mmum, eck0263, jw0253, yagd",cp4-6 prophage; s-methylmethionine:homocysteine methyltransferase,58,0.11
@@ -513,7 +513,7 @@ b0574,"cusb, eck0566, jw0563, silb, ylcd","copper/silver efflux system, membrane
 b0575,"cusa, eck0567, jw0564, sila, ybde","copper/silver efflux system, membrane component",,0.11
 b0576,"phep, eck0568, jw0565",phenylalanine transporter,,0.11
 b0577,"ybdg, eck0569, jw0566",predicted mechanosensitive channel,,0.11
-b0578,"nfsb, dpra, eck0570, jw0567, nfnb, nfsi, ntr","dihydropteridine reductase, nad(p)h-dependent, oxygen-insensitive",1090,0.11
+b0578,"nfsb, dpra, eck0570, jw0567, nfnb, nfsi, ntr","dihydropteridine reductase, nad(p)h-dependent, oxygen-inse-1nsitive",1090,0.11
 b0579,"ybdf, eck0571, jw5083",conserved protein,,0.11
 b0580,"ybdj, eck0572, jw0569",predicted inner membrane protein,,0.11
 b0581,"ybdk, eck0573, jw0570","gamma-glutamyl:cysteine ligase (ec:6,3,2,2)",701,0.11
@@ -935,8 +935,8 @@ b1022,"pgac, eck1012, hmsr, jw1007, ycdq",predicted glycosyl transferase,,0.11
 b1023,"pgab, eck1013, jw5142, ycdr",predicted enzyme associated with biofilm formation,,0.11
 b1024,"pgaa, eck1014, jw1010, ycds",predicted outer membrane protein,,0.11
 b1025,"ycdt, eck1015, jw5143",predicted diguanylate cyclase,,0.11
-b1026,"insf, eck0299",is3 element protein insf,,0.11
-b1027,"inse, eck0298",is3 element protein inse,,0.11
+b1026,"insf-1, eck0299",is3 element protein insf-1,,0.11
+b1027,"inse-1, eck0298",is3 element protein inse-1,,0.11
 b1028,"ymde, eck1016, jw5145",pseudogene,,0.11
 b1029,"ycdu, eck1017, jw1015",predicted inner membrane protein,,0.11
 b1032,"serx, eck1018, jwr0027",trna-ser,,0.11
@@ -1259,7 +1259,7 @@ b1363,"trkg, eck1362, jw1358",rac prophage; potassium transporter subunit,,0.11
 b1365,"ynak, eck1363, jw1359",rac prophage; conserved protein,,0.11
 b1366,"yday, eck1364, jw1360",pseudogene,,0.11
 b1368,"ynaa, eck1365, jw1361",pseudogene,,0.11
-b1370,"insh, eck0261",is5 transposase and trans-activator,,0.11
+b1370,"insh-1, eck0261",is5 transposase and trans-activator,,0.11
 b1372,"stfr, eck1367, jw1366, ynab",rac prophage; predicted tail fiber protein,,0.11
 b1374,"pinr, eck1369, jw1368, ynad",rac prophage; predicted site-specific recombinase,,0.11
 b1375,"ynae, eck1370, jw1369",rac prophage; predicted dna-binding transcriptional regulator,,0.11
@@ -1845,7 +1845,7 @@ b1990,"erfk, eck1985, jw1968, srfk, yeeg, yzzt","l,d-transpeptidase linking lpp 
 b1991,"cobt, eck1986, jw1969",nicotinate-nucleotide dimethylbenzimidazole-p phophoribosyl,,0.11
 b1992,"cobs, eck1987, jw1970","cobalamin 5'-phosphate synthase (ec:2,-,-,-)",,0.11
 b1993,"cobu, eck1988, jw1971",bifunctional cobinamide kinase/cobinamide phosphate,,0.11
-b1994,"insh, eck0261",is5 transposase and trans-activator,,0.11
+b1994,"insh-1, eck0261",is5 transposase and trans-activator,,0.11
 b1999,"yeep, eck1991, jw5327",pseudogene,,0.11
 b2000,"flu, agn, agn43, eck1993, jw1982, yeeq, yzzx",cp4-44 prophage; antigen 43 (ag43) phase-variable biofilm formation,1493,0.11
 b2001,"yeer, eck1994, jw1983",cp4-44 prophage; predicted membrane protein,,0.11
@@ -1994,7 +1994,7 @@ b2155,"cira, cir, eck2148, feua, jw2142",ferric iron-catecholate outer membrane 
 b2156,"lysp, cadr, eck2149, jw2143",lysine transporter,,0.11
 b2157,"yeie, eck2150, jw2144",predicted dna-binding transcriptional regulator,,0.11
 b2158,"yeih, eck2151, jw2145",conserved inner membrane protein,,0.11
-b2159,"nfo, eck2152, jw2146",endonuclease iv with intrinsic 3'-5' exonuclease activity,,0.11
+b2159,"nfo, eck2152, jw2146",endonuclease iv with intrinsi-1c 3'-5' exonuclease activity,,0.11
 b2160,"yeii, eck2153, jw2147",predicted kinase,,0.11
 b2161,"nupx, eck2154, jw2148, yeij",predicted nucleoside transporter,,0.11
 b2162,"rihb, eck2155, jw2149, yeik","ribonucleoside hydrolase 2 (ec:3,2,2,-)",,0.11
@@ -2222,7 +2222,7 @@ b2389,"yfeo, eck2385, jw2386",predicted ion channel protein,,0.11
 b2390,"ypec, eck2386, jw2387",conserved protein,,0.11
 b2392,"mnth, eck2387, jw2388, mnta, yfep",manganese/divalent cation transporter,,0.11
 b2393,"nupc, cru, eck2388, jw2389",nucleoside (except guanosine) transporter,,0.11
-b2394,"insl, eck0016",is186/is421 transposase,78,0.11
+b2394,"insl-1, eck0016",is186/is421 transposase,78,0.11
 b2395,"yfea, eck2389, jw5391",predicted diguanylate cyclase,,0.11
 b2397,"alaw, alawalpha, eck2391, jwr0045",trna-ala,,0.11
 b2398,"yfec, eck2392, jw2393",predicted dna-binding transcriptional regulator,,0.11
@@ -2528,7 +2528,7 @@ b2722,"hycd, eck2717, hevd, jw2692","hydrogenase 3, membrane subunit",,0.11
 b2723,"hycc, eck2718, hevc, jw2693","hydrogenase 3, membrane subunit",,0.11
 b2724,"hycb, eck2719, hevb, jw2694","hydrogenase 3, fe-s subunit (ec:1,12,7,2)",,0.11
 b2725,"hyca, eck2720, heva, jw2695",regulator of the transcriptional regulator fhla,,0.11
-b2726,"hypa, eck2721, jw2696",protein involved in nickel insertion into hydrogenases 3,,0.11
+b2726,"hypa, eck2721, jw2696",protein involved in nickel inse-1rtion into hydrogenases 3,,0.11
 b2727,"hypb, eck2722, hydb, hyde, jw2697",gtp hydrolase involved in nickel liganding into hydrogenases,,0.11
 b2728,"hypc, eck2723, jw2698",protein required for maturation of hydrogenases 1 and 3,,0.11
 b2729,"hypd, eck2724, hydf, jw2699",protein required for maturation of hydrogenases,,0.11
@@ -2656,8 +2656,8 @@ b2854,"pbl, eck2852, jw5457, ygej",pseudogene,,0.11
 b2856,"ygek, eck2853, jw5458, ygel",pseudogene,,0.11
 b2858,"ygen, eck2855, jw5459, ygem",pseudogene,,0.11
 b2859,"ygeo, eck2857, jw5846",pseudogene,,0.11
-b2860,"insd, eck0358",kple2 phage-like element; is2 insertion element transposase insab',,0.11
-b2861,"insc, eck0357",kple2 phage-like element; is2 insertion element repressor insa,,0.11
+b2860,"insd, eck0358",kple2 phage-like element; is2 inse-1rtion element transposase insab',,0.11
+b2861,"insc-1, eck0357",kple2 phage-like element; is2 inse-1rtion element repressor insa,,0.11
 b2863,"ygeq, eck2858, jw2831, ygep",pseudogene,,0.11
 b2864,"glyu, eck2860, jwr0066, sua36, sufd, sumb, supt",trna-gly,,0.11
 b2865,"yger, eck2861, jw2833",tetratricopeptide repeat transcriptional regulator,,0.11
@@ -2769,7 +2769,7 @@ b2977,"glcg, eck2971, jw2944, yghc",conserved protein,958,0.11
 b2979,"glcd, eck2974, gox, jw2946, yghm","glycolate oxidase subunit, fad-linked",,0.11
 b2980,"glcc, eck2975, jw2947, yghn","dna-binding transcriptional dual regulator, glycolate-binding",,0.11
 b2981,"ygho, eck2976, jw5848",pseudogene,,0.11
-b2982,"insh, eck0261",is5 transposase and trans-activator,,0.11
+b2982,"insh-1, eck0261",is5 transposase and trans-activator,,0.11
 b2983,"yghq, eck2977, jw5490",predicted inner membrane protein,,0.11
 b2984,"yghr, eck2978, jw2952",predicted protein with nucleoside triphosphate hydrolase domain,,0.11
 b2985,"yghs, eck2979, jw5491",predicted protein with nucleoside triphosphate hydrolase domain,,0.11
@@ -3287,7 +3287,7 @@ b3530,"bcsc, eck3515, jw5942, yhjl",cellulose synthase subunit,,0.11
 b3531,"bcsz, bcsc, eck3516, jw3499, yhjm","endo-1,4-d-glucanase (ec:3,2,1,4)",,0.11
 b3532,"bcsb, eck3517, jw3500, yhjn","regulator of cellulose synthase, cyclic di-gmp binding",,0.11
 b3533,"bcsa, eck3518, jw5665, yhjo, yhjp","cellulose synthase, catalytic subunit (ec:2,4,1,12)",,0.11
-b3534,"yhjq, eck3519, jw5941",pseudogene,,0.11
+b3534,"bcsq, eck3519, jw5941",pseudogene,,0.11
 b3535,"yhjr, eck3520, jw3503",conserved protein,,0.11
 b3536,"bcse, eck3521, jw3504, yhjs",conserved protein,,0.11
 b3537,"bcsf, eck3522, jw5663, yhjt",predicted protein,,0.11
@@ -3453,7 +3453,7 @@ b3701,"dnan, eck3693, jw3678","dna polymerase iii, beta subunit (ec:2,7,7,7)",34
 b3702,"dnaa, eck3694, jw3679","chromosomal replication initiator protein dnaa, dna-binding",31,0.11
 b3703,"rpmh, eck3695, jw3680, rima, ssaf",50s ribosomal subunit protein l34,10643,0.11
 b3704,"rnpa, eck3696, jw3681","protein c5 component of rnase p (ec:3,1,26,5)",,0.11
-b3705,"yidc, eck3698, jw3683, oxaa","cytoplasmic insertase into membrane protein, sec system",376,0.11
+b3705,"yidc, eck3698, jw3683, oxaa","cytoplasmic inse-1rtase into membrane protein, sec system",376,0.11
 b3706,"mnme, eck3699, jw3684, thdf, trme",gtpase,78,0.11
 b3707,"tnac, eck3700, jw3685, tnal",tryptophanase leader peptide,,0.11
 b3708,"tnaa, eck3701, ind, jw3686","tryptophanase/l-cysteine desulfhydrase, plp-dependent (ec:4,1,99,1)",2739,0.11
@@ -3589,7 +3589,7 @@ b3854,"rrla, eck3846, jwr0095",23s ribosomal rna of rrna operon,,0.11
 b3856,"mobb, eck3848, jw5575, yihc",molybdopterin-guanine dinucleotide biosynthesis protein b,,0.11
 b3857,"moba, chlb, eck3849, jw3829, mob, narb",molybdopterin-guanine dinucleotide synthase,58,0.11
 b3858,"yihd, eck3850, jw3830",conserved protein,1649,0.11
-b3859,"rdoa, eck3851, jw3831, orfa, yihe",thr/ser kinase implicated in cpx stress response,,0.11
+b3859,"srka, eck3851, jw3831, orfa, yihe",thr/ser kinase implicated in cpx stress response,,0.11
 b3860,"dsba, dsf, eck3852, iara, jw3832, ppfa","periplasmic protein disulfide isomerase i (ec:5,3,4,1)",1429,0.11
 b3861,"yihf, eck3853, jw5574",conserved protein,,0.11
 b3862,"yihg, eck3854, jw3834",predicted endonuclease,,0.11
@@ -3744,7 +3744,7 @@ b4019,"meth, eck4011, jw3979","homocysteine-n5-methyltetrahydrofolate transmethy
 b4020,"yjbb, eck4012, jw3980",predicted transporter,,0.11
 b4021,"pepe, eck4013, jw3981","(alpha)-aspartyl dipeptidase (ec:3,4,13,21)",310,0.11
 b4022,"rluf, eck4014, jw3982, yjbc","23s rrna u2604 pseudouridine synthase (ec:4,2,1,70)",,0.11
-b4023,"pagb, eck4015, jw3983, yjbd",conserved protein,122,0.11
+b4023,"yjbd, eck4015, jw3983, yjbd",conserved protein,122,0.11
 b4024,"lysc, apk, eck4016, jw3984","aspartokinase iii (ec:2,7,2,4)",345,0.11
 b4025,"pgi, eck4017, jw3985","glucosephosphate isomerase (ec:5,3,1,9)",2919,0.11
 b4026,"yjbe, eck4018, jw3986",predicted protein,,0.11
@@ -3795,9 +3795,9 @@ b4070,"nrfa, eck4063, jw4031","nitrite reductase, formate-dependent, cytochrome"
 b4071,"nrfb, eck4064, jw4032, yjci","nitrite reductase, formate-dependent, penta-heme cytochrome c",,0.11
 b4072,"nrfc, eck4065, jw4033, yjcj","formate-dependent nitrite reductase, 4fe4s subunit",,0.11
 b4073,"nrfd, eck4066, jw4034, yjck","formate-dependent nitrite reductase, membrane subunit",,0.11
-b4074,"nrfe, eck4067, jw4035, yjcl","heme lyase (nrfefg) for insertion of heme into c552, subunit nrfe",,0.11
-b4075,"nrff, eck4068, jw4036, yjcm","heme lyase (nrfefg) for insertion of heme into c552, subunit nrff",,0.11
-b4076,"nrfg, aidc, eck4069, jw4037, yjcn","heme lyase (nrfefg) for insertion of heme into c552, subunit nrfg",,0.11
+b4074,"nrfe, eck4067, jw4035, yjcl","heme lyase (nrfefg) for inse-1rtion of heme into c552, subunit nrfe",,0.11
+b4075,"nrff, eck4068, jw4036, yjcm","heme lyase (nrfefg) for inse-1rtion of heme into c552, subunit nrff",,0.11
+b4076,"nrfg, aidc, eck4069, jw4037, yjcn","heme lyase (nrfefg) for inse-1rtion of heme into c552, subunit nrfg",,0.11
 b4077,"gltp, eck4070, jw4038",glutamate/aspartate:proton symporter,,0.11
 b4078,"yjco, eck4071, jw4039",conserved protein,,0.11
 b4079,"fdhf, eck4072, jw4040","formate dehydrogenase-h, selenopolypeptide subunit (ec:1,2,1,2)",,0.11
@@ -3989,7 +3989,7 @@ b4279,"yjhb, eck4269, jw5768",kple2 phage-like element; predicted transporter,,0
 b4280,"yjhc, eck4270, jw5769",kple2 phage-like element; predicted oxidoreductase,118,0.11
 b4281,"yjhd, eck4271, jw5770",pseudogene,,0.11
 b4282,"yjhe, eck4272, jw4242",pseudogene,,0.11
-b4284,"insi, eck0258",kple2 phage-like element; is30 transposase,,0.11
+b4284,"insi-1, eck0258",kple2 phage-like element; is30 transposase,,0.11
 b4286,"yjhv, eck4276, jw4246",pseudogene,,0.11
 b4287,"fece, eck4277, jw4247",kple2 phage-like element; iron-dicitrate transporter subunit,,0.11
 b4288,"fecd, eck4278, jw4248",kple2 phage-like element; iron-dicitrate transporter subunit,,0.11
@@ -4141,7 +4141,7 @@ b4444,"omra, eck2833, jwr0248, pair2a, psra12, ryga, srae, t59",srna down regula
 b4445,"omrb, eck2834, jwr0249, pair2b, rygb, t59",srna down regulates om proteins; positively regulated by ompr/envz;,,0.11
 b4446,"rygc, eck2908, jwr0250, quad1c, t27","novel srna, function unknown; paralogous to the other quad srna",,0.11
 b4447,"rygd, c0730, eck3041, is156, jwr0251, quad1d, tp8","putative srna, function unknown; paralogous to the other quad srna",,0.11
-b4448,"psrn, eck3078, is160, jwr0252, psra14, sraf, tpk1","novel srna, function unknown",,0.11
+b4448,"sraf, eck3078, is160, jwr0252, psra14, sraf, tpk1","novel srna, function unknown",,0.11
 b4449,"psro, eck3153, jwr0253, p3, psra15, srag","novel srna, function unknown",,0.11
 b4450,"ryha, eck3199, jwr0254, psra16, srah","novel srna, function unknown",,0.11
 b4451,"ryhb, eck3426, jwr0219, psra18, srai",regulatory srna mediating positive fur regulon response,,0.11
@@ -4557,7 +4557,7 @@ b0251,"yafy, eck0253, jw0240",cp4-6 prophage; predicted dna-binding transcriptio
 b0252,"yafz, eck0254, jw0242",cp4-6 prophage; conserved protein,,0.21
 b0253,"ykfa, eck0255, jw0243",cp4-6 prophage; predicted gtp-binding protein,,0.21
 b0254,"perr, eck0256, jw0244",cp4-6 prophage; predicted dna-binding transcriptional regulator,,0.21
-b0256,"insi, eck0258",kple2 phage-like element; is30 transposase,,0.21
+b0256,"insi-1, eck0258",kple2 phage-like element; is30 transposase,,0.21
 b0258,"ykfc, eck0260, jw5813",pseudogene,,0.21
 b0260,"mmup, eck0262, jw5027, ykfd",cp4-6 prophage; predicted s-methylmethionine transporter,,0.21
 b0261,"mmum, eck0263, jw0253, yagd",cp4-6 prophage; s-methylmethionine:homocysteine methyltransferase,70,0.21
@@ -4835,7 +4835,7 @@ b0574,"cusb, eck0566, jw0563, silb, ylcd","copper/silver efflux system, membrane
 b0575,"cusa, eck0567, jw0564, sila, ybde","copper/silver efflux system, membrane component",,0.21
 b0576,"phep, eck0568, jw0565",phenylalanine transporter,,0.21
 b0577,"ybdg, eck0569, jw0566",predicted mechanosensitive channel,,0.21
-b0578,"nfsb, dpra, eck0570, jw0567, nfnb, nfsi, ntr","dihydropteridine reductase, nad(p)h-dependent, oxygen-insensitive",1741,0.21
+b0578,"nfsb, dpra, eck0570, jw0567, nfnb, nfsi, ntr","dihydropteridine reductase, nad(p)h-dependent, oxygen-inse-1nsitive",1741,0.21
 b0579,"ybdf, eck0571, jw5083",conserved protein,,0.21
 b0580,"ybdj, eck0572, jw0569",predicted inner membrane protein,,0.21
 b0581,"ybdk, eck0573, jw0570","gamma-glutamyl:cysteine ligase (ec:6,3,2,2)",639,0.21
@@ -5257,8 +5257,8 @@ b1022,"pgac, eck1012, hmsr, jw1007, ycdq",predicted glycosyl transferase,,0.21
 b1023,"pgab, eck1013, jw5142, ycdr",predicted enzyme associated with biofilm formation,,0.21
 b1024,"pgaa, eck1014, jw1010, ycds",predicted outer membrane protein,,0.21
 b1025,"ycdt, eck1015, jw5143",predicted diguanylate cyclase,,0.21
-b1026,"insf, eck0299",is3 element protein insf,,0.21
-b1027,"inse, eck0298",is3 element protein inse,,0.21
+b1026,"insf-1, eck0299",is3 element protein insf-1,,0.21
+b1027,"inse-1, eck0298",is3 element protein inse-1,,0.21
 b1028,"ymde, eck1016, jw5145",pseudogene,,0.21
 b1029,"ycdu, eck1017, jw1015",predicted inner membrane protein,,0.21
 b1032,"serx, eck1018, jwr0027",trna-ser,,0.21
@@ -5581,7 +5581,7 @@ b1363,"trkg, eck1362, jw1358",rac prophage; potassium transporter subunit,,0.21
 b1365,"ynak, eck1363, jw1359",rac prophage; conserved protein,,0.21
 b1366,"yday, eck1364, jw1360",pseudogene,,0.21
 b1368,"ynaa, eck1365, jw1361",pseudogene,,0.21
-b1370,"insh, eck0261",is5 transposase and trans-activator,,0.21
+b1370,"insh-1, eck0261",is5 transposase and trans-activator,,0.21
 b1372,"stfr, eck1367, jw1366, ynab",rac prophage; predicted tail fiber protein,,0.21
 b1374,"pinr, eck1369, jw1368, ynad",rac prophage; predicted site-specific recombinase,,0.21
 b1375,"ynae, eck1370, jw1369",rac prophage; predicted dna-binding transcriptional regulator,,0.21
@@ -6167,7 +6167,7 @@ b1990,"erfk, eck1985, jw1968, srfk, yeeg, yzzt","l,d-transpeptidase linking lpp 
 b1991,"cobt, eck1986, jw1969",nicotinate-nucleotide dimethylbenzimidazole-p phophoribosyl,,0.21
 b1992,"cobs, eck1987, jw1970","cobalamin 5'-phosphate synthase (ec:2,-,-,-)",,0.21
 b1993,"cobu, eck1988, jw1971",bifunctional cobinamide kinase/cobinamide phosphate,,0.21
-b1994,"insh, eck0261",is5 transposase and trans-activator,,0.21
+b1994,"insh-1, eck0261",is5 transposase and trans-activator,,0.21
 b1999,"yeep, eck1991, jw5327",pseudogene,,0.21
 b2000,"flu, agn, agn43, eck1993, jw1982, yeeq, yzzx",cp4-44 prophage; antigen 43 (ag43) phase-variable biofilm formation,,0.21
 b2001,"yeer, eck1994, jw1983",cp4-44 prophage; predicted membrane protein,,0.21
@@ -6316,7 +6316,7 @@ b2155,"cira, cir, eck2148, feua, jw2142",ferric iron-catecholate outer membrane 
 b2156,"lysp, cadr, eck2149, jw2143",lysine transporter,,0.21
 b2157,"yeie, eck2150, jw2144",predicted dna-binding transcriptional regulator,,0.21
 b2158,"yeih, eck2151, jw2145",conserved inner membrane protein,,0.21
-b2159,"nfo, eck2152, jw2146",endonuclease iv with intrinsic 3'-5' exonuclease activity,,0.21
+b2159,"nfo, eck2152, jw2146",endonuclease iv with intrinsi-1c 3'-5' exonuclease activity,,0.21
 b2160,"yeii, eck2153, jw2147",predicted kinase,,0.21
 b2161,"nupx, eck2154, jw2148, yeij",predicted nucleoside transporter,,0.21
 b2162,"rihb, eck2155, jw2149, yeik","ribonucleoside hydrolase 2 (ec:3,2,2,-)",,0.21
@@ -6544,7 +6544,7 @@ b2389,"yfeo, eck2385, jw2386",predicted ion channel protein,,0.21
 b2390,"ypec, eck2386, jw2387",conserved protein,,0.21
 b2392,"mnth, eck2387, jw2388, mnta, yfep",manganese/divalent cation transporter,,0.21
 b2393,"nupc, cru, eck2388, jw2389",nucleoside (except guanosine) transporter,,0.21
-b2394,"insl, eck0016",is186/is421 transposase,,0.21
+b2394,"insl-1, eck0016",is186/is421 transposase,,0.21
 b2395,"yfea, eck2389, jw5391",predicted diguanylate cyclase,,0.21
 b2397,"alaw, alawalpha, eck2391, jwr0045",trna-ala,,0.21
 b2398,"yfec, eck2392, jw2393",predicted dna-binding transcriptional regulator,,0.21
@@ -6850,7 +6850,7 @@ b2722,"hycd, eck2717, hevd, jw2692","hydrogenase 3, membrane subunit",,0.21
 b2723,"hycc, eck2718, hevc, jw2693","hydrogenase 3, membrane subunit",,0.21
 b2724,"hycb, eck2719, hevb, jw2694","hydrogenase 3, fe-s subunit (ec:1,12,7,2)",,0.21
 b2725,"hyca, eck2720, heva, jw2695",regulator of the transcriptional regulator fhla,,0.21
-b2726,"hypa, eck2721, jw2696",protein involved in nickel insertion into hydrogenases 3,,0.21
+b2726,"hypa, eck2721, jw2696",protein involved in nickel inse-1rtion into hydrogenases 3,,0.21
 b2727,"hypb, eck2722, hydb, hyde, jw2697",gtp hydrolase involved in nickel liganding into hydrogenases,,0.21
 b2728,"hypc, eck2723, jw2698",protein required for maturation of hydrogenases 1 and 3,,0.21
 b2729,"hypd, eck2724, hydf, jw2699",protein required for maturation of hydrogenases,,0.21
@@ -6978,8 +6978,8 @@ b2854,"pbl, eck2852, jw5457, ygej",pseudogene,,0.21
 b2856,"ygek, eck2853, jw5458, ygel",pseudogene,,0.21
 b2858,"ygen, eck2855, jw5459, ygem",pseudogene,,0.21
 b2859,"ygeo, eck2857, jw5846",pseudogene,,0.21
-b2860,"insd, eck0358",kple2 phage-like element; is2 insertion element transposase insab',,0.21
-b2861,"insc, eck0357",kple2 phage-like element; is2 insertion element repressor insa,,0.21
+b2860,"insd, eck0358",kple2 phage-like element; is2 inse-1rtion element transposase insab',,0.21
+b2861,"insc-1, eck0357",kple2 phage-like element; is2 inse-1rtion element repressor insa,,0.21
 b2863,"ygeq, eck2858, jw2831, ygep",pseudogene,,0.21
 b2864,"glyu, eck2860, jwr0066, sua36, sufd, sumb, supt",trna-gly,,0.21
 b2865,"yger, eck2861, jw2833",tetratricopeptide repeat transcriptional regulator,,0.21
@@ -7091,7 +7091,7 @@ b2977,"glcg, eck2971, jw2944, yghc",conserved protein,,0.21
 b2979,"glcd, eck2974, gox, jw2946, yghm","glycolate oxidase subunit, fad-linked",,0.21
 b2980,"glcc, eck2975, jw2947, yghn","dna-binding transcriptional dual regulator, glycolate-binding",,0.21
 b2981,"ygho, eck2976, jw5848",pseudogene,,0.21
-b2982,"insh, eck0261",is5 transposase and trans-activator,,0.21
+b2982,"insh-1, eck0261",is5 transposase and trans-activator,,0.21
 b2983,"yghq, eck2977, jw5490",predicted inner membrane protein,,0.21
 b2984,"yghr, eck2978, jw2952",predicted protein with nucleoside triphosphate hydrolase domain,,0.21
 b2985,"yghs, eck2979, jw5491",predicted protein with nucleoside triphosphate hydrolase domain,,0.21
@@ -7609,7 +7609,7 @@ b3530,"bcsc, eck3515, jw5942, yhjl",cellulose synthase subunit,,0.21
 b3531,"bcsz, bcsc, eck3516, jw3499, yhjm","endo-1,4-d-glucanase (ec:3,2,1,4)",,0.21
 b3532,"bcsb, eck3517, jw3500, yhjn","regulator of cellulose synthase, cyclic di-gmp binding",,0.21
 b3533,"bcsa, eck3518, jw5665, yhjo, yhjp","cellulose synthase, catalytic subunit (ec:2,4,1,12)",,0.21
-b3534,"yhjq, eck3519, jw5941",pseudogene,,0.21
+b3534,"bcsq, eck3519, jw5941",pseudogene,,0.21
 b3535,"yhjr, eck3520, jw3503",conserved protein,,0.21
 b3536,"bcse, eck3521, jw3504, yhjs",conserved protein,,0.21
 b3537,"bcsf, eck3522, jw5663, yhjt",predicted protein,,0.21
@@ -7775,7 +7775,7 @@ b3701,"dnan, eck3693, jw3678","dna polymerase iii, beta subunit (ec:2,7,7,7)",42
 b3702,"dnaa, eck3694, jw3679","chromosomal replication initiator protein dnaa, dna-binding",40,0.21
 b3703,"rpmh, eck3695, jw3680, rima, ssaf",50s ribosomal subunit protein l34,13704,0.21
 b3704,"rnpa, eck3696, jw3681","protein c5 component of rnase p (ec:3,1,26,5)",,0.21
-b3705,"yidc, eck3698, jw3683, oxaa","cytoplasmic insertase into membrane protein, sec system",524,0.21
+b3705,"yidc, eck3698, jw3683, oxaa","cytoplasmic inse-1rtase into membrane protein, sec system",524,0.21
 b3706,"mnme, eck3699, jw3684, thdf, trme",gtpase,80,0.21
 b3707,"tnac, eck3700, jw3685, tnal",tryptophanase leader peptide,,0.21
 b3708,"tnaa, eck3701, ind, jw3686","tryptophanase/l-cysteine desulfhydrase, plp-dependent (ec:4,1,99,1)",,0.21
@@ -7911,7 +7911,7 @@ b3854,"rrla, eck3846, jwr0095",23s ribosomal rna of rrna operon,,0.21
 b3856,"mobb, eck3848, jw5575, yihc",molybdopterin-guanine dinucleotide biosynthesis protein b,,0.21
 b3857,"moba, chlb, eck3849, jw3829, mob, narb",molybdopterin-guanine dinucleotide synthase,,0.21
 b3858,"yihd, eck3850, jw3830",conserved protein,2237,0.21
-b3859,"rdoa, eck3851, jw3831, orfa, yihe",thr/ser kinase implicated in cpx stress response,,0.21
+b3859,"srka, eck3851, jw3831, orfa, yihe",thr/ser kinase implicated in cpx stress response,,0.21
 b3860,"dsba, dsf, eck3852, iara, jw3832, ppfa","periplasmic protein disulfide isomerase i (ec:5,3,4,1)",1704,0.21
 b3861,"yihf, eck3853, jw5574",conserved protein,,0.21
 b3862,"yihg, eck3854, jw3834",predicted endonuclease,,0.21
@@ -8066,7 +8066,7 @@ b4019,"meth, eck4011, jw3979","homocysteine-n5-methyltetrahydrofolate transmethy
 b4020,"yjbb, eck4012, jw3980",predicted transporter,,0.21
 b4021,"pepe, eck4013, jw3981","(alpha)-aspartyl dipeptidase (ec:3,4,13,21)",440,0.21
 b4022,"rluf, eck4014, jw3982, yjbc","23s rrna u2604 pseudouridine synthase (ec:4,2,1,70)",,0.21
-b4023,"pagb, eck4015, jw3983, yjbd",conserved protein,,0.21
+b4023,"yjbd, eck4015, jw3983, yjbd",conserved protein,,0.21
 b4024,"lysc, apk, eck4016, jw3984","aspartokinase iii (ec:2,7,2,4)",491,0.21
 b4025,"pgi, eck4017, jw3985","glucosephosphate isomerase (ec:5,3,1,9)",3275,0.21
 b4026,"yjbe, eck4018, jw3986",predicted protein,,0.21
@@ -8117,9 +8117,9 @@ b4070,"nrfa, eck4063, jw4031","nitrite reductase, formate-dependent, cytochrome"
 b4071,"nrfb, eck4064, jw4032, yjci","nitrite reductase, formate-dependent, penta-heme cytochrome c",,0.21
 b4072,"nrfc, eck4065, jw4033, yjcj","formate-dependent nitrite reductase, 4fe4s subunit",,0.21
 b4073,"nrfd, eck4066, jw4034, yjck","formate-dependent nitrite reductase, membrane subunit",,0.21
-b4074,"nrfe, eck4067, jw4035, yjcl","heme lyase (nrfefg) for insertion of heme into c552, subunit nrfe",,0.21
-b4075,"nrff, eck4068, jw4036, yjcm","heme lyase (nrfefg) for insertion of heme into c552, subunit nrff",,0.21
-b4076,"nrfg, aidc, eck4069, jw4037, yjcn","heme lyase (nrfefg) for insertion of heme into c552, subunit nrfg",,0.21
+b4074,"nrfe, eck4067, jw4035, yjcl","heme lyase (nrfefg) for inse-1rtion of heme into c552, subunit nrfe",,0.21
+b4075,"nrff, eck4068, jw4036, yjcm","heme lyase (nrfefg) for inse-1rtion of heme into c552, subunit nrff",,0.21
+b4076,"nrfg, aidc, eck4069, jw4037, yjcn","heme lyase (nrfefg) for inse-1rtion of heme into c552, subunit nrfg",,0.21
 b4077,"gltp, eck4070, jw4038",glutamate/aspartate:proton symporter,,0.21
 b4078,"yjco, eck4071, jw4039",conserved protein,,0.21
 b4079,"fdhf, eck4072, jw4040","formate dehydrogenase-h, selenopolypeptide subunit (ec:1,2,1,2)",,0.21
@@ -8311,7 +8311,7 @@ b4279,"yjhb, eck4269, jw5768",kple2 phage-like element; predicted transporter,,0
 b4280,"yjhc, eck4270, jw5769",kple2 phage-like element; predicted oxidoreductase,,0.21
 b4281,"yjhd, eck4271, jw5770",pseudogene,,0.21
 b4282,"yjhe, eck4272, jw4242",pseudogene,,0.21
-b4284,"insi, eck0258",kple2 phage-like element; is30 transposase,,0.21
+b4284,"insi-1, eck0258",kple2 phage-like element; is30 transposase,,0.21
 b4286,"yjhv, eck4276, jw4246",pseudogene,,0.21
 b4287,"fece, eck4277, jw4247",kple2 phage-like element; iron-dicitrate transporter subunit,,0.21
 b4288,"fecd, eck4278, jw4248",kple2 phage-like element; iron-dicitrate transporter subunit,,0.21
@@ -8463,7 +8463,7 @@ b4444,"omra, eck2833, jwr0248, pair2a, psra12, ryga, srae, t59",srna down regula
 b4445,"omrb, eck2834, jwr0249, pair2b, rygb, t59",srna down regulates om proteins; positively regulated by ompr/envz;,,0.21
 b4446,"rygc, eck2908, jwr0250, quad1c, t27","novel srna, function unknown; paralogous to the other quad srna",,0.21
 b4447,"rygd, c0730, eck3041, is156, jwr0251, quad1d, tp8","putative srna, function unknown; paralogous to the other quad srna",,0.21
-b4448,"psrn, eck3078, is160, jwr0252, psra14, sraf, tpk1","novel srna, function unknown",,0.21
+b4448,"sraf, eck3078, is160, jwr0252, psra14, sraf, tpk1","novel srna, function unknown",,0.21
 b4449,"psro, eck3153, jwr0253, p3, psra15, srag","novel srna, function unknown",,0.21
 b4450,"ryha, eck3199, jwr0254, psra16, srah","novel srna, function unknown",,0.21
 b4451,"ryhb, eck3426, jwr0219, psra18, srai",regulatory srna mediating positive fur regulon response,,0.21
@@ -8879,7 +8879,7 @@ b0251,"yafy, eck0253, jw0240",cp4-6 prophage; predicted dna-binding transcriptio
 b0252,"yafz, eck0254, jw0242",cp4-6 prophage; conserved protein,,0.31
 b0253,"ykfa, eck0255, jw0243",cp4-6 prophage; predicted gtp-binding protein,,0.31
 b0254,"perr, eck0256, jw0244",cp4-6 prophage; predicted dna-binding transcriptional regulator,,0.31
-b0256,"insi, eck0258",kple2 phage-like element; is30 transposase,,0.31
+b0256,"insi-1, eck0258",kple2 phage-like element; is30 transposase,,0.31
 b0258,"ykfc, eck0260, jw5813",pseudogene,,0.31
 b0260,"mmup, eck0262, jw5027, ykfd",cp4-6 prophage; predicted s-methylmethionine transporter,,0.31
 b0261,"mmum, eck0263, jw0253, yagd",cp4-6 prophage; s-methylmethionine:homocysteine methyltransferase,70,0.31
@@ -9157,7 +9157,7 @@ b0574,"cusb, eck0566, jw0563, silb, ylcd","copper/silver efflux system, membrane
 b0575,"cusa, eck0567, jw0564, sila, ybde","copper/silver efflux system, membrane component",,0.31
 b0576,"phep, eck0568, jw0565",phenylalanine transporter,,0.31
 b0577,"ybdg, eck0569, jw0566",predicted mechanosensitive channel,,0.31
-b0578,"nfsb, dpra, eck0570, jw0567, nfnb, nfsi, ntr","dihydropteridine reductase, nad(p)h-dependent, oxygen-insensitive",2344,0.31
+b0578,"nfsb, dpra, eck0570, jw0567, nfnb, nfsi, ntr","dihydropteridine reductase, nad(p)h-dependent, oxygen-inse-1nsitive",2344,0.31
 b0579,"ybdf, eck0571, jw5083",conserved protein,,0.31
 b0580,"ybdj, eck0572, jw0569",predicted inner membrane protein,,0.31
 b0581,"ybdk, eck0573, jw0570","gamma-glutamyl:cysteine ligase (ec:6,3,2,2)",692,0.31
@@ -9579,8 +9579,8 @@ b1022,"pgac, eck1012, hmsr, jw1007, ycdq",predicted glycosyl transferase,,0.31
 b1023,"pgab, eck1013, jw5142, ycdr",predicted enzyme associated with biofilm formation,,0.31
 b1024,"pgaa, eck1014, jw1010, ycds",predicted outer membrane protein,,0.31
 b1025,"ycdt, eck1015, jw5143",predicted diguanylate cyclase,,0.31
-b1026,"insf, eck0299",is3 element protein insf,,0.31
-b1027,"inse, eck0298",is3 element protein inse,,0.31
+b1026,"insf-1, eck0299",is3 element protein insf-1,,0.31
+b1027,"inse-1, eck0298",is3 element protein inse-1,,0.31
 b1028,"ymde, eck1016, jw5145",pseudogene,,0.31
 b1029,"ycdu, eck1017, jw1015",predicted inner membrane protein,,0.31
 b1032,"serx, eck1018, jwr0027",trna-ser,,0.31
@@ -9903,7 +9903,7 @@ b1363,"trkg, eck1362, jw1358",rac prophage; potassium transporter subunit,,0.31
 b1365,"ynak, eck1363, jw1359",rac prophage; conserved protein,,0.31
 b1366,"yday, eck1364, jw1360",pseudogene,,0.31
 b1368,"ynaa, eck1365, jw1361",pseudogene,,0.31
-b1370,"insh, eck0261",is5 transposase and trans-activator,,0.31
+b1370,"insh-1, eck0261",is5 transposase and trans-activator,,0.31
 b1372,"stfr, eck1367, jw1366, ynab",rac prophage; predicted tail fiber protein,,0.31
 b1374,"pinr, eck1369, jw1368, ynad",rac prophage; predicted site-specific recombinase,,0.31
 b1375,"ynae, eck1370, jw1369",rac prophage; predicted dna-binding transcriptional regulator,,0.31
@@ -10489,7 +10489,7 @@ b1990,"erfk, eck1985, jw1968, srfk, yeeg, yzzt","l,d-transpeptidase linking lpp 
 b1991,"cobt, eck1986, jw1969",nicotinate-nucleotide dimethylbenzimidazole-p phophoribosyl,,0.31
 b1992,"cobs, eck1987, jw1970","cobalamin 5'-phosphate synthase (ec:2,-,-,-)",,0.31
 b1993,"cobu, eck1988, jw1971",bifunctional cobinamide kinase/cobinamide phosphate,,0.31
-b1994,"insh, eck0261",is5 transposase and trans-activator,,0.31
+b1994,"insh-1, eck0261",is5 transposase and trans-activator,,0.31
 b1999,"yeep, eck1991, jw5327",pseudogene,,0.31
 b2000,"flu, agn, agn43, eck1993, jw1982, yeeq, yzzx",cp4-44 prophage; antigen 43 (ag43) phase-variable biofilm formation,,0.31
 b2001,"yeer, eck1994, jw1983",cp4-44 prophage; predicted membrane protein,,0.31
@@ -10638,7 +10638,7 @@ b2155,"cira, cir, eck2148, feua, jw2142",ferric iron-catecholate outer membrane 
 b2156,"lysp, cadr, eck2149, jw2143",lysine transporter,,0.31
 b2157,"yeie, eck2150, jw2144",predicted dna-binding transcriptional regulator,,0.31
 b2158,"yeih, eck2151, jw2145",conserved inner membrane protein,,0.31
-b2159,"nfo, eck2152, jw2146",endonuclease iv with intrinsic 3'-5' exonuclease activity,,0.31
+b2159,"nfo, eck2152, jw2146",endonuclease iv with intrinsi-1c 3'-5' exonuclease activity,,0.31
 b2160,"yeii, eck2153, jw2147",predicted kinase,,0.31
 b2161,"nupx, eck2154, jw2148, yeij",predicted nucleoside transporter,,0.31
 b2162,"rihb, eck2155, jw2149, yeik","ribonucleoside hydrolase 2 (ec:3,2,2,-)",,0.31
@@ -10866,7 +10866,7 @@ b2389,"yfeo, eck2385, jw2386",predicted ion channel protein,,0.31
 b2390,"ypec, eck2386, jw2387",conserved protein,,0.31
 b2392,"mnth, eck2387, jw2388, mnta, yfep",manganese/divalent cation transporter,,0.31
 b2393,"nupc, cru, eck2388, jw2389",nucleoside (except guanosine) transporter,,0.31
-b2394,"insl, eck0016",is186/is421 transposase,,0.31
+b2394,"insl-1, eck0016",is186/is421 transposase,,0.31
 b2395,"yfea, eck2389, jw5391",predicted diguanylate cyclase,,0.31
 b2397,"alaw, alawalpha, eck2391, jwr0045",trna-ala,,0.31
 b2398,"yfec, eck2392, jw2393",predicted dna-binding transcriptional regulator,,0.31
@@ -11172,7 +11172,7 @@ b2722,"hycd, eck2717, hevd, jw2692","hydrogenase 3, membrane subunit",,0.31
 b2723,"hycc, eck2718, hevc, jw2693","hydrogenase 3, membrane subunit",,0.31
 b2724,"hycb, eck2719, hevb, jw2694","hydrogenase 3, fe-s subunit (ec:1,12,7,2)",,0.31
 b2725,"hyca, eck2720, heva, jw2695",regulator of the transcriptional regulator fhla,,0.31
-b2726,"hypa, eck2721, jw2696",protein involved in nickel insertion into hydrogenases 3,,0.31
+b2726,"hypa, eck2721, jw2696",protein involved in nickel inse-1rtion into hydrogenases 3,,0.31
 b2727,"hypb, eck2722, hydb, hyde, jw2697",gtp hydrolase involved in nickel liganding into hydrogenases,,0.31
 b2728,"hypc, eck2723, jw2698",protein required for maturation of hydrogenases 1 and 3,,0.31
 b2729,"hypd, eck2724, hydf, jw2699",protein required for maturation of hydrogenases,,0.31
@@ -11300,8 +11300,8 @@ b2854,"pbl, eck2852, jw5457, ygej",pseudogene,,0.31
 b2856,"ygek, eck2853, jw5458, ygel",pseudogene,,0.31
 b2858,"ygen, eck2855, jw5459, ygem",pseudogene,,0.31
 b2859,"ygeo, eck2857, jw5846",pseudogene,,0.31
-b2860,"insd, eck0358",kple2 phage-like element; is2 insertion element transposase insab',,0.31
-b2861,"insc, eck0357",kple2 phage-like element; is2 insertion element repressor insa,,0.31
+b2860,"insd, eck0358",kple2 phage-like element; is2 inse-1rtion element transposase insab',,0.31
+b2861,"insc-1, eck0357",kple2 phage-like element; is2 inse-1rtion element repressor insa,,0.31
 b2863,"ygeq, eck2858, jw2831, ygep",pseudogene,,0.31
 b2864,"glyu, eck2860, jwr0066, sua36, sufd, sumb, supt",trna-gly,,0.31
 b2865,"yger, eck2861, jw2833",tetratricopeptide repeat transcriptional regulator,,0.31
@@ -11413,7 +11413,7 @@ b2977,"glcg, eck2971, jw2944, yghc",conserved protein,1475,0.31
 b2979,"glcd, eck2974, gox, jw2946, yghm","glycolate oxidase subunit, fad-linked",,0.31
 b2980,"glcc, eck2975, jw2947, yghn","dna-binding transcriptional dual regulator, glycolate-binding",,0.31
 b2981,"ygho, eck2976, jw5848",pseudogene,,0.31
-b2982,"insh, eck0261",is5 transposase and trans-activator,,0.31
+b2982,"insh-1, eck0261",is5 transposase and trans-activator,,0.31
 b2983,"yghq, eck2977, jw5490",predicted inner membrane protein,,0.31
 b2984,"yghr, eck2978, jw2952",predicted protein with nucleoside triphosphate hydrolase domain,,0.31
 b2985,"yghs, eck2979, jw5491",predicted protein with nucleoside triphosphate hydrolase domain,,0.31
@@ -11931,7 +11931,7 @@ b3530,"bcsc, eck3515, jw5942, yhjl",cellulose synthase subunit,,0.31
 b3531,"bcsz, bcsc, eck3516, jw3499, yhjm","endo-1,4-d-glucanase (ec:3,2,1,4)",,0.31
 b3532,"bcsb, eck3517, jw3500, yhjn","regulator of cellulose synthase, cyclic di-gmp binding",,0.31
 b3533,"bcsa, eck3518, jw5665, yhjo, yhjp","cellulose synthase, catalytic subunit (ec:2,4,1,12)",,0.31
-b3534,"yhjq, eck3519, jw5941",pseudogene,,0.31
+b3534,"bcsq, eck3519, jw5941",pseudogene,,0.31
 b3535,"yhjr, eck3520, jw3503",conserved protein,,0.31
 b3536,"bcse, eck3521, jw3504, yhjs",conserved protein,,0.31
 b3537,"bcsf, eck3522, jw5663, yhjt",predicted protein,,0.31
@@ -12097,7 +12097,7 @@ b3701,"dnan, eck3693, jw3678","dna polymerase iii, beta subunit (ec:2,7,7,7)",53
 b3702,"dnaa, eck3694, jw3679","chromosomal replication initiator protein dnaa, dna-binding",53,0.31
 b3703,"rpmh, eck3695, jw3680, rima, ssaf",50s ribosomal subunit protein l34,16333,0.31
 b3704,"rnpa, eck3696, jw3681","protein c5 component of rnase p (ec:3,1,26,5)",,0.31
-b3705,"yidc, eck3698, jw3683, oxaa","cytoplasmic insertase into membrane protein, sec system",777,0.31
+b3705,"yidc, eck3698, jw3683, oxaa","cytoplasmic inse-1rtase into membrane protein, sec system",777,0.31
 b3706,"mnme, eck3699, jw3684, thdf, trme",gtpase,97,0.31
 b3707,"tnac, eck3700, jw3685, tnal",tryptophanase leader peptide,,0.31
 b3708,"tnaa, eck3701, ind, jw3686","tryptophanase/l-cysteine desulfhydrase, plp-dependent (ec:4,1,99,1)",,0.31
@@ -12233,7 +12233,7 @@ b3854,"rrla, eck3846, jwr0095",23s ribosomal rna of rrna operon,,0.31
 b3856,"mobb, eck3848, jw5575, yihc",molybdopterin-guanine dinucleotide biosynthesis protein b,,0.31
 b3857,"moba, chlb, eck3849, jw3829, mob, narb",molybdopterin-guanine dinucleotide synthase,79,0.31
 b3858,"yihd, eck3850, jw3830",conserved protein,2756,0.31
-b3859,"rdoa, eck3851, jw3831, orfa, yihe",thr/ser kinase implicated in cpx stress response,,0.31
+b3859,"srka, eck3851, jw3831, orfa, yihe",thr/ser kinase implicated in cpx stress response,,0.31
 b3860,"dsba, dsf, eck3852, iara, jw3832, ppfa","periplasmic protein disulfide isomerase i (ec:5,3,4,1)",2563,0.31
 b3861,"yihf, eck3853, jw5574",conserved protein,,0.31
 b3862,"yihg, eck3854, jw3834",predicted endonuclease,,0.31
@@ -12388,7 +12388,7 @@ b4019,"meth, eck4011, jw3979","homocysteine-n5-methyltetrahydrofolate transmethy
 b4020,"yjbb, eck4012, jw3980",predicted transporter,,0.31
 b4021,"pepe, eck4013, jw3981","(alpha)-aspartyl dipeptidase (ec:3,4,13,21)",403,0.31
 b4022,"rluf, eck4014, jw3982, yjbc","23s rrna u2604 pseudouridine synthase (ec:4,2,1,70)",,0.31
-b4023,"pagb, eck4015, jw3983, yjbd",conserved protein,,0.31
+b4023,"yjbd, eck4015, jw3983, yjbd",conserved protein,,0.31
 b4024,"lysc, apk, eck4016, jw3984","aspartokinase iii (ec:2,7,2,4)",679,0.31
 b4025,"pgi, eck4017, jw3985","glucosephosphate isomerase (ec:5,3,1,9)",4552,0.31
 b4026,"yjbe, eck4018, jw3986",predicted protein,,0.31
@@ -12439,9 +12439,9 @@ b4070,"nrfa, eck4063, jw4031","nitrite reductase, formate-dependent, cytochrome"
 b4071,"nrfb, eck4064, jw4032, yjci","nitrite reductase, formate-dependent, penta-heme cytochrome c",,0.31
 b4072,"nrfc, eck4065, jw4033, yjcj","formate-dependent nitrite reductase, 4fe4s subunit",,0.31
 b4073,"nrfd, eck4066, jw4034, yjck","formate-dependent nitrite reductase, membrane subunit",,0.31
-b4074,"nrfe, eck4067, jw4035, yjcl","heme lyase (nrfefg) for insertion of heme into c552, subunit nrfe",,0.31
-b4075,"nrff, eck4068, jw4036, yjcm","heme lyase (nrfefg) for insertion of heme into c552, subunit nrff",,0.31
-b4076,"nrfg, aidc, eck4069, jw4037, yjcn","heme lyase (nrfefg) for insertion of heme into c552, subunit nrfg",,0.31
+b4074,"nrfe, eck4067, jw4035, yjcl","heme lyase (nrfefg) for inse-1rtion of heme into c552, subunit nrfe",,0.31
+b4075,"nrff, eck4068, jw4036, yjcm","heme lyase (nrfefg) for inse-1rtion of heme into c552, subunit nrff",,0.31
+b4076,"nrfg, aidc, eck4069, jw4037, yjcn","heme lyase (nrfefg) for inse-1rtion of heme into c552, subunit nrfg",,0.31
 b4077,"gltp, eck4070, jw4038",glutamate/aspartate:proton symporter,,0.31
 b4078,"yjco, eck4071, jw4039",conserved protein,,0.31
 b4079,"fdhf, eck4072, jw4040","formate dehydrogenase-h, selenopolypeptide subunit (ec:1,2,1,2)",,0.31
@@ -12633,7 +12633,7 @@ b4279,"yjhb, eck4269, jw5768",kple2 phage-like element; predicted transporter,,0
 b4280,"yjhc, eck4270, jw5769",kple2 phage-like element; predicted oxidoreductase,,0.31
 b4281,"yjhd, eck4271, jw5770",pseudogene,,0.31
 b4282,"yjhe, eck4272, jw4242",pseudogene,,0.31
-b4284,"insi, eck0258",kple2 phage-like element; is30 transposase,,0.31
+b4284,"insi-1, eck0258",kple2 phage-like element; is30 transposase,,0.31
 b4286,"yjhv, eck4276, jw4246",pseudogene,,0.31
 b4287,"fece, eck4277, jw4247",kple2 phage-like element; iron-dicitrate transporter subunit,,0.31
 b4288,"fecd, eck4278, jw4248",kple2 phage-like element; iron-dicitrate transporter subunit,,0.31
@@ -12785,7 +12785,7 @@ b4444,"omra, eck2833, jwr0248, pair2a, psra12, ryga, srae, t59",srna down regula
 b4445,"omrb, eck2834, jwr0249, pair2b, rygb, t59",srna down regulates om proteins; positively regulated by ompr/envz;,,0.31
 b4446,"rygc, eck2908, jwr0250, quad1c, t27","novel srna, function unknown; paralogous to the other quad srna",,0.31
 b4447,"rygd, c0730, eck3041, is156, jwr0251, quad1d, tp8","putative srna, function unknown; paralogous to the other quad srna",,0.31
-b4448,"psrn, eck3078, is160, jwr0252, psra14, sraf, tpk1","novel srna, function unknown",,0.31
+b4448,"sraf, eck3078, is160, jwr0252, psra14, sraf, tpk1","novel srna, function unknown",,0.31
 b4449,"psro, eck3153, jwr0253, p3, psra15, srag","novel srna, function unknown",,0.31
 b4450,"ryha, eck3199, jwr0254, psra16, srah","novel srna, function unknown",,0.31
 b4451,"ryhb, eck3426, jwr0219, psra18, srai",regulatory srna mediating positive fur regulon response,,0.31
@@ -13201,7 +13201,7 @@ b0251,"yafy, eck0253, jw0240",cp4-6 prophage; predicted dna-binding transcriptio
 b0252,"yafz, eck0254, jw0242",cp4-6 prophage; conserved protein,,0.4
 b0253,"ykfa, eck0255, jw0243",cp4-6 prophage; predicted gtp-binding protein,,0.4
 b0254,"perr, eck0256, jw0244",cp4-6 prophage; predicted dna-binding transcriptional regulator,,0.4
-b0256,"insi, eck0258",kple2 phage-like element; is30 transposase,,0.4
+b0256,"insi-1, eck0258",kple2 phage-like element; is30 transposase,,0.4
 b0258,"ykfc, eck0260, jw5813",pseudogene,,0.4
 b0260,"mmup, eck0262, jw5027, ykfd",cp4-6 prophage; predicted s-methylmethionine transporter,,0.4
 b0261,"mmum, eck0263, jw0253, yagd",cp4-6 prophage; s-methylmethionine:homocysteine methyltransferase,,0.4
@@ -13479,7 +13479,7 @@ b0574,"cusb, eck0566, jw0563, silb, ylcd","copper/silver efflux system, membrane
 b0575,"cusa, eck0567, jw0564, sila, ybde","copper/silver efflux system, membrane component",,0.4
 b0576,"phep, eck0568, jw0565",phenylalanine transporter,,0.4
 b0577,"ybdg, eck0569, jw0566",predicted mechanosensitive channel,,0.4
-b0578,"nfsb, dpra, eck0570, jw0567, nfnb, nfsi, ntr","dihydropteridine reductase, nad(p)h-dependent, oxygen-insensitive",2801,0.4
+b0578,"nfsb, dpra, eck0570, jw0567, nfnb, nfsi, ntr","dihydropteridine reductase, nad(p)h-dependent, oxygen-inse-1nsitive",2801,0.4
 b0579,"ybdf, eck0571, jw5083",conserved protein,,0.4
 b0580,"ybdj, eck0572, jw0569",predicted inner membrane protein,,0.4
 b0581,"ybdk, eck0573, jw0570","gamma-glutamyl:cysteine ligase (ec:6,3,2,2)",555,0.4
@@ -13901,8 +13901,8 @@ b1022,"pgac, eck1012, hmsr, jw1007, ycdq",predicted glycosyl transferase,,0.4
 b1023,"pgab, eck1013, jw5142, ycdr",predicted enzyme associated with biofilm formation,,0.4
 b1024,"pgaa, eck1014, jw1010, ycds",predicted outer membrane protein,,0.4
 b1025,"ycdt, eck1015, jw5143",predicted diguanylate cyclase,,0.4
-b1026,"insf, eck0299",is3 element protein insf,,0.4
-b1027,"inse, eck0298",is3 element protein inse,,0.4
+b1026,"insf-1, eck0299",is3 element protein insf-1,,0.4
+b1027,"inse-1, eck0298",is3 element protein inse-1,,0.4
 b1028,"ymde, eck1016, jw5145",pseudogene,,0.4
 b1029,"ycdu, eck1017, jw1015",predicted inner membrane protein,,0.4
 b1032,"serx, eck1018, jwr0027",trna-ser,,0.4
@@ -14225,7 +14225,7 @@ b1363,"trkg, eck1362, jw1358",rac prophage; potassium transporter subunit,,0.4
 b1365,"ynak, eck1363, jw1359",rac prophage; conserved protein,,0.4
 b1366,"yday, eck1364, jw1360",pseudogene,,0.4
 b1368,"ynaa, eck1365, jw1361",pseudogene,,0.4
-b1370,"insh, eck0261",is5 transposase and trans-activator,,0.4
+b1370,"insh-1, eck0261",is5 transposase and trans-activator,,0.4
 b1372,"stfr, eck1367, jw1366, ynab",rac prophage; predicted tail fiber protein,,0.4
 b1374,"pinr, eck1369, jw1368, ynad",rac prophage; predicted site-specific recombinase,,0.4
 b1375,"ynae, eck1370, jw1369",rac prophage; predicted dna-binding transcriptional regulator,,0.4
@@ -14811,7 +14811,7 @@ b1990,"erfk, eck1985, jw1968, srfk, yeeg, yzzt","l,d-transpeptidase linking lpp 
 b1991,"cobt, eck1986, jw1969",nicotinate-nucleotide dimethylbenzimidazole-p phophoribosyl,,0.4
 b1992,"cobs, eck1987, jw1970","cobalamin 5'-phosphate synthase (ec:2,-,-,-)",,0.4
 b1993,"cobu, eck1988, jw1971",bifunctional cobinamide kinase/cobinamide phosphate,,0.4
-b1994,"insh, eck0261",is5 transposase and trans-activator,,0.4
+b1994,"insh-1, eck0261",is5 transposase and trans-activator,,0.4
 b1999,"yeep, eck1991, jw5327",pseudogene,,0.4
 b2000,"flu, agn, agn43, eck1993, jw1982, yeeq, yzzx",cp4-44 prophage; antigen 43 (ag43) phase-variable biofilm formation,,0.4
 b2001,"yeer, eck1994, jw1983",cp4-44 prophage; predicted membrane protein,,0.4
@@ -14960,7 +14960,7 @@ b2155,"cira, cir, eck2148, feua, jw2142",ferric iron-catecholate outer membrane 
 b2156,"lysp, cadr, eck2149, jw2143",lysine transporter,,0.4
 b2157,"yeie, eck2150, jw2144",predicted dna-binding transcriptional regulator,,0.4
 b2158,"yeih, eck2151, jw2145",conserved inner membrane protein,,0.4
-b2159,"nfo, eck2152, jw2146",endonuclease iv with intrinsic 3'-5' exonuclease activity,,0.4
+b2159,"nfo, eck2152, jw2146",endonuclease iv with intrinsi-1c 3'-5' exonuclease activity,,0.4
 b2160,"yeii, eck2153, jw2147",predicted kinase,,0.4
 b2161,"nupx, eck2154, jw2148, yeij",predicted nucleoside transporter,,0.4
 b2162,"rihb, eck2155, jw2149, yeik","ribonucleoside hydrolase 2 (ec:3,2,2,-)",,0.4
@@ -15188,7 +15188,7 @@ b2389,"yfeo, eck2385, jw2386",predicted ion channel protein,,0.4
 b2390,"ypec, eck2386, jw2387",conserved protein,,0.4
 b2392,"mnth, eck2387, jw2388, mnta, yfep",manganese/divalent cation transporter,,0.4
 b2393,"nupc, cru, eck2388, jw2389",nucleoside (except guanosine) transporter,,0.4
-b2394,"insl, eck0016",is186/is421 transposase,,0.4
+b2394,"insl-1, eck0016",is186/is421 transposase,,0.4
 b2395,"yfea, eck2389, jw5391",predicted diguanylate cyclase,,0.4
 b2397,"alaw, alawalpha, eck2391, jwr0045",trna-ala,,0.4
 b2398,"yfec, eck2392, jw2393",predicted dna-binding transcriptional regulator,,0.4
@@ -15494,7 +15494,7 @@ b2722,"hycd, eck2717, hevd, jw2692","hydrogenase 3, membrane subunit",,0.4
 b2723,"hycc, eck2718, hevc, jw2693","hydrogenase 3, membrane subunit",,0.4
 b2724,"hycb, eck2719, hevb, jw2694","hydrogenase 3, fe-s subunit (ec:1,12,7,2)",,0.4
 b2725,"hyca, eck2720, heva, jw2695",regulator of the transcriptional regulator fhla,,0.4
-b2726,"hypa, eck2721, jw2696",protein involved in nickel insertion into hydrogenases 3,,0.4
+b2726,"hypa, eck2721, jw2696",protein involved in nickel inse-1rtion into hydrogenases 3,,0.4
 b2727,"hypb, eck2722, hydb, hyde, jw2697",gtp hydrolase involved in nickel liganding into hydrogenases,,0.4
 b2728,"hypc, eck2723, jw2698",protein required for maturation of hydrogenases 1 and 3,,0.4
 b2729,"hypd, eck2724, hydf, jw2699",protein required for maturation of hydrogenases,,0.4
@@ -15622,8 +15622,8 @@ b2854,"pbl, eck2852, jw5457, ygej",pseudogene,,0.4
 b2856,"ygek, eck2853, jw5458, ygel",pseudogene,,0.4
 b2858,"ygen, eck2855, jw5459, ygem",pseudogene,,0.4
 b2859,"ygeo, eck2857, jw5846",pseudogene,,0.4
-b2860,"insd, eck0358",kple2 phage-like element; is2 insertion element transposase insab',,0.4
-b2861,"insc, eck0357",kple2 phage-like element; is2 insertion element repressor insa,,0.4
+b2860,"insd, eck0358",kple2 phage-like element; is2 inse-1rtion element transposase insab',,0.4
+b2861,"insc-1, eck0357",kple2 phage-like element; is2 inse-1rtion element repressor insa,,0.4
 b2863,"ygeq, eck2858, jw2831, ygep",pseudogene,,0.4
 b2864,"glyu, eck2860, jwr0066, sua36, sufd, sumb, supt",trna-gly,,0.4
 b2865,"yger, eck2861, jw2833",tetratricopeptide repeat transcriptional regulator,,0.4
@@ -15735,7 +15735,7 @@ b2977,"glcg, eck2971, jw2944, yghc",conserved protein,1014,0.4
 b2979,"glcd, eck2974, gox, jw2946, yghm","glycolate oxidase subunit, fad-linked",,0.4
 b2980,"glcc, eck2975, jw2947, yghn","dna-binding transcriptional dual regulator, glycolate-binding",,0.4
 b2981,"ygho, eck2976, jw5848",pseudogene,,0.4
-b2982,"insh, eck0261",is5 transposase and trans-activator,,0.4
+b2982,"insh-1, eck0261",is5 transposase and trans-activator,,0.4
 b2983,"yghq, eck2977, jw5490",predicted inner membrane protein,,0.4
 b2984,"yghr, eck2978, jw2952",predicted protein with nucleoside triphosphate hydrolase domain,,0.4
 b2985,"yghs, eck2979, jw5491",predicted protein with nucleoside triphosphate hydrolase domain,,0.4
@@ -16253,7 +16253,7 @@ b3530,"bcsc, eck3515, jw5942, yhjl",cellulose synthase subunit,,0.4
 b3531,"bcsz, bcsc, eck3516, jw3499, yhjm","endo-1,4-d-glucanase (ec:3,2,1,4)",,0.4
 b3532,"bcsb, eck3517, jw3500, yhjn","regulator of cellulose synthase, cyclic di-gmp binding",,0.4
 b3533,"bcsa, eck3518, jw5665, yhjo, yhjp","cellulose synthase, catalytic subunit (ec:2,4,1,12)",,0.4
-b3534,"yhjq, eck3519, jw5941",pseudogene,,0.4
+b3534,"bcsq, eck3519, jw5941",pseudogene,,0.4
 b3535,"yhjr, eck3520, jw3503",conserved protein,,0.4
 b3536,"bcse, eck3521, jw3504, yhjs",conserved protein,,0.4
 b3537,"bcsf, eck3522, jw5663, yhjt",predicted protein,,0.4
@@ -16419,7 +16419,7 @@ b3701,"dnan, eck3693, jw3678","dna polymerase iii, beta subunit (ec:2,7,7,7)",56
 b3702,"dnaa, eck3694, jw3679","chromosomal replication initiator protein dnaa, dna-binding",52,0.4
 b3703,"rpmh, eck3695, jw3680, rima, ssaf",50s ribosomal subunit protein l34,30249,0.4
 b3704,"rnpa, eck3696, jw3681","protein c5 component of rnase p (ec:3,1,26,5)",,0.4
-b3705,"yidc, eck3698, jw3683, oxaa","cytoplasmic insertase into membrane protein, sec system",840,0.4
+b3705,"yidc, eck3698, jw3683, oxaa","cytoplasmic inse-1rtase into membrane protein, sec system",840,0.4
 b3706,"mnme, eck3699, jw3684, thdf, trme",gtpase,106,0.4
 b3707,"tnac, eck3700, jw3685, tnal",tryptophanase leader peptide,,0.4
 b3708,"tnaa, eck3701, ind, jw3686","tryptophanase/l-cysteine desulfhydrase, plp-dependent (ec:4,1,99,1)",,0.4
@@ -16555,7 +16555,7 @@ b3854,"rrla, eck3846, jwr0095",23s ribosomal rna of rrna operon,,0.4
 b3856,"mobb, eck3848, jw5575, yihc",molybdopterin-guanine dinucleotide biosynthesis protein b,,0.4
 b3857,"moba, chlb, eck3849, jw3829, mob, narb",molybdopterin-guanine dinucleotide synthase,101,0.4
 b3858,"yihd, eck3850, jw3830",conserved protein,3104,0.4
-b3859,"rdoa, eck3851, jw3831, orfa, yihe",thr/ser kinase implicated in cpx stress response,,0.4
+b3859,"srka, eck3851, jw3831, orfa, yihe",thr/ser kinase implicated in cpx stress response,,0.4
 b3860,"dsba, dsf, eck3852, iara, jw3832, ppfa","periplasmic protein disulfide isomerase i (ec:5,3,4,1)",2914,0.4
 b3861,"yihf, eck3853, jw5574",conserved protein,,0.4
 b3862,"yihg, eck3854, jw3834",predicted endonuclease,,0.4
@@ -16710,7 +16710,7 @@ b4019,"meth, eck4011, jw3979","homocysteine-n5-methyltetrahydrofolate transmethy
 b4020,"yjbb, eck4012, jw3980",predicted transporter,,0.4
 b4021,"pepe, eck4013, jw3981","(alpha)-aspartyl dipeptidase (ec:3,4,13,21)",522,0.4
 b4022,"rluf, eck4014, jw3982, yjbc","23s rrna u2604 pseudouridine synthase (ec:4,2,1,70)",,0.4
-b4023,"pagb, eck4015, jw3983, yjbd",conserved protein,,0.4
+b4023,"yjbd, eck4015, jw3983, yjbd",conserved protein,,0.4
 b4024,"lysc, apk, eck4016, jw3984","aspartokinase iii (ec:2,7,2,4)",1144,0.4
 b4025,"pgi, eck4017, jw3985","glucosephosphate isomerase (ec:5,3,1,9)",5151,0.4
 b4026,"yjbe, eck4018, jw3986",predicted protein,,0.4
@@ -16761,9 +16761,9 @@ b4070,"nrfa, eck4063, jw4031","nitrite reductase, formate-dependent, cytochrome"
 b4071,"nrfb, eck4064, jw4032, yjci","nitrite reductase, formate-dependent, penta-heme cytochrome c",,0.4
 b4072,"nrfc, eck4065, jw4033, yjcj","formate-dependent nitrite reductase, 4fe4s subunit",,0.4
 b4073,"nrfd, eck4066, jw4034, yjck","formate-dependent nitrite reductase, membrane subunit",,0.4
-b4074,"nrfe, eck4067, jw4035, yjcl","heme lyase (nrfefg) for insertion of heme into c552, subunit nrfe",,0.4
-b4075,"nrff, eck4068, jw4036, yjcm","heme lyase (nrfefg) for insertion of heme into c552, subunit nrff",,0.4
-b4076,"nrfg, aidc, eck4069, jw4037, yjcn","heme lyase (nrfefg) for insertion of heme into c552, subunit nrfg",,0.4
+b4074,"nrfe, eck4067, jw4035, yjcl","heme lyase (nrfefg) for inse-1rtion of heme into c552, subunit nrfe",,0.4
+b4075,"nrff, eck4068, jw4036, yjcm","heme lyase (nrfefg) for inse-1rtion of heme into c552, subunit nrff",,0.4
+b4076,"nrfg, aidc, eck4069, jw4037, yjcn","heme lyase (nrfefg) for inse-1rtion of heme into c552, subunit nrfg",,0.4
 b4077,"gltp, eck4070, jw4038",glutamate/aspartate:proton symporter,,0.4
 b4078,"yjco, eck4071, jw4039",conserved protein,,0.4
 b4079,"fdhf, eck4072, jw4040","formate dehydrogenase-h, selenopolypeptide subunit (ec:1,2,1,2)",,0.4
@@ -16955,7 +16955,7 @@ b4279,"yjhb, eck4269, jw5768",kple2 phage-like element; predicted transporter,,0
 b4280,"yjhc, eck4270, jw5769",kple2 phage-like element; predicted oxidoreductase,,0.4
 b4281,"yjhd, eck4271, jw5770",pseudogene,,0.4
 b4282,"yjhe, eck4272, jw4242",pseudogene,,0.4
-b4284,"insi, eck0258",kple2 phage-like element; is30 transposase,,0.4
+b4284,"insi-1, eck0258",kple2 phage-like element; is30 transposase,,0.4
 b4286,"yjhv, eck4276, jw4246",pseudogene,,0.4
 b4287,"fece, eck4277, jw4247",kple2 phage-like element; iron-dicitrate transporter subunit,,0.4
 b4288,"fecd, eck4278, jw4248",kple2 phage-like element; iron-dicitrate transporter subunit,,0.4
@@ -17107,7 +17107,7 @@ b4444,"omra, eck2833, jwr0248, pair2a, psra12, ryga, srae, t59",srna down regula
 b4445,"omrb, eck2834, jwr0249, pair2b, rygb, t59",srna down regulates om proteins; positively regulated by ompr/envz;,,0.4
 b4446,"rygc, eck2908, jwr0250, quad1c, t27","novel srna, function unknown; paralogous to the other quad srna",,0.4
 b4447,"rygd, c0730, eck3041, is156, jwr0251, quad1d, tp8","putative srna, function unknown; paralogous to the other quad srna",,0.4
-b4448,"psrn, eck3078, is160, jwr0252, psra14, sraf, tpk1","novel srna, function unknown",,0.4
+b4448,"sraf, eck3078, is160, jwr0252, psra14, sraf, tpk1","novel srna, function unknown",,0.4
 b4449,"psro, eck3153, jwr0253, p3, psra15, srag","novel srna, function unknown",,0.4
 b4450,"ryha, eck3199, jwr0254, psra16, srah","novel srna, function unknown",,0.4
 b4451,"ryhb, eck3426, jwr0219, psra18, srai",regulatory srna mediating positive fur regulon response,,0.4
@@ -17523,7 +17523,7 @@ b0251,"yafy, eck0253, jw0240",cp4-6 prophage; predicted dna-binding transcriptio
 b0252,"yafz, eck0254, jw0242",cp4-6 prophage; conserved protein,,0.49
 b0253,"ykfa, eck0255, jw0243",cp4-6 prophage; predicted gtp-binding protein,,0.49
 b0254,"perr, eck0256, jw0244",cp4-6 prophage; predicted dna-binding transcriptional regulator,,0.49
-b0256,"insi, eck0258",kple2 phage-like element; is30 transposase,,0.49
+b0256,"insi-1, eck0258",kple2 phage-like element; is30 transposase,,0.49
 b0258,"ykfc, eck0260, jw5813",pseudogene,,0.49
 b0260,"mmup, eck0262, jw5027, ykfd",cp4-6 prophage; predicted s-methylmethionine transporter,,0.49
 b0261,"mmum, eck0263, jw0253, yagd",cp4-6 prophage; s-methylmethionine:homocysteine methyltransferase,74,0.49
@@ -17801,7 +17801,7 @@ b0574,"cusb, eck0566, jw0563, silb, ylcd","copper/silver efflux system, membrane
 b0575,"cusa, eck0567, jw0564, sila, ybde","copper/silver efflux system, membrane component",,0.49
 b0576,"phep, eck0568, jw0565",phenylalanine transporter,,0.49
 b0577,"ybdg, eck0569, jw0566",predicted mechanosensitive channel,,0.49
-b0578,"nfsb, dpra, eck0570, jw0567, nfnb, nfsi, ntr","dihydropteridine reductase, nad(p)h-dependent, oxygen-insensitive",3593,0.49
+b0578,"nfsb, dpra, eck0570, jw0567, nfnb, nfsi, ntr","dihydropteridine reductase, nad(p)h-dependent, oxygen-inse-1nsitive",3593,0.49
 b0579,"ybdf, eck0571, jw5083",conserved protein,,0.49
 b0580,"ybdj, eck0572, jw0569",predicted inner membrane protein,,0.49
 b0581,"ybdk, eck0573, jw0570","gamma-glutamyl:cysteine ligase (ec:6,3,2,2)",,0.49
@@ -18223,8 +18223,8 @@ b1022,"pgac, eck1012, hmsr, jw1007, ycdq",predicted glycosyl transferase,,0.49
 b1023,"pgab, eck1013, jw5142, ycdr",predicted enzyme associated with biofilm formation,,0.49
 b1024,"pgaa, eck1014, jw1010, ycds",predicted outer membrane protein,,0.49
 b1025,"ycdt, eck1015, jw5143",predicted diguanylate cyclase,,0.49
-b1026,"insf, eck0299",is3 element protein insf,,0.49
-b1027,"inse, eck0298",is3 element protein inse,,0.49
+b1026,"insf-1, eck0299",is3 element protein insf-1,,0.49
+b1027,"inse-1, eck0298",is3 element protein inse-1,,0.49
 b1028,"ymde, eck1016, jw5145",pseudogene,,0.49
 b1029,"ycdu, eck1017, jw1015",predicted inner membrane protein,,0.49
 b1032,"serx, eck1018, jwr0027",trna-ser,,0.49
@@ -18547,7 +18547,7 @@ b1363,"trkg, eck1362, jw1358",rac prophage; potassium transporter subunit,,0.49
 b1365,"ynak, eck1363, jw1359",rac prophage; conserved protein,,0.49
 b1366,"yday, eck1364, jw1360",pseudogene,,0.49
 b1368,"ynaa, eck1365, jw1361",pseudogene,,0.49
-b1370,"insh, eck0261",is5 transposase and trans-activator,,0.49
+b1370,"insh-1, eck0261",is5 transposase and trans-activator,,0.49
 b1372,"stfr, eck1367, jw1366, ynab",rac prophage; predicted tail fiber protein,,0.49
 b1374,"pinr, eck1369, jw1368, ynad",rac prophage; predicted site-specific recombinase,,0.49
 b1375,"ynae, eck1370, jw1369",rac prophage; predicted dna-binding transcriptional regulator,,0.49
@@ -19133,7 +19133,7 @@ b1990,"erfk, eck1985, jw1968, srfk, yeeg, yzzt","l,d-transpeptidase linking lpp 
 b1991,"cobt, eck1986, jw1969",nicotinate-nucleotide dimethylbenzimidazole-p phophoribosyl,,0.49
 b1992,"cobs, eck1987, jw1970","cobalamin 5'-phosphate synthase (ec:2,-,-,-)",,0.49
 b1993,"cobu, eck1988, jw1971",bifunctional cobinamide kinase/cobinamide phosphate,,0.49
-b1994,"insh, eck0261",is5 transposase and trans-activator,,0.49
+b1994,"insh-1, eck0261",is5 transposase and trans-activator,,0.49
 b1999,"yeep, eck1991, jw5327",pseudogene,,0.49
 b2000,"flu, agn, agn43, eck1993, jw1982, yeeq, yzzx",cp4-44 prophage; antigen 43 (ag43) phase-variable biofilm formation,,0.49
 b2001,"yeer, eck1994, jw1983",cp4-44 prophage; predicted membrane protein,,0.49
@@ -19282,7 +19282,7 @@ b2155,"cira, cir, eck2148, feua, jw2142",ferric iron-catecholate outer membrane 
 b2156,"lysp, cadr, eck2149, jw2143",lysine transporter,,0.49
 b2157,"yeie, eck2150, jw2144",predicted dna-binding transcriptional regulator,,0.49
 b2158,"yeih, eck2151, jw2145",conserved inner membrane protein,,0.49
-b2159,"nfo, eck2152, jw2146",endonuclease iv with intrinsic 3'-5' exonuclease activity,,0.49
+b2159,"nfo, eck2152, jw2146",endonuclease iv with intrinsi-1c 3'-5' exonuclease activity,,0.49
 b2160,"yeii, eck2153, jw2147",predicted kinase,,0.49
 b2161,"nupx, eck2154, jw2148, yeij",predicted nucleoside transporter,,0.49
 b2162,"rihb, eck2155, jw2149, yeik","ribonucleoside hydrolase 2 (ec:3,2,2,-)",,0.49
@@ -19510,7 +19510,7 @@ b2389,"yfeo, eck2385, jw2386",predicted ion channel protein,,0.49
 b2390,"ypec, eck2386, jw2387",conserved protein,,0.49
 b2392,"mnth, eck2387, jw2388, mnta, yfep",manganese/divalent cation transporter,,0.49
 b2393,"nupc, cru, eck2388, jw2389",nucleoside (except guanosine) transporter,,0.49
-b2394,"insl, eck0016",is186/is421 transposase,,0.49
+b2394,"insl-1, eck0016",is186/is421 transposase,,0.49
 b2395,"yfea, eck2389, jw5391",predicted diguanylate cyclase,,0.49
 b2397,"alaw, alawalpha, eck2391, jwr0045",trna-ala,,0.49
 b2398,"yfec, eck2392, jw2393",predicted dna-binding transcriptional regulator,,0.49
@@ -19816,7 +19816,7 @@ b2722,"hycd, eck2717, hevd, jw2692","hydrogenase 3, membrane subunit",,0.49
 b2723,"hycc, eck2718, hevc, jw2693","hydrogenase 3, membrane subunit",,0.49
 b2724,"hycb, eck2719, hevb, jw2694","hydrogenase 3, fe-s subunit (ec:1,12,7,2)",,0.49
 b2725,"hyca, eck2720, heva, jw2695",regulator of the transcriptional regulator fhla,,0.49
-b2726,"hypa, eck2721, jw2696",protein involved in nickel insertion into hydrogenases 3,,0.49
+b2726,"hypa, eck2721, jw2696",protein involved in nickel inse-1rtion into hydrogenases 3,,0.49
 b2727,"hypb, eck2722, hydb, hyde, jw2697",gtp hydrolase involved in nickel liganding into hydrogenases,,0.49
 b2728,"hypc, eck2723, jw2698",protein required for maturation of hydrogenases 1 and 3,,0.49
 b2729,"hypd, eck2724, hydf, jw2699",protein required for maturation of hydrogenases,,0.49
@@ -19944,8 +19944,8 @@ b2854,"pbl, eck2852, jw5457, ygej",pseudogene,,0.49
 b2856,"ygek, eck2853, jw5458, ygel",pseudogene,,0.49
 b2858,"ygen, eck2855, jw5459, ygem",pseudogene,,0.49
 b2859,"ygeo, eck2857, jw5846",pseudogene,,0.49
-b2860,"insd, eck0358",kple2 phage-like element; is2 insertion element transposase insab',,0.49
-b2861,"insc, eck0357",kple2 phage-like element; is2 insertion element repressor insa,,0.49
+b2860,"insd, eck0358",kple2 phage-like element; is2 inse-1rtion element transposase insab',,0.49
+b2861,"insc-1, eck0357",kple2 phage-like element; is2 inse-1rtion element repressor insa,,0.49
 b2863,"ygeq, eck2858, jw2831, ygep",pseudogene,,0.49
 b2864,"glyu, eck2860, jwr0066, sua36, sufd, sumb, supt",trna-gly,,0.49
 b2865,"yger, eck2861, jw2833",tetratricopeptide repeat transcriptional regulator,,0.49
@@ -20057,7 +20057,7 @@ b2977,"glcg, eck2971, jw2944, yghc",conserved protein,631,0.49
 b2979,"glcd, eck2974, gox, jw2946, yghm","glycolate oxidase subunit, fad-linked",,0.49
 b2980,"glcc, eck2975, jw2947, yghn","dna-binding transcriptional dual regulator, glycolate-binding",,0.49
 b2981,"ygho, eck2976, jw5848",pseudogene,,0.49
-b2982,"insh, eck0261",is5 transposase and trans-activator,,0.49
+b2982,"insh-1, eck0261",is5 transposase and trans-activator,,0.49
 b2983,"yghq, eck2977, jw5490",predicted inner membrane protein,,0.49
 b2984,"yghr, eck2978, jw2952",predicted protein with nucleoside triphosphate hydrolase domain,,0.49
 b2985,"yghs, eck2979, jw5491",predicted protein with nucleoside triphosphate hydrolase domain,,0.49
@@ -20575,7 +20575,7 @@ b3530,"bcsc, eck3515, jw5942, yhjl",cellulose synthase subunit,,0.49
 b3531,"bcsz, bcsc, eck3516, jw3499, yhjm","endo-1,4-d-glucanase (ec:3,2,1,4)",,0.49
 b3532,"bcsb, eck3517, jw3500, yhjn","regulator of cellulose synthase, cyclic di-gmp binding",,0.49
 b3533,"bcsa, eck3518, jw5665, yhjo, yhjp","cellulose synthase, catalytic subunit (ec:2,4,1,12)",,0.49
-b3534,"yhjq, eck3519, jw5941",pseudogene,,0.49
+b3534,"bcsq, eck3519, jw5941",pseudogene,,0.49
 b3535,"yhjr, eck3520, jw3503",conserved protein,,0.49
 b3536,"bcse, eck3521, jw3504, yhjs",conserved protein,,0.49
 b3537,"bcsf, eck3522, jw5663, yhjt",predicted protein,,0.49
@@ -20741,7 +20741,7 @@ b3701,"dnan, eck3693, jw3678","dna polymerase iii, beta subunit (ec:2,7,7,7)",60
 b3702,"dnaa, eck3694, jw3679","chromosomal replication initiator protein dnaa, dna-binding",53,0.49
 b3703,"rpmh, eck3695, jw3680, rima, ssaf",50s ribosomal subunit protein l34,32410,0.49
 b3704,"rnpa, eck3696, jw3681","protein c5 component of rnase p (ec:3,1,26,5)",,0.49
-b3705,"yidc, eck3698, jw3683, oxaa","cytoplasmic insertase into membrane protein, sec system",906,0.49
+b3705,"yidc, eck3698, jw3683, oxaa","cytoplasmic inse-1rtase into membrane protein, sec system",906,0.49
 b3706,"mnme, eck3699, jw3684, thdf, trme",gtpase,130,0.49
 b3707,"tnac, eck3700, jw3685, tnal",tryptophanase leader peptide,,0.49
 b3708,"tnaa, eck3701, ind, jw3686","tryptophanase/l-cysteine desulfhydrase, plp-dependent (ec:4,1,99,1)",,0.49
@@ -20877,7 +20877,7 @@ b3854,"rrla, eck3846, jwr0095",23s ribosomal rna of rrna operon,,0.49
 b3856,"mobb, eck3848, jw5575, yihc",molybdopterin-guanine dinucleotide biosynthesis protein b,,0.49
 b3857,"moba, chlb, eck3849, jw3829, mob, narb",molybdopterin-guanine dinucleotide synthase,95,0.49
 b3858,"yihd, eck3850, jw3830",conserved protein,3979,0.49
-b3859,"rdoa, eck3851, jw3831, orfa, yihe",thr/ser kinase implicated in cpx stress response,,0.49
+b3859,"srka, eck3851, jw3831, orfa, yihe",thr/ser kinase implicated in cpx stress response,,0.49
 b3860,"dsba, dsf, eck3852, iara, jw3832, ppfa","periplasmic protein disulfide isomerase i (ec:5,3,4,1)",3896,0.49
 b3861,"yihf, eck3853, jw5574",conserved protein,,0.49
 b3862,"yihg, eck3854, jw3834",predicted endonuclease,,0.49
@@ -21032,7 +21032,7 @@ b4019,"meth, eck4011, jw3979","homocysteine-n5-methyltetrahydrofolate transmethy
 b4020,"yjbb, eck4012, jw3980",predicted transporter,,0.49
 b4021,"pepe, eck4013, jw3981","(alpha)-aspartyl dipeptidase (ec:3,4,13,21)",254,0.49
 b4022,"rluf, eck4014, jw3982, yjbc","23s rrna u2604 pseudouridine synthase (ec:4,2,1,70)",,0.49
-b4023,"pagb, eck4015, jw3983, yjbd",conserved protein,,0.49
+b4023,"yjbd, eck4015, jw3983, yjbd",conserved protein,,0.49
 b4024,"lysc, apk, eck4016, jw3984","aspartokinase iii (ec:2,7,2,4)",1573,0.49
 b4025,"pgi, eck4017, jw3985","glucosephosphate isomerase (ec:5,3,1,9)",5760,0.49
 b4026,"yjbe, eck4018, jw3986",predicted protein,,0.49
@@ -21083,9 +21083,9 @@ b4070,"nrfa, eck4063, jw4031","nitrite reductase, formate-dependent, cytochrome"
 b4071,"nrfb, eck4064, jw4032, yjci","nitrite reductase, formate-dependent, penta-heme cytochrome c",,0.49
 b4072,"nrfc, eck4065, jw4033, yjcj","formate-dependent nitrite reductase, 4fe4s subunit",,0.49
 b4073,"nrfd, eck4066, jw4034, yjck","formate-dependent nitrite reductase, membrane subunit",,0.49
-b4074,"nrfe, eck4067, jw4035, yjcl","heme lyase (nrfefg) for insertion of heme into c552, subunit nrfe",,0.49
-b4075,"nrff, eck4068, jw4036, yjcm","heme lyase (nrfefg) for insertion of heme into c552, subunit nrff",,0.49
-b4076,"nrfg, aidc, eck4069, jw4037, yjcn","heme lyase (nrfefg) for insertion of heme into c552, subunit nrfg",,0.49
+b4074,"nrfe, eck4067, jw4035, yjcl","heme lyase (nrfefg) for inse-1rtion of heme into c552, subunit nrfe",,0.49
+b4075,"nrff, eck4068, jw4036, yjcm","heme lyase (nrfefg) for inse-1rtion of heme into c552, subunit nrff",,0.49
+b4076,"nrfg, aidc, eck4069, jw4037, yjcn","heme lyase (nrfefg) for inse-1rtion of heme into c552, subunit nrfg",,0.49
 b4077,"gltp, eck4070, jw4038",glutamate/aspartate:proton symporter,,0.49
 b4078,"yjco, eck4071, jw4039",conserved protein,,0.49
 b4079,"fdhf, eck4072, jw4040","formate dehydrogenase-h, selenopolypeptide subunit (ec:1,2,1,2)",,0.49
@@ -21277,7 +21277,7 @@ b4279,"yjhb, eck4269, jw5768",kple2 phage-like element; predicted transporter,,0
 b4280,"yjhc, eck4270, jw5769",kple2 phage-like element; predicted oxidoreductase,,0.49
 b4281,"yjhd, eck4271, jw5770",pseudogene,,0.49
 b4282,"yjhe, eck4272, jw4242",pseudogene,,0.49
-b4284,"insi, eck0258",kple2 phage-like element; is30 transposase,,0.49
+b4284,"insi-1, eck0258",kple2 phage-like element; is30 transposase,,0.49
 b4286,"yjhv, eck4276, jw4246",pseudogene,,0.49
 b4287,"fece, eck4277, jw4247",kple2 phage-like element; iron-dicitrate transporter subunit,,0.49
 b4288,"fecd, eck4278, jw4248",kple2 phage-like element; iron-dicitrate transporter subunit,,0.49
@@ -21429,7 +21429,7 @@ b4444,"omra, eck2833, jwr0248, pair2a, psra12, ryga, srae, t59",srna down regula
 b4445,"omrb, eck2834, jwr0249, pair2b, rygb, t59",srna down regulates om proteins; positively regulated by ompr/envz;,,0.49
 b4446,"rygc, eck2908, jwr0250, quad1c, t27","novel srna, function unknown; paralogous to the other quad srna",,0.49
 b4447,"rygd, c0730, eck3041, is156, jwr0251, quad1d, tp8","putative srna, function unknown; paralogous to the other quad srna",,0.49
-b4448,"psrn, eck3078, is160, jwr0252, psra14, sraf, tpk1","novel srna, function unknown",,0.49
+b4448,"sraf, eck3078, is160, jwr0252, psra14, sraf, tpk1","novel srna, function unknown",,0.49
 b4449,"psro, eck3153, jwr0253, p3, psra15, srag","novel srna, function unknown",,0.49
 b4450,"ryha, eck3199, jwr0254, psra16, srah","novel srna, function unknown",,0.49
 b4451,"ryhb, eck3426, jwr0219, psra18, srai",regulatory srna mediating positive fur regulon response,,0.49

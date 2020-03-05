@@ -2,6 +2,8 @@
 import numpy as np
 import pandas as pd
 import tqdm
+# Define teh constant of total number of genes identified. 
+N_GENES = 3041
 
 # From the SI of Li 2014, Cell, hard-code the growth rates. 
 growth_rates = {'MOPS complete': np.log(2) / (21.5 / 60), 
@@ -11,8 +13,10 @@ growth_rates = {'MOPS complete': np.log(2) / (21.5 / 60),
 # Load the data quantifying absolute protein synthesis rates. 
 synthesis_rates = pd.read_csv('../../../data/li2014_raw_data/li2014_synthesis_rates.csv')
 
+#%%
 # Reform the synthesis rates to tidy-format 
 synthesis_tidy = synthesis_rates.melt('Gene')
+synthesis_tidy = synthesis_tidy[~synthesis_tidy['value'].str.contains('\[')]
 
 # Load the annotation list. 
 colicogs = pd.read_csv('../../../data/escherichia_coli_gene_annotations.csv')
@@ -34,7 +38,8 @@ for g, d in tqdm.tqdm(synthesis_tidy.groupby('Gene'), desc='Iterating through ge
 
             # Iterate through each condition and extract relevant information. 
             for c, r in growth_rates.items():
-                gene_dict = {
+                if c in d['variable'].unique():
+                    gene_dict = {
                         'gene_name': g,
                         'condition': c,
                         'tot_per_cell': d[d['variable']==c]['value'].values[0],
@@ -45,7 +50,7 @@ for g, d in tqdm.tqdm(synthesis_tidy.groupby('Gene'), desc='Iterating through ge
                         'annotation': annotation,
                         'growth_rate_hr': growth_rates[c]
                         }
-                df = df.append(gene_dict, ignore_index=True)
+                    df = df.append(gene_dict, ignore_index=True)
 
 #%%
 # Compute the mass per cell and include dataset notation. 

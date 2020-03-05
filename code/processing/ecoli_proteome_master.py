@@ -5,14 +5,13 @@ import tqdm
 import glob
 #%%
 # Load the raw ecocyc master list. 
-ecocyc = pd.read_csv('../../../data/ecocyc_raw_data/2020-03-04_ecocyc_master.tab',
+ecocyc = pd.read_csv('../../data/ecocyc_raw_data/2020-03-04_ecocyc_master.tab',
                     delimiter='\t')
 
 # Iterate through each gene name and, for each synonym, create a new entry. 
-df = pd.DataFrame([])
-for g, d in tqdm.tqdm(ecocyc.groupby(['gene_name', 'ecocyc_gene_id', 
-                            'b_number', 'gene_product', 
-                            'common_name', 'mw_kda'])):
+dfs = []
+i = 0
+for g, d in tqdm.tqdm(ecocyc.groupby(['gene_name'])):
     # Stitch together the go ids. 
     go_ids = d['go_terms'].values[0]
     if str(go_ids) != 'nan':
@@ -21,15 +20,14 @@ for g, d in tqdm.tqdm(ecocyc.groupby(['gene_name', 'ecocyc_gene_id',
         go_ids = 'no ontology'
 
     # Generate the base dict. 
-    base_dict = {'gene_name':g[0].lower(),
-                'ecocyc_gene_id':g[1],
-                'b_number':g[2],
-                'gene_product':g[3],
-                'mw_kda':g[5],
+    base_dict = {'gene_name':g.lower(),
+                'b_number':d['b_number'].unique(), 
+                'gene_product':d['gene_product'].unique(),
+                'mw_kda':d['mw_kda'].unique(),
                 'go_terms':go_ids}
 
     # Update the dataframe
-    df = df.append(base_dict, ignore_index=True)
+    dfs.append(pd.DataFrame(base_dict, index=[0]))
 
     # Iterate through each synonym
     syn = d['synonyms'].values[0]
@@ -38,7 +36,10 @@ for g, d in tqdm.tqdm(ecocyc.groupby(['gene_name', 'ecocyc_gene_id',
         syns = [s.strip().replace('"', '').lower() for s in syn_split]
         for s in syns:
             base_dict['gene_name'] = s
-            df = df.append(base_dict, ignore_index=True)
+            dfs.append(pd.DataFrame(base_dict, index=[0]))
+
+df = pd.concat(dfs, sort=False)
+print(i, len(ecocyc))
 #%%
 # Drop duplicate rows
 df.drop_duplicates(inplace=True)
@@ -46,7 +47,7 @@ df.drop_duplicates(inplace=True)
 
 # %%
 # Load all of the cog lists and collate
-cogs = pd.concat([pd.read_csv(f) for f in glob.glob('../../../data/cog_data/*.csv')])
+cogs = pd.concat([pd.read_csv(f) for f in glob.glob('../../data/cog_data/*.csv')])
 cogs.drop(columns=['Unnamed: 4'], axis=1, inplace=True)
 
 # Assign the cog information to the ecocyc df based on the b number
@@ -64,6 +65,6 @@ for g, d in df.groupby('b_number'):
         df.loc[df['b_number']==g, 'cog_desc'] = cog['cog_desc'].values[0]
 
 # %%
-df.to_csv('../../../data/ecoli_genelist_master.csv', index=False)
+df.to_csv('../../data/ecoli_genelist_master.csv', index=False)
 
 # %%

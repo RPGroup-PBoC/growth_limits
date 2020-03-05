@@ -7,46 +7,78 @@ from scipy import constants
 # Load the longform schmidt 2016 count data, growth rates, and cog associations
 counts = pd.read_csv('../../../data/schmidt2016_raw_data/schmidt2016_dataset.csv')
 rates = pd.read_csv('../../../data/schmidt2016_raw_data/schmidt2016_growth_rates.csv')
-colicogs = pd.read_csv('../../../data/ecoli_gene_list_go_cog.csv')
+colicogs = pd.read_csv('../../../data/ecoli_genelist_master.csv')
 
 # %%
 # Get a list of the unique conditions.
 conditions = rates['condition'].unique()
 
 # Set up an empty dataframe
-df = pd.DataFrame([])
+dfs = []
 
 # Iterate through each gene in the count data.
 for g, d in tqdm.tqdm(counts.groupby('gene'), desc="Iterating through genes..."):
 
     # Determine number of entries per gene
-    gene = colicogs[colicogs['gene_name']==g.lower()]
+    gene = colicogs[colicogs['gene_name'].str.lower()==g.lower()]
     if len(gene) > 0:
         cog_class = gene['cog_class'].unique()[0]
         cog_cat = gene['cog_category'].unique()[0]
         cog_letter = gene['cog_letter'].unique()[0]
         b_number = gene['b_number'].unique()[0]
         gene_product = gene['gene_product'].unique()[0]
-        go_term = ';'.join(list(gene['go_term'].unique()))
-        go_class = ';'.join(list(gene['go_class'].unique()))
+        go_term = ';'.join(list(gene['go_terms'].unique()))
         # Iterate through each condition and extract relevant information.
         for c in conditions:
+            growth_rate = rates.loc[rates['condition']==c]['growth_rate_hr'].values[0]
+            reported_volume = rates.loc[rates['condition']==c]['volume_fL'].values[0]
             gene_dict = {
                     'gene_name': g,
+                    'b_number': b_number,
                     'condition': c,
-                    'tot_per_cell': d[f'{c}_tot'].values[0],
-                    'fg_per_cell':d[f'{c}_fg'].values[0],
+                    'reported_tot_per_cell': d[f'{c}_tot'].values[0],
+                    'reported_fg_per_cell':d[f'{c}_fg'].values[0],
+                    'go_terms': go_term,
                     'cog_class': cog_class,
                     'cog_category': cog_cat,
                     'cog_letter': cog_letter,
-                    'growth_rate_hr': rates.loc[rates['condition']==c]['growth_rate_hr'].values[0]
+                    'growth_rate_hr': growth_rate,
+                    'reported_volume': reported_volume
                     }
-            df = df.append(gene_dict, ignore_index=True)
+            dfs.append(pd.DataFrame(gene_dict, index=[0]))
+    else:
+        print(f'Warning!!! {g} not found in the gene list!')
+        for c in conditions:
+            growth_rate = rates.loc[rates['condition']==c]['growth_rate_hr'].values[0]
+            reported_volume = rates.loc[rates['condition']==c]['volume_fL'].values[0]
+            gene_dict = {
+                    'gene_name': g[0],
+                    'b_number': g[1],
+                    'condition': c,
+                    'reported_tot_per_cell': d[f'{c}_tot'].values[0],
+                    'reported_fg_per_cell':d[f'{c}_fg'].values[0],
+                    'cog_class': 'Not Found',
+                    'cog_category': 'Not Found',
+                    'cog_letter': 'Not Found',
+                    'go_terms': 'Not Found',
+                    'growth_rate_hr': growth_rate,
+                    'reported_volume': reported_volume
+                    }
+            dfs.append(pd.DataFrame(gene_dict, index=[0]))
+df = pd.concat(dfs, sort=False)
+#%%
+# Compute the correction factor for cell volume
+rates['corrected_volume'] = 0.27*2**(0.76*rates['growth_rate_hr'])
+rates['correction_ratio'] = rates['corrected_volume'].values / rates['volume_fL'].values
 
-# Compute the mass per cell.
-# df['fg_per_cell'] = (df['tot_per_cell'].values * df['mass_da'] * 1E15 ) / constants.Avogadro 
+# Iterate through the conditions and correct as necessary. 
+for g, d in rates.groupby(['condition']):
+    df.loc[df['condition']==g, 'tot_per_cell'] = d['correction_ratio'].unique()[0] * df.loc[df['condition']==g]['reported_tot_per_cell']
+    df.loc[df['condition']==g, 'fg_per_cell'] = d['correction_ratio'].unique()[0] * df.loc[df['condition']==g]['reported_fg_per_cell']
+#%%
 df['dataset'] = 'schmidt_2016'
-# df['strain'] = 'BW25153'
-# df.to_csv('../../../data/schmidt2016_longform_annotated.csv', index=False)
+df['dataset_name'] = 'Schmidt et al. 2016'
+df['strain'] = 'BW25113'
+df.to_csv('../../../data/schmidt2016_longform_annotated.csv', index=False)
 
 # %%

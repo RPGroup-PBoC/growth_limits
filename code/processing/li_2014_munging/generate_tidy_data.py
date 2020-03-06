@@ -38,12 +38,7 @@ for g, d in tqdm.tqdm(synthesis_tidy.groupby('Gene'), desc='Iterating through ge
             b_number = gene['b_number'].unique()[0]
             gene_product = gene['gene_product'].unique()[0]
             go_term = ';'.join(list(gene['go_terms'].unique()))
-            mw = gene['mw_kda'].values[0]
-            if str(mw) == 'nan':
-                mw = 0
-            elif '//' in str(mw):
-                mw = str(mw).split('//')[0]
-            gene_product = gene['gene_product']
+            mw = gene['mw_fg'].values[0]
             # Iterate through each condition and extract relevant information. 
             for c, r in growth_rates.items():
                 if c in d['variable'].unique():
@@ -51,13 +46,14 @@ for g, d in tqdm.tqdm(synthesis_tidy.groupby('Gene'), desc='Iterating through ge
                         'gene_name': _g,
                         'condition': c,
                         'tot_per_cell': split_factor**-1 * float(d[d['variable']==c]['value'].values[0]),
-                        'fg_per_cell': split_factor**-1 * float(d[d['variable']==c]['value'].values[0]) * float(mw) * 1E3 * 6.022E-8,
+                        'fg_per_cell': split_factor**-1 * float(d[d['variable']==c]['value'].values[0]) * mw,
                         'cog_class': cog_class,
                         'cog_category': cog_cat,
                         'cog_letter': cog_letter,
                         'b_number':b_number,    
                         'gene_product': gene_product,
-                        'growth_rate_hr': growth_rates[c]}
+                        'growth_rate_hr': growth_rates[c],
+                        'go_terms': go_term}
                     dfs.append(pd.DataFrame(gene_dict, index=[0]))
         else:
             print(f'Warning!! {g} not found in list.')

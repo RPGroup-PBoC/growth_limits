@@ -8,6 +8,7 @@ import glob
 ecocyc = pd.read_csv('../../data/ecocyc_raw_data/2020-03-04_ecocyc_master.tab',
                     delimiter='\t')
 
+#%%
 # Iterate through each gene name and, for each synonym, create a new entry. 
 dfs = []
 i = 0
@@ -18,12 +19,16 @@ for g, d in tqdm.tqdm(ecocyc.groupby(['gene_name'])):
         go_ids = '; '.join([s.strip() for s in go_ids.split('//')])
     else:
         go_ids = 'no ontology'
-
+    mw = d['mw_kda'].unique()[0]
+    if '//' in str(mw):
+        mw = float(mw.split('//')[0])
+    else:
+        mw = float(mw)
     # Generate the base dict. 
     base_dict = {'gene_name':g.lower(),
                 'b_number':d['b_number'].unique(), 
                 'gene_product':d['gene_product'].unique(),
-                'mw_kda':d['mw_kda'].unique(),
+                'mw_fg': mw * 1.660E-6,
                 'go_terms':go_ids}
 
     # Update the dataframe

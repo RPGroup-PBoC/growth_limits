@@ -93,7 +93,6 @@ for object_id in tqdm.tqdm(df_complex_.object_id.unique(), desc='Iterating throu
             df_subunits = df_subunits.append(data_list,ignore_index=True)
             check = 1
 
-
     if check == 0:
 
         # attempt to find details in 'ENZYME' class
@@ -154,12 +153,15 @@ for object_id in tqdm.tqdm(df_complex_.object_id.unique(), desc='Iterating throu
 # %%
 # Load the manually annotated missing complexes and append.
 df_subunits_complete = pd.concat([df_subunits, manual_annotation], sort=False)
-df_subunits_complete
+df_subunits_complete.loc[
+    df_subunits_complete['formula']=='[YeaX]YeaW]', 'formula'] = '[YeaX][YeaW]'
 
 #%%
 # Use formula to determine subunit counts
+metals = ['cu', 'mn', 'mg']
 df_subunits_nums = pd.DataFrame()
 _dfs = []
+problem_complexes = {}
 for g, data  in tqdm.tqdm(df_subunits_complete.groupby(['object_id', 'formula']), desc='Calculating subunit numbers'):
     obj_id, formula = g 
     obj_genes = df_complex_[df_complex_.object_id==obj_id].gene.unique()
@@ -168,13 +170,19 @@ for g, data  in tqdm.tqdm(df_subunits_complete.groupby(['object_id', 'formula'])
     # Clean up the formula
     formula = formula.replace('$_{', '')
     formula = formula.replace('}$', '')
+    formula = formula.replace('<sup>2+</sup>', '')
+    formula = formula.replace('<sup>+</sup>', '')
+    formula = formula.replace(' + 8 isozymes', '')
+    formula = formula.replace('+1isozymes]', '')
     formula = formula.replace(' ', '')
-    formula = formula.replace('[(', '[')
-    formula = formula.replace('(', '[')
-    formula = formula.replace(')', ']')
     formula = formula.replace('[[', '')
     formula = formula.replace(']]', '')
-
+    formula = formula.replace('[(', '[')
+    formula = formula.replace('([', '[')
+    formula = formula.replace(')]', ']')
+    formula = formula.replace('])', ']')
+    formula = formula.replace('(', '[')
+    formula = formula.replace(')', ']')
     _formula = formula[0]
     for i in range(1, len(formula)):
         if (formula[i-1].isnumeric()) & (formula[i] == ']'):
@@ -201,14 +209,22 @@ for g, data  in tqdm.tqdm(df_subunits_complete.groupby(['object_id', 'formula'])
         if (len(_parse) > 0) & (np.sum([f.isnumeric() for f in _parse]) == 0):
             parsed_genes.append(_parse)
 
-    # Parse the subunits. 
-    subunits = []
-    for i in range(1, numbers.max() + 1):
-        loc = np.where(numbers == i)[0]
-        subunit = ''
-        for n in loc:
-            subunit += formula[n]
-        subunits.append(int(subunit))
+    unknown = 0
+    for gene in parsed_genes:
+        if (gene.lower() not in annotations['gene_name'].values) | (gene.lower() in metals):
+            unknown += 1
+    if unknown > 0:
+        print(f'Problem with complex {obj_id}: {formula}')
+        problem_complexes[obj_id] = formula
+    else: 
+        # Parse the subunits. 
+        subunits = []
+        for i in range(1, numbers.max() + 1):
+            loc = np.where(numbers == i)[0]
+            subunit = ''
+            for n in loc:
+                subunit += formula[n]
+            subunits.append(int(subunit))
         _df = pd.DataFrame([]) 
         _df['genes'] = parsed_genes
         _df['n'] = subunits

@@ -131,11 +131,8 @@ for object_id in tqdm.tqdm(df_complex_.object_id.unique(), desc='Iterating throu
                     content = repr(items).split('&lt;br&gt;')
                     for sec in content:
                         if '['+gene[0].upper()+gene[1:]+']' in sec:
-
-                            ## get formula
-
+                            # get formula
                             full_seq = '[' + ''.join(sec.split('[')[1:])
-#                             print(full_seq)
                             full_seq = ''.join(full_seq.split(', WIDTH')[0])
 
                             if '&lt;SUB&gt;' in full_seq:
@@ -152,13 +149,7 @@ for object_id in tqdm.tqdm(df_complex_.object_id.unique(), desc='Iterating throu
                             break
 
     if check == 0:
-        # details not found; set values to np.nan
-        print('Did not find object: ', object_id)
-        missing_cplx.append(object_id)
-        # for gene in df_complex_[df_complex_.object_id == object_id].gene.unique():
-        #     data_list = {'object_id' : object_id,'formula' : ''}
-        #     df_subunits = df_subunits.append(data_list, ignore_index=True)
-
+        continue
 
 # %%
 # Load the manually annotated missing complexes and append.
@@ -169,27 +160,68 @@ df_subunits_complete
 # Use formula to determine subunit counts
 df_subunits_nums = pd.DataFrame()
 _dfs = []
-for obj, data  in tqdm.tqdm(df_subunits_complete.groupby(['object_id', 'formula']), desc='Calculating subunit numbers'):
-    obj_genes = df_complex_[df_complex_.object_id==obj[0]].gene.unique()
+for g, data  in tqdm.tqdm(df_subunits_complete.groupby(['object_id', 'formula']), desc='Calculating subunit numbers'):
+    obj_id, formula = g 
+    obj_genes = df_complex_[df_complex_.object_id==obj_id].gene.unique()
     gene_chars = ''.join(list(obj_genes)).lower()
-    formula_ = data.formula.unique()[0]
-    formula_ = formula_.replace('$_{', '')
-    formula_ = formula_.replace('}$', '')
-    formula_ = formula_.replace(' ', '')
-    formula_ = formula_.replace('(', '[')
-    formula_ = formula_.replace(')', ']')
-    brackets = np.where(np.array([(f == '[') | (f == ']') for f in formula_]) ==1)[0]
-    numbers = skimage.measure.label(np.array([f.isnumeric() for f in formula_.lower()]))
+
+    # Clean up the formula
+    formula = formula.replace('$_{', '')
+    formula = formula.replace('}$', '')
+    formula = formula.replace(' ', '')
+    formula = formula.replace('[(', '[')
+    formula = formula.replace('(', '[')
+    formula = formula.replace(')', ']')
+    formula = formula.replace('[[', '')
+    formula = formula.replace(']]', '')
+
+    _formula = formula[0]
+    for i in range(1, len(formula)):
+        if (formula[i-1].isnumeric()) & (formula[i] == ']'):
+            continue
+        else:
+            _formula += formula[i]
+    formula = _formula
+
+    # Force addition of single subunit compositions
+    formula = formula.replace('][', ']1[')
+    if formula[-1] == ']':
+        formula += '1'
+
+    # Find where there are brackets
+    brackets = np.where(np.array([(f == '[') | (f == ']') for f in formula]) ==1)[0]
+
+    # label the locations of numbers
+    numbers = skimage.measure.label(np.array([f.isnumeric() for f in formula.lower()]))
+    
+    # Parse the genes
+    parsed_genes = []
+    for i in range(len(brackets) - 1):
+        _parse = formula[brackets[i] + 1:brackets[i+1]]
+        if (len(_parse) > 0) & (np.sum([f.isnumeric() for f in _parse]) == 0):
+            parsed_genes.append(_parse)
+
+    # Parse the subunits. 
+    subunits = []
+    for i in range(1, numbers.max() + 1):
+        loc = np.where(numbers == i)[0]
+        subunit = ''
+        for n in loc:
+            subunit += formula[n]
+        subunits.append(int(subunit))
+        _df = pd.DataFrame([]) 
+        _df['genes'] = parsed_genes
+        _df['n'] = subunits
+        _df['formula'] = g[1] 
+        _dfs.append(_df)
+
+_df = pd.concat(_dfs, sort=False)
+       
+#%%
     parsed_genes = [formula_[brackets[i] + 1:brackets[i+1]] for i in range(len(brackets) - 1) if len(formula_[brackets[i] +1:brackets[i + 1]])> 0]
     subunits = []
     if (len(numbers) - 1) == 0:
         subunits = [1 for _ in range(len(parsed_genes))]
-    _df = pd.DataFrame([]) 
-    _df['genes'] = parsed_genes
-    _df['n'] = subunits
-    _df['formula'] = obj[1]
-    _dfs.append(_df)
-_df = pd.concat(_dfs, sort=False)
 #%%
 
 #

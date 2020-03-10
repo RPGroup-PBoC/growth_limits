@@ -1,0 +1,5 @@
+alt*.json
+*.pyc
+*egg*
+*.DS*
+

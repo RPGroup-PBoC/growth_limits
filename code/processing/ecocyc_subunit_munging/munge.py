@@ -14,13 +14,15 @@ annotations = pd.read_csv('../../../data/ecoli_genelist_master.csv')
 # %%
 ecocyc = pythoncyc.select_organism('ECOLI')
 
-# Get the list of protein complexes. 
-cplx = ecocyc.all_protein_complexes()
+prot_cplx = list(ecocyc.all_protein_complexes())
+for frame in ecocyc['Protein-RNA-Complexes']:
+    prot_cplx.append(frame['frameid'])
 
+#%%
 # Instantiate the dataframe.
 _df = pd.DataFrame([])
-for c in tqdm.tqdm(cplx):
-    components, counts = ecocyc.base_components_of_protein(c)
+for c in tqdm.tqdm(prot_cplx):
+    components, counts = ecocyc.monomers_of_protein(c)
     if (components is not None) & (counts is not None):
         for prot, sub in zip(components, counts):
             if ecocyc[prot].abbrev_name is None:

@@ -215,7 +215,6 @@ lipopolysaccharide transport system - outer membrane assembly complex,b0641,CPLX
 "putative transport complex, ABC superfamily",b3271,ABC-52-CPLX,yhdz,1.0
 "putative transport complex, ABC superfamily",b3270,ABC-52-CPLX,yhdy,1.0
 "putative transport complex, ABC superfamily",b3269,ABC-52-CPLX,yhdx,1.0
-"putative transport complex, ABC superfamily",b3268,ABC-52-CPLX,yhdw,1.0
 ,b4042,DIACYLGLYKIN-CPLX,dgka,3.0
 glycerol facilitator,b3927,CPLX0-7654,glpf,4.0
 ferric citrate ABC transporter,b4287,ABC-9-CPLX,fece,2.0
@@ -324,7 +323,6 @@ aliphatic sulfonate ABC transporter,b0934,ABC-56-CPLX,ssuc,2.0
 aliphatic sulfonate ABC transporter,b0933,ABC-56-CPLX,ssub,2.0
 ,b1062,DIHYDROOROT-CPLX,pyrc,2.0
 <i>N</i>-acetylneuraminate mutarotase,b4310,CPLX0-7658,yjht,2.0
-,b4488,ACETOLACTSYNII-CPLX,ilvo,1.0
 ,b3769,ACETOLACTSYNII-CPLX,ilvm,1.0
 L-ascorbate specific PTS enzyme II,b4195,EIISGA,ulac,1.0
 L-ascorbate specific PTS enzyme II,b4194,EIISGA,ulab,1.0
@@ -528,7 +526,6 @@ heme chaperone HemW,b2955,CPLX0-8291,hemw,2.0
 outer membrane porin C,b2215,CPLX0-7533,par,3.0
 sensor histidine kinase DcuS,b4125,CPLX0-8307,yjdh,2.0
 cryptic phosphonate/phosphate ABC transporter,b4106,ABC-23-CPLX,phnc,2.0
-cryptic phosphonate/phosphate ABC transporter,b4583,ABC-23-CPLX,phne,2.0
 cryptic phosphonate/phosphate ABC transporter,b4105,ABC-23-CPLX,phnd,1.0
 tRNA adenosine<sup>34</sup> deaminase,b2559,CPLX0-901,tada,2.0
 AtoS-<i>N</i>-phospho-L-histidine,b2219,PHOSPHO-ATOS,atos,2.0
@@ -1002,7 +999,6 @@ multifunctional acyl-CoA thioesterase I and protease I and lysophospholipase L1,
 "putative transport complex, ABC superfamily",b1312,ABC-55-CPLX,ycjp,1.0
 "putative transport complex, ABC superfamily",b1311,ABC-55-CPLX,ycjo,1.0
 "putative transport complex, ABC superfamily",b1310,ABC-55-CPLX,ycjn,1.0
-"putative transport complex, ABC superfamily",b1318,ABC-55-CPLX,ycjv,1.0
 23S rRNA m<sup>3</sup>&Psi;1915 methyltransferase,b0636,CPLX0-7423,ybea,2.0
 4-hydroxy-tetrahydrodipicolinate synthase,b2478,DIHYDRODIPICSYN-CPLX,dapa,4.0
 6-phosphofructokinase 2,b1723,6PFK-2-CPX,pfkb,2.0
@@ -1285,6 +1281,7 @@ vitamin B12 outer membrane transport complex,b1252,CPLX0-1924,exba,1.0
 DNA-binding transcriptional dual regulator CRP,b3357,PC00004,crp,2.0
 ,b4015,ISOCIT-LYASE,icl,4.0
 DNA-binding transcriptional repressor/NMN adenylyltransferase NadR,b4390,CPLX0-7975,nadr,4.0
+"2,3-dihydroxybenzoyl-EntB",[],CPLX0-7849,cplx0,1.0
 "2,3-dihydroxybenzoyl-EntB",[],CPLX0-7849,holo,2.0
 anaerobic ribonucleoside-triphosphate reductase activating protein,b4237,CPLX0-229,yjge,2.0
 exodeoxyribonuclease VII,b2509,CPLX-3946,xsea,1.0
@@ -1566,7 +1563,6 @@ molybdate ABC transporter,b0764,ABC-19-CPLX,modb,2.0
 molybdate ABC transporter,b0763,ABC-19-CPLX,moda,1.0
 ,b4539,CPLX0-8311,yoeb,2.0
 <I>N</I>-acetyl-D-galactosamine specific PTS (cryptic),b3133,CPLX0-7610,yhay,1.0
-<I>N</I>-acetyl-D-galactosamine specific PTS (cryptic),b3134,CPLX0-7610,yhaz,1.0
 <i>sn</i>-glycerol 3-phosphate / glycerophosphodiester ABC transporter,b3450,ABC-34-CPLX,ugpc,2.0
 <i>sn</i>-glycerol 3-phosphate / glycerophosphodiester ABC transporter,b3452,ABC-34-CPLX,ugpa,1.0
 <i>sn</i>-glycerol 3-phosphate / glycerophosphodiester ABC transporter,b3451,ABC-34-CPLX,ugpe,1.0
@@ -1729,7 +1725,6 @@ ferrichrome outer membrane transport complex,b1252,CPLX0-1942,exba,1.0
 ferrichrome outer membrane transport complex,b0150,CPLX0-1942,tona,1.0
 DNA-binding transcriptional repressor TrpR,b4393,PC00007,trpr,2.0
 ,b0082,CPLX0-7977,rsmh,2.0
-galactitol-specific PTS enzyme II,b2092,CPLX0-231,gatc,2.0
 galactitol-specific PTS enzyme II,b2093,CPLX0-231,gatb,1.0
 galactitol-specific PTS enzyme II,b2094,CPLX0-231,gata,1.0
 sensor histidine kinase PhoR,b0400,PHOR-CPLX,nmpb,2.0
@@ -1781,3 +1776,119 @@ spermidine preferential ABC transporter,b1126,ABC-24-CPLX,pota,2.0
 spermidine preferential ABC transporter,b1125,ABC-24-CPLX,potb,1.0
 spermidine preferential ABC transporter,b1124,ABC-24-CPLX,potc,1.0
 spermidine preferential ABC transporter,b1123,ABC-24-CPLX,potd,1.0
+30S ribosomal subunit,b0911,CPLX0-3953,ssyf,1.0
+30S ribosomal subunit,b0169,CPLX0-3953,rpsb,1.0
+30S ribosomal subunit,b3314,CPLX0-3953,rpsc,1.0
+30S ribosomal subunit,b3296,CPLX0-3953,rama,1.0
+30S ribosomal subunit,b3303,CPLX0-3953,spc,1.0
+30S ribosomal subunit,b4200,CPLX0-3953,sdgh,1.0
+30S ribosomal subunit,b3341,CPLX0-3953,rpsg,1.0
+30S ribosomal subunit,b3306,CPLX0-3953,rpsh,1.0
+30S ribosomal subunit,b3230,CPLX0-3953,rpsi,1.0
+30S ribosomal subunit,b3321,CPLX0-3953,nuse,1.0
+30S ribosomal subunit,b3297,CPLX0-3953,rpsk,1.0
+30S ribosomal subunit,b3342,CPLX0-3953,stra,1.0
+30S ribosomal subunit,b3298,CPLX0-3953,rpsm,1.0
+30S ribosomal subunit,b3307,CPLX0-3953,rpsn,1.0
+30S ribosomal subunit,b3165,CPLX0-3953,secc,1.0
+30S ribosomal subunit,b2609,CPLX0-3953,rpsp,1.0
+30S ribosomal subunit,b3311,CPLX0-3953,neaa,1.0
+30S ribosomal subunit,b4202,CPLX0-3953,rpsr,1.0
+30S ribosomal subunit,b3316,CPLX0-3953,rpss,1.0
+30S ribosomal subunit,b0023,CPLX0-3953,sups,1.0
+30S ribosomal subunit,b3065,CPLX0-3953,rpsu,1.0
+30S ribosomal subunit,b1480,CPLX0-3953,sra,1.0
+SelB-L-selenocysteinyl-tRNA<SUP>sec</SUP>,b3591,CPLX0-8053,fdha,1.0
+50S ribosomal subunit,b3984,CPLX0-3962,rpy,1.0
+50S ribosomal subunit,b3317,CPLX0-3962,rplb,1.0
+50S ribosomal subunit,b3320,CPLX0-3962,rplc,1.0
+50S ribosomal subunit,b3319,CPLX0-3962,erya,1.0
+50S ribosomal subunit,b3308,CPLX0-3962,rple,1.0
+50S ribosomal subunit,b3305,CPLX0-3962,rplf,1.0
+50S ribosomal subunit,b3986,CPLX0-3962,rpll,4.0
+50S ribosomal subunit,b3985,CPLX0-3962,rplj,1.0
+50S ribosomal subunit,b4203,CPLX0-3962,rpli,1.0
+50S ribosomal subunit,b3983,CPLX0-3962,relc,1.0
+50S ribosomal subunit,b3231,CPLX0-3962,rplm,1.0
+50S ribosomal subunit,b3310,CPLX0-3962,rpln,1.0
+50S ribosomal subunit,b3301,CPLX0-3962,rplo,1.0
+50S ribosomal subunit,b3313,CPLX0-3962,rplp,1.0
+50S ribosomal subunit,b3294,CPLX0-3962,rplq,1.0
+50S ribosomal subunit,b3304,CPLX0-3962,rplr,1.0
+50S ribosomal subunit,b2606,CPLX0-3962,rpls,1.0
+50S ribosomal subunit,b1716,CPLX0-3962,pdza,1.0
+50S ribosomal subunit,b3186,CPLX0-3962,rplu,1.0
+50S ribosomal subunit,b3315,CPLX0-3962,eryb,1.0
+50S ribosomal subunit,b3318,CPLX0-3962,rplw,1.0
+50S ribosomal subunit,b3309,CPLX0-3962,rplx,1.0
+50S ribosomal subunit,b2185,CPLX0-3962,rply,1.0
+50S ribosomal subunit,b3185,CPLX0-3962,rpz,1.0
+50S ribosomal subunit,b3637,CPLX0-3962,rpmb,1.0
+50S ribosomal subunit,b3312,CPLX0-3962,rpmc,1.0
+50S ribosomal subunit,b3302,CPLX0-3962,rpmd,1.0
+50S ribosomal subunit,b3936,CPLX0-3962,rpme,1.0
+50S ribosomal subunit,b1089,CPLX0-3962,rpmf,1.0
+50S ribosomal subunit,b3636,CPLX0-3962,rpmg,1.0
+50S ribosomal subunit,b3703,CPLX0-3962,ssaf,1.0
+50S ribosomal subunit,b1717,CPLX0-3962,rpmi,1.0
+50S ribosomal subunit,b3299,CPLX0-3962,secx,1.0
+CsrA complex with CsrB RNA,b2696,CPLX0-1041,zfia,18.0
+CsrA complex with CsrC RNA,b2696,CPLX0-8253,zfia,9.0
+ribosome,b1480,CPLX0-3964,sra,1.0
+ribosome,b3065,CPLX0-3964,rpsu,1.0
+ribosome,b0023,CPLX0-3964,sups,1.0
+ribosome,b3316,CPLX0-3964,rpss,1.0
+ribosome,b4202,CPLX0-3964,rpsr,1.0
+ribosome,b3311,CPLX0-3964,neaa,1.0
+ribosome,b2609,CPLX0-3964,rpsp,1.0
+ribosome,b3165,CPLX0-3964,secc,1.0
+ribosome,b3307,CPLX0-3964,rpsn,1.0
+ribosome,b3298,CPLX0-3964,rpsm,1.0
+ribosome,b3342,CPLX0-3964,stra,1.0
+ribosome,b3297,CPLX0-3964,rpsk,1.0
+ribosome,b3321,CPLX0-3964,nuse,1.0
+ribosome,b3230,CPLX0-3964,rpsi,1.0
+ribosome,b3306,CPLX0-3964,rpsh,1.0
+ribosome,b3341,CPLX0-3964,rpsg,1.0
+ribosome,b4200,CPLX0-3964,sdgh,1.0
+ribosome,b3303,CPLX0-3964,spc,1.0
+ribosome,b3296,CPLX0-3964,rama,1.0
+ribosome,b3314,CPLX0-3964,rpsc,1.0
+ribosome,b0169,CPLX0-3964,rpsb,1.0
+ribosome,b0911,CPLX0-3964,ssyf,1.0
+ribosome,b3299,CPLX0-3964,secx,1.0
+ribosome,b1717,CPLX0-3964,rpmi,1.0
+ribosome,b3703,CPLX0-3964,ssaf,1.0
+ribosome,b3636,CPLX0-3964,rpmg,1.0
+ribosome,b1089,CPLX0-3964,rpmf,1.0
+ribosome,b3936,CPLX0-3964,rpme,1.0
+ribosome,b3302,CPLX0-3964,rpmd,1.0
+ribosome,b3312,CPLX0-3964,rpmc,1.0
+ribosome,b3637,CPLX0-3964,rpmb,1.0
+ribosome,b3185,CPLX0-3964,rpz,1.0
+ribosome,b2185,CPLX0-3964,rply,1.0
+ribosome,b3309,CPLX0-3964,rplx,1.0
+ribosome,b3318,CPLX0-3964,rplw,1.0
+ribosome,b3315,CPLX0-3964,eryb,1.0
+ribosome,b3186,CPLX0-3964,rplu,1.0
+ribosome,b1716,CPLX0-3964,pdza,1.0
+ribosome,b2606,CPLX0-3964,rpls,1.0
+ribosome,b3304,CPLX0-3964,rplr,1.0
+ribosome,b3294,CPLX0-3964,rplq,1.0
+ribosome,b3313,CPLX0-3964,rplp,1.0
+ribosome,b3301,CPLX0-3964,rplo,1.0
+ribosome,b3310,CPLX0-3964,rpln,1.0
+ribosome,b3231,CPLX0-3964,rplm,1.0
+ribosome,b3983,CPLX0-3964,relc,1.0
+ribosome,b4203,CPLX0-3964,rpli,1.0
+ribosome,b3985,CPLX0-3964,rplj,1.0
+ribosome,b3986,CPLX0-3964,rpll,4.0
+ribosome,b3305,CPLX0-3964,rplf,1.0
+ribosome,b3308,CPLX0-3964,rple,1.0
+ribosome,b3319,CPLX0-3964,erya,1.0
+ribosome,b3320,CPLX0-3964,rplc,1.0
+ribosome,b3317,CPLX0-3964,rplb,1.0
+ribosome,b3984,CPLX0-3964,rpy,1.0
+RNase P,b3704,CPLX0-1382,rnpa,1.0
+Signal Recognition Particle,b2610,SRP-CPLX,ffh,1.0
+CsrA complex with McaS RNA,b2696,CPLX0-8028,zfia,2.0

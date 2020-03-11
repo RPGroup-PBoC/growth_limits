@@ -1,5 +1,6 @@
 # %%
 import pandas as pd
+import tqdm
 import glob
 
 # Define the author names which did absolute measurments that are trustworth.
@@ -7,10 +8,10 @@ authors = ['schmidt2016', 'li2014', 'valgepea2013', 'peebo2015']
 
 # Load inthe datasets and concatenate.
 data = pd.concat([
-    pd.read_csv(f'../../../data/{auth}_longform_annotated.csv') for auth in authors],
+    pd.read_csv(f'../../../data/{auth}_longform_annotated.csv') for auth in tqdm.tqdm(authors)],
     sort=False)
 data.drop(columns=['reported_tot_per_cell', 'reported_fg_per_cell', 
-                   'annotation', 'Unnamed: 0', 'reported_volume', 
+                   'Unnamed: 0', 'reported_volume', 
                    'corrected_volume'], axis=1, inplace=True)
 
 # Load the complexes to rename genes 
@@ -18,7 +19,7 @@ complexes = pd.read_csv('../../../data/ecocyc_raw_data/annotated_complexes.csv')
 
 # Find synonyms in the data set and converge to give a single gene name 
 no_synonyms = {}
-for g, d in data.groupby('b_number'):
+for g, d in tqdm.tqdm(data.groupby('b_number')):
     gene = d['gene_name'].unique()[0]
     data.loc[data['b_number']==g, 'gene_name'] = gene 
     complexes.loc[complexes['b_number']==g, 'gene_name'] = gene 

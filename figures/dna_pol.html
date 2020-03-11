@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .vega-actions a {
+        margin-right: 12px;
+        color: #757575;
+        font-weight: normal;
+        font-size: 13px;
+    }
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@3.4.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@4"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"background": "white", "group": {"fill": "#E3DCD0"}, "view": {"strokeWidth": 0, "height": 300, "width": 400, "fill": "#E3DCD0"}, "mark": {"strokeWidth": 0.5, "stroke": "black"}, "axis": {"domainColor": null, "labelFont": "Lucida Sans", "titleFont": "Lucida Sans", "titleFontWeight": 400, "grid": false, "ticks": true, "tickColor": "white", "tickOffset": 8, "tickWidth": 1.5}, "range": {"category": ["#D56C55", "#738FC1", "#7AA974", "#AB85AC", "#7E9D90", "#905426", "#EAC264"]}, "legend": {"labelFont": "Lucida Sans", "titleFont": "Lucida Sans", "titleFontWeight": 400}, "title": {"font": "Lucida Sans", "fontWeight": 400, "anchor": "middle"}}, "data": {"url": "altair-data-b45bb6dbea77d620478fa1ea4d5e98a8.json", "format": {"type": "json"}}, "mark": {"type": "point", "size": 80}, "encoding": {"fill": {"type": "nominal", "field": "dataset_name"}, "strokeWidth": {"value": 0.2}, "x": {"type": "quantitative", "axis": {"title": "growth rate [hr^-1]"}, "field": "growth_rate_hr"}, "y": {"type": "quantitative", "axis": {"title": "number of polymerases per cell"}, "field": "n_units"}}, "selection": {"selector158": {"type": "interval", "bind": "scales", "encodings": ["x", "y"]}}, "title": "DNA Polymerase III Holoenzymes per Cell", "$schema": "https://vega.github.io/schema/vega-lite/v3.4.0.json"};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

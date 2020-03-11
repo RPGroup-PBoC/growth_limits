@@ -39,7 +39,7 @@ for g, d in tqdm.tqdm(counts.groupby(['gene', 'growth_rate_hr-1']), desc="Iterat
                     'cog_class': cog_class,
                     'cog_category': cog_cat,
                     'cog_letter': cog_letter,
-                    'annotation': gene_product,
+                    'gene_product': gene_product,
                     'growth_rate_hr': g[1],
                     'go_terms':go_term,
                     'corrected_volume': vol
@@ -56,7 +56,7 @@ _conditions = df.groupby(['condition', 'growth_rate_hr', 'corrected_volume']).su
 _conditions['concentration'] = _conditions['reported_fg_per_cell'].values / _conditions['corrected_volume']
 ref_conc = _conditions[_conditions['growth_rate_hr']==0.49]['concentration'].values[0]
 _conditions['rel_conc_to_ref'] = _conditions['concentration'].values  / ref_conc
-_conditions
+
 #%%
 for g, d in _conditions.groupby(['growth_rate_hr']):
     rel_conc = _conditions[_conditions['growth_rate_hr']==g]['rel_conc_to_ref'].values[0]

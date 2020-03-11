@@ -14,6 +14,9 @@ data.drop(columns=['reported_tot_per_cell', 'reported_fg_per_cell',
                    'Unnamed: 0', 'reported_volume', 
                    'corrected_volume'], axis=1, inplace=True)
 
+data.loc[data['cog_category']=='Not Found', 'cog_category'] = 'Not Assigned'
+data.loc[data['cog_class']=='Not Found', 'cog_class'] = 'Not Assigned'
+
 # Load the complexes to rename genes 
 complexes = pd.read_csv('../../../data/ecocyc_raw_data/annotated_complexes.csv')
 

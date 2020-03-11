@@ -45,8 +45,8 @@ for g, d in tqdm.tqdm(synthesis_tidy.groupby('Gene'), desc='Iterating through ge
                     gene_dict = {
                         'gene_name': _g,
                         'condition': c,
-                        'reported_tot_per_cell': split_factor**-1 * float(d[d['variable']==c]['value'].values[0]),
-                        'reported_fg_per_cell': split_factor**-1 * float(d[d['variable']==c]['value'].values[0]) * mw,
+                        'tot_per_cell': split_factor**-1 * float(d[d['variable']==c]['value'].values[0]),
+                        'fg_per_cell': split_factor**-1 * float(d[d['variable']==c]['value'].values[0]) * mw,
                         'cog_class': cog_class,
                         'cog_category': cog_cat,
                         'cog_letter': cog_letter,

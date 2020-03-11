@@ -1,4 +1,4 @@
-,gene_name,condition,tot_per_cell,fg_per_cell,cog_class,cog_category,cog_letter,b_number,gene_product,growth_rate_hr,go_terms,dataset,dataset_name,strain
+,gene_name,condition,reported_tot_per_cell,reported_fg_per_cell,cog_class,cog_category,cog_letter,b_number,gene_product,growth_rate_hr,go_terms,dataset,dataset_name,strain
 0,aaeA,MOPS complete,62.0,0.0035790429999999996,cellular processes and signaling,defense mechanisms,V,b3241,aromatic carboxylic acid efflux pump membrane fusion protein,1.934364224818452,GO:0022857; GO:0046942; GO:0055085; GO:0005886; GO:0016021; GO:0016020,li_2014,Li et al. 2014,MG1655
 0,aaeA,MOPS minimal,5.0,0.0002886325,cellular processes and signaling,defense mechanisms,V,b3241,aromatic carboxylic acid efflux pump membrane fusion protein,0.738700370046123,GO:0022857; GO:0046942; GO:0055085; GO:0005886; GO:0016021; GO:0016020,li_2014,Li et al. 2014,MG1655
 0,aaeB,MOPS complete,16.0,0.0019545769600000005,poorly characterized,function unknown,S,b3240,aromatic carboxylic acid efflux pump subunit AaeB,1.934364224818452,GO:0055085; GO:0022857; GO:0046942; GO:0005886; GO:0016021; GO:0016020,li_2014,Li et al. 2014,MG1655

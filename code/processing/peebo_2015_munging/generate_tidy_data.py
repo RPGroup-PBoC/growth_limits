@@ -41,8 +41,6 @@ for g, d in tqdm.tqdm(counts.groupby('gene'), desc="Iterating through genes...")
                 'b_number': b_number,
                 'condition': _d['condition'].unique()[0],
                 'corrected_volume': vol,
-                # 'copy_number_molecule-per-fL': _d['copy_number_molecule-per-fL'].values[0],
-                # 'fg-per-fL': _d['copy_number_molecule-per-fL'].values[0] * mw,
                 'reported_tot_per_cell': _d['copy_number_molecule-per-fL'].values[0] * vol,
                 'reported_fg_per_cell': _d['copy_number_molecule-per-fL'].values[0] * vol * mw,
                 'go_terms':go_term,

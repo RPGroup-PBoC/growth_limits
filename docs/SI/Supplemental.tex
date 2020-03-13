@@ -27,33 +27,50 @@ main text. The goal of this section is to give an overview of each
 dataset considered, including the main experimental details, and to provide a
 more detailed look at how well each compares.
 
-Table \ref{table:datasets} provides an overview of the datasets that were considered,
-which are predominately mass spectrometry based, with the exception of the work from Li et al. (2014)
-using ribosomal profiling, and the fluorescence-based counting done in Taniguchi et al. (2010).
+Table \ref{table:datasets} provides an overview of the proteomic datasets that
+we foudn in the literatrue. These are predominately mass spectrometry based,
+with the exception of the work from Li et al. (2014) which used ribosomal
+profiling, and the fluorescence-based counting done in Taniguchi et al. (2010).
+With the exception of Schmidt et al. and Taniguchi et al., the general strategy
+taken was to quantify fractional abundance of each protein and then to convert
+these to absolute abundance by multiplying this fraction by the bulk measusured
+total cellular protein abundance. Note that the work of Peebo et al. (2014) did
+not perform any measurement of cell count or volume, and thus were only able to
+report cellular protein concentration. A key distinction in the work of Schmidt
+et al. (2016) is that 41 enzymes covering over four orders of magnitude in
+cellular abundance were used for absolute quantification. Specifically,
+synthetic peptides were generated for each of the 41 enzymes and used to provide
+a calibration between measured mass spectrometry intensities and absolute
+protein abundances (using stable isotope dilution (SID) and selected reaction
+monitoring (SRM), though the details of this are beyond the scope of this
+section).
 
 
 \begin{center}
 \begin{tabular}{ || c | c | c || }
 \hline
-Author & Method & Reported Quantity \\
+Author & Method & Reported Quantity & fractional coverage (by count) & fractional coverage (by mass) \\
 \hline\hline
-Taniguchi et al. (2010) & YFP-fusion, cell fluorescence & fg per cell \\
+Taniguchi et al. (2010) & YFP-fusion, cell fluorescence & fg/copies per cell & & \\
 \hline
-Valgepea et al. (2012) & Mass spectrometry & fg per cell \\
+Valgepea et al. (2012) & Mass spectrometry & fg/copies per cell & & \\
 \hline
-Peebo et al. (2014) & Mass spectrometry & fg per fL \\
+Peebo et al. (2014) & Mass spectrometry & fg/copies per fL & & \\
 \hline
-Li et al. (2014) & Ribosomal profiling & protein synthesis rate \\
+Li et al. (2014) & Ribosomal profiling & protein synthesis rate & & \\
 \hline
-Soufi et al. (2015) & Mass spectrometry & fg per cell \\
+Soufi et al. (2015) & Mass spectrometry & fg/copies per cell & &\\
 \hline
-Schmidt et al. (2016) & Mass spectrometry & fg per cell \\
+Schmidt et al. (2016) & Mass spectrometry & fg/copies per cell & & \\
 \hline
-Caglar et al. (2017) & Mass spectrometry & relative abundance \\
+Caglar et al. (2017) & Mass spectrometry & relative abundance & &\\
 \hline
 \end{tabular}
 \label{table:datasets}
 \end{center}
+
+Figure \ref{} shows the distribution in reported protein abundance - 
+
 
 \section{Adjustments to Copy Number Data.}
 

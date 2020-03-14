@@ -49,30 +49,75 @@ section).
 \begin{center}
 \begin{tabular}{ || c | c | c || }
 \hline
-Author & Method & Reported Quantity & fractional coverage (by count) & fractional coverage (by mass) \\
+Author & Method & strain & Reported Quantity & fractional coverage (by count) & fractional coverage (by mass) \\
 \hline\hline
-Taniguchi et al. (2010) & YFP-fusion, cell fluorescence & fg/copies per cell & & \\
+Taniguchi et al. (2010) & & YFP-fusion, cell fluorescence & fg/copies per cell & & \\
 \hline
-Valgepea et al. (2012) & Mass spectrometry & fg/copies per cell & & \\
+Valgepea et al. (2012) & & Mass spectrometry & fg/copies per cell & & \\
 \hline
-Peebo et al. (2014) & Mass spectrometry & fg/copies per fL & & \\
+Peebo et al. (2014) & & Mass spectrometry & fg/copies per fL & & \\
 \hline
-Li et al. (2014) & Ribosomal profiling & protein synthesis rate & & \\
+Li et al. (2014) & & Ribosomal profiling & protein synthesis rate & & \\
 \hline
-Soufi et al. (2015) & Mass spectrometry & fg/copies per cell & &\\
+Soufi et al. (2015) & & Mass spectrometry & fg/copies per cell & &\\
 \hline
-Schmidt et al. (2016) & Mass spectrometry & fg/copies per cell & & \\
+Schmidt et al. (2016) & & Mass spectrometry & fg/copies per cell & & \\
 \hline
-Caglar et al. (2017) & Mass spectrometry & relative abundance & &\\
+Caglar et al. (2017) & & Mass spectrometry & relative abundance & &\\
 \hline
 \end{tabular}
 \label{table:datasets}
 \end{center}
 
-Figure \ref{} shows the distribution in reported protein abundance - 
+Figure \ref{} shows the distribution in reported protein abundance for   a  subset
+of  the data.
+
+Figure \ref{} compares each dataset to the copy numbers from Schmidt et al.,
+grown in M9 minimal media supplemented with glucose.
 
 
 \section{Adjustments to Copy Number Data.}
+
+The datasets were generated using varied strategies that include a range of
+bacterial growth conditions,  different {\it e. coli} strains, and for those
+that report quantities on a cell basis, different strategies to count cells for
+normalization. It was therefore important to consider if any obvious
+discrepencies exist in the data and whether these might be reasonably dealt with
+to make the compilated data internally consistent. - example of yeast proteome
+data corrections. However, given the work of [cite] and others, there are prior
+expectations including an increase in total protein mass per cell with
+increasing growth rate. We were therefore hesitent to apply any global
+renormalizations, or scaling that does not take into account such trends. Figure
+\ref{} shows the total protein  mass reported as a function of growth rate for
+each experiment. Indeed, with the exception of the work of Peebo et al., the
+total mass per cell is generally consistent as a fuction of growth rate. One
+parameter that we do not expect to change substantially across growth conditions
+is cellular protein concentration; any discrepencies may reflect differences in
+protein extraction efficency.
+
+In the remainder of this section we describe how we correct for differences in
+cellular protein concentration within each inidividual dataset. This  strategy
+was already applied in the work of Schmidt et al., in particularr due to
+concerns  over lower protein extraction efficiency in growth conditions like
+stationary phase.  However, another complicating factor that became apparent is
+a descrpency in expected versus reported cell volume that required additional
+care and is further described below. Lastly, the  data from Peebo {\it et al.}
+required additional care due to a lack quantities on a cell basis, and we
+consider this work seperately.
+
+
+\subsection{Corrections to Enforce a Consistent Cellular Protein Concentration}
+
+In order to correction for potential differences in protein extraction across
+growth conditions, Schmidt {\it et al.} required that all cellular concentrations
+be identical. In their  work they note that under growth in -
+
+This also appears to be consistent with the work in Li {\it et al.}
+
+
+
+\subsection{Peebo {\it et al.}: Conversion from copies/ fL to copies per cell}
+
 
 %
 % \begin{figure}[H]

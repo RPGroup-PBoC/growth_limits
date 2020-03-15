@@ -78,6 +78,14 @@ grown in M9 minimal media supplemented with glucose.
 
 \section{Adjustments to Copy Number Data.}
 
+% NB: need to make summary figure with 2x2 panels; top row A) reported total protein per cells
+% B) protein concentration. bottom row, C) new total protein mass per cell,
+% C) new protein concentration.
+
+% NB: It may be helpful to appeal to the 'classic growth laws' early on in this text
+% as a rational to guide thinking with expections about total cell mass, cell volume w.r.t.
+% growth rate.
+
 The datasets were generated using varied strategies that include a range of
 bacterial growth conditions,  different {\it e. coli} strains, and for those
 that report quantities on a cell basis, different strategies to count cells for
@@ -108,16 +116,81 @@ consider this work seperately.
 
 \subsection{Corrections to Enforce a Consistent Cellular Protein Concentration}
 
-In order to correction for potential differences in protein extraction across
+% NB: It may be useful to note that none of this should have any effect on the relative
+% abundances found in each dataset.
+
+
+In order to correct for potential differences in protein extraction across
 growth conditions, Schmidt {\it et al.} required that all cellular concentrations
-be identical. In their  work they note that under growth in -
+be identical. This expectation is justified by work from [ref??]. We can also rationalize
+this from the knowledge that the fraction  of protein dry mass in a cell does not
+vary substantially [ref?].
 
-This also appears to be consistent with the work in Li {\it et al.}
+NB: need to rework - I want to show that protein concentration shouldn't vary very much (and suggest some
+bounds if possible).
+With this in mind, consider estimating the cellular protein
+concentration in a cell. This will be given by the (total mass of a cell) *
+(fraction of dry mass) * (fraction  of dry mass that is protein) / (cell
+volume). The total mass of a cell can also be written as (cell volume) * (cell
+density) . And so we are  left with (cell density) * (fraction of dry mass) *
+(fraction  of dry mass that is protein) . The density is roughly 1.1 g/mL, which
+is relatively fixed, the dry  mass is about 30\%,  while about 55\% of this  is
+protein.
 
+
+From the work of Schmidt et al. they report an ability to consistently get high
+protein yield from cells grown in M9 minimal media supplemented with glucose,
+whereas other growth  conditions such as stationary  phase growth being more
+troublesome. Therefore in  order to account any protein loss during extraction,
+they use growth in glucose as a
+constant reference for which total protein concentration in all other growth
+conditions should match. This is shown in Figure \ref{}A. One challenge in
+performing this calculation is that cell volume must be known; the authors use
+volumes that were  measured by flow cytometry in previous work [cite]. These
+volumes are shown in Figure \ref{}B. While it is difficult to assess the
+accuracy of these numbers, we find them to be quite inconsistent with the
+expected scaling that is reported by Taheri-Araghi et al. (2015) [and other work?].
+
+Since cell volume is not determined in all studies, and to be  consistent
+throughout, we instead use the predicted cell volumes that were carefully
+measured as a function of growth rate in the work of Taheri-Araghi et al.
+(2015). Dealing with each author's  proteomic data seperately, we follow the
+approach employed by Schmidt et al., and require that the cellular protein
+concentration be consistent across each set of proteomic data. This  amounts to
+calculating the total protein mass per cell, divided by the estimated cell
+volume,  and then applying a correction factor to correct for any descrepency in
+protein concentration.  For each of the author's work, we have selected a
+reference growth condition with growth rate of about $\lambda \approx 0.5
+hr^{-1}$, which is the growth rate for growth in M9 minimal media supplemented
+with glucose.
 
 
 \subsection{Peebo {\it et al.}: Conversion from copies/ fL to copies per cell}
 
+In the work of Peebo {\it et al.}, the authors only report protein concentration.
+In  order to estimate protein per cell, we multiple  these concentrations by
+expected cell volumes  using the predictions from  Taheri-Araghi et al. This is
+shown in Figure \ref{}A, where we see that reported mass is substantially lower than
+the other work considered here; as well as work from others [Sinauer, 1990].
+
+Indeed, both Schmidt et al. and Li et al. reported a total protein mass of about
+250 fg per cell at a growth rate of about $\lambda \approx 0.5 hr^{-1}$ ( M9
+minimal media with glucose and MOPS minimal media, respectively). Given this
+descrepency, in addition to requiring that cellular protein concentration be
+internally consistent across the growth conditions they reported on, we also
+required that total cellular mass be consistent with the work Schmidt et al. and
+Li et al. This amounted to performing a linear regression between total protein
+mass and growth rate, and using this to scale the Peebo et al. dataset according
+to this trend. 
+
+
+ % cell biology by the numebrs: Overall macromolecular composition of an average
+ % E. coli cell in aerobic balanced growth at 37°C in glucose minimal medium,
+ % with doubling time of 40 minutes and 1 pg cell wet weight (≈0.9 μm^3 cell
+ % volume). Adapted with modifications from F. C. Neidhardt et al., “Physiology
+ % of the bacterial cell”, Sinauer, 1990 (BNID 104954). Modifications included
+ % increasing cell dry weight from 284 fg to 300 fg and total cell mass from 950
+ % to 1000 fg as
 
 %
 % \begin{figure}[H]

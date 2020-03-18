@@ -22,28 +22,33 @@
 
 \section{Summary of Proteome Datasets.}
 
-Here we briefly summarize the datasets that were used for the work of the
-main text. The goal of this section is to give an overview of each
-dataset considered, including the main experimental details, and to provide a
-more detailed look at how well each compares.
+Here we briefly summarize the datasets that were considered for the work of the main
+text. The goal of this section is to give an overview of each dataset
+considered, including the main experimental details, and to provide a more
+detailed look at how well each compares.
 
 Table \ref{table:datasets} provides an overview of the proteomic datasets that
-we foudn in the literatrue. These are predominately mass spectrometry based,
-with the exception of the work from Li et al. (2014) which used ribosomal
-profiling, and the fluorescence-based counting done in Taniguchi et al. (2010).
-With the exception of Schmidt et al. and Taniguchi et al., the general strategy
-taken was to quantify fractional abundance of each protein and then to convert
-these to absolute abundance by multiplying this fraction by the bulk measusured
-total cellular protein abundance. Note that the work of Peebo et al. (2014) did
-not perform any measurement of cell count or volume, and thus were only able to
-report cellular protein concentration. A key distinction in the work of Schmidt
-et al. (2016) is that 41 enzymes covering over four orders of magnitude in
-cellular abundance were used for absolute quantification. Specifically,
-synthetic peptides were generated for each of the 41 enzymes and used to provide
-a calibration between measured mass spectrometry intensities and absolute
-protein abundances (using stable isotope dilution (SID) and selected reaction
-monitoring (SRM), though the details of this are beyond the scope of this
-section).
+we found in the literatrue. These are predominately mass spectrometry-based,
+with the exception of the work from Li {\it et al.} (2014) which used ribosomal
+profiling, and the fluorescence-based counting done in Taniguchi {\it et al.}
+(2010). The general strategy taken in these works is to quantify fractional
+abundance of each protein and then to convert these to absolute abundance by
+multiplying these fractions by the bulk measusured total cellular protein
+abundance. Note that the work of Peebo {\it et al.} (2014) did not perform any
+measurement of cell count or volume, and thus were only able to report cellular
+protein concentration.
+
+Exceptions to this are found in Schmidt {\it et al.} and Taniguchi {\it et al.}.
+A key distinction in the work of Schmidt {\it et al.} is that in addition to
+determining relative abundance by mass spectrometry, they also selected 41
+enzyme that cover over four orders of magnitude in cellular abundance to use in
+absolute protein quantification. Specifically, synthetic peptides were generated
+for each of these 41 enzymes and used to provide a calibration between measured
+mass spectrometry intensities and absolute protein abundances (using stable
+isotope dilution (SID) and selected reaction monitoring (SRM), though the
+details of this are beyond the scope of this section). In the work of Taniguchi
+{\it et al.},  the authored tagged each protein with a  yellow fluorescent
+protein (YFP) and used fluoresence as readout of cellular expression.
 
 
 \begin{center}
@@ -51,19 +56,19 @@ section).
 \hline
 Author & Method & strain & Reported Quantity & fractional coverage (by count) & fractional coverage (by mass) \\
 \hline\hline
-Taniguchi et al. (2010) & & YFP-fusion, cell fluorescence & fg/copies per cell & & \\
+Taniguchi {\it et al.} (2010) & & YFP-fusion, cell fluorescence & fg/copies per cell & & \\
 \hline
-Valgepea et al. (2012) & & Mass spectrometry & fg/copies per cell & & \\
+Valgepea {\it et al.} (2012) & & Mass spectrometry & fg/copies per cell & & \\
 \hline
-Peebo et al. (2014) & & Mass spectrometry & fg/copies per fL & & \\
+Peebo {\it et al.} (2014) & & Mass spectrometry & fg/copies per fL & & \\
 \hline
-Li et al. (2014) & & Ribosomal profiling & protein synthesis rate & & \\
+Li {\it et al.} (2014) & & Ribosomal profiling & protein synthesis rate & & \\
 \hline
-Soufi et al. (2015) & & Mass spectrometry & fg/copies per cell & &\\
+Soufi {\it et al.} (2015) & & Mass spectrometry & fg/copies per cell & &\\
 \hline
-Schmidt et al. (2016) & & Mass spectrometry & fg/copies per cell & & \\
+Schmidt {\it et al.} (2016) & & Mass spectrometry & fg/copies per cell & & \\
 \hline
-Caglar et al. (2017) & & Mass spectrometry & relative abundance & &\\
+Caglar {\it et al.} (2017) & & Mass spectrometry & relative abundance & &\\
 \hline
 \end{tabular}
 \label{table:datasets}
@@ -72,8 +77,9 @@ Caglar et al. (2017) & & Mass spectrometry & relative abundance & &\\
 Figure \ref{} shows the distribution in reported protein abundance for   a  subset
 of  the data.
 
-Figure \ref{} compares each dataset to the copy numbers from Schmidt et al.,
-grown in M9 minimal media supplemented with glucose.
+An important consideration is whether the reported abundance per cell are correlated. while
+we expect some variability in expression of each protein due to growth rate, the reported
+values are nonetheless expected to be correlated. Figure \ref{} compares each dataset to the copy numbers from Schmidt {\it et al.}, grown in M9 minimal media supplemented with glucose.
 
 
 \section{Adjustments to Copy Number Data.}
@@ -86,32 +92,39 @@ grown in M9 minimal media supplemented with glucose.
 % as a rational to guide thinking with expections about total cell mass, cell volume w.r.t.
 % growth rate.
 
-The datasets were generated using varied strategies that include a range of
-bacterial growth conditions,  different {\it e. coli} strains, and for those
-that report quantities on a cell basis, different strategies to count cells for
-normalization. It was therefore important to consider if any obvious
-discrepencies exist in the data and whether these might be reasonably dealt with
-to make the compilated data internally consistent. - example of yeast proteome
-data corrections. However, given the work of [cite] and others, there are prior
-expectations including an increase in total protein mass per cell with
-increasing growth rate. We were therefore hesitent to apply any global
-renormalizations, or scaling that does not take into account such trends. Figure
-\ref{} shows the total protein  mass reported as a function of growth rate for
-each experiment. Indeed, with the exception of the work of Peebo et al., the
-total mass per cell is generally consistent as a fuction of growth rate. One
-parameter that we do not expect to change substantially across growth conditions
-is cellular protein concentration; any discrepencies may reflect differences in
-protein extraction efficency.
+The datasets encompass a range of bacterial growth conditions,  different {\it
+e. coli} strains, and for those that report quantities on a cell basis,
+different methods to normalize  by  cell count and volume. It was therefore
+important to consider if certain discrepencies exist across the data and whether
+these might be reasonably dealt with to make the compilated dataset internally
+consistent. - give reference to what was done in example of yeast proteome data
+corrections. However, given the work of [cite] and others, there are
+well-documented expectations about how characteristics such as total protein
+mass per cell and cell volume  should scale with growth rate. We were therefore
+inclined to only renormalize data in a  way  that took into account such
+expectations. Figure \ref{} shows the total protein  mass reported as a function
+of growth rate for each experiment. Indeed, with the exception of the work of
+Peebo et al., the total mass per cell is generally consistent as a fuction of
+growth rate, and provide some confidence in such an approach.
 
-In the remainder of this section we describe how we correct for differences in
-cellular protein concentration within each inidividual dataset. This  strategy
-was already applied in the work of Schmidt et al., in particularr due to
-concerns  over lower protein extraction efficiency in growth conditions like
-stationary phase.  However, another complicating factor that became apparent is
-a descrpency in expected versus reported cell volume that required additional
-care and is further described below. Lastly, the  data from Peebo {\it et al.}
-required additional care due to a lack quantities on a cell basis, and we
-consider this work seperately.
+In the remainder of this section we describe the rescaling that was done to each
+dataset, with a particular focus on correcting for discrepencies in cellular
+protein concentration, which may reflect differences in protein extraction
+efficiency. It is important to note that with the exception of the work from
+Peebo {\it et al.} (which is discussed more below), any rescaling is only
+performed within the data of individual authors and not performed globally. We
+felt this was important in order not to bias any individuals' work since we lack
+any true standard of protein abundance.
+
+% for differences in
+% cellular protein concentration within each inidividual dataset. This  strategy
+% was already applied in the work of Schmidt et al., in particularr due to
+% concerns  over lower protein extraction efficiency in growth conditions like
+% stationary phase.  However, another complicating factor that became apparent is
+% a descrpency in expected versus reported cell volume that required additional
+% care and is further described below. Lastly, the  data from Peebo {\it et al.}
+% required additional care due to a lack quantities on a cell basis, and we
+% consider this work seperately.
 
 
 \subsection{Corrections to Enforce a Consistent Cellular Protein Concentration}
@@ -119,69 +132,72 @@ consider this work seperately.
 % NB: It may be useful to note that none of this should have any effect on the relative
 % abundances found in each dataset.
 
-
-In order to correct for potential differences in protein extraction across
-growth conditions, Schmidt {\it et al.} required that all cellular concentrations
-be identical. This expectation is justified by work from [ref??]. We can also rationalize
-this from the knowledge that the fraction  of protein dry mass in a cell does not
-vary substantially [ref?].
-
-NB: need to rework - I want to show that protein concentration shouldn't vary very much (and suggest some
-bounds if possible).
-With this in mind, consider estimating the cellular protein
-concentration in a cell. This will be given by the (total mass of a cell) *
-(fraction of dry mass) * (fraction  of dry mass that is protein) / (cell
-volume). The total mass of a cell can also be written as (cell volume) * (cell
-density) . And so we are  left with (cell density) * (fraction of dry mass) *
-(fraction  of dry mass that is protein) . The density is roughly 1.1 g/mL, which
-is relatively fixed, the dry  mass is about 30\%,  while about 55\% of this  is
-protein.
+One parameter that we do not expect to change substantially across growth
+conditions is cellular protein concentration. As a general rule of thumb, we
+expect an {\it e. coli} cell to have about 30\% dry mass, with about 55\% of
+this expected from protein. With a density of about 1.1 g/ml, we find that the
+protein concentration in a cell should be approximately 180 fg/fL.  The cellular
+density and dry mass are essentially fixed, with the fraction of cellular
+protein varying from [X-Y; refs??]. Hence,  this parameter provides a useful
+reference point that datasets should agree on.  Indeed, out of concern over
+differences in protein extraction efficiency in growth phases like stationary
+phase, Schmidt {\it et al.} applied a correction to their measured protein
+abundances to ensure cellular protein concentrations were internally consistent.
 
 
-From the work of Schmidt et al. they report an ability to consistently get high
-protein yield from cells grown in M9 minimal media supplemented with glucose,
-whereas other growth  conditions such as stationary  phase growth being more
-troublesome. Therefore in  order to account any protein loss during extraction,
-they use growth in glucose as a
-constant reference for which total protein concentration in all other growth
+From the work of Schmidt {\it et al.} they reported an ability to consistently get high
+protein yield from cells grown in M9 minimal media supplemented with glucose. In order
+to account any protein loss during extraction, they use their measured protein concentration
+from this sample as a reference for which total protein concentration in all other growth
 conditions should match. This is shown in Figure \ref{}A. One challenge in
 performing this calculation is that cell volume must be known; the authors use
 volumes that were  measured by flow cytometry in previous work [cite]. These
 volumes are shown in Figure \ref{}B. While it is difficult to assess the
 accuracy of these numbers, we find them to be quite inconsistent with the
-expected scaling that is reported by Taheri-Araghi et al. (2015) [and other work?].
+expected scaling that is reported by Taheri-Araghi {\it et al.} (2015),
+carefully
+measured as a function of growth rate [and other work?].
 
-Since cell volume is not determined in all studies, and to be  consistent
-throughout, we instead use the predicted cell volumes that were carefully
-measured as a function of growth rate in the work of Taheri-Araghi et al.
-(2015). Dealing with each author's  proteomic data seperately, we follow the
-approach employed by Schmidt et al., and require that the cellular protein
-concentration be consistent across each set of proteomic data. This  amounts to
-calculating the total protein mass per cell, divided by the estimated cell
-volume,  and then applying a correction factor to correct for any descrepency in
-protein concentration.  For each of the author's work, we have selected a
-reference growth condition with growth rate of about $\lambda \approx 0.5
-hr^{-1}$, which is the growth rate for growth in M9 minimal media supplemented
-with glucose.
+In addition,  since cell volume was not determined in all studies, and to be consistent
+throughout, we instead use the predicted cell volumes from Taheri-Araghi {\it et al.}.
+Dealing with each dataset seperately, we apply correction  factors to correct for discrepencies in
+protein concentration across the different growth conditions considered [NB: I wonder if in these
+other datasets, the more appropriate thing to do is match to the average measured protein concentration].
+Specifically, the scaling factor $\phi$ is given by,
+
+\begin{equation}
+\phi  =  \frac{P_i}{V_i} \cdot [P]_r
+\end{equation}
+
+where $P_i$ is the total protein mass in conditino $i$, $V_i$ is the estimated cell volume, and $[P]_r$ is
+the reference protein concentration (i.e. growth in  glucose for the Schmidt data).
+
+% This  amounts to
+% calculating the total protein mass per cell, divided by the estimated cell
+% volume,  and then applying a correction factor to correct for any descrepency in
+% protein concentration.  For each of the author's work, we have selected a
+% reference growth condition with growth rate of about $\lambda \approx 0.5
+% hr^{-1}$, which is the growth rate for growth in M9 minimal media supplemented
+% with glucose.
 
 
 \subsection{Peebo {\it et al.}: Conversion from copies/ fL to copies per cell}
 
 In the work of Peebo {\it et al.}, the authors only report protein concentration.
-In  order to estimate protein per cell, we multiple  these concentrations by
-expected cell volumes  using the predictions from  Taheri-Araghi et al. This is
+In  order to determine protein per cell, we multiple these concentrations by
+expected cell volumes  using the predictions from  Taheri-Araghi {\it et al.} This is
 shown in Figure \ref{}A, where we see that reported mass is substantially lower than
 the other work considered here; as well as work from others [Sinauer, 1990].
 
-Indeed, both Schmidt et al. and Li et al. reported a total protein mass of about
+Indeed, both Schmidt {\it et al.} and Li {\it et al.} reported a total protein mass of about
 250 fg per cell at a growth rate of about $\lambda \approx 0.5 hr^{-1}$ ( M9
 minimal media with glucose and MOPS minimal media, respectively). Given this
 descrepency, in addition to requiring that cellular protein concentration be
 internally consistent across the growth conditions they reported on, we also
-required that total cellular mass be consistent with the work Schmidt et al. and
-Li et al. This amounted to performing a linear regression between total protein
-mass and growth rate, and using this to scale the Peebo et al. dataset according
-to this trend. 
+required that total cellular mass be consistent with the work Schmidt {\it et al.} and
+Li {\it et al.} This amounted to performing a linear regression between total protein
+mass and growth rate, and using this to scale the Peebo {\it et al.} dataset according
+to this trend.
 
 
  % cell biology by the numebrs: Overall macromolecular composition of an average

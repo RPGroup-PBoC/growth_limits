@@ -34,7 +34,8 @@ for g, d in tqdm.tqdm(counts.groupby('gene'), desc="Iterating through genes...")
         mw = gene['mw_fg'].values[0]
         go_term = ';'.join(list(gene['go_terms'].unique()))
         for _c, _d in d.groupby(['growth_rate_hr-1']):
-            vol = 0.27*2**(0.76*_c)
+            # volume prediction Si, F. et al. (2017), Current Biology, http://doi.org/10.1016/j.cub.2017.03.022
+            vol = 0.28 * np.exp(1.33  * _c)
             # extract relevant information.
             gene_dict = {
                 'gene_name': g.lower(),
@@ -88,13 +89,13 @@ df['strain'] = 'BW25113'
 # mass per cell). Perform regression on Schmidt fg vs. growth rate and use this
 # to predict the mass per cell for each Peebo condition.
 # 2. (DONE ABOVE) Calculate fg per cell using estimates of cell volume from
-# the 'growth law' relations quantified in Taheri-Araghi et al. 2015.
+# the 'growth law' relations quantified in Si, F. et al. (2017), Current Biology.
 # 3. Apply correction factor to Peebo quantities; this'll effectively adjust
 # their values so that the fg/fL is consistent with Schmidt and Valgepea.
 
 # Determine fg as a function of growth rate using Schmidt et al. data (which
 # we have also corrected for discrepencies in cell volume, now using the
-# volume predictions of Taheri-Araghi et al. 2015).
+# volume predictions of Si, F. et al. (2017), Current Biology.
 
 # #%% STEP 1: Determine expected fg as function of growth rate using Schimdt data
 bnum_list = df.b_number.unique()

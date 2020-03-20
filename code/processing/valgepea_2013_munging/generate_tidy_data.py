@@ -19,7 +19,7 @@ dfs = []
 for g, d in tqdm.tqdm(counts.groupby(['gene', 'growth_rate_hr-1']), desc="Iterating through genes..."):
     # Determine number of entries per gene
     gene = colicogs[colicogs['gene_name'].str.lower()==g[0].split(',')[0].lower()]
-      
+
     if len(gene) > 0:
         cog_class = gene['cog_class'].values[0]
         cog_cat = gene['cog_category'].values[0]
@@ -28,14 +28,15 @@ for g, d in tqdm.tqdm(counts.groupby(['gene', 'growth_rate_hr-1']), desc="Iterat
         go_term = ';'.join(list(gene['go_terms'].unique()))
         mw = gene['mw_fg'].values[0]
         b_number = gene['b_number'].values[0]
-        vol = 0.27*2**(0.76*g[1])
+        # volume prediction Si, F. et al. (2017), Current Biology, http://doi.org/10.1016/j.cub.2017.03.022
+        vol = 0.28 * np.exp(1.33  * g[1])
         # extract relevant information.
         gene_dict = {
                     'gene_name': gene['gene_name'].unique()[0],
                     'b_number':b_number,
                     'condition': 'glucose_minimal',
                     'reported_tot_per_cell': d['copy_number'].values[0],
-                    'reported_fg_per_cell':d['copy_number'].values[0] * mw, 
+                    'reported_fg_per_cell':d['copy_number'].values[0] * mw,
                     'cog_class': cog_class,
                     'cog_category': cog_cat,
                     'cog_letter': cog_letter,
@@ -51,7 +52,7 @@ for g, d in tqdm.tqdm(counts.groupby(['gene', 'growth_rate_hr-1']), desc="Iterat
 # Compute the mass per cell and include dataset notation.
 df = pd.concat(dfs, sort=False)
 #%%
-# Do the concentration correction 
+# Do the concentration correction
 _conditions = df.groupby(['condition', 'growth_rate_hr', 'corrected_volume']).sum().reset_index()
 _conditions['concentration'] = _conditions['reported_fg_per_cell'].values / _conditions['corrected_volume']
 ref_conc = _conditions[_conditions['growth_rate_hr']==0.49]['concentration'].values[0]

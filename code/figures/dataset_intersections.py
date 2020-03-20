@@ -38,7 +38,7 @@ set_df.set_index([g for g in set_df.keys() if g != 'gene_name'], inplace=True)
 upsetplot.plot(set_df, sum_over='gene_name', show_counts=True, 
                 sort_by='cardinality',
                facecolor=colors['blue'], element_size=45)
-plt.savefig('../../figures/intersections.pdf', bbox_inches='tight')
+plt.savefig('../../figures/intersections.svg', bbox_inches='tight')
 
 
 # %%

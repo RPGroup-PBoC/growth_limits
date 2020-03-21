@@ -13,7 +13,6 @@
 \usepackage{color}
 \usepackage{wrapfig}
 \usepackage[font=small,labelfont=bf]{caption}
-%\usepackage{epsfig}
 \author{N. Belliveau, G. Chure, J. Theriot, R. Phillips}
 
 \begin{document}
@@ -52,23 +51,23 @@ protein (YFP) and used fluoresence as readout of cellular expression.
 
 
 \begin{center}
-\begin{tabular}{ || c | c | c || }
+\begin{tabular}{ || c | c | c | c | c | c  | c || }
 \hline
-Author & Method & strain & Reported Quantity & fractional coverage (by count) & fractional coverage (by mass) \\
+Author & Method & Strain & $N$ datasets & Reported Quantity & fractional coverage (by count) & fractional coverage (by mass) \\
 \hline\hline
-Taniguchi {\it et al.} (2010) & & YFP-fusion, cell fluorescence & fg/copies per cell & & \\
+Taniguchi {\it et al.} (2010) & YFP-fusion, cell fluorescence  & & & fg/copies per cell & & \\
 \hline
-Valgepea {\it et al.} (2012) & & Mass spectrometry & fg/copies per cell & & \\
+Valgepea {\it et al.} (2012) & Mass spectrometry  & & & fg/copies per cell & & \\
 \hline
-Peebo {\it et al.} (2014) & & Mass spectrometry & fg/copies per fL & & \\
+Peebo {\it et al.} (2014) & Mass spectrometry  & & & fg/copies per fL & & \\
 \hline
-Li {\it et al.} (2014) & & Ribosomal profiling & protein synthesis rate & & \\
+Li {\it et al.} (2014) & Ribosomal profiling  & & & protein synthesis rate & & \\
 \hline
-Soufi {\it et al.} (2015) & & Mass spectrometry & fg/copies per cell & &\\
+Soufi {\it et al.} (2015) & Mass spectrometry  & & & fg/copies per cell & &\\
 \hline
-Schmidt {\it et al.} (2016) & & Mass spectrometry & fg/copies per cell & & \\
+Schmidt {\it et al.} (2016) & Mass spectrometry  & & & fg/copies per cell & & \\
 \hline
-Caglar {\it et al.} (2017) & & Mass spectrometry & relative abundance & &\\
+Caglar {\it et al.} (2017) & Mass spectrometry  & & & relative abundance & &\\
 \hline
 \end{tabular}
 \label{table:datasets}
@@ -79,7 +78,14 @@ of  the data.
 
 An important consideration is whether the reported abundance per cell are correlated. while
 we expect some variability in expression of each protein due to growth rate, the reported
-values are nonetheless expected to be correlated. Figure \ref{} compares each dataset to the copy numbers from Schmidt {\it et al.}, grown in M9 minimal media supplemented with glucose.
+values are nonetheless expected to be correlated. Figure \ref{fig:dataset_correlations} compares each dataset to the copy numbers from Schmidt {\it et al.}, grown in M9 minimal media supplemented with glucose.
+
+\begin{figure}[H]
+		\centering
+    \includegraphics[width=1\textwidth]{../../figures/dataset_correlations.pdf}
+  \caption{}
+  \label{fig:dataset_correlations}
+\end{figure}
 
 
 \section{Adjustments to Copy Number Data.}
@@ -158,12 +164,13 @@ expected scaling that is reported by Taheri-Araghi {\it et al.} (2015),
 carefully
 measured as a function of growth rate [and other work?].
 
-In addition,  since cell volume was not determined in all studies, and to be consistent
-throughout, we instead use the predicted cell volumes from Taheri-Araghi {\it et al.}.
-Dealing with each dataset seperately, we apply correction  factors to correct for discrepencies in
-protein concentration across the different growth conditions considered [NB: I wonder if in these
-other datasets, the more appropriate thing to do is match to the average measured protein concentration].
-Specifically, the scaling factor $\phi$ is given by,
+In addition,  since cell volume was not determined in all studies, and to be
+consistent throughout, we instead use the predicted cell volumes from
+Taheri-Araghi {\it et al.}. Dealing with each dataset seperately, we apply
+correction  factors to correct for discrepencies in protein concentration across
+the different growth conditions considered [NB: I wonder if in these other
+datasets, the more appropriate thing to do is match to the average measured
+protein concentration]. Specifically, the scaling factor $\phi$ is given by,
 
 \begin{equation}
 \phi  =  \frac{P_i}{V_i} \cdot [P]_r
@@ -171,14 +178,6 @@ Specifically, the scaling factor $\phi$ is given by,
 
 where $P_i$ is the total protein mass in conditino $i$, $V_i$ is the estimated cell volume, and $[P]_r$ is
 the reference protein concentration (i.e. growth in  glucose for the Schmidt data).
-
-% This  amounts to
-% calculating the total protein mass per cell, divided by the estimated cell
-% volume,  and then applying a correction factor to correct for any descrepency in
-% protein concentration.  For each of the author's work, we have selected a
-% reference growth condition with growth rate of about $\lambda \approx 0.5
-% hr^{-1}$, which is the growth rate for growth in M9 minimal media supplemented
-% with glucose.
 
 
 \subsection{Peebo {\it et al.}: Conversion from copies/ fL to copies per cell}
@@ -209,16 +208,7 @@ to this trend.
  % to 1000 fg as
 
 %
-% \begin{figure}[H]
-% 		\centering
-%   \begin{tabular}{ l  l }
-% 	  A) & B) \\
-% 	      \includegraphics[width=0.55\textwidth]{SILAC_corr_O3_2.pdf} &
-% 	       \includegraphics[width=0.55\textwidth]{deltaSILAC_corr_O3.pdf} \\
-%   \end{tabular}
-%   \caption{}
-%   \label{fig:HQ1Q2}
-% \end{figure}
+
 
 
 \end{document}

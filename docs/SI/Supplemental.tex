@@ -12,6 +12,7 @@
 \usepackage{multirow}
 \usepackage{color}
 \usepackage{wrapfig}
+\usepackage{tabularx}
 \usepackage[font=small,labelfont=bf]{caption}
 \author{N. Belliveau, G. Chure, J. Theriot, R. Phillips}
 
@@ -50,8 +51,8 @@ details of this are beyond the scope of this section). In the work of Taniguchi
 protein (YFP) and used fluoresence as readout of cellular expression.
 
 
-\begin{center}
-\begin{tabular}{ || c | c | c | c | c | c  | c || }
+% \begin{center}
+\begin{tabularx}{.8\textwidth}{ || c | c | c | c | c | c | c || }
 \hline
 Author & Method & Strain & $N$ datasets & Reported Quantity & fractional coverage (by count) & fractional coverage (by mass) \\
 \hline\hline
@@ -69,9 +70,9 @@ Schmidt {\it et al.} (2016) & Mass spectrometry  & & & fg/copies per cell & & \\
 \hline
 Caglar {\it et al.} (2017) & Mass spectrometry  & & & relative abundance & &\\
 \hline
-\end{tabular}
-\label{table:datasets}
-\end{center}
+\end{tabularx}
+% \label{table:datasets}
+% \end{center}
 
 Figure \ref{} shows the distribution in reported protein abundance for   a  subset
 of  the data.
@@ -83,6 +84,13 @@ values are nonetheless expected to be correlated. Figure \ref{fig:dataset_correl
 \begin{figure}[H]
 		\centering
     \includegraphics[width=1\textwidth]{../../figures/dataset_correlations.pdf}
+  \caption{}
+  \label{fig:dataset_correlations}
+\end{figure}
+
+\begin{figure}[H]
+		\centering
+    \includegraphics[width=1\textwidth]{../../figures/dataset_corrections.pdf}
   \caption{}
   \label{fig:dataset_correlations}
 \end{figure}

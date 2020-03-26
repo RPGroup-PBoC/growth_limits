@@ -25,7 +25,6 @@ import prot.voronoimap as map
 # Load the dataset with aboslute measurements
 
 df_all = pd.read_csv('../../../data/compiled_absolute_measurements.csv')
-df_all = df_all[df_all.dataset == 'schmidt_2016']
 data_group = df_all.groupby(['dataset', 'condition', 'growth_rate_hr'])
 
 #####################################
@@ -63,17 +62,14 @@ def data_for_tree(frac_, d, tree_i, cog_dict):
 
 
 proteomap_df_ref = \
-    gpd.read_file("../../../data/voronoi_map_data/treemap_Schmidt_glucose.geojson",
+    gpd.read_file("../../../data/voronoi_map_data/treemap_schmidt_2016_glucose_0.58.geojson",
                                      driver='GeoJSON')
 
 
 #####################################
 # Generate weighted Voronoi map for each dataset
-count_ = 0
 for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
-    if count_ > 0:
-        continue
-    count_ = 1
+
     if [dets[0], dets[1]] == ['schmidt_2016', 'glucose']:
         continue
 
@@ -154,7 +150,7 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                 break
 
         else:
-
+            continue
             area_whole = map.border_map().area
             # print(area_whole)
             for cat, cell in proteomap_df[proteomap_df['level'] == tree_i-1].groupby(tree_structure[tree_i-1]):
@@ -255,9 +251,9 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
     ########################################
     #  Save to file
     if proteomap_df.empty:
-        print('Map not found for: ' + dets[0] + ',' + dets[1] + ',' + str(dets[2]))
+        print('Map not found for: ' + dets[0] + ',' + dets[1] + ',' + str(round(dets[2], 2)))
     else:
-        print('saving map for: ' + dets[0] + ',' + dets[1] + ',' + str(dets[2]))
+        print('saving map for: ' + dets[0] + ',' + dets[1] + ',' + str(round(dets[2], 2)))
         proteomap_df.to_file('../../../data/voronoi_map_data/treemap_' +
-                    dets[0] + '_' + dets[1] + '_' + str(dets[2]) + '.geojson',
+                    dets[0] + '_' + dets[1] + '_' + str(round(dets[2],2)) + '.geojson',
                         driver='GeoJSON')

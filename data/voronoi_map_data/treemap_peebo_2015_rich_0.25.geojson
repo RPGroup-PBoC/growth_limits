@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "index": 0, "level": 0, "cog_category": null, "cog_class": "Not Assigned", "cog_dict": 3.0, "gene_name": null, "mass_frac": 0.011503778380256022 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -8.622287833609164, -15.0 ], [ -15.0, -15.0 ], [ -15.0, -7.172908585452769 ], [ -8.622287833609164, -15.0 ] ] ] } },
+{ "type": "Feature", "properties": { "index": 1, "level": 0, "cog_category": null, "cog_class": "cellular processes and signaling", "cog_dict": 0.0, "gene_name": null, "mass_frac": 0.19163573646619805 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -15.0, 3.256783221282322 ], [ -15.0, 15.0 ], [ 0.689698746016723, 15.0 ], [ 0.063822488003416, 9.556365296467359 ], [ -15.0, 3.256783221282322 ] ] ] } },
+{ "type": "Feature", "properties": { "index": 2, "level": 0, "cog_category": null, "cog_class": "information storage and processing", "cog_dict": 2.0, "gene_name": null, "mass_frac": 0.22894479989986805 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 0.689698947334284, 15.0 ], [ 15.0, 15.0 ], [ 15.0, -0.373795952378777 ], [ 11.736417283125997, -0.954405227426427 ], [ 0.063822685890205, 9.556365266627799 ], [ 0.689698947334284, 15.0 ] ] ] } },
+{ "type": "Feature", "properties": { "index": 3, "level": 0, "cog_category": null, "cog_class": "metabolism", "cog_dict": 1.0, "gene_name": null, "mass_frac": 0.55199189403278459 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -15.0, -7.172908268835674 ], [ -15.0, 3.256783004498078 ], [ 0.063822560804792, 9.556365110128125 ], [ 11.736417135621439, -0.954405363738432 ], [ 6.66323052678265, -15.0 ], [ -8.622287575621543, -15.0 ], [ -15.0, -7.172908268835674 ] ] ] } },
+{ "type": "Feature", "properties": { "index": 4, "level": 0, "cog_category": null, "cog_class": "poorly characterized", "cog_dict": 4.0, "gene_name": null, "mass_frac": 0.015923791220893314 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 15.0, -0.373796155519158 ], [ 15.0, -15.0 ], [ 6.663230739428949, -15.0 ], [ 11.736417326945492, -0.95440542277108 ], [ 15.0, -0.373796155519158 ] ] ] } }
+]
+}

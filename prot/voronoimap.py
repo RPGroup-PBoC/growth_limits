@@ -319,32 +319,31 @@ def AdaptWeights(V_cell, S, bound, W, w_desired, err = 0.001):
             if (Point(s).within(cell_)):
                 cell = cell_
 
-
         A_current = cell.area
         A_desired = bound.area * w_desired[i]
 
         f_adapt = A_desired / A_current
 
         w_new_ = np.sqrt(W[i]) * f_adapt
-#         w_new_ = W[i] * f_adapt
+
         w_max = abs(LineString(NN).length)
 
         W_ = np.min([w_new_, w_max])**2
-#         W_new.append(W_)
+
         W_new.append(np.max([W_, err]))
 
     return W_new
 
-def compute_power_voronoi_map_(S, W, border, eps = 1E-6):
-    result = None
-    while result is None:
-        try:
-            V_cell = compute_power_voronoi_map(S, W, border, eps = 1E-6)
-            result = True
-            return V_cell
-
-        except:
-            pass
+# def compute_power_voronoi_map_(S, W, border, eps = 1E-6):
+#     result = None
+#     while result is None:
+#         try:
+#             V_cell = compute_power_voronoi_map(S, W, border, eps = 1E-6)
+#             result = True
+#             return V_cell
+#
+#         except:
+#             pass
 
 def map_iterator(S, W,  border, weights):
     # generate initial Voronoi cells
@@ -459,3 +458,31 @@ def S_find_centroid(proteomap, tree):
     S = np.array(list(map(list, S_)))
 
     return S
+
+
+def S_transform(S_shapely, translation):
+    """
+    Performs translation and scaling of Voronoi positions based on the difference
+    of current cell and reference cell.
+
+    Parameters
+    ----------
+    S_shapely: MultiPoint shapely type
+
+    Returns
+    -------
+    S: (N,  2) numpy.ndarray
+        Array of N Voronoi points.
+    """
+    if S_shapely.within(border) == False:
+        S_shapely = shapely.affinity.translate(S_shapely, xoff=translation[0], yoff=translation[1])
+
+        while S_shapely.within(border) == False:
+            S_shapely = shapely.affinity.scale(S_shapely, xfact=0.9, yfact=0.9)
+
+        S = np.array([[s.x,s.y] for s in S_shapely])
+
+        return S
+    else:
+        S = np.array([[s.x,s.y] for s in S_shapely])
+        return S

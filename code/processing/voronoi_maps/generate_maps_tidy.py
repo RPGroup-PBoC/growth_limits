@@ -65,11 +65,13 @@ proteomap_df_ref = \
     gpd.read_file("../../../data/voronoi_map_data/treemap_schmidt_2016_glucose_0.58.geojson",
                                      driver='GeoJSON')
 
-
+count_ = 0
 #####################################
 # Generate weighted Voronoi map for each dataset
 for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
-
+    if count_ ==1:
+        continue
+    count_ += 1
     if [dets[0], dets[1]] == ['schmidt_2016', 'glucose']:
         continue
 
@@ -150,7 +152,7 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                 break
 
         else:
-            continue
+            # continue
             area_whole = map.border_map().area
             # print(area_whole)
             for cat, cell in proteomap_df[proteomap_df['level'] == tree_i-1].groupby(tree_structure[tree_i-1]):
@@ -160,7 +162,7 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                     continue
                     # tree = 'gene_name'
                     # tree_i = 2
-                print(tree, ' : ',  cat, tree_i)
+                print('tree level: ', tree_i, ' : ', cat)
                 # data to consider for cell
                 data_tree = data[data[tree_structure[(tree_i-1)]] == cat]
 
@@ -186,7 +188,7 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                 error_calc = np.inf
                 count = 0
 
-                while (error_calc >= 0.1) and (count <=15):
+                while (error_calc >= 0.1) and (count <=5):
                     count += 1
                     print(count)
                     try:
@@ -199,7 +201,27 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                         else:
                             map_ref = proteomap_df_ref[proteomap_df_ref['level']==tree_i]
                             map_ref = map_ref[map_ref[tree_structure[tree_i-1]]==cat]
+
+                            cell_ref = proteomap_df_ref[proteomap_df_ref['level']==(tree_i-1)]
+                            cell_ref = cell_ref[cell_ref[tree_structure[tree_i-1]]==cat].geometry
+
+                            # we need to translate and scale reference seed points so that they
+                            # fall within our new cell.
+
+                            translation = [(border.centroid.x - cell_ref.centroid.x).values[0],
+                                                    (border.centroid.y - cell_ref.centroid.y).values[0]]
+
                             S = map.S_find_centroid(map_ref,  tree)
+                            S = map.S_transform(MultiPoint(S), translation)
+                            #
+                            #
+                            # if S_shapely.within(border) == False:
+                            #     S_shapely = shapely.affinity.translate(S_shapely, xoff=translation[0], yoff=translation[1])
+                            #
+                            #     while S_shapely.within(border) == False:
+                            #         S_shapely = shapely.affinity.scale(S_shapely, xfact=0.9, yfact=0.9)
+                            #
+                            # S = np.array([[s.x,s.y] for s in S_shapely])
 
                         # Initialize random set of weightings for Voronoi cells.
                         W = (.8 * np.random.random(sample_count) + .2) * (border.area / area_whole)
@@ -253,7 +275,7 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
     if proteomap_df.empty:
         print('Map not found for: ' + dets[0] + ',' + dets[1] + ',' + str(round(dets[2], 2)))
     else:
-        print('saving map for: ' + dets[0] + ',' + dets[1] + ',' + str(round(dets[2], 2)))
+        print('count_:', count_, '. Saving map for: ' + dets[0] + ',' + dets[1] + ',' + str(round(dets[2], 2)))
         proteomap_df.to_file('../../../data/voronoi_map_data/treemap_' +
                     dets[0] + '_' + dets[1] + '_' + str(round(dets[2],2)) + '.geojson',
                         driver='GeoJSON')

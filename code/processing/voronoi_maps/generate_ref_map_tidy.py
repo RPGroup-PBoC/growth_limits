@@ -47,10 +47,13 @@ proteomap_df_ref = \
 
 
 
-
+count_ = 0
 #####################################
 # Generate weighted Voronoi map for each dataset
 for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
+    if count_ ==1:
+        continue
+    count_ += 1
 
     # only deal with genes > 0.1% of total.
     df_temp = pd.DataFrame()
@@ -62,23 +65,18 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
     data = data.merge(df_temp, on = 'gene_name')
     data = data[data.frac_mass_tot  >= 0.0001]
 
-
-    # if [dets[0], dets[1]] == ['li_2014', 'MOPS complete']:
-    #     continue
-
+    if [dets[0], dets[1]] == ['schmidt_2016', 'glucose']:
+        continue
 
     # initialize DataFrame to store map.
     proteomap_df = pd.DataFrame()
-    # proteomap_df = \
-    # gpd.read_file("../../../data/voronoi_map_data/treemap_li_2014_MOPS complete_1.93_ref.geojson",
-    #                                  driver='GeoJSON')
 
     for tree_i, tree in enumerate(tree_structure):
 
         if tree_i == 0:
-            # continue
+            continue
             print('Initialize map.')
-            # print('tree level: ', tree_i, ' : ', )
+
             # define boundary of entire map
             border = map.border_map()
 
@@ -134,7 +132,7 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                                 if (Point(s).within(cell_)):
                                     cell =  cell_
                             A_diff += abs(cell.area - border.area * weights[i])
-                        # print(A_diff/(2*border.area))
+                        print(A_diff/(2*border.area))
 
                         if A_diff/(2*border.area) < error_calc:
                             V_cell = V
@@ -148,7 +146,7 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
 
             # if no errors encountered and map generated, append to DataFrame
             if error_calc != np.inf:
-                print(error_calc)
+                # print(error_calc)
                 gdf = pd.concat([gpd.GeoSeries(cell_) for s in S_final
                                      for cell_ in V_cell
                                      if Point(s).within(cell_)
@@ -163,22 +161,24 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                 break
 
         else:
-            # if tree_i == 2:
-            #     continue
+            # if tree_i >= 1:
+            continue
 
             area_whole = map.border_map().area
             # print(area_whole)
             for cat, cell in proteomap_df[proteomap_df['level'] == tree_i-1].groupby(tree_structure[tree_i-1]):
                 print(cat)
-
+                # if cat != 'RNA processing and modification':
+                #     continue
                 # For 'Not Assigned' go straigh to gene names
                 if cat == 'Not Assigned':
                     tree = 'gene_name'
                     tree_i = 2
 
+                # print('tree level: ', tree_i, ' : ', cat)
                 # data to consider for cell
                 data_tree = data[data[tree_structure[(tree_i-1)]] == cat]
-                print(len(data_tree))
+                print(data_tree)
                 border = cell.geometry[cell.index[0]]
 
                 # compute desired cell weightings
@@ -205,31 +205,7 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                     try:
                         # number of cells
                         sample_count = len(frac)
-                        # S = map.random_points_within(border,  sample_count)
-                        if tree_i == 2:
-                            S = map.random_points_within(border,  sample_count)
-                        else:
-                            map_ref = proteomap_df_ref[proteomap_df_ref['level']==tree_i]
-                            map_ref = map_ref[map_ref[tree_structure[tree_i-1]]==cat]
-
-                            cell_ref = proteomap_df_ref[proteomap_df_ref['level']==(tree_i-1)]
-                            cell_ref = cell_ref[cell_ref[tree_structure[tree_i-1]]==cat].geometry
-
-                            # we need to translate and scale reference seed points so that they
-                            # fall within our new cell.
-                            translation = [(border.centroid.x - cell_ref.centroid.x).values[0],
-                                                    (border.centroid.y - cell_ref.centroid.y).values[0]]
-
-                            S = map.S_find_centroid(map_ref,  tree)
-
-                            S_shapely = MultiPoint(S)
-                            if S_shapely.within(border) == False:
-                                S_shapely = shapely.affinity.translate(S_shapely, xoff=translation[0], yoff=translation[1])
-
-                                while S_shapely.within(border) == False:
-                                    S_shapely = shapely.affinity.scale(S_shapely, xfact=0.9, yfact=0.9)
-
-                                S = np.array([[s.x,s.y] for s in S_shapely])
+                        S = map.random_points_within(border,  sample_count)
 
                         # Initialize random set of weightings for Voronoi cells.
                         W = (.8 * np.random.random(sample_count) + .2) * (border.area / map.border_map().area) / 1000.0
@@ -291,12 +267,12 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                     tree_i = 1
 
 
-    ########################################
-    #  Save to file
-    if proteomap_df.empty:
-        print('Map not found for: ' + dets[0] + ',' + dets[1] + ',' + str(round(dets[2], 2)))
-    else:
-        print('Saving map for: ' + dets[0] + ',' + dets[1] + ',' + str(round(dets[2], 2)))
-        proteomap_df.to_file('../../../data/voronoi_map_data/treemap_' +
-                    dets[0] + '_' + dets[1] + '_' + str(round(dets[2],2)) + '.geojson',
-                        driver='GeoJSON')
+    # ########################################
+    # #  Save to file
+    # if proteomap_df.empty:
+    #     print('Map not found for: ' + dets[0] + ',' + dets[1] + ',' + str(round(dets[2], 2)))
+    # else:
+    #     print('count_:', count_, '. Saving map for: ' + dets[0] + ',' + dets[1] + ',' + str(round(dets[2], 2)))
+    #     proteomap_df.to_file('../../../data/voronoi_map_data/treemap_' +
+    #                 dets[0] + '_' + dets[1] + '_' + str(round(dets[2],2)) + '_ref.geojson',
+    #                     driver='GeoJSON')

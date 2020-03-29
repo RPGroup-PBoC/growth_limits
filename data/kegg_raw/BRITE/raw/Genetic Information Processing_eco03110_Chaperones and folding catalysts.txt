@@ -1,0 +1,103 @@
++D	Chaperone	KO
+#<h2><a href="/kegg/kegg2.html"><img src="/Fig/bget/kegg3.gif" align="middle" border=0></a>&nbsp; Chaperones and Folding Catalysts - Escherichia coli K-12 MG1655</h2>
+%<style type="text/css"><!-- #grid{ table-layout:fixed; font-family: monospace; position: relative;width: 1200px; color: black; }.col1{ position: relative; background : white; z-index: 1; width: 600px; overflow: hidden; }.col2{ position: relative; background : white; z-index: 2; padding-left: 10px; }--></style>
+!
+A<b>Heat shock proteins</b>
+B  HSP110
+B  HSP100
+C    b0882 clpA; ATP-dependent Clp protease ATP-binding subunit ClpA	K03694 clpA; ATP-dependent Clp protease ATP-binding subunit ClpA 
+C    b2592 clpB; ClpB chaperone	K03695 clpB; ATP-dependent Clp protease ATP-binding subunit ClpB 
+C    b0438 clpX; ATP-dependent Clp protease ATP-binding subunit ClpX	K03544 clpX; ATP-dependent Clp protease ATP-binding subunit ClpX 
+C    b3931 hslU; ATPase component of the HslVU protease	K03667 hslU; ATP-dependent HslUV protease ATP-binding subunit HslU 
+B  HSP90
+C    b0473 htpG; chaperone protein HtpG	K04079 HSP90A; molecular chaperone HtpG 
+B  HSP70 / DNAK
+C    b0014 dnaK; chaperone protein DnaK	K04043 dnaK; molecular chaperone DnaK 
+C    b2526 hscA; iron-sulfur cluster biosynthesis chaperone HscA	K04044 hscA; molecular chaperone HscA 
+C    b0650 hscC; chaperone protein HscC	K04045 hscC; molecular chaperone HscC 
+C    b2069 yegD; HSP70 family protein YegD	K04046 yegD; hypothetical chaperone protein 
+B  HSP60 / Chaperonin
+C    b4143 groL; chaperonin GroEL	K04077 groEL; chaperonin GroEL 
+B  HSP47
+B  HSP40 / DNAJ
+C    b0015 dnaJ; chaperone protein DnaJ	K03686 dnaJ; molecular chaperone DnaJ 
+C    b1000 cbpA; curved DNA-binding protein	K05516 cbpA; curved DNA-binding protein 
+C    b0055 djlA; co-chaperone protein DjlA	K05801 djlA; DnaJ like chaperone protein 
+C    b2527 hscB; co-chaperone for [Fe-S] cluster biosynthesis	K04082 hscB; molecular chaperone HscB 
+B  HSP33
+C    b3401 hslO; molecular chaperone Hsp33	K04083 hslO; molecular chaperone Hsp33 
+B  HSP24
+C    b2614 grpE; nucleotide exchange factor GrpE	K03687 GRPE; molecular chaperone GrpE 
+B  HSP20
+C    b3687 ibpA; small heat shock protein IbpA	K04080 ibpA; molecular chaperone IbpA 
+C    b3686 ibpB; small heat shock protein IbpB	K04081 ibpB; molecular chaperone IbpB 
+B  HSP15
+C    b3400 hslR; heat shock protein Hsp15	K04762 hslR; ribosome-associated heat shock protein Hsp15 
+B  HSP10
+C    b4142 groS; cochaperonin GroES	K04078 groES; chaperonin GroES 
+B  GimC
+#
+A<b>Other chaperones and cochaperones</b>
+B  Calnexin / calreticulin
+B  DegP / HtrA
+C    b0161 degP; periplasmic serine endoprotease DegP	K04771 degP; serine protease Do [EC:3.4.21.107] 
+B  AAA proteases
+C    b3178 ftsH; ATP-dependent zinc metalloprotease FtsH	K03798 ftsH; cell division protease FtsH [EC:3.4.24.-] 
+B  PapD
+C    b3738 atpB; ATP synthase Fo complex subunit a	K02108 ATPF0A; F-type H+-transporting ATPase subunit a 
+C    b4316 fimC; type 1 fimbriae periplasmic chaperone	K07346 fimC; fimbrial chaperone protein 
+B  SecB
+C    b3609 secB; SecB chaperone	K03071 secB; preprotein translocase subunit SecB 
+B  Sti1 / p60
+B  Cdc37 / p50
+B  BAG
+B  Others
+C    b4484 cpxP; periplasmic protein CpxP	K06006 cpxP; periplasmic protein CpxP/Spy 
+C    b1743 spy; ATP-independent periplasmic chaperone	K06006 cpxP; periplasmic protein CpxP/Spy 
+C    b4002 zraP; zinc responsive, periplasmic protein with chaperone activity	K07803 zraP; zinc resistance-associated protein 
+C    b3510 hdeA; HdeA monomer, chaperone active form	K19777 hdeA; acid stress chaperone HdeA 
+C    b3509 hdeB; periplasmic acid stress chaperone	K19778 hdeB; acid stress chaperone HdeB 
+C    b2726 hypA; hydrogenase 3 nickel incorporation protein HypA	K04651 hypA; hydrogenase nickel incorporation protein HypA/HybF 
+C    b2991 hybF; hydrogenase maturation protein HybF	K04651 hypA; hydrogenase nickel incorporation protein HypA/HybF 
+C    b2727 hypB; hydrogenase isoenzymes nickel incorporation protein HypB	K04652 hypB; hydrogenase nickel incorporation protein HypB 
+C    b0998 torD; trimethylamine-N-oxide reductase-specific chaperone	K03533 torD; TorA specific chaperone 
+C    b1591 dmsD; redox enzyme maturation protein DmsD	K23349 dmsD; putative dimethyl sulfoxide reductase chaperone 
+#
+A<b>Intramolecular chaperones</b>
+B  Subtilisin family
+B  Papain family
+B  Other peptidases
+B  Others
+#
+A<b>Protein folding catalysts</b>
+B  Peptidyl prolyl isomerase
+C    Cyclophilin
+D      b3363 ppiA; peptidyl-prolyl cis-trans isomerase A	K03767 PPIA; peptidyl-prolyl cis-trans isomerase A (cyclophilin A) [EC:5.2.1.8] 
+D      b0525 ppiB; peptidyl-prolyl cis-trans isomerase B	K03768 PPIB; peptidyl-prolyl cis-trans isomerase B (cyclophilin B) [EC:5.2.1.8] 
+D      b0441 ppiD; periplasmic folding chaperone	K03770 ppiD; peptidyl-prolyl cis-trans isomerase D [EC:5.2.1.8] 
+C    FKBP
+D      b3347 fkpA; peptidyl-prolyl cis-trans isomerase FkpA	K03772 fkpA; FKBP-type peptidyl-prolyl cis-trans isomerase FkpA [EC:5.2.1.8] 
+D      b4207 fklB; FKBP-type peptidyl-prolyl cis-trans isomerase FklB	K03773 fklB; FKBP-type peptidyl-prolyl cis-trans isomerase FklB [EC:5.2.1.8] 
+D      b0028 fkpB; peptidyl-prolyl cis-trans isomerase FkpB	K03774 slpA; FKBP-type peptidyl-prolyl cis-trans isomerase SlpA [EC:5.2.1.8] 
+D      b3349 slyD; FKBP-type peptidyl-prolyl cis-trans isomerase SlyD	K03775 slyD; FKBP-type peptidyl-prolyl cis-trans isomerase SlyD [EC:5.2.1.8] 
+C    Parvulin
+D      b3775 ppiC; peptidyl-prolyl cis-trans isomerase C	K03769 ppiC; peptidyl-prolyl cis-trans isomerase C [EC:5.2.1.8] 
+D      b0053 surA; peptidyl-prolyl cis-trans isomerase SurA	K03771 surA; peptidyl-prolyl cis-trans isomerase SurA [EC:5.2.1.8] 
+B  Protein disulfide isomerase
+C    b3781 trxA; thioredoxin 1	K03671 trxA; thioredoxin 1 
+C    b2582 trxC; reduced thioredoxin 2	K03672 trxC; thioredoxin 2 [EC:1.8.1.8] 
+C    b0492 cnoX; chaperedoxin	K05838 ybbN; putative thioredoxin 
+C    b0849 grxA; reduced glutaredoxin 1	K03674 grxA; glutaredoxin 1 
+C    b1064 grxB; reduced glutaredoxin 2	K03675 grxB; glutaredoxin 2 
+C    b3610 grxC; glutaredoxin 3	K03676 grxC; glutaredoxin 3 
+C    b1654 grxD; glutaredoxin 4	K07390 grxD; monothiol glutaredoxin 
+C    b3860 dsbA; thiol:disulfide oxidoreductase DsbA	K03673 dsbA; protein dithiol oxidoreductase (disulfide-forming) [EC:1.8.4.15] 
+C    b1185 dsbB; protein thiol:quinone oxidoreductase DsbB	K03611 dsbB; protein dithiol:quinone oxidoreductase [EC:1.8.5.9] 
+C    b2893 dsbC; protein disulfide isomerase DsbC	K03981 dsbC; thiol:disulfide interchange protein DsbC [EC:5.3.4.1] 
+C    b4136 dsbD; protein disulfide oxidoreductase - DsbDreduced	K04084 dsbD; thioredoxin:protein disulfide reductase [EC:1.8.4.16] 
+C    b2195 ccmG; holocytochrome c synthetase - thiol:disulfide oxidoreductase CcmG	K02199 ccmG; cytochrome c biogenesis protein CcmG, thiol:disulfide interchange protein DsbE 
+C    b0604 dsbG; protein sulfenic acid reductase DsbG	K03805 dsbG; thiol:disulfide interchange protein DsbG 
+!
+#<hr>
+#<b>[ <a href="/kegg/brite.html">BRITE</a> | <a href="/kegg/kegg2.html">KEGG2</a> | <a href="/kegg/">KEGG</a> ]</b><br>
+#Last updated: April 16, 2019

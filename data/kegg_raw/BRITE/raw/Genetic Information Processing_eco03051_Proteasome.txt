@@ -1,0 +1,31 @@
++E	Proteasome	KO
+#<h2><a href="/kegg/kegg2.html"><img src="/Fig/bget/kegg3.gif" align="middle" border=0></a>&nbsp; Proteasome - Escherichia coli K-12 MG1655</h2>
+%<style type="text/css"><!-- #grid{ table-layout:fixed; font-family: monospace; position: relative;width: 1200px; color: black; }.col1{ position: relative; background : white; z-index: 1; width: 600px; overflow: hidden; }.col2{ position: relative; background : white; z-index: 2; padding-left: 10px; }--></style>
+!
+A<b>Eukaryotic proteasome</b>
+B  Core particles (20S proteasome)
+C    alpha type subunits
+C    beta type subunits
+B  Regulatory particles
+C    PA700 (19S proteasome)
+D      ATPase subunits
+D      non-ATPase subunits
+C    PA28 (11S REG)
+C    PA200
+C    PI31
+B  Assembling factors
+C    Assembling chaperones
+C    Other assembling factors
+D      b0473 htpG; chaperone protein HtpG	K04079 HSP90A; molecular chaperone HtpG 
+B  Proteasome interacting proteins (PIPs)
+C    UBL-UBA shuttle proteins
+C    Other PIPs
+#
+A<b>Prokaryotic proteasome</b>
+B  Core particles (20S proteasome)
+B  Bacterial regulatory particles
+B  Archaeal regulatory particles
+!
+#<hr>
+#<b>[ <a href="/kegg/brite.html">BRITE</a> | <a href="/kegg/kegg2.html">KEGG2</a> | <a href="/kegg/">KEGG</a> ]</b><br>
+#Last updated: February 19, 2020

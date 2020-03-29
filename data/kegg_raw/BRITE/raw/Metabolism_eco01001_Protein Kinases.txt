@@ -1,0 +1,205 @@
++C	Kinase	KO
+#<h2><a href="/kegg/kegg2.html"><img src="/Fig/bget/kegg3.gif" align="middle" border=0></a>&nbsp; Protein Kinases - Escherichia coli K-12 MG1655</h2>
+%<style type="text/css"><!-- #grid{ table-layout:fixed; font-family: monospace; position: relative;width: 1200px; color: black; }.col1{ position: relative; background : white; z-index: 1; width: 600px; overflow: hidden; }.col2{ position: relative; background : white; z-index: 2; padding-left: 10px; }--></style>
+!
+A<b>Serine/threonine kinases: AGC group</b>
+B  PKA family
+B  PKG family
+B  PKC family [OT]
+B  PKN family
+B  AUR family [OT]
+B  PDK1 family
+B  AKT/PKB family
+B  SGK family [OT]
+B  RSK family [OT]
+B  NDR family
+B  MAST family [OT]
+B  YANK family
+B  DMPK family [OT]
+B  GRK family [OT]
+B  Other
+#
+A<b>Serine/threonine kinases: CAMK group</b>
+B  CAMK1 family [OT]
+B  CAMK2 family
+B  CAMKL family
+B  DAPK family
+B  DCAMKL family
+B  MAPKAPK family [OT]
+B  MLCK family
+B  PHK family
+B  PIM family [OT]
+B  PKD family
+B  PSK family
+B  RAD53 family
+B  Trio family [OT]
+B  TSSK family
+B  CDPK family
+B  CASK family
+B  Trbl family
+B  Other
+#
+A<b>Serine/threonine kinases: CK1 group</b>
+B  CK1 family [OT]
+B  TTBK family
+B  VRK family
+#
+A<b>Serine/threonine kinases: CMGC group</b>
+B  CDK family
+B  MAPK family [OT]
+B  GSK family [OT]
+B  CLK family
+B  CDKL family
+B  DYRK family [OT]
+B  RCK family [OT]
+B  SRPK family [OT]
+#
+A<b>Serine/threonine kinases: STE group</b>
+B  STE7 family
+B  STE20 family
+B  STE11 family
+B  Other
+#
+A<b>Serine/threonine kinases: TKL group</b>
+B  IRAK family
+B  LISK family [OT]
+B  LRRK family
+B  MLK family
+B  RAF family [OT]
+B  RIPK family [OT]
+B  Other
+#
+A<b>Serine/threonine kinases: Other</b>
+B  RGC family [OT]
+B  BUB family
+B  Bud32 family
+B  CAMKK family
+B  CDC7 family
+B  CK2 family
+B  Haspin family
+B  IKK family [OT]
+B  IRE family
+B  MOS family
+B  NAK family [OT]
+B  NEK family
+B  NKF1 family
+B  NKF2 family
+B  NKF3 family
+B  NKF4 family
+B  NKF5 family
+B  NRBP family
+B  PEK family [OT]
+B  PLK family [OT]
+B  SCY1 family [OT]
+B  Slob family
+B  TBCK family
+B  TLK family
+B  TOPK family
+B  TTK family
+B  ULK family [OT]
+B  VPS15 family
+B  WEE family
+B  Wnk family
+B  ABC1 family
+B  Alpha family [OT]
+B  BCR family
+B  BRD family [OT]
+B  FAST family
+B  G11 family
+B  H11 family
+B  PDHK family [OT]
+B  PIKK family [OT]
+B  RIO family [OT]
+B  TAF1 family
+B  TIF1 family [OT]
+B  Other
+B  Bacterial family
+C    b1507 hipA; serine/threonine kinase HipA	K07154 hipA; serine/threonine-protein kinase HipA [EC:2.7.11.1] 
+#
+A<b>Receptor serine/threonine kinases (RSTK): TKL group</b>
+B  TGFBR1 family [OT]
+B  TGFBR2 family [OT]
+#
+A<b>Receptor tyrosine kinases (RTK)</b>
+B  EGFR family [OT]
+B  INSR family [OT]
+B  PDGFR family [OT]
+B  FGFR family [OT]
+B  VEGFR family [OT]
+B  MET family
+B  TRK family [OT]
+B  EPH family [OT]
+B  AXL family
+B  ALK family
+B  TIE family
+B  ROR family
+B  DDR family
+B  RET family
+B  ROS family
+B  CCK family
+B  RYK family
+B  MUSK family
+B  LMR family [OT]
+#
+A<b>Non-receptor tyrosine kinases</b>
+B  ABL family
+B  ACK family
+B  CSK family
+B  FAK family
+B  FES family
+B  JAK family [OT]
+B  SRC family
+B  TEC family
+B  SYK family
+B  Other
+B  Bacterial
+C    b2060 wzc; protein-tyrosine kinase Wzc	K16692 etk-wzc; tyrosine-protein kinase Etk/Wzc [EC:2.7.10.-] 
+C    b0981 etk; protein-tyrosine kinase Etk	K16692 etk-wzc; tyrosine-protein kinase Etk/Wzc [EC:2.7.10.-] 
+#
+A<b>Histidine kinases</b>
+B  OmpR family
+C    b0400 phoR; sensory histidine kinase PhoR	K07636 phoR; two-component system, OmpR family, phosphate regulon sensor histidine kinase PhoR [EC:2.7.13.3] 
+C    b1129 phoQ; sensory histidine kinase PhoQ	K07637 phoQ; two-component system, OmpR family, sensor histidine kinase PhoQ [EC:2.7.13.3] 
+C    b3404 envZ; sensory histidine kinase EnvZ	K07638 envZ; two-component system, OmpR family, osmolarity sensor histidine kinase EnvZ [EC:2.7.13.3] 
+C    b1609 rstB; sensory histidine kinase RstB	K07639 rstB; two-component system, OmpR family, sensor histidine kinase RstB [EC:2.7.13.3] 
+C    b3911 cpxA; sensory histidine kinase CpxA	K07640 cpxA; two-component system, OmpR family, sensor histidine kinase CpxA [EC:2.7.13.3] 
+C    b4399 creC; sensory histidine kinase CreC	K07641 creC; two-component system, OmpR family, sensor histidine kinase CreC [EC:2.7.13.3] 
+C    b2078 baeS; sensory histidine kinase BaeS	K07642 baeS; two-component system, OmpR family, sensor histidine kinase BaeS [EC:2.7.13.3] 
+C    b4112 basS; sensory histidine kinase BasS	K07643 basS; two-component system, OmpR family, sensor histidine kinase BasS [EC:2.7.13.3] 
+C    b0570 cusS; sensory histidine kinase CusS	K07644 cusS; two-component system, OmpR family, heavy metal sensor histidine kinase CusS [EC:2.7.13.3] 
+C    b3026 qseC; sensory histidine kinase QseC	K07645 qseC; two-component system, OmpR family, sensor histidine kinase QseC [EC:2.7.13.3] 
+C    b0695 kdpD; sensory histidine kinase KdpD	K07646 kdpD; two-component system, OmpR family, sensor histidine kinase KdpD [EC:2.7.13.3] 
+C    b0993 torS; sensory histidine kinase TorS	K07647 torS; two-component system, OmpR family, sensor histidine kinase TorS [EC:2.7.13.3] 
+C    b3210 arcB; sensory histidine kinase ArcB	K07648 arcB; two-component system, OmpR family, aerobic respiration control sensor histidine kinase ArcB [EC:2.7.13.3] 
+C    b1968 hprS; sensory histidine kinase HprS	K02484 K02484; two-component system, OmpR family, sensor kinase [EC:2.7.13.3] 
+B  NarL family
+C    b1222 narX; sensory histidine kinase NarX	K07673 narX; two-component system, NarL family, nitrate/nitrite sensor histidine kinase NarX [EC:2.7.13.3] 
+C    b2469 narQ; sensory histidine kinase NarQ	K07674 narQ; two-component system, NarL family, nitrate/nitrite sensor histidine kinase NarQ [EC:2.7.13.3] 
+C    b3668 uhpB; sensory histidine kinase UhpB	K07675 uhpB; two-component system, NarL family, sensor histidine kinase UhpB [EC:2.7.13.3] 
+C    b2216 rcsD; RcsD phosphotransferase	K07676 rcsD; two-component system, NarL family, sensor histidine kinase RcsD [EC:2.7.13.3] 
+C    b2218 rcsC; sensory histidine kinase RcsC	K07677 rcsC; two-component system, NarL family, capsular synthesis sensor histidine kinase RcsC [EC:2.7.13.3] 
+C    b2786 barA; sensory histidine kinase BarA	K07678 barA; two-component system, NarL family, sensor histidine kinase BarA [EC:2.7.13.3] 
+C    b2370 evgS; sensory histidine kinase EvgS	K07679 evgS; two-component system, NarL family, sensor histidine kinase EvgS [EC:2.7.13.3] 
+B  Spo family [OT]
+B  CitB family [OT]
+C    b0619 dpiB; sensory histidine kinase DpiB	K07700 dpiB; two-component system, CitB family, cit operon sensor histidine kinase CitA [EC:2.7.13.3] 
+C    b4125 dcuS; sensory histidine kinase DcuS	K07701 dcuS; two-component system, CitB family, sensor histidine kinase DcuS [EC:2.7.13.3] 
+B  LytTR family [OT]
+C    b2126 btsS; high-affinity pyruvate receptor	K02478 K02478; two-component system, LytTR family, sensor kinase [EC:2.7.13.3] 
+C    b2380 ypdA; sensory histidine kinase YpdA	K02478 K02478; two-component system, LytTR family, sensor kinase [EC:2.7.13.3] 
+B  NtrC family
+C    b3869 glnL; sensory histidine kinase NtrB	K07708 glnL; two-component system, NtrC family, nitrogen regulation sensor histidine kinase GlnL [EC:2.7.13.3] 
+C    b4003 zraS; sensory histidine kinase ZraS	K07709 zraS; two-component system, NtrC family, sensor histidine kinase HydH [EC:2.7.13.3] 
+C    b2219 atoS; sensory histidine kinase AtoS	K07710 atoS; two-component system, NtrC family, sensor histidine kinase AtoS [EC:2.7.13.3] 
+C    b2556 glrK; sensory histidine kinase GlrK	K07711 glrK; two-component system, NtrC family, sensor histidine kinase GlrK [EC:2.7.13.3] 
+B  CheA family [OT]
+C    b1888 cheA; chemotaxis protein CheA	K03407 cheA; two-component system, chemotaxis family, sensor kinase CheA [EC:2.7.13.3] 
+B  Cell cycle family [OT]
+B  Lux family [OT]
+B  LuxR family [OT]
+B  Other
+!
+#<hr>
+#<b>[ <a href="/kegg/brite.html">BRITE</a> | <a href="/kegg/kegg2.html">KEGG2</a> | <a href="/kegg/">KEGG</a> ]</b><br>
+#Last updated: October 3, 2019
+#<br>Classification taken and modified from <a href="http://www.ncbi.nlm.nih.gov/pubmed/12734000">Hanks (2003)</a>

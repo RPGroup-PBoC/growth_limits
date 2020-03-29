@@ -1,0 +1,61 @@
++D	Bacterial toxins	KO
+#<h2><a href="/kegg/kegg2.html"><img src="/Fig/bget/kegg3.gif" align="middle" border=0></a>&nbsp; Bacterial Toxins - Escherichia coli K-12 MG1655</h2>
+%<style type="text/css"><!-- #grid{ table-layout:fixed; font-family: monospace; position: relative;width: 1200px; color: black; }.col1{ position: relative; background : white; z-index: 1; width: 600px; overflow: hidden; }.col2{ position: relative; background : white; z-index: 2; padding-left: 10px; }--></style>
+!
+A<b>Type III toxins: Intracellular toxins</b>
+B  ADP-ribosyltransferase
+C    Diphtheria toxin (DT)
+C    Cholera toxin/Heat-labile enterotoxin
+C    Exototoxin-A (ETA)
+C    Exoenzyme S/T
+C    Pertussis toxin (PT)
+C    ADP-ribosyltransferase toxin ArtA/B
+C    ADP-ribosyltransferase SpyA
+B  Metalloprotease
+C    Botulinum neurotoxin (BoNT)
+C    Tetanus toxin (TeTx)
+C    Anthrax lethal toxin
+B  Adenylate cyclase
+C    Anthrax edema toxin
+C    Adenylate cyclase toxin (ACT)
+C    Exoenzyme Y
+B  Others
+C    Zona occludens toxin
+C    Shiga toxin
+C    Subtilase cytotoxin
+C    Cytotoxic necrotizing factor 1/Dermonecrotic toxin (DNT)
+C    Enterotoxin ShET-1
+C    Vacuolating cytotoxin
+C    Cytolethal distending toxin
+C    Exfoliative toxin type A
+C    Toxin A/B
+C    Insecticidal toxin FitD/Mcf
+C    TccC-type insecticidal toxin
+C    Heat-stable enterotoxin
+C    Typhoid toxin
+#
+A<b>Type II toxins: Membrane damaging toxins</b>
+B  Pore-forming toxins, Beta-pore-forming/Cholesterol-dependent
+B  Pore-forming toxins, RTX
+B  Pore-forming toxins, Other
+C    b2899 yqfA; hemolysin-III family protein	K11068 hlyIII; hemolysin III 
+C    b1182 hlyE; hemolysin E	K11139 hlyE; hemolysin E 
+B  Toxins that enzymatically damage the membrane
+#
+A<b>Type I toxins: Toxins that act from the cell surface</b>
+B  Superantigens
+#
+A<b>Toxins that damage the extracellular matrix</b>
+B  Hyaluronidases/Collagenases
+#
+A<b>Not specified</b>
+B  Ymt
+B  Hydrogen cyanide production
+B  Beta2 toxin
+B  Enterotoxin
+B  BteA
+B  Superantigen-like protein
+!
+#<hr>
+#<b>[ <a href="/kegg/brite.html">BRITE</a> | <a href="/kegg/kegg2.html">KEGG2</a> | <a href="/kegg/">KEGG</a> ]</b><br>
+#Last updated: July 23, 2019

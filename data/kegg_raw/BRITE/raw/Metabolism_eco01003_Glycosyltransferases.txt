@@ -1,0 +1,99 @@
++C	Glycosyltransferase	KO
+#<h2><a href="/kegg/kegg2.html"><img src="/Fig/bget/kegg3.gif" align="middle" border=0></a>&nbsp; Glycosyltransferases - Escherichia coli K-12 MG1655</h2>
+%<style type="text/css"><!-- #grid{ table-layout:fixed; font-family: monospace; position: relative;width: 1200px; color: black; }.col1{ position: relative; background : white; z-index: 1; width: 600px; overflow: hidden; }.col2{ position: relative; background : white; z-index: 2; padding-left: 10px; }--></style>
+!
+A<b>N-Glycan biosynthesis</b>
+B  Dol-linked oligosaccharide
+B  N-linked oligosaccharide
+B  Dol-P-Man biosyntheisis
+#
+A<b>O-Glycan biosynthesis</b>
+B  Mucin-type
+B  O-linked GlcNAc type
+B  Glycosaminoglycan
+B  O-linked Man type
+B  O-linked Fuc type
+B  O-linked Glc type
+B  O-linked Gal type
+B  O-linked Ara type
+#
+A<b>GPI-anchor biosynthesis</b>
+B  Core oligosaccharide
+B  Phosphatidylinositol mannoside
+B  Lipophosphoglycan
+#
+A<b>Glycolipid biosynthesis</b>
+B  Glycosphingolipid
+B  Glycoglycerolipid
+#
+A<b>Glycan extension</b>
+B  Type 1 chain
+B  Type 2 chain/Poly-N-acetyllactosamine
+B  Type 3 chain
+B  I antigen
+B  ABO blood group
+B  Lewis blood group
+B  P blood group
+B  GLOB blood group
+B  Sid blood group
+B  FORS blood group (Forssman antigen)
+B  N-Glycan
+B  O-Glycan
+B  Glycolipid
+B  Yeast mannan chain
+B  Wide specificity
+B  Others
+#
+A<b>Terminal extension</b>
+B  Sialyltransferase
+B  Bacterial sialyltransferase
+#
+A<b>Polysaccharide</b>
+B  Storage polysaccharide
+C    b3429 glgA; glycogen synthase	K00703 glgA; starch synthase [EC:2.4.1.21] 
+B  Structural polysaccharide
+C    b3533 bcsA; cellulose synthase catalytic subunit	K00694 bcsA; cellulose synthase (UDP-forming) [EC:2.4.1.12] 
+B  Bacterial polysaccharide
+C    b3208 mtgA; peptidoglycan glycosyltransferase MtgA	K03814 mtgA; monofunctional glycosyltransferase [EC:2.4.1.129] 
+C    b2519 pbpC; peptidoglycan glycosyltransferase PbpC	K05367 pbpC; penicillin-binding protein 1C [EC:2.4.1.129] 
+C    b0149 mrcB; peptidoglycan glycosyltransferase/peptidoglycan DD-transpeptidase MrcB	K05365 mrcB; penicillin-binding protein 1B [EC:2.4.1.129 3.4.16.4] 
+C    b3396 mrcA; peptidoglycan glycosyltransferase/peptidoglycan DD-transpeptidase MrcA	K05366 mrcA; penicillin-binding protein 1A [EC:2.4.1.129 3.4.16.4] 
+C    b0182 lpxB; lipid A disaccharide synthase	K00748 lpxB; lipid-A-disaccharide synthase [EC:2.4.1.182] 
+C    b2257 arnT; lipid IVA 4-amino-4-deoxy-L-arabinosyltransferase	K07264 arnT; 4-amino-4-deoxy-L-arabinose transferase [EC:2.4.2.43] 
+C    b3633 waaA; KDO transferase	K02527 kdtA; 3-deoxy-D-manno-octulosonic-acid transferase [EC:2.4.99.12 2.4.99.13 2.4.99.14 2.4.99.15] 
+C    b3624 waaZ; lipopolysaccharide core biosynthesis protein WaaZ	K12981 waaZ; KDO transferase III [EC:2.4.99.-] 
+C    b3621 waaC; ADP-heptose:LPS heptosyltransferase 1	K02841 waaC; heptosyltransferase I [EC:2.4.-.-] 
+C    b3620 waaF; ADP-heptose--LPS heptosyltransferase 2	K02843 waaF; heptosyltransferase II [EC:2.4.-.-] 
+C    b3632 waaQ; lipopolysaccharide core heptosyltransferase 3	K02849 waaQ; heptosyltransferase III [EC:2.4.-.-] 
+C    b3623 waaU; putative ADP-heptose:LPS heptosyltransferase 4	K03277 waaU; heptosyltransferase IV [EC:2.4.-.-] 
+C    b3627 waaO; UDP-D-glucose:(glucosyl)LPS alpha-1,3-glucosyltransferase	K03275 waaO; UDP-glucose:(glucosyl)LPS alpha-1,3-glucosyltransferase [EC:2.4.1.-] 
+C    b3626 waaJ; UDP-glucose:(glucosyl)LPS alpha-1,2-glucosyltransferase	K03276 waaR; UDP-glucose/galactose:(glucosyl)LPS alpha-1,2-glucosyl/galactosyltransferase [EC:2.4.1.-] 
+C    b3631 waaG; lipopolysaccharide glucosyltransferase I	K02844 waaG; UDP-glucose:(heptosyl)LPS alpha-1,3-glucosyltransferase [EC:2.4.1.-] 
+C    b3628 waaB; UDP-D-galactose:(glucosyl)lipopolysaccharide-1,6-D-galactosyltransferase	K02840 waaB; UDP-D-galactose:(glucosyl)LPS alpha-1,6-D-galactosyltransferase [EC:2.4.1.-] 
+C    b3615 waaH; UDP-glucuronate:LPS(HepIII) glycosyltransferase	K19354 waaH; heptose III glucuronosyltransferase [EC:2.4.1.-] 
+C    b3629 waaS; lipopolysaccharide core biosynthesis protein	K12986 waaS; 1,5-rhamnosyltransferase [EC:2.4.1.-] 
+C    b3784 rfe; UDP-N-acetylglucosamine--undecaprenyl-phosphate N-acetylglucosaminephosphotransferase	K02851 wecA; UDP-GlcNAc:undecaprenyl-phosphate/decaprenyl-phosphate GlcNAc-1-phosphate transferase [EC:2.7.8.33 2.7.8.35] 
+C    b2055 wcaE; putative colanic acid biosynthesis glycosyl transferase	K13683 wcaE; putative colanic acid biosynthesis glycosyltransferase [EC:2.4.-.-] 
+C    b2057 wcaC; putative colanic acid biosynthesis glycosyl transferase	K13684 wcaC; putative colanic acid biosynthesis glycosyltransferase [EC:2.4.-.-] 
+C    b3794 rffM; UDP-N-acetyl-D-mannosaminuronic acid transferase	K02852 wecG; UDP-N-acetyl-D-mannosaminouronate:lipid I N-acetyl-D-mannosaminouronosyltransferase [EC:2.4.1.180] 
+C    b4481 rffT; 4-acetamido-4,6-dideoxy-D-galactose transferase	K12582 wecF; dTDP-N-acetylfucosamine:lipid II N-acetylfucosaminyltransferase [EC:2.4.1.325] 
+C    b3793 wzyE; enterobacterial common antigen polymerase	K02853 wzyE; enterobacterial common antigen polymerase [EC:2.4.1.-] 
+C    b1049 opgH; osmoregulated periplasmic glucans (OPGs) biosynthesis protein H	K03669 mdoH; membrane glycosyltransferase [EC:2.4.1.-] 
+C    b1022 pgaC; poly-N-acetyl-D-glucosamine synthase subunit PgaC	K11936 pgaC; poly-beta-1,6-N-acetyl-D-glucosamine synthase [EC:2.4.1.-] 
+B  Other polysaccharide
+#
+A<b>Others</b>
+B  Hydrophobic molecule
+B  Quality control
+B  Trehalose
+C    b1896 otsA; trehalose-6-phosphate synthase	K00697 otsA; trehalose 6-phosphate synthase [EC:2.4.1.15 2.4.1.347] 
+B  Glycosylglycerate
+B  Other glycosyltransferases
+C    b2044 wcaL; putative colanic biosynthesis glycosyl transferase	K16703 wcaL; colanic acid/amylovoran biosynthesis glycosyltransferase [EC:2.4.-.-] 
+#
+A<b>Unclassified</b>
+B  Sulfotransferases
+!
+#<hr>
+#<b>[ <a href="/kegg/glycan/">GLYCAN</a> | <a href="/kegg/brite.html">BRITE</a> | <a href="/kegg/kegg2.html">KEGG2</a> | <a href="/kegg/">KEGG</a> ]</b><br>
+#Last updated: December 11, 2019

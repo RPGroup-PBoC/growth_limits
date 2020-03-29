@@ -1,0 +1,124 @@
++E	Messenger RNA Biogenesis	KO
+#<h2><a href="/kegg/kegg2.html"><img src="/Fig/bget/kegg3.gif" align="middle" border=0></a>&nbsp; Messenger RNA Biogenesis - Escherichia coli K-12 MG1655</h2>
+%<style type="text/css"><!-- #grid{ table-layout:fixed; font-family: monospace; position: relative;width: 1200px; color: black; }.col1{ position: relative; background : white; z-index: 1; width: 600px; overflow: hidden; }.col2{ position: relative; background : white; z-index: 2; padding-left: 10px; }--></style>
+!
+A<b>Eukaryotic type</b>
+B  mRNA processing factors
+C    5' end processing
+D      Capping factors
+D      Cap binding complex
+C    3' end processing
+D      Pre-mRNA cleavage factor Im (CFIm)
+D      Pre-mRNA cleavage factor IIm (CFIIm)
+D      Cleavage and polyadenylation specificity factor (CPSF) complex
+D      Cleavage stimulation factor (CSTF) complex
+D      DRB sensitivity inducing factor (DSIF) complex
+D      N6-methyltransferase complex
+D      Poly(A) addition factors
+D      Negative regulators of mRNA 3' end processing
+C    Other processing factors
+B  mRNA surveillance and transport factors
+C    Transport factors
+D      EJC complex
+D      TREX complex
+D      Nuclear pore complex
+D      Ran-mediated transport factors
+D      eIF4F and regulatory proteins
+D      Other transport factors
+C    Surveillance factors
+D      Surveillance complex
+D      Other surveillance  factors
+C    Factors involved in mRNA localization
+D      Cargo complex
+D      Factors that have mRNA localization signals
+D      Trans-acting binding proteins
+D      Other mRNA localization factors
+C    mRNA cycle factors
+D      Common to processing body (P body) and stress granule
+D      P-body specific factors
+D      Stress granule specific factors
+B  mRNA degradation factors
+C    5'-3' decay
+D      Decapping complex
+D      Lsm complex
+D      5' exonucleases
+D      Other 5'-3' decay factors
+C    3'-5' decay
+D      Core exosome factors
+D      Exosome cofactors
+D      TRAMP complex
+D      Ski complex
+D      Ccr4-NOT complex
+D      Pan complex
+D      Other 3'-5' decay factors
+C    Other degradation factors
+D      RNases
+#
+A<b>Prokaryotic type</b>
+B  Bacterial mRNA degradation factors
+C    RNA degradosome components
+D      Ribonucreases
+E        b1084 rne; ribonuclease E	K08300 rne; ribonuclease E [EC:3.1.26.12] 
+E        b3247 rng; RNase G	K08301 rng; ribonuclease G [EC:3.1.26.-] 
+E        b2567 rnc; RNase III	K03685 rnc; ribonuclease III [EC:3.1.26.3] 
+E        b4179 rnr; RNase R	K12573 rnr; ribonuclease R [EC:3.1.13.1] 
+E        b4162 orn; oligoribonuclease	K13288 orn; oligoribonuclease [EC:3.1.-.-] 
+D      Helicases
+E        b3780 rhlB; ATP-dependent RNA helicase RhlB	K03732 rhlB; ATP-dependent RNA helicase RhlB [EC:3.6.4.13] 
+E        b0797 rhlE; ATP-dependent RNA helicase RhlE	K11927 rhlE; ATP-dependent RNA helicase RhlE [EC:3.6.4.13] 
+E        b3162 deaD; ATP-dependent RNA helicase DeaD	K05592 deaD; ATP-dependent RNA helicase DeaD [EC:3.6.4.13] 
+D      Other RNA degradosome components
+E        b2779 eno; enolase	K01689 ENO; enolase [EC:4.2.1.11] 
+E        b3164 pnp; polynucleotide phosphorylase	K00962 pnp; polyribonucleotide nucleotidyltransferase [EC:2.7.7.8] 
+E        b3783 rho; transcription termination factor Rho	K03628 rho; transcription termination factor Rho 
+E        b3916 pfkA; 6-phosphofructokinase I	K00850 pfkA; 6-phosphofructokinase 1 [EC:2.7.1.11] 
+C    Other RNA degradation factors
+D      Chaperones
+E        b0014 dnaK; chaperone protein DnaK	K04043 dnaK; molecular chaperone DnaK 
+E        b4143 groL; chaperonin GroEL	K04077 groEL; chaperonin GroEL 
+E        b4172 hfq; RNA-binding protein Hfq	K03666 hfq; host factor-I protein 
+D      Others
+E        b2501 ppk; polyphosphate kinase	K00937 ppk; polyphosphate kinase [EC:2.7.4.1] 
+E        b0143 pcnB; poly(A) polymerase I	K00970 pcnB; poly(A) polymerase [EC:2.7.7.19] 
+E        b2830 rppH; RNA pyrophosphohydrolase	K08311 nudH; putative (di)nucleoside polyphosphate hydrolase [EC:3.6.1.-] 
+E        b2696 csrA; carbon storage regulator	K03563 csrA; carbon storage regulator 
+E        b3252 csrD; regulator of CsrB and CsrC decay	K18765 csrD; RNase E specificity factor CsrD 
+E        b3929 rraA; ribonuclease E inhibitor protein A	K02553 rraA; regulator of ribonuclease activity A 
+E        b4255 rraB; ribonuclease E inhibitor protein B	K09893 rraB; regulator of ribonuclease activity B 
+E        b3205 rapZ; RNase adaptor protein	K06958 rapZ; RNase adapter protein RapZ 
+D      Bacterial Small RNA Regulators
+E        b1954 dsrA; small regulatory RNA DsrA	K18502 dsrA; small regulatory RNA DsrA 
+E        b4585 chiX; small regulatory RNA ChiX	K18503 chiX; small regulatory RNA ChiX 
+E        b4450 arcZ; small regulatory RNA ArcZ	K18504 arcZ; small regulatory RNA ArcZ 
+E        b4441 glmY; small regulatory RNA GlmY	K15841 glmY; small regulatory RNA GlmY 
+E        b4456 glmZ; small regulatory RNA GlmZ	K18505 glmZ; small regulatory RNA GlmZ 
+E        b4577 sgrS; small regulatory RNA SgrS	K18506 sgrS; small regulatory RNA SgrS 
+E        b4451 ryhB; small regulatory RNA RyhB	K18507 ryhB; small regulatory RNA RyhB 
+E        b4417 rybB; small regulatory RNA RybB	K18508 rybB; small regulatory RNA RybB 
+E        b4597 rydC; small regulatory RNA RydC	K18509 rydC; small regulatory RNA RydC 
+E        b4699 fnrS; small regulatory RNA FnrS	K18510 fnrS; small regulatory RNA FnrS 
+E        b4442 micA; small regulatory RNA MicA	K18511 micA; small regulatory RNA MicA 
+E        b4427 micC; small regulatory RNA MicC	K18512 micC; small regulatory RNA MicC 
+E        b4439 micF; small regulatory RNA MicF	K18513 micF; small regulatory RNA MicF 
+E        b4698 mgrR; small regulatory RNA MgrR	K18514 mgrR; small regulatory RNA MgrR 
+E        b4408 csrB; small regulatory RNA CsrB	K18515 csrB; small regulatory RNA CsrB 
+E        b4457 csrC; small regulatory RNA CsrC	K18516 csrC; small regulatory RNA CsrC 
+E        b1574 dicF; Qin prophage; small regulatory RNA DicF	K18517 dicF; small regulatory RNA DicF 
+E        b4431 rprA; small regulatory RNA RprA	K18518 rprA; small regulatory RNA RprA 
+E        b4603 rseX; small regulatory RNA RseX	K18519 rseX; small regulatory RNA RseX 
+E        b4438 cyaR; small regulatory RNA CyaR	K18520 cyaR; small regulatory RNA CyaR 
+E        b4443 gcvB; small regulatory RNA GcvB	K18521 gcvB; small regulatory RNA GcvB 
+E        b4444 omrA; small regulatory RNA OmrA	K18522 omrA; small regulatory RNA OmrA 
+E        b4445 omrB; small regulatory RNA OmrB	K18523 omrB; small regulatory RNA OmrB 
+E        b4452 gadY; small regulatory RNA GadY	K18525 gadY; small regulatory RNA GadY 
+E        b4616 istR; small RNA IstR-2	K18526 istR; sRNA antisense regulator of TisB protein 
+E        b3864 spf; small regulatory RNA Spot 42	K18527 spf; small regulatory RNA Spot 42 
+E        b4458 oxyS; small regulatory RNA OxyS	K18528 oxyS; small regulatory RNA OxyS 
+B  Archeal mRNA degradation factors
+C    Exosome components
+D      Core exosome
+D      Cofactors
+!
+#<hr>
+#<b>[ <a href="/kegg/brite.html">BRITE</a> | <a href="/kegg/kegg2.html">KEGG2</a> | <a href="/kegg/">KEGG</a> ]</b><br>
+#Last updated: March 24, 2020

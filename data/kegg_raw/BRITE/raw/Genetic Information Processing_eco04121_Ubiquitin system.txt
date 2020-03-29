@@ -1,0 +1,95 @@
++E	Ubiquitin system	KO
+#<h2><a href="/kegg/kegg2.html"><img src="/Fig/bget/kegg3.gif" align="middle" border=0></a>&nbsp; Ubiquitin System - Escherichia coli K-12 MG1655</h2>
+%<style type="text/css"><!-- #grid{ table-layout:fixed; font-family: monospace; position: relative;width: 1200px; color: black; }.col1{ position: relative; background : white; z-index: 1; width: 600px; overflow: hidden; }.col2{ position: relative; background : white; z-index: 2; padding-left: 10px; }--></style>
+#<!---
+#ENTRY       eco04121
+#NAME        T00007
+#DEFINITION  <a href="/kegg/kegg2.html"><img src="/Fig/bget/kegg3.gif" align="middle" border=0></a>&nbsp; Ubiquitin System - Escherichia coli K-12 MG1655
+#--->
+!
+A<b>Ubiquitins and Ubiquitin-like proteins</b>
+B  Ubiquitins
+B  Ubiquitin-like proteins (UBLs)
+#
+A<b>Ubiquitin-activating enzymes (E1)</b>
+B  Ubiquitin activating enzyme
+B  UBL-activating enzymes
+C    b0826 moeB; molybdopterin synthase sulfurylase	K11996 MOCS3; adenylyltransferase and sulfurtransferase [EC:2.7.7.80 2.8.1.11] 
+#
+A<b>Ubiquitin-conjugating enzymes (E2)</b>
+B  Ubiquitin-conjugating enzymes
+B  UBL-conjugating enzymes
+#
+A<b>Ubiquitin ligases (E3)</b>
+B  HECT type E3
+B  U-box type E3
+B  Single Ring-finger type E3
+C    BRE1 proteins
+C    CBL proteins
+C    SINA (Seven in absentia) proteins
+C    Ligand of Numb proteins
+C    March proteins
+C    MDM2/MDM4 proteins
+C    NFX1 proteins
+C    Pellino proteins
+C    Peripheral membrane proteins
+C    RBR proteins
+C    TRAF proteins
+C    TRIM/RBCC proteins
+C    UBR box proteins
+C    ATL proteins
+C    Other single Ring-finger type E3
+B  UBL E3 ligases
+B  Multi subunit Ring-finger type E3
+C    SCF complex
+D      Ring finger protein
+D      Cullin
+D      Adaptor protein
+D      Target recognizing subunit (F-box)
+C    ECV complex
+D      Ring finger protein
+D      Cullin
+D      Adoptor protein
+D      Target recognizing subunit (VHL box)
+C    Cul3 complex
+D      Ring finger protein
+D      Cullin
+D      Target recognizing subunit (BTB)
+C    Cul4 complex
+D      Ring finger protein
+D      Cullin
+D      Adoptor protein
+D      Target recognizing subunit (DCAF)
+C    ECS complex
+D      Ring finger protein
+D      Cullin
+D      Adoptor protein
+D      Target recognizing subunit (SOCS box)
+C    Cul7 complex
+D      Ring finger protein
+D      Cullin
+D      Adaptor protein
+D      Target recognizing subunit
+C    APC/C
+D      Ring finger protein
+D      Cullin
+D      Target recognizing subunit
+D      Other subunits
+C    BRCC complex
+C    KPC complex
+C    LUBAC complex
+#
+A<b>Deubiquitinating enzyme (DUB)</b>
+B  Ubiquitin-specific proteases (UBPs)
+C    UCH
+C    UBP/USP
+C    OTU
+C    MJD
+C    JAMM
+C    BRISC complex
+B  UBL-specific proteases (ULPs)
+C    COP9 signalosome (CSN) complex
+!
+#<hr>
+#<b>[ <a href="/kegg/brite.html">BRITE</a> | <a href="/kegg/kegg2.html">KEGG2</a> | <a href="/kegg/">KEGG</a> ]</b><br>
+#Last updated: October 24, 2016

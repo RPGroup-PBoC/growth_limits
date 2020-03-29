@@ -1,0 +1,99 @@
++D	Bacterial motility proteins	KO
+#<h2><a href="/kegg/kegg2.html"><img src="/Fig/bget/kegg3.gif" align="middle" border=0></a>&nbsp; Bacterial Motility Proteins - Escherichia coli K-12 MG1655</h2>
+%<style type="text/css"><!-- #grid{ table-layout:fixed; font-family: monospace; position: relative;width: 1200px; color: black; }.col1{ position: relative; background : white; z-index: 1; width: 600px; overflow: hidden; }.col2{ position: relative; background : white; z-index: 2; padding-left: 10px; }--></style>
+!
+A<b>Flagellar system</b>
+B  Chemotaxis proteins
+C    Two component system proteins
+D      b1888 cheA; chemotaxis protein CheA	K03407 cheA; two-component system, chemotaxis family, sensor kinase CheA [EC:2.7.13.3] 
+D      b1887 cheW; chemotaxis protein CheW	K03408 cheW; purine-binding chemotaxis protein CheW 
+D      b1884 cheR; chemotaxis protein methyltransferase	K00575 cheR; chemotaxis protein methyltransferase CheR [EC:2.1.1.80] 
+D      b1883 cheB; protein-glutamate methylesterase/protein glutamine deamidase	K03412 cheB; two-component system, chemotaxis family, protein-glutamate methylesterase/glutaminase [EC:3.1.1.61 3.5.1.44] 
+D      b1882 cheY; chemotaxis protein CheY	K03413 cheY; two-component system, chemotaxis family, chemotaxis protein CheY 
+D      b1881 cheZ; chemotaxis protein CheZ	K03414 cheZ; chemotaxis protein CheZ 
+C    MCPs
+D      b4355 tsr; methyl-accepting chemotaxis protein Tsr	K05874 tsr; methyl-accepting chemotaxis protein I, serine sensor receptor 
+D      b1886 tar; methyl-accepting chemotaxis protein Tar	K05875 tar; methyl-accepting chemotaxis protein II, aspartate sensor receptor 
+D      b1421 trg; methyl-accepting chemotaxis protein Trg	K05876 trg; methyl-accepting chemotaxis protein III, ribose and galactose sensor receptor 
+D      b1885 tap; methyl-accepting chemotaxis protein Tap	K05877 tap; methyl-accepting chemotaxis protein IV, peptide sensor receptor 
+D      b3072 aer; aerotaxis sensor receptor, flavoprotein	K03776 aer; aerotaxis receptor 
+B  Flagellar assembly proteins
+C    Type-III secretion
+D      b1940 fliH; flagellar biosynthesis protein FliH	K02411 fliH; flagellar assembly protein FliH 
+D      b1941 fliI; flagellum-specific ATP synthase FliI	K02412 fliI; flagellum-specific ATP synthase [EC:7.4.2.8] 
+D      b1947 fliO; flagellar biosynthesis protein FliO	K02418 fliOZ; flagellar protein FliO/FliZ 
+D      b1948 fliP; flagellar biosynthesis protein FliP	K02419 fliP; flagellar biosynthetic protein FliP 
+D      b1949 fliQ; flagellar biosynthesis protein FliQ	K02420 fliQ; flagellar biosynthetic protein FliQ 
+D      b1950 fliR; flagellar biosynthesis protein FliR	K02421 fliR; flagellar biosynthetic protein FliR 
+D      b1879 flhA; flagellar biosynthesis protein FlhA	K02400 flhA; flagellar biosynthesis protein FlhA 
+D      b1880 flhB; flagellar biosynthesis protein FlhB	K02401 flhB; flagellar biosynthetic protein FlhB 
+D      b1878 flhE; flagellar protein	K03516 flhE; flagellar protein FlhE 
+C    Motor/switch
+D      b1890 motA; motility protein A	K02556 motA; chemotaxis protein MotA 
+D      b1889 motB; motility protein B	K02557 motB; chemotaxis protein MotB 
+C    C-ring
+D      b1939 fliG; flagellar motor switch protein FliG	K02410 fliG; flagellar motor switch protein FliG 
+D      b1945 fliM; flagellar motor switch protein FliM	K02416 fliM; flagellar motor switch protein FliM 
+D      b1946 fliN; flagellar motor switch protein FliN	K02417 fliNY; flagellar motor switch protein FliN/FliY 
+C    M,S,P and L rings
+D      b1938 fliF; flagellar basal-body MS-ring and collar protein	K02409 fliF; flagellar M-ring protein FliF 
+D      b1080 flgI; flagellar P-ring protein	K02394 flgI; flagellar P-ring protein precursor FlgI 
+D      b1072 flgA; flagellar basal body P-ring formation protein FlgA	K02386 flgA; flagella basal body P-ring formation protein FlgA 
+D      b1079 flgH; flagellar L-ring protein	K02393 flgH; flagellar L-ring protein precursor FlgH 
+C    Rod,hook and filament
+D      b1073 flgB; flagellar basal-body rod protein FlgB	K02387 flgB; flagellar basal-body rod protein FlgB 
+D      b1074 flgC; flagellar basal-body rod protein FlgC	K02388 flgC; flagellar basal-body rod protein FlgC 
+D      b1075 flgD; flagellar biosynthesis, initiation of hook assembly	K02389 flgD; flagellar basal-body rod modification protein FlgD 
+D      b1077 flgF; flagellar basal-body rod protein FlgF	K02391 flgF; flagellar basal-body rod protein FlgF 
+D      b1078 flgG; flagellar basal-body rod protein FlgG	K02392 flgG; flagellar basal-body rod protein FlgG 
+D      b1081 flgJ; putative peptidoglycan hydrolase FlgJ	K02395 flgJ; flagellar protein FlgJ 
+D      b1076 flgE; flagellar hook protein FlgE	K02390 flgE; flagellar hook protein FlgE 
+D      b1937 fliE; flagellar basal-body protein FliE	K02408 fliE; flagellar hook-basal body complex protein FliE 
+D      b1082 flgK; flagellar hook-filament junction protein 1	K02396 flgK; flagellar hook-associated protein 1 FlgK 
+D      b1083 flgL; flagellar hook-filament junction protein 2	K02397 flgL; flagellar hook-associated protein 3 FlgL 
+D      b1924 fliD; flagellar filament capping protein	K02407 fliD; flagellar hook-associated protein 2 
+D      b1943 fliK; flagellar hook-length control protein	K02414 fliK; flagellar hook-length control protein FliK 
+D      b1944 fliL; flagellar protein FliL	K02415 fliL; flagellar FliL protein 
+D      b1923 fliC; flagellar filament structural protein	K02406 fliC; flagellin 
+C    Regulation
+D      b1891 flhC; DNA-binding transcriptional dual regulator FlhC	K02402 flhC; flagellar transcriptional activator FlhC 
+D      b1892 flhD; DNA-binding transcriptional dual regulator FlhD	K02403 flhD; flagellar transcriptional activator FlhD 
+D      b1922 fliA; RNA polymerase, sigma 28 (sigma F) factor	K02405 fliA; RNA polymerase sigma factor for flagellar operon FliA 
+D      b1071 flgM; anti-sigma factor for FliA (sigma(28))	K02398 flgM; negative regulator of flagellin synthesis FlgM 
+C    Chaperones
+D      b1070 flgN; flagellar biosynthesis protein FlgN	K02399 flgN; flagella synthesis protein FlgN 
+D      b1942 fliJ; flagellar biosynthesis protein FliJ	K02413 fliJ; flagellar FliJ protein 
+D      b1925 fliS; flagellar biosynthesis protein FliS	K02422 fliS; flagellar protein FliS 
+D      b1926 fliT; flagellar biosynthesis protein FliT	K02423 fliT; flagellar protein FliT 
+D      b1920 tcyJ; cystine ABC transporter periplasmic binding protein	K02424 fliY; L-cystine transport system substrate-binding protein 
+D      b1921 fliZ; DNA-binding transcriptional regulator FliZ	K02425 fliZ; regulator of sigma S factor FliZ 
+B  Archaeal flagellar proteins
+#
+A<b>Pilus system</b>
+B  Twitching motility proteins
+C    b2950 yggR; Type II/IV secretion system family protein	K02669 pilT; twitching motility protein PilT 
+B  Chemosensory pili system proteins
+B  Positive phototactic motility proteins
+B  Pilus assembly proteins
+C    b2972 pppA; prepilin peptidase	K02654 pilD; leader peptidase (prepilin peptidase) / N-methyltransferase [EC:3.4.23.43 2.1.1.-] 
+B  Fimbrial proteins
+C    b4314 fimA; type 1 fimbriae major subunit	K07345 fimA; major type 1 subunit fimbrin (pilin) 
+C    b4316 fimC; type 1 fimbriae periplasmic chaperone	K07346 fimC; fimbrial chaperone protein 
+C    b4317 fimD; type I fimbriae usher protein	K07347 fimD; outer membrane usher protein 
+C    b0940 elfC; putative fimbrial usher protein ElfC	K07347 fimD; outer membrane usher protein 
+C    b3144 yraJ; putative fimbrial usher protein YraJ	K07347 fimD; outer membrane usher protein 
+C    b0139 htrE; putative fimbrial usher protein HtrE	K07347 fimD; outer membrane usher protein 
+C    b2109 yehB; putative fimbrial usher protein YehB	K07347 fimD; outer membrane usher protein 
+C    b4318 fimF; type 1 fimbriae minor subunit FimF	K07348 fimF; minor fimbrial subunit 
+C    b4319 fimG; type 1 fimbriae minor subunit FimG	K07349 fimG; minor fimbrial subunit 
+C    b4320 fimH; type 1 fimbriae D-mannose specific adhesin	K07350 fimH; minor fimbrial subunit 
+C    b4315 fimI; putative fimbrial protein FimI	K07351 fimI; fimbrial protein 
+C    b0530 sfmA; putative fimbrial protein SfmA	K07352 sfmA; type 1 fimbrial protein 
+C    b0531 sfmC; putative fimbrial chaperone SfmC	K07353 sfmC; fimbrial chaperone protein 
+C    b0532 sfmD; putative fimbrial usher protein SfmD	K07354 sfmD; outer membrane usher protein 
+C    b0534 sfmF; putative fimbrial protein SfmF	K07355 sfmF; fimbrial-like protein 
+C    b0533 sfmH; putative fimbrial adhesin protein SfmH	K07356 sfmH; fimbrial protein 
+!
+#<hr>
+#<b>[ <a href="/kegg/brite.html">BRITE</a> | <a href="/kegg/kegg2.html">KEGG2</a> | <a href="/kegg/">KEGG</a> ]</b><br>
+#Last updated: March 4, 2020

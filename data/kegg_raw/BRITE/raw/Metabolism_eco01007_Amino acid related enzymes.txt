@@ -1,0 +1,69 @@
++C	Enzyme	KO
+#<h2><a href="/kegg/kegg2.html"><img src="/Fig/bget/kegg3.gif" align="middle" border=0></a>&nbsp; Amino Acid Related Enzymes - Escherichia coli K-12 MG1655</h2>
+%<style type="text/css"><!-- #grid{ table-layout:fixed; font-family: monospace; position: relative;width: 1200px; color: black; }.col1{ position: relative; background : white; z-index: 1; width: 600px; overflow: hidden; }.col2{ position: relative; background : white; z-index: 2; padding-left: 10px; }--></style>
+!
+A<b>Aminoacyl-tRNA synthetase</b>
+B  Class I (A)
+C    b2400 gltX; glutamate--tRNA ligase	K01885 EARS; glutamyl-tRNA synthetase [EC:6.1.1.17] 
+C    b0680 glnS; glutamine--tRNA ligase	K01886 QARS; glutaminyl-tRNA synthetase [EC:6.1.1.18] 
+C    b0144 gluQ; glutamyl-Q tRNA(Asp) synthetase	K01894 gluQ; glutamyl-Q tRNA(Asp) synthetase [EC:6.1.1.-] 
+C    b1637 tyrS; tyrosine--tRNA ligase	K01866 YARS; tyrosyl-tRNA synthetase [EC:6.1.1.1] 
+B  Class I (G)
+C    b3384 trpS; tryptophan--tRNA ligase	K01867 WARS; tryptophanyl-tRNA synthetase [EC:6.1.1.2] 
+C    b0526 cysS; cysteine--tRNA ligase	K01883 CARS; cysteinyl-tRNA synthetase [EC:6.1.1.16] 
+C    b1876 argS; arginine--tRNA ligase	K01887 RARS; arginyl-tRNA synthetase [EC:6.1.1.19] 
+B  Class I (U)
+C    b2114 metG; methionine--tRNA ligase	K01874 MARS; methionyl-tRNA synthetase [EC:6.1.1.10] 
+C    b0026 ileS; isoleucine--tRNA ligase	K01870 IARS; isoleucyl-tRNA synthetase [EC:6.1.1.5] 
+C    b4258 valS; valine--tRNA ligase	K01873 VARS; valyl-tRNA synthetase [EC:6.1.1.9] 
+C    b0642 leuS; leucine--tRNA ligase	K01869 LARS; leucyl-tRNA synthetase [EC:6.1.1.4] 
+B  Class II (A)
+C    b2890 lysS; lysine--tRNA ligase, constitutive	K04567 KARS; lysyl-tRNA synthetase, class II [EC:6.1.1.6] 
+C    b4129 lysU; lysine--tRNA ligase/Ap4A synthetase/Ap3A synthetase	K04567 KARS; lysyl-tRNA synthetase, class II [EC:6.1.1.6] 
+C    b1866 aspS; aspartate--tRNA ligase	K01876 aspS; aspartyl-tRNA synthetase [EC:6.1.1.12] 
+C    b0930 asnS; asparagine--tRNA ligase	K01893 NARS; asparaginyl-tRNA synthetase [EC:6.1.1.22] 
+C    b2514 hisS; histidine--tRNA ligase	K01892 HARS; histidyl-tRNA synthetase [EC:6.1.1.21] 
+B  Class II (C/G)
+C    b3560 glyQ; glycine--tRNA ligase subunit alpha	K01878 glyQ; glycyl-tRNA synthetase alpha chain [EC:6.1.1.14] 
+C    b3559 glyS; glycine--tRNA ligase subunit beta	K01879 glyS; glycyl-tRNA synthetase beta chain [EC:6.1.1.14] 
+C    b0893 serS; serine--tRNA ligase	K01875 SARS; seryl-tRNA synthetase [EC:6.1.1.11] 
+C    b0194 proS; proline--tRNA ligase	K01881 PARS; prolyl-tRNA synthetase [EC:6.1.1.15] 
+C    b1719 thrS; threonine--tRNA ligase	K01868 TARS; threonyl-tRNA synthetase [EC:6.1.1.3] 
+C    b2697 alaS; alanine--tRNA ligase/DNA-binding transcriptional repressor	K01872 AARS; alanyl-tRNA synthetase [EC:6.1.1.7] 
+B  Class II (U)
+C    b1714 pheS; phenylalanine--tRNA ligase subunit alpha	K01889 FARSA; phenylalanyl-tRNA synthetase alpha chain [EC:6.1.1.20] 
+C    b1713 pheT; phenylalanine--tRNA ligase subunit beta	K01890 FARSB; phenylalanyl-tRNA synthetase beta chain [EC:6.1.1.20] 
+B  Other
+#
+A<b>Aminotransferase (transaminase)</b>
+B  Class I
+C    b0928 aspC; aspartate aminotransferase	K00813 aspC; aspartate aminotransferase [EC:2.6.1.1] 
+C    b3572 avtA; valine--pyruvate aminotransferase	K00835 avtA; valine--pyruvate aminotransferase [EC:2.6.1.66] 
+C    b2290 alaA; glutamate--pyruvate aminotransferase AlaA	K14260 alaA; alanine-synthesizing transaminase [EC:2.6.1.66 2.6.1.2] 
+C    b2379 alaC; glutamate--pyruvate aminotransferase AlaC	K14261 alaC; alanine-synthesizing transaminase [EC:2.6.1.-] 
+C    b4054 tyrB; tyrosine aminotransferase	K00832 tyrB; aromatic-amino-acid transaminase [EC:2.6.1.57] 
+C    b0600 ybdL; methionine-oxo-acid transaminase, PLP-dependent	K14287 ybdL; methionine transaminase [EC:2.6.1.88] 
+B  Class II
+C    b2021 hisC; histidinol-phosphate aminotransferase	K00817 hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9] 
+C    b3617 kbl; 2-amino-3-ketobutyrate CoA ligase	K00639 kbl; glycine C-acetyltransferase [EC:2.3.1.29] 
+C    b0776 bioF; 8-amino-7-oxononanoate synthase	K00652 bioF; 8-amino-7-oxononanoate synthase [EC:2.3.1.47] 
+C    b1622 malY; negative regulator of MalT activity/cystathionine beta-lyase	K14155 patB; cysteine-S-conjugate beta-lyase [EC:4.4.1.13] 
+B  Class III
+C    b3359 argD; N-acetylornithine aminotransferase/N-succinyldiaminopimelate aminotransferase	K00821 argD; acetylornithine/N-succinyldiaminopimelate aminotransferase [EC:2.6.1.11 2.6.1.17] 
+C    b1748 astC; succinylornithine transaminase	K00840 astC; succinylornithine aminotransferase [EC:2.6.1.81] 
+C    b2662 gabT; 4-aminobutyrate aminotransferase GabT	K07250 gabT; 4-aminobutyrate aminotransferase / (S)-3-amino-2-methylpropionate transaminase / 5-aminovalerate transaminase [EC:2.6.1.19 2.6.1.22 2.6.1.48] 
+C    b1302 puuE; 4-aminobutyrate aminotransferase PuuE	K00823 puuE; 4-aminobutyrate aminotransferase [EC:2.6.1.19] 
+C    b3073 patA; putrescine aminotransferase	K09251 patA; putrescine aminotransferase [EC:2.6.1.82] 
+C    b0774 bioA; adenosylmethionine-8-amino-7-oxononanoate aminotransferase	K00833 bioA; adenosylmethionine---8-amino-7-oxononanoate aminotransferase [EC:2.6.1.62] 
+C    b0154 hemL; glutamate-1-semialdehyde aminotransferase	K01845 hemL; glutamate-1-semialdehyde 2,1-aminomutase [EC:5.4.3.8] 
+B  Class IV
+C    b3770 ilvE; branched-chain-amino-acid aminotransferase	K00826 E2.6.1.42; branched-chain amino acid aminotransferase [EC:2.6.1.42] 
+B  Class V
+C    b0907 serC; phosphoserine/phosphohydroxythreonine aminotransferase	K00831 serC; phosphoserine aminotransferase [EC:2.6.1.52] 
+B  Others
+C    b2253 arnB; UDP-4-amino-4-deoxy-L-arabinose aminotransferase	K07806 arnB; UDP-4-amino-4-deoxy-L-arabinose-oxoglutarate aminotransferase [EC:2.6.1.87] 
+C    b3791 wecE; dTDP-4-dehydro-6-deoxy-D-glucose transaminase	K02805 wecE; dTDP-4-amino-4,6-dideoxygalactose transaminase [EC:2.6.1.59] 
+!
+#<hr>
+#<b>[ <a href="/kegg/brite.html">BRITE</a> | <a href="/kegg/kegg2.html">KEGG2</a> | <a href="/kegg/">KEGG</a> ]</b><br>
+#Last updated: May 30, 2019

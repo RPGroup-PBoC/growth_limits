@@ -1,0 +1,263 @@
++C	Peptidases and inhibitors	KO
+#<h2><a href="/kegg/kegg2.html"><img src="/Fig/bget/kegg3.gif" align="middle" border=0></a>&nbsp; Peptidases and Inhibitors - Escherichia coli K-12 MG1655</h2>
+%<style type="text/css"><!-- #grid{ table-layout:fixed; font-family: monospace; position: relative;width: 1200px; color: black; }.col1{ position: relative; background : white; z-index: 1; width: 600px; overflow: hidden; }.col2{ position: relative; background : white; z-index: 2; padding-left: 10px; }--></style>
+!
+A<b>Aspartic peptidases</b>
+B  Family A1: pepsin family
+B  Family A5: thermopsin family
+B  Family A8: signal peptidase II family
+C    b0027 lspA; lipoprotein signal peptidase	K03101 lspA; signal peptidase II [EC:3.4.23.36] 
+B  Family A22: presenilin family
+B  Family A24: type IV prepilin peptidase family
+C    b2972 pppA; prepilin peptidase	K02654 pilD; leader peptidase (prepilin peptidase) / N-methyltransferase [EC:3.4.23.43 2.1.1.-] 
+C    b3335 gspO; Type II secretion system prepilin peptidase	K02464 gspO; general secretion pathway protein O [EC:3.4.23.43 2.1.1.-] 
+B  Family A25: gpr protease family
+B  Family A26: omptin family
+C    b0565 ompT; outer membrane protease VII (outer membrane protein 3b)	K01355 ompT; omptin [EC:3.4.23.49] 
+B  Family A31: HybD endopeptidase family
+C    b0975 hyaD; putative hydrogenase 1 maturation protease HyaD	K03605 hyaD; hydrogenase maturation protease [EC:3.4.23.-] 
+C    b2993 hybD; putative hydrogenase 2 maturation protease	K03605 hyaD; hydrogenase maturation protease [EC:3.4.23.-] 
+C    b2717 hycI; hydrogenase 3 maturation protease	K08315 hycI; hydrogenase 3 maturation protease [EC:3.4.23.51] 
+B  Family A36
+#
+A<b>Cysteine peptidases</b>
+B  Family C1: papain family
+B  Family C2: calpain family
+B  Family C10: streptopain family
+B  Family C11: clostripain family
+B  Family C12: ubiquitin C-terminal hydrolase family
+B  Family C13: legumain family
+B  Family C14: caspase family
+B  Family C15: pyroglutamyl peptidase I family
+B  Family C19: ubiquitin-specific protease family
+B  Family C25: gingipain family
+B  Family C26: gamma-glutamyl hydrolase family
+C    b2507 guaA; GMP synthetase	K01951 guaA; GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2] 
+C    b1298 puuD; gamma-glutamyl-gamma-aminobutyrate hydrolase	K09473 puuD; gamma-glutamyl-gamma-aminobutyrate hydrolase [EC:3.5.1.94] 
+B  Family C40
+C    b2175 mepS; peptidoglycan DD-endopeptidase/peptidoglycan LD-carboxypeptidase	K13694 mepS; murein DD-endopeptidase / murein LD-carboxypeptidase [EC:3.4.-.- 3.4.17.13] 
+C    b1655 mepH; peptidoglycan DD-endopeptidase MepH	K19303 mepH; murein DD-endopeptidase [EC:3.4.-.-] 
+C    b1708 nlpC; NlpC/P60 family lipoprotein NlpC	K13695 nlpC; probable lipoprotein NlpC 
+B  Family C44
+C    b2312 purF; amidophosphoribosyltransferase	K00764 purF; amidophosphoribosyltransferase [EC:2.4.2.14] 
+C    b3212 gltB; glutamate synthase subunit GltB	K00265 gltB; glutamate synthase (NADPH) large chain [EC:1.4.1.13] 
+C    b3729 glmS; L-glutamine--D-fructose-6-phosphate aminotransferase	K00820 glmS; glutamine---fructose-6-phosphate transaminase (isomerizing) [EC:2.6.1.16] 
+C    b0674 asnB; asparagine synthetase B	K01953 asnB; asparagine synthase (glutamine-hydrolysing) [EC:6.3.5.4] 
+B  Family C45
+B  Family C46: hedgehog family
+B  Family C47: staphopain family
+B  Family C48: Ulp1 endopeptidase family
+B  Family C50: separase family
+B  Family C54: Aut2 peptidase family
+B  Family C55: YopJ protease family
+B  Family C56: PfpI endopeptidase family
+C    b3153 yhbO; protein/nucleic acid deglycase 2	K05520 pfpI; protease I [EC:3.5.1.124] 
+C    b1967 hchA; protein/nucleic acid deglycase 1	K05523 hchA; D-lactate dehydratase / protein deglycase [EC:4.2.1.130 3.5.1.124] 
+C    b0424 yajL; protein/nucleic acid deglycase 3	K03152 thiJ; protein deglycase [EC:3.5.1.124] 
+B  Family C58
+B  Family C59
+B  Family C60
+B  Family C64
+B  Family C65
+B  Family C67
+B  Family C69
+B  Family C70
+B  Family C75
+B  Family C78
+B  Family C79
+C    b2269 elaD; protease ElaD	K18015 elaD; deubiquitinase [EC:3.4.22.-] 
+B  Family C82
+C    b1990 ldtA; L,D-transpeptidase ErfK	K16291 erfK; L,D-transpeptidase ErfK/SrfK 
+C    b1678 ldtE; L,D-transpeptidase LdtE	K19234 ynhG; L,D-transpeptidase YnhG 
+C    b0819 ldtB; L,D-transpeptidase YbiS	K19235 ybiS; L,D-transpeptidase YbiS 
+C    b1113 ldtC; L,D-transpeptidase YcfS	K19236 ycfS; L,D-transpeptidase YcfS 
+C    b0925 ldtD; L,D-transpeptidase LdtD	K21470 ycbB; L,D-transpeptidase YcbB 
+B  Family C85
+B  Family C86
+B  Family C88
+B  Family C89
+B  Family C97
+B  Family C98
+#
+A<b>Glutamic peptidases</b>
+B  Family G1
+#
+A<b>Metallo peptidases</b>
+B  Family M1
+C    b0932 pepN; aminopeptidase N	K01256 pepN; aminopeptidase N [EC:3.4.11.2] 
+B  Family M2
+B  Family M3
+C    b3498 prlC; oligopeptidase A	K01414 prlC; oligopeptidase A [EC:3.4.24.70] 
+C    b1538 dcp; peptidyl-dipeptidase Dcp	K01284 dcp; peptidyl-dipeptidase Dcp [EC:3.4.15.5] 
+B  Family M4: thermolysin family
+B  Family M5: mycolysin family
+B  Family M6: immune inhibitor A family
+B  Family M7: snapalysin family
+B  Family M8: leishmanolysin family
+B  Family M9
+B  Family M10
+B  Family M12: astacin/adamalysin family
+B  Family M13: neprilysin family
+B  Family M14: carboxypeptidase A family
+B  Family M15: zinc D-Ala-D-Ala carboxypeptidase family
+C    b1488 ddpX; D-alanyl-D-alanine dipeptidase	K08641 vanX; zinc D-Ala-D-Ala dipeptidase [EC:3.4.13.22] 
+B  Family M16: pitrilysin family
+C    b2821 ptrA; protease 3	K01407 ptrA; protease III [EC:3.4.24.55] 
+C    b1494 pqqL; putative zinc peptidase	K07263 pqqL; zinc protease [EC:3.4.24.-] 
+B  Family M17: leucyl aminopeptidase family
+C    b4260 pepA; aminopeptidase A/I	K01255 CARP; leucyl aminopeptidase [EC:3.4.11.1] 
+C    b2523 pepB; aminopeptidase B	K07751 pepB; PepB aminopeptidase [EC:3.4.11.23] 
+B  Family M18
+B  Family M19: membrane dipeptidase family
+B  Family M20
+C    b2472 dapE; succinyl-diaminopimelate desuccinylase	K01439 dapE; succinyl-diaminopimelate desuccinylase [EC:3.5.1.18] 
+C    b1127 pepT; peptidase T	K01258 pepT; tripeptide aminopeptidase [EC:3.4.11.4] 
+C    b0237 pepD; peptidase D	K01270 pepD; dipeptidase D [EC:3.4.13.-] 
+C    b1338 abgA; p-aminobenzoyl-glutamate hydrolase subunit A	K12940 abgA; aminobenzoyl-glutamate utilization protein A 
+C    b1337 abgB; p-aminobenzoyl-glutamate hydrolase subunit B	K12941 abgB; aminobenzoyl-glutamate utilization protein B 
+C    b0516 allC; allantoate amidohydrolase	K02083 allC; allantoate deiminase [EC:3.5.3.9] 
+B  Family M23
+C    b1856 mepM; peptidoglycan DD-endopeptidase MepM	K19304 mepM; murein DD-endopeptidase [EC:3.4.24.-] 
+B  Family M24
+C    b0168 map; methionine aminopeptidase	K01265 map; methionyl aminopeptidase [EC:3.4.11.18] 
+C    b3847 pepQ; Xaa-Pro dipeptidase	K01271 pepQ; Xaa-Pro dipeptidase [EC:3.4.13.9] 
+C    b2908 pepP; proline aminopeptidase P II	K01262 pepP; Xaa-Pro aminopeptidase [EC:3.4.11.9] 
+C    b2385 ypdF; aminopeptidase	K08326 ypdF; aminopeptidase [EC:3.4.11.-] 
+B  Family M26
+B  Family M27
+B  Family M28: aminopeptidase Y family
+C    b2753 iap; alkaline phosphatase isozyme conversion protein	K09612 iap; alkaline phosphatase isozyme conversion protein [EC:3.4.11.-] 
+B  Family M29: aminopeptidase T family
+B  Family M32: carboxypeptidase Taq family
+B  Family M34: anthrax lethal factor family
+B  Family M35: deuterolysin family
+B  Family M36: fungalysin family
+B  Family M38: beta-aspartyl dipeptidase family
+C    b4328 iadA; isoaspartyl dipeptidase	K01305 iadA; beta-aspartyl-dipeptidase (metallo-type) [EC:3.4.19.-] 
+B  Family M41: FtsH endopeptidase family
+C    b3178 ftsH; ATP-dependent zinc metalloprotease FtsH	K03798 ftsH; cell division protease FtsH [EC:3.4.24.-] 
+B  Family M42: glutamyl aminopeptidase family
+C    b3898 frvX; peptidase M42 family protein	K18530 frvX; putative aminopeptidase FrvX [EC:3.4.11.-] 
+C    b4305 sgcX; KpLE2 phage-like element; putative endoglucanase with Zn-dependent exopeptidase domain	K20609 sgcX; putative aminopeptidase [EC:3.4.11.-] 
+B  Family M43: cytophagalysin family
+B  Family M48: Ste24 endopeptidase family
+C    b1829 htpX; zinc dependent endoprotease	K03799 htpX; heat shock protein HtpX [EC:3.4.24.-] 
+C    b0909 ycaL; periplasmic protease YcaL	K07387 K07387; metalloprotease [EC:3.4.24.-] 
+C    b2936 loiP; metalloprotease LoiP	K07387 K07387; metalloprotease [EC:3.4.24.-] 
+C    b2494 bepA; beta-barrel assembly-enhancing protease	K01423 bepA; beta-barrel assembly-enhancing protease [EC:3.4.-.-] 
+B  Family M49: dipeptidyl-peptidase III family
+B  Family M50: S2P protease family
+C    b0176 rseP; intramembrane zinc metalloprotease	K11749 rseP; regulator of sigma E protease [EC:3.4.24.-] 
+B  Family M54
+B  Family M55: DppA aminopeptidase family
+B  Family M56
+B  Family M67
+B  Family M72
+B  Family M73
+B  Family M74
+C    b2328 mepA; peptidoglycan DD-endopeptidase/peptidoglycan LD-endopeptidase	K07261 mepA; penicillin-insensitive murein DD-endopeptidase [EC:3.4.24.-] 
+B  Family M79: prenyl protease 2 family
+B  Family M80
+B  Family M85
+B  Family M88
+B  Family M90
+C    b1976 mtfA; Mlc titration factor	K09933 mtfA; MtfA peptidase 
+#
+A<b>Mixed peptidases</b>
+B  Family P1: DmpA aminopeptidase family
+B  Family P2
+#
+A<b>Serine peptidases</b>
+B  Family S1: chymotrypsin family
+C    b1598 ydgD; putative serine protease YdgD	K04775 ydgD; protease YdgD [EC:3.4.21.-] 
+C    b0161 degP; periplasmic serine endoprotease DegP	K04771 degP; serine protease Do [EC:3.4.21.107] 
+C    b3234 degQ; periplasmic serine endoprotease	K04772 degQ; serine protease DegQ [EC:3.4.21.-] 
+C    b3235 degS; serine endoprotease	K04691 hhoB; serine protease DegS [EC:3.4.21.-] 
+B  Family S6
+B  Family S8: subtilisin family
+B  Family S9: prolyl oligopeptidase family
+C    b1845 ptrB; oligopeptidase B	K01354 ptrB; oligopeptidase B [EC:3.4.21.83] 
+B  Family S10
+B  Family S11: D-Ala-D-Ala carboxypeptidase A family
+C    b0839 dacC; D-alanyl-D-alanine carboxypeptidase DacC	K07258 dacC; serine-type D-Ala-D-Ala carboxypeptidase (penicillin-binding protein 5/6) [EC:3.4.16.4] 
+C    b2010 dacD; D-alanyl-D-alanine carboxypeptidase DacD	K07258 dacC; serine-type D-Ala-D-Ala carboxypeptidase (penicillin-binding protein 5/6) [EC:3.4.16.4] 
+C    b0632 dacA; D-alanyl-D-alanine carboxypeptidase DacA	K07258 dacC; serine-type D-Ala-D-Ala carboxypeptidase (penicillin-binding protein 5/6) [EC:3.4.16.4] 
+C    b2134 pbpG; peptidoglycan DD-endopeptidase PbpG	K07262 pbpG; serine-type D-Ala-D-Ala endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-] 
+B  Family S12: D-Ala-D-Ala carboxypeptidase B family
+C    b0376 ampH; peptidoglycan DD-carboxypeptidase/peptidoglycan DD-endopeptidase	K18988 ampH; serine-type D-Ala-D-Ala carboxypeptidase/endopeptidase [EC:3.4.16.4 3.4.21.-] 
+C    b2430 yfeW; penicillin binding protein 4B	K21469 pbp4b; serine-type D-Ala-D-Ala carboxypeptidase [EC:3.4.16.4] 
+B  Family S13: D-Ala-D-Ala peptidase C family
+C    b3182 dacB; peptidoglycan DD-endopeptidase DacB	K07259 dacB; serine-type D-Ala-D-Ala carboxypeptidase/endopeptidase (penicillin-binding protein 4) [EC:3.4.16.4 3.4.21.-] 
+B  Family S14: ClpP endopeptidase family
+C    b0437 clpP; ATP-dependent Clp protease proteolytic subunit	K01358 clpP; ATP-dependent Clp protease, protease subunit [EC:3.4.21.92] 
+B  Family S15
+B  Family S16: lon protease family
+C    b0439 lon; Lon protease	K01338 lon; ATP-dependent Lon protease [EC:3.4.21.53] 
+C    b0955 ycbZ; putative ATP-dependent protease YcbZ	K04770 lonH; Lon-like ATP-dependent protease [EC:3.4.21.-] 
+B  Family S24: LexA family
+C    b4043 lexA; DNA-binding transcriptional repressor LexA	K01356 lexA; repressor LexA [EC:3.4.21.88] 
+C    b1183 umuD; DNA polymerase V protein UmuD	K03503 umuD; DNA polymerase V [EC:3.4.21.-] 
+B  Family S26: signal peptidase I family
+C    b2568 lepB; signal peptidase I	K03100 lepB; signal peptidase I [EC:3.4.21.89] 
+B  Family S28
+B  Family S33
+B  Family S41: C-terminal processing peptidase family
+C    b1830 prc; tail-specific protease	K03797 E3.4.21.102; carboxyl-terminal processing protease [EC:3.4.21.102] 
+B  Family S45
+B  Family S49: protease IV family
+C    b1766 sppA; protease IV, a signal peptide peptidase	K04773 sppA; protease IV [EC:3.4.21.-] 
+C    b1272 sohB; S49 peptidase family protein	K04774 sohB; serine protease SohB [EC:3.4.21.-] 
+B  Family S51
+C    b4021 pepE; peptidase E	K05995 pepE; dipeptidase E [EC:3.4.13.21] 
+B  Family S53
+B  Family S54: Rhomboid family
+B  Family S55: SpoIVB peptidase family
+B  Family S66
+C    b1192 ldcA; murein L,D-carboxypeptidase	K01297 ldcA; muramoyltetrapeptide carboxypeptidase [EC:3.4.17.13] 
+#
+A<b>Threonine peptidases</b>
+B  Family T1: proteasome family
+C    b3932 hslV; peptidase component of the HslVU protease	K01419 hslV; ATP-dependent HslUV protease, peptidase subunit HslV [EC:3.4.25.2] 
+B  Family T2
+C    b0828 iaaA; isoaspartyl dipeptidase proenzyme	K13051 ASRGL1; L-asparaginase / beta-aspartyl-peptidase [EC:3.5.1.1 3.4.19.5] 
+B  Family T3: gamma-glutamyltransferase family
+C    b3447 ggt; glutathione hydrolase proenzyme	K00681 ggt; gamma-glutamyltranspeptidase / glutathione hydrolase [EC:2.3.2.2 3.4.19.13] 
+#
+A<b>Peptidases of unknown catalytic type</b>
+B  Family U32
+C    b1435 rlhA; 23S rRNA 5-hydroxycytidine C2501 synthase	K08303 K08303; putative protease [EC:3.4.-.-] 
+C    b2081 yegQ; putative peptidase YegQ	K08303 K08303; putative protease [EC:3.4.-.-] 
+C    b3158 yhbU; putative peptidase YhbU	K08303 K08303; putative protease [EC:3.4.-.-] 
+B  Family U62
+C    b4235 pmbA; metalloprotease PmbA	K03592 pmbA; PmbA protein 
+C    b3244 tldD; metalloprotease TldD	K03568 tldD; TldD protein 
+#
+A<b>Peptidase inhibitors</b>
+B  Family I1: Kazal family
+B  Family I2: Kunitz - BPTI family
+B  Family I4: serpin family
+B  Family I11: ecotin family
+C    b2209 eco; serine protease inhibitor ecotin	K08276 eco; ecotin 
+B  Family I17: WAP-type family
+B  Family I25: cystatin family
+B  Family I27: calpastatin family
+B  Family I32: IAP family
+B  Family I34: IA3 family
+B  Family I35: timp family
+B  Family I39: alpha2M family
+C    b2520 yfhM; alpha2-macroglobulin	K06894 yfhM; alpha-2-macroglobulin 
+B  Family I47: latexin family
+B  Family I49: proSAAS family
+B  Family I51: IC family
+B  Family I57: staphostatin B family
+B  Family I63
+B  Family I80
+B  Family I87
+C    b4175 hflC; regulator of FtsH protease	K04087 hflC; modulator of FtsH protease HflC 
+C    b4174 hflK; regulator of FtsH protease	K04088 hflK; modulator of FtsH protease HflK 
+B  Family I93
+!
+#<hr>
+#<b>[ <a href="/kegg/brite.html">BRITE</a> | <a href="/kegg/kegg2.html">KEGG2</a> | <a href="/kegg/">KEGG</a> ]</b><br>
+#Last updated: March 23, 2020
+#<br>Classification taken and modified from <a href="https://www.ebi.ac.uk/merops/">MEROPS</a>

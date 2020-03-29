@@ -1,0 +1,200 @@
++D
+#<h2><a href="/kegg/kegg2.html"><img src="/Fig/bget/kegg3.gif" align="middle" border=0></a>&nbsp; Transfer RNA Biogenesis - Escherichia coli K-12 MG1655</h2>
+%<style type="text/css"><!-- #grid{ table-layout:fixed; font-family: monospace; position: relative;width: 1200px; color: black; }.col1{ position: relative; background : white; z-index: 1; width: 600px; overflow: hidden; }.col2{ position: relative; background : white; z-index: 2; padding-left: 10px; }--></style>
+!
+A<b>Eukaryotic type</b>
+B  5'processing factors
+C    Ribonucrease P
+B  3'processing and CCA adding factors
+C    3'processing factors
+D      b2268 rbn; ribonuclease BN	K00784 rnz; ribonuclease Z [EC:3.1.26.11] 
+C    CCA adding factors
+D      b3056 cca; fused tRNA nucleotidyltransferase/2',3'-cyclic phosphodiesterase/2' nucleotidase and phosphatase	K00974 cca; tRNA nucleotidyltransferase (CCA-adding enzyme) [EC:2.7.7.72 3.1.3.- 3.1.4.-] 
+B  tRNA spricing factors
+C    tRNA splicing endonucleases
+C    tRNA splicing ligases
+D      b3421 rtcB; RNA-splicing ligase	K14415 RTCB; tRNA-splicing ligase RtcB (3'-phosphate/5'-hydroxy nucleic acid ligase) [EC:6.5.1.8] 
+C    Other tRNA splicing factors
+B  tRNA transport factors
+C    tRNA export factors
+C    tRNA import factors
+B  Aminoacyl-tRNA synthetases (AARSs)
+C    Multi-aminoacyl-tRNA synthetase complex (MSC)
+D      b2400 gltX; glutamate--tRNA ligase	K01885 EARS; glutamyl-tRNA synthetase [EC:6.1.1.17] 
+D      b0194 proS; proline--tRNA ligase	K01881 PARS; prolyl-tRNA synthetase [EC:6.1.1.15] 
+D      b0026 ileS; isoleucine--tRNA ligase	K01870 IARS; isoleucyl-tRNA synthetase [EC:6.1.1.5] 
+D      b0642 leuS; leucine--tRNA ligase	K01869 LARS; leucyl-tRNA synthetase [EC:6.1.1.4] 
+D      b2114 metG; methionine--tRNA ligase	K01874 MARS; methionyl-tRNA synthetase [EC:6.1.1.10] 
+D      b0680 glnS; glutamine--tRNA ligase	K01886 QARS; glutaminyl-tRNA synthetase [EC:6.1.1.18] 
+D      b1876 argS; arginine--tRNA ligase	K01887 RARS; arginyl-tRNA synthetase [EC:6.1.1.19] 
+D      b2890 lysS; lysine--tRNA ligase, constitutive	K04567 KARS; lysyl-tRNA synthetase, class II [EC:6.1.1.6] 
+D      b4129 lysU; lysine--tRNA ligase/Ap4A synthetase/Ap3A synthetase	K04567 KARS; lysyl-tRNA synthetase, class II [EC:6.1.1.6] 
+D      b1866 aspS; aspartate--tRNA ligase	K01876 aspS; aspartyl-tRNA synthetase [EC:6.1.1.12] 
+C    Other AARSs
+D      b2697 alaS; alanine--tRNA ligase/DNA-binding transcriptional repressor	K01872 AARS; alanyl-tRNA synthetase [EC:6.1.1.7] 
+D      b0930 asnS; asparagine--tRNA ligase	K01893 NARS; asparaginyl-tRNA synthetase [EC:6.1.1.22] 
+D      b1719 thrS; threonine--tRNA ligase	K01868 TARS; threonyl-tRNA synthetase [EC:6.1.1.3] 
+D      b0893 serS; serine--tRNA ligase	K01875 SARS; seryl-tRNA synthetase [EC:6.1.1.11] 
+D      b0526 cysS; cysteine--tRNA ligase	K01883 CARS; cysteinyl-tRNA synthetase [EC:6.1.1.16] 
+D      b4258 valS; valine--tRNA ligase	K01873 VARS; valyl-tRNA synthetase [EC:6.1.1.9] 
+D      b2514 hisS; histidine--tRNA ligase	K01892 HARS; histidyl-tRNA synthetase [EC:6.1.1.21] 
+D      b1714 pheS; phenylalanine--tRNA ligase subunit alpha	K01889 FARSA; phenylalanyl-tRNA synthetase alpha chain [EC:6.1.1.20] 
+D      b1713 pheT; phenylalanine--tRNA ligase subunit beta	K01890 FARSB; phenylalanyl-tRNA synthetase beta chain [EC:6.1.1.20] 
+D      b1637 tyrS; tyrosine--tRNA ligase	K01866 YARS; tyrosyl-tRNA synthetase [EC:6.1.1.1] 
+D      b3384 trpS; tryptophan--tRNA ligase	K01867 WARS; tryptophanyl-tRNA synthetase [EC:6.1.1.2] 
+C    Trans-editing factors
+D      b3887 dtd; D-aminoacyl-tRNA deacylase	K07560 dtd; D-aminoacyl-tRNA deacylase [EC:3.1.1.96] 
+B  tRNA modification factors
+C    Deaminases
+C    Dihydorouridine synthases
+C    Methylthiotransferase
+C    Methyltransferases
+D      b2960 trmI; tRNA m(7)G46 methyltransferase	K03439 trmB; tRNA (guanine-N7-)-methyltransferase [EC:2.1.1.33] 
+D      b0195 trmO; tRNA m(6)t(6)A37 methyltransferase	K22900 TRMO; tRNA (adenine37-N6)-methyltransferase [EC:2.1.1.-] 
+C    Psudouridine synthases
+D      b2318 truA; tRNA pseudouridine(38-40) synthase	K06173 truA; tRNA pseudouridine38-40 synthase [EC:5.4.99.12] 
+D      b3166 truB; tRNA pseudouridine(55) synthase	K03177 truB; tRNA pseudouridine55 synthase [EC:5.4.99.25] 
+D      b2745 truD; tRNA pseudouridine(13) synthase	K06176 truD; tRNA pseudouridine13 synthase [EC:5.4.99.27] 
+C    Thiolation factors
+D      b2530 iscS; cysteine desulfurase	K04487 iscS; cysteine desulfurase [EC:2.8.1.7] 
+C    KEOPS/EKC complex
+D      b3064 tsaD; N(6)-L-threonylcarbamoyladenine synthase, TsaD subunit	K01409 KAE1; N6-L-threonylcarbamoyladenine synthase [EC:2.3.1.234] 
+C    Elongator complex
+C    Elongator related proteins
+C    Other tRNA modification factors
+D      b3282 tsaC; threonylcarbamoyl-AMP synthase	K07566 tsaC; L-threonylcarbamoyladenylate synthase [EC:2.7.7.87] 
+D      b4171 miaA; tRNA dimethylallyltransferase	K00791 miaA; tRNA dimethylallyltransferase [EC:2.5.1.75] 
+D      b3706 mnmE; 5-carboxymethylaminomethyluridine-tRNA synthase GTPase subunit	K03650 mnmE; tRNA modification GTPase [EC:3.6.-.-] 
+D      b3741 mnmG; 5-carboxymethylaminomethyluridine-tRNA synthase subunit MnmG	K03495 gidA; tRNA uridine 5-carboxymethylaminomethyl modification enzyme 
+D      b0406 tgt; tRNA-guanine transglycosylase	K00773 tgt; queuine tRNA-ribosyltransferase [EC:2.4.2.29] 
+D      b1764 selD; selenide, water dikinase	K01008 selD; selenide, water dikinase [EC:2.7.9.3] 
+B  tRNA degradation factors
+C    TRAMP complex
+C    Rapid tRNA decay (RTD) pathway factors
+D      b4214 cysQ; 3'(2'),5'-bisphosphate nucleotidase	K01082 cysQ; 3'(2'), 5'-bisphosphate nucleotidase [EC:3.1.3.7] 
+C    Other tRNA degradation factors
+#
+A<b>Prokaryotic type</b>
+B  5'processing factors
+C    Ribonucrease P
+D      b3704 rnpA; RNase P protein component	K03536 rnpA; ribonuclease P protein component [EC:3.1.26.5] 
+D      b3123 rnpB; RNase P catalytic RNA component	K01978 rnpB; M1 RNA 
+B  3'processing and CCA adding factors
+C    3'processing factors
+D      b2268 rbn; ribonuclease BN	K00784 rnz; ribonuclease Z [EC:3.1.26.11] 
+D      b1652 rnt; RNase T	K03683 rnt; ribonuclease T [EC:3.1.13.-] 
+D      b0611 rna; RNase I	K01169 rna; ribonuclease I (enterobacter ribonuclease) [EC:4.6.1.21] 
+D      b1286 rnb; RNase II	K01147 rnb; exoribonuclease II [EC:3.1.13.1] 
+D      b1804 rnd; RNase D	K03684 rnd; ribonuclease D [EC:3.1.13.5] 
+C    CCA adding factors
+D      b3056 cca; fused tRNA nucleotidyltransferase/2',3'-cyclic phosphodiesterase/2' nucleotidase and phosphatase	K00974 cca; tRNA nucleotidyltransferase (CCA-adding enzyme) [EC:2.7.7.72 3.1.3.- 3.1.4.-] 
+B  tRNA spricing factors
+C    tRNA splicing endonucleases
+C    tRNA splicing ligases
+D      b3421 rtcB; RNA-splicing ligase	K14415 RTCB; tRNA-splicing ligase RtcB (3'-phosphate/5'-hydroxy nucleic acid ligase) [EC:6.5.1.8] 
+C    Other tRNA splicing factors
+D      b0147 thpR; RNA 2',3'-cyclic phosphodiesterase	K01975 thpR; RNA 2',3'-cyclic 3'-phosphodiesterase [EC:3.1.4.58] 
+D      b4331 kptA; RNA 2'-phosphotransferase	K07559 kptA; putative RNA 2'-phosphotransferase [EC:2.7.1.-] 
+B  tRNA transport factors
+C    tRNA export factors
+D      b4391 ettA; energy-dependent translational throttle protein EttA	K06020 ettA; energy-dependent translational throttle protein EttA 
+B  Aminoacyl-tRNA synthetases (AARSs)
+C    Multi-aminoacyl-tRNA synthetase complex (MSC)
+D      b0642 leuS; leucine--tRNA ligase	K01869 LARS; leucyl-tRNA synthetase [EC:6.1.1.4] 
+D      b0194 proS; proline--tRNA ligase	K01881 PARS; prolyl-tRNA synthetase [EC:6.1.1.15] 
+C    Other AARSs
+D      b1637 tyrS; tyrosine--tRNA ligase	K01866 YARS; tyrosyl-tRNA synthetase [EC:6.1.1.1] 
+D      b3384 trpS; tryptophan--tRNA ligase	K01867 WARS; tryptophanyl-tRNA synthetase [EC:6.1.1.2] 
+D      b1719 thrS; threonine--tRNA ligase	K01868 TARS; threonyl-tRNA synthetase [EC:6.1.1.3] 
+D      b0026 ileS; isoleucine--tRNA ligase	K01870 IARS; isoleucyl-tRNA synthetase [EC:6.1.1.5] 
+D      b2890 lysS; lysine--tRNA ligase, constitutive	K04567 KARS; lysyl-tRNA synthetase, class II [EC:6.1.1.6] 
+D      b4129 lysU; lysine--tRNA ligase/Ap4A synthetase/Ap3A synthetase	K04567 KARS; lysyl-tRNA synthetase, class II [EC:6.1.1.6] 
+D      b2697 alaS; alanine--tRNA ligase/DNA-binding transcriptional repressor	K01872 AARS; alanyl-tRNA synthetase [EC:6.1.1.7] 
+D      b4258 valS; valine--tRNA ligase	K01873 VARS; valyl-tRNA synthetase [EC:6.1.1.9] 
+D      b2114 metG; methionine--tRNA ligase	K01874 MARS; methionyl-tRNA synthetase [EC:6.1.1.10] 
+D      b0893 serS; serine--tRNA ligase	K01875 SARS; seryl-tRNA synthetase [EC:6.1.1.11] 
+D      b1866 aspS; aspartate--tRNA ligase	K01876 aspS; aspartyl-tRNA synthetase [EC:6.1.1.12] 
+D      b3560 glyQ; glycine--tRNA ligase subunit alpha	K01878 glyQ; glycyl-tRNA synthetase alpha chain [EC:6.1.1.14] 
+D      b3559 glyS; glycine--tRNA ligase subunit beta	K01879 glyS; glycyl-tRNA synthetase beta chain [EC:6.1.1.14] 
+D      b0526 cysS; cysteine--tRNA ligase	K01883 CARS; cysteinyl-tRNA synthetase [EC:6.1.1.16] 
+D      b2400 gltX; glutamate--tRNA ligase	K01885 EARS; glutamyl-tRNA synthetase [EC:6.1.1.17] 
+D      b0680 glnS; glutamine--tRNA ligase	K01886 QARS; glutaminyl-tRNA synthetase [EC:6.1.1.18] 
+D      b1876 argS; arginine--tRNA ligase	K01887 RARS; arginyl-tRNA synthetase [EC:6.1.1.19] 
+D      b1714 pheS; phenylalanine--tRNA ligase subunit alpha	K01889 FARSA; phenylalanyl-tRNA synthetase alpha chain [EC:6.1.1.20] 
+D      b1713 pheT; phenylalanine--tRNA ligase subunit beta	K01890 FARSB; phenylalanyl-tRNA synthetase beta chain [EC:6.1.1.20] 
+D      b2514 hisS; histidine--tRNA ligase	K01892 HARS; histidyl-tRNA synthetase [EC:6.1.1.21] 
+D      b0930 asnS; asparagine--tRNA ligase	K01893 NARS; asparaginyl-tRNA synthetase [EC:6.1.1.22] 
+D      b0144 gluQ; glutamyl-Q tRNA(Asp) synthetase	K01894 gluQ; glutamyl-Q tRNA(Asp) synthetase [EC:6.1.1.-] 
+C    Trans-editing factors
+D      b3887 dtd; D-aminoacyl-tRNA deacylase	K07560 dtd; D-aminoacyl-tRNA deacylase [EC:3.1.1.96] 
+D      b0481 ybaK; Cys-tRNA(Pro) and Cys-tRNA(Cys) deacylase	K03976 ybaK; Cys-tRNA(Pro)/Cys-tRNA(Cys) deacylase [EC:3.1.1.-] 
+D      b1787 yeaK; mischarged aminoacyl-tRNA deacylase	K19055 prdX; Ala-tRNA(Pro) deacylase [EC:3.1.1.-] 
+B  tRNA modification factors
+C    Deaminases
+D      b2559 tadA; tRNA adenosine(34) deaminase	K11991 tadA; tRNA(adenine34) deaminase [EC:3.5.4.33] 
+C    Dihydorouridine synthases
+D      b4049 dusA; tRNA-dihydrouridine synthase A	K05539 dusA; tRNA-dihydrouridine synthase A [EC:1.-.-.-] 
+D      b3260 dusB; tRNA-dihydrouridine synthase B	K05540 dusB; tRNA-dihydrouridine synthase B [EC:1.-.-.-] 
+D      b2140 dusC; tRNA-dihydrouridine(16) synthase	K05541 dusC; tRNA-dihydrouridine synthase C [EC:1.-.-.-] 
+C    Methylthiotransferases
+D      b0661 miaB; isopentenyl-adenosine A37 tRNA methylthiolase	K06168 miaB; tRNA-2-methylthio-N6-dimethylallyladenosine synthase [EC:2.8.4.3] 
+C    Methyltransferases
+D      b1870 cmoA; carboxy-S-adenosyl-L-methionine synthase	K15256 cmoA; tRNA (cmo5U34)-methyltransferase [EC:2.1.1.-] 
+D      b1871 cmoB; tRNA U34 carboxymethyltransferase	K15257 cmoB; tRNA (mo5U34)-methyltransferase [EC:2.1.1.-] 
+D      b4403 yjtD; putative rRNA methyltransferase	K02533 lasT; tRNA/rRNA methyltransferase [EC:2.1.1.-] 
+D      b3965 trmA; tRNA m(5)U54 methyltransferase	K00557 trmA; tRNA (uracil-5-)-methyltransferase [EC:2.1.1.35] 
+D      b2960 trmI; tRNA m(7)G46 methyltransferase	K03439 trmB; tRNA (guanine-N7-)-methyltransferase [EC:2.1.1.33] 
+D      b2607 trmD; tRNA m(1)G37 methyltransferase	K00554 trmD; tRNA (guanine37-N1)-methyltransferase [EC:2.1.1.228] 
+D      b3706 mnmE; 5-carboxymethylaminomethyluridine-tRNA synthase GTPase subunit	K03650 mnmE; tRNA modification GTPase [EC:3.6.-.-] 
+D      b2581 yfiF; putative methyltransferase	K03214 yfiF; RNA methyltransferase, TrmH family [EC:2.1.1.-] 
+D      b3651 trmH; tRNA (Gm18) 2'-O-methyltransferase	K00556 trmH; tRNA (guanosine-2'-O-)-methyltransferase [EC:2.1.1.34] 
+D      b2532 trmJ; tRNA Cm32/Um32 methyltransferase	K15396 trmJ; tRNA (cytidine32/uridine32-2'-O)-methyltransferase [EC:2.1.1.200] 
+D      b3606 trmL; tRNA (cytidine/uridine-2'-O)-ribose methyltransferase	K03216 trmL; tRNA (cytidine/uridine-2'-O-)-methyltransferase [EC:2.1.1.207] 
+D      b0195 trmO; tRNA m(6)t(6)A37 methyltransferase	K22900 TRMO; tRNA (adenine37-N6)-methyltransferase [EC:2.1.1.-] 
+D      b2575 yfiC; tRNA m(6)A37 methyltransferase	K15460 yfiC; tRNA1Val (adenine37-N6)-methyltransferase [EC:2.1.1.223] 
+C    Psudouridine synthases
+D      b2318 truA; tRNA pseudouridine(38-40) synthase	K06173 truA; tRNA pseudouridine38-40 synthase [EC:5.4.99.12] 
+D      b3166 truB; tRNA pseudouridine(55) synthase	K03177 truB; tRNA pseudouridine55 synthase [EC:5.4.99.25] 
+D      b2791 truC; tRNA pseudouridine(65) synthase	K06175 truC; tRNA pseudouridine65 synthase [EC:5.4.99.26] 
+D      b2745 truD; tRNA pseudouridine(13) synthase	K06176 truD; tRNA pseudouridine13 synthase [EC:5.4.99.27] 
+D      b0058 rluA; 23S rRNA pseudouridine(746) and tRNA pseudouridine(32) synthase	K06177 rluA; tRNA pseudouridine32 synthase / 23S rRNA pseudouridine746 synthase [EC:5.4.99.28 5.4.99.29] 
+C    Thiolation factors
+D      b1133 mnmA; tRNA-specific 2-thiouridylase	K00566 mnmA; tRNA-uridine 2-sulfurtransferase [EC:2.8.1.13] 
+D      b1344 ttcA; tRNA cytosine(32) 2-sulfurtransferase TtcA	K14058 ttcA; tRNA 2-thiocytidine biosynthesis protein TtcA 
+D      b3470 tusA; sulfur transfer protein TusA	K04085 tusA; tRNA 2-thiouridine synthesizing protein A [EC:2.8.1.-] 
+D      b3343 tusB; sulfurtransferase complex subunit TusB	K07237 tusB; tRNA 2-thiouridine synthesizing protein B 
+D      b3344 tusC; sulfurtransferase complex subunit TusC	K07236 tusC; tRNA 2-thiouridine synthesizing protein C 
+D      b3345 tusD; sulfurtransferase complex subunit TusD	K07235 tusD; tRNA 2-thiouridine synthesizing protein D [EC:2.8.1.-] 
+D      b0969 tusE; sulfur transfer protein TusE	K11179 tusE; tRNA 2-thiouridine synthesizing protein E [EC:2.8.1.-] 
+D      b2528 iscA; iron-sulfur cluster insertion protein IscA	K13628 iscA; iron-sulfur cluster assembly protein 
+D      b2530 iscS; cysteine desulfurase	K04487 iscS; cysteine desulfurase [EC:2.8.1.7] 
+D      b2898 ygfZ; folate-binding protein	K06980 ygfZ; tRNA-modifying protein YgfZ 
+C    KEOPS/EKC complex
+D      b3064 tsaD; N(6)-L-threonylcarbamoyladenine synthase, TsaD subunit	K01409 KAE1; N6-L-threonylcarbamoyladenine synthase [EC:2.3.1.234] 
+C    Other tRNA modification factors
+D      b3741 mnmG; 5-carboxymethylaminomethyluridine-tRNA synthase subunit MnmG	K03495 gidA; tRNA uridine 5-carboxymethylaminomethyl modification enzyme 
+D      b4171 miaA; tRNA dimethylallyltransferase	K00791 miaA; tRNA dimethylallyltransferase [EC:2.5.1.75] 
+D      b2324 mnmC; fused 5-methylaminomethyl-2-thiouridine-forming methyltransferase and FAD-dependent demodification enzyme	K15461 mnmC; tRNA 5-methylaminomethyl-2-thiouridine biosynthesis bifunctional protein [EC:2.1.1.61 1.5.-.-] 
+D      b0405 queA; tRNA preQ1(34) S-adenosylmethionine ribosyltransferase-isomerase	K07568 queA; S-adenosylmethionine:tRNA ribosyltransferase-isomerase [EC:2.4.99.17] 
+D      b0444 queC; 7-cyano-7-deazaguanine synthase	K06920 queC; 7-cyano-7-deazaguanine synthase [EC:6.3.4.20] 
+D      b2765 queD; 6-carboxy-5,6,7,8-tetrahydropterin synthase	K01737 queD; 6-pyruvoyltetrahydropterin/6-carboxytetrahydropterin synthase [EC:4.2.3.12 4.1.2.50] 
+D      b2777 queE; putative 7-carboxy-7-deazaguanine synthase QueE	K10026 queE; 7-carboxy-7-deazaguanine synthase [EC:4.3.99.3] 
+D      b2794 queF; 7-cyano-7-deazaguanine reductase	K06879 queF; 7-cyano-7-deazaguanine reductase [EC:1.7.1.13] 
+D      b4166 queG; epoxyqueuosine reductase	K18979 queG; epoxyqueuosine reductase [EC:1.17.99.6] 
+D      b1764 selD; selenide, water dikinase	K01008 selD; selenide, water dikinase [EC:2.7.9.3] 
+D      b0503 selU; tRNA 2-selenouridine synthase	K06917 selU; tRNA 2-selenouridine synthase [EC:2.9.1.-] 
+D      b0406 tgt; tRNA-guanine transglycosylase	K00773 tgt; queuine tRNA-ribosyltransferase [EC:2.4.2.29] 
+D      b0423 thiI; tRNA uridine 4-sulfurtransferase	K03151 thiI; tRNA uracil 4-sulfurtransferase [EC:2.8.1.4] 
+D      b0188 tilS; tRNA(Ile)-lysidine synthetase	K04075 tilS; tRNA(Ile)-lysidine synthase [EC:6.3.4.19] 
+D      b2474 tmcA; tRNA(Met) cytidine acetyltransferase	K06957 tmcA; tRNA(Met) cytidine acetyltransferase [EC:2.3.1.193] 
+D      b1807 tsaB; N(6)-L-threonylcarbamoyladenine synthase, TsaB subunit	K14742 tsaB; tRNA threonylcarbamoyladenosine biosynthesis protein TsaB 
+D      b3282 tsaC; threonylcarbamoyl-AMP synthase	K07566 tsaC; L-threonylcarbamoyladenylate synthase [EC:2.7.7.87] 
+D      b4168 tsaE; N(6)-L-threonylcarbamoyladenine synthase, TsaE subunit	K06925 tsaE; tRNA threonylcarbamoyladenosine biosynthesis protein TsaE 
+D      b2812 tcdA; tRNA threonylcarbamoyladenosine dehydratase	K22132 tcdA; tRNA threonylcarbamoyladenosine dehydratase 
+B  tRNA degradation factors
+C    b4179 rnr; RNase R	K12573 rnr; ribonuclease R [EC:3.1.13.1] 
+C    b3164 pnp; polynucleotide phosphorylase	K00962 pnp; polyribonucleotide nucleotidyltransferase [EC:2.7.7.8] 
+!
+#<hr>
+#<b>[ <a href="/kegg/brite.html">BRITE</a> | <a href="/kegg/kegg2.html">KEGG2</a> | <a href="/kegg/">KEGG</a> ]</b><br>
+#Last updated: February 14, 2019

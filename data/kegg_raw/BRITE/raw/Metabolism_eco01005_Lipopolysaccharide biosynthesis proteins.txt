@@ -1,0 +1,66 @@
++B	LPS biosynthesis protein	KO
+#<h2><a href="/kegg/kegg2.html"><img src="/Fig/bget/kegg3.gif" align="middle" border=0></a>&nbsp; Lipopolysaccharide Biosynthesis Proteins - Escherichia coli K-12 MG1655</h2>
+%<style type="text/css"><!-- #grid{ table-layout:fixed; font-family: monospace; position: relative;width: 1200px; color: black; }.col1{ position: relative; background : white; z-index: 1; width: 600px; overflow: hidden; }.col2{ position: relative; background : white; z-index: 2; padding-left: 10px; }--></style>
+!
+A<b>Lipid A</b>
+B  b0182 lpxB; lipid A disaccharide synthase	K00748 lpxB; lipid-A-disaccharide synthase [EC:2.4.1.182] 
+B  b0181 lpxA; UDP-N-acetylglucosamine acyltransferase	K00677 lpxA; UDP-N-acetylglucosamine acyltransferase [EC:2.3.1.129] 
+B  b0179 lpxD; UDP-3-O-(3-hydroxymyristoyl)glucosamine N-acyltransferase	K02536 lpxD; UDP-3-O-[3-hydroxymyristoyl] glucosamine N-acyltransferase [EC:2.3.1.191] 
+B  b1054 lpxL; lauroyl acyltransferase	K02517 lpxL; Kdo2-lipid IVA lauroyltransferase/acyltransferase [EC:2.3.1.241 2.3.1.-] 
+B  b1855 lpxM; myristoyl-acyl carrier protein-dependent acyltransferase	K02560 lpxM; lauroyl-Kdo2-lipid IVA myristoyltransferase [EC:2.3.1.243] 
+B  b2174 lpxT; Kdo2-lipid A phosphotransferase	K19803 lpxT; Kdo2-lipid A phosphotransferase [EC:2.7.4.29] 
+B  b0622 pagP; Lipid IVA palmitoyltransferase	K12973 pagP; lipid IVA palmitoyltransferase [EC:2.3.1.251] 
+B  b2378 lpxP; palmitoleoyl acyltransferase	K12974 lpxP; KDO2-lipid IV(A) palmitoleoyltransferase [EC:2.3.1.242] 
+B  b4114 eptA; phosphoethanolamine transferase EptA	K03760 eptA; lipid A ethanolaminephosphotransferase [EC:2.7.8.43] 
+B  b0096 lpxC; UDP-3-O-acyl-N-acetylglucosamine deacetylase	K02535 lpxC; UDP-3-O-[3-hydroxymyristoyl] N-acetylglucosamine deacetylase [EC:3.5.1.108] 
+B  b0524 lpxH; UDP-2,3-diacylglucosamine diphosphatase	K03269 lpxH; UDP-2,3-diacylglucosamine hydrolase [EC:3.6.1.54] 
+B  b2257 arnT; lipid IVA 4-amino-4-deoxy-L-arabinosyltransferase	K07264 arnT; 4-amino-4-deoxy-L-arabinose transferase [EC:2.4.2.43] 
+B  b0915 lpxK; tetraacyldisaccharide 4'-kinase	K00912 lpxK; tetraacyldisaccharide 4'-kinase [EC:2.7.1.130] 
+#
+A<b>Core region</b>
+B  b3633 waaA; KDO transferase	K02527 kdtA; 3-deoxy-D-manno-octulosonic-acid transferase [EC:2.4.99.12 2.4.99.13 2.4.99.14 2.4.99.15] 
+B  b3624 waaZ; lipopolysaccharide core biosynthesis protein WaaZ	K12981 waaZ; KDO transferase III [EC:2.4.99.-] 
+B  b3621 waaC; ADP-heptose:LPS heptosyltransferase 1	K02841 waaC; heptosyltransferase I [EC:2.4.-.-] 
+B  b3620 waaF; ADP-heptose--LPS heptosyltransferase 2	K02843 waaF; heptosyltransferase II [EC:2.4.-.-] 
+B  b3632 waaQ; lipopolysaccharide core heptosyltransferase 3	K02849 waaQ; heptosyltransferase III [EC:2.4.-.-] 
+B  b3623 waaU; putative ADP-heptose:LPS heptosyltransferase 4	K03277 waaU; heptosyltransferase IV [EC:2.4.-.-] 
+B  b3631 waaG; lipopolysaccharide glucosyltransferase I	K02844 waaG; UDP-glucose:(heptosyl)LPS alpha-1,3-glucosyltransferase [EC:2.4.1.-] 
+B  b3627 waaO; UDP-D-glucose:(glucosyl)LPS alpha-1,3-glucosyltransferase	K03275 waaO; UDP-glucose:(glucosyl)LPS alpha-1,3-glucosyltransferase [EC:2.4.1.-] 
+B  b3626 waaJ; UDP-glucose:(glucosyl)LPS alpha-1,2-glucosyltransferase	K03276 waaR; UDP-glucose/galactose:(glucosyl)LPS alpha-1,2-glucosyl/galactosyltransferase [EC:2.4.1.-] 
+B  b3628 waaB; UDP-D-galactose:(glucosyl)lipopolysaccharide-1,6-D-galactosyltransferase	K02840 waaB; UDP-D-galactose:(glucosyl)LPS alpha-1,6-D-galactosyltransferase [EC:2.4.1.-] 
+B  b3629 waaS; lipopolysaccharide core biosynthesis protein	K12986 waaS; 1,5-rhamnosyltransferase [EC:2.4.1.-] 
+B  b3630 waaP; lipopolysaccharide core heptose (I) kinase	K02848 waaP; heptose I phosphotransferase [EC:2.7.1.-] 
+B  b3625 waaY; lipopolysaccharide core heptose (II) kinase	K02850 waaY; heptose II phosphotransferase [EC:2.7.1.-] 
+B  b3546 eptB; Kdo2-lipid A phosphoethanolamine 7''-transferase	K12975 eptB; KDO II ethanolaminephosphotransferase [EC:2.7.8.42] 
+B  b3955 eptC; phosphoethanolamine transferase EptC	K19353 eptC; heptose-I-phosphate ethanolaminephosphotransferase [EC:2.7.8.-] 
+B  b3615 waaH; UDP-glucuronate:LPS(HepIII) glycosyltransferase	K19354 waaH; heptose III glucuronosyltransferase [EC:2.4.1.-] 
+#
+A<b>O-antigen</b>
+B  b3622 waaL; O-antigen ligase	K02847 waaL; O-antigen ligase [EC:2.4.1.-] 
+B  b3784 rfe; UDP-N-acetylglucosamine--undecaprenyl-phosphate N-acetylglucosaminephosphotransferase	K02851 wecA; UDP-GlcNAc:undecaprenyl-phosphate/decaprenyl-phosphate GlcNAc-1-phosphate transferase [EC:2.7.8.33 2.7.8.35] 
+B  b2351 yfdH; CPS-53 (KpLE1) prophage; bactoprenol glucosyl transferase	K20534 gtrB; polyisoprenyl-phosphate glycosyltransferase [EC:2.4.-.-] 
+B  b2033 wbbJ; putative acyl transferase	K08280 wbbJ; lipopolysaccharide O-acetyltransferase [EC:2.3.1.-] 
+B  b2037 rfbX; polyisoprenol-linked O-antigen repeat unit flippase	K18799 wzxB; O-antigen flippase 
+B  b2035 wbbH; putative O-antigen polymerase	K13008 rfc; O-antigen polymerase [EC:2.4.1.-] 
+B  b2027 wzzB; regulator of length of O-antigen component of lipopolysaccharide chains	K05789 wzzB; chain length determinant protein (polysaccharide antigen chain regulator) 
+#
+A<b>Unusual sugar</b>
+B  b3197 kdsD; D-arabinose 5-phosphate isomerase KdsD	K06041 kdsD; arabinose-5-phosphate isomerase [EC:5.3.1.13] 
+B  b1215 kdsA; 3-deoxy-D-manno-octulosonate 8-phosphate synthase	K01627 kdsA; 2-dehydro-3-deoxyphosphooctonate aldolase (KDO 8-P synthase) [EC:2.5.1.55] 
+B  b3198 kdsC; 3-deoxy-D-manno-octulosonate 8-phosphate phosphatase KdsC	K03270 kdsC; 3-deoxy-D-manno-octulosonate 8-phosphate phosphatase (KDO 8-P phosphatase) [EC:3.1.3.45] 
+B  b0918 kdsB; 3-deoxy-manno-octulosonate cytidylyltransferase	K00979 kdsB; 3-deoxy-manno-octulosonate cytidylyltransferase (CMP-KDO synthetase) [EC:2.7.7.38] 
+B  b0222 lpcA; D-sedoheptulose 7-phosphate isomerase	K03271 gmhA; D-sedoheptulose 7-phosphate isomerase [EC:5.3.1.28] 
+B  b3052 rfaE; fused heptose 7-phosphate kinase/heptose 1-phosphate adenyltransferase	K03272 gmhC; D-beta-D-heptose 7-phosphate kinase / D-beta-D-heptose 1-phosphate adenosyltransferase [EC:2.7.1.167 2.7.7.70] 
+B  b0200 gmhB; D-glycero-beta-D-manno-heptose-1,7-bisphosphate 7-phosphatase	K03273 gmhB; D-glycero-D-manno-heptose 1,7-bisphosphate phosphatase [EC:3.1.3.82 3.1.3.83] 
+B  b3619 rfaD; ADP-L-glycero-D-mannoheptose 6-epimerase	K03274 gmhD; ADP-L-glycero-D-manno-heptose 6-epimerase [EC:5.1.3.20] 
+B  b2255 arnA; fused UDP-4-amino-4-deoxy-L-arabinose formyltransferase/UDP-glucuronate dehydrogenase	K10011 arnA; UDP-4-amino-4-deoxy-L-arabinose formyltransferase / UDP-glucuronic acid dehydrogenase (UDP-4-keto-hexauronic acid decarboxylating) [EC:2.1.2.13 1.1.1.305] 
+B  b2253 arnB; UDP-4-amino-4-deoxy-L-arabinose aminotransferase	K07806 arnB; UDP-4-amino-4-deoxy-L-arabinose-oxoglutarate aminotransferase [EC:2.6.1.87] 
+B  b2254 arnC; undecaprenyl-phosphate 4-deoxy-4-formamido-L-arabinose transferase	K10012 arnC; undecaprenyl-phosphate 4-deoxy-4-formamido-L-arabinose transferase [EC:2.4.2.53] 
+B  b2256 arnD; putative 4-deoxy-4-formamido-L-arabinose-phosphoundecaprenol deformylase ArnD	K13014 arnD; undecaprenyl phosphate-alpha-L-ara4FN deformylase [EC:3.5.1.-] 
+B  b4544 arnE; undecaprenyl-phosphate-alpha-L-Ara4N flippase - ArnE subunit	K12962 arnE; undecaprenyl phosphate-alpha-L-ara4N flippase subunit ArnE 
+B  b2258 arnF; undecaprenyl-phosphate-alpha-L-Ara4N flippase - ArnF subunit	K12963 arnF; undecaprenyl phosphate-alpha-L-ara4N flippase subunit ArnF 
+B  b3786 wecB; UDP-N-acetylglucosamine 2-epimerase	K01791 wecB; UDP-N-acetylglucosamine 2-epimerase (non-hydrolysing) [EC:5.1.3.14] 
+!
+#<hr>
+#<b>[ <a href="/kegg/glycan/">GLYCAN</a> | <a href="/kegg/brite.html">BRITE</a> | <a href="/kegg/kegg2.html">KEGG2</a> | <a href="/kegg/">KEGG</a> ]</b><br>
+#Last updated: February 19, 2019

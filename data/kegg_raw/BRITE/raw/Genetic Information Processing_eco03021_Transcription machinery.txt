@@ -1,0 +1,114 @@
++E
+#<h2><a href="/kegg/kegg2.html"><img src="/Fig/bget/kegg3.gif" align="middle" border=0></a>&nbsp; Transcription Machinery - Escherichia coli K-12 MG1655</h2>
+%<style type="text/css"><!-- #grid{ table-layout:fixed; font-family: monospace; position: relative;width: 1200px; color: black; }.col1{ position: relative; background : white; z-index: 1; width: 600px; overflow: hidden; }.col2{ position: relative; background : white; z-index: 2; padding-left: 10px; }--></style>
+!
+A<b>Eukaryotic type</b>
+B  RNA polymerase II system
+C    RNA polymerase II
+D      Core subunits
+D      Pol II specific subunits
+D      Pol I, II, III common subunits
+D      Pol IV and V specific subunits
+C    Basal transcription factors
+D      TFIIA
+D      TFIIB
+D      TFIID
+D      TFIIE
+D      TFIIF
+D      TFIIH
+C    Mediator complex
+D      Head
+D      Middle
+D      Tail
+D      CDK-module
+D      Other mediators
+C    Coactivators
+D      SAGA/TFTC/STAGA complex
+D      BAF/PBAF complex
+D      SWI/SNF complex
+D      RSC complex
+C    Other transcription-related factors
+D      Transcription elongation factors
+D      Transcription termination factor
+D      PAF1 complex
+D      NELF complex
+D      Super elongation complex (SEC)
+D      Brd4/P-TEFb complex
+D      BUR kinase complex
+D      CTDK-I complex
+D      7SK RNP complex
+D      Others
+B  RNA polymerase III system
+C    RNA polymerase III
+D      Core subunits
+D      Pol III specific subunits
+D      Pol I, II, III common subunits
+C    Basal transcription factors
+D      TFIIIA
+D      TFIIIB
+D      TFIIIC
+D      TFIIIC, fungi type
+C    Other transcription-related factors
+D      snRNA-activating protein complex (SNAPc)
+D      Octamer transcription factors
+D      Others
+B  RNA polymerase I system
+C    RNA polymerase I
+D      Core subunits
+D      Pol I specific subunits
+D      Pol I, II, III common subunits
+C    Basal transcription factors
+D      SL1/TIF-1B
+C    Other transcription-related factors
+D      UBF
+D      Transcription initiation factors
+D      Transcription elongation factors
+D      NoRC (nucleolar remodeling complex)
+D      CTDK-I complex
+D      Transcription termination factors
+#
+A<b>Prokaryotic type</b>
+B  Bacterial type
+C    RNA polymerase
+D      Core subunits
+E        b3295 rpoA; RNA polymerase subunit alpha	K03040 rpoA; DNA-directed RNA polymerase subunit alpha [EC:2.7.7.6] 
+E        b3987 rpoB; RNA polymerase subunit beta	K03043 rpoB; DNA-directed RNA polymerase subunit beta [EC:2.7.7.6] 
+E        b3988 rpoC; RNA polymerase subunit beta'	K03046 rpoC; DNA-directed RNA polymerase subunit beta' [EC:2.7.7.6] 
+E        b3649 rpoZ; RNA polymerase subunit omega	K03060 rpoZ; DNA-directed RNA polymerase subunit omega [EC:2.7.7.6] 
+D      Sigma factors
+E        b3067 rpoD; RNA polymerase, sigma 70 (sigma D) factor	K03086 rpoD; RNA polymerase primary sigma factor 
+E        b2741 rpoS; RNA polymerase, sigma S (sigma 38) factor	K03087 rpoS; RNA polymerase nonessential primary-like sigma factor 
+E        b2573 rpoE; RNA polymerase sigma E factor	K03088 rpoE; RNA polymerase sigma-70 factor, ECF subfamily 
+E        b4293 fecI; RNA polymerase sigma factor FecI	K23514 fecI; RNA polymerase sigma-19 factor, ECF subfamily 
+E        b3461 rpoH; RNA polymerase, sigma 32 (sigma H) factor	K03089 rpoH; RNA polymerase sigma-32 factor 
+E        b3202 rpoN; RNA polymerase, sigma 54 (sigma N) factor	K03092 rpoN; RNA polymerase sigma-54 factor 
+E        b1922 fliA; RNA polymerase, sigma 28 (sigma F) factor	K02405 fliA; RNA polymerase sigma factor for flagellar operon FliA 
+C    Other transcription-related factors
+D      RNA polymerase-associated proteins
+E        b0059 rapA; RNA polymerase-binding ATPase and RNAP recycling factor	K03580 hepA; ATP-dependent helicase HepA [EC:3.6.4.-] 
+E        b3169 nusA; transcription termination/antitermination protein NusA	K02600 nusA; transcription termination/antitermination protein NusA 
+E        b0416 nusB; transcription antitermination protein NusB	K03625 nusB; transcription antitermination protein NusB 
+E        b3982 nusG; transcription termination factor NusG	K02601 nusG; transcription termination/antitermination protein NusG 
+E        b3229 sspA; stringent starvation protein A	K03599 sspA; stringent starvation protein A 
+E        b3228 sspB; ClpXP protease specificity-enhancing factor	K03600 sspB; stringent starvation protein B 
+E        b2572 rseA; anti-sigma factor	K03597 rseA; sigma-E factor negative regulatory protein RseA 
+E        b2571 rseB; anti-sigma factor stabilizing protein RseB	K03598 rseB; sigma-E factor negative regulatory protein RseB 
+E        b2570 rseC; protein RseC	K03803 rseC; sigma-E factor negative regulatory protein RseC 
+D      Transcription elongation factors
+E        b0145 dksA; RNA polymerase-binding transcription factor DksA	K06204 dksA; DnaK suppressor protein 
+E        b3181 greA; transcription elongation factor GreA	K03624 greA; transcription elongation factor GreA 
+E        b3406 greB; transcription elongation factor GreB	K04760 greB; transcription elongation factor GreB 
+D      Transcription termination factor
+E        b3783 rho; transcription termination factor Rho	K03628 rho; transcription termination factor Rho 
+E        b0189 rof; modulator of Rho-dependent transcription termination	K19000 rof; Rho-binding antiterminator 
+B  Archaeal type
+C    RNA polymerase
+D      Core subunits
+C    Basal transcription factors
+D      TFB
+D      TFE
+D      TFS
+!
+#<hr>
+#<b>[ <a href="/kegg/brite.html">BRITE</a> | <a href="/kegg/kegg2.html">KEGG2</a> | <a href="/kegg/">KEGG</a> ]</b><br>
+#Last updated: March 13, 2020

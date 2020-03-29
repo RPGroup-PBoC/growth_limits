@@ -1,0 +1,131 @@
++E	Ribosome biogenesis	KO
+#<h2><a href="/kegg/kegg2.html"><img src="/Fig/bget/kegg3.gif" align="middle" border=0></a>&nbsp; Ribosome Biogenesis - Escherichia coli K-12 MG1655</h2>
+%<style type="text/css"><!-- #grid{ table-layout:fixed; font-family: monospace; position: relative;width: 1200px; color: black; }.col1{ position: relative; background : white; z-index: 1; width: 600px; overflow: hidden; }.col2{ position: relative; background : white; z-index: 2; padding-left: 10px; }--></style>
+!
+A<b>Eukaryotic type</b>
+B  Sno RNPs
+C    Box C/D snoRNPs
+C    Box H/ACA snoRNPs
+B  90S particles
+C    U3 small nucleolar RNA-associated proteins
+C    Helicases
+C    GTPase
+C    RNase
+D      b2567 rnc; RNase III	K03685 rnc; ribonuclease III [EC:3.1.26.3] 
+C    Kinase
+C    Other 90S particles
+B  Pre-40S particles
+C    Kinases
+C    Export and cytoplasmic maturation factors
+C    Other pre-40S particles
+B  Pre-60S particles
+C    Helicases
+C    GTPases
+C    RNases
+D      b4162 orn; oligoribonuclease	K13288 orn; oligoribonuclease [EC:3.1.-.-] 
+D      RNase MRP
+C    Kinases
+C    Export and cytoplasmic maturation factors
+C    5-FMC complex
+C    Other pre-60S particles
+B  Other ribosome biogenesis factors
+C    b2566 era; 30S ribosomal subunit maturation GTPase Era	K03595 era; GTPase 
+C    b3183 obgE; GTPase ObgE	K03979 obgE; GTPase [EC:3.6.5.-] 
+#
+A<b>Prokaryotic type</b>
+B  Sno RNPs
+C    Box C/D snoRNPs
+C    Box H/ACA snoRNPs
+B  rRNA transcription factors
+C    b0145 dksA; RNA polymerase-binding transcription factor DksA	K06204 dksA; DnaK suppressor protein 
+C    b3169 nusA; transcription termination/antitermination protein NusA	K02600 nusA; transcription termination/antitermination protein NusA 
+C    b0416 nusB; transcription antitermination protein NusB	K03625 nusB; transcription antitermination protein NusB 
+C    b3982 nusG; transcription termination factor NusG	K02601 nusG; transcription termination/antitermination protein NusG 
+B  rRNA modification factors
+C    16S rRNA modification factors
+D      b2183 rsuA; 16S rRNA pseudouridine(516) synthase	K06183 rsuA; 16S rRNA pseudouridine516 synthase [EC:5.4.99.19] 
+D      b0051 rsmA; 16S rRNA m(6)2A1518,m(6)2A1519 dimethyltransferase	K02528 ksgA; 16S rRNA (adenine1518-N6/adenine1519-N6)-dimethyltransferase [EC:2.1.1.182] 
+D      b3289 rsmB; 16S rRNA m(5)C967 methyltransferase	K03500 rsmB; 16S rRNA (cytosine967-C5)-methyltransferase [EC:2.1.1.176] 
+D      b4371 rsmC; 16S rRNA m(2)G1207 methyltransferase	K00564 rsmC; 16S rRNA (guanine1207-N2)-methyltransferase [EC:2.1.1.172] 
+D      b3465 rsmD; 16S rRNA m(2)G966 methyltransferase	K08316 rsmD; 16S rRNA (guanine966-N2)-methyltransferase [EC:2.1.1.171] 
+D      b2946 rsmE; 16S rRNA m(3)U1498 methyltransferase	K09761 rsmE; 16S rRNA (uracil1498-N3)-methyltransferase [EC:2.1.1.193] 
+D      b1835 rsmF; 16S rRNA m(5)C1407 methyltransferase	K11392 rsmF; 16S rRNA (cytosine1407-C5)-methyltransferase [EC:2.1.1.178] 
+D      b3740 rsmG; 16S rRNA m(7)G527 methyltransferase	K03501 gidB; 16S rRNA (guanine527-N7)-methyltransferase [EC:2.1.1.170] 
+D      b0082 rsmH; 16S rRNA m(4)C1402 methyltransferase	K03438 mraW; 16S rRNA (cytosine1402-N4)-methyltransferase [EC:2.1.1.199] 
+D      b3146 rsmI; 16S rRNA 2'-O-ribose C1402 methyltransferase	K07056 rsmI; 16S rRNA (cytidine1402-2'-O)-methyltransferase [EC:2.1.1.198] 
+D      b3497 rsmJ; 16S rRNA m(2)G1516 methyltransferase	K15984 rsmJ; 16S rRNA (guanine1516-N2)-methyltransferase [EC:2.1.1.242] 
+C    23S rRNA modification factors
+D      b1822 rlmA; 23S rRNA m(1)G745 methyltransferase	K00563 rlmA1; 23S rRNA (guanine745-N1)-methyltransferase [EC:2.1.1.187] 
+D      b4180 rlmB; 23S rRNA 2'-O-ribose G2251 methyltransferase	K03218 rlmB; 23S rRNA (guanosine2251-2'-O)-methyltransferase [EC:2.1.1.185] 
+D      b3179 rlmE; 23S rRNA 2'-O-ribose U2552 methyltransferase	K02427 rlmE; 23S rRNA (uridine2552-2'-O)-methyltransferase [EC:2.1.1.166] 
+D      b0807 rlmF; 23S rRNA m(6)A1618 methyltransferase	K06970 rlmF; 23S rRNA (adenine1618-N6)-methyltransferase [EC:2.1.1.181] 
+D      b3084 rlmG; 23S rRNA m(2)G1835 methyltransferase	K11391 rlmG; 23S rRNA (guanine1835-N2)-methyltransferase [EC:2.1.1.174] 
+D      b0636 rlmH; 23S rRNA m(3)psi1915 methyltransferase	K00783 rlmH; 23S rRNA (pseudouridine1915-N3)-methyltransferase [EC:2.1.1.177] 
+D      b0967 rlmI; 23S rRNA m(5)C1962 methyltransferase	K06969 rlmI; 23S rRNA (cytosine1962-C5)-methyltransferase [EC:2.1.1.191] 
+D      b3499 rlmJ; 23S rRNA m(6)A2030 methyltransferase	K07115 rlmJ; 23S rRNA (adenine2030-N6)-methyltransferase [EC:2.1.1.266] 
+D      b0948 rlmL; fused 23S rRNA m(2)G2445 methyltransferase and 23S rRNA m(7)G2069 methyltransferase	K12297 rlmL; 23S rRNA (guanine2445-N2)-methyltransferase / 23S rRNA (guanine2069-N7)-methyltransferase [EC:2.1.1.173 2.1.1.264] 
+D      b2806 rlmM; 23S rRNA 2'-O-ribose C2498 methyltransferase	K06968 rlmM; 23S rRNA (cytidine2498-2'-O)-methyltransferase [EC:2.1.1.186] 
+D      b2517 rlmN; 23S rRNA m(2)A2503 methyltransferase/tRNA m(2)A37 methyltransferase	K06941 rlmN; 23S rRNA (adenine2503-C2)-methyltransferase [EC:2.1.1.192] 
+D      b2785 rlmD; 23S rRNA m(5)U1939 methyltransferase	K03215 rumA; 23S rRNA (uracil1939-C5)-methyltransferase [EC:2.1.1.190] 
+D      b0859 rlmC; 23S rRNA m(5)U747 methyltransferase	K03212 rumB; 23S rRNA (uracil747-C5)-methyltransferase [EC:2.1.1.189] 
+D      b0058 rluA; 23S rRNA pseudouridine(746) and tRNA pseudouridine(32) synthase	K06177 rluA; tRNA pseudouridine32 synthase / 23S rRNA pseudouridine746 synthase [EC:5.4.99.28 5.4.99.29] 
+D      b1269 rluB; 23S rRNA pseudouridine(2605) synthase	K06178 rluB; 23S rRNA pseudouridine2605 synthase [EC:5.4.99.22] 
+D      b1086 rluC; 23S rRNA pseudouridine(955/2504/2580) synthase	K06179 rluC; 23S rRNA pseudouridine955/2504/2580 synthase [EC:5.4.99.24] 
+D      b2594 rluD; 23S rRNA pseudouridine(1911/1915/1917) synthase	K06180 rluD; 23S rRNA pseudouridine1911/1915/1917 synthase [EC:5.4.99.23] 
+D      b1135 rluE; 23S rRNA pseudouridine(2457) synthase	K06181 rluE; 23S rRNA pseudouridine2457 synthase [EC:5.4.99.20] 
+D      b4022 rluF; 23S rRNA pseudouridine(2604) and tRNA(Tyr) pseudouridine(35) synthase	K06182 rluF; 23S rRNA pseudouridine2604 synthase [EC:5.4.99.21] 
+D      b2581 yfiF; putative methyltransferase	K03214 yfiF; RNA methyltransferase, TrmH family [EC:2.1.1.-] 
+B  ribosomal protein modification factors
+C    b4373 rimI; ribosomal-protein-S18-alanine N-acetyltransferase	K03789 rimI; [ribosomal protein S18]-alanine N-acetyltransferase [EC:2.3.1.266] 
+C    b1066 rimJ; ribosomal-protein-S5-alanine N-acetyltransferase	K03790 rimJ; [ribosomal protein S5]-alanine N-acetyltransferase [EC:2.3.1.267] 
+C    b0852 rimK; ribosomal protein S6 modification protein	K05844 rimK; ribosomal protein S6--L-glutamate ligase [EC:6.3.2.-] 
+C    b1427 rimL; ribosomal-protein-L12-serine acetyltransferase	K03817 rimL; ribosomal-protein-serine acetyltransferase [EC:2.3.1.-] 
+C    b2608 rimM; ribosome maturation factor RimM	K02860 rimM; 16S rRNA processing protein RimM 
+C    b0835 rimO; ribosomal protein S12 methylthiotransferase RimO	K14441 rimO; ribosomal protein S12 methylthiotransferase [EC:2.8.4.4] 
+C    b0905 ycaO; ribosomal protein S12 methylthiotransferase accessory factor YcaO	K09136 ycaO; ribosomal protein S12 methylthiotransferase accessory factor 
+C    b3259 prmA; methyltransferase for 50S ribosomal subunit protein L11	K02687 prmA; ribosomal protein L11 methyltransferase [EC:2.1.1.-] 
+C    b2330 prmB; 50S ribosomal subunit protein L3 N(5)-glutamine methyltransferase	K07320 prmB; ribosomal protein L3 glutamine methyltransferase [EC:2.1.1.298] 
+C    b1128 roxA; ribosomal protein-arginine oxygenase	K18850 ycfD; 50S ribosomal protein L16 3-hydroxylase [EC:1.14.11.47] 
+B  rRNA processing factors
+C    b2567 rnc; RNase III	K03685 rnc; ribonuclease III [EC:3.1.26.3] 
+C    b1084 rne; ribonuclease E	K08300 rne; ribonuclease E [EC:3.1.26.12] 
+C    b3247 rng; RNase G	K08301 rng; ribonuclease G [EC:3.1.26.-] 
+B  rRNA helicases
+C    b3162 deaD; ATP-dependent RNA helicase DeaD	K05592 deaD; ATP-dependent RNA helicase DeaD [EC:3.6.4.13] 
+C    b1343 dbpA; ATP-dependent RNA helicase DbpA	K05591 dbpA; ATP-dependent RNA helicase DbpA [EC:3.6.4.13] 
+C    b2576 srmB; ATP-dependent RNA helicase SrmB	K05590 srmB; ATP-dependent RNA helicase SrmB [EC:3.6.4.13] 
+B  GTPases
+C    b2566 era; 30S ribosomal subunit maturation GTPase Era	K03595 era; GTPase 
+C    b4161 rsgA; ribosome small subunit-dependent GTPase A	K06949 rsgA; ribosome biogenesis GTPase / thiamine phosphate phosphatase [EC:3.6.1.- 3.1.3.100] 
+C    b2511 der; 50S ribosomal subunit stability factor	K03977 engA; GTPase 
+C    b3183 obgE; GTPase ObgE	K03979 obgE; GTPase [EC:3.6.5.-] 
+C    b4173 hflX; ribosome rescue factor HflX	K03665 hflX; GTPase 
+B  Other maturation factors
+C    b3282 tsaC; threonylcarbamoyl-AMP synthase	K07566 tsaC; L-threonylcarbamoyladenylate synthase [EC:2.7.7.87] 
+C    b3650 spoT; bifunctional (p)ppGpp synthase/hydrolase SpoT	K01139 spoT; GTP diphosphokinase / guanosine-3',5'-bis(diphosphate) 3'-diphosphatase [EC:2.7.6.5 3.1.7.2] 
+C    b3167 rbfA; 30S ribosome binding factor	K02834 rbfA; ribosome-binding factor A 
+C    b3170 rimP; ribosome maturation factor RimP	K09748 rimP; ribosome maturation factor RimP 
+C    b0528 ybcJ; putative RNA-binding protein YbcJ	K14761 ybcJ; ribosome-associated protein 
+C    b0637 rsfS; ribosomal silencing factor RsfS	K09710 ybeB; ribosome-associated protein 
+C    b0659 ybeY; endoribonuclease YbeY	K07042 ybeY; probable rRNA maturation factor 
+C    b3180 yhbY; ribosome assembly factor YhbY	K07574 yhbY; RNA-binding protein 
+C    b3602 yibL; DUF2810 domain-containing protein YibL	K14762 yibL; ribosome-associated protein 
+C    b4234 yjgA; DUF615 domain-containing protein YjgA	K09889 yjgA; ribosome-associated protein 
+C    b0953 rmf; ribosome modulation factor	K03812 rmf; ribosome modulation factor 
+C    b3203 hpf; ribosome hibernation-promoting factor	K05808 yhbH; putative sigma-54 modulation protein 
+C    b2597 raiA; stationary phase translation inhibitor and ribosome stability factor	K05809 raiA; ribosome-associated inhibitor A 
+C    b1480 sra; 30S ribosomal subunit protein S22	K02972 sra; stationary-phase-induced ribosome-associated protein 
+C    b1203 ychF; redox-responsive ATPase YchF	K06942 ychF; ribosome-binding ATPase 
+#
+A<b>Related small nucleolar RNAs</b>
+B  Box C/D snoRNAs
+C    SnoRNAs involved in processing reactions
+C    SnoRNAs act as guides for 2'-O-ribose methylation
+B  Box H/ACA snoRNAs
+C    SnoRNAs involved in processing reactions
+C    SnoRNAs act as guides for pseudouridynation
+B  Other snoRNA
+!
+#<hr>
+#<b>[ <a href="/kegg/brite.html">BRITE</a> | <a href="/kegg/kegg2.html">KEGG2</a> | <a href="/kegg/">KEGG</a> ]</b><br>
+#Last updated: April 8, 2019

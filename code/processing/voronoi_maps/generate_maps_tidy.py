@@ -25,7 +25,82 @@ import prot.voronoimap as map
 # Load the dataset with aboslute measurements
 
 df_all = pd.read_csv('../../../data/compiled_absolute_measurements.csv')
-data_group = df_all.groupby(['dataset', 'condition', 'growth_rate_hr'])
+
+# generate a few more subcategories in the 'information storage and processing'
+# COG class :
+## ------------------------
+# transcription
+## ------------------------
+## 'transcription factors and nucleoid  associated  proteins' : GO:0003677) - DNA binding
+## 'RNA polymerase and sigma factors' : GO:0016987; sigma factor activity or
+        ## GO:0003899; DNA-directed 5'-3' RNA polymerase activity, DNA-directed RNA polymerase,
+## 'transcription related' : else
+
+## ------------------------
+# 'translation, ribosomal structure and biogenesis' :
+## ------------------------
+## 'Ribosome' : GO:0005840; ribosome, Ribonucleoprotein; Ribosomal protein
+## 'translation, ribosomal biogenesis' : else
+
+## ------------------------
+# Replication, recombination, and repair
+## ------------------------
+## 'DNA polymerase' : GO:0003887; DNA-directed DNA polymerase activity
+## 'DNA replication related' : GO:0006260; DNA replication
+## 'DNA Recombination and repair' : else
+
+df_ref = pd.DataFrame()
+
+for cog_cat, _d in df_all.groupby('cog_category'):
+    if cog_cat == 'transcription':
+        d = _d[_d['go_terms'].astype(str).str.contains('GO:0016987|GO:0003899')] #GO:0016987; sigma factor activity
+        d = d.replace({'transcription': 'RNA polymerase and sigma factors'})
+        df_ref = df_ref.append(d, ignore_index = True)
+
+        d = _d[~_d['go_terms'].astype(str).str.contains('GO:0016987|GO:0003899')]
+        d = d[d['go_terms'].astype(str).str.contains('GO:0003677')]
+        d = d.replace({'transcription': \
+                'transcription factors and nucleoid associated proteins'})
+        df_ref = df_ref.append(d, ignore_index = True)
+
+        d = _d[~_d['go_terms'].astype(str).str.contains('GO:0016987|GO:0003899')]
+        d = d[~d['go_terms'].astype(str).str.contains('GO:0003677')]
+        d = d.replace({'transcription': 'transcription related'})
+        df_ref = df_ref.append(d, ignore_index = True)
+
+    elif cog_cat == 'translation, ribosomal structure and biogenesis':
+        d = _d[_d['go_terms'].astype(str).str.contains('GO:0005840')]
+        d = d.replace({'translation, ribosomal structure and biogenesis' : \
+                                    'ribosome'})
+        df_ref = df_ref.append(d, ignore_index = True)
+
+        d = _d[~_d['go_terms'].astype(str).str.contains('GO:0005840')]
+        d = d.replace({'translation, ribosomal structure and biogenesis' : \
+                 'translation, ribosomal biogenesis'})
+        df_ref = df_ref.append(d, ignore_index = True)
+
+    elif cog_cat == 'Replication, recombination, and repair':
+        d = _d[_d['go_terms'].astype(str).str.contains('GO:0003887')]
+        d = d.replace({'Replication, recombination, and repair': \
+                    'DNA polymerase'})
+        df_ref = df_ref.append(d, ignore_index = True)
+
+        d = _d[~_d['go_terms'].astype(str).str.contains('GO:0003887')]
+        d = d[d['go_terms'].astype(str).str.contains('GO:0006260')]
+        d = d.replace({'Replication, recombination, and repair': \
+                    'DNA replication related'})
+        df_ref = df_ref.append(d, ignore_index = True)
+
+        d = _d[~_d['go_terms'].astype(str).str.contains('GO:0003887')]
+        d = d[~d['go_terms'].astype(str).str.contains('GO:0006260')]
+        d = d.replace({'Replication, recombination, and repair': \
+                    'DNA Recombination and repair'})
+        df_ref = df_ref.append(d, ignore_index = True)
+
+    else:
+        df_ref = df_ref.append(_d, ignore_index = True)
+
+data_group = df_ref.groupby(['dataset', 'condition', 'growth_rate_hr'])
 
 #####################################
 # Treemap structure and reference map (to provide positional 'seeds' for
@@ -41,44 +116,34 @@ proteomap_df_ref = \
     gpd.read_file("../../../data/voronoi_map_data/treemap_li_2014_MOPS complete_1.93_ref.geojson",
                                      driver='GeoJSON')
 
+# proteomap_df_ref = proteomap_df_ref[proteomap_df_ref.cog_category != 'RNA processing and modification']
 # proteomap_df_ref = \
 #     gpd.read_file("../../../data/voronoi_map_data/treemap_schmidt_2016_glucose_0.58.geojson",
 #                                      driver='GeoJSON')
 
 
 
-
+count_ = 0
 #####################################
 # Generate weighted Voronoi map for each dataset
 for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
-
-    # only deal with genes > 0.1% of total.
-    df_temp = pd.DataFrame()
-    for gene, d in data.groupby('gene_name'):
-        frac_mass = d.fg_per_cell.sum()/ data.fg_per_cell.sum()
-        data_dict = {'frac_mass_tot' : frac_mass,
-                        'gene_name' : gene}
-        df_temp = df_temp.append(data_dict, ignore_index=True)
-    data = data.merge(df_temp, on = 'gene_name')
-    data = data[data.frac_mass_tot  >= 0.0001]
-
-
-    # if [dets[0], dets[1]] == ['li_2014', 'MOPS complete']:
+    count_ += 1
+    # if 5 > count_ > 23:
     #     continue
 
+    if dets != ('peebo_2015','rich',0.65):
+        continue
+    print(dets)
 
     # initialize DataFrame to store map.
     proteomap_df = pd.DataFrame()
-    # proteomap_df = \
-    # gpd.read_file("../../../data/voronoi_map_data/treemap_li_2014_MOPS complete_1.93_ref.geojson",
-    #                                  driver='GeoJSON')
 
     for tree_i, tree in enumerate(tree_structure):
 
         if tree_i == 0:
             # continue
             print('Initialize map.')
-            # print('tree level: ', tree_i, ' : ', )
+
             # define boundary of entire map
             border = map.border_map()
 
@@ -98,7 +163,7 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
             # parameters for iteration; try up to 15 times and take best mapping
             error_calc = np.inf
             count = 0
-            while (error_calc >= 0.1) and (count <=15):
+            while (error_calc >= 0.1) and (count <=10):
                 count += 1
                 try:
                     # number of cells
@@ -106,7 +171,8 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
 
                     # Set Voronoi points
                     # S = map.random_points_within(border,  sample_count)
-                    S = map.S_find_centroid(proteomap_df_ref[proteomap_df_ref.level == tree_i], tree)
+                    S = map.S_find_centroid(proteomap_df_ref[proteomap_df_ref.level == tree_i],
+                                tree, frac[tree].unique(), random_shift = True)
 
                     # Initialize random set of weightings for Voronoi cells.
                     W = (.8 * np.random.random(sample_count) + .2)
@@ -134,7 +200,7 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                                 if (Point(s).within(cell_)):
                                     cell =  cell_
                             A_diff += abs(cell.area - border.area * weights[i])
-                        # print(A_diff/(2*border.area))
+                        print(A_diff/(2*border.area))
 
                         if A_diff/(2*border.area) < error_calc:
                             V_cell = V
@@ -163,22 +229,32 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                 break
 
         else:
-            # if tree_i == 2:
-            #     continue
+            if tree_i == 2:
+                continue
+                # only deal with genes > 0.1% of total.
+                df_temp = pd.DataFrame()
+                for gene, d in data.groupby('gene_name'):
+                    frac_mass = d.fg_per_cell.sum()/ data.fg_per_cell.sum()
+                    data_dict = {'frac_mass_tot' : frac_mass,
+                                    'gene_name' : gene}
+                    df_temp = df_temp.append(data_dict, ignore_index=True)
+                data = data.merge(df_temp, on = 'gene_name')
+                data = data[data.frac_mass_tot  >= 0.0001]
 
             area_whole = map.border_map().area
-            # print(area_whole)
+
             for cat, cell in proteomap_df[proteomap_df['level'] == tree_i-1].groupby(tree_structure[tree_i-1]):
                 print(cat)
 
                 # For 'Not Assigned' go straigh to gene names
                 if cat == 'Not Assigned':
-                    tree = 'gene_name'
-                    tree_i = 2
+                    continue
+                    # tree = 'gene_name'
+                    # tree_i = 2
 
                 # data to consider for cell
                 data_tree = data[data[tree_structure[(tree_i-1)]] == cat]
-                print(len(data_tree))
+
                 border = cell.geometry[cell.index[0]]
 
                 # compute desired cell weightings
@@ -189,8 +265,12 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                     frac = frac.append(map.data_for_tree(frac_, frac_tot, d, tree_i, cog_dict),
                                 ignore_index=True )
 
+                if frac.empty:
+                    continue
+
                 # Set desired cell weighting
                 weights = frac.mass_frac.values
+
 
                 # Set index for each cell
                 frac['index'] = np.arange(len(weights))
@@ -199,13 +279,12 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                 error_calc = np.inf
                 count = 0
 
-                while (error_calc >= 0.1) and (count <=5):
+                while (error_calc >= 0.1) and (count <=15):
                     count += 1
                     print(count)
                     try:
                         # number of cells
                         sample_count = len(frac)
-                        # S = map.random_points_within(border,  sample_count)
                         if tree_i == 2:
                             S = map.random_points_within(border,  sample_count)
                         else:
@@ -220,11 +299,12 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                             translation = [(border.centroid.x - cell_ref.centroid.x).values[0],
                                                     (border.centroid.y - cell_ref.centroid.y).values[0]]
 
-                            S = map.S_find_centroid(map_ref,  tree)
+                            S = map.S_find_centroid(map_ref,  tree, frac[tree].unique(), random_shift = True)
 
                             S_shapely = MultiPoint(S)
                             if S_shapely.within(border) == False:
-                                S_shapely = shapely.affinity.translate(S_shapely, xoff=translation[0], yoff=translation[1])
+                                S_shapely = shapely.affinity.translate(S_shapely,
+                                            xoff=translation[0], yoff=translation[1])
 
                                 while S_shapely.within(border) == False:
                                     S_shapely = shapely.affinity.scale(S_shapely, xfact=0.9, yfact=0.9)
@@ -232,7 +312,7 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                                 S = np.array([[s.x,s.y] for s in S_shapely])
 
                         # Initialize random set of weightings for Voronoi cells.
-                        W = (.8 * np.random.random(sample_count) + .2) * (border.area / map.border_map().area) / 1000.0
+                        W = (.8 * np.random.random(sample_count) + .2) * (border.area / map.border_map().area) #/ 1000.0
 
                         # generate Voronoi cells
                         V = map.compute_power_voronoi_map(S, W, border, 1E-7)
@@ -244,7 +324,10 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
 
                             V = map.compute_power_voronoi_map(S, W, border, 1E-7)
 
-                            W = map.AdaptWeights(V, S, border, W, weights, 1E-6)
+                            if cat == 'information storage and processing':
+                                W = map.AdaptWeights(V, S, border, W, weights, 1E-5)
+                            else:
+                                W = map.AdaptWeights(V, S, border, W, weights, 1E-6)
 
                             V = map.compute_power_voronoi_map(S, W, border, 1E-7)
 
@@ -285,10 +368,10 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                 else:
                     print('Did not find map for:' + cat)
 
-                # reset index after handling 'Not Assigned'
-                if cat == 'Not Assigned':
-                    tree = 'cog_category'
-                    tree_i = 1
+                # # reset index after handling 'Not Assigned'
+                # if cat == 'Not Assigned':
+                #     tree = 'cog_category'
+                #     tree_i = 1
 
 
     ########################################

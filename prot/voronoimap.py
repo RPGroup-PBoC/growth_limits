@@ -174,7 +174,6 @@ def compute_power_voronoi_map(S, W, border, eps):
     if S.shape[0] > 3:
         tri_list, tri_list_ = get_power_triangulation(S, W)
 
-
         # Compute the Voronoi cells
         voronoi_cell_map = get_voronoi_cells(S, W, tri_list)
 
@@ -287,8 +286,8 @@ def AdaptPositionsWeights(S, V_cell, W):
         for pp in cell.centroid.coords:
             S_.append(pp)
 #             break
-        dist_border.append(abs(cell.exterior.distance(Point(pp))))
-
+            dist_border.append(abs(cell.exterior.distance(Point(pp))))
+    # S_new = np.array(S_)
     S_new = np.array(list(map(list, S_)))
     W_new = [np.min([np.sqrt(W[i]),dist_border[i]])**2 for i in np.arange(len(W))]
 
@@ -347,7 +346,7 @@ def AdaptWeights(V_cell, S, bound, W, w_desired, err = 0.001):
 
 def map_iterator(S, W,  border, weights):
     # generate initial Voronoi cells
-
+    # print(S)
     V = compute_power_voronoi_map(S, W, border, 1E-7)
 
     # 30 iterations is usually plenty to reach minimum
@@ -356,10 +355,10 @@ def map_iterator(S, W,  border, weights):
 
         V = compute_power_voronoi_map(S, W, border, 1E-7)
 
-        W = AdaptWeights(V, S, border, W, weights, 1E-5)
+        W = AdaptWeights(V, S, border, W, weights, 1E-7)
 
         V = compute_power_voronoi_map(S, W, border, 1E-7)
-
+        # print(V)
     return V, S
 
 def border_map():
@@ -431,7 +430,7 @@ def random_points_within(poly, num_points):
     return S
 
 
-def S_find_centroid(proteomap, tree):
+def S_find_centroid(proteomap, tree, tree_list, random_shift = False):
     """
     Generates the Voronoi positions based on  the centroids of cells in
     a  reference map.
@@ -454,13 +453,19 @@ def S_find_centroid(proteomap, tree):
     S_ = []
 
     for cell_id, d in proteomap.groupby(tree):
-        S_.append([d.geometry.centroid.x.values[0], d.geometry.centroid.y.values[0]])
+        if cell_id in tree_list:
+            S_.append([d.geometry.centroid.x.values[0], d.geometry.centroid.y.values[0]])
+
+    if random_shift == True:
+        mu, sigma = 1.0, 0.5 # mean and standard deviation
+        S_ = [s*np.random.normal(mu, sigma, 2) for s in S_]
+
     S = np.array(list(map(list, S_)))
 
     return S
 
 
-def S_transform(S_shapely, translation):
+def S_transform(S_shapely, border, translation):
     """
     Performs translation and scaling of Voronoi positions based on the difference
     of current cell and reference cell.
@@ -486,3 +491,31 @@ def S_transform(S_shapely, translation):
     else:
         S = np.array([[s.x,s.y] for s in S_shapely])
         return S
+
+
+def data_for_tree(frac, frac_tot, d, tree_i, cog_dict):
+    ''' Loads in data details for current mapping (need to make more elegant...)
+    '''
+    if tree_i == 0:
+        data_dict = {'mass_frac' : frac,
+                    'mass_frac_tot' : frac_tot,
+                    'cog_class' : d.cog_class.unique()[0],
+                    'cog_category' : None,
+                    'cog_dict' : cog_dict[d.cog_class.unique()[0]],
+                    'gene_name' : None}
+    elif tree_i == 1:
+        data_dict = {'mass_frac': frac,
+                    'mass_frac_tot' : frac_tot,
+                    'cog_class' : d.cog_class.unique()[0],
+                    'cog_category' : d.cog_category.unique()[0],
+                    'cog_dict' : cog_dict[d.cog_class.unique()[0]],
+                    'gene_name' : None}
+    elif tree_i == 2:
+        data_dict = {'mass_frac': frac,
+                    'mass_frac_tot' : frac_tot,
+                   'cog_class' : d.cog_class.unique()[0],
+                   'cog_category' : d.cog_category.unique()[0],
+                   'cog_dict' : cog_dict[d.cog_class.unique()[0]],
+                   'gene_name' : d.gene_name.unique()[0]}
+
+    return data_dict

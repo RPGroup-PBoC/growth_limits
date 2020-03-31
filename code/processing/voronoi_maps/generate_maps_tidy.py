@@ -112,14 +112,13 @@ cog_dict = dict(zip(df_all.cog_class.unique(),
                     np.arange(len(df_all.cog_class.unique()))))
 
 
-proteomap_df_ref = \
-    gpd.read_file("../../../data/voronoi_map_data/treemap_li_2014_MOPS complete_1.93_ref.geojson",
-                                     driver='GeoJSON')
-
-# proteomap_df_ref = proteomap_df_ref[proteomap_df_ref.cog_category != 'RNA processing and modification']
 # proteomap_df_ref = \
-#     gpd.read_file("../../../data/voronoi_map_data/treemap_schmidt_2016_glucose_0.58.geojson",
+#     gpd.read_file("../../../data/voronoi_map_data/treemap_li_2014_MOPS complete_1.93_ref.geojson",
 #                                      driver='GeoJSON')
+
+proteomap_df_ref = \
+    gpd.read_file("../../../data/voronoi_map_data/treemap_schmidt_2016_glucose_0.58.geojson",
+                                     driver='GeoJSON')
 
 
 
@@ -131,7 +130,9 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
     # if 5 > count_ > 23:
     #     continue
 
-    if dets != ('peebo_2015','rich',0.65):
+    if dets == ('schmidt_2016','glucose',0.58):
+        continue
+    if dets[0] != 'schmidt_2016':
         continue
     print(dets)
 
@@ -163,7 +164,7 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
             # parameters for iteration; try up to 15 times and take best mapping
             error_calc = np.inf
             count = 0
-            while (error_calc >= 0.1) and (count <=10):
+            while (error_calc >= 0.1) and (count <=15):
                 count += 1
                 try:
                     # number of cells

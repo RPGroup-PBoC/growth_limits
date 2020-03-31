@@ -457,7 +457,7 @@ def S_find_centroid(proteomap, tree, tree_list, random_shift = False):
             S_.append([d.geometry.centroid.x.values[0], d.geometry.centroid.y.values[0]])
 
     if random_shift == True:
-        mu, sigma = 1.0, 0.5 # mean and standard deviation
+        mu, sigma = 1.0, 0.35 # mean and standard deviation
         S_ = [s*np.random.normal(mu, sigma, 2) for s in S_]
 
     S = np.array(list(map(list, S_)))

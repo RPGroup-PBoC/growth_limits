@@ -100,6 +100,18 @@ for cog_cat, _d in df_all.groupby('cog_category'):
     else:
         df_ref = df_ref.append(_d, ignore_index = True)
 
+df_ = df_ref[df_ref.cog_class == 'poorly characterized']
+df_a = df_[df_.cog_category == 'general function prediction only']
+df_a = df_a.replace({'poorly characterized': \
+            'general function prediction only'})
+df_b = df_[df_.cog_category == 'function unknown']
+df_b = df_b.replace({'poorly characterized': \
+            'function unknown'})
+
+df_ref = df_ref[df_ref.cog_class != 'poorly characterized']
+df_ref = df_ref.append(df_a, ignore_index = True)
+df_ref = df_ref.append(df_b, ignore_index = True)
+
 data_group = df_ref.groupby(['dataset', 'condition', 'growth_rate_hr'])
 
 #####################################
@@ -108,8 +120,8 @@ data_group = df_ref.groupby(['dataset', 'condition', 'growth_rate_hr'])
 
 tree_structure = ['cog_class', 'cog_category', 'gene_name']
 
-cog_dict = dict(zip(df_all.cog_class.unique(),
-                    np.arange(len(df_all.cog_class.unique()))))
+cog_dict = dict(zip(df_ref.cog_class.unique(),
+                    np.arange(len(df_ref.cog_class.unique()))))
 
 
 # proteomap_df_ref = \
@@ -117,7 +129,7 @@ cog_dict = dict(zip(df_all.cog_class.unique(),
 #                                      driver='GeoJSON')
 
 proteomap_df_ref = \
-    gpd.read_file("../../../data/voronoi_map_data/treemap_schmidt_2016_glucose_0.58.geojson",
+    gpd.read_file("../../../data/voronoi_map_data/treemap_schmidt_2016_glucose_0.58_ref_.geojson",
                                      driver='GeoJSON')
 
 
@@ -188,7 +200,7 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
 
                         V = map.compute_power_voronoi_map(S, W, border, 1E-7)
 
-                        W = map.AdaptWeights(V, S, border, W, weights, 1E-3)
+                        W = map.AdaptWeights(V, S, border, W, weights, 1E-5)
 
                         V = map.compute_power_voronoi_map(S, W, border, 1E-7)
 

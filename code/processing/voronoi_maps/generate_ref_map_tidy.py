@@ -27,8 +27,10 @@ import prot.voronoimap as map
 df_all = pd.read_csv('../../../data/compiled_absolute_measurements.csv')
 
 # use dataset from Li et al. complete media, since this is most complete dataset (right?)
-df = df_all[df_all.dataset == 'li_2014']
-df = df[df.condition == 'MOPS complete']
+# df = df_all[df_all.dataset == 'li_2014']
+# df = df[df.condition == 'MOPS complete']
+df = df_all[df_all.dataset == 'schmidt_2016']
+df = df[df.condition == 'glucose']
 
 # generate a few more subcategories in the 'information storage and processing'
 # COG class :
@@ -104,8 +106,21 @@ for cog_cat, _d in df.groupby('cog_category'):
     else:
         df_ref = df_ref.append(_d, ignore_index = True)
 
-print(df_ref.cog_category.unique())
+df_ = df_ref[df_ref.cog_class == 'poorly characterized']
+df_a = df_[df_.cog_category == 'general function prediction only']
+df_a = df_a.replace({'poorly characterized': \
+            'general function prediction only'})
+df_b = df_[df_.cog_category == 'function unknown']
+df_b = df_b.replace({'poorly characterized': \
+            'function unknown'})
 
+df_ref = df_ref[df_ref.cog_class != 'poorly characterized']
+df_ref = df_ref.append(df_a, ignore_index = True)
+df_ref = df_ref.append(df_b, ignore_index = True)
+
+
+#
+# for cog_class, _d in df.groupby('cog_class'):
 
 data_group = df_ref.groupby(['dataset', 'condition', 'growth_rate_hr'])
 
@@ -115,14 +130,15 @@ data_group = df_ref.groupby(['dataset', 'condition', 'growth_rate_hr'])
 
 tree_structure = ['cog_class', 'cog_category', 'gene_name']
 
-cog_dict = dict(zip(df_all.cog_class.unique(),
-                    np.arange(len(df_all.cog_class.unique()))))
+cog_dict = dict(zip(df_ref.cog_class.unique(),
+                    np.arange(len(df_ref.cog_class.unique()))))
 
+#
+# proteomap_df = \
+#     gpd.read_file("../../../data/voronoi_map_data/treemap_li_2014_MOPS complete_1.93_ref.geojson",
+#                                      driver='GeoJSON')
+# proteomap_df = proteomap_df[proteomap_df.level <= 1]
 
-proteomap_df = \
-    gpd.read_file("../../../data/voronoi_map_data/treemap_li_2014_MOPS complete_1.93_ref.geojson",
-                                     driver='GeoJSON')
-proteomap_df = proteomap_df[proteomap_df.level <= 1]
 # proteomap_df_ref = \
 #     gpd.read_file("../../../data/voronoi_map_data/treemap_schmidt_2016_glucose_0.58.geojson",
 #                                      driver='GeoJSON')
@@ -146,12 +162,12 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
     # data_genes = data_genes[data_genes.frac_mass_tot  >= 0.0001]
 
     # # initialize DataFrame to store map.
-    # proteomap_df = pd.DataFrame()
+    proteomap_df = pd.DataFrame()
 
     for tree_i, tree in enumerate(tree_structure):
 
         if tree_i == 0:
-            continue
+            # continue
             print('Initialize map.')
 
             # define boundary of entire map
@@ -174,7 +190,7 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
             # parameters for iteration; try up to 15 times and take best mapping
             error_calc = np.inf
             count = 0
-            while (error_calc >= 0.1) and (count <=15):
+            while (error_calc >= 0.09) and (count <=15):
                 count += 1
                 try:
                     # number of cells
@@ -191,13 +207,13 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                     V = map.compute_power_voronoi_map(S, W, border, 1E-7)
                     # print(V,S)
                     # 30 iterations is usually plenty to reach minimum
-                    for step in np.arange(30):
+                    for step in np.arange(50):
 
                         S, W = map.AdaptPositionsWeights(S, V, W)
 
                         V = map.compute_power_voronoi_map(S, W, border, 1E-7)
 
-                        W = map.AdaptWeights(V, S, border, W, weights, 1E-3)
+                        W = map.AdaptWeights(V, S, border, W, weights, 1E-5)#1E-3)
 
                         V = map.compute_power_voronoi_map(S, W, border, 1E-7)
 
@@ -248,7 +264,7 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                 # if cat != 'RNA processing and modification':
                 #     continue
                 # For 'Not Assigned' go straigh to gene names
-                if tree_i == 1:
+                if tree_i == 2:
                     continue
                     # if cat == 'Not Assigned':
                     #     tree = 'gene_name'
@@ -296,7 +312,7 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                 error_calc = np.inf
                 count = 0
 
-                while (error_calc >= 0.15) and (count <=15):
+                while (error_calc >= 0.09) and (count <=15):
                     count += 1
                     print(count)
                     try:
@@ -311,7 +327,7 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                         V = map.compute_power_voronoi_map(S, W, border, 1E-7)
 
                         # 30 iterations is usually plenty to reach minimum
-                        for step in np.arange(30):
+                        for step in np.arange(50):
 
                             S, W = map.AdaptPositionsWeights(S, V, W)
 

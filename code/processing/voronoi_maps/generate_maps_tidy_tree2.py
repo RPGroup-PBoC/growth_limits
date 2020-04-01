@@ -26,10 +26,6 @@ import prot.voronoimap as map
 
 df_all = pd.read_csv('../../../data/compiled_absolute_measurements.csv')
 
-# use dataset from Li et al. complete media, since this is most complete dataset (right?)
-df = df_all[df_all.dataset == 'schmidt_2016']
-df = df[df.condition == 'glucose']
-
 # generate a few more subcategories in the 'information storage and processing'
 # COG class :
 ## ------------------------
@@ -55,7 +51,7 @@ df = df[df.condition == 'glucose']
 
 df_ref = pd.DataFrame()
 
-for cog_cat, _d in df.groupby('cog_category'):
+for cog_cat, _d in df_all.groupby('cog_category'):
     if cog_cat == 'transcription':
         d = _d[_d['go_terms'].astype(str).str.contains('GO:0016987|GO:0003899')] #GO:0016987; sigma factor activity
         d = d.replace({'transcription': 'RNA polymerase and sigma factors'})
@@ -116,10 +112,6 @@ df_ref = df_ref[df_ref.cog_class != 'poorly characterized']
 df_ref = df_ref.append(df_a, ignore_index = True)
 df_ref = df_ref.append(df_b, ignore_index = True)
 
-
-#
-# for cog_class, _d in df.groupby('cog_class'):
-
 data_group = df_ref.groupby(['dataset', 'condition', 'growth_rate_hr'])
 
 #####################################
@@ -132,55 +124,107 @@ cog_dict = dict(zip(df_ref.cog_class.unique(),
                     np.arange(len(df_ref.cog_class.unique()))))
 
 
+# proteomap_df_ref = \
+#     gpd.read_file("../../../data/voronoi_map_data/treemap_li_2014_MOPS complete_1.93_ref.geojson",
+#                                      driver='GeoJSON')
+
+proteomap_df_ref = \
+    gpd.read_file("../../../data/voronoi_map_data/treemap_schmidt_2016_glucose_0.58_ref_complete.geojson",
+                                     driver='GeoJSON')
+
+
+
+count_ = 0
 #####################################
 # Generate weighted Voronoi map for each dataset
 for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
+    count_ += 1
+    # if 5 > count_ > 23:
+    #     continue
 
+    if dets[0] != 'schmidt_2016':
+        continue
+    print(dets)
 
-    # # initialize DataFrame to store map.
-    proteomap_df = pd.DataFrame()
+    # initialize DataFrame to store map - grab generated map
+    proteomap_df = \
+        gpd.read_file(''.join(['../../../data/voronoi_map_data/treemap_schmidt_2016_' +
+                dets[1], '_', str(dets[2]), '.geojson']),
+                                     driver='GeoJSON')
 
     for tree_i, tree in enumerate(tree_structure):
-
+        # only worry about level 2, genes (and 'Not Assigned' at level 1)
         if tree_i == 0:
-            print('Initialize map.')
+            continue
 
-            # define boundary of entire map
-            border = map.border_map()
+        area_whole = map.border_map().area
+
+        for cat, cell in proteomap_df[proteomap_df['level'] == tree_i-1].groupby(tree_structure[tree_i-1]):
+            print(cat)
+
+            # For 'Not Assigned' go straigh to gene names
+            if tree_i == 1:
+                if cat == 'Not Assigned':
+                    tree = 'gene_name'
+                    tree_i = 2
+                else:
+                    continue
+
+            # data to consider for cell
+            data_tree = data[data[tree_structure[(tree_i-1)]] == cat]
+
+            border = cell.geometry[cell.index[0]]
 
             # compute desired cell weightings
             frac = pd.DataFrame()
-            for _, d in data.groupby(tree_structure[tree_i]):
-                frac_ = d.fg_per_cell.sum()/ data.fg_per_cell.sum()
-                frac = frac.append(map.data_for_tree(frac_, frac_, d, tree_i, cog_dict),
-                                ignore_index=True )
+            for cat_, d in data_tree.groupby(tree):
+                frac_ = d.fg_per_cell.sum()/ data_tree.fg_per_cell.sum()
+                frac_tot = d.fg_per_cell.sum()/ data.fg_per_cell.sum()
+                frac = frac.append(map.data_for_tree(frac_, frac_tot, d, tree_i, cog_dict),
+                            ignore_index=True )
 
+            # sort and take top by weight if # cells too high
+            frac = frac.sort_values('mass_frac', ascending=False)
+            frac['cumsum'] = np.cumsum(frac.mass_frac.values)
+
+            if frac.empty:
+                continue
 
             # Set index for each cell
-            frac['index'] = np.arange(len(frac))
+            frac['index_'] = np.arange(len(frac))
 
+            # truncate genes due to computational challenge (if needed)
+            if frac['index_'].max() >= 81:
+                frac = frac[frac['index_'] <= 80]
+
+            frac = frac.reset_index()
             # Set desired cell weighting
+
             weights = frac.mass_frac.values
+
+            # Set index for each cell
+            frac['index'] = np.arange(len(weights))
 
             # parameters for iteration; try up to 15 times and take best mapping
             error_calc = np.inf
             count = 0
-            while (error_calc >= 0.09) and (count <=15):
+
+            while (error_calc >= 0.1) and (count <=15):
                 count += 1
+                print(count)
                 try:
                     # number of cells
                     sample_count = len(frac)
 
-                    # Set Voronoi points
+                    # Initialize Voronoi points
                     S = map.random_points_within(border,  sample_count)
-                    # S = map.S_find_centroid(proteomap_df_ref[proteomap_df_ref.level == tree_i], tree)
 
                     # Initialize random set of weightings for Voronoi cells.
-                    W = (.8 * np.random.random(sample_count) + .2)
+                    W = (.8 * np.random.random(sample_count) + .2) * (border.area / map.border_map().area) * (10/len(S))
 
                     # generate Voronoi cells
                     V = map.compute_power_voronoi_map(S, W, border, 1E-7)
-                    # print(V,S)
+
                     # 30 iterations is usually plenty to reach minimum
                     for step in np.arange(50):
 
@@ -188,7 +232,10 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
 
                         V = map.compute_power_voronoi_map(S, W, border, 1E-7)
 
-                        W = map.AdaptWeights(V, S, border, W, weights, 1E-5)#1E-3)
+                        if cat == 'information storage and processing':
+                            W = map.AdaptWeights(V, S, border, W, weights, 1E-5)
+                        else:
+                            W = map.AdaptWeights(V, S, border, W, weights, 1E-6)
 
                         V = map.compute_power_voronoi_map(S, W, border, 1E-7)
 
@@ -210,148 +257,29 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
                             # update error value
                             error_calc =  A_diff/(2*border.area)
 
+
                 except:
                     pass
 
             # if no errors encountered and map generated, append to DataFrame
             if error_calc != np.inf:
-                # print(error_calc)
+                print(error_calc)
                 gdf = pd.concat([gpd.GeoSeries(cell_) for s in S_final
                                      for cell_ in V_cell
                                      if Point(s).within(cell_)
                                     ]).pipe(gpd.GeoDataFrame)
                 gdf = gdf.rename(columns = {0:'geometry'})
-                gdf['index'] = np.arange(len(frac))
+                gdf['index'] = np.arange(len(weights))
                 gdf['level'] = tree_i
 
                 proteomap_df = proteomap_df.append(gdf.merge(frac, on=['index']))
             else:
-                print('Did not find map for top level.')
-                break
+                print('Did not find map for:' + cat)
 
-        ################################
-        # Tree level structures after first level is initialized above.
-        ################################
-        else:
-            area_whole = map.border_map().area
-            # print(area_whole)
-            for cat, cell in proteomap_df[proteomap_df['level'] == tree_i-1].groupby(tree_structure[tree_i-1]):
-                print(cat)
-
-                if tree_i == 1:
-                    if cat == 'Not Assigned':
-                        tree = 'gene_name'
-                        tree_i = 2
-
-                # data to consider for cell
-                data_tree = data[data[tree_structure[(tree_i-1)]] == cat]
-
-                border = cell.geometry[cell.index[0]]
-
-                # compute desired cell weightings
-                frac = pd.DataFrame()
-                for cat_, d in data_tree.groupby(tree):
-                    frac_ = d.fg_per_cell.sum()/ data_tree.fg_per_cell.sum()
-                    frac_tot = d.fg_per_cell.sum()/ data.fg_per_cell.sum()
-                    frac = frac.append(map.data_for_tree(frac_, frac_tot, d, tree_i, cog_dict),
-                                ignore_index=True )
-
-                # sort and take top by weight if # cells too high
-                frac = frac.sort_values('mass_frac', ascending=False)
-                frac['cumsum'] = np.cumsum(frac.mass_frac.values)
-
-                if frac.empty:
-                    continue
-
-                # Set index for each cell
-                frac['index_'] = np.arange(len(frac))
-
-                # truncate genes due to computational challenge (if needed)
-                if frac['index_'].max() >= 81:
-                    frac = frac[frac['index_'] <= 80]
-
-                frac = frac.reset_index()
-                # Set desired cell weighting
-
-                weights = frac.mass_frac.values
-
-                # Set index for each cell
-                frac['index'] = np.arange(len(weights))
-
-
-                # parameters for iteration; try up to 15 times and take best mapping
-                error_calc = np.inf
-                count = 0
-
-                while (error_calc >= 0.1) and (count <=15):
-                    count += 1
-                    print(count)
-                    try:
-                        # number of cells
-                        sample_count = len(frac)
-                        S = map.random_points_within(border,  sample_count)
-
-                        # Initialize random set of weightings for Voronoi cells.
-                        W = (.8 * np.random.random(sample_count) + .2) * (border.area / map.border_map().area)#/ 1000.0
-
-                        # generate Voronoi cells
-                        V = map.compute_power_voronoi_map(S, W, border, 1E-7)
-
-                        # 30 iterations is usually plenty to reach minimum
-                        for step in np.arange(50):
-
-                            S, W = map.AdaptPositionsWeights(S, V, W)
-
-                            V = map.compute_power_voronoi_map(S, W, border, 1E-7)
-                            if cat == 'information storage and processing':
-                                W = map.AdaptWeights(V, S, border, W, weights, 1E-5)
-                            else:
-                                W = map.AdaptWeights(V, S, border, W, weights, 1E-6)
-
-                            V = map.compute_power_voronoi_map(S, W, border, 1E-7)
-
-                            # calculate discrepency between desired cell area and
-                            # current cell area.
-                            A_diff = 0
-                            for i, s in enumerate(S):
-                                # identify Voronoi cell associated with s
-                                for cell_ in V:
-                                    if (Point(s).within(cell_)):
-                                        cell =  cell_
-                                A_diff += abs(cell.area - border.area * weights[i])
-                            print(A_diff/(2*border.area))
-
-                            if A_diff/(2*border.area) < error_calc:
-                                V_cell = V
-                                S_final = S
-
-                                # update error value
-                                error_calc =  A_diff/(2*border.area)
-
-
-                    except:
-                        pass
-
-                # if no errors encountered and map generated, append to DataFrame
-                if error_calc != np.inf:
-                    print(error_calc)
-                    gdf = pd.concat([gpd.GeoSeries(cell_) for s in S_final
-                                         for cell_ in V_cell
-                                         if Point(s).within(cell_)
-                                        ]).pipe(gpd.GeoDataFrame)
-                    gdf = gdf.rename(columns = {0:'geometry'})
-                    gdf['index'] = np.arange(len(weights))
-                    gdf['level'] = tree_i
-
-                    proteomap_df = proteomap_df.append(gdf.merge(frac, on=['index']))
-                else:
-                    print('Did not find map for:' + cat)
-
-                # reset index after handling 'Not Assigned'
-                if tree_i == 2:
-                    if cat == 'Not Assigned':
-                    tree = 'cog_category'
-                    tree_i = 1
+            # reset index after handling 'Not Assigned'
+            if cat == 'Not Assigned':
+                tree = 'cog_category'
+                tree_i = 1
 
 
     ########################################
@@ -359,7 +287,7 @@ for dets, data in tqdm.tqdm(data_group, desc='Iterating through datasets.'):
     if proteomap_df.empty:
         print('Map not found for: ' + dets[0] + ',' + dets[1] + ',' + str(round(dets[2], 2)))
     else:
-        print('. Saving map for: ' + dets[0] + ',' + dets[1] + ',' + str(round(dets[2], 2)))
+        print('Saving map for: ' + dets[0] + ',' + dets[1] + ',' + str(round(dets[2], 2)))
         proteomap_df.to_file('../../../data/voronoi_map_data/treemap_' +
-                    dets[0] + '_' + dets[1] + '_' + str(round(dets[2],2)) + '_ref_complete.geojson',
+                    dets[0] + '_' + dets[1] + '_' + str(round(dets[2],2)) + '_complete.geojson',
                         driver='GeoJSON')

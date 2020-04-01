@@ -430,7 +430,7 @@ def random_points_within(poly, num_points):
     return S
 
 
-def S_find_centroid(proteomap, tree, tree_list, random_shift = False):
+def S_find_centroid(proteomap, tree, tree_list, border, random_shift = False):
     """
     Generates the Voronoi positions based on  the centroids of cells in
     a  reference map.
@@ -455,6 +455,10 @@ def S_find_centroid(proteomap, tree, tree_list, random_shift = False):
     for cell_id, d in proteomap.groupby(tree):
         if cell_id in tree_list:
             S_.append([d.geometry.centroid.x.values[0], d.geometry.centroid.y.values[0]])
+
+    num_missing =  len(tree_list) - len(S_)
+    if num_missing >= 1:
+        S_.append(random_points_within(border,  num_missing))
 
     if random_shift == True:
         mu, sigma = 1.0, 0.35 # mean and standard deviation

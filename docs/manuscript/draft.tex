@@ -5,14 +5,33 @@
 \usepackage{microtype}
 \usepackage{mathpazo}
 \usepackage{graphicx}
-\title{A Quantitative Survey of the Growth Dependent \textit{Escherichia coli} Proteome}
-\author{Nathan M. Belliveau, Griffin Chure, ??, Julie Theriot, Rob Phillips}
+\usepackage{authblk}
+\usepackage{natbib}
+\bibliographystyle{unsrt}
+\title{A Quantitative Census of the \textit{Escherichia coli} Proteome: Macromolecular Limits for Growth}
+\author[1, *]{Nathan M. Belliveau}
+\author[2, *]{Griffin Chure}
+\author[3]{Christina L. Hueschen}
+\author[4]{Hernan G. Garcia}
+\author[5]{Jan\'{e} Kondev}
+\author[1, 6]{Julie Theriot}
+\author[1, 7, $\dagger$]{Rob Phillips}
+\affil[1]{Department of Biology, University of Washington, Seattle, WA, USA}
+\affil[2]{Division of Biology and Biological Engineering, California Institute of Technology, Pasadena, CA, USA}
+\affil[3]{Department of Chemical Engineering, Stanford University, Stanford, CA, USA}
+\affil[4]{Department of Molecular Cell Biology and Department of Physics, University of California Berkeley, Berkeley, CA, USA}
+\affil[5]{Department of Physics, Brandeis University, Waltham, MA, USA}
+\affil[6]{Allen Cell Science Institute, Seattle, WA, USA}
+\affil[7]{Department of Physics, California Institute of Technology, Pasadena, CA, USA}
+\affil[$\dagger$]{Address correspondence to phillips@pboc.caltech.edu}
+\affil[*]{Contributed equally}
 
 \begin{document}
 \maketitle
 
 \include{section_01_introduction}
 \include{section_02_datasets}
-\include{section_03_speed_limit}
+\include{section_03_import}
 
+\bibliography{library.bib}
 \end{document}

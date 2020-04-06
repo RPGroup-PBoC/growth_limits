@@ -2,9 +2,61 @@ import pandas as pd
 import squarify as sq
 from bokeh.themes import Theme
 import matplotlib.pyplot as plt
+from mpl_toolkits.axes_grid1 import make_axes_locatable
+from matplotlib.path import Path
+from matplotlib.patches import BoxStyle
+from matplotlib.offsetbox import AnchoredText
 import seaborn as sns
 import altair as alt
 import bokeh.io
+
+
+
+def titlebox(
+    ax, text, color, bgcolor=None, size=8, boxsize=0.1, pad=0.05, loc=10, **kwargs
+):
+    """Sets a colored box about the title with the width of the plot"""
+    boxsize=str(boxsize * 100)  + '%'
+    divider = make_axes_locatable(ax)
+    cax = divider.append_axes("top", size=boxsize, pad=pad)
+    cax.get_xaxis().set_visible(False)
+    cax.get_yaxis().set_visible(False)
+    cax.spines["top"].set_visible(False)
+    cax.spines["right"].set_visible(False)
+    cax.spines["bottom"].set_visible(False)
+    cax.spines["left"].set_visible(False)
+
+    plt.setp(cax.spines.values(), color=color)
+    if bgcolor != None:
+        cax.set_facecolor(bgcolor)
+    else:
+        cax.set_facecolor("white")
+    at = AnchoredText(text, loc=loc, frameon=False, prop=dict(size=size, color=color))
+    cax.add_artist(at)
+
+
+def ylabelbox(ax, text, color, bgcolor=None, size=6, boxsize=0.1, pad=0.05, **kwargs):
+    """Sets a colored box about the title with the width of the plot"""
+    boxsize=str(boxsize * 100)  + '%'
+    divider = make_axes_locatable(ax)
+    cax = divider.append_axes("left", size=boxsize, pad=pad)
+    cax.get_xaxis().set_visible(False)
+    cax.get_yaxis().set_visible(False)
+    cax.spines["top"].set_visible(True)
+    cax.spines["right"].set_visible(True)
+    plt.setp(cax.spines.values(), color=color)
+    if bgcolor != None:
+        cax.set_facecolor(bgcolor)
+    else:
+        cax.set_facecolor("white")
+
+    at = AnchoredText(
+        text,
+        loc=10,
+        frameon=False,
+        prop=dict(rotation="vertical", size=size, color=color),
+    )
+    cax.add_artist(at)
 
 def assign_rect_bounds(df, key, width=500, height=500, text_pad=0,
                        copy_df=False):

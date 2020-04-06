@@ -3,7 +3,7 @@ This script takes a dataframe of protein complexes obtained using Ecocyc's
 SmartTable tool, converts it into a .csv file, and uses the Object IDs to
 scrape EcoCyc to identify the subunit numbers.
 
-TODO: Currently broken (3/11/20 - GC)
+TODO: Currently broken. 
 """
 #%%
 import numpy as np

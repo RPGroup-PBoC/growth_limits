@@ -48,7 +48,7 @@ plt.savefig('../../figures/dna_polymerase_III.svg')
 
 # %%
 # Ribonucleotide reductase
-RNR_CPLX = ['MONOMER0-2863']
+RNR_CPLX = ['RIBONUCLEOSIDE-DIP-REDUCTI-CPLX']
 rnr = data[data['complex'].isin(RNR_CPLX)]
 rnr = rnr.groupby(['dataset_name', 'growth_rate_hr', 
                    'condition', 'color'])['n_units'].sum().reset_index()

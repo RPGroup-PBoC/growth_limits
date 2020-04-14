@@ -46,12 +46,16 @@ for c in tqdm.tqdm(prot_cplx):
             if len(num) > 0:
                 num = num[0] 
 
+            # Get the annotation
+            if type(ecocyc[c]['common_name']) != str:
+                common_name = ecocyc[ecocyc[c]['catalyzes'][0]]['common_name']
+
             # Update the dataframe
             _df = _df.append({'gene_name':gene.lower(), 
                               'n_copies':int(sub), 
                               'b_number': num,
                               'complex':c.strip('|'),
-                              'annotation': ecocyc[c]['common_name']}, ignore_index=True)
+                              'annotation': common_name}, ignore_index=True)
     else:
         print(f'Barfed on {c}')
 

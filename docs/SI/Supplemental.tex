@@ -262,9 +262,9 @@ proteins.
 In order to understand the consequence of each ribosome having to duplicate
 itself and devote time to double the remaining proteome, we will make use of a
 toy model. Specifically, lets consider a hypothetical cell that consists of two
-species of protein, R and P. Here R refers to ribosomes, with $R$ per cell, and
-P reflects the remaining proteins in the cell with $P$ copies per cell. The time
-$\tau$ needed to duplicate the entire proteome is simplly given by,
+species of protein, ribosomes and non-ribosomal proteins. The cell contains $R$
+ribosomes per cell, and $P$ non-ribosomal proteins per cell. The time $\tau$
+needed to duplicate the entire proteome is simplly given by,
 
 \begin{equation}
 	\tau = \tau_R + \tau_P,
@@ -295,29 +295,6 @@ Using Equation \ref{eq:tau_P} and \ref{eq:tau}, this becomes,
 growth rate would be to make more ribosomes, or if it were possible, to decrease the
 number non-ribosomal proteome.
 
-
-% Lastly, we can also consider how $\lambda_{\text{max}}$ will vary with the
-% ribosomal mass fraction, denoted by $\Phi_R$. An amino acid has an average molecular weight
-% of 110 Da, and the approximate non-ribosomal mass will be given by $110 \text{ Da} \cdot (N_{aa}/ N_A)$.
-% Here, $N_A$ is Avagadros number. The ribosomal mass is similarly given by $800 \text{ Da} \cdot (R/ N_A)$.
-% Therefore we can rewrite Equation \ref{eq:lambda_max} in
-% as the ribosomal mass fraction,
-%
-% M_nr = (N (molecules) / (N_A molecules/mol)) * 110 g/mol
-%
-% M_r =  (R  / (N_A molecules/mol))) *  800 kDag/mol
-% R = N_A * M_r / 800
-% Naa = N_A * M_nr / 110
-%
-% Phi = M_r / (M_r + M_nr)
-% = R*800 / (R*800 + Naa * 110)
-% Phi / (R*800) = 1/(1 + (Naa*110)/ (R*800))
-%
-% (1 + (Naa*110)/ (R*800)) = (R*800)/ Phi
-% (Naa*110)/ (R*800)  = (R*800)/ Phi  - 1
-% (Naa/R) = (800) * ((R*800)/ Phi  - 1) /110
-%
-% R/ Phi = (R*800 + Naa * 110) /
 
 \marginnote{\small{NB: I should also write this in terms of ribosome mass fraction.}}
 
@@ -353,12 +330,6 @@ in Figure \ref{fig:estimates_translation_volume}.
   \label{fig:estimates_translation_toy_1}
 \end{figure}
 
-As a last consideration, one observation is the apparently linear
-dependence between the growth rate and fraction of ribosomal mass. This, along with the dramatic
-scaling in ribosomal copy number, are particularly relavent to the
-phenemonlogical growth laws reported by others on how cell size and cell mass
-scale with growth rate in bacteria.
-
 \begin{figure}[H]
 		\centering
     \includegraphics[width=0.5\textwidth]{../../code/figures/SI/estimates_translation_volume.pdf}
@@ -366,26 +337,51 @@ scale with growth rate in bacteria.
   \label{fig:estimates_translation_volume}
 \end{figure}
 
+As a last consideration, one observation is the apparently linear dependence
+between the growth rate and fraction of ribosomal mass. This, along with the
+dramatic scaling in ribosomal copy number, are particularly relavent to the
+phenemonlogical growth laws reported by others on how cell size and cell mass
+scale with growth rate in bacteria. The linear scaling appears to be a feature
+irrespective of the size of the non-ribosomal mass, as shown in Figure
+\ref{fig:estimates_translation_ribo_frac}. Indeed, with a bit of algerbra, we
+can re-write the translation-limited growth rate define by Equation \ref{eq:lambda_max}
+as a function of ribosomal mass fracted, denoted by $\Phi_R$, as,
+
+\begin{equation}
+\lambda_{\text{max}} =  \frac{ln(2)} {N_A \cdot MW_R} \cdot r_t \cdot \Phi_R.
+\end{equation}
+$N_A$ is Avagadro's number, while $MW_R$ is the molecular weight of a single ribosome.
+
+\begin{figure}[H]
+		\centering
+    \includegraphics[width=0.5\textwidth]{../../code/figures/SI/estimates_translation_ribo_frac.pdf}
+  \caption{}
+  \label{fig:estimates_translation_ribo_frac}
+\end{figure}
+
+
 \subsection{Growth only appears translation-limited in rich growth media.}
 
 \marginnote{\small{NB: A better way would be to directly calculate the number of
 aa from proteomic sequences and copy number.}}
 
 With some expectation on the maximum growth rate achiveable as a function of
-ribosomal content, lets now take a look a look at how our experimental data
-compares. To simplify our calculations, we will approximate the number of amino
-acids that must be translated from the reported protein mass and 110 Da for the
-average molecular weight of an amino acid. Using Equation \ref{eq:lambda_max},
-we can then calculate the maximum rate of growth under translation limitation.
-In Figure \ref{fig:estimates_translation_data}A we plot maximum growth under translation limitation against
-the measured growth rates, while in Figure \ref{fig:estimates_translation_data}B we plot the cell cycle time
-that would be associated with these growth rates. The shaded regions identify
-the regions that should not be attainable with a translation rate of 20 aa/sec.
-From these two plots, it appears to we are only translation-limited
-in rich media (data points with growth rates great than 1 hr$^{-1}$ in Figure \ref{estimates_translation_data}A)).
-Though it should be noted that a more careful  calculation of the maximum
-tranlation time suggested by Equation \ref{eq:lambda_max} needs to be
-undertaken.
+ribosomal content as discussed above, lets now take a look at our experimental
+data. To simplify our calculations, we approximate the number of amino acids
+that must be translated from the reported non-ribosomal protein mass and an
+average molecular weight of an amino acid of 110 Da ($N_{aa}$ = $($mass$ / 110$
+Da$) \cdot N_A$). Using Equation \ref{eq:lambda_max}, we can then calculate the
+maximum rate of growth under translation limitation. In Figure
+\ref{fig:estimates_translation_data}A we plot maximum growth under translation
+limitation against the measured growth rates, while in Figure
+\ref{fig:estimates_translation_data}B we plot the cell cycle time that would be
+associated with these growth rates. The shaded regions identify the regions that
+should not be attainable with a translation rate of 20 aa/sec. From these two
+plots, it appears to we are only translation-limited in rich media (data points
+with growth rates great than 1 hr$^{-1}$ in Figure
+\ref{fig:estimates_translation_data}A)). Though it should be noted that a more
+careful  calculation of the maximum tranlation time suggested by Equation
+\ref{eq:lambda_max} needs to be undertaken.
 
 \begin{figure}[H]
 		\centering

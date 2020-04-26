@@ -176,7 +176,7 @@ expected scaling that is reported by Taheri-Araghi {\it et al.} (2015),
 carefully
 measured as a function of growth rate [and other work?].
 
-In addition,  since cell volume was not determined in all studies, and to be
+In addition, since cell volume was not determined in all studies, and to be
 consistent throughout, we instead use the predicted cell volumes from
 Taheri-Araghi {\it et al.}. Dealing with each dataset seperately, we apply
 correction  factors to correct for discrepencies in protein concentration across
@@ -226,54 +226,54 @@ to this trend.
 Here we consider the hypothesis that the process of translation sets the speed
 limit of bacterial growth. We begin by considering the synthesis of the ribosome
 itself, finding that it sets a strict limit on division time, and then from there we
-consider how the abundance of other cellular proteins limits this achievable growth rate further.
+consider how the remaining proteome further limits this achievable growth rate.
 
 \subsection{Maximum possible growth rate is set by the time to make a ribosome.}
 
-\marginnote{\small{NB: I wonder if this should include the time to make other
-ribosomal components in addition to core subunits.}}
+\marginnote{\small{NB: This time is longer if we need to add in e.g. elongation
+factors as a 'core' protein to replicate a ribosome. RP to NB: rRNA estimate can
+also go here.}}
 
-Ribosomes take a unique position among proteins due to their role in replicating
-the entire cellular proteome. In order for a cell to maintain its own pool of
-ribosomes during division into two daughter cells, a primary requirement is that
-each ribosome must make all the protein subunits for a second ribosome.  Since
-the  mass of a single ribosome is about 2.5 MDa, with about 2/3 RNA and 1/3
-protein, each ribosome has to make about 800 kDa of protein. In {\it E. coli},
+Ribosomes take a unique position among proteins due to their role in
+synthesizing the entire cellular proteome. In order for a cell to maintain its
+own pool of ribosomes during division into two daughter cells, a primary
+requirement is that the number of ribosomes must be doubled.  Since the  mass of
+a single ribosome is about 2.5 MDa, with about 2/3 RNA and 1/3 protein, each
+ribosome has to make about 800 kDa of protein. In {\it E. coli},
 this corresponds to 7,459 amino acids. At a maximal translation rate of 20 amino
 acids per second, this would take just over 6 minutes.  Growing any faster would
 result in a drop in the average number of ribosomes as the cell divides and
-highlights a strict time limit on how fast a cell can double itself.  This result is
-irrespective of the absolute number of ribosomes, and contrasts with other
-proteins where the simple solution to making more proteins is to apparently
-devote more ribosomes to their synthesis.
+highlights a strict time limit on how fast a cell can double itself.  This
+result is irrespective of the absolute number of ribosomes, and contrasts with
+other proteins where the simple solution to making more proteins is to
+apparently devote more ribosomes to their synthesis.
 
 \subsection{The translation-limited growth rate is set by the fraction of
 ribosomal mass.}
 
 While the inability to parallelize ribosomal synthesis sets an inherent speed
-limit, this represents a somewhat unachievable growth rate since ribosomes must
-also spend some of their time doubling the remaining proteome.
-A translation-limited rate of growth is therefore set by the time to
-double the entire proteome.
+limit, this also represents a somewhat unachievable growth rate since ribosomes must
+spend some of their time doubling the remaining proteome. A
+translation-limited rate of growth is therefore set by the time to double the
+entire proteome. In order to understand the consequence of each ribosome having
+to duplicate itself, but also devote time to double the remaining proteome, we
+consider a hypothetical cell that consists of only two species of protein:
+ribosomes and non-ribosomal proteins. The cell is taken to contain $R$ ribosomes
+per cell, and $P$ non-ribosomal proteins per cell. The time $\tau$ needed to
+duplicate the entire proteome is simply given by,
+
 
 % The only way to reach the minimum duplication time
 % set by the ribosome would be to increase the relative fraction of ribosomes.
 % This would effectively reduce the time needed to duplicate the non-ribosomal
 % proteins.
 
-In order to understand the consequence of each ribosome having to duplicate
-itself and devote time to double the remaining proteome, we consider a
-hypothetical cell that consists of only two species of protein: ribosomes and
-non-ribosomal proteins. The cell is taken to contain $R$ ribosomes per cell, and $P$
-non-ribosomal proteins per cell. The time $\tau$ needed to duplicate the entire
-proteome is simply given by,
-
 \begin{equation}
 	\tau = \tau_R + \tau_P,
 \label{eq:tau}
 \end{equation}
-where $\tau_R$ is the time to double a ribosome, while $\tau_P$ is the time
-required to double the remaining proteins. While we found that $\tau_R$ is fixed
+where $\tau_R$ is the time to double the ribosome copy number and $\tau_P$ is the time
+required to double the non-ribosomal proteins. While we found that $\tau_R$ is fixed
 at about 6 minutes,  $\tau_P$  will depend on the number of ribosomes $R$ available and
 can be approximated by,
 
@@ -281,9 +281,9 @@ can be approximated by,
 \tau_P = \frac{N_{aa}}{r_t \cdot R}.
 \label{eq:tau_P}
 \end{equation}
-Here $N_{aa}$ refers to the total number of amino acids (aa) that must be translated,
-while $r_t$ refers to the rate of translation, at about 20 aa /
-sec. Finally, we can calculate a translation-limited growth rate from,
+Here $N_{aa}$ refers to the total number of amino acids (aa) that must be
+translated, while $r_t$ refers to the elongation rate of translation.
+The translation-limited growth rate can then be calculated from,
 
 \begin{equation}
 \lambda_{\text{max}} =  \frac{ln(2)} {\tau}.
@@ -295,52 +295,74 @@ Using Equation \ref{eq:tau_P} and \ref{eq:tau}, this becomes,
 \end{equation}
 We can see from Equation \ref{eq:lambda_max} that the only way to increase the
 translation-limited growth rate would be to make more ribosomes, or if it were
-possible, to decrease the number of non-ribosomal proteins.
+possible, to decrease the number of non-ribosomal proteins. For now we will assume
+that the translation elongation rate is fixed at about 20 aa/s but will return to this
+assumption in a later section.
 
-Next, let's consider some representative values for $R$ and $N_{aa}$, and
-determine $\lambda_{\text{max}}$. From Schmidt {\it et al.}\cite{Schmidt2016},
-cells grown in glucose were found to have 214 fg of non-ribosomal  protein mass.
-This corresponds to about 1.17 x 10$^9$ amino acids. We also estimate a
-ribosomal copy number, $R$ = 20,656 per cell, based on the mean copy number of
-individual subunits that were reported. Using Equation
-\ref{eq:lambda_max}, this corresponds to a maximum growth rate of 0.78 hr$^{-1}$,
-versus the measured rate of 0.58 hr$^{-1}$, suggesting cells are growing somewhat below their maximal rate.
+let's now use some representative values for $R$ and $N_{aa}$ to calculate
+$\lambda_{\text{max}}$. From Schmidt {\it et al.}, cells grown in glucose were
+found to have 214 fg of non-ribosomal  protein mass \cite{Schmidt2016}. Taking
+the molecular weight of an average amino acid to be 110 g/mol and using Avogadro's number $N_A$, we can estimate
+$N_{aa}$ = 214 x 10$^{-15}$g / (110 g/mol) x $N_A$,
+which corresponds to about 1x10$^9$ amino acids.  Similarly, we can use their
+reported ribosomal mass of about 29 fg to estimate the ribosomal copy number,
+$R$. With a molecular weight of about 800 kg/mol as noted earlier,  $R$ =
+29 x 10$^{-18}$kg / (800 kg/mol) x $N_A$,   which we find to be about 22,000 per
+cell. Using Equation \ref{eq:lambda_max}, this corresponds to a maximum growth
+rate of 0.8 hr$^{-1}$, versus the measured rate of 0.58 hr$^{-1}$, suggesting
+cells are growing slightly below their maximal rate.
 
-As we noted above, the only way to divide faster than this limit of 0.78 hr$^{-1}$
-would be to make more ribosomes. We therefore consider how this maximal growth
-rate might vary as a function of ribosomal copy number. One difficultly that
-arises is that in order for a cell to add more ribosomes, it will need to
-increase in size. This might require that other proteins also increase in number to
-maintain a specific proportion relative to the cell size. However, to keep our problem simple, lets proceed
-with the simplifying assumption that the value of $N_{aa}$ is sufficient to
-build a cell irrespective of the number of ribosomes. This in effect provides us with a
-lower bound on the total proteomic content at faster growth rates and a lower
-limit on the achievable growth rate. In Figure \ref{fig:estimates_translation_toy_1}
-we plot $\lambda_{\text{max}}$ as a function
-of ribosome copy number per cell. While indeed, the maximum attainable growth
-rate is that set by the time to make a ribosome, we see that it can only be
-achieved if the number of ribosomes was increased about 100 fold.
+Since the only way to divide faster than this limit set at 0.8 hr$^{-1}$ would be
+for the cell to increase the number of ribosomes, we next consider how
+growth rate might vary as a function of ribosomal copy number. To
+keep our problem simple,  lets first proceed with the simplifying assumption
+that our cell consists of  214 fg of non-ribosomal protein, and consider
+how $\lambda_{\text{max}}$ varies  as a function of the ribosome copy number $R$
+using Equation \ref{eq:lambda_max}.  While in reality we might expect other
+proteins to increase in proportion to the number of ribosomes, this calculation
+provides us with a bound on the maximum growth rate as a function of $R$.  In
+Figure \ref{fig:estimates_translation_toy_1} we consider the range of experimentally observed values
+of $R$ from about 10,000 copies per cell to
+150,000 copies per cell. One observation is that
+the maximum growth rate is always less than that set by the synthesis time of a
+ribosome, at about 3 hr$^{-1}$ when $R$ is 150,000 ribosomes per cell. Indeed, while not shown,
+we find that $R$ would need to be increased another 10 fold, to
+about one million copies per cell, to have a doubling time close to that set by the ribosome (with a 6 minute ribosome synthesis time
+corresponding to a growth rate of about 7 hr $^{-1}$).
+
+% One difficultly that
+% arises is that in order for a cell to add more ribosomes, it will need to
+% increase in size. This might require that other proteins also increase in number to
+% maintain a specific proportion relative to the cell size. However,
+% that the value of $N_{aa}$ is sufficient to
+% build a cell irrespective of the number of ribosomes.
+% This in effect provides us with a
+% lower bound on the total proteomic content at faster growth rates and a lower
+% limit on the achievable growth rate.
 
 \begin{figure}[H]
 		\centering
     \includegraphics[width=1\textwidth]{../../code/figures/SI/estimates_translation_toy_1.pdf}
   \caption{{\bf Expectations on the maximum growth rate as a function of ribosome abundance.}
 	 	A) Plot of the translation-limited growth rate in Equation
-	 	\ref{eq:lambda_max}, with the 1.17 x 10$^9$ amino acids, and $R$ from about
-	 	2,000 to 2,000,000 copies per cell. B) Related to part A, but instead
+	 	\ref{eq:lambda_max}, with $N_{aa}$ = 1.2 x 10$^9$ amino acids, and $R$ from about
+	 	10,000 to 150,000 copies per cell. B) Related to part A, but instead
 	 	showing the translation-limited growth rate as a function of ribosomal mass
 	 	fraction.}
   \label{fig:estimates_translation_toy_1}
 \end{figure}
 
-To consider what this might mean with respect to cell size, note that cell
-volume will be proportional to cell mass. We can estimate a lower bound on the
-required cell volume as a function of the number of ribosomes by assuming a mass
-density of 1.1 g/ml, and a dry mass of 30\% that consists of only protein and
-RNA.  This is shown in Figure \ref{fig:estimates_translation_volume}, and shows
-that the cell volume would need to be excessively large in order to hold such a
-large number of ribosomes, with a volume of about 25 $f$L when $\lambda_{\text{max}}$ is equal
-to the time to generate a ribosome.
+Given how many ribosomes a cell would need in order to double a cell in 6 minutes,
+it is also useful to consider what this might mean with
+respect to cell size. Note that cell volume will be proportional to cell mass.
+We can estimate a lower bound on the required cell volume as a function of the
+$R$ by assuming a mass density of 1.1 g/ml, and a dry mass of 30\% consisting of
+only protein and RNA. This is plotted in Figure
+\ref{fig:estimates_translation_volume}, where we've extended the range of $R$ up
+to about one million copies per cell. While we find cell volumes consistent with our expectation for {\it E. coli}
+for values of $R$ less than about 100,000 per cell, the plot also highlights that a cell would need to be
+excessively largem with a minimal volume of about 25 $f$L, in order for
+$\lambda_{\text{max}}$ to be close to the 6 minute doubling time set by the ribosome.
 
 \begin{figure}[H]
 		\centering
@@ -355,7 +377,7 @@ to the time to generate a ribosome.
 As a last consideration, one additional observation from Figure \ref{fig:estimates_translation_toy_1}B
 is an apparently linear dependence
 between $\lambda_{\text{max}}$  and the fraction of ribosomal mass. This, along with the
-dramatic scaling in ribosomal copy number, are particularly relevant to the
+scaling in ribosomal copy number, are particularly relevant to the
 phenomenological growth laws reported by others on how cell size and cell mass
 scale with growth rate in bacteria. The linear scaling appears to be a feature
 irrespective of the size of the non-ribosomal mass, as shown in Figure
@@ -366,23 +388,38 @@ $\Phi_R$, as,
 
 \begin{equation}
 \lambda_{\text{max}} =  \frac{ln(2)} {L_R} \cdot r_t \cdot \Phi_R.
+\label{eq:lambda_max_phi}
 \end{equation}
 $L_R$ refers to the number of amino acids that make a single
-ribosome ($L_R$ = 7,459 aa for {\it E. coli}). As a sanity check, we can quickly
+ribosome ($L_R$ = 7,459 aa for a complete ribosome in {\it E. coli}). As a sanity check, we can quickly
 see that if $\Phi_R$ = 1, we are once again limited only by the time required to
-double a ribosome and the rate of translation.
+double a ribosome $L_R / r_t$.
 
 \begin{figure}[H]
 		\centering
     \includegraphics[width=0.5\textwidth]{../../code/figures/SI/estimates_translation_ribo_frac.pdf}
   \caption{{\bf Effect of ribosomal mass fraction on translation-limited growth rate.} Following the approach
 	result from Figure \ref{fig:estimates_translation_toy_1}B, we recalculate the maximum growth rate as
-	the total non-ribosomal mass is either reduced or increased ten fold (i.e. $N_{aa}$ = [0.1x$N_{aa}$, $N_{aa}$, 10x$N_{aa}$]).}
+	the total non-ribosomal mass is either reduced or increased ten-fold (i.e. $N_{aa}$ = [0.1x$N_{aa}$, $N_{aa}$, 10x$N_{aa}$]).}
   \label{fig:estimates_translation_ribo_frac}
 \end{figure}
 
 
 \subsection{Growth only appears translation-limited in rich growth media.}
+
+With an expectation on the maximum growth rate achievable as a function of
+ribosomal content from our discussion above, lets now take a look at our experimental
+data. From Equation \ref{eq:lambda_max_phi}, we found that the
+translation-limited growth  rate is simply determined by the fractional
+ribosomal mass $\Phi_R$ which we can easily calculate from our proteomic data.   In Figure
+\ref{fig:estimates_translation_data}A we plot this maximal growth rate,
+$\lambda_{\text{max}}$, against the measured growth rates, while in Figure
+\ref{fig:estimates_translation_data}B we plot the cell cycle or doubling time that would be
+associated with these growth rates. The shaded regions identify regions that
+should not be attainable with a translation elongation rate $r_t$ of 20 aa/s.
+From these two plots, it appears that cells are only translation-limited in rich
+media (data points with growth rates greater than $\approx$ 1 hr$^{-1}$ in Figure
+\ref{fig:estimates_translation_data}A)).
 
 % \marginnote{\small{NB: A better way would be to directly calculate the number of
 % aa from proteomic sequences and copy number.}}
@@ -391,26 +428,6 @@ double a ribosome and the rate of translation.
 % protein in Peebo, Valgepea; it is higher, and also higher than that found in Scott
 % {\it et al.}  - is it real??}}
 
-With some expectation on the maximum growth rate achievable as a function of
-ribosomal content as discussed above, lets now take a look at our experimental
-data. To simplify our calculations, we approximate the number of amino acids
-that must be translated from the reported non-ribosomal protein mass by assuming
-an average molecular weight for an amino acid of 110 Da ($N_{aa}$ = $($mass$ /
-110$ Da$) \cdot N_A$). Using Equation \ref{eq:lambda_max}, we can then calculate
-the maximum rate of growth under translation limitation. In Figure
-\ref{fig:estimates_translation_data}A we plot this maximal growth rate,
-$\lambda_{\text{max}}$,  against the measured growth rates, while in Figure
-\ref{fig:estimates_translation_data}B we plot the cell cycle time that would be
-associated with these growth rates. The shaded regions identify the regions that
-should not be attainable with a translation rate $t_r$, of 20 aa/sec. From these two
-plots, it appears to we are only translation-limited in rich media (data points
-with growth rates great than 1 hr$^{-1}$ in Figure
-\ref{fig:estimates_translation_data}A)). Though it should be noted that a more
-careful calculation of the maximum tranlation time suggested by Equation
-\ref{eq:lambda_max} needs to be undertaken.
-
-
-
 \begin{figure}[H]
 		\centering
     \includegraphics[width=1\textwidth]{../../code/figures/SI/estimates_translation_data.pdf}
@@ -418,7 +435,7 @@ careful calculation of the maximum tranlation time suggested by Equation
 	A) Plot of maximum growth rates based on reported cell mass and calculated from Equation \ref{eq:lambda_max}.
 	B) Related to (A), but instead plotting the cell cycle time in minutes.
 	The light shaded regions in (A) and (B) reflect boundaries where growth would not be possible
-	due to a translation rate of 20 aa/sec. The dark shaded region in (B) corresponds to the maximum
+	due to a translation rate of 20 aa/s. The dark shaded region in (B) corresponds to the maximum
 	division rate set by doubling a ribosome.
 	(\smaller{NB: There is something weird about the fraction of ribosomal
 	protein in Peebo, Valgepea; it is higher, and also higher than that found in Scott
@@ -426,32 +443,98 @@ careful calculation of the maximum tranlation time suggested by Equation
   \label{fig:estimates_translation_data}
 \end{figure}
 
+\subsection{The effect of a non-constant translation elongation rate.}
 
-From Figure \ref{fig:estimates_translation_data}B, it is apparent that for cells with
-slower growth, the cell cycle time is indeed much longer than might have
-been expected given a translation rate of 20 aa/sec. We can actually infer what
-the effective translation is given the observed growth rates, which we show
-in Figure \ref{fig:estimates_translation_rate}.  Interestingly, these
-translation rates are in good agreement with those measured in Dai {\it et al.}
-\cite{Dai2016}, which were also shown to decrease when grown under limited nutrient conditions.
+From Figure \ref{fig:estimates_translation_data}B it is apparent that for cells
+with slower growth, the cell cycle time is indeed much longer than might have
+been expected under translation-limited growth. The remaining parameter we have yet to
+consider is the elongation rate $r_t$, which we have assumed to be 20 aa/s. Recent
+measurements of elongation rate from Dai {\it et al.} \cite{Dai2016} across a
+wide range of growth rates found that it indeed varies with growth rate. In particular,
+they showed that the rate decreased to as low as 8 aa/s and exhibited a a Michaelis–Menten dependence on the
+ribosomal fraction. Here we use their result to further consider the consequence of a
+decreasing elongation rate $r_t$ on the maximum predicted growth rate.
 
-% though that work also suggests that the fraction of active
-% ribosomes may decrease in poor nutrient conditions, further suggesting that
-% under a certain regime cells may not be utilizing their full ribosomal capacity
-% (i.e. not translation-limited).
+% We can actually infer what
+% the effective translation is given the observed growth rates, which we show
+% in Figure \ref{fig:estimates_translation_rate}.  Interestingly, these
+% translation rates are in good agreement with those measured in Dai {\it et al.}
+% \cite{Dai2016}, which were also shown to decrease when grown under limited nutrient conditions.
+%
+% \marginnote{\small{JT suggests using measured elongation rate in Dai {\it et al.} to redefine
+% translation boundaries in Figure \ref{fig:estimates_translation_data}.}}
+%
+% \begin{figure}[H]
+% 		\centering
+%     \includegraphics[width=0.5\textwidth]{../../code/figures/SI/estimates_translation_translation_rate.pdf}
+%   \caption{{\bf Estimate of apparent translation rates based on observed growth rates and measured proteomic mass.}
+% 	Using the measured ribosomal and non-ribosomal mass, we use Equation \ref{eq:lambda_max}  to estimate $r_t$
+% 	for each of the proteomic datasets available.}
+%   \label{fig:estimates_translation_rate}
+% \end{figure}
 
-\marginnote{\small{JT suggests using measured elongation rate in Dai {\it et al.} to redefine
-translation boundaries in Figure \ref{fig:estimates_translation_data}.}}
+\marginnote{\small{NB: a better approach would be from
+point-of-view of biological rate-limiting steps. BUT the result suggests possibilities: aa-tRNA availability?,
+GTP?}}
+
+In the work of Dai et al. the authors propose that there may be a bottleneck in
+translation that arises due to lower  availability of ternary complex (TC)
+that must bind the ribosome in order for translation to proceed. This complex
+consists of aminoacyl-tRNA, elongation factor Tu and guanosine triphosphate.
+To account for this bottleneck, they divide the elongation rate into two
+coarse-grained timescales: A) binding of the ternary complex to the ribosome,
+which will depend inversely on the effective TC concentration $[TC_{eff}]$, and
+B) other enzymatic processes that will not depend
+on TC concentration. Letting these two timescales be 1/($k_{on} \cdot
+[TC_{eff}]$) and 1/$r_t$, the new elongation rate is given by,
+
+\begin{equation}
+\frac{1}{r_t'} = \frac{1}{k_{on} \cdot [TC_{eff}]} + \frac{1}{r_t}
+\label{eq:rate_dai}
+\end{equation}
+where $r_t/k_{on}$ is the binding constant of the TC with the ribosome. Further
+taking $[TC_{eff}]$ to be proportional to the RNA/protein ratio,
+
+\begin{equation}
+[TC_{eff}] = C \cdot (R_m/P_m),
+\label{eq:elong_rate}
+\end{equation}
+they find that  $r_t$ = 22 aa/s, $k_{on}$ = 6.4 $\mu M^{-1}s^{-1}$, and
+$C$ = 31 $\mu M$.
+
+\marginnote{\small{This assumption of proportionality
+is something that will need some more consideration.}}
+
+Using the elongation rate calculated from Equation \ref{eq:elong_rate}, we can now
+recalculate the translation-limited growth rate,
+
+\begin{equation}
+\lambda_{\text{max}}' =  \frac{ln(2)} {L_R} \cdot r_t' \cdot \Phi_R,
+\label{eq:lambda_max_phi_dai}
+\end{equation}
+where we denote $\lambda_{\text{max}}'$ as the translation-limited growth rate when elongation rates is no longer assumed
+to be fixed at 20 aa/s. Plugging in the translation rate $r_t'$ given by Equation \ref{eq:rate_dai}
+along with the measured fraction of ribosomal mass $\Phi_R$ from each dataset, we find a
+further improvement in agreement between the measured and translation-limited growth rates.
+This is shown in Figure \ref{fig:estimates_translation_data_dai}. This is particularly true with
+the data from Li {\it et al.} and Schmidt {\it et al.}, though we note that
+for the poorest nutrient conditions (i.e. the longest cell cycle time) a
+discrepancy still appears to exist.
 
 \begin{figure}[H]
 		\centering
-    \includegraphics[width=0.5\textwidth]{../../code/figures/SI/estimates_translation_translation_rate.pdf}
-  \caption{{\bf Estimate of apparent translation rates based on observed growth rates and measured proteomic mass.}
-	Using the measured ribosomal and non-ribosomal mass, we use Equation \ref{eq:lambda_max}  to estimate $r_t$
-	for each of the proteomic datasets available.}
-  \label{fig:estimates_translation_rate}
+    \includegraphics[width=0.7\textwidth]{../../code/figures/SI/estimates_translation_data_dai.pdf}
+  \caption{{\bf Comparison of translation-limited rate of growth to observed growth rates using the predicted
+	elongation rate from Dai {\it et al.}.}
+	Predicted cell cycle time, calculated from  Equation \ref{eq:lambda_max_phi}, is plotted
+	against the measured doubling time.	The light shaded region reflect a boundary where growth would not be possible
+	given the predicted translation rate $r_t'$ in Equation \ref{eq:rate_dai}, which varies from about 8 aa/s to about 20 aa/s.
+	The dark shaded region corresponds to the maximum
+	division rate set by the synthesis of a ribosome. To calculate the RNA/ protein ratio
+	$R_m/P_m$ we assume it is proportional to the fraction of ribosomal mass $\Phi_R$,  which
+	empirically was found to be $R_m/P_m$ = $\Phi_R$/0.411 \cite{Dai2016}.}
+  \label{fig:estimates_translation_data_dai}
 \end{figure}
-
 
 \bibliography{SI_bib.bib}
 

@@ -33,7 +33,7 @@ summarized['max_rate_pool'] = summarized['max'].values * summarized['rate'].valu
 # Define the numbers needed
 num_needed = {'rnap': 2E3 * 1E3,
               'dnap': 5E6,
-              'glucose_tport':  1E10,
+              'glucose_tport': 1E10/6,
               'atp_synthase': 1E10,
               'ribosome': 2E4 * 1E4,
               'fas': 5E7,

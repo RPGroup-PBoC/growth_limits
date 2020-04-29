@@ -47,12 +47,12 @@ for k, v in num_needed.items():
 summarized['mean_time'] = summarized['num_needed'].values / summarized['mean_rate_pool'].values
 summarized['min_time'] = summarized['num_needed'].values / summarized['max_rate_pool'].values
 summarized['max_time'] = summarized['num_needed'].values / summarized['min_rate_pool'].values
-summarized.sort_values('mean_time', inplace=True)
+summarized.sort_values('min_time', inplace=True)
 summarized['location'] = np.arange(0, len(summarized), 1)
 summarized['color'] = sns.color_palette('viridis', n_colors=len(summarized) + 3)[:len(summarized)]
 # %%
 # Set up the figure canvas
-fig, ax = plt.subplots(1, 1, figsize=(4, 6))
+fig, ax = plt.subplots(1, 1, figsize=(6, 8))
 ax.set_yticks(summarized['location'].values)
 ax.set_yticklabels(summarized['name'].values)
 ax.set_xlabel('time [s]')
@@ -60,11 +60,34 @@ ax.set_ylim([-1, 8])
 ax.vlines(6E3, -1, 9, 'k', linestyle='dashed')
 ax.set_xscale('log')
 
-for g, d in summarized.groupby(['name', 'location', 'color']):
+ylabels = {}
+for g, d in summarized.groupby(['name', 'location', 'color', 'shorthand']):
     ax.plot(d['min_time'], g[1], 'o', color=g[2])
     ax.plot(d['max_time'], g[1], 'o', color=g[2])
     ax.plot([d['min_time'].values[0], d['max_time'].values[0]], [g[1], g[1]], '-', color=g[2])
+
 plt.savefig('../figures/observed_time_categories.pdf', bbox_inches='tight')
+# %%
+data = pd.read_csv('../../data/compiled_estimate_categories.csv', comment='#')
+fig, ax = plt.subplots(4, 2, figsize=(8,10))
+for a in ax.ravel():
+    # a.set_yscale('log')
+    a.set_ylabel('copies per cell')
+    a.set_xlabel('growth rate [hr$^{-1}$]')
+
+
+axes = {n:a for n, a in zip(summarized['name'].values, ax.ravel())}
+dataset_colors = {'li_2014':colors['red'], 'schmidt_2016':colors['blue'],
+                   'peebo_2015':colors['dark_brown'], 'valgepea_2013':colors['dark_green']}
+for g, d in data.groupby(['name', 'dataset_name', 'dataset']):
+    prot.viz.titlebox(axes[g[0]], g[0], color='k', bgcolor=colors['pale_yellow'])
+    axes[g[0]].plot(d['growth_rate_hr'], d['n_complex'], 'o', color=dataset_colors[g[-1]],
+                label=g[1], markersize=4.5, markeredgewidth=0.5, markeredgecolor='k',
+                alpha=0.75)
+    
+ax.ravel()[0].legend(fontsize=6)
+plt.tight_layout()
+plt.savefig('../../figures/growth_dependent_categories.pdf', bbox_inches='tight')
 # %%
 
 

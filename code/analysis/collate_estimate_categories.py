@@ -30,11 +30,11 @@ complexes = {'dnap': {'name': 'DNA polymerase III (core enzyme)',
                     'units': 'AA/s',
                     'method':'avg',
                     'category':'synthesis'},
-            'glucose_tport': {'name': 'Glucose Transporters', 
-                              'complexes': ['CPLX-165', 'CPLX-157'],
+            'carbon_tport': {'name': 'PTS-Mediated Sugar Transport', 
+                              'go_terms': ['GO:0009401'],
                               'rate_per_sec': 200,
-                              'units': 'glucose/s',
-                              'method': 'sum',
+                              'units': 'carbs/s',
+                              'method': 'avg',
                               'category':'transport'},
             'ribosome': {'name': 'Ribosome (50S + 30S)',
                          'complexes': ['CPLX0-3964'],
@@ -73,7 +73,15 @@ complexes = {'dnap': {'name': 'DNA polymerase III (core enzyme)',
 complex_df = pd.DataFrame([])
 for g, d in tqdm.tqdm(data.groupby(['dataset', 'dataset_name', 'condition', 'growth_rate_hr'])):
     for k, v in complexes.items():
-        _d = d[d['complex'].isin(v['complexes'])]
+        if 'complexes' in list(v.keys()):
+            _d = d[d['complex'].isin(v['complexes'])]
+        if 'go_terms' in list(v.keys()):
+            cplxs = []
+            for t in v['go_terms']:
+                __d = d[d['go_terms'].str.contains(t)]
+                for kplx in __d['complex'].unique():
+                    cplxs.append(kplx)
+            _d = d[d['complex'].isin(cplxs)]
         if len(_d) > 0:
             _d = _d.drop_duplicates(subset=['gene_name'])
             _d = _d.groupby(['complex'])['n_units'].mean().reset_index()
@@ -90,7 +98,6 @@ for g, d in tqdm.tqdm(data.groupby(['dataset', 'dataset_name', 'condition', 'gro
                      'n_complex':units, 
                      'rate': v['rate_per_sec'],
                      'rate_units': v['units'],
-                     'components':v['complexes'],
                      'shorthand': k,
                      'name': v['name'],
                      'aggregation_method': _method,

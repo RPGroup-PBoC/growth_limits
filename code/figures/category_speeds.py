@@ -33,7 +33,7 @@ summarized['max_rate_pool'] = summarized['max'].values * summarized['rate'].valu
 # Define the numbers needed
 num_needed = {'rnap': 2E3 * 1E3,
               'dnap': 5E6,
-              'glucose_tport': 1E10/6,
+              'carbon_tport': 1E10/6,
               'atp_synthase': 1E10,
               'ribosome': 2E4 * 1E4,
               'fas': 5E7,
@@ -84,8 +84,25 @@ for g, d in data.groupby(['name', 'dataset_name', 'dataset']):
                 label=g[1], markersize=4.5, markeredgewidth=0.5, markeredgecolor='k',
                 alpha=0.75)
     
+# for a in ax.ravel():
+    # a.set_ylim([0, a.get_ylim()[1]])
 
 ax.ravel()[0].legend(fontsize=6)
+axes['tRNA ligases (average)'].set_yscale('log')
+axes['tRNA ligases (average)'].set_yticks([1E2, 1E3, 1E4])
+axes['RNA polymerase (core enzyme)'].set_yscale('log')
+axes['RNA polymerase (core enzyme)'].set_yticks([1E3, 1E4, 1E5])
+axes['NADH Dehydrogenase I'].set_yscale('log')
+axes['NADH Dehydrogenase I'].set_yticks([1E2, 1E3, 1E4])
+axes['Ribosome (50S + 30S)'].set_yscale('log')
+axes['Ribosome (50S + 30S)'].set_yticks([1E3, 1E4, 1E5])
+axes['F1-F0 ATP Synthase'].set_yscale('log')
+axes['F1-F0 ATP Synthase'].set_yticks([1E3, 1E4, 1E5])
+axes['Fatty Acid Synthetases (FabB + FabH + FabK)'].set_yscale('log')
+axes['Fatty Acid Synthetases (FabB + FabH + FabK)'].set_yticks([1E3, 1E4, 1E5])
+axes['Carbohydrate Transporters (average)'].set_yscale('log')
+axes['Carbohydrate Transporters (average)'].set_yticks([1E2, 1E3, 1E4, 1E5])
+
 plt.tight_layout()
 plt.savefig('../../figures/growth_dependent_categories.pdf', bbox_inches='tight')
 # %%

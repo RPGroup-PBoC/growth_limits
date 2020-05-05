@@ -1,6 +1,7 @@
 #%%
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 import prot.viz
 colors, palette = prot.viz.bokeh_theme()
 dataset_colors = {'li_2014':colors['purple'], 'schmidt_2016':colors['light_blue'],
@@ -13,7 +14,7 @@ data = data[(data['shorthand']=='atp_synthase') |
             (data['shorthand']=='proton_gradient')]
 
 # %%
-fig, ax = plt.subplots(2, 1, figsize=(3.5, 3.5 ))
+fig, ax = plt.subplots(1, 2, figsize=(6.5, 2 ))
 axes = {'atp_synthase':ax[0], 'proton_gradient':ax[1]}
 
 # Populate with data
@@ -23,9 +24,9 @@ for g, d in data.groupby(['shorthand', 'dataset', 'dataset_name']):
                     label = g[2], ms=4)
 
 # plot the prediction
-ax[0].plot(0.5, 3E4, 'o', ms=6, color=colors['dark_brown'], label='estimated value',
+ax[0].plot(0.5, 3E3, 'o', ms=6, color=colors['dark_brown'], label='estimated value',
            alpha=0.4)
-ax[1].plot(0.5, 1E4, 'o', ms=6, color=colors['dark_brown'], label='estimated value',
+ax[1].plot(0.5, 1E3, 'o', ms=6, color=colors['dark_brown'], label='estimated value',
            alpha=0.4)
 
 
@@ -41,10 +42,10 @@ for a in ax:
     a.legend(fontsize=5, loc='lower right')
 
 # Add locations of estimates
-ax[0].hlines(3E4, 0, 0.5, color='k', linestyle='--', lw=0.5)
-ax[0].vlines(0.5, -0.1, 3E4, color='k', linestyle='--', lw=0.5)
-ax[1].hlines(1E4, 0, 0.5, color='k', linestyle='--', lw=0.5)
-ax[1].vlines(0.5, -0.1, 1E4, color='k', linestyle='--', lw=0.5)
+ax[0].hlines(3E3, 0, 0.5, color='k', linestyle='--', lw=0.5)
+ax[0].vlines(0.5, -0.1, 3E3, color='k', linestyle='--', lw=0.5)
+ax[1].hlines(1E3, 0, 0.5, color='k', linestyle='--', lw=0.5)
+ax[1].vlines(0.5, -0.1, 1E3, color='k', linestyle='--', lw=0.5)
 
 plt.tight_layout()
 plt.savefig('../../figures/energy_estimate_plots.svg')

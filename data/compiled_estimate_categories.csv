@@ -1,385 +1,454 @@
 aggregation_method,category,condition,dataset,dataset_name,growth_rate_hr,n_complex,name,rate,rate_units,shorthand
 sum total,synthesis,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,223.75,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,19173.833333333332,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,5355.875,tRNA ligases (average),300.0,AA/s,trna
-average,transport,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,2521.676587301587,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,11809.0,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,67106.0,tRNA ligases (average),300.0,AA/s,trna
+average,transport,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,2521.676587301587,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,136474.45909090908,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,10378.9875,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,18033.416666666668,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,20897.5,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,14622.5,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,106.34375,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,11173.333333333334,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,2482.125,tRNA ligases (average),300.0,AA/s,trna
-average,transport,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,1607.3560606060607,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,5289.0,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,36624.0,tRNA ligases (average),300.0,AA/s,trna
+average,transport,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,1607.3560606060607,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,65577.32870370371,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,5080.525,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,8566.083333333334,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,11505.0,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,8089.666666666666,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,107.72916666666666,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,3999.1666666666665,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,928.25,tRNA ligases (average),300.0,AA/s,trna
-average,transport,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,1083.8333333333333,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,2284.0,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,14526.5,tRNA ligases (average),300.0,AA/s,trna
+average,transport,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,1083.8333333333333,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,44.0,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,22302.104545454546,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,2930.7375,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,4061.9166666666665,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,3269.0,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,2712.5,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,41.236590279065005,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,3030.6084877338617,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,970.0852876140432,tRNA ligases (average),300.0,AA/s,trna
-average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,7175.520608038946,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,456.9195056565842,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,8393.372999916675,tRNA ligases (average),300.0,AA/s,trna
+average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,7175.520608038946,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,9444.712008906046,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,2626.5623415733216,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,1239.2426235142948,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,5276.678323417108,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,4788.041092236007,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,41.57062182882422,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,3004.274262807408,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,994.3030464519501,tRNA ligases (average),300.0,AA/s,trna
-average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,6604.574476265788,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,433.98339927085533,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,8498.588397359415,tRNA ligases (average),300.0,AA/s,trna
+average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,6604.574476265788,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,9699.636995764977,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,2674.2216745632068,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,1273.7590579166704,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,5228.667068062109,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,4860.851263605329,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,46.452799717623996,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,3293.788049696244,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,1058.9446276602966,tRNA ligases (average),300.0,AA/s,trna
-average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,6702.438469295948,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,445.3988639283442,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,9343.392186659239,tRNA ligases (average),300.0,AA/s,trna
+average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,6702.438469295948,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,11253.874972075837,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,2956.0295113549105,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,1676.0090589011625,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,5873.1196142036415,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,5552.620482672862,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,46.700351781114605,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,3612.8512380939924,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,1089.814764657755,tRNA ligases (average),300.0,AA/s,trna
-average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,8291.772341132415,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,499.2335846034282,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,9898.51715954612,tRNA ligases (average),300.0,AA/s,trna
+average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,8291.772341132415,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,13010.833971981398,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,3334.764823022083,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,1475.2025728175652,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,5918.227495076713,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,5918.259874294928,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,53.08435519916727,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,4035.481131478849,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,1182.3815100818242,tRNA ligases (average),300.0,AA/s,trna
-average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,7430.039432859368,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,481.907293971691,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,11041.281371409648,tRNA ligases (average),300.0,AA/s,trna
+average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,7430.039432859368,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,16235.502790735587,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,3729.5649353887807,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,2086.505269373671,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,5888.579293605458,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,7497.6764123679395,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,54.801906086122344,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,4467.4468690241765,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,1193.7226065820569,tRNA ligases (average),300.0,AA/s,trna
-average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,6243.891967775144,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,576.8208127019367,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,11613.982069212398,tRNA ligases (average),300.0,AA/s,trna
+average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,6243.891967775144,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,18876.616225014248,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,3861.8104251249597,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,1885.8017479851783,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,5985.913182251949,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,7748.343607792777,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,58.7826945747119,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,4803.4570176906445,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,1298.836227578424,tRNA ligases (average),300.0,AA/s,trna
-average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,5401.205831353592,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,613.9728151448651,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,13137.309447450541,tRNA ligases (average),300.0,AA/s,trna
+average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,5401.205831353592,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,21616.066583192503,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,4202.980027621696,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,2245.3022867360287,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,6102.599554875304,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,7989.972522312744,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,55.228014558800965,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,5165.16089052291,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,1372.9405976822334,tRNA ligases (average),300.0,AA/s,trna
-average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,4224.376415660777,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,633.786447994328,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,14272.492677298847,tRNA ligases (average),300.0,AA/s,trna
+average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,4224.376415660777,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,24590.239239874696,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,4285.674879471644,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,2385.9512123500494,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,6063.184387371164,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,8305.653661517215,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.25,39.379869929212866,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.25,3331.496454940348,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,rich,peebo_2015,Peebo et al. 2015,0.25,974.6071324433021,tRNA ligases (average),300.0,AA/s,trna
-average,transport,rich,peebo_2015,Peebo et al. 2015,0.25,6542.929841057957,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.25,522.3917425573305,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.25,8886.01530364321,tRNA ligases (average),300.0,AA/s,trna
+average,transport,rich,peebo_2015,Peebo et al. 2015,0.25,6542.929841057957,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.25,10948.56970904837,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.25,3480.096477831801,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.25,2454.7231829659368,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.25,6218.662070888763,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.25,5437.277782162812,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.35,53.37257218208142,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.35,3845.4508284071217,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,rich,peebo_2015,Peebo et al. 2015,0.35,1108.1632296861485,tRNA ligases (average),300.0,AA/s,trna
-average,transport,rich,peebo_2015,Peebo et al. 2015,0.35,8904.889483733534,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.35,554.9943814920343,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.35,10210.258843558742,tRNA ligases (average),300.0,AA/s,trna
+average,transport,rich,peebo_2015,Peebo et al. 2015,0.35,8904.889483733534,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.35,14853.170255933253,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.35,4424.669203697841,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.35,2280.94733453941,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.35,6758.018159246234,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.35,6448.712266164637,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.42,45.36455446222821,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.42,4162.97881506709,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,rich,peebo_2015,Peebo et al. 2015,0.42,1148.3954857728475,tRNA ligases (average),300.0,AA/s,trna
-average,transport,rich,peebo_2015,Peebo et al. 2015,0.42,9890.1860102336,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.42,573.6999983541373,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.42,10947.308364985776,tRNA ligases (average),300.0,AA/s,trna
+average,transport,rich,peebo_2015,Peebo et al. 2015,0.42,9890.1860102336,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.42,17359.743771084464,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.42,4809.90485316658,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.42,1974.9520278990767,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.42,7128.317532497239,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.42,7506.617728934605,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.45,54.695622095158654,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.45,4476.330202848697,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,rich,peebo_2015,Peebo et al. 2015,0.45,1204.2885732884906,tRNA ligases (average),300.0,AA/s,trna
-average,transport,rich,peebo_2015,Peebo et al. 2015,0.45,8276.420523346957,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.45,621.2491001233608,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.45,11831.154382366603,tRNA ligases (average),300.0,AA/s,trna
+average,transport,rich,peebo_2015,Peebo et al. 2015,0.45,8276.420523346957,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.45,19236.34764119286,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.45,5247.756679423199,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.45,2747.924882365196,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.45,7446.684712539596,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.45,8537.727200829879,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.53,66.05291494534691,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.53,4926.336920484292,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,rich,peebo_2015,Peebo et al. 2015,0.53,1277.1133981520231,tRNA ligases (average),300.0,AA/s,trna
-average,transport,rich,peebo_2015,Peebo et al. 2015,0.53,8668.062011730422,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.53,649.820154959323,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.53,12968.622115575705,tRNA ligases (average),300.0,AA/s,trna
+average,transport,rich,peebo_2015,Peebo et al. 2015,0.53,8668.062011730422,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.53,22956.830465182775,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.53,5629.766279419033,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.53,3462.3934073387472,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.53,7893.113675473148,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.53,9989.653082329367,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.55,0.0,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.55,5164.003137224907,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,rich,peebo_2015,Peebo et al. 2015,0.55,1338.5856303805822,tRNA ligases (average),300.0,AA/s,trna
-average,transport,rich,peebo_2015,Peebo et al. 2015,0.55,7619.692855890205,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.55,654.546626016764,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.55,14032.885188589475,tRNA ligases (average),300.0,AA/s,trna
+average,transport,rich,peebo_2015,Peebo et al. 2015,0.55,7619.692855890205,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.55,24929.395502495667,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.55,5646.2701399348225,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.55,3186.3350734205283,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.55,8005.39295245065,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.55,10516.095263868836,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.63,55.66259403563932,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.63,5480.668871205703,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,rich,peebo_2015,Peebo et al. 2015,0.63,1348.8830877366563,tRNA ligases (average),300.0,AA/s,trna
-average,transport,rich,peebo_2015,Peebo et al. 2015,0.63,10189.034634484267,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.63,733.804247116793,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.63,14502.506391382365,tRNA ligases (average),300.0,AA/s,trna
+average,transport,rich,peebo_2015,Peebo et al. 2015,0.63,10189.034634484267,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.63,29233.20977305864,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.63,6192.03226198355,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.63,3171.0446184735692,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.63,8289.191481867796,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.63,12157.782035731274,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.65,80.30180325196805,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.65,5772.135331663296,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,rich,peebo_2015,Peebo et al. 2015,0.65,1433.580946266696,tRNA ligases (average),300.0,AA/s,trna
-average,transport,rich,peebo_2015,Peebo et al. 2015,0.65,9641.992807926643,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.65,743.4987069855472,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.65,15610.583223464848,tRNA ligases (average),300.0,AA/s,trna
+average,transport,rich,peebo_2015,Peebo et al. 2015,0.65,9641.992807926643,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.65,31235.893105731164,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.65,6420.666027754734,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.65,3697.095101679636,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.65,8506.636188221708,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.65,12623.405428977716,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.73,59.68827783509738,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.73,5983.581638691877,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,rich,peebo_2015,Peebo et al. 2015,0.73,1519.4287934137687,tRNA ligases (average),300.0,AA/s,trna
-average,transport,rich,peebo_2015,Peebo et al. 2015,0.73,11025.799272862563,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.73,790.5386080791278,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.73,16560.76567361213,tRNA ligases (average),300.0,AA/s,trna
+average,transport,rich,peebo_2015,Peebo et al. 2015,0.73,11025.799272862563,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.73,33676.48333463338,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.73,6430.707984937322,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.73,3635.6081372770723,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.73,8737.599453016523,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.73,13882.521437616688,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.74,0.0,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.74,6634.32668649489,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,rich,peebo_2015,Peebo et al. 2015,0.74,1612.28898808795,tRNA ligases (average),300.0,AA/s,trna
-average,transport,rich,peebo_2015,Peebo et al. 2015,0.74,9859.948758082548,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.74,828.8585551865518,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.74,17792.718153711114,tRNA ligases (average),300.0,AA/s,trna
+average,transport,rich,peebo_2015,Peebo et al. 2015,0.74,9859.948758082548,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.74,37044.462789280595,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.74,7029.914056522063,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.74,4609.273212177775,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.74,8883.122142134716,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.74,13729.434210338883,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.78,66.07585984256635,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.78,6916.647971123569,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,rich,peebo_2015,Peebo et al. 2015,0.78,1707.147442351371,tRNA ligases (average),300.0,AA/s,trna
-average,transport,rich,peebo_2015,Peebo et al. 2015,0.78,6266.378798902674,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.78,946.095747020486,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.78,18979.757412837687,tRNA ligases (average),300.0,AA/s,trna
+average,transport,rich,peebo_2015,Peebo et al. 2015,0.78,6266.378798902674,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.78,39149.72382361658,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.78,6999.310087996565,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.78,4307.79340772933,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.78,9865.894793316553,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.78,14955.613996776081,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.82,107.06100854409584,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.82,8031.6474239706595,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,rich,peebo_2015,Peebo et al. 2015,0.82,2002.4400935296399,tRNA ligases (average),300.0,AA/s,trna
-average,transport,rich,peebo_2015,Peebo et al. 2015,0.82,3916.5973229338333,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.82,1081.5949262782908,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.82,22295.54082422817,tRNA ligases (average),300.0,AA/s,trna
+average,transport,rich,peebo_2015,Peebo et al. 2015,0.82,3916.5973229338333,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.82,44716.15698198466,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.82,6977.089054227636,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.82,5284.775093932134,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.82,10742.605832684678,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.82,11062.18984927756,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,42C,schmidt_2016,Schmidt et al. 2016,0.66,40.85626296816007,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,42C,schmidt_2016,Schmidt et al. 2016,0.66,5588.925666420736,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,42C,schmidt_2016,Schmidt et al. 2016,0.66,1901.696869877217,tRNA ligases (average),300.0,AA/s,trna
-average,transport,42C,schmidt_2016,Schmidt et al. 2016,0.66,1925.9141602031953,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,42C,schmidt_2016,Schmidt et al. 2016,0.66,985.5158004097266,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,42C,schmidt_2016,Schmidt et al. 2016,0.66,21705.80338653207,tRNA ligases (average),300.0,AA/s,trna
+average,transport,42C,schmidt_2016,Schmidt et al. 2016,0.66,1925.9141602031953,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,42C,schmidt_2016,Schmidt et al. 2016,0.66,0.6937809224989278,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,42C,schmidt_2016,Schmidt et al. 2016,0.66,22231.025503585402,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,42C,schmidt_2016,Schmidt et al. 2016,0.66,4432.232431776694,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,42C,schmidt_2016,Schmidt et al. 2016,0.66,1367.7023660913235,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,42C,schmidt_2016,Schmidt et al. 2016,0.66,10161.635726611168,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,42C,schmidt_2016,Schmidt et al. 2016,0.66,2142.048598215439,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,acetate,schmidt_2016,Schmidt et al. 2016,0.3,14.735222948979295,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,acetate,schmidt_2016,Schmidt et al. 2016,0.3,3199.227343486582,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,acetate,schmidt_2016,Schmidt et al. 2016,0.3,949.0500025614658,tRNA ligases (average),300.0,AA/s,trna
-average,transport,acetate,schmidt_2016,Schmidt et al. 2016,0.3,2683.073549382788,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,acetate,schmidt_2016,Schmidt et al. 2016,0.3,395.95899879078047,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,acetate,schmidt_2016,Schmidt et al. 2016,0.3,9542.156745571847,tRNA ligases (average),300.0,AA/s,trna
+average,transport,acetate,schmidt_2016,Schmidt et al. 2016,0.3,2683.073549382788,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,acetate,schmidt_2016,Schmidt et al. 2016,0.3,0.0,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,acetate,schmidt_2016,Schmidt et al. 2016,0.3,8269.167183221183,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,acetate,schmidt_2016,Schmidt et al. 2016,0.3,3073.1576392738857,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,acetate,schmidt_2016,Schmidt et al. 2016,0.3,911.8435104337113,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,acetate,schmidt_2016,Schmidt et al. 2016,0.3,6212.0050281555905,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,acetate,schmidt_2016,Schmidt et al. 2016,0.3,882.0328042029112,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,10.771297195951158,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,3394.161633563413,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,1178.806124917088,tRNA ligases (average),300.0,AA/s,trna
-average,transport,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,2743.581405424374,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,468.27430450208084,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,8278.259621978019,tRNA ligases (average),300.0,AA/s,trna
+average,transport,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,2743.581405424374,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,8.721872081284744,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,5995.908378991958,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,1992.643256936243,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,1181.738478461658,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,5309.364440929661,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,1113.2417072026026,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,12.378028998028244,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,3807.4499867553495,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,1306.6721690591323,tRNA ligases (average),300.0,AA/s,trna
-average,transport,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,3322.1419472597736,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,444.8628887079333,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,9137.699861780162,tRNA ligases (average),300.0,AA/s,trna
+average,transport,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,3322.1419472597736,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,0.9005321633763833,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,7129.226604489752,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,2606.095054203085,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,1082.889926460101,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,5704.420988907701,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,1296.1659604864078,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,14.379970184636125,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,4709.796827129401,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,1407.478258301423,tRNA ligases (average),300.0,AA/s,trna
-average,transport,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,4335.237335160048,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,513.3603273300434,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,11104.527655001846,tRNA ligases (average),300.0,AA/s,trna
+average,transport,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,4335.237335160048,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,0.6144348621544505,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,9335.235937013606,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,3543.2653598039583,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,1209.6686348665746,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,6618.385117696664,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,1457.9003191769725,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,18.9527089092876,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,5834.2744076620465,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,1712.6532837568789,tRNA ligases (average),300.0,AA/s,trna
-average,transport,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,3822.841882467689,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,712.9203446082007,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,14508.461042884805,tRNA ligases (average),300.0,AA/s,trna
+average,transport,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,3822.841882467689,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,0.3224424896464047,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,14675.571260087092,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,4576.853491850204,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,1639.3782279847333,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,7776.345522802343,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,2044.7690480926753,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,fructose,schmidt_2016,Schmidt et al. 2016,0.65,23.240715027402214,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,fructose,schmidt_2016,Schmidt et al. 2016,0.65,5752.921525769781,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,fructose,schmidt_2016,Schmidt et al. 2016,0.65,1970.4735787994352,tRNA ligases (average),300.0,AA/s,trna
-average,transport,fructose,schmidt_2016,Schmidt et al. 2016,0.65,2812.5303026218467,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,fructose,schmidt_2016,Schmidt et al. 2016,0.65,629.6815903869951,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,fructose,schmidt_2016,Schmidt et al. 2016,0.65,19304.194085556574,tRNA ligases (average),300.0,AA/s,trna
+average,transport,fructose,schmidt_2016,Schmidt et al. 2016,0.65,2812.5303026218467,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,fructose,schmidt_2016,Schmidt et al. 2016,0.65,3.7974218718513963,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,fructose,schmidt_2016,Schmidt et al. 2016,0.65,22598.827886479292,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,fructose,schmidt_2016,Schmidt et al. 2016,0.65,5954.154678213014,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,fructose,schmidt_2016,Schmidt et al. 2016,0.65,1507.144957912294,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,fructose,schmidt_2016,Schmidt et al. 2016,0.65,8418.366459639292,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,fructose,schmidt_2016,Schmidt et al. 2016,0.65,2111.7117809195443,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,19.716665907278408,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,3978.191745925456,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,1321.4336217064224,tRNA ligases (average),300.0,AA/s,trna
-average,transport,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,2805.781841262322,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,565.3392841910039,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,12106.430867356024,tRNA ligases (average),300.0,AA/s,trna
+average,transport,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,2805.781841262322,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,0.313033933660578,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,12678.113357348198,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,4863.537794649327,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,1044.9855290424246,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,7738.668390989979,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,1385.4881903817184,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,galactose,schmidt_2016,Schmidt et al. 2016,0.26,16.342598192264486,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,galactose,schmidt_2016,Schmidt et al. 2016,0.26,3033.2601865126817,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,galactose,schmidt_2016,Schmidt et al. 2016,0.26,1130.2483718201652,tRNA ligases (average),300.0,AA/s,trna
-average,transport,galactose,schmidt_2016,Schmidt et al. 2016,0.26,3347.5579560618753,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,galactose,schmidt_2016,Schmidt et al. 2016,0.26,335.9252126772008,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,galactose,schmidt_2016,Schmidt et al. 2016,0.26,9460.538953259931,tRNA ligases (average),300.0,AA/s,trna
+average,transport,galactose,schmidt_2016,Schmidt et al. 2016,0.26,3347.5579560618753,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,galactose,schmidt_2016,Schmidt et al. 2016,0.26,1.5050412754354878,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,galactose,schmidt_2016,Schmidt et al. 2016,0.26,8978.167751605495,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,galactose,schmidt_2016,Schmidt et al. 2016,0.26,3031.574540284194,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,galactose,schmidt_2016,Schmidt et al. 2016,0.26,494.40605898055765,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,galactose,schmidt_2016,Schmidt et al. 2016,0.26,6818.740002488019,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,galactose,schmidt_2016,Schmidt et al. 2016,0.26,1299.6031413385435,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,20.046283985196045,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,4317.771011560356,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,1411.5698307554003,tRNA ligases (average),300.0,AA/s,trna
-average,transport,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,3013.36006063932,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,592.1405730769576,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,12814.7978363166,tRNA ligases (average),300.0,AA/s,trna
+average,transport,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,3013.36006063932,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,0.3173314968258079,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,15002.883609468336,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,5085.943299214009,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,1159.0532921562635,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,8194.768574029666,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,2216.08450808303,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,glucose,schmidt_2016,Schmidt et al. 2016,0.58,24.964285714285715,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,glucose,schmidt_2016,Schmidt et al. 2016,0.58,4674.5,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,glucose,schmidt_2016,Schmidt et al. 2016,0.58,1834.375,tRNA ligases (average),300.0,AA/s,trna
-average,transport,glucose,schmidt_2016,Schmidt et al. 2016,0.58,2076.75,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,glucose,schmidt_2016,Schmidt et al. 2016,0.58,648.0,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,glucose,schmidt_2016,Schmidt et al. 2016,0.58,18080.0,tRNA ligases (average),300.0,AA/s,trna
+average,transport,glucose,schmidt_2016,Schmidt et al. 2016,0.58,2076.75,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,glucose,schmidt_2016,Schmidt et al. 2016,0.58,17.666666666666668,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,glucose,schmidt_2016,Schmidt et al. 2016,0.58,20656.3,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose,schmidt_2016,Schmidt et al. 2016,0.58,4837.408333333334,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,glucose,schmidt_2016,Schmidt et al. 2016,0.58,1126.25,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,glucose,schmidt_2016,Schmidt et al. 2016,0.58,8752.0,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,glucose,schmidt_2016,Schmidt et al. 2016,0.58,1855.1666666666665,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,20.55410026303258,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,4456.148042308433,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,1505.854522175274,tRNA ligases (average),300.0,AA/s,trna
-average,transport,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,2500.6944683493934,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,564.5611117948373,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,13759.624795757763,tRNA ligases (average),300.0,AA/s,trna
+average,transport,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,2500.6944683493934,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,0.6368427657020163,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,15727.07815189804,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,5289.369235349237,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,1043.1484502199028,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,8593.556280383007,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,1683.971483207557,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,53.3963018055659,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,11817.065183029152,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,3593.7175889262116,tRNA ligases (average),300.0,AA/s,trna
-average,transport,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,5393.740937262939,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,1545.940723230998,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,34582.29758362018,tRNA ligases (average),300.0,AA/s,trna
+average,transport,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,5393.740937262939,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,2.114106971939826,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,55333.47792950701,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,16079.283216235599,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,3275.8087530207613,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,24449.64713048409,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,6061.937478665959,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,114.5712972691973,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,31709.112972064777,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,8656.593503209766,tRNA ligases (average),300.0,AA/s,trna
-average,transport,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,9903.624695558536,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,4690.831193171264,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,79707.32834938451,tRNA ligases (average),300.0,AA/s,trna
+average,transport,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,9903.624695558536,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,0.9436393468459596,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,149856.79540002154,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,21975.296176971173,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,9673.954674028066,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,44939.40843451854,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,12572.107018028719,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,mannose,schmidt_2016,Schmidt et al. 2016,0.47,19.480162844321995,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,mannose,schmidt_2016,Schmidt et al. 2016,0.47,4225.205244691454,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,mannose,schmidt_2016,Schmidt et al. 2016,0.47,1507.1368721079034,tRNA ligases (average),300.0,AA/s,trna
-average,transport,mannose,schmidt_2016,Schmidt et al. 2016,0.47,2996.597742396151,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,mannose,schmidt_2016,Schmidt et al. 2016,0.47,475.7117175152818,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,mannose,schmidt_2016,Schmidt et al. 2016,0.47,13756.952409229581,tRNA ligases (average),300.0,AA/s,trna
+average,transport,mannose,schmidt_2016,Schmidt et al. 2016,0.47,2996.597742396151,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,mannose,schmidt_2016,Schmidt et al. 2016,0.47,0.6368296084541926,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,mannose,schmidt_2016,Schmidt et al. 2016,0.47,13578.721169903485,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,mannose,schmidt_2016,Schmidt et al. 2016,0.47,4920.854027856496,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,mannose,schmidt_2016,Schmidt et al. 2016,0.47,1029.5146657672592,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,mannose,schmidt_2016,Schmidt et al. 2016,0.47,7576.998681387984,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,mannose,schmidt_2016,Schmidt et al. 2016,0.47,1766.2469190477032,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,24.111039314825724,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,4381.635551590248,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,1232.3041851173757,tRNA ligases (average),300.0,AA/s,trna
-average,transport,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,1785.818051343132,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,538.3781436880073,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,12901.35463738807,tRNA ligases (average),300.0,AA/s,trna
+average,transport,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,1785.818051343132,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,4.9302027810257085,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,18308.24527930357,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,3649.327881510593,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,853.6646115346012,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,8366.061099122524,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,2171.096964671021,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,pH6,schmidt_2016,Schmidt et al. 2016,0.63,24.033936240869018,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,pH6,schmidt_2016,Schmidt et al. 2016,0.63,4904.069208259877,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,pH6,schmidt_2016,Schmidt et al. 2016,0.63,1530.3983860043768,tRNA ligases (average),300.0,AA/s,trna
-average,transport,pH6,schmidt_2016,Schmidt et al. 2016,0.63,1948.0645441457987,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,pH6,schmidt_2016,Schmidt et al. 2016,0.63,735.431132703852,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,pH6,schmidt_2016,Schmidt et al. 2016,0.63,17226.808503314394,tRNA ligases (average),300.0,AA/s,trna
+average,transport,pH6,schmidt_2016,Schmidt et al. 2016,0.63,1948.0645441457987,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,pH6,schmidt_2016,Schmidt et al. 2016,0.63,16.047011716379313,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,pH6,schmidt_2016,Schmidt et al. 2016,0.63,20063.018500320813,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,pH6,schmidt_2016,Schmidt et al. 2016,0.63,3332.558890376809,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,pH6,schmidt_2016,Schmidt et al. 2016,0.63,1342.3154587860695,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,pH6,schmidt_2016,Schmidt et al. 2016,0.63,10085.034725072597,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,pH6,schmidt_2016,Schmidt et al. 2016,0.63,1995.9751168926268,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,18.456836585811836,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,4019.60979426977,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,1434.7585963473653,tRNA ligases (average),300.0,AA/s,trna
-average,transport,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,2281.7944504357843,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,561.6351621562961,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,12228.159585353113,tRNA ligases (average),300.0,AA/s,trna
+average,transport,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,2281.7944504357843,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,0.31098292478200223,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,11382.399114645988,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,5874.032073037329,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,1663.9141390461032,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,8231.873510441994,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,1162.9206472222977,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,succinate,schmidt_2016,Schmidt et al. 2016,0.44,15.734014066270646,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,succinate,schmidt_2016,Schmidt et al. 2016,0.44,3827.980098905986,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,succinate,schmidt_2016,Schmidt et al. 2016,0.44,1367.0401260431693,tRNA ligases (average),300.0,AA/s,trna
-average,transport,succinate,schmidt_2016,Schmidt et al. 2016,0.44,2761.1304714645366,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,succinate,schmidt_2016,Schmidt et al. 2016,0.44,532.9720080106091,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,succinate,schmidt_2016,Schmidt et al. 2016,0.44,13023.794706386907,tRNA ligases (average),300.0,AA/s,trna
+average,transport,succinate,schmidt_2016,Schmidt et al. 2016,0.44,2761.1304714645366,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,succinate,schmidt_2016,Schmidt et al. 2016,0.44,0.6299905532040296,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,succinate,schmidt_2016,Schmidt et al. 2016,0.44,14071.229886314337,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,succinate,schmidt_2016,Schmidt et al. 2016,0.44,5245.27378389005,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,succinate,schmidt_2016,Schmidt et al. 2016,0.44,1112.2483216817143,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,succinate,schmidt_2016,Schmidt et al. 2016,0.44,8302.173007761003,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,succinate,schmidt_2016,Schmidt et al. 2016,0.44,1697.8245408848597,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,xylose,schmidt_2016,Schmidt et al. 2016,0.55,26.28444980561964,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,xylose,schmidt_2016,Schmidt et al. 2016,0.55,4980.750558161583,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,xylose,schmidt_2016,Schmidt et al. 2016,0.55,1578.2297052856845,tRNA ligases (average),300.0,AA/s,trna
-average,transport,xylose,schmidt_2016,Schmidt et al. 2016,0.55,1652.2248944424475,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,xylose,schmidt_2016,Schmidt et al. 2016,0.55,686.6372088631576,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,xylose,schmidt_2016,Schmidt et al. 2016,0.55,17464.360905028807,tRNA ligases (average),300.0,AA/s,trna
+average,transport,xylose,schmidt_2016,Schmidt et al. 2016,0.55,1652.2248944424475,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
+sum total,transport,xylose,schmidt_2016,Schmidt et al. 2016,0.55,1.6442461898064118,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,xylose,schmidt_2016,Schmidt et al. 2016,0.55,19199.012234658567,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,xylose,schmidt_2016,Schmidt et al. 2016,0.55,5028.4706932052395,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,xylose,schmidt_2016,Schmidt et al. 2016,0.55,1292.3775051878397,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,xylose,schmidt_2016,Schmidt et al. 2016,0.55,8202.650967087247,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,xylose,schmidt_2016,Schmidt et al. 2016,0.55,1883.4840104232449,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,59.81274789827409,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,2873.598396323568,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,533.3033927470439,tRNA ligases (average),300.0,AA/s,trna
-average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,3051.759557022725,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,1232.4659188552478,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,8874.271915199068,tRNA ligases (average),300.0,AA/s,trna
+average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,3051.759557022725,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,9015.620327391918,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,2589.9458693537345,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,1654.0649635003797,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,3668.946287295213,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,3011.544913998867,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,68.34063905637888,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,3639.43166094708,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,674.10221923859,tRNA ligases (average),300.0,AA/s,trna
-average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,3430.608627864632,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,1259.3646090494765,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,11333.080943209776,tRNA ligases (average),300.0,AA/s,trna
+average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,3430.608627864632,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,11195.85018798154,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,3922.0583705566114,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,2408.8799695498324,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,3771.490866853127,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,3237.051262345476,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,73.12386009827651,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,4481.8896639072145,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,839.2333698384891,tRNA ligases (average),300.0,AA/s,trna
-average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,3298.235045687533,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,1363.0656472418752,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,13633.21862589101,tRNA ligases (average),300.0,AA/s,trna
+average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,3298.235045687533,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,14994.160642081839,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,4721.593355423015,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,2810.6823590683034,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,3419.9624547715325,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,3747.4056685262535,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,75.0676321630379,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,4789.270055967977,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,1039.8774286018966,tRNA ligases (average),300.0,AA/s,trna
-average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,3355.667758241281,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,1355.256221980319,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,15270.317070694362,tRNA ligases (average),300.0,AA/s,trna
+average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,3355.667758241281,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,19108.488492785098,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,4841.237611205388,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,3014.6722288789583,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,3597.562046206034,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,4586.995488620659,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,81.025,DNA polymerase III (core enzyme),600.0,bp/s,dnap
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,5745.0,RNA polymerase (core enzyme),40.0,nt/s,rnap
-average,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,1331.75,tRNA ligases (average),300.0,AA/s,trna
-average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,2686.8333333333335,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
+sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,1674.0,σ-70 (RpoD),40.0,nt/s,sigma70
+sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,18743.0,tRNA ligases (average),300.0,AA/s,trna
+average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,2686.8333333333335,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,24236.29326923077,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,4918.583333333333,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
 sum total,energy production,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,4053.5,respiratory complex,5000.0,protons/s,proton_gradient
-sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,4036.5,Fatty Acid Synthetases (FabB + FabH + FabK),1.0,lipid/s,fas
+sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,4721.5,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas

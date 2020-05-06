@@ -3,7 +3,7 @@ sum total,synthesis,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,223.7
 sum total,synthesis,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,19173.833333333332,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,1788.5,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,11809.0,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,67106.0,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,67106.0,tRNA ligases (average),20.0,AA/s,trna
 average,transport,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,2521.676587301587,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,136474.45909090908,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,10378.9875,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -13,7 +13,7 @@ sum total,synthesis,MOPS complete without methionine,li_2014,Li et al. 2014,1.56
 sum total,synthesis,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,11173.333333333334,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,730.25,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,5289.0,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,36624.0,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,36624.0,tRNA ligases (average),20.0,AA/s,trna
 average,transport,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,1607.3560606060607,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,65577.32870370371,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,5080.525,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -23,7 +23,7 @@ sum total,synthesis,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,107.72
 sum total,synthesis,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,3999.1666666666665,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,261.0,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,2284.0,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,14526.5,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,14526.5,tRNA ligases (average),20.0,AA/s,trna
 average,transport,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,1083.8333333333333,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,44.0,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,22302.104545454546,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -34,7 +34,7 @@ sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,41.2365902
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,3030.6084877338617,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,377.9146557833575,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,456.9195056565842,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,8393.372999916675,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,8393.372999916675,tRNA ligases (average),20.0,AA/s,trna
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,7175.520608038946,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,9444.712008906046,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,2626.5623415733216,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -44,7 +44,7 @@ sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,41.5706218
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,3004.274262807408,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,381.2110327044775,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,433.98339927085533,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,8498.588397359415,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,8498.588397359415,tRNA ligases (average),20.0,AA/s,trna
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,6604.574476265788,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,9699.636995764977,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,2674.2216745632068,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -54,7 +54,7 @@ sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,46.4527997
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,3293.788049696244,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,397.07101783409036,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,445.3988639283442,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,9343.392186659239,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,9343.392186659239,tRNA ligases (average),20.0,AA/s,trna
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,6702.438469295948,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,11253.874972075837,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,2956.0295113549105,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -64,7 +64,7 @@ sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,46.7003517
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,3612.8512380939924,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,451.141918312398,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,499.2335846034282,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,9898.51715954612,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,9898.51715954612,tRNA ligases (average),20.0,AA/s,trna
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,8291.772341132415,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,13010.833971981398,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,3334.764823022083,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -74,7 +74,7 @@ sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,53.0843551
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,4035.481131478849,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,496.3869879881225,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,481.907293971691,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,11041.281371409648,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,11041.281371409648,tRNA ligases (average),20.0,AA/s,trna
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,7430.039432859368,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,16235.502790735587,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,3729.5649353887807,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -84,7 +84,7 @@ sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,54.8019060
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,4467.4468690241765,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,550.9337234240304,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,576.8208127019367,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,11613.982069212398,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,11613.982069212398,tRNA ligases (average),20.0,AA/s,trna
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,6243.891967775144,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,18876.616225014248,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,3861.8104251249597,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -94,7 +94,7 @@ sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,58.7826945
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,4803.4570176906445,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,531.1941838465608,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,613.9728151448651,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,13137.309447450541,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,13137.309447450541,tRNA ligases (average),20.0,AA/s,trna
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,5401.205831353592,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,21616.066583192503,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,4202.980027621696,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -104,7 +104,7 @@ sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,55.2280145
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,5165.16089052291,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,541.57380210547,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,633.786447994328,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,14272.492677298847,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,14272.492677298847,tRNA ligases (average),20.0,AA/s,trna
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,4224.376415660777,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,24590.239239874696,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,4285.674879471644,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -114,7 +114,7 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.25,39.379869929212866,DN
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.25,3331.496454940348,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.25,329.5947035186664,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.25,522.3917425573305,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.25,8886.01530364321,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.25,8886.01530364321,tRNA ligases (average),20.0,AA/s,trna
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.25,6542.929841057957,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.25,10948.56970904837,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.25,3480.096477831801,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -124,7 +124,7 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.35,53.37257218208142,DNA
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.35,3845.4508284071217,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.35,401.7828551704889,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.35,554.9943814920343,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.35,10210.258843558742,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.35,10210.258843558742,tRNA ligases (average),20.0,AA/s,trna
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.35,8904.889483733534,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.35,14853.170255933253,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.35,4424.669203697841,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -134,7 +134,7 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.42,45.36455446222821,DNA
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.42,4162.97881506709,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.42,439.13384700659765,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.42,573.6999983541373,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.42,10947.308364985776,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.42,10947.308364985776,tRNA ligases (average),20.0,AA/s,trna
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.42,9890.1860102336,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.42,17359.743771084464,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.42,4809.90485316658,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -144,7 +144,7 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.45,54.695622095158654,DN
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.45,4476.330202848697,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.45,458.444561179134,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.45,621.2491001233608,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.45,11831.154382366603,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.45,11831.154382366603,tRNA ligases (average),20.0,AA/s,trna
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.45,8276.420523346957,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.45,19236.34764119286,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.45,5247.756679423199,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -154,7 +154,7 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.53,66.05291494534691,DNA
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.53,4926.336920484292,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.53,514.040163681605,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.53,649.820154959323,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.53,12968.622115575705,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.53,12968.622115575705,tRNA ligases (average),20.0,AA/s,trna
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.53,8668.062011730422,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.53,22956.830465182775,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.53,5629.766279419033,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -164,7 +164,7 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.55,0.0,DNA polymerase II
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.55,5164.003137224907,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.55,569.2802923518598,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.55,654.546626016764,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.55,14032.885188589475,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.55,14032.885188589475,tRNA ligases (average),20.0,AA/s,trna
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.55,7619.692855890205,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.55,24929.395502495667,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.55,5646.2701399348225,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -174,7 +174,7 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.63,55.66259403563932,DNA
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.63,5480.668871205703,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.63,554.2410767718035,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.63,733.804247116793,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.63,14502.506391382365,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.63,14502.506391382365,tRNA ligases (average),20.0,AA/s,trna
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.63,10189.034634484267,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.63,29233.20977305864,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.63,6192.03226198355,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -184,7 +184,7 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.65,80.30180325196805,DNA
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.65,5772.135331663296,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.65,641.3492317043954,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.65,743.4987069855472,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.65,15610.583223464848,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.65,15610.583223464848,tRNA ligases (average),20.0,AA/s,trna
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.65,9641.992807926643,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.65,31235.893105731164,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.65,6420.666027754734,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -194,7 +194,7 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.73,59.68827783509738,DNA
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.73,5983.581638691877,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.73,657.591978256603,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.73,790.5386080791278,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.73,16560.76567361213,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.73,16560.76567361213,tRNA ligases (average),20.0,AA/s,trna
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.73,11025.799272862563,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.73,33676.48333463338,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.73,6430.707984937322,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -204,7 +204,7 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.74,0.0,DNA polymerase II
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.74,6634.32668649489,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.74,679.0894116012915,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.74,828.8585551865518,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.74,17792.718153711114,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.74,17792.718153711114,tRNA ligases (average),20.0,AA/s,trna
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.74,9859.948758082548,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.74,37044.462789280595,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.74,7029.914056522063,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -214,7 +214,7 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.78,66.07585984256635,DNA
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.78,6916.647971123569,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.78,743.964336330285,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.78,946.095747020486,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.78,18979.757412837687,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.78,18979.757412837687,tRNA ligases (average),20.0,AA/s,trna
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.78,6266.378798902674,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.78,39149.72382361658,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.78,6999.310087996565,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -224,7 +224,7 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.82,107.06100854409584,DN
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.82,8031.6474239706595,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.82,801.5793653306016,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.82,1081.5949262782908,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.82,22295.54082422817,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.82,22295.54082422817,tRNA ligases (average),20.0,AA/s,trna
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.82,3916.5973229338333,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.82,44716.15698198466,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.82,6977.089054227636,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -234,7 +234,7 @@ sum total,synthesis,42C,schmidt_2016,Schmidt et al. 2016,0.66,40.85626296816007,
 sum total,synthesis,42C,schmidt_2016,Schmidt et al. 2016,0.66,5588.925666420736,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,42C,schmidt_2016,Schmidt et al. 2016,0.66,239.8747539540042,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,42C,schmidt_2016,Schmidt et al. 2016,0.66,985.5158004097266,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,42C,schmidt_2016,Schmidt et al. 2016,0.66,21705.80338653207,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,42C,schmidt_2016,Schmidt et al. 2016,0.66,21705.80338653207,tRNA ligases (average),20.0,AA/s,trna
 average,transport,42C,schmidt_2016,Schmidt et al. 2016,0.66,1925.9141602031953,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,42C,schmidt_2016,Schmidt et al. 2016,0.66,0.6937809224989278,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,42C,schmidt_2016,Schmidt et al. 2016,0.66,22231.025503585402,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -245,7 +245,7 @@ sum total,synthesis,acetate,schmidt_2016,Schmidt et al. 2016,0.3,14.735222948979
 sum total,synthesis,acetate,schmidt_2016,Schmidt et al. 2016,0.3,3199.227343486582,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,acetate,schmidt_2016,Schmidt et al. 2016,0.3,81.9225514739546,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,acetate,schmidt_2016,Schmidt et al. 2016,0.3,395.95899879078047,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,acetate,schmidt_2016,Schmidt et al. 2016,0.3,9542.156745571847,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,acetate,schmidt_2016,Schmidt et al. 2016,0.3,9542.156745571847,tRNA ligases (average),20.0,AA/s,trna
 average,transport,acetate,schmidt_2016,Schmidt et al. 2016,0.3,2683.073549382788,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,acetate,schmidt_2016,Schmidt et al. 2016,0.3,0.0,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,acetate,schmidt_2016,Schmidt et al. 2016,0.3,8269.167183221183,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -256,7 +256,7 @@ sum total,synthesis,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,10.771
 sum total,synthesis,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,3394.161633563413,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,123.15884887193455,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,468.27430450208084,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,8278.259621978019,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,8278.259621978019,tRNA ligases (average),20.0,AA/s,trna
 average,transport,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,2743.581405424374,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,8.721872081284744,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,5995.908378991958,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -267,7 +267,7 @@ sum total,synthesis,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,12.37802
 sum total,synthesis,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,3807.4499867553495,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,181.00696483865306,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,444.8628887079333,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,9137.699861780162,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,9137.699861780162,tRNA ligases (average),20.0,AA/s,trna
 average,transport,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,3322.1419472597736,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,0.9005321633763833,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,7129.226604489752,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -278,7 +278,7 @@ sum total,synthesis,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,14.379
 sum total,synthesis,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,4709.796827129401,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,201.15061299781323,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,513.3603273300434,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,11104.527655001846,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,11104.527655001846,tRNA ligases (average),20.0,AA/s,trna
 average,transport,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,4335.237335160048,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,0.6144348621544505,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,9335.235937013606,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -289,7 +289,7 @@ sum total,synthesis,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,18.95270
 sum total,synthesis,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,5834.2744076620465,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,249.32865511908244,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,712.9203446082007,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,14508.461042884805,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,14508.461042884805,tRNA ligases (average),20.0,AA/s,trna
 average,transport,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,3822.841882467689,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,0.3224424896464047,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,14675.571260087092,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -300,7 +300,7 @@ sum total,synthesis,fructose,schmidt_2016,Schmidt et al. 2016,0.65,23.2407150274
 sum total,synthesis,fructose,schmidt_2016,Schmidt et al. 2016,0.65,5752.921525769781,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,fructose,schmidt_2016,Schmidt et al. 2016,0.65,214.38172567451969,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,fructose,schmidt_2016,Schmidt et al. 2016,0.65,629.6815903869951,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,fructose,schmidt_2016,Schmidt et al. 2016,0.65,19304.194085556574,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,fructose,schmidt_2016,Schmidt et al. 2016,0.65,19304.194085556574,tRNA ligases (average),20.0,AA/s,trna
 average,transport,fructose,schmidt_2016,Schmidt et al. 2016,0.65,2812.5303026218467,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,fructose,schmidt_2016,Schmidt et al. 2016,0.65,3.7974218718513963,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,fructose,schmidt_2016,Schmidt et al. 2016,0.65,22598.827886479292,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -311,7 +311,7 @@ sum total,synthesis,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,19.7166659072
 sum total,synthesis,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,3978.191745925456,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,120.43980597590742,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,565.3392841910039,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,12106.430867356024,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,12106.430867356024,tRNA ligases (average),20.0,AA/s,trna
 average,transport,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,2805.781841262322,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,0.313033933660578,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,12678.113357348198,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -322,7 +322,7 @@ sum total,synthesis,galactose,schmidt_2016,Schmidt et al. 2016,0.26,16.342598192
 sum total,synthesis,galactose,schmidt_2016,Schmidt et al. 2016,0.26,3033.2601865126817,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,galactose,schmidt_2016,Schmidt et al. 2016,0.26,101.13877370926475,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,galactose,schmidt_2016,Schmidt et al. 2016,0.26,335.9252126772008,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,galactose,schmidt_2016,Schmidt et al. 2016,0.26,9460.538953259931,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,galactose,schmidt_2016,Schmidt et al. 2016,0.26,9460.538953259931,tRNA ligases (average),20.0,AA/s,trna
 average,transport,galactose,schmidt_2016,Schmidt et al. 2016,0.26,3347.5579560618753,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,galactose,schmidt_2016,Schmidt et al. 2016,0.26,1.5050412754354878,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,galactose,schmidt_2016,Schmidt et al. 2016,0.26,8978.167751605495,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -333,7 +333,7 @@ sum total,synthesis,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,20.0462839
 sum total,synthesis,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,4317.771011560356,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,180.1649573228524,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,592.1405730769576,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,12814.7978363166,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,12814.7978363166,tRNA ligases (average),20.0,AA/s,trna
 average,transport,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,3013.36006063932,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,0.3173314968258079,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,15002.883609468336,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -344,7 +344,7 @@ sum total,synthesis,glucose,schmidt_2016,Schmidt et al. 2016,0.58,24.96428571428
 sum total,synthesis,glucose,schmidt_2016,Schmidt et al. 2016,0.58,4674.5,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,glucose,schmidt_2016,Schmidt et al. 2016,0.58,147.0,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,glucose,schmidt_2016,Schmidt et al. 2016,0.58,648.0,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,glucose,schmidt_2016,Schmidt et al. 2016,0.58,18080.0,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,glucose,schmidt_2016,Schmidt et al. 2016,0.58,18080.0,tRNA ligases (average),20.0,AA/s,trna
 average,transport,glucose,schmidt_2016,Schmidt et al. 2016,0.58,2076.75,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,glucose,schmidt_2016,Schmidt et al. 2016,0.58,17.666666666666668,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,glucose,schmidt_2016,Schmidt et al. 2016,0.58,20656.3,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -355,7 +355,7 @@ sum total,synthesis,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,20.5541002630
 sum total,synthesis,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,4456.148042308433,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,163.58898543970543,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,564.5611117948373,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,13759.624795757763,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,13759.624795757763,tRNA ligases (average),20.0,AA/s,trna
 average,transport,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,2500.6944683493934,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,0.6368427657020163,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,15727.07815189804,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -366,7 +366,7 @@ sum total,synthesis,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,53.396301
 sum total,synthesis,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,11817.065183029152,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,551.7819196762948,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,1545.940723230998,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,34582.29758362018,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,34582.29758362018,tRNA ligases (average),20.0,AA/s,trna
 average,transport,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,5393.740937262939,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,2.114106971939826,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,55333.47792950701,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -377,7 +377,7 @@ sum total,synthesis,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,114.571297269
 sum total,synthesis,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,31709.112972064777,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,891.739182769432,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,4690.831193171264,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,79707.32834938451,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,79707.32834938451,tRNA ligases (average),20.0,AA/s,trna
 average,transport,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,9903.624695558536,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,0.9436393468459596,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,149856.79540002154,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -388,7 +388,7 @@ sum total,synthesis,mannose,schmidt_2016,Schmidt et al. 2016,0.47,19.48016284432
 sum total,synthesis,mannose,schmidt_2016,Schmidt et al. 2016,0.47,4225.205244691454,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,mannose,schmidt_2016,Schmidt et al. 2016,0.47,169.07826104458815,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,mannose,schmidt_2016,Schmidt et al. 2016,0.47,475.7117175152818,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,mannose,schmidt_2016,Schmidt et al. 2016,0.47,13756.952409229581,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,mannose,schmidt_2016,Schmidt et al. 2016,0.47,13756.952409229581,tRNA ligases (average),20.0,AA/s,trna
 average,transport,mannose,schmidt_2016,Schmidt et al. 2016,0.47,2996.597742396151,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,mannose,schmidt_2016,Schmidt et al. 2016,0.47,0.6368296084541926,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,mannose,schmidt_2016,Schmidt et al. 2016,0.47,13578.721169903485,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -399,7 +399,7 @@ sum total,synthesis,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55
 sum total,synthesis,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,4381.635551590248,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,123.74808980374527,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,538.3781436880073,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,12901.35463738807,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,12901.35463738807,tRNA ligases (average),20.0,AA/s,trna
 average,transport,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,1785.818051343132,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,4.9302027810257085,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,18308.24527930357,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -410,7 +410,7 @@ sum total,synthesis,pH6,schmidt_2016,Schmidt et al. 2016,0.63,24.033936240869018
 sum total,synthesis,pH6,schmidt_2016,Schmidt et al. 2016,0.63,4904.069208259877,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,pH6,schmidt_2016,Schmidt et al. 2016,0.63,151.08090818080524,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,pH6,schmidt_2016,Schmidt et al. 2016,0.63,735.431132703852,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,pH6,schmidt_2016,Schmidt et al. 2016,0.63,17226.808503314394,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,pH6,schmidt_2016,Schmidt et al. 2016,0.63,17226.808503314394,tRNA ligases (average),20.0,AA/s,trna
 average,transport,pH6,schmidt_2016,Schmidt et al. 2016,0.63,1948.0645441457987,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,pH6,schmidt_2016,Schmidt et al. 2016,0.63,16.047011716379313,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,pH6,schmidt_2016,Schmidt et al. 2016,0.63,20063.018500320813,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -421,7 +421,7 @@ sum total,synthesis,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,18.45683658581
 sum total,synthesis,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,4019.60979426977,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,174.9278951898763,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,561.6351621562961,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,12228.159585353113,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,12228.159585353113,tRNA ligases (average),20.0,AA/s,trna
 average,transport,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,2281.7944504357843,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,0.31098292478200223,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,11382.399114645988,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -432,7 +432,7 @@ sum total,synthesis,succinate,schmidt_2016,Schmidt et al. 2016,0.44,15.734014066
 sum total,synthesis,succinate,schmidt_2016,Schmidt et al. 2016,0.44,3827.980098905986,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,succinate,schmidt_2016,Schmidt et al. 2016,0.44,124.73812953439786,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,succinate,schmidt_2016,Schmidt et al. 2016,0.44,532.9720080106091,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,succinate,schmidt_2016,Schmidt et al. 2016,0.44,13023.794706386907,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,succinate,schmidt_2016,Schmidt et al. 2016,0.44,13023.794706386907,tRNA ligases (average),20.0,AA/s,trna
 average,transport,succinate,schmidt_2016,Schmidt et al. 2016,0.44,2761.1304714645366,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,succinate,schmidt_2016,Schmidt et al. 2016,0.44,0.6299905532040296,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,succinate,schmidt_2016,Schmidt et al. 2016,0.44,14071.229886314337,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -443,7 +443,7 @@ sum total,synthesis,xylose,schmidt_2016,Schmidt et al. 2016,0.55,26.284449805619
 sum total,synthesis,xylose,schmidt_2016,Schmidt et al. 2016,0.55,4980.750558161583,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,xylose,schmidt_2016,Schmidt et al. 2016,0.55,173.38576071508615,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,xylose,schmidt_2016,Schmidt et al. 2016,0.55,686.6372088631576,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,xylose,schmidt_2016,Schmidt et al. 2016,0.55,17464.360905028807,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,xylose,schmidt_2016,Schmidt et al. 2016,0.55,17464.360905028807,tRNA ligases (average),20.0,AA/s,trna
 average,transport,xylose,schmidt_2016,Schmidt et al. 2016,0.55,1652.2248944424475,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,transport,xylose,schmidt_2016,Schmidt et al. 2016,0.55,1.6442461898064118,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
 sum total,synthesis,xylose,schmidt_2016,Schmidt et al. 2016,0.55,19199.012234658567,Ribosome (50S + 30S),15.0,AA/s,ribosome
@@ -454,7 +454,7 @@ sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,59.8
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,2873.598396323568,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,388.6212052633809,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,1232.4659188552478,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,8874.271915199068,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,8874.271915199068,tRNA ligases (average),20.0,AA/s,trna
 average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,3051.759557022725,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,9015.620327391918,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,2589.9458693537345,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -464,7 +464,7 @@ sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,68.3
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,3639.43166094708,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,517.4319795045989,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,1259.3646090494765,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,11333.080943209776,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,11333.080943209776,tRNA ligases (average),20.0,AA/s,trna
 average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,3430.608627864632,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,11195.85018798154,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,3922.0583705566114,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -474,7 +474,7 @@ sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,73.1
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,4481.8896639072145,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,692.806298898878,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,1363.0656472418752,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,13633.21862589101,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,13633.21862589101,tRNA ligases (average),20.0,AA/s,trna
 average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,3298.235045687533,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,14994.160642081839,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,4721.593355423015,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -484,7 +484,7 @@ sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,75.06
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,4789.270055967977,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,779.3471210284174,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,1355.256221980319,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,15270.317070694362,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,15270.317070694362,tRNA ligases (average),20.0,AA/s,trna
 average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,3355.667758241281,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,19108.488492785098,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,4841.237611205388,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -494,7 +494,7 @@ sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,81.0
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,5745.0,RNA polymerase (core enzyme),40.0,nt/s,rnap
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,798.5,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,1674.0,σ-70 (RpoD),40.0,nt/s,sigma70
-sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,18743.0,tRNA ligases (average),300.0,AA/s,trna
+sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,18743.0,tRNA ligases (average),20.0,AA/s,trna
 average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,2686.8333333333335,Carbohydrate Transporters (average),300.0,carbs/s,carbon_tport
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,24236.29326923077,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,energy production,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,4918.583333333333,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase

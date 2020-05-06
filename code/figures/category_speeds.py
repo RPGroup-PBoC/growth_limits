@@ -12,7 +12,7 @@ prot.viz.plotting_style()
 data = pd.read_csv('../../data/compiled_estimate_categories.csv', comment='#')
 
 # Define the division time window
-div_range = [0.4, 0.6]
+div_range = [0.45, 0.55]
 
 # Trim the data. 
 data = data[(data['growth_rate_hr'] >= div_range[0]) 
@@ -30,82 +30,51 @@ summarized['min_rate_pool'] = summarized['min'].values * summarized['rate'].valu
 summarized['max_rate_pool'] = summarized['max'].values * summarized['rate'].values
 
 
-# Define the numbers needed
-num_needed = {'rnap': 2E3 * 1E3,
-              'dnap': 5E6,
-              'carbon_tport': 1E10/6,
-              'atp_synthase': 1E10,
-              'ribosome': 2E4 * 1E4,
-              'fas': 5E7,
-              'ndhI': 3E9,
-              'trna': 5E6}
+#%%
+# define the figure canvas
+fig, ax = plt.subplots(1, 1, figsize=(6, 3))
 
-for k, v in num_needed.items():
-    summarized.loc[summarized['shorthand']==k, 'num_needed'] = v
+# Format the axes
+ax.xaxis.set_tick_params(labelsize=6)
+ax.yaxis.set_tick_params(labelsize=6)
+ax.set_ylabel('time [sec]', fontsize=6)
+ax.set_yscale('log')
+ax.set_ylim(1, 1E4)
 
-# Compute the time it would take to  achieve estimate
-summarized['mean_time'] = summarized['num_needed'].values / summarized['mean_rate_pool'].values
-summarized['min_time'] = summarized['num_needed'].values / summarized['max_rate_pool'].values
-summarized['max_time'] = summarized['num_needed'].values / summarized['min_rate_pool'].values
-summarized.sort_values('min_time', inplace=True)
-summarized['location'] = np.arange(0, len(summarized), 1)
-summarized['color'] = sns.color_palette('viridis', n_colors=len(summarized) + 3)[:len(summarized)]
-# %%
-# Set up the figure canvas
-fig, ax = plt.subplots(1, 1, figsize=(6, 9))
-ax.set_yticks(summarized['location'].values)
-ax.set_yticklabels(summarized['name'].values)
-ax.set_xlabel('time [s]')
-ax.set_ylim([-1, 8])
-ax.vlines(6E3, -1, 9, 'k', linestyle='dashed')
-ax.set_xscale('log')
+# Plot our stopwatch time. 
+ax.hlines(6000, 0, 10, 'k', linestyle='--')
 
-ylabels = {}
-for g, d in summarized.groupby(['name', 'location', 'color', 'shorthand']):
-    ax.plot(d['min_time'], g[1], 'o', color=g[2])
-    ax.plot(d['max_time'], g[1], 'o', color=g[2])
-    ax.plot([d['min_time'].values[0], d['max_time'].values[0]], [g[1], g[1]], '-', color=g[2])
+# Define the indices
+indices = {'carbon':0,
+           'atp': 1}
 
-plt.savefig('../figures/observed_time_categories.pdf', bbox_inches='tight')
-# %%
-data = pd.read_csv('../../data/compiled_estimate_categories.csv', comment='#')
-fig, ax = plt.subplots(4, 2, figsize=(8,11))
-for a in ax.ravel():
-    a.set_ylabel('copies per cell')
-    a.set_xlabel('growth rate [hr$^{-1}$]')
+# Compute and populate categories. 
 
-axes = {n:a for n, a in zip(summarized['name'].values, ax.ravel())}
+# Carbon Transport
+N_sugars = 1E10 / 10
+carbon_min, carbon_max, carbon_rate = summarized[
+        summarized['shorthand']=='carbon_tport'][['min', 'max', 'rate']].values[0]
+min_time = N_sugars / (carbon_max * carbon_rate)
+max_time = N_sugars / (carbon_min * carbon_rate)
+ax.vlines(indices['carbon'], min_time, max_time, lw=10, alpha=0.75)
 
-dataset_colors = {'li_2014':colors['purple'], 'schmidt_2016':colors['light_blue'],
-                   'peebo_2015':colors['green'], 'valgepea_2013':colors['red']}
-for g, d in data.groupby(['name', 'dataset_name', 'dataset']):
-    prot.viz.titlebox(axes[g[0]], g[0], color='k', bgcolor=colors['pale_yellow'])
-    axes[g[0]].plot(d['growth_rate_hr'], d['n_complex'], 'o', color=dataset_colors[g[-1]],
-                label=g[1], markersize=4.5, markeredgewidth=0.5, markeredgecolor='k',
-                alpha=0.75)
-    
-# for a in ax.ravel():
-    # a.set_ylim([0, a.get_ylim()[1]])
+# ATP synthesis
+N_ATP = 4E9
+atp_min, atp_max, atp_rate = summarized[
+        summarized['shorthand']=='atp_synthase'][['min', 'max', 'rate']].values[0]
+min_time = N_ATP / (atp_max * atp_rate)
+max_time = N_ATP / (atp_min * atp_rate)
+ax.vlines(indices['atp'], min_time, max_time, lw=10, alpha=0.75)
 
-ax.ravel()[0].legend(fontsize=6)
-axes['tRNA ligases (average)'].set_yscale('log')
-axes['tRNA ligases (average)'].set_yticks([1E2, 1E3, 1E4])
-axes['RNA polymerase (core enzyme)'].set_yscale('log')
-axes['RNA polymerase (core enzyme)'].set_yticks([1E3, 1E4, 1E5])
-axes['NADH Dehydrogenase I'].set_yscale('log')
-axes['NADH Dehydrogenase I'].set_yticks([1E2, 1E3, 1E4])
-axes['Ribosome (50S + 30S)'].set_yscale('log')
-axes['Ribosome (50S + 30S)'].set_yticks([1E3, 1E4, 1E5])
-axes['F1-F0 ATP Synthase'].set_yscale('log')
-axes['F1-F0 ATP Synthase'].set_yticks([1E3, 1E4, 1E5])
-axes['Fatty Acid Synthetases (FabB + FabH + FabK)'].set_yscale('log')
-axes['Fatty Acid Synthetases (FabB + FabH + FabK)'].set_yticks([1E3, 1E4, 1E5])
-axes['Carbohydrate Transporters (average)'].set_yscale('log')
-axes['Carbohydrate Transporters (average)'].set_yticks([1E2, 1E3, 1E4, 1E5])
+# RNA synthesis
+sig_min, sig_max, sig_rate = summarized[
+        summarized['shorthand']=='sigma70'][['min', 'max', 'rate']].values[0]
+N_nts = 1E4 * 4500
+min_time = N_rrnfi
 
-plt.tight_layout()
-plt.savefig('../../figures/growth_dependent_categories.pdf', bbox_inches='tight')
-# %%
-
+# DNA synthesis
+dna_min, dna_max, dna_rate = summarized[
+        summarized['shorthand']=='atp_synthase'][['min', 'max', 'rate']].values[0]
 
 # %%
+#

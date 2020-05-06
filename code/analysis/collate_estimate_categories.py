@@ -6,7 +6,7 @@ import tqdm
 data = pd.read_csv('../../data/compiled_annotated_complexes.csv', comment='#')
 
 # define necessary complexes. 
-complexes = {'dnap': {'name': 'DNA polymerase III (core enzyme)', 
+complexes = {'dnap': {'name': 'DNA polymerase III (holo enzyme)', 
                        'complexes': ['CPLX0-3803'],
                        'rate_per_sec': 600,
                        'units': 'bp/s',
@@ -18,6 +18,12 @@ complexes = {'dnap': {'name': 'DNA polymerase III (core enzyme)',
                        'units':'nt/s',
                        'method':'sum',
                        'category':'synthesis'},
+            'dntp': {'name': 'Ribonucleoside-diphosphate reductase (I)',
+                     'complexes': ['RIBONUCLEOSIDE-DIP-REDUCTI-CPLX'],
+                     'rate_per_sec': 10,
+                     'units': 'dNTP/s' ,
+                     'method': 'sum',
+                     'category':'synthesis'},
             'sigma70': {'name':'σ-70 (RpoD)',
                        'gene_name': ['rpoD'],
                        'rate_per_sec': 40,

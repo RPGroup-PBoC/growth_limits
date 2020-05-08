@@ -1,0 +1,156 @@
+% !TeX root = ./eLife_draft.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ELIFE ARTICLE TEMPLATE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% PREAMBLE 
+\documentclass[9pt,lineno]{elife}
+% Use the onehalfspacing option for 1.5 line spacing
+% Use the doublespacing option for 2.0 line spacing
+% Please note that these options may affect formatting.
+% Additionally, the use of the \newcommand function should be limited.
+
+\usepackage{lipsum} % Required to insert dummy text
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+\DeclareSIUnit\Molar{M}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ARTICLE SETUP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Fundamental limits on the rate of bacterial cell division}
+\author[1, *]{Nathan M. Belliveau}
+\author[2, 3, *]{Griffin Chure}
+\author[4]{Christina L. Hueschen}
+\author[5]{Hernan G. Garcia}
+\author[6]{Jan\'{e} Kondev}
+\author[1, 7]{Julie Theriot}
+\author[1, 8, $\dagger$]{Rob Phillips}
+\affil[1]{Department of Biology, University of Washington, Seattle, WA, USA}
+\affil[2]{Division of Biology and Biological Engineering, California Institute of Technology, Pasadena, CA, USA}
+\affil[3]{Department of Applied Physics, California Institute of Technology, Pasadena, CA, USA}
+\affil[4]{Department of Chemical Engineering, Stanford University, Stanford, CA, USA}
+\affil[5]{Department of Molecular Cell Biology and Department of Physics, University of California Berkeley, Berkeley, CA, USA}
+\affil[6]{Department of Physics, Brandeis University, Waltham, MA, USA}
+\affil[7]{Allen Institute for Cell Science, Seattle, WA, USA}
+\affil[8]{Department of Physics, California Institute of Technology, Pasadena, CA, USA}
+\affil[$\dagger$]{Address correspondence to phillips@pboc.caltech.edu}
+\affil[*]{Contributed equally}
+
+\contrib[*]{These authors contributed equally to this work}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ARTICLE START
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\input{section_01_introduction.tex}
+
+
+
+% \begin{table}[bt]
+% \caption{\label{tab:example}Automobile Land Speed Records (GR 5-10).}
+% % Use "S" column identifier to align on decimal point 
+% \begin{tabular}{S l l l r}
+% \toprule
+% {Speed (mph)} & Driver          & Car                        & Engine    & Date     \\
+% \midrule
+% 407.447     & Craig Breedlove & Spirit of America          & GE J47    & 8/5/63   \\
+% 413.199     & Tom Green       & Wingfoot Express           & WE J46    & 10/2/64  \\
+% 434.22      & Art Arfons      & Green Monster              & GE J79    & 10/5/64  \\
+% 468.719     & Craig Breedlove & Spirit of America          & GE J79    & 10/13/64 \\
+% 526.277     & Craig Breedlove & Spirit of America          & GE J79    & 10/15/65 \\
+% 536.712     & Art Arfons      & Green Monster              & GE J79    & 10/27/65 \\
+% 555.127     & Craig Breedlove & Spirit of America, Sonic 1 & GE J79    & 11/2/65  \\
+% 576.553     & Art Arfons      & Green Monster              & GE J79    & 11/7/65  \\
+% 600.601     & Craig Breedlove & Spirit of America, Sonic 1 & GE J79    & 11/15/65 \\
+% 622.407     & Gary Gabelich   & Blue Flame                 & Rocket    & 10/23/70 \\
+% 633.468     & Richard Noble   & Thrust 2                   & RR RG 146 & 10/4/83  \\
+% 763.035     & Andy Green      & Thrust SSC                 & RR Spey   & 10/15/97\\
+% \bottomrule
+% \end{tabular}
+
+% \tabledata{This is a description of a data source.}
+
+% \end{table}
+
+
+
+
+
+
+
+% For a half-width figure or table with text wrapping around it, use 
+
+% \begin{verbatim}
+% \begin{wrapfigure}{l}{.46\textwidth}
+%   \includegraphics[width=\hsize]{...}
+%   \caption{...}\label{...}
+% \end{wrapfigure}
+% \end{verbatim}
+% %
+% as in \FIG{halfwidth}. For tables:
+
+% If you use the following prefixes for your \verb|\label|:
+% %
+% \begin{description}
+% \item[Figures] \texttt{fig:}, e.g.~\verb|\label{fig:view}|
+% \item[Figure Supplements] \texttt{figsupp:}, e.g.~\verb|\label{figsupp:sf1}|\\
+% (we'll assume \texttt{figsupp:sf1} is a figure supplement of \texttt{fig:view} in our example)
+% \item[Figure source data] \texttt{figdata:}, e.g.~\verb|\label{figdata:first}|
+% \item[Videos] \texttt{video:}, e.g.~\verb|\label{video:mv1}|
+% \item[Video supplements] \texttt{videosupp:}, e.g.~\verb|\label{videosupp:sv1}|
+% \item[Tables] \texttt{tab:}, e.g.~\verb|\label{tab:example}|
+% \item[Equations] \texttt{eq:}, e.g.~\verb|\label{eq:CLT}|
+% \item[Boxes] \texttt{box:}, e.g.~\verb|\label{box:simple}|
+% \end{description}
+% %
+% you can then use the convenience commands \verb|\FIG{view}|, \verb|\FIGSUPP[view]{sf1}|, \verb|\TABLE{example}|, \verb|\EQ{CLT}|, \verb|\BOX{simple}|, \verb|\FIGDATA[view]{first}|, \verb|\VIDEO{mv1}| and \verb|{\VIDEOSUPP}[view]{sv1}| \emph{without} the label prefixes, to generate cross-references \FIG{view}, \FIGSUPP[view]{sf1},  \TABLE{example}, \EQ{CLT}, \BOX{simple}, \FIGDATA[view]{first}, \VIDEO{mv1} and \VIDEOSUPP[view]{sv1}. Alternatively, use \verb|\autoref| with the full label, e.g.~\autoref{first:app} (although this may not work correctly for figures and tables in the appendices or boxes nor supplements at present).
+
+% Really wide figures or tables, that take up the entire page, including the gutter space: use \verb|\begin{fullwidth}...\end{fullwidth}| as in \FIG{fullwidth}. And sometimes you may want to use feature boxes like \BOX{simple}.
+
+% \begin{wrapfigure}{l}{.46\textwidth}
+% \includegraphics[width=\hsize]{frog}
+% \caption{A half-columnwidth image using wrapfigure, to be used sparingly. Note that using a wrapfigure before a sectional heading, near other floats or page boundaries is not recommended, as it may cause interesting layout issues. Use the optional argument to wrapfigure to control how many lines of text should be set half-width alongside it.}
+% \label{fig:halfwidth}
+% \end{wrapfigure}
+
+
+% \begin{figure}
+% \begin{fullwidth}
+% \includegraphics[width=0.95\linewidth]{elife-18156-fig2}
+% \caption{A very wide figure that takes up the entire page, including the gutter space.}
+% \label{fig:fullwidth}
+% \figsupp{There is no limit on the number of Figure Supplements for any one primary figure. Each figure supplement should be clearly labelled, Figure 1--Figure Supplement 1, Figure 1--Figure Supplement 2, Figure 2--Figure Supplement 1 and so on, and have a short title (and optional legend). Figure Supplements should be referred to in the legend of the associated primary figure, and should also be listed at the end of the article text file.}{\includegraphics[width=5cm]{frog}}
+% \end{fullwidth}
+% \end{figure}
+
+
+% \figsupp[Shorter caption for main text.]{This is a supplementary figure's full caption, which will be used at the end of the manuscript.}{\includegraphics[width=6cm]{frog}}\label{figsupp:sf1}
+% \figsupp{This is another supplementary figure.}{\includegraphics[width=6cm]{frog}}
+% \videosupp{This is a description of a video supplement.}\label{videosupp:sv1}
+% \figdata{This is a description of a data source.}\label{figdata:first}
+% \figdata{This is another description of a data source.}\label{figdata:second}
+
+
+
+
+
+
+% \section{Acknowledgments}
+
+% Additional information can be given in the template, such as to not include funder information in the acknowledgments section.
+
+% \nocite{*} % This command displays all refs in the bib file. PLEASE DELETE IT BEFORE YOU SUBMIT YOUR MANUSCRIPT!
+\bibliography{library.bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

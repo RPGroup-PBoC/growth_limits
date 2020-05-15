@@ -11,6 +11,7 @@ import tqdm as tqdm
 import pythoncyc
 
 annotations = pd.read_csv('../../../data/ecoli_genelist_master.csv')
+data = pd.read_csv('../../../data/compiled_absolute_measurements.csv')
 # %%
 ecocyc = pythoncyc.select_organism('ECOLI')
 
@@ -49,6 +50,8 @@ for c in tqdm.tqdm(prot_cplx):
             # Get the annotation
             if type(ecocyc[c]['common_name']) != str:
                 common_name = ecocyc[ecocyc[c]['catalyzes'][0]]['common_name']
+            else:
+                common_name = ecocyc[c]['common_name']
 
             # Update the dataframe
             _df = _df.append({'gene_name':gene.lower(), 
@@ -59,7 +62,16 @@ for c in tqdm.tqdm(prot_cplx):
     else:
         print(f'Barfed on {c}')
 
-# %%
+_dfs = []
+for g, d in data.groupby(['gene_name', 'b_number', 'gene_product']):
+    if g[1] not in list(_df['b_number'].values):
+      _df = _df.append({'gene_name': g[0],
+                         'n_copies': 1.0, 
+                         'b_number': g[1],
+                         'complex': 'none assigned',
+                         'annotation': g[2]},
+                         ignore_index=True)
+
 _df.to_csv('../../../data/ecocyc_raw_data/annotated_complexes.csv', index=False)
 
 

@@ -4,7 +4,7 @@ import tqdm
 
 # Load  the necessary datasets. 
 data = pd.read_csv('../../data/compiled_annotated_complexes.csv', comment='#')
-
+_data = pd.read_csv('../../data/compiled_absolute_measurements.csv', comment='#')
 # define necessary complexes. 
 complexes = {'dnap': {'name': 'DNA polymerase III (holo enzyme)', 
                        'complexes': ['CPLX0-3803'],
@@ -72,10 +72,22 @@ complexes = {'dnap': {'name': 'DNA polymerase III (holo enzyme)',
                               'category':'transport'},
             'nitrogen_tport': {'name': 'Ammonium Transporter (AmtB)',
                                'gene_name': ['amtB'],
-                               'rate_per_sec': 100,
+                               'rate_per_sec': 300,
                                'units': 'NH4+/s',
                                'method':'sum',
                                'category':'transport'},
+            'sulfur_tport': {'name': 'Sulfate Transporter (CysUWA)',
+                            'complexes': ['ABC-70-CPLX', 'ABC-7-CPLX'],
+                            'rate_per_sec':10,
+                            'units': 'SO4/s',
+                            'method':'avg',
+                            'category':'transport'},
+            'phosphate_tport': {'name': 'Posphate Transport System',
+                            'gene_name': ['pitA', 'pitB'],
+                            'rate_per_sec': 0.01,
+                            'units': 'Pi/s',
+                            'method':'sum',
+                            'category':'transport'},
             'ribosome': {'name': 'Ribosome (50S + 30S)',
                          'complexes': ['CPLX0-3964'],
                          'rate_per_sec': 15,
@@ -144,7 +156,6 @@ for g, d in tqdm.tqdm(data.groupby(['dataset', 'dataset_name', 'condition', 'gro
                      'category': v['category']}
         
             complex_df = complex_df.append(_data, ignore_index=True)
-
 
 complex_df.to_csv('../../data/compiled_estimate_categories.csv', index=False)
 # %%

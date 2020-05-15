@@ -49,7 +49,6 @@ for g, d in tqdm.tqdm(complexes.groupby(['complex', 'b_number'])):
     _df['n_subunits'] = n_subunits
     _df['n_units'] = _df['tot_per_cell'].values / n_subunits
     dfs.append(_df)
-
 compiled_complexes = pd.concat(dfs, sort=False)
 compiled_complexes.to_csv('../../../data/compiled_annotated_complexes.csv', index=False)
 # %%

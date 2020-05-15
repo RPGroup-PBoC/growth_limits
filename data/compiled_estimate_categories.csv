@@ -8,8 +8,12 @@ sum total,synthesis,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,74909
 average,transport,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,2515.6433995853613,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,55344.15479087795,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,21955.75,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,7.5,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,126.33333333333333,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
+sum total,transport,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,611.0,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,287.25,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,21.0,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,1831.5,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,1831.5,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,136474.45909090908,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,289537.0,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,10378.9875,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -24,8 +28,11 @@ sum total,synthesis,MOPS complete without methionine,li_2014,Li et al. 2014,1.56
 average,transport,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,1671.0484822119104,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,20052.58178654292,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,7184.416666666667,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,82.0,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
+sum total,transport,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,176.0,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,168.0,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,15804.8125,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,712.0,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,712.0,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,65577.32870370371,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,169651.0,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,5080.525,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -40,10 +47,14 @@ sum total,synthesis,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,16252.
 average,transport,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,1073.0175377128953,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,26825.438442822386,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,9302.0,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,2.0,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,186.5,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,6.0,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,44.0,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,106.5,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,136.75,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,44.0,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,929.875,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,422.0,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,422.0,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,22302.104545454546,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,58291.5,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,2930.7375,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -58,9 +69,12 @@ sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,9164.35419
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,6815.400039623825,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,109046.4006339812,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,13004.219166940678,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,25305.073523217692,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,93.85739417671587,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,260.9869058152329,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,56.1802836964152,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,448.34620097194824,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,70.3782304378149,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,70.3782304378149,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,9444.712008906046,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,74277.16511393536,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,2626.5623415733216,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -75,9 +89,12 @@ sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,9274.93641
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,6279.053964473995,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,100464.8634315839,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,14538.325139611328,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,20283.0920351588,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,63.31987507600521,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,269.5509648636667,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,74.9609342640988,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,412.09141358177163,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,73.78753416699438,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,73.78753416699438,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,9699.636995764977,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,76368.66876785438,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,2674.2216745632068,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -92,9 +109,12 @@ sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,10213.8242
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,6381.834532374379,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,102109.35251799005,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,15076.17948279476,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,16768.684563038743,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,166.8935434387223,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,255.27626826487904,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,75.95646035750372,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,516.6815685416819,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,93.5916758642069,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,93.5916758642069,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,11253.874972075837,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,84139.27037486546,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,2956.0295113549105,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -109,9 +129,12 @@ sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,10838.4375
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,7812.455189483954,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,109374.37265277535,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,15877.81993010104,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,24830.718290132998,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,0.0,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,231.59468411029,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,60.29959090150389,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,592.7249978668037,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,99.43842113306148,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,99.43842113306148,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,13010.833971981398,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,91696.6029078066,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,3334.764823022083,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -126,9 +149,12 @@ sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,12111.2659
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,6999.008454178728,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,90987.10990432347,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,17778.53407950942,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,14510.952957942485,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,0.0,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,246.15933359038846,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,0.0,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,622.7495045886515,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,108.37866747349659,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,108.37866747349659,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,16235.502790735587,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,104310.87195285998,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,3729.5649353887807,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -143,9 +169,12 @@ sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,12777.0067
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,5926.836762521996,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,82975.71467530797,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,17163.46779256979,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,14588.442053653707,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,0.0,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,216.8979202236972,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,66.91487887094515,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,634.2658111108752,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,128.59878266180175,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,128.59878266180175,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,18876.616225014248,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,112600.78383522431,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,3861.8104251249597,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -160,9 +189,12 @@ sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,14437.0669
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,5163.76555169651,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,72292.71772375112,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,17662.261016045235,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,10056.624842839858,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,0.0,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,190.56117736067384,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,77.79324688458703,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,691.8958135645091,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,136.87510547812468,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,136.87510547812468,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,21616.066583192503,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,120784.78041281016,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,4202.980027621696,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -177,9 +209,12 @@ sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,15690.2756
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,4084.030433169747,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,61260.4564975462,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,15101.111231255469,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,4989.322268751736,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,0.0,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,173.69905344740056,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,77.58455344969262,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,801.8855275446768,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,149.3751674178664,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,149.3751674178664,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,24590.239239874696,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,130565.01140463195,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,4285.674879471644,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -194,9 +229,12 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.25,9747.86946113045,tRNA
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.25,6207.384746464849,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.25,86903.38645050787,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.25,13604.57930275464,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.25,15183.052075445457,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.25,0.0,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.25,267.53420522979343,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.25,0.0,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.25,251.5352018464078,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.25,102.9252365777634,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.25,102.9252365777634,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.25,10948.56970904837,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.25,100109.0533961406,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.25,3480.096477831801,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -211,9 +249,12 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.35,11186.126675572194,tR
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.35,8380.167778596331,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.35,108942.1811217523,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.35,15154.839918718073,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.35,27014.54783851907,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.35,0.0,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.35,296.1894506310145,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.35,0.0,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.35,928.001800514754,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.35,113.58731887309624,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.35,113.58731887309624,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.35,14853.170255933253,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.35,110904.98555055069,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.35,4424.669203697841,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -228,9 +269,12 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.42,12006.88558879649,tRN
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.42,9305.32725495745,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.42,130274.5815694043,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.42,16235.220889481358,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.42,34586.74981662851,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.42,0.0,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.42,322.73383686357613,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.42,73.22706618750242,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.42,687.630355447307,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.42,127.62708925792423,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.42,127.62708925792423,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.42,17359.743771084464,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.42,122492.4512057026,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.42,4809.90485316658,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -245,9 +289,12 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.45,12980.75752725781,tRN
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.45,7822.1107417998655,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.45,101687.43964339825,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.45,15653.094970568702,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.45,21816.924936989257,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.45,0.0,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.45,309.4745693963339,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.45,0.0,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.45,717.9492723149529,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.45,144.08103245025714,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.45,144.08103245025714,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.45,19236.34764119286,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.45,130323.00608072722,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.45,5247.756679423199,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -262,9 +309,12 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.53,14247.031106791856,tR
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.53,8189.932450099243,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.53,114659.05430138939,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.53,16397.170253440556,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.53,16234.255897897698,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.53,0.0,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.53,335.49844548486345,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.53,86.08134302670915,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.53,429.7564704967042,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.53,158.97049214056432,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.53,158.97049214056432,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.53,22956.830465182775,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.53,142193.81700888305,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.53,5629.766279419033,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -279,9 +329,12 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.55,15416.571487570644,tR
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.55,7263.13145128647,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.55,101683.84031801058,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.55,16041.168038238962,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.55,17656.603691540276,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.55,0.0,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.55,227.06512442754467,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.55,130.62285899395278,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.55,426.15595130299016,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.55,0.0,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.55,0.0,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.55,24929.395502495667,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.55,149251.75483830055,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.55,5646.2701399348225,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -296,9 +349,12 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.63,15942.967859841236,tR
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.63,9608.384373386622,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.63,134517.38122741267,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.63,16861.7125688009,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.63,40398.40070218384,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.63,0.0,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.63,288.11571861695614,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.63,81.97764419541757,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.63,492.70163226442213,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.63,169.56602948062013,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.63,169.56602948062013,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.63,29233.20977305864,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.63,155402.85108422046,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.63,6192.03226198355,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -313,9 +369,12 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.65,17182.471966899713,tR
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.65,9084.585042804216,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.65,109015.0205136506,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.65,16432.460107725263,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.65,28522.80978287083,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.65,0.0,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.65,289.6920474332519,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.65,0.0,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.65,365.0343022341727,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.65,185.49101898157502,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.65,185.49101898157502,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.65,31235.893105731164,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.65,165906.06074071888,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.65,6420.666027754734,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -330,9 +389,12 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.73,18219.960518135726,tR
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.73,10401.908215316582,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.73,145626.71501443215,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.73,17725.457395547644,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.73,54833.90846732162,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.73,0.0,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.73,255.7977173763071,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.73,135.1507077802463,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.73,852.5729210486252,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.73,204.41662242494618,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.73,204.41662242494618,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.73,33676.48333463338,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.73,171673.4833340442,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.73,6430.707984937322,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -347,9 +409,12 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.74,19545.80632623196,tRN
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.74,9289.09080438152,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.74,111469.08965257822,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.74,17473.53047533935,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.74,25933.74704368868,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.74,0.0,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.74,269.03450013382536,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.74,0.0,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.74,495.5035618108559,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.74,222.95409317581692,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.74,222.95409317581692,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.74,37044.462789280595,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.74,178811.82296807226,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.74,7029.914056522063,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -364,9 +429,12 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.78,20887.134070683307,tR
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.78,5990.879712823246,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.78,83872.31597952546,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.78,17501.245667453924,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.78,14772.978749995305,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.78,0.0,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.78,219.71589191282902,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.78,93.51500372019723,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.78,486.5585701401729,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.78,254.05371742313181,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.78,254.05371742313181,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.78,39149.72382361658,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.78,194520.3375073473,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.78,6999.310087996565,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -381,9 +449,12 @@ sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.82,24474.496966219987,tR
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.82,3870.3024627442273,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.82,38703.024627442275,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.82,13390.86761801029,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.82,1464.980517571867,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.82,0.0,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.82,0.0,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.82,0.0,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,rich,peebo_2015,Peebo et al. 2015,0.82,285.47041918429994,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.82,299.22646345197484,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,rich,peebo_2015,Peebo et al. 2015,0.82,299.22646345197484,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.82,44716.15698198466,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,rich,peebo_2015,Peebo et al. 2015,0.82,209489.3164004449,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,rich,peebo_2015,Peebo et al. 2015,0.82,6977.089054227636,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -398,10 +469,14 @@ sum total,synthesis,42C,schmidt_2016,Schmidt et al. 2016,0.66,23454.874647932043
 average,transport,42C,schmidt_2016,Schmidt et al. 2016,0.66,1911.4666521908507,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,42C,schmidt_2016,Schmidt et al. 2016,0.66,40140.79969600787,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,42C,schmidt_2016,Schmidt et al. 2016,0.66,18051.052209423033,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,42C,schmidt_2016,Schmidt et al. 2016,0.66,40.06584827431307,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,42C,schmidt_2016,Schmidt et al. 2016,0.66,1155.6655716525886,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,42C,schmidt_2016,Schmidt et al. 2016,0.66,27.924682130581832,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,42C,schmidt_2016,Schmidt et al. 2016,0.66,0.6937809224989278,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,42C,schmidt_2016,Schmidt et al. 2016,0.66,154.53970048663612,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,42C,schmidt_2016,Schmidt et al. 2016,0.66,352.00709555289336,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,42C,schmidt_2016,Schmidt et al. 2016,0.66,0.6937809224989278,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,42C,schmidt_2016,Schmidt et al. 2016,0.66,1034.0371036769955,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,42C,schmidt_2016,Schmidt et al. 2016,0.66,244.557775180872,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,42C,schmidt_2016,Schmidt et al. 2016,0.66,244.557775180872,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,42C,schmidt_2016,Schmidt et al. 2016,0.66,22231.025503585402,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,42C,schmidt_2016,Schmidt et al. 2016,0.66,260409.28169812745,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,42C,schmidt_2016,Schmidt et al. 2016,0.66,4432.232431776694,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -416,10 +491,14 @@ sum total,synthesis,acetate,schmidt_2016,Schmidt et al. 2016,0.3,10341.616819320
 average,transport,acetate,schmidt_2016,Schmidt et al. 2016,0.3,2601.6729492056534,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,acetate,schmidt_2016,Schmidt et al. 2016,0.3,54635.13193331872,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,acetate,schmidt_2016,Schmidt et al. 2016,0.3,8261.20662821937,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
-sum total,transport,acetate,schmidt_2016,Schmidt et al. 2016,0.3,58.25603660370107,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,acetate,schmidt_2016,Schmidt et al. 2016,0.3,0.0,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,acetate,schmidt_2016,Schmidt et al. 2016,0.3,15.929385008824505,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,acetate,schmidt_2016,Schmidt et al. 2016,0.3,5968.209583306248,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
+sum total,transport,acetate,schmidt_2016,Schmidt et al. 2016,0.3,59.1662871756339,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,acetate,schmidt_2016,Schmidt et al. 2016,0.3,176.13348566900237,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,acetate,schmidt_2016,Schmidt et al. 2016,0.3,90.11480662135004,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,acetate,schmidt_2016,Schmidt et al. 2016,0.3,0.0,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,acetate,schmidt_2016,Schmidt et al. 2016,0.3,869.6306401603263,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,acetate,schmidt_2016,Schmidt et al. 2016,0.3,83.74305261782025,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,acetate,schmidt_2016,Schmidt et al. 2016,0.3,83.74305261782025,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,acetate,schmidt_2016,Schmidt et al. 2016,0.3,8269.167183221183,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,acetate,schmidt_2016,Schmidt et al. 2016,0.3,135880.38487698886,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,acetate,schmidt_2016,Schmidt et al. 2016,0.3,3073.1576392738857,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -434,10 +513,14 @@ sum total,synthesis,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,8845.0
 average,transport,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,2653.233898080832,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,55717.91185969749,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,11776.407023545024,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,26.391181901128835,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,6062.603359121996,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,151.88087589823428,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,8.721872081284744,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,646.02004243447,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,135.11382870748864,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,8.721872081284744,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,335.8672636818875,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,96.54210131353113,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,96.54210131353113,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,5995.908378991958,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,92148.98457245088,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,1992.643256936243,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -452,10 +535,14 @@ sum total,synthesis,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,9796.760
 average,transport,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,3207.4123458909494,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,67355.65926370994,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,12712.287239955767,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,27.916497064667894,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,7289.807862531824,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,138.9821305477552,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,0.9005321633763833,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,606.9586781156826,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,144.08514614022138,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,0.9005321633763833,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,383.8518346391834,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,110.76545609529516,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,110.76545609529516,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,7129.226604489752,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,101416.13117512157,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,2606.095054203085,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -470,10 +557,14 @@ sum total,synthesis,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,11932.
 average,transport,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,4179.1548378937805,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,87762.2515957694,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,14626.545089228921,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,28.57122109018195,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,9246.015805700172,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,109.98384032564665,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,0.6144348621544505,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,747.9208359575049,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,152.3030414565344,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,0.6144348621544505,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,478.51034999222077,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,131.79627793212964,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,131.79627793212964,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,9335.235937013606,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,131102.2737553262,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,3543.2653598039583,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -488,10 +579,14 @@ sum total,synthesis,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,15597.53
 average,transport,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,3699.9624584287644,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,77699.21162700406,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,17529.58594962679,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,22.00669991836712,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,6812.403700004415,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,56.749878177767236,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,0.3224424896464047,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,603.1286768836,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,186.45236963803353,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,0.3224424896464047,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,684.2632683408766,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,177.9882542848154,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,177.9882542848154,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,14675.571260087092,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,174911.18560611975,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,4576.853491850204,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -506,10 +601,14 @@ sum total,synthesis,fructose,schmidt_2016,Schmidt et al. 2016,0.65,20750.1241097
 average,transport,fructose,schmidt_2016,Schmidt et al. 2016,0.65,2748.9283500098695,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,fructose,schmidt_2016,Schmidt et al. 2016,0.65,57727.49535020726,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,fructose,schmidt_2016,Schmidt et al. 2016,0.65,17009.170394277655,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,fructose,schmidt_2016,Schmidt et al. 2016,0.65,19.936464827219826,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,fructose,schmidt_2016,Schmidt et al. 2016,0.65,3393.34166266939,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,fructose,schmidt_2016,Schmidt et al. 2016,0.65,37.80160863342981,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,fructose,schmidt_2016,Schmidt et al. 2016,0.65,3.7974218718513963,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,fructose,schmidt_2016,Schmidt et al. 2016,0.65,259.9507881367365,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,fructose,schmidt_2016,Schmidt et al. 2016,0.65,4445.572741342396,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,fructose,schmidt_2016,Schmidt et al. 2016,0.65,3.7974218718513963,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,fructose,schmidt_2016,Schmidt et al. 2016,0.65,1378.723054609683,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,fructose,schmidt_2016,Schmidt et al. 2016,0.65,249.5941830316872,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,fructose,schmidt_2016,Schmidt et al. 2016,0.65,249.5941830316872,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,fructose,schmidt_2016,Schmidt et al. 2016,0.65,22598.827886479292,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,fructose,schmidt_2016,Schmidt et al. 2016,0.65,241429.0355668664,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,fructose,schmidt_2016,Schmidt et al. 2016,0.65,5954.154678213014,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -524,10 +623,14 @@ sum total,synthesis,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,13130.1859878
 average,transport,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,2728.73034581923,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,57303.33726220383,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,10413.073803219128,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
-sum total,transport,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,108.93580891388115,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,0.313033933660578,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,15.729955166444045,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,9038.541800515528,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
+sum total,transport,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,109.87491071486288,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,272.80907318519377,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,117.15294967247132,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,0.313033933660578,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,776.5784955493327,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,146.49988095315055,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,146.49988095315055,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,12678.113357348198,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,178669.7522475808,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,4863.537794649327,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -542,10 +645,14 @@ sum total,synthesis,galactose,schmidt_2016,Schmidt et al. 2016,0.26,10215.725664
 average,transport,galactose,schmidt_2016,Schmidt et al. 2016,0.26,3236.816283253709,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,galactose,schmidt_2016,Schmidt et al. 2016,0.26,67973.14194832787,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,galactose,schmidt_2016,Schmidt et al. 2016,0.26,11688.602057414628,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,galactose,schmidt_2016,Schmidt et al. 2016,0.26,17.383226731279887,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,galactose,schmidt_2016,Schmidt et al. 2016,0.26,26290.21150343464,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,galactose,schmidt_2016,Schmidt et al. 2016,0.26,118.74775663185999,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,galactose,schmidt_2016,Schmidt et al. 2016,0.26,1.5050412754354878,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,galactose,schmidt_2016,Schmidt et al. 2016,0.26,514.7241161989367,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,galactose,schmidt_2016,Schmidt et al. 2016,0.26,123.03712426685111,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,galactose,schmidt_2016,Schmidt et al. 2016,0.26,1.5050412754354878,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,galactose,schmidt_2016,Schmidt et al. 2016,0.26,615.6371337168862,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,galactose,schmidt_2016,Schmidt et al. 2016,0.26,111.97507089240028,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,galactose,schmidt_2016,Schmidt et al. 2016,0.26,111.97507089240028,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,galactose,schmidt_2016,Schmidt et al. 2016,0.26,8978.167751605495,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,galactose,schmidt_2016,Schmidt et al. 2016,0.26,126680.82919468042,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,galactose,schmidt_2016,Schmidt et al. 2016,0.26,3031.574540284194,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -560,10 +667,14 @@ sum total,synthesis,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,13849.4798
 average,transport,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,2931.5210798972867,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,61561.94267784302,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,15862.766863328485,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
-sum total,transport,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,57.43700092547123,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,0.3173314968258079,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,14.517915979780712,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,5715.298923581214,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
+sum total,transport,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,58.388995415948656,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,871.5509560320813,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,254.65852620271087,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,0.3173314968258079,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,1145.6658696339246,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,159.93507440020718,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,159.93507440020718,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,15002.883609468336,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,165395.7147975857,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,5085.943299214009,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -578,10 +689,14 @@ sum total,synthesis,glucose,schmidt_2016,Schmidt et al. 2016,0.58,19620.28571428
 average,transport,glucose,schmidt_2016,Schmidt et al. 2016,0.58,2049.432600036212,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,glucose,schmidt_2016,Schmidt et al. 2016,0.58,43038.084600760456,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,glucose,schmidt_2016,Schmidt et al. 2016,0.58,17931.083333333332,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
-sum total,transport,glucose,schmidt_2016,Schmidt et al. 2016,0.58,31.666666666666668,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,glucose,schmidt_2016,Schmidt et al. 2016,0.58,17.666666666666668,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,glucose,schmidt_2016,Schmidt et al. 2016,0.58,11.5,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,glucose,schmidt_2016,Schmidt et al. 2016,0.58,1082.8333333333333,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
+sum total,transport,glucose,schmidt_2016,Schmidt et al. 2016,0.58,32.66666666666667,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,glucose,schmidt_2016,Schmidt et al. 2016,0.58,133.0,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,glucose,schmidt_2016,Schmidt et al. 2016,0.58,193.5,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,glucose,schmidt_2016,Schmidt et al. 2016,0.58,17.666666666666668,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,glucose,schmidt_2016,Schmidt et al. 2016,0.58,1249.1875,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,glucose,schmidt_2016,Schmidt et al. 2016,0.58,208.0,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,glucose,schmidt_2016,Schmidt et al. 2016,0.58,208.0,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,glucose,schmidt_2016,Schmidt et al. 2016,0.58,20656.3,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,glucose,schmidt_2016,Schmidt et al. 2016,0.58,252452.0,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,glucose,schmidt_2016,Schmidt et al. 2016,0.58,4837.408333333334,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -596,10 +711,14 @@ sum total,synthesis,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,14880.5590409
 average,transport,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,2441.955971879156,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,51281.07540946227,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,12625.80585677104,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,307.8338718712121,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,5627.142677743016,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,44.89741498199215,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,0.6368427657020163,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,260.3094804806992,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,162.1560892168759,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,0.6368427657020163,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,1063.2089973395164,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,145.20015058005967,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,145.20015058005967,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,15727.07815189804,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,182494.6182037184,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,5289.369235349237,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -614,10 +733,14 @@ sum total,synthesis,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,37564.547
 average,transport,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,5281.636021452059,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,110914.35645049324,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,22481.01714455087,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
-sum total,transport,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,83.50722539162317,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,2.114106971939826,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,1004.8614701001487,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,11599.312164919347,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
+sum total,transport,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,85.09280562057803,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,646.1239432991092,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,387.2779709222269,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,2.114106971939826,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,1114.464703426654,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,423.34992113095024,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,423.34992113095024,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,55333.47792950701,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,584901.519498704,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,16079.283216235599,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -632,10 +755,14 @@ sum total,synthesis,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,86601.4226118
 average,transport,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,9722.018857877232,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,204162.39601542187,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,38546.959589147315,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
-sum total,transport,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,141.5459020268939,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,0.9436393468459596,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,445.16186187458135,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,19340.832052954782,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
+sum total,transport,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,147.20773810796967,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,2502.531547835485,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,1036.8237323469982,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,0.9436393468459596,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,1163.6842470386018,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,815.3043956749091,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,815.3043956749091,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,149856.79540002154,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,1256508.6341288185,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,21975.296176971173,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -650,10 +777,14 @@ sum total,synthesis,mannose,schmidt_2016,Schmidt et al. 2016,0.47,14774.42417222
 average,transport,mannose,schmidt_2016,Schmidt et al. 2016,0.47,2912.4450588000363,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,mannose,schmidt_2016,Schmidt et al. 2016,0.47,61161.34623480075,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,mannose,schmidt_2016,Schmidt et al. 2016,0.47,13065.196247046217,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
-sum total,transport,mannose,schmidt_2016,Schmidt et al. 2016,0.47,89.6337673899276,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,mannose,schmidt_2016,Schmidt et al. 2016,0.47,0.6368296084541926,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,mannose,schmidt_2016,Schmidt et al. 2016,0.47,19.104888253625774,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,mannose,schmidt_2016,Schmidt et al. 2016,0.47,11704.45058118172,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
+sum total,transport,mannose,schmidt_2016,Schmidt et al. 2016,0.47,90.5890118026089,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,mannose,schmidt_2016,Schmidt et al. 2016,0.47,442.7557852777774,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,mannose,schmidt_2016,Schmidt et al. 2016,0.47,176.48140524286814,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,mannose,schmidt_2016,Schmidt et al. 2016,0.47,0.6368296084541926,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,mannose,schmidt_2016,Schmidt et al. 2016,0.47,886.2877066408583,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,mannose,schmidt_2016,Schmidt et al. 2016,0.47,209.19852637720226,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,mannose,schmidt_2016,Schmidt et al. 2016,0.47,209.19852637720226,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,mannose,schmidt_2016,Schmidt et al. 2016,0.47,13578.721169903485,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,mannose,schmidt_2016,Schmidt et al. 2016,0.47,183423.16638982305,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,mannose,schmidt_2016,Schmidt et al. 2016,0.47,4920.854027856496,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -668,10 +799,14 @@ sum total,synthesis,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55
 average,transport,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,1784.748225012343,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,37479.712725259196,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,17596.140235619805,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,26.13007473943625,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,856.0475428787639,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,18.406090382495975,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,4.9302027810257085,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,48.31598725405193,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,254.8914837790291,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,4.9302027810257085,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,703.4783093176057,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,95.64593395189873,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,95.64593395189873,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,18308.24527930357,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,211489.9226571036,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,3649.327881510593,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -686,10 +821,14 @@ sum total,synthesis,pH6,schmidt_2016,Schmidt et al. 2016,0.63,18600.65707174982,
 average,transport,pH6,schmidt_2016,Schmidt et al. 2016,0.63,1937.2996158308426,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,pH6,schmidt_2016,Schmidt et al. 2016,0.63,40683.2919324477,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,pH6,schmidt_2016,Schmidt et al. 2016,0.63,17585.81771224573,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,pH6,schmidt_2016,Schmidt et al. 2016,0.63,40.20288573624817,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,pH6,schmidt_2016,Schmidt et al. 2016,0.63,1046.470019376651,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,pH6,schmidt_2016,Schmidt et al. 2016,0.63,17.58342773177733,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,pH6,schmidt_2016,Schmidt et al. 2016,0.63,16.047011716379313,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,pH6,schmidt_2016,Schmidt et al. 2016,0.63,80.40577147249634,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,pH6,schmidt_2016,Schmidt et al. 2016,0.63,207.16009274283292,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,pH6,schmidt_2016,Schmidt et al. 2016,0.63,16.047011716379313,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,pH6,schmidt_2016,Schmidt et al. 2016,0.63,1225.5478416158198,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,pH6,schmidt_2016,Schmidt et al. 2016,0.63,181.29708981696623,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,pH6,schmidt_2016,Schmidt et al. 2016,0.63,181.29708981696623,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,pH6,schmidt_2016,Schmidt et al. 2016,0.63,20063.018500320813,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,pH6,schmidt_2016,Schmidt et al. 2016,0.63,197015.6499318316,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,pH6,schmidt_2016,Schmidt et al. 2016,0.63,3332.558890376809,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -704,10 +843,14 @@ sum total,synthesis,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,13252.80389637
 average,transport,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,2226.014550914828,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,46746.305569211385,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,9972.600431909246,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
-sum total,transport,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,64.5289568922655,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,0.31098292478200223,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,19.125449874093142,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,5662.066111505915,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
+sum total,transport,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,65.4619056666115,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,310.20546747004727,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,91.42897988590867,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,0.31098292478200223,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,754.8721770427129,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,235.10309113519367,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,235.10309113519367,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,11382.399114645988,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,174678.79786712592,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,5874.032073037329,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -722,10 +865,14 @@ sum total,synthesis,succinate,schmidt_2016,Schmidt et al. 2016,0.44,14026.424671
 average,transport,succinate,schmidt_2016,Schmidt et al. 2016,0.44,2685.073249310576,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,succinate,schmidt_2016,Schmidt et al. 2016,0.44,56386.538235522086,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,succinate,schmidt_2016,Schmidt et al. 2016,0.44,9843.366147355513,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,succinate,schmidt_2016,Schmidt et al. 2016,0.44,12.048569330027068,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,succinate,schmidt_2016,Schmidt et al. 2016,0.44,8601.41852053292,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,succinate,schmidt_2016,Schmidt et al. 2016,0.44,69.9289514056473,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,succinate,schmidt_2016,Schmidt et al. 2016,0.44,0.6299905532040296,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,succinate,schmidt_2016,Schmidt et al. 2016,0.44,269.32096149472267,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,succinate,schmidt_2016,Schmidt et al. 2016,0.44,110.79958854475873,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,succinate,schmidt_2016,Schmidt et al. 2016,0.44,0.6299905532040296,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,succinate,schmidt_2016,Schmidt et al. 2016,0.44,735.6124068896429,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,succinate,schmidt_2016,Schmidt et al. 2016,0.44,177.65733600353641,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,succinate,schmidt_2016,Schmidt et al. 2016,0.44,177.65733600353641,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,succinate,schmidt_2016,Schmidt et al. 2016,0.44,14071.229886314337,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,succinate,schmidt_2016,Schmidt et al. 2016,0.44,185106.65929989747,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,succinate,schmidt_2016,Schmidt et al. 2016,0.44,5245.27378389005,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -740,10 +887,14 @@ sum total,synthesis,xylose,schmidt_2016,Schmidt et al. 2016,0.55,18852.433538463
 average,transport,xylose,schmidt_2016,Schmidt et al. 2016,0.55,1641.4757853195765,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,xylose,schmidt_2016,Schmidt et al. 2016,0.55,34470.99149171111,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,xylose,schmidt_2016,Schmidt et al. 2016,0.55,12242.48164313211,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
-sum total,transport,xylose,schmidt_2016,Schmidt et al. 2016,0.55,2485.9358143683144,Xylose Transporters,200.0,xyl/sec,xylose_tport
-sum total,transport,xylose,schmidt_2016,Schmidt et al. 2016,0.55,1.6442461898064118,Ammonium Transporter (AmtB),100.0,NH4+/s,nitrogen_tport
+sum total,transport,xylose,schmidt_2016,Schmidt et al. 2016,0.55,30.829616058870226,Glycerol Transporters,0.0,glyc/sec,glycerol_tport
+sum total,transport,xylose,schmidt_2016,Schmidt et al. 2016,0.55,1888.2523243736832,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
+sum total,transport,xylose,schmidt_2016,Schmidt et al. 2016,0.55,2520.464984354249,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,xylose,schmidt_2016,Schmidt et al. 2016,0.55,140.58304922844823,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,xylose,schmidt_2016,Schmidt et al. 2016,0.55,231.59207583423313,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
+sum total,transport,xylose,schmidt_2016,Schmidt et al. 2016,0.55,1.6442461898064118,Ammonium Transporter (AmtB),300.0,NH4+/s,nitrogen_tport
 average,transport,xylose,schmidt_2016,Schmidt et al. 2016,0.55,654.8210450904036,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
-sum total,transport,xylose,schmidt_2016,Schmidt et al. 2016,0.55,192.3768042073502,Posphate Transport System,0.01,Pi/s,phosphate_tport
+sum total,transport,xylose,schmidt_2016,Schmidt et al. 2016,0.55,192.3768042073502,Phosphate Transport System,0.01,Pi/s,phosphate_tport
 sum total,synthesis,xylose,schmidt_2016,Schmidt et al. 2016,0.55,19199.012234658567,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,xylose,schmidt_2016,Schmidt et al. 2016,0.55,213848.02865231823,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
 sum total,energy production,xylose,schmidt_2016,Schmidt et al. 2016,0.55,5028.4706932052395,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase
@@ -758,7 +909,10 @@ sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,9893
 average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,2965.634122045157,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,62278.31656294829,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,14244.59451072861,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,8016.201466971934,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,1119.9532903763322,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,420.30579604192604,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,210.152898020963,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,1461.0476094718952,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,9015.620327391918,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,50728.96970935566,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
@@ -774,7 +928,10 @@ sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,1263
 average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,3322.27971209942,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,59801.03481778955,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,15173.102534339905,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,530.6379000952036,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,1355.407667890237,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,537.8411295082607,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,209.79405665528685,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,1733.5772120757329,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,11195.85018798154,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,66703.1049031439,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
@@ -790,7 +947,10 @@ sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,1515
 average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,3204.1606052193206,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,57674.89089394777,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,17410.77230027418,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,596.4693283419334,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,620.0411402867178,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,408.91969417256263,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,226.750582294936,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,1982.3381414869148,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,14994.160642081839,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,73124.88495966545,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
@@ -806,7 +966,10 @@ sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,17006
 average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,3260.93861330234,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,55435.956426139775,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,17388.7982830271,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,388.9256266168686,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
 sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,167.53719300418953,Xylose Transporters,200.0,xyl/sec,xylose_tport
+sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,294.685955552012,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,227.12259349228668,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,2335.5482500941184,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,19108.488492785098,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,78944.92148684915,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu
@@ -822,6 +985,9 @@ sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,2082
 average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,2634.9058872305145,Carbohydrate Transporters (average),200.0,carbs/s,carbon_tport
 sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,39523.588308457714,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot
 sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,15005.166666666666,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport
+sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,179.0,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport
+sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,163.0,Glucosamine Transporter NagE,200.0,glcn/s,glucosamine_tport
+sum total,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,205.5,Fructose Transporter FruBA,200.0,frc/s,fructose_tport
 average,transport,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,2972.25,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,24236.29326923077,Ribosome (50S + 30S),15.0,AA/s,ribosome
 sum total,synthesis,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,87481.0,Elongation Factor EF-Tu,20.0,peptide bonds/s,eftu

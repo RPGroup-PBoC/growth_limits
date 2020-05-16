@@ -110,45 +110,190 @@ values are nonetheless expected to be correlated. Figure \ref{fig:dataset_correl
 % as a rational to guide thinking with expectations about total cell mass, cell volume w.r.t.
 % growth rate.
 
-The datasets encompass a range of bacterial growth conditions,  different {\it
-e. coli} strains, and for those that report quantities on a cell basis,
-different methods to normalize  by  cell count and volume. It was therefore
-important to consider if certain discrepancies exist across the data and whether
-these might be reasonably dealt with to make the compilated dataset internally
-consistent. - give reference to what was done in example of yeast proteome data
-corrections. However, given the work of [cite] and others, there are
-well-documented expectations about how characteristics such as total protein
+The datasets encompass a wide range of bacterial growth conditions and
+different {\it e. coli} strains. In order to determine protein abundance on a
+cell basis,  different strategies  were taken to determine cell counts and cell
+volume. It was therefore important to consider if any obvious discrepancies
+exist across the data and whether these might be reasonably dealt with to make
+the compiled data set internally consistent. {\it a priori}, there are
+well-documented observations about how characteristics such as total protein
 mass per cell and cell volume  should scale with growth rate. We were therefore
-inclined to only renormalize data in a  way  that took into account such
-expectations. Figure \ref{} shows the total protein  mass reported as a function
-of growth rate for each experiment. Indeed, with the exception of the work of
-Peebo et al., the total mass per cell is generally consistent as a function of
-growth rate, and provide some confidence in such an approach.
-
-In the remainder of this section we describe the rescaling that was done to each
-dataset, with a particular focus on correcting for discrepencies in cellular
-protein concentration, which may reflect differences in protein extraction
-efficiency. It is important to note that with the exception of the work from
-Peebo {\it et al.} (which is discussed more below), any rescaling is only
-performed within the data of individual authors and not performed globally. We
-felt this was important in order not to bias any individuals' work since we lack
-any true standard of protein abundance.
-
-% for differences in
-% cellular protein concentration within each inidividual dataset. This  strategy
-% was already applied in the work of Schmidt et al., in particularr due to
-% concerns  over lower protein extraction efficiency in growth conditions like
-% stationary phase.  However, another complicating factor that became apparent is
-% a descrpency in expected versus reported cell volume that required additional
-% care and is further described below. Lastly, the  data from Peebo {\it et al.}
-% required additional care due to a lack quantities on a cell basis, and we
-% consider this work separately.
+inclined to only renormalize data in a  way  that was consistent with
+expectations.
+In this section we describe the data manipulations that were applied to those originally reported.
 
 
-\subsection{Corrections to Enforce a Consistent Cellular Protein Concentration}
+% that was done to each
+% dataset, with a particular focus on correcting for discrepencies in cellular
+% protein concentration, which may reflect differences in protein extraction
+% efficiency. It is important to note that with the exception of the work from
+% Peebo {\it et al.} (which is discussed more below), any rescaling is only
+% performed within the data of individual authors and not performed globally. We
+% felt this was important in order not to bias any individuals' work since we lack
+% any true standard of protein abundance.
+
+Figure \ref{}(A) compares the total protein mass reported as a function of
+growth rate for each of the original data sets, while in Figure \ref{}(B)  we
+plot the final values that were used in this work. A .csv file containing
+protein copy numbers per cell and mass per cell across all data sets is available for download on our
+GitHub repository.
+
+% Figure \ref{} shows the total protein  mass reported as a function
+% of growth rate for each experiment. Indeed, with the exception of the work of
+% Peebo et al., the total mass per cell is generally consistent as a function of
+% growth rate, and provide some confidence in such an approach.
+
+
+\subsection{Adjustments to Schmidt {\it et al.} dataset}
 
 % NB: It may be useful to note that none of this should have any effect on the relative
 % abundances found in each dataset.
+
+While the dataset from Schmidt {\it et al.} remains a heroic effort and has
+provided our lab with a resource that we continue to return to,
+there were several steps taken in their final calculation of protein copies per cell
+that needed to be reconsidered. In particular, the authors made an assumption of
+constant cellular protein concentration across all growth conditions and also
+ used cell volume measurements that appear inconsistent with the expected
+exponential scaling of cell size with growth rate that has been well documented in
+{\it E. coli} \cite{Schaechter1958, TaheriAraghi2015, Si2017}. This resulted in
+a similar non-exponential scaling of total cellular protein that is unexpected and
+in disagreement with other data \cite{Basan2015}.
+
+
+We first consider the cell volume measurements that were used in their data
+adjustment, shown in blue in Figure \ref{fig:cell_size_literature}. Figure [] we
+show the cell volumes reported from [, along with cell volumes reported in three
+other recent papers  (part (A) shows the data with a linear y-axis, while part
+(B) shows it on a log scaled y-axis). The measurements from Taheri-Araghi {\it
+et al.} and Si {\it et al.} from from the lab of Suckjoon Jun, while those from
+Basan {\it et al.} come  from the lab of Terence Hwa.  Each of these additional
+measurements used microscopy and cell segmentation to determine the long and
+short axes, and then cell size was determined by treating the cell is a cylinder
+with two hemispherical ends. While there is a large discrepancy in cell size
+between the two research groups, Basan {\it et al.} shows in their  supplemental
+material that this is specifically from uncertainty in determining the cell
+width, which  is prone to error given the small cell size and optical resolution
+limits. Perhaps the more concerning point  is that while these alternative
+measurements show the expected exponential increase in  cell size as growth rate
+increases, the measurements used by Schmidt {\it et al.} appear to cause the
+total cellular protein  to plateau toward some maximum value.
+
+\begin{figure}[H]
+		\centering
+    \includegraphics[width=1\textwidth]{../../figures/supplemental_cell_volumes.pdf}
+  \caption{{\bf Measurements of cell size as a function of growth rate.}
+	 	(A) Plot of the reported cell sizes from several recent papers.  The data in blue come from
+		Volkmer and Heinemann, 2011 \cite{Volkmer2011} and were used in the work of Schmidt {\it et al.}.
+		Data from the lab of Terence Hwa are shown in red \cite{Basan2015}, while the two
+		data sets shown in green and purple come from the lab of Suckjoon Jun \cite{TaheriAraghi2015, Si2017}.
+		(B) Same as in (A) but with the data plotted on a logarithmic y-axis to highlight the
+		exponential scaling that is expected for {\it E. coli}.}
+  \label{fig:cell_size_literature}
+\end{figure}
+
+
+
+
+in order to deal with
+potential loss during protein extraction, the authors first determined total
+protein independently with a BCA protein assay. With their flow cytometry cell
+counts, and a measurement of cell volume from earlier work of theirs, they
+calculated a cellular protein  concentration. In personal communications, it was
+noted that  determining reasonable total protein abundances by BCA across cells
+under the array of growth conditions  was particularly troublesome. Instead, they
+made the assumption that cellular protein concentration remains constant  across
+growth conditions. Using their previous cell volume measurements, which do vary
+with growth rate, they calculated the expected  total protein mass at each
+growth condition and rescaled their absolute protein measurements to be
+consistent  with these values.
+
+In Figure [] we perform the total protein mass correction that Schmidt {\it et
+al.} used, but instead  using the cell volume measurements from Si {\it et al.}.
+Following this adjustment, the total protein mass exibits an exponential
+increase in protein mass appears to be more consistent  with expectations that
+the cell size should increease exponentially with growth rate.
+
+As a quick estimate of protein concentration, if we assume a cellular mass
+density of 1.1 g/ml, 30\% dry mass, and 55 \% of the dry mass taken up by
+protein, the expected cellular protein concentration is given by 1.1 g/ml
+x 30 \% x 60 \%, which gives us about 200 fg / fL total protein.
+
+We now turn to the assumption that cellular protein concentration is relatively
+independent of growth rate. One important experimental result that suggests some
+caution here is that the total RNA to protein ratio increases linearly as
+function of growth rate []. This is due to substantial increase in rRNA as cells
+grow faster. While total dry mass was indeed found to increase linearly with
+cell size [], which itself suggests a constant dry mass concentration, it does
+not mean protein concentration will stay constant. In order to gain some
+intuition here, we will make use of experimental measurements of RNA to protein
+ratio from the recent work of Dai {\it et al.}, and DNA mass from Basan {\it et
+al}. These are shown in Figure []. Using this information, and the observation
+that the  sum of protein, RNA, and DNA account for about 90 \% of the dry mass [],
+we can predict the  concentration of each of these as a function of growth rate.
+Indeed, given the  increasing rRNA, we predict a significant
+decrease in cellular protein concentration at faster growth rates.
+
+In the next three subsections we consider three different approaches to rescale
+the reported protein abundances from Schmidt {\it et al.} to make them
+consistent with our expectation that cell size and total protein should increase
+exponentially with growth rate.  Figure [] summarizes Ultimately, we find that
+each approach leads to a similar result, with absolute abundances only changing
+substantially in the fastest growth conditions, in LB media and M9 minimal media
++ glycerol and amino acid supplement.
+
+
+
+\subsubsection{Schmidt {\it et al.} copy number correction, approach #1. }
+
+The first approach we consider is to only readjust the protein copy numbers such
+that the cell volumes used in the calculation of total protein grow
+exponentially with faster growth rates. Here we will allow that cellular protein
+concentrations remain constant with growth rate. In order to perform this
+calculation, we note that Schmidt {\it et al.} took growth in glucose as a
+reference condition, and measured a total mass of $P$ = 240 fg per cell. Using
+their cell volume, reported as $V_{orig}$ = 2.84 fL, we can calculate a cellular
+protein concentration of $\rho_{orig}$ = $P/V_{orig}$ = 85 fg/fL. If we instead
+use the cell volume predicted in the work of Si {\it et al.} which is found to
+be $V_{Si_glu}$ = [], the new cellular protein concentration becomes $\rho_{Si}$
+= $P/V_{Si_glu}$ = [] fg/fl. With the assumption that protein concentration
+remains constant, the rescaled total protein mass per cell for all conditions
+can be calculated from,
+
+\begin{equation}
+	P = \rho_{Si} \cdot V_{Si_i}
+\end{equation}
+where $V_{Si_i}$ refers to the new volume prediction for each condition $i$,
+based on the predictions of Si {\it et al}.
+
+\subsubsection{Schmidt {\it et al.} copy number correction, approach #2. }
+
+In this next approach we instead rescale the total protein mass according to our
+prediction of cellular protein cocentration above. Specifically, we assume a
+cellular mass density of 1.1 g/ml, a 30\% dry mass that remains constant with
+growth rate, and 90 \% of the dry mass consisting of protein, DNA, and RNA. The
+total mass concentration of protein, DNA, and RNA will then be given by 1.1 g/ml
+x 30 \% x 90 \% or about $\rho$ = 300 fg per fL. We again turn to
+the cell volume predictions from Si {\it et al.} to calculate the mass per cell.
+Finally, from the measured DNA mass, and RNA to protein ratio shown in Figure
+[], we calculate the total protein mass per cell. These are shown in Figure [].
+
+\subsubsection{Schmidt {\it et al.} copy number correction, approach #3. }
+
+In our last appoach we make no assumptions about protein concentration or cell
+volume. Instead we rescale the total protein according to the experimentally
+measured protein per cell that was reported in the work Basan {\it et al} and is
+reproduced in Figure []. While the strain of {\it E. coli} appears to differ
+from the strain used by Schmidt {\it et al.}, we note that the absolute protein
+abundances appear consistent with the values we estimated in the previous
+section and suggest this approach is reasonable valid. To estimate the total
+protein for each growth condition considered, we fit the data from Basan {\it et
+al.} to an exponential function and then use this to predict total protein mass
+for each of the measured growth rates. These are also plotted in Figure [].
+
+
+
+
 
 One parameter that we do not expect to change substantially across growth
 conditions is cellular protein concentration. As a general rule of thumb, we
@@ -535,6 +680,248 @@ discrepancy still appears to exist.
 	empirically was found to be $R_m/P_m$ = $\Phi_R$/0.411 \cite{Dai2016}.}
   \label{fig:estimates_translation_data_dai}
 \end{figure}
+
+
+
+\newpage
+\section{Nutrient-dependent limits on the rate of cell division.}
+
+% Consider starting by showing the data from Dai et al. and propose alternative
+% explanation.
+
+In the preceeding section we identified limitations on the speed of cell
+division that reflect inherent limits on the maximum translation elongation rate
+and the necessity to double both the pool of ribosomes and the cell's remaining
+proteome. We next consider the conseqences of nutrient limtations on the maximal
+growth rate of the cell.
+
+Here it is helpful to point out three notable experimental observations.  The
+first is that in the limit of zero growth, the ribosomal fraction of {\it E.
+coli} converges toward nonzero value (5-10 \% by mass). In the context of poorer
+and poorer nutrient conditions, there must be a point in which cells have more
+ribosomes than they can utilize. The next point, which is related to this,  is
+that cells actually appear to reduce the fraction of ribosomes that are actively
+translating when growing at a growth rate less than 0.7 hr$^{-1}$. Lastly, below this
+growth rate, the cell's elongation rate also begins to decrease, with a minimum value of about 8
+aa/s measured in stationary phase.
+
+% only drops to aboutapproximately 8 aa/s. From
+% Figure XB, we can see that that only way for a cell  to grow faster at an
+% elongation rate of 8 aa/s is to increase its ribosomal fraction.
+
+% The last point
+% is that a single {\it E. coli} cell in limiting nutrient conditions still has
+% about Z fg total protein,  as well as DNA, RNA, lipid, etc. whose quantities
+% must all be doubled. Behind this last observation is a somewhat subtle but
+% important point that the absolute  abundances that enable it to be a living
+% organism must also be considered. This last point  provides us with an
+% additional constraint on growth that becomes important in the nutrient-dependent
+% limit and we consider this further in the next section.
+
+\subsection{Nutrient limitation does not explain increasing ribosomal content.}
+
+We begin by considering the consequence of nutrient limitation on the ribosomal elongation rate. In the
+work of  Dai {\it et al.} it was suggested that perhaps there is a bottleneck in
+the availability of ternary complex, referring to the assembly of
+aminoacyl-tRNA,  elongation factor Tu and guanosine triphosphate (GTP) that is
+needed for translation.  If cells are indeed  reducing their fraction of
+actively translating ribosomes, it is difficult to rationalize the possibility
+that a protein like Tu might be limiting. If it were limiting, for example, a
+simple solution seems to be for the cell to make  fewer of the unused ribosomes
+and increase the number of Tu. In contrast, at least in the limit  of poorer
+nutrient conditions, the possibility of limitations on more basic building blocks like amino
+acids  and GTP seem more reasonable. Here we consider the possibility that the
+synthesis rate of  amino acids, and therefore the cellular concentration of
+amino acids $[aa]$ is limiting. An important finding from our analysis below is
+that while we are able to account for both the change in translation rate and
+the apparent fraction of ribosomes that are needed for a specific growth rate, it provides no
+basis to explain why ribosomal content continues to increase as growth rate increases.
+
+In order to consider that the amino acid synthesis rate is limiting, we can
+follow a similar approach to that employed by Dai et al., which was to divide
+the elongation rate into two coarse-grained timescales. Here we assume that  the
+translation rate depends on A) binding of a ternary complex, which we propose
+depends on a rate-limiting concentration of $[aa]$ and, 2) other enzymatic
+processes that will not depend on $[aa]$. The effective elongation rate is given
+by the inverse timescales associated with each step,
+
+\begin{equation}
+\frac{1}{r_t'} = \frac{1}{k_{on} \cdot [aa]} + \frac{1}{r_t}.
+\label{eq:rate_dai_2}
+\end{equation}
+where $r_t'$ is the measured elongation rate, $r_t$ is the maximum elongation
+rate, and $r_t/k_{on}$ is the binding constant $K_d$ of the ternary complex with
+the ribosome. Alternatively, we can re-write this in terms of the binding
+constant,
+
+\begin{equation}
+r_t' = r_t \cdot \frac{1}{1 + K_d / [aa]}.
+\label{eq:rate_aa}
+\end{equation}
+If we consider only consumption of amino acids by ribosomes, during steady state growth $[aa]$ will be depend on the amino
+acid synthesis rate $r_{aa}$, consumption rate by ribosomes, $R \cdot r_t'$,  and the cell volume $V$,
+
+\begin{equation}
+[aa] =  \tau \cdot \frac{r_{aa} - R \cdot r_t'}{V}.
+\label{eq:aa}
+\end{equation}
+Here $\tau$ refers to the doubling time of the cell in seconds. If we plug this into Equation \ref{eq:rate_aa}, we find that
+
+\begin{equation}
+r_t' = r_t \cdot \frac{1}{1 + K_d \cdot V / (\tau \cdot (r_{aa} - R \cdot r_t'))}.
+\label{eq:rate_aa_2}
+\end{equation}
+This brings us to a somewhat confusing result. If ribosomes are in excess of the
+available amino acids, ribosomes will deplete the supply of amino acids and
+translation will grind to a halt. This apparent conundrum seems to be
+similarly present if we were to instead consider that the supply of tRNA or GTP is
+limiting. This may provide some rationalization for why a cell would
+regulate its fraction of active ribosomes.
+
+In order to proceed, we will take for granted that the cell actively regulates
+its fraction of active ribosomes, and make an assumption that it does so to
+support a net positive concentration of amino acids in the cell. Specifically, we are
+interested in how the elongation rate might depend on a positive increase in the
+synthesis rate of amino acids. Here we re-write Equation
+\ref{eq:rate_aa_2} as,
+
+\begin{equation}
+r_t' = r_t \cdot \frac{1}{1 + K_d' / r_{aa}'},
+\label{eq:rate_aa_3}
+\end{equation}
+where $r_{aa}'$ is the effective rate in which amino acid are being supplied to
+each of the active ribosomes, and $K_d'$ is the apparent rate when $r_t'$ is
+half maximal. Here $K_d' = K_d \cdot V / \tau$, while $r_{aa}' = r_{aa} - R \cdot
+r_t'$.
+
+With a maximal elongation rate of about 17 aa/s, we find that for any $K_d'$
+less than 8.5 aa/s, the time to double the  cell's proteome will be limited by
+$r_{aa}'$, and not the elongation rate $r_t$. Said differently, if
+the total number of amino acids consumed to double the cell is $N_aa$, it
+should take $\tau = N_aa/r_{aa}'$ to double the cell, which is less than the time
+required if all ribosomes were constantly synthesizing proteins at their rate of $r_t'$.
+Under such a scenario, the fraction of available ribosomes that are  needed would just be given
+by the ratio of  $r_{aa}'/r_t'$.
+
+In Figure \ref{fig:aa_limitation_2}(A) we consider such a scenario and consider the growth rate of cells
+as the value of $r_t'$ is increased from 2 - 50 aa/(s ribosome). Here we have selected a value of
+$K_d'$ less than 8.5 aa/(s ribosome), with a cell containing 7\% ribosome by mass.  Since we are considering cells growing in steady
+state, and we assume  that the cell has some mechanism in place to match a
+specific supply of amino acids defined by  $r_{aa}'$,  the fraction of available
+ribosomes needed to double the cell will be given by $r_{aa}'/r_t' $, up to a maximum value of 1.
+This is plotted in Figure \ref{fig:aa_limitation_2}(B).
+
+\begin{figure}[H]
+		\centering
+    \includegraphics[width=0.9\textwidth]{../../code/figures/SI/aa_limitation_2.pdf}
+  \caption{{\bf Expectations on cell growth in a nutrient-limited regime.}
+	(A) Plot of elongation rate $r_t$ using Equation \ref{eq:rate_aa_3}, with  $K_d'$
+	less than 8.5 aa/(s ribosome). (B) The apparent fraction of ribosomes that would be needed
+	given that the supply of amino acids $r_{aa}'$ is less than the rate with which
+	ribosomes are using them. We assume that cells are growing in steady state, and that the cell is
+	able to regulate its fraction of ribosomes in order to maintain a constant supply of amino acids $r_{aa}'$ . (C) Plot of growth rate versus ribosomal fraction. Blue line
+	refers to a cell whose ribosomal fraction in limiting growth is 7 \%, with the color indicating
+	the elongation rate as production rate of amino acids $r_{aa}'$ is increased over the range shown
+	in part (A).  }
+  \label{fig:aa_limitation_2}
+\end{figure}
+
+Importantly, while this provides some perspective on why elongation might decrease in the nutrient limit,
+and can be consistent with apparent regulation of the active pool of ribosomes. However, as shown in
+Figure \ref{fig:aa_limitation_2}(C) it does so
+without requiring any increase in ribosomal
+content as a function of growth rate. This suggests that something else must be considered in order to
+explain the observedtrend in ribosomal present that is still observed in the nutrient-limit.
+
+
+% This provides an interesting rationalization of why a cell
+% might actively regulate its fraction of active ribosomes. Specifically, while
+% amino acid synthesis rate is below its consumption rate, the excess ribosomes
+% would otherwise consume the available pool of amino acids and bring elongation
+% to a halt. It would also be impossible to distribute the supply of 20 distinct
+% amino acids as protein synthesis proceeds.
+
+\newpage
+
+\subsection{Nutrient limitations provide another boundary on the rate of
+bacterial growth.}
+
+As an {\it E. coli} cell encounters more nutrient rich conditions, the data in
+Figure XA shows that the measured steady state growth rates follows a
+well-defined path as a function of ribosomal content. This reflects the
+so-called growth law that has been observed for {\it E. coli} and some other
+bacterium. However, we might have naively expected alternative paths to reach
+the translation-limited growth  boundary  to be equally plausable. In order to
+make progress it useful to highlight that experimentally, from work by Dai {\it
+et al} and others, the elongation rate is expected to increase gradually
+from about 8 aa/s to a maximum in rich media of about 17 aa/s.
+
+To understand the consequence of this, we consider the hypothetical situation
+illustrated in Figure Z. Here a cell is initially growing at a rate of about X
+hr$^{-1}$, with an  elongation rate of X aa/s. As nutrient conditions improve
+and the apparent elongation rate  increases, the maximum growth rate becomes
+defined by this new elongation rate. The first  naieve scenario is that the
+bacterium keeps its proteome unchanged, including the  number of available
+ribosomes. Such a situation would correspond to a cell whose size  and total
+contents can remain unchanged and it can just double itself faster. The  second
+scenario is that the cell takes advantage of its apparent increase in protein
+synthesizing  capacity, and somehow bias its protein production to make more
+ribosomes. By doing so, the cell is able to grow faster given its new elongation
+rate.
+
+We next attempt to estimate the additional ribosomes than might be made from
+this additional capacity. This can be determined from the relative increase in
+elongation rate and the number of available ribosomes. The additional amino
+acids available to put toward making more proteins is given by,
+
+\begin{equation}
+	N_{aa}' = (r_{t 16} - r_{t 14}) \cdot \tau \cdot R,
+\end{equation}
+where $\tau$ is the doubling time of the cell. The maximum additional ribosomes
+than can then be made is simply given by,
+
+\begin{equation}
+ R' = N_{aa}' / L_R,
+\end{equation}
+where again, $L_R$ refers to the total number of amino acids that make a
+ribosome. This scenario results in a cell with larger ribosomal fraction given by,
+
+\begin{equation}
+ \Phi' = \frac{R + R'}{ R + R' + P' }.
+\end{equation}
+The maximal growth rate at this elongation rate will then be equal to
+\begin{equation}
+ \lambda = \frac{ln(2)}{ L_R} \cdot r_{t 16} \cdot \Phi'.
+\end{equation}
+While this treatment is somewhat artificial and assumes that the cell continues
+to  double its core proteome, as measured in the slow-growth limit, it provides
+us with a convenient way to rationalize the constantly increasing ribosomal
+fraction for growth rates below the traslation-limited growth rate. Indeed,
+since cells do indeed making more ribosomes and get more massive with growth
+rate, this perspective provides an a potential way to connect to the
+well-characterized cell size scaling observed in {\it E. coli}.
+
+We can repeat the same thought process for the entire range of measured
+elongation rates, from about 8 aa/s to 17 aa/s, which is plotted in Figure Z.
+Here we now identify a nutrient-limited boundary. This boundary represents the
+scenario where any increase in cell protein mass has been devoted to making more
+ribosomes.
+
+Here it is worth noting that this boundary isn't fundamentally as restricted as the
+translation-limited boundary. For example, there are many examples from the Hwa
+lab where the addition of an antibiotic like chloramphenicol shift the observed
+ribsomal fraction and growth rates into this region.
+
+
+
+\subsection{Nutrient-limited building blocks and biased ribosome production.}
+
+Here we include our proposed dependence of translation elongation on the production rate of
+amino acids. Specifically, we look at how the growth rate increases as a function of
+amino acid production rate using our proposed scheme above.
+
+
+
 
 \bibliography{SI_bib.bib}
 

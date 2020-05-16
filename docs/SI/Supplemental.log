@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.5.23)  25 APR 2020 15:23
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.5.23)  16 MAY 2020 06:07
  restricted system commands enabled.
  file:line:error style messages enabled.
 **Supplemental.tex
@@ -23,7 +23,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.182 seconds
+luaotfload | main : initialization completed in 0.120 seconds
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 
 ./Supplemental.tex:1: LaTeX Error: Missing \begin{document}.
@@ -1586,50 +1586,115 @@ Package luatex.def Info: ../../figures/dataset_corrections.pdf used on input lin
 (luatex.def)             Requested size: 433.62001pt x 323.41823pt.
  [3<../../figures/dataset_correlations.pdf>]
 
-LaTeX Warning: Reference `' on page 4 undefined on input line 123.
-
-[4<../../figures/dataset_corrections.pdf>]
-
-LaTeX Warning: Reference `' on page 5 undefined on input line 170.
+LaTeX Warning: Reference `' on page 4 undefined on input line 135.
 
 
-LaTeX Warning: Reference `' on page 5 undefined on input line 173.
+LaTeX Warning: Reference `' on page 4 undefined on input line 136.
 
-(load luc: /Users/nathanb/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-italic.luc)
+(load luc: /Users/nathanb/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-italic.luc) [4<../../figures/dataset_corrections.pdf>] <../../figures/supplemental_cell_volumes.pdf, id=137, 734.82832pt x 357.69034pt>
+File: ../../figures/supplemental_cell_volumes.pdf Graphic file (type pdf)
+ <use ../../figures/supplemental_cell_volumes.pdf>
+Package luatex.def Info: ../../figures/supplemental_cell_volumes.pdf used on input line 184.
+(luatex.def)             Requested size: 433.62001pt x 211.07367pt.
+ [5] [6<../../figures/supplemental_cell_volumes.pdf>]
+./Supplemental.tex:247: You can't use `macro parameter character #' in horizontal mode.
+<argument> ...\it et al.} copy number correction, approach ##
+                                                  1. 
+l.247 ...al.} copy number correction, approach #1. }
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn''t ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
-LaTeX Warning: Reference `' on page 5 undefined on input line 200.
+./Supplemental.tex:247: Illegal parameter number in definition of \reserved@a.
+<to be read again> 
+1
+l.247 ...al.} copy number correction, approach #1. }
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
 
-[5] [6]
-Package marginnote Info: Margin note 6.1 is on absolute page 6
-(marginnote)              on input line 236.
-Package marginnote Info: right page because not two side mode on input line 236.
+./Supplemental.tex:269: You can't use `macro parameter character #' in horizontal mode.
+<argument> ...\it et al.} copy number correction, approach ##
+                                                  2. 
+l.269 ...al.} copy number correction, approach #2. }
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn''t ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./Supplemental.tex:269: Illegal parameter number in definition of \reserved@a.
+<to be read again> 
+2
+l.269 ...al.} copy number correction, approach #2. }
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./Supplemental.tex:281: You can't use `macro parameter character #' in horizontal mode.
+<argument> ...\it et al.} copy number correction, approach ##
+                                                  3. 
+l.281 ...al.} copy number correction, approach #3. }
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn''t ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./Supplemental.tex:281: Illegal parameter number in definition of \reserved@a.
+<to be read again> 
+3
+l.281 ...al.} copy number correction, approach #3. }
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+[7]
+
+LaTeX Warning: Reference `' on page 8 undefined on input line 315.
+
+
+LaTeX Warning: Reference `' on page 8 undefined on input line 318.
+
+
+LaTeX Warning: Reference `' on page 8 undefined on input line 345.
+
+[8] [9]
+Package marginnote Info: Margin note 9.1 is on absolute page 9
+(marginnote)              on input line 381.
+Package marginnote Info: right page because not two side mode on input line 381.
 Package marginnote Info: xpos seems to be 90.3375pt,
-(marginnote)             \marginnoterightadjust ignored on input line 236.
-(load luc: /Users/nathanb/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /Users/nathanb/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc) [7] <../../code/figures/SI/estimates_translation_toy_1.pdf, id=152, 942.97295pt x 359.3425pt>
+(marginnote)             \marginnoterightadjust ignored on input line 381.
+(load luc: /Users/nathanb/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /Users/nathanb/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc) [10] <../../code/figures/SI/estimates_translation_toy_1.pdf, id=518, 942.97295pt x 359.3425pt>
 File: ../../code/figures/SI/estimates_translation_toy_1.pdf Graphic file (type pdf)
  <use ../../code/figures/SI/estimates_translation_toy_1.pdf>
-Package luatex.def Info: ../../code/figures/SI/estimates_translation_toy_1.pdf used on input line 345.
+Package luatex.def Info: ../../code/figures/SI/estimates_translation_toy_1.pdf used on input line 490.
 (luatex.def)             Requested size: 433.62001pt x 165.23923pt.
- [8] <../../code/figures/SI/estimates_translation_volume.pdf, id=158, 469.755pt x 352.31625pt>
+ [11] <../../code/figures/SI/estimates_translation_volume.pdf, id=524, 469.755pt x 352.31625pt>
 File: ../../code/figures/SI/estimates_translation_volume.pdf Graphic file (type pdf)
  <use ../../code/figures/SI/estimates_translation_volume.pdf>
-Package luatex.def Info: ../../code/figures/SI/estimates_translation_volume.pdf used on input line 369.
+Package luatex.def Info: ../../code/figures/SI/estimates_translation_volume.pdf used on input line 514.
 (luatex.def)             Requested size: 216.81pt x 162.60503pt.
- [9<../../code/figures/SI/estimates_translation_toy_1.pdf><../../code/figures/SI/estimates_translation_volume.pdf>] <../../code/figures/SI/estimates_translation_ribo_frac.pdf, id=337, 460.7644pt x 357.335pt>
+ [12<../../code/figures/SI/estimates_translation_toy_1.pdf><../../code/figures/SI/estimates_translation_volume.pdf>] <../../code/figures/SI/estimates_translation_ribo_frac.pdf, id=703, 460.7644pt x 357.335pt>
 File: ../../code/figures/SI/estimates_translation_ribo_frac.pdf Graphic file (type pdf)
  <use ../../code/figures/SI/estimates_translation_ribo_frac.pdf>
-Package luatex.def Info: ../../code/figures/SI/estimates_translation_ribo_frac.pdf used on input line 400.
+Package luatex.def Info: ../../code/figures/SI/estimates_translation_ribo_frac.pdf used on input line 545.
 (luatex.def)             Requested size: 216.81pt x 168.14375pt.
- <../../code/figures/SI/estimates_translation_data.pdf, id=338, 1096.37608pt x 372.82086pt>
+ <../../code/figures/SI/estimates_translation_data.pdf, id=704, 1096.37608pt x 372.82086pt>
 File: ../../code/figures/SI/estimates_translation_data.pdf Graphic file (type pdf)
  <use ../../code/figures/SI/estimates_translation_data.pdf>
-Package luatex.def Info: ../../code/figures/SI/estimates_translation_data.pdf used on input line 433.
+Package luatex.def Info: ../../code/figures/SI/estimates_translation_data.pdf used on input line 578.
 (luatex.def)             Requested size: 433.62001pt x 147.45319pt.
 
-./Supplemental.tex:442: Undefined control sequence.
+./Supplemental.tex:587: Undefined control sequence.
 <argument> ...ion rate set by doubling a ribosome. (\smaller 
                                                   {NB: There is something we...
-l.442 	{\it et al.}  - is it real??})}
+l.587 	{\it et al.}  - is it real??})}
                                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1637,10 +1702,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Supplemental.tex:442: Undefined control sequence.
+./Supplemental.tex:587: Undefined control sequence.
 <argument> ...ion rate set by doubling a ribosome. (\smaller 
                                                   {NB: There is something we...
-l.442 	{\it et al.}  - is it real??})}
+l.587 	{\it et al.}  - is it real??})}
                                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1648,10 +1713,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Supplemental.tex:442: Undefined control sequence.
+./Supplemental.tex:587: Undefined control sequence.
 <argument> ...ion rate set by doubling a ribosome. (\smaller 
                                                   {NB: There is something we...
-l.442 	{\it et al.}  - is it real??})}
+l.587 	{\it et al.}  - is it real??})}
                                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1659,23 +1724,28 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[10<../../code/figures/SI/estimates_translation_ribo_frac.pdf>]
-Package marginnote Info: Margin note 10.1 is on absolute page 10
-(marginnote)              on input line 479.
-Package marginnote Info: right page because not two side mode on input line 479.
+[13<../../code/figures/SI/estimates_translation_ribo_frac.pdf>]
+Package marginnote Info: Margin note 13.1 is on absolute page 13
+(marginnote)              on input line 624.
+Package marginnote Info: right page because not two side mode on input line 624.
 Package marginnote Info: xpos seems to be 90.3375pt,
-(marginnote)             \marginnoterightadjust ignored on input line 479.
-Package marginnote Info: Margin note 10.2 is on absolute page 11
-(marginnote)              on input line 507.
-Package marginnote Info: right page because not two side mode on input line 507.
+(marginnote)             \marginnoterightadjust ignored on input line 624.
+Package marginnote Info: Margin note 13.2 is on absolute page 14
+(marginnote)              on input line 652.
+Package marginnote Info: right page because not two side mode on input line 652.
 Package marginnote Info: xpos seems to be 90.3375pt,
-(marginnote)             \marginnoterightadjust ignored on input line 507.
- [11<../../code/figures/SI/estimates_translation_data.pdf>] <../../code/figures/SI/estimates_translation_data_dai.pdf, id=757, 619.08186pt x 353.11923pt>
+(marginnote)             \marginnoterightadjust ignored on input line 652.
+ [14<../../code/figures/SI/estimates_translation_data.pdf>] <../../code/figures/SI/estimates_translation_data_dai.pdf, id=1122, 619.08186pt x 353.11923pt>
 File: ../../code/figures/SI/estimates_translation_data_dai.pdf Graphic file (type pdf)
  <use ../../code/figures/SI/estimates_translation_data_dai.pdf>
-Package luatex.def Info: ../../code/figures/SI/estimates_translation_data_dai.pdf used on input line 526.
+Package luatex.def Info: ../../code/figures/SI/estimates_translation_data_dai.pdf used on input line 671.
 (luatex.def)             Requested size: 303.53267pt x 173.13231pt.
- (./Supplemental.bbl) [12<../../code/figures/SI/estimates_translation_data_dai.pdf>] (./Supplemental.aux)
+ [15<../../code/figures/SI/estimates_translation_data_dai.pdf>] [16] <../../code/figures/SI/aa_limitation_2.pdf, id=1329, 576.33218pt x 624.31345pt>
+File: ../../code/figures/SI/aa_limitation_2.pdf Graphic file (type pdf)
+ <use ../../code/figures/SI/aa_limitation_2.pdf>
+Package luatex.def Info: ../../code/figures/SI/aa_limitation_2.pdf used on input line 816.
+(luatex.def)             Requested size: 390.25536pt x 422.75565pt.
+ [17] [18<../../code/figures/SI/aa_limitation_2.pdf>] [19] [20] (./Supplemental.bbl [21]) [22] (./Supplemental.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1685,20 +1755,20 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 27061 strings out of 494481
+ 27093 strings out of 494481
  100000,662416 words of node,token memory allocated
- 569 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 25 attribute, 59 glue_spec, 25 attribute_list, 1 write nodes
-   avail lists: 2:573,3:63,4:33,5:229,6:3483,7:1041,8:199,9:177,10:22,11:304
- 30205 multiletter control sequences out of 65536+600000
+ 645 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 44 attribute, 59 glue_spec, 44 attribute_list, 1 write nodes
+   avail lists: 2:535,3:65,4:46,5:248,6:3583,7:1041,8:199,9:221,10:24,11:297
+ 30225 multiletter control sequences out of 65536+600000
  84 fonts using 5918975 bytes
- 99i,7n,89p,863b,383s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 99i,7n,89p,902b,383s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2017/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Supplemental.pdf (12 pages, 1559270 bytes).
+Output written on Supplemental.pdf (22 pages, 3635249 bytes).
 
-PDF statistics: 1043 PDF objects out of 1200 (max. 8388607)
- 536 compressed objects within 6 object streams
+PDF statistics: 7596 PDF objects out of 8907 (max. 8388607)
+ 3818 compressed objects within 39 object streams
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -1,5 +1,37 @@
 \begin{thebibliography}{1}
 
+\bibitem{Schaechter1958}
+M~Schaechter, O~Maal{\O}e, and N~O Kjeldgaard.
+\newblock {Dependency on Medium and Temperature of Cell Size and Chemical
+  Composition during Balanced Growth of Salmonella typhimurium}.
+\newblock {\em Microbiology}, 19(3):592--606, December 1958.
+
+\bibitem{TaheriAraghi2015}
+Sattar Taheri-Araghi, Serena Bradde, John~T Sauls, Norbert~S Hill, Petra~Anne
+  Levin, Johan Paulsson, Massimo Vergassola, and Suckjoon Jun.
+\newblock {Cell-size control and homeostasis in bacteria}.
+\newblock {\em Current Biology}, 25(3):385--391, February 2015.
+
+\bibitem{Si2017}
+Fangwei Si, Dongyang Li, Sarah~E Cox, John~T Sauls, Omid Azizi, Cindy Sou,
+  Amy~B Schwartz, Michael~J Erickstad, Yonggun Jun, Xintian Li, and Suckjoon
+  Jun.
+\newblock {Invariance of Initiation Mass and Predictability of Cell Size in
+  Escherichia coli}.
+\newblock {\em Current Biology}, 27(9):1278--1287, May 2017.
+
+\bibitem{Basan2015}
+Markus Basan, Manlu Zhu, Xiongfeng Dai, Mya Warren, Daniel S{\'e}vin, Yi-Ping
+  Wang, and Terence Hwa.
+\newblock {Inflating bacterial cells by increased protein synthesis}.
+\newblock {\em Molecular Systems Biology}, 11(10):836, October 2015.
+
+\bibitem{Volkmer2011}
+Benjamin Volkmer and Matthias Heinemann.
+\newblock {Condition-Dependent Cell Volume and Concentration of Escherichia
+  coli to Facilitate Data Conversion for Systems Biology Modeling}.
+\newblock {\em PLOS ONE}, 6(7):e23126, July 2011.
+
 \bibitem{Schmidt2016}
 Alexander Schmidt, Karl Kochanowski, Silke Vedelaar, Erik Ahrne, Benjamin
   Volkmer, Luciano Callipo, Kevin Knoops, Manuel Bauer, Ruedi Aebersold, and

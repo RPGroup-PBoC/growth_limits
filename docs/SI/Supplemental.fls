@@ -347,6 +347,9 @@ INPUT ../../figures/dataset_corrections.pdf
 INPUT ../../figures/dataset_corrections.pdf
 INPUT ../../figures/dataset_corrections.pdf
 INPUT /Users/nathanb/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-italic.luc
+INPUT ../../figures/supplemental_cell_volumes.pdf
+INPUT ../../figures/supplemental_cell_volumes.pdf
+INPUT ../../figures/supplemental_cell_volumes.pdf
 INPUT /Users/nathanb/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc
 INPUT /Users/nathanb/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc
 INPUT ../../code/figures/SI/estimates_translation_toy_1.pdf
@@ -388,6 +391,9 @@ INPUT ../../code/figures/SI/estimates_translation_data.pdf
 INPUT ../../code/figures/SI/estimates_translation_data_dai.pdf
 INPUT ../../code/figures/SI/estimates_translation_data_dai.pdf
 INPUT ../../code/figures/SI/estimates_translation_data_dai.pdf
+INPUT ../../code/figures/SI/aa_limitation_2.pdf
+INPUT ../../code/figures/SI/aa_limitation_2.pdf
+INPUT ../../code/figures/SI/aa_limitation_2.pdf
 INPUT ./Supplemental.bbl
 INPUT ./Supplemental.bbl
 INPUT ./Supplemental.aux

@@ -13,7 +13,7 @@ dataset_markers = {'li_2014':'o', 'schmidt_2016':'X',
 cats = ['carbon_tport_tot', 'glucose_tport', 'glycerol_tport', 'fructose_tport', 'xylose_tport']
 
 
-fig, ax = plt.subplots(2, 3, figsize=(7, 4))
+fig, ax = plt.subplots(2, 3, figsize=(6, 4))
 axes = {c:a for c, a in zip(cats, ax.ravel())}
 for a in ax.ravel():
     a.xaxis.set_tick_params(labelsize=6)
@@ -40,7 +40,7 @@ for a, t in zip(ax.ravel(), titles):
     prot.viz.titlebox(a, t, size=6, color='k', bgcolor=colors['pale_yellow'],
                     boxsize=0.12)
 
-    ax[-1, i].set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
+
 
 for g, d in data.groupby(['dataset', 'growth_rate_hr', 'condition']):
     for c, a in axes.items():
@@ -75,7 +75,7 @@ _ax[-1].legend(fontsize=7.5, loc='center')
 plt.tight_layout()
 
 # Add panel labels
-for a, lab in zip(ax.ravel(), ['(A)', '(B)', '(C)', '(D)', '(E)']):
-    a.text(-0.22, 1.1, lab, transform=a.transAxes, fontsize=6)
-plt.savefig('../../figures/induced_expression.pdf', bbox_inches='tight')
+# for a, lab in zip(ax.ravel(), ['(A)', '(B)', '(C)', '(D)', '(E)']):
+    # a.text(-0.22, 1.1, lab, transform=a.transAxes, fontsize=6)
+plt.savefig('../../figures/induced_expression.svg', bbox_inches='tight')
 # %%

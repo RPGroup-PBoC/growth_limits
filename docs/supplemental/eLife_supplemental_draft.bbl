@@ -1,0 +1,54 @@
+\begin{thebibliography}{}
+
+\bibitem[Basan et~al., 2015]{basan2015}
+Basan, M., Zhu, M., Dai, X., Warren, M., S{\'e}vin, D., Wang, Y.-P., and Hwa,
+  T. (2015).
+\newblock {Inflating bacterial cells by increased protein synthesis}.
+\newblock {\em Molecular Systems Biology}, 11(10):836.
+
+\bibitem[Dai et~al., 2016]{dai2016}
+Dai, X., Zhu, M., Warren, M., Balakrishnan, R., Patsalo, V., Okano, H.,
+  Williamson, J.~R., Fredrick, K., Wang, Y.-P., and Hwa, T. (2016).
+\newblock {Reduction of translating ribosomes enables Escherichia coli to
+  maintain elongation rates during slow growth}.
+\newblock {\em Nature Microbiology}, 2(2):16231.
+
+\bibitem[Schaechter et~al., 1958]{schaechter1958}
+Schaechter, M., Maal{\O}e, O., and Kjeldgaard, N.~O. (1958).
+\newblock {Dependency on Medium and Temperature of Cell Size and Chemical
+  Composition during Balanced Growth of Salmonella typhimurium}.
+\newblock {\em Microbiology}, 19(3):592--606.
+
+\bibitem[Scott et~al., 2010]{scott2010}
+Scott, M., Gunderson, C.~W., Mateescu, E.~M., Zhang, Z., and Hwa, T. (2010).
+\newblock {Interdependence of cell growth and gene expression: origins and
+  consequences. - PubMed - NCBI}.
+\newblock {\em Science}, 330(6007):1099--1102.
+
+\bibitem[Si et~al., 2017]{si2017}
+Si, F., Li, D., Cox, S.~E., Sauls, J.~T., Azizi, O., Sou, C., Schwartz, A.~B.,
+  Erickstad, M.~J., Jun, Y., Li, X., and Jun, S. (2017).
+\newblock {Invariance of Initiation Mass and Predictability of Cell Size in
+  Escherichia coli}.
+\newblock {\em Current Biology}, 27(9):1278--1287.
+
+\bibitem[Taheri-Araghi et~al., 2015]{taheriaraghi2015}
+Taheri-Araghi, S., Bradde, S., Sauls, J.~T., Hill, N.~S., Levin, P.~A.,
+  Paulsson, J., Vergassola, M., and Jun, S. (2015).
+\newblock {Cell-size control and homeostasis in bacteria}.
+\newblock {\em Current Biology}, 25(3):385--391.
+
+\bibitem[Volkmer and Heinemann, 2011]{Volkmer2011}
+Volkmer, B. and Heinemann, M. (2011).
+\newblock {Condition-Dependent Cell Volume and Concentration of Escherichia
+  coli to Facilitate Data Conversion for Systems Biology Modeling}.
+\newblock {\em PLOS ONE}, 6(7):e23126.
+
+\bibitem[You et~al., 2013]{You2013}
+You, C., Okano, H., Hui, S., Zhang, Z., Kim, M., Gunderson, C.~W., Wang, Y.-P.,
+  Lenz, P., Yan, D., and Hwa, T. (2013).
+\newblock {Coordination of bacterial proteome with metabolism by cyclic AMP
+  signalling}.
+\newblock {\em Nature}, 500(7462):301--306.
+
+\end{thebibliography}

@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: eLife_draft.aux
+The style file: apalike.bst
+Database file #1: library.bib.bib
+Repeated entry---line 161 of file library.bib.bib
+ : @article{schaechter1958
+ :                        ,
+I'm skipping whatever remains of this entry
+You've used 45 entries,
+            1935 wiz_defined-function locations,
+            766 strings with 14822 characters,
+and the built_in function-call counts, 21852 in all, are:
+= -- 2060
+> -- 1244
+< -- 9
++ -- 459
+- -- 444
+* -- 2155
+:= -- 3839
+add.period$ -- 137
+call.type$ -- 45
+change.case$ -- 446
+chr.to.int$ -- 44
+cite$ -- 45
+duplicate$ -- 628
+empty$ -- 1339
+format.name$ -- 503
+if$ -- 4106
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 46
+newline$ -- 230
+num.names$ -- 135
+pop$ -- 353
+preamble$ -- 1
+purify$ -- 447
+quote$ -- 0
+skip$ -- 459
+stack$ -- 0
+substring$ -- 1608
+swap$ -- 46
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 268
+warning$ -- 0
+while$ -- 163
+width$ -- 0
+write$ -- 590
+(There was 1 error message)

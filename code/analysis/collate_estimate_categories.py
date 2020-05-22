@@ -4,7 +4,8 @@ import tqdm
 
 # Load  the necessary datasets. 
 data = pd.read_csv('../../data/compiled_annotated_complexes.csv', comment='#')
-_data = pd.read_csv('../../data/compiled_absolute_measurements.csv', comment='#')
+data.dropna(subset=['n_units'], inplace=True)
+# _data = pd.read_csv('../../data/compiled_absolute_measurements.csv', comment='#')
 # define necessary complexes. 
 complexes = {'dnap': {'name': 'DNA polymerase III (holo enzyme)', 
                        'complexes': ['CPLX0-3803'],
@@ -19,7 +20,9 @@ complexes = {'dnap': {'name': 'DNA polymerase III (holo enzyme)',
                        'method':'sum',
                        'category':'synthesis'},
             'dntp': {'name': 'Ribonucleoside-diphosphate reductase (I)',
-                     'complexes': ['RIBONUCLEOSIDE-DIP-REDUCTI-CPLX'],
+                     'complexes': ['RIBONUCLEOSIDE-DIP-REDUCTI-CPLX',
+                                   'RIBONUCLEOSIDE-DIP-REDUCTII-CPLX',
+                                   'NRDACTMULTI-CPLX'],
                      'rate_per_sec': 10,
                      'units': 'dNTP/s' ,
                      'method': 'sum',

@@ -22,6 +22,7 @@ DENSITY = 1.1 # in pg per fL
 PROT_FRAC = 0.15 # Fraction of dry mass that is protein
 AVG_PROT_MASS = 30E3 / (6E23 * 1E-12) # average protein mass in pg
 AVG_PROT_LENGTH = 300 # in Amino Acids
+AVG_AA_MASS = 110 / (6E23 * 1E-12)
 TRANSLATION_RATE = 17.1 # in AA per sec
 volume =  0.28 * np.exp(1.33  * growth_rate) # From Si et al. 2017
 a = -0.89
@@ -31,8 +32,8 @@ active_frac = a*np.exp(-c*growth_rate)+d
 
 
 # Compute the predicted scaling. 
-prediction = (DENSITY * volume * PROT_FRAC * AVG_PROT_LENGTH) /\
-             (AVG_PROT_MASS * active_frac * TRANSLATION_RATE * t_double)
+prediction = (DENSITY * volume * PROT_FRAC) /\
+             (AVG_AA_MASS * active_frac * TRANSLATION_RATE * t_double)
 
 
 

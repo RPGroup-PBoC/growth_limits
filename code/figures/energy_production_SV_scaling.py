@@ -147,7 +147,6 @@ box.x0 = box.x0 + 0.045
 box.x1 = box.x1 + 0.045
 ax[1].set_position(box)
 
-
 plt.tight_layout()
 plt.savefig('../../figures/energy_estimate__SV_scaling_plots.pdf')
 # %%

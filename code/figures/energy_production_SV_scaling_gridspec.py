@@ -12,14 +12,14 @@ prot.viz.plotting_style()
 # plot configuration
 fig = plt.figure(constrained_layout=True)
 widths = [6, 1, 7]
-heights = [2.5, 0.5, 1, 0.5]
+heights = [2, 1, 1, 0.25]
 spec = fig.add_gridspec(ncols=3, nrows=4, width_ratios=widths,
                           height_ratios=heights)
 
 ax1 = fig.add_subplot(spec[0, 0])
 ax2 = fig.add_subplot(spec[0, 1])
 ax3 = fig.add_subplot(spec[2:, :2])
-ax4 = fig.add_subplot(spec[:3, 2])
+ax4 = fig.add_subplot(spec[:2, 2])
 
 
 def rod_SA(l,w, V):
@@ -239,7 +239,7 @@ for c,d in data_membrane_.groupby(['dataset', 'condition',
                                             ignore_index=True)
 
 data_membrane__['rel_fg_per_cell'] = data_membrane__.groupby('condition').transform(lambda x: (x / x.sum()))['fg_per_cell']
-data_membrane__ = data_membrane__.sort_values(by=['growth_rate_hr', 'gene_name'], ascending = True)
+data_membrane__ = data_membrane__.sort_values(by=['growth_rate_hr', 'gene_name'], ascending = False)
 
 df = data_membrane__
 
@@ -300,4 +300,4 @@ ax4_twin.xaxis.set_tick_params(labelsize=5)
 ax4_twin.yaxis.set_tick_params(labelsize=5)
 
 
-fig.savefig('../../figures/energy_estimate__SV_scaling_plots_gridspec.pdf')
+fig.savefig('../../figures/energy_estimate_SV_scaling_plots_gridspec.pdf')

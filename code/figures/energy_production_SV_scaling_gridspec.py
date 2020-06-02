@@ -8,19 +8,6 @@ dataset_colors = {'li_2014':colors['purple'], 'schmidt_2016':colors['light_blue'
                    'peebo_2015':colors['green'], 'valgepea_2013':colors['red']}
 prot.viz.plotting_style()
 
-# %%
-# plot configuration
-fig = plt.figure(constrained_layout=True)
-widths = [6, 1, 7]
-heights = [2, 1, 1, 0.25]
-spec = fig.add_gridspec(ncols=3, nrows=4, width_ratios=widths,
-                          height_ratios=heights)
-
-ax1 = fig.add_subplot(spec[0, 0])
-ax2 = fig.add_subplot(spec[0, 1])
-ax3 = fig.add_subplot(spec[2:, :2])
-ax4 = fig.add_subplot(spec[:2, 2])
-
 
 def rod_SA(l,w, V):
     asp_ratio = l/w
@@ -50,6 +37,23 @@ def lambda2SV(x):
 def SV2lambda(x):
     a, c, d = 14.57246783,  0.38603366, -0.80393099
     return a*np.exp(-c*x)+d
+
+
+# %%
+######################
+# plot configuration #
+######################
+fig = plt.figure(constrained_layout=True)
+widths = [6, 1, 7]
+heights = [2, 1, 1, 0.25]
+spec = fig.add_gridspec(ncols=3, nrows=4, width_ratios=widths,
+                          height_ratios=heights)
+
+ax1 = fig.add_subplot(spec[0, 0])
+ax2 = fig.add_subplot(spec[0, 1])
+ax3 = fig.add_subplot(spec[2:, :2])
+ax4 = fig.add_subplot(spec[:2, 2])
+
 
 # Parameters and calculations #
 ###############################
@@ -89,15 +93,12 @@ SA_V_ratio_rod_ = SA_/V_rod
 Ps_um_resp = ((3)/ (1E-6))
 Ps_resp_ = Ps_um_resp * SA_ * 0.5
 
-###############################
-###############################
-
-#
-#
 
 # %%
-# Plot 1, S/V scaling
-# plot the demand
+######################
+# Plot 1, S/V scaling #
+######################
+
 ax1.plot(Pv, SA_V_ratio_rod, color=colors['dark_green'], label='rod',
            alpha=0.9, lw = 0.5, ls = '-.')
 ax1.plot(Pv, SA_V_ratio_sphere, color=colors['dark_green'], label='sphere',
@@ -121,7 +122,7 @@ ax1.fill_between(Ps_resp_, y1 = SA_V_ratio_sphere_, y2 = SA_V_ratio_rod_,
 # ax[0].plot(Ps_ferm_sphere, SA_V_ratio_sphere, color=colors['red'],
 #             label='sphere', alpha=0.4)
 
-#%
+
 # # Populate second plot with growth rates
 # S/V for E. coli datasets
 # Load the data set
@@ -162,7 +163,9 @@ ax2.yaxis.set_tick_params(labelsize=5)
 
 
 # %%
+######################
 # Plot 2
+######################
 # total fg per cell of inner membrane proteins, GO:0005886
 data_membrane = data[data.go_terms.str.contains('GO:0005886')]
 
@@ -173,7 +176,6 @@ for c, d in data_membrane.groupby(['dataset', 'condition', 'growth_rate_hr']):
 
     V = 0.28 * np.exp(1.33 * c[2])
     SA = 2 * np.pi *  V**(2/3)
-    # SA = lambda2SV(c[2])
     fg_tot = d_.fg_per_cell.sum()
     fg_SA = fg_tot / SA
 
@@ -186,7 +188,6 @@ for c, d in data_membrane.groupby(['dataset', 'condition', 'growth_rate_hr']):
             ignore_index = True)
 
 for g, d in data_membrane_fg_summary.groupby(['dataset', 'condition', 'growth_rate_hr']):
-    # SV = lambda2SV(g[2])
     ax3.plot(g[2], d['fg per um2'], 'o', color=dataset_colors[g[0]],
                     alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
                     label = g[0], ms=4, zorder=10)
@@ -196,20 +197,18 @@ ax3.set_ylabel('[fg per $\mu m^2$]', fontsize=6)
 ax3.xaxis.set_tick_params(labelsize=5)
 ax3.yaxis.set_tick_params(labelsize=5)
 
-# ax3.legend(loc= 'lower center', bbox_to_anchor=(0.5, 0.0))
-
-
 
 # %%
+######################
 # Plot 3
+######################
 # Plot distribution of inner membrane proteins, GO:0005886
 # Load the complex subunit counts.
 subunits = pd.read_csv('../../data/compiled_annotated_complexes.csv')
 complex_energy = ['NADH-DHI-CPLX', 'CPLX0-8160', 'CYT-O-UBIOX-CPLX', 'CYT-D-UBIOX-CPLX', 'ATPSYN-CPLX']
 
-
-data_membrane_ = data_membrane[data_membrane.dataset == 'schmidt_2016']
-data_membrane_ = data_membrane_[data_membrane_.gene_name != 'tufA']
+df_mem = data_membrane[data_membrane.dataset == 'schmidt_2016']
+df_mem = df_mem[df_mem.gene_name != 'tufA']
 
 genes_respiration = []
 for c, d in subunits.groupby('complex'):
@@ -219,14 +218,14 @@ for c, d in subunits.groupby('complex'):
 
 genes_carbon = subunits[subunits.go_terms.str.contains('GO:0008643')].gene_name.unique()
 
-data_membrane_ = data_membrane_.replace(genes_respiration, 'respiration')
-data_membrane_ = data_membrane_.replace(genes_carbon, 'carbon_uptake')
+df_mem = df_mem.replace(genes_respiration, 'respiration')
+df_mem = df_mem.replace(genes_carbon, 'carbon_uptake')
 
-data_membrane_ = data_membrane_.replace('Not Assigned', 'poorly characterized or not assigned')
-data_membrane_ = data_membrane_.replace('poorly characterized', 'poorly characterized or not assigned')
+df_mem = df_mem.replace('Not Assigned', 'poorly characterized or not assigned')
+df_mem = df_mem.replace('poorly characterized', 'poorly characterized or not assigned')
 
-data_membrane__ = pd.DataFrame()
-for c,d in data_membrane_.groupby(['dataset', 'condition',
+df_mem_ = pd.DataFrame()
+for c,d in df_mem.groupby(['dataset', 'condition',
                                    'growth_rate_hr', 'gene_name']):
     data_list = {'gene_name' : d.gene_name.unique()[0] ,
                  'cog_class' : d.cog_class.unique()[0] ,
@@ -235,27 +234,24 @@ for c,d in data_membrane_.groupby(['dataset', 'condition',
                  'dataset_name' : d.dataset_name.unique()[0] ,
                  'fg_per_cell' : d.fg_per_cell.sum(),
                 'growth_rate_hr' :  d.growth_rate_hr.unique()[0]}
-    data_membrane__ = data_membrane__.append(data_list,
+    df_mem_ = df_mem_.append(data_list,
                                             ignore_index=True)
 
-data_membrane__['rel_fg_per_cell'] = data_membrane__.groupby('condition').transform(lambda x: (x / x.sum()))['fg_per_cell']
-data_membrane__ = data_membrane__.sort_values(by=['growth_rate_hr', 'gene_name'], ascending = False)
+df_mem_['rel_fg_per_cell'] = df_mem_.groupby('condition').transform(lambda x: (x / x.sum()))['fg_per_cell']
+df_mem_ = df_mem_.sort_values(by=['growth_rate_hr', 'gene_name'], ascending = False)
 
-df = data_membrane__
-
-y_order = dict(zip(df.condition.unique(), np.arange(len(df.condition.unique()))))
+y_order = dict(zip(df_mem_.condition.unique(), np.arange(len(df_mem_.condition.unique()))))
 cog_class_order = ['metabolism',
                 'cellular processes and signaling',
                 'information storage and processing',
                 'poorly characterized or not assigned']
 order_dict = dict(zip(cog_class_order,
                 np.arange(4)))
-
 color_dict = dict(zip(cog_class_order,
                     ['', '#C8715B', '#A587AA', '#788FBD']))
 
 
-for c, d in df.groupby('condition', sort=False):
+for c, d in df_mem_.groupby('condition', sort=False):
     for c_ in cog_class_order:
         if c_ == 'metabolism':
             resp = d[d.gene_name == 'respiration']

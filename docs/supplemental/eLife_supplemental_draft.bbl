@@ -13,6 +13,19 @@ Dai, X., Zhu, M., Warren, M., Balakrishnan, R., Patsalo, V., Okano, H.,
   maintain elongation rates during slow growth}.
 \newblock {\em Nature Microbiology}, 2(2):16231.
 
+\bibitem[Datsenko and Wanner, 2000]{datsenko2000}
+Datsenko, K.~A. and Wanner, B.~L. (2000).
+\newblock {One-step inactivation of chromosomal genes in Escherichia coli K-12
+  using PCR products}.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  97(12):6640--6645.
+
+\bibitem[Ojkic et~al., 2019]{ojkic2019}
+Ojkic, N., Serbanescu, D., and Banerjee, S. (2019).
+\newblock {Surface-to-volume scaling and aspect ratio preservation in
+  rod-shaped bacteria}.
+\newblock {\em eLife}, 8:642.
+
 \bibitem[Schaechter et~al., 1958]{schaechter1958}
 Schaechter, M., Maal{\O}e, O., and Kjeldgaard, N.~O. (1958).
 \newblock {Dependency on Medium and Temperature of Cell Size and Chemical

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 JUN 2020 11:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 JUN 2020 12:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2224,13 +2224,6 @@ Package pdftex.def Info: SI_figs/schmidt_protein_estimate_basan.pdf used on inp
 ut line 223.
 (pdftex.def)             Requested size: 203.2949pt x 185.77945pt.
 ) (./section_04_cell_size.tex
-<SI_figs/final_cell_size_Si.pdf, id=638, 912.40875pt x 253.94875pt>
-File: SI_figs/final_cell_size_Si.pdf Graphic file (type pdf)
-
-<use SI_figs/final_cell_size_Si.pdf>
-Package pdftex.def Info: SI_figs/final_cell_size_Si.pdf used on input line 7.
-(pdftex.def)             Requested size: 406.58981pt x 113.16376pt.
-) (./eLife_supplemental_draft.bbl
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
@@ -2241,38 +2234,45 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  []
 
 [5 <./SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf>]
+<SI_figs/final_cell_size_Si.pdf, id=1146, 912.40875pt x 253.94875pt>
+File: SI_figs/final_cell_size_Si.pdf Graphic file (type pdf)
+
+<use SI_figs/final_cell_size_Si.pdf>
+Package pdftex.def Info: SI_figs/final_cell_size_Si.pdf used on input line 29.
+(pdftex.def)             Requested size: 406.58981pt x 113.16376pt.
+) (./eLife_supplemental_draft.bbl
+Overfull \vbox (0.51051pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[6 <./SI_figs/schmidt_protein_estimate_basan.pdf> <./SI_figs/final_cell_size_Si
-.pdf
+[6 <./SI_figs/schmidt_protein_estimate_basan.pdf>])
 
-pdfTeX warning: pdflatex (file ./SI_figs/final_cell_size_Si.pdf): PDF inclusion
-: multiple pdfs with page group included in a single page
->]) 
 AED: lastpage setting LastPage
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[7] (./eLife_supplemental_draft.suppinfo)
+[7 <./SI_figs/final_cell_size_Si.pdf>] (./eLife_supplemental_draft.suppinfo)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
- (./eLife_supplemental_draft.aux)
+
+(./eLife_supplemental_draft.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 62.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 62.
 Package rerunfilecheck Info: File `eLife_supplemental_draft.out' has not change
 d.
-(rerunfilecheck)             Checksum: D7571C446673AF8200D1A1466BA04FB4;644.
+(rerunfilecheck)             Checksum: B0A2CCD8E3AC73DC5D5A2A4D79122BFE;662.
  ) 
 Here is how much of TeX's memory you used:
- 27514 strings out of 492995
- 502411 string characters out of 6132704
- 722153 words of memory out of 5000000
- 30128 multiletter control sequences out of 15000+600000
- 731640 words of font info for 570 fonts, out of 8000000 for 9000
+ 27540 strings out of 492995
+ 502937 string characters out of 6132704
+ 721227 words of memory out of 5000000
+ 30134 multiletter control sequences out of 15000+600000
+ 733185 words of font info for 585 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,15n,55p,10439b,925s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-02.enc}
@@ -2287,10 +2287,10 @@ Sans-Regular.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/st
 ix-mathit.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-
 mathrm.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mat
 hscr.pfb>
-Output written on eLife_supplemental_draft.pdf (7 pages, 824058 bytes).
+Output written on eLife_supplemental_draft.pdf (7 pages, 828620 bytes).
 PDF statistics:
- 1761 PDF objects out of 2073 (max. 8388607)
- 970 compressed objects within 10 object streams
- 31 named destinations out of 1000 (max. 500000)
+ 1773 PDF objects out of 2073 (max. 8388607)
+ 982 compressed objects within 10 object streams
+ 33 named destinations out of 1000 (max. 500000)
  69714 words of extra memory for PDF output out of 74296 (max. 10000000)
 

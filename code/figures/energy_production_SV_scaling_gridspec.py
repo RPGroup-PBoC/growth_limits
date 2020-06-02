@@ -8,6 +8,19 @@ dataset_colors = {'li_2014':colors['purple'], 'schmidt_2016':colors['light_blue'
                    'peebo_2015':colors['green'], 'valgepea_2013':colors['red']}
 prot.viz.plotting_style()
 
+# %%
+# plot configuration
+fig = plt.figure(constrained_layout=True)
+widths = [6, 1, 7]
+heights = [2.5, 0.5, 1, 0.5]
+spec = fig.add_gridspec(ncols=3, nrows=4, width_ratios=widths,
+                          height_ratios=heights)
+
+ax1 = fig.add_subplot(spec[0, 0])
+ax2 = fig.add_subplot(spec[0, 1])
+ax3 = fig.add_subplot(spec[2:, :2])
+ax4 = fig.add_subplot(spec[:3, 2])
+
 
 def rod_SA(l,w, V):
     asp_ratio = l/w
@@ -37,7 +50,6 @@ def lambda2SV(x):
 def SV2lambda(x):
     a, c, d = 14.57246783,  0.38603366, -0.80393099
     return a*np.exp(-c*x)+d
-
 
 # Parameters and calculations #
 ###############################
@@ -80,26 +92,27 @@ Ps_resp_ = Ps_um_resp * SA_ * 0.5
 ###############################
 ###############################
 
-# %%
-fig, ax = plt.subplots(1, 2, figsize=(3, 2),
-        gridspec_kw={'width_ratios': [6, 1]})#}, sharey='all')
+#
+#
 
+# %%
+# Plot 1, S/V scaling
 # plot the demand
-ax[0].plot(Pv, SA_V_ratio_rod, color=colors['dark_green'], label='rod',
+ax1.plot(Pv, SA_V_ratio_rod, color=colors['dark_green'], label='rod',
            alpha=0.9, lw = 0.5, ls = '-.')
-ax[0].plot(Pv, SA_V_ratio_sphere, color=colors['dark_green'], label='sphere',
+ax1.plot(Pv, SA_V_ratio_sphere, color=colors['dark_green'], label='sphere',
            alpha=0.9, lw = 0.5, ls = '--')
 
-ax[0].fill_between(Pv, y1 = SA_V_ratio_sphere, y2=SA_V_ratio_rod,
+ax1.fill_between(Pv, y1 = SA_V_ratio_sphere, y2=SA_V_ratio_rod,
         color=colors['dark_green'],alpha=0.2, lw = 0)
 
 # plot the max for respiration
-ax[0].plot(Ps_resp_rod, SA_V_ratio_rod, color=colors['blue'],
+ax1.plot(Ps_resp_rod, SA_V_ratio_rod, color=colors['blue'],
             label='rod', alpha=0.9, lw = 0.5, ls = '-.')
-ax[0].plot(Ps_resp_sphere, SA_V_ratio_sphere, color=colors['blue'],
+ax1.plot(Ps_resp_sphere, SA_V_ratio_sphere, color=colors['blue'],
             label='sphere', alpha=0.9, lw = 0.5, ls = '--')
 
-ax[0].fill_between(Ps_resp_, y1 = SA_V_ratio_sphere_, y2 = SA_V_ratio_rod_,
+ax1.fill_between(Ps_resp_, y1 = SA_V_ratio_sphere_, y2 = SA_V_ratio_rod_,
         color=colors['blue'],alpha=0.2, lw = 0)
 
 # # plot the max for fermentation
@@ -116,43 +129,41 @@ data = pd.read_csv('../../data/compiled_absolute_measurements.csv')
 
 for g, d in data.groupby(['dataset', 'condition', 'growth_rate_hr']):
     SV = lambda2SV(g[2])
-    ax[1].plot(1, SV, 'o', color=dataset_colors[g[0]],
+    ax2.plot(1, SV, 'o', color=dataset_colors[g[0]],
                     alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
                     label = g[2], ms=4, zorder=10)
 
 # Format the axes
-for a in ax:
+for a in [ax1,ax2]:
     a.xaxis.set_tick_params(labelsize=5)
     a.yaxis.set_tick_params(labelsize=5)
     a.set_xscale('log')
     a.set_ylim([1.5, 8.0])
     # a.legend(fontsize=5, loc='lower right')
 
-ax[0].set_xlim([np.min(Pv), np.max(Ps_resp_)])
-ax[0].set_xlabel('ATP equivalents per s', fontsize=6)
-ax[0].set_ylabel('S/V ratio [$\mu$m]', fontsize=6)
+ax1.set_xlim([np.min(Pv), np.max(Ps_resp_)])
+ax1.set_xlabel('ATP equivalents per s', fontsize=6)
+ax1.set_ylabel('S/V ratio [$\mu$m]', fontsize=6)
 
-ax[1].xaxis.set_ticks([])
-ax[1].set_yticks(lambda2SV(np.array([0,0.5,1,2])))
-ax[1].set_yticklabels(np.array([0,0.5,1,2]))
-ax[1].yaxis.set_label_position("right")
-ax[1].yaxis.tick_right()
-ax[1].set_ylabel('measured growth rate [hr$^{-1}$]', fontsize=6)
-ax[1].xaxis.set_tick_params(labelsize=5)
-ax[1].yaxis.set_tick_params(labelsize=5)
+ax2.xaxis.set_ticks([])
+ax2.set_yticks(lambda2SV(np.array([0,0.5,1,2])))
+ax2.set_yticklabels(np.array([0,0.5,1,2]))
+ax2.yaxis.set_label_position("right")
+ax2.yaxis.tick_right()
+ax2.set_ylabel('growth rate [hr$^{-1}$]', fontsize=6)
+ax2.xaxis.set_tick_params(labelsize=5)
+ax2.yaxis.set_tick_params(labelsize=5)
 
-# move second plot closer
-box = ax[1].get_position()
-box.x0 = box.x0 + 0.045
-box.x1 = box.x1 + 0.045
-ax[1].set_position(box)
+# # move second plot closer
+# box = ax2.get_position()
+# box.x0 = box.x0 + 0.045
+# box.x1 = box.x1 + 0.045
+# ax2.set_position(box)
 
-plt.tight_layout()
-plt.savefig('../../figures/energy_estimate__SV_scaling_plots.pdf')
+
 # %%
-
-#%%
-# Plot total fg per cell of inner membrane proteins, GO:0005886
+# Plot 2
+# total fg per cell of inner membrane proteins, GO:0005886
 data_membrane = data[data.go_terms.str.contains('GO:0005886')]
 
 data_membrane_fg_summary = pd.DataFrame()
@@ -174,24 +185,23 @@ for c, d in data_membrane.groupby(['dataset', 'condition', 'growth_rate_hr']):
             data_membrane_fg_summary.append(data_list,
             ignore_index = True)
 
-fig2, ax2 = plt.subplots(1, 1, figsize=(3, 1))
-
 for g, d in data_membrane_fg_summary.groupby(['dataset', 'condition', 'growth_rate_hr']):
     # SV = lambda2SV(g[2])
-    ax2.plot(g[2], d['fg per um2'], 'o', color=dataset_colors[g[0]],
+    ax3.plot(g[2], d['fg per um2'], 'o', color=dataset_colors[g[0]],
                     alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
-                    label = g[2], ms=4, zorder=10)
-ax2.set_ylim(0,10)
-ax2.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
-ax2.set_ylabel('[fg per $\mu m^2$]', fontsize=6)
-ax2.xaxis.set_tick_params(labelsize=5)
-ax2.yaxis.set_tick_params(labelsize=5)
+                    label = g[0], ms=4, zorder=10)
+ax3.set_ylim(0,10)
+ax3.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
+ax3.set_ylabel('[fg per $\mu m^2$]', fontsize=6)
+ax3.xaxis.set_tick_params(labelsize=5)
+ax3.yaxis.set_tick_params(labelsize=5)
 
-plt.tight_layout()
-fig2.savefig('../../figures/energy_estimate_protein_per_um.pdf')
+# ax3.legend(loc= 'lower center', bbox_to_anchor=(0.5, 0.0))
 
 
-#%%
+
+# %%
+# Plot 3
 # Plot distribution of inner membrane proteins, GO:0005886
 # Load the complex subunit counts.
 subunits = pd.read_csv('../../data/compiled_annotated_complexes.csv')
@@ -231,7 +241,6 @@ for c,d in data_membrane_.groupby(['dataset', 'condition',
 data_membrane__['rel_fg_per_cell'] = data_membrane__.groupby('condition').transform(lambda x: (x / x.sum()))['fg_per_cell']
 data_membrane__ = data_membrane__.sort_values(by=['growth_rate_hr', 'gene_name'], ascending = True)
 
-fig3, ax3 = plt.subplots(1, 1, figsize=(5, 5))
 df = data_membrane__
 
 y_order = dict(zip(df.condition.unique(), np.arange(len(df.condition.unique()))))
@@ -250,12 +259,12 @@ for c, d in df.groupby('condition', sort=False):
     for c_ in cog_class_order:
         if c_ == 'metabolism':
             resp = d[d.gene_name == 'respiration']
-            ax3.barh(y_order[c], resp.rel_fg_per_cell, height=0.9, color='#84A779', alpha=0.3,
+            ax4.barh(y_order[c], resp.rel_fg_per_cell, height=0.9, color='#84A779', alpha=0.3,
                         linewidth=0.1)
 
             c_uptake = d[d.gene_name == 'carbon_uptake']
             lefts = resp.rel_fg_per_cell.sum()
-            ax3.barh(y_order[c], c_uptake.rel_fg_per_cell.sum(),  height=0.9, color='#84A779', alpha=0.7,
+            ax4.barh(y_order[c], c_uptake.rel_fg_per_cell.sum(),  height=0.9, color='#84A779', alpha=0.7,
                             left=lefts, linewidth=0.1)
 
             # lefts = d[d.gene_name == 'respiration']
@@ -263,32 +272,32 @@ for c, d in df.groupby('condition', sort=False):
             meta = d[d.gene_name != 'respiration'].copy()
             meta = meta[meta.gene_name !='carbon_uptake'].copy()
 
-            ax3.barh(y_order[c], meta.rel_fg_per_cell.sum(), height=0.9, color='#84A779',
+            ax4.barh(y_order[c], meta.rel_fg_per_cell.sum(), height=0.9, color='#84A779',
                             left=lefts,  linewidth=0.1)
 
             lefts += meta[meta.cog_class == c_].rel_fg_per_cell.sum()
 
         else:
-            ax3.barh(y_order[c], d[d.cog_class == c_].rel_fg_per_cell.sum(), height=0.9,
+            ax4.barh(y_order[c], d[d.cog_class == c_].rel_fg_per_cell.sum(), height=0.9,
                         color=color_dict[c_], left=lefts, linewidth=0.1)
             lefts += d[d.cog_class == c_].rel_fg_per_cell.sum()
 
-
-
-
-
-ax3.set_xlim(0,1)
-ax3.set_ylim(0,len(df.condition.unique()))
-ax3.set_yticks(np.arange(len(df.condition.unique())))
-ax3.set_yticklabels(df.condition.unique())
-ax3.set_xlabel('relative plasma membrane abundance (GO term : 0005886)')
+ax4.set_xlim(0,1)
+ax4.set_ylim(0,len(df.condition.unique()))
+ax4.set_yticks(np.arange(len(df.condition.unique()))-0.5)
+ax4.set_yticklabels(df.condition.unique())
+ax4.set_xlabel('relative plasma membrane abundance (GO term : 0005886)', fontsize=6)
+ax4.xaxis.set_tick_params(labelsize=5)
+ax4.yaxis.set_tick_params(labelsize=5)
 
 growth_rates_list = [d.growth_rate_hr.unique()[0] for c, d in df.groupby('condition', sort=False)]
-ax3_twin = ax3.twinx()
-ax3_twin.set_yticks(np.arange(len(growth_rates_list)))
-ax3_twin.set_yticklabels(growth_rates_list)
-ax3_twin.set_ylabel('growth rate [hr$^{-1}$]')
-ax3_twin.set_ylim(0,len(df.condition.unique()))
+ax4_twin = ax4.twinx()
+ax4_twin.set_yticks(np.arange(len(growth_rates_list))-0.5)
+ax4_twin.set_yticklabels(growth_rates_list)
+ax4_twin.set_ylabel('growth rate [hr$^{-1}$]', fontsize=6)
+ax4_twin.set_ylim(0,len(df.condition.unique()))
+ax4_twin.xaxis.set_tick_params(labelsize=5)
+ax4_twin.yaxis.set_tick_params(labelsize=5)
 
-plt.tight_layout()
-fig3.savefig('../../figures/energy_estimate_protein_stack.pdf')
+
+fig.savefig('../../figures/energy_estimate__SV_scaling_plots_gridspec.pdf')

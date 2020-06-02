@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  16 MAY 2020 23:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 JUN 2020 11:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2162,21 +2162,24 @@ LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <7> not available
 (./section_01_data_sets.tex
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/fos/b/n' tried instead on input line 3.
+) (./section_02_data_sets_summary.tex)
+(./section_03_schmidt.tex
 LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/fos/b/it' tried instead on input line 114.
+(Font)              Font shape `T1/fos/b/it' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <9> not available
-(Font)              Font shape `T1/fos/b/it' tried instead on input line 126.
+(Font)              Font shape `T1/fos/b/it' tried instead on input line 13.
 
-<../../figures/supplemental_cell_volumes.pdf, id=38, 734.82832pt x 357.69034pt>
-File: ../../figures/supplemental_cell_volumes.pdf Graphic file (type pdf)
-<use ../../figures/supplemental_cell_volumes.pdf>
-Package pdftex.def Info: ../../figures/supplemental_cell_volumes.pdf used on in
-put line 147.
+<SI_figs/supplemental_cell_volumes.pdf, id=42, 734.82832pt x 357.69034pt>
+File: SI_figs/supplemental_cell_volumes.pdf Graphic file (type pdf)
+
+<use SI_figs/supplemental_cell_volumes.pdf>
+Package pdftex.def Info: SI_figs/supplemental_cell_volumes.pdf used on input li
+ne 34.
 (pdftex.def)             Requested size: 406.58981pt x 197.91464pt.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <8> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 156.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 43.
 LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <8> not available
-(Font)              Font shape `T1/fos/b/it' tried instead on input line 156.
+(Font)              Font shape `T1/fos/b/it' tried instead on input line 43.
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
@@ -2185,45 +2188,49 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-<../../figures/schmidt_protein_corrections.pdf, id=70, 698.61pt x 345.4496pt>
-File: ../../figures/schmidt_protein_corrections.pdf Graphic file (type pdf)
+<SI_figs/schmidt_protein_corrections.pdf, id=74, 698.61pt x 345.4496pt>
+File: SI_figs/schmidt_protein_corrections.pdf Graphic file (type pdf)
 
-<use ../../figures/schmidt_protein_corrections.pdf>
-Package pdftex.def Info: ../../figures/schmidt_protein_corrections.pdf used on 
-input line 186.
+<use SI_figs/schmidt_protein_corrections.pdf>
+Package pdftex.def Info: SI_figs/schmidt_protein_corrections.pdf used on input 
+line 73.
 (pdftex.def)             Requested size: 406.58981pt x 201.05142pt.
 LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <10> not available
-(Font)              Font shape `T1/fos/b/it' tried instead on input line 194.
+(Font)              Font shape `T1/fos/b/it' tried instead on input line 81.
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[2 <../../figures/supplemental_cell_volumes.pdf>]
+[2 <./SI_figs/supplemental_cell_volumes.pdf>]
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[3 <../../figures/schmidt_protein_corrections.pdf>]
-<../../figures/schmidt_estimate_protein_RNA_DNA_corrections.pdf, id=627, 683.85
-088pt x 616.4822pt>
-File: ../../figures/schmidt_estimate_protein_RNA_DNA_corrections.pdf Graphic fi
-le (type pdf)
-
-<use ../../figures/schmidt_estimate_protein_RNA_DNA_corrections.pdf>
-Package pdftex.def Info: ../../figures/schmidt_estimate_protein_RNA_DNA_correct
-ions.pdf used on input line 301.
+[3 <./SI_figs/schmidt_protein_corrections.pdf>]
+<SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf, id=631, 683.85088pt 
+x 616.4822pt>
+File: SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf Graphic file (ty
+pe pdf)
+ <use SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf>
+Package pdftex.def Info: SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.p
+df used on input line 188.
 (pdftex.def)             Requested size: 406.58981pt x 366.53395pt.
 
-<../../figures/schmidt_protein_estimate_basan.pdf, id=633, 387.73256pt x 354.32
-375pt>
-File: ../../figures/schmidt_protein_estimate_basan.pdf Graphic file (type pdf)
- <use ../../figures/schmidt_protein_estimate_basan.pdf>
-Package pdftex.def Info: ../../figures/schmidt_protein_estimate_basan.pdf used 
-on input line 336.
+<SI_figs/schmidt_protein_estimate_basan.pdf, id=637, 387.73256pt x 354.32375pt>
+File: SI_figs/schmidt_protein_estimate_basan.pdf Graphic file (type pdf)
+<use SI_figs/schmidt_protein_estimate_basan.pdf>
+Package pdftex.def Info: SI_figs/schmidt_protein_estimate_basan.pdf used on inp
+ut line 223.
 (pdftex.def)             Requested size: 203.2949pt x 185.77945pt.
-)
-(./eLife_supplemental_draft.bbl
+) (./section_04_cell_size.tex
+<SI_figs/final_cell_size_Si.pdf, id=638, 912.40875pt x 253.94875pt>
+File: SI_figs/final_cell_size_Si.pdf Graphic file (type pdf)
+
+<use SI_figs/final_cell_size_Si.pdf>
+Package pdftex.def Info: SI_figs/final_cell_size_Si.pdf used on input line 7.
+(pdftex.def)             Requested size: 406.58981pt x 113.16376pt.
+) (./eLife_supplemental_draft.bbl
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
@@ -2233,31 +2240,39 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[5 <../../figures/schmidt_estimate_protein_RNA_DNA_corrections.pdf>])
+[5 <./SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf>]
+Overfull \hbox (6.0pt too wide) has occurred while \output is active
+ [][][][][][][]| 
+ []
 
+[6 <./SI_figs/schmidt_protein_estimate_basan.pdf> <./SI_figs/final_cell_size_Si
+.pdf
+
+pdfTeX warning: pdflatex (file ./SI_figs/final_cell_size_Si.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
+>]) 
 AED: lastpage setting LastPage
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[6 <../../figures/schmidt_protein_estimate_basan.pdf>]
-(./eLife_supplemental_draft.suppinfo)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
+[7] (./eLife_supplemental_draft.suppinfo)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
  (./eLife_supplemental_draft.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 62.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 62.
 Package rerunfilecheck Info: File `eLife_supplemental_draft.out' has not change
 d.
-(rerunfilecheck)             Checksum: 4A6DF1BD86EB799B5E0ECE65F0BAB830;584.
+(rerunfilecheck)             Checksum: D7571C446673AF8200D1A1466BA04FB4;644.
  ) 
 Here is how much of TeX's memory you used:
- 27489 strings out of 492995
- 501927 string characters out of 6132704
- 720282 words of memory out of 5000000
- 30122 multiletter control sequences out of 15000+600000
- 731125 words of font info for 565 fonts, out of 8000000 for 9000
+ 27514 strings out of 492995
+ 502411 string characters out of 6132704
+ 722153 words of memory out of 5000000
+ 30128 multiletter control sequences out of 15000+600000
+ 731640 words of font info for 570 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,15n,55p,10439b,925s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-02.enc}
@@ -2272,10 +2287,10 @@ Sans-Regular.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/st
 ix-mathit.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-
 mathrm.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mat
 hscr.pfb>
-Output written on eLife_supplemental_draft.pdf (6 pages, 610044 bytes).
+Output written on eLife_supplemental_draft.pdf (7 pages, 824058 bytes).
 PDF statistics:
- 1240 PDF objects out of 1440 (max. 8388607)
- 700 compressed objects within 7 object streams
- 28 named destinations out of 1000 (max. 500000)
- 69701 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1761 PDF objects out of 2073 (max. 8388607)
+ 970 compressed objects within 10 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 69714 words of extra memory for PDF output out of 74296 (max. 10000000)
 

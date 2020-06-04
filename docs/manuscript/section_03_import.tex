@@ -1,33 +1,31 @@
 \section{Nutrient Transport}
-In order to build new cellular mass, the molecular and elemental building
-blocks must be scavenged from the environment in different forms. Carbon, for
-example, is acquired via the transport of carbohydrates and sugar alcohols
-with some carbon sources receiving preferential treatment in their
-consumption \citep{monod1947}. Phosphorus, sulfur, and nitrogen, on the other
-hand, are harvested primarily in the forms of inorganic salts, namely
-phosphate, sulfate, and ammonia \citep{jun2018, assentoft2016, stasi2019,
-antonenko1997, rosenberg1977, willsky1973}. All of these compounds have
-different permeabilities across the cell membrane and most require some
-energetic investment either via ATP hydrolysis or through the proton
-electrochemical gradient to bring the material across the hydrophobic cell
-membrane. Given the diversity of biological transport mechanisms and the vast
-number of inputs needed to build a cell, we begin by considering transport of
-elemental requirements as a possible rate-limiting step of bacterial cell
-division.
+In order to build new cellular mass, the molecular and elemental building blocks
+must be scavenged from the environment in different forms. Carbon, for example,
+is acquired via the transport of carbohydrates and sugar alcohols with some
+carbon sources receiving preferential treatment in their consumption
+\citep{monod1947}. Phosphorus, sulfur, and nitrogen, on the other hand, are
+harvested primarily in the forms of inorganic salts, namely phosphate, sulfate,
+and ammonia \citep{jun2018, assentoft2016, stasi2019, antonenko1997,
+rosenberg1977, willsky1973}. All of these compounds have different
+permeabilities across the cell membrane and most require some energetic
+investment either via ATP hydrolysis or through the proton electrochemical
+gradient to bring the material across the hydrophobic cell membrane. Given the
+diversity of biological transport mechanisms and the vast number of inputs
+needed to build a cell, we begin by considering transport of elemental
+requirements as a possible rate-limiting step of bacterial cell division.
 
 
 The elemental composition of \textit{E. coli} has received much quantitative
-attention over the past half century \citep{neidhardt1991,
-taymaz-nikerel2010, heldal1985, bauer1976}, providing us a starting point for
-estimating the copy numbers of various transporters. While there is some
-variability in the exact elemental percentages (with different
-uncertainties), we can estimate that the dry mass of a typical \textit{E.
-coli} cell is $\approx$ 45\% carbon (BNID: 100649, \cite{milo2010}),
-$\approx$ 15\% nitrogen (BNID: 106666, \cite{milo2010}), $\approx$ 3\%
-phosphorus (BNID: 100653, \cite{milo2010}), and 1\% sulfur (BNID: 100655,
-\cite{milo2010}). In the coming paragraphs, we will examine how many
-transporters and/or channels must be present to maintain these elemental
-compositions with a moderate doubling time of 6000 s.
+attention over the past half century \citep{neidhardt1991, taymaz-nikerel2010,
+heldal1985, bauer1976}, providing us with a starting point for estimating the
+copy numbers of various transporters. While there is some variability in the
+exact elemental percentages (with different uncertainties), we can estimate that
+the dry mass of a typical \textit{E. coli} cell is $\approx$ 45\% carbon (BNID:
+100649, \cite{milo2010}), $\approx$ 15\% nitrogen (BNID: 106666,
+\cite{milo2010}), $\approx$ 3\% phosphorus (BNID: 100653, \cite{milo2010}), and
+1\% sulfur (BNID: 100655, \cite{milo2010}). In the coming paragraphs, we will
+examine how many transporters and/or channels must be present to maintain these
+elemental compositions with a moderate doubling time of 6,000 s.
 
 \subsection{Carbon Transport}
 We begin with the most abundant element by mass, carbon. Using $\approx$ 0.3
@@ -44,14 +42,14 @@ diverse range of sugars \citep{escalante2012}. The glucose-specific component
 of this system transports $\approx$ 200 glucose molecules per second per
 channel (BNID: 114686, \cite{milo2010}). Making the assumption that this is a
 typical sugar transport rate, coupled with the need to transport 10$^{10}$
-carbon atoms, we arrive at the conclusion that on the order of 1000
+carbon atoms, we arrive at the conclusion that on the order of 1,000
 transporters must be expressed in order to bring in enough carbon atoms to
-divide in 6000 s, diagrammed in the top panel of \FIG{carbon_tport}(A). This
+divide in 6,000 s, diagrammed in the top panel of \FIG{carbon_tport}(A). This
 estimate, along with the observed average number of carbohydrate transporters
 present in the proteomic data sets \citep{schmidt2016,
 peebo2015,valgepea2013,li2014}, is shown in \FIG{carbon_tport}(A). While we
-estimate 1000 transporters are needed, the data reveals that at a division
-time of $\approx 6000$ s there is nearly a ten-fold excess of transporters.
+estimate 1,000 transporters are needed, the data reveals that at a division
+time of $\approx 6,000$ s there is nearly a ten-fold excess of transporters.
 Furthermore, the data illustrates that the average number of carbohydrate
 transporters present is largely-growth rate independent.
 
@@ -116,18 +114,29 @@ transporters become highly-expressed and are present on the order of $\sim
 examples of induced expression suggest that transport of carbon across the cell
 membrane, while critical for growth, is not the rate-limiting step of cell division.
 
+In the context of speeding up growth, one additional limitation  is the fact
+that the cell's inner membrane is occupied by a multitude of other required
+membrane proteins. Considering a rule-of-thumb for the surface area of
+\textit{E. coli} of about 6 $\mu m^2$ (BNID: 101792, \cite{milo2010}), we expect
+an areal density for 1,000 transporters to be approximately 200
+transporters/$\mu m^2$. For a glucose transporter occupying about 50
+nm$^2$/dimer, this amounts to about only 1 percent of the total inner membrane
+\citep{szenk2017}. In addition, bacterial cell membranes typically have
+densities of 10$^5$ proteins//$\mu m^2$ \citep{phillips2018}, implying that the
+cell could accommodate more transporters if it were rate limiting.
+
 \subsection{Phosphorus and Sulfur Transport}
 We now turn our attention towards other essential elements, namely phosphorus and
 sulfur. Phosphorus is critical to the cellular energy economy in the form of
-high-energy phosphodiester bonds making up DNA, RNA, and the XTP energy pool as
+high-energy phosphodiester bonds making up DNA, RNA, and the NTP energy pool as
 well as playing a critical role in the post-translational modification of
 proteins and defining the polar-heads of lipids. In total, phosphorus
 makes up $\approx$3\% of the cellular dry mass which in typical experimental conditions is in the form of inorganic phosphate. The cell membrane
 has remarkably low permeability to this highly-charged and critical molecule,
 therefore requiring the expression of active transport systems. In \textit{E. coli}, the proton
 electrochemical gradient across the inner membrane is leveraged to transport
-inorganic phosphate into the cell \cite{rosenberg1977}.
-Proton-solute symporters are widespread in \textit{E. coli} \cite{ramos1977,
+inorganic phosphate into the cell \citep{rosenberg1977}.
+Proton-solute symporters are widespread in \textit{E. coli} \citep{ramos1977,
 booth1979} and can have rapid transport rates of 50 molecules per second for
 sugars and other solutes (BNID: 103159; 111777, \cite{milo2010}). In \textit{E.
 coli} the PitA phosphate transport system has been shown to very tightly coupled
@@ -135,7 +144,7 @@ with the proton electrochemical gradient with a 1:1 proton:phosphate
 stoichiometric ratio \citep{harris2001, feist2007}. Illustrated in
 \FIG{phospho_sulfo_tport}(A), we can estimate that $\approx$ 300
 phosphate transporters are necessary to maintain an $\approx$ 3\% dry mass with
-a 6000 s division time. This estimate is again satisfied when we examine the
+a 6,000 s division time. This estimate is again satisfied when we examine the
 observed copy numbers of PitA in proteomic data sets (plot in
 \FIG{phospho_sulfo_tport}(A)). While our estimate is very much in line with the
 observed numbers, we emphasize that this is likely a slight over estimate of the
@@ -144,8 +153,8 @@ such as the ATP-dependent phosphate transporter Pst system which we have neglect
 
 Satisfied that there are a sufficient number of phosphate transporters
 present in the cell, we now turn sulfur transport as another potentially rate
-limiting process. Similar to phosphate, sulfate is highly-charged
-not particularly membrane permeable, requiring active
+limiting process. Similar to phosphate, sulfate is  highly-charged
+and not particularly membrane permeable, requiring active
 transport. While there exists a H+/sulfate symporter in \textit{E.
 coli}, it is in relatively low abundance and is not well characterized
 \citep{zhang2014}. Sulfate is predominantly acquired via the ATP-dependent ABC
@@ -154,7 +163,7 @@ transport \citep{sekowska2000, sirko1995}. While specific kinetic details of
 this transport system are not readily available, generic ATP transport
 systems in prokaryotes are on the order of 1 to 10 molecules per second
 (BNID: 109035, \cite{milo2010}). Combining this generic
-transport rate, measurement of sulfur comprising 1\% of dry mass, and a 6000
+transport rate, measurement of sulfur comprising 1\% of dry mass, and a 6,000
 second division time yields an estimate of $\approx$ 1000 CysUWA
 complexes per cell (\FIG{phospho_sulfo_tport}(B)). Once again, this estimate
 is in notable agreement with proteomic data sets, suggesting that there are

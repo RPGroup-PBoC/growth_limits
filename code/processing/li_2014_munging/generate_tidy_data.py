@@ -2,6 +2,7 @@
 import numpy as np
 import pandas as pd
 import tqdm
+import prot.size as size
 
 # From the SI of Li 2014, Cell, hard-code the growth rates.
 growth_rates = {'MOPS complete': np.log(2) / (21.5 / 60),
@@ -45,8 +46,8 @@ for g, d in tqdm.tqdm(synthesis_tidy.groupby('Gene'), desc='Iterating through ge
                     gene_dict = {
                         'gene_name': _g,
                         'condition': c,
-                        'tot_per_cell': split_factor**-1 * float(d[d['variable']==c]['value'].values[0]),
-                        'fg_per_cell': split_factor**-1 * float(d[d['variable']==c]['value'].values[0]) * mw,
+                        'reported_tot_per_cell': split_factor**-1 * float(d[d['variable']==c]['value'].values[0]),
+                        'reported_fg_per_cell': split_factor**-1 * float(d[d['variable']==c]['value'].values[0]) * mw,
                         'cog_class': cog_class,
                         'cog_category': cog_cat,
                         'cog_letter': cog_letter,
@@ -58,6 +59,21 @@ for g, d in tqdm.tqdm(synthesis_tidy.groupby('Gene'), desc='Iterating through ge
         else:
             print(f'Warning!! {g} not found in list.')
 df = pd.concat(dfs, sort=False)
+
+#%%
+# Iterate through the conditions and correct fg and tot_per_cell as necessary.
+for g in df['condition'].unique():
+    gr = df[df['condition'] == g]['growth_rate_hr'].unique()
+    rel_corr_fg = df[df['condition'] == g]['reported_fg_per_cell'].sum() / \
+            size.lambda2P(gr)
+
+    print(g, ': total mass fg: ', np.round(size.lambda2P(gr),2),
+            ' volume: ', np.round(size.lambda2size(gr),2),
+            ' relative change in total fg: ', np.round(1/rel_corr_fg,2))
+
+    df.loc[df['condition']==g, 'tot_per_cell'] = df.loc[df['condition']==g]['reported_tot_per_cell'] / rel_corr_fg
+    df.loc[df['condition']==g, 'fg_per_cell'] =  df.loc[df['condition']==g]['reported_fg_per_cell'] / rel_corr_fg
+
 #%%
 # Compute the mass per cell and include dataset notation.
 df['dataset'] = 'li_2014'

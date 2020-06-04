@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 import tqdm
+import prot.size as size
 
 # Load the data quantifying absolute protein synthesis rates.
 counts = pd.read_csv('../../../data/peebo2015_raw_data/peebo2014_copynums_minimal.csv')
@@ -34,8 +35,8 @@ for g, d in tqdm.tqdm(counts.groupby('gene'), desc="Iterating through genes...")
         mw = gene['mw_fg'].values[0]
         go_term = ';'.join(list(gene['go_terms'].unique()))
         for _c, _d in d.groupby(['growth_rate_hr-1']):
-            # volume prediction Si, F. et al. (2017), Current Biology, http://doi.org/10.1016/j.cub.2017.03.022
-            vol = 0.28 * np.exp(1.33  * _c)
+            # volume predictions based on MG1655 data, Si, F. et al. (2017, 2019)
+            vol = size.lambda2size(_c)
             # extract relevant information.
             gene_dict = {
                 'gene_name': g.lower(),
@@ -55,29 +56,54 @@ for g, d in tqdm.tqdm(counts.groupby('gene'), desc="Iterating through genes...")
     else:
         print(f'Warning!!! {g} not found in the gene list! Not including in final tally')
 
-#%%
-# Compute the mass per cell and include dataset notation.
 df = pd.concat(dfs, sort=False)
+
+#%%
+# Iterate through the conditions and correct fg and tot_per_cell as necessary.
+# for g in df['growth_rate_hr'].unique():
+#     gr = g
+#     rel_corr_fg = df[df['growth_rate_hr'] == g]['reported_fg_per_cell'].sum() / \
+#             size.lambda2P(gr)
+#
+#     print(g, ': total mass fg: ', size.lambda2P(gr),
+#             ' volume: ', size.lambda2size(gr),
+#             ' relative change in total fg: ', 1/rel_corr_fg)
+#
+#     df.loc[df['growth_rate_hr']==g, 'tot_per_cell'] = \
+#                     df.loc[df['growth_rate_hr']==g]['reported_tot_per_cell'] / rel_corr_fg
+#     df.loc[df['growth_rate_hr']==g, 'fg_per_cell'] =  \
+#                     df.loc[df['growth_rate_hr']==g]['reported_fg_per_cell'] / rel_corr_fg
+
+for g, d in df.groupby(['condition', 'growth_rate_hr']):
+    gr = g[1]
+    rel_corr_fg = df[(df['condition'] == g[0]) & \
+                    (df['growth_rate_hr'] == g[1])]['reported_fg_per_cell'].sum() / \
+            size.lambda2P(gr)
+
+    print(g, ': total mass fg: ', np.round(size.lambda2P(gr),2),
+            ' volume: ', np.round(size.lambda2size(gr),2),
+            ' relative change in total fg: ', np.round(1/rel_corr_fg, 2))
+
+    df.loc[(df['condition']==g[0]) &
+            (df['growth_rate_hr']==g[1]), 'tot_per_cell'] = df.loc[(df['condition']==g[0]) &
+                    (df['growth_rate_hr']==g[1])]['reported_tot_per_cell'] / rel_corr_fg
+    df.loc[(df['condition']==g[0]) &
+            (df['growth_rate_hr']==g[1]), 'fg_per_cell'] =  df.loc[(df['condition']==g[0]) &
+                    (df['growth_rate_hr']==g[1])]['reported_fg_per_cell'] / rel_corr_fg
+
+
+#%%
+# include dataset notation.
 df['dataset'] = 'peebo_2015'
 df['dataset_name'] = 'Peebo et al. 2015'
 df['strain'] = 'BW25113'
 
-##########################################
-# #%% Ignore section for now; try alternative correction below.
-# # Compute the volume corrections
-# _conditions = df.groupby(['growth_rate_hr', 'corrected_volume']).sum().reset_index()
-# _conditions['concentration'] = _conditions['reported_fg_per_cell'].values / _conditions['corrected_volume']
-# # Compute the relative concentration.
-# rel_conc = _conditions[_conditions['growth_rate_hr']==0.55]['concentration'].values[0]
-# _conditions['rel_conc_to_ref'] = _conditions['concentration'] / rel_conc
-#
-# #%% Update the counts.
-# for g, d in _conditions.groupby(['growth_rate_hr']):
-#     rel_conc = _conditions[_conditions['growth_rate_hr']==g]['rel_conc_to_ref'].values[0]
-#     df.loc[df['growth_rate_hr']==g, 'tot_per_cell'] = df.loc[df['growth_rate_hr']==g]['reported_tot_per_cell'] / rel_conc
-#     df.loc[df['growth_rate_hr']==g, 'fg_per_cell'] =  df.loc[df['growth_rate_hr']==g]['reported_fg_per_cell'] / rel_conc
-##########################################
+#%%
+df.to_csv('../../../data/peebo2015_longform_annotated.csv')
+# %%
 
+##########################################
+# #%% Ignore section for now; use correction above.
 #%%
 # The reported total fg/fL is lower than reported in Schmidt and Valgepea;
 # Schmidt and Valgepea appear to have roughly consistent fg/fL;
@@ -97,46 +123,45 @@ df['strain'] = 'BW25113'
 # we have also corrected for discrepencies in cell volume, now using the
 # volume predictions of Si, F. et al. (2017), Current Biology.
 
-# #%% STEP 1: Determine expected fg as function of growth rate using Schimdt data
-bnum_list = df.b_number.unique()
-df_schmidt = pd.read_csv('../../../data/schmidt2016_longform_annotated.csv')
-df_schmidt = df_schmidt[df_schmidt['b_number'].isin(bnum_list)]
-df_schmidt = df_schmidt[['b_number',  'condition', 'growth_rate_hr',
-                            'corrected_volume', 'fg_per_cell']]
-df_schmidt = df_schmidt[df_schmidt.growth_rate_hr > 0]
-df_schmidt = df_schmidt.drop_duplicates().sort_values(by='growth_rate_hr')
+# # #%% STEP 1: Determine expected fg as function of growth rate using Schimdt data
+# bnum_list = df.b_number.unique()
+# df_schmidt = pd.read_csv('../../../data/schmidt2016_longform_annotated.csv')
+# df_schmidt = df_schmidt[df_schmidt['b_number'].isin(bnum_list)]
+# df_schmidt = df_schmidt[['b_number',  'condition', 'growth_rate_hr',
+#                             'corrected_volume', 'fg_per_cell']]
+# df_schmidt = df_schmidt[df_schmidt.growth_rate_hr > 0]
+# df_schmidt = df_schmidt.drop_duplicates().sort_values(by='growth_rate_hr')
+#
+# # for cond, data in df_schmidt.groupby(['condition']):
+# #     fg_perfL = data.fg_per_cell.sum()/ data.corrected_volume.unique()[0]
+# fg = [data.fg_per_cell.sum() for
+#                     cond, data in df_schmidt.groupby(['condition'], sort=False)]
+# growth_rate_hr = [data.growth_rate_hr.unique()[0] for
+#                     cond, data in df_schmidt.groupby(['condition'], sort=False)]
+#
+# # Fit line for fg/fL as function of growth rate
+# # i.e. create a linear regression model
+# slope, intercept, r_value, p_value, std_err = stats.linregress(growth_rate_hr, fg)
+# # report coefficient of determination,  r**2
+# print("r-squared:", r_value**2)
+#
+# # #%% STEP 3: Apply correction to Peebo dataset
+#
+# # # Compute the mass corrections
+# _conditions = df[['gene_name', 'condition', 'reported_fg_per_cell', 'growth_rate_hr']].drop_duplicates()
+# _conditions = _conditions.groupby(['growth_rate_hr', 'condition']).sum().reset_index()
+# _conditions['correction_factor'] = _conditions['reported_fg_per_cell'].values / (intercept + slope * _conditions['growth_rate_hr'].values )
+#
+# # Apply corrections to counts/ fg per cell
+# for g, d in _conditions.groupby(['growth_rate_hr', 'condition']):
+#     corr_factor = _conditions[(_conditions['growth_rate_hr']==g[0]) & (_conditions['condition']==g[1])]['correction_factor'].values[0]
+#     df.loc[(df['growth_rate_hr']==g[0]) & (df['condition']==g[1]), 'tot_per_cell'] = \
+#             df.loc[(df['growth_rate_hr']==g[0]) & (df['condition']==g[1])]['reported_tot_per_cell'] / corr_factor
+#     df.loc[(df['growth_rate_hr']==g[0]) & (df['condition']==g[1]), 'fg_per_cell'] =  \
+#             df.loc[(df['growth_rate_hr']==g[0]) & (df['condition']==g[1])]['reported_fg_per_cell'] / corr_factor
+##########################################
 
-# for cond, data in df_schmidt.groupby(['condition']):
-#     fg_perfL = data.fg_per_cell.sum()/ data.corrected_volume.unique()[0]
-fg = [data.fg_per_cell.sum() for
-                    cond, data in df_schmidt.groupby(['condition'], sort=False)]
-growth_rate_hr = [data.growth_rate_hr.unique()[0] for
-                    cond, data in df_schmidt.groupby(['condition'], sort=False)]
 
-# Fit line for fg/fL as function of growth rate
-# i.e. create a linear regression model
-slope, intercept, r_value, p_value, std_err = stats.linregress(growth_rate_hr, fg)
-# report coefficient of determination,  r**2
-print("r-squared:", r_value**2)
-
-# #%% STEP 3: Apply correction to Peebo dataset
-
-# # Compute the mass corrections
-_conditions = df[['gene_name', 'condition', 'reported_fg_per_cell', 'growth_rate_hr']].drop_duplicates()
-_conditions = _conditions.groupby(['growth_rate_hr', 'condition']).sum().reset_index()
-_conditions['correction_factor'] = _conditions['reported_fg_per_cell'].values / (intercept + slope * _conditions['growth_rate_hr'].values )
-
-# Apply corrections to counts/ fg per cell
-for g, d in _conditions.groupby(['growth_rate_hr', 'condition']):
-    corr_factor = _conditions[(_conditions['growth_rate_hr']==g[0]) & (_conditions['condition']==g[1])]['correction_factor'].values[0]
-    df.loc[(df['growth_rate_hr']==g[0]) & (df['condition']==g[1]), 'tot_per_cell'] = \
-            df.loc[(df['growth_rate_hr']==g[0]) & (df['condition']==g[1])]['reported_tot_per_cell'] / corr_factor
-    df.loc[(df['growth_rate_hr']==g[0]) & (df['condition']==g[1]), 'fg_per_cell'] =  \
-            df.loc[(df['growth_rate_hr']==g[0]) & (df['condition']==g[1])]['reported_fg_per_cell'] / corr_factor
-
-#%%
-df.to_csv('../../../data/peebo2015_longform_annotated.csv')
-# %%
 
 
 # %%

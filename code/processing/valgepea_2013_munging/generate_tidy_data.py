@@ -2,6 +2,7 @@
 import numpy as np
 import pandas as pd
 import tqdm
+import prot.size as size
 
 # Load the data quantifying absolute protein synthesis rates.
 counts = pd.read_csv('../../../data/valgepea2013_raw_data/valgepea2013_copynums.csv')
@@ -51,18 +52,51 @@ for g, d in tqdm.tqdm(counts.groupby(['gene', 'growth_rate_hr-1']), desc="Iterat
 
 # Compute the mass per cell and include dataset notation.
 df = pd.concat(dfs, sort=False)
-#%%
-# Do the concentration correction
-_conditions = df.groupby(['condition', 'growth_rate_hr', 'corrected_volume']).sum().reset_index()
-_conditions['concentration'] = _conditions['reported_fg_per_cell'].values / _conditions['corrected_volume']
-ref_conc = _conditions[_conditions['growth_rate_hr']==0.49]['concentration'].values[0]
-_conditions['rel_conc_to_ref'] = _conditions['concentration'].values  / ref_conc
+
 
 #%%
-for g, d in _conditions.groupby(['growth_rate_hr']):
-    rel_conc = _conditions[_conditions['growth_rate_hr']==g]['rel_conc_to_ref'].values[0]
-    df.loc[df['growth_rate_hr']==g, 'tot_per_cell'] = df.loc[df['growth_rate_hr']==g]['reported_tot_per_cell'] / rel_conc
-    df.loc[df['growth_rate_hr']==g, 'fg_per_cell'] =  df.loc[df['growth_rate_hr']==g]['reported_fg_per_cell'] / rel_conc
+# Iterate through the conditions and correct fg and tot_per_cell as necessary.
+# Note that for this dataset we need to be more careful. If we consider the set
+# of genes quantified here relative to Schmidt et al., the total protein
+# only amounts to about 93% of the total in Schmidt - though this varies somewhat
+# with the growth condition (92-97%). In addition to renormalizing total protein
+# mass, we will also compare the total mass fraction to the best-matching growth
+# condition in Schmidt to determine the relative amount quantified here.
+
+# load Schmidt data:
+data_schmidt = pd.read_csv('../../../data/schmidt2016_longform_annotated.csv')
+
+# for c, d in data[data.dataset == 'valgepea_2013'].groupby(['condition', 'growth_rate_hr']):
+
+for g in df['growth_rate_hr'].unique():
+    d = df[df.growth_rate_hr == g]
+
+    # determine Schmidt dataset with most similar growth rate
+    d_schmidt_ = data_schmidt.copy()
+    d_schmidt_['lambda_diff'] = abs(d_schmidt_['growth_rate_hr'] - g)
+    d_schmidt_ = d_schmidt_.sort_values(by='lambda_diff', ascending = True)
+
+    gr_schmidt = d_schmidt_.growth_rate_hr.values[0]
+    cond_schmidt = d_schmidt_.condition.values[0]
+
+    d_schmidt_ = d_schmidt_[d_schmidt_.growth_rate_hr == gr_schmidt]
+    d_schmidt_ = d_schmidt_[d_schmidt_.condition == cond_schmidt]
+
+    schmidt_genes = d_schmidt_[d_schmidt_.b_number.isin(d.b_number.unique())]
+    rel_schmidt = schmidt_genes.fg_per_cell.sum() / d_schmidt_.fg_per_cell.sum()
+
+    rel_corr_fg = df[df['growth_rate_hr'] == g]['reported_fg_per_cell'].sum() / \
+            size.lambda2P(g)
+
+    print(g, ': total mass fg: ', np.round(size.lambda2P(g),2),
+            ' volume: ', np.round(size.lambda2size(g),2),
+            ' relative change in total fg: ', np.round(1/rel_corr_fg, 2),
+            ' abundance relative to Schmidt: ', np.round(rel_schmidt,2))
+
+    df.loc[df['growth_rate_hr']==g, 'tot_per_cell'] = \
+                    df.loc[df['growth_rate_hr']==g]['reported_tot_per_cell'] / (rel_corr_fg * rel_schmidt)
+    df.loc[df['growth_rate_hr']==g, 'fg_per_cell'] =  \
+                    df.loc[df['growth_rate_hr']==g]['reported_fg_per_cell'] / (rel_corr_fg * rel_schmidt)
 
 #%%
 df['dataset'] = 'valgepea_2013'
@@ -70,3 +104,33 @@ df['dataset_name'] = 'Valgepea et al. 2013'
 df['strain'] = 'MG1655'
 df.to_csv('../../../data/valgepea2013_longform_annotated.csv')
 # %%
+
+
+# for g in df[['condition', 'growth_rate_hr']].unique():
+#     gr = g[1]
+#     rel_corr_fg = df[(df['condition'] == g[0]) & \
+#                     (df['growth_rate_hr'] == g[1])]['reported_fg_per_cell'].sum() / \
+#             size.lambda2P(gr)
+#
+#     print(g, ': total mass fg: ', size.lambda2P(gr),
+#             ' volume: ', size.lambda2size(gr),
+#             ' relative change in total fg: ', 1/rel_corr_fg)
+#     df.loc[(df['condition']==g[0]) &
+#             (df['growth_rate_hr']==g[1]), 'tot_per_cell'] = df.loc[(df['condition']==g[0]) &
+#                     (df['growth_rate_hr']==g[1])]['reported_tot_per_cell'] / rel_corr_fg
+#     df.loc[(df['condition']==g[0]) &
+#             (df['growth_rate_hr']==g[1]), 'fg_per_cell'] =  df.loc[(df['condition']==g[0]) &
+#                     (df['growth_rate_hr']==g[1])]['reported_fg_per_cell'] / rel_corr_fg
+
+# #%%
+# # Do the concentration correction
+# _conditions = df.groupby(['condition', 'growth_rate_hr', 'corrected_volume']).sum().reset_index()
+# _conditions['concentration'] = _conditions['reported_fg_per_cell'].values / _conditions['corrected_volume']
+# ref_conc = _conditions[_conditions['growth_rate_hr']==0.49]['concentration'].values[0]
+# _conditions['rel_conc_to_ref'] = _conditions['concentration'].values  / ref_conc
+#
+# #%%
+# for g, d in _conditions.groupby(['growth_rate_hr']):
+#     rel_conc = _conditions[_conditions['growth_rate_hr']==g]['rel_conc_to_ref'].values[0]
+#     df.loc[df['growth_rate_hr']==g, 'tot_per_cell'] = df.loc[df['growth_rate_hr']==g]['reported_tot_per_cell'] / rel_conc
+#     df.loc[df['growth_rate_hr']==g, 'fg_per_cell'] =  df.loc[df['growth_rate_hr']==g]['reported_fg_per_cell'] / rel_conc

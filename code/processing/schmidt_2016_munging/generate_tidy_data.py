@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import tqdm
 from scipy import constants
+import prot.size as size
 
 # Load the longform schmidt 2016 count data, growth rates, and cog associations
 counts = pd.read_csv('../../../data/schmidt2016_raw_data/schmidt2016_dataset.csv')
@@ -47,7 +48,7 @@ for g, d in tqdm.tqdm(counts.groupby('gene'), desc="Iterating through genes...")
                     'growth_rate_hr': growth_rate,
                     'gene_product': gene_product,
                     'reported_volume': reported_volume,
-                    'corrected_volume': 0.28 * np.exp(1.33  * growth_rate)
+                    'corrected_volume': size.lambda2size(growth_rate)
                     }
             dfs.append(pd.DataFrame(gene_dict, index=[0]))
     else:
@@ -67,33 +68,23 @@ for g, d in tqdm.tqdm(counts.groupby('gene'), desc="Iterating through genes...")
                     'go_terms': 'Not Found',
                     'growth_rate_hr': growth_rate,
                     'reported_volume': reported_volume,
-                    'corrected_volume': 0.28 * np.exp(1.33  * growth_rate)
+                    'corrected_volume': size.lambda2size(growth_rate)
                     }
             dfs.append(pd.DataFrame(gene_dict, index=[0]))
 df = pd.concat(dfs, sort=False)
+
 #%%
-# Compute the correction factor for cell volume
-rates['corrected_volume'] = 0.28 * np.exp(1.33  * rates['growth_rate_hr'])
-rates['correction_ratio'] = rates['corrected_volume'].values / rates['volume_fL'].values
-
-# %% Compute the reported and new concentrations.
-_conditions = df.groupby(['condition', 'growth_rate_hr',
-                          'corrected_volume', 'reported_volume']).sum().reset_index()
-_conditions['orig_concentration'] = _conditions['reported_fg_per_cell'].values / _conditions['reported_volume']
-_conditions['new_concentration'] = _conditions['reported_fg_per_cell'].values / _conditions['corrected_volume']
-_conditions['vol_ratio'] = _conditions['reported_volume'].values / _conditions['corrected_volume']
-
-# Find the goldstandard glucose concentration.
-gluc_conc = _conditions[_conditions['condition']=='glucose']['new_concentration'].values[0]
-_conditions['rel_conc_to_gluc'] = _conditions['new_concentration'] / gluc_conc
-
-_conditions
-#%%
-# Iterate through the conditions and correct as necessary.
+# Iterate through the conditions and correct fg and tot_per_cell as necessary.
 for g, d in rates.groupby(['condition']):
-    rel_conc = _conditions[_conditions['condition']==g]['rel_conc_to_gluc'].values[0]
-    df.loc[df['condition']==g, 'tot_per_cell'] = df.loc[df['condition']==g]['reported_tot_per_cell'] / rel_conc
-    df.loc[df['condition']==g, 'fg_per_cell'] =  df.loc[df['condition']==g]['reported_fg_per_cell'] / rel_conc
+    rel_corr_fg = df[df['condition'] == g]['reported_fg_per_cell'].sum() / \
+                    size.lambda2P(d['growth_rate_hr'].unique())
+                    
+    print(g, ': total mass fg: ', np.round(size.lambda2P(d['growth_rate_hr'].unique()),2),
+            ' volume: ', np.round(size.lambda2size(d['growth_rate_hr'].unique()),2),
+            ' relative change in total fg: ', np.round(1/rel_corr_fg,2))
+
+    df.loc[df['condition']==g, 'tot_per_cell'] = df.loc[df['condition']==g]['reported_tot_per_cell'] / rel_corr_fg
+    df.loc[df['condition']==g, 'fg_per_cell'] =  df.loc[df['condition']==g]['reported_fg_per_cell'] / rel_corr_fg
 
 #%%
 df['dataset'] = 'schmidt_2016'

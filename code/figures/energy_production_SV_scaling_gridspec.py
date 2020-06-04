@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import prot.viz
+import prot.size as size
 colors, palette = prot.viz.bokeh_theme()
 dataset_colors = {'li_2014':colors['purple'], 'schmidt_2016':colors['light_blue'],
                    'peebo_2015':colors['green'], 'valgepea_2013':colors['red']}
@@ -174,8 +175,13 @@ for c, d in data_membrane.groupby(['dataset', 'condition', 'growth_rate_hr']):
     d_ = d[d.gene_name != 'tufA']
     d_ = d_[d_.gene_name != 'tufB']
 
-    V = 0.28 * np.exp(1.33 * c[2])
-    SA = 2 * np.pi *  V**(2/3)
+    # V = 0.28 * np.exp(1.33 * c[2])
+    # SA = 2 * np.pi *  V**(2/3)
+    w = size.lambda2width(c[2])
+    l = size.lambda2length(c[2])
+    V = size.lambda2size(c[2])
+    SA = size.rod_SA(l, w, V)
+
     fg_tot = d_.fg_per_cell.sum()
     fg_SA = fg_tot / SA
 
@@ -279,19 +285,19 @@ for c, d in df_mem_.groupby('condition', sort=False):
             lefts += d[d.cog_class == c_].rel_fg_per_cell.sum()
 
 ax4.set_xlim(0,1)
-ax4.set_ylim(0,len(df.condition.unique()))
-ax4.set_yticks(np.arange(len(df.condition.unique()))-0.5)
-ax4.set_yticklabels(df.condition.unique())
+ax4.set_ylim(0,len(df_mem_.condition.unique()))
+ax4.set_yticks(np.arange(len(df_mem_.condition.unique()))-0.5)
+ax4.set_yticklabels(df_mem_.condition.unique())
 ax4.set_xlabel('relative plasma membrane abundance (GO term : 0005886)', fontsize=6)
 ax4.xaxis.set_tick_params(labelsize=5)
 ax4.yaxis.set_tick_params(labelsize=5)
 
-growth_rates_list = [d.growth_rate_hr.unique()[0] for c, d in df.groupby('condition', sort=False)]
+growth_rates_list = [d.growth_rate_hr.unique()[0] for c, d in df_mem_.groupby('condition', sort=False)]
 ax4_twin = ax4.twinx()
 ax4_twin.set_yticks(np.arange(len(growth_rates_list))-0.5)
 ax4_twin.set_yticklabels(growth_rates_list)
 ax4_twin.set_ylabel('growth rate [hr$^{-1}$]', fontsize=6)
-ax4_twin.set_ylim(0,len(df.condition.unique()))
+ax4_twin.set_ylim(0,len(df_mem_.condition.unique()))
 ax4_twin.xaxis.set_tick_params(labelsize=5)
 ax4_twin.yaxis.set_tick_params(labelsize=5)
 

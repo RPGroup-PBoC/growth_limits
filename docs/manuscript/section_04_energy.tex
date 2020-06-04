@@ -108,42 +108,49 @@ identified in the proteomic datasets (plot in \FIG{energy_production}(B)).
 
 \subsection{Energy production in a crowded membrane.}
 
-For each protein considered so far, the data shows that in general
-their numbers increase with growth rate. This is in part a consequence of
-the increase in cell length and width at that is common to many rod-shaped bacteria at faster growth rates \citep{ojkic2019, harris2018}. For the particular case
-of \textit{E. coli}, the total cellular protein and cell size increase
-logarithmically with growth rate \citep{schaechter1958, si2017}. Indeed, this is
-one reason why we have considered only a single, common growth condition across
-all our estimates so far. Such a scaling will require that the total number of
-proteins and net demand on resources also grow in proportion to the increase in
-cell size divided by the cell's doubling time. Recall however that each
-transport process, as well as the ATP production via respiration, is performed
-at the bacterial membrane. This means that their maximum productivity can only
-increase in proportion to the cell's surface area divided by the cell doubling
-time. This difference in scaling would vary in proportion to the surface
-area-to-volume (S/V) ratio.
+For each protein considered so far, the data shows that in general their numbers
+increase with growth rate. This is in part a consequence of the increase in cell
+length and width at that is common to many rod-shaped bacteria at faster growth
+rates \citep{ojkic2019, harris2018}. For the particular case of \textit{E.
+coli}, the total cellular protein and cell size increase logarithmically with
+growth rate \citep{schaechter1958, si2017}. Indeed, this is one reason why we
+have considered only a single, common growth condition across all our estimates
+so far. Such a scaling will require that the total number of proteins and net
+demand on resources also grow in proportion to the increase in cell size divided
+by the cell's doubling time. Recall however that each transport process, as well
+as the ATP production via respiration, is performed at the bacterial membrane.
+This means that their maximum productivity can only increase in proportion to
+the cell's surface area divided by the cell doubling time. This difference in
+scaling would vary in proportion to the surface area-to-volume (S/V) ratio.
 
 While we found that there was was more than sufficient membrane real estate for
-carbon intake, the total number of ATP synthases and complexes associated with the electron chain transport both are found to increase in excess of 10$^4$ copies per cell (\FIG{energy_production}).
+carbon intake in our ealier estimate, the total number of ATP synthases and
+electron chain transport complexes both exhibit a clear increase in copy number
+per cell with growth rate, reaching in excess of 10$^4$ copies per cell
+(\FIG{energy_production}).
 
-% the scaling differences between cell volume and cell surface
-% area, suggest that there must be some maximal size where the cell is unable to
-% meet its growth demands. Given that both ATP synthase
+Volumetric demand vs. maximum production
+[see Methods/ appendix for calculations of cell volume and surface area]
 
-%
-% While in the case of carbon uptake, 1,000 transporters were found to occupy only about 1 percent of the inner membrane,
-% Given that the number of ATP synthase and electron
-%
-% In the case of carbon intake, we found that there was more than sufficient membrane real estate for the carbohydrate transporters to occupy. However, while the total number
+While this serves to highlight the diminishing capacity to provide resources to
+grow if the cell increases in size (and its S/V decreases), the blue region in
+\FIG{energy_scaling}(A) represents a somewhat unachievable limit since the inner
+membrane must also include other proteins such as those required for lipid and
+membrane synthesis. To gain some insight into this, we used the proteomic data
+to look at the distribution of proteins on the inner membrane. Here we use Gene
+Ontology (GO) annotations \citep{ashburner2000,thegeneOntologyconsortium2018} to
+identify all proteins embedded or associated with the inner membrane (GO term:
+0005886). Those associated but not membrane-bound include proteins like _, that
+traverse the inner membrane by treadmilling and must nonetheless be considered
+as a vital component occupying space on the membrane. In \FIG{energy_scaling}(B)
+we find that the total protein mass per $\mu m$ is relatively constant with
+growth rate. Interestingly, when we consider the distribution of proteins
+grouped by their Clusters of Orthologous Groups (COG) \citep{tatusov2000}, we
+find that relative abundance for those in metabolism (including ATP synthesis
+via respiration) is also relatively constant.
 
-% Introduce the importance of considering the S/V ratio. Specifically, since ATP production is essentially performed on the cell surface, and cell volume scales faster than the total surface area, there will need to be a limit where ATP production cannot meet demand.
-
-% Start with idea of importance of higher SA/V ratio
-%
-% Note glucose / nutrient uptake
-%
-% And then highlight energy asan important consideration in this context
-%
+% The COG group associated with  cellular processes and
+% signaling is predominantly occupied by DnaK, which is a heat shock protein chaparone, whose role includes folding of nascent polypeptide chains and rescue of misfolded proteins .
 
 % It is common to assume that there is an inherent benefit for a bacterium to
 % maintain a high surface to area volume ratio at slow growth. This reflects the

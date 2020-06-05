@@ -1,11 +1,13 @@
 #%%
 import pandas as pd 
 import tqdm
+import numpy as np
+import prot.size
 
 # Load  the necessary datasets. 
 data = pd.read_csv('../../data/compiled_annotated_complexes.csv', comment='#')
 data.dropna(subset=['n_units'], inplace=True)
-# _data = pd.read_csv('../../data/compiled_absolute_measurements.csv', comment='#')
+
 # define necessary complexes. 
 complexes = {'dnap': {'name': 'DNA polymerase III (holo enzyme)', 
                        'complexes': ['CPLX0-3803'],
@@ -172,15 +174,18 @@ for g, d in tqdm.tqdm(data.groupby(['dataset', 'dataset_name', 'condition', 'gro
                 _method = 'average'
 
             # assemble a dictionary 
+            volume = np.round(prot.size.lambda2size(g[3]), 2)
             _data = {'dataset':g[0], 'dataset_name':g[1],
                      'condition':g[2], 'growth_rate_hr':g[3],
+                     'volume': volume,
                      'n_complex':units, 
                      'rate': v['rate_per_sec'],
                      'rate_units': v['units'],
                      'shorthand': k,
                      'name': v['name'],
                      'aggregation_method': _method,
-                     'category': v['category']}
+                     'category': v['category'],
+                     'concentration_uM': 1E6 * (units / 6.022E23) / (volume * 1E-15)}
         
             complex_df = complex_df.append(_data, ignore_index=True)
 

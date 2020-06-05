@@ -3,11 +3,12 @@
 Lastly, we turn our attention to the process of translation. So far in our
 various estimates there has been little to suggest any apparent limit to how
 fast a bacterium might divide under steady-state growth. Even in our examples of
-\textit{E. coli} grown rapidly under different carbohydrate sources (Figure
-[]C),  cells are able to utilize less preferred carbon sources by inducing the
-expression of additional membrane transporters and enzymes. [Maybe go into Hwa
-style resource allocation with references added]. In this respect, gross
-overexpression of a protein can lead to a reduction of the growth rate.
+\textit{E. coli} grown rapidly under different carbohydrate sources
+(\FIG{carbon_tport}(B)),  cells are able to utilize less preferred carbon
+sources by inducing the expression of additional membrane transporters and
+enzymes. [Maybe go into Hwa style resource allocation with references added]. In
+this respect, gross overexpression of a protein can lead to a reduction of the
+growth rate.
 
 We can determine the translation-limited growth rate by noting that the total
 number of peptide bonds created as the cell doubles $N_{aa}$ will be given by,
@@ -15,45 +16,51 @@ $\tau \cdot r_t \cdot R$. Here, $\tau$ refers to the doubling time of the cell
 under steady-state growth, $r_t$ is the maximum translation rate, and $R$ is the
 average number of ribosomes in the cell. With the growth rate related to the
 cell doubling time by $\lambda = ln(2)/\tau$, we can write the
-translation-limited growth rate $\lambda_{max}$ as,
+translation-limited growth rate $\lambda_{translation-limited}$ as,
 
 \begin{equation}
-\lambda_{max} = \frac{ln(2) \cdot r_t \cdot R}{N_{aa}}.
+\lambda_{translation-limited} = \frac{ln(2) \cdot r_t \cdot R}{N_{aa}}.
 \end{equation}
 Alternatively, since $N_{aa}$ is related to the total protein mass through the
 molecular weight of each protein, we can also consider the growth rate in terms
-of ribosomal mass fraction. By approximating the average molecular weight of an
-amino acid as 110 Da, the cellular protein mass $M$ can be estimated $N_{aa}
-\cdot 110 Da / N_A$, where $N_A$ is Avogadro's number. The total mass associated
-with $R$ ribosomes will be given by $m_R$ = $(L_R * 110 Da) * R / N_A$,  where
-the $L_R$ is the total length in amino acids that make up a ribosome,  and $L_R
-* 110 Da$ is the approximate molecular weight of the entire ribosomal complex. In terms of
-cellular mass $m$ and ribosomal mass $m_R$, we can then write the growth rate as,
+of ribosomal mass fraction. This calculation in shown in \FIG{translation_1}(A).
+This allows us to rewrite the growth rate as,
+
+% By approximating the average molecular weight of an
+% amino acid as 110 Da, the cellular protein mass $M$ can be estimated $N_{aa}
+% \cdot 110 Da / N_A$, where $N_A$ is Avogadro's number. The total mass associated
+% with $R$ ribosomes will be given by $m_R$ = $(L_R * 110 Da) * R / N_A$,  where
+% the $L_R$ is the total length in amino acids that make up a ribosome,  and $L_R
+% * 110 Da$ is the approximate molecular weight of the entire ribosomal complex. In terms of
+% cellular mass $m$ and ribosomal mass $m_R$, we can then write the growth rate as,
+%
+% \begin{equation}
+% \lambda_{max} \approx \frac{ln(2) \cdot r_t \cdot m_R/(L_R * 110 Da) }{(m_{protein}/110 Da)}.
+% \end{equation}
+% Denoting the ribosomal mass fraction
+% by $\Phi_R$, which is just the ratio of ribosomal mass divided by the total cellular mass,
+% $M_R/M$, we find that the translation-limited growth rate is given by,
 
 \begin{equation}
-\lambda_{max} \approx \frac{ln(2) \cdot r_t \cdot m_R/(L_R * 110 Da) }{(m_{protein}/110 Da)}.
+\lambda_{translation-limited} \approx \frac{ln(2) \cdot r_t}{L_R}  \Phi_R,
 \end{equation}
-Denoting the ribosomal mass fraction
-by $\Phi_R$, which is just the ratio of ribosomal mass divided by the total cellular mass,
-$M_R/M$, we find that the translation-limited growth rate is given by,
-
-\begin{equation}
-\lambda_{max} \approx \frac{ln(2) \cdot r_t}{L_R}  \Phi_R.
-\end{equation}
-This is plotted as a function of ribosomal fraction
-$\Phi_R$ in \FIG{translation_1}A, with a translation rate $r_t = 17 aa/s$ and $L_R = []
-aa$, which corresponds to the length in amino acids for all ribosomal subunits of the 50S and 30S complexes
-and elongation factor required for translation.
+where $L_R$ is the total length in amino acids that make up a ribosome, and
+$\Phi_R$ is the ribosomal mass fraction. This is plotted as a function of
+ribosomal fraction $\Phi_R$ in \FIG{translation_1}(A), with a translation rate
+$r_t = 17 aa/s$ and $L_R = [] aa$, which corresponds to the length in amino
+acids for all ribosomal subunits of the 50S and 30S complexes and elongation
+factor required for translation.
 
 Perhaps the first thing to notice is that there is a maximum growth rate at
-about $\lambda_{max} \approx 6 hr^{-1}$, or doubling time of about 7 minutes.
-This maximum growth rate can be viewed as an inherent speed limit due to the
-need for the cell to double the cell's entire ribosomal mass. Interestingly,
-this limit is independent of the absolute number of ribosomes, but rather  is
-simply given by time to translate an entire ribosome, $L_R/ r_t$. As shown in
-\FIG{translation_1}(B),  we can reconcile this with the observation that in
-order  to double the average number of ribosomes, each ribosome must produce a
-second  ribosome. This is a process that cannot be parallelized further.
+about $\lambda_{translation-limited} \approx 6 hr^{-1}$, or doubling time of
+about 7 minutes. This maximum growth rate can be viewed as an inherent speed
+limit due to the need for the cell to double the cell's entire ribosomal mass.
+Interestingly, this limit is independent of the absolute number of ribosomes,
+but rather  is simply given by time to translate an entire ribosome, $L_R/ r_t$.
+As shown in \FIG{translation_1}(B),  we can reconcile this with the observation
+that in order  to double the average number of ribosomes, each ribosome must
+produce a second  ribosome. This is a process that cannot be parallelized
+further.
 
 % Here we have implicitly assumed that translation proceeds randomly, without
 % any apparent  preference between ribosomal or non-ribosomal mRNA, which
@@ -97,7 +104,8 @@ this perhaps suggests less import to the  process of translation, it is
 important to recognize that in order for a cell to maintain steady-state growth,
 the cell's translation capacity must be mitigated. Otherwise, ribosomes will
 deplete their supply of amino acids and this will bring translation and cell
-growth to a halt. We will consider the consequences of this in the case of \textit{E. coli} next.
+growth to a halt. We will consider the consequences of this in the case of
+\textit{E. coli} next.
 
 % [NB: should I try to show this more quantitatively here?? Perhaps we can dig into
 % details in E coli specific section.]

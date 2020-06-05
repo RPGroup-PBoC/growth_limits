@@ -48,14 +48,14 @@ for g, d in dnap.groupby(['dataset', 'dataset_name']):
 ax[1].legend(fontsize=6)
 ax[0].legend(fontsize=6)
 plt.tight_layout()
-plt.savefig('../../figures/DNA_polymerase_plots.pdf', bbox_inches='tight')
+plt.savefig('../../figures/DNA_polymerase_plots.svg', bbox_inches='tight')
 
 # %%
 fig, ax = plt.subplots(1, 1, figsize=(3, 2))
 ax.xaxis.set_tick_params(labelsize=6)
 ax.yaxis.set_tick_params(labelsize=6)
 ax.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
-ax.set_ylabel('ribonucleo reductases per cell', fontsize=6)
+ax.set_ylabel('ribonucleotide reductases per cell', fontsize=6)
 
 # Format the axes
 ax.set_yscale('log')

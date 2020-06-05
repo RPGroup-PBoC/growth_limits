@@ -25,13 +25,13 @@ molecular weight of each protein, we can also consider the growth rate in terms
 of ribosomal mass fraction. By approximating the average molecular weight of an
 amino acid as 110 Da, the cellular protein mass $M$ can be estimated $N_{aa}
 \cdot 110 Da / N_A$, where $N_A$ is Avogadro's number. The total mass associated
-with $R$ ribosomes will be given by $M_R$ = $(L_R * 110 Da) * R / N_A$,  where
+with $R$ ribosomes will be given by $m_R$ = $(L_R * 110 Da) * R / N_A$,  where
 the $L_R$ is the total length in amino acids that make up a ribosome,  and $L_R
 * 110 Da$ is the approximate molecular weight of the entire ribosomal complex. In terms of
-cellular mass $M$ and ribosomal mass $M_R$, we can then write the growth rate as,
+cellular mass $m$ and ribosomal mass $m_R$, we can then write the growth rate as,
 
 \begin{equation}
-\lambda_{max} \approx \frac{ln(2) \cdot r_t \cdot M_R/(L_R * 110 Da) }{(M/110 Da)}.
+\lambda_{max} \approx \frac{ln(2) \cdot r_t \cdot m_R/(L_R * 110 Da) }{(m_{protein}/110 Da)}.
 \end{equation}
 Denoting the ribosomal mass fraction
 by $\Phi_R$, which is just the ratio of ribosomal mass divided by the total cellular mass,
@@ -41,7 +41,7 @@ $M_R/M$, we find that the translation-limited growth rate is given by,
 \lambda_{max} \approx \frac{ln(2) \cdot r_t}{L_R}  \Phi_R.
 \end{equation}
 This is plotted as a function of ribosomal fraction
-$\Phi_R$ in Figure []A, with a translation rate $r_t = 17 aa/s$ and $L_R = []
+$\Phi_R$ in \FIG{translation_1}A, with a translation rate $r_t = 17 aa/s$ and $L_R = []
 aa$, which corresponds to the length in amino acids for all ribosomal subunits of the 50S and 30S complexes
 and elongation factor required for translation.
 
@@ -51,9 +51,9 @@ This maximum growth rate can be viewed as an inherent speed limit due to the
 need for the cell to double the cell's entire ribosomal mass. Interestingly,
 this limit is independent of the absolute number of ribosomes, but rather  is
 simply given by time to translate an entire ribosome, $L_R/ r_t$. As shown in
-Figure []B,  we can reconcile this with the observation that in order  to double
-the average number of ribosomes, each ribosome must produce a second  ribosome.
-This is a process that cannot be parallelized further.
+\FIG{translation_1}(B),  we can reconcile this with the observation that in
+order  to double the average number of ribosomes, each ribosome must produce a
+second  ribosome. This is a process that cannot be parallelized further.
 
 % Here we have implicitly assumed that translation proceeds randomly, without
 % any apparent  preference between ribosomal or non-ribosomal mRNA, which
@@ -69,6 +69,17 @@ between ribosomal or non-ribosomal mRNA, which appears reasonable. Importantly,
 in order for a cell to scale this limit set by $\Phi_R$ the cell must increase
 it's ribosomal abundance, either by synthesizing more ribosomes or reducing the
 fraction of non-ribosomal proteins.
+
+\begin{figure}
+        \centering{
+            \includegraphics{main_figs/fig7_ribosome_growth_limit.pdf}
+            \caption{\textbf{Translation-limited growth rate.} (A) Here we consider
+            the translation-limited growth as a function of ribosomal fraction. By
+            mass balance, the time required to double the entire proteome ($N_{aa}$ /$r_t \cdot $) sets the translation-limited growth rate, $\lambda_{translation limited}$. Here $N_{aa}$ is effectively the number of peptide bonds that must be translated, $r_t$ is the translation elongation rate, and $R$ is the number of ribosomes. This can also be re-written in terms of the ribosomal mass fraction $\Phi_R = m_R$ / $m_{protein}$, where $m_R$ is the total ribosomal mass and $m_{protein}$ is the mass of all proteins in the cell. $L_R$ refers to the summed length of the ribosome in amino acids. $\lambda_{translation limited}$ is ploted as a function of $\Phi_R$ (solid line). (B) The dashed line in part (A) identifies a maximum growth rate that is set by the ribosome. Specifically, this growth rate corresponds to the time required to  translation an entire ribosome, $L_R/ r_t$. This is a result that is independent of the number of ribosomes in the cell as shown schematically here.}
+        \label{fig:translation_1}
+        }
+\end{figure}
+
 
 One additional point to note is that among all proteomic data available across
 different species of bacteria [NB: need to check], cells do not decrease their

@@ -43,7 +43,7 @@
 \RequirePackage{lineno}
 \if@reqslineno\linenumbers\fi
 
-% Note v1.0 of elife.cls used Trueno font; this was 
+% Note v1.0 of elife.cls used Trueno font; this was
 % changed to use Open Sans in v1.1
 \ifxetexorluatex
   \RequirePackage{unicode-math}
@@ -53,7 +53,7 @@
   % XITSMath is really STIX. Really.
   % https://tex.stackexchange.com/questions/227216/stix-versus-xits
   \setmathfont[Extension = .otf,BoldFont = XITSMath-Bold,]{XITSMath-Regular}
-\else  
+\else
   \RequirePackage[T1]{fontenc}
   \RequirePackage[utf8]{inputenc}
   \RequirePackage{stix}
@@ -171,15 +171,15 @@
   {\thesubsection}{}{#1}[]
 \titleformat{\subsubsection}
   {\large}
-  {\thesubsubsection}{}{#1}[]    
+  {\thesubsubsection}{}{#1}[]
 \titleformat{\paragraph}
   {\color{eLifeMediumGrey}\large}
-  {\theparagraph}{}{#1}[] 
+  {\theparagraph}{}{#1}[]
 \titlespacing*{\section}{0pc}{3ex \@plus4pt \@minus3pt}{0pt}
 \titlespacing*{\subsection}{0pc}{2.5ex \@plus3pt \@minus2pt}{0pt}
 \titlespacing*{\subsubsection}{0pc}{2ex \@plus2.5pt \@minus1.5pt}{0pt}
 \titlespacing*{\paragraph}{0pc}{1.5ex \@plus2pt \@minus1pt}{0pt}
-  
+
 \RequirePackage{enumitem}
 \setlist{noitemsep}
 
@@ -225,7 +225,7 @@
 \reversemarginpar
 
 %
-% custom title page 
+% custom title page
 %
 \renewcommand{\Authfont}{\bfseries\large\raggedright}
 \renewcommand{\Affilfont}{\mdseries\large\raggedright}
@@ -243,7 +243,7 @@
     \ifx\empty\@deceased\else\@deceased\par\fi
 }
 
-\patchcmd{\@author}{\AB@authlist\\[\affilsep]\AB@affillist}{\AB@authlist\\[\affilsep] 
+\patchcmd{\@author}{\AB@authlist\\[\affilsep]\AB@affillist}{\AB@authlist\\[\affilsep]
   \marginpar{\raggedright\footnotesize\themetadata\par}\AB@affillist}{}{}
 
 \renewcommand{\maketitle}{%
@@ -259,7 +259,7 @@
    \textcolor{eLifeMediumGrey}{\rule{\textwidth}{2pt}}
    \vskip16pt
    \textcolor{eLifeLightBlue}{\large\bfseries\abstractname\space}
-}{%   
+}{%
    \vskip8pt
    \textcolor{eLifeMediumGrey}{\rule{\textwidth}{2pt}}
    \vskip16pt

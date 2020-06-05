@@ -21,10 +21,10 @@ ax.yaxis.set_tick_params(labelsize=6)
 ax.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
 ax.set_ylabel('total number of\ntRNA synthetases per cell', fontsize=6)
 ax.set_yscale('log')
-ax.set_ylim([5E3, 1E5])
+ax.set_ylim([5E3, 5E5])
 ax.set_xlim([0, 2])
 _trna = data[data['shorthand']=='trna']
-ax.plot(0.5, 1.5E4,'o', ms=6, color=colors['dark_brown'], alpha=0.75, label='estimated value')
+ax.plot(0.5, 1.5E4,'o', ms=6, color=colors['dark_brown'], alpha=0.4, label='estimated value')
 for g, d in _trna.groupby(['dataset', 'dataset_name']):
     ax.plot(d['growth_rate_hr'], d['n_complex'], 'o', ms=4, alpha=0.75,
             color=dataset_colors[g[0]], markeredgecolor='k', markeredgewidth=0.5,
@@ -43,10 +43,10 @@ ax.yaxis.set_tick_params(labelsize=6)
 ax.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
 ax.set_ylabel('ribosomes per cell', fontsize=6)
 ax.set_yscale('log')
-ax.set_ylim([1E3, 1E5])
+ax.set_ylim([1E3, 5E5])
 ax.set_xlim([0, 2])
 _ribo = data[data['shorthand']=='ribosome']
-ax.plot(0.5, 1E4, 'o', ms=6, color=colors['dark_brown'], alpha=0.75, label='estimated value')
+ax.plot(0.5, 1E4, 'o', ms=6, color=colors['dark_brown'], alpha=0.4, label='estimated value')
 for g, d in _ribo.groupby(['dataset', 'dataset_name']):
     ax.plot(d['growth_rate_hr'], d['n_complex'], 'o', ms=4, alpha=0.75,
             color=dataset_colors[g[0]], markeredgecolor='k', markeredgewidth=0.5,

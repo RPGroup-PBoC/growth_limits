@@ -26,7 +26,7 @@ for g, d in data.groupby(['shorthand', 'dataset', 'dataset_name']):
 # plot the prediction
 ax[0].plot(0.5, 3E3, 'o', ms=6, color=colors['dark_brown'], label='estimated value',
            alpha=0.4)
-ax[1].plot(0.5, 1E3, 'o', ms=6, color=colors['dark_brown'], label='estimated value',
+ax[1].plot(0.5, 2500, 'o', ms=6, color=colors['dark_brown'], label='estimated value',
            alpha=0.4)
 
 
@@ -44,8 +44,8 @@ for a in ax:
 # Add locations of estimates
 ax[0].hlines(3E3, 0, 0.5, color='k', linestyle='--', lw=0.5)
 ax[0].vlines(0.5, -0.1, 3E3, color='k', linestyle='--', lw=0.5)
-ax[1].hlines(1E3, 0, 0.5, color='k', linestyle='--', lw=0.5)
-ax[1].vlines(0.5, -0.1, 1E3, color='k', linestyle='--', lw=0.5)
+ax[1].hlines(2500, 0, 0.5, color='k', linestyle='--', lw=0.5)
+ax[1].vlines(0.5, -0.1, 2500, color='k', linestyle='--', lw=0.5)
 
 plt.tight_layout()
 plt.savefig('../../figures/energy_estimate_plots.svg')

@@ -13,7 +13,7 @@ dataset_markers = {'li_2014':'o', 'schmidt_2016':'X',
 cats = ['carbon_tport_tot', 'glucose_tport', 'glycerol_tport', 'fructose_tport', 'xylose_tport']
 
 
-fig, ax = plt.subplots(2, 3, figsize=(6, 4))
+fig, ax = plt.subplots(2, 3, figsize=(6.5, 4))
 axes = {c:a for c, a in zip(cats, ax.ravel())}
 for a in ax.ravel():
     a.xaxis.set_tick_params(labelsize=6)
@@ -21,11 +21,12 @@ for a in ax.ravel():
     a.set_yscale('log')
     a.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
     a.set_ylabel('complexes per cell', fontsize=6)
+    a.set_xlim([0, 2])
 
 _ax = ax.ravel()
 _ax[-1].axis('off')
-_ax[0].set_ylim([1E3,  1E6])
-_ax[1].set_ylim([1E3,  1E6])
+_ax[0].set_ylim([5E2,  1E6])
+_ax[1].set_ylim([5E2,  1E6])
 _ax[2].set_ylim([1,  5E3])
 _ax[3].set_ylim([10,  1E4])
 _ax[4].set_ylim([10,  1E4])
@@ -74,8 +75,13 @@ _ax[-1].plot([], [], 's', color=colors['red'], markeredgecolor='k', markeredgewi
 _ax[-1].legend(fontsize=7.5, loc='center')
 plt.tight_layout()
 
+for a in ax.ravel()[:-1]:
+    a.hlines(1E3, 0, 2, color='k', linestyle='--', lw=0.75)
 # Add panel labels
 # for a, lab in zip(ax.ravel(), ['(A)', '(B)', '(C)', '(D)', '(E)']):
     # a.text(-0.22, 1.1, lab, transform=a.transAxes, fontsize=6)
 plt.savefig('../../figures/induced_expression.svg', bbox_inches='tight')
+# %%
+
+
 # %%

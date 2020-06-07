@@ -52,10 +52,31 @@ localize into discrete foci colocalized with the DNA replisome complex
 where growth is slow, indicating that spatial organization and regulation of the
 activity of the complexes plays an important role. 
 
+\begin{figure} 
+    \begin{fullwidth} 
+        \centering{
+\includegraphics{main_figs/DNA_synthesis} \caption{\textbf{Complex abundance
+estimates for dNTP synthesis and DNA replication.} (A) Estimate of the number
+of ribonucleotide reductases enzymes needed to facilitate the synthesis of
+$\approx 10^7$ dNTPs over the course of a 6000 second generation time. Points
+in the plot correspond to the total number of ribonucleotide reductase I
+([NrdA]$_2$[NrdB]$_2$) and ribonucleotide reductase II ([NrdE]$_2$[NrdF]$_2$)
+complexes. (B) An estimate for the minimum number of DNA polymerases
+holoenzyme complexes needed to facilitate replication of a single genome.
+Points in the top plot correspond to the total number of DNA polymerase III
+holoenzyme complexes
+([DnaE]$_3$[DnaQ]$_3$[HolE]$_3$[DnaX]$_5$[HolB][HolA][DnaN]$_4$[HolC]$_4$[HolD]$_4$)
+per cell. Bottom plot shows the effective concentration of DNA polymerase III
+holoenzyme given cell volumes calculated from the growth rate as in
+\cite{si2019}.} 
+\label{fig:DNA_synthesis} } 
+\end{fullwidth} 
+\end{figure}
+
 
 \subsubsection{DNA Replication}
-We now turn our focus twoards the process of integration of the dNTP building
-blocks into the replicated chromosme strand via the DNA polymerase enzymes.
+We now turn our focus towards the process of integration of the dNTP building
+blocks into the replicated chromosome strand via the DNA polymerase enzymes.
 Replication of bacterial chromosomes is initiated at a single region of the
 chromosome termed the \textit{oriC} locus at which a pair of DNA polymerases
 bind and begin their high-fidelity replication of the genome in opposite
@@ -82,8 +103,20 @@ Recent work \citep{si2017} has shown that the replicative timescale of cell
 division can be massively parallelized where \textit{E. coli} can have on the
 order of 10 - 12 replication forks at a given time. Thus, even in rapidly
 growing cultures, only a few polymerases ($\approx 10$) are needed to
-replicate the chromosome. However, as shown in \FIG{dna_synthesis}(A), DNA
+replicate the chromosome. However, as shown in \FIG{dna_synthesis}(B), DNA
 polymerase III is nearly an nearly an order of magnitude more abundant. This
-discrepancy can be understood when considering the binding affinities. [GC:
-... need to think this out. This feels like I am going far afield of the
-actual message of the paper.]
+discrepancy can be understood when considering the binding affinities. The
+DNA polymerase III complex is highly processive, facilitated by a strong
+affinity of the complex to the DNA. \textit{In vitro} biochemical
+characterization has quantified the $K_D$ of DNA polymerase III holoenzyme to
+single-stranded and double-stranded DNA to be 50 and 200 nM, respectively.
+The bottom plot in \FIG{DNA_synthesis}(B) shows that the concentration of the
+DNA polymerase III across all data sets and growth conditions is within this
+range \citep{ason2000}. Thus, while the copy number of the DNA polymerase III
+is in excess of the strict number required to replicate the genome, the copy
+number is tuned such that the concentration is approximately equal to the
+dissociation constant to the DNA. While the processes regulating the
+initiation of DNA replication are complex and involve more than just the
+holoenzyme, these data indicate that the kinetics of replication rather than
+the explicit copy number of the DNA polymerase III holoenzyme is the more
+relevant feature of DNA replication to consider.

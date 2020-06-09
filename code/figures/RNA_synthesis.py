@@ -28,9 +28,9 @@ ax[1].set_ylim([1E2, 1E4])
 
 # Plot the predictions
 for a in ax:
-    a.plot(0.5, 500, 'o', ms=6, alpha=0.4, color=colors['dark_brown'], label='estimated value')
-    a.vlines(0.5, 1, 500, color='k', linestyle='--', label='__nolegend__', lw=0.75)
-    a.hlines(500, 0, 0.5, color='k', linestyle='--', label='__nolegend__', lw=0.75)
+    a.plot(0.5, 700, 'o', ms=6, alpha=0.4, color=colors['dark_brown'], label='estimated value')
+    a.vlines(0.5, 1, 700, color='k', linestyle='--', label='__nolegend__', lw=0.75)
+    a.hlines(700, 0, 0.5, color='k', linestyle='--', label='__nolegend__', lw=0.75)
 
 # plot the data
 for p, a in zip([rnap, sig70], ax.ravel()):

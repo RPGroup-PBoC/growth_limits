@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: eLife_draft.aux
+The style file: apalike.bst
+Database file #1: library.bib
+Warning--I didn't find a database entry for ""
+You've used 68 entries,
+            1935 wiz_defined-function locations,
+            893 strings with 20362 characters,
+and the built_in function-call counts, 33539 in all, are:
+= -- 3173
+> -- 1916
+< -- 17
++ -- 705
+- -- 686
+* -- 3300
+:= -- 5873
+add.period$ -- 207
+call.type$ -- 68
+change.case$ -- 682
+chr.to.int$ -- 67
+cite$ -- 68
+duplicate$ -- 961
+empty$ -- 2051
+format.name$ -- 778
+if$ -- 6316
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 69
+newline$ -- 345
+num.names$ -- 204
+pop$ -- 540
+preamble$ -- 1
+purify$ -- 683
+quote$ -- 0
+skip$ -- 704
+stack$ -- 0
+substring$ -- 2495
+swap$ -- 76
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 406
+warning$ -- 0
+while$ -- 253
+width$ -- 0
+write$ -- 891
+(There was 1 warning)

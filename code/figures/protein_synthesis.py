@@ -24,15 +24,15 @@ ax.set_yscale('log')
 ax.set_ylim([5E3, 5E5])
 ax.set_xlim([0, 2])
 _trna = data[data['shorthand']=='trna']
-ax.plot(0.5, 2.5E4,'o', ms=6, color=colors['dark_brown'], alpha=0.4, label='estimated value')
+ax.plot(0.5, 1E4,'o', ms=6, color=colors['dark_brown'], alpha=0.4, label='estimated value')
 for g, d in _trna.groupby(['dataset', 'dataset_name']):
     ax.plot(d['growth_rate_hr'], d['n_complex'], 'o', ms=4, alpha=0.75,
             color=dataset_colors[g[0]], markeredgecolor='k', markeredgewidth=0.5,
             label=g[1])
 
 # Plot the dashed lines.
-ax.vlines(0.5, 1, 2.5E4, 'k', linestyle='--', label='__nolegend__', lw=0.75)
-ax.hlines(2.5E4, 0, 0.5, 'k', linestyle='--', label='__nolegend__', lw=0.75)
+ax.vlines(0.5, 1, 1E4, 'k', linestyle='--', label='__nolegend__', lw=0.75)
+ax.hlines(1E4, 0, 0.5, 'k', linestyle='--', label='__nolegend__', lw=0.75)
 ax.legend(fontsize=6)
 plt.savefig('../../figures/tRNA_synthase_plot.svg', bbox_inches='tight')
 

@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import prot.viz
+import prot.size
 colors, palette = prot.viz.bokeh_theme()
 prot.viz.plotting_style()
 
@@ -24,7 +25,7 @@ AVG_PROT_MASS = 30E3 / (6E23 * 1E-12) # average protein mass in pg
 AVG_PROT_LENGTH = 300 # in Amino Acids
 AVG_AA_MASS = 110 / (6E23 * 1E-12)
 TRANSLATION_RATE = 17.1 # in AA per sec
-volume =  0.28 * np.exp(1.33  * growth_rate) # From Si et al. 2017
+volume = prot.size.lambda2size(growth_rate)
 a = -0.89
 c = 4.60
 d = 0.922

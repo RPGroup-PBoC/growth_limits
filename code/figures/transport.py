@@ -78,9 +78,9 @@ ax.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
 ax.set_ylabel('phosphate transporters per cell', fontsize=6)
 
 # Plot the prediction.
-ax.plot(0.5, 2E2, 'o', ms=6, color=colors['dark_brown'], alpha=0.4, label='estimated value')
-ax.vlines(0.5, 1E1, 2E2, color='k', linestyle='--', lw=0.75, label='__nolegend__')
-ax.hlines(2E2, 0, 0.5, color='k', linestyle='--', lw=0.75, label='__nolegend__')
+ax.plot(0.5, 150, 'o', ms=6, color=colors['dark_brown'], alpha=0.4, label='estimated value')
+ax.vlines(0.5, 1E1, 150, color='k', linestyle='--', lw=0.75, label='__nolegend__')
+ax.hlines(150, 0, 0.5, color='k', linestyle='--', lw=0.75, label='__nolegend__')
 
 # Plot the data
 for g, d in _phospho.groupby(['dataset', 'dataset_name']):

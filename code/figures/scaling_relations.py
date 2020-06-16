@@ -108,3 +108,48 @@ ax[1].plot(GROWTH_RATE, N_etc, 'k--', lw=0.75, label='prediction')
 
 plt.savefig('../../figures/energy_production_scaling.pdf')
 # %%
+fig, ax = plt.subplots(1, 1, figsize=(3, 2))
+ax.set_yscale('log')
+ax.xaxis.set_tick_params(labelsize=6)
+ax.yaxis.set_tick_params(labelsize=6)
+ax.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
+ax.set_ylabel('number of phosphate transporters', fontsize=6)
+ax.set_xlim([0, 2])
+
+ax.plot(GROWTH_RATE, N_phos_tport, 'gray', lw=5, alpha=0.25, label='cell size dependence')
+ax.plot(0.5, 133, 'o', color=colors['dark_brown'], alpha=0.4, ms=6, label='point estimate', zorder=1000)
+ax.hlines(133, 0, 0.5, 'k', linestyle='--', lw=0.5, label='__nolegend__', zorder=999)
+ax.vlines(0.5, 0, 133, 'k', linestyle='--', lw=0.5, label='__nolegend__', zorder=999)
+
+for g, d in data[data['shorthand']=='phosphate_tport'].groupby(['dataset', 'dataset_name']):
+    ax.plot(d['growth_rate_hr'], d['n_complex'], 'o', markeredgewidth=0.5,
+    markeredgecolor='k', markerfacecolor=dataset_colors[g[0]], label=g[1],
+    ms=4, alpha=0.75)
+
+ax.legend(fontsize=6)
+plt.savefig('../../phospho_tport_scaling_plot.svg')
+
+# %%
+fig, ax = plt.subplots(1, 1, figsize=(3, 2))
+ax.set_yscale('log')
+ax.xaxis.set_tick_params(labelsize=6)
+ax.yaxis.set_tick_params(labelsize=6)
+ax.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
+ax.set_ylabel('number of sulfate transporters', fontsize=6)
+ax.set_xlim([0, 2])
+ax.set_ylim([1E1, 1E5])
+
+ax.plot(GROWTH_RATE, N_sulf_tport, 'gray', lw=5, alpha=0.25, label='cell size dependence')
+ax.plot(0.5, 1E3, 'o', color=colors['dark_brown'], alpha=0.4, ms=6, label='point estimate', zorder=1000)
+ax.hlines(1E3, 0, 0.5, 'k', linestyle='--', lw=0.5, label='__nolegend__', zorder=999)
+ax.vlines(0.5, 0, 1E3, 'k', linestyle='--', lw=0.5, label='__nolegend__', zorder=999)
+
+for g, d in data[data['shorthand']=='sulfur_tport'].groupby(['dataset', 'dataset_name']):
+    ax.plot(d['growth_rate_hr'], d['n_complex'], 'o', markeredgewidth=0.5,
+    markeredgecolor='k', markerfacecolor=dataset_colors[g[0]], label=g[1],
+    ms=4, alpha=0.75)
+
+ax.legend(fontsize=6, ncol=2, handlelength=1)
+plt.savefig('../../sulfur_tport_scaling_plot.svg')
+
+# %%

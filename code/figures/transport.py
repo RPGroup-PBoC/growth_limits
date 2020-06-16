@@ -28,9 +28,9 @@ ax.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
 ax.set_ylabel('mean number of carbohydrate\n transporters per cell', fontsize=6)
 
 # Plot the prediction.
-ax.plot(0.5, 1E3, 'o', ms=6, color=colors['dark_brown'], alpha=0.4, label='estimated value')
-ax.vlines(0.5, 1E2, 1E3, color='k', linestyle='--', lw=0.75, label='__nolegend__')
-ax.hlines(1E3, 0, 0.5, color='k', linestyle='--', lw=0.75, label='__nolegend__')
+ax.plot(0.5, 1.5E3, 'o', ms=6, color=colors['dark_brown'], alpha=0.4, label='estimated value')
+ax.vlines(0.5, 1E2, 1.5E3, color='k', linestyle='--', lw=0.75, label='__nolegend__')
+ax.hlines(1.5E3, 0, 0.5, color='k', linestyle='--', lw=0.75, label='__nolegend__')
 
 # Plot the data
 for g, d in _carbon.groupby(['dataset', 'dataset_name']):
@@ -47,7 +47,7 @@ fig, ax = plt.subplots(1, 1, figsize=(3, 2))
 # Format and label the axes
 ax.xaxis.set_tick_params(labelsize=6)
 ax.yaxis.set_tick_params(labelsize=6)
-# ax.set_xlim([0, 2])
+ax.set_xlim([0, 2])
 # ax.set_ylim([1E2, 1E5])
 ax.set_yscale('log')
 ax.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
@@ -71,7 +71,7 @@ fig, ax = plt.subplots(1, 1, figsize=(3, 2))
 # Format and label the axes
 ax.xaxis.set_tick_params(labelsize=6)
 ax.yaxis.set_tick_params(labelsize=6)
-# ax.set_xlim([0, 2])
+ax.set_xlim([0, 2])
 ax.set_ylim([5E1, 1E4])
 ax.set_yscale('log')
 ax.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)

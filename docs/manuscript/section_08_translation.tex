@@ -43,6 +43,7 @@ This allows us to rewrite the growth rate as,
 
 \begin{equation}
 \lambda_{\textrm{translation-limited}} \approx \frac{ln(2) \cdot r_t}{L_R}  \Phi_R,
+\label{eq:translation_limit_growth_rate}
 \end{equation}
 where $L_R$ is the total length in amino acids that make up a ribosome, and
 $\Phi_R$ is the ribosomal mass fraction. This is plotted as a function of
@@ -147,10 +148,39 @@ down-regulation of non-ribosomal genes.
 
 % Next consider growth below the capacity of ribosomes.
 
+
+% Maybe start with E. coli section by noting details from Jun lab as a given. Si et al 2017: The average cell size increased exponentially with respect to the nutrient-imposed growth rate l ( = ln2/t), in agreement with the nutrient growth law [1] (Figure 1; see the Supplemental Information). The ribosome fraction 4R increased linearly with the growth rate, confirming previous re- ports [8, 9]. tC and tcyc were both constant for a wide range of growth conditions at tC = 38.00 ± 4.50 and tcyc = 75.10 ± 7.20 (Fig- ure 1C; see the Supplemental Information) [21, 22].
+%  AND it follows 'adder' model of cell division
+
+%  Noting Fig7A, highlight that for cells to optimize their growth , they will benefit by varying their ribosomal abundance; and that they can do this by varying gene dosage - since otherwise it is not obvious how they might make more ribsoomes.
+
+% ****** Data from that 2020 paper on ppGpp and Si et al, and Zhu et al. all point to an increase in ribosomal content with higher number of origins (t_cyc/ tau)
+% ->> Can I show this somehow , maybe an important point.
+
+
+
+% Might be worth noting that E. coli doesn't grow if you knockout regulation by ppGpp. FROM Zhu et al. 2019 NAR: On the other hand, low ppGpp levels seem to be adverse for biomass growth as well, as shown by the inability of ppGpp- null strain to grow in minimal medium (21,32,33), suggest- ing the importance of maintain an optimal ppGpp level for cell growth.
+
+% It'll remain to be determined whether perturbations like those in Dai et al.,
+% and the more recent paper in NAR is consistent with a varying number of
+% origins. But I think it's curious that they see a trend exactly like the trend
+% in nutrient-limited growth when they vary ppGpp, and roughly similar (high)
+% active fraction of ribosomes. I guess is that this type of regulation works
+% on more than just ribosomes, and perhaps it is changing number of origins.
+% Another point is that fraction of ribosomes again seems to move toward
+% a non-zero limit, which bodes well with number of ribosomes depending on
+% number of DNA ori.
+
+% I don't think it's trivial to 'up' regulate ribosomal synthensis. This seems like an importsnt consideration.
+
+% I think it might be worth noting that we can think of this changing gene dosage as also changing the genome makeup of the cell.
+
+
+
 \begin{figure*}
     \begin{fullwidth}
     \centering{
-        % \includegraphics{main_figs/fig8_ribosome_e_coli.pdf}
+        \includegraphics{main_figs/fig8_ribosome_growth_limit_ecoli_.pdf}
         \caption{\textbf{.} (A) (B) (C).}
         \label{fig:translation_2}
     }

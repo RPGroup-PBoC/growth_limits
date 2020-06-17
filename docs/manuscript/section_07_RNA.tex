@@ -32,30 +32,30 @@ hypothesis in which the rRNA operon is completely tiled with RNA polymerase.
 RNA polymerases are loaded onto the promoter of an rRNA gene at a rate of
 $\approx$ 1 per second (BNID: 111997; 102362, \cite{milo2010}). If RNA
 polymerases are being constantly loaded on to the rRNA genes at this rate,
-then we can make the approximation that $\approx$ 1 functional rRNA unit is
+then we can assume that $\approx$ 1 functional rRNA unit is
 synthesized per second. With a 5000 second division time, this hypothesis
 leads to a maximal value of 5000 functional rRNA units, still undershooting
 the observed number of $10^4$ ribosomes per cell.
 
 \textit{E. coli} has evolved a clever mechanism to surpass this kinetic limit
-for the rate of rRNA production. Rather than having only one copy of each
-rRNA gene, \textit{E. coli} has seven copies of the operon (BIND: 100352,
-\cite{milo2010}) four of which are localized directly adjacent to the origin of replication
-\citep{birnbaum1971}. As fast growth requires that multiple copies are being
-synthesized simultaneously, this means that the total number of rRNA genes
-can be be on the order of $\approx$ 10 -- 70 at moderate to fast growth rates
-\citep{stevenson2004}. Using our standard time scale of a 5000 second
-division time, we can make the lower-bound estimate that the typical cell
-will have 7 copies of the rRNA operon. Synthesizing one functional rRNA unit
-per second per operon, a total of $4 \times 10^4$ rRNA units can be
+for the rate of rRNA production. Rather than having only one copy of each rRNA
+gene, \textit{E. coli} has seven copies of the operon (BIND: 100352,
+\cite{milo2010}) four of which are localized directly adjacent to the origin of
+replication \citep{birnbaum1971}. As fast growth also implies an increased gene
+dosage due to paralellized chromosomal replication, the total number of rRNA
+genes can be on the order of $\approx$ 10 -- 70 copies at moderate to fast
+growth rates \citep{stevenson2004}. Using our standard time scale of a 5000
+second division time, we can make the lower-bound estimate that the typical cell
+will have 7 copies of the rRNA operon. Synthesizing one functional rRNA unit per
+second per rRNA operon, a total of $4 \times 10^4$ rRNA units can be
 synthesized, comfortably above the observed number of ribosomes per cell.
 
 How many RNA polymerases are then needed to constantly transcribe 7 copies of
 the rRNA genes? We approach this estimate by considering the maximum number
-of RNA polymerases can be tiling the rRNA genes with a loading rate of 1 per
+of RNA polymerases tiled along the rRNA genes with a loading rate of 1 per
 second and a transcription rate of 40 nucleotides per second. Considering
 that a RNA polymerase has a physical footprint of approximately 40
-nucleotides (BNID: 107873, \cite{milo2010}), we can state that there is
+nucleotides (BNID: 107873, \cite{milo2010}), we can expect
 $\approx$ 1 RNA polymerase per 80 nucleotides. With a total length of
 $\approx$ 4500 nucleotides per operon and 7 operons per cell, the maximum
 number of RNA polymerases that can be transcribing rRNA at any given time is
@@ -73,25 +73,25 @@ made from a single mRNA, with yields ranging from 10$^1$ to 10$^4$ (BNID: 104186
 $\approx$ 1000 proteins synthesized per mRNA, a value that agrees with
 experimental measurements of the number of proteins per cell ($\approx 3
 \times 10^6$, BNID: 100088, \cite{milo2010}) and total number of mRNA per
-cell ($\approx 3 \times 10^3$, BNID:100064, \cite{milo2010}).  
+cell ($\approx 3 \times 10^3$, BNID:100064, \cite{milo2010}).
 
-This estimation captures the \textit{steady state} mRNA copy number, meaning
+This estimation captures the \textit{steady-state} mRNA copy number, meaning
 that at any given time, there will exist approximately 3000 unique mRNA
 molecules. To determine the \textit{total} number of mRNA that need to be
-synthesized over the cell's lifetime, we must consider degradation of the
-mRNA. In most bacteria, mRNAs are rather unstable with life times on the order
-of several minutes (BNID: 104324; 106253; 111927; 111998,
-\cite{milo2010}). For convenience, we will assume that the typical mRNA in our
-cell of interest has a typical lifetime of $\approx$ 300 seconds. Using this
-value, we can determine the total mRNA production rate to maintain a
-steady-state copy number of 3000 mRNA per cell. While we direct the reader to
-the appendix for a more detailed discussion of mRNA transcriptional dynamics, we
-state here that the total mRNA production rate must be on the order of $\approx$ 15 mRNA made every second.  
-In \textit{E. coli}, the average protein is $\approx$ 300 amino acids in length (BNID:
-108986; \cite{milo2010}), meaning that the corresponding mRNA is $\approx$
-900 nucleotides which we will further approximate to be $\approx$ 1000
-nucleotides given non-protein coding regions of the mRNA present on the 5'
-and 3' ends. This means that the cell must have enough RNA polymerase molecules
+synthesized over the cell's lifetime, we must consider degradation of the mRNA.
+In most bacteria, mRNAs are rather unstable with life times on the order of
+several minutes (BNID: 104324; 106253; 111927; 111998, \cite{milo2010}). For
+convenience, we assume that the typical mRNA in our cell of interest has a
+typical lifetime of $\approx$ 300 seconds. Using this value, we can determine
+the total mRNA production rate to maintain a steady-state copy number of 3000
+mRNA per cell. While we direct the reader to the appendix for a more detailed
+discussion of mRNA transcriptional dynamics, we state here that the total mRNA
+production rate must be on the order of $\approx$ 15 mRNA per second. In
+\textit{E. coli}, the average protein is $\approx$ 300 amino acids in length
+(BNID: 108986; \cite{milo2010}), meaning that the corresponding mRNA is
+$\approx$ 900 nucleotides which we will further approximate as $\approx$ 1000
+nucleotides to account for the non-protein coding regions on the 5' and
+3' ends. This means that the cell must have enough RNA polymerase molecules
 about to sustain a transcription rate of $\approx 1.5 \times 10^4$ nucleotides
 per second. Knowing that a single RNA polymerase polymerizes RNA at a clip of 40
 nucleotides per second, we arrive at a comfortable estimate of $\approx$ 250 RNA
@@ -99,28 +99,27 @@ polymerase complexes needed to satisfy the mRNA demands of the cell. It is worth
 noting that this number is approximately half of that required to synthesize
 enough rRNA, as we saw in the previous section. We find this to be a striking
 result as these 250 RNA polymerase molecules are responsible for the
-transcription of the $\approx$ 4000 protein coding genes which are not ribosome
-associated. 
+transcription of the $\approx$ 4000 protein coding genes that are not ribosome
+associated.
 
 \subsubsection{tRNA}
-The final class of RNA molecules worthy of quantitative consideration is the
-the pool of tRNAs used during translation to map codon sequence to amino acid
-identity. Unlike mRNA or rRNA, each individual tRNA is remarkably short,
-ranging from 70 to 95 nucleotides each (BNID: 109645; 102340,
-\cite{milo2010}). What they lack in length, they make up for in abundance.
-There are approximately $\approx$ 3000 tRNA molecules present for each of the
-20 amino acids (BNID: 105280, \cite{milo2010}), although the precise copy
-number is dependent on the identity of the ligated amino acid.  Using these
-values, we make the estimate that $\approx 5 \times 10^6$ nucleotides are
-sequestered in tRNA per cell. Unlike mRNA, tRNA is remarkably stable with
-typical lifetimes \textit{in vivo} on the order of $\approx$ 48 hours
-\citep{abelson1974,svenningsen2017} -- well
+The final class of RNA molecules worthy of quantitative consideration is the the
+pool of tRNAs used during translation to map codon sequence to amino acid
+identity. Unlike mRNA or rRNA, each individual tRNA is remarkably short, ranging
+from 70 to 95 nucleotides each (BNID: 109645; 102340, \cite{milo2010}). What
+they lack in length, they make up for in abundance. There are approximately
+$\approx$ 3000 tRNA molecules present for each of the 20 amino acids (BNID:
+105280, \cite{milo2010}), although the precise copy number is dependent on the
+identity of the ligated amino acid.  Using these values, we make the estimate
+that $\approx 5 \times 10^6$ nucleotides are sequestered in tRNA per cell.
+Unlike mRNA, tRNA is remarkably stable with typical lifetimes \textit{in vivo}
+on the order of $\approx$ 48 hours \citep{abelson1974,svenningsen2017} -- well
 beyond the timescale of division. Once again using our rule-of-thumb for the
 rate of transcription to be 40 nucleotides per second and assuming a division
-time of $\approx$ 5000 seconds, we arrive at an estimate of $\approx$ 20 RNA polymerases to 
-synthesize enough tRNA. This requirement pales in comparison to the number of polymerases
-needed to generate the rRNA and mRNA pools and can be neglected as a significant
-transcriptional burden.
+time of $\approx$ 5000 seconds, we arrive at an estimate of $\approx$ 20 RNA
+polymerases to synthesize enough tRNA. This requirement pales in comparison to
+the number of polymerases needed to generate the rRNA and mRNA pools and can be
+neglected as a significant transcriptional burden.
 
 \begin{figure}
     \begin{fullwidth}
@@ -143,42 +142,41 @@ transcriptional burden.
 \end{figure}
 
 
+\subsubsection{RNA Polymerase and $\sigma$-factor Abundance}
+These estimates, summarized in \FIG{RNA_synthesis} (A), reveal that synthesis of
+rRNA  and mRNA are the dominant RNA species synthesized by RNA polymerase,
+suggesting the need for $\approx$ 700 RNA polymerases per cell. As is revealed
+in \FIG{RNA_synthesis} (B), this estimate is about an order of magnitude below
+the observed number of RNA polymerase complexes per cell ($\approx$ 5000 -
+7000). This disagreement between the estimated number of transcriptionally
+active RNA polymerases and these observations jibes with recent literature
+revealing that $\approx$ 80 \% of RNA polymerases in \textit{E. coli} are not
+transcriptionally active \citep{patrick2015}.
 
-\subsubsection{RNA Polymerase and $\sigma$-factor Abundance} 
-These estimates, summarized in \FIG{RNA_synthesis} (A), reveal that synthesis
-of rRNA  and mRNA are the dominant forces dictating the number of RNA polymerases needed
-per cell. For completeness, we can use our estimates of $\approx$ 400, 250,
-and 20 RNA polymerases needed to synthesize the required number of rRNAs,
-mRNAs, and tRNAs, respectively, to state that the typical cell needs to
-maintain a pool of $\approx$ 700 RNA polymerases. As is revealed in
-\FIG{RNA_synthesis} (B), this estimate is about an order
-of magnitude below the observed number of RNA polymerase complexes per cell
-($\approx$ 5000 - 7000). This disagreement between the estimated number of transcriptionally active RNA
-polymerases and these observations jibes with recent literature revealing that
-$\approx$ 80 \% of RNA polymerases in \textit{E. coli} are not transcriptionally
-active \citep{patrick2015}. This leads us to consider other factors intimately
-involved in transcription may set the scale of this curious balance. 
+In addition, it is also vital to consider the role of $\sigma$-factors which
+help RNA polymerase identify and bind to transcriptional start sites
+\citep{browning2016}. Here we consider $\sigma^{70}$ (RpoD) which is the
+dominant "general-purpose" $\sigma$-factor in \textit{E. coli}. While initially
+thought of as being solely involved in transcriptional initiation, the past two
+decades of single-molecule work has revealed a more multipurpose role for
+$\sigma^{70}$ including facilitating transcriptional elongation
+\citep{kapanidis2005, goldman2015, perdue2011,mooney2003,mooney2005}.
+\FIG{RNA_synthesis} (B) is suggestive of such a role as the number of
+$\sigma^{70}$ proteins per cell is in close agreement with our estimate of the
+number of transcriptional complexes needed.
 
-One such factor we can consider is the influence of $\sigma$-factors, namely
-$\sigma^{70}$ (RpoD) which is the dominant "general-purpose" $\sigma$-factor
-in \textit{E. coli}. While initially thought of as being solely involved in
-transcriptional initiation, the past two decades of single-molecule
-work has revealed a more multipurpose role for $\sigma^{70}$
-including facilitating transcriptional elongation \citep{kapanidis2005,
-goldman2015, perdue2011,mooney2003,mooney2005}. \FIG{RNA_synthesis} (B) is
-suggestive of such a role as the number of $\sigma^{70}$ proteins per cell is in
-close agreement with our estimate of the number of transcriptional complexes
-needed. In the appendix and supplemental figure XXX [GC: format number later],
-the slope of the $\sigma^{70}$ abundance as a factor of the growth rate can be
-very accurately estimated by factoring in a) the growth-rate dependent size of
-the proteome and b) the rRNA gene dosage resulting from parallelized replication
-of the chromosome. 
+% In the appendix and supplemental figure XXX [GC: format number later],
+% the slope of the $\sigma^{70}$ abundance as a factor of the growth rate can be
+% very accurately estimated by factoring in a) the growth-rate dependent size of
+% the proteome and b) the rRNA gene dosage resulting from parallelized replication
+% of the chromosome.
 
 While these estimates and comparison with experimental data reveal an
 interesting dynamic at play between the transcriptional demand and copy numbers
-of the corresponding machinery, these findings illustrate that transcription cannot be the
-rate limiting step in bacterial division. \FIG{RNA_synthesis} (A) reveals that
-the availability of RNA polymerase is not a limiting factor for cell division as there is $\sim$ 10-fold
-more complexes than needed. Furthermore, if more transcriptional activity was
-needed to satisfy the cellular requirements, more $\sigma^{70}$-factors could be
-expressed to utilize a larger fraction of the RNA polymerase pool. 
+of the corresponding machinery, these findings illustrate that transcription
+cannot be the rate limiting step in bacterial division. \FIG{RNA_synthesis} (A)
+reveals that the availability of RNA polymerase is not a limiting factor for
+cell division as the cell always has an apparent $\sim$ 10-fold excess than needed.
+Furthermore, if more transcriptional activity was needed to satisfy the cellular
+requirements, more $\sigma^{70}$-factors could be expressed to utilize a larger
+fraction of the RNA polymerase pool.

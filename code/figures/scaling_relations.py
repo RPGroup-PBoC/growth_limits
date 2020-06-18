@@ -127,7 +127,7 @@ for g, d in data[data['shorthand']=='phosphate_tport'].groupby(['dataset', 'data
     ms=4, alpha=0.75)
 
 ax.legend(fontsize=6)
-plt.savefig('../../phospho_tport_scaling_plot.svg')
+plt.savefig('../../figures/phospho_tport_scaling_plot.pdf')
 
 # %%
 fig, ax = plt.subplots(1, 1, figsize=(3, 2))
@@ -151,5 +151,40 @@ for g, d in data[data['shorthand']=='sulfur_tport'].groupby(['dataset', 'dataset
 
 ax.legend(fontsize=6, ncol=2, handlelength=1)
 plt.savefig('../../sulfur_tport_scaling_plot.svg')
+
+# %%
+fig, ax = plt.subplots(1, 1, figsize=(4, 2))
+ax.xaxis.set_tick_params(labelsize=6)
+ax.yaxis.set_tick_params(labelsize=6)
+ax.set_yscale('log')
+ax.set_xlim([0, 2])
+ax.set_ylim([1E1, 1E4])
+ax.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
+ax.set_ylabel('phosphate transporters per cell', fontsize=6)
+ax.plot(0.5, 133, 'o', color=colors['dark_brown'], alpha=0.5, ms=6, label='point estimate', zorder=100)
+ax.hlines(133, 0, 0.5, 'k', linestyle='--', lw=0.75, label='__nolegend__', zorder=99)
+ax.vlines(0.5, 0, 133, 'k', linestyle='--', lw=0.75, label='__nolegend__', zorder=99)
+for g, d in data[data['shorthand']=='phosphate_tport'].groupby(['dataset', 'dataset_name']):
+    ax.plot(d['growth_rate_hr'], d['n_complex'], 'o', ms=4.5, markeredgecolor='k', 
+            markeredgewidth=0.5, color=dataset_colors[g[0]], label=g[1])
+
+ax.legend(fontsize=6)
+plt.savefig('../../figures/phosphate_point_estimate.pdf', bbox_inches='tight')
+# %%
+fig, ax = plt.subplots(1, 1, figsize=(4, 2))
+ax.xaxis.set_tick_params(labelsize=6)
+ax.yaxis.set_tick_params(labelsize=6)
+ax.set_yscale('log')
+ax.set_xlim([0, 2])
+ax.set_ylim([1E1, 1E4])
+ax.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
+ax.set_ylabel('phosphate transporters per cell', fontsize=6)
+ax.plot(GROWTH_RATE, N_phos_tport, 'k--',  label='estimate', zorder=100)
+for g, d in data[data['shorthand']=='phosphate_tport'].groupby(['dataset', 'dataset_name']):
+    ax.plot(d['growth_rate_hr'], d['n_complex'], 'o', ms=4.5, markeredgecolor='k', 
+            markeredgewidth=0.5, color=dataset_colors[g[0]], label=g[1])
+ax.legend(fontsize=6)
+plt.savefig('../../figures/phosphate_continuum_estimate.pdf', bbox_inches='tight')
+
 
 # %%

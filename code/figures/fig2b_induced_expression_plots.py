@@ -19,7 +19,7 @@ CARB_FRAC = DRY_FRAC * constants['theta_C']['value']
 VOL = constants['volume']['value']
 T_DOUBLE = constants['t_double']['value']
 MASS_CARB = 12/6E11 # in pg
-GROWTH_RATE = constants['growth_rate']
+GROWTH_RATE = constants['growth_rate']['value']
 
 # Define transport constants.
 R_GLUC = 200 # in sugar per sec

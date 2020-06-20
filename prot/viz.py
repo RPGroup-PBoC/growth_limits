@@ -148,7 +148,17 @@ def altair_theme():
     alt.themes.register('pboc', _theme)# enable the newly registered theme
     alt.themes.enable('pboc')
 
-
+def color_palette():
+    """
+    Returns a dictionary of the PBOC color palette
+    """
+    return {'green': '#7AA974', 'light_green': '#BFD598',
+              'pale_green': '#DCECCB', 'yellow': '#EAC264',
+              'light_yellow': '#F3DAA9', 'pale_yellow': '#FFEDCE',
+              'blue': '#738FC1', 'light_blue': '#A9BFE3',
+              'pale_blue': '#C9D7EE', 'red': '#D56C55', 'light_red': '#E8B19D',
+              'pale_red': '#F1D4C9', 'purple': '#AB85AC',
+              'light_purple': '#D4C2D9', 'dark_green':'#7E9D90', 'dark_brown':'#905426'}
 
 def bokeh_theme():
     """A custom bokeh theme to match PBoC 2e colors"""
@@ -191,13 +201,7 @@ def bokeh_theme():
     bokeh.io.curdoc().theme = theme
 
     # Define the colors
-    colors = {'green': '#7AA974', 'light_green': '#BFD598',
-              'pale_green': '#DCECCB', 'yellow': '#EAC264',
-              'light_yellow': '#F3DAA9', 'pale_yellow': '#FFEDCE',
-              'blue': '#738FC1', 'light_blue': '#A9BFE3',
-              'pale_blue': '#C9D7EE', 'red': '#D56C55', 'light_red': '#E8B19D',
-              'pale_red': '#F1D4C9', 'purple': '#AB85AC',
-              'light_purple': '#D4C2D9', 'dark_green':'#7E9D90', 'dark_brown':'#905426'}
+    colors = color_palette()
     palette = [v for k, v in colors.items() if 'pale' not in k]
     return [colors, palette]
 
@@ -231,4 +235,12 @@ def plotting_style(grid=False):
     plt.rc('text.latex', preamble=r'\usepackage{sfmath}')
     plt.rc('mathtext', fontset='stixsans', sf='sans')
     sns.set_style('darkgrid', rc=rc)
+    return color_palette()
 
+def dataset_colors():
+    """
+    Returns standard colors for the data sets to ensure consistency across plots.
+    """
+    colors = color_palette()
+    return  {'li_2014':colors['purple'], 'schmidt_2016':colors['light_blue'],
+             'peebo_2015':colors['green'], 'valgepea_2013':colors['red']}

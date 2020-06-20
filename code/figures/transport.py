@@ -15,6 +15,8 @@ _sulfur = data[data['shorthand']=='sulfur_tport']
 _phospho = data[data['shorthand']=='phosphate_tport']
 
 
+
+
 # %%
 fig, ax = plt.subplots(1, 1, figsize=(3, 2))
 

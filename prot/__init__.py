@@ -5,6 +5,7 @@
 
 # from . import mcmc
 from . import stats
+from . import estimate
 from . import viz
 
 __author__ = """Griffin Chure"""

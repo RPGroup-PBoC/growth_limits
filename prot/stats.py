@@ -1,6 +1,9 @@
 import numpy as np
 import pandas as pd
 
+
+
+
 # Compute the total fractional occupancy. 
 def compute_fraction(df, groupby, mass_key='fg_per_cell', count_key='tot_per_cell'):
     """

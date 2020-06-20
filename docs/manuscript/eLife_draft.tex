@@ -1,24 +1,7 @@
 % !TeX root = ./eLife_draft.tex
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% ELIFE ARTICLE TEMPLATE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% PREAMBLE
 \documentclass[9pt,lineno]{elife}
-% Use the onehalfspacing option for 1.5 line spacing
-% Use the doublespacing option for 2.0 line spacing
-% Please note that these options may affect formatting.
-% Additionally, the use of the \newcommand function should be limited.
-
-\usepackage{lipsum} % Required to insert dummy text
 \usepackage[version=4]{mhchem}
 \usepackage{siunitx}
-\DeclareSIUnit\Molar{M}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% ARTICLE SETUP
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \title{Fundamental limits on the rate of bacterial cell division}
 \author[$\dagger$, 1]{Nathan M. Belliveau}
 \author[$\dagger$, 2, 3]{Griffin Chure}
@@ -40,94 +23,18 @@
 \affil[*]{Contributed equally}
 \contrib[$\dagger$]{These authors contributed equally to this work}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% ARTICLE START
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{document}
-
 \maketitle
-
 \begin{abstract}
-
+This will be written next
 \end{abstract}
 
-\input{section_01_introduction.tex}
-\input{section_03_import.tex}
+% \input{section_01_introduction.tex}
+\input{section_02_transport.tex}
 % \input{section_04_energy.tex}
 % \input{section_05_membrane.tex}
-\input{section_06_DNA.tex}
-\input{section_07_RNA.tex}
-\input{section_08_translation.tex}
-
-
-
-
-
-
-% For a half-width figure or table with text wrapping around it, use
-
-% \begin{verbatim}
-% \begin{wrapfigure}{l}{.46\textwidth}
-%   \includegraphics[width=\hsize]{...}
-%   \caption{...}\label{...}
-% \end{wrapfigure}
-% \end{verbatim}
-% %
-% as in \FIG{halfwidth}. For tables:
-
-% If you use the following prefixes for your \verb|\label|:
-% %
-% \begin{description}
-% \item[Figures] \texttt{fig:}, e.g.~\verb|\label{fig:view}|
-% \item[Figure Supplements] \texttt{figsupp:}, e.g.~\verb|\label{figsupp:sf1}|\\
-% (we'll assume \texttt{figsupp:sf1} is a figure supplement of \texttt{fig:view} in our example)
-% \item[Figure source data] \texttt{figdata:}, e.g.~\verb|\label{figdata:first}|
-% \item[Videos] \texttt{video:}, e.g.~\verb|\label{video:mv1}|
-% \item[Video supplements] \texttt{videosupp:}, e.g.~\verb|\label{videosupp:sv1}|
-% \item[Tables] \texttt{tab:}, e.g.~\verb|\label{tab:example}|
-% \item[Equations] \texttt{eq:}, e.g.~\verb|\label{eq:CLT}|
-% \item[Boxes] \texttt{box:}, e.g.~\verb|\label{box:simple}|
-% \end{description}
-% %
-% you can then use the convenience commands \verb|\FIG{view}|, \verb|\FIGSUPP[view]{sf1}|, \verb|\TABLE{example}|, \verb|\EQ{CLT}|, \verb|\BOX{simple}|, \verb|\FIGDATA[view]{first}|, \verb|\VIDEO{mv1}| and \verb|{\VIDEOSUPP}[view]{sv1}| \emph{without} the label prefixes, to generate cross-references \FIG{view}, \FIGSUPP[view]{sf1},  \TABLE{example}, \EQ{CLT}, \BOX{simple}, \FIGDATA[view]{first}, \VIDEO{mv1} and \VIDEOSUPP[view]{sv1}. Alternatively, use \verb|\autoref| with the full label, e.g.~\autoref{first:app} (although this may not work correctly for figures and tables in the appendices or boxes nor supplements at present).
-
-% Really wide figures or tables, that take up the entire page, including the gutter space: use \verb|\begin{fullwidth}...\end{fullwidth}| as in \FIG{fullwidth}. And sometimes you may want to use feature boxes like \BOX{simple}.
-
-% \begin{wrapfigure}{l}{.46\textwidth}
-% \includegraphics[width=\hsize]{frog}
-% \caption{A half-columnwidth image using wrapfigure, to be used sparingly. Note that using a wrapfigure before a sectional heading, near other floats or page boundaries is not recommended, as it may cause interesting layout issues. Use the optional argument to wrapfigure to control how many lines of text should be set half-width alongside it.}
-% \label{fig:halfwidth}
-% \end{wrapfigure}
-
-
-% \begin{figure}
-% \begin{fullwidth}
-% \includegraphics[width=0.95\linewidth]{elife-18156-fig2}
-% \caption{A very wide figure that takes up the entire page, including the gutter space.}
-% \label{fig:fullwidth}
-% \figsupp{There is no limit on the number of Figure Supplements for any one primary figure. Each figure supplement should be clearly labelled, Figure 1--Figure Supplement 1, Figure 1--Figure Supplement 2, Figure 2--Figure Supplement 1 and so on, and have a short title (and optional legend). Figure Supplements should be referred to in the legend of the associated primary figure, and should also be listed at the end of the article text file.}{\includegraphics[width=5cm]{frog}}
-% \end{fullwidth}
-% \end{figure}
-
-
-% \figsupp[Shorter caption for main text.]{This is a supplementary figure's full caption, which will be used at the end of the manuscript.}{\includegraphics[width=6cm]{frog}}\label{figsupp:sf1}
-% \figsupp{This is another supplementary figure.}{\includegraphics[width=6cm]{frog}}
-% \videosupp{This is a description of a video supplement.}\label{videosupp:sv1}
-% \figdata{This is a description of a data source.}\label{figdata:first}
-% \figdata{This is another description of a data source.}\label{figdata:second}
-
-
-
-
-
-
-% \section{Acknowledgments}
-
-% Additional information can be given in the template, such as to not include funder information in the acknowledgments section.
-
-% \nocite{*} % This command displays all refs in the bib file. PLEASE DELETE IT BEFORE YOU SUBMIT YOUR MANUSCRIPT!
+% \input{section_06_DNA.tex}
+% \input{section_07_RNA.tex}
+% \input{section_08_translation.tex}
 \bibliography{library.bib}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

@@ -146,7 +146,14 @@ complexes = {'dnap': {'name': 'DNA polymerase III (holo enzyme)',
                     'method': 'sum', 
                     'rate_per_sec': 1,
                     'units':'lipid/s',
-                    'category': 'synthesis'}}
+                    'category': 'synthesis'},
+            'transpeptidases': {
+                    'name':'transpeptidases',
+                    'gene_name': ['mrdA', 'mrcB', 'mrdB', 'rodA'], #, 'mrcA', 'mrcB'],#, 'ldtD', 'ldtE'],
+                    'method': 'sum',
+                    'units': 'crosslinks/s^-1',
+                    'rate_per_sec':50,
+                    'category':'synthesis'}}
 
 # %%
 complex_df = pd.DataFrame([])

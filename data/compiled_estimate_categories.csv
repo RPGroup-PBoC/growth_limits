@@ -19,6 +19,7 @@ sum total,synthesis,133.27830904097127,MOPS complete,li_2014,Li et al. 2014,1.93
 sum total,energy production,4.777606673956619,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,11421.986714055005,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,3.97
 sum total,energy production,9.400726068915429,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,22474.635437642464,respiratory complex,5000.0,protons/s,proton_gradient,3.97
 sum total,synthesis,6.730960374499984,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,16091.935819969849,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,3.97
+sum total,synthesis,0.19640119175608323,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,469.54300677178793,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,3.97
 sum total,synthesis,0.07939613159936453,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,130.0495932216535,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,2.72
 sum total,synthesis,8.341998883215043,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,13664.06069872411,RNA polymerase (core enzyme),40.0,nt/s,rnap,2.72
 sum total,synthesis,0.7111354954888718,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,1164.8285634428446,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,2.72
@@ -38,6 +39,7 @@ sum total,synthesis,126.66125768523106,MOPS complete without methionine,li_2014,
 sum total,energy production,3.7931146070536497,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,6213.061036520166,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,2.72
 sum total,energy production,8.166111460163613,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,13375.959913964638,respiratory complex,5000.0,protons/s,proton_gradient,2.72
 sum total,synthesis,6.03973660193156,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,9892.991918178266,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,2.72
+sum total,synthesis,0.1401117354191548,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,229.50078082880893,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,2.72
 sum total,synthesis,0.17755848242330538,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,122.96457583261167,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,1.15
 sum total,synthesis,6.591399397791085,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,4564.741824952261,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.15
 sum total,synthesis,0.5031109813317096,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,348.4194479016489,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.15
@@ -60,6 +62,7 @@ sum total,synthesis,96.07565526059739,MOPS minimal,li_2014,Li et al. 2014,0.7387
 sum total,energy production,4.8304216859971865,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,3345.2119302036317,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.15
 sum total,energy production,8.03552725135332,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,5564.8436873797145,respiratory complex,5000.0,protons/s,proton_gradient,1.15
 sum total,synthesis,4.47072411748489,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,3096.110573081811,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.15
+sum total,synthesis,0.17470848164180586,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,120.9908647913998,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,1.15
 sum total,synthesis,0.1095383376214931,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,43.53623136433768,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.66
 sum total,synthesis,8.05032165563135,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,3199.6164426739924,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.66
 sum total,synthesis,1.003869206381104,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,398.9898238145827,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.66
@@ -80,6 +83,7 @@ sum total,synthesis,197.30528481517598,glucose_minimal,peebo_2015,Peebo et al. 2
 sum total,energy production,6.977038368306172,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,2773.0378535600253,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.66
 sum total,energy production,7.039814011334381,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,2797.9881584328728,respiratory complex,5000.0,protons/s,proton_gradient,0.66
 sum total,synthesis,12.718657341880062,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,5055.055797844915,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.66
+sum total,synthesis,1.0215089594012199,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,406.00077893193367,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.66
 sum total,synthesis,0.10826558250153205,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,43.682347634223156,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.67
 sum total,synthesis,7.824263596453505,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,3156.8869303154825,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.67
 sum total,synthesis,0.9928173478305696,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,400.5759865985914,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.67
@@ -100,6 +104,7 @@ sum total,synthesis,198.89282491524776,glucose_minimal,peebo_2015,Peebo et al. 2
 sum total,energy production,6.964682138434035,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,2810.0681611225345,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.67
 sum total,energy production,6.946941743821412,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,2802.910373146601,respiratory complex,5000.0,protons/s,proton_gradient,0.67
 sum total,synthesis,12.659490533351585,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,5107.7752834534995,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.67
+sum total,synthesis,0.9090033829830761,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,366.7592309457138,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.67
 sum total,synthesis,0.11383820059004449,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,47.98735507672736,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.7
 sum total,synthesis,8.071825745309269,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,3402.59742467767,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.7
 sum total,synthesis,0.9730705243055771,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,410.188148815773,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.7
@@ -120,6 +125,7 @@ sum total,synthesis,206.19345220649802,glucose_minimal,peebo_2015,Peebo et al. 2
 sum total,energy production,7.244107621268768,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,3053.6811266696363,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.7
 sum total,energy production,7.947761717194984,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,3350.299474266374,respiratory complex,5000.0,protons/s,proton_gradient,0.7
 sum total,synthesis,13.607367653818438,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,5736.049760790625,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.7
+sum total,synthesis,0.967855213875777,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,407.9896868571951,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.7
 sum total,synthesis,0.10637389775536421,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,47.40318730892744,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.74
 sum total,synthesis,8.229339898929105,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,3667.2242804799794,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.74
 sum total,synthesis,1.0276094817583088,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,457.93155813699167,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.74
@@ -139,6 +145,7 @@ sum total,synthesis,208.8662010073717,glucose_minimal,peebo_2015,Peebo et al. 20
 sum total,energy production,7.595915636459681,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,3384.9526932442554,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.74
 sum total,energy production,6.950424352852092,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,3097.303703512773,respiratory complex,5000.0,protons/s,proton_gradient,0.74
 sum total,synthesis,13.480591617566981,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,6007.329081353139,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.74
+sum total,synthesis,0.870541389929161,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,387.9376185113522,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.74
 sum total,synthesis,0.11460475768403021,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,53.141538509538705,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.77
 sum total,synthesis,8.712271920350354,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,4039.8282158349375,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.77
 sum total,synthesis,1.0716586885617243,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,496.92170393394025,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.77
@@ -157,6 +164,7 @@ sum total,synthesis,225.1985949365915,glucose_minimal,peebo_2015,Peebo et al. 20
 sum total,energy production,8.051824008852082,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,3733.5824819606573,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.77
 sum total,energy production,8.440432194779898,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,3913.7777661262708,respiratory complex,5000.0,protons/s,proton_gradient,0.77
 sum total,synthesis,16.186866831268873,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,7505.75302845839,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.77
+sum total,synthesis,0.9828967848108291,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,455.7633417360726,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.77
 sum total,synthesis,0.10992979086669,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,54.28377044913499,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.82
 sum total,synthesis,8.961467494362221,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,4425.208494586043,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.82
 sum total,synthesis,1.1051445711073051,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,545.7248097910717,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.82
@@ -176,6 +184,7 @@ sum total,synthesis,225.87135197412675,glucose_minimal,peebo_2015,Peebo et al. 2
 sum total,energy production,7.746592093596803,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,3825.2981621864765,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.82
 sum total,energy production,7.397147115632301,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,3652.740834287693,respiratory complex,5000.0,protons/s,proton_gradient,0.82
 sum total,synthesis,15.542776760891009,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,7675.085335635024,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.82
+sum total,synthesis,0.7323366429034182,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,361.6307636122795,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.82
 sum total,synthesis,0.11157471510795741,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,57.78365235669028,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.86
 sum total,synthesis,9.11738313732752,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,4721.819787756825,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.86
 sum total,synthesis,1.0082531969397122,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,522.1662646695015,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.86
@@ -195,6 +204,7 @@ sum total,synthesis,229.2601174790996,glucose_minimal,peebo_2015,Peebo et al. 20
 sum total,energy production,7.9776250915191005,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,4131.54821389701,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.86
 sum total,energy production,8.198123879607934,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,4245.742772257912,respiratory complex,5000.0,protons/s,proton_gradient,0.86
 sum total,synthesis,15.165669324062643,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,7854.178817577451,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.86
+sum total,synthesis,0.6757695341634777,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,349.97563558699187,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.86
 sum total,synthesis,0.09966854565387992,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,54.018358373489846,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.9
 sum total,synthesis,9.321430041244893,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,5052.028653753908,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.9
 sum total,synthesis,0.9773639999791124,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,529.7117407086794,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.9
@@ -214,6 +224,7 @@ sum total,synthesis,235.62724287556648,glucose_minimal,peebo_2015,Peebo et al. 2
 sum total,energy production,7.734244763181283,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,4191.805976748992,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.9
 sum total,energy production,8.117583122146167,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,4399.56770054078,respiratory complex,5000.0,protons/s,proton_gradient,0.9
 sum total,synthesis,14.988994765815383,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,8123.735383176622,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.9
+sum total,synthesis,0.7099303411088691,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,384.7680462741849,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.9
 sum total,synthesis,0.0982960819444885,rich,peebo_2015,Peebo et al. 2015,0.25,40.84379137740997,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.69
 sum total,synthesis,8.315747337947974,rich,peebo_2015,Peebo et al. 2015,0.25,3455.342702369466,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.69
 sum total,synthesis,0.8227012441579135,rich,peebo_2015,Peebo et al. 2015,0.25,341.84717557000783,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.69
@@ -232,6 +243,7 @@ sum total,synthesis,249.88217923778456,rich,peebo_2015,Peebo et al. 2015,0.25,10
 sum total,energy production,8.686667812122918,rich,peebo_2015,Peebo et al. 2015,0.25,3609.4668359576904,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.69
 sum total,energy production,10.733282921415727,rich,peebo_2015,Peebo et al. 2015,0.25,4459.87225294082,respiratory complex,5000.0,protons/s,proton_gradient,0.69
 sum total,synthesis,13.571987499987804,rich,peebo_2015,Peebo et al. 2015,0.25,5639.405102019932,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.69
+sum total,synthesis,0.9418566304784998,rich,peebo_2015,Peebo et al. 2015,0.25,391.3583833831653,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.69
 sum total,synthesis,0.11551509354143316,rich,peebo_2015,Peebo et al. 2015,0.35,53.563655784601316,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.77
 sum total,synthesis,8.322769429905096,rich,peebo_2015,Peebo et al. 2015,0.35,3859.218248030414,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.77
 sum total,synthesis,0.8695849235076748,rich,peebo_2015,Peebo et al. 2015,0.35,403.2213115209678,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.77
@@ -250,6 +262,7 @@ sum total,synthesis,240.0333964864488,rich,peebo_2015,Peebo et al. 2015,0.35,111
 sum total,energy production,9.576380827428995,rich,peebo_2015,Peebo et al. 2015,0.35,4440.510331393862,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.77
 sum total,energy production,9.426631306962035,rich,peebo_2015,Peebo et al. 2015,0.35,4371.072377250455,respiratory complex,5000.0,protons/s,proton_gradient,0.77
 sum total,synthesis,13.957048914683677,rich,peebo_2015,Peebo et al. 2015,0.35,6471.799839445333,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.77
+sum total,synthesis,0.9124007804561352,rich,peebo_2015,Peebo et al. 2015,0.35,423.0747674928272,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.77
 sum total,synthesis,0.09083957620975147,rich,peebo_2015,Peebo et al. 2015,0.42,44.85694609068011,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.82
 sum total,synthesis,8.336094905235692,rich,peebo_2015,Peebo et al. 2015,0.42,4116.397008585006,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.82
 sum total,synthesis,0.8793370294124965,rich,peebo_2015,Peebo et al. 2015,0.42,434.2201424720085,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.82
@@ -269,6 +282,7 @@ sum total,synthesis,245.28318393790173,rich,peebo_2015,Peebo et al. 2015,0.42,12
 sum total,energy production,9.631522311867492,rich,peebo_2015,Peebo et al. 2015,0.42,4756.084243689415,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.82
 sum total,energy production,7.363185077160201,rich,peebo_2015,Peebo et al. 2015,0.42,3635.970243842016,respiratory complex,5000.0,protons/s,proton_gradient,0.82
 sum total,synthesis,15.031514832418202,rich,peebo_2015,Peebo et al. 2015,0.42,7422.622150307438,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.82
+sum total,synthesis,0.721769695966349,rich,peebo_2015,Peebo et al. 2015,0.42,356.41276294696706,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.82
 sum total,synthesis,0.1051760109413896,rich,peebo_2015,Peebo et al. 2015,0.45,53.836444720569105,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.85
 sum total,synthesis,8.607682596113301,rich,peebo_2015,Peebo et al. 2015,0.45,4406.014490472516,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.85
 sum total,synthesis,0.8815581272429676,rich,peebo_2015,Peebo et al. 2015,0.45,451.2431585918578,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.85
@@ -287,6 +301,7 @@ sum total,synthesis,250.60239537296718,rich,peebo_2015,Peebo et al. 2015,0.45,12
 sum total,energy production,10.091083944022262,rich,peebo_2015,Peebo et al. 2015,0.45,5165.3231384266755,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.85
 sum total,energy production,9.830446745286695,rich,peebo_2015,Peebo et al. 2015,0.45,5031.9107755099,respiratory complex,5000.0,protons/s,proton_gradient,0.85
 sum total,synthesis,16.417476483343,rich,peebo_2015,Peebo et al. 2015,0.45,8403.61368752878,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.85
+sum total,synthesis,0.7861104073903308,rich,peebo_2015,Peebo et al. 2015,0.45,402.3863342308886,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.85
 sum total,synthesis,0.11645853878829517,rich,peebo_2015,Peebo et al. 2015,0.53,64.52082549364646,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.92
 sum total,synthesis,8.685672688527509,rich,peebo_2015,Peebo et al. 2015,0.53,4812.071125588765,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.92
 sum total,synthesis,0.9063092278423804,rich,peebo_2015,Peebo et al. 2015,0.53,502.11706364614713,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.92
@@ -306,6 +321,7 @@ sum total,synthesis,250.7033060885574,rich,peebo_2015,Peebo et al. 2015,0.53,138
 sum total,energy production,9.925895854304668,rich,peebo_2015,Peebo et al. 2015,0.53,5499.184524785291,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.92
 sum total,energy production,9.578615014628447,rich,peebo_2015,Peebo et al. 2015,0.53,5306.782604864511,respiratory complex,5000.0,protons/s,proton_gradient,0.92
 sum total,synthesis,17.612854813942185,rich,peebo_2015,Peebo et al. 2015,0.53,9757.944275439508,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.92
+sum total,synthesis,0.5947283116380586,rich,peebo_2015,Peebo et al. 2015,0.53,329.4937581269639,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.92
 sum total,synthesis,8.902476773743405,rich,peebo_2015,Peebo et al. 2015,0.55,5039.407222359383,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.94
 sum total,synthesis,0.9814100506406337,rich,peebo_2015,Peebo et al. 2015,0.55,555.5448245460424,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.94
 sum total,synthesis,1.1284048403149851,rich,peebo_2015,Peebo et al. 2015,0.55,638.7538711474231,σ-70 (RpoD),40.0,nt/s,sigma70,0.94
@@ -323,6 +339,7 @@ sum total,synthesis,257.30237677633437,rich,peebo_2015,Peebo et al. 2015,0.55,14
 sum total,energy production,9.733880372129889,rich,peebo_2015,Peebo et al. 2015,0.55,5510.038194490823,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.94
 sum total,energy production,10.01455141145704,rich,peebo_2015,Peebo et al. 2015,0.55,5668.9170883806655,respiratory complex,5000.0,protons/s,proton_gradient,0.94
 sum total,synthesis,18.129209326424913,rich,peebo_2015,Peebo et al. 2015,0.55,10262.3652649907,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.94
+sum total,synthesis,0.5490683930321195,rich,peebo_2015,Peebo et al. 2015,0.55,310.81004710690587,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.94
 sum total,synthesis,0.08839569076132106,rich,peebo_2015,Peebo et al. 2015,0.63,54.2965226759969,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,1.02
 sum total,synthesis,8.703645942086453,rich,peebo_2015,Peebo et al. 2015,0.63,5346.162298050952,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.02
 sum total,synthesis,0.8801695946504628,rich,peebo_2015,Peebo et al. 2015,0.63,540.638892496479,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.02
@@ -342,6 +359,7 @@ sum total,synthesis,246.7894751558464,rich,peebo_2015,Peebo et al. 2015,0.63,151
 sum total,energy production,9.83333562686582,rich,peebo_2015,Peebo et al. 2015,0.63,6040.067408788569,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.02
 sum total,energy production,8.297327684639969,rich,peebo_2015,Peebo et al. 2015,0.63,5096.583746323993,respiratory complex,5000.0,protons/s,proton_gradient,1.02
 sum total,synthesis,19.307320468858244,rich,peebo_2015,Peebo et al. 2015,0.63,11859.405754073363,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.02
+sum total,synthesis,0.6697432389557063,rich,peebo_2015,Peebo et al. 2015,0.63,411.3857660691089,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,1.02
 sum total,synthesis,0.12396540317513408,rich,peebo_2015,Peebo et al. 2015,0.65,78.38456408166904,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,1.05
 sum total,synthesis,8.910697575817386,rich,peebo_2015,Peebo et al. 2015,0.65,5634.323184165092,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.05
 sum total,synthesis,0.9900788383895885,rich,peebo_2015,Peebo et al. 2015,0.65,626.0367503021209,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.05
@@ -360,6 +378,7 @@ sum total,synthesis,256.1164366930633,rich,peebo_2015,Peebo et al. 2015,0.65,161
 sum total,energy production,9.91186275463864,rich,peebo_2015,Peebo et al. 2015,0.65,6267.369938385559,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.05
 sum total,energy production,10.257214134819208,rich,peebo_2015,Peebo et al. 2015,0.65,6485.739069587534,respiratory complex,5000.0,protons/s,proton_gradient,1.05
 sum total,synthesis,19.48730265167546,rich,peebo_2015,Peebo et al. 2015,0.65,12322.016339680913,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.05
+sum total,synthesis,0.4347881052373155,rich,peebo_2015,Peebo et al. 2015,0.65,274.92086682260697,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,1.05
 sum total,synthesis,0.08577920960547689,rich,peebo_2015,Peebo et al. 2015,0.73,58.888113627836724,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,1.14
 sum total,synthesis,8.599124018871036,rich,peebo_2015,Peebo et al. 2015,0.73,5903.3674319471165,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.14
 sum total,synthesis,1.0707459292759134,rich,peebo_2015,Peebo et al. 2015,0.73,735.0756464153488,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.14
@@ -379,6 +398,7 @@ sum total,synthesis,246.71537267832275,rich,peebo_2015,Peebo et al. 2015,0.73,16
 sum total,energy production,9.241698171884478,rich,peebo_2015,Peebo et al. 2015,0.73,6344.49972858407,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.14
 sum total,energy production,8.511378270674555,rich,peebo_2015,Peebo et al. 2015,0.73,5843.129273844248,respiratory complex,5000.0,protons/s,proton_gradient,1.14
 sum total,synthesis,19.95084729265929,rich,peebo_2015,Peebo et al. 2015,0.73,13696.416273188945,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.14
+sum total,synthesis,0.528807443087869,rich,peebo_2015,Peebo et al. 2015,0.73,363.03054013936674,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,1.14
 sum total,synthesis,9.455325586949922,rich,peebo_2015,Peebo et al. 2015,0.74,6548.09662873043,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.15
 sum total,synthesis,0.9678467450828635,rich,peebo_2015,Peebo et al. 2015,0.74,670.2629063722354,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.15
 sum total,synthesis,1.1812996066008221,rich,peebo_2015,Peebo et al. 2015,0.74,818.0854165592673,σ-70 (RpoD),40.0,nt/s,sigma70,1.15
@@ -396,6 +416,7 @@ sum total,synthesis,254.84485236472915,rich,peebo_2015,Peebo et al. 2015,0.74,17
 sum total,energy production,10.019121667312719,rich,peebo_2015,Peebo et al. 2015,0.74,6938.542328264078,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.15
 sum total,energy production,10.84757398301527,rich,peebo_2015,Peebo et al. 2015,0.74,7512.270410457564,respiratory complex,5000.0,protons/s,proton_gradient,1.15
 sum total,synthesis,19.567361801405145,rich,peebo_2015,Peebo et al. 2015,0.74,13550.985068327105,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.15
+sum total,synthesis,0.6142481635027743,rich,peebo_2015,Peebo et al. 2015,0.74,425.3852806705763,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,1.15
 sum total,synthesis,0.09045579935541125,rich,peebo_2015,Peebo et al. 2015,0.78,65.36697884619439,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,1.2
 sum total,synthesis,9.468676193978467,rich,peebo_2015,Peebo et al. 2015,0.78,6842.4441648166,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.2
 sum total,synthesis,1.0184640638050637,rich,peebo_2015,Peebo et al. 2015,0.78,735.9828710680913,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.2
@@ -415,6 +436,7 @@ sum total,synthesis,266.2922989127172,rich,peebo_2015,Peebo et al. 2015,0.78,192
 sum total,energy production,9.581838063925717,rich,peebo_2015,Peebo et al. 2015,0.78,6924.219458515281,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.2
 sum total,energy production,9.195617585278068,rich,peebo_2015,Peebo et al. 2015,0.78,6645.121091825344,respiratory complex,5000.0,protons/s,proton_gradient,1.2
 sum total,synthesis,20.47377093771641,rich,peebo_2015,Peebo et al. 2015,0.78,14795.165830431384,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.2
+sum total,synthesis,0.6226746977395109,rich,peebo_2015,Peebo et al. 2015,0.78,449.9696435744802,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,1.2
 sum total,synthesis,0.1411625327849996,rich,peebo_2015,Peebo et al. 2015,0.82,106.26009655390848,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,1.25
 sum total,synthesis,10.589921655154635,rich,peebo_2015,Peebo et al. 2015,0.82,7971.563525917653,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.25
 sum total,synthesis,1.0569018074554686,rich,peebo_2015,Peebo et al. 2015,0.82,795.582835562104,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.25
@@ -454,6 +476,7 @@ sum total,synthesis,386.7089852929217,42C,schmidt_2016,Schmidt et al. 2016,0.66,
 sum total,energy production,6.581885619045004,42C,schmidt_2016,Schmidt et al. 2016,0.66,4201.428210976236,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.06
 sum total,energy production,4.440488806136514,42C,schmidt_2016,Schmidt et al. 2016,0.66,2834.5061005987336,respiratory complex,5000.0,protons/s,proton_gradient,1.06
 sum total,synthesis,3.180952055404307,42C,schmidt_2016,Schmidt et al. 2016,0.66,2030.5034874303424,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.06
+sum total,synthesis,0.08190629583956027,42C,schmidt_2016,Schmidt et al. 2016,0.66,52.2834096358582,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,1.06
 sum total,synthesis,0.03404853696470368,acetate,schmidt_2016,Schmidt et al. 2016,0.3,14.967941140905529,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.73
 sum total,synthesis,7.3924236396259735,acetate,schmidt_2016,Schmidt et al. 2016,0.3,3249.753786521416,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.73
 sum total,synthesis,0.24713859379440017,acetate,schmidt_2016,Schmidt et al. 2016,0.3,108.64360866358109,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.73
@@ -476,6 +499,7 @@ sum total,synthesis,313.9774893994933,acetate,schmidt_2016,Schmidt et al. 2016,0
 sum total,energy production,7.1011155950257665,acetate,schmidt_2016,Schmidt et al. 2016,0.3,3121.693022266897,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.73
 sum total,energy production,4.356816886504457,acetate,schmidt_2016,Schmidt et al. 2016,0.3,1915.2828442086786,respiratory complex,5000.0,protons/s,proton_gradient,0.73
 sum total,synthesis,2.0381046586108402,acetate,schmidt_2016,Schmidt et al. 2016,0.3,895.9630365532772,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.73
+sum total,synthesis,0.06520252261809706,acetate,schmidt_2016,Schmidt et al. 2016,0.3,28.66342015805118,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.73
 sum total,synthesis,0.0313202417451986,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,11.31662974737516,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.6
 sum total,synthesis,9.8693742222101,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,3566.0022939689534,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.6
 sum total,synthesis,0.4328864684767178,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,156.41053879000768,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.6
@@ -498,6 +522,7 @@ sum total,synthesis,267.94622976967077,chemostat_u0.12,schmidt_2016,Schmidt et a
 sum total,energy production,5.79410886022553,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,2093.527413376689,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.6
 sum total,energy production,5.896982075829162,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,2130.697563638593,respiratory complex,5000.0,protons/s,proton_gradient,0.6
 sum total,synthesis,3.2370288142759014,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,1169.6032511741687,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.6
+sum total,synthesis,0.1587250384414632,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,57.35053088966949,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.6
 sum total,synthesis,0.03223632081162144,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,12.812390179220568,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.66
 sum total,synthesis,9.915809638739807,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,3941.058372536414,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.66
 sum total,synthesis,0.546448355209644,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,217.18699167478346,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.66
@@ -520,6 +545,7 @@ sum total,synthesis,264.119832047209,chemostat_u0.2,schmidt_2016,Schmidt et al. 
 sum total,energy production,6.787099646175748,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,2697.546328571844,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.66
 sum total,energy production,5.197463644194731,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,2065.742320312485,respiratory complex,5000.0,protons/s,proton_gradient,0.66
 sum total,synthesis,3.375628036903066,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,1341.6501145231975,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.66
+sum total,synthesis,0.14423422251241674,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,57.32618020600507,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.66
 sum total,synthesis,0.031204240989363058,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,14.469219321321715,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.77
 sum total,synthesis,10.220162720622652,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,4739.028132576401,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.77
 sum total,synthesis,0.5199913194015636,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,241.11685485858868,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.77
@@ -542,6 +568,7 @@ sum total,synthesis,284.48925081120854,chemostat_u0.35,schmidt_2016,Schmidt et a
 sum total,energy production,7.688813311637802,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,3565.2565997265797,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.77
 sum total,energy production,4.919720152853459,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,2281.244716557232,respiratory complex,5000.0,protons/s,proton_gradient,0.77
 sum total,synthesis,3.1636138541283594,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,1466.9487624761955,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.77
+sum total,synthesis,0.12399793001114211,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,57.49709615858653,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.77
 sum total,synthesis,0.0341909534325334,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,18.530812941364452,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.9
 sum total,synthesis,10.525113087514438,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,5704.400791171075,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.9
 sum total,synthesis,0.5274481204876598,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,285.86633234190185,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.9
@@ -564,6 +591,7 @@ sum total,synthesis,315.5422388700021,chemostat_u0.5,schmidt_2016,Schmidt et al.
 sum total,energy production,8.256708070406397,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,4474.970639998859,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.9
 sum total,energy production,5.198721509339665,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,2817.6030836319114,respiratory complex,5000.0,protons/s,proton_gradient,0.9
 sum total,synthesis,3.6887921213923285,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,1999.2515539522142,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.9
+sum total,synthesis,0.1108120947922792,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,60.05793913551949,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.9
 sum total,synthesis,0.03490908901844238,fructose,schmidt_2016,Schmidt et al. 2016,0.65,22.0733660772513,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,1.05
 sum total,synthesis,8.641268111691945,fructose,schmidt_2016,Schmidt et al. 2016,0.65,5463.960239703934,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.05
 sum total,synthesis,0.3519613988305024,fructose,schmidt_2016,Schmidt et al. 2016,0.65,222.54871209451503,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.05
@@ -586,6 +614,7 @@ sum total,synthesis,362.6423577890449,fructose,schmidt_2016,Schmidt et al. 2016,
 sum total,energy production,8.943533598094575,fructose,schmidt_2016,Schmidt et al. 2016,0.65,5655.085729411182,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.05
 sum total,energy production,4.48221654724837,fructose,schmidt_2016,Schmidt et al. 2016,0.65,2834.150344990617,respiratory complex,5000.0,protons/s,proton_gradient,1.05
 sum total,synthesis,3.1719305733277112,fructose,schmidt_2016,Schmidt et al. 2016,0.65,2005.6434208208452,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.05
+sum total,synthesis,0.11589447165910466,fructose,schmidt_2016,Schmidt et al. 2016,0.65,73.28123337476849,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,1.05
 sum total,synthesis,0.03964320231521089,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,19.5759718760604,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.82
 sum total,synthesis,7.998728637695629,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,3949.8041962086522,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.82
 sum total,synthesis,0.2969194031422208,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,146.6199889492412,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.82
@@ -608,6 +637,7 @@ sum total,synthesis,359.2413225070039,fumarate,schmidt_2016,Schmidt et al. 2016,
 sum total,energy production,9.778844641769961,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,4828.832599484574,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.82
 sum total,energy production,4.489137355813757,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,2216.7539828502568,respiratory complex,5000.0,protons/s,proton_gradient,0.82
 sum total,synthesis,2.785723960376193,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,1375.6016345296057,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.82
+sum total,synthesis,0.06797518927262289,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,33.566420363578274,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.82
 sum total,synthesis,0.039679624989006644,galactose,schmidt_2016,Schmidt et al. 2016,0.26,16.72654911786586,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.7
 sum total,synthesis,7.3647179768439415,galactose,schmidt_2016,Schmidt et al. 2016,0.26,3104.5232159587954,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.7
 sum total,synthesis,0.29763633979058207,galactose,schmidt_2016,Schmidt et al. 2016,0.26,125.46562267532198,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.7
@@ -630,6 +660,7 @@ sum total,synthesis,307.5794764458327,galactose,schmidt_2016,Schmidt et al. 2016
 sum total,energy production,7.360625248782979,galactose,schmidt_2016,Schmidt et al. 2016,0.26,3102.7979673719774,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.7
 sum total,energy production,3.6817733403782134,galactose,schmidt_2016,Schmidt et al. 2016,0.26,1552.0147339030323,respiratory complex,5000.0,protons/s,proton_gradient,0.7
 sum total,synthesis,3.15542025057296,galactose,schmidt_2016,Schmidt et al. 2016,0.26,1330.1358524265256,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.7
+sum total,synthesis,0.067968519583853,galactose,schmidt_2016,Schmidt et al. 2016,0.26,28.6514497453774,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.7
 sum total,synthesis,0.03813786853575675,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,19.751297011720137,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.86
 sum total,synthesis,8.214519126237947,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,4254.233739325623,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.86
 sum total,synthesis,0.3853244282013278,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,199.55643877004206,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.86
@@ -652,6 +683,7 @@ sum total,synthesis,314.6638066180302,glucosamine,schmidt_2016,Schmidt et al. 20
 sum total,energy production,9.67595974740153,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,5011.102145501274,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.86
 sum total,energy production,4.668321666670164,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,2417.686444595145,respiratory complex,5000.0,protons/s,proton_gradient,0.86
 sum total,synthesis,4.216080132148804,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,2183.4741717988086,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.86
+sum total,synthesis,0.0887468718301531,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,45.96129494586165,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.86
 sum total,synthesis,0.041145606107453304,glucose,schmidt_2016,Schmidt et al. 2016,0.58,24.03454747797113,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.97
 sum total,synthesis,7.704411732446543,glucose,schmidt_2016,Schmidt et al. 2016,0.58,4500.408842920929,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.97
 sum total,synthesis,0.2904915109303034,glucose,schmidt_2016,Schmidt et al. 2016,0.58,169.68596824576187,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.97
@@ -674,6 +706,7 @@ sum total,synthesis,416.08603073689056,glucose,schmidt_2016,Schmidt et al. 2016,
 sum total,energy production,7.9729137914147,glucose,schmidt_2016,Schmidt et al. 2016,0.58,4657.250024634234,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.97
 sum total,energy production,4.333613508744573,glucose,schmidt_2016,Schmidt et al. 2016,0.58,2531.410993317003,respiratory complex,5000.0,protons/s,proton_gradient,0.97
 sum total,synthesis,3.057646343418636,glucose,schmidt_2016,Schmidt et al. 2016,0.58,1786.0751891665016,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.97
+sum total,synthesis,0.08076076048558789,glucose,schmidt_2016,Schmidt et al. 2016,0.58,47.1751060654884,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.97
 sum total,synthesis,0.0385803821799563,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,20.212802349429627,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.87
 sum total,synthesis,8.364262717542966,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,4382.154337398806,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.87
 sum total,synthesis,0.37116060935325906,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,194.45623948870337,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.87
@@ -696,6 +729,7 @@ sum total,synthesis,342.54538150461815,glycerol,schmidt_2016,Schmidt et al. 2016
 sum total,energy production,9.928232517075829,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,5201.540010951267,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.87
 sum total,energy production,4.336535608517617,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,2271.9717168008992,respiratory complex,5000.0,protons/s,proton_gradient,0.87
 sum total,synthesis,3.160842000909356,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,1656.0093760644245,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.87
+sum total,synthesis,0.0797905657788407,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,41.80339447945555,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.87
 sum total,synthesis,0.03655788193943301,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,43.81016144281386,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,1.99
 sum total,synthesis,8.090576673359296,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,9695.569092666965,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.99
 sum total,synthesis,0.40763175626894665,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,488.49692881406776,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.99
@@ -718,6 +752,7 @@ sum total,synthesis,400.4539635327275,glycerol_pAA,schmidt_2016,Schmidt et al. 2
 sum total,energy production,11.00871254399447,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,13192.598921047005,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.99
 sum total,energy production,4.323814242196174,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,5181.563863934567,respiratory complex,5000.0,protons/s,proton_gradient,1.99
 sum total,synthesis,4.150317291191019,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,4973.648934782911,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.99
+sum total,synthesis,0.06350587947199302,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,76.10404882988804,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,1.99
 sum total,synthesis,0.034808771705702346,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,80.28385609009626,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,3.83
 sum total,synthesis,9.63378525636782,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,22219.612793703414,RNA polymerase (core enzyme),40.0,nt/s,rnap,3.83
 sum total,synthesis,0.30489928340169575,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,703.2276346190396,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,3.83
@@ -740,6 +775,7 @@ sum total,synthesis,381.7493843058094,lb_miller,schmidt_2016,Schmidt et al. 2016
 sum total,energy production,6.676480811700094,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,15398.808932606205,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,3.83
 sum total,energy production,4.789336464500646,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,11046.250144472368,respiratory complex,5000.0,protons/s,proton_gradient,3.83
 sum total,synthesis,3.819626847917998,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,8809.686672336118,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,3.83
+sum total,synthesis,0.05074487368321593,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,117.03929602968499,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,3.83
 sum total,synthesis,0.03656458408998935,mannose,schmidt_2016,Schmidt et al. 2016,0.47,19.156697508922683,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.87
 sum total,synthesis,7.930779311324686,mannose,schmidt_2016,Schmidt et al. 2016,0.47,4155.046312113362,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.87
 sum total,synthesis,0.36263614658775783,mannose,schmidt_2016,Schmidt et al. 2016,0.47,189.9901541033786,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.87
@@ -762,6 +798,7 @@ sum total,synthesis,344.28828162838795,mannose,schmidt_2016,Schmidt et al. 2016,
 sum total,energy production,9.236523448702417,mannose,schmidt_2016,Schmidt et al. 2016,0.47,4839.143946103479,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.87
 sum total,energy production,4.240003585873455,mannose,schmidt_2016,Schmidt et al. 2016,0.47,2221.3972386893056,respiratory complex,5000.0,protons/s,proton_gradient,0.87
 sum total,synthesis,3.3152743388912937,mannose,schmidt_2016,Schmidt et al. 2016,0.47,1736.9186399858934,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.87
+sum total,synthesis,0.1255106564209792,mannose,schmidt_2016,Schmidt et al. 2016,0.47,65.7567900481409,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.87
 sum total,synthesis,0.04124615059216451,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,23.34812597340538,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.94
 sum total,synthesis,7.4955541086835735,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,4242.993323194294,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.94
 sum total,synthesis,0.3626608956643092,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,205.29072788690422,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.94
@@ -784,6 +821,7 @@ sum total,synthesis,361.79050951471476,osmotic_stress_glucose,schmidt_2016,Schmi
 sum total,energy production,6.242813733392919,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,3533.857084434263,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.94
 sum total,energy production,4.476864203659554,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,2534.209566037157,respiratory complex,5000.0,protons/s,proton_gradient,0.94
 sum total,synthesis,3.7140411570706875,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,2102.3998497006905,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.94
+sum total,synthesis,0.04132647415709569,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,23.393594573158847,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.94
 sum total,synthesis,0.037307041862377356,pH6,schmidt_2016,Schmidt et al. 2016,0.63,22.915626621714118,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,1.02
 sum total,synthesis,7.612415769724605,pH6,schmidt_2016,Schmidt et al. 2016,0.63,4675.880712058721,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.02
 sum total,synthesis,0.26114929303664147,pH6,schmidt_2016,Schmidt et al. 2016,0.63,160.40938635199882,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.02
@@ -806,6 +844,7 @@ sum total,synthesis,305.8205291837189,pH6,schmidt_2016,Schmidt et al. 2016,0.63,
 sum total,energy production,5.173015056131728,pH6,schmidt_2016,Schmidt et al. 2016,0.63,3177.493460138577,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.02
 sum total,energy production,4.7566317522714865,pH6,schmidt_2016,Schmidt et al. 2016,0.63,2921.732514042247,respiratory complex,5000.0,protons/s,proton_gradient,1.02
 sum total,synthesis,3.0982826323535386,pH6,schmidt_2016,Schmidt et al. 2016,0.63,1903.101517227367,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.02
+sum total,synthesis,0.08188242673599415,pH6,schmidt_2016,Schmidt et al. 2016,0.63,50.29578932802399,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,1.02
 sum total,synthesis,0.03771215142586989,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,18.39530864681367,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.81
 sum total,synthesis,8.213115640355204,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,4006.209973283743,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.81
 sum total,synthesis,0.402697151914828,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,196.42842215531869,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.81
@@ -828,6 +867,7 @@ sum total,synthesis,356.91453654186506,pyruvate,schmidt_2016,Schmidt et al. 2016
 sum total,energy production,12.0021860728338,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,5854.4503269790175,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.81
 sum total,energy production,5.66868428184428,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,2765.0821563665672,respiratory complex,5000.0,protons/s,proton_gradient,0.81
 sum total,synthesis,2.376151478635896,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,1159.043920551975,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.81
+sum total,synthesis,0.12390681597379322,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,60.439514509328816,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.81
 sum total,synthesis,0.030764271573720497,succinate,schmidt_2016,Schmidt et al. 2016,0.44,15.562045247023367,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.84
 sum total,synthesis,7.484740946939706,succinate,schmidt_2016,Schmidt et al. 2016,0.44,3786.1412385275567,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.84
 sum total,synthesis,0.27669367376364223,succinate,schmidt_2016,Schmidt et al. 2016,0.44,139.9649414859909,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.84
@@ -850,6 +890,7 @@ sum total,synthesis,361.93380232282834,succinate,schmidt_2016,Schmidt et al. 201
 sum total,energy production,10.25593510253916,succinate,schmidt_2016,Schmidt et al. 2016,0.44,5187.94425974923,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.84
 sum total,energy production,4.450544598350339,succinate,schmidt_2016,Schmidt et al. 2016,0.44,2251.2990839863223,respiratory complex,5000.0,protons/s,proton_gradient,0.84
 sum total,synthesis,3.319708183830901,succinate,schmidt_2016,Schmidt et al. 2016,0.44,1679.2677453744936,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.84
+sum total,synthesis,0.07852741993292017,succinate,schmidt_2016,Schmidt et al. 2016,0.44,39.72293831822781,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.84
 sum total,synthesis,0.044964149440383176,xylose,schmidt_2016,Schmidt et al. 2016,0.55,25.452766145418828,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.94
 sum total,synthesis,8.520445133097958,xylose,schmidt_2016,Schmidt et al. 2016,0.55,4823.151335602495,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.94
 sum total,synthesis,0.3658008350585597,xylose,schmidt_2016,Schmidt et al. 2016,0.55,207.0681470999288,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.94
@@ -872,6 +913,7 @@ sum total,synthesis,365.8244623327965,xylose,schmidt_2016,Schmidt et al. 2016,0.
 sum total,energy production,8.602078771971367,xylose,schmidt_2016,Schmidt et al. 2016,0.55,4869.3615262922885,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.94
 sum total,energy production,4.651104653724302,xylose,schmidt_2016,Schmidt et al. 2016,0.55,2632.8415091244087,respiratory complex,5000.0,protons/s,proton_gradient,0.94
 sum total,synthesis,3.2220288855023465,xylose,schmidt_2016,Schmidt et al. 2016,0.55,1823.8874471585427,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.94
+sum total,synthesis,0.0936652657243371,xylose,schmidt_2016,Schmidt et al. 2016,0.55,53.02090963804406,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.94
 sum total,synthesis,0.18960215434681038,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,68.50705040858954,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.6
 sum total,synthesis,9.109102420726764,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,3291.300886656994,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.6
 sum total,synthesis,1.5496132830939318,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,559.9062714474993,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.6
@@ -891,6 +933,7 @@ sum total,synthesis,160.8072239223348,glucose_minimal,valgepea_2013,Valgepea et 
 sum total,energy production,8.209944095968554,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,2966.417000755358,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.6
 sum total,energy production,9.183887349091568,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,3318.322176973765,respiratory complex,5000.0,protons/s,proton_gradient,0.6
 sum total,synthesis,9.546383064986069,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,3449.2991290407667,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.6
+sum total,synthesis,0.8567967623455864,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,309.57780617070733,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.6
 sum total,synthesis,0.20360347809810742,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,80.922609577049,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.66
 sum total,synthesis,10.842757028623849,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,4309.475466540606,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.66
 sum total,synthesis,1.8276921793260055,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,726.4199120574797,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.66
@@ -910,6 +953,7 @@ sum total,synthesis,198.7248633572059,glucose_minimal,valgepea_2013,Valgepea et 
 sum total,energy production,11.684771119719082,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,4644.135651074589,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.66
 sum total,energy production,11.587974698091612,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,4605.663719705908,respiratory complex,5000.0,protons/s,proton_gradient,0.66
 sum total,synthesis,9.643967409372513,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,3833.014134789925,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.66
+sum total,synthesis,0.9263645292474276,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,368.1854348784487,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.66
 sum total,synthesis,0.18825033242130187,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,83.88961913623993,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.74
 sum total,synthesis,11.538193114698764,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,5141.741921316982,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.74
 sum total,synthesis,2.039488534851666,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,908.8531968088785,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.74
@@ -929,6 +973,7 @@ sum total,synthesis,188.25297082820344,glucose_minimal,valgepea_2013,Valgepea et
 sum total,energy production,12.155287173325005,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,5416.736312474476,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.74
 sum total,energy production,11.36747877688084,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,5065.666832383857,respiratory complex,5000.0,protons/s,proton_gradient,0.74
 sum total,synthesis,9.647334835297693,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,4299.122527984042,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.74
+sum total,synthesis,0.7545843738261018,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,336.26392533937815,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.74
 sum total,synthesis,0.17204638597804625,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,83.92113024514339,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.81
 sum total,synthesis,10.976456574687045,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,5354.117940913998,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.81
 sum total,synthesis,2.0044461043207784,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,977.7327296577981,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.81
@@ -948,6 +993,7 @@ sum total,synthesis,180.93268752148893,glucose_minimal,valgepea_2013,Valgepea et
 sum total,energy production,11.095560239063891,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,5412.214564531064,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.81
 sum total,energy production,10.909245823642753,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,5321.33374634811,respiratory complex,5000.0,protons/s,proton_gradient,0.81
 sum total,synthesis,10.512866512171197,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,5127.987053039892,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.81
+sum total,synthesis,0.6811002726198313,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,332.22845317904665,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.81
 sum total,synthesis,0.16683906113714322,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,89.41872952894101,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.89
 sum total,synthesis,11.829563791828301,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,6340.149350740713,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.89
 sum total,synthesis,1.8336338653826105,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,982.7507392227333,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.89
@@ -966,3 +1012,4 @@ sum total,synthesis,180.13264927292107,glucose_minimal,valgepea_2013,Valgepea et
 sum total,energy production,10.127884300624915,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,5428.120613994329,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.89
 sum total,energy production,12.275198886258126,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,6578.991044681134,respiratory complex,5000.0,protons/s,proton_gradient,0.89
 sum total,synthesis,9.722068832570464,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,5210.620567366802,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.89
+sum total,synthesis,0.6259682145719413,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,335.49267234554856,transpeptidases,50.0,crosslinks/s^-1,transpeptidases,0.89

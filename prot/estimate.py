@@ -65,7 +65,7 @@ def load_constants(lambda_bounds = [0, 2]):
                               'units': 'pg', 'source':'calculated quantity'}
     constants['t_div'] = {'value': constants['L_genome']['value'] / constants['rate_DNAP']['value'] / 2,
                           'units': 's', 'source': 'calculated quantity'}
-    constants['N_ori'] = {'value': 2**(3600 * np.log(2)/growth_rate / constants['t_div']['value']),
+    constants['N_ori'] = {'value': 2**(4200/ constants['t_double']['value']),
                           'units': 'number', 'source':'calculated quantity (see Si et al. 2017)'}
     return constants
 

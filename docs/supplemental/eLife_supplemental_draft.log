@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 JUN 2020 12:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  24 JUN 2020 14:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2159,27 +2159,19 @@ LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 52.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <7> not available
 (Font)              Font shape `T1/fos/b/n' tried instead on input line 52.
 
-(./section_01_data_sets.tex
+(./section_06_translation_limit_additional.tex
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 3.
-) (./section_02_data_sets_summary.tex)
-(./section_03_schmidt.tex
-LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/fos/b/it' tried instead on input line 1.
-LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <9> not available
-(Font)              Font shape `T1/fos/b/it' tried instead on input line 13.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 1.
 
-<SI_figs/supplemental_cell_volumes.pdf, id=42, 734.82832pt x 357.69034pt>
-File: SI_figs/supplemental_cell_volumes.pdf Graphic file (type pdf)
+<SI_figs/supplemental_boxcar1.pdf, id=17, 331.2967pt x 202.27972pt>
+File: SI_figs/supplemental_boxcar1.pdf Graphic file (type pdf)
 
-<use SI_figs/supplemental_cell_volumes.pdf>
-Package pdftex.def Info: SI_figs/supplemental_cell_volumes.pdf used on input li
-ne 34.
-(pdftex.def)             Requested size: 406.58981pt x 197.91464pt.
+<use SI_figs/supplemental_boxcar1.pdf>
+Package pdftex.def Info: SI_figs/supplemental_boxcar1.pdf used on input line 27
+.
+(pdftex.def)             Requested size: 331.2959pt x 202.27922pt.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <8> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 43.
-LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <8> not available
-(Font)              Font shape `T1/fos/b/it' tried instead on input line 43.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 30.
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
@@ -2188,42 +2180,123 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-<SI_figs/schmidt_protein_corrections.pdf, id=74, 698.61pt x 345.4496pt>
-File: SI_figs/schmidt_protein_corrections.pdf Graphic file (type pdf)
+<SI_figs/supplemental_boxcar2.pdf, id=36, 322.1897pt x 254.61725pt>
+File: SI_figs/supplemental_boxcar2.pdf Graphic file (type pdf)
 
-<use SI_figs/schmidt_protein_corrections.pdf>
-Package pdftex.def Info: SI_figs/schmidt_protein_corrections.pdf used on input 
-line 73.
-(pdftex.def)             Requested size: 406.58981pt x 201.05142pt.
-LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <10> not available
-(Font)              Font shape `T1/fos/b/it' tried instead on input line 81.
+<use SI_figs/supplemental_boxcar2.pdf>
+Package pdftex.def Info: SI_figs/supplemental_boxcar2.pdf used on input line 55
+.
+(pdftex.def)             Requested size: 322.1889pt x 254.61661pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\delimiter' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\delimiter' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\delimiter' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\delimiter' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\delimiter' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\delimiter' on input line 61.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 61.
+
+<SI_figs/supplemental_ori_ter.pdf, id=39, 379.10834pt x 257.44983pt>
+File: SI_figs/supplemental_ori_ter.pdf Graphic file (type pdf)
+
+<use SI_figs/supplemental_ori_ter.pdf>
+Package pdftex.def Info: SI_figs/supplemental_ori_ter.pdf used on input line 11
+1.
+(pdftex.def)             Requested size: 379.1074pt x 257.44919pt.
+LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <8> not available
+(Font)              Font shape `T1/fos/b/it' tried instead on input line 120.
+
+Overfull \vbox (18.97011pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[2 <./SI_figs/supplemental_cell_volumes.pdf>]
+[2 <./SI_figs/supplemental_boxcar1.pdf>]
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[3 <./SI_figs/schmidt_protein_corrections.pdf>]
-<SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf, id=631, 683.85088pt 
-x 616.4822pt>
-File: SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf Graphic file (ty
-pe pdf)
- <use SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf>
-Package pdftex.def Info: SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.p
-df used on input line 188.
-(pdftex.def)             Requested size: 406.58981pt x 366.53395pt.
+[3 <./SI_figs/supplemental_boxcar2.pdf> <./SI_figs/supplemental_ori_ter.pdf>]
+LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <9> not available
+(Font)              Font shape `T1/fos/b/it' tried instead on input line 164.
 
-<SI_figs/schmidt_protein_estimate_basan.pdf, id=637, 387.73256pt x 354.32375pt>
-File: SI_figs/schmidt_protein_estimate_basan.pdf Graphic file (type pdf)
-<use SI_figs/schmidt_protein_estimate_basan.pdf>
-Package pdftex.def Info: SI_figs/schmidt_protein_estimate_basan.pdf used on inp
-ut line 223.
-(pdftex.def)             Requested size: 203.2949pt x 185.77945pt.
-) (./section_04_cell_size.tex
+<SI_figs/supplemental_Si_Cm.pdf, id=144, 811.01492pt x 472.55345pt>
+File: SI_figs/supplemental_Si_Cm.pdf Graphic file (type pdf)
+
+<use SI_figs/supplemental_Si_Cm.pdf>
+Package pdftex.def Info: SI_figs/supplemental_Si_Cm.pdf used on input line 180.
+
+(pdftex.def)             Requested size: 487.90652pt x 284.29137pt.
+) (./eLife_supplemental_draft.bbl)
+
+AED: lastpage setting LastPage
+
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
@@ -2233,64 +2306,43 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[5 <./SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf>]
-<SI_figs/final_cell_size_Si.pdf, id=1146, 912.40875pt x 253.94875pt>
-File: SI_figs/final_cell_size_Si.pdf Graphic file (type pdf)
-
-<use SI_figs/final_cell_size_Si.pdf>
-Package pdftex.def Info: SI_figs/final_cell_size_Si.pdf used on input line 29.
-(pdftex.def)             Requested size: 406.58981pt x 113.16376pt.
-) (./eLife_supplemental_draft.bbl
-Overfull \vbox (0.51051pt too high) has occurred while \output is active []
-
-
-Overfull \hbox (6.0pt too wide) has occurred while \output is active
- [][][][][][][]| 
- []
-
-[6 <./SI_figs/schmidt_protein_estimate_basan.pdf>])
-
-AED: lastpage setting LastPage
-
-Overfull \hbox (6.0pt too wide) has occurred while \output is active
- [][][][][][][]| 
- []
-
-[7 <./SI_figs/final_cell_size_Si.pdf>] (./eLife_supplemental_draft.suppinfo)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
+[5 <./SI_figs/supplemental_Si_Cm.pdf>] (./eLife_supplemental_draft.suppinfo)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
 
 (./eLife_supplemental_draft.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 62.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 62.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
 Package rerunfilecheck Info: File `eLife_supplemental_draft.out' has not change
 d.
-(rerunfilecheck)             Checksum: B0A2CCD8E3AC73DC5D5A2A4D79122BFE;662.
+(rerunfilecheck)             Checksum: 5CE1D7B9FA9BFE83DF37558D12636F5C;343.
  ) 
 Here is how much of TeX's memory you used:
- 27540 strings out of 492995
- 502937 string characters out of 6132704
- 721227 words of memory out of 5000000
- 30134 multiletter control sequences out of 15000+600000
- 733185 words of font info for 585 fonts, out of 8000000 for 9000
+ 27355 strings out of 492995
+ 499032 string characters out of 6132704
+ 728318 words of memory out of 5000000
+ 30114 multiletter control sequences out of 15000+600000
+ 711509 words of font info for 477 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,15n,55p,10439b,925s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,16n,51p,10439b,925s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-02.enc}
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-04.enc}{/
-usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-01.enc}{/us
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-01.enc}{/
+usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-04.enc}{/us
 r/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-03.enc}</usr/
 local/texlive/2017/texmf-dist/fonts/type1/public/opensans/OpenSans-Bold.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/opensans/OpenSans-BoldItali
 c.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/opensans/OpenSans-
 Italic.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/opensans/Open
-Sans-Regular.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/st
-ix-mathit.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-
-mathrm.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mat
-hscr.pfb>
-Output written on eLife_supplemental_draft.pdf (7 pages, 828620 bytes).
+Sans-Regular.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/sti
+x-mathex.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-m
+athit.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-math
+rm.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathscr
+.pfb>
+Output written on eLife_supplemental_draft.pdf (5 pages, 1848241 bytes).
 PDF statistics:
- 1773 PDF objects out of 2073 (max. 8388607)
- 982 compressed objects within 10 object streams
- 33 named destinations out of 1000 (max. 500000)
- 69714 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 563 PDF objects out of 1000 (max. 8388607)
+ 342 compressed objects within 4 object streams
+ 16 named destinations out of 1000 (max. 500000)
+ 68141 words of extra memory for PDF output out of 74296 (max. 10000000)
 

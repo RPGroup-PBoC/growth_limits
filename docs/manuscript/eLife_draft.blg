@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: eLife_draft.aux
+The style file: apalike.bst
+Database file #1: library.bib
+Warning--can't use both author and editor fields in Goldberger1979
+You've used 50 entries,
+            1935 wiz_defined-function locations,
+            790 strings with 16256 characters,
+and the built_in function-call counts, 24640 in all, are:
+= -- 2315
+> -- 1432
+< -- 10
++ -- 525
+- -- 514
+* -- 2427
+:= -- 4332
+add.period$ -- 154
+call.type$ -- 50
+change.case$ -- 505
+chr.to.int$ -- 49
+cite$ -- 51
+duplicate$ -- 709
+empty$ -- 1497
+format.name$ -- 574
+if$ -- 4637
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 52
+newline$ -- 255
+num.names$ -- 150
+pop$ -- 409
+preamble$ -- 1
+purify$ -- 507
+quote$ -- 0
+skip$ -- 516
+stack$ -- 0
+substring$ -- 1771
+swap$ -- 59
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 296
+warning$ -- 1
+while$ -- 181
+width$ -- 0
+write$ -- 657
+(There was 1 warning)

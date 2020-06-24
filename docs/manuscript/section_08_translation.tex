@@ -13,10 +13,10 @@ growth, our earlier estimate of rRNA highlighted the necessity for multiple
 copies of rRNA genes in order to make enough rRNA, suggesting the possibility
 that synthesis of ribosomes might be rate limiting. While the transcriptional
 demand for  the ribosomal proteins is substantially lower than rRNA genes, since
-many proteins can be translated from relatively fewer mRNA, other ribosomal
+proteins can be translated from relatively fewer mRNA, other ribosomal
 proteins like the translation elongation factor EF-Tu also present a substantial
 burden. For EF-Tu  in particular, it is the most highly expressed protein in
-\textit{E. coli} and  is expressed by multiple genes on the chromosome, tufA and
+\textit{E. coli} and is expressed from multiple gene copies, tufA and
 tufB.
 
 % Experimentally,
@@ -64,14 +64,15 @@ tufB.
 
 We can begin to gain some intuition into how translation might limit growth by
 noting that the total number of peptide bonds generated as the cell doubles,
-$N_{aa}$, will be given by, $\tau \cdot
-r_t \cdot R / ln(2)$. Here, $\tau$ refers to the doubling time of the cell under
-steady-state growth and the factor $ln(2)$ is due to exponential growth. $r_t$ is the maximum translation elongation rate, and $R$ is the average number of ribosomes per cell. With the growth rate related to the
-cell doubling time by $\lambda = ln(2)/\tau$, we can write the
+$N_{aa}$, will be given by, $\tau \cdot r_t \cdot R / ln(2)$. Here, $\tau$
+refers to the doubling time of the cell under steady-state growth. The factor
+$ln(2)$ is due to exponential growth of protein mass, with the growth rate
+$\lambda = ln(2)/\tau$. $r_t$ is the maximum translation elongation rate, and
+$R$ is the average number of ribosomes per cell. We can write the
 translation-limited growth rate as,
 
 \begin{equation}
-\lambda_{\textrm{translation-limited}} = \frac{ r_t \cdot R}{N_{aa}}.
+\lambda_{\textrm{translation-limited}} = \frac{r_t \cdot R}{N_{aa}}.
 \end{equation}
 Alternatively, since $N_{aa}$ is related to the total protein mass through the
 molecular weight of each protein, we can also consider the growth rate in terms
@@ -149,7 +150,7 @@ rRNA operons.
 \end{figure}
 
 
-\subsection{Multiple replication forks bias ribosome abundance.}
+\subsection{Multiple replication forks help bias ribosome abundance.}
 
 \textit{E. coli} cells grow by an adder mechanism, whereby cells add a constant
 volume with each cell division \citep{taheriaraghi2015}. In conjunction with
@@ -157,24 +158,24 @@ this, additional rounds of DNA replication are triggered when cells reach a
 critical volume per origin of replication (\FIG{translation_ecoli}(A)). This
 leads to the classically-described exponential increase in cell size with growth
 rate \cite{schaechter1958, si2017, si2019}. The mechanism behind growth rate
-control however, has remained elusive. In the context of maximizing growth
-rate, it is notable that the majority of ribosomal proteins and rRNA operons are
-found closer to the DNA origin. Given the need to increase to total gene dosage
+control however, has remained elusive. In the context of maximizing growth rate,
+it is notable that the majority of ribosomal proteins and rRNA operons are found
+closer to the DNA origin. Given that cells must increase their total gene dosage
 of rRNA operons at faster growth rates, and the intimate relationship between
-ribosomal content and growth rate we considered above, this raises the
-possibility that the observed size scaling and increase in chromosomal content
-might simply be a means for the cell to tune biosynthesis according to its
-physiological state.
+ribosomal content and growth rate considered above, this raises the possibility
+that the increase in chromosomal content might simply be a means for the cell
+to tune biosynthesis according to its physiological state and the nutrient
+availability in its environment.
 
-While an increase in transcription has been observed for genes near the origin
+While an increase in transcription has been observed for genes closer to the origin
 in rapidly growing \textit{E. coli}  \citep{scholz2019}, we were unaware of such
-characterization at the proteomic level. In order to test whether there is a
-relative increase in protein expression for genes closer to the origin, we
+characterization at the proteomic level. In order to see whether there is a
+relative increase in protein expression for genes closer to the origin at faster growth, we
 calculated a running boxcar average of protein copy number as a function of
 each gene's transcriptional start site. While absolute protein copy numbers can vary
 substantially across the chromosome, we indeed observe a bias in expression
 under fast growth conditions (\FIG{translation_ecoli}(B), showing the result
-using a 0.5 kb averaging window). The dramatic change in protein copy number
+using a 0.5 Mb averaging window). The dramatic change in protein copy number
 near the origin mainly reflects the increase in ribosomal protein expression.
 This trend is in contrast to slower growth conditions where the average copy
 number is more uniform across the length of the chromosome.
@@ -188,7 +189,7 @@ number is more uniform across the length of the chromosome.
         increase in replication forks (or number of ori regions) as \textit{E. coli} cells
         grow faster. (B) A running boxcar average of protein copy number is calculated for
         each each growth condition considered by
-        Schmidt \textit{et al.}. A 0.5 kb averaging window was used. Protein
+        Schmidt \textit{et al.}. A 0.5 Mb averaging window was used. Protein
         copy numbers are reported relative to their condition-specific means in order to center all
         data sets.
         (C) and (E) show experimental data from Si \textit{et al.} (2017)
@@ -199,8 +200,8 @@ number is more uniform across the length of the chromosome.
         $\langle$\# ori$\rangle$ / $\langle$\# ter$\rangle$  to the experimental
         measurements of ribosomal abundance. Ribosomal fraction was approximated from
         the RNA/protein ratios of Dai \textit{et al.} (2016) (yellow) and Si \textit{et al.} (2017) (light red and light green) by the conversion RNA/protein ratio $\approx \Phi_R \cdot 2.1$.
-        (F) plots the ribosome copy number estimated from the proteomic data against
-        our estimate of $\langle$\# ori$\rangle$.
+        (F) Plot of the ribosome copy number estimated from the proteomic data against
+         the estimated $\langle$\# ori$\rangle$.
         (G) Schematic showing translation-specific requirements for maintenance
         of steady-state growth. In a nutrient rich environment, amino acid supply $r_{aa}$ is sufficiently in
         excess of demand by ribosomes translating at their maximal rate. In poorer
@@ -208,7 +209,8 @@ number is more uniform across the length of the chromosome.
         the rate of elongation. In a regime where $r_{aa}$ is less than $r_t \cdot R$,
         the number of actively translating ribosomes will need to be reduced in order
         to maintain steady-state growth.
-        (H) [in progress],
+        (H) Translation elongation rate is plotted as a function of the number of actively translating ribosomes $R \cdot f_a$. Dashed lines correspond to a range of amino acid
+        synthesis rates $r_{aa}$, from 10$^3$ to 10$^6$. Growth rates are calculated according to Equation 1, assuming a constant ribosomal fraction of 8 percent. See appendix XX for additional details.
         (I) Experimenta data from Dai \textit{et al.} are
         used to estimate the fraction of actively translating ribosomes. The
         solid line represents the translation-limited growth rate for ribosomes
@@ -218,15 +220,15 @@ number is more uniform across the length of the chromosome.
     \end{fullwidth}
 \end{figure*}
 
-If ribosomal genes (rRNA and ribosomal proteins) are being synthesized according
-to their available gene dosage we can make two related hypotheses about how
-their abundance should vary with chromosomal content. The first is that the
-ribosomal protein fraction should increase in proportion  to the average ratio
-of DNA origins to DNA termini ($\langle$\# ori$\rangle$ / $\langle$\#
+If ribosomal genes (rRNA and ribosomal proteins) are being maximally synthesized
+according to the rRNA gene dosage we can make two related hypotheses about how
+their ribosome abundance should vary with chromosomal content. The first is that
+the ribosomal protein fraction should increase in proportion  to the average
+ratio of DNA origins to DNA termini ($\langle$\# ori$\rangle$ / $\langle$\#
 ter$\rangle$ ratio). This is a consequence of the skew in DNA dosage as cells
 grow faster. The second is that the absolute number of ribosomes should increase
-linearly with the number of DNA origins ($\langle$\# ori$\rangle$), since
-this will reflect the total gene dosage at a particular growth condition.
+with the number of DNA origins ($\langle$\# ori$\rangle$), since this will
+reflect the total gene dosage at a particular growth condition.
 
 In order to test each of these expectations we considered the experimental data
 from Si \textit{et al.} (2017), which inferred these parameters for cells under
@@ -246,7 +248,12 @@ Valgepea \textit{et al.} that was inconsistent with a number of other
 measurements of total RNA-to-protein ratios ($\approx \Phi_R$ x 2.1
 \cite{dai2016}) and only show the data from Schmidt \textit{et al.} and Li
 \textit{et al.} for relative ribosome abundances (see supplemental section XX
-for a more complete discussion).
+for a more complete discussion). For the data shown, the ribosomal fraction
+doesn't  increase as much at higher $\langle$\# ori$\rangle$ / $\langle$\#
+ter$\rangle$. Since several rRNA operons are actually located  quite far from
+the origin, the trend may in part be a consequence of a diminishing  increase in
+rRNA gene dosage at higher $\langle$\# ori$\rangle$ / $\langle$\# ter$\rangle$
+ratios.
 
 We can similarly estimate $\langle$\# ori$\rangle$, which depends on how often
 replication forks are initiated per cell cycle. This is given by the number of
@@ -254,24 +261,28 @@ overlapping cell cycles,  2$^{\tau_{cyc} / \tau}$, where $\tau_{cyc}$, refers to
 the total time of chromosome replication and cell division.
 \FIG{translation_ecoli}(E) shows the associated data from Si \textit{et al.},
 which we use to estimate $\langle$\# ori$\rangle$  for each growth condition of
-the proteomic data. In agreement with our expectations, we find a strong
-correlation between the ribosome copy number and estimated $\langle$\#
-ori$\rangle$ (\FIG{translation_ecoli}(F)).
+the proteomic data. In agreement with our expectations, we find that ribosome
+copy number increases with the estimated $\langle$\# ori$\rangle$
+(\FIG{translation_ecoli}(F)).
 
-These results may also shed some light on the notable increase in ribosomal content
-that is observed when sublethal doses of antibiotics. Specifically, if rRNA synthesis
-is rate limiting, and nutrient
-conditions largely dictate the extent of overlapping DNA replication cycles, than
-addition of antibiotic will lengthen the doubling time and
-allow an increase in the abundance of rRNA that can be synthesized over a division cycle.
-In Supplemental Section XX we consider this further using additional data from
-Si \textit{et al.} (2017).
+While it is difficult to distinguish between causality and correlation, the data
+is at least consistent with the need for cells to increase their effective rRNA
+gene dosage in order to growth according to the constraint set by Equation 1.
+These results may also shed some light on the notable increase in ribosomal
+content that is observed when sublethal doses of antibiotics \citep{scott2010,
+dai2016}. Specifically, if rRNA synthesis is rate limiting, and nutrient
+conditions largely dictate the extent of overlapping DNA replication cycles,
+than addition of antibiotic will lengthen the doubling time and allow an
+increase in the abundance of rRNA that can be synthesized relative to the rate
+of cell division. In Supplemental Section XX we consider this further using
+additional data from Si \textit{et al.} (2017).
 
 \subsection{Regulation of translating ribsomes helps maintain maximal growth
 according to nutrient availability.}
 
-While the above analysis provides an explanation for how \textit{E. coli} appears to vary its ribosomal content to maximize growth, it also presents a challenge in
-the limit of poorer nutrient conditions. Recall from Equation
+While the above analysis provides a possible explanation for how \textit{E. coli}
+can vary its ribosomal content to maximize growth, it also presents a
+challenge in the limit of poorer nutrient conditions. Recall from Equation
 \ref{eq:translation_limit_growth_rate} that ribosomal content should decrease to
 zero as growth decreases to zero. While bacteria tend to decrease their
 ribosomal abundance in poorer nutrient conditions, they do so only to some
@@ -292,8 +303,6 @@ regulate biological activity in conditions of stress and nutrient-limitation; in
 particular through the small-molecule alarmones (p)ppGpp \citep{harris2018}.
 Here we explore these two observations to better understand
 their consequence on growth rate.
-
-% [NB - how does this relate to Scott's stuff; and acknowledge attempt by Dai et al. and other paper. But here we want to deal directly with changing nutrient supply].
 
 We consider slow growth conditions ($\lambda$ less than ~ 0.5 $hr^{-1}$) by
 assuming that the decrease in elongation rate is due to a
@@ -340,26 +349,28 @@ across the entire range of growth rates across our data, we next estimated the
 active fraction of ribosomal protein. As shown in \FIG{translation_ecoli}(G), we
 find that cells grow at a rate near the expected translation maximum expected
 from Equation 1, using the maximum elongation rate of $r_t$ = 17.1 aa per
-second. This is in contrast to the reality that cells ribosomes are translating
-at almost half this rate in the poorest growth conditions. This suggests that
+second. This is in contrast to the reality that ribosomes are translating at
+almost half this rate in the poorest growth conditions. This highlights that
 there are alternative ways to grow according to the translated-limited growth
-rate. Even though \textit{E. coli} cells do not scale their ribosomal content to
-zero, they appear to achive the same end by regulating the fraction of their
-ribsoomes in poorer nutrient conditions.
+rate that is expected based with ribosomes translating at their maximal
+elongation rate. Specifically, it is by adjusting $r_t \cdot R' \cdot f_a
+\approx r_{tmax} \cdot R$ that cells are able to scale the growth limit set by
+Equation 1.
 
-[NB, important to include in discussion section: A number of recent papers
-highlight the possibility that (p)ppGpp may even provide a causal explanation
-for the nutrient-limit scaling law. In the context of ribosomal activity,
-increased levels of (p)ppGpp is associated with lower ribsomal content, and at
-slow growth appear to reduce the fraction of actively translating ribosomes
-\citep{dai2016, dai2018}. Titration of the cellular (p)ppGpp concetrations (up
-or down) can invoke similar proteomic changes reminiscent of those observed
-under nutrient limitation \citep{zhu2019}. In light of the limiting dependence
-of ribosome copy number on chromosomal content, it was recently shown that
-growth (p)ppGpp  null strain abolished both the cell size  scaling and changes
-to the  $\langle$\# ori$\rangle$ / $\langle$\# ter$\rangle$ ratio. Rather, cells
-exhibited a $\langle$\# ori$\rangle$ / $\langle$\# ter$\rangle$ closer to 4 and
-cell size more consistent with a fast growth state where (p)ppGpp levels are low
+[NB, These observations will be very important to include in
+discussion section: A number of recent papers highlight the possibility that
+(p)ppGpp may even provide a causal explanation for the nutrient-limit scaling
+law. In the context of ribosomal activity, increased levels of (p)ppGpp are
+associated with lower ribsomal content, and at slow growth appear to help reduce
+the fraction of actively translating ribosomes \citep{dai2016, dai2018}.
+Titration of the cellular (p)ppGpp concetrations (up or down) can invoke similar
+proteomic changes reminiscent of those observed under nutrient limitation
+\citep{zhu2019}. In light of the limiting dependence of ribosome copy number on
+chromosomal gene dosage, it was recently shown that growth in a (p)ppGpp  null
+strain abolishes both the scaling in cell size  and the $\langle$\# ori$\rangle$
+/ $\langle$\# ter$\rangle$ ratio. Instead, cells exhibited a high $\langle$\#
+ori$\rangle$ / $\langle$\# ter$\rangle$ closer to 4 and cell size more
+consistent with a fast growth state where (p)ppGpp levels are low
 \citep{fernandezcoll2020}.]
 
 

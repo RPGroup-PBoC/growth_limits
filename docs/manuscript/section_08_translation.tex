@@ -1,87 +1,79 @@
 \section{Protein synthesis}
 
-Lastly, we turn our attention to the process of translation. So far our
-estimates have led to protein copy numbers that are consistent with the
-proteomic data, or even in excess of what might be needed for each task under
-limiting growth conditions. Even in our example of \textit{E. coli} grown under
-different carbohydrate sources (\FIG{carbon_tport}(B)), it becomes clear cells can utilize
-alternative carbon sources by inducing the expression of additional membrane
-transporters and enzymes. Optimal resource allocation and the role of ribosomal
-proteins have been an area of intense quantitative study over the last decade by
-Hwa and others \citep{scott2010, hui2015}. From the perspective of limiting
-growth, our earlier estimate of rRNA highlighted the necessity for multiple
-copies of rRNA genes in order to make enough rRNA, suggesting the possibility
-that synthesis of ribosomes might be rate limiting. While the transcriptional
-demand for  the ribosomal proteins is substantially lower than rRNA genes, since
-proteins can be translated from relatively fewer mRNA, other ribosomal
-proteins like the translation elongation factor EF-Tu also present a substantial
-burden. For EF-Tu  in particular, it is the most highly expressed protein in
-\textit{E. coli} and is expressed from multiple gene copies, tufA and
-tufB.
+Lastly, we turn our attention to the process of translation.  We begin by first
+estimating the number of tRNA synthetases and ribosomes required to  double a
+cell in 5000 seconds.  \textit{E. coli} has roughly 3 x 10$^6$ proteins per
+cell, which for an average protein of 300 aa, amounts to the formation of
+$\approx$ 10$^9$ peptide bonds. This value will also match the number of
+amino-acyl tRNA that are required for protein synthesis, with the pool of tRNA continuously
+recharging new amino acids by tRNA synthetases. At a rate of charging of about
+20 amino-acyl tRNA per second (BNID: 105279, \cite{milo2010}), we find that
+cells have more than sufficient tRNA synthetases to meet the ribosomal demand
+(\FIG{protein_synthesis}(A)). If we consider an elongation rate of $\approx$ 15
+peptide bonds per second (BNID: 114271, \cite{milo2010, dai2016}), the formation
+of $\approx$ 10$^9$ peptide bonds would require about 1.5 x 10$^4$ ribosomes.
+This is indeed consistent with the experimental data shown in
+\FIG{protein_synthesis}(B).
 
-% Experimentally,
-% consecutive deletion of rRNA operons showed a significant reduction in growth
-% rate in rich media when cells had only 3 or less \citep{levin2017}.
+\begin{figure}
+    \begin{fullwidth}
+    \centering{
+        \includegraphics{main_figs/protein_synthesis.pdf}
+        \caption{\textbf{Estimation of the required tRNA synthetases and
+        ribosomes.} (A) Estimation for the
+        number of tRNA synthetases that will supply the required amino acid
+        demand. The sum of all tRNA synthetases copy numbers are plotted as a
+        function of growth rate ([ArgS], [CysS], [GlnS], [GltX], [IleS], [LeuS],
+        [ValS], [AlaS]$_2$, [AsnS]$_2$, [AspS]$_2$, [TyrS]$_2$, [TrpS]$_2$,
+        [ThrS]$_2$, [SerS]$_2$, [ProS]$_2$, [PheS]$_2$[PheT]$_2$, [MetG]$_2$,
+        [lysS]$_2$, [HisS]$_2$, [GlyS]$_2$[GlyQ]$_2$). (B) Estimation of the
+        number of ribosomes required to synthesize 10$^9$ peptide bonds with an
+        elongation rate of 15 peptide bonds per second. The
+        average abundance of ribosomes is plotted as a function of growth rate.
+        Our estimated values are shown for a growth rate of 0.5 hr$^{-1}$.}
+    \label{fig:protein_synthesis}
+    }
+    \end{fullwidth}
+\end{figure}
 
-% Separately, it has been found that gross
-% overexpression of a protein can dramatically lower growth rate due to the
-% altered allocation of resources \citep{basan2015}.
+So far our estimates have led to protein copy numbers that are consistent with
+the proteomic data, or even in excess of what might be needed for each task
+under limiting growth conditions. Even in our example of \textit{E. coli} grown
+under different carbohydrate sources (\FIG{carbon_tport}(B)), it becomes clear
+cells can utilize alternative carbon sources by inducing the expression of
+additional membrane transporters and enzymes. Optimal resource allocation and
+the role of ribosomal proteins have been an area of intense quantitative study
+over the last decade by Hwa and others \citep{scott2010, hui2015}. From the
+perspective of limiting growth, our earlier estimate of rRNA highlighted the
+necessity for multiple copies of rRNA genes in order to make enough rRNA. For
+\textit{E. coli}'s fastest growth rates at 2 hr$^{-1}$, the additional  demand
+for rRNA is further supported by parallelized DNA replication and increased rRNA
+gene dosage. This suggests the possibility that synthesis of ribosomes might
+be rate limiting. While the transcriptional demand for the ribosomal proteins
+is substantially lower than rRNA genes, since proteins can be translated from
+relatively fewer mRNA, other ribosomal proteins like the translation elongation
+factor EF-Tu also present a substantial burden. For EF-Tu  in particular, it is
+the most highly expressed protein in \textit{E. coli} and is expressed from
+multiple gene copies, tufA and tufB.
 
-% We begin by first estimating the number of tRNA synthetases and ribosomes
-% required for  a doubling time of 5000 seconds.  \textit{E. coli} has roughly 3 x
-% 10$^6$ proteins per cell, which for an average protein of 300 aa, amounts to the
-% formation of $\approx$ 10$^9$ peptide bonds. This also corresponds to the number
-% of amino-acyl tRNA that are used by ribosomes, with the pool of tRNA
-% continuously recharging new amino acids by tRNA synthetases. At a rate of
-% charging of about 20 amino-acyl tRNA per second (BNID: 105279, \cite{milo2010}),
-% we find that cells have more than sufficient tRNA synthetases to meet the demand
-% of ribosomes during  protein synthesis (\FIG{protein_synthesis}(A)). If we
-% consider an elongation rate of $\approx$ 15 peptide bonds per second (BNID:
-% 114271, \cite{milo2010, dai2016}), the formation of $\approx$ 10$^9$ peptide
-% bonds would require 1.5 x 10$^4$ ribosomes at a growth rate of 0.5 hr$^{-1}$.
-% This is indeed consistent with the experimental data shown in
-% \FIG{protein_synthesis}(B).
-%
-% \begin{figure}
-%     \begin{fullwidth}
-%     \centering{
-%         \includegraphics{main_figs/protein_synthesis.pdf}
-%         \caption{\textbf{Estimation of the required tRNA synthetases and
-%         ribosomes.} (A) Estimation for the
-%         number of tRNA synthetases that will supply the required amino acid
-%         demand. The sum of all tRNA synthetases copy numbers are plotted as a
-%         function of growth rate ([ArgS], [CysS], [GlnS], [GltX], [IleS], [LeuS],
-%         [ValS], [AlaS]$_2$, [AsnS]$_2$, [AspS]$_2$, [TyrS]$_2$, [TrpS]$_2$,
-%         [ThrS]$_2$, [SerS]$_2$, [ProS]$_2$, [PheS]$_2$[PheT]$_2$, [MetG]$_2$,
-%         [lysS]$_2$, [HisS]$_2$, [GlyS]$_2$[GlyQ]$_2$). (B) Estimation for the
-%         number of ribosomes required to synthesize all proteins in the cell. The
-%         average abundance of ribosomes is plotted as a function of growth rate.
-%         Our estimated values are shown for a growth rate of 0.5 hr$^{-1}$.}
-%     \label{fig:protein_synthesis}
-%     }
-%     \end{fullwidth}
-% \end{figure}
-
-To gain some intuition of how translation may set the speed limit for bacterial
-growth, we consider the total number of peptide bonds that must be synthesized,
-$N_\text{AA}$. Noting that cell mass grows exponentially [GC: Citation Here], we can
-compute the number of amino acids to be polymerized as
-\begin{equation}
-    N_\text{AA} = \frac{r_t R}{\lambda},
-\end{equation}
-where $\lambda$ is the cell growth rate in s$^{-1}$, $r_t$ is the maximum translation rate in
-amino acids per second, and $R$ is the average ribosome copy number per cell.
-Knowing the number of peptide bods to be formed permits us to compute the
-translation-limited growth rate as 
-\begin{equation}
-    \lambda_\text{translation-limited} = \frac{r_t R}{N_\text{AA}}.
+To gain some intuition into how translation may set the speed limit for bacterial
+growth, we again consider the total number of peptide bonds that must be synthesized,
+$N_\text{AA}$. Noting that cell mass grows exponentially \citep{godin2010}, we
+can compute the number of amino acids to be polymerized as \begin{equation}
+N_\text{AA} = \frac{r_t R}{\lambda}, \end{equation} where $\lambda$ is the cell
+growth rate in s$^{-1}$, $r_t$ is the maximum translation rate in amino acids
+per second, and $R$ is the average ribosome copy number per cell. Knowing the
+number of peptide bods to be formed permits us to compute the
+translation-limited growth rate as \begin{equation}
+\lambda_\text{translation-limited} = \frac{r_t R}{N_\text{AA}}.
 \end{equation}
 
 Alternatively, since $N_{AA}$ is related to the total protein mass through the
 molecular weight of each protein, we can also consider the growth rate in terms
-of the fraction of the total proteome mass that is dedicated to ribosomal protein mass. By making the approximation that an average amino
-acid has a molecular weight of 110 Da (see \FIG{translation_1}(A)), we can
-rewrite the growth rate as,
+of the fraction of the total proteome mass that is dedicated to ribosomal
+protein mass. By making the approximation that an average amino acid has a
+molecular weight of 110 Da (see \FIG{translation_1}(A)), we can rewrite the
+growth rate as,
 
 \begin{equation}
 \lambda_{\textrm{translation-limited}} \approx \frac{r_t}{L_R}  \Phi_R,
@@ -114,17 +106,17 @@ process that cannot be parallelized.
 
 For reasonable values of $\Phi_R$, between about 0.1 - 0.3 \citep{scott2010},
 the maximum growth rate is in line with experimentally reported growth rates
-around 0.5 - 2 hr$^{-1}$. 
+around 0.5 - 2 hr$^{-1}$.
 % Here we are implicitly assuming that translation
 % proceeds randomly, without preference between ribosomal or non-ribosomal mRNA,
-% which appears reasonable. 
+% which appears reasonable.
 Importantly, in order for a cell to scale this growth
-limit set by $\Phi_R$, cells \textit{must} increase their ribosomal abundance.
+limit they \textit{must} increase their ribosomal abundance.
 This can be achieved by either synthesizing more ribosomes or reducing the
 fraction of non-ribosomal proteins. Reduction of non-ribosomal proteins is not
 a straightforward task since (as we have found throughout our estimates) doubling a
 cell requires many other enzymes and transporters. Increasing the absolute
-ribosomal abundance for the case of \textit{E. coli} is limited by the number of
+ribosomal abundance in \textit{E. coli} will be limited by the number of
 rRNA operons.
 
 \begin{figure}
@@ -211,7 +203,7 @@ uniform across the length of the chromosome.
          the estimated $\langle$\# ori$\rangle$.
         (G) Schematic showing translation-specific requirements for maintenance
         of steady-state growth. In a nutrient rich environment, amino acid supply $r_{aa}$ is sufficiently in
-        excess of demand by ribosomes translating at their maximal rate. In poorer
+        excess of the demand by ribosomes translating at their maximal rate. In poorer
         nutrient conditions, reduced amino acid supply $r_{aa}$ will decrease
         the rate of elongation. In a regime where $r_{aa}$ is less than $r_t \cdot R$,
         the number of actively translating ribosomes will need to be reduced in order
@@ -240,29 +232,28 @@ a particular growth condition.
 
 In order to test each of these expectations we considered the experimental data
 from \cite{si2017}, which inferred these parameters for cells under
-nutrient-limited growth. The ratio $\langle$\# ori$\rangle$ / $\langle$\# ter$\rangle$
-depends on how quickly chromosomes are replicated relative the cell's
-doubling time $\tau$ and is given by 2$^{\tau_C / \tau}$. Here $\tau_C$ is the
-time taken to replicate \textit{E. coli}'s chromosome, referred to as the C
-period of cell division.  In \FIG{translation_ecoli}(C) we plot the measured $\tau_C$ versus
-$\tau$ (computed as $\tau = \log (2) / \lambda$), with data points in red corresponding to \textit{E.
-coli} strain MG1655, and blue to strain NCM3722. \cite{si2017} also
-measured the total RNA to protein ratio  which reflects ribosomal abundance and
-we show that data along with other recent  measurements from
-\cite{dai2016,dai2018}. Indeed, 
-we find that the ribosomal fraction increases with $\langle$\#
-ori$\rangle$ / $\langle$\# ter$\rangle$ (\FIG{translation_ecoli}(C)). We note a
-systematic difference in the relative abundances from \cite{peebo2015} and
-\cite{valgepea2013} that was inconsistent with a number of other
-measurements of total RNA-to-protein ratios ($\approx \Phi_R$ x 2.1
-\cite{dai2016}) and only show the data from \cite{schmidt2016} and \cite{li2014}
-for relative ribosome abundances (see supplemental section XX
-for a more complete discussion). For the data shown, the ribosomal fraction
-doesn't increase as much at higher $\langle$\# ori$\rangle$ / $\langle$\#
-ter$\rangle$. Since several rRNA operons are actually located approximately
-half-way between the origin and terminus, the trend may in part be a consequence of a diminishing  increase in
-rRNA gene dosage at higher $\langle$\# ori$\rangle$ / $\langle$\# ter$\rangle$
-ratios.
+nutrient-limited growth. The ratio $\langle$\# ori$\rangle$ / $\langle$\#
+ter$\rangle$ depends on how quickly chromosomes are replicated relative the
+cell's doubling time $\tau$ and is given by 2$^{\tau_C / \tau}$. Here $\tau_C$
+is the time taken to replicate \textit{E. coli}'s chromosome, referred to as the
+C period of cell division.  In \FIG{translation_ecoli}(C) we plot the measured
+$\tau_C$ versus $\tau$ (computed as $\tau = \log (2) / \lambda$), with data
+points in red corresponding to \textit{E. coli} strain MG1655, and blue to
+strain NCM3722. \cite{si2017} also measured the total RNA to protein ratio
+which reflects ribosomal abundance and we show that data along with other recent
+measurements from \cite{dai2016,dai2018}. Indeed, we find that the ribosomal
+fraction increases with $\langle$\# ori$\rangle$ / $\langle$\# ter$\rangle$
+(\FIG{translation_ecoli}(C)). We note a systematic difference in the relative
+abundances from \cite{peebo2015} and \cite{valgepea2013} that was inconsistent
+with a number of other measurements of total RNA-to-protein ratios ($\approx
+\Phi_R$ x 2.1 \cite{dai2016}) and only show the data from \cite{schmidt2016} and
+\cite{li2014} for relative ribosome abundances (see supplemental section XX for
+a more complete discussion). For the data shown, the ribosomal fraction doesn't
+increase as much at higher $\langle$\# ori$\rangle$ / $\langle$\# ter$\rangle$.
+Since several rRNA operons are actually located approximately half-way between
+the origin and terminus, the trend may in part be a consequence of a diminishing
+increase in rRNA gene dosage at higher $\langle$\# ori$\rangle$ / $\langle$\#
+ter$\rangle$ ratios.
 
 We can similarly estimate $\langle$\# ori$\rangle$, which depends on how often
 replication forks are initiated per cell cycle. This is given by the number of
@@ -276,13 +267,13 @@ copy number increases with the estimated $\langle$\# ori$\rangle$
 
 While it is difficult to distinguish between causality and correlation, the data
 is at least consistent with the need for cells to increase their effective rRNA
-gene dosage in order to growth according to the constraint set by Equation 2.
+gene dosage in order to grow according to the constraint set by Equation 2.
 These results may also shed some light on the notable increase in ribosomal
 content that is observed when sublethal doses of antibiotics \citep{scott2010,
 dai2016}. Specifically, if rRNA synthesis is rate limiting, and nutrient
 conditions largely dictate the extent of overlapping DNA replication cycles,
 than addition of antibiotic will lengthen the doubling time and allow an
-increase in the abundance of rRNA that can be synthesized relative to the rate
+increased rRNA synthesis relative to the rate
 of cell division. In Supplemental Section XX, we consider this further using
 additional data from \cite{si2017}.
 
@@ -301,17 +292,17 @@ From the perspective of a bacterium dealing with uncertain nutrient conditions,
 there is likely a benefit for the cell to maintain some relative fraction of
 ribosomes to support rapid growth as nutrient conditions improve.
 
-The challenge however, lies in the cell's ability to maintain steady-state growth
-when ribosomes are in excess of the rate that nutrients can be harvested and
-amino  acids synthesized for consumption \FIG{translation_ecoli}{G}. One
+The challenge however, lies in the cell's ability to maintain steady-state
+growth when ribosomes are in excess of the rate that nutrients can be harvested
+and amino  acids synthesized for consumption \FIG{translation_ecoli}{G}. One
 explanation for this is that the elongation rate decreases in poorer growth
 conditions. Cells, however, are still able to maintain a relatively high
 elongation rate even in stationary phase ($\approx$ 8 AA/s, \citep{dai2016,
-dai2018}). A second explanation is that there are mechanisms to
-regulate biological activity in conditions of stress and nutrient-limitation; in
+dai2018}). A second explanation is that there are mechanisms to regulate
+biological activity in conditions of stress and nutrient-limitation; in
 particular through the small-molecule alarmones (p)ppGpp \citep{harris2018}.
-Here we explore these two observations to better understand
-their consequence on growth rate.
+Here we explore these two observations to better understand their consequence on
+growth rate.
 
 We consider slow growth conditions ($\lambda$ less than ~ 0.5 $hr^{-1}$) by
 assuming that the decrease in elongation rate is due to a
@@ -342,8 +333,8 @@ translating ribosomes.
 In \FIG{translation_ecoli}{E} we consider how the maximal growth rate and
 elongation rates vary as a function of the number of actively translating
 ribosomes in this slow growth regime (see Supplemental Section XX for a complete
-description of the model). If we consider $r_AA$ to be reflective of a specific
-growth condition, by considering lines of constant $r_AA$, we find that cells
+description of the model). If we consider $r_{AA}$ to be reflective of a specific
+growth condition, by considering lines of constant $r_{AA}$, we find that cells
 grow fastest by maximizing their fraction of actively translating ribosomes.
 When we consider the experimental measurements from \cite{dai2018}, we see
 that although cells indeed reduce $R \times f_a$, they do so in a way that keeps
@@ -362,8 +353,8 @@ second. This is in contrast to the reality that ribosomes are translating at
 almost half this rate in the poorest growth conditions. This highlights that
 there are alternative ways to grow according to the translated-limited growth
 rate that is expected based with ribosomes translating at their maximal
-elongation rate. Specifically, it is by adjusting $r_t \times R' \times f_a
-\approx r_{tmax} \times R$ that cells are able to scale the growth limit set by
+elongation rate. Specifically, it is by adjusting $r_t \times R \times f_a
+\approx r_{tmax} \times R'$ that cells are able to scale the growth limit set by
 Equation 2.
 
 [NB, These observations will be very important to include in

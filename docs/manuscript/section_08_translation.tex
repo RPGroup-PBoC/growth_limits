@@ -81,7 +81,7 @@ Alternatively, since $N_{AA}$ is related to the total protein mass through the
 molecular weight of each protein, we can also consider the growth rate in terms
 of the fraction of the total proteome mass that is dedicated to ribosomal
 protein mass. By making the approximation that an average amino acid has a
-molecular weight of 110 Da (see \FIG{translation_1}(A)), we can rewrite the
+molecular weight of 110 Da (see \FIG{ribosome_limit}(A)), we can rewrite the
 growth rate as,
 
 \begin{equation}
@@ -90,7 +90,7 @@ growth rate as,
 \end{equation}
 where $L_R$ is the total length in amino acids that make up a ribosome, and
 $\Phi_R$ is the ribosomal mass fraction. This is plotted as a function of
-ribosomal fraction $\Phi_R$ in \FIG{translation_1}(A), where we take $L_R
+ribosomal fraction $\Phi_R$ in \FIG{ribosome_limit}(A), where we take $L_R
 \approx$ 7500 aa, corresponding to the length in amino acids for all ribosomal
 subunits of the 50S and 30S complex (BNID: 101175, \citep{milo2010}). This
 formulation assumes that the cell can transcribe the required amount of rRNA,
@@ -108,7 +108,7 @@ This growth rate can be viewed as an inherent maximum growth rate due to the
 need for the cell to double the cell's entire ribosomal mass. Interestingly,
 this limit is independent of the absolute number of ribosomes and is simply
 given by time to translate an entire ribosome, $L_R/ r_t$. As shown in
-\FIG{translation_1}(B), we can reconcile this with the observation that in
+\FIG{ribosome_limit}(B), we can reconcile this with the observation that in
 order to double the average number of ribosomes, each ribosome must produce a
 second ribosome. Unlike DNA replication or rRNA transcription, this is a
 process that cannot be parallelized.
@@ -116,7 +116,7 @@ process that cannot be parallelized.
 \begin{figure}
   \begin{fullwidth}
         \centering{
-            \includegraphics{main_figs/fig7_ribosome_growth_limit_3.pdf}
+            \includegraphics{main_figs/fig7_ribosome_growth_limit.pdf}
             \caption{\textbf{Translation-limited growth rate.} (A) Here we
             consider the translation-limited growth as a function of ribosomal
             fraction. By mass balance, the time required to double the entire
@@ -136,7 +136,7 @@ process that cannot be parallelized.
             entire ribosome, $L_R/ r_t$ . This is a result that is independent
             of the number of ribosomes in the cell as shown schematically here.
             }
-        \label{fig:translation_1}
+        \label{fig:ribosome_limit}
         }
   \end{fullwidth}
 \end{figure}

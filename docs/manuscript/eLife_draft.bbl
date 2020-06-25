@@ -1,333 +1,187 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{21}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\urlprefix}{}
+\providecommand{\doiprefix}{doi: }
 
-\bibitem[Aidelberg et~al., 2014]{aidelberg2014}
-Aidelberg, G., Towbin, B.~D., Rothschild, D., Dekel, E., Bren, A., and Alon, U.
-  (2014).
-\newblock Hierarchy of non-glucose sugars in \textit{Escherichia coli}.
-\newblock {\em BMC Systems Biology}, 8(1):133.
-
-\bibitem[Antonenko et~al., 1997]{antonenko1997}
-Antonenko, Y.~N., Pohl, P., and Denisov, G.~A. (1997).
-\newblock Permeation of ammonia across bilayer lipid membranes studied by
-  ammonium ion selective microelectrodes.
-\newblock {\em Biophysical Journal}, 72(5):2187--2195.
-
-\bibitem[Assentoft et~al., 2016]{assentoft2016}
-Assentoft, M., Kaptan, S., Schneider, H.-P., Deitmer, J.~W., de~Groot, B.~L.,
-  and MacAulay, N. (2016).
-\newblock Aquaporin 4 as a {{NH$_3$ Channel}}.
-\newblock {\em Journal of Biological Chemistry}, 291(36):19184--19195.
-
-\bibitem[Bauer and Ziv, 1976]{bauer1976}
-Bauer, S. and Ziv, E. (1976).
-\newblock Dense growth of aerobic bacteria in a bench-scale fermentor.
-\newblock {\em Biotechnology and Bioengineering}, 18(1):81--94.
-\newblock \_eprint:
-  https://onlinelibrary.wiley.com/doi/pdf/10.1002/bit.260180107.
-
-\bibitem[Belliveau et~al., 2018]{belliveau2018}
-Belliveau, N.~M., Barnes, S.~L., Ireland, W.~T., Jones, D.~L., Sweredoski,
-  M.~J., Moradian, A., Hess, S., Kinney, J.~B., and Phillips, R. (2018).
-\newblock Systematic approach for dissecting the molecular mechanisms of
-  transcriptional regulation in bacteria.
-\newblock {\em Proceedings of the National Academy of Sciences},
-  115(21):E4796--E4805.
-
-\bibitem[Bennett et~al., 2009]{bennett2009}
-Bennett, B.~D., Kimball, E.~H., Gao, M., Osterhout, R., Van~Dien, S.~J., and
-  Rabinowitz, J.~D. (2009).
+\bibitem[{Bennett et~al.(2009)Bennett, Bryson D and Kimball, Elizabeth H and
+  Gao, Melissa and Osterhout, Robin and Van Dien, Stephen J and Rabinowitz,
+  Joshua D}]{bennett2009}
+\textbf{\color{eLifeMediumGrey} Bennett BD}, Kimball EH, Gao M, Osterhout R,
+  Van~Dien SJ, Rabinowitz JD.
 \newblock {Absolute metabolite concentrations and implied enzyme active site
   occupancy in \textit{Escherichia coli}}.
-\newblock {\em Nature Chemical Biology}, 5(8):593--599.
+\newblock Nature Chemical Biology.  2009 Aug; 5(8):593--599.
 
-\bibitem[Booth et~al., 1979]{booth1979}
-Booth, I.~R., Mitchell, W.~J., and Hamilton, W.~A. (1979).
-\newblock Quantitative analysis of proton-linked transport systems. {{The}}
-  lactose permease of \textit{Escherichia coli}.
-\newblock {\em Biochemical Journal}, 182(3):687--696.
-
-\bibitem[Dai et~al., 2018]{dai2018}
-Dai, X., Zhu, M., Warren, M., Balakrishnan, R., Okano, H., Williamson, J.~R.,
-  Fredrick, K., and Hwa, T. (2018).
+\bibitem[{Dai et~al.(2018)Dai, Xiongfeng and Zhu, Manlu and Warren, Mya and
+  Balakrishnan, Rohan and Okano, Hiroyuki and Williamson, James R and Fredrick,
+  Kurt and Hwa, Terence}]{dai2018}
+\textbf{\color{eLifeMediumGrey} Dai X}, Zhu M, Warren M, Balakrishnan R, Okano
+  H, Williamson JR, Fredrick K, Hwa T.
 \newblock {Slowdown of Translational Elongation in \textit{Escherichia coli}
   under Hyperosmotic Stress. - PubMed - NCBI}.
-\newblock {\em mBio}, 9(1):281.
+\newblock mBio.  2018 Feb; 9(1):281.
 
-\bibitem[Dai et~al., 2016]{dai2016}
-Dai, X., Zhu, M., Warren, M., Balakrishnan, R., Patsalo, V., Okano, H.,
-  Williamson, J.~R., Fredrick, K., Wang, Y.-P., and Hwa, T. (2016).
+\bibitem[{Dai et~al.(2016)Dai, Xiongfeng and Zhu, Manlu and Warren, Mya and
+  Balakrishnan, Rohan and Patsalo, Vadim and Okano, Hiroyuki and Williamson,
+  James R and Fredrick, Kurt and Wang, Yi-Ping and Hwa, Terence}]{dai2016}
+\textbf{\color{eLifeMediumGrey} Dai X}, Zhu M, Warren M, Balakrishnan R,
+  Patsalo V, Okano H, Williamson JR, Fredrick K, Wang YP, Hwa T.
 \newblock {Reduction of translating ribosomes enables \textit{Escherichia coli}
   to maintain elongation rates during slow growth}.
-\newblock {\em Nature Microbiology}, 2(2):16231.
+\newblock Nature Microbiology.  2016 Dec; 2(2):16231.
 
-\bibitem[Escalante et~al., 2012]{escalante2012}
-Escalante, A., Salinas~Cervantes, A., Gosset, G., and Bol{\'i}var, F. (2012).
-\newblock Current knowledge of the \textit{Escherichia coli}
-  phosphoenolpyruvate\textendash{}carbohydrate phosphotransferase system:
-  Peculiarities of regulation and impact on growth and product formation.
-\newblock {\em Applied Microbiology and Biotechnology}, 94(6):1483--1494.
-
-\bibitem[Feist et~al., 2007]{feist2007}
-Feist, A.~M., Henry, C.~S., Reed, J.~L., Krummenacker, M., Joyce, A.~R., Karp,
-  P.~D., Broadbelt, L.~J., Hatzimanikatis, V., and Palsson, B.~{\O}. (2007).
-\newblock A genome-scale metabolic reconstruction for \textit{Escherichia coli}
-  {{K}}-12 {{MG1655}} that accounts for 1260 {{ORFs}} and thermodynamic
-  information.
-\newblock {\em Molecular Systems Biology}, 3(1):121.
-
-\bibitem[Fern{\'a}ndez-Coll et~al., 2020]{fernandezcoll2020}
-Fern{\'a}ndez-Coll, L., Maciag-Dorszynska, M., Tailor, K., Vadia, S., Levin,
-  P.~A., Szalewska-Palasz, A., Cashel, M., and Dunny, G.~M. (2020).
+\bibitem[{Fern{\'a}ndez-Coll et~al.(2020)Fern{\'a}ndez-Coll, Lloren{\c c} and
+  Maciag-Dorszynska, Monika and Tailor, Krishma and Vadia, Stephen and Levin,
+  Petra Anne and Szalewska-Palasz, Agnieszka and Cashel, Michael and Dunny,
+  Gary M}]{fernandezcoll2020}
+\textbf{\color{eLifeMediumGrey} Fern{\'a}ndez-Coll L}, Maciag-Dorszynska M,
+  Tailor K, Vadia S, Levin PA, Szalewska-Palasz A, Cashel M, Dunny GM.
 \newblock {The Absence of (p)ppGpp Renders Initiation of \textit{Escherichia
   coli} Chromosomal DNA Synthesis Independent of Growth Rates}.
-\newblock {\em mBio}, 11(2):45.
+\newblock mBio.  2020 Apr; 11(2):45.
 
-\bibitem[{Gama-Castro} et~al., 2016]{gama-castro2016}
-{Gama-Castro}, S., Salgado, H., {Santos-Zavaleta}, A., {Ledezma-Tejeida}, D.,
-  {Mu{\~n}iz-Rascado}, L., {Garc{\'i}a-Sotelo}, J.~S.,
-  {Alquicira-Hern{\'a}ndez}, K., {Mart{\'i}nez-Flores}, I., Pannier, L.,
-  {Castro-Mondrag{\'o}n}, J.~A., {Medina-Rivera}, A., {Solano-Lira}, H.,
-  {Bonavides-Mart{\'i}nez}, C., {P{\'e}rez-Rueda}, E.,
-  {Alquicira-Hern{\'a}ndez}, S., {Porr{\'o}n-Sotelo}, L., {L{\'o}pez-Fuentes},
-  A., {Hern{\'a}ndez-Koutoucheva}, A., {Moral-Ch{\'a}vez}, V.~D., Rinaldi, F.,
-  and {Collado-Vides}, J. (2016).
-\newblock {{RegulonDB}} version 9.0: High-level integration of gene regulation,
-  coexpression, motif clustering and beyond.
-\newblock {\em Nucleic Acids Research}, 44(D1):D133--D143.
+\bibitem[{Godin et~al.(2010)Godin, Michel and Delgado, Francisco Feij{\'o} and
+  Son, Sungmin and Grover, William H and Bryan, Andrea K and Tzur, Amit and
+  Jorgensen, Paul and Payer, Kris and Grossman, Alan D and Kirschner, Marc W
+  and Manalis, Scott R}]{godin2010}
+\textbf{\color{eLifeMediumGrey} Godin M}, Delgado FF, Son S, Grover WH, Bryan
+  AK, Tzur A, Jorgensen P, Payer K, Grossman AD, Kirschner MW, Manalis SR.
+\newblock {Using buoyant mass to measure the growth of single cells}.
+\newblock Nature Methods.  2010 Apr; 7(5):387--390.
 
-\bibitem[Harris and Theriot, 2018]{harris2018}
-Harris, L.~K. and Theriot, J.~A. (2018).
+\bibitem[{Harris and Theriot(2018)Harris, Leigh K and Theriot, Julie
+  A}]{harris2018}
+\textbf{\color{eLifeMediumGrey} Harris LK}, Theriot JA.
 \newblock {Surface Area to Volume Ratio: A Natural Variable for Bacterial
   Morphogenesis}.
-\newblock {\em Trends in microbiology}, 26(10):815--832.
+\newblock Trends in microbiology.  2018 Oct; 26(10):815--832.
 
-\bibitem[Harris et~al., 2001]{harris2001}
-Harris, R.~M., Webb, D.~C., Howitt, S.~M., and Cox, G.~B. (2001).
-\newblock Characterization of {{PitA}} and {{PitB}} from {{{\emph{Escherichia
-  coli}}}}.
-\newblock {\em Journal of Bacteriology}, 183(17):5008--5014.
-
-\bibitem[Heldal et~al., 1985]{heldal1985}
-Heldal, M., Norland, S., and Tumyr, O. (1985).
-\newblock X-ray microanalytic method for measurement of dry matter and
-  elemental content of individual bacteria.
-\newblock {\em Applied and Environmental Microbiology}, 50(5):1251--1257.
-
-\bibitem[Hui et~al., 2015]{hui2015}
-Hui, S., Silverman, J.~M., Chen, S.~S., Erickson, D.~W., Basan, M., Wang, J.,
-  Hwa, T., and Williamson, J.~R. (2015).
+\bibitem[{Hui et~al.(2015)Hui, S and Silverman, J M and Chen, S S and Erickson,
+  D W and Basan, M and Wang, J and Hwa, T and Williamson, J R}]{hui2015}
+\textbf{\color{eLifeMediumGrey} Hui S}, Silverman JM, Chen SS, Erickson DW,
+  Basan M, Wang J, Hwa T, Williamson JR.
 \newblock {Quantitative proteomic analysis reveals a simple strategy of global
   resource allocation in bacteria}.
-\newblock {\em Molecular Systems Biology}, 11(2):e784--e784.
+\newblock Molecular Systems Biology.  2015 Feb; 11(2):e784--e784.
 
-\bibitem[Ireland et~al., 2020]{ireland2020}
-Ireland, W.~T., Beeler, S.~M., {Flores-Bautista}, E., Belliveau, N.~M.,
-  Sweredoski, M.~J., Moradian, A., Kinney, J.~B., and Phillips, R. (2020).
-\newblock Deciphering the regulatory genome of {{{\emph{Escherichia coli}}}},
-  one hundred promoters at a time.
-\newblock {\em bioRxiv}.
+\bibitem[{Li et~al.(2014)Li, Gene-Wei and Burkhardt, David and Gross, Carol and
+  Weissman, Jonathan S.}]{li2014}
+\textbf{\color{eLifeMediumGrey} Li GW}, Burkhardt D, Gross C, Weissman JS.
+\newblock Quantifying Absolute Protein Synthesis Rates Reveals Principles
+  Underlying Allocation of Cellular Resources.
+\newblock Cell.  2014 Apr; 157(3):624--635.
+\newblock \href{10.1016/j.cell.2014.02.033}{\doiprefix
+  10.1016/j.cell.2014.02.033}.
 
-\bibitem[Jacob and Monod, 1961]{jacob1961}
-Jacob, F. and Monod, J. (1961).
-\newblock Genetic regulatory mechanisms in the synthesis of proteins.
-\newblock {\em Journal of Molecular Biology}, 3(3):318--356.
-
-\bibitem[Jun et~al., 2018]{jun2018}
-Jun, S., Si, F., Pugatch, R., and Scott, M. (2018).
-\newblock Fundamental principles in bacterial physiology - history, recent
-  progress, and the future with focus on cell size control: A review.
-\newblock {\em Reports on Progress in Physics}, 81(5):056601.
-
-\bibitem[Khademi et~al., 2004]{khademi2004}
-Khademi, S., O'Connell, J., Remis, J., {Robles-Colmenares}, Y., Miercke, L.
-  J.~W., and Stroud, R.~M. (2004).
-\newblock Mechanism of {{Ammonia Transport}} by {{Amt}}/{{MEP}}/{{Rh}}:
-  {{Structure}} of {{AmtB}} at 1.35 {{\AA}}.
-\newblock {\em Science}, 305(5690):1587--1594.
-
-\bibitem[Li et~al., 2014]{li2014}
-Li, G.-W., Burkhardt, D., Gross, C., and Weissman, J.~S. (2014).
-\newblock Quantifying absolute protein synthesis rates reveals principles
-  underlying allocation of cellular resources.
-\newblock {\em Cell}, 157(3):624--635.
-
-\bibitem[Liebermeister et~al., 2014]{liebermeister2014}
-Liebermeister, W., Noor, E., Flamholz, A., Davidi, D., Bernhardt, J., and Milo,
-  R. (2014).
+\bibitem[{Liebermeister et~al.(2014)Liebermeister, Wolfram and Noor, Elad and
+  Flamholz, Avi and Davidi, Dan and Bernhardt, J{\"o}rg and Milo,
+  Ron}]{liebermeister2014}
+\textbf{\color{eLifeMediumGrey} Liebermeister W}, Noor E, Flamholz A, Davidi D,
+  Bernhardt J, Milo R.
 \newblock {Visual account of protein investment in cellular functions}.
-\newblock {\em Proceedings of the National Academy of Sciences},
+\newblock Proceedings of the National Academy of Sciences.  2014 Jun;
   111(23):8488--8493.
 
-\bibitem[Liu et~al., 2005]{liu2005a}
-Liu, M., Durfee, T., Cabrera, J.~E., Zhao, K., Jin, D.~J., and Blattner, F.~R.
-  (2005).
-\newblock Global {{Transcriptional Programs Reveal}} a {{Carbon Source Foraging
-  Strategy}} by {{{\emph{Escherichia}}}}{\emph{ coli}}.
-\newblock {\em Journal of Biological Chemistry}, 280(16):15921--15927.
+\bibitem[{Maal\oe(1979)Maal\oe, O}]{Goldberger1979}
+\textbf{\color{eLifeMediumGrey} Maal\oe O}.
+\newblock Regulation of the Protein-Synthesizing Machinery—Ribosomes, tRNA,
+  Factors, and So On.
+\newblock Goldberger R, editor, Gene Expression, Springer; 1979.
 
-\bibitem[Maal\oe, 1979]{Goldberger1979}
-Maal\oe, O. (1979).
-\newblock {\em Regulation of the Protein-Synthesizing Machinery—Ribosomes,
-  tRNA, Factors, and So On}.
-\newblock Gene Expression. Springer.
+\bibitem[{Milo et~al.(2010)Milo, Ron and Jorgensen, Paul and Moran, Uri and
+  Weber, Griffin and Springer, Michael}]{milo2010}
+\textbf{\color{eLifeMediumGrey} Milo R}, Jorgensen P, Moran U, Weber G,
+  Springer M.
+\newblock {{BioNumbers}}\textemdash{}the Database of Key Numbers in Molecular
+  and Cell Biology.
+\newblock Nucleic Acids Research.  2010 Jan; 38(suppl\_1):D750--D753.
+\newblock \href{10.1093/nar/gkp889}{\doiprefix 10.1093/nar/gkp889}.
 
-\bibitem[Milo et~al., 2010]{milo2010}
-Milo, R., Jorgensen, P., Moran, U., Weber, G., and Springer, M. (2010).
-\newblock {{BioNumbers}}\textemdash{}the database of key numbers in molecular
-  and cell biology.
-\newblock {\em Nucleic Acids Research}, 38(suppl\_1):D750--D753.
+\bibitem[{Peebo et~al.(2015)Peebo, Karl and Valgepea, Kaspar and Maser, Andres
+  and Nahku, Ranno and Adamberg, Kaarel and Vilu, Raivo}]{peebo2015}
+\textbf{\color{eLifeMediumGrey} Peebo K}, Valgepea K, Maser A, Nahku R,
+  Adamberg K, Vilu R.
+\newblock Proteome Reallocation in {{{\emph{Escherichia coli}}}} with
+  Increasing Specific Growth Rate.
+\newblock Molecular BioSystems.  2015; 11(4):1184--1193.
+\newblock \href{10.1039/C4MB00721B}{\doiprefix 10.1039/C4MB00721B}.
 
-\bibitem[Monod, 1947]{monod1947}
-Monod, J. (1947).
-\newblock The phenomenon of enzymatic adaptation and its bearings on problems
-  of genetics and cellular differentiation.
-\newblock {\em Growth Symposium}, 9:223--289.
-
-\bibitem[Neidhardt et~al., 1991]{neidhardt1991}
-Neidhardt, F.~C., Ingraham, J., and Schaechter, M. (1991).
-\newblock {\em Physiology of the {{Bacterial Cell}} - {{A Molecular
-  Approach}}}, volume~1.
-\newblock {Elsevier}.
-
-\bibitem[Peebo et~al., 2015]{peebo2015}
-Peebo, K., Valgepea, K., Maser, A., Nahku, R., Adamberg, K., and Vilu, R.
-  (2015).
-\newblock Proteome reallocation in {{{\emph{Escherichia coli}}}} with
-  increasing specific growth rate.
-\newblock {\em Molecular BioSystems}, 11(4):1184--1193.
-
-\bibitem[Phillips, 2018]{phillips2018}
-Phillips, R. (2018).
-\newblock {Membranes by the Numbers}.
-\newblock In {\em Physics of Biological Membranes}, pages 73--105. Springer,
-  Cham, Cham.
-
-\bibitem[Ramos and Kaback, 1977]{ramos1977}
-Ramos, S. and Kaback, H.~R. (1977).
-\newblock The relation between the electrochemical proton gradient and active
-  transport in \textit{Escherichia coli} membrane vesicles.
-\newblock {\em Biochemistry}, 16(5):854--859.
-
-\bibitem[Rosenberg et~al., 1977]{rosenberg1977}
-Rosenberg, H., Gerdes, R.~G., and Chegwidden, K. (1977).
-\newblock Two systems for the uptake of phosphate in \textit{Escherichia coli}.
-\newblock {\em Journal of Bacteriology}, 131(2):505--511.
-
-\bibitem[Schaechter et~al., 1958]{schaechter1958}
-Schaechter, M., Maal{\O}e, O., and Kjeldgaard, N.~O. (1958).
+\bibitem[{Schaechter et~al.(1958)Schaechter, M and Maal{\O}e, O and Kjeldgaard,
+  N O}]{schaechter1958}
+\textbf{\color{eLifeMediumGrey} Schaechter M}, Maal{\O}e O, Kjeldgaard NO.
 \newblock {Dependency on Medium and Temperature of Cell Size and Chemical
   Composition during Balanced Growth of \textit{Salmonella typhimurium}}.
-\newblock {\em Microbiology}, 19(3):592--606.
+\newblock Microbiology.  1958 Dec; 19(3):592--606.
 
-\bibitem[Schmidt et~al., 2016]{schmidt2016}
-Schmidt, A., Kochanowski, K., Vedelaar, S., Ahrn{\'e}, E., Volkmer, B.,
-  Callipo, L., Knoops, K., Bauer, M., Aebersold, R., and Heinemann, M. (2016).
-\newblock The quantitative and condition-dependent {{{\emph{Escherichia
-  coli}}}} proteome.
-\newblock {\em Nature Biotechnology}, 34(1):104--110.
+\bibitem[{Schmidt et~al.(2016)Schmidt, Alexander and Kochanowski, Karl and
+  Vedelaar, Silke and Ahrn{\'e}, Erik and Volkmer, Benjamin and Callipo,
+  Luciano and Knoops, K{\`e}vin and Bauer, Manuel and Aebersold, Ruedi and
+  Heinemann, Matthias}]{schmidt2016}
+\textbf{\color{eLifeMediumGrey} Schmidt A}, Kochanowski K, Vedelaar S,
+  Ahrn{\'e} E, Volkmer B, Callipo L, Knoops K, Bauer M, Aebersold R, Heinemann
+  M.
+\newblock The Quantitative and Condition-Dependent {{{\emph{Escherichia
+  coli}}}} Proteome.
+\newblock Nature Biotechnology.  2016 Jan; 34(1):104--110.
+\newblock \href{10.1038/nbt.3418}{\doiprefix 10.1038/nbt.3418}.
 
-\bibitem[Scholz et~al., 2019]{scholz2019}
-Scholz, S.~A., Diao, R., Wolfe, M.~B., Fivenson, E.~M., Lin, X.~N., and
-  Freddolino, P.~L. (2019).
+\bibitem[{Scholz et~al.(2019)Scholz, Scott A and Diao, Rucheng and Wolfe,
+  Michael B and Fivenson, Elayne M and Lin, Xiaoxia Nina and Freddolino, Peter
+  L}]{scholz2019}
+\textbf{\color{eLifeMediumGrey} Scholz SA}, Diao R, Wolfe MB, Fivenson EM, Lin
+  XN, Freddolino PL.
 \newblock {High-Resolution Mapping of the \textit{Escherichia coli} Chromosome
   Reveals Positions of High and Low Transcription}.
-\newblock {\em Cell Systems}, 8(3):212--225.e9.
+\newblock Cell Systems.  2019 Mar; 8(3):212--225.e9.
 
-\bibitem[Scott et~al., 2010]{scott2010}
-Scott, M., Gunderson, C.~W., Mateescu, E.~M., Zhang, Z., and Hwa, T. (2010).
+\bibitem[{Scott et~al.(2010)Scott, M and Gunderson, C W and Mateescu, E M and
+  Zhang, Z and Hwa, T}]{scott2010}
+\textbf{\color{eLifeMediumGrey} Scott M}, Gunderson CW, Mateescu EM, Zhang Z,
+  Hwa T.
 \newblock {Interdependence of cell growth and gene expression: origins and
   consequences.}
-\newblock {\em Science}, 330(6007):1099--1102.
+\newblock Science.  2010 Nov; 330(6007):1099--1102.
 
-\bibitem[Sekowska et~al., 2000]{sekowska2000}
-Sekowska, A., Kung, H.-F., and Danchin, A. (2000).
-\newblock Sulfur {{Metabolism}} in \textit{Escherichia coli} and {{Related
-  Bacteria}}: {{Facts}} and {{Fiction}}.
-\newblock {\em Journal of Molecular Microbiology and Biotechnology}, 2(2):34.
-
-\bibitem[Si et~al., 2019]{si2019}
-Si, F., Le~Treut, G., Sauls, J.~T., Vadia, S., Levin, P.~A., and Jun, S.
-  (2019).
+\bibitem[{Si et~al.(2019)Si, Fangwei and Le Treut, Guillaume and Sauls, John T.
+  and Vadia, Stephen and Levin, Petra Anne and Jun, Suckjoon}]{si2019}
+\textbf{\color{eLifeMediumGrey} Si F}, Le~Treut G, Sauls JT, Vadia S, Levin PA,
+  Jun S.
 \newblock Mechanistic {{Origin}} of {{Cell}}-{{Size Control}} and
   {{Homeostasis}} in {{Bacteria}}.
-\newblock {\em Current Biology}, 29(11):1760--1770.e7.
+\newblock Current Biology.  2019 Jun; 29(11):1760--1770.e7.
+\newblock \href{10.1016/j.cub.2019.04.062}{\doiprefix
+  10.1016/j.cub.2019.04.062}.
 
-\bibitem[Si et~al., 2017]{si2017}
-Si, F., Li, D., Cox, S.~E., Sauls, J.~T., Azizi, O., Sou, C., Schwartz, A.~B.,
-  Erickstad, M.~J., Jun, Y., Li, X., and Jun, S. (2017).
+\bibitem[{Si et~al.(2017)Si, Fangwei and Li, Dongyang and Cox, Sarah E and
+  Sauls, John T and Azizi, Omid and Sou, Cindy and Schwartz, Amy B and
+  Erickstad, Michael J and Jun, Yonggun and Li, Xintian and Jun,
+  Suckjoon}]{si2017}
+\textbf{\color{eLifeMediumGrey} Si F}, Li D, Cox SE, Sauls JT, Azizi O, Sou C,
+  Schwartz AB, Erickstad MJ, Jun Y, Li X, Jun S.
 \newblock {Invariance of Initiation Mass and Predictability of Cell Size in
   \textit{Escherichia coli}}.
-\newblock {\em Current Biology}, 27(9):1278--1287.
+\newblock Current Biology.  2017 May; 27(9):1278--1287.
 
-\bibitem[Sirko et~al., 1995]{sirko1995}
-Sirko, A., Zatyka, M., Sadowy, E., and Hulanicka, D. (1995).
-\newblock Sulfate and thiosulfate transport in \textit{Escherichia coli}
-  {{K}}-12: Evidence for a functional overlapping of sulfate- and
-  thiosulfate-binding proteins.
-\newblock {\em Journal of Bacteriology}, 177(14):4134--4136.
-
-\bibitem[Stasi et~al., 2019]{stasi2019}
-Stasi, R., Neves, H.~I., and Spira, B. (2019).
-\newblock Phosphate uptake by the phosphonate transport system {{PhnCDE}}.
-\newblock {\em BMC Microbiology}, 19.
-
-\bibitem[Szenk et~al., 2017]{szenk2017}
-Szenk, M., Dill, K.~A., and de~Graff, A. M.~R. (2017).
-\newblock Why {{Do Fast}}-{{Growing Bacteria Enter Overflow Metabolism}}?
-  {{Testing}} the {{Membrane Real Estate Hypothesis}}.
-\newblock {\em Cell Systems}, 5(2):95--104.
-
-\bibitem[Taheri-Araghi et~al., 2015]{taheriaraghi2015}
-Taheri-Araghi, S., Bradde, S., Sauls, J.~T., Hill, N.~S., Levin, P.~A.,
-  Paulsson, J., Vergassola, M., and Jun, S. (2015).
+\bibitem[{Taheri-Araghi et~al.(2015)Taheri-Araghi, Sattar and Bradde, Serena
+  and Sauls, John T and Hill, Norbert S and Levin, Petra Anne and Paulsson,
+  Johan and Vergassola, Massimo and Jun, Suckjoon}]{taheriaraghi2015}
+\textbf{\color{eLifeMediumGrey} Taheri-Araghi S}, Bradde S, Sauls JT, Hill NS,
+  Levin PA, Paulsson J, Vergassola M, Jun S.
 \newblock {Cell-size control and homeostasis in bacteria. - PubMed - NCBI}.
-\newblock {\em Current Biology}, 25(3):385--391.
+\newblock Current Biology.  2015 Feb; 25(3):385--391.
 
-\bibitem[Taymaz-Nikerel et~al., 2010]{taymaz-nikerel2010}
-Taymaz-Nikerel, H., Borujeni, A.~E., Verheijen, P. J.~T., Heijnen, J.~J., and
-  van Gulik, W.~M. (2010).
-\newblock Genome-derived minimal metabolic models for \textit{Escherichia coli}
-  mg1655 with estimated in vivo respiratory {{ATP}} stoichiometry.
-\newblock {\em Biotechnology and Bioengineering}, 107(2):369--381.
-\newblock \_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/bit.22802.
+\bibitem[{Valgepea et~al.(2013)Valgepea, Kaspar and Adamberg, Kaarel and
+  Seiman, Andrus and Vilu, Raivo}]{valgepea2013}
+\textbf{\color{eLifeMediumGrey} Valgepea K}, Adamberg K, Seiman A, Vilu R.
+\newblock {{{\emph{Escherichia coli}}}} Achieves Faster Growth by Increasing
+  Catalytic and Translation Rates of Proteins.
+\newblock Molecular BioSystems.  2013; 9(9):2344.
+\newblock \href{10.1039/c3mb70119k}{\doiprefix 10.1039/c3mb70119k}.
 
-\bibitem[Valgepea et~al., 2013]{valgepea2013}
-Valgepea, K., Adamberg, K., Seiman, A., and Vilu, R. (2013).
-\newblock {{{\emph{Escherichia coli}}}} achieves faster growth by increasing
-  catalytic and translation rates of proteins.
-\newblock {\em Molecular BioSystems}, 9(9):2344.
-
-\bibitem[van Heeswijk et~al., 2013]{heeswijk2013a}
-van Heeswijk, W.~C., Westerhoff, H.~V., and Boogerd, F.~C. (2013).
-\newblock Nitrogen {{Assimilation}} in {{ {\emph{Escherichia coli}}: Putting
-  Molecular Data into a Systems Perspective}}.
-\newblock {\em Microbiology and Molecular Biology Reviews}, 77(4):628--695.
-
-\bibitem[Willsky et~al., 1973]{willsky1973}
-Willsky, G.~R., Bennett, R.~L., and Malamy, M.~H. (1973).
-\newblock Inorganic {{Phosphate Transport}} in \textit{Escherichia coli}:
-  {{Involvement}} of {{Two Genes Which Play}} a {{Role}} in {{Alkaline
-  Phosphatase Regulation}}.
-\newblock {\em Journal of Bacteriology}, 113(2):529--539.
-
-\bibitem[Zhang et~al., 2014a]{zhang2014}
-Zhang, L., Jiang, W., Nan, J., Almqvist, J., and Huang, Y. (2014a).
-\newblock The \textit{Escherichia coli} {{CysZ}} is a {{pH}} dependent sulfate
-  transporter that can be inhibited by sulfite.
-\newblock {\em Biochimica et Biophysica Acta (BBA) - Biomembranes},
-  1838(7):1809--1816.
-
-\bibitem[Zhang et~al., 2014b]{zhang2014a}
-Zhang, Z., Aboulwafa, M., and Saier, M.~H. (2014b).
-\newblock Regulation of crp gene expression by the catabolite
-  repressor/activator, cra, in \textit{Escherichia coli}.
-\newblock {\em Journal of Molecular Microbiology and Biotechnology},
-  24(3):135--141.
-
-\bibitem[Zhu and Dai, 2019]{zhu2019}
-Zhu, M. and Dai, X. (2019).
+\bibitem[{Zhu and Dai(2019)Zhu, Manlu and Dai, Xiongfeng}]{zhu2019}
+\textbf{\color{eLifeMediumGrey} Zhu M}, Dai X.
 \newblock {Growth suppression by altered (p)ppGpp levels results from
   non-optimal resource allocation in \textit{Escherichia coli}}.
-\newblock {\em Nucleic Acids Research}, 47(9):4684--4693.
+\newblock Nucleic Acids Research.  2019 Mar; 47(9):4684--4693.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  24 JUN 2020 17:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  26 JUN 2020 09:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2152,24 +2152,22 @@ LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <7> not available
 (Font)              Font shape `T1/fos/b/n' tried instead on input line 28.
 
 (./section_08_translation.tex
-LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <9> not available
-(Font)              Font shape `T1/fos/b/it' tried instead on input line 10.
+(Font)              Font shape `T1/fos/b/it' tried instead on input line 15.
 
-<main_figs/protein_synthesis.pdf, id=24, 423.65277pt x 240.16023pt>
+<main_figs/protein_synthesis.pdf, id=48, 466.21577pt x 255.33693pt>
 File: main_figs/protein_synthesis.pdf Graphic file (type pdf)
 
 <use main_figs/protein_synthesis.pdf>
-Package pdftex.def Info: main_figs/protein_synthesis.pdf used on input line 21.
+Package pdftex.def Info: main_figs/protein_synthesis.pdf used on input line 30.
 
-(pdftex.def)             Requested size: 423.65173pt x 240.15964pt.
+(pdftex.def)             Requested size: 466.21463pt x 255.3363pt.
 LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <8> not available
-(Font)              Font shape `T1/fos/b/n' tried instead on input line 33.
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 42.
 
 
-LaTeX Warning: Reference `fig:carbon_tport' on page 1 undefined on input line 4
-2.
+LaTeX Warning: Reference `fig:carbon_tport' on page 1 undefined on input line 5
+4.
 
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
@@ -2179,7 +2177,7 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-LaTeX Font Info:    Try loading font information for T1+stix on input line 79.
+LaTeX Font Info:    Try loading font information for T1+stix on input line 91.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/stix/t1stix.fd
 File: t1stix.fd 2015/04/17 v1.1.2-latex STIX T1 font definitions
@@ -2194,20 +2192,16 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  []
 
 [2 <./main_figs/protein_synthesis.pdf>]
-<main_figs/fig7_ribosome_growth_limit_3.pdf, id=563, 240.47139pt x 354.78947pt>
-File: main_figs/fig7_ribosome_growth_limit_3.pdf Graphic file (type pdf)
-<use main_figs/fig7_ribosome_growth_limit_3.pdf>
-Package pdftex.def Info: main_figs/fig7_ribosome_growth_limit_3.pdf used on inp
-ut line 125.
-(pdftex.def)             Requested size: 240.4708pt x 354.7886pt.
+<main_figs/fig7_ribosome_growth_limit.pdf, id=587, 490.98431pt x 354.78947pt>
+File: main_figs/fig7_ribosome_growth_limit.pdf Graphic file (type pdf)
 
-<main_figs/fig8_ribosome_growth_limit_ecoli_3.pdf, id=575, 465.66774pt x 403.11
-703pt>
-File: main_figs/fig8_ribosome_growth_limit_ecoli_3.pdf Graphic file (type pdf)
- <use main_figs/fig8_ribosome_growth_limit_ecoli_3.pdf>
-Package pdftex.def Info: main_figs/fig8_ribosome_growth_limit_ecoli_3.pdf used 
-on input line 185.
-(pdftex.def)             Requested size: 465.6666pt x 403.11604pt.
+<use main_figs/fig7_ribosome_growth_limit.pdf>
+Package pdftex.def Info: main_figs/fig7_ribosome_growth_limit.pdf used on input
+ line 122.
+(pdftex.def)             Requested size: 490.98311pt x 354.7886pt.
+) (./section_09_discussion.tex
+LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/fos/b/n' tried instead on input line 1.
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
@@ -2218,49 +2212,78 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[4 <./main_figs/fig7_ribosome_growth_limit_3.pdf>]
+[4 <./main_figs/fig7_ribosome_growth_limit.pdf>]
+<main_figs/fig8_ribosome_growth_limit_ecoli_a.pdf, id=879, 465.66774pt x 252.21
+527pt>
+File: main_figs/fig8_ribosome_growth_limit_ecoli_a.pdf Graphic file (type pdf)
+ <use main_figs/fig8_ribosome_growth_limit_ecoli_a.pdf>
+Package pdftex.def Info: main_figs/fig8_ribosome_growth_limit_ecoli_a.pdf used 
+on input line 52.
+(pdftex.def)             Requested size: 465.6666pt x 252.21465pt.
+
+Overfull \vbox (4.76079pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[5 <./main_figs/fig8_ribosome_growth_limit_ecoli_3.pdf>]
+[5 <./main_figs/fig8_ribosome_growth_limit_ecoli_a.pdf>]
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[6]) (./eLife_draft.bbl
+[6]
+<main_figs/fig8_ribosome_growth_limit_ecoli_b.pdf, id=1464, 465.66774pt x 175.5
+9201pt>
+File: main_figs/fig8_ribosome_growth_limit_ecoli_b.pdf Graphic file (type pdf)
+ <use main_figs/fig8_ribosome_growth_limit_ecoli_b.pdf>
+Package pdftex.def Info: main_figs/fig8_ribosome_growth_limit_ecoli_b.pdf used 
+on input line 207.
+(pdftex.def)             Requested size: 465.6666pt x 175.59157pt.
+LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <8> not available
+(Font)              Font shape `T1/fos/b/it' tried instead on input line 225.
+
+Overfull \vbox (0.16pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[7]) 
+[7 <./main_figs/fig8_ribosome_growth_limit_ecoli_b.pdf>])
+Overfull \hbox (6.0pt too wide) has occurred while \output is active
+ [][][][][][][]| 
+ []
+
+[8] (./eLife_draft.bbl) 
 AED: lastpage setting LastPage
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[8] (./eLife_draft.suppinfo)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
+[9] (./eLife_draft.suppinfo)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
  (./eLife_draft.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 40.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 40.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 45.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
 Package rerunfilecheck Info: File `eLife_draft.out' has not changed.
-(rerunfilecheck)             Checksum: 7E4724EC32C77840FC0E6E18F5C83378;308.
+(rerunfilecheck)             Checksum: 557252370733358D05484F6D4D85B887;935.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 27436 strings out of 492995
- 501692 string characters out of 6132704
- 649575 words of memory out of 5000000
- 29990 multiletter control sequences out of 15000+600000
- 734997 words of font info for 620 fonts, out of 8000000 for 9000
+ 27525 strings out of 492995
+ 503653 string characters out of 6132704
+ 623663 words of memory out of 5000000
+ 30011 multiletter control sequences out of 15000+600000
+ 749561 words of font info for 664 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,13n,45p,10456b,923s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,14n,45p,10456b,923s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-02.enc}
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc}{/usr/loca
 l/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-01.enc}{/usr/local/
@@ -2276,10 +2299,10 @@ thex.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathi
 t.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathrm.p
 fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathscr.pfb
 >
-Output written on eLife_draft.pdf (8 pages, 61321828 bytes).
+Output written on eLife_draft.pdf (9 pages, 61612180 bytes).
 PDF statistics:
- 2479 PDF objects out of 2487 (max. 8388607)
- 1105 compressed objects within 12 object streams
- 40 named destinations out of 1000 (max. 500000)
- 73256 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 2736 PDF objects out of 2984 (max. 8388607)
+ 1253 compressed objects within 13 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 84061 words of extra memory for PDF output out of 89155 (max. 10000000)
 

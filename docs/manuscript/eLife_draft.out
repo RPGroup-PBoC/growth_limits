@@ -1,3 +1,9 @@
-\BOOKMARK [1][-]{section*.1}{Protein synthesis}{}% 1
-\BOOKMARK [2][-]{subsection*.4}{Multiple replication forks help bias ribosome abundance.}{section*.1}% 2
-\BOOKMARK [2][-]{subsection*.6}{Regulation of translating ribosomes helps maintain maximal growth according to nutrient availability.}{section*.1}% 3
+\BOOKMARK [2][-]{subsection*.1}{Translation and ribosomal synthesis}{}% 1
+\BOOKMARK [3][-]{subsubsection*.2}{tRNA synthetases}{subsection*.1}% 2
+\BOOKMARK [3][-]{subsubsection*.3}{Protein synthesis}{subsection*.1}% 3
+\BOOKMARK [3][-]{subsubsection*.5}{Ribosomal synthesis}{subsection*.1}% 4
+\BOOKMARK [1][-]{section*.7}{Discussion}{}% 5
+\BOOKMARK [2][-]{subsection*.8}{Maximizing growth rate requires coordination of biosynthesis at all growth rates.}{section*.7}% 6
+\BOOKMARK [3][-]{subsubsection*.9}{Parellel DNA replication biases gene dosage in support of ribosome synthesis.}{subsection*.8}% 7
+\BOOKMARK [3][-]{subsubsection*.11}{Regulation of translating ribosomes helps maintain maximal growth according to nutrient availability.}{subsection*.8}% 8
+\BOOKMARK [3][-]{subsubsection*.13}{Global regulatory control of components of central dogma may provide an explanation for the robust scaling laws in E. coli.}{subsection*.8}% 9

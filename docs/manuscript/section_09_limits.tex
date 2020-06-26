@@ -7,7 +7,7 @@
 % context of \textit{E. coli} maximizing its steady-state growth rate across a wide
 % array of conditions.
 
-\subsection{Parellel DNA replication biases protein production in support of ribosome synthesis.}
+\section{Parellel DNA replication biases protein production in support of ribosome synthesis.}
 
 \textit{E. coli} cells grow by a so-called "adder" mechanism, whereby cells add
 a constant volume with each cell division \citep{taheriaraghi2015}. In
@@ -66,6 +66,8 @@ the average copy number is more uniform across the length of the chromosome.
     }
     \end{fullwidth}
 \end{figure*}
+
+\subsection{Ribosome abundance increases in proportion to expected rRNA gene dosage.}
 
 If ribosomal genes (rRNA and ribosomal proteins) are growth rate limiting and
 synthesized according to the available rRNA gene
@@ -151,7 +153,7 @@ increase in cell size is not necessarily expected.
 % synthesis relative to the rate of cell division. In Supplemental Section XX, we
 % consider this further using additional data from \cite{si2017}.
 
-\subsubsection{Regulation of biosynthesis helps maintain maximal growth
+\section{Mitigation of biosynthesis helps maintain maximal steady-state growth
 in poor nutrient conditions.}
 
 While the above observations show how \textit{E. coli} can vary its ribosomal
@@ -208,17 +210,18 @@ ribosomes in this slow growth regime (see Supplemental Section XX for a complete
 description of this model). If we consider $r_{AA}$ to be reflective of a
 specific growth condition (dashed lines), cells grow fastest by maximizing their
 fraction of actively translating ribosomes. When we consider the experimental
-measurements from \cite{dai2018}, we see that although cells indeed reduce $R
-\times f_a$, they do so in a way that keeps $[AA]_{eff}$ relatively constant.
+measurements from \cite{dai2018} (yellow circles), which reflect growth in
+different nutrient conditions, we see that cells reduce $R \times f_a$ in poorer
+nutrient conditions, but in a way that keeps $[AA]_{eff}$ relatively constant.
 Given our estimate for the $K_d$ of 40 mM,  we would only expect a decrease from
 100 mM to about 35 mM in the slowest growth conditions. While experimental data
 is limited, amino acid concentrations only decrease to about 60 mM for cells
 grown in minimal media + acetate ($\lambda$ ~ 0.3 hr$^{-1}$ in our proteomic
 data; concentration obtained from \cite{bennett2009}), qualitatively consistent
-with our expectations. One potential explanation for this it to maintain
-cellular homeostasis under steady-state growth,  since any further increase in
-$R \times f_a$ at constant $r_{AA}$ would be associated with a further drop in
-cellular amino acids concentrations.
+with our expectations.  One explanation for this is that the cell needs to
+maintain a sufficiently  high pool of amino acids to maintain steady-state
+growth. Any further increase in $R \times f_a$ at constant $r_{AA}$ would be
+associated with a further drop in cellular amino acids concentrations.
 
 
 \begin{figure*}
@@ -248,7 +251,7 @@ cellular amino acids concentrations.
     \end{fullwidth}
 \end{figure*}
 
-Given the quantitative data from \cite{dai2018}, which determined $f_a$ across
+Using the quantitative data from \cite{dai2018}, which determined $f_a$ across
 the entire range of growth rates across our data, we next estimated the active
 fraction of ribosomal protein. As shown in \FIG{translation_ecoli_partB}(C), we
 find that cells grow at a rate near the expected translation maximum expected

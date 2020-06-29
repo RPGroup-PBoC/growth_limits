@@ -49,22 +49,22 @@ abundance in favor of genes closer to the origin \citep{scholz2019} [more cites]
 (\FIG{translation_ecoli_partA}(C)). This raises the possibility that for
 moderately fast growth rates (above about 0.5 h$^{-1}$), the increased number of
 replication forks can be viewed as a way for the cell to skew its ribosomal
-abundance. Importantly, alternative solutions such as simply increases the
+abundance. Importantly, alternative solutions such as simply increasing the
 expression of ribsomes for a particular $\langle$\# ori$\rangle$ are not a
-likely possibility if rRNA synthesis is nearly limiitng. This also provides a
-means to maintain levels of expression for most other proteins needed  for
-growth, which as we've seen throughout our estimates, also need to scale with
-cell size. We were unaware, however, of whether such a skew gene dosage
-materializes at the proteomic level. In order to see whether there is a relative
-increase in protein expression for genes closer to the origin at faster growth,
-we calculated a running boxcar average (500 kbp window) of protein copy number
-as a function of each gene's transcriptional start site
-(\FIG{translation_ecoli_partA}(D)). While absolute protein copy numbers can vary
-substantially across the chromosome, we indeed observe a bias in expression
-under fast growth conditions (dark blue). The dramatic change in protein copy
-number near the origin is primarily due to the increase in ribosomal protein
-expression. This trend is in contrast to slower growth conditions (yellow) where
-the average copy number is more uniform across the length of the chromosome.
+likely possibility if rRNA synthesis is nearly limiitng. This approach also
+provides a means to maintain levels of expression for most other proteins that
+are needed  for growth, which as we've seen throughout our estimates, will also
+need to scale with cell size. We were unaware, however, of whether such the skew
+in  gene dosage at fast growth materializes at the proteomic level. In
+\FIG{translation_ecoli_partA}(D) we calculated a running boxcar average (500 kbp
+window) of protein copy number as a function of each gene's transcriptional
+start site (\FIG{translation_ecoli_partA}(D)). While the protein copy numbers of
+individual proteins can vary substantially across the entire chromosome, we
+nonetheless observe a bias in expression under fast growth conditions (dark
+blue). The dramatic change in protein copy number near the origin is primarily
+due to the increase in ribosomal protein expression. This trend is in contrast
+to slower growth conditions (yellow) where the average copy number is more
+uniform across the length of the chromosome.
 
 \begin{figure*}
     \begin{fullwidth}
@@ -143,11 +143,13 @@ the average copy number is more uniform across the length of the chromosome.
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In the absence of gross global repression as $\langle$\# ori$\rangle$ increases,
-we can then view a linear increase in $Phi_R$ (and $\lambda$) as requiring an increase
-in total protein abundance that is proportional to $\langle$\# ori$\rangle$.
-Initiation of chromosomal replication at fixed volume per origin then leads to an
-exponential increase in total protein mass with growth rate $\lambda$.
+This result provides important evidence that although total protein content
+scales with $\langle$\# ori$\rangle$, it also skews the proteome in favor of
+genes closer to the origin.  For \textit{E. coli}, we can then view a linear
+increase in $Phi_R$ (and therefore, $\lambda$) as also causing an increase in
+total protein abundance that is proportional to $\langle$\# ori$\rangle$.
+Initiation of chromosomal replication at fixed volume per origin then leads to
+an exponential increase in total protein mass with growth rate $\lambda$.
 
 \subsection{An exponential increase in chromosomal content provides diminishing
 increases in growth rate.}

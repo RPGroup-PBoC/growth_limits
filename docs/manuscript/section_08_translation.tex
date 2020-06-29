@@ -8,7 +8,7 @@ this work, this poses a "chicken-or-the-egg" problem where the synthesis of
 ribosomes requires ribosomes in the first place. 
 
 We will begin our exploration of protein translation in the same spirit as we
-have in previous sections -- we will draw order-of-magnitude esimates based on
+have in previous sections -- we will draw order-of-magnitude estimates based on
 our intuition and relying on literature studies and will compare these estimates
 to the observed data. In doing so, we will estimate both the absolute number of
 ribosomes necessary for replication of the proteome as well as the synthesis of
@@ -71,17 +71,70 @@ rate limiting step in cell division, at least for the growth conditions explored
 in this work. 
 
 \subsubsection{Protein synthesis}
-As we are now assured that tRNA charging is 
+With the number of tRNA synthetases accounted for, we now consider the abundance
+of the protein synthesis machines themselves, ribosomes. Ribosomes are enormous
+protein/rRNA complexes that facilitate the peptide bond formation between amino
+acids in the correct sequence as defined by the coding mRNA. Before we examine
+the synthesis of the ribosome proteins and the limits that may place on the
+observed bacterial growth rates, let's consider replication of the cellular
+proteome.  
 
-If we consider an elongation rate of $\approx$ 15 peptide bonds per second
-(BNID: 114271, \cite{milo2010, dai2016}), the formation of $\approx$ 10$^9$
-peptide bonds would require about 1.5 x 10$^4$ ribosomes. This is indeed
-consistent with the experimental data shown in \FIG{protein_synthesis}(B).
+As described in the previous section, \textit{E. coli} consists of $\approx$
+3$\times$10$^6$ proteins at a growth rate of $\approx$ 5000 s. If we again
+assume that each protein is composed of $\approx$ 300 amino acids and each amino
+acid is linked together by one peptide bond, we arrive at an estimate that the
+cellular proteome consists of $\approx$ 10$^10$ peptide bonds. While the rate at
+which ribosomes translates is well known to have a growth rate dependence
+\cite{dai2018} and is a topic which we discuss in detail in the coming sections.
+However, for the purposes of our order-of-magnitude estimate, we can make the
+approximation that translation occurs at a rate of $\approx$ 15 amino acids per
+second per ribosome (BNID: 100233, \cite{milo2010}). Under this approximation
+and assuming a division time of 5000 s, we can arrive at an estimate of
+$\approx$10$^4$ ribosomes are needed to replicate the cellular proteome, shown
+in \FIG{protein_synthesis}(B). This point estimate, while glossing over
+important details such as chromosome copy number and growth-rate dependent
+translation rates, proves to be notably accurate when compared to the
+experimental observations (\FIG{protein_synthesis}(B)). 
+
+\subsection{Translation as a growth-rate limiting step}
+Thus far in our work, the general back-of-the-envelope estimates have been 
+reasonably successful in explaining what sets the scale of absolute protein copy
+number. In many cases, these estimates can be adapted to consider a continuum of
+growth rates in lieu of a single 5000 s point estimate, the details of which are
+described in the Supplemental Information. A recurring theme we have relied on
+is the ability of the cell to parallelize different processes to transport or
+synthesize the required amount of the corresponding biomolecule. For example, we
+saw in our example of \textit{E. coli} grown on different carbon sources that
+expression of particular transporters can be induced, often producing more
+than needed acquire enough carbon to build new cell mass (\FIG{carbon_transport}(B)). In
+examining replication of the DNA, we described how cells can replicate multiple
+copies of the chromosome at any given time, permitting growth rates faster than
+the limit at which the chromosome can be faithfully replicated.  As a final
+example, we showed how increasing the gene dosage of the rRNA operons is
+necessary to produce enough rRNA to form functional ribosomes. However, when it
+comes to ribosome biogenesis, namely the translation of ribosomal proteins,
+such parallelization is not possible, suggesting that translation may be a key
+factor determining the cellular growth rate. 
+
+Optimal resource allocation and the role of ribosomal proteins have been an
+area of intense quantitative study over the last decade by Hwa and others
+\citep{scott2010, hui2015}. From the perspective of limiting growth, our
+earlier estimate of rRNA highlighted the necessity for multiple copies of
+rRNA genes in order to make enough rRNA. For \textit{E. coli}'s fastest
+growth rates at 2 hr$^{-1}$, the additional demand for rRNA is further
+supported by parallelized DNA replication and increased rRNA gene dosage.
+This suggests the possibility that synthesis of ribosomes might be rate
+limiting. While the transcriptional demand for the ribosomal proteins is
+substantially lower than rRNA genes, since proteins can be translated from
+relatively fewer mRNA, other ribosomal proteins like the translation
+elongation factor EF-Tu also present a substantial burden. For EF-Tu in
+particular, it is the most highly expressed protein in \textit{E. coli} and
+is expressed from multiple gene copies, \textit{tufA} and \textit{tufB}.
 
 \begin{figure}
     \begin{fullwidth}
     \centering{
-        \includegraphics{main_figs/protein_synthesis.pdf}
+        \includegraphics{main_figs/fig8_protein_synthesis.pdf}
         \caption{\textbf{Estimation of the required tRNA synthetases and
         ribosomes.} (A) Estimation for the
         number of tRNA synthetases that will supply the required amino acid
@@ -93,34 +146,14 @@ consistent with the experimental data shown in \FIG{protein_synthesis}(B).
         number of ribosomes required to synthesize 10$^9$ peptide bonds with an
         elongation rate of 15 peptide bonds per second. The
         average abundance of ribosomes is plotted as a function of growth rate.
-        Our estimated values are shown for a growth rate of 0.5 hr$^{-1}$.}
+        Our estimated values are shown for a growth rate of 0.5 hr$^{-1}$.
+        Grey lines correpsond to the estimated complex abundance calculated at
+        different growth rates. See Supplemental Information XX for a more
+        detail description of this calculation.}
     \label{fig:protein_synthesis}
     }
     \end{fullwidth}
 \end{figure}
-
-
-\subsubsection{Ribosomal synthesis}
-
-So far our estimates have led to protein copy numbers that are consistent with
-the proteomic data, or even in excess of what might be needed for each task
-under limiting growth conditions. Even in our example of \textit{E. coli} grown
-under different carbohydrate sources (\FIG{carbon_tport}(B)), it becomes clear
-cells can utilize alternative carbon sources by inducing the expression of
-additional membrane transporters and enzymes. Optimal resource allocation and
-the role of ribosomal proteins have been an area of intense quantitative study
-over the last decade by Hwa and others \citep{scott2010, hui2015}. From the
-perspective of limiting growth, our earlier estimate of rRNA highlighted the
-necessity for multiple copies of rRNA genes in order to make enough rRNA. For
-\textit{E. coli}'s fastest growth rates at 2 hr$^{-1}$, the additional  demand
-for rRNA is further supported by parallelized DNA replication and increased rRNA
-gene dosage. This suggests the possibility that synthesis of ribosomes might
-be rate limiting. While the transcriptional demand for the ribosomal proteins
-is substantially lower than rRNA genes, since proteins can be translated from
-relatively fewer mRNA, other ribosomal proteins like the translation elongation
-factor EF-Tu also present a substantial burden. For EF-Tu  in particular, it is
-the most highly expressed protein in \textit{E. coli} and is expressed from
-multiple gene copies, tufA and tufB.
 
 To gain some intuition into how translation may set the speed limit for bacterial
 growth, we again consider the total number of peptide bonds that must be synthesized,

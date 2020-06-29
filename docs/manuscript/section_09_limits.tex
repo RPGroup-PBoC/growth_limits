@@ -1,7 +1,7 @@
 \subsection{Exponential relationship between cell size and growth rate is
-expected when ribosomal synthesis is rate limiting}
+expected when growth is limited by ribosomal abundance.}
 
-We next consider the consequences of our results on the relationship between
+We next consider the consequences of our results on
 cell size and growth rate. The relationship between cell size and growth rate
 has long been of interest in the study of bacteria, particularly following the
 now decade-old observation that cell volume appears to increase exponentially
@@ -13,14 +13,14 @@ data reproduced from \citep{si2017}. With a constant cell cycle time, the
 exponential scaling has long been considered a direct consequence of cells
 initiating replication at a constant volume per origin. However, the particular
 mechanism that governs this relationship, and even the question of whether the
-change in average cell size is truely exponental have remained under
+change in average cell size is truly exponential  have remained under
 debate \citep{si2017, harris2018}.
 
 Under the simplest of strategies, for example, given the constraint set by
 Equation 3 it would seem most appropriate for the cell to only adjust its
 proteome through the synthesis of additional ribosomes. In contrast, it is clear
 that a large portion of the proteome increases in absolute abundance. Cells
-maintain a lineary scaling between size and number of origins that is robust to
+maintain a linear scaling between size and number of origins that is robust to
 a remarkable array of perturbations \citep{si2017}.  In\FIG{translation_ecoli_partA}(B) we show this
 linear trend across the various proteomic data sets by estimating $\langle$\#
 ori$\rangle$ from the measurements of \cite{si2017} for wild-type cells grown
@@ -28,10 +28,10 @@ under nutrient limitation. $\langle$\# ori$\rangle$ is determined by how often
 replication forks must be initiated per cell cycle to maintain steady-state
 growth, and is calculated from  2$^{\tau_{cyc} / \tau}$, where $\tau_{cyc}$.
 
-Through our estimates in the preceeding sections on the central dogma, it is
+Through our estimates in the sections on the central dogma, it is
 apparent that the processes of transcription (i.e. synthesis of mRNA) and
 translation are unlikely limiting steps in the process of doubling the
-cell mass. This argues that as DNA replication beings to occur in parallel, the
+cell mass. This argues that as DNA replication beings to parallelize, the
 proteome should only change in ways that reflect the change in DNA gene dosage
 and the distribution of mRNA due to any additional aspects of gene regulation.
 The total amount of protein synthesized over a cell cycle is nevertheless
@@ -43,28 +43,28 @@ fraction, as highlighted by Equation 3.
 
 It is notable that the majority of ribosomal proteins and rRNA operons are found
 closer to the DNA origin. For relatively constant of $t_{cyc}$ and in
-particular, the DNA replciation period $t_C$, parallelized DNA replication has
+particular, the DNA replication  period $t_C$, parallelized DNA replication has
 the important consequence in that it will skew absolute gene dosage and mRNA
 abundance in favor of genes closer to the origin \citep{scholz2019} [more cites]
 (\FIG{translation_ecoli_partA}(C)). This raises the possibility that for
 moderately fast growth rates (above about 0.5 h$^{-1}$), the increased number of
 replication forks can be viewed as a way for the cell to skew its ribosomal
-abundance. Importantly, alternative solutions such as simply increases the
-expression of ribsomes for a particular $\langle$\# ori$\rangle$ are not a
-likely possibility if rRNA synthesis is nearly limiitng. This also provides a
-means to maintain levels of expression for most other proteins needed  for
-growth, which as we've seen throughout our estimates, also need to scale with
-cell size. We were unaware, however, of whether such a skew gene dosage
-materializes at the proteomic level. In order to see whether there is a relative
-increase in protein expression for genes closer to the origin at faster growth,
-we calculated a running boxcar average (500 kbp window) of protein copy number
-as a function of each gene's transcriptional start site
-(\FIG{translation_ecoli_partA}(D)). While absolute protein copy numbers can vary
-substantially across the chromosome, we indeed observe a bias in expression
-under fast growth conditions (dark blue). The dramatic change in protein copy
-number near the origin is primarily due to the increase in ribosomal protein
-expression. This trend is in contrast to slower growth conditions (yellow) where
-the average copy number is more uniform across the length of the chromosome.
+abundance. Importantly, alternative solutions such as simply increasing the
+expression of ribosomes for a particular $\langle$\# ori$\rangle$ are not a
+likely possibility if rRNA synthesis is nearly limiting. This approach also
+provides a means to maintain levels of expression for most other proteins that
+are needed  for growth, which as we've seen throughout our estimates, will also
+need to scale with cell size. We were unaware, however, of whether such the skew
+in  gene dosage at fast growth materializes at the proteomic level. In
+\FIG{translation_ecoli_partA}(D) we calculated a running boxcar average (500 kbp
+window) of protein copy number as a function of each gene's transcriptional
+start site (\FIG{translation_ecoli_partA}(D)). While the protein copy numbers of
+individual proteins can vary substantially across the entire chromosome, we
+nonetheless observe a bias in expression under fast growth conditions (dark
+blue). The dramatic change in protein copy number near the origin is primarily
+due to the increase in ribosomal protein expression. This trend is in contrast
+to slower growth conditions (yellow) where the average copy number is more
+uniform across the length of the chromosome.
 
 \begin{figure*}
     \begin{fullwidth}
@@ -143,22 +143,23 @@ the average copy number is more uniform across the length of the chromosome.
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In the absence of gross global repression as $\langle$\# ori$\rangle$ increases,
-we can then view a linear increase in $Phi_R$ (and $\lambda$) as requiring an increase
-in total protein abundance that is proportional to $\langle$\# ori$\rangle$.
-Initiation of chromosomal replication at fixed volume per origin then leads to an
-exponential increase in total protein mass with growth rate $\lambda$.
+This result provides important evidence that although total protein content
+scales with $\langle$\# ori$\rangle$, it also skews the proteome in favor of
+genes closer to the origin.  We can then view a linear
+increase in $Phi_R$ (and therefore, $\lambda$) as also causing an increase in
+total protein abundance that is proportional to $\langle$\# ori$\rangle$.
+For \textit{E. coli}, which initiate chromosomal replication at fixed volume per origin,
+it then leads to an exponential increase in total protein mass with growth rate $\lambda$.
 
 \subsection{An exponential increase in chromosomal content provides diminishing
 increases in growth rate.}
 
 The ratio $\langle$\# ori$\rangle$ / $\langle$\# ter$\rangle$ can also be used
-to consider the skew on chromosomal content. It will depends on how quickly
-chromosomes are replicated (C period) relative the cell's doubling time $\tau$
+to consider this skew in chromosomal content. Quantitatively, it will depend on how
+ quickly the chromosome is replicated (i.e. its C period) relative the cell's doubling time $\tau$
 and is given by 2$^{\tau_C / \tau}$. In \FIG{translation_ecoli_partA}(C) we plot
 the measured $\tau_C$ versus $\tau$ (computed as $\tau = \log (2) / \lambda$)
-from the wild-type \textit{E. coli} data of \citep{si2017}.  This is most
-relevant to the ribosomal  fraction and in \FIG{translation_ecoli_partA}(D) we
+from the wild-type \textit{E. coli} data of \citep{si2017}. In \FIG{translation_ecoli_partA}(D) we
 plot the $\langle$\# ori$\rangle$ / $\langle$\# ter$\rangle$ ratio against
 ribosomal fraction across a number of recent measurements.
 % That work also measured the total RNA to protein ratio which
@@ -172,20 +173,24 @@ ribosomal fraction across a number of recent measurements.
 % ($\approx \Phi_R$ x 2.1 \cite{dai2016}) and only show the data from
 % \cite{schmidt2016} and \cite{li2014} for relative ribosome abundances (see
 % supplemental section XX for a more complete discussion).
-The ribosomal fraction doesn't increase as much at higher $\langle$\# ori$\rangle$ /
-$\langle$\# ter$\rangle$. In part because rRNA operons are not all located
-exactly,  there is likely a diminishing increase in ribosome abundance at higher
-$\langle$\# ori$\rangle$ / $\langle$\# ter$\rangle$ ratios.
+Here we see that the ribosomal fraction doesn't increase as much at higher
+$\langle$\# ori$\rangle$ / $\langle$\# ter$\rangle$. In part because rRNA
+operons are not all located exactly,  this may reflect a diminishing increase in
+ribosome abundance at higher $\langle$\# ori$\rangle$ / $\langle$\# ter$\rangle$
+ratios.
 
-Importantly, however, the possibility that rRNA production is nearly rate limited, may
-shed some light on some of the robust scaling between cell size  and
-$\langle$\# ori$\rangle$. As one example, when cells are exposed to sublethal
-doses of ribosome-inhibiting drugs like chloramphenicol, there is a notable
-increase in the cell's ribosomal fraction \citep{scott2010, dai2016}. If rRNA
-synthesis is essentially rate limited at these moderately  fast growth rates,
-the presence of chloramphenicol should lengthen the doubling time and allow
-increased rRNA synthesis relative to the rate of cell division. In Supplemental
-Section XX, we consider this further using additional data from \cite{si2017}.
+Importantly, however, the possibility that rRNA production is nearly rate
+limited, may shed some light on some of the robust scaling between cell size
+and $\langle$\# ori$\rangle$. As one example, when cells are exposed to
+sublethal doses of ribosome-inhibiting drugs like chloramphenicol, there is a
+notable increase in the cell's ribosomal fraction \citep{scott2010, dai2016}. If
+rRNA synthesis is essentially rate limited at these moderately  fast growth
+rates, the presence of chloramphenicol should lengthen the doubling time and
+allow increased rRNA synthesis relative to the rate of cell division. In
+particular, this leads to an increase in ribosomal fraction with increasing
+concentrations of chloramphenicol (grey points from \cite{si2017} shown in
+\FIG{translation_ecoli_partA}(D)) and in Supplemental Appendix XX, we consider
+this further.
 
 
 % Below growth rates of about 0.5 h$^{-1}$ it becomes less clear whether  two regimes where this scaling relationship is likely to falter: (1)
@@ -339,8 +344,8 @@ Section XX, we consider this further using additional data from \cite{si2017}.
 \section{Mitigation of biosynthesis helps maintain maximal steady-state growth
 in poor nutrient conditions.}
 
-While the above observations show how \textit{E. coli} point to a role by
-ribsomes in setting the exponential growth in cell size, this relationship is
+While the above observations suggest a dominant role for ribosomes in
+setting the exponential growth in cell size, this relationship is
 likely to falter at slow growth rates where it has become apparent that $R$ is
 no longer a direct reflection of protein synthesis capacity \citep{dai2016}.
 % Specifically, here we consider the recent obser
@@ -356,14 +361,14 @@ conditions. From the perspective of a bacterium dealing with uncertain nutrient
 conditions, there is likely a benefit for the cell to maintain some relative
 fraction of ribosomes to support rapid growth as nutrient conditions improve.
 
-The challenge then for cells at slow growth, lies in the cell's ability to maintain growth when
-ribosomes are in excess of the rate that nutrients can be harvested and amino
-acids synthesized for consumption \FIG{translation_ecoli_partB}{A}. In the limit
-of poor growth conditions, ribosomes would consume their amino acid supply and
-be unable to maintain steady-state growth. In reality, \textit{E. coli} is still
-able to maintain a relatively high elongation rate even in stationary phase
-($\approx$ 8 AA/s, \citep{dai2016, dai2018}). A explanation for this is that the
-cell further regulates its biological activity in conditions of stress and
+The challenge then for cells at slow growth, lies in their ability to maintain
+growth when ribosomes are in excess of the rate that nutrients can be harvested
+\FIG{translation_ecoli_partB}{A}. Ribosomes would consume their amino acid
+supply and be unable to maintain steady-state growth in sufficiently poor
+nutrient conditions. In reality, \textit{E. coli} is still able to maintain a
+relatively high elongation rate even in stationary phase ($\approx$ 8 AA/s,
+\citep{dai2016, dai2018}). A explanation for this is that the cell further
+regulates its biological activity in conditions of stress and
 nutrient-limitation; in particular through the small-molecule alarmones (p)ppGpp
 \citep{harris2018}. In (p)ppGpp null strains, cells are unable to grow in
 nutrient-poor media. Indeed, these small molecules play a role in controlling

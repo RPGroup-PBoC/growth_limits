@@ -1,23 +1,77 @@
 \subsection{Translation and ribosomal synthesis}
 
-Lastly, we turn our attention to the process of translation. [expand on.]
+Lastly, we turn our attention to the process of synthesizing new proteins,
+translation. These processes stand as good candidates for defining the growth
+limit as the synthesis of new proteins relies on the generation of ribosomes,
+themselves proteinaceous molecules. As we will see in the coming sections of
+this work, this poses a "chicken-or-the-egg" problem where the synthesis of
+ribosomes requires ribosomes in the first place. 
+
+We will begin our exploration of protein translation in the same spirit as we
+have in previous sections -- we will draw order-of-magnitude esimates based on
+our intuition and relying on literature studies and will compare these estimates
+to the observed data. In doing so, we will estimate both the absolute number of
+ribosomes necessary for replication of the proteome as well as the synthesis of
+amino-acyl tRNAS. In the closing sections, we will explore the details of
+ribosome biogenesis in granular detail, ultimately presenting a quantitative
+model tying ribosome abundance to the concentration of amino acids as well as
+the state of chromosome replication.
 
 \subsubsection{tRNA synthetases}
+We begin by first estimating the number of tRNA ligases in \textit{E. coli}
+needed to convert free amino-acids to polypeptide chains. At a modest growth
+rate of $\approx$ 5000 s, \textit{E. coli} has roughly 3$\times$10$^6$ proteins
+per cell (BNID: 115702; \cite{milo2010}). Assuming that the typical protein is 
+on the order of $\approx$ 300 amino acids in length (BNID: 100017;
+\cite{milo2010}), we can estimate that a total of $\approx$ 10$^9$ amino acids
+are stitched together by peptide bonds.  
 
-[expand on]
+How many tRNAs are needed to facilitate this remarkable number of amino acid
+delivery events to the translating ribosomes? It is important to note that tRNAs
+are recycled after they've passed through the ribosome and can be recharged with
+a new amino acid, ready for another round of peptide bond formation. While some
+\textit{in vitro} data exists on  the turnover of tRNA in \textit{E. coli} for
+different  animo acids, we can make a reasonable estimate by comparing the
+number of amino acids to be  polymerized to cell division time. Using our
+stopwatch of 5000 s and 10$^9$ amino acids, we arrive at a requirement of
+$\approx$ 2 $\times$ 10$^5$ tRNA molecules. This estimate is in line with
+experimental measurements of $\approx$ 3 $\times$ 10$^5$ per cell (BNID: 108611,
+\cite{milo2010}), suggesting we are on the right track.
 
-We begin by first estimating the number of tRNA synthetases.  \textit{E. coli} has roughly 3 x
-10$^6$ proteins per cell, which for an average protein of 300 aa, amounts to the
-formation of $\approx$ 10$^9$ peptide bonds. This value will also match the
-number of amino-acyl tRNA that are required for protein synthesis, with the pool
-of tRNA continuously recharging new amino acids by tRNA synthetases. At a rate
-of charging of about 20 amino-acyl tRNA per second (BNID: 105279,
-\cite{milo2010}), we find that cells have more than sufficient tRNA synthetases
-to meet the ribosomal demand (\FIG{protein_synthesis}(A)).
+There  are many processes which go into synthesizing a tRNA and ligating it
+with the appropriate amino acids. As we covered  in the previous section, there
+appear to be more than enough RNA polymerases per cell to synthesize the needed
+pool of tRNAs. Without considering the many ways in which amino acids can be
+scavenged or synthesized \textit{de novo}, we can explore ligation the as a potential rate limiting
+step. The enzymes which link the correct amino acid to the tRNA, known as tRNA
+synthetases or tRNA ligases, are incredible in their proofreading of substrates
+with the incorrect amino acid being ligated once out of every $10^4$ to $10^5$
+times (BNID: 103469, \cite{milo2010}). This is due in part to the consumption of
+energy  as well as a multi-step pathway to ligation. While the rate at which
+tRNA is ligated is highly dependent on the identity of the amino acid, it is
+reasonable to state that the typical tRNA synthetase has charging rate of
+$\approx$ 20 AA per tRNA synthetase per second (BNID: 105279, \cite{milo2010}).
+
+Combining these estimates together, as shown schematically in
+\FIG{protein_synthesis}(A), yields an estimate of $\approx$ 10$^4$ tRNA
+synthetases per cell with a division time of 5000 s. This point estimate is in
+very close agreement with the observed number of synthetases (the sum of all 20
+tRNA synthetases in \textit{E. coli}). This estimation strategy seems to
+adequately describe the observed growth rate dependence of the tRNA synthetase copy
+number (shown as the grey line in \FIG{protein_synthesis}(B)), suggesting that
+the copy number scales with the cell volume. 
+
+In total, the estimated and observed $\approx$ 10$^4$ tRNA synthetases occupy
+only a meager fraction of the total cell proteome, around 0.5\% by abundance. It
+is reasonable to assume that if tRNA charging was a rate limiting process, cells
+would be able to increase their growth rate by devoting more cellular resources
+to making more tRNA synthases. As the synthesis of tRNAs and the corresponding
+charging can be highly parallelized, we can argue that tRNA charging is not a
+rate limiting step in cell division, at least for the growth conditions explored
+in this work. 
 
 \subsubsection{Protein synthesis}
-
-[expand on]
+As we are now assured that tRNA charging is 
 
 If we consider an elongation rate of $\approx$ 15 peptide bonds per second
 (BNID: 114271, \cite{milo2010, dai2016}), the formation of $\approx$ 10$^9$

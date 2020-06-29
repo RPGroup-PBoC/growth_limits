@@ -1,49 +1,48 @@
-This is BibTeX, Version 0.99d (TeX Live 2017)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: eLife_draft.aux
-The style file: vancouver-elife.bst
-Database file #1: library.bib.bib
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+The style file: apalike.bst
+Database file #1: library.bib
 Warning--can't use both author and editor fields in Goldberger1979
 You've used 21 entries,
-            3492 wiz_defined-function locations,
-            850 strings with 10684 characters,
-and the built_in function-call counts, 66842 in all, are:
-= -- 8474
-> -- 805
+            1935 wiz_defined-function locations,
+            607 strings with 8957 characters,
+and the built_in function-call counts, 11044 in all, are:
+= -- 1015
+> -- 712
 < -- 3
-+ -- 395
-- -- 261
-* -- 6051
-:= -- 7342
-add.period$ -- 69
++ -- 262
+- -- 260
+* -- 1119
+:= -- 1957
+add.period$ -- 64
 call.type$ -- 21
-change.case$ -- 214
+change.case$ -- 234
 chr.to.int$ -- 21
 cite$ -- 22
-duplicate$ -- 5660
-empty$ -- 5985
-format.name$ -- 306
-if$ -- 15234
+duplicate$ -- 294
+empty$ -- 632
+format.name$ -- 285
+if$ -- 2056
 int.to.chr$ -- 1
-int.to.str$ -- 1
-missing$ -- 295
-newline$ -- 117
-num.names$ -- 65
-pop$ -- 597
+int.to.str$ -- 0
+missing$ -- 22
+newline$ -- 108
+num.names$ -- 63
+pop$ -- 192
 preamble$ -- 1
-purify$ -- 214
+purify$ -- 235
 quote$ -- 0
-skip$ -- 423
+skip$ -- 213
 stack$ -- 0
-substring$ -- 12783
-swap$ -- 712
+substring$ -- 754
+swap$ -- 22
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 186
+type$ -- 124
 warning$ -- 1
-while$ -- 292
+while$ -- 76
 width$ -- 0
-write$ -- 291
+write$ -- 275
 (There was 1 warning)

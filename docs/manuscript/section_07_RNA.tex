@@ -107,16 +107,18 @@ The final class of RNA molecules worthy of quantitative consideration is the the
 pool of tRNAs used during translation to map codon sequence to amino acid
 identity. Unlike mRNA or rRNA, each individual tRNA is remarkably short, ranging
 from 70 to 95 nucleotides each (BNID: 109645; 102340, \cite{milo2010}). What
-they lack in length, they make up for in abundance. There are approximately
-$\approx$ 3000 tRNA molecules present for each of the 20 amino acids (BNID:
-105280, \cite{milo2010}), although the precise copy number is dependent on the
-identity of the ligated amino acid.  Using these values, we make the estimate
-that $\approx 5 \times 10^6$ nucleotides are sequestered in tRNA per cell.
+they lack in length, they make up for in abundance. There are many  measurements
+of the size of the \textit{E. coli} tRNA pool, ranging from
+$\approx$6$\times$10$^4$ (BNID:105280, \cite{milo2010}) to
+$\approx$4$\times$10$^5$ (BNID: 108611). To test tRNA synthesis as a possible
+growth-rate limiting stage, we will err towards a higher abundance of $\approx$
+4$\times$10$^5$ per cell. Combining the abundance and tRNA length measurements,
+we make the estimate that $\approx 5 \times 10^7$ nucleotides are sequestered in tRNA per cell.
 Unlike mRNA, tRNA is remarkably stable with typical lifetimes \textit{in vivo}
 on the order of $\approx$ 48 hours \citep{abelson1974,svenningsen2017} -- well
 beyond the timescale of division. Once again using our rule-of-thumb for the
 rate of transcription to be 40 nucleotides per second and assuming a division
-time of $\approx$ 5000 seconds, we arrive at an estimate of $\approx$ 20 RNA
+time of $\approx$ 5000 seconds, we arrive at an estimate of $\approx$ 150 RNA
 polymerases to synthesize enough tRNA. This requirement pales in comparison to
 the number of polymerases needed to generate the rRNA and mRNA pools and can be
 neglected as a significant transcriptional burden.
@@ -168,15 +170,13 @@ $\sigma^{70}$ including facilitating transcriptional elongation
 $\sigma^{70}$ proteins per cell is in close agreement with our estimate of the
 number of transcriptional complexes needed.
 
-% In the appendix and supplemental figure XXX [GC: format number later],
-% the slope of the $\sigma^{70}$ abundance as a factor of the growth rate can be
-% very accurately estimated by factoring in a) the growth-rate dependent size of
-% the proteome and b) the rRNA gene dosage resulting from parallelized replication
-% of the chromosome.
-
-While these estimates and comparison with experimental data reveal an
-interesting dynamic at play between the transcriptional demand and copy numbers
-of the corresponding machinery, these findings illustrate that transcription
+These estimates provide insight as to the observed magnitude of both RNA
+polymerase and the $\sigma$-70 factor. As we have done in the previous sections,
+and described in the supplemental information, we can generalize these estimates
+across a wide range of growth rates (grey line in \FIG{RNA_synthesis}(B). While
+there remains some disagreement in the magnitude of the copy number, this
+estimate appears to very adequately describe the growth rate dependence of these
+complexes. Furthermore, these findings illustrate that transcription
 cannot be the rate limiting step in bacterial division. \FIG{RNA_synthesis} (A)
 reveals that the availability of RNA polymerase is not a limiting factor for
 cell division as the cell always has an apparent $\sim$ 10-fold excess than needed.

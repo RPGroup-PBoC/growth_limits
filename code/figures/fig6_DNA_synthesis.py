@@ -39,7 +39,7 @@ ax.plot(growth_rate, N_rnr,'-', color='grey', lw=3, alpha=0.5, label='replicatio
 
 # Plot the predictions
 ax.plot(0.5, 200, 'o', ms=4.5, color=colors['dark_brown'], alpha=0.4, label='estimated value')
-ax.hlines(200, 0, 0.5, 'k', linestyle='--', lw=0.75, label='__nolegend__')
+ax.hlines(250, 0, 0.5, 'k', linestyle='--', lw=0.75, label='__nolegend__')
 ax.vlines(0.5, 10, 200, 'k', linestyle='--', lw=0.75, label='__nolegend__')
 
 for g, d in rnr.groupby(['dataset', 'dataset_name']):

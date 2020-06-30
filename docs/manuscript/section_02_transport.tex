@@ -7,7 +7,7 @@ carbon sources receiving preferential treatment in their consumption
 harvested primarily in the forms of inorganic salts, namely phosphate, sulfate,
 and ammonia \citep{jun2018, assentoft2016, stasi2019, antonenko1997,
 rosenberg1977, willsky1973}. All of these compounds have different
-permeabilities across the cell membrane and most require some energetic
+permeabilities across the cell membrane \cite{phillips2018} and  most require some energetic
 investment either via ATP hydrolysis or through the proton electrochemical
 gradient to bring the material across the hydrophobic cell membrane. Given the
 diversity of biological transport mechanisms and the vast number of inputs
@@ -84,7 +84,10 @@ any particular growth rate given knowledge of the cell density and volume as a
 function of growth rate and direct the reader to the SI for more information. As
 revealed in \FIG{carbon_tport}(A), experimental measurements exceed the estimate
 by several fold, illustrating that transport of carbon in to the cell is not
-rate limiting for cell division.
+rate limiting for cell division. Abstracting this point estimate at 5000 s to a
+continuum of growth rates (grey line in \FIG{carbon_tport}(A)) reveals an excess
+of transporters at other growth rates, though in rapid growth regimes, the
+abundance is below our simple estimate. 
 \begin{figure}
     \begin{fullwidth}
     \centering{
@@ -100,7 +103,14 @@ rate limiting for cell division.
     (complexes annotated with the Gene Ontology term GO:0009401) for
     different growth conditions across different published datasets. (B) The
     abundance of various specific carbon transport systems plotted as a function
-    of the population growth rate. Red points and red-highlighted text indicate conditions in which the
+    of the population growth rate. The rates of substrate transport to compute
+    the continuum growth rate estimate (grey line) were 200 glucose$\cdot$
+    s$^{-1}$ (BNID: 103693, \cite{milo2010}),  2000 glycerol$\cdot$s$^{-1}$
+    \citep{lu2003}, 200 fructose$\cdot$
+    s$^{-1}$ (assumed to be similar to PtsI, BNID: 103693, \cite{milo2010}), and 50 xylose$\cdot$s$^{-1}$
+    (assumed to be comparable to LacY, BNID:103159, \cite{milo2010}).
+    Red points and highlighted text indicate conditions in
+    which the
     only source of carbon in the growth medium induces expression of the
     transport system. Grey line in (A) and (B) represents the estimated number of transporters per cell at a continuum
     of growth rates.}
@@ -120,7 +130,7 @@ top-left plot of \FIG{carbon_tport}(B), is the constancy in the expression of th
 glucose-specific transport systems. Additionally, we note that the total number
 of glucose-specific transporters is tightly distributed $\approx 10^4$ per cell,
 the approximate number of transporters needed to sustain rapid growth of several
-divisions per hour, as indicated by the grey shaded line. This
+divisions per hour. This
 illustrates that \textit{E. coli} maintains a substantial number of complexes
 present for transporting glucose which is known to be the preferential carbon
 source \citep{monod1947, liu2005a, aidelberg2014}.
@@ -141,10 +151,13 @@ shown in \FIG{carbon_tport}(B). Points colored in red (labeled by red
 text-boxes) correspond to growth conditions in which the specific carbon source
 (glycerol, xylose, or fructose) is present. These plots show that, in the
 absence of the particular carbon source, expression of the transporters is
-maintained on the order of $\sim 10^2$ per cell. However, when induced, the
-transporters become highly-expressed and fall close to the predicted number of
-transporters needed to facilitate growth on that substrate alone, shown as a
-transparent grey line. Together, this generic estimation and the specific
+maintained on the order of $\sim 10^2$ per cell. However, when the transport
+substrate is present, expression is induced and the
+transporters become highly-expressed. The grey lines in \FIG{carbon_tport}(B)
+show the estimated number of transporters needed at each growth rate to satisfy
+the cellular carbon requirement. It is notable that  in all cases, the magnitude
+of induced expression (shown in red) falls close to the estimate, illustrating
+the ability of the cell to tune expression in response to changing environments. Together, this generic estimation and the specific
 examples of induced expression suggest that transport of carbon across the cell
 membrane, while critical for growth, is not the rate-limiting step of cell division.
 

@@ -23,7 +23,7 @@ GROWTH_RATE = constants['growth_rate']['value']
 
 # Define transport constants.
 R_GLUC = 200 # in sugar per sec
-R_XYL = 100 # in xylose per sec
+R_XYL = 50 # in xylose per sec
 R_FRUC = 200 
 R_GLYC = 2000
 N_GLUC = 6 # Carbons per sugar
@@ -33,7 +33,7 @@ N_GLYC = 3
 # %%
 # GLUCOSE_TPORTERS
 N_gluc_tport = (RHO * VOL * DRY_FRAC * CARB_FRAC)\
-         / (R_CARB * N_CARB * MASS_CARB * T_DOUBLE)
+         / (R_GLUC * N_GLUC * MASS_CARB * T_DOUBLE)
 N_glyc_tport = (RHO * VOL * DRY_FRAC * CARB_FRAC)\
          / (R_GLYC * N_GLYC * MASS_CARB * T_DOUBLE)
 N_xyl_tport = (RHO * VOL * DRY_FRAC * CARB_FRAC)\

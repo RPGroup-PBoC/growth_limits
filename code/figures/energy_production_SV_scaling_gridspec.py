@@ -40,7 +40,7 @@ def SV2lambda(x):
     return a*np.exp(-c*x)+d
 
 
-# %%
+
 ######################
 # plot configuration #
 ######################
@@ -95,7 +95,7 @@ Ps_um_resp = ((3)/ (1E-6))
 Ps_resp_ = Ps_um_resp * SA_ * 0.5
 
 
-# %%
+
 ######################
 # Plot 1, S/V scaling #
 ######################
@@ -163,7 +163,7 @@ ax2.yaxis.set_tick_params(labelsize=5)
 # ax2.set_position(box)
 
 
-# %%
+
 ######################
 # Plot 2
 ######################
@@ -204,7 +204,7 @@ ax3.xaxis.set_tick_params(labelsize=5)
 ax3.yaxis.set_tick_params(labelsize=5)
 
 
-# %%
+
 ######################
 # Plot 3
 ######################
@@ -302,4 +302,7 @@ ax4_twin.xaxis.set_tick_params(labelsize=5)
 ax4_twin.yaxis.set_tick_params(labelsize=5)
 
 
-fig.savefig('../../figures/energy_estimate_SV_scaling_plots_gridspec.pdf')
+# fig.savefig('../../figures/energy_estimate_SV_scaling_plots_gridspec.pdf')
+
+
+# %%

@@ -1,6 +1,11 @@
 \subsection{Relationship between cell size and growth rate.}
 
-We next consider the consequences of our results on cell size and growth rate.
+While ribosomes appear set the maximum growth rate, our analysis so far also has
+important implications on the interpretation of how \textit{E. coli} varies its
+size and maintains steady-state growth across the range of growth conditions
+considered. We use the remainder of the text to consider these, beginning with
+cell size.
+% We next consider the consequences of our results on cell size and growth rate.
 The relationship between cell size and growth rate has long been of interest in
 the study of bacteria, particularly following the now decade-old observation
 that cell volume appears to increase exponentially with growth rate; known as
@@ -356,19 +361,11 @@ While the above results suggest a role for ribosomes in setting an
 exponential scaling in cell size, this relationship is likely to falter at slow
 growth rates (below about 0.5h$^{-1}$). In this regime ribosomal abundance $R$
 no longer reflects the cell's protein synthesis capacity.
-Although $R$ still scales with $\langle$\# ori$\rangle$, reaching a minimum
+Although $R$ still appears to scale with $\langle$\# ori$\rangle$, leading to a minimum
 ribosomal fraction of about 0.06, additional regulatory control through the
-small-molecule alarmones (p)ppGpp appear to reduce the fraction of actively
-translating ribosomes \citep{dai2016, bosdriesz2015, zhu2019}. Recently it
-was shown that growth in a (p)ppGpp null strain abolishes both the scaling in
-cell size and the $\langle$\# ori$\rangle$ / $\langle$\# ter$\rangle$ ratio.
-Instead, cells exhibited a high $\langle$\# ori$\rangle$ / $\langle$\#
-ter$\rangle$ closer to 4 and cell size more consistent with a fast growth state
-where (p)ppGpp levels are low \citep{fernandezcoll2020}. This raises the
-possibility that it is through such added regulatory control that \textit{E.
-coli} is ultimately able to tune its biological activity, including the frequency of DNA
-initiation, according to available nutrient conditions.
-In this last section we consider the effect of having
+small-molecule alarmones (p)ppGpp  reduce the fraction of actively
+translating ribosomes \citep{dai2016, bosdriesz2015, zhu2019}.
+In this last section we consider the consequence of having
 excess ribosomes on maintaining steady-state growth.
 
 % Specifically, here we consider the recent obser
@@ -401,8 +398,8 @@ stationary phase ($\approx$ 8 AA/s, \citep{dai2016, dai2018}).
 % biosynthesis rates throughout the central dogma [NB citations]. Here we explore
 % this further in the context of protein synthesis.
 
-\subsubsection{Mitigation of biosynthesis helps maintain maximal steady-state growth
-in poor nutrient conditions.}
+\subsubsection{Mitigation of ribosome activity helps maintain homeostasis in
+poor nutrient conditions}
 
 To better understand how regulation of ribosomes will influence growth rate in
 this slow growth regime  we consider a coarse grain model that relates
@@ -473,16 +470,30 @@ additional drop in cellular amino acids concentrations.
     \end{fullwidth}
 \end{figure*}
 
-Using the active fraction $f_a$ that were measured from the work of
-\cite{dai2016} across a broad range of nutrient-limited growth conditions, we
-also estimated the active fraction of ribosomal protein across available data.
+
+\subsubsection{\textit{E. coli} maximizes its steady-state growth
+rate by tuning both ribosomal content and activity.}
+
+Using the active fraction $f_a$ measurements across a broad range of
+nutrient-limited growth conditions, from the work of \cite{dai2016}, we also
+estimated the active fraction of ribosomal protein across our collated data.
 Importantly, we find that across all growth conditions, cells appear to maintain
 a growth rate consistent with Equation 3 with an elongation rate of $r_t$ = 17.1
 aa per second (\FIG{translation_ecoli_partB}(C)). While somewhat counter
 intuitive given that ribosomes are translating at almost half this rate in the
-poorest of growth conditions, it is through the adjustment of $r_t \times R
-\times f_a$ that cells are able achieve this result and maintain steady-state
-growth.
+poorest of growth conditions, it is because cells tune $r_t \times R \times f_a$
+that they're able achieve steady-state growth over such a broad range of
+conditions Recently it was shown that growth in a (p)ppGpp null strain abolishes
+both the scaling in cell size and the $\langle$\# ori$\rangle$ / $\langle$\#
+ter$\rangle$ ratio. Instead, cells exhibited a high $\langle$\# ori$\rangle$ /
+$\langle$\# ter$\rangle$ closer to 4 and cell size more consistent with a fast
+growth state where (p)ppGpp levels are low \citep{fernandezcoll2020} and the
+ribosomal fraction  is high \citep{zhu2019}. This raises the possibility that
+the action of (p)ppGpp is mediating growth control and size scaling over the
+entire range of growth conditions. At fast growth, it is through additional
+rounds of replication initiation, while at slow growth it is through mitigation
+of ribosome activity.
+
 
 
 

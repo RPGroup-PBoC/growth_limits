@@ -1,6 +1,5 @@
 \subsection{Relationship between cell size and growth rate.}
-
-While our analysis suggest that ribosomes set the maximum growth rate,  our
+While our analysis suggests that ribosomes set the maximum growth rate,  our
 estimates also point to a more important role for ribosomes in setting cell
 size and in the maintenance of steady-state growth  when considered in light of
 a number of recent studies. In the coming section, we consider the influence of
@@ -36,7 +35,6 @@ Equation 3, and we next consider how \textit{E. coli} varies this parameter.
 
 \subsubsection{Exponential relationship between cell size and growth rate is
 set by ribosomal abundance at moderately fast growth rates.}
-
 A naively simple strategy to increase growth rate given the constraint
 prescribed by Equation 3, would be to only generate more ribosomes. In
 reality, a large portion of the proteome increases in absolute abundance at faster growth
@@ -58,46 +56,10 @@ With rRNA otherwise becoming rate limited at fast growth, this strategy allows f
 a roughly linear increase in ribosomes copy number with $\langle$\# ori$\rangle$
 as shown in \FIG{translation_ecoli_partA}(B) for the proteomic data.
 
-
-% ,
-% alternative solutions such as simply increasing the expression of ribosomes for
-% a particular $\langle$\# ori$\rangle$ will not be possible if rRNA synthesis is
-% nearly limited. Biasing DNA dosage in this manner also provides a means to
-% maintain levels of expression for most other proteins that are still needed for
-% growth, as we've seen throughout our estimates.
-
-% This argues that as DNA replication begins to parallelize, the
-% proteome  will change in ways that reflect the change in DNA gene dosage
-% and distribution of mRNA, and any additional aspects of gene regulation
-% {\color{red}[GC: I don't think I understand the sentence. Are you just trying to
-% say, "As replication is parallelized, gene dosage increases, which in turn means
-% that protein expression increases"?]}.
-% The total amount of protein synthesized over a cell cycle is
-% determined by $r_t R$ and the doubling time $\tau$.  {\color{red}[GC: I do find it a little
-% confusing going back and forth between $\lambda$ and $\tau$. Is there a reason
-% we can't just stick with one for these calculations? I also don't understand
-% your usage of "nevertheless" here. The preceding sentence is not contradictory.]}. Since protein accounts for most of
-% the cellular dry mass \citep{bremer2008, basan2015}, cell size will also vary
-% in proportional t. The relationship between cell size and growth rate,
-% however, will then depend only on how the cell varies its ribosomal
-% fraction, as highlighted by Equation 3. {\color{red}[GC: In re-reading, I think
-% this paragraph is the most confusing for me and, coincidentally, is one of the
-% most critical in conveying that there is a direct relationship between cell size
-% and proteome mass/composition. I can try to rewrite this paragraph if you would
-% like, but some clarification on my earlier points would help.]}
-
 It is notable that the majority of ribosomal proteins and rRNA operons are found
 closer to the DNA origin. Since multiple rounds of DNA initiation will effectively
 skew gene dosage in favor of genes near the origin \citep{scholz2019}, it suggests
 that cells increase  $\langle$\# ori$\rangle$ as a means to skew the ribosomal fraction $\Phi_R$.
-% For a relatively constant cell cycle time $t_{cyc}$
-% and in particular, for a constant DNA replication period $t_C$, parallelized DNA
-% replication has the important consequence that it will skew the absolute gene dosage
-% and mRNA abundance in favor of genes closer to the origin
-% (\FIG{translation_ecoli_partA}(C)). This raises the suggestion that for
-% moderately fast growth rates, where these time scales are nearly constant (above
-% about 0.5 hr$^{-1}$), the increased number of chromosomal origins can be
-% viewed as a way for the cell to skew its ribosomal abundance.
 We were unaware, however, of whether the change in gene dosage at fast growth
 materializes at the proteomic level. In \FIG{translation_ecoli_partA}(D) we show
 a running boxcar average (500 kbp window) of protein copy number as a function
@@ -148,6 +110,43 @@ therefore, $\lambda$) as requiring a geometric increase in total protein
 abundance that is proportional to $\langle$\# ori$\rangle$. This leads to an
 exponential increase in total protein mass (and cell size) as long as all
 ribosomes $R$ are actively translating protein during cell doubling.
+
+
+% ,
+% alternative solutions such as simply increasing the expression of ribosomes for
+% a particular $\langle$\# ori$\rangle$ will not be possible if rRNA synthesis is
+% nearly limited. Biasing DNA dosage in this manner also provides a means to
+% maintain levels of expression for most other proteins that are still needed for
+% growth, as we've seen throughout our estimates.
+
+% This argues that as DNA replication begins to parallelize, the
+% proteome  will change in ways that reflect the change in DNA gene dosage
+% and distribution of mRNA, and any additional aspects of gene regulation
+% {\color{red}[GC: I don't think I understand the sentence. Are you just trying to
+% say, "As replication is parallelized, gene dosage increases, which in turn means
+% that protein expression increases"?]}.
+% The total amount of protein synthesized over a cell cycle is
+% determined by $r_t R$ and the doubling time $\tau$.  {\color{red}[GC: I do find it a little
+% confusing going back and forth between $\lambda$ and $\tau$. Is there a reason
+% we can't just stick with one for these calculations? I also don't understand
+% your usage of "nevertheless" here. The preceding sentence is not contradictory.]}. Since protein accounts for most of
+% the cellular dry mass \citep{bremer2008, basan2015}, cell size will also vary
+% in proportional t. The relationship between cell size and growth rate,
+% however, will then depend only on how the cell varies its ribosomal
+% fraction, as highlighted by Equation 3. {\color{red}[GC: In re-reading, I think
+% this paragraph is the most confusing for me and, coincidentally, is one of the
+% most critical in conveying that there is a direct relationship between cell size
+% and proteome mass/composition. I can try to rewrite this paragraph if you would
+% like, but some clarification on my earlier points would help.]}
+
+% For a relatively constant cell cycle time $t_{cyc}$
+% and in particular, for a constant DNA replication period $t_C$, parallelized DNA
+% replication has the important consequence that it will skew the absolute gene dosage
+% and mRNA abundance in favor of genes closer to the origin
+% (\FIG{translation_ecoli_partA}(C)). This raises the suggestion that for
+% moderately fast growth rates, where these time scales are nearly constant (above
+% about 0.5 hr$^{-1}$), the increased number of chromosomal origins can be
+% viewed as a way for the cell to skew its ribosomal abundance.
 
 
 % \subsubsection{An exponential increase in chromosomal content shows
@@ -347,7 +346,6 @@ ribosomes $R$ are actively translating protein during cell doubling.
 % consider this further using additional data from \cite{si2017}.
 
 \subsection{Growth in poor nutrient conditions.}
-
 While the above results suggest that it is the need to increase the number of
 ribosomes that sets an exponential scaling in cell size, this relationship is
 likely to falter at slow growth rates (below about 0.5h$^{-1}$). In this regime
@@ -359,6 +357,15 @@ capacity. While cells appears to continue scaling $R$ with $\langle$\# ori$\rang
 \citep{dai2016, bosdriesz2015, zhu2019}. In this section we consider the
 consequence of having excess ribosomes on maintaining steady-state growth in
 poor nutrient conditions.
+
+The specific challenge lies in the ability of cells to maintain homeostasis when
+consumption of amino acids might exceed the rate of synthesis
+if all ribosomes were actively translating \FIG{translation_ecoli_partB}{A}.
+Without additional regulatory control, this would prevent continuous growth, and
+indeed for (p)ppGpp null strains, cells only grow in minimal media if additional
+amino acid supplements are present. In contrast, wild-type \textit{E. coli}
+maintain a relatively high elongation rate even in stationary phase
+($\approx$ 8 AA/s, \citep{dai2016, dai2018}).
 
 % Specifically, here we consider the recent obser
  % vary its ribosomal
@@ -373,15 +380,6 @@ poor nutrient conditions.
 % conditions, there is likely a benefit for the cell to maintain some relative
 % fraction of ribosomes to support rapid growth as nutrient conditions improve.
 
-The specific challenge lies in the ability of cells to maintain homeostasis when
-consumption of amino acids might exceed the rate of synthesis
-if all ribosomes were actively translating \FIG{translation_ecoli_partB}{A}.
-Without additional regulatory control, this would prevent continuous growth, and
-indeed for (p)ppGpp null strains, cells only grow in minimal media if additional
-amino acid supplements are present. In contrast, wild-type \textit{E. coli}
-maintain a relatively high elongation rate even in stationary phase
-($\approx$ 8 AA/s, \citep{dai2016, dai2018}).
-
 % A explanation for this is that the cell further
 % regulates its biological activity in conditions of stress and
 % nutrient-limitation; in particular through the small-molecule alarmones (p)ppGpp
@@ -392,14 +390,14 @@ maintain a relatively high elongation rate even in stationary phase
 
 \subsubsection{Mitigation of translation activity helps maintain homeostasis in
 poor nutrient conditions}
-
 To better understand how regulation of ribosomes influence growth rate in this
 slow growth regime we consider a coarse-grained model that relates elongation
 rate to a limiting supply of amino acids, which for simplicity we treat as a
 single, effective rate-limiting species. Under such a scenario, the elongation
-rate can be described as depending on the maximum elongation rate
-($r_t^{max} \approx$ 17.1 aa/s, \citep{dai2016, dai2018}), an effective binding
-constant $K_D$ between the pool of amino acids and their aminoacyl-tRNA, and the limiting amino acid concentration $[AA]_{eff}$.
+rate can be described as depending on the maximum elongation rate ($r_t^{max}
+\approx$ 17.1 aa/s, \citep{dai2016, dai2018}), an effective binding constant
+$K_D$ between the pool of amino acids and their amino-acyl tRNAs, and the limiting
+amino acid concentration $[AA]_{eff}$.
 
 \begin{equation}
 r_t = r_t^{max} \cdot \frac{1}{1 + K_D / [AA]_{eff}}.
@@ -469,7 +467,6 @@ concentrations.
 
 \subsubsection{\textit{E. coli} maximizes its steady-state growth
 rate by tuning both ribosomal content and translation activity.}
-
 Using the active fraction $f_a$ measurements across a broad range of
 nutrient-limited growth conditions from the work of \cite{dai2016}, we also
 estimated the active fraction of ribosomal protein across our collated data

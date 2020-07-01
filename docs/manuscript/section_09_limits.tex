@@ -47,7 +47,7 @@ a linear scaling between cell size (volume) and the number of chromosomal
 origins of replication, $\langle\text{\# ori}\rangle$, which is robust to a
 remarkable array of perturbations \citep{si2017}. The number of origins
 $\langle$\# ori$\rangle$ is determined by how often replication must be
-initiated per cell doubling to maintain steady-state growth. This quantity 
+initiated per cell doubling to maintain steady-state growth. This quantity
 can be approximately quantified via
 \begin{equation}
     \langle \text{\# ori} \rangle \approx 2^{\tau_{cyc} / \tau},
@@ -351,32 +351,43 @@ ribosomes $R$ are actively translating protein during cell doubling.
 % synthesis relative to the rate of cell division. In Supplemental Section XX, we
 % consider this further using additional data from \cite{si2017}.
 
-\subsection{Growth in poor nutrient conditions.}
-While the above results suggest that it is the need to increase the number of
-ribosomes that sets an exponential scaling in cell size, this relationship is
-likely to falter at slow growth rates (below $\lambda \approx
-0.5\,\text{hr}^{-1}$). In this regime, ribosome copy number $R$ no longer
-reflects the cell's protein synthesis capacity {\color{red}[GC: Not sure I
-understand the previous sentence. It's not $R$, but $r_t R\tau$ that's the
-translational capacity, no?]}. While cells appear to
-maintain a scaling of $R$ with $\langle$\# ori$\rangle$
-(\FIG{translation_ecoli_partA}(A)) even at slow growth rates (reaching a minimum
-ribosomal mass fraction of
-$\Phi_R \approx 0.06$), additional regulatory control through the small-molecule
-alarmones such as guanosine pentaphosphate [(p)ppGpp] reduces the fraction of actively translating ribosomes at
-slow growth \citep{dai2016, bosdriesz2015, zhu2019}{\color{red}[GC: "yielding a
-translational capacity below $r_tR\tau$."]}. In this section we
-consider the consequence of having excess ribosomes on maintaining
-steady-state growth in poor nutrient conditions.
 
-How do cells regulate protein synthesis when amino acids can be limiting,
-meaning consumption exceeds the rate of synthesis? At slow growth rates, this
-imbalance would occur if the entire ribosomal pool were actively translating
-(\FIG{translation_ecoli_partB}). Without additional regulatory control, this would prevent continuous growth, and
-indeed for (p)ppGpp null strains, cells only grow in minimal media if additional
-amino acid supplements are present. In contrast, wild-type \textit{E. coli}
-maintain a relatively high elongation rate even in stationary phase
-($\approx$ 8 AA/s, \citep{dai2016, dai2018}).
+While our analysis suggests that it is the need to increase the absolute number
+of ribosomes that sets an exponential scaling in cell size, this relationship is
+likely to falter at slow growth rates (below $\lambda \approx
+0.5\,\text{hr}^{-1}$). In this regime, ribosome abundance $R$ no longer reflects
+the cell's protein synthesis capacity \citep{dai2016}, so far taken to be $r_t
+R$. Additional regulatory control through the small-molecule alarmones such as
+guanosine pentaphosphate [(p)ppGpp] reduces the fraction of actively translating
+ribosomes at slow growth and yield a translational capacity below $r_t R$. This
+is why \cite{si2017} found that it was the change in active ribosomal fraction,
+and not ribosomal fraction alone, that was most consistent with an exponential
+change in cell size. The specific relationship between cell size and growth rate
+however becomes harder to define because cells no longer need multiple rounds of
+DNA replication to make enough rRNA, and no longer need to increase their total
+protein mass in order to tune protein synthesis. Our collated proteomic data,
+however, contain several assumptions that relate total protein abundance to
+growth rates and this prevents us from making precise predictions about how cell
+size and absolute protein abundance vary at slow growth (Supplemental X).
+Nevertheless, we find no evidence that cells decrease their size to the minimal
+value expected from on an exponential function with a constant exponent fit to
+cell sizes with moderate to fast growth rates \citep{basan2015, radzikowski2016,
+si2019}, suggesting at least a modified scaling between size and growth rate in
+these poorer nutrient conditions.
+
+\subsection{Growth in poor nutrient conditions.}
+
+How do cells regulate protein synthesis when amino acids become limiting,
+meaning that consumption exceeds the rate of synthesis? In the slowest  growth
+conditions, we find a minimum ribosomal mass fraction of $\Phi_R \approx 0.06$
+and  of order 10$^4$ ribosomes per cell.   Without the additional regulatory
+control noted above, there would be a point where  this imbalance would occur if
+all ribosomes were actively translating  (\FIG{translation_ecoli_partB}). Such a
+scenario would prevent continuous growth, and indeed for (p)ppGpp null strains,
+cells only grow in minimal media if additional amino acid supplements are
+present. In contrast, wild-type \textit{E. coli} maintain a relatively high
+elongation rate even in stationary phase ($\approx$ 8 AA/s, \citep{dai2016,
+dai2018}).
 
 % Specifically, here we consider the recent obser
  % vary its ribosomal
@@ -399,10 +410,11 @@ maintain a relatively high elongation rate even in stationary phase
 % biosynthesis rates throughout the central dogma [NB citations]. Here we explore
 % this further in the context of protein synthesis.
 
-\subsubsection{Mitigation of translation activity helps maintain homeostasis in
-poor nutrient conditions}
-To better understand how regulation of ribosomes influence growth rate in 
-slow growth regimes, we consider a coarse-grained model that relates elongation
+% \subsubsection{Mitigation of translation activity helps maintain homeostasis in
+% poor nutrient conditions}
+
+To better understand how regulation of ribosomes influence growth rate at
+slow growth, we consider a coarse-grained model that relates elongation
 rate to a limiting supply of amino acids, which for simplicity we treat as a
 single, effective rate-limiting species $[AA]_{eff}$. Under such a scenario, the elongation
 rate $r_t$ can be described as depending on the maximum elongation rate ($r_t^{max}
@@ -437,13 +449,13 @@ the fastest growth rates result from  maximization of the fraction of actively t
 ribosomes. When we consider the experimental measurements from \cite{dai2018}
 (yellow circles), reflecting growth in different nutrient conditions, we see
 that although $R \times f_a$ is reduced in poorer nutrient conditions, it is
-reduced in a manner such that $[AA]_{eff}$ is relatively constant. Given our estimate 
+reduced in a manner such that $[AA]_{eff}$ is relatively constant. Given our estimate
 $K_D \approx$ 40 mM,  we would only expect a decrease from 100 mM to about 35 mM
-in the slowest growth conditions. While experimental data is scarce, amino acid
+in the slowest growth conditions. While experimental data is scarce, data from
+\cite{bennett2009} show that amino acid
 concentrations only decrease to about 60 mM for cells grown in minimal media
 supplemented with acetate ($\lambda \approx$  0.3 hr$^{-1}$ in our proteomic data)
-\citep{bennett2009} is  qualitatively consistent with our expectations
-{\color{red}[GC: Report a value from the bennet paper here?]}. One
+\citep{bennett2009}, qualitatively consistent with our expectations. One
 explanation for the experimental data is that the active fraction of the
 ribosome pool is regulated in order to maintain a sufficient supply of amino acids for
 growth. Any further increase in $R \times f_a$ at constant $r_{AA}$ would
@@ -480,28 +492,26 @@ concentration.
 \subsubsection{\textit{E. coli} maximizes its steady-state growth
 rate by tuning both ribosomal content and translation activity.}
 Using the active fraction $f_a$ measurements across a broad range of
-nutrient-limited growth conditions from the work of \cite{dai2016}, we furthermore
-estimated the active fraction of ribosomal protein across the collated proteomic
-datasets (\FIG{translation_ecoli_partB}(C)). Importantly, we note that across all growth
-conditions considered cells appear to maintain a growth rate consistent with
-\EQ{translation_limit_growth_rate}
-with an elongation rate of $r_t \approx$  17.1 aa/s. While somewhat
-counter intuitive, given that ribosomes translate at almost half this rate in the
-poorest of growth conditions, steady-state growth rates can be achieved over
-such a broad range of conditions because cells have evolved a means to 
-tune  $r_t \times R \times f_a$.
+nutrient-limited growth conditions from the work of \cite{dai2016}, we
+furthermore estimated the active fraction of ribosomal protein across the
+collated proteomic datasets (\FIG{translation_ecoli_partB}(C)). Importantly, we
+note that across all growth conditions considered cells appear to maintain a
+growth rate consistent with \EQ{translation_limit_growth_rate} with an
+elongation rate of $r_t \approx$  17.1 aa/s. While somewhat counter intuitive,
+given that ribosomes translate at almost half this rate in the poorest of growth
+conditions, steady-state growth rates can be achieved over such a broad range of
+conditions because cells have evolved a means to tune  $r_t \times R \times
+f_a$.
 
-It has recently been shown that growth in a (p)ppGpp null strain abolishes both the
-scaling in cell size and the $\langle$\# ori$\rangle$ / $\langle$\# ter$\rangle$
-ratio {\color{red}[GC: Note here we return to a discussion of ori/ter ratio, but
-I think that has been cut earlier. Can we just say the scaling between cell size
-and ori?]}. Instead, cells exhibited a high $\langle$\# ori$\rangle$ / $\langle$\#
-ter$\rangle$ closer to 4 and cell size more consistent with a fast growth state
-where (p)ppGpp levels are low \citep{fernandezcoll2020} and ribosomal fraction
-is high \citep{zhu2019}. This raises the possibility that the action of (p)ppGpp
-is also mediating growth control and size scaling over this entire range of
-growth conditions. Specifically, as nutrient conditions worsen, (p)ppGpp helps
-decrease multiple rounds of DNA replication per cell doubling which effectively
-decreases both $R$ and the total cell size \textit{and} in sufficiently poor
-growth conditions mitigates translation activity according to nutrient
-availability.
+It has recently been shown that growth in a (p)ppGpp null strain abolishes both
+the the growth-dependent changes in gene dosage and  scaling in cell size.
+Instead, cells always exhibited a higher gene dosage near  near the origin of
+replication, irrespective of growth rate, and a cell size more consistent with a
+fast growth state where (p)ppGpp levels are low \citep{fernandezcoll2020} and
+ribosomal fraction is high \citep{zhu2019}. This raises the possibility that the
+action of (p)ppGpp is also mediating growth control and size scaling over the
+entire range of growth conditions. Specifically, as nutrient conditions worsen,
+(p)ppGpp helps decrease multiple rounds of DNA replication per cell doubling
+which effectively decreases both $R$ and the total cell size \textit{and} in
+sufficiently poor growth conditions mitigates translation activity according to
+nutrient availability.

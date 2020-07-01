@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: eLife_draft.aux
+The style file: vancouver-elife.bst
+Database file #1: library.bib.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--can't use both author and editor fields in Goldberger1979
+You've used 84 entries,
+            3492 wiz_defined-function locations,
+            1265 strings with 26381 characters,
+and the built_in function-call counts, 240608 in all, are:
+= -- 30999
+> -- 2446
+< -- 24
++ -- 1308
+- -- 787
+* -- 21647
+:= -- 26327
+add.period$ -- 302
+call.type$ -- 84
+change.case$ -- 733
+chr.to.int$ -- 83
+cite$ -- 85
+duplicate$ -- 21768
+empty$ -- 21511
+format.name$ -- 984
+if$ -- 54974
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 1056
+newline$ -- 476
+num.names$ -- 254
+pop$ -- 1986
+preamble$ -- 1
+purify$ -- 729
+quote$ -- 0
+skip$ -- 1559
+stack$ -- 0
+substring$ -- 44905
+swap$ -- 2586
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 750
+warning$ -- 1
+while$ -- 1037
+width$ -- 0
+write$ -- 1201
+(There was 1 warning)

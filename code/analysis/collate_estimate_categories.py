@@ -149,7 +149,7 @@ complexes = {'dnap': {'name': 'DNA polymerase III (holo enzyme)',
                     'category': 'synthesis'},
             'transpeptidases': {
                     'name':'transpeptidases',
-                    'gene_name': ['mrdA', 'mrcB', 'mrdB', 'rodA'], #, 'mrcA', 'mrcB'],#, 'ldtD', 'ldtE'],
+                    'gene_name': ['mrdA', 'mrdB'],
                     'method': 'sum',
                     'units': 'crosslinks/s^-1',
                     'rate_per_sec':50,

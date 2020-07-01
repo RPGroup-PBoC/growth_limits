@@ -8,6 +8,7 @@ colors = prot.viz.plotting_style()
 dataset_colors = prot.viz.dataset_colors()
 constants = prot.estimate.load_constants()
 
+
 # Load the data and restrict. 
 data = pd.read_csv('../../data/compiled_estimate_categories.csv')
 tpds = data[data['shorthand']=='transpeptidases']
@@ -20,9 +21,9 @@ ax.set_ylim([1E0, 1E4])
 theta_pg = 0.025 * 0.3
 rho = constants['density']['value']
 cell_mass = constants['cell_mass']['value']
-m_pg = 1E3 * 1E12 / 6E23 
-kcat = 2 
-n_tpds = (theta_pg * cell_mass /2 ) / (m_pg * kcat * constants['t_double']['value'])
+m_pg = 1E3 / 6E11 # in pg
+kcat = 3
+n_tpds = ( 0.4 * theta_pg * cell_mass / 2) / (m_pg * kcat * constants['t_double']['value'])
 ax.plot(constants['growth_rate']['value'], n_tpds, '-', color='grey', alpha=0.5,
         label='cell size dependence')
 for g, d in tpds.groupby(['dataset', 'dataset_name']):

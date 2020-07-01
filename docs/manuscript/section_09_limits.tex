@@ -17,7 +17,7 @@ Schaechter's growth law  \citep{schaechter1958, taheriaraghi2015}. Wild-type
 \textit{E. coli} growing at relatively fast growth rates exhibit a remarkably
 constant cell cycle time $t_{cyc}$ (referring to the C and D periods of DNA
 replication and cell division, respectively), as shown in
-\FIG{translation_ecoli_partA}(A) for the data reproduced from \citep{si2017}.
+\FIG{translation_ecoli_partA}(A) for the data reproduced from \cite{si2017}.
 With a constant cell cycle time, the exponential scaling in size has long been
 considered a direct consequence of cells initiating replication at a constant
 volume per origin. However, the particular mechanism that governs this
@@ -47,8 +47,9 @@ a linear scaling between cell size (volume) and the number of chromosomal
 origins of replication, $\langle\text{\# ori}\rangle$, which is robust to a
 remarkable array of perturbations \citep{si2017}. The number of origins
 $\langle$\# ori$\rangle$ is determined by how often replication must be
-initiated per cell doubling to maintain steady-state growth. This quantity
-can be approximately quantified via
+initiated per cell doubling to maintain steady-state growth and can be
+quantified via 
+
 \begin{equation}
     \langle \text{\# ori} \rangle \approx 2^{\tau_{cyc} / \tau},
 \end{equation}
@@ -357,9 +358,9 @@ of ribosomes that sets an exponential scaling in cell size, this relationship is
 likely to falter at slow growth rates (below $\lambda \approx
 0.5\,\text{hr}^{-1}$). In this regime, ribosome abundance $R$ no longer reflects
 the cell's protein synthesis capacity \citep{dai2016}, so far taken to be $r_t
-R$. Additional regulatory control through the small-molecule alarmones such as
+\times R$. Additional regulatory control through the small-molecule alarmones such as
 guanosine pentaphosphate [(p)ppGpp] reduces the fraction of actively translating
-ribosomes at slow growth and yield a translational capacity below $r_t R$. This
+ribosomes at slow growth and yields a translational capacity below $r_t\times R$. This
 is why \cite{si2017} found that it was the change in active ribosomal fraction,
 and not ribosomal fraction alone, that was most consistent with an exponential
 change in cell size. The specific relationship between cell size and growth rate
@@ -418,7 +419,7 @@ slow growth, we consider a coarse-grained model that relates elongation
 rate to a limiting supply of amino acids, which for simplicity we treat as a
 single, effective rate-limiting species $[AA]_{eff}$. Under such a scenario, the elongation
 rate $r_t$ can be described as depending on the maximum elongation rate ($r_t^{max}
-\approx$ 17.1 aa/s, \citep{dai2016, dai2018}), an effective binding constant
+\approx$ 17.1 AA/s, \citep{dai2016, dai2018}), an effective binding constant
 $K_D$ between the pool of amino acids and their amino-acyl tRNAs, and the limiting
 amino acid concentration $[AA]_{eff}$,
 
@@ -495,9 +496,9 @@ Using the active fraction $f_a$ measurements across a broad range of
 nutrient-limited growth conditions from the work of \cite{dai2016}, we
 furthermore estimated the active fraction of ribosomal protein across the
 collated proteomic datasets (\FIG{translation_ecoli_partB}(C)). Importantly, we
-note that across all growth conditions considered cells appear to maintain a
+note that across all growth conditions considered, cells appear to maintain a
 growth rate consistent with \EQ{translation_limit_growth_rate} with an
-elongation rate of $r_t \approx$  17.1 aa/s. While somewhat counter intuitive,
+elongation rate of $r_t \approx$  17.1 AA/s. While somewhat counter intuitive,
 given that ribosomes translate at almost half this rate in the poorest of growth
 conditions, steady-state growth rates can be achieved over such a broad range of
 conditions because cells have evolved a means to tune  $r_t \times R \times

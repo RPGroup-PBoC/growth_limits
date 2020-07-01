@@ -11,12 +11,12 @@ have in previous sections -- we will draw order-of-magnitude estimates based on
 our intuition and available literature, and then compare these estimates
 to the observed data. In doing so, we will estimate both the absolute number of
 ribosomes necessary for replication of the proteome as well as the synthesis of
-amino-acyl tRNAs. From there we consider the limitations on ribosomal sythesis in
-light of our estimates on both, the synthesis of ribosomal proteins, and
+amino-acyl tRNAs. From there we consider the limitations on ribosomal synthesis in
+light of our estimates on both the synthesis of ribosomal proteins and
 our earlier results on rRNA synthesis.
 
 \subsubsection{tRNA synthetases}
-We begin by first estimating the number of tRNA ligases in \textit{E. coli}
+We begin by first estimating the number of tRNA synthetases in \textit{E. coli}
 needed to convert free amino-acids to polypeptide chains. At a modest growth
 rate of $\approx$ 5000 s, \textit{E. coli} has roughly 3$\times$10$^6$ proteins
 per cell (BNID: 115702; \cite{milo2010}). Assuming that the typical protein is
@@ -77,19 +77,17 @@ the synthesis of the ribosome proteins and the limits that may place on the
 observed bacterial growth rates, let's consider replication of the cellular
 proteome.
 
-As described in the previous section, \textit{E. coli} consists of $\approx$
-3$\times$10$^6$ proteins at a growth rate of $\approx$ 5000 s. If we again
-assume that each protein is composed of $\approx$ 300 amino acids and each amino
-acid is linked together by one peptide bond, we arrive at an estimate that the
-cellular proteome consists of $\approx$ 10$^10$ peptide bonds. While the rate at
-which ribosomes translates is well known to have a growth rate dependence
-\cite{dai2018} and is a topic which we discuss in detail in the coming sections.
-However, for the purposes of our order-of-magnitude estimate, we can make the
-approximation that translation occurs at a rate of $\approx$ 15 amino acids per
-second per ribosome (BNID: 100233, \cite{milo2010}). Under this approximation
-and assuming a division time of 5000 s, we can arrive at an estimate of
-$\approx$10$^4$ ribosomes are needed to replicate the cellular proteome, shown
-in \FIG{protein_synthesis}(B). This point estimate, while glossing over
+As described in the previous section, an \textit{E. coli} cell consisting of
+of $\approx$ 3$\times$10$^6$ proteins will have on the order $\approx 10^9$
+peptide bonds per proteome. While the rate at which ribosomes translates is
+well known to have a growth rate dependence \cite{dai2018} and is a topic
+which we discuss in detail in the coming sections. However, for the purposes
+of our order-of-magnitude estimate, we can make the approximation that
+translation occurs at a rate of $\approx$ 15 amino acids per second per
+ribosome (BNID: 100233, \cite{milo2010}). Under this approximation and
+assuming a division time of 5000 s, we can arrive at an estimate of
+$\approx 10^4$ ribosomes are needed to replicate the cellular proteome,
+shown in \FIG{protein_synthesis}(B). This point estimate, while glossing over
 important details such as chromosome copy number and growth-rate dependent
 translation rates, proves to be notably accurate when compared to the
 experimental observations (\FIG{protein_synthesis}(B)).
@@ -270,7 +268,6 @@ could be synthesized from a single genome (ignoring the chromosome replication
 speed limit of $\approx$ 40 minutes per genome). The convergence between the maximum
 rRNA production with parallelization and the experimentally measured ribosome
 copy number (points in \FIG{ribosome_limit}(C)), as well as the observation
-cells are rarely reported to grow faster than 2 hr$^{-1}$ {\color{red}[GC: Can
-we find a citation for this?]}, suggests rRNA
+cells are rarely reported to grow faster than 2 hr$^{-1}$ \citep{bremer2008}, suggests rRNA
 synthesis represents the rate limiting step in cell division for this strain
 of \textit{E. coli}.

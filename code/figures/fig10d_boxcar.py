@@ -50,6 +50,34 @@ pos_to_rad = {p:v for p, v in zip(np.sort(data_schmidt['shifted_pos'].unique()),
 palette = sns.color_palette('viridis', n_colors=len(data['growth_rate_hr'].unique())) 
 color_mapping = {k:v for k, v in zip(data_schmidt['growth_rate_hr'].unique(), palette)}
 
+
+#%%
+fig, ax = plt.subplots(1, 1, figsize=(4, 2))
+# ax.set_xticks([])
+
+ax.xaxis.set_tick_params(labelsize=6)
+ax.yaxis.set_tick_params(labelsize=6)
+ax.set_xlabel('distance from ori', fontsize=6)
+ax.set_ylabel('fold-change in gene expression', fontsize=6)
+# ax.set_xscale('log')
+ax.set_yscale('log')
+
+
+_df = pd.DataFrame([])
+for g, d in data_schmidt.groupby(['gene_name', 'pos']):
+    _pos = np.min([np.abs(g[1] - oriC_loc), max_pos_noshift - g[1]])
+    min_growth = d[d['growth_rate_hr']==d['growth_rate_hr'].min()]
+    max_growth = d[d['growth_rate_hr']==d['growth_rate_hr'].max()]
+    fc = max_growth['tot_per_cell'].values[0] / min_growth['tot_per_cell'].values[0]
+    _df = _df.append({'pos':_pos, 'fc':fc}, ignore_index=True)
+
+_df.sort_values(by='pos', inplace=True)
+_df['xcoord'] = np.arange(0, len(_df))
+avg = _df.rolling(50, win_type='boxcar').mean()
+avg.dropna(inplace=True)
+_ = ax.plot(avg['pos'], avg['fc'], 'k-')
+
+#%%
 # Set up the figure canvas,
 fig = plt.figure(figsize=(5,5))
 ax = fig.add_subplot(111, projection='polar')
@@ -57,6 +85,7 @@ ax.set_theta_zero_location('N')
 ax.set_ylim([-15000, 80000])
 ax.set_yticks([-10000, 0, 10000])
 ax.set_rlabel_position(180)
+ax.set_yscale('log')
 
 # Play with one condition
 cond = data_schmidt[data_schmidt['condition']=='42C']

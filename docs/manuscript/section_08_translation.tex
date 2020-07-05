@@ -1,4 +1,4 @@
-\subsection{Translation and ribosomal synthesis}
+\subsection{Translation and Ribosomal Synthesis}
 Lastly, we turn our attention to the process of synthesizing new proteins,
 translation. This process stands as a good candidate for potentially limiting growth
 since the synthesis of new proteins relies on the generation of ribosomes,
@@ -15,7 +15,7 @@ amino-acyl tRNAs. From there we consider the limitations on ribosomal synthesis 
 light of our estimates on both the synthesis of ribosomal proteins and
 our earlier results on rRNA synthesis.
 
-\subsubsection{tRNA synthetases}
+\subsubsection{tRNA Synthetases}
 We begin by first estimating the number of tRNA synthetases in \textit{E. coli}
 needed to convert free amino-acids to polypeptide chains. At a modest growth
 rate of $\approx$ 5000 s, \textit{E. coli} has roughly 3$\times$10$^6$ proteins
@@ -68,7 +68,7 @@ charging can be highly parallelized, we can argue that tRNA charging is not a
 rate limiting step in cell division, at least for the growth conditions explored
 in this work.
 
-\subsubsection{Protein synthesis}
+\subsubsection{Protein Synthesis}
 With the number of tRNA synthetases accounted for, we now consider the abundance
 of the protein synthesis machines themselves, ribosomes. Ribosomes are enormous
 protein/rRNA complexes that facilitate the peptide bond formation between amino
@@ -116,7 +116,7 @@ experimental observations (\FIG{protein_synthesis}(B)).
     \end{fullwidth}
 \end{figure}
 
-\subsubsection{Translation as a growth-rate limiting step}
+\subsubsection{Translation as a Growth-Rate Limiting Step}
 Thus far, the general back-of-the-envelope estimates have been
 reasonably successful in explaining what sets the scale of absolute protein copy
 number. A recurring theme that has arisen is the ability of cells to parallelize
@@ -156,8 +156,8 @@ To gain some intuition into how translation can set the speed of
 bacterial growth, we again consider the total number of peptide bonds that must
 be synthesized, which we denote as $N_\text{AA}$. Noting that cells grow exponentially in time
 \citep{godin2010}, we can compute the number of amino acids to be polymerized as
-\begin{equation} 
-    N_\text{AA} \lambda = r_t R, 
+\begin{equation}
+    N_\text{AA} \lambda = r_t R,
 \end{equation} where
 $\lambda$ is the cell growth rate in s$^{-1}$, $r_t$ is the maximum translation
 rate in AA$\cdot$s$^{-1}$, and $R$ is the average ribosome copy number per
@@ -174,7 +174,7 @@ protein mass. By making the approximation that an average amino acid has a
 molecular weight of 110 Da (BNID: 104877, \cite{milo2010}), we can approximate  $R
 / N_\text{AA} \approx \Phi_R / L_R$,  where $\Phi_R$ is the ribosomal mass
 fraction and $L_R$ is the total length in amino acids that make up a ribosome.
-The translation-limited growth rate can then be written in the form 
+The translation-limited growth rate can then be written in the form
 \begin{equation}
 \lambda_{\textrm{translation-limited}} \approx \frac{r_t}{L_R}  \Phi_R.
 \label{eq:translation_limit_growth_rate}
@@ -187,7 +187,7 @@ the length in amino acids for all ribosomal subunits of the 50S and 30S complex
 The growth rate defined by \EQ{translation_limit_growth_rate}
 reflects mass-balance under steady-state growth and has long provided a
 rationalization of the apparent linear increase in \textit{E. coli}'s ribosomal
-content as a function of growth rate \citep{Goldberger1979, scott2010}. 
+content as a function of growth rate \citep{Goldberger1979, scott2010}.
 We note that there is a maximum growth rate of $\lambda \approx 8
 \,\text{hr}^{-1}$, or a doubling time just under 6 minutes
 (\FIG{ribosome_limit}(B), dashed line). This represents an inherent speed limit
@@ -227,7 +227,7 @@ second ribosome and cannot be parallelized.
             at each growth rate. The quantity $\langle\text{\# ori}\rangle$ was calculated
             using Equation 4 and the measurements from \cite{si2017} that are
             plotted in \FIG{translation_ecoli_partA}(A). Dashed line show that maximal number of
-            functional rRNA units produced 
+            functional rRNA units produced
             from a single chromosome without parallelization.            }
         \label{fig:ribosome_limit}
         }
@@ -254,7 +254,7 @@ production rule-of-thumb. While each \textit{E. coli} genome has 7 copies of
 the rRNA operon (BNID: 107866, \cite{milo2010}), parallelization of DNA
 synthesis by firing multiple rounds of replication at a time can drastically
 the effective number of rRNA operons. The blue curve in
-\FIG{ribosome_limit(C)}, we assume that the effective number of rRNA operons
+\FIG{ribosome_limit}(C), we assume that the effective number of rRNA operons
 increases in proportion to the number of origins of replication
 $\langle\text{\# ori}\rangle$ (solid blue line; with the calculation of
 $\langle\text{\# ori}\rangle$ described in the next section). Although we

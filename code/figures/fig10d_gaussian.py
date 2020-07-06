@@ -144,7 +144,7 @@ for c, d in data_schmidt.groupby('condition', sort= False):
 
 divider = make_axes_locatable(ax5)
 cax = divider.append_axes('right', size='5%', pad=0.05)
-cb = fig.colorbar(s_m, cax=cax, orientation='vertical');
+cb = fig.colorbar(s_m, cax=cax, orientation='vertical')
 
 cb.ax.set_ylabel('growth rate [hr$^{-1}$]', fontsize=6)
 cb.ax.tick_params(labelsize=5)

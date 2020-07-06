@@ -1,19 +1,19 @@
 \subsection{Translation and Ribosomal Synthesis}
 Lastly, we turn our attention to the process of synthesizing new proteins,
-translation. This process stands as a good candidate for potentially limiting growth
-since the synthesis of new proteins relies on the generation of ribosomes,
-themselves proteinaceous molecules. As we will see in the coming sections of
-this work, this poses a "chicken-or-the-egg" problem where the synthesis of
-ribosomes requires ribosomes in the first place.
+translation. This process stands as a good candidate for potentially limiting
+growth since the synthesis of new proteins relies on the generation of
+ribosomes, themselves proteinaceous molecules. As we will see in the coming
+sections of this work, this poses a "chicken-or-the-egg" problem where the
+synthesis of ribosomes requires ribosomes in the first place.
 
 We will begin our exploration of protein translation in the same spirit as we
-have in previous sections -- we will draw order-of-magnitude estimates based on
-our intuition and available literature, and then compare these estimates
-to the observed data. In doing so, we will estimate both the absolute number of
-ribosomes necessary for replication of the proteome as well as the synthesis of
-amino-acyl tRNAs. From there we consider the limitations on ribosomal synthesis in
-light of our estimates on both the synthesis of ribosomal proteins and
-our earlier results on rRNA synthesis.
+have in previous sections -- we will draw order-of-magnitude estimates based
+on our intuition and available literature, and then compare these estimates
+to the observed data. In doing so, we will estimate both the absolute number
+of ribosomes necessary for replication of the proteome as well as the
+synthesis of amino-acyl tRNAs. From there we consider the limitations on
+ribosomal synthesis in light of our estimates on both the synthesis of
+ribosomal proteins and our earlier results on rRNA synthesis.
 
 \subsubsection{tRNA Synthetases}
 We begin by first estimating the number of tRNA synthetases in \textit{E. coli}
@@ -32,12 +32,12 @@ a new amino acid, ready for another round of peptide bond formation. While some
 different  animo acids, we can make a reasonable estimate by comparing the
 number of amino acids to be  polymerized to cell division time. Using our
 stopwatch of 5000 s and 10$^9$ amino acids, we arrive at a requirement of
-$\approx$ 2 $\times$ 10$^5$ tRNA molecules. This estimate is in line with
-experimental measurements of $\approx$ 3 $\times$ 10$^5$ per cell (BNID: 108611,
-\cite{milo2010}), suggesting we are on the right track.
+$\approx$ 2 $\times$ 10$^5$ tRNA molecules to be consumed by the ribosome per
+second. 
+
 
 There  are many processes which go into synthesizing a tRNA and ligating it
-with the appropriate amino acids. As we covered  in the previous section, there
+with the appropriate amino acids. As we discussed previously, there
 appear to be more than enough RNA polymerases per cell to synthesize the needed
 pool of tRNAs. Without considering the many ways in which amino acids can be
 scavenged or synthesized \textit{de novo}, we can explore ligation the as a potential rate limiting
@@ -50,8 +50,10 @@ tRNA is ligated is highly dependent on the identity of the amino acid, it is
 reasonable to state that the typical tRNA synthetase has charging rate of
 $\approx$ 20 AA per tRNA synthetase per second (BNID: 105279, \cite{milo2010}).
 
-Combining these estimates together, as shown schematically in
-\FIG{protein_synthesis}(A), yields an estimate of $\approx$ 10$^4$ tRNA
+We can make an assumption that aminio-acyl tRNAs are in steady-state where they
+are produced at the same rate they are consumed, meaning that $2 \times 10^5$
+tRNAs must be charged per second.Combining these estimates together, as shown schematically
+in \FIG{protein_synthesis}(A), yields an estimate of $\approx$ 10$^4$ tRNA
 synthetases per cell with a division time of 5000 s. This point estimate is in
 very close agreement with the observed number of synthetases (the sum of all 20
 tRNA synthetases in \textit{E. coli}). This estimation strategy seems to

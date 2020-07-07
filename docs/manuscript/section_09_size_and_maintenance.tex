@@ -1,145 +1,183 @@
 \subsection{Relationship Between Cell Size and Growth Rate}
-With the observation that ribosomes set an inherent upper limit on growth
-rate, through both rRNA synthesis and the additional dependence on ribosomal
-fraction, it is also plausible that ribosomes may play a more dominant role
-in setting growth rate across other growth conditions. With a rich proteomic
-data set across a wide array of conditions, and in light of a number of
-recent experimental observations, we find that cells also appear to tune
-their ribosomal abundance as a means to maximize growth even in poor nutrient
-conditions. This has important consequences on the relationship with cell
-size and maintenance of steady-state growth. In the coming section and the
-remainder of the text, we consider these further beginning with cell size.
+% With the observation that ribosomes set an inherent upper limit on growth
+% rate, through both rRNA synthesis and the additional dependence on ribosomal
+% fraction, it is also plausible that ribosomes may play a more dominant role
+% in setting growth rate across other growth conditions. With a rich proteomic
+% data set across a wide array of conditions, and in light of a number of
+% recent experimental observations, we find that cells also appear to tune
+% their ribosomal abundance as a means to maximize growth even in poor nutrient
+% conditions. This has important consequences on the relationship with cell
+% size and maintenance of steady-state growth. In the coming section and the
+% remainder of the text, we consider these further beginning with cell size.
 
 The relationship between cell size and growth rate has long been of interest in
-the study of bacterial physiology, particularly following the now six decade-old observation
-that cell volume appears to increase exponentially with growth rate; known as
-Schaechter's growth law  \citep{schaechter1958, taheriaraghi2015}. Wild-type
-\textit{E. coli} growing at relatively fast growth rates exhibit a remarkably
-constant cell cycle time $t_{cyc}$ (referring to the C and D periods of DNA
-replication and cell division, respectively), as shown in
-\FIG{translation_ecoli_partA}(A) for the data reproduced from \cite{si2017}.
-With a constant cell cycle time, the exponential scaling in size has long been
-considered a direct consequence of cells initiating replication at a constant
-volume per origin. However, the particular mechanism that governs this
-relationship, and even the question of whether the change in average cell size
-is truly exponential  have remained under debate \citep{si2017, harris2018}.
+the study of bacterial physiology, particularly following the now six decade-old
+observation that cell volume appears to increase exponentially with growth rate;
+known as Schaechter's growth law  \citep{schaechter1958, taheriaraghi2015}.
+However, the particular mechanism that governs this relationship, and even the
+question of whether the change in average cell size is truly exponential have
+remained under debate \citep{si2017, harris2018}.
 
-Since protein accounts for more than half of cellular dry mass (BNID: 104954,
-\cite{milo2010, bremer2008, basan2015}, cell size will vary in proportion to how much protein is
-synthesized over the cell cycle.  Through our estimates in the sections on the
-central dogma, it is apparent that the processes of transcription (i.e.
-synthesis of mRNA) and translation are unlikely limiting steps in doubling the
-cell mass. In both cases, there is an overabundance of the requisite protein
-complexes (DNA and RNA polymerase, respectively) and there are mechanisms by
-which these synthesis processes can be parallelized. Therefore, the total protein mass is determined by $r_t \times R$ and the doubling time
-$\tau$. The relationship between cell size and growth rate, however, will
-depend only on how the cell scales its ribosomal fraction $\Phi_R$, as highlighted by
-\EQ{translation_limit_growth_rate}.
-
-
-\subsubsection{Exponential Scaling of Cell Size
-Follows from a Need to Increase Absolute Ribosomal Abundance.}
-A na\"ive strategy to increase growth rate given the constraint
-prescribed by \EQ{translation_limit_growth_rate}, would be to simply generate more ribosomes. In
-reality, large swaths of the proteome increases in absolute abundance at faster growth
-(Supplemental Figure X). Substantial empirical evidence has revealed
-a linear scaling between cell size (volume) and the number of chromosomal
-origins of replication, $\langle\text{\# ori}\rangle$, which is robust to a
-remarkable array of perturbations \citep{si2017}. The number of origins
-$\langle$\# ori$\rangle$ is determined by how often replication must be
-initiated per cell doubling to maintain steady-state growth and can be
+A na\"ive strategy to increase growth rate  would be to simply increase the
+number ribosomes relative to the other proteins needed for growth. In reality,
+large swaths of the proteome increases in absolute abundance at faster growth
+(Supplemental Figure X), and the possibility of increasing ribosomal
+concentration is likely constrained by crowding effects due to their massive
+size [cite]. Recent work from \cite{si2017} suggest that cell size in \textit{E.
+coli} is set by the number of chromosomal origins of replication,
+$\langle\text{\# ori}\rangle$, which is robust to a remarkable array of
+perturbations $\langle$\# ori$\rangle$ is determined by how often replication
+must be initiated per cell doubling to maintain steady-state growth and can be
 quantified via
 
 \begin{equation}
     \langle \text{\# ori} \rangle \approx 2^{\tau_{cyc} / \tau},
+    \label{eq:Nori}
 \end{equation}
 where $\tau$ is the doubling time. In \FIG{translation_ecoli_partA}(A), we
 show the measurements of \cite{si2017} for wild-type \textit{E. coli} cells
 in nutrient-limit growth regimes. Using this data, we estimated $\langle$\#
 ori$\rangle$ for each condition in the amalgamated proteomic datasets. With
-rRNA otherwise becoming rate limited at fast growth, this strategy allows for
-a roughly linear increase in ribosomes copy number with $\langle$\#
-ori$\rangle$ as shown in \FIG{translation_ecoli_partA}(B) for the proteomic
-data.
+rRNA otherwise becoming rate-limited at fast growth, this leads to a
+roughly linear increase in ribosomes copy number with $\langle$\#
+ori$\rangle$ as shown in \FIG{translation_ecoli_partA}(B).
 
-It is notable that in \textit{E. coli}, the majority of ribosomal proteins and rRNA operons are found
-closer to the origin of replication. Since multiple rounds of DNA initiation will effectively
-skew gene dosage in favor of genes near the origin \citep{scholz2019}, it suggests
+[with a constant $t_cyc$ - explain why size increases exponentially with #ori]
+% Wild-type
+% \textit{E. coli} growing at relatively fast growth rates exhibit a remarkably
+% constant cell cycle time $t_{cyc}$ (referring to the C and D periods of DNA
+% replication and cell division, respectively), as shown in
+% \FIG{translation_ecoli_partA}(A) for the data reproduced from \cite{si2017}.
+% With a constant cell cycle time, the exponential scaling in size has most recently been
+% considered a direct consequence of cells initiating replication at a constant
+% volume per origin.
+% However, the particular mechanism that governs this
+% relationship, and even the question of whether the change in average cell size
+% is truly exponential  have remained under debate \citep{si2017, harris2018}.
+
+% Since protein accounts for more than half of cellular dry mass (BNID: 104954,
+% \cite{milo2010, bremer2008, basan2015}, cell size will vary in proportion to how
+% much protein is synthesized over the cell cycle.  Through our estimates in the
+% sections on the central dogma, it is apparent that the processes of
+% transcription (i.e. synthesis of mRNA) and translation are unlikely limiting
+% steps in doubling the cell mass. In both cases, there is an overabundance of the
+% requisite protein complexes (DNA and RNA polymerase, respectively) and there are
+% mechanisms by which these synthesis processes can be parallelized. Therefore,
+% the total protein mass is determined by $r_t \times R$ and the doubling time
+% $\tau$. The relationship between cell size and growth rate, however, will depend
+% only on how the cell scales its ribosomal fraction $\Phi_R$, as highlighted by
+% \EQ{translation_limit_growth_rate}.
+
+
+% \subsubsection{Exponential Scaling of Cell Size
+% Follows from a need to Increase Absolute Ribosomal Abundance.}
+
+
+
+%
+% Wild-type \textit{E. coli} growing at relatively fast growth rates exhibit a
+% remarkably constant cell cycle time $t_{cyc}$ (referring to the C and D periods
+% of DNA replication and cell division, respectively), as shown in
+% \FIG{translation_ecoli_partA}(A) for the data reproduced from \cite{si2017}.
+% With a constant cell cycle time, the exponential scaling in size has most
+% recently been considered a direct consequence of cells initiating replication at
+% a constant volume per origin. This was found valid across a substantial number
+% of  growth perturbations, highlighting that it is the relationship between cell
+% size  and number of chromosomal origins of replication, $\langle\text{\#
+% ori}\rangle$, that the cell maitains.
+
+
+
+%  empirical evidence has
+% revealed a linear scaling between cell size (volume) and the number of
+% chromosomal origins of replication, $\langle\text{\# ori}\rangle$, which is
+% robust to a remarkable array of perturbations \citep{si2017}.
+
+
+In order to relate the apparent cell size scaling with growth rate under
+nutrient limited growth, we need to consider $\langle$\# ori$\rangle$ in the
+context of consider given the constraint prescribed by
+\EQ{translation_limit_growth_rate}.
+[It is notable that in \textit{E. coli}, the
+majority of ribosomal proteins and rRNA operons are found closer to the origin
+of replication. Since multiple rounds of DNA initiation will effectively skew
+gene dosage in favor of genes near the origin \citep{scholz2019}, it suggests
 that an increase in  $\langle$\# ori$\rangle$ is a means to skew the ribosomal
 fraction of the proteome, $\Phi_R$. In \FIG{translation_ecoli_partA}(D) we show
 that this skew in gene dosage is reflected in the composition of the proteome
-via a running boxcar average (500 kbp window) of protein copy number as a function
-of each gene's transcriptional start site (\FIG{translation_ecoli_partA}(D)).
-While the protein copy numbers of individual proteins can vary substantially
-across the entire chromosome, we nonetheless observe a bias in expression across
-the chromosome under fast growth conditions (dark blue lines) relative to slow
-growth (yellow lines). The dramatic
-change in protein copy number near the origin is largely due to the increase
-in ribosomal protein expression. This trend is in contrast to slower growth
-conditions (yellow) where the average copy number is much more uniform across
-the length of the chromosome.
+via a running boxcar average (500 kbp window) of protein copy number as a
+function of each gene's transcriptional start site
+(\FIG{translation_ecoli_partA}(D)). While the protein copy numbers of individual
+proteins can vary substantially across the entire chromosome, we nonetheless
+observe a bias in expression across the chromosome under fast growth conditions
+(dark blue lines) relative to slow growth (yellow lines). The dramatic change in
+protein copy number near the origin is largely due to the increase in ribosomal
+protein expression. This trend is in contrast to slower growth conditions
+(yellow) where the average copy number is much more uniform across the length of
+the chromosome.]
 
 \begin{figure*}
     \begin{fullwidth}
     \centering{
         \includegraphics{main_figs/fig8_ribosome_growth_limit_ecoli_a_2.pdf}
         \caption{\textbf{Multiple replication forks skew gene dosage and
-        ribosomal content.} (A) Experimental data from Si
-        \textit{et al.} (2017). Dashed line shows fit to the data, which were
-        used to estimate
-        $\langle$\# ori$\rangle$. $t_{cyc}$ was assumed to vary in proportion to $\tau$
-        for doubling times great than 40 minutes, and then reach a minimum value of
-        [fill in] minutes below this (see Supplemental Appendix X for additional details).
-        Red data points
-        correspond to measurements in strain MG1655, while light green points
-        are for strain NCM3722.
-        (B) Plot of the ribosome
-        copy number estimated from the proteomic data against the estimated
-        $\langle$\# ori$\rangle$ [NB: change to total protein abundance?].
-        (C) Schematic shows the expected increase in
-        replication forks (or number of ori regions) as \textit{E. coli} cells
-        grow faster. (D) A running boxcar average of protein copy number is
-        calculated for each each growth condition considered by \citep{schmidt2016}. A 0.5 Mb averaging window was used. Protein copy
-        numbers are reported relative to their condition-specific means in order
-        to center all data sets.
+        ribosomal content.} (A) Experimental data from Si \textit{et al.}
+        (2017). Dashed line shows fit to the data, which were used to estimate
+        $\langle$\# ori$\rangle$. $t_{cyc}$ was assumed to vary in proportion to
+        $\tau$ for doubling times great than 40 minutes, and then reach a
+        minimum value of [fill in] minutes below this (see Supplemental Appendix
+        X for additional details). Red data points correspond to measurements in
+        strain MG1655, while light green points are for strain NCM3722. (B) Plot
+        of the ribosome copy number estimated from the proteomic data against
+        the estimated $\langle$\# ori$\rangle$ [NB: change to total protein
+        abundance?]. (C) Schematic shows the expected increase in replication
+        forks (or number of ori regions) as \textit{E. coli} cells grow faster.
+        (D) A running boxcar average of protein copy number is calculated for
+        each each growth condition considered by \citep{schmidt2016}. A 0.5 Mb
+        averaging window was used. Protein copy numbers are reported relative to
+        their condition-specific means in order to center all data sets.
         } \label{fig:translation_ecoli_partA}
     }
     \end{fullwidth}
 \end{figure*}
 
+This result provides important evidence that along with the observation cell size
+scales with $\langle$\# ori$\rangle$ [cite], it is the bias in expression of ribosomal
+genes and increase in $\Phi_R$ with $\langle$\# ori$\rangle$ that ultimately
+leads to an exponential relationship between cell size and growth rate.
 
-This result provides important evidence that although total protein content
-scales with $\langle$\# ori$\rangle$, it is also the bias in gene dosage for
-genes closer to the origin that change the proteomic composition and allows an
-increase in the ribosomal fraction $\Phi_R$ at fast growth. For \textit{E.
-coli}, we can then view the increase in ribosomal fraction $\Phi_R$ (and
-therefore, $\lambda$) as requiring a geometric increase in total protein
-abundance that is proportional to $\langle$\# ori$\rangle$. This leads to an
-exponential increase in total protein mass (and cell size) as long as all
-ribosomes $R$ are actively translating protein during cell doubling.
+% genes closer to the origin that allows change the proteomic composition and allows an
+% increase in the ribosomal fraction $\Phi_R$ at fast growth. For \textit{E.
+% coli}, we can then view the increase in ribosomal fraction $\Phi_R$ (and
+% therefore, $\lambda$) as requiring a geometric increase in total protein
+% abundance that is proportional to $\langle$\# ori$\rangle$. This leads to an
+% exponential increase in total protein mass (and cell size) as long as all
+% ribosomes $R$ are actively translating protein during cell doubling.
 
-While our analysis suggests that it is the need to increase the absolute number
-of ribosomes that sets an exponential scaling in cell size, this relationship is
-likely to falter at slow growth rates (below $\lambda \approx
-0.5\,\text{hr}^{-1}$). In this regime, ribosome abundance $R$ no longer reflects
-the cell's protein synthesis capacity \citep{dai2016}, so far taken to be $r_t
-\times R$. Additional regulatory control through the small-molecule alarmones such as
-guanosine pentaphosphate [(p)ppGpp] reduces the fraction of actively translating
-ribosomes at slow growth and yields a translational capacity below $r_t\times R$. This
-is why \cite{si2017} found that it was the change in active ribosomal fraction,
-and not ribosomal fraction alone, that was most consistent with an exponential
-change in cell size. The specific relationship between cell size and growth rate
-however becomes harder to define because cells no longer need multiple rounds of
-DNA replication to make enough rRNA, and no longer need to increase their total
-protein mass in order to tune protein synthesis. Our collated proteomic data,
-however, contain several assumptions that relate total protein abundance to
-growth rates and this prevents us from making precise predictions about how cell
-size and absolute protein abundance vary at slow growth (Supplemental X).
-Nevertheless, we find no evidence that cells decrease their size to the minimal
-value expected from on an exponential function with a constant exponent fit to
-cell sizes with moderate to fast growth rates \citep{basan2015, radzikowski2016,
-si2019}, suggesting at least a modified scaling between size and growth rate in
-these poorer nutrient conditions.
+% While our analysis suggests that it is the need to increase the absolute number
+% of ribosomes that sets an exponential scaling in cell size, this relationship is
+% likely to falter at slow growth rates (below $\lambda \approx
+% 0.5\,\text{hr}^{-1}$). In this regime, ribosome abundance $R$ no longer reflects
+% the cell's protein synthesis capacity \citep{dai2016}, so far taken to be $r_t
+% \times R$. Additional regulatory control through the small-molecule alarmones such as
+% guanosine pentaphosphate [(p)ppGpp] reduces the fraction of actively translating
+% ribosomes at slow growth and yields a translational capacity below $r_t\times R$. This
+% is why \cite{si2017} found that it was the change in active ribosomal fraction,
+% and not ribosomal fraction alone, that was most consistent with an exponential
+% change in cell size.
+
+% The specific relationship between cell size and growth rate
+% however becomes harder to define because cells no longer need multiple rounds of
+% DNA replication to make enough rRNA, and no longer need to increase their total
+% protein mass in order to tune protein synthesis. Our collated proteomic data,
+% however, contain several assumptions that relate total protein abundance to
+% growth rates and this prevents us from making precise predictions about how cell
+% size and absolute protein abundance vary at slow growth (Supplemental X).
+% Nevertheless, we find no evidence that cells decrease their size to the minimal
+% value expected from on an exponential function with a constant exponent fit to
+% cell sizes with moderate to fast growth rates \citep{basan2015, radzikowski2016,
+% si2019}, suggesting at least a modified scaling between size and growth rate in
+% these poorer nutrient conditions.
 
 \subsection{Growth in Poor Nutrient Conditions.}
 

@@ -10,50 +10,47 @@
 % remainder of the text, we consider these further beginning with cell size.
 
 \subsection{Relationship Between Cell Size and Growth Rate}
-The relationship between cell size and growth rate has long been of interest in
-the study of bacterial physiology, particularly following the now six decade-old
-observation that cell volume appears to increase exponentially with growth rate;
-known as Schaechter's growth law  \citep{schaechter1958, taheriaraghi2015}.
-However, the particular mechanism that governs this relationship, and even the
-question of whether the change in average cell size is truly exponential have
-remained under debate \citep{harris2018}. Given the important of cell size in
-setting the total protein mass that must be doubled, as well as
-other parameters like the surface-area-to-volume
-ratio that was considered in the context of ATP production,
-in this final section we leverage our
-proteomic data to consider the relationship between cell size and growth rate.
+The relationship
+between cell size and growth rate has long been of interest in the study of
+bacterial physiology, particularly following the now six decade-old observation
+that cell volume appears to increase exponentially with growth rate; known as
+Schaechter's growth law  \citep{schaechter1958, taheriaraghi2015}. However, the
+mechanism that governs this relationship, and even the question of whether the
+change in average cell size is truly exponential has remained under debate
+\citep{harris2018}. Given the important of cell size in determining the total
+protein mass that must be doubled, and in setting other parameters like the
+surface-area-to-volume ratio, in this final section we leverage our proteomic
+data to consider cell size and growth rate.
 
-A na\"ive strategy to maximize growth rate following the constraint of
-\EQ{translation_limit_growth_rate} would be to simply increase the number of
-ribosomes relative to the synthesis of all other proteins needed for growth. In
-reality, however, large swaths of the proteome increases in absolute abundance
-at faster growth (Supplemental Figure X), and an increasing ribosomal
-concentration is likely constrained by additional factors such as crowding due
-to their large size \cite{delarue2018, solerbistue2020}. Recent work from
-\cite{si2017} in \textit{E. coli} demonstrates that it is the number of
-chromosomal origins of replication, $\langle\text{\# ori}\rangle$, that sets
-cell size, with cells adding a constant volume per origin. This is robust to a
-remarkable array of cellular perturbations. Here we use the measurements
-\cite{si2017} for wild-type \textit{E. coli} cells in nutrient-limit growth
-(\FIG{translation_ecoli_partA}(A)) in order to estimate $\langle$\# ori$\rangle$
-for each condition in the amalgamated proteomic datasets. Consistent their work,
-we find an approximately linear scaling between ribosome copy number and
-$\langle$\# ori$\rangle$ (\FIG{translation_ecoli_partA}(B)).
+In \FIG{ribosome_limit}(B) we found that at moderate growth rates (above about
+0.5 hr$^{-1}$), cells are growing at a rate near maximum given their ribosomal
+fraction $\Phi_R$. This means that in order to grow any faster, cells must
+increase $\Phi_R$ further. A na\"ive strategy following the constraint of
+\EQ{translation_limit_growth_rate} is simply that cells should make additional  ribosomes. In reality, however, large swaths of the proteome
+increase in absolute protein abundance as cells grow faster (Supplemental Figure
+X), and the ability to add additional ribosomes is likely constrained by other
+factors including crowding due to their large size \citep{delarue2018,
+solerbistue2020}. Instead, it is well-documented that \textit{E. coli} cells add
+a constant volume per origin of replication,
+which is robust to a remarkable array of cellular perturbations \citep{si2017}.
+To consider this in the context of the proteomic data, we used the measurements from
+\cite{si2017} for wild-type \textit{E. coli} cells grown in different nutrient conditions
+(\FIG{translation_ecoli_partA}(A)) to estimate the average number of origins per cell $\langle$\# ori$\rangle$ across the data. Indeed, we find an approximately linear trend between protein
+copy number and $\langle$\# ori$\rangle$, and in \FIG{translation_ecoli_partA}(B) plot
+this for ribosomal copy numbers.
 
-$\langle$\# ori$\rangle$ is determined by how often
-replication must be initiated per cell doubling under steady-state growth
+The average number of origins $\langle$\# ori$\rangle$ is set by how often
+replication must be initiated per cell doubling under steady-state growth,
 and can be quantified via
 \begin{equation}
-    \langle \text{\# ori} \rangle = 2^{\tau_{cyc} / \tau} = 2^{\tau_{cyc} \lambda / ln(2)}
+    \langle \text{\# ori} \rangle = 2^{\tau_{cyc} / \tau} = 2^{\tau_{cyc} \lambda / ln(2)},
     \label{eq:Nori}
 \end{equation}
-where $t_cyc$ is the cell cycle time (referring to the time from replication
-initiation to cell division, and $\tau$ is the cell doubling time. For a
-constant cell cycle time, which is observed at growth rates above about 0.5 hr$^{-1}$
-\cite{helmstetter1968}, it also means that $\langle \text{\# ori} \rangle$ will increase
-exponentially with growth rate.
-
-
+where $t_{cyc}$ is the cell cycle time (referring to the time from replication
+initiation to cell division), and $\tau$ is the cell doubling time. For a
+constant cell cycle time, observed at growth rates above about 0.5 hr$^{-1}$
+\citep{helmstetter1968}, \EQ{Nori} says that $\langle \text{\# ori} \rangle$ will increase
+exponentially with the growth rate.
 
 
 % Wild-type
@@ -126,23 +123,35 @@ exponentially with growth rate.
 % that an increase in  $\langle$\# ori$\rangle$ is a means to skew the ribosomal
 % fraction of the proteome, $\Phi_R$.
 
-An explanation for why cell size varies with $\langle$\# ori$\rangle$ (and
-hence, also growth rate) requires us to consider how the cells vary their
-protein content, and in particular ribosomal proteins with $\langle$\#
-ori$\rangle$. In \FIG{translation_ecoli_partA}(D) we look at the
-positional-dependent protein expression across the chromosome for each of the
-growth conditions from \cite{schmidt2016}. Here we have calculated a running
-average (20 kbp window) of protein copy number as a function of each gene's
-transcriptional start site, which are then median-subtracted to  account for
-changes in total protein abundance with growth condition. Here we find that the
-deviations in expression are largely restricted to regions of ribosomal protein
-genes, with substantially more protein expressed for cells with high $\langle$\#
-ori$\rangle$ (teal) compared to those with low $\langle$\# ori$\rangle$
-(purple). This result helps highlight that although cell size and total protein
-content increase with $\langle$\# ori$\rangle$, it is the change in  ribosomal
-content $\Phi_R$ with $\langle$\# ori$\rangle$ that ultimately leads to an
-exponential relationship between cell size and growth rate under the
-nutrient-limited growth law.
+Insight into why cells add a constant volume per $\langle$\# ori$\rangle$, and
+how this relates to growth, however, requires us to consider the changes in the
+proteome, and in particular ribosomal proteins across the different growth
+conditions. In \FIG{translation_ecoli_partA}(D) we consider the
+position-dependent protein expression across the chromosome for each of the
+growth conditions from \cite{schmidt2016}. Here we calculated a running
+Gaussian average of protein copy number (20 kbp st. dev. averaging window) based on each gene's transcriptional start site, which were then
+median-subtracted to account for the differences in total protein abundance with each
+growth condition. Importantly, we find that the major deviations in protein copy
+number are largely restricted to regions of ribosomal protein genes, with
+substantially higher deviations observed for cells with high $\langle$\#
+ori$\rangle$ (teal), as compared to those with low $\langle$\# ori$\rangle$
+(purple). This is particularly apparent for genes closer to the origin, where
+the majority of ribosomal proteins are found. This suggests that in addition
+to the linear scaling between protein abundance and $\langle$\# ori$\rangle$,
+cells are also varying their relative ribosomal abundance in proportion to
+$\langle$\# ori$\rangle$. Since growth rate depends specifically on the
+ribosomal fraction $\Phi_R$, this result suggests that cells are changing their
+size as a way to tune $\Phi_R$ to match the available nutrient conditions.
+
+
+% It is this relationship in particular that leads to an
+% exponential relationship between cell size and growth rate under
+% nutrient-limited growth. Said differently, if cells added a constant volume per
+% $\langle$\# ori$\rangle$  but maintained a constant $\Phi_R$,  no
+% longer exhibit a change in this exponential relationship between cell size and
+% growth rate.
+
+
 
 \begin{figure*}
     \begin{fullwidth}
@@ -164,7 +173,7 @@ nutrient-limited growth law.
         protein abundance increases with growth rate, protein copy
         numbers are median-subtracted to allow comparison between growth conditions.
         $\langle$\# ori$\rangle$ are estimated using the data in (A) and Equation \ref{eq:Nori}.
-        } \label{fig:translation_ecoli_partA}
+        [still looking into how best to use this type of analysis] } \label{fig:translation_ecoli_partA}
     }
     \end{fullwidth}
 \end{figure*}
@@ -179,32 +188,35 @@ nutrient-limited growth law.
 % exponential increase in total protein mass (and cell size) as long as all
 % ribosomes $R$ are actively translating protein during cell doubling.
 
-While this result suggests that it is the increase in ribosomes that leads to an
-exponential increase in cell size with growth rate, this
-relationship is likely to change at slow growth rates (below $\lambda \approx
-0.5\,\text{hr}^{-1}$). In this regime, ribosome abundance $R$ no longer reflects
-the cell's protein synthesis capacity \citep{dai2016}, so far taken to be $r_t
-\times R$. Additional regulatory control through the small-molecule alarmones
-such as guanosine pentaphosphate [(p)ppGpp] reduces the fraction of actively
-translating ribosomes at slow growth and yields a translational capacity below
-$r_t\times R$. This is why \cite{si2017} found that it was the change in active
-ribosomal fraction, and not ribosomal fraction alone, that was most consistent
-with an exponential change in cell size. This additional regulatory control on
-translation activity has important consequences on the ability of cells to
-maintain steady-state growth in a poor nutrient environment, and in Supplemental
+While this dependence between cell size and ribosomal abundance is apparent across
+moderate to fast growth rates, it is worth noting that this scaling
+is likely to change at slow growth rates (below $\lambda \approx
+0.5\,\text{hr}^{-1}$). Here, the number of ribosomes $R$ no longer reflects the
+cell's protein synthesis capacity \citep{dai2016}, so far taken to be $r_t
+\times R$, and instead, cells have an excess number of ribosomes. Additional regulatory
+control through the small-molecule alarmones such as guanosine pentaphosphate
+[(p)ppGpp] reduce the fraction of actively translating ribosomes
+at these slower growth rates. This overabundance of ribosomes
+provides different challenges on the ability of the cell to maintain steady-state
+growth under limiting nutrient conditions, and in Supplemental
 Section XX we consider this slow growth regime further.
+% This is why \cite{si2017} found that it was the change in active
+% ribosomal fraction, and not ribosomal fraction alone, that was most consistent
+% with an exponential change in cell size.
+
 
 As a final comment, it has recently been shown that growth in a (p)ppGpp null
 strain also lacked both the condition-dependent changes in $\langle$\#
-ori$\rangle$ and any change in cell size with growth condition. Instead, cells
-always exhibited a high ratio of $\langle$\# ori$\rangle$ to $\langle$\#
-ter$\rangle$, irrespective of growth rate, and a cell size that was more
-consistent with a fast growth state where (p)ppGpp levels are normally low
+ori$\rangle$ as well as changes in cell size across different growth condition.
+Instead, cells always exhibited a high ratio of $\langle$\# ori$\rangle$ to
+$\langle$\# ter$\rangle$, irrespective of growth rate, and a cell size that was
+more consistent with a fast growth state where (p)ppGpp levels are normally low
 \citep{fernandezcoll2020} and ribosomal fraction is high \citep{zhu2019}. There
-is recent evidence that (p)ppGpp can also inhibit DNA replication initiation
-\citep{kraemer2019}.  The action of (p)ppGpp  may then also provide a causal
-explanation for why both $\langle$\# ori$\rangle$ and cell size decrease in
-poorer nutrient conditions.
+is also evidence that this may be achived through inhibition of DNA replication
+initiation \citep{kraemer2019}. These observations raise the possibility that
+(p)ppGpp may be playing a causal role in tuning $\langle$\# ori$\rangle$ and
+cell size, which ultimately allows the cell to vary its ribosomal content
+according to nutrient availability.
 
 [This last paragraph may be better placed in the discussion]
 

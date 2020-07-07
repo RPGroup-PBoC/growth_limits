@@ -131,10 +131,14 @@ growth conditions from \cite{schmidt2016}. Here we have calculated a running
 average (20 kbp window) of protein copy number as a function of each gene's
 transcriptional start site, which are then median-subtracted to  account for
 changes in total protein abundance with growth condition. Here we find that the
-deviations in expression are largely restricted to regions of ribosomal protein genes, with
-substantially more protein expressed for cells with high $\langle$\#
+deviations in expression are largely restricted to regions of ribosomal protein
+genes, with substantially more protein expressed for cells with high $\langle$\#
 ori$\rangle$ (teal) compared to those with low $\langle$\# ori$\rangle$
-(purple).
+(purple). This result helps highlight that although cell size and total protein
+content increase with $\langle$\# ori$\rangle$, it is the change in  ribosomal
+content $\Phi_R$ with $\langle$\# ori$\rangle$ that ultimately leads to an
+exponential relationship between cell size and growth rate under the
+nutrient-limited growth law.
 
 \begin{figure*}
     \begin{fullwidth}
@@ -161,11 +165,7 @@ ori$\rangle$ (teal) compared to those with low $\langle$\# ori$\rangle$
     \end{fullwidth}
 \end{figure*}
 
-This result provides important evidence to suggest that  although cell size and
-total protein content increase with $\langle$\# ori$\rangle$, it is the change
-in  ribosomal content $\Phi_R$ with $\langle$\# ori$\rangle$ that ultimately
-leads to an exponential relationship between cell size and growth rate under the
-nutrient-limited growth law.
+
 
 % genes closer to the origin that allows change the proteomic composition and allows an
 % increase in the ribosomal fraction $\Phi_R$ at fast growth. For \textit{E.
@@ -175,9 +175,9 @@ nutrient-limited growth law.
 % exponential increase in total protein mass (and cell size) as long as all
 % ribosomes $R$ are actively translating protein during cell doubling.
 
-While this analysis suggests that it is the increase in ribosomes that leads to
-an exponential increase in cell size and growth rate, this relationship is
-likely to falter at slow growth rates (below $\lambda \approx
+While this result suggests that it is the increase in ribosomes that leads to an
+exponential increase in cell size with growth rate, this
+relationship is likely to change at slow growth rates (below $\lambda \approx
 0.5\,\text{hr}^{-1}$). In this regime, ribosome abundance $R$ no longer reflects
 the cell's protein synthesis capacity \citep{dai2016}, so far taken to be $r_t
 \times R$. Additional regulatory control through the small-molecule alarmones
@@ -185,8 +185,10 @@ such as guanosine pentaphosphate [(p)ppGpp] reduces the fraction of actively
 translating ribosomes at slow growth and yields a translational capacity below
 $r_t\times R$. This is why \cite{si2017} found that it was the change in active
 ribosomal fraction, and not ribosomal fraction alone, that was most consistent
-with an exponential change in cell size. In Supplemental Section XX we consider
-this slow growth regime further.
+with an exponential change in cell size. This additional regulatory control on
+translation activity has important consequences on the ability of cells to
+maintain steady-state growth in a poor nutrient environment, and in Supplemental
+Section XX we consider this slow growth regime further.
 
 As a final comment, it has recently been shown that growth in a (p)ppGpp null
 strain also lacked both the condition-dependent changes in $\langle$\#

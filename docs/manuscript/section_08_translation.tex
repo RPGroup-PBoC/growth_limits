@@ -29,7 +29,7 @@ delivery events to the translating ribosomes? It is important to note that tRNAs
 are recycled after they've passed through the ribosome and can be recharged with
 a new amino acid, ready for another round of peptide bond formation. While some
 \textit{in vitro} data exists on  the turnover of tRNA in \textit{E. coli} for
-different  animo acids, we can make a reasonable estimate by comparing the
+different  amino acids, we can make a reasonable estimate by comparing the
 number of amino acids to be  polymerized to cell division time. Using our
 stopwatch of 5000 s and 10$^9$ amino acids, we arrive at a requirement of
 $\approx$ 2 $\times$ 10$^5$ tRNA molecules to be consumed by the ribosome per
@@ -109,7 +109,7 @@ experimental observations (\FIG{protein_synthesis}(B)).
         elongation rate of 15 peptide bonds per second. The
         average abundance of ribosomes is plotted as a function of growth rate.
         Our estimated values are shown for a growth rate of 0.5 hr$^{-1}$.
-        Grey lines correpsond to the estimated complex abundance calculated at
+        Grey lines correspond to the estimated complex abundance calculated at
         different growth rates. See Supplemental Information XX for a more
         detail description of this calculation.}
     \label{fig:protein_synthesis}
@@ -175,12 +175,12 @@ Alternatively, since $N_{AA}$ is related to the total protein mass through the
 molecular weight of each protein, we can also consider the growth rate in terms
 of the fraction of the total proteome mass dedicated to ribosomal proteins. By
 making the approximation that an average amino acid has a molecular weight of
-110 Da (BNID: 104877, \cite{milo2010}), the total protein mass $M$ is related to
-$N_{AA}$ by $(M/\text{110 Da}) \times N_A$, where $N_A$ is Avogadro's number.
+110 Da (BNID: 104877, \cite{milo2010}), the total protein mass $m_{\textrm{protein}}$ is related to
+$N_{AA}$ by $(m_{\textrm{protein}}/\text{110 Da}) \times N_A$, where $N_A$ is Avogadro's number.
 Similarly, $R$ is related to the ribosomal protein mass by $R \approx
-(M/\text{800 Da}) \times N_A$, where 800 Da reflects the summed molecular weight
+(m_R/\text{800 Da}) \times N_A$, where 800 Da reflects the summed molecular weight
 of all ribosomal subunits.  This allows us to approximate  $R / N_\text{AA}
-\approx \Phi_R / L_R$,  where $\Phi_R$ is the ribosomal mass fraction $M/M_R$,
+\approx \Phi_R / L_R$,  where $\Phi_R$ is the ribosomal mass fraction $m_{\textrm{protein}}/m_R$,
 and $L_R$ the ratio of 800 kDa / 110 Da per amino acid or, alternatively, the
 total length in amino acids that make up a ribosome. The translation-limited
 growth rate can then be written in the form
@@ -212,33 +212,27 @@ mass, this must represent an absolute speed limit for cell doubling.
   \begin{fullwidth}
         \centering{
             \includegraphics{main_figs/fig7_ribosome_growth_limit_2.pdf}
-            \caption{\textbf{Translation-limited growth rate.} (A) Here we
-            consider the translation-limited growth as a function of ribosomal
-            fraction. By mass balance, the time required to double the entire
-            proteome ($N_{AA}$ /$r_t$) sets the translation-limited
-            growth rate, $\lambda_{\textrm{translation-limited}}$. Here $N_{aa}$
-            is effectively the number of peptide bonds that must be translated,
-            $r_t$ is the translation elongation rate, and $R$ is the number of
-            ribosomes. This can also be re-written in terms of the ribosomal
-            mass fraction $\Phi_R = m_R$ / $m_{\textrm{protein}}$, where $m_R$
-            is the total ribosomal mass and $m_{\textrm{protein}}$ is the mass
-            of all proteins in the cell. $L_R$ refers to the summed length of
-            the ribosome in amino acids.
-            $\lambda_{\textrm{translation-limited}}$ is plotted as a function of
-            $\Phi_R$ (solid line). (B) The dashed line in part (A) identifies a
-            maximum growth rate that is set by the ribosome. Specifically, this
-            growth rate corresponds to the time required to  translation an
-            entire ribosome, $L_R/ r_t$ . This is a result that is independent
-            of the number of ribosomes in the cell as shown schematically here.
-            (C) Maximum number of rRNA units that can be synthesized as
-            as a function of growth rate. Solid curve corresponds to the rRNA
-            copy number is calculated by multipyling the number of rRNA
-            operons by the estimated number of $\langle\text{\# ori}\rangle$
-            at each growth rate. The quantity $\langle\text{\# ori}\rangle$ was calculated
-            using Equation 4 and the measurements from \cite{si2017} that are
-            plotted in \FIG{translation_ecoli_partA}(A). Dashed line show that maximal number of
-            functional rRNA units produced
-            from a single chromosome without parallelization.            }
+            \caption{\textbf{Translation-limited growth rate.}  (A) An inherent
+            maximum growth rate is set by the ttime to synthesize all ribosomal
+            subunits. This growth rate is given by $r_t/ L_R$, where $r_t$ is
+            the elongation rate and $L_R$ is the total number of amino acids
+            that make up the entire ribosomal complex. This rate is independent
+            of the number of ribosomes; instead limited serial requirement for
+            each ribosome to double itself. (B) Here we consider the
+            translation-limited growth as a function of ribosomal fraction, as
+            defined in Equation \ref{eq:translation_limit_growth_rate}. The
+            solid line is calculated for an elongation rate of 17 aa per second.
+            The dashed line corresponds to the maximum rate of ribosomal protein
+            (R-protein) synthesis considered in part (A). (C) Maximum number of
+            rRNA units that can be synthesized as as a function of growth rate.
+            Solid curve corresponds to the rRNA copy number is calculated by
+            multipyling the number of rRNA operons by the estimated number of
+            $\langle\text{\# ori}\rangle$ at each growth rate. The quantity
+            $\langle\text{\# ori}\rangle$ was calculated using Equation 4 and
+            the measurements from \cite{si2017} that are plotted in
+            \FIG{translation_ecoli_partA}(A). The dashed line shows the maximal
+            number of functional rRNA units produced from a single chromosomal
+            initiation per cell cycle. }
         \label{fig:ribosome_limit}
         }
   \end{fullwidth}

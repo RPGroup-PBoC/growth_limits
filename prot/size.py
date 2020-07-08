@@ -106,6 +106,33 @@ def rod_SA(l, w, V):
     gamma = asp_ratio * np.pi * (asp_ratio * np.pi /4 - np.pi/12)**(-2/3)
     return gamma * V**(2/3)
 
+def lambda2SA(x):
+    """
+    Computes the cellular surface area as a function of the growth rate. It is
+    assumed that the cell is cylinder capped with hemispherical ends. 
+
+    Parameters
+    ----------
+    x : int, float, or list/array of ints and floats
+        The growth rate in units of hr^-1
+
+    Returns
+    -------
+    SA: int, float, or list/array of ints and floats
+        The computed surface area in units of square microns for the provided 
+        growth rates
+    """
+
+    # Compute the length, width, and volume as a function of growth rate
+    length = lambda2length(x)
+    width = lambda2width(x)
+    vol = lambda2size(x)
+    
+    # Compute the rod surface area 
+    SA = rod_SA(length, width, vol)
+    return SA
+
+
 def lambda2P(x):
     """
     Computes the total protein mass per cell in fg. This is based

@@ -67,6 +67,8 @@ def load_constants(lambda_bounds = [0, 2]):
                           'units': 's', 'source': 'calculated quantity'}
     constants['N_ori'] = {'value': 2**(4200/ constants['t_double']['value']),
                           'units': 'number', 'source':'calculated quantity (see Si et al. 2017)'}
+    constants['surface_area'] = {'value': size.lambda2SA(constants['growth_rate']['value']),
+                                 'units': 'um^2', 'source': 'calculated quantity'}
     return constants
 
      

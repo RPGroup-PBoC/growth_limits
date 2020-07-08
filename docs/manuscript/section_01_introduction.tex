@@ -2,7 +2,7 @@
 The range of bacterial growth rates is enormously diverse. In natural
 environments, some microbial organisms might double only once per year while
 in comfortable laboratory conditions, growth can be rapid with several
-divisions per hour. This six order of magnitude difference illustrates the
+divisions per hour. This six order-of-magnitude difference illustrates the
 intimate relationship between environmental conditions and the rates at which
 cells convert nutrients into new cellular material -- a relationship that has
 remained a major topic of inquiry in bacterial physiology for over a century
@@ -26,36 +26,40 @@ growth rate. This census provides a window onto whether the processes they
 mediate such as molecular transport into the cells and molecular synthesis
 within cells can run faster. Second, because of our understanding of the
 molecular pathways responsible for many of the steps in bacterial growth, we
-can also make order of magnitude estimates to infer the copy numbers that
+can also make order-of-magnitude estimates to infer the copy numbers that
 would be needed to achieve a given growth rate. In this paper, we pass back
 and forth between the analysis of a variety of different proteomic datasets
 and order-of-magnitude estimations to determine possible molecular
 bottlenecks that limit bacterial growth and to see how the growth rate varies
 in different carbon sources.
 
-Specifically, we leverage a combination of \textit{E. coli} proteomic data
-sets collected over the past decade using either mass spectrometry
+Specifically, we leverage a combination of \textit{E. coli} proteomic data sets
+collected over the past decade using either mass spectrometry
 \citep{schmidt2016,peebo2015, valgepea2013} or ribosomal profiling
 \citep{li2014} across 31 unique growth conditions. Broadly speaking, we
-entertain several classes of hypotheses as are illustrated in
-\FIG{categories}. First, we consider potential limits on the transport of
-nutrients into the cell. We address this hypothesis by performing an
-order-of-magnitude estimate for how many carbon, phosphorous, and sulfur
-atoms are needed to facilitate this requirement given a 5000 second division
-time. As a second hypothesis, we consider the possibility that there exists a
-fundamental limit on how quickly the cell can generate ATP. We approach this
-hypothesis from two angles, considering how many ATP synthase complexes must
-be needed to churn out enough ATP to power protein translation followed by an
-estimation of how many electron transport complexes must be present to
-maintain the proton motive force. A third class of estimates considers the
-need to maintain the size and shape of the cell through the construction of
-new lipids for the cell membranes as well as the glycan polymers which make
-up the rigid peptidoglycan. Our final class of hypotheses centers on the
-synthesis of a variety of biomolecules. Our focus is primarily on the stages
-of the central dogma as we estimate the number of protein complexes needed
-for DNA replication, transcription, and protein translation.
+entertain several classes of hypotheses that relate to cell growth and are
+illustrated in \FIG{categories}.  Throughout our esimates we consider a a 5000
+second division time since these is where most data sets overlap, but we also
+consider how these values will vary at other growth rates due to changes in cell
+size and surface area \citep{taheriaraghi2015}. First, we consider potential
+limits on the transport of nutrients into the cell. We address this hypothesis
+by performing an order-of-magnitude estimate for how many carbon, phosphorous,
+and sulfur atoms are needed to facilitate this requirement. As a second
+hypothesis, we consider the possibility that there exists a fundamental limit on
+how quickly the cell can generate ATP. We approach this hypothesis from two
+angles, considering how many ATP synthase complexes must be needed to churn out
+enough ATP to power protein translation, followed by an estimation of how many
+electron transport complexes must be present to maintain the proton motive
+force. A third class of estimates considers the need to maintain the size and
+shape of the cell through the construction of new lipids for the cell membranes
+as well as the glycan polymers which make up the rigid peptidoglycan. Our final
+class of hypotheses centers on the synthesis of a variety of biomolecules. Our
+focus is primarily on the stages of the central dogma as we estimate the number
+of protein complexes needed for DNA replication, transcription, and protein
+translation.
 
-In broad terms, we find that the majority of these estimates are in close
+In broad terms, we find that for the majority of these estimates, the required molecular copy
+numbers are in close
 agreement with the experimental observations, with protein copy numbers
 apparently well-tuned for the task of cell doubling. This allows us to
 systematically scratch off the hypotheses diagrammed in \FIG{categories} as
@@ -93,11 +97,6 @@ conditions of nutrient limitation.
 % peebo2015,hui2015,schmidt2016} to quantitatively explore what biological
 % processes may set the speed limit of bacterial growth.
 
-% Might be important to acknowledge, like done in Scott2010
-% that this is the expectation noted long ago by mass-balance considerations,
-% in O. Maaløe, in Biological Regulation and Development,
-% R. F. Goldberger, Ed. (Plenum, New York, 1979),
-% pp. 487–542'
 
 \begin{figure}
     \centering{
@@ -106,7 +105,7 @@ conditions of nutrient limitation.
             We consider an array of processes necessary for a cell to double its
             molecular components. Such processes include the transport of carbon
             across the cell membrane, the production of ATP, and fundamental
-            processes of the central dogma namely RNA, DNA, and protein
+            processes of the central dogma namely, RNA, DNA, and protein
             synthesis. A schematic of each synthetic or transport category is
             shown with an approximate measure of the complex abundance at a
             growth rate of 0.5 per hour. In this work, we consider a standard bacterial division time of

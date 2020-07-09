@@ -1,20 +1,22 @@
 \section{Introduction}
 The range of bacterial growth rates is enormously diverse. In natural
-environments, some microbial organisms might double only once per year while
+environments, some microbial organisms might double only once per year \citep{mikucki2009} while
 in comfortable laboratory conditions, growth can be rapid with several
-divisions per hour. This six order-of-magnitude difference illustrates the
+divisions per hour \citep{schaechter1958}. This six order-of-magnitude difference illustrates the
 intimate relationship between environmental conditions and the rates at which
 cells convert nutrients into new cellular material -- a relationship that has
 remained a major topic of inquiry in bacterial physiology for over a century
 \citep{jun2018}. As was noted by Jacques Monod, ``the study of the growth of
 bacterial cultures does not constitute a specialized subject or branch of
-research, it is the basic method of Microbiology.’’ Those words ring as true
+research, it is the basic method of Microbiology.’’ \citep{monod1949} Those words ring as true
 today as they did when they were written 70 years ago. Indeed, the study of
-bacterial growth has undergone a molecular resurgence since many of the key
+bacterial growth has undergone a renaissance since many of the key
 questions addressed by the pioneering efforts in the middle of the last
 century can be revisited by examining them through the lens of the
 increasingly refined molecular census that is available for bacteria such as
-the microbial workhorse \textit{Escherichia coli}. Several of the outstanding
+the microbial workhorse \textit{Escherichia coli}.
+
+Several of the outstanding
 questions that can now be studied about bacterial growth include: what sets
 the fastest time scale that bacteria can divide, and how is growth rate tied
 to the quality of the carbon source. In this paper, we address these two
@@ -22,12 +24,9 @@ questions from two distinct angles. First, as a result of an array of
 high-quality proteome-wide measurements of the \textit{E. coli} proteome
 under a myriad of different growth conditions, we have a census that allows
 us to explore how the number of key molecular players change as a function of
-growth rate. This census provides a window onto whether the processes they
-mediate such as molecular transport into the cells and molecular synthesis
-within cells can run faster. Second, because of our understanding of the
-molecular pathways responsible for many of the steps in bacterial growth, we
-can also make order-of-magnitude estimates to infer the copy numbers that
-would be needed to achieve a given growth rate. In this paper, we pass back
+growth rate. This census provides a window into the question of whether the rates of central processes such as energy generation or DNA synthesis are regulated systematically as a function of cell growth rate by altering protein copy number in individual cells.
+Second, by compiling molecular turnover rate measurements for many of the fundamental processes associated with bacterial growth, we can make quantitative estimates to determine whether the observed protein copy numbers under varying conditions appear to be in excess of what would be minimally required to support cell growth at the observed rates.
+In this paper, we pass back
 and forth between the analysis of a variety of different proteomic datasets
 and order-of-magnitude estimations to determine possible molecular
 bottlenecks that limit bacterial growth and to see how the growth rate varies
@@ -43,7 +42,7 @@ second division time since these is where most data sets overlap, but we also
 consider how these values will vary at other growth rates due to changes in cell
 size and surface area \citep{taheriaraghi2015}. First, we consider potential
 limits on the transport of nutrients into the cell. We address this hypothesis
-by performing an order-of-magnitude estimate for how many carbon, phosphorous,
+by performing an order-of-magnitude estimate for how many carbon, phosphorus,
 and sulfur atoms are needed to facilitate this requirement. As a second
 hypothesis, we consider the possibility that there exists a fundamental limit on
 how quickly the cell can generate ATP. We approach this hypothesis from two
@@ -58,10 +57,8 @@ focus is primarily on the stages of the central dogma as we estimate the number
 of protein complexes needed for DNA replication, transcription, and protein
 translation.
 
-In broad terms, we find that for the majority of these estimates, the required molecular copy
-numbers are in close
-agreement with the experimental observations, with protein copy numbers
-apparently well-tuned for the task of cell doubling. This allows us to
+In broad terms, we find that for the majority of these estimates, protein copy numbers
+appear well-tuned for the task of cell doubling at a given growth rate. This allows us to
 systematically scratch off the hypotheses diagrammed in \FIG{categories} as
 setting potential growth bottlenecks. Ultimately, we find that protein
 translation (particularly the generation of new ribosomes) acts as 1) a rate
@@ -70,7 +67,7 @@ determinant of bacterial growth across the nutrient conditions we have
 considered under steady state, exponential growth. This perspective is
 consistent with the linear correlation observed between growth rate and
 ribosomal content (typically quantified through the ratio of RNA to protein) for
-fast growing cells \citep{scott2010}, but also suggest a more prominent role for
+fast growing cells \citep{bremer2008, scott2010}, but also suggest a more prominent role for
 ribosomes in governing the changes in cell size and doubling time across all
 conditions of nutrient limitation.
 

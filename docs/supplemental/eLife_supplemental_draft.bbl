@@ -1,0 +1,49 @@
+\begin{thebibliography}{}
+
+\bibitem[Baba et~al., 2006]{baba2006}
+Baba, T., Ara, T., Hasegawa, M., Takai, Y., Okumura, Y., Baba, M., Datsenko,
+  K.~A., Tomita, M., Wanner, B.~L., and Mori, H. (2006).
+\newblock {Construction of Escherichia coliK-12 in-frame, single-gene knockout
+  mutants: the Keio collection}.
+\newblock {\em Molecular Systems Biology}, 2(1):2460.
+
+\bibitem[Basan et~al., 2015]{basan2015}
+Basan, M., Zhu, M., Dai, X., Warren, M., S{\'e}vin, D., Wang, Y.-P., and Hwa,
+  T. (2015).
+\newblock {Inflating bacterial cells by increased protein synthesis}.
+\newblock {\em Molecular Systems Biology}, 11(10):836.
+
+\bibitem[Datsenko and Wanner, 2000]{datsenko2000}
+Datsenko, K.~A. and Wanner, B.~L. (2000).
+\newblock {One-step inactivation of chromosomal genes in Escherichia coli K-12
+  using PCR products}.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  97(12):6640--6645.
+
+\bibitem[Ojkic et~al., 2019]{ojkic2019}
+Ojkic, N., Serbanescu, D., and Banerjee, S. (2019).
+\newblock {Surface-to-volume scaling and aspect ratio preservation in
+  rod-shaped bacteria}.
+\newblock {\em eLife}, 8:642.
+
+\bibitem[Si et~al., 2017]{si2017}
+Si, F., Li, D., Cox, S.~E., Sauls, J.~T., Azizi, O., Sou, C., Schwartz, A.~B.,
+  Erickstad, M.~J., Jun, Y., Li, X., and Jun, S. (2017).
+\newblock {Invariance of Initiation Mass and Predictability of Cell Size in
+  Escherichia coli}.
+\newblock {\em Current Biology}, 27(9):1278--1287.
+
+\bibitem[{Virtanen} et~al., 2020]{2020scipynmeth}
+{Virtanen}, P., {Gommers}, R., {Oliphant}, T.~E., {Haberland}, M., {Reddy}, T.,
+  {Cournapeau}, D., {Burovski}, E., {Peterson}, P., {Weckesser}, W., {Bright},
+  J., {van der Walt}, S.~J., {Brett}, M., {Wilson}, J., {Jarrod Millman}, K.,
+  {Mayorov}, N., {Nelson}, A. R.~J., {Jones}, E., {Kern}, R., {Larson}, E.,
+  {Carey}, C., {Polat}, {\.I}., {Feng}, Y., {Moore}, E.~W., {Vand erPlas}, J.,
+  {Laxalde}, D., {Perktold}, J., {Cimrman}, R., {Henriksen}, I., {Quintero},
+  E.~A., {Harris}, C.~R., {Archibald}, A.~M., {Ribeiro}, A.~H., {Pedregosa},
+  F., {van Mulbregt}, P., and {Contributors}, S. .~. (2020).
+\newblock {SciPy 1.0: Fundamental Algorithms for Scientific Computing in
+  Python}.
+\newblock {\em Nature Methods}, 17:261--272.
+
+\end{thebibliography}

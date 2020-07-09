@@ -49,4 +49,8 @@ Add Q. To what extend does the cell balance itself such that no process is limit
 
 Number formatting. Prefer 1x10^10 and not 10^10.
 
-Need some kind of rubric for how to state numbers of different precision. 
+Need some kind of rubric for how to state numbers of different precision.
+
+____________________________
+
+See comments from CH!!

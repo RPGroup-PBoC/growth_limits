@@ -1,18 +1,55 @@
 ROUND 1
 
-line 39 and 40: I don’t like “pass back and forth” as it makes it sound like these two approaches are separate rather than entangled. Maybe “In this paper, we use quantitative analysis of a variety of proteomic data sets to inform order-of-magnitude estimates…”
+line 39 and 40: I don’t like “pass back and forth” as it makes it sound like
+these two approaches are separate rather than entangled. Maybe “In this paper,
+we use quantitative analysis of a variety of proteomic data sets to inform
+order-of-magnitude estimates…”
+
+paragraph starting line 43: The terms “hypothesis” and “estimate” are conflated
+throughout, and to me it is not really four separate hypotheses that you are
+testing. I think that you have just one overarching hypothesis; (#1) that a
+single category of bacterial life processes sets the rate of cell division over
+all (or at least most of) the range of observable growth rates. You use a series
+of quantitative estimates, informed by the quantitative proteomic data, to test
+the plausibility of various candidates for being this single rate-limiting
+process (but these are not different *hypotheses*, just different *candidates*).
+The alternative hypothesis would be that there is no single rate-determining
+process (i.e. that completely different processes are limiting in different
+growth regimes). Secondarily, (#2) you also hypothesize that cells might scale
+their expression levels of lots of things as a function of growth rate so that
+they don’t typically carry around lots of stuff that they don’t need (“in excess
+of what would be minimally required to support growth at the observed rates” if
+you like my phrasing above). 
+
+line 61: I don’t like the phrase “scratch off hypotheses” at all. I think this
+could be rephrased as finding that translation "emerges as the most plausible
+candidate…”. All of these estimates aim toward establishing plausibility, but
+none of them can really “rule out” a hypothesis in the traditional sense. In the
+end you find that (for #1) translation appears to be the best candidate for a
+single fundamental process that generally sets cell growth rate over a large
+experimentally observable range (and is also the best candidate for setting the
+absolute speed limit at 6 minutes), and (for #2) copy numbers of many things are
+scaled pretty reasonably so that you usually have about enough, but in some
+cases like glucose transporters and energy generation machines there seem to be
+a lot of excess copies hanging around at slow growth rates, and furthermore
+there are interesting subtleties about things like induction of transporters for
+specific sugars. 
 
 
-***** paragraph starting line 43: The terms “hypothesis” and “estimate” are conflated throughout, and to me it is not really four separate hypotheses that you are testing. I think that you have just one overarching hypothesis; (#1) that a single category of bacterial life processes sets the rate of cell division over all (or at least most of) the range of observable growth rates. You use a series of quantitative estimates, informed by the quantitative proteomic data, to test the plausibility of various candidates for being this single rate-limiting process (but these are not different *hypotheses*, just different *candidates*). The alternative hypothesis would be that there is no single rate-determining process (i.e. that completely different processes are limiting in different growth regimes). Secondarily, (#2) you also hypothesize that cells might scale their expression levels of lots of things as a function of growth rate so that they don’t typically carry around lots of stuff that they don’t need (“in excess of what would be minimally required to support growth at the observed rates” if you like my phrasing above). 
-
-**** line 61: I don’t like the phrase “scratch off hypotheses” at all. I think this could be rephrased as finding that translation "emerges as the most plausible candidate…”. All of these estimates aim toward establishing plausibility, but none of them can really “rule out” a hypothesis in the traditional sense.
-In the end you find that (for #1) translation appears to be the best candidate for a single fundamental process that generally sets cell growth rate over a large experimentally observable range (and is also the best candidate for setting the absolute speed limit at 6 minutes), and (for #2) copy numbers of many things are scaled pretty reasonably so that you usually have about enough, but in some cases like glucose transporters and energy generation machines there seem to be a lot of excess copies hanging around at slow growth rates, and furthermore there are interesting subtleties about things like induction of transporters for specific sugars. 
-
-
-line 67: RNA:protein ratio should cite Bremer & Dennis as well as Scott et al. The citation for Bremer & Dennis looks funny; is this the correct format for an on-line book?
+line 67: RNA:protein ratio should cite Bremer & Dennis as well as Scott et al.
+The citation for Bremer & Dennis looks funny; is this the correct format for an
+on-line book?
 
 
-***** line 68: The connection with cell size could be stated more clearly, as this ends up taking up a fair amount of real estate in the paper. Maybe add something like, “Our identification of translation as the most plausible candidate for the universal rate-determining process setting bacterial cell division time under a wide range of nutrient conditions also enables us to suggest that the long-observed correlation between growth rate and cell size (cite Schaechter et al. 1958, Si et al. 2017) can be simply attributed to the increased absolute number of ribosomes per cell under conditions supporting extremely rapid growth."
+line 68: The connection with cell size could be stated more clearly, as this
+ends up taking up a fair amount of real estate in the paper. Maybe add something
+like, “Our identification of translation as the most plausible candidate for the
+universal rate-determining process setting bacterial cell division time under a
+wide range of nutrient conditions also enables us to suggest that the
+long-observed correlation between growth rate and cell size (cite Schaechter et
+al. 1958, Si et al. 2017) can be simply attributed to the increased absolute
+number of ribosomes per cell under conditions supporting extremely rapid
+growth."
 
 
 
@@ -54,3 +91,34 @@ Need some kind of rubric for how to state numbers of different precision.
 ____________________________
 
 See comments from CH!!
+
+
+____________________________
+
+It should be mentioned that as the ribosomes use GTP rather than ATP, the accounting suggests that similar amounts of GTP as ATP are used.  As GTP mostly made from ATP without energy cost, doesn’t affect accounting — but see below.
+
+Line 298:  "the total cellular protein and cell size increase logarithmically with growth rate”
+As first time introduced, this needs explaining — especially as naively inconsistent with various other things said later — and need to say over what range logarithmic.
+
+Figure 5A:  What is being assumed about change of diameter with growth rate?  Constant aspect ratio? Or something else? Or as observed for E coli? For E coli, how much does diameter change with growth rate?
+
+Fig 5B should be picogram (not femto)
+
+Fig 5C and caption: make clear that this is just proteins in membrane.
+“Cellular processes” is confusing: clarify what included (or excluded as in other categories)
+
+And some general issues.
+
+- Using “per cell” almost everywhere is confusing especially as volume changes by factor of 2 through cell cycle.  Would it be better to quote everything except membrane quantities as per volume?   Except for DNA replication (for which some discussion of amount per volume would be good in any case) most of other quantities are more naturally per volume.
+This is especially an issue as some estimates are better — at least implicitly so, such as 1500 — than factor of two.
+
+- More generally, re: Rob’s note on meanings of ~ and \approx (and mine on implied precision such as 6 mu^2) need to clearly establish conventions early in paper.   (Eg I try to write Avogadro’s # as 1/2 *10^24, and use things like 10^{4 1/2} or 10^{4-5}  which are clumsy but do imply some sense of precision.
+
+- The framing and statements about agreement (or not) between estimates and data are misleading.
+The estimates are mostly lower bounds for how much needed, so something along lines of “data not substantially exceeding lower bound”, or “close to saturating lower bound” or some such  would be better.
+
+- Behavior at high growth rates:  The issue of disagreement at high growth rates between the estimates — especially as they are lower bounds — and amounts of several quantities needs thinking through.   In particular what is going on in rich media where the cells can import many other things?   What does E coli import? And how is this used?
+Eg: For energy, is substantial fraction of GTP needed for protein synthesis (and some of ATP needed for other things) coming from Kreb’s cycle instead of ATP-synthases?  Or from other processes?
+For carbon (& perhaps phosphate?) how much is imported as amino acids or nucleotides or … ?
+
+Either the extrapolations to high growth rates of the estimates must be making some wrong assumption, or else the closeness of data to lower bounds for slower growth rates must be fortuitous.

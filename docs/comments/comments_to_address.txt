@@ -122,3 +122,16 @@ Eg: For energy, is substantial fraction of GTP needed for protein synthesis (and
 For carbon (& perhaps phosphate?) how much is imported as amino acids or nucleotides or … ?
 
 Either the extrapolations to high growth rates of the estimates must be making some wrong assumption, or else the closeness of data to lower bounds for slower growth rates must be fortuitous.
+
+
+____________________________
+
+For each BNID, should we also cite the original paper?
+
+line 93: '...dge is sufficient to understand the scale at which these complexes are produced'
+add ' or whether they constitute bottlenecks to bacterial growth.'
+
+
+____________________________
+
+See few comments from RP on ATP productions section PDF.

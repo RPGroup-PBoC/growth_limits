@@ -1,0 +1,86 @@
+While this dependence between cell size and ribosomal abundance is apparent
+across moderate to fast growth rates, it is worth noting that this scaling is
+likely to change at slow growth rates (below $\lambda \approx
+0.5\,\text{hr}^{-1}$). Here, the number of ribosomes $R$ no longer reflects the
+cell's protein synthesis capacity, so far taken to be $r_t
+\times R$. Instead, cells reduce the number of actively translating
+ribosomes through the additional regulatory control of the small-molecule
+alarmone, guanosine pentaphosphate [(p)ppGpp] \citep{dai2016} [more citations].
+
+% This overabundance of ribosomes
+% provides different challenges on the ability of the cell to maintain steady-state
+% growth under limiting nutrient conditions, and in Supplemental
+% Section XX we consider this slow growth regime further.
+
+\subsection{\textit{E. coli} Maximizes Steady-State Growth
+Rate by Tuning both Ribosomal Content and Translation Activity.}
+
+The translation-limited growth rate (\EQ{translation_limit_growth_rate})
+highlights the necessity for a cell to increase its ribosomal fraction to
+maximize its growth rate. However, it ignores the absolute constraints of a
+growing cell, which in particular, require resources to support each translating
+ribosomes and the space to house them. For almost every one of our estimates,
+the proteomic data suggest that cells predominantly vary their protein
+abundances in order to keep pace with the demands of a growing cell. In this
+final section we consider a minimal model of growth rate control. We use it to
+provide intution into the additional constraints that arise when growth rate and
+ribosomal abudance is intimately tied to cell size.
+
+[do I talk about ppGpp and nutrient sensing? Maybe later once I show the trends]
+
+In order for cells to maxmize their rate of protein synthesis, $r_t
+\times R$, ribosomes must be able to rapidly match codons with their correct
+amino-acyl tRNAs. This requires synthesis of (or import, for rich media) amino acids that
+maintain the pool of amino-acyl tRNAs. To proceed, we therefore consider
+this maintenance as simply a balance between the the supply of amino acids
+by metabolic proteins and transporters, at a rate of $r_{aa}$ in units of amino acids per second,
+and consumption by ribosomes at a rate of $r_t
+\times R \times f_a$. The addition factor of $f_a$ accounts for the possibility
+that
+
+
+
+
+
+[important point is that as resources become limiting, cells are able to tune and minimize
+the entire cell mass - which enables them to grow faster]
+
+[Discuss implications of findings so far. All other components being tuned (mostly) in the required proportions; and also that the achievable growth rate is ultimately set by ribosomes. ]
+
+[The apparent constraint that cells MUST get larger in order to grow faster places a particular constrain on why a cell would vary its ribosomal fraction in the first place.]
+
+[Also present the evidence from literature that there is a prominent role for aa/nutrient sensing that appears to mediate X, Y, and Z. ]
+
+[Then go on to propose the way to understand what’s going on with our model.
+    - I think maybe it’s easiest to understand it is we start by considering the balance that must be maintained between metabolic activity and ribosomal activity.
+    - Then write down a model that relates how elongation rate will relate to this.]
+
+
+
+gives no intuition into the additional constraints of a growing
+cell that we've consider throughout our estimates.
+
+
+
+quantifies the maximum rate of growth but ignores the additional constraint set  that there is a maximum rate us with a maximum
+
+[Figure idea: PART (A) Maybe we can consider that r_t*R sets the maximum rate of growth; but you also need to feed that engine and build the house to fit them.]
+
+[ When I get into slow growth regime; consider that IF R scales with <#ori>, ribosomes will have increasingly longer wait times for protein synthesis. Which is bad.
+    - By also decreasing the fraction of actively translating ribosomes, cells can grow faster is also super important. ]
+
+
+
+
+As a final comment, it has recently been shown that growth in a (p)ppGpp null
+strain also lacked both the condition-dependent changes in $\langle$\#
+ori$\rangle$ as well as changes in cell size across different growth condition.
+Instead, cells always exhibited a high ratio of $\langle$\# ori$\rangle$ to
+$\langle$\# ter$\rangle$, irrespective of growth rate, and a cell size that was
+more consistent with a fast growth state where (p)ppGpp levels are normally low
+\citep{fernandezcoll2020} and ribosomal fraction is high \citep{zhu2019}. There
+is also evidence that this may be achived through inhibition of DNA replication
+initiation \citep{kraemer2019}. These observations raise the possibility that
+(p)ppGpp may be playing a causal role in tuning $\langle$\# ori$\rangle$ and
+cell size, which ultimately allows the cell to vary its ribosomal content
+according to nutrient availability.

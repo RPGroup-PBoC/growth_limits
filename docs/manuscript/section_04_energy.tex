@@ -18,8 +18,8 @@ translation which requires $\approx$ 2 ATPs for the charging of an amino acid
 to the tRNA and $\approx$ 2 ATP equivalents for the formation of the peptide
 bond between amino acids. Considering the ATP costs associated with error
 correction and post-translational modifications of proteins, we can make the
-approximation that each peptide bond has a net cost of $\approx$ 5 ATP (BNID:
-107782, \cite{milo2010}). In total, the energetic costs of peptide bond
+approximation that each peptide bond has a net cost of $\approx$ 4 ATP (BNID:
+101442, \cite{milo2010}). In total, the energetic costs of peptide bond
 formation consume $\approx$
 80\% of the cells ATP budget (BNID: 107782; 106158; 101637; 111918,
 \cite{milo2010, lynch2015,stouthamer1973}). The pool of ATP is produced by
@@ -42,10 +42,10 @@ consuming reactions being the same as ATP, we find that an estimate of a few
 thousand complete synthases per cell to agree well with the experimental
 data. Much as we did for the estimates of transporter copy number in the
 previous section, we can
-generalize this estimation to consider a continuum of growth rates rather than a
+generalize this estimate to consider a continuum of growth rates rather than a
 point estimate of 5000 s, indicated by the gray lines in
 \FIG{energy_production}, and find that this approach adequately describes the
-observed growth rate dependence. 
+observed growth rate dependence.
 
 If the direct production of ATP was a rate limiting step for
 growth, could the cell simply express more ATP synthase complexes? This
@@ -82,7 +82,7 @@ half century \citep{ingledew1984, khademian2017,cox1970,henkel2014}. A recent
 work \citep{szenk2017} examined the respiratory capacity of the \textit{E. coli}
 electron transport complexes using structural and biochemical data, revealing
 that each electron transport chain rapidly pumps protons into the intermembrane
-space at a clip of $\approx$ 1500 protons per second (BIND: 114704; 114687,
+space at a rate of $\approx$ 1500 protons per second (BIND: 114704; 114687,
 \cite{milo2010}). Using our estimate of the number of ATP synthases required per
 cell (\FIG{energy_production}(A)), coupled with these recent measurements, we
 estimate that $\approx 1000$ electron transport complexes would be necessary to
@@ -140,25 +140,28 @@ increase with growth rate. This is in part a consequence of the increase in cell
 length and width at that is common to many rod-shaped bacteria at faster growth
 rates \citep{ojkic2019, harris2018}. For the particular case of \textit{E.
 coli}, the total cellular protein and cell size increase logarithmically with
-growth rate \citep{schaechter1958, si2017}. Indeed, this is one reason why we
-have considered only a single, common growth condition across all our estimates
-so far. Such a scaling will require that the total number of proteins and net
-demand on resources also grow in proportion to the increase in cell size divided
-by the cell's doubling time. Recall however that each transport process, as well
+growth rate \citep{schaechter1958, si2017}.
+% Indeed, this is one reason why we
+% have considered only a single, common growth condition across all our estimates
+% so far. Such a scaling will require that the total number of proteins and net
+% demand on resources also grow in proportion to the increase in cell size divided
+% by the cell's doubling time.
+Recall however that each transport process, as well
 as the ATP production via respiration, is performed at the bacterial membrane.
 This means that their maximum productivity can only increase in proportion to
 the cell's surface area divided by the cell doubling time. This difference in
 scaling would vary in proportion to the surface area-to-volume (S/V) ratio.
-
-While we found that there was more than sufficient membrane real estate for
-carbon intake in our earlier estimate, the total number of ATP synthases and
-electron chain transport complexes both exhibit a clear increase in copy number
-with growth rate, reaching in excess of 10$^4$ copies per cell
-(\FIG{energy_production}). Here we consider the consequences of this
+Earlier we found that there was more than sufficient membrane real estate for
+carbon intake in our earlier estimate. However, since
+the total number of ATP synthases and electron chain transport complexes both exhibit a clear increase in copy number
+with growth rate, it was important to also consider
+% reaching in excess of 10$^4$ copies per cell
+% (\FIG{energy_production}). Here we consider
+the consequences of this
 S/V ratio scaling in more detail.
 
 In our estimate of ATP production above we found that a cell demands about
-$6 \times 10^9$ ATP or $10^6$ ATP/s. With a cell volume of roughly 1 fl, this
+$6 \times 10^9$ ATP per cell cycle or $10^6$ ATP/s. With a cell volume of roughly 1 fl, this
 corresponds to about $2 \times 10^{10}$ ATP per fL of cell volume, in line  with
 previous estimates \citep{stouthamer1977, szenk2017}. In \FIG{energy_scaling} (A)
 we plot this ATP demand as a function of the S/V ratio in green, where we have
@@ -169,30 +172,32 @@ produced, we consider the amount of ATP that can generated by a membrane filled
 with ATP synthase and electron transport complexes, which provides a maximal
 production of about 3 ATP / (nm$^2 \cdot$s) \citep{szenk2017}. This is shown in
 blue in \FIG{energy_scaling}(A), which shows that at least for the growth rates
-observed, the energy demand is roughly an order of magnitude less.  
-
+observed, the energy demand is roughly an order of magnitude less.
 Interestingly, \cite{szenk2017} also found that ATP production by
 respiration is less efficient than by fermentation per membrane area occupied
 due to the additional proteins of the electron transport chain. This suggests
-that even under anaerobic growth, there will be sufficient membrane space for
+that, even under anaerobic growth, there will be sufficient membrane space for
 ATP production in general.
 
-While this serves to highlight the diminishing capacity to provide resources to
-grow if the cell increases in size (and its S/V decreases), the blue region in
-\FIG{energy_scaling}(A) represents a somewhat unachievable limit since the inner
-membrane must also include other proteins such as those required for lipid and
-membrane synthesis. To gain insight, we used the proteomic data
-to look at the distribution of proteins on the inner membrane. Here we use Gene
-Ontology (GO) annotations \citep{ashburner2000,thegeneOntologyconsortium2018} to
-identify all proteins embedded or peripheral to the inner membrane (GO term:
-0005886). Those associated but not membrane-bound include proteins like MreB and
-FtsZ, that traverse the inner membrane by treadmilling and must nonetheless be
-considered as a vital component occupying space on the membrane. In
-\FIG{energy_scaling} (B), we find that the total protein mass per $\mu$m$^2$ is
-relatively constant with growth rate. Interestingly, when we consider the
-distribution of proteins grouped by their Clusters of Orthologous Groups (COG)
-\citep{tatusov2000}, the relative abundance for those in metabolism
-(including ATP synthesis via respiration) is also relatively constant.
+While the analysis in  \FIG{energy_scaling}(A) serves to highlight the
+diminishing capacity to provide resources to grow if the cell increases in size
+(and its S/V decreases), maximum energy production represents a somewhat
+unachievable limit since the inner membrane must also include other proteins
+including those required for lipid and membrane synthesis. We used the proteomic
+data to look at the distribution of proteins on the inner membrane, relying on
+the Gene Ontology (GO) annotations
+\citep{ashburner2000,thegeneOntologyconsortium2018} to identify all proteins
+embedded or peripheral to the inner membrane (GO term: 0005886). Those
+associated but not membrane-bound include proteins like MreB and FtsZ, that
+traverse the inner membrane by treadmilling and must nonetheless be considered
+as a vital component occupying space on the membrane. In \FIG{energy_scaling}
+(B), we find that the total protein mass per $\mu$m$^2$ is surprisingly constant
+across growth rates. Interestingly, when we consider the distribution of
+proteins grouped by their Clusters of Orthologous Groups (COG)
+\citep{tatusov2000}, the relative abundance for those in metabolism (including
+ATP synthesis via respiration) is also relatively constant across growth rates,
+suggesting that many other membrane associated proteins also increase in similar
+proportions to proteins devoted to energy production \FIG{energy_scaling} (C).
 
 \begin{figure}
     \begin{fullwidth}
@@ -205,9 +210,14 @@ distribution of proteins grouped by their Clusters of Orthologous Groups (COG)
             (\texttt{- -})
             line corresponding to a sphere and the
             dash-dot line (\texttt{-.}) reflecting a rod-shaped bacterium like \textit{E.
-            coli} with a typical aspect ratio (length / width) of 0.4 \citep{shi2018}. Approximately 50\% of the bacterial inner
-            membrane is assumed to be protein, with the remainder lipid. (B)
-            Total protein mass calculated for proteins with inner membrane
+            coli} with a typical aspect ratio (length / width) of 4
+            \citep{shi2018}. Approximately 50\% of the bacterial inner membrane
+            is assumed to be protein, with the remainder lipid. The right plot shows
+            the measured growth rates, and their estimated S/V ratio using growth
+            rate dependent size measurements from \cite{si2017} (See Supplemental
+            XX on calculation).
+            (B)
+            Total protein mass per \textmu m$^2$ calculated for proteins with inner membrane
             annotation (GO term: 0005886). (C) Relative protein abundances by
             mass based on COG annotation. Metabolic proteins are further
             separated into respiration (F$_1$-F$_0$ ATP synthase, NADH
@@ -216,7 +226,7 @@ distribution of proteins grouped by their Clusters of Orthologous Groups (COG)
             carbohydrate transport (GO term: GO:0008643). Note that the
             elongation factor EF-Tu can also associate with the inner
             membrane, but was excluded in this analysis due to its high
-            relative abundance (roughly identical to the total mass shown in
+            relative abundance (roughly identical to the summed protein shown in
             part (B)).}
         \label{fig:energy_scaling}
         }

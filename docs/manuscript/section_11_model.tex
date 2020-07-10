@@ -28,18 +28,31 @@ ribosomal abudance is intimately tied to cell size.
 
 [do I talk about ppGpp and nutrient sensing? Maybe later once I show the trends]
 
-In order for cells to maxmize their rate of protein synthesis, $r_t
-\times R$, ribosomes must be able to rapidly match codons with their correct
-amino-acyl tRNAs. This requires synthesis of (or import, for rich media) amino acids that
-maintain the pool of amino-acyl tRNAs. To proceed, we therefore consider
-this maintenance as simply a balance between the the supply of amino acids
-by metabolic proteins and transporters, at a rate of $r_{aa}$ in units of amino acids per second,
-and consumption by ribosomes at a rate of $r_t
-\times R \times f_a$. The addition factor of $f_a$ accounts for the possibility
-that
+In order for cells to maxmize their rate of protein synthesis, $r_t \times R$,
+ribosomes must be able to rapidly match codons with their correct amino-acyl
+tRNAs. This requires synthesis of (or import, for rich media) amino acids that
+maintain the pool of amino-acyl tRNAs. To proceed, we therefore consider this
+maintenance as simply a balance between the the supply of amino acids by
+metabolic proteins and transporters, at a rate of $r_{aa}$ in units of amino
+acids per second, and consumption by ribosomes at a rate of $r_t \times R \times
+f_a$. The addition factor $f_a$ is the fraction of actively translating
+ribosomes, and allows us to account for the possibility of nonfunctional,
+immature ribosomes or active sequentration of ribosomes mediated by (p)ppGpp at
+slow growth \citep{dennis2004, dai2016}. During steady-state growth, we can
+assume that amino acid concentration, denoted by an effective pool
+$[AA]_{\text{eff}}$, is constant ($d[AA]_{\text{eff}}/dt$=0). The rates of suppy $r_{aa}$
+and consumption $r_t \ R \ f_a$ are related to $[AA]_{\text{eff}}$ over an average cell cycle
+by,
 
+\begin{equation}
+\int_{0}^{\tau} \frac{d[AA]_{\text{eff}}}{dt} dt =  \int_{0}^{\tau} ([r_{aa}] - [r_t \ R \ f_a]) dt,
+\end{equation}
+where the square brackets indicate units of concentration per time. Solving this allows us to write,
 
-
+\begin{equation}
+[AA]_{\text{eff}} =  ([r_{aa}] - [r_t \ R \ f_a]) \tau.
+\end{equation}
+Alternatively, for an average cell size of $V$,  $[r_{aa}] = r_{aa}/(V \ N_A)$ and $[r_t \ R \ f_a] = (r_t \ R \ f_a)/(V \ N_A)$, where $N_A$ is Avogadro's number. Using the rate  we can rewrite the rates on the right hand size 
 
 
 [important point is that as resources become limiting, cells are able to tune and minimize

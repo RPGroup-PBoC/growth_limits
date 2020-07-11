@@ -4,7 +4,41 @@
 % growth under limiting nutrient conditions, and in Supplemental
 % Section XX we consider this slow growth regime further.
 
+% While this dependence between cell size and ribosomal abundance is apparent
+% across moderate to fast growth rates, it is worth noting that
+
+% This scaling behavior is likely to change at slow growth rates (below $\lambda
+% \approx 0.5\,\text{hr}^{-1}$). Here, the number of ribosomes $R$ no longer
+% reflects the cell's protein synthesis capacity, so far taken to be $r_t \ R$.
+% Instead, cells reduce the number of actively translating ribosomes through the
+% additional regulatory control of the small-molecule alarmone, guanosine
+% pentaphosphate [(p)ppGpp] \citep{dai2016} [more citations].
+
 \subsection{[Header, Fill me in???]}
+
+The dependence between cell size, actively translating ribosomes, and growth
+rate, suggests the possibility that cells are tuning their size and ribosomal
+abundance as a way to match the their biosynthetic capacity to the available
+nutrient conditions. Indeed, as one example, deletion of the major glucose
+transporter [] doesn't just limit carbon uptake and growth (reduced about
+two-fold), but rather, cells also reduce their ribosomal fraction about two-fold
+\citep{dai2016}. Under changes of  stress and nutrient limitation, bacteria rely
+on secondary-messenger molecules  to quickly respond to and adjust to changes in
+their environment.  In \textit{E. coli}, this is mediated through the
+small-molecule alarmones, guanosine pentaphosphate [(p)ppGpp] \citep{dai2016}
+[more citations]. 
+
+ whose concentration in a direct response to
+
+During amino acid starvation, deacylated tRNAs accumulate and enter the A-site, thereby strongly activating the (p)ppGpp syn- thesis activity of RelA29 (FIG. 2a).
+
+
+
+there
+are examples where
+
+In loose terms , show that cells are
+
 
 The translation-limited growth rate (\EQ{translation_limit_growth_rate})
 highlights the necessity for a cell to increase its ribosomal fraction to
@@ -18,7 +52,21 @@ provide intuition into the additional constraints on that arise if cells did not
 tune their ribosomal abundance and cell size according to the available nutrient
 conditions [ref figure (A)].
 
-% [do I talk about ppGpp and nutrient sensing? Maybe later once I show the trends]
+% As a final comment, it has recently been shown that growth in a (p)ppGpp null
+% strain also lacked both the condition-dependent changes in $\langle$\#
+% ori$\rangle$ as well as changes in cell size across different growth condition.
+% Instead, cells always exhibited a high ratio of $\langle$\# ori$\rangle$ to
+% $\langle$\# ter$\rangle$, irrespective of growth rate, and a cell size that was
+% more consistent with a fast growth state where (p)ppGpp levels are normally low
+% \citep{fernandezcoll2020} and ribosomal fraction is high \citep{zhu2019}. There
+% is also evidence that this may be achived through inhibition of DNA replication
+% initiation \citep{kraemer2019}. These observations raise the possibility that
+% (p)ppGpp may be playing a causal role in tuning $\langle$\# ori$\rangle$ and
+% cell size, which ultimately allows the cell to vary its ribosomal content
+% according to nutrient availability.
+
+[Develop idea that aa/nutrient sensing may be the way cells are tuning their size to
+match nutrient condition.]
 
 In order for cells to maximize their rate of protein synthesis, $r_t \ R$,
 ribosomes must be able to rapidly match codons with their correct amino-acyl
@@ -110,9 +158,17 @@ Maximize Growth According to Nutrient availability}
 \subsubsection{\textit{E. coli} Maintains Growth in Poor Nutrient Conditions by a
 Reduction of Translation Activity.}
 
+In the slowest growth condition considered in the proteomic data, cells were
+grown in a chemostat ($\lambda$ = 0.12 hr$^{-1}$), and were found to have a ribosomal
+mass fraction of $\Phi_R \approx 0.06$ and of order 10$^4$ ribosomes per cell.
+In this absence of any additional regulation, we would predict a very low elongation rate of $r_t = X aa/s$.
 
+In contrast, wild-type \textit{E. coli} maintain a relatively high
+elongation rate even in stationary phase ($\approx$ 8 AA/s, \citep{dai2016,
+dai2018}).
 
-% \subsection{Growth in Poor Nutrient Conditions Requires Inhibition of Ribosomes.}
+Careful
+
 
 In \FIG{}(B), we see that in the poorest nutrient conditions
 [NB: start by highlighting the dilemma when cells have excess ribosomes].
@@ -122,7 +178,9 @@ meaning that consumption exceeds the rate of synthesis? In the slowest  growth
 conditions, we find a minimum ribosomal mass fraction of $\Phi_R \approx 0.06$
 and  of order 10$^4$ ribosomes per cell.  Without the additional regulatory
 control noted above, there would be a point where  this imbalance would occur if
-all ribosomes were actively translating  (\FIG{translation_ecoli_partB}). Such a
+all ribosomes were actively translating  (\FIG{translation_ecoli_partB}).
+
+Such a
 scenario would prevent continuous growth, and indeed for (p)ppGpp null strains,
 cells only grow in minimal media if additional amino acid supplements are
 present. In contrast, wild-type \textit{E. coli} maintain a relatively high
@@ -229,15 +287,3 @@ concentration.
 %
 %
 %
-% As a final comment, it has recently been shown that growth in a (p)ppGpp null
-% strain also lacked both the condition-dependent changes in $\langle$\#
-% ori$\rangle$ as well as changes in cell size across different growth condition.
-% Instead, cells always exhibited a high ratio of $\langle$\# ori$\rangle$ to
-% $\langle$\# ter$\rangle$, irrespective of growth rate, and a cell size that was
-% more consistent with a fast growth state where (p)ppGpp levels are normally low
-% \citep{fernandezcoll2020} and ribosomal fraction is high \citep{zhu2019}. There
-% is also evidence that this may be achived through inhibition of DNA replication
-% initiation \citep{kraemer2019}. These observations raise the possibility that
-% (p)ppGpp may be playing a causal role in tuning $\langle$\# ori$\rangle$ and
-% cell size, which ultimately allows the cell to vary its ribosomal content
-% according to nutrient availability.

@@ -14,62 +14,50 @@
 % additional regulatory control of the small-molecule alarmone, guanosine
 % pentaphosphate [(p)ppGpp] \citep{dai2016} [more citations].
 
-\subsection{[Header, Fill me in???]}
+\subsection{[Header for final section??]}
 
-The dependence between cell size, actively translating ribosomes, and growth
-rate, suggest the possibility that cells tune their size and ribosomal abundance
-to match their biosynthetic capacity to the available nutrient conditions. As
-one illustration of this, disruption of the major glucose uptake system PTS
-through deletion ptsG doesn't just simply limit carbon uptake and therefore growth,
-which is reduced about two-fold. Rather, cells also accommodate this perturbation
-by reducing their ribosomal fraction about two-fold \citep{dai2016}, matching
-the expectation from \EQ{translation_limit_growth_rate} if cells are growing
-near their maximal translation capacity.
+The relationship between cell size, actively translating ribosomes, and growth
+rate, suggest that cells tune their size and ribosomal abundance
+as a way to match their biosynthetic capacity to the available nutrient
+conditions. As one illustration of this, disruption of the major glucose uptake
+system PTS through the deletion of \textit{ptsG} doesn't just simply limit
+carbon uptake and growth, which is reduced about two-fold. Rather, cells
+accommodate this perturbation by also reducing their ribosomal fraction about
+two-fold \citep{dai2016}; matching the expected decrease in growth rate governed
+by \EQ{translation_limit_growth_rate} for this change in ribosomal fraction. In
+this final section we consider a minimal model of growth rate control. We use it
+to quantitatively show how changes in ribosomal content and total proteomic mass
+will allow cells to maximize their growth rate according to the available
+nutrient conditions.
 
-Under changes of stress and nutrient limitation, bacteria rely on
-secondary-messenger molecules to quickly respond to and adjust to changes in
-their environment. In \textit{E. coli}, response to changes in amino acid
-availability is largely mediated through the small-molecule alarmones, guanosine
-pentaphosphate [(p)ppGpp] \citep{dai2016} [more citations]. Amino acid
-starvation causes the accumulation of deacylated tRNAs at the ribosome's A-site
-and leads to a strong activation of (p)ppGpp synthesis activity by RelA as part
-of the stringent response \citep{hauryliuk2015}.
+To sense changes in nutrient conditions, bacteria rely on secondary-messenger
+molecules like the alarmones, guanosine pentaphosphate [(p)ppGpp], which causes
+global changes in transcriptional and translational activity.  In \textit{E.
+coli}, amino acid starvation causes the accumulation of deacylated tRNAs at the
+ribosome's A-site and this leads to a strong activation of (p)ppGpp synthesis
+activity by RelA \citep{hauryliuk2015}.  The dramatic decrease in active
+ribosomal fraction that is now apparent for growth rates below about 0.5
+hr$^{-1}$ ($f_a \approx$ 0.5 at a growth rate of about 0.3 hr$^{-1}$,
+\cite{dai2016}) shows that (p)ppGpp also coordinates growth in poor nutrient
+conditions. Furthermore, (p)ppGpp can inhibit DNA replication initiation by
+mediating a change in transcriptional acitivty and the supercoiling state of the
+origin of replication \citep{kraemer2019}. These observations all raise the
+possibility that it through (p)ppGpp that cells mediate the growth-rate dependent
+changes in $\langle$\# ori$\rangle$, cell size and
+ribosomal abundance \citep{zhu2019, Buke2020}. Indeed, recent work in a (p)ppGpp null
+strain found that cells exhibited a high ratio of $\langle$\# ori$\rangle$ to
+$\langle$\# ter$\rangle$ and cell size that was more consistent with a fast
+growth state where (p)ppGpp levels are normally low \citep{fernandezcoll2020}.
 
+To allow us to consider this hypothesis using a minimal model, we proceed by
+assuming that the rate of elongation $r_t$ depends only on the availability of
+amino acids (and, therefore, also amino-acyl tRNAs). It is through the synthesis
+and availability of amino acids that we will assume cells adjust their ribosomal
+abundance and cell size via (p)ppGpp. Other molecular players required for translation
+like elongation factors and GTP are considered in sufficient abundance, which appear
+to be valid assumptions given our analysis of the proteomic data and energy
+production thus far.
 
-
-there
-are examples where
-
-In loose terms , show that cells are
-
-
-The translation-limited growth rate (\EQ{translation_limit_growth_rate})
-highlights the necessity for a cell to increase its ribosomal fraction to
-maximize its growth rate. However, it ignores the absolute constraints of a
-growing cell, which in particular, require resources to support each translating
-ribosomes and the space to house them. For almost every one of our estimates,
-the proteomic data suggest that cells predominantly vary their protein
-abundances in order to keep pace with the demands of a growing cell. In this
-final section we consider a minimal model of growth rate control. We use it to
-provide intuition into the additional constraints on that arise if cells did not
-tune their ribosomal abundance and cell size according to the available nutrient
-conditions [ref figure (A)].
-
-% As a final comment, it has recently been shown that growth in a (p)ppGpp null
-% strain also lacked both the condition-dependent changes in $\langle$\#
-% ori$\rangle$ as well as changes in cell size across different growth condition.
-% Instead, cells always exhibited a high ratio of $\langle$\# ori$\rangle$ to
-% $\langle$\# ter$\rangle$, irrespective of growth rate, and a cell size that was
-% more consistent with a fast growth state where (p)ppGpp levels are normally low
-% \citep{fernandezcoll2020} and ribosomal fraction is high \citep{zhu2019}. There
-% is also evidence that this may be achived through inhibition of DNA replication
-% initiation \citep{kraemer2019}. These observations raise the possibility that
-% (p)ppGpp may be playing a causal role in tuning $\langle$\# ori$\rangle$ and
-% cell size, which ultimately allows the cell to vary its ribosomal content
-% according to nutrient availability.
-
-[Develop idea that aa/nutrient sensing may be the way cells are tuning their size to
-match nutrient condition.]
 
 In order for cells to maximize their rate of protein synthesis, $r_t R$,
 ribosomes must be able to rapidly match codons with their correct amino-acyl
@@ -83,11 +71,10 @@ relationship between these parameters and the effective pool of amino acids,
 denoted by $[AA]_{\text{eff}}$, and then use this to calculate the rate of
 elongation $r_t$.
 
-\subsubsection{A minimal model of nutrient-limited growth}
 
 
-The rate of elongation $r_t$ will depend on the availability of amino acids
-(and, also amino-acyl tRNAs) in the cell. To allow us to consider the effects of
+
+To allow us to consider the effects of
 any limiting metabolic supply (i.e. insufficient $r_{aa}$), or excessive
 consumption by ribosomes (i.e. high $R f_a$), we treat $[AA]_{\text{eff}}$ as
 a potential rate-limiting step during translation. Specifically, we assume that
@@ -97,11 +84,31 @@ in peptide elongation that will not depend on the amino acid concentration. The
 time to translate each codon is given by the inverse of the elongation rate
 $r_t$, which can be written as,
 
+
+the availability of amino acids
+(and, also amino-acyl tRNAs) in the cell. To allow us to consider the effects of
+any limiting metabolic supply (i.e. insufficient $r_{aa}$), or excessive
+consumption by ribosomes (i.e. high $R f_a$), we treat $[AA]_{\text{eff}}$ as
+a potential rate-limiting step during translation.
+
+\subsubsection{A minimal model of nutrient-limited growth}
+
+We begin by considering amino acids as a
+single species, with cellular concentration $[AA]_{\text{eff}}$.
+The rate of elongation $r_t$ will depend on how quickly ribosomes can
+match codons with the correct amino-acyl tRNA, as well as the remaining steps
+required for peptide elongation.
+We therefore consider that elongation will depend on two course-grained timescales, 1) the
+time to find and bind each correct amino-acyl tRNAs, and 2) the remaining steps
+in peptide elongation that will not depend on the amino acid concentration. The
+time to translate each codon is given by the inverse of the elongation rate
+$r_t$, which can be written as,
+
 \begin{equation}
 \frac{1}{r_t} = \frac{1}{k_{on} B [AA]_{\text{eff}}} + \frac{1}{r_{t}^{\text{max}}}.
 \end{equation}
-Here we have assumed that the rate of binding by amino-acyl tRNA $k_{on}$ will
-be proportional to $[AA]_{\text{eff}}$ in limiting conditions [cite?] by some
+Here we have assumed that the rate of binding by amino-acyl tRNA $k_{on}$ is
+proportional to $[AA]_{\text{eff}}$ in limiting conditions [cite?] by some
 proportionality constant $B$. The second term on the right-hand side reflects a second
 assumption that elongation factors and GTP are in sufficient abundance across
 growth conditions and a maximum elongation rate $r_{t}^{\text{max}}$
@@ -114,15 +121,17 @@ r_t = \frac{r_{t}^{\text{max}}}{1 + K_d/[AA]_{\text{eff}}}.
 \label{eq:rt_kd_simple}
 \end{equation}
 
-
 During steady-state
-growth the amino acid concentration is constant ($d[AA]_{\text{eff}}/dt$=0) and the rates of supply
-$r_{aa}$ and consumption $r_t R f_a$ are related to $[AA]_{\text{eff}}$ by,
+growth the amino acid concentration is constant ($d[AA]_{\text{eff}}/dt$=0). $[AA]_{\text{eff}}$
+will relate to the
+rate of amino acid synthesis (or import, for rich media)
+$r_{aa}$ and consumption $r_t R f_a$ by,
 
 \begin{equation}
 \int_{0}^{\tau} \frac{d[AA]_{\text{eff}}}{dt} dt =  \int_{0}^{\tau} ([r_{aa}] - [r_t R f_a]) dt,
 \end{equation}
-where the time from 0 to $tau$ is a single cell doubling, and the square brackets indicate of concentration per time. Solving this, we find that
+where the time from 0 to $tau$ is a single cell doubling, and the square
+brackets indicate of concentration per time. Solving this, we find that
 
 \begin{equation}
 [AA]_{\text{eff}} =  ([r_{aa}] - [r_t R f_a]) \tau.
@@ -139,7 +148,6 @@ can also rewrite this as,
 \end{equation}
 
 
-
 By plugging in \EQ{aa_final} into \EQ{rt_kd_simple}, which also depends on $r_t$, we
 can solve for $r_t$ explicitly. Its solution are the roots of a quadratic equation,
 with the positive given by,
@@ -154,111 +162,109 @@ subsections we use this model to explore how the cell's metabolic capacity
 of for (p)ppGpp in mitigating translational activity at slow growth, where the
 number of ribosomes is in excess.
 
-\subsubsection{\textit{E. coli} Tune Ribosomal Content to
-Maximize Growth According to Nutrient availability}
+\subsubsection{Optimal Growth Rate, Ribosomal Content, and Cell Size Depend on Nutrient
+Availability and Metabolic Capacity.}
 
-
-
-\subsubsection{\textit{E. coli} Maintains Growth in Poor Nutrient Conditions by a
-Reduction of Translation Activity.}
-
-In the slowest growth condition considered in the proteomic data, cells were
-grown in a chemostat ($\lambda$ = 0.12 hr$^{-1}$), and were found to have a ribosomal
-mass fraction of $\Phi_R \approx 0.06$ and of order 10$^4$ ribosomes per cell.
-In this absence of any additional regulation, we would predict a very low elongation rate of $r_t = X aa/s$.
-
-In contrast, wild-type \textit{E. coli} maintain a relatively high
-elongation rate even in stationary phase ($\approx$ 8 AA/s, \citep{dai2016,
-dai2018}).
-
-Careful
-
-
-In \FIG{}(B), we see that in the poorest nutrient conditions
-[NB: start by highlighting the dilemma when cells have excess ribosomes].
-
-How do cells regulate protein synthesis when amino acids become limiting,
-meaning that consumption exceeds the rate of synthesis? In the slowest  growth
-conditions, we find a minimum ribosomal mass fraction of $\Phi_R \approx 0.06$
-and  of order 10$^4$ ribosomes per cell.  Without the additional regulatory
-control noted above, there would be a point where  this imbalance would occur if
-all ribosomes were actively translating  (\FIG{translation_ecoli_partB}).
-
-Such a
-scenario would prevent continuous growth, and indeed for (p)ppGpp null strains,
-cells only grow in minimal media if additional amino acid supplements are
-present. In contrast, wild-type \textit{E. coli} maintain a relatively high
-elongation rate even in stationary phase ($\approx$ 8 AA/s, \citep{dai2016,
-dai2018}).
-
-To better understand how regulation of ribosomes influence growth rate at
-slow growth, we consider a coarse-grained model that relates elongation
-rate to a limiting supply of amino acids, which for simplicity we treat as a
-single, effective rate-limiting species $[AA]_{eff}$. Under such a scenario, the elongation
-rate $r_t$ can be described as depending on the maximum elongation rate ($r_t^{max}
-\approx$ 17.1 AA/s, \citep{dai2016, dai2018}), an effective binding constant
-$K_D$ between the pool of amino acids and their amino-acyl tRNAs, and the limiting
-amino acid concentration $[AA]_{eff}$,
-
-\begin{equation}
-r_t = r_t^{max} \cdot \frac{1}{1 + K_D / [AA]_{eff}}.
-\label{eq:rate_Kd}
-\end{equation}
-For cells growing in minimal medium supplemented with glucose, the amino acid
-concentration is of order 100 mM (BNID: 110093, \citep{milo2010, bennett2009}).
-To estimate  $K_D$, we note that for a growth rate of about 0.6 hr$^{-1}$
-\cite{dai2016} measured an elongation rate of about 12.5 AA$\cdot$s$^{-1}$,
-yielding $K_D \approx 40$ mM. The maintenance of this amino acid pool
-$[AA]_{eff}$ will depend on the difference between the synthesis/supply rate of
-amino acids $r_{AA}$ and consumption by ribosomes $r_t \times R \times f_a$,
-where we use $f_a$ to account for the possible reduction of actively translating
-ribosomes (see Supplemental Appendix XX for further details on this model).
-
-In \FIG{translation_ecoli_partB}(B), we show the relationship between the growth
-rate and elongation rate as a function of the number of actively translating
-ribosomes. Here, growth rate is now determined by the active ribosomal fraction via
-\begin{equation}
-\lambda_\text{translation-limited} \approx \frac{r_t}{L_R}  \Phi_R f_a.
-\label{eq:translation_limit_growth_rate_2}
-\end{equation}
-If we consider constant values of amino acid synthesis rate $r_{AA}$ (dashed
-lines) to reflect the available parameter space for a specific growth condition,
-the fastest growth rates result from  maximization of the fraction of actively translating
-ribosomes. When we consider the experimental measurements from \cite{dai2018}
-(yellow circles), reflecting growth in different nutrient conditions, we see
-that although $R \times f_a$ is reduced in poorer nutrient conditions, it is
-reduced in a manner such that $[AA]_{eff}$ is relatively constant. Given our estimate
-$K_D \approx$ 40 mM,  we would only expect a decrease from 100 mM to about 35 mM
-in the slowest growth conditions. While experimental data is scarce, data from
-\cite{bennett2009} show that amino acid
-concentrations only decrease to about 60 mM for cells grown in minimal media
-supplemented with acetate ($\lambda \approx$  0.3 hr$^{-1}$ in our proteomic data)
-\citep{bennett2009}, qualitatively consistent with our expectations. One
-explanation for the experimental data is that the active fraction of the
-ribosome pool is regulated in order to maintain a sufficient supply of amino acids for
-growth. Any further increase in $R \times f_a$ at constant $r_{AA}$ would
-otherwise be associated with an additional drop in cellular amino acid
-concentration.
-
-\begin{figure*}
-    \begin{fullwidth}
-    \centering{
-        \includegraphics{main_figs/fig8_ribosome_growth_limit_ecoli_b_2.pdf}
-        \caption{\textbf{\textit{E. coli} must regulate ribosomal activity in
-        limiting nutrient conditions. }
-        (A) Translation elongation rate is plotted
-        as a function of the number of actively translating ribosomes $R
-        f_a$. Dashed lines correspond to a range of amino acid synthesis rates
-        $r_{aa}$, from 10$^3$ to 10$^6$. Growth rates are calculated according
-        to Equation 1, assuming a constant ribosomal fraction of 8 percent. See
-        appendix XX for additional details. (B) Experimental data from \citep{dai2016}
-        are used to estimate the fraction of actively translating ribosomes. The solid line represents the translation-limited
-        growth rate for ribosomes elongating at 17.1 AA/s.}
-        \label{fig:translation_ecoli_partB}
-    }
-    \end{fullwidth}
-\end{figure*}
-
+%
+%
+% \subsubsection{\textit{E. coli} Maintains Growth in Poor Nutrient Conditions by a
+% Reduction of Translation Activity.}
+%
+% In the slowest growth condition considered in the proteomic data, cells were
+% grown in a chemostat ($\lambda$ = 0.12 hr$^{-1}$), and were found to have a ribosomal
+% mass fraction of $\Phi_R \approx 0.06$ and of order 10$^4$ ribosomes per cell.
+% In this absence of any additional regulation, we would predict a very low elongation rate of $r_t = X aa/s$.
+%
+% In contrast, wild-type \textit{E. coli} maintain a relatively high
+% elongation rate even in stationary phase ($\approx$ 8 AA/s, \citep{dai2016,
+% dai2018}).
+%
+% Careful
+%
+%
+% In \FIG{}(B), we see that in the poorest nutrient conditions
+% [NB: start by highlighting the dilemma when cells have excess ribosomes].
+%
+% How do cells regulate protein synthesis when amino acids become limiting,
+% meaning that consumption exceeds the rate of synthesis? In the slowest  growth
+% conditions, we find a minimum ribosomal mass fraction of $\Phi_R \approx 0.06$
+% and  of order 10$^4$ ribosomes per cell.  Without the additional regulatory
+% control noted above, there would be a point where  this imbalance would occur if
+% all ribosomes were actively translating  (\FIG{translation_ecoli_partB}).
+%
+% Such a
+% scenario would prevent continuous growth, and indeed for (p)ppGpp null strains,
+% cells only grow in minimal media if additional amino acid supplements are
+% present. In contrast, wild-type \textit{E. coli} maintain a relatively high
+% elongation rate even in stationary phase ($\approx$ 8 AA/s, \citep{dai2016,
+% dai2018}).
+%
+% To better understand how regulation of ribosomes influence growth rate at
+% slow growth, we consider a coarse-grained model that relates elongation
+% rate to a limiting supply of amino acids, which for simplicity we treat as a
+% single, effective rate-limiting species $[AA]_{eff}$. Under such a scenario, the elongation
+% rate $r_t$ can be described as depending on the maximum elongation rate ($r_t^{max}
+% \approx$ 17.1 AA/s, \citep{dai2016, dai2018}), an effective binding constant
+% $K_D$ between the pool of amino acids and their amino-acyl tRNAs, and the limiting
+% amino acid concentration $[AA]_{eff}$,
+%
+% \begin{equation}
+% r_t = r_t^{max} \cdot \frac{1}{1 + K_D / [AA]_{eff}}.
+% \label{eq:rate_Kd}
+% \end{equation}
+% For cells growing in minimal medium supplemented with glucose, the amino acid
+% concentration is of order 100 mM (BNID: 110093, \citep{milo2010, bennett2009}).
+% To estimate  $K_D$, we note that for a growth rate of about 0.6 hr$^{-1}$
+% \cite{dai2016} measured an elongation rate of about 12.5 AA$\cdot$s$^{-1}$,
+% yielding $K_D \approx 40$ mM. The maintenance of this amino acid pool
+% $[AA]_{eff}$ will depend on the difference between the synthesis/supply rate of
+% amino acids $r_{AA}$ and consumption by ribosomes $r_t \times R \times f_a$,
+% where we use $f_a$ to account for the possible reduction of actively translating
+% ribosomes (see Supplemental Appendix XX for further details on this model).
+%
+% In \FIG{translation_ecoli_partB}(B), we show the relationship between the growth
+% rate and elongation rate as a function of the number of actively translating
+% ribosomes. Here, growth rate is now determined by the active ribosomal fraction via
+% \begin{equation}
+% \lambda_\text{translation-limited} \approx \frac{r_t}{L_R}  \Phi_R f_a.
+% \label{eq:translation_limit_growth_rate_2}
+% \end{equation}
+% If we consider constant values of amino acid synthesis rate $r_{AA}$ (dashed
+% lines) to reflect the available parameter space for a specific growth condition,
+% the fastest growth rates result from  maximization of the fraction of actively translating
+% ribosomes. When we consider the experimental measurements from \cite{dai2018}
+% (yellow circles), reflecting growth in different nutrient conditions, we see
+% that although $R \times f_a$ is reduced in poorer nutrient conditions, it is
+% reduced in a manner such that $[AA]_{eff}$ is relatively constant. Given our estimate
+% $K_D \approx$ 40 mM,  we would only expect a decrease from 100 mM to about 35 mM
+% in the slowest growth conditions. While experimental data is scarce, data from
+% \cite{bennett2009} show that amino acid
+% concentrations only decrease to about 60 mM for cells grown in minimal media
+% supplemented with acetate ($\lambda \approx$  0.3 hr$^{-1}$ in our proteomic data)
+% \citep{bennett2009}, qualitatively consistent with our expectations. One
+% explanation for the experimental data is that the active fraction of the
+% ribosome pool is regulated in order to maintain a sufficient supply of amino acids for
+% growth. Any further increase in $R \times f_a$ at constant $r_{AA}$ would
+% otherwise be associated with an additional drop in cellular amino acid
+% concentration.
+%
+% \begin{figure*}
+%     \begin{fullwidth}
+%     \centering{
+%         \includegraphics{main_figs/fig8_ribosome_growth_limit_ecoli_b_2.pdf}
+%         \caption{\textbf{\textit{E. coli} must regulate ribosomal activity in
+%         limiting nutrient conditions. }
+%         (A) Translation elongation rate is plotted
+%         as a function of the number of actively translating ribosomes $R
+%         f_a$. Dashed lines correspond to a range of amino acid synthesis rates
+%         $r_{aa}$, from 10$^3$ to 10$^6$. Growth rates are calculated according
+%         to Equation 1, assuming a constant ribosomal fraction of 8 percent. See
+%         appendix XX for additional details.}
+%         \label{fig:translation_ecoli_partB}
+%     }
+%     \end{fullwidth}
+% \end{figure*}
+%
 
 %
 % [important point is that as resources become limiting, cells are able to tune and minimize
@@ -276,13 +282,7 @@ concentration.
 %
 %
 %
-% gives no intuition into the additional constraints of a growing
-% cell that we've consider throughout our estimates.
-%
-%
-%
-% quantifies the maximum rate of growth but ignores the additional constraint set  that there is a maximum rate us with a maximum
-%
+
 % [Figure idea: PART (A) Maybe we can consider that r_t*R sets the maximum rate of growth; but you also need to feed that engine and build the house to fit them.]
 %
 % [ When I get into slow growth regime; consider that IF R scales with <#ori>, ribosomes will have increasingly longer wait times for protein synthesis. Which is bad.

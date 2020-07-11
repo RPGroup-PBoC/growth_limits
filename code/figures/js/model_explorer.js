@@ -19,10 +19,17 @@ var R = data['R'];
 var Ra = [];
 var label = Number(fa * 100).toFixed(1)  + '% active';
 var leg = [];
+var supply = [];
+var consumed = [];
+var consumed_fa = [];
+var accum = [];
+var accum_fa = [];
+
 for (var i = 0; i < R.length; i++) {
     Ra[i] = fa * R[i];
     leg[i] = label;
 }
+
 
 console.log(Ra)
 // Given updated values, compute new values. 
@@ -36,6 +43,20 @@ data['lambda_fa'] = lambda_fa;
 data['elongation_rate'] = r_t;
 data['elongation_rate_fa'] = r_t_fa;
 data['leg'] = leg;
+
+// Compute the consumption and production levels. 
+for (var i = 0; i <  R.length; i++) {
+    supply[i] = r_aa;
+    consumed[i] = r_t[i] * R[i];
+    consumed_fa[i] = r_t[i] * R[i] * fa;
+    accum[i] = r_aa - r_t[i] * R[i];
+    accum_fa[i] = r_aa - r_t[i] * R[i] * fa;
+}
+data['supply'] = supply;
+data['consumed'] = consumed;
+data['consumed_fa'] = consumed_fa;
+data['accum'] = accum;
+data['accum_fa'] = accum_fa;
 
 // Push the changes to the DOM.
 source.change.emit();

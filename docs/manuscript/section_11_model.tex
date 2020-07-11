@@ -26,7 +26,7 @@ two-fold), but rather, cells also reduce their ribosomal fraction about two-fold
 on secondary-messenger molecules  to quickly respond to and adjust to changes in
 their environment.  In \textit{E. coli}, this is mediated through the
 small-molecule alarmones, guanosine pentaphosphate [(p)ppGpp] \citep{dai2016}
-[more citations]. 
+[more citations].
 
  whose concentration in a direct response to
 
@@ -68,13 +68,13 @@ conditions [ref figure (A)].
 [Develop idea that aa/nutrient sensing may be the way cells are tuning their size to
 match nutrient condition.]
 
-In order for cells to maximize their rate of protein synthesis, $r_t \ R$,
+In order for cells to maximize their rate of protein synthesis, $r_t R$,
 ribosomes must be able to rapidly match codons with their correct amino-acyl
 tRNAs. At minimum, this requires synthesis of (or import, for rich media) amino
 acids that maintain the pool of amino-acyl tRNAs. We therefore consider this
 maintenance as simply a balance between the the supply of amino acids by
 metabolic proteins and transporters, at a rate of $r_{aa}$ in units of amino
-acids per second, and consumption by ribosomes at a rate of $r_t \ R \ f_a$. The
+acids per second, and consumption by ribosomes at a rate of $r_t R f_a$. The
 addition factor $f_a$ refers to the fraction of actively translating ribosomes,
 and allows us to account for the possibility of nonfunctional, immature
 ribosomes or active sequestration of ribosomes mediated by (p)ppGpp at slow
@@ -87,31 +87,31 @@ elongation $r_t$.
 
 During steady-state
 growth the amino acid concentration is constant ($d[AA]_{\text{eff}}/dt$=0) and the rates of supply
-$r_{aa}$ and consumption $r_t \ R \ f_a$ are related to $[AA]_{\text{eff}}$ by,
+$r_{aa}$ and consumption $r_t R f_a$ are related to $[AA]_{\text{eff}}$ by,
 
 \begin{equation}
-\int_{0}^{\tau} \frac{d[AA]_{\text{eff}}}{dt} dt =  \int_{0}^{\tau} ([r_{aa}] - [r_t \ R \ f_a]) dt,
+\int_{0}^{\tau} \frac{d[AA]_{\text{eff}}}{dt} dt =  \int_{0}^{\tau} ([r_{aa}] - [r_t R f_a]) dt,
 \end{equation}
 where the time from 0 to $tau$ is a single cell doubling, and the square brackets indicate of concentration per time. Solving this, we find that
 
 \begin{equation}
-[AA]_{\text{eff}} =  ([r_{aa}] - [r_t \ R \ f_a]) \tau.
+[AA]_{\text{eff}} =  ([r_{aa}] - [r_t R f_a]) \tau.
 \end{equation}
-Alternatively, for an average cell size of $V$,  $[r_{aa}] = r_{aa}/(V \ N_A)$
-and $[r_t \ R \ f_a] = (r_t \ R \ f_a)/(V \ N_A)$, where $N_A$ is Avogadro's
+Alternatively, for an average cell size of $V$,  $[r_{aa}] = r_{aa}/(V N_A)$
+and $[r_t R f_a] = (r_t R \ f_a)/(V N_A)$, where $N_A$ is Avogadro's
 number. Since $\tau = ln(2)/\lambda$, which is also related to the parameters
-$r_t \ R \ f_a$ and $N_{aa}$ through \EQ{mass_balance}, we
+$r_t R f_a$ and $N_{aa}$ through \EQ{mass_balance}, we
 can also rewrite this as,
 
 \begin{equation}
-[AA]_{\text{eff}} = \frac{ln(2) \ N_{aa}}{V \ N_A} \left(\frac{r_{aa}}{r_t \ R \ f_a} - 1 \right) .
+[AA]_{\text{eff}} = \frac{ln(2) N_{aa}}{V N_A} \left(\frac{r_{aa}}{r_t R f_a} - 1 \right) .
 \label{eq:aa_final}
 \end{equation}
 
 The rate of elongation $r_t$ will depend on the availability of amino acids
 (and, also amino-acyl tRNAs) in the cell. To allow us to consider the effects of
 any limiting metabolic supply (i.e. insufficient $r_{aa}$), or excessive
-consumption by ribosomes (i.e. high $R \ f_a$), we treat $[AA]_{\text{eff}}$ as
+consumption by ribosomes (i.e. high $R f_a$), we treat $[AA]_{\text{eff}}$ as
 a potential rate-limiting step during translation. Specifically, we assume that
 the rate of elongation $r_t$ depends on two course-grained timescales, 1) the
 time to find and bind each correct amino-acyl tRNAs, and 2) the remaining steps
@@ -141,10 +141,10 @@ can solve for $r_t$ explicitly. Its solution are the roots of a quadratic equati
 with the positive given by,
 
 \begin{equation}
-r_t = \frac{\sqrt{c^2 + 4 c \ k \ r_{t}^{\text{max}} - 2 \ c \ r_{t}^{\text{max}} + (r_{t}^{\text{max}})^2} - c - r_{t}^{\text{max}}}{2 \ (k-1)}.
+r_t = \frac{\sqrt{c^2 + 4 c k r_{t}^{\text{max}} - 2 c r_{t}^{\text{max}} + (r_{t}^{\text{max}})^2} - c - r_{t}^{\text{max}}}{2 \ (k-1)}.
 \label{eq:rt_final}
 \end{equation}
-Here, $c = r_{aa}/(R \ f_a)$ and $k = N_A \ V \ K_d / N_{aa}$. In the final two
+Here, $c = r_{aa}/(R f_a)$ and $k = N_A V K_d / N_{aa}$. In the final two
 subsections we use this model to explore how the cell's metabolic capacity
 ($r_{aa}$) constrains the maximum growth rate, and then explain an apparent role
 of for (p)ppGpp in mitigating translational activity at slow growth, where the

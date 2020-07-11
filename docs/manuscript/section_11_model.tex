@@ -40,7 +40,7 @@ ribosomal fraction that is now apparent for growth rates below about 0.5
 hr$^{-1}$ ($f_a \approx$ 0.5 at a growth rate of about 0.3 hr$^{-1}$,
 \cite{dai2016}) shows that (p)ppGpp also coordinates growth in poor nutrient
 conditions. Furthermore, (p)ppGpp can inhibit DNA replication initiation by
-mediating a change in transcriptional acitivty and the supercoiling state of the
+mediating a change in transcriptional activity and the supercoiling state of the
 origin of replication \citep{kraemer2019}. These observations all raise the
 possibility that it through (p)ppGpp that cells mediate the growth-rate dependent
 changes in $\langle$\# ori$\rangle$, cell size and
@@ -49,58 +49,25 @@ strain found that cells exhibited a high ratio of $\langle$\# ori$\rangle$ to
 $\langle$\# ter$\rangle$ and cell size that was more consistent with a fast
 growth state where (p)ppGpp levels are normally low \citep{fernandezcoll2020}.
 
-To allow us to consider this hypothesis using a minimal model, we proceed by
-assuming that the rate of elongation $r_t$ depends only on the availability of
-amino acids (and, therefore, also amino-acyl tRNAs). It is through the synthesis
-and availability of amino acids that we will assume cells adjust their ribosomal
-abundance and cell size via (p)ppGpp. Other molecular players required for translation
-like elongation factors and GTP are considered in sufficient abundance, which appear
+To allow us to consider this hypothesis we proceed by assuming that the rate of
+elongation $r_t$ depends only on the availability of amino acids (and,
+therefore, also amino-acyl tRNAs). It is through the synthesis and availability
+of amino acids that we will assume cells adjust their ribosomal abundance and
+cell size via (p)ppGpp. Other molecular players required for translation like
+elongation factors and GTP are considered in sufficient abundance, which appear
 to be valid assumptions given our analysis of the proteomic data and energy
 production thus far.
 
 
-In order for cells to maximize their rate of protein synthesis, $r_t R$,
-ribosomes must be able to rapidly match codons with their correct amino-acyl
-tRNAs. At minimum, this requires synthesis of (or import, for rich media) amino
-acids that maintain the pool of amino-acyl tRNAs. We therefore consider this
-maintenance as simply a balance between the the supply of amino acids by
-metabolic proteins and transporters, at a rate of $r_{aa}$ in units of amino
-acids per second, and consumption by ribosomes at a rate of $r_t R f_a$.
-To proceed we will first determine the
-relationship between these parameters and the effective pool of amino acids,
-denoted by $[AA]_{\text{eff}}$, and then use this to calculate the rate of
-elongation $r_t$.
+\subsubsection{A Minimal Model of Nutrient-Limited Growth}
 
-
-
-
-To allow us to consider the effects of
-any limiting metabolic supply (i.e. insufficient $r_{aa}$), or excessive
-consumption by ribosomes (i.e. high $R f_a$), we treat $[AA]_{\text{eff}}$ as
-a potential rate-limiting step during translation. Specifically, we assume that
-the rate of elongation $r_t$ depends on two course-grained timescales, 1) the
-time to find and bind each correct amino-acyl tRNAs, and 2) the remaining steps
-in peptide elongation that will not depend on the amino acid concentration. The
-time to translate each codon is given by the inverse of the elongation rate
-$r_t$, which can be written as,
-
-
-the availability of amino acids
-(and, also amino-acyl tRNAs) in the cell. To allow us to consider the effects of
-any limiting metabolic supply (i.e. insufficient $r_{aa}$), or excessive
-consumption by ribosomes (i.e. high $R f_a$), we treat $[AA]_{\text{eff}}$ as
-a potential rate-limiting step during translation.
-
-\subsubsection{A minimal model of nutrient-limited growth}
-
-We begin by considering amino acids as a
-single species, with cellular concentration $[AA]_{\text{eff}}$.
-The rate of elongation $r_t$ will depend on how quickly ribosomes can
-match codons with the correct amino-acyl tRNA, as well as the remaining steps
-required for peptide elongation.
-We therefore consider that elongation will depend on two course-grained timescales, 1) the
-time to find and bind each correct amino-acyl tRNAs, and 2) the remaining steps
-in peptide elongation that will not depend on the amino acid concentration. The
+We begin by considering amino acids as a single species, with cellular
+concentration $[AA]_{\text{eff}}$. The rate of elongation $r_t$ will depend on
+how quickly ribosomes can match codons with their correct amino-acyl tRNA, as
+well as the remaining steps required for peptide elongation. We therefore
+consider that elongation will depend on two course-grained timescales, 1) the
+time to find and bind each correct amino-acyl tRNA, and 2) the remaining steps
+in peptide elongation that will not depend on the amino acid availability. The
 time to translate each codon is given by the inverse of the elongation rate
 $r_t$, which can be written as,
 

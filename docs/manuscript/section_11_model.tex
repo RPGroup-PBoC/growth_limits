@@ -1,13 +1,3 @@
-\newpage
-
-While this dependence between cell size and ribosomal abundance is apparent
-across moderate to fast growth rates, it is worth noting that this scaling is
-likely to change at slow growth rates (below $\lambda \approx
-0.5\,\text{hr}^{-1}$). Here, the number of ribosomes $R$ no longer reflects the
-cell's protein synthesis capacity, so far taken to be $r_t
-\ R$. Instead, cells reduce the number of actively translating
-ribosomes through the additional regulatory control of the small-molecule
-alarmone, guanosine pentaphosphate [(p)ppGpp] \citep{dai2016} [more citations].
 
 % This overabundance of ribosomes
 % provides different challenges on the ability of the cell to maintain steady-state
@@ -119,6 +109,95 @@ Maximize Growth According to Nutrient availability}
 
 \subsubsection{\textit{E. coli} Maintains Growth in Poor Nutrient Conditions by a
 Reduction of Translation Activity.}
+
+
+
+% \subsection{Growth in Poor Nutrient Conditions Requires Inhibition of Ribosomes.}
+
+In \FIG{}(B), we see that in the poorest nutrient conditions
+[NB: start by highlighting the dilemma when cells have excess ribosomes].
+
+How do cells regulate protein synthesis when amino acids become limiting,
+meaning that consumption exceeds the rate of synthesis? In the slowest  growth
+conditions, we find a minimum ribosomal mass fraction of $\Phi_R \approx 0.06$
+and  of order 10$^4$ ribosomes per cell.  Without the additional regulatory
+control noted above, there would be a point where  this imbalance would occur if
+all ribosomes were actively translating  (\FIG{translation_ecoli_partB}). Such a
+scenario would prevent continuous growth, and indeed for (p)ppGpp null strains,
+cells only grow in minimal media if additional amino acid supplements are
+present. In contrast, wild-type \textit{E. coli} maintain a relatively high
+elongation rate even in stationary phase ($\approx$ 8 AA/s, \citep{dai2016,
+dai2018}).
+
+To better understand how regulation of ribosomes influence growth rate at
+slow growth, we consider a coarse-grained model that relates elongation
+rate to a limiting supply of amino acids, which for simplicity we treat as a
+single, effective rate-limiting species $[AA]_{eff}$. Under such a scenario, the elongation
+rate $r_t$ can be described as depending on the maximum elongation rate ($r_t^{max}
+\approx$ 17.1 AA/s, \citep{dai2016, dai2018}), an effective binding constant
+$K_D$ between the pool of amino acids and their amino-acyl tRNAs, and the limiting
+amino acid concentration $[AA]_{eff}$,
+
+\begin{equation}
+r_t = r_t^{max} \cdot \frac{1}{1 + K_D / [AA]_{eff}}.
+\label{eq:rate_Kd}
+\end{equation}
+For cells growing in minimal medium supplemented with glucose, the amino acid
+concentration is of order 100 mM (BNID: 110093, \citep{milo2010, bennett2009}).
+To estimate  $K_D$, we note that for a growth rate of about 0.6 hr$^{-1}$
+\cite{dai2016} measured an elongation rate of about 12.5 AA$\cdot$s$^{-1}$,
+yielding $K_D \approx 40$ mM. The maintenance of this amino acid pool
+$[AA]_{eff}$ will depend on the difference between the synthesis/supply rate of
+amino acids $r_{AA}$ and consumption by ribosomes $r_t \times R \times f_a$,
+where we use $f_a$ to account for the possible reduction of actively translating
+ribosomes (see Supplemental Appendix XX for further details on this model).
+
+In \FIG{translation_ecoli_partB}(B), we show the relationship between the growth
+rate and elongation rate as a function of the number of actively translating
+ribosomes. Here, growth rate is now determined by the active ribosomal fraction via
+\begin{equation}
+\lambda_\text{translation-limited} \approx \frac{r_t}{L_R}  \Phi_R f_a.
+\label{eq:translation_limit_growth_rate_2}
+\end{equation}
+If we consider constant values of amino acid synthesis rate $r_{AA}$ (dashed
+lines) to reflect the available parameter space for a specific growth condition,
+the fastest growth rates result from  maximization of the fraction of actively translating
+ribosomes. When we consider the experimental measurements from \cite{dai2018}
+(yellow circles), reflecting growth in different nutrient conditions, we see
+that although $R \times f_a$ is reduced in poorer nutrient conditions, it is
+reduced in a manner such that $[AA]_{eff}$ is relatively constant. Given our estimate
+$K_D \approx$ 40 mM,  we would only expect a decrease from 100 mM to about 35 mM
+in the slowest growth conditions. While experimental data is scarce, data from
+\cite{bennett2009} show that amino acid
+concentrations only decrease to about 60 mM for cells grown in minimal media
+supplemented with acetate ($\lambda \approx$  0.3 hr$^{-1}$ in our proteomic data)
+\citep{bennett2009}, qualitatively consistent with our expectations. One
+explanation for the experimental data is that the active fraction of the
+ribosome pool is regulated in order to maintain a sufficient supply of amino acids for
+growth. Any further increase in $R \times f_a$ at constant $r_{AA}$ would
+otherwise be associated with an additional drop in cellular amino acid
+concentration.
+
+\begin{figure*}
+    \begin{fullwidth}
+    \centering{
+        \includegraphics{main_figs/fig8_ribosome_growth_limit_ecoli_b_2.pdf}
+        \caption{\textbf{\textit{E. coli} must regulate ribosomal activity in
+        limiting nutrient conditions. }
+        (A) Translation elongation rate is plotted
+        as a function of the number of actively translating ribosomes $R
+        f_a$. Dashed lines correspond to a range of amino acid synthesis rates
+        $r_{aa}$, from 10$^3$ to 10$^6$. Growth rates are calculated according
+        to Equation 1, assuming a constant ribosomal fraction of 8 percent. See
+        appendix XX for additional details. (B) Experimental data from \citep{dai2016}
+        are used to estimate the fraction of actively translating ribosomes. The solid line represents the translation-limited
+        growth rate for ribosomes elongating at 17.1 AA/s.}
+        \label{fig:translation_ecoli_partB}
+    }
+    \end{fullwidth}
+\end{figure*}
+
+
 %
 % [important point is that as resources become limiting, cells are able to tune and minimize
 % the entire cell mass - which enables them to grow faster]

@@ -49,20 +49,20 @@ ori$\rangle$ to $\langle$\# ter$\rangle$ and cell size that was more consistent
 with a fast growth state where (p)ppGpp levels are normally low
 \citep{fernandezcoll2020}.
 
-To allow us to consider this hypothesis in light of our growth-rate dependent proteomic
-data, we proceed by assuming that the rate of
-elongation $r_t$ depends only on the availability of amino acids (and,
-therefore, also amino-acyl tRNAs). It is through the synthesis and availability
-of amino acids that we will assume cells adjust their ribosomal abundance and
-cell size via (p)ppGpp. Other molecular players required for translation like
-elongation factors and GTP are considered in sufficient abundance, which appear
-to be valid assumptions given our analysis of the proteomic data and energy
-production thus far.
+To better understand how cells are able to maximize their growth rate under
+different extents of nutrient limitation, we proceed by assuming that the rate
+of elongation $r_t$ depends only on the availability of amino acids (and,
+therefore, also amino-acyl tRNAs). It is at the level of amino acid synthesis
+and availability that we will assume cells adjust their ribosomal abundance and
+cell size (\FIG{translation_model}(A)). Other molecular players required for translation like elongation
+factors and GTP are considered in sufficient abundance, which appear to be valid
+assumptions given our analysis of the proteomic data and energy production thus
+far.
 
 
 \subsubsection{A Minimal Model of Nutrient-Limited Growth}
 
-We begin by considering amino acids as a single species, with cellular
+For simplicity, we proceed by considering amino acids as a single species, with a cellular
 concentration $[AA]_{\text{eff}}$. The rate of elongation $r_t$ will depend on
 how quickly ribosomes can match codons with their correct amino-acyl tRNA, as
 well as the remaining steps required for peptide elongation. We therefore
@@ -131,21 +131,36 @@ number of ribosomes is in excess.
 \subsubsection{Optimal Growth Rate, Ribosomal Content, and Cell Size Depend on Nutrient
 Availability and Metabolic Capacity.}
 
-The way we will explore this model is to constrain the set
-of parameters based on those observed for \textit{E. coli} under nutrient limitation; namely, we
-will restrict the values of $R$, $N_{aa}$, and $V$ to those associated with the
-growth conditions in \cite{schmidt2016}. We will then consider how changes in
-the nutrient conditions, through the parameter $r_{aa}$,
-influence the maximum growth rate. In \FIG{translation_model}(A) we begin by plotting
-the elongation rate $r_t$ for a high and low value of $r_{aa}$, reflective of
-poor and rich nutrient conditions, respectively
-as a function of cellular ribosome concentration [NB: need to state values used - maybe rationalize
-choice of values based on the data].
-Here we find that for high values of $r_{aa}$, cells will be able to support protein
-synthesis and maintain a high rate of elongation. However, for poor nutrient conditions (low $r_{aa}$),
-a high abundance of ribosomes causes a dramatic decrease in $r_t$. In this regime,
-we see that a reduction of actively translating ribosomes , through the parameter $f_a$,
-allow cells to maintain a high rate of elongation even ... 
+The way we will explore this model is to constrain the set of parameters based
+on the growth-rate dependent proteomic changes in the available data under
+nutrient limitation;  namely, we will restrict the values of $R$, $N_{aa}$, and
+$V$ to those associated with the growth conditions in \cite{schmidt2016}. We
+will then consider how changes in the nutrient conditions, through the parameter
+$r_{aa}$, influence the maximum growth rate. In \FIG{translation_model}(B) we
+plot the elongation rate $r_t$ for a high and low value of $r_{aa}$, reflective
+of poor and rich nutrient conditions, respectively as a function of cellular
+ribosome concentration [NB: need to state values used - maybe rationalize choice
+of values based on the data]. Here we find that for high values of $r_{aa}$,
+cells will be able to support protein synthesis and maintain a high rate of
+elongation. However, for poor nutrient conditions (low $r_{aa}$), a high
+abundance of ribosomes causes a dramatic decrease in $r_t$. In this regime, we
+see that a reduction of actively translating ribosomes, through a decrease in
+the parameter $f_a$, allow cells to maintain a high rate of elongation even
+under more pronounced limits of nutrient limitation. By decreasing $f_a$,
+through direct inhibition of available ribosomes, cells are able to maintain
+homeostasis and keep $[AA]_{\text{eff}}$ relatively high (considered further in
+Supplemental Section XX).
+
+In \FIG{translation_model}(C) we show that for a particular cell state (i.e.
+specific value of $R$, $N_{aa}$, and $V$), there will be a maximal growth rate
+that depends on the capacity of the cell to provide amino acids to ribosomes.
+Specifically, we see that the maximum growth rate $\lambda$ increases with
+increasing $r_{aa}$, and corresponds to a cell with higher ribosomal fraction.
+Importantly, however, there is an optimum  set of $R$, $N_{aa}$, and $V$ that
+are strictly dependent on the value of $r_{aa}$. Increasing the ribosomal
+concentration beyond the cell's metabolic capacity has the adverse consequence
+of depleting the supply of amino acids and a concomitant decrease in the
+elongation rate $r_t$ (\FIG{translation_model}(B)).
 
 
 \begin{figure*}

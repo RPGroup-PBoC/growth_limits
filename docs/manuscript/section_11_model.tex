@@ -14,103 +14,111 @@
 % additional regulatory control of the small-molecule alarmone, guanosine
 % pentaphosphate [(p)ppGpp] \citep{dai2016} [more citations].
 
-\subsection{[Header for final section??]}
-
-The relationship between cell size, actively translating ribosomes, and growth
-rate, suggest that cells tune their size and ribosomal abundance as a way to
-match their biosynthetic capacity to the available nutrient conditions. As one
-illustration of this, disruption of the major glucose uptake system PTS through
-the deletion of \textit{ptsG} doesn't just simply limit carbon uptake and
-growth, which is reduced about two-fold. Rather, cells accommodate this
-perturbation by also reducing their ribosomal fraction about two-fold
-\citep{dai2016}; matching the expected decrease in growth rate governed by
-\EQ{translation_limit_growth_rate} for this change in ribosomal fraction. In
-this final section we consider a minimal model of growth rate control. We use it
-to quantitatively show how changes in ribosomal content and total proteomic mass
+% \subsection{Ribosomal Elongation Rate and Cellular Growth Rate are Linked by Amino Acid Scarcity}
+\subsection{Alarmone-Mediated Regulation Controls the Rate of Protein Synthesis}
+The relationship between cell size, actively translating ribosomes, and
+growth rate, suggest that cell size and ribosome content is tuned as a means
+to match the biosynthetic capacity to the available nutrient conditions. An
+illustration of this principle can be seen in the recent work of
+\cite{dai2016} where disruption of the major glucose uptake system through
+the deletion of \textit{ptsG} limits carbon uptake and growth by a factor of
+two as well as reduces the ribosomal mass fraction by a factor of two. and
+growth, which is reduced about two-fold. This matches our intuition given a
+decrease in growth rate governed by \EQ{translation_limit_growth_rate} for a
+change in ribosomal fraction of this magnitude. In this final section, we
+formulate and explore a minimal model of growth rate control. We use it to
+quantitatively show how changes in ribosomal content and total proteomic mass
 will allow cells to maximize their growth rate according to the available
-nutrient conditions.
+nutrient conditions, which we generalize as a supply of amino acids.
 
-To react to changes in nutrient conditions, bacteria rely on secondary-messenger
-molecules like (p)ppGpp, which cause global changes in transcriptional and
-translational activity.  In \textit{E. coli}, amino acid starvation causes the
-accumulation of deacylated tRNAs at the ribosome's A-site and this leads to a
-strong activation of (p)ppGpp synthesis activity by RelA \citep{hauryliuk2015}.
-The dramatic decrease in active ribosomal fraction that is now apparent for
-growth rates below about 0.5 hr$^{-1}$ ($f_a \approx$ 0.5 at a growth rate of
-about 0.3 hr$^{-1}$, \cite{dai2016}) shows that (p)ppGpp also coordinates growth
-in poor nutrient conditions. Furthermore, (p)ppGpp can inhibit DNA replication
-initiation by mediating a change in transcriptional activity and the
+To react to changes in nutrient conditions, bacteria rely on
+secondary-messenger molecules like (p)ppGpp, which cause global changes in
+transcriptional and translational activity. In \textit{E. coli}, amino acid
+starvation causes the accumulation of de-acylated tRNAs at the ribosome's
+A-site, leading to a strong increase in (p)ppGpp synthesis activity by RelA
+\citep{hauryliuk2015}. The corresponding dramatic decrease in active
+ribosomal fraction $f_a$ that is now apparent for growth rates below about
+0.5 hr$^{-1}$ ($f_a \approx$ 0.5 at a growth rate of about 0.3 hr$^{-1}$,
+\cite{dai2016}) indicates that (p)ppGpp also coordinates growth in poor
+nutrient conditions. Furthermore, (p)ppGpp can inhibit the initiation of DNA
+replication by mediating a change in transcriptional activity and the
 supercoiling state of the origin of replication \citep{kraemer2019}. These
-observations all raise the possibility that it through (p)ppGpp that cells
-mediate the growth-rate dependent changes in $\langle$\# ori$\rangle$, cell size
-and ribosomal abundance \citep{zhu2019, Buke2020}. Indeed, recent work in a
-(p)ppGpp null strain found that cells exhibited a high ratio of $\langle$\#
-ori$\rangle$ to $\langle$\# ter$\rangle$ and cell size that was more consistent
-with a fast growth state where (p)ppGpp levels are normally low
-\citep{fernandezcoll2020}.
+observations all raise the possibility that, via (p)ppGpp, cells mediate the
+growth-rate dependent changes in $\langle$\# ori$\rangle$, cell size and
+ribosomal abundance \citep{zhu2019, Buke2020}. Indeed, recent work in a
+(p)ppGpp deficient strain of \textit{E. coli} found that cells exhibited a
+high ratio of $\langle$\# ori$\rangle$ to $\langle$\# ter$\rangle$ and cell
+size that was more consistent with a fast growth state where (p)ppGpp levels
+are normally low \citep{fernandezcoll2020}.
 
 To better understand how cells are able to maximize their growth rate under
-different extents of nutrient limitation, we proceed by assuming that the rate
-of elongation $r_t$ depends only on the availability of amino acids (and,
-therefore, also amino-acyl tRNAs). It is at the level of amino acid synthesis
-and availability that we will assume cells adjust their ribosomal abundance and
-cell size (\FIG{translation_model}(A)). Other molecular players required for translation like elongation
-factors and GTP are considered in sufficient abundance, which appear to be valid
-assumptions given our analysis of the proteomic data and energy production thus
-far.
+different extents of nutrient limitation, we proceed by assuming that the
+rate of elongation $r_t$ depends only on the availability of amino acids
+(and, therefore, also amino-acyl tRNAs). It is at the level of amino acid
+synthesis and availability that we will assume cells adjust their ribosomal
+abundance and cell size (\FIG{translation_model}(A)). Other molecular players
+required for translation like elongation factors and GTP are considered in
+sufficient abundance, which appear to be valid assumptions given our analysis
+of the proteomic data and energy production thus far.
 
 
-\subsubsection{A Minimal Model of Nutrient-Limited Growth}
+% \subsubsection{A Minimal Model of Nutrient-Limited Growth}
 
-For simplicity, we proceed by considering amino acids as a single species, with a cellular
+\subsection{Ribosomal Elongation Rate and Cellular Growth Rate are Linked by Amino Acid Scarcity}
+For simplicity, we proceed by considering all amino acids as a single species,
+with an effective cellular
 concentration $[AA]_{\text{eff}}$. The rate of elongation $r_t$ will depend on
-how quickly ribosomes can match codons with their correct amino-acyl tRNA, as
-well as the remaining steps required for peptide elongation. We therefore
+how quickly ribosomes can match codons with their correct amino-acyl tRNA, along
+with the subsequent steps of peptide bond formation and translocation. We therefore
 consider that elongation will depend on two course-grained timescales, 1) the
-time to find and bind each correct amino-acyl tRNA, and 2) the remaining steps
+time required to find and bind each correct amino-acyl tRNA, and 2) the remaining steps
 in peptide elongation that will not depend on the amino acid availability. The
 time to translate each codon is given by the inverse of the elongation rate
 $r_t$, which can be written as,
 
 \begin{equation}
-\frac{1}{r_t} = \frac{1}{k_{on} B [AA]_{\text{eff}}} + \frac{1}{r_{t}^{\text{max}}}.
+\frac{1}{r_t} = \frac{1}{k_{on} \alpha [AA]_{\text{eff}}} + \frac{1}{r_{t}^{\text{max}}}.
 \end{equation}
-Here we have assumed that the rate of binding by amino-acyl tRNA $k_{on}$ is
-proportional to $[AA]_{\text{eff}}$ by a constant $B$. The second term on the
+where we have assumed that the rate of binding by amino-acyl tRNA $k_{on}$ is
+proportional to $[AA]_{\text{eff}}$ by a constant $\alpha$. The second term on the
 right-hand side reflects our assumption that other steps in peptide elongation
 are not rate-limiting, with a maximum elongation rate $r_{t}^{\text{max}}$ of
-about 17 aa per second \cite{dai2016}. This can be rearranged more succinctly in
-terms of an effective binding constant $K_d = r_{t}^{\text{max}}/ (k_{on} \ B)$,
+about 17 amino acids per second \cite{dai2016}. This can be rearranged more succinctly in
+terms of an effective binding constant $K_D = r_{t}^{\text{max}}/ (k_{on} \ \alpha)$,
 with the elongation rate now given by,
 
 \begin{equation}
-r_t = \frac{r_{t}^{\text{max}}}{1 + K_d/[AA]_{\text{eff}}}.
+r_t = \frac{r_{t}^{\text{max}}}{1 + K_D/[AA]_{\text{eff}}}.
 \label{eq:rt_kd_simple}
 \end{equation}
 
-During steady-state
-growth the amino acid concentration is constant ($d[AA]_{\text{eff}}/dt$=0). $[AA]_{\text{eff}}$
-will relate to the
-rate of amino acid synthesis (or import, for rich media)
-$r_{aa}$ and consumption $r_t R f_a$ by,
+During steady-state growth, the amino acid concentration is constant
+($d[AA]_{\text{eff}}/dt$=0), meaning that synthesis and consumption are matched.
+The effective amino acid concentration $[AA]_{\text{eff}}$ will relate to the rate of
+amino acid synthesis (or import, for rich media) and/or tRNA charging, denoted
+as $r_{AA}$,  and the rate of consumption,
+$r_t\times R \times f_a$ by,
 
 \begin{equation}
-\int_{0}^{\tau} \frac{d[AA]_{\text{eff}}}{dt} dt =  \int_{0}^{\tau} ([r_{aa}] - [r_t R f_a]) dt,
+\int_{0}^{\tau} \frac{d[AA]_{\text{eff}}}{dt} dt =  \int_{0}^{\tau} ([r_{AA}] - [r_t\times R \times f_a]) dt,
 \end{equation}
 where the time from 0 to $tau$ is a single cell doubling, and the square
-brackets indicate of concentration per time. Solving this, we find that
+brackets indicate of concentration per time. Integrating yields,
 
 \begin{equation}
-[AA]_{\text{eff}} =  ([r_{aa}] - [r_t R f_a]) \tau.
+[AA]_{\text{eff}} =  ([r_{AA}] - [r_t \times R \times f_a]) \tau.
+\label{eq:aaeff_concs}
 \end{equation}
-Alternatively, for an average cell size of $V$,  $[r_{aa}] = r_{aa}/(V N_A)$
-and $[r_t R f_a] = (r_t R \ f_a)/(V N_A)$, where $N_A$ is Avogadro's
-number. Since $\tau = ln(2)/\lambda$, which is also related to the parameters
-$r_t R f_a$ and $N_{aa}$ through \EQ{mass_balance}, we
-can also rewrite this as,
+
+Alternatively, we can speak in terms of ribosome copy number by stating that
+for given unit volume $V$, $[r_{AA}] = r_{AA}/(V N_A)$ and $[r_t\times
+R\times f_a] = (r_t \times R \times f_a)/(V N_A)$, where $N_A$ is Avogadro's
+number. Since $\tau = ln(2)/\lambda$, which itself is related to the
+parameters $r_t\times R \times f_a$ and the total number of amino acids to be
+polymerized $N_{AA}$, \EQ{aaeff_concs} this can be rewritten as  
 
 \begin{equation}
-[AA]_{\text{eff}} = \frac{ln(2) N_{aa}}{V N_A} \left(\frac{r_{aa}}{r_t R f_a} - 1 \right) .
+[AA]_{\text{eff}} = \frac{ln(2) N_{AA}}{V N_A} \left(\frac{r_{AA}}{r_t\times R\times f_a} - 1 \right) .
 \label{eq:aa_final}
 \end{equation}
 
@@ -122,9 +130,9 @@ with the positive given by,
 r_t = \frac{\sqrt{c^2 + 4 c k r_{t}^{\text{max}} - 2 c r_{t}^{\text{max}} + (r_{t}^{\text{max}})^2} - c - r_{t}^{\text{max}}}{2 \ (k-1)}.
 \label{eq:rt_final}
 \end{equation}
-Here, $c = r_{aa}/(R f_a)$ and $k = N_A V K_d / N_{aa}$. In the final two
-subsections we use this model to explore how the cell's metabolic capacity
-($r_{aa}$) constrains the maximum growth rate, and then explain an apparent role
+Here, $c = r_{AA}/(R f_a)$ and $k = N_A V K_D / N_{AA}$. In the final two
+subsections we use this model to explore how the cellular metabolic capacity
+($r_{AA}$) constrains the maximum growth rate, and then explain an apparent role
 of for (p)ppGpp in mitigating translational activity at slow growth, where the
 number of ribosomes is in excess.
 

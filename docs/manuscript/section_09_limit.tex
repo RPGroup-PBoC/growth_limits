@@ -43,15 +43,20 @@ bacterial growth, we again consider the total number of peptide bonds that must
 be synthesized, which we denote as $N_\text{AA}$. With cells growing exponentially in time
 \citep{godin2010}, we can compute the number of amino acids to be polymerized as
 \begin{equation}
-    N_\text{AA} \lambda = r_t R,
+    N_\text{AA} \lambda = r_t R f_a,
     \label{eq:mass_balance}
 \end{equation} where
 $\lambda$ is the cell growth rate in s$^{-1}$, $r_t$ is the maximum translation
-rate in AA$\cdot$s$^{-1}$, and $R$ is the average ribosome copy number per
-cell. Knowing the number of peptide bonds to be formed permits us to compute the
-translation-limited growth rate as
+rate in AA$\cdot$s$^{-1}$, and $R$ is the average ribosome copy number per cell.
+The addition factor $f_a$ refers to the fraction of actively translating
+ribosomes, and allows us to account for the possibility of nonfunctional,
+immature ribosomes or active sequestration of ribosomes mediated by
+ the secondary-messenger
+ molecule alarmones, guanosine pentaphosphate [(p)ppGpp] at
+slow growth \citep{dennis2004, dai2016}. Knowing the number of peptide bonds to
+be formed permits us to compute the translation-limited growth rate as
 \begin{equation}
-\lambda_\text{translation-limited} = \frac{r_t R}{N_\text{AA}}.
+\lambda_\text{translation-limited} = \frac{r_t R f_a}{N_\text{AA}}.
 \end{equation}
 
 Alternatively, since $N_{AA}$ is related to the total protein mass through the
@@ -68,18 +73,18 @@ and $L_R$ the ratio of 800 kDa / 110 Da per amino acid or, alternatively, the
 total length in amino acids that make up a ribosome. The translation-limited
 growth rate can then be written in the form
 \begin{equation}
-\lambda_{\textrm{translation-limited}} \approx \frac{r_t}{L_R}  \Phi_R.
+\lambda_{\textrm{translation-limited}} \approx \frac{r_t}{L_R}  \Phi_R f_a.
 \label{eq:translation_limit_growth_rate}
 \end{equation}
 This is plotted as a function of ribosomal fraction $\Phi_R$ in
 \FIG{ribosome_limit}(B), where we take $L_R$ = 7459 AA, corresponding to the
 length in amino acids for all ribosomal subunits of the 50S and 30S complex
-(BNID: 101175, \citep{milo2010}).
+(BNID: 101175, \citep{milo2010}), and $f_a$ = 1.
 
 The growth rate defined by \EQ{translation_limit_growth_rate} reflects
 mass-balance under steady-state growth and has long provided a rationalization
 of the apparent linear increase in \textit{E. coli}'s ribosomal content as a
-function of growth rate \citep{Goldberger1979, scott2010}. Here we see that
+function of growth rate \citep{goldberger1979, scott2010}. Here we see that
 there will be a maximum rate when $\Phi_R$ = 1, which for a translation rate of
 17 amino acids per second, gives us $\lambda \approx 8 \,\text{hr}^{-1}$, or a
 doubling time just under 6 minutes (\FIG{ribosome_limit}(B), dashed line).
@@ -107,7 +112,9 @@ mass, this must represent an absolute speed limit for cell doubling.
             solid line is calculated for an elongation rate of 17 aa per second.
             The dashed line corresponds to the maximum rate of ribosomal protein
             (R-protein) synthesis considered in part (A). [inset needed to show
-            smaller region where data is.] (C) Maximum number of
+            smaller region where data is.] (C) Experimental data from \citep{dai2016}
+            are used to estimate the fraction of actively translating ribosomes.
+            (D) Maximum number of
             rRNA units that can be synthesized as as a function of growth rate.
             Solid curve corresponds to the rRNA copy number is calculated by
             multipyling the number of rRNA operons by the estimated number of
@@ -121,6 +128,24 @@ mass, this must represent an absolute speed limit for cell doubling.
         }
   \end{fullwidth}
 \end{figure}
+
+In recent work from \cite{dai2016}, the authors made independent measurements of
+$r_t$, $\Phi_R$ (via RNA-to-protein ratios, and directly by mass spectrometry),
+and growth rate, enabling inference of the active fraction $f_a$ across the
+entire range of growth rates considered here. In \FIG{}() we use this
+measurement of $f_a$ to estimate the active fraction of ribosomal protein across
+the proteomic data sets. Importantly, we find that from the perspective of
+actively translating ribosomes, cells are effectively skirting the limit in
+growth rate that is set by \EQ{translation_limit_growth_rate}, as nutrient
+conditions vary.
+
+% cells appear to maintain a
+% growth rate consistent with \EQ{translation_limit_growth_rate} with an
+% elongation rate of $r_t \approx$  17.1 AA/s. While somewhat counter intuitive,
+% given that ribosomes translate at almost half this rate in the poorest of growth
+% conditions, steady-state growth rates can be achieved over such a broad range of
+% conditions because cells have evolved a means to tune  $r_t \times R \times
+% f_a$.
 
 Earlier, we considered rRNA synthesis (see Section \textit{\bf RNA Synthesis}),
 finding that, when the rRNA operons are maximally loaded with RNA polymerase,

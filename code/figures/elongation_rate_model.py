@@ -13,15 +13,17 @@ dataset_colors = prot.viz.dataset_colors()
 ribosomes = np.logspace(0, 7, 300)
 r_aa = np.logspace(4, 8, 4)
 
-def compute_elongation_rate(r_aa, R, Kd=5, V=1, t=1, Na=6.022E5, fa=1, rt_max=17.1):
+def compute_elongation_rate(r_aa, R, Kd=1, V=1, t=1, Na=6.022E5, fa=1, rt_max=17.1):
     """
     Computes the physically meaningful root for the elongation rate. 
     """ 
-    a = -R * fa * t
-    b = r_aa * t + rt_max * R * fa * t + Kd * V * Na
-    c = -rt_max * r_aa * t
-    numer = -b + np.sqrt(b**2 - 4 * a *c)
-    return numer / (2 * a)
+    Kd *= Na
+    root_term = np.sqrt(Kd**2 + 2* Kd * (rt_max * R * fa + r_aa) + (r_aa - rt_max * R * fa)**2)
+    # a = -R * fa * t
+    # b = r_aa * t + rt_max * R * fa * t + Kd * V * Na
+    # c = -rt_max * r_aa * t
+    # numer = -b + np.sqrt(b**2 - 4 * a *c)
+    return (Kd + rt_max * R * fa + r_aa - root_term) / (2 * R * fa)
            
 def compute_growth_rate(r_t, Naa, R, fa=1):
     """
@@ -38,7 +40,7 @@ ax.yaxis.set_tick_params(labelsize=6)
 ax.set_xlabel('ribosomes per µm$^{3}$', fontsize=6)
 ax.set_ylabel('elongation rate [AA / s]', fontsize=6)
 
-r_t = compute_elongation_rate(1E4, ribosomes)
+r_t = compute_elongation_rate(3E7, ribosomes)
 ax.plot(ribosomes, r_t, '-', lw=1, color=colors['blue']) 
 
 # plt.savefig('../../figures/r_aa_fixed_plots.svg')

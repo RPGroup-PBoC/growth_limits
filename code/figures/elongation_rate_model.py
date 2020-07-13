@@ -9,91 +9,37 @@ colors = prot.viz.plotting_style()
 constants = prot.estimate.load_constants()
 dataset_colors = prot.viz.dataset_colors()
 
-
-
 # Define some constants.
-vol = 1 # in cubic microns
-ribosomes = np.logspace(3, 6, 300)  / vol # Ribosomes per volume
-r_aa = np.logspace(4, 7, 4) / vol # Amino acid supply rate per second per volume
-Na = 6.022E5 # For conversion of concentrations to mM 
-Kd = 5 # Dissociation constant in mM for abstracted AA to ribosome. 
-Lr = 7500 # Length of a ribosome in amino acids. 
-m_aa = 110 / 6E11 # Mass of amino acid in picograms
-rho = 1.1 # Cell density in pg per fL
-m_dry = vol * 1.1 * 0.3 # dry mass in pg
-theta_prot = 0.5 # Fraction of dry mass that is protein
-background_N_aa =  theta_prot * m_dry / m_aa # Background nummber of amino acids
-N_aa = background_N_aa + ribosomes * Lr # Increasing number of amino acis based on addition of ribosomes.
+ribosomes = np.logspace(0, 7, 300)
+r_aa = np.logspace(4, 8, 4)
 
-# Define a funciton to compute the elongation rate. 
-def compute_elongation_rate(Kd, r_aa, R, V=vol, N_aa=N_aa, Na=Na, fa=1, rt_max=17.1):
+def compute_elongation_rate(r_aa, R, Kd=5, V=1, t=1, Na=6.022E5, fa=1, rt_max=17.1):
     """
     Computes the physically meaningful root for the elongation rate. 
-    """
-    theta = (Kd * V * Na) / (np.log(2) * N_aa)
-    root_term = np.sqrt(4 * theta * rt_max * r_aa * R * fa +\
-                         (rt_max * R * fa)**2 - 2 * rt_max * r_aa * R * fa +\
-                          r_aa**2)
-    r_t = (rt_max * R * fa + r_aa - root_term) / (2 * R * fa * (1 - theta))
-    return r_t
-
-
+    """ 
+    a = -R * fa * t
+    b = r_aa * t + rt_max * R * fa * t + Kd * V * Na
+    c = -rt_max * r_aa * t
+    numer = -b + np.sqrt(b**2 - 4 * a *c)
+    return numer / (2 * a)
+           
 def compute_growth_rate(r_t, Naa, R, fa=1):
     """
     Given an elongation rate, compute the growth rate. 
     """
     return 3600 * r_t * R * fa * Naa**-1 
 
+fig, ax = plt.subplots(1, 1, figsize=(2, 2), dpi=200)
+ax.set_xscale('log')
+ax.set_ylim([0, 17.5])
+ax.set_xlim([ribosomes[0], ribosomes[-1]])
+ax.xaxis.set_tick_params(labelsize=6)
+ax.yaxis.set_tick_params(labelsize=6)
+ax.set_xlabel('ribosomes per µm$^{3}$', fontsize=6)
+ax.set_ylabel('elongation rate [AA / s]', fontsize=6)
 
-elongation_colors = sns.color_palette('viridis', n_colors=len(r_aa) + 3) 
-growth_rate_colors = sns.color_palette('viridis', n_colors=len(r_aa) + 3) 
+r_t = compute_elongation_rate(1E4, ribosomes)
+ax.plot(ribosomes, r_t, '-', lw=1, color=colors['blue']) 
 
-# set up the figure canvas.
-fig, ax = plt.subplots(1, 2, figsize=(6, 3))
-for a in ax:
-    a.set_xscale('log')
-    a.set_xlim([ribosomes[0], ribosomes[-1]])
-    a.xaxis.set_tick_params(labelsize=6)
-    a.yaxis.set_tick_params(labelsize=6)
-    a.set_xlabel('ribosomes per µm$^{3}$', fontsize=6)
-
-ax[0].set_ylabel('elongation rate [AA / s]', fontsize=6)
-ax[1].set_ylabel('growth rate [hr$^{-1}$]', fontsize=6)
-
-for i, r in enumerate(r_aa):
-    r_t = compute_elongation_rate(Kd, r, ribosomes)
-    gr = compute_growth_rate(r_t, N_aa, ribosomes)
-    ax[0].plot(ribosomes, r_t, '-', lw=1, color=elongation_colors[i], 
-                label=r'10$^{%s}$ ' %int(np.log10(r)))
-    ax[1].plot(ribosomes, gr, '-', lw=1, color=growth_rate_colors[i], 
-                label=r'$r_{AA}$ = 10$^{%s}$' %int(np.log10(r)))
-
-leg = ax[1].legend(fontsize=6, title='r$_AA$ [AA/s•µm$^3$]')
-leg.get_title().set_fontsize(6)
-plt.savefig('../../figures/r_aa_variation_plots.svg')
-# %%
-# set up the figure canvas.
-fig, ax = plt.subplots(1, 2, figsize=(6, 3))
-for a in ax:
-    a.set_xscale('log')
-    a.set_xlim([ribosomes[0], ribosomes[-1]])
-    a.xaxis.set_tick_params(labelsize=6)
-    a.yaxis.set_tick_params(labelsize=6)
-    a.set_xlabel('ribosomes per µm$^{3}$', fontsize=6)
-
-ax[0].set_ylabel('elongation rate [AA / s]', fontsize=6)
-ax[1].set_ylabel('growth rate [hr$^{-1}$]', fontsize=6)
-
-r_t = compute_elongation_rate(Kd, r_aa[2], ribosomes)
-gr = compute_growth_rate(r_t, N_aa, ribosomes)
-ax[0].plot(ribosomes, r_t, '-', lw=1, color=elongation_colors[2], 
-            label=r'10$^{%s}$ ' %int(np.log10(r)))
-ax[1].plot(ribosomes, gr, '-', lw=1, color=growth_rate_colors[2], 
-            label=r'$r_{AA}$ = 10$^{%s}$' %int(np.log10(r)))
-
-leg = ax[1].legend(fontsize=6, title='r$_AA$ [AA/s•µm$^3$]')
-leg.get_title().set_fontsize(6)
-plt.savefig('../../figures/r_aa_fixed_plots.svg')
-
-
+# plt.savefig('../../figures/r_aa_fixed_plots.svg')
 # %%

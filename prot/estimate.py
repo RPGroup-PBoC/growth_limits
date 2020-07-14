@@ -41,6 +41,8 @@ def load_constants(lambda_bounds = [0, 2]):
     # Define basal sources
     constants = {
         'density': {'value':1.1, 'units': 'pg/um^3', 'source': 'BNID:103875'},
+        'protein_mass': {'value':size.lambda2P(growth_rate), 
+                         'units': 'fg/cell', 'source':'calculated_quantity'},
         'volume': {'value':size.lambda2size(growth_rate), 
                     'units':'um^3', 'source':'defined quantity'},
         'growth_rate': {'value': growth_rate, 

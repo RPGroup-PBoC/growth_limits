@@ -27,17 +27,43 @@ Datsenko, K.~A. and Wanner, B.~L. (2000).
 \newblock {\em Proceedings of the National Academy of Sciences},
   97(12):6640--6645.
 
+\bibitem[Lex et~al., 2014]{Lex2014}
+Lex, A., Gehlenborg, N., Strobelt, H., Vuillemot, R., and Pfister, H. (2014).
+\newblock {UpSet: visualization of intersecting sets}.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  20(12):1983--1992.
+
+\bibitem[Li et~al., 2014]{li2014}
+Li, G.-W., Burkhardt, D., Gross, C., and Weissman, J.~S. (2014).
+\newblock Quantifying absolute protein synthesis rates reveals principles
+  underlying allocation of cellular resources.
+\newblock {\em Cell}, 157(3):624--635.
+
 \bibitem[Ojkic et~al., 2019]{ojkic2019}
 Ojkic, N., Serbanescu, D., and Banerjee, S. (2019).
 \newblock {Surface-to-volume scaling and aspect ratio preservation in
   rod-shaped bacteria}.
 \newblock {\em eLife}, 8:642.
 
+\bibitem[Peebo et~al., 2015]{peebo2015}
+Peebo, K., Valgepea, K., Maser, A., Nahku, R., Adamberg, K., and Vilu, R.
+  (2015).
+\newblock Proteome reallocation in {{{\emph{Escherichia coli}}}} with
+  increasing specific growth rate.
+\newblock {\em Molecular BioSystems}, 11(4):1184--1193.
+
 \bibitem[Schaechter et~al., 1958]{schaechter1958}
 Schaechter, M., Maal{\O}e, O., and Kjeldgaard, N.~O. (1958).
 \newblock {Dependency on Medium and Temperature of Cell Size and Chemical
   Composition during Balanced Growth of Salmonella typhimurium}.
 \newblock {\em Microbiology}, 19(3):592--606.
+
+\bibitem[Schmidt et~al., 2016]{schmidt2016}
+Schmidt, A., Kochanowski, K., Vedelaar, S., Ahrn{\'e}, E., Volkmer, B.,
+  Callipo, L., Knoops, K., Bauer, M., Aebersold, R., and Heinemann, M. (2016).
+\newblock The quantitative and condition-dependent {{{\emph{Escherichia
+  coli}}}} proteome.
+\newblock {\em Nature Biotechnology}, 34(1):104--110.
 
 \bibitem[Scott et~al., 2010]{scott2010}
 Scott, M., Gunderson, C.~W., Mateescu, E.~M., Zhang, Z., and Hwa, T. (2010).
@@ -57,6 +83,19 @@ Taheri-Araghi, S., Bradde, S., Sauls, J.~T., Hill, N.~S., Levin, P.~A.,
   Paulsson, J., Vergassola, M., and Jun, S. (2015).
 \newblock {Cell-size control and homeostasis in bacteria}.
 \newblock {\em Current Biology}, 25(3):385--391.
+
+\bibitem[Taniguchi et~al., 2010]{taniguchi2010}
+Taniguchi, Y., Choi, P.~J., Li, G.-W., Chen, H., Babu, M., Hearn, J., Emili,
+  A., and Xie, X.~S. (2010).
+\newblock {Quantifying E. coli proteome and transcriptome with single-molecule
+  sensitivity in single cells}.
+\newblock {\em Science (New York, N.Y.)}, 329(5991):533--538.
+
+\bibitem[Valgepea et~al., 2013]{valgepea2013}
+Valgepea, K., Adamberg, K., Seiman, A., and Vilu, R. (2013).
+\newblock {{{\emph{Escherichia coli}}}} achieves faster growth by increasing
+  catalytic and translation rates of proteins.
+\newblock {\em Molecular BioSystems}, 9(9):2344.
 
 \bibitem[{Virtanen} et~al., 2020]{2020scipynmeth}
 {Virtanen}, P., {Gommers}, R., {Oliphant}, T.~E., {Haberland}, M., {Reddy}, T.,

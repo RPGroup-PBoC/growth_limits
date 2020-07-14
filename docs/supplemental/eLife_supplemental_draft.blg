@@ -3,49 +3,49 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: eLife_supplemental_draft.aux
 The style file: apalike.bst
 Database file #1: library.bib.bib
-Repeated entry---line 243 of file library.bib.bib
+Repeated entry---line 265 of file library.bib.bib
  : @article{schaechter1958
  :                        ,
 I'm skipping whatever remains of this entry
-You've used 12 entries,
+You've used 18 entries,
             1935 wiz_defined-function locations,
-            558 strings with 7272 characters,
-and the built_in function-call counts, 7200 in all, are:
-= -- 630
-> -- 566
+            594 strings with 8753 characters,
+and the built_in function-call counts, 10363 in all, are:
+= -- 923
+> -- 769
 < -- 2
-+ -- 212
-- -- 212
-* -- 753
-:= -- 1302
-add.period$ -- 36
-call.type$ -- 12
-change.case$ -- 166
-chr.to.int$ -- 12
-cite$ -- 12
-duplicate$ -- 168
-empty$ -- 351
-format.name$ -- 228
-if$ -- 1311
++ -- 288
+- -- 286
+* -- 1075
+:= -- 1860
+add.period$ -- 54
+call.type$ -- 18
+change.case$ -- 233
+chr.to.int$ -- 18
+cite$ -- 18
+duplicate$ -- 252
+empty$ -- 532
+format.name$ -- 308
+if$ -- 1898
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 12
-newline$ -- 63
-num.names$ -- 36
-pop$ -- 140
+missing$ -- 18
+newline$ -- 93
+num.names$ -- 54
+pop$ -- 195
 preamble$ -- 1
-purify$ -- 166
+purify$ -- 233
 quote$ -- 0
-skip$ -- 123
+skip$ -- 183
 stack$ -- 0
-substring$ -- 400
-swap$ -- 12
+substring$ -- 623
+swap$ -- 18
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 72
+type$ -- 108
 warning$ -- 0
-while$ -- 43
+while$ -- 66
 width$ -- 0
-write$ -- 158
+write$ -- 236
 (There was 1 error message)

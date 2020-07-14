@@ -1,5 +1,3 @@
-
-
 \section{Summary of Proteome Datasets.}
 \label{sec:SI_exp_summary}
 
@@ -119,34 +117,24 @@ abundances into  absolute protein abundance per cell. A more extensive
 discussion of the \cite{schmidt2016} data set can be found in Section
 \nameref{sec:SI_schmidt} .
 
-\subsection{Summary of Proteomic Data Sets.}
+\section{Summary of Proteomic Data Sets.}
+\label{sec:SI_data_summary}
+
+In \FIG{upset} we show the coverage and overlap of all proteins quantified
+across each data set using an UpSet diagram \citep{Lex2014}.
 
 
-Figure \ref{} shows the distribution in reported protein abundance for   a  subset
-of  the data.
-
-An important consideration is whether the reported abundance per cell are correlated. while
-we expect some variability in expression of each protein due to growth rate, the reported
-values are nonetheless expected to be correlated. Figure \ref{fig:dataset_correlations} compares each dataset to the copy numbers from Schmidt \textit{et al.}, grown in M9 minimal media supplemented with glucose.
-
-
-
-% \begin{figure}[H]
-% 		\centering
-%     \includegraphics[width=1\textwidth]{../../figures/dataset_correlations.pdf}
-%   \caption{}
-%   \label{fig:dataset_correlations}
-% \end{figure}
+\begin{figure*}
+    \centering{
+        \includegraphics{SI_figs/dataset_upset_diagram.pdf}
+        \caption{\textbf{Comparison of proteomic coverage across different data sets.} } \label{fig:upset}
+    }
+\end{figure*}
 
 
-
-%
-
-%
-% \begin{figure}[H]
-% 		\centering
-%     \includegraphics[width=1\textwidth]{../../figures/dataset_corrections.pdf}
-%   \caption{}
-%   \label{fig:dataset_correlations}
-% \end{figure}
-%
+\begin{figure*}
+    \centering{
+        \includegraphics{SI_figs/dataset_corrections.pdf}
+        \caption{\textbf{Summary of the growth-rate dependent total protein abundance for each data set.} } \label{fig:total_protein_final}
+    }
+\end{figure*}

@@ -1,4 +1,10 @@
 \select@language {english}
-\contentsline {section}{Estimation of cell size and surface area across all growth conditions.}{3}{section*.1}
-\contentsline {section}{Extending Estimates to a Continuum of Growth Rates}{3}{section*.3}
-\contentsline {subsection}{Estimation of the total cell mass}{3}{subsection*.4}
+\contentsline {section}{Summary of Proteome Datasets.}{3}{section*.1}
+\contentsline {section}{Summary of Final Compiled Data Set.}{3}{section*.3}
+\contentsline {section}{Adjustments to Schmidt \textit {et al.} dataset}{4}{section*.4}
+\contentsline {subsection}{Effect of cell volume on reported absolute protein abundances in the work of Schmidt \textit {et al.} .}{5}{subsection*.7}
+\contentsline {subsection}{Reconsidering assumption that protein concentration is constant.}{6}{subsection*.8}
+\contentsline {subsection}{Estimating cellular protein concentration as a function of growth rate.}{6}{subsection*.10}
+\contentsline {section}{Estimation of cell size and surface area across all growth conditions.}{8}{section*.12}
+\contentsline {section}{Extending Estimates to a Continuum of Growth Rates}{9}{section*.14}
+\contentsline {subsection}{Estimation of the total cell mass}{9}{subsection*.15}

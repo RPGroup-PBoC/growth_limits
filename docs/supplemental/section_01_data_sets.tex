@@ -1,24 +1,73 @@
 
 
 \section{Summary of Proteome Datasets.}
+\label{sec:SI_exp_summary}
 
-[ NB: still very much in progress! ]
+Here we provide a brief summary of the experiments behind each proteomic
+data sets. The purpose of this section is to better identify the steps taken
+by the authors to arrive at absolute protein abundances. In the following
+section (Section~\nameref{sec:SI_data_summary}) we will then provide a summary of the
+final protein abundance measurements that were used for in the main text.
 
-Here we briefly summarize the datasets that were considered for the work of the main
-text. The goal of this section is to give an overview of each dataset
-considered, including the main experimental details, and to provide a more
-detailed look at how well each compares.
-
-Table \ref{table:datasets} provides an overview of the proteomic datasets that
-we found in the literature. These are predominately mass spectrometry-based,
+Table \ref{table:datasets} provides an overview of the main data sets that
+we considered. These are predominately mass spectrometry-based,
 with the exception of the work from Li \textit{et al.} (2014) which used ribosomal
 profiling, and the fluorescence-based counting done in Taniguchi \textit{et al.}
-(2010). The general strategy taken in these works is to quantify fractional
+(2010).
+
+\begin{table}[bt]
+\caption{\label{tab:datasets}Overview of proteomic data sets.}
+% Use "S" column identifier to align on decimal point
+\begin{tabular}{l l l }
+\toprule
+Author & Method & Reported Quantity \\
+\midrule
+Taniguchi \textit{et al.} (2010)  & YFP-fusion, cell fluorescence    & fg/copies per cell      \\
+Valgepea \textit{et al.} (2012)   & mass spectrometry                & fg/copies per cell      \\
+Peebo \textit{et al.} (2014)      & mass spectrometry                & fg/copies per fl        \\
+Li \textit{et al.} (2014)         & ribosomal profiling              & fg/copies per cell $^a$ \\
+Soufi \textit{et al.} (2015)      & mass spectrometry                & fg/copies per cell      \\
+Schmidt \textit{et al.} (2016)    & mass spectrometry                & fg/copies per cell $^b$ \\
+Caglar \textit{et al.} (2017)     & mass spectrometry                & relative abundance      \\
+\bottomrule
+\end{tabular}
+
+\medskip
+a. The reported values assume that the proteins are long-lived compared to the generation time
+but are unable to account for post-translational modifications that may alter absolute protein abundances.
+\\
+b. This mass spectrometry approach differs substantially from the others since in addition to
+the relative proteome-wide abundance measurements, the authors performed absolute quantification of
+41 proteins across all growth conditions (see Section~\nameref{sec:SI_schmidt} for more details on this).
+\end{table}
+
+\subsection{Fluorescence based measurements of protein abundance}
+In the work of \cite{taniguchi2010}, the authors used a chromosomal YFP fusion
+library where individual strains have a specific gene tagged with a YFP-coding
+sequence. 1018 of 1400 attempted strains were used in their work. For each
+strain, a fluorescence microscope was used to collect cellular YFP intensities.
+Through automated image analysis, the authors normalized intensity measurments
+by cell size to account for the change in size and expression variability across
+the cell cycle. YFP intensities were also corrected for cellular
+autofluorescence, and final absolute protein levels were determined by a
+calibration with single-molecule fluorescence intensities, performed seperately
+using a purified YFP solution.
+
+\subsection{Ribosomal profiling measurements of protein abundance}
+
+
+
+
+
+\subsection{Mass spectrometry measurements of protein abundance}
+
+
+We begin The general strategy taken in these works is to quantify fractional
 abundance of each protein and then to convert these to absolute abundance by
 multiplying these fractions by the bulk measured total cellular protein
-abundance. Note that the work of Peebo \textit{et al.} (2014) did not perform any
-measurement of cell count or volume, and thus were only able to report cellular
-protein concentration.
+abundance. Note that the work of Peebo \textit{et al.} (2014) did not perform
+any measurement of cell count or volume, and thus were only able to report
+cellular protein concentration.
 
 Exceptions to this are found in Schmidt \textit{et al.} and Taniguchi \textit{et al.}.
 A key distinction in the work of Schmidt \textit{et al.} is that in addition to
@@ -33,28 +82,33 @@ details of this are beyond the scope of this section). In the work of Taniguchi
 protein (YFP) and used fluorescence as readout of cellular expression.
 
 
-% \begin{center}
-\begin{tabularx}{.8\textwidth}{ || c | c | c | c | c | c | c || }
-\hline
-Author & Method & Strain & $N$ datasets & Reported Quantity & fractional coverage (by count) & fractional coverage (by mass) \\
-\hline\hline
-Taniguchi \textit{et al.} (2010) & YFP-fusion, cell fluorescence  & & & fg/copies per cell & & \\
-\hline
-Valgepea \textit{et al.} (2012) & Mass spectrometry  & & & fg/copies per cell & & \\
-\hline
-Peebo \textit{et al.} (2014) & Mass spectrometry  & & & fg/copies per fl & & \\
-\hline
-Li \textit{et al.} (2014) & Ribosomal profiling  & & & protein synthesis rate & & \\
-\hline
-Soufi \textit{et al.} (2015) & Mass spectrometry  & & & fg/copies per cell & &\\
-\hline
-Schmidt \textit{et al.} (2016) & Mass spectrometry  & & & fg/copies per cell & & \\
-\hline
-Caglar \textit{et al.} (2017) & Mass spectrometry  & & & relative abundance & &\\
-\hline
-\end{tabularx}
-% \label{table:datasets}
-% \end{center}
+
+\begin{table}[bt]
+\caption{\label{tab:datasets}Overview of proteomic data sets.}
+% Use "S" column identifier to align on decimal point
+\begin{tabular}{l l l }
+\toprule
+Author & Method & Reported Quantity \\
+\midrule
+Measurements  & YFP-fusion, cell fluorescence    & fg/copies per cell      \\
+Valgepea \textit{et al.} (2012)   & mass spectrometry                & fg/copies per cell      \\
+Peebo \textit{et al.} (2014)      & mass spectrometry                & fg/copies per fl        \\
+Li \textit{et al.} (2014)         & ribosomal profiling              & fg/copies per cell $^a$ \\
+Soufi \textit{et al.} (2015)      & mass spectrometry                & fg/copies per cell      \\
+Schmidt \textit{et al.} (2016)    & mass spectrometry                & fg/copies per cell $^b$ \\
+Caglar \textit{et al.} (2017)     & mass spectrometry                & relative abundance      \\
+\bottomrule
+\end{tabular}
+
+\medskip
+a. The reported values assume that the proteins are long-lived compared to the generation time
+but are unable to account for post-translational modifications that may alter absolute protein abundances.
+\\
+b. This mass spectrometry approach differs substantially from the others since in addition to
+the relative proteome-wide abundance measurements, the authors performed absolute quantification of
+41 proteins across all growth conditions (see Section~\nameref{sec:SI_schmidt} for more details on this).
+\end{table}
+
 
 Figure \ref{} shows the distribution in reported protein abundance for   a  subset
 of  the data.

@@ -23,6 +23,7 @@ r_atp = 300 # per second per synthase
 atp_aa = 5
 
 N_synthase = (cell_mass * theta_dry * theta_prot * atp_aa) / (m_aa * r_atp * t_double)
+# N_synthase = (constants['n_aa']['value'] * atp_aa) / (r_atp * t_double)
 
 
 # Instantiate andf ormat the axis

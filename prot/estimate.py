@@ -43,6 +43,8 @@ def load_constants(lambda_bounds = [0, 2]):
         'density': {'value':1.1, 'units': 'pg/um^3', 'source': 'BNID:103875'},
         'protein_mass': {'value':size.lambda2P(growth_rate), 
                          'units': 'fg/cell', 'source':'calculated_quantity'},
+        'n_aa': {'value':size.lambda2P(growth_rate) * 1E-3/ (110 / 6E11), 
+                         'units': 'amino acids /cell', 'source':'calculated_quantity'},                
         'volume': {'value':size.lambda2size(growth_rate), 
                     'units':'um^3', 'source':'defined quantity'},
         'growth_rate': {'value': growth_rate, 

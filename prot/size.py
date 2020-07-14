@@ -213,13 +213,17 @@ def lambda2P(x):
     pred_RNA_protein_mass = pred_drymass * 0.90 - pred_dnamass
 
     #### predict RNA/Protein ratio:
-    if x <= 0.69:
-        pred_RNA_protein_ratio = slope_dia_RP_A * x + intercept_dia_RP_A
-    else:
-        pred_RNA_protein_ratio = slope_dia_RP_B * x + intercept_dia_RP_B
+    pred_RNA_protein_ratio = []
+    if (type(x) == int) | (type(x) == float) :
+        x = [x]
+    for i, l in enumerate(x):
+        if l <= 0.69:
+            pred_RNA_protein_ratio.append(slope_dia_RP_A * l + intercept_dia_RP_A)
+        else:
+            pred_RNA_protein_ratio.append(slope_dia_RP_B * l + intercept_dia_RP_B)
 
     # calculate total protein mass
-    pred_proteinmass =  (pred_RNA_protein_mass/ (1+pred_RNA_protein_ratio))
+    pred_proteinmass =  (pred_RNA_protein_mass/ (1+ np.array(pred_RNA_protein_ratio)))
     # pred_RNAmass = (pred_RNA_protein_ratio * pred_RNA_protein_mass) / (1+ pred_RNA_protein_ratio)
 
     return pred_proteinmass

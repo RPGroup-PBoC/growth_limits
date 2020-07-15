@@ -62,10 +62,12 @@ for g, d in tqdm.tqdm(cplx.groupby(['complex_annotation',
 # Define the column data sources
 cplx_desc = pd.concat(cplx_desc_dfs, sort=False)
 cplx_numeric = pd.concat(cplx_numeric_dfs, sort=False)
-cplx_desc = ColumnDataSource(cplx_desc)
-cplx_numeric = ColumnDataSource(cplx_numeric)
 
 #%%
+cplx_desc_source = ColumnDataSource(cplx_desc)
+cplx_numeric_source = ColumnDataSource(cplx_numeric)
+
+
 # ##############################################################################
 # FIGURE CANVAS DECLARATION AND INTERACTION INSTANTIATION
 # ##############################################################################
@@ -108,15 +110,15 @@ complex_description_field = Div(text="")
 # ##############################################################################
 
 # Define the argument dictionaries
-cplx_args = {'cplx_desc_source': cplx_desc, 
-             'cplx_numeric_source':cplx_numeric, 
+cplx_args = {'cplx_desc_source': cplx_desc_source, 
+             'cplx_numeric_source':cplx_numeric_source, 
              'cplx_select_input': complex_selection,
              'scaling_input': scaling,
-             'agg_method': agg_method_input.value
+             'agg_method_input': agg_fn,
              'cplx_desc_field':complex_description_field
              }
 
-cplx_cb = prot.viz.load_js('explorer_complex.js', args=args)
+cplx_cb = prot.viz.load_js('explorer_complex.js', args=cplx_args)
 complex_selection.js_on_change('value', cplx_cb)
 
 # Define the widget boxes 

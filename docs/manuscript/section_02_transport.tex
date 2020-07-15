@@ -1,3 +1,69 @@
+\begin{featurebox}
+\caption{The Rules of Engagement for Order-Of-Magnitude Estimates}
+This work relies heavily on using so-called "back-of-the-envelope" estimates to 
+understand the abundances and growth-rate dependences of a variety of molecular
+complexes. This moniker arises from the limitation that any estimate should be
+able to fit on the back of a postage envelope. As such, we must draw a set of
+rules governing our precision and sources of key values. 
+
+\textbf{\itshape The rule of "one, few, and ten".} The philosophy behind
+order-of-magnitude estimates is to provide a estimate of the appropriate scale
+and a prediction with infinite accuracy. As such, we define three different
+scales of precision in making the estimates. The scale of "one" is reserved for
+values that range between 1 and 2. For example, If a particular process has been
+experimentally measured to transport 1.87 protons per second, we approximate
+this process to require 2 protons per event. The scale of "few" is reserved for
+values ranging between 3 and 5. For example, we will often use Avogadro's number
+to compute the number of molecules in a cell given a concentration and a volume.
+Rather than using Avogadro's number as $6.02214 \times 10^{23}$, we will
+approximate it as $5 \times 10^{23}$. Finally, the scale of "ten" is reserved
+for values which we know within an order of magnitude. If a particular protein
+complex is present at 883 copies per cell, we say that it is present in
+approximately $10^3$ copies per cell. These different scales will be used in
+combination to arrive at simple estimates that report the expected scale of the
+observed data. Therefore, the estimates  presented here should not be viewed as
+hard-and-fast predictions of precise copy numbers, but as approximate lower (or upper)
+bounds for the number of complexes that may be needed to satisfy some cellular requirement.
+
+Furthermore, we use equality symbols ($=$) sparingly and frequently defer to
+approximation ($\approx$) or scaling ($\sim$) symbols when reporting an
+estimate. When $\approx$ is used aside a value, we are implicitly stating that
+we are confident in this estimate within a factor of a few. When a scaling
+symbol $\sim$ is used, we are stating that we are confident in our estimate to
+within an order of magnitude. 
+
+\textbf{\itshape The BioNumbers Database as a source for values.} In making our
+point estimates, we often require approximate values for key cellular
+properties, such as the elemental composition of the cell, the average dry mass,
+or approximate rates of synthesis an polymerization. We rely heavily on the
+BioNumbers Database \citep{milo2010} as a repository for such information. Every
+value we draw from the BioNumbers Database as an associated BioNumbers ID
+number, abbreviated as BNID. When we have used a value from the data base in
+making our estimate, we provide this ID number (or numbers, depending on the
+quantity) in parentheses on in grey-boxes in the figures. For some processes,
+values needed to complete the estimate were not present in the data base. In
+these cases, we turned to the original literature and have provided citations to
+the appropriate references from where the value was obtained. 
+
+\textbf{\itshape Uncertainty in the data sets and the accuracy of an estimate.}
+The data sets presented analyzed in this work are the products of extremely
+careful experimentation with the aim to report, to the best of their ability,
+the absolute copy numbers of proteins in the cell. These data, collected over
+the span of a few years, come from different labs and use different internal
+standards, controls, and even techniques. As a result, there is notable
+disagreement in the observed copy numbers for some complexes between the
+different data sets. In assessing whether our estimates could explain the
+observed scales and growth-rate dependencies, we considered the degree of
+variation between the different data sets. For example, say a particular
+estimate undercuts the observed data by an order of magnitude. If all data sets
+agree within a factor of a few of each other, we revisit our estimate and
+consider what me may have missed. However, if the data sets themselves disagree
+by an order of magnitude between them, we determine that our estimate is
+appropriate given the variation in the data.
+\label{box:estimate_rules}
+\end{featurebox}
+
+
 \section{Uptake of Nutrients}
 In order to build new cellular mass, the molecular and elemental building blocks
 must be scavenged from the environment in different forms. Carbon, for example,

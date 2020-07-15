@@ -1,6 +1,6 @@
-\section{Estimation of cell size and surface area across all growth conditions.}
+\section{Estimation of total protein, cell size, and surface area across all growth conditions.}
 
-In Figure \ref{fig:cell_size_literature} we looked at a number of recent cell
+In \FIG{cell_size_literature} we looked at a number of recent cell
 size measurements and potential issues with the values used by Schmidt
 \textit{et al.}. Since most of the proteomic data sets lack cell size
 measurements, we chose instead to use a common set of size measurements for any
@@ -10,11 +10,11 @@ the parent strain of the Keio collection \citep{datsenko2000, baba2006}), we fit
 the MG1655 cell size data from Si \textit{et al.} 2017, 2019 using
 the optimize.curve_fit function from the Scipy python package \citep{2020scipynmeth}.
 
-The size data is shown in Figure \ref{fig:final_size_data_Si})(A)
+The size data is shown in Figure \FIG{final_size_data_Si}(A)
 and (B),  for the cell length and width, respectively. The length data was well
 described by the exponential function 0.5 $e^{1.09 \cdot \lambda}$ + 1.76
-$\mu$m, while the width data was well described by 0.64 $e^{0.24 \cdot \lambda}$
-$\mu$m. In order to estimate cell size we take the cell as a cylinders
+\textmu m, while the width data was well described by 0.64 $e^{0.24 \cdot \lambda}$
+\textmu m. In order to estimate cell size we take the cell as a cylinders
 with two hemispherical ends \citep{si2017, basan2015}. Specifically,  cell size
 (or volume) is estimated from,
 
@@ -23,7 +23,7 @@ V = \pi \cdot r^2 \cdot (l - 2r/3),
 \label{eq:cell_size}
 \end{equation}
 where $r$ is half the cell width. A best fit to the data is described by 0.533
-$e^{1.037 \cdot \lambda}$ $\mu$ m$^3$. Calculation of the cell surface area is
+$e^{1.037 \cdot \lambda}$ \textmu m$^3$. Calculation of the cell surface area is
 given by,
 
 \begin{equation}
@@ -41,10 +41,9 @@ where $\eta$ is the aspect ratio ($\eta$ = $l/w$) \citep{ojkic2019}.
     report 140-300 images and 5,000-30,000 for each set of samples; which likely
     means about 1,000-5,000 measurements per mean value reported here since they
     considered about 6 conditions at a time). Fits were made to the  MG1655 strain
-    data; length: 0.5 $e^{1.09 \cdot \lambda}$ + 1.76 $\mu$ m, width:  0.64
-    $e^{0.24 \cdot \lambda}$ $\mu$ m. (C) Cell size, $V$, was calculated as
+    data; length: 0.5 $e^{1.09 \cdot \lambda}$ + 1.76 \textmu m, width:  0.64
+    $e^{0.24 \cdot \lambda}$ \textmu m. (C) Cell size, $V$, was calculated as
     cylinders with two hemispherical ends (Equation \ref{eq:cell_size}). The
-    MG1655 strain data gave a best fit of 0.533 $e^{1.037 \cdot \lambda}$ $\mu$
-    m$^3$.}
+    MG1655 strain data gave a best fit of 0.533 $e^{1.037 \cdot \lambda}$ \textmu m$^3$.}
   \label{fig:final_size_data_Si}
 \end{figure}

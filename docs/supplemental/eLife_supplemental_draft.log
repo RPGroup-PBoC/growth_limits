@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  14 JUL 2020 17:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  15 JUL 2020 13:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2195,7 +2195,7 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-[3] <SI_figs/dataset_upset_diagram.pdf, id=118, 365.2275pt x 181.89156pt>
+[3] <SI_figs/dataset_upset_diagram.pdf, id=119, 365.2275pt x 181.89156pt>
 File: SI_figs/dataset_upset_diagram.pdf Graphic file (type pdf)
 
 <use SI_figs/dataset_upset_diagram.pdf>
@@ -2203,7 +2203,7 @@ Package pdftex.def Info: SI_figs/dataset_upset_diagram.pdf used on input line 1
 29.
 (pdftex.def)             Requested size: 365.2266pt x 181.8911pt.
 
-<SI_figs/dataset_corrections.pdf, id=119, 354.70938pt x 171.04527pt>
+<SI_figs/dataset_corrections.pdf, id=120, 354.70938pt x 171.04527pt>
 File: SI_figs/dataset_corrections.pdf Graphic file (type pdf)
 
 <use SI_figs/dataset_corrections.pdf>
@@ -2231,19 +2231,24 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  []
 
 [5 <./SI_figs/dataset_upset_diagram.pdf> <./SI_figs/dataset_corrections.pdf>]
-<SI_figs/final_cell_size_Si.pdf, id=230, 912.40875pt x 253.94875pt>
-File: SI_figs/final_cell_size_Si.pdf Graphic file (type pdf)
+<SI_figs/Si_size_data_fit.pdf, id=231, 424.03043pt x 171.02928pt>
+File: SI_figs/Si_size_data_fit.pdf Graphic file (type pdf)
 
-<use SI_figs/final_cell_size_Si.pdf>
-Package pdftex.def Info: SI_figs/final_cell_size_Si.pdf used on input line 36.
-(pdftex.def)             Requested size: 406.58981pt x 113.16376pt.
+<use SI_figs/Si_size_data_fit.pdf>
+Package pdftex.def Info: SI_figs/Si_size_data_fit.pdf used on input line 36.
+(pdftex.def)             Requested size: 406.58981pt x 164.00356pt.
 LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <8> not available
 (Font)              Font shape `T1/fos/b/it' tried instead on input line 47.
 ) (./section_03_schmidt.tex
 LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/fos/b/it' tried instead on input line 1.
 
-<SI_figs/supplemental_cell_volumes.pdf, id=242, 734.82832pt x 357.69034pt>
+Overfull \hbox (6.0pt too wide) has occurred while \output is active
+ [][][][][][][]| 
+ []
+
+[6 <./SI_figs/Si_size_data_fit.pdf>]
+<SI_figs/supplemental_cell_volumes.pdf, id=312, 734.82832pt x 357.69034pt>
 File: SI_figs/supplemental_cell_volumes.pdf Graphic file (type pdf)
 
 <use SI_figs/supplemental_cell_volumes.pdf>
@@ -2251,49 +2256,44 @@ Package pdftex.def Info: SI_figs/supplemental_cell_volumes.pdf used on input li
 ne 35.
 (pdftex.def)             Requested size: 406.58981pt x 197.91464pt.
 
-Overfull \vbox (3.22795pt too high) has occurred while \output is active []
-
-
-Overfull \hbox (6.0pt too wide) has occurred while \output is active
- [][][][][][][]| 
- []
-
-[6 <./SI_figs/final_cell_size_Si.pdf>]
-<SI_figs/schmidt_protein_corrections.pdf, id=777, 698.61pt x 345.4496pt>
+<SI_figs/schmidt_protein_corrections.pdf, id=323, 698.61pt x 345.4496pt>
 File: SI_figs/schmidt_protein_corrections.pdf Graphic file (type pdf)
 
 <use SI_figs/schmidt_protein_corrections.pdf>
 Package pdftex.def Info: SI_figs/schmidt_protein_corrections.pdf used on input 
 line 74.
 (pdftex.def)             Requested size: 406.58981pt x 201.05142pt.
-LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <10> not available
-(Font)              Font shape `T1/fos/b/it' tried instead on input line 90.
+
+Overfull \vbox (3.85808pt too high) has occurred while \output is active []
+
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
 [7 <./SI_figs/supplemental_cell_volumes.pdf>]
+Overfull \vbox (13.09734pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
 [8 <./SI_figs/schmidt_protein_corrections.pdf>]
-<SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf, id=1332, 683.85088pt
- x 616.4822pt>
+<SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf, id=879, 683.85088pt 
+x 616.4822pt>
 File: SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf Graphic file (ty
 pe pdf)
  <use SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf>
 Package pdftex.def Info: SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.p
-df used on input line 203.
+df used on input line 202.
 (pdftex.def)             Requested size: 406.58981pt x 366.53395pt.
 
-<SI_figs/schmidt_protein_estimate_basan.pdf, id=1338, 387.73256pt x 354.32375pt
->
+<SI_figs/schmidt_protein_estimate_basan.pdf, id=885, 387.73256pt x 354.32375pt>
 File: SI_figs/schmidt_protein_estimate_basan.pdf Graphic file (type pdf)
- <use SI_figs/schmidt_protein_estimate_basan.pdf>
+<use SI_figs/schmidt_protein_estimate_basan.pdf>
 Package pdftex.def Info: SI_figs/schmidt_protein_estimate_basan.pdf used on inp
-ut line 258.
+ut line 257.
 (pdftex.def)             Requested size: 203.2949pt x 185.77945pt.
 )
 (./section_XX_continuum_estimates.tex
@@ -2328,20 +2328,20 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 69.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 69.
 Package rerunfilecheck Info: File `eLife_supplemental_draft.out' has not change
 d.
-(rerunfilecheck)             Checksum: 5267081E0C6924E6C2D978D8820E815F;1130.
+(rerunfilecheck)             Checksum: 4ABD84BCC0C53BAC139585F12635BF55;1122.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 27797 strings out of 492995
- 507893 string characters out of 6132704
- 721930 words of memory out of 5000000
- 30243 multiletter control sequences out of 15000+600000
- 747237 words of font info for 685 fonts, out of 8000000 for 9000
+ 27784 strings out of 492995
+ 507616 string characters out of 6132704
+ 721949 words of memory out of 5000000
+ 30240 multiletter control sequences out of 15000+600000
+ 741343 words of font info for 675 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,15n,46p,10439b,925s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,15n,49p,10439b,925s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-04.enc}
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-02.enc}{/
 usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-01.enc}{/us
@@ -2354,10 +2354,10 @@ Sans-Regular.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/st
 ix-mathit.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-
 mathrm.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mat
 hscr.pfb>
-Output written on eLife_supplemental_draft.pdf (12 pages, 1648414 bytes).
+Output written on eLife_supplemental_draft.pdf (12 pages, 1480435 bytes).
 PDF statistics:
- 1960 PDF objects out of 2073 (max. 8388607)
- 1108 compressed objects within 12 object streams
+ 1507 PDF objects out of 1728 (max. 8388607)
+ 865 compressed objects within 9 object streams
  56 named destinations out of 1000 (max. 500000)
- 70788 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 70276 words of extra memory for PDF output out of 74296 (max. 10000000)
 

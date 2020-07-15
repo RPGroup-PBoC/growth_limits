@@ -4,9 +4,9 @@
 \BOOKMARK [2][-]{subsection*.5}{Mass spectrometry measurements}{section*.1}% 4
 \BOOKMARK [1][-]{section*.6}{Summary of Proteomic Data}{}% 5
 \BOOKMARK [1][-]{section*.9}{Estimation of total protein, cell size, and surface area across all growth conditions.}{}% 6
-\BOOKMARK [1][-]{section*.11}{Schmidt et al. Proteomic Data Set}{}% 7
-\BOOKMARK [2][-]{subsection*.14}{Effect of cell volume on reported absolute protein abundances in the work of Schmidt et al. .}{section*.11}% 8
-\BOOKMARK [2][-]{subsection*.15}{Reconsidering assumption that protein concentration is constant.}{section*.11}% 9
+\BOOKMARK [1][-]{section*.11}{Additional Considerations of Schmidt et al. Data Set}{}% 7
+\BOOKMARK [2][-]{subsection*.14}{Effect of cell volume on reported absolute protein abundances}{section*.11}% 8
+\BOOKMARK [2][-]{subsection*.15}{Assumption of constant protein concentration across growth conditions}{section*.11}% 9
 \BOOKMARK [2][-]{subsection*.17}{Estimating cellular protein concentration as a function of growth rate.}{section*.11}% 10
 \BOOKMARK [1][-]{section*.19}{Extending Estimates to a Continuum of Growth Rates}{}% 11
 \BOOKMARK [2][-]{subsection*.20}{Estimation of the total cell mass}{section*.19}% 12

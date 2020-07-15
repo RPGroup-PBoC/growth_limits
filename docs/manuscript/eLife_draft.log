@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  15 JUL 2020 10:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  15 JUL 2020 13:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -913,6 +913,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
 LaTeX Info: Redefining \nameref on input line 26.
+ (/Users/gchure/Dropbox/git/growth_limits/docs/manuscript/eLife_draft.out) (/Users/gchure/Dropbox/git/growth_limits/docs/manuscript/eLife_draft.out)
 \@outlinefile=\write4
 \openout4 = `eLife_draft.out'.
 
@@ -986,21 +987,10 @@ LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 1.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
 (Font)              scaled to size 10.95pt on input line 1.
-
-
-Package natbib Warning: Citation `mikucki2009' on page 1 undefined on input line 4.
-
-
-Package natbib Warning: Citation `schaechter1958' on page 1 undefined on input line 5.
-
+LaTeX Font Info:    Font shape `T1/opensans-TLF/b/it' will be
+(Font)              scaled to size 9.0pt on input line 4.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 8.
-
-Package natbib Warning: Citation `jun2018' on page 1 undefined on input line 13.
-
-
-Package natbib Warning: Citation `monod1949' on page 1 undefined on input line 18.
-
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
@@ -1008,233 +998,144 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
 
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 45.
-LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 45.
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 45.
-
 [1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-LaTeX Font Info:    Font shape `T1/opensans-TLF/b/it' will be
-(Font)              scaled to size 9.0pt on input line 48.
-
-
-LaTeX Warning: Reference `fig:categories' on page 2 undefined on input line 48.
-
-
-LaTeX Warning: Reference `fig:categories' on page 2 undefined on input line 50.
-
-
-Package natbib Warning: Citation `schmidt2016' on page 2 undefined on input line 53.
-
-
-Package natbib Warning: Citation `peebo2015' on page 2 undefined on input line 53.
-
-
-Package natbib Warning: Citation `valgepea2013' on page 2 undefined on input line 53.
-
-
-Package natbib Warning: Citation `li2014' on page 2 undefined on input line 54.
-
-
-Package natbib Warning: Citation `taheriaraghi2015' on page 2 undefined on input line 60.
-
-
-Package natbib Warning: Citation `schaechter1958' on page 2 undefined on input line 87.
-
-
-Package natbib Warning: Citation `si2017' on page 2 undefined on input line 87.
-
-<main_figs/schematic_categories_grouped.pdf, id=15, 298.75014pt x 163.72166pt>
+<main_figs/schematic_categories_grouped.pdf, id=71, 298.75014pt x 163.72166pt>
 File: main_figs/schematic_categories_grouped.pdf Graphic file (type pdf)
 <use main_figs/schematic_categories_grouped.pdf>
 Package pdftex.def Info: main_figs/schematic_categories_grouped.pdf  used on input line 124.
 (pdftex.def)             Requested size: 298.7494pt x 163.72125pt.
+LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
+(Font)              scaled to size 8.0pt on input line 133.
 ) (/Users/gchure/Dropbox/git/growth_limits/docs/manuscript/section_02_transport.tex
 Package hyperref Info: bookmark level for unknown featurebox defaults to 0 on input line 2.
-
-
-Package natbib Warning: Citation `milo2010' on page 2 undefined on input line 39.
-
 Package mdframed Info: mdframed inside float 
  mdframed uses option nobreak mdframed on input line 64.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 64.
 
-LaTeX Warning: Reference `fig:categories' on page 2 undefined on input line 69.
-
-
-Package natbib Warning: Citation `monod1947' on page 2 undefined on input line 73.
-
-
-Package natbib Warning: Citation `jun2018' on page 2 undefined on input line 77.
-
-
-Package natbib Warning: Citation `assentoft2016' on page 2 undefined on input line 77.
-
-
-Package natbib Warning: Citation `stasi2019' on page 2 undefined on input line 77.
-
-
-Package natbib Warning: Citation `antonenko1997' on page 2 undefined on input line 77.
-
-
-Package natbib Warning: Citation `rosenberg1977' on page 2 undefined on input line 77.
-
-
-Package natbib Warning: Citation `willsky1973' on page 2 undefined on input line 77.
-
-
-Package natbib Warning: Citation `phillips2018' on page 2 undefined on input line 78.
+Overfull \vbox (12.86823pt too high) has occurred while \output is active []
 
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
-
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 85.
 
 [2 </Users/gchure/Dropbox/git/growth_limits/docs/manuscript/main_figs/schematic_categories_grouped.pdf>]
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
-
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 85.
-
 [3]
-
-Package natbib Warning: Citation `neidhardt1991' on page 4 undefined on input line 88.
-
-
-Package natbib Warning: Citation `taymaz-nikerel2010' on page 4 undefined on input line 88.
-
-
-Package natbib Warning: Citation `heldal1985' on page 4 undefined on input line 88.
-
-
-Package natbib Warning: Citation `bauer1976' on page 4 undefined on input line 88.
-
-
-LaTeX Warning: Reference `box:estimate_rules' on page 4 undefined on input line 92.
-
-
-Package natbib Warning: Citation `heeswijk2013a' on page 4 undefined on input line 115.
-
-
-Package natbib Warning: Citation `khademi2004' on page 4 undefined on input line 115.
-
-
-LaTeX Warning: Reference `fig:carbon_tport' on page 4 undefined on input line 130.
-
-
-Package natbib Warning: Citation `escalante2012' on page 4 undefined on input line 137.
-
-
-LaTeX Warning: Reference `fig:carbon_tport' on page 4 undefined on input line 143.
-
-
-Package natbib Warning: Citation `schmidt2016' on page 4 undefined on input line 145.
-
-
-Package natbib Warning: Citation `peebo2015' on page 4 undefined on input line 145.
-
-
-Package natbib Warning: Citation `valgepea2013' on page 4 undefined on input line 145.
-
-
-Package natbib Warning: Citation `li2014' on page 4 undefined on input line 145.
-
-
-LaTeX Warning: Reference `fig:carbon_tport' on page 4 undefined on input line 146.
-
-
-LaTeX Warning: Reference `fig:carbon_tport' on page 4 undefined on input line 150.
-
-
-LaTeX Warning: Reference `fig:carbon_tport' on page 4 undefined on input line 153.
-
-<main_figs/fig2_carbon_transport.pdf, id=114, 488.69475pt x 300.322pt>
+<main_figs/fig2_carbon_transport.pdf, id=227, 488.69475pt x 300.322pt>
 File: main_figs/fig2_carbon_transport.pdf Graphic file (type pdf)
 <use main_figs/fig2_carbon_transport.pdf>
 Package pdftex.def Info: main_figs/fig2_carbon_transport.pdf  used on input line 159.
 (pdftex.def)             Requested size: 488.69354pt x 300.32127pt.
-
-Package natbib Warning: Citation `lu2003' on page 4 undefined on input line 181.
-
+LaTeX Font Info:    Font shape `T1/opensans-TLF/b/it' will be
+(Font)              scaled to size 8.0pt on input line 181.
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
-
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 186.
 
 [4]
+Overfull \hbox (6.0pt too wide) has occurred while \output is active
+ [][][][][][][]| 
+ []
 
-LaTeX Warning: Reference `fig:carbon_tport' on page 5 undefined on input line 187.
+[5]
+Overfull \hbox (6.0pt too wide) has occurred while \output is active
+ [][][][][][][]| 
+ []
+
+[6 </Users/gchure/Dropbox/git/growth_limits/docs/manuscript/main_figs/fig2_carbon_transport.pdf>]
+Overfull \hbox (8.7212pt too wide) in paragraph at lines 232--262
+\T1/opensans-TLF/m/n/9 mak-ing up DNA, RNA, and the NTP en-ergy pool as well as play-ing a crit-i-cal role in the post-translational
+ []
+
+<main_figs/fig3_phospho_sulfo_transport.pdf, id=1158, 443.74184pt x 300.41835pt>
+File: main_figs/fig3_phospho_sulfo_transport.pdf Graphic file (type pdf)
+<use main_figs/fig3_phospho_sulfo_transport.pdf>
+Package pdftex.def Info: main_figs/fig3_phospho_sulfo_transport.pdf  used on input line 288.
+(pdftex.def)             Requested size: 443.74075pt x 300.4176pt.
+LaTeX Font Info:    Font shape `T1/opensans-TLF/m/it' will be
+(Font)              scaled to size 8.0pt on input line 299.
+LaTeX Font Info:    Trying to load font information for TS1+opensans-TLF on input line 314.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/opensans/TS1opensans-TLF.fd
+File: TS1opensans-TLF.fd 2019/06/24 Font definitions for TS1/opensans-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/opensans-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 314.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `opensans-TLF' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+)
+Overfull \hbox (6.0pt too wide) has occurred while \output is active
+ [][][][][][][]| 
+ []
+
+[7]
+Overfull \hbox (6.0pt too wide) has occurred while \output is active
+ [][][][][][][]| 
+ []
+
+[8 </Users/gchure/Dropbox/git/growth_limits/docs/manuscript/main_figs/fig3_phospho_sulfo_transport.pdf>]
+Overfull \hbox (6.0pt too wide) has occurred while \output is active
+ [][][][][][][]| 
+ []
+
+[9] (/Users/gchure/Dropbox/git/growth_limits/docs/manuscript/eLife_draft.bbl
+Overfull \hbox (6.0pt too wide) has occurred while \output is active
+ [][][][][][][]| 
+ []
+
+[10]
+Underfull \hbox (badness 3108) in paragraph at lines 230--236
+[]\T1/opensans-TLF/m/n/8 Taymaz-Nikerel, H., Boru-jeni, A. E., Ver-hei-jen, P. J. T., Hei-j-nen, J. J., and van Gu-lik, W. M. (2010).
+ []
 
 
-LaTeX Warning: Reference `fig:carbon_tport' on page 5 undefined on input line 192.
+Underfull \hbox (badness 8038) in paragraph at lines 230--236
+\T1/opensans-TLF/m/n/8 Genome-derived min-i-mal metabolic mod-els for \T1/opensans-TLF/m/it/8 Es-cherichia coli \T1/opensans-TLF/m/n/8 mg1655 with es-ti-mated in vivo
+ []
 
 
-LaTeX Warning: Reference `fig:carbon_tport' on page 5 undefined on input line 194.
+Underfull \hbox (badness 10000) in paragraph at lines 230--236
+\T1/opensans-TLF/m/n/8 res-pi-ra-tory ATP sto-i-chiom-e-try.  \T1/opensans-TLF/m/it/8 Biotech-nol-ogy and Bio-engi-neer-ing\T1/opensans-TLF/m/n/8 , 107(2):369--381.  _eprint:
+ []
 
-
-Package natbib Warning: Citation `monod1947' on page 5 undefined on input line 201.
-
-
-Package natbib Warning: Citation `liu2005a' on page 5 undefined on input line 201.
-
-
-Package natbib Warning: Citation `aidelberg2014' on page 5 undefined on input line 201.
-
+) 
+AED: lastpage setting LastPage
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
+[11] (/Users/gchure/Dropbox/git/growth_limits/docs/manuscript/eLife_draft.suppinfo)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
+ (/Users/gchure/Dropbox/git/growth_limits/docs/manuscript/eLife_draft.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 48.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 48.
+Package rerunfilecheck Info: File `eLife_draft.out' has not changed.
+(rerunfilecheck)             Checksum: 6F4152A1EB2C8EFC4FC1048366D0CF76;397.
+ ) 
+Here is how much of TeX's memory you used:
+ 20852 strings out of 480608
+ 365171 string characters out of 5903631
+ 715354 words of memory out of 5000000
+ 36289 multiletter control sequences out of 15000+600000
+ 606411 words of font info for 170 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 63i,15n,100p,2710b,974s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/opensans/a_nvvucy.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/opensans/a_jg4h6q.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Bold.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/ascender/opensans/OpenSans-BoldItalic.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Italic.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Regular.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/stix/stix-mathscr.pfb>
+Output written on /Users/gchure/Dropbox/git/growth_limits/docs/manuscript/eLife_draft.pdf (11 pages, 2296739 bytes).
+PDF statistics:
+ 1724 PDF objects out of 1728 (max. 8388607)
+ 1012 compressed objects within 11 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 10816 words of extra memory for PDF output out of 12000 (max. 10000000)
 
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 202.
-
-[5 </Users/gchure/Dropbox/git/growth_limits/docs/manuscript/main_figs/fig2_carbon_transport.pdf>]
-
-Package natbib Warning: Citation `gama-castro2016' on page 6 undefined on input line 207.
-
-
-Package natbib Warning: Citation `zhang2014a' on page 6 undefined on input line 207.
-
-
-Package natbib Warning: Citation `jacob1961' on page 6 undefined on input line 210.
-
-
-Package natbib Warning: Citation `ireland2020' on page 6 undefined on input line 211.
-
-
-Package natbib Warning: Citation `gama-castro2016' on page 6 undefined on input line 211.
-
-
-Package natbib Warning: Citation `belliveau2018' on page 6 undefined on input line 211.
-
-
-LaTeX Warning: Reference `fig:carbon_tport' on page 6 undefined on input line 216.
-
-
-LaTeX Warning: Reference `fig:carbon_tport' on page 6 undefined on input line 222.
-
-
-Package natbib Warning: Citation `rosenberg1977' on page 6 undefined on input line 241.
-
-
-Package natbib Warning: Citation `ramos1977' on page 6 undefined on input line 243.
-
-
-Package natbib Warning: Citation `booth1979' on page 6 undefined on input line 243.
-
-
-Package natbib Warning: Citation `harris2001' on page 6 undefined on input line 251.
-
-
-Package natbib Warning: Citation `feist2007' o

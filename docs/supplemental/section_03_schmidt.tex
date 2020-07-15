@@ -1,4 +1,4 @@
-\section{Schmidt \textit{et al.} Proteomic Data Set}
+\section{Additional Considerations of Schmidt \textit{et al.} Data Set}
 \label{sec:SI_schmidt}
 
 While the dataset from Schmidt \textit{et al.} remains a heroic effort that our
@@ -86,7 +86,7 @@ media, there is quite a bit of variability among are different estimates.
   \label{fig:schmidt_adjustment_summary}
 \end{figure}
 
-\subsection{Effect of cell volume on reported absolute protein abundances in the work of Schmidt \textit{et al.} .}
+\subsection{Effect of cell volume on reported absolute protein abundances}
 
 The authors calculated proteome-wide  protein abundance by first determining
 absolute abundances of 41 pre-selected proteins, which relied on adding
@@ -140,12 +140,13 @@ noted above were therefore scaled to their estimates and are  shown in Figure
 % x 30 \% x 60 \%, or about 200 fg / fl total protein. The value from of 85 fg/fl used here
 % appears quite low.
 
-If we instead consider the cell volumes predicted in the work of Si \textit{et al.},
-we again need to take growth in M9 minimal media + glucose as a reference with known total mass,
-but we can follow a similar approach to estimate total protein mass for all other growth conditions.
-Letting  $V_{Si\_glu}$ = 0.6 fl be the predicted cell volume, the
-cellular protein concentration becomes $[M_P]_{Si}$ = $M_P/V_{Si\_glu}$ = 400 fg/fl. The
-new total protein mass per cell can then be calculated from,
+If we instead consider the cell volumes predicted in the work of Si \textit{et
+al.}, we again need to take growth in M9 minimal media + glucose as a reference
+with known total mass, but we can follow a similar approach to estimate total
+protein mass for all other growth conditions. Letting  $V_{Si\_glu}$ = 0.6 fl be
+the predicted cell volume, the cellular protein concentration becomes
+$[M_P]_{Si}$ = $M_P/V_{Si\_glu}$ = 400 fg/fl. The new total protein mass per
+cell can then be calculated from,
 
 \begin{equation}
 	M_{P\_i}' = [M_P]_{Si} \cdot V_{Si\_i}
@@ -155,7 +156,7 @@ the new volume prediction for each condition $i$, These are shown as [] dots in
 Figure \FIG{schmidt_adjustment_summary}.
 
 
-\subsection{Reconsidering assumption that protein concentration is constant.}
+\subsection{Assumption of constant protein concentration across growth conditions}
 
 We next relax the assumption that cellular protein concentration is constant and
 instead, attempt to  estimate it using experimental data. Here we first note

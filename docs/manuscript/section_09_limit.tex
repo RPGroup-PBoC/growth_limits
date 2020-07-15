@@ -1,12 +1,13 @@
 
 \subsection{Translation and Ribosomal Synthesis as a Growth-Rate Limiting Step}
 Thus far, the general back-of-the-envelope estimates have been reasonably
-successful in explaining what sets the scale of absolute protein copy number. A
+successful in explaining what sets the scale of absolute protein copy number as
+well as their observed dependence on the cellular  growth rate. A
 recurring theme that has arisen is the ability of cells to parallelize their
 biosynthesis tasks. For example, while DNA replication speed-limit is $\approx$
 40 minutes to replicate a genome, cells can divide faster than this by
 initiating more than one round of replication per doubling. The process of
-protein synthesis overall  doesn't appear to be rate-limiting, since for
+protein synthesis overall doesn't appear to be rate-limiting, since for
 example, cells are able to induce the  expression of additional enzymes to grow
 on alternative carbon sources.  However, as we will see, the synthesis of ribosomal
 proteins presents a special case where parallelization is not possible
@@ -40,13 +41,13 @@ factor in determining the cellular growth rate.
 
 To gain some intuition into how translation can set the speed of
 bacterial growth, we again consider the total number of peptide bonds that must
-be synthesized, which we denote as $N_\text{AA}$. With cells growing exponentially in time
+be synthesized, which we denote as $N_\text{pep}$. With cells growing exponentially in time
 \citep{godin2010}, we can compute the number of amino acids to be polymerized as
 \begin{equation}
-    N_\text{AA} \lambda = r_t R f_a,
+    N_\text{pep} \lambda = r_t R f_a,
     \label{eq:mass_balance}
 \end{equation} where
-$\lambda$ is the cell growth rate in s$^{-1}$, $r_t$ is the maximum translation
+$\lambda$ is the cell growth rate in s$^{-1}$, $r_t$ is the maximum elongation
 rate in AA$\cdot$s$^{-1}$, and $R$ is the average ribosome copy number per cell.
 The addition factor $f_a$ refers to the fraction of actively translating
 ribosomes, and allows us to account for the possibility of nonfunctional,
@@ -56,10 +57,11 @@ immature ribosomes or active sequestration of ribosomes mediated by
 slow growth \citep{dennis2004, dai2016}. Knowing the number of peptide bonds to
 be formed permits us to compute the translation-limited growth rate as
 \begin{equation}
-\lambda_\text{translation-limited} = \frac{r_t R f_a}{N_\text{AA}}.
+\lambda_\text{translation-limited} = \frac{r_t R f_a}{N_\text{pep}}.
+\label{eq:lambda_limit}
 \end{equation}
 
-Alternatively, since $N_{AA}$ is related to the total protein mass through the
+Alternatively, since $N_\text{pep}$ is related to the total protein mass through the
 molecular weight of each protein, we can also consider the growth rate in terms
 of the fraction of the total proteome mass dedicated to ribosomal proteins. By
 making the approximation that an average amino acid has a molecular weight of
@@ -67,7 +69,7 @@ making the approximation that an average amino acid has a molecular weight of
 $N_{AA}$ by $(m_{\textrm{protein}}/\text{110 Da}) \times N_A$, where $N_A$ is Avogadro's number.
 Similarly, $R$ is related to the ribosomal protein mass by $R \approx
 (m_R/\text{800 Da}) \times N_A$, where 800 Da reflects the summed molecular weight
-of all ribosomal subunits.  This allows us to approximate  $R / N_\text{AA}
+of all ribosomal subunits.  This allows us to approximate  $R / N_\text{pep}
 \approx \Phi_R / L_R$,  where $\Phi_R$ is the ribosomal mass fraction $m_{\textrm{protein}}/m_R$,
 and $L_R$ the ratio of 800 kDa / 110 Da per amino acid or, alternatively, the
 total length in amino acids that make up a ribosome. The translation-limited

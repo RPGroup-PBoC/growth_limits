@@ -65,68 +65,67 @@ appropriate given the variation in the data.
 
 
 \section{Uptake of Nutrients}
-In order to build new cellular mass, the molecular and elemental building blocks
-must be scavenged from the environment in different forms. Carbon, for example,
-is acquired via the transport of carbohydrates and sugar alcohols with some
-carbon sources receiving preferential treatment in their consumption
-\citep{monod1947}. Phosphorus, sulfur, and nitrogen, on the other hand, are
-harvested primarily in the forms of inorganic salts, namely phosphate, sulfate,
-and ammonia \citep{jun2018, assentoft2016, stasi2019, antonenko1997,
-rosenberg1977, willsky1973}. All of these compounds have different
-permeabilities across the cell membrane \cite{phillips2018} and  most require some energetic
-investment either via ATP hydrolysis or through the proton electrochemical
-gradient to bring the material across the hydrophobic cell membrane. Given the
-diversity of biological transport mechanisms and the vast number of inputs
-needed to build a cell, we begin by considering transport of some of the most
-important cellular ingredients: carbon, nitrogen, oxygen, hydrogen, phosphorus,
-and sulfur.
+We begin our series of estimates by considering the critical transport
+processes diagrammed in \FIG{categories}(A). In order to build new cellular
+mass, the molecular and elemental building blocks must be scavenged from the
+environment in different forms. Carbon, for example, is acquired via the
+transport of carbohydrates and sugar alcohols with some carbon sources
+receiving preferential treatment in their consumption \citep{monod1947}.
+Phosphorus, sulfur, and nitrogen, on the other hand, are harvested primarily
+in the forms of inorganic salts, namely phosphate, sulfate, and ammonia
+\citep{jun2018, assentoft2016, stasi2019, antonenko1997, rosenberg1977,
+willsky1973}. All of these compounds have different permeabilities across the
+cell membrane \cite{phillips2018} and most require some energetic investment
+either via ATP hydrolysis or through the proton electrochemical gradient to
+bring the material across the hydrophobic cell membrane. Given the diversity
+of biological transport mechanisms and the vast number of inputs needed to
+build a cell, we begin by considering transport of some of the most important
+cellular ingredients: carbon, nitrogen, oxygen, hydrogen, phosphorus, and
+sulfur.
 
 The elemental composition of \textit{E. coli} has received much quantitative
 attention over the past half century \citep{neidhardt1991, taymaz-nikerel2010,
 heldal1985, bauer1976}, providing us with a starting point for estimating the
 copy numbers of various transporters. While there is some variability in the
 exact elemental percentages (with different uncertainties), we can estimate that
-the dry mass of a typical \textit{E. coli} cell is $\approx$ 45\% carbon (BNID:
-100649, \cite{milo2010}), $\approx$ 15\% nitrogen (BNID: 106666,
-\cite{milo2010}), $\approx$ 3\% phosphorus (BNID: 100653, \cite{milo2010}), and
-1\% sulfur (BNID: 100655, \cite{milo2010}). In the coming paragraphs, we will
+the dry mass of a typical \textit{E. coli} cell is $\approx$ 45\% carbon
+(BioNumber ID: 100649, see \BOX{estimate_rules}), $\approx$ 15\% nitrogen (BNID: 106666), $\approx$ 3\% phosphorus (BNID: 100653), and
+1\% sulfur (BNID: 100655).In the coming paragraphs, we will
 engage in a dialogue between back-of-the-envelope estimates for the numbers of
 transporters needed to facilitate these chemical stoichiometries and the
 experimental proteomic measurements of the biological reality. Such an approach
 provides the opportunity to test if our biological knowledge is sufficient to
-understand the scale at which these complexes are produced. Specifically, we
-will make these estimates considering a modest doubling time of 5000 s, a growth
-rate of $\approx$ 0.5 hr$^{-1}$, the range in which the majority of the
-experimental measurements reside.
+understand the scale at which these complexes are produced. At the end of this
+section, we discuss physical limits as to the number of transporters that can be
+present, and comment on the plausibility of this process acting as a molecular bottleneck.
 
 \subsection{Nitrogen Transport}
-Before we begin our back-of-the-envelope estimations, we must address which
-elemental sources must require proteinaceous transport, meaning that the cell
-cannot acquire appreciable amounts simply via diffusion across the membrane.
-The permeability of the lipid membrane to a large number of solutes has been
-extensively characterized over the past century. Large, polar
-molecular species (such as various sugar molecules, sulfate, and phosphate) have
-low permeabilities  while small, non-polar compounds (such as oxygen, carbon
-dioxide, and ammonia) can readily diffuse across the
-membrane. Ammonia, a primary source of nitrogen in typical laboratory
-conditions, has a permeability on par with water ($\approx 10^5$ nm/s,
-BNID:110824 \cite{milo2010}). In particularly nitrogen-poor
-conditions, \textit{E. coli} expresses a transporter (AmtB) which appears to aid in
+We must first address which elemental sources must require proteinaceous
+transport, meaning that the cell cannot acquire appreciable amounts simply
+via diffusion across the membrane. The permeability of the lipid membrane to
+a large number of solutes has been extensively characterized over the past
+century. Large, polar molecular species (such as various sugar molecules,
+sulfate, and phosphate) have low permeabilities while small, non-polar
+compounds (such as oxygen, carbon dioxide, and ammonia) can readily diffuse
+across the membrane. Ammonia, a primary source of nitrogen in typical
+laboratory conditions, has a permeability on par with water ($\sim 10^5$
+nm/s, BNID:110824). In particularly nitrogen-poor conditions,
+\textit{E. coli} expresses a transporter (AmtB) which appears to aid in
 nitrogen assimilation, though the mechanism and kinetic details of transport
-are still a matter of debate \citep{heeswijk2013a, khademi2004}. Beyond ammonia,
-another plentiful source of nitrogen come in the form of glutamate, which has it's
-own complex metabolism and scavenging pathways. However, nitrogen is plentiful
-in the growth conditions examined in this work, permitting us to neglect
-nitrogen transport as a potential rate limiting process in cell division in
-typical experimental conditions. We direct the reader to the supplemental
-information for a more in-depth discussion of permeabilities and a series of
-calculations revealing that active nitrogen transport can be neglected for the
-purposes of this article.
+are still a matter of debate \citep{heeswijk2013a, khademi2004}. Beyond
+ammonia, another plentiful source of nitrogen come in the form of glutamate,
+which has its own complex metabolism and scavenging pathways. However,
+nitrogen is plentiful in the growth conditions examined in this work,
+permitting us to neglect nitrogen transport as a potential rate limiting
+process in cell division in typical experimental conditions. We direct the
+reader to the Supplemental Information for a more in-depth discussion of
+permeabilities and a series of calculations revealing that active nitrogen
+transport can be neglected for the purposes of this article.
 
 \subsection{Carbon Transport}
-We begin our estimations with the most abundant element in \textit{E. coli}
+We begin with the most abundant element in \textit{E. coli}
 by mass, carbon. Using $\approx$ 0.3 pg as the typical \textit{E. coli} dry
-mass (BNID: 103904, \cite{milo2010}), we estimate that $\approx 10^{10}$
+mass (BNID: 103904), we estimate that $\sim 10^{10}$
 carbon atoms must be brought into the cell in order to double all of the
 carbon-containing molecules (\FIG{carbon_tport}(A, top)). Typical laboratory
 growth conditions, such as those explored in the aforementioned proteomic
@@ -137,8 +136,8 @@ One such mechanism of transport is via the PTS system which is a highly
 modular system capable of transporting a diverse range of sugars
 \citep{escalante2012}. The glucose-specific component of this system
 transports $\approx$ 200 glucose molecules per second per transporter (BNID:
-114686, \cite{milo2010}). Making the assumption that this is a typical sugar
-transport rate, coupled with the need to transport 10$^{10}$ carbon atoms, we
+114686). Making the assumption that this is a typical sugar
+transport rate, coupled with the need to transport $\sim 10^{10}$ carbon atoms, we
 arrive at the conclusion that on the order of 1,000 transporters must be
 expressed in order to bring in enough carbon atoms to divide in 5000 s,
 diagrammed in the top panel of \FIG{carbon_tport}(A). This estimate, along
@@ -147,7 +146,7 @@ proteomic data sets \citep{schmidt2016, peebo2015,valgepea2013,li2014}, is
 shown in \FIG{carbon_tport}(A). While we estimate 1500 transporters are
 needed with a 5000 s division time, we can abstract this calculation to consider
 any particular growth rate given knowledge of the cell density and volume as a
-function of growth rate and direct the reader to the SI for more information. As
+function of growth rate and direct the reader to the Supplemental Information for more information. As
 revealed in \FIG{carbon_tport}(A), experimental measurements exceed the estimate
 by several fold, illustrating that transport of carbon into the cell is not
 rate limiting for cell division. Abstracting this point estimate at 5000 s to a
@@ -160,21 +159,21 @@ abundance is below our simple estimate.
     \includegraphics{main_figs/fig2_carbon_transport.pdf}
     \caption{\textbf{The abundance of carbon transport systems across growth
     rates.} (A) A simple estimate for the minimum number of generic carbohydrate
-    transport systems (top) assumes $\approx 10^{10}$ C are needed to complete
-    division, each transported sugar contains $\approx 6$ C, and each
+    transport systems (top) assumes $\sim 10^{10}$ C are needed to complete
+    division, each transported sugar contains $\approx 5$ C, and each
     transporter conducts sugar molecules at a rate of $\approx 200$ per second.
     Bottom plot shows the estimated number of transporters needed at a growth
     rate of $\approx 0.5 $ per hr (light-brown point and dashed lines).  Colored
-    points correspond to the mean number of PTS system sugar transporters
-    (complexes annotated with the Gene Ontology term GO:0009401) for
+    points correspond to the mean number of complexes involved in carbohydrate import
+    (complexes annotated with the Gene Ontology terms GO:0009401 and GO:0098704) for
     different growth conditions across different published datasets. (B) The
     abundance of various specific carbon transport systems plotted as a function
     of the population growth rate. The rates of substrate transport to compute
     the continuum growth rate estimate (grey line) were 200 glucose$\cdot$
-    s$^{-1}$ (BNID: 103693, \cite{milo2010}),  2000 glycerol$\cdot$s$^{-1}$
+    s$^{-1}$ (BNID: 103693),  2000 glycerol$\cdot$s$^{-1}$
     \citep{lu2003}, 200 fructose$\cdot$
-    s$^{-1}$ (assumed to be similar to PtsI, BNID: 103693, \cite{milo2010}), and 50 xylose$\cdot$s$^{-1}$
-    (assumed to be comparable to LacY, BNID:103159, \cite{milo2010}).
+    s$^{-1}$ (assumed to be similar to PtsI, BNID: 103693), and 50 xylose$\cdot$s$^{-1}$
+    (assumed to be comparable to LacY, BNID:103159).
     Red points and highlighted text indicate conditions in
     which the
     only source of carbon in the growth medium induces expression of the
@@ -204,28 +203,30 @@ source \citep{monod1947, liu2005a, aidelberg2014}.
 It is now understood that a large number of metabolic operons are regulated
 with dual-input logic gates that are only expressed when glucose
 concentrations are low (mediated by cyclic-AMP receptor protein CRP) and the
-concentration of other carbon sources are elevated \citep{gama-castro2016, zhang2014a}. A
-famed example of such dual-input regulatory logic is in the regulation of the
-\textit{lac} operon which is only natively activated in the absence of glucose and the
-presence of allolactose, an intermediate in lactose metabolism \citep{jacob1961}, though
-we now know of many other such examples \citep{ireland2020, gama-castro2016,
-belliveau2018}. This illustrates that once glucose is depleted from the
-environment, cells have a means to dramatically increase the abundance of the
-specific transporter needed to digest the next sugar that is present. Several
-examples of induced expression of specific carbon-source transporters are
-shown in \FIG{carbon_tport}(B). Points colored in red (labeled by red
-text-boxes) correspond to growth conditions in which the specific carbon source
+concentration of other carbon sources are elevated \citep{gama-castro2016,
+zhang2014a}. A famed example of such dual-input regulatory logic is in the
+regulation of the \textit{lac} operon which is only natively activated in the
+absence of glucose and the presence of allolactose, an intermediate in
+lactose metabolism \citep{jacob1961}, though we now know of many other such
+examples \citep{ireland2020, gama-castro2016, belliveau2018}. This
+illustrates that once glucose is depleted from the environment, cells have a
+means to dramatically increase the abundance of the specific transporter
+needed to digest the next sugar that is present. Several examples of induced
+expression of specific carbon-source transporters are shown in
+\FIG{carbon_tport}(B). Points colored in red (labeled by red text-boxes)
+correspond to growth conditions in which the specific carbon source
 (glycerol, xylose, or fructose) is present. These plots show that, in the
 absence of the particular carbon source, expression of the transporters is
 maintained on the order of $\sim 10^2$ per cell. However, when the transport
-substrate is present, expression is induced and the
-transporters become highly-expressed. The grey lines in \FIG{carbon_tport}(B)
-show the estimated number of transporters needed at each growth rate to satisfy
-the cellular carbon requirement. It is notable that  in all cases, the magnitude
-of induced expression (shown in red) falls close to the estimate, illustrating
-the ability of the cell to tune expression in response to changing environments. Together, this generic estimation and the specific
-examples of induced expression suggest that transport of carbon across the cell
-membrane, while critical for growth, is not the rate-limiting step of cell division.
+substrate is present, expression is induced and the transporters become
+highly-expressed. The grey lines in \FIG{carbon_tport}(B) show the estimated
+number of transporters needed at each growth rate to satisfy the cellular
+carbon requirement. It is notable that in all cases, the magnitude of induced
+expression (shown in red) falls close to the estimate, illustrating the
+ability of the cell to tune expression in response to changing environments.
+Together, this generic estimation and the specific examples of induced
+expression suggest that transport of carbon across the cell membrane, while
+critical for growth, is not the rate-limiting step of cell division.
 
 \subsection{Phosphorus and Sulfur Transport}
 We now turn our attention towards other essential elements, namely phosphorus and
@@ -240,17 +241,17 @@ electrochemical gradient across the inner membrane is leveraged to transport
 inorganic phosphate into the cell \citep{rosenberg1977}.
 Proton-solute symporters are widespread in \textit{E. coli} \citep{ramos1977,
 booth1979} and can have rapid transport rates of 50 to 100 molecules per second for
-sugars and other solutes (BNID: 103159; 111777, \cite{milo2010}). As a more
+sugars and other solutes (BNID: 103159; 111777). As a more
 extreme example, the proton transporters in the F$_1$-F$_0$ ATP synthase, which
 use the proton electrochemical gradient for rotational motion, can shuttle
 protons across the membrane at a rate of $\approx$ 1000 per second (BNID:
-104890; 103390, \citep{milo2010}). In \textit{E.
+104890; 103390). In \textit{E.
 coli} the PitA phosphate transport system has been shown to be very tightly coupled
 with the proton electrochemical gradient with a 1:1 proton:phosphate
 stoichiometric ratio \citep{harris2001, feist2007}. Taking the geometric mean of
 the aforementioned estimates gives a plausible rate of phosphate transport on
 the order of 300  per second. Illustrated in
-\FIG{phospho_sulfo_tport}(A), we can estimate that $\approx$ 150
+\FIG{phospho_sulfo_tport}(A), we can estimate that $\approx$ 200 
 phosphate transporters are necessary to maintain an $\approx$ 3\% dry mass with
 a 5000 s division time. This estimate is consistent with observation when we examine the
 observed copy numbers of PitA in proteomic data sets (plot in
@@ -270,7 +271,7 @@ transporter CysUWA system which also plays an important role in selenium
 transport \citep{sekowska2000, sirko1995}. While specific kinetic details of
 this transport system are not readily available, generic ATP transport
 systems in prokaryotes transport on the order of 1 to 10 molecules per second
-(BNID: 109035, \cite{milo2010}). Combining this generic
+(BNID: 109035). Combining this generic
 transport rate, measurement of sulfur comprising 1\% of dry mass, and a 5000
 second division time yields an estimate of $\approx$ 1000 CysUWA
 complexes per cell (\FIG{phospho_sulfo_tport}(B)). Once again, this estimate
@@ -310,7 +311,7 @@ facilitate transport. Thus, if acquisition of nutrients was the limiting state
 in cell division, could expression simply be increased to accommodate faster
 growth? A way to approach this question is to compute the amount of space in the
 bacterial membrane that could be occupied by nutrient transporters. Considering a rule-of-thumb for the surface area of
-\textit{E. coli} of about 6 \textmu m$^2$ (BNID: 101792, \cite{milo2010}), we expect
+\textit{E. coli} of about 5 \textmu m$^2$ (BNID: 101792), we expect
 an areal density for 1000 transporters to be approximately 200
 transporters/ \textmu m$^2$. For a typical transporter occupying about 50
 nm$^2$/dimer, this amounts to about only 1 percent of the total inner membrane

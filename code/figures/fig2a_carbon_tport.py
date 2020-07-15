@@ -20,7 +20,7 @@ growth_rate = constants['growth_rate']['value']
 t_double = constants['t_double']['value']
 mass = constants['cell_mass']['value']
 m_carbon = 12/6E11 # in pg
-r_carbon = 1200 # in C / s
+r_carbon = 1000 # in C / s
 N_tporters = (theta_C * mass)/ (m_carbon * r_carbon * t_double)
 
 # Set up the figure canvas. 
@@ -31,12 +31,12 @@ ax.set_xlim([0, 2])
 ax.set_ylim([1E2, 1E5])
 ax.set_yscale('log')
 ax.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
-ax.set_ylabel('mean number of PTS system\n transporters per cell', fontsize=6)
+ax.set_ylabel('mean number of carbohydrate\nimporters per cell', fontsize=6)
 
 # Plot the scaling argument
-ax.plot(0.5, 1.5E3, 'o', ms=6, color=colors['dark_brown'], alpha=0.4, label='point estimate')
-ax.vlines(0.5, 1E2, 1.5E3, color='k', linestyle='--', lw=0.75, label='__nolegend__')
-ax.hlines(1.5E3, 0, 0.5, color='k', linestyle='--', lw=0.75, label='__nolegend__')
+ax.plot(0.5, 2E3, 'o', ms=6, color=colors['dark_brown'], alpha=0.4, label='point estimate')
+ax.vlines(0.5, 1E2, 2E3, color='k', linestyle='--', lw=0.75, label='__nolegend__')
+ax.hlines(2E3, 0, 0.5, color='k', linestyle='--', lw=0.75, label='__nolegend__')
 
 # Plot the data
 for g, d in _carbon.groupby(['dataset', 'dataset_name']):
@@ -46,7 +46,7 @@ for g, d in _carbon.groupby(['dataset', 'dataset_name']):
 ax.plot(growth_rate, N_tporters, '-', lw=3, color='grey', label='cell size dependence',
 alpha=0.3)
 ax.legend(ncol=2, fontsize=6)
-plt.savefig('../../figures/fig2a_pts_transporters.svg', bbox_inches='tight')
+plt.savefig('../../figures/fig2a_carbon_tporters.svg', bbox_inches='tight')
 
 
 # %%

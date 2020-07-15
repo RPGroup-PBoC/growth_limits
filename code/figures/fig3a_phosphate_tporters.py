@@ -19,7 +19,7 @@ vol = constants['volume']['value']
 growth_rate = constants['growth_rate']['value']
 t_double = constants['t_double']['value']
 mass = constants['cell_mass']['value']
-m_phos = 30/6E11 # in pg
+m_phos = 30/5E11 # in pg
 r_phos = 300 # in C / s
 N_tporters = (theta_P * mass)/ (m_phos * r_phos * t_double)
 
@@ -35,9 +35,12 @@ ax.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
 ax.set_ylabel('number of PitA + PitB phosphate\ntransporters per cell', fontsize=6)
 
 # Plot the scaling argument
-ax.plot(0.5, 1.5E2, 'o', ms=6, color=colors['dark_brown'], alpha=0.4, label='point estimate')
-ax.vlines(0.5, 1E1, 1.5E2, color='k', linestyle='--', lw=0.75, label='__nolegend__')
-ax.hlines(1.5E2, 0, 0.5, color='k', linestyle='--', lw=0.75, label='__nolegend__')
+ax.plot(0.5, 2E2, 'o', ms=6, color=colors['dark_brown'], alpha=0.4, label='point estimate',
+        zorder=1000)
+ax.vlines(0.5, 1E1, 2E2, color='k', linestyle='--', lw=0.75, label='__nolegend__',
+        zorder=999)
+ax.hlines(2E2, 0, 0.5, color='k', linestyle='--', lw=0.75, label='__nolegend__', 
+        zorder=999)
 
 # Plot the data
 for g, d in data.groupby(['dataset', 'dataset_name']):
@@ -48,3 +51,5 @@ ax.plot(growth_rate, N_tporters, '-', lw=3, color='grey', label='cell size depen
 alpha=0.3)
 ax.legend(ncol=2, fontsize=6)
 plt.savefig('../../figures/fig3a_phos_transporters.svg', bbox_inches='tight')
+
+# %%

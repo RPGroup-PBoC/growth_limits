@@ -169,9 +169,9 @@ ax[2].set_yticks([0.3, 0.5, 1, 2, 3, 5])
 
 # add lengend to width plot
 
-handles, labels = ax[1].get_legend_handles_labels()
-by_label = dict(zip(labels, handles))
-legend1 = ax[1].legend(by_label.values(), by_label.keys(), loc = 'lower center', fontsize = 6)
+# handles, labels = ax[1].get_legend_handles_labels()
+# by_label = dict(zip(labels, handles))
+# legend1 = ax[1].legend(by_label.values(), by_label.keys(), loc = 'lower center', fontsize = 6)
 
 
 # In total 3x3 lines have been plotted
@@ -179,15 +179,23 @@ lines = ax[1].get_lines()
 
 from matplotlib.lines import Line2D
 
-legend_elements = [Line2D([0], [0], marker='o', color='#AB85AC', label='MG1655',
-                     ms=4, lw = 0,
-                                  markeredgewidth=0.5, markeredgecolor='k'),
-                   Line2D([0], [0], marker='o', color='#A9BFE3', label='NCM3722',
-                                            ms=4, lw = 0,
-                                                     markeredgewidth=0.5, markeredgecolor='k')]
+legend_elements1 = [Line2D([0], [0], marker='s', color='gray', label='Si et al. 2019',
+                     ms=4, lw = 0, markeredgewidth=0.5, markeredgecolor='k',
+                     alpha = 0.4),
+                   Line2D([0], [0], marker='o', color='gray', label='Si et al. 2017',
+                     ms=4, lw = 0,markeredgewidth=0.5, markeredgecolor='k'),
+                   Line2D([0], [0], marker=None, color='k', label='Si et al. 2017',
+                     ms=4, lw = 0.5,markeredgewidth=0.5, markeredgecolor='k')]
 
-legend2 = ax[1].legend(handles = legend_elements,#[lines[i] for i in [0,1]], ["MG1655", "NCM3722"], loc='upper left',
-                fontsize = 6)
+legend_elements2 = [Line2D([0], [0], marker='o', color='#AB85AC', label='MG1655',
+                     ms=4, lw = 0, markeredgewidth=0.5, markeredgecolor='k'),
+                   Line2D([0], [0], marker='o', color='#A9BFE3', label='NCM3722',
+                     ms=4, lw = 0,markeredgewidth=0.5, markeredgecolor='k')]
+
+legend1 = ax[1].legend(handles = legend_elements1, loc = 'lower center',
+                        fontsize = 6)
+legend2 = ax[1].legend(handles = legend_elements2, loc = 'upper left',
+                        fontsize = 6)
 ax[1].add_artist(legend1)
 ax[1].add_artist(legend2)
 

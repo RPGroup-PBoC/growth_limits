@@ -5,9 +5,9 @@
 \contentsline {subsection}{Mass spectrometry measurements}{4}{subsection*.5}
 \contentsline {section}{Summary of Proteomic Data}{4}{section*.6}
 \contentsline {section}{Estimation of total protein, cell size, and surface area across all growth conditions.}{4}{section*.9}
-\contentsline {section}{Schmidt \textit {et al.} Proteomic Data Set}{6}{section*.11}
-\contentsline {subsection}{Effect of cell volume on reported absolute protein abundances in the work of Schmidt \textit {et al.} .}{7}{subsection*.14}
-\contentsline {subsection}{Reconsidering assumption that protein concentration is constant.}{9}{subsection*.15}
+\contentsline {section}{Additional Considerations of Schmidt \textit {et al.} Data Set}{6}{section*.11}
+\contentsline {subsection}{Effect of cell volume on reported absolute protein abundances}{7}{subsection*.14}
+\contentsline {subsection}{Assumption of constant protein concentration across growth conditions}{9}{subsection*.15}
 \contentsline {subsection}{Estimating cellular protein concentration as a function of growth rate.}{9}{subsection*.17}
 \contentsline {section}{Extending Estimates to a Continuum of Growth Rates}{11}{section*.19}
 \contentsline {subsection}{Estimation of the total cell mass}{11}{subsection*.20}

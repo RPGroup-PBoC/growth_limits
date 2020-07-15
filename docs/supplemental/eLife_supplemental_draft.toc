@@ -1,9 +1,9 @@
 \select@language {english}
-\contentsline {section}{Summary of Proteome Datasets.}{3}{section*.1}
+\contentsline {section}{Summary of Proteome Data: Experimental Details}{3}{section*.1}
 \contentsline {subsection}{Fluorescence based measurements}{3}{subsection*.3}
 \contentsline {subsection}{Ribosomal profiling measurements}{3}{subsection*.4}
 \contentsline {subsection}{Mass spectrometry measurements}{4}{subsection*.5}
-\contentsline {section}{Summary of Proteomic Data Sets.}{4}{section*.6}
+\contentsline {section}{Summary of Proteomic Data}{4}{section*.6}
 \contentsline {section}{Estimation of total protein, cell size, and surface area across all growth conditions.}{4}{section*.9}
 \contentsline {section}{Schmidt \textit {et al.} Proteomic Data Set}{6}{section*.11}
 \contentsline {subsection}{Effect of cell volume on reported absolute protein abundances in the work of Schmidt \textit {et al.} .}{7}{subsection*.14}

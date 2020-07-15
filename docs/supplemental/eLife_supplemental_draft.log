@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  14 JUL 2020 16:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  14 JUL 2020 17:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2211,91 +2211,15 @@ Package pdftex.def Info: SI_figs/dataset_corrections.pdf used on input line 137
 .
 (pdftex.def)             Requested size: 354.70851pt x 171.04483pt.
 ) (./section_02_cell_size.tex
-! Missing $ inserted.
-<inserted text> 
-                $
-l.11 the optimize.curve_
-                        fit function from the Scipy python package \citep{20...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+LaTeX Font Info:    Try loading font information for TS1+fos on input line 16.
 
-
-! LaTeX Error: Command \bfseries invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 ...cipy python package \citep{2020scipynmeth}
-                                                  .
-Please use the math alphabet \mathbf instead of the \bfseries command. 
-
-
-! LaTeX Error: Command \itshape invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 ...cipy python package \citep{2020scipynmeth}
-                                                  .
-Please define a new math alphabet
-if you want to use a special font in math mode. 
-
-
-! LaTeX Error: Command \bfseries invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 ...cipy python package \citep{2020scipynmeth}
-                                                  .
-Please use the math alphabet \mathbf instead of the \bfseries command. 
-
-
-! LaTeX Error: Command \itshape invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 ...cipy python package \citep{2020scipynmeth}
-                                                  .
-Please define a new math alphabet
-if you want to use a special font in math mode. 
-
-
-! LaTeX Error: Command \bfseries invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 ...cipy python package \citep{2020scipynmeth}
-                                                  .
-Please use the math alphabet \mathbf instead of the \bfseries command. 
-
-
-! LaTeX Error: Command \itshape invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 ...cipy python package \citep{2020scipynmeth}
-                                                  .
-Please define a new math alphabet
-if you want to use a special font in math mode. 
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.12 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
+(/usr/local/texlive/2017/texmf-dist/tex/latex/opensans/ts1fos.fd
+File: ts1fos.fd 2011/11/11 Fontinst v1.927 font definitions for TS1/fos.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `fos' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
@@ -2314,7 +2238,7 @@ File: SI_figs/final_cell_size_Si.pdf Graphic file (type pdf)
 Package pdftex.def Info: SI_figs/final_cell_size_Si.pdf used on input line 36.
 (pdftex.def)             Requested size: 406.58981pt x 113.16376pt.
 LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <8> not available
-(Font)              Font shape `T1/fos/b/it' tried instead on input line 48.
+(Font)              Font shape `T1/fos/b/it' tried instead on input line 47.
 ) (./section_03_schmidt.tex
 LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/fos/b/it' tried instead on input line 1.
@@ -2327,12 +2251,15 @@ Package pdftex.def Info: SI_figs/supplemental_cell_volumes.pdf used on input li
 ne 35.
 (pdftex.def)             Requested size: 406.58981pt x 197.91464pt.
 
+Overfull \vbox (3.22795pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
  []
 
 [6 <./SI_figs/final_cell_size_Si.pdf>]
-<SI_figs/schmidt_protein_corrections.pdf, id=775, 698.61pt x 345.4496pt>
+<SI_figs/schmidt_protein_corrections.pdf, id=777, 698.61pt x 345.4496pt>
 File: SI_figs/schmidt_protein_corrections.pdf Graphic file (type pdf)
 
 <use SI_figs/schmidt_protein_corrections.pdf>
@@ -2340,7 +2267,7 @@ Package pdftex.def Info: SI_figs/schmidt_protein_corrections.pdf used on input
 line 74.
 (pdftex.def)             Requested size: 406.58981pt x 201.05142pt.
 LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <10> not available
-(Font)              Font shape `T1/fos/b/it' tried instead on input line 82.
+(Font)              Font shape `T1/fos/b/it' tried instead on input line 90.
 
 Overfull \hbox (6.0pt too wide) has occurred while \output is active
  [][][][][][][]| 
@@ -2352,21 +2279,21 @@ Overfull \hbox (6.0pt too wide) has occurred while \output is active
  []
 
 [8 <./SI_figs/schmidt_protein_corrections.pdf>]
-<SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf, id=1330, 683.85088pt
+<SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf, id=1332, 683.85088pt
  x 616.4822pt>
 File: SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf Graphic file (ty
 pe pdf)
  <use SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf>
 Package pdftex.def Info: SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.p
-df used on input line 189.
+df used on input line 203.
 (pdftex.def)             Requested size: 406.58981pt x 366.53395pt.
 
-<SI_figs/schmidt_protein_estimate_basan.pdf, id=1336, 387.73256pt x 354.32375pt
+<SI_figs/schmidt_protein_estimate_basan.pdf, id=1338, 387.73256pt x 354.32375pt
 >
 File: SI_figs/schmidt_protein_estimate_basan.pdf Graphic file (type pdf)
  <use SI_figs/schmidt_protein_estimate_basan.pdf>
 Package pdftex.def Info: SI_figs/schmidt_protein_estimate_basan.pdf used on inp
-ut line 224.
+ut line 258.
 (pdftex.def)             Requested size: 203.2949pt x 185.77945pt.
 )
 (./section_XX_continuum_estimates.tex
@@ -2401,18 +2328,18 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 69.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 69.
 Package rerunfilecheck Info: File `eLife_supplemental_draft.out' has not change
 d.
-(rerunfilecheck)             Checksum: 2C1BE7EC85EA1DA49637EF5272C9449F;1119.
+(rerunfilecheck)             Checksum: 5267081E0C6924E6C2D978D8820E815F;1130.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 27713 strings out of 492995
- 506384 string characters out of 6132704
- 721926 words of memory out of 5000000
- 30181 multiletter control sequences out of 15000+600000
- 744458 words of font info for 668 fonts, out of 8000000 for 9000
+ 27797 strings out of 492995
+ 507893 string characters out of 6132704
+ 721930 words of memory out of 5000000
+ 30243 multiletter control sequences out of 15000+600000
+ 747237 words of font info for 685 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,15n,46p,10439b,925s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-04.enc}
@@ -2427,10 +2354,10 @@ Sans-Regular.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/st
 ix-mathit.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-
 mathrm.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mat
 hscr.pfb>
-Output written on eLife_supplemental_draft.pdf (12 pages, 1649548 bytes).
+Output written on eLife_supplemental_draft.pdf (12 pages, 1648414 bytes).
 PDF statistics:
- 1958 PDF objects out of 2073 (max. 8388607)
- 1106 compressed objects within 12 object streams
+ 1960 PDF objects out of 2073 (max. 8388607)
+ 1108 compressed objects within 12 object streams
  56 named destinations out of 1000 (max. 500000)
- 69764 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 70788 words of extra memory for PDF output out of 74296 (max. 10000000)
 

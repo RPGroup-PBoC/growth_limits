@@ -17,6 +17,7 @@ dataset_colors = prot.viz.dataset_colors()
 prots = pd.read_csv('../../../data/compiled_absolute_measurements.csv')
 prots_source = ColumnDataSource(prots)
 
+
 # Define the data sources
 cplx_desc_df = pd.read_csv('./cplx_desc.csv')
 cplx_numeric_df = pd.read_csv('./cplx_numeric.csv')
@@ -35,12 +36,14 @@ prots_display_source = ColumnDataSource({'x':[], 'y':[], 'c':[], 'l':[],
 # ##############################################################################
 bokeh.io.output_file('./explorer.html')
 
+
 # Define the menu for selecting complexes 
-complex_menu = [(d, g) for g, d in zip(cplx_desc_df['complex_annotation'].values, cplx_desc_df['complex'].values)]
-complex_selection = Select(title='EcoCyc Complex Annotation', 
+complex_menu = {d:g for g, d in zip(cplx_desc_df['complex_annotation'].values, cplx_desc_df['complex'].values)}
+complex_menu = [(k, v) for k, v in complex_menu.items()]
+complex_selection = Select(
                            value='select annotation',
                            options=complex_menu,
-                           width=400)
+                           width=300)
 
 # Define th menu for selecting proteins
 prots.sort_values(by='gene_name', inplace=True)
@@ -52,30 +55,39 @@ protein_selection = Select(title='protein name', options=protein_menu,
 agg_fn = RadioButtonGroup(labels=['minimum', 'maximum', 'median', 'mean'],
                          active=3)
 
+TOOLTIPS = [('growth rate [per hr]', '@x'),
+            ('abundance [per cell]', '@y{int}'),
+            ('growth condition', '@condition'),
+            ('data source', '@l')]
 # Define the figure canvases
-complex_canvas = bokeh.plotting.figure(width=400, height=400, 
+complex_canvas = bokeh.plotting.figure(width=600, height=400, 
                                        x_axis_label='growth rate [per hr]',
                                        y_axis_label='complex abundance per cell',
-                                       y_axis_type='log')
-GO_canvas = bokeh.plotting.figure(width=400, height=400, 
+                                       y_axis_type='log',
+                                       tooltips=TOOLTIPS)
+GO_canvas = bokeh.plotting.figure(width=600, height=400, 
                                   x_axis_label='growth rate [per hr]',
-                                  y_axis_label='process member abundance per cell')
-prot_canvas = bokeh.plotting.figure(width=400, height=400, 
+                                  y_axis_label='process member abundance per cell',
+                                  tooltips=TOOLTIPS)
+prot_canvas = bokeh.plotting.figure(width=600, height=400, 
                                   x_axis_label='growth rate [per hr]',
-                                  y_axis_label='protein abundance per cell')
+                                  y_axis_label='protein abundance per cell',
+                                  tooltips=TOOLTIPS)
 
 # Populate the canvases.
 complex_canvas.circle(x='x', y='y', color='c', legend_field='l',
                      source=cplx_display_source, line_color='black', size=10)
 
 # Define description divs and tables. 
+selector_title = Div(text='<b> EcoCyc complex annotation</b>')
+agg_title = Div(text='<b>complex abundance aggregation method</b>')
 complex_description_field = Div(text="")
 complex_table_cols =  [
     TableColumn(field='protein', title='protein name'),
-    TableColumn(field='subunits', title='number per complex'),
-    TableColumn(field='func', title='annotated function')
+    TableColumn(field='subunits', title='number per complex')
 ]
-complex_table = DataTable(columns=complex_table_cols, source=cplx_table_source)
+complex_table = DataTable(columns=complex_table_cols, source=cplx_table_source,
+                          width=300)
 # ##############################################################################
 # CALLBACK DEFINTITION AND ASSIGNMENT
 # ##############################################################################
@@ -87,7 +99,8 @@ cplx_args = {'cplx_desc_source': cplx_desc_source,
              'cplx_table_source': cplx_table_source,
              'agg_method_input': agg_fn,
              'cplx_desc_field':complex_description_field,
-             'cplx_display_source': cplx_display_source
+             'cplx_display_source': cplx_display_source,
+             'axis': complex_canvas.yaxis[0]
              }
 
 cplx_cb = prot.viz.load_js('explorer_complex.js', args=cplx_args)
@@ -95,8 +108,9 @@ complex_selection.js_on_change('value', cplx_cb)
 agg_fn.js_on_change('active', cplx_cb)
 
 # Define the widget boxes 
-complex_widgets = bokeh.layouts.row(agg_fn) 
-complex_box = bokeh.layouts.column(complex_selection, complex_widgets, complex_description_field, complex_table)
+complex_box = bokeh.layouts.column(selector_title,complex_selection, agg_title, agg_fn,
+                                   complex_description_field, 
+                                   complex_table)
 go_box = bokeh.layouts.row(agg_fn)
 prot_box = bokeh.layouts.column(protein_selection)
 complex_layout = bokeh.layouts.row(complex_canvas, complex_box)

@@ -15,7 +15,7 @@ var agg = agg_options[agg_method];
 ecocyc_link = "https://ecocyc.org/gene?orgid=ECOLI&id=" + cplx_select
 
 // Find the empirical formula for the dataset and update display div and table
-cplx_desc_field.text = '<b> EcoCyc Complex Identifier<b>: <a href=' + ecocyc_link + '><span style="font-family:Courier">' + cplx_select + '</span></a>'
+cplx_desc_field.text = '<b> EcoCyc Complex Identifier<b>: <a href=' + ecocyc_link + '><span style="font-family:Courier">' + cplx_select + '</span></a><br/><br/><b>Subunit Composition</b>'
 var cplx_ind = getAllIndexes(cplx_desc['complex'], cplx_select);
 for (var i = 0; i < cplx_ind.length; i++) {
     if (i == 0) {
@@ -48,10 +48,16 @@ for (var i = 0; i < cplx_ind.length; i++) {
     cplx_display['l'].push(cplx_numeric['dataset_name'][cplx_ind[i]]);
     cplx_display['condition'].push(cplx_numeric['condition'][cplx_ind[i]]);
 }
-console.log(cplx_display)
 
 // Update the display source. 
 cplx_display_source.change.emit()
+
+// Given change in y axis, rescale to be one order of magnitude below and above
+var min_abundance = Math.log10(Math.min(...cplx_display['y']));
+var max_abundance = Math.log10(Math.max(...cplx_display['y']));
+var y_range = [Math.pow(10, min_abundance - 1), Math.pow(10, max_abundance +1)];
+axis.bounds = y_range;
+console.log(axis.bounds)
 
 // Custom Function Definitions
 function getAllIndexes(arr, val) {

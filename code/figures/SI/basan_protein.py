@@ -19,9 +19,7 @@ basan_df = pd.read_csv('../../../data/basan2015_raw_data/basan2015_data.csv')
 
 ##############################################
 ##############################################
-# Perform exponential fit of Basan data for reference
-#  (we have fit curves for Si 2017 and T-A 2015 from
-#  their papers)
+# Perform exponential fit of Basan data 
 ##############################################
 ##############################################
 

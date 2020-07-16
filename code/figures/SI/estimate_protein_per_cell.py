@@ -116,14 +116,14 @@ ax[2].plot(schmidt_gr, pred_dnamass_Si/vol, 'd', ms=4, color=colors['light_blue'
 ax[2].plot(schmidt_gr, pred_RNAmass_Si/vol, 's', ms=4, color=colors['light_blue'],
         markeredgewidth=0.5, markeredgecolor='k', label = 'RNA')
 ax[2].plot(schmidt_gr, pred_proteinmass_Si/vol, 'o', ms=4, color=colors['light_blue'],
-        markeredgewidth=0.5, markeredgecolor='k', label = 'RNA')
+        markeredgewidth=0.5, markeredgecolor='k', label = 'protein')
 
 ax[3].plot(schmidt_gr, pred_dnamass_Si, 'd', ms=4, color=colors['light_blue'],
         markeredgewidth=0.5, markeredgecolor='k', label = 'DNA')
 ax[3].plot(schmidt_gr, pred_RNAmass_Si, 's', ms=4, color=colors['light_blue'],
         markeredgewidth=0.5, markeredgecolor='k', label = 'RNA')
 ax[3].plot(schmidt_gr, pred_proteinmass_Si, 'o', ms=4, color=colors['light_blue'],
-        markeredgewidth=0.5, markeredgecolor='k', label = 'RNA')
+        markeredgewidth=0.5, markeredgecolor='k', label = 'protein')
 
 # repeat calculations for smooth curve, predict RNA/Protein ratio <= 0.7 hr-1:
 x = np.linspace(0,0.7,100)

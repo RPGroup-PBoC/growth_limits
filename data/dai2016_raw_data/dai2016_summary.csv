@@ -1,0 +1,19 @@
+,condition,Cm (μM),RNA_P_ratio,growth_rate_hr,Translational elongation rate (aa/s),measured_prot_frac,f_a,type
+0,RDM + 0.2% glucose+10 mM NH4Cl,0.0,0.476,1.8,16.7,,0.958,nutrient limitation
+1,0. 2 % glucose+cAA+10 mM NH4Cl,0.0,0.364,1.28,16.3,,0.9,nutrient limitation
+2, 10 mM glucose-6-phosphate+10 mM gluconate +10 mM NH4Cl,0.0,0.306,1.12,16.1,,0.927,nutrient limitation
+3,0.2% glucose+10 mM NH4Cl,0.0,0.294,0.98,15.9,11.6,0.865,nutrient limitation
+4,0.2% xylose+10 mM NH4Cl,0.0,0.233,0.75,14.9,,0.902,nutrient limitation
+5,0.2 % glycerol+10 mM NH4Cl,0.0,0.227,0.69,15.0,,0.849,nutrient limitation
+6,0.2% fructose+10 mM NH4Cl,0.0,0.217,0.69,14.7,,0.888,nutrient limitation
+7,0.2% sorbitol+10 mM NH4Cl,0.0,0.193,0.55,13.7,,0.879,nutrient limitation
+8,0.2% galactose+10 mM NH4Cl,0.0,0.184,0.5,13.1,,0.86,nutrient limitation
+9,60 mM acetate+10 mM NH4Cl,0.0,0.172,0.46,12.6,7.2,0.879,nutrient limitation
+10,0.2% mannose+10 mM NH4Cl,0.0,0.172,0.41,13.0,,0.756,nutrient limitation
+11,0.1% mannose+10 mM NH4Cl,0.0,0.152,0.34,12.4,,0.751,nutrient limitation
+12,20 mM potassium aspartate,0.0,0.152,0.33,12.0,,0.756,nutrient limitation
+13,0.075% mannose+10 mM NH4Cl,0.0,0.147,0.29,12.1,5.1,0.683,nutrient limitation
+14,20 mM aspartate+10 mM NH4Cl,0.0,0.137,0.23,12.3,,0.59,nutrient limitation
+15,0.2% glycerol +10 mM Arginine,0.0,0.13,0.201,11.6,6.1,0.554,nutrient limitation
+16,20 mM glutamate+10 mM NH4Cl,0.0,0.118,0.13,10.7,4.7,0.441,nutrient limitation
+17,0.2% glycerol+20 mM Threonine,0.0,0.097,0.035,9.4,4.4,0.168,nutrient limitation

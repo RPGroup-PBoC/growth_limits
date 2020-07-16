@@ -1,15 +1,11 @@
-This is BibTeX, Version 0.99d (TeX Live 2017)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: eLife_supplemental_draft.aux
 The style file: apalike.bst
-Database file #1: library.bib.bib
-Repeated entry---line 265 of file library.bib.bib
- : @article{schaechter1958
- :                        ,
-I'm skipping whatever remains of this entry
+Database file #1: library.bib
 You've used 18 entries,
             1935 wiz_defined-function locations,
-            594 strings with 8753 characters,
+            594 strings with 8768 characters,
 and the built_in function-call counts, 10363 in all, are:
 = -- 923
 > -- 769
@@ -48,4 +44,3 @@ warning$ -- 0
 while$ -- 66
 width$ -- 0
 write$ -- 236
-(There was 1 error message)

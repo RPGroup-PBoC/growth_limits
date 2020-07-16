@@ -14,31 +14,6 @@ proteins presents a special case where parallelization is not possible
 (\FIG{ribosome_limit}(A)). Thus, it is plausible that translation may be a key
 factor in determining the cellular growth rate.
 
-% In many cases, these estimates can be adapted to consider a continuum of
-% growth rates in lieu of our single 5000 s point estimate, the details of which are
-% described in the Supplemental Information.
-% growth on different carbon sources
-% is achieved by inducing the expression of
-% resulted in the induced
-% expression of particular transporters, often producing more
-% than needed to acquire enough carbon to build new cell mass (\FIG{carbon_transport}(B)). In
-% examining replication of the DNA, we described how cells can replicate multiple
-% copies of the chromosome at any given time, permitting growth rates faster than
-% the limit at which the chromosome can be faithfully replicated.
-% As another related example, we showed how increasing the gene dosage of the rRNA operons is
-% necessary to produce enough rRNA to form functional ribosomes.
-
-%
-% Understanding the allocation of resources and large-scale structure of bacterial
-% proteome has been an area of intense quantitative study over the last decade by Hwa and others
-% \citep{scott2010, hui2015}. From the perspective of limiting growth, our
-% earlier estimate of rRNA highlighted the necessity for multiple copies of
-% rRNA genes in order to make enough rRNA. For \textit{E. coli}'s fastest
-% growth rates at 2 hr$^{-1}$, the additional demand for rRNA is further
-% supported by parallelized DNA replication and increased rRNA gene dosage.
-% This suggests the possibility that synthesis of ribosomes might become rate
-% limiting.
-
 To gain some intuition into how translation can set the speed of
 bacterial growth, we again consider the total number of peptide bonds that must
 be synthesized, which we denote as $N_\text{pep}$. With cells growing exponentially in time
@@ -65,7 +40,7 @@ Alternatively, since $N_\text{pep}$ is related to the total protein mass through
 molecular weight of each protein, we can also consider the growth rate in terms
 of the fraction of the total proteome mass dedicated to ribosomal proteins. By
 making the approximation that an average amino acid has a molecular weight of
-110 Da (BNID: 104877, \cite{milo2010}), the total protein mass $m_{\textrm{protein}}$ is related to
+110 Da (BNID: 104877), the total protein mass $m_{\textrm{protein}}$ is related to
 $N_{AA}$ by $(m_{\textrm{protein}}/\text{110 Da}) \times N_A$, where $N_A$ is Avogadro's number.
 Similarly, $R$ is related to the ribosomal protein mass by $R \approx
 (m_R/\text{800 Da}) \times N_A$, where 800 Da reflects the summed molecular weight
@@ -81,7 +56,7 @@ growth rate can then be written in the form
 This is plotted as a function of ribosomal fraction $\Phi_R$ in
 \FIG{ribosome_limit}(B), where we take $L_R$ = 7459 AA, corresponding to the
 length in amino acids for all ribosomal subunits of the 50S and 30S complex
-(BNID: 101175, \citep{milo2010}), and $f_a$ = 1.
+(BNID: 101175), and $f_a$ = 1.
 
 The growth rate defined by \EQ{translation_limit_growth_rate} reflects
 mass-balance under steady-state growth and has long provided a rationalization
@@ -142,21 +117,13 @@ actively translating ribosomes, cells are effectively skirting the limit in
 growth rate that is set by \EQ{translation_limit_growth_rate}, as nutrient
 conditions vary.
 
-% cells appear to maintain a
-% growth rate consistent with \EQ{translation_limit_growth_rate} with an
-% elongation rate of $r_t \approx$  17.1 AA/s. While somewhat counter intuitive,
-% given that ribosomes translate at almost half this rate in the poorest of growth
-% conditions, steady-state growth rates can be achieved over such a broad range of
-% conditions because cells have evolved a means to tune  $r_t \times R \times
-% f_a$.
-
 Earlier, we considered rRNA synthesis (see Section \textit{\bf RNA Synthesis}),
 finding that, when the rRNA operons are maximally loaded with RNA polymerase,
 the cell can produce $\approx$ 1 functional rRNA unit per second per operon. In
 \FIG{ribosome_limit}(C), we show the maximum number of ribosomes that could be
 made as a function of growth rate given this rRNA production rule-of-thumb.
 While each \textit{E. coli} genome has 7 copies of the rRNA operon (BNID:
-107866, \cite{milo2010}), parallelization of DNA synthesis by firing multiple
+107866), parallelization of DNA synthesis by firing multiple
 rounds of replication at a time can drastically the effective number of rRNA
 operons. The blue curve in \FIG{ribosome_limit}(C), we assume that the effective
 number of rRNA operons increases in proportion to the number of origins of

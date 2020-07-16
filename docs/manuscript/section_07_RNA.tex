@@ -15,10 +15,10 @@ synthesize all necessary rRNA, mRNA, and tRNA.
 We begin with an estimation of the number of RNA polymerases needed to
 synthesize the rRNA that serve as catalytic and structural elements of the
 ribosome. Each ribosome contains three rRNA molecules of lengths 120, 1542,
-and 2904 nucleotides (BNID: 108093, \cite{milo2010}), meaning each ribosome
+and 2904 nucleotides (BNID: 108093), meaning each ribosome
 contains $\approx$ 4500 nucleotides. As the \textit{E. coli} RNA polymerase
 transcribes DNA to RNA at a rate of $\approx$ 40 nucleotides per second
-(BNID: 101904, \cite{milo2010}), it takes a single RNA polymerase
+(BNID: 101904), it takes a single RNA polymerase
 $\approx$ 100 s to synthesize the RNA needed to form a single functional ribosome.
 Therefore, in a 5000 s division time, a single RNA polymerase transcribing
 rRNA at a time would result in only $\approx$ 50 functional ribosomal rRNA
@@ -30,7 +30,7 @@ be synthesized given a single copy of each rRNA gene, we will consider a
 hypothesis in which the rRNA operon is completely tiled with RNA polymerase.
 \textit{In vivo} measurements of the kinetics of rRNA transcription have revealed that
 RNA polymerases are loaded onto the promoter of an rRNA gene at a rate of
-$\approx$ 1 per second (BNID: 111997; 102362, \cite{milo2010}). If RNA
+$\approx$ 1 per second (BNID: 111997, 102362). If RNA
 polymerases are being constantly loaded on to the rRNA genes at this rate,
 then we can assume that $\approx$ 1 functional rRNA unit is
 synthesized per second. With a 5000 second division time, this hypothesis
@@ -39,15 +39,14 @@ the observed number of $10^4$ ribosomes per cell.
 
 \textit{E. coli}, like many other bacterium, have evolved a clever mechanism to surpass this kinetic limit
 for the rate of rRNA production. Rather than having only one copy of each rRNA
-gene, \textit{E. coli} has seven copies of the operon (BIND: 100352,
-\cite{milo2010}) four of which are localized directly adjacent to the origin of
+gene, \textit{E. coli} has seven copies of the operon (BIND: 100352) four of which are localized directly adjacent to the origin of
 replication \citep{birnbaum1971}. As fast growth also implies an increased gene
-dosage due to paralellized chromosomal replication, the total number of rRNA
+dosage due to parallellzed chromosomal replication, the total number of rRNA
 genes can be on the order of $\approx$ 10 -- 70 copies at moderate to fast
-growth rates \citep{stevenson2004}. Using our standard time scale of a 5000
+growth rates \citep{stevenson2004}. Given a 5000
 second division time, we can make the lower-bound estimate that the typical cell
-will have 7 copies of the rRNA operon. Synthesizing one functional rRNA unit per
-second per rRNA operon, a total of $4 \times 10^4$ rRNA units can be
+will have $\approx$ 7 copies of the rRNA operon. Synthesizing one functional rRNA unit per
+second per rRNA operon, a total of $5 \times 10^4$ rRNA units can be
 synthesized, comfortably above the observed number of ribosomes per cell.
 
 How many RNA polymerases are then needed to constantly transcribe 7 copies of
@@ -55,11 +54,11 @@ the rRNA genes? We approach this estimate by considering the maximum number
 of RNA polymerases tiled along the rRNA genes with a loading rate of 1 per
 second and a transcription rate of 40 nucleotides per second. Considering
 that a RNA polymerase has a physical footprint of approximately 40
-nucleotides (BNID: 107873, \cite{milo2010}), we can expect
+nucleotides (BNID: 107873), we can expect
 $\approx$ 1 RNA polymerase per 80 nucleotides. With a total length of
 $\approx$ 4500 nucleotides per operon and 7 operons per cell, the maximum
 number of RNA polymerases that can be transcribing rRNA at any given time is
-$\approx$ 400. As we will see in the coming sections, the
+$\approx$ 500. As we will see in the coming sections, the
 synthesis of rRNA is the dominant requirement of the RNA polymerase pool.
 
 \subsubsection{mRNA}
@@ -69,18 +68,18 @@ mRNA blueprint, many copies of the protein can be synthesized from a single
 mRNA. Factors such as strength of the ribosomal binding site, mRNA stability,
 and rare codon usage frequency dictate the number of proteins that can be
 made from a single mRNA, with yields ranging from 10$^1$ to 10$^4$ (BNID: 104186; 100196;
-106254, \cite{milo2010}). Computing the geometric mean of this range yields
+106254). Computing the geometric mean of this range yields
 $\approx$ 1000 proteins synthesized per mRNA, a value that agrees with
 experimental measurements of the number of proteins per cell ($\approx 3
-\times 10^6$, BNID: 100088, \cite{milo2010}) and total number of mRNA per
-cell ($\approx 3 \times 10^3$, BNID:100064, \cite{milo2010}).
+\times 10^6$, BNID: 100088) and total number of mRNA per
+cell ($\approx 3 \times 10^3$, BNID:100064).
 
 This estimation captures the \textit{steady-state} mRNA copy number, meaning
 that at any given time, there will exist approximately 3000 unique mRNA
 molecules. To determine the \textit{total} number of mRNA that need to be
 synthesized over the cell's lifetime, we must consider degradation of the mRNA.
 In most bacteria, mRNAs are rather unstable with life times on the order of
-several minutes (BNID: 104324; 106253; 111927; 111998, \cite{milo2010}). For
+several minutes (BNID: 104324; 106253; 111927; 111998). For
 convenience, we assume that the typical mRNA in our cell of interest has a
 typical lifetime of $\approx$ 300 seconds. Using this value, we can determine
 the total mRNA production rate to maintain a steady-state copy number of 3000
@@ -88,7 +87,7 @@ mRNA per cell. While we direct the reader to the appendix for a more detailed
 discussion of mRNA transcriptional dynamics, we state here that the total mRNA
 production rate must be on the order of $\approx$ 15 mRNA per second. In
 \textit{E. coli}, the average protein is $\approx$ 300 amino acids in length
-(BNID: 108986; \cite{milo2010}), meaning that the corresponding mRNA is
+(BNID: 108986), meaning that the corresponding mRNA is
 $\approx$ 900 nucleotides which we will further approximate as $\approx$ 1000
 nucleotides to account for the non-protein coding regions on the 5' and
 3' ends. This means that the cell must have enough RNA polymerase molecules
@@ -106,18 +105,18 @@ associated.
 The final class of RNA molecules worthy of quantitative consideration are the
 tRNAs that are used during translation to map codon sequence on mRNA to specific amino acids.
 Unlike mRNA or rRNA, each individual tRNA is remarkably short, ranging
-from 70 to 95 nucleotides each (BNID: 109645; 102340, \cite{milo2010}). What
+from 70 to 95 nucleotides each (BNID: 109645; 102340). What
 they lack in length, they make up for in abundance, with reported values ranging from
-$\approx$6$\times$10$^4$ (BNID: 105280, \cite{milo2010}) to
-$\approx$4$\times$10$^5$ (BNID: 108611). To test tRNA synthesis as a possible
+$\approx$5$\times$10$^4$ (BNID: 105280) to
+$\approx$5$\times$10$^5$ (BNID: 108611). To test tRNA synthesis as a possible
 growth-rate limiting stage, we will err towards a higher abundance of $\approx$
-4$\times$10$^5$ per cell. Combining the abundance and tRNA length measurements,
+5$\times$10$^5$ per cell. Combining the abundance and tRNA length measurements,
 we make the estimate that $\approx 5 \times 10^7$ nucleotides are sequestered in tRNA per cell.
 Unlike mRNA, tRNA is remarkably stable with typical lifetimes \textit{in vivo}
 on the order of $\approx$ 48 hours \citep{abelson1974,svenningsen2017} -- well
 beyond the timescale of division. Once again using our rule-of-thumb for the
 rate of transcription to be 40 nucleotides per second and assuming a division
-time of $\approx$ 5000 seconds, we arrive at an estimate of $\approx$ 150 RNA
+time of $\approx$ 5000 seconds, we arrive at an estimate of $\approx$ 200 RNA
 polymerases to synthesize enough tRNA. This requirement pales in comparison to
 the number of polymerases needed to generate the rRNA and mRNA pools and can be
 neglected as a significant transcriptional burden.
@@ -129,8 +128,7 @@ neglected as a significant transcriptional burden.
         \caption{\textbf{Estimation of the RNA polymerase demand and
         comparison with experimental data.} (A) Estimations for the number of
         RNA polymerase needed to synthesize sufficient quantities of rRNA, mRNA,
-        and tRNA from left to right, respectively. Bionumber Identifiers (BNIDs)
-        are provided for key quantities used in the estimates. (B) The RNA
+        and tRNA from left to right, respectively.(B) The RNA
         polymerase core enzyme copy number as a function of growth rate. Colored
         points correspond to the average number RNA polymerase core enzymes that
         could be formed given a subunit stoichiometry of [RpoA]$_2$[RpoC][RpoB].
@@ -146,11 +144,12 @@ neglected as a significant transcriptional burden.
 \subsubsection{RNA Polymerase and $\sigma$-factor Abundance}
 These estimates, summarized in \FIG{RNA_synthesis} (A), reveal that synthesis of
 rRNA  and mRNA are the dominant RNA species synthesized by RNA polymerase,
-suggesting the need for $\approx$ 700 RNA polymerases per cell. As is revealed
+suggesting the need for $\approx$ 1000 RNA polymerases per cell. As is revealed
 in \FIG{RNA_synthesis} (B), this estimate is about an order of magnitude below
 the observed number of RNA polymerase complexes per cell ($\approx$ 5000 -
-7000). The disagreement between the estimated number of RNA polymerases and
-these observations are at least consistent with recent literature revealing that
+7000). The difference between the estimated number of RNA polymerase needed for 
+transcription and and
+these observations are consistent with recent literature revealing that
 $\approx$ 80 \% of RNA polymerases in \textit{E. coli} are not transcriptionally
 active \citep{patrick2015}. Our estimate ignores the possibility that some
 fraction is only nonspecifically bound to DNA, as well as the obstacles that RNA

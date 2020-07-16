@@ -113,9 +113,9 @@ by considering a unit volume $V$,
 where $r_{AA}$ is in units of AA per unit time and $r_t$ is in units of AA per
 unit time per ribosome. With an expression for $[AA]_\text{eff}$ in hand, we can now solve
 \EQ{rt_kd_simple} for $r_t$ which is a quadratic function with a
-physically-meaningful positive root of
+physically-meaningful root of
 \begin{equation}
-r_t = \frac{-t(r_{AA} + r_t^\text{(max)}Rf_a) - K_D V \pm \sqrt{(r_{AA}t + r_t^\text{(max)}Rf_at + K_D V)^2 - 4(Rf_at)(r_t^\text{(max)}r_{AA} t)}}{-2Rf_at}.
+r_t = \frac{t(r_{AA} + r_t^\text{(max)}Rf_a) + K_D V - \sqrt{(r_{AA}t + r_t^\text{(max)}Rf_at + K_D V)^2 - 4(Rf_at)(r_t^\text{(max)}r_{AA} t)}}{2Rf_at}.
 \label{eq:rt_root}
 \end{equation}
 
@@ -207,8 +207,3 @@ available amino acids $[AA]_\text{eff}$ and increase the achievable elongation
 rate (considered further in Supplemental Section XX). This observation is in
 agreement with the central premise of the cellular resource allocation principle
 proposed by \cite{scott2010, klumpp2009,klumpp2014} and \cite{hui2015}.
-
-
-
-
-

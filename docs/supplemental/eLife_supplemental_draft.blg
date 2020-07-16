@@ -7,9 +7,10 @@ Repeated entry---line 265 of file library.bib.bib
  : @article{schaechter1958
  :                        ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "schmidt_2016"
 You've used 18 entries,
             1935 wiz_defined-function locations,
-            594 strings with 8753 characters,
+            595 strings with 8765 characters,
 and the built_in function-call counts, 10363 in all, are:
 = -- 923
 > -- 769

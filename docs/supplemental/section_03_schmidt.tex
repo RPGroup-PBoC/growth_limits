@@ -73,13 +73,17 @@ media, there is quite a bit of variability among are different estimates.
 		\centering
     \includegraphics[width=1\textwidth]{SI_figs/schmidt_protein_corrections.pdf}
   \caption{{\bf Alternative estimates of total cellular protein for the growth conditions
-    considered in Schmidt \textit{et al.}} The original protein mass from
+    considered in Schmidt \textit{et al.}} (A) The original protein mass from
     Schmidt \textit{et al.} and Li \textit{et al.} are shown in purple and blue,
-    respectively. \textit{Green}: Rescaling of total protein mass assuming a
+    respectively. (B) Three alternative estimates of total protein per cell.
+		1.  \textit{light red}: Rescaling of total protein mass assuming a
     growth rate independent protein concentration and cell volumes estimated
-    from Si \textit{et al.} 2017. \textit{Gold}:  Rescaling of total protein
+    from Si \textit{et al.} 2017. 2. \textit{light green}:  Rescaling of total protein
     mass using estimates of growth rate-dependent protein concentrations and
-    cell volumes estimated from Si \textit{et al.} 2017. \textit{Red}: Rescaling
+    cell volumes estimated from Si \textit{et al.} 2017. Total protein per cell
+		is calculated by assuming a 1.1 g/ml cellular mass density, 30\% dry mass, with
+		90\% of the dry mass corresponding to DNA, RNA, and protein \citep{basan2015}. See
+		\nameref{sec:estimate_protein_per_cell} for details on calculation. 3.\textit{light purple}: Rescaling
     of total protein mass using the experimental measurements from Basan
     \textit{et al.} 2015.
 	 	}
@@ -157,7 +161,7 @@ Figure \FIG{schmidt_adjustment_summary}.
 
 
 \subsection{Assumption of constant protein concentration across growth conditions}
-
+\label{sec:estimate_protein_per_cell}
 We next relax the assumption that cellular protein concentration is constant and
 instead, attempt to  estimate it using experimental data. Here we first note
 that  for across almost the entire range of growth rates considered here,

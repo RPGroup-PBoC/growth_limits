@@ -508,9 +508,9 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/opensans/OpenSans-Bold
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/opensans/OpenSans-BoldItalic-02.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/opensans/OpenSans-BoldItalic-03.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/opensans/OpenSans-BoldItalic-04.tfm
-INPUT SI_figs/supplemental_cell_volumes.pdf
-INPUT ./SI_figs/supplemental_cell_volumes.pdf
-INPUT ./SI_figs/supplemental_cell_volumes.pdf
+INPUT SI_figs/size_data_lit.pdf
+INPUT ./SI_figs/size_data_lit.pdf
+INPUT ./SI_figs/size_data_lit.pdf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/opensans/OpenSans-Italic-t1.tfm
 INPUT SI_figs/schmidt_protein_corrections.pdf
 INPUT ./SI_figs/schmidt_protein_corrections.pdf

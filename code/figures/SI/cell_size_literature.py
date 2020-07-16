@@ -22,7 +22,7 @@ def func(x, a, c, d):
 ##############################################
 ##############################################
 
-size_df = size_df.read_csv('../../../data/cell_size_literature/size_data.csv')
+size_df = pd.read_csv('../../../data/cell_size_literature/size_data.csv')
 
 ##############################################
 ##############################################
@@ -32,15 +32,18 @@ size_df = size_df.read_csv('../../../data/cell_size_literature/size_data.csv')
 ##############################################
 ##############################################
 
-popt_vol, pcov_vol = curve_fit(func, lambda_basan, vol_basan, p0=(1, 1e-6, 1))
+popt_vol, pcov_vol = curve_fit(func, size_df[size_df.dataset_name == 'Basan et al 2015'].growth_rate_hr.values,
+                size_df[size_df.dataset_name == 'Basan et al 2015'].volume_um3.values, p0=(1, 1e-6, 1))
 
 ##############################################
 ##############################################
 # Now plot!
 ##############################################
 ##############################################
+#
+# fig, ax = plt.subplots(1, 2, figsize=(5, 2.5))
 
-fig, ax = plt.subplots(1, 2, figsize=(5, 2.5))
+fig, ax = plt.subplots(1, 2, figsize=(6, 2.5))
 
 colordict = {'Si et al 2017' : colors['pale_red'],
             'Taheri-Araghi et al 2015' : colors['pale_green'],

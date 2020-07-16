@@ -253,20 +253,22 @@ cog_class_order = ['metabolism',
                 'poorly characterized or not assigned']
 order_dict = dict(zip(cog_class_order,
                 np.arange(4)))
+# color_dict = dict(zip(cog_class_order,
+#                     ['', '#C8715B', '#A587AA', '#788FBD']))
 color_dict = dict(zip(cog_class_order,
-                    ['', '#C8715B', '#A587AA', '#788FBD']))
+                    ['', '#BF703A', '#D3B15E', '#788FBD']))
 
 
 for c, d in df_mem_.groupby('condition', sort=False):
     for c_ in cog_class_order:
         if c_ == 'metabolism':
             resp = d[d.gene_name == 'respiration']
-            ax4.barh(y_order[c], resp.rel_fg_per_cell, height=0.9, color='#84A779', alpha=0.3,
+            ax4.barh(y_order[c], resp.rel_fg_per_cell, height=0.9, color='#679B48', alpha=0.3, #84A779
                         linewidth=0.1)
 
             c_uptake = d[d.gene_name == 'carbon_uptake']
             lefts = resp.rel_fg_per_cell.sum()
-            ax4.barh(y_order[c], c_uptake.rel_fg_per_cell.sum(),  height=0.9, color='#84A779', alpha=0.7,
+            ax4.barh(y_order[c], c_uptake.rel_fg_per_cell.sum(),  height=0.9, color='#679B48', alpha=0.7,
                             left=lefts, linewidth=0.1)
 
             # lefts = d[d.gene_name == 'respiration']
@@ -274,7 +276,7 @@ for c, d in df_mem_.groupby('condition', sort=False):
             meta = d[d.gene_name != 'respiration'].copy()
             meta = meta[meta.gene_name !='carbon_uptake'].copy()
 
-            ax4.barh(y_order[c], meta.rel_fg_per_cell.sum(), height=0.9, color='#84A779',
+            ax4.barh(y_order[c], meta.rel_fg_per_cell.sum(), height=0.9, color='#679B48',
                             left=lefts,  linewidth=0.1)
 
             lefts += meta[meta.cog_class == c_].rel_fg_per_cell.sum()
@@ -283,6 +285,8 @@ for c, d in df_mem_.groupby('condition', sort=False):
             ax4.barh(y_order[c], d[d.cog_class == c_].rel_fg_per_cell.sum(), height=0.9,
                         color=color_dict[c_], left=lefts, linewidth=0.1)
             lefts += d[d.cog_class == c_].rel_fg_per_cell.sum()
+
+
 
 ax4.set_xlim(0,1)
 ax4.set_ylim(0,len(df_mem_.condition.unique()))
@@ -302,7 +306,7 @@ ax4_twin.xaxis.set_tick_params(labelsize=5)
 ax4_twin.yaxis.set_tick_params(labelsize=5)
 
 
-# fig.savefig('../../figures/energy_estimate_SV_scaling_plots_gridspec.pdf')
+fig.savefig('../../figures/energy_estimate_SV_scaling_plots_gridspec.pdf')
 
 
 # %%

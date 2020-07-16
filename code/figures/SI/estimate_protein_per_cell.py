@@ -33,7 +33,7 @@ slope_dia_RP_A, intercept_dia_RP_A, r_value, p_value, std_err = stats.linregress
 slope_dia_RP_B, intercept_dia_RP_B, r_value, p_value, std_err = stats.linregress(dai_df_fast.growth_rate_hr.values,
                                             dai_df_fast.RNA_P_ratio.values)
 
-basan_df = pd.read_csv('../../../data/basan2015_raw_data/basan2015_dna_data.csv')
+basan_df = pd.read_csv('../../../data/basan2015_raw_data/basan2015_data.csv')
 popt_dna, pcov_dna = curve_fit(func, basan_df.growth_rate_hr.values, basan_df.dna_fg.values, p0=(1, 1e-6, 1))
 
 ##############################################
@@ -79,10 +79,6 @@ pred_proteinmass_Si =  (pred_RNA_protein_mass_Si/ (1+pred_RNA_protein_ratio))
 
 fig, ax = plt.subplots(2, 2, figsize=(5, 4))
 ax = ax.ravel()
-# colordict = {'Si et al 2017' : colors['pale_red'],
-#             'Taheri-Araghi et al 2015' : colors['pale_green'],
-#             'Basan et al 2015' : colors['light_purple'],
-#             'Schmidt et al 2016' : colors['light_blue']}
 
 # Plot DNA data from Basan et al.
 # growth rates

@@ -13,7 +13,6 @@ the fluorescence-based counting done in Taniguchi \textit{et al.} (2010).
 
 \begin{table}[bt]
 \caption{\label{tab:datasets}Overview of proteomic data sets.}
-% Use "S" column identifier to align on decimal point
 \begin{tabular}{l l l }
 \toprule
 Author & Method & Reported Quantity \\
@@ -112,16 +111,68 @@ abundance. Here,  a synthetic peptide was generated for each of the 41 proteins,
 doped into each protein sample, and used to provide an calibration between
 measured mass spectrometry intensities and absolute protein abundances. These
 absolute measurements, determined for every growth condition considered in their
-work,   were then used as a calibration curve to convert proteomic-wide relative
+work,  were then used as a calibration curve to convert proteomic-wide relative
 abundances into  absolute protein abundance per cell. A more extensive
 discussion of the \cite{schmidt2016} data set can be found in Section
-\nameref{sec:SI_schmidt} .
+\nameref{sec:SI_schmidt}.
 
 \section{Summary of Proteomic Data}
 \label{sec:SI_data_summary}
 
-In \FIG{upset} we show the coverage and overlap of all proteins quantified
-across each data set using an UpSet diagram \citep{Lex2014}.
+In the work of the main text we only used the data from \cite{valgepea2013,
+li2014, peebo2015, schmidt2016}. As shown in \FIG{total_protein_final}(A), the
+reported total protein abundances in the work of \cite{taniguchi2010} and
+\cite{soufi2015} differed quite substantially from the other work. For the work
+of \cite{taniguchi2010} this is in part due to a lower coverage in total
+proteomic mass quantified, though we also noticed that most proteins appear to
+be undercounted when compared to the other data.
+
+\FIG{total_protein_final}(B) summarizes the total protein mass for each data
+point in our final compiled data set. Here we note that protein abundances were
+all scaled so they followed an identical growth rate-dependent change in total
+protein mass.  While our inclination initally was to leave reported copy numbers
+untouched,  a notable descrepency between the total protein per cell between
+\cite{schmidt2016} and the other data sets (see fast growth conditions in
+\FIG{total_protein_final}(A)) forced us to dig deeper into those measurements.
+The particular scaling in the total protein content observed in the data from
+\cite{schmidt2016}  appears to be due to their assumptions on cell size and we
+provide a more extensive discussion and analysis of that data set in section
+\nameref{sec:SI_schmidt}. As a compromise, and in an effort to treat all data
+equally, we instead scaled all protein abundance values from each data set using
+a common model growth-rate dependent cell size and protein concentration based
+on the size data available from \cite{si2017}. We consider those details in
+section \nameref{sec:protein_size_SV} that follows.
+
+\begin{figure*}
+    \centering{
+        \includegraphics{SI_figs/dataset_corrections.pdf}
+        \caption{\textbf{Summary of the growth-rate dependent total protein
+        abundance for each data set.} (A) Total protein abundance per cell as
+        original reported in the data sets of \cite{taniguchi2010, valgepea2013, li2014,
+        soufi2015, peebo2015, schmidt2016}. Note that the data from \cite{peebo2015} only
+        reported protein abundances per unit volume and total protein per cell
+        was found by multiplying these by the growth-rate dependent cell size as
+        determined by \cite{si2017}. (B) Adjusted total protein abundances
+        across the proteomic data sets are summarized. Protein abundances were
+        adjusted so that all data shared a common set of growth-rate dependent
+        total protein per cell and cellular protein concentration following the
+        cell size expectations of \cite{si2017} (see section on
+        \nameref{sec:protein_size_SV} for further details). }
+        \label{fig:total_protein_final}
+    }
+\end{figure*}
+
+In \FIG{upset} we also show the total proteomic coverage and overlap of proteins
+quantified across each data set. Here we have used  an UpSet diagram
+\citep{Lex2014} to compare the data. Overall, the overlap in quantified proteins
+is quite good, with 1157 proteins with abundances values quantified in all data
+sets. The sequencing based approach of \cite{li2014} has substantially higher
+coverage compared to the mass spectrometry data sets (3394 genes versus the 2041
+genes quantified in the work of \cite{schmidt2016}). However, in terms of total
+protein mass, the data from \cite{li2014, schmidt2016, peebo2015} each quantify
+roughly equivalent total protein.  We find that  the total protein quantified in
+\cite{valgepea2013} is 90-95 \% of the total protein  mass (when using the data
+from \cite{schmidt2016} as a reference).
 
 
 \begin{figure*}
@@ -136,23 +187,5 @@ across each data set using an UpSet diagram \citep{Lex2014}.
         here refers to the intersection of a set of data sets  identified by
         blue circles.
         } \label{fig:upset}
-    }
-\end{figure*}
-
-
-\begin{figure*}
-    \centering{
-        \includegraphics{SI_figs/dataset_corrections.pdf}
-        \caption{\textbf{Summary of the growth-rate dependent total protein abundance for each data set.}
-        (A) Total protein abundance per cell as original reported in the data sets of
-        \cite{valgepea2013, li2014, schmidt2016, peebo2015}. Note that the data from
-        \cite{peebo2015} only reported protein abundances per unit volume and total protein
-        per cell was found by multiplying these by the growth-rate dependent cell size as
-        determined by \cite{si2017}.
-         (B) Adjusted total protein abundances across the proteomic data sets are
-         summarized. Protein abundances were adjusted so that all data shared a common
-         set of growth-rate dependent total protein per cell and cellular protein concentration
-         following the cell size expectations of \cite{si2017}. (see section on \nameref{sec:protein_size_SV}
-         for further details.)} \label{fig:total_protein_final}
     }
 \end{figure*}

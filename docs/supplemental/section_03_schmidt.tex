@@ -46,29 +46,20 @@ these growth rates \citep{basan2015}.
 \end{figure}
 
 Since it is not obvious how measurements of cell size might have influenced
-their reported protein abundances, in the following subsections we begin by considering
-this calculation. We then consider three different approaches to estimate
-the growth-rate dependent total protein mass to compare with those values reported by \cite{schmidt_2016}.
-The results of this are summarized in  \FIG{cell_size_literature}(B),
-with the original values from both \cite{schmidt_2016} and \cite{li_2014} shown in
-\FIG{cell_size_literature}(A) for reference.
-For most growth conditions, we find that
-total protein expectations are not expected to change dramatically. However, for
-the fastest growth conditions, with glycerol + supplemented amino acids, and LB
-media, all estimates are substantially higher than those reported and justify why we
-readjusted the reported values as explained in \nameref{sec:protein_size_SV}.
+their reported protein abundances, in the following subsections we begin by
+considering this calculation. We then consider three different approaches to
+estimate the growth-rate dependent total protein mass to compare with those
+values reported by \cite{schmidt_2016}. The results of this are summarized in
+\FIG{cell_size_literature}(B), with the original values from both
+\cite{schmidt_2016} and \cite{li_2014} shown in \FIG{cell_size_literature}(A)
+for reference. For most growth conditions, we find that total protein
+expectations are not expected to change dramatically. However, for the fastest
+growth conditions, with glycerol + supplemented amino acids, and LB media, all
+estimates are substantially higher than those originally reported and justify
+why we readjusted the protein abundance to be more consistent with this
+alternative expectation (which is described in section
+\nameref{sec:protein_size_SV}).
 
-
-
-%
-% The need for an
-% In the next three subsections we consider three different approaches to rescale
-% the reported protein abundances from Schmidt \textit{et al.} to make them
-% consistent with our expectation that cell size and total protein should increase
-% exponentially with growth rate.  Figure [] summarizes Ultimately, we find that
-% each approach leads to a similar result, with absolute abundances only changing
-% substantially in the fastest growth conditions, in LB media and M9 minimal media
-% + glycerol and amino acid supplement.
 
 \begin{figure}
 		\centering
@@ -138,13 +129,6 @@ preparation. The protein abundances from their absolute abundance measurements
 noted above were therefore scaled to their estimates and are  shown in Figure
 \FIG{schmidt_adjustment_summary} (purple data points).
 
-
-% Before continuing, it is useful to perform a quick estimate of cellular protein concentration. If we assume a cellular mass
-% density of 1.1 g/ml, 30\% dry mass, with 55 \% of the dry mass taken up by
-% protein, the expected cellular protein concentration is given by 1.1 g/ml
-% x 30 \% x 60 \%, or about 200 fg / fl total protein. The value from of 85 fg/fl used here
-% appears quite low.
-
 If we instead consider the cell volumes predicted in the work of Si \textit{et
 al.}, we again need to take growth in M9 minimal media + glucose as a reference
 with known total mass, but we can follow a similar approach to estimate total
@@ -157,77 +141,21 @@ cell can then be calculated from,
 	M_{P\_i}' = [M_P]_{Si} \cdot V_{Si\_i}
 \end{equation}
 where $M_{P_i}'$ is the new protein mass prediction, and $V_{Si_i}$ refers to
-the new volume prediction for each condition $i$, These are shown as [] dots in
-Figure \FIG{schmidt_adjustment_summary}.
+the new volume prediction for each condition $i$, These are shown as red data points in
+Figure \FIG{schmidt_adjustment_summary}(B).
 
 
-\subsection{Assumption of constant protein concentration across growth conditions}
-\label{sec:estimate_protein_per_cell}
+\subsection{Relaxing assumption of constant protein concentration across growth conditions}
 We next relax the assumption that cellular protein concentration is constant and
-instead, attempt to  estimate it using experimental data. Here we first note
-that  for across almost the entire range of growth rates considered here,
-protein, DNA, and RNA accounted for at least 90 \% of the dry mass in
-measurements from the lab of Terence Hwa (\cite{basan2015}). They also found that
-the total dry mass concentration was roughly constant across growth conditions.
-Under such a scenario, we can calculate the total dry mass concentration for
-protein, DNA, and RNA, which is given by 1.1 g/ml x 30 \% x 90 \% or about
-$[M_P]$ = 300 fg per fl. Using the cell volume predictions from Si \textit{et
-al.}, we can then calculate the associated mass per cell.
-
-However, even if dry mass concentration is relatively constant across growth
-conditions, it is not a given that protein concentration should also be
-constant. In particular, we know that rRNA increases substantially at faster
-growth rates (\cite{dai2016}). This is a well-documented result that arises from
-an increase in the fraction of ribosomes at faster growth rates
-(\cite{scott2010}). To proceed we will use therefore rely on experimental
-measurements of total DNA content per cell that also come from Basan \textit{et
-al.}, and RNA to protein ratios that were measured in Dai \textit{et al.} (and
-cover the entire range of growth conditions considered here). These are
-reproduced in Figure \FIG{schmidt_adjustment_varying_conc}(A) and (B),
-respectively.
-
-Assuming that the protein, DNA, and RNA account for 90 \% of the total dry mass,
-the protein mass can then determined by first subtracting the experimentally
-measured DNA mass,  and then using the experimental estimate of the RNA to
-protein ratio. The total protein per cell is will be related to the summed RNA
-and protein mass by,
-
-\begin{equation}
-	M_{P} = \frac{[M_P + M_{RNA}]}{1 + (RP_{ratio})}.
-\end{equation}
-$(RP_{ratio}$ refers to the RNA to protein ratio as measured by Dai \textit{et
-al.}. In Figure \FIG{schmidt_adjustment_varying_conc}(C) we plot the
-estimated cellular concentrations for protein, DNA, and RNA from these
-calculations, and in Figure \FIG{schmidt_adjustment_varying_conc}(D) we plot
-their total expected mass per cell.
+instead, attempt to  estimate it using experimental data. Here we use the
+estimation of total protein mass per cell detailed in section
+\nameref{sec:estimate_protein_per_cell} for all data points in the
+\cite{schmidt2016} data set. The green data points in
+\FIG{schmidt_adjustment_summary}(B) show this prediction, and this represents
+the approach used to estimate total protein per cell for all data sets.
 
 
-\begin{figure}
-		\centering
-    \includegraphics[width=1\textwidth]{SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf}
-  \caption{{\bf Empirical estimate of cellular protein, DNA, and RNA as a
-  function of growth rate.} (A) Measured DNA mass per cell as a function of
-  growth rate, reproduced from Basan \textit{et al.} 2015. The data was fit to
-  an exponential curve (DNA mass in fg per cell is given by 0.42 $e^{2.23 \cdot
-  \lambda}$ + 7.2 fg per cell, where $\lambda$ is the growth rate in hr$^{-1}$).
-  (B) RNA to protein measurements as a function fo growth rate. The data was for
-  to two lines: for growth rates below 0.7 hr$^{-1}$, the RNA/protein ratio is
-  0.18$\cdot \lambda$ + 0.093, while for growth rates faster than 0.7 hr$^{-1}$
-  the RNA/protein ratio is given by 0.25$\cdot \lambda$ + 0.035. For (A) and (B)
-  cells are grown under varying levels of nutrient limitation, with cells grown
-  in minimal media with different carbon sources for the slowest growth
-  conditions, and rich-defined media for fast growth rates. (C) Predictions of
-  cellular protein, DNA, and RNA concentration.  (D) Total cellular mass
-  predicted for protein, DNA, and RNA using the cell size predictions from Si
-  \textit{et al.}. Symbols (diamond: DNA, square: RNA, circle: protein)
-	show estimated values of mass concentration and mass per cell for the specific
-	growth rates in \cite{schmidt_2016}.
-	 	}
-  \label{fig:schmidt_adjustment_varying_conc}
-\end{figure}
-
-
-\subsection{Estimating cellular protein concentration as a function of growth rate.}
+\subsection{Experimental measurements of total protein from Basan \textit{et al.} 2015.}
 
 One of the challenges in our estimates in the preceding  sections is the need to
 estimate protein concentration and cell volumes. These are inherently difficult
@@ -255,8 +183,8 @@ growth. In contrast, our estimates using cell volume so far have predicted that
 total protein mass should continue to decrease slightly for slower growing
 cells. By fitting this data to an exponential function dependent on growth rate,
 we could then estimate the total protein per cell for each growth condition
-considered by Schmidt \textit{et al.}. These are plotted in red in Figure
-\FIG{schmidt_adjustment_summary}.
+considered by \cite{schmidt2016}. These are plotted as red data points in
+\FIG{schmidt_adjustment_summary}(B).
 
 
 \begin{figure}

@@ -1,76 +1,110 @@
 \section{Discussion}
 Continued experimental and technological improvements have led to a treasure
-trove of quantitative biological data \citep{hui2015, schmidt2016, si2017}, and
-an ever advancing molecular view of the constituents that support bacterial
-growth \citep{taheriaraghi2015, morgenstein2015, si2019}. In this work we have
-compiled what we believe to be the state-of-the-art knowledge on proteomic copy
-number across a broad range of growth conditions in \textit{E. coli}. We have
-made this data accessible through a
-\href{https://github.com/RPGroup-PBoC/growth_limits}{GitHub repository}, and an
-interactive figure that allows exploration of specific protein and protein
-complex copy numbers. Through a series of order-of-magnitude estimates that
-traverse key steps in the bacterial cell cycle, this proteomic data has been a
-resource to guide our understanding of two key questions: what biological
-processes limit the absolute speed limit of bacterial growth, and how do cells
-alter their  molecular constituents as a function of changes in growth rate or
-nutrient availability? [note what we will discuss broadly?]
+trove of quantitative biological data \citep{hui2015, schmidt2016, si2017,
+gallagher2020, peebo2015, valgepea2013}, and an ever advancing molecular view
+and mechanistic understanding of the constituents that support bacterial
+growth \citep{taheriaraghi2015, morgenstein2015, si2019, karr2012,
+kostinski2020}. In this work we have compiled what we believe to be the
+state-of-the-art knowledge on proteomic copy number across a broad range of
+growth conditions in \textit{E. coli}. We have made this data accessible
+through a \href{https://github.com/RPGroup-PBoC/growth_limits}{GitHub
+repository}, and an interactive figure that allows exploration of specific
+protein and protein complex copy numbers. Through a series of
+order-of-magnitude estimates that traverse key steps in the bacterial cell
+cycle, this proteomic data has been a resource to guide our understanding of
+two key questions: what biological processes limit the absolute speed limit
+of bacterial growth, and how do cells alter their molecular constituents as a
+function of changes in growth rate or nutrient availability? While not
+exhaustive, our series of estimates provide insight on the scales of
+macromolecular complex abundance across four classes of cellular processes --
+the transport of nutrients, the production of energy, the synthesis of the
+membrane and cell wall, and the numerous steps of the central dogma.
 
-For the biological tasks we considered, most protein copy numbers were in
+In general, the copy numbers of the complexes involved in these processes were 
 reasonable agreement with our order-of-magnitude estimates. Since many of these
-estimates represent lower-bound quantities, this suggests that cells do not
+estimates represent soft lower-bound quantities, this suggests that cells do not
 express proteins grossly in excess of what is needed for a particular growth
 rate. Several exceptions, however, also highlight the dichotomy between a
-proteome that appears to optimize expression according to growth rate and one
-that must also support growth in a less certain nutrient environment. For carbon
-uptake, as an example, we find that cells always express a similar number of
+proteome that appears to "optimize" expression according to growth rate and one
+that must be able to quickly adapt to a environment different nutritional
+quality. Take, for example, the expression of carbon transporters. Shown in
+\FIG{carbon_tport}(B), we find that cells always express a similar number of
 glucose transporters irrespective of growth condition. At the same time, it is
 interesting to note that many of the alternative carbon transporter are still
 expressed in low but non-zero numbers ($\approx$ 10-100 copies per cell) across
 growth conditions. This may relate to the regulatory configuration for many of
-these operons, which require the presence of a metabolite signal in order for
+these operons, which require the presence of a metabolite signal in order for 
 alternative carbon utilization operons to be induced \citep{monod1949,
-laxhuber2020}.
+laxhuber2020}. Furthermore, upon induction, these transporters are expressed and
+present in abundances in close agreement with a simple estimate.
 
-From our analysis we arrive at a ribosome-centric view of cellular growth rate
-control. This is in some sense unsurprising given the long-held observation that
-\textit{E. coli} and many other organisms  vary their ribosomal abundance as a
-function of growth conditions and growth rate \cite{scott2010, metzlraz2017}.
-However, through our dialogue with the proteomic data, two additional key points
-emerge. The first relates to our question of what process sets the absolute
-speed limit of  bacterial growth. While a cell can parallelize many of its
-processes simply by increasing the abundance of specific proteins, this is not
-so for synthesis of ribosomes (\FIG{ribosome_limit}(A)).  Even for tasks like
-chromosomal replication, the cell can perform this over multiple  cell cycles
-during rapid growth. The synthesis time for each ribosomes places an inherent
-limit on the growth rate that can only be surpassed if the cell were to increase
-their polypeptide elongation rate, or if they could reduce the number or total
-size of the the ribosome. The second point relates to the long-observed
-correlations between growth rate and cell size \citep{schaechter1958, si2017},
-and between growth rate and ribosomal mass fraction. While both trends have
-peaked tremendous curiosity and driven substantial amounts of research in their
-own regards, it appears that these relationships are themselves intertwined. In
-particular, it is the need for cells to increase their absolute number of
-ribosomes under conditions of rapid growth that require cells to also grow in
-size.
+Of the processes illustrated in \FIG{categories}, we arrive at a
+ribosome-centric view of cellular growth rate control. This is in some sense
+unsurprising given the long-held observation that \textit{E. coli} and many
+other organisms vary their ribosomal abundance as a function of growth
+conditions and growth rate \cite{scott2010, metzlraz2017}. However, through
+our dialogue with the proteomic data, two additional key points emerge. The
+first relates to our question of what process sets the absolute speed limit
+of bacterial growth. While a cell can parallelize many of its processes
+simply by increasing the abundance of specific proteins or firing multiple
+rounds of DNA replication, this is not so for synthesis of ribosomes
+(\FIG{ribosome_limit}(A)). The translation time for each ribosome [$\approx$
+6 min, \cite{dill2011}] places an inherent limit on the growth rate that can
+only be surpassed if the cell were to increase their polypeptide elongation
+rate, or if they could reduce the number or total size of the the ribosome.
+The second point relates to the long-observed correlations between growth
+rate and cell size \citep{schaechter1958, si2017}, and between growth rate
+and ribosomal mass fraction. While both trends have sparked tremendous
+curiosity and driven substantial amounts of research in their own regards,
+these relationships are themselves intertwined. In particular, it is the need
+for cells to increase their absolute number of ribosomes under conditions of
+rapid growth that require cells to also grow in size. Further experiments are
+needed to test the validity of this hypothesis. In particular, we believe
+that the change in growth rate in response to translation-inhibitory drugs
+(such as chloramphenicol) could be quantitatively predicted, given one had
+precision measurement of the fraction of actively translating ribosomes
+$f_a$.
 
-One of the key motivations for considering energy production was the physical
-constraints on total volume and surfance area as cells vary their size
-\citep{harris2016, ojkic2019}. While \textit{E. coli} get larger as it expresses
-more ribosomes,  an additional constraint begins to arise in energy production
-due to a relative decrease in  surface area \citep{szenk2017}. Specifically, the
-cell interior requires an amount of energy that scales cubically with cell size,
-while the available surface area where ATP is predominantly generated grows
-quadratically (\FIG{energy_scaling}(A)). While this threshold does not appear to
-be met for \textit{E. coli} cells growing at 2 hr$^{-1}$ or less, it highlights
-an additional constraint on growth given the apparent need to increase in cell
-size to grow faster. This is also potentially relevant to eukaryotic organisms,
-whose  mitochondria exhibit convoluted membrane structures that nevertheless
-remain bacteria-sized  organelles \citep{guo2018}. In the context of bacteria
-growth and energy production more generally, we have limited our analysis to the
-aerobic growth conditions associated with the proteomic data and further
-consideration will be needed for anaerobic growth.
+While generation of new ribosomes plays a dominant role in growth rate
+control, there exist other physical limits to the function of cellular
+processes. One of the key motivations for considering energy production was
+the physical constraints on total volume and surfance area as cells vary
+their size \citep{harris2016, ojkic2019}. While \textit{E. coli} get larger
+as it expresses more ribosomes, an additional constraint begins to arise in
+energy production due to a relative decrease in surface area
+\citep{szenk2017}. Specifically, the cell interior requires an amount of
+energy that scales cubically with cell size, while the available surface area
+where ATP is predominantly generated grows quadratically
+(\FIG{energy_scaling}(A)). While this threshold does not appear to be met for
+\textit{E. coli} cells growing at 2 hr$^{-1}$ or less, it highlights an
+additional constraint on growth given the apparent need to increase in cell
+size to grow faster. This is also potentially relevant to eukaryotic
+organisms, whose mitochondria exhibit convoluted membrane structures that
+nevertheless remain bacteria-sized organelles \citep{guo2018}. In the context
+of bacteria growth and energy production more generally, we have limited our
+analysis to the aerobic growth conditions associated with the proteomic data
+and further consideration will be needed for anaerobic growth.
 
-[Final paragraph on how this work may be explored further, and specific tests of the model we consider i.e. + chlor]
+This work is by no means meant to be an exhaustive dissection of bacterial
+growth rate control, and there are may features the interaction between the
+bacterial proteome and growth that we neglected to consider. For example, recent
+work \citep{hui2015, schmidt2016} has explored how the proteome itself is
+structured and how this structure depends on growth rate. In the work of
+\cite{hui2015}, the authors coarse-grained the proteome into six discrete
+categories being related to either translation, catabolism, anabolism, and
+others related to signaling and core metabolism. The relative mass fraction of
+the proteome occupied by each sector could be modulated by external application
+of drugs or simply by changing the nutritional content of the medium. While we
+have explored how individual complexes are related to cell growth, we
+acknowledge that higher-order interactions between groups of complexes or
+metabolic networks may reveal at a systems-level how growth-rate dependence
+is mechanistically achieved. Furthermore, while we anticipate the conclusions
+summarized here are applicable to a wide collection of bacteria with similar
+lifestyles as \textit{E. coli}, other bacteria and archaea may have evolved
+other strategies by which growth rate is controlled. Further experiments with
+the level of rigor an quantitative care as those summarized in this work will
+need to be performed in a variety of microbial organisms to learn more about how
+regulation of growth rate has evolved over the past 3.5 billion years.
 
 %
 %

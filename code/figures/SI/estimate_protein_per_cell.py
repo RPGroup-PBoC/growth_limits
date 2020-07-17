@@ -111,18 +111,18 @@ ax[1].legend(loc = 'upper left', fontsize=6)
 # Plot predictions of DNA, RNA, and protein along with 'data points' for Schmidt
 x = np.linspace(0,2,100)
 vol = prot.size.lambda2size(schmidt_gr)
-ax[2].plot(schmidt_gr, pred_dnamass_Si/vol, 'd', ms=4, color=colors['light_blue'],
+ax[2].plot(schmidt_gr, pred_dnamass_Si/vol, 'd', ms=4, color=colors['light_green'],
         markeredgewidth=0.5, markeredgecolor='k', label = 'DNA')
-ax[2].plot(schmidt_gr, pred_RNAmass_Si/vol, 's', ms=4, color=colors['light_blue'],
+ax[2].plot(schmidt_gr, pred_RNAmass_Si/vol, 's', ms=4, color=colors['light_green'],
         markeredgewidth=0.5, markeredgecolor='k', label = 'RNA')
-ax[2].plot(schmidt_gr, pred_proteinmass_Si/vol, 'o', ms=4, color=colors['light_blue'],
+ax[2].plot(schmidt_gr, pred_proteinmass_Si/vol, 'o', ms=4, color=colors['light_green'],
         markeredgewidth=0.5, markeredgecolor='k', label = 'protein')
 
-ax[3].plot(schmidt_gr, pred_dnamass_Si, 'd', ms=4, color=colors['light_blue'],
+ax[3].plot(schmidt_gr, pred_dnamass_Si, 'd', ms=4, color=colors['light_green'],
         markeredgewidth=0.5, markeredgecolor='k', label = 'DNA')
-ax[3].plot(schmidt_gr, pred_RNAmass_Si, 's', ms=4, color=colors['light_blue'],
+ax[3].plot(schmidt_gr, pred_RNAmass_Si, 's', ms=4, color=colors['light_green'],
         markeredgewidth=0.5, markeredgecolor='k', label = 'RNA')
-ax[3].plot(schmidt_gr, pred_proteinmass_Si, 'o', ms=4, color=colors['light_blue'],
+ax[3].plot(schmidt_gr, pred_proteinmass_Si, 'o', ms=4, color=colors['light_green'],
         markeredgewidth=0.5, markeredgecolor='k', label = 'protein')
 
 # repeat calculations for smooth curve, predict RNA/Protein ratio <= 0.7 hr-1:
@@ -187,7 +187,7 @@ ax[3].plot(x, pred_proteinmass_Si, '-', alpha = 0.6,
 ax[2].set_ylabel('concentration [fg/fL]', fontsize=6)
 ax[2].set_ylim(0,270)
 
-
+ax[3].set_ylabel('protein mass per cell [fg]', fontsize=6)
 ax[3].legend(loc = 'upper left', fontsize=6)
 ax[3].set_ylim(0,850)
 

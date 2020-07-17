@@ -110,6 +110,7 @@ for g, d in tqdm.tqdm(cplx.groupby(['complex_annotation', 'complex']),
                           'dataset': _g[0],
                           'dataset_name':_g[1],
                           'condition': condition_dict[_g[2]],
+                          'cond':_g[2],
                           'growth_rate_hr':_g[3],
                           'color': dataset_colors[_g[0]]
                           }, ignore_index=True)

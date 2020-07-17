@@ -22,13 +22,21 @@ for (var i = 0; i < cplx_ind.length; i++) {
         cplx_table['protein'].length = 0;
         cplx_table['subunits'].length = 0;
         cplx_table['func'].length = 0;
+        cplx_table['relative_subunits'].length = 0;
     }
     cplx_table['protein'].push(cplx_desc['protein'][cplx_ind[i]]);
     cplx_table['subunits'].push(cplx_desc['subunits'][cplx_ind[i]]);
     cplx_table['func'].push(cplx_desc['func'][cplx_ind[i]]);
 }
-cplx_table_source.change.emit();
+var minimum_subunits = Math.min(...cplx_table['subunits']);
+for (var i = 0; i < cplx_ind.length; i++) {
+    cplx_table['relative_subunits'].push(cplx_table['subunits'][i] / minimum_subunits);
+    cplx_table['observed'].push('hover to view');
+} 
 
+
+cplx_table_source.change.emit();
+console.log(minimum_subunits,cplx_table)
 // Find the indices in the numeric dataset for the complex
 var cplx_ind = getAllIndexes(cplx_numeric['complex'], cplx_select);
 
@@ -47,17 +55,11 @@ for (var i = 0; i < cplx_ind.length; i++) {
     cplx_display['c'].push(cplx_numeric['color'][cplx_ind[i]]);
     cplx_display['l'].push(cplx_numeric['dataset_name'][cplx_ind[i]]);
     cplx_display['condition'].push(cplx_numeric['condition'][cplx_ind[i]]);
+    cplx_display['cond'].push(cplx_numeric['cond'][cplx_ind[i]]);
 }
 
 // Update the display source. 
 cplx_display_source.change.emit()
-
-// Given change in y axis, rescale to be one order of magnitude below and above
-var min_abundance = Math.log10(Math.min(...cplx_display['y']));
-var max_abundance = Math.log10(Math.max(...cplx_display['y']));
-var y_range = [Math.pow(10, min_abundance - 1), Math.pow(10, max_abundance +1)];
-axis.bounds = y_range;
-console.log(axis.bounds)
 
 // Custom Function Definitions
 function getAllIndexes(arr, val) {

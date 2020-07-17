@@ -1,7 +1,7 @@
 \section{Additional Considerations of Schmidt \textit{et al.} Data Set}
 \label{sec:SI_schmidt}
 
-While the data set from \cite{schmidt_2016} remains a heroic effort that our
+While the data set from \cite{schmidt2016} remains a heroic effort that our
 lab continues to return to as a resource, there were steps taken in their
 calculation of protein copy number that we felt needed further
 consideration. In particular, the authors made an assumption of constant
@@ -17,17 +17,18 @@ reported in three other recent papers: measurements from Taheri-Araghi
 those from Basan \textit{et al.} come  from the lab of Terence Hwa.  Each set of
 measurements used microscopy and cell segmentation to determine the length and
 width, and then calculated cell size by treating the cell is a cylinder with two
-hemispherical ends. While there is notable discrepancy between the two research
-groups, Basan \textit{et al.} found that this came specifically from uncertainty
-in determining the cell width, which is prone to inaccuracy given the small cell
-size and optical resolution limits (further described in their supplemental
-text). Perhaps the more concerning point is that while each of these alternative
-measurements show an exponential increase in  cell size at faster growth rates,
-the measurements used by Schmidt \textit{et al.} appear to plateau. This
-resulted in an analogous trend in their final reported total cellular protein
-per cell as shown in Figure \FIG{schmidt_adjustment_summary} (purple data
-points), and is in disagreement with other measurements of total protein at
-these growth rates \citep{basan2015}.
+hemispherical ends, as we considered in the previous section. While there is
+notable discrepancy between the two research groups, which are both using strain
+NCM3722, Basan \textit{et al.} found that this came specifically from
+uncertainty in determining the cell width. This is prone to inaccuracy given the
+small cell size and optical resolution limits (further described in their
+supplemental text). Perhaps the more concerning point is that while each of
+these alternative measurements show an exponential increase in  cell size at
+faster growth rates, the measurements used by Schmidt \textit{et al.} appear to
+plateau. This resulted in an analogous trend in their final reported total
+cellular protein per cell as shown in Figure \FIG{schmidt_adjustment_summary}
+(purple data points), and is in disagreement with other measurements of total
+protein at these growth rates \citep{basan2015}.
 
 \begin{figure}
 		\centering{
@@ -45,20 +46,20 @@ these growth rates \citep{basan2015}.
   }
 \end{figure}
 
-Since it is not obvious how measurements of cell size might have influenced
-their reported protein abundances, in the following subsections we begin by
-considering this calculation. We then consider three different approaches to
-estimate the growth-rate dependent total protein mass to compare with those
-values reported by \cite{schmidt_2016}. The results of this are summarized in
+Since it is not obvious how measurements of cell size influenced their reported
+protein abundances, in the following subsections we begin by considering this
+calculation. We then consider three different approaches to estimate the
+growth-rate dependent total protein mass to compare with those values reported
+from \cite{schmidt2016}. The results of this are summarized in
 \FIG{cell_size_literature}(B), with the original values from both
-\cite{schmidt_2016} and \cite{li_2014} shown in \FIG{cell_size_literature}(A)
-for reference. For most growth conditions, we find that total protein
-expectations are not expected to change dramatically. However, for the fastest
-growth conditions, with glycerol + supplemented amino acids, and LB media, all
-estimates are substantially higher than those originally reported and justify
-why we readjusted the protein abundance to be more consistent with this
-alternative expectation (which is described in section
-\nameref{sec:protein_size_SV}).
+\cite{schmidt2016} and \cite{li2014} shown in \FIG{cell_size_literature}(A) for
+reference. For most growth conditions, we find that total protein per cell is
+still in reasonable agreement. However, for the fastest growth conditions, with
+glycerol + supplemented amino acids, and LB media, all estimates are
+substantially higher than those originally reported. This is the main reason why
+we chose to readjusted protein abundance as shown in
+\FIG{total_protein_final}(B) (with the calculation described in section
+\nameref{sec:estimate_protein_per_cell}).
 
 
 \begin{figure}
@@ -84,10 +85,10 @@ alternative expectation (which is described in section
 
 \subsection{Effect of cell volume on reported absolute protein abundances}
 
-The authors calculated proteome-wide  protein abundance by first determining
+As noted in section \nameref{sec:SI_exp_summary},
+the authors calculated proteome-wide protein abundances by first determining
 absolute abundances of 41 pre-selected proteins, which relied on adding
-synthetic heavy reference peptides into their protein samples at known abundance
-(with proteins selected to cover the range of expected copy numbers).  This
+synthetic heavy reference peptides into their protein samples at known abundance.  This
 absolute quantitation was performed in replicate for each growth condition.
 Separately, the authors also performed a more conventional mass spectrometry
 measurement for samples from each growth condition, which attempted to maximize
@@ -100,8 +101,8 @@ proteins detected in their proteome-wide data set. Combined with their flow
 cytometry cell counts, they were then able to determine absolute abundance of
 each protein detected on a per cell basis.
 
-While this approach provided absolute abundances, another necessary step needed
-to arrive at total cellular protein is to account for any protein loss during
+While this approach provided absolute abundances, another necessary step
+to arrive at total cellular protein was to account for any protein loss during
 their various protein extraction steps. Here the authors attempted to determine
 total protein separately using a BCA protein assay.  In personal communications,
 it was noted that determining reasonable total protein abundances by BCA across

@@ -2,14 +2,14 @@
 \label{sec:SI_exp_summary}
 
 Here we provide a brief summary of the experiments behind each proteomic data
-sets. The purpose of this section is to better identify the steps taken by the
-authors to arrive at absolute protein abundances. In the following section
+set. The purpose of this section is to identify how the authors arrived at
+absolute protein abundances. In the following section
 (Section~\nameref{sec:SI_data_summary}) we will then provide a summary of the
-final protein abundance measurements that were used for in the main text. Table
-\ref{table:datasets} provides an overview of the main data sets that we
-considered. These are predominately mass spectrometry-based, with the exception
-of the work from Li \textit{et al.} (2014) which used ribosomal profiling, and
-the fluorescence-based counting done in Taniguchi \textit{et al.} (2010).
+final protein abundance measurements that were used throughout the main text.
+Table \ref{tab:datasets} provides an overview of the publications we considered.
+These are predominately mass spectrometry-based, with the exception of the work
+from \cite{li2014} which used ribosomal profiling, and the fluorescence-based
+counting done in \cite{taniguchi2010}.
 
 \begin{table}[bt]
 \caption{\label{tab:datasets}Overview of proteomic data sets.}
@@ -40,40 +40,39 @@ performed absolute quantification of 41 proteins across all growth conditions
 \subsection{Fluorescence based measurements}
 In the work of \cite{taniguchi2010}, the authors used a chromosomal YFP fusion
 library where individual strains have a specific gene tagged with a YFP-coding
-sequence. 1018 of 1400 attempted strains were used in their work. For each
-strain, a fluorescence microscope was used to collect cellular YFP intensities.
-Through automated image analysis, the authors normalized intensity measurements
-by cell size to account for the change in size and expression variability across
-the cell cycle. YFP intensities were also corrected for cellular
-autofluorescence, and final absolute protein levels were determined by a
-calibration with single-molecule fluorescence intensities, performed separately
-using a purified YFP solution.
+sequence. 1018 of their 1400 attempted strains were used in the work. A
+fluorescence microscope was used to collect cellular YFP intensities across  all
+these strains. Through automated image analysis, the authors normalized
+intensity measurements by cell size to account for the change in size and
+expression variability across the cell cycle. Following correction of  YFP
+intensities for cellular autofluorescence, final absolute protein levels were
+determined by a calibration curve with single-molecule fluorescence intensities.
+This calibration  experiment was performed separately using a purified YFP
+solution.
 
 \subsection{Ribosomal profiling measurements}
 The work of \cite{li2014} takes a sequencing based approach to estimate protein
 abundance. Ribosomal profiling, which refers to the deep sequencing of
-ribosome-protected mRNA fragments, provides a quantitative measurement of the
+ribosome-protected mRNA fragments, can provide a quantitative measurement of the
 protein synthesis rate.  As long as the protein life-time is long relative to
-the cell doubling time, it is possible to  also estimate absolute protein copy
-numbers.
-
-To perform ribosomal profiling, ribosome-protected mRNA is extracted from cell
-lysate  and selected on a denaturing polyacrylamide gel, and sequences are
-obtained by deep sequencing (15–45 nt long fragments collected and sequenced  by
-using an Illumina HiSeq 2000 in \cite{li2014}). Counts of ribosome footprints
-from the sequencing data are corrected empirically for position-dependent biases
-in ribosomal density across each gene, as well as dependencies on specific
-sequences including the Shine-Dalgarno sequence. These data-corrected ribosome
-densities represent relative protein synthesis rates.
-
-Absolute protein synthesis rates are obtained by multiplying the relative rates
-by the total cellular protein per cell. The total protein  per unit volume  was
-determined with the Lowry method to quantify total protein, calibrated against
-bovine serum albumin (BSA). By counting colony-forming units following serial
-dilution of their cell cultures, they then calculated the total protein per
-cell. The absolute protein synthesis rate has units of  proteins per generation,
+the cell doubling time, it is possible to  estimate absolute protein copy
+numbers. The absolute protein synthesis rate has units of  proteins per generation,
 and for stable proteins will also correspond to the protein  copy number per
 cell.
+
+In the experiments, ribosome-protected mRNA is extracted from cell lysate  and
+selected on a denaturing polyacrylamide gel for deep sequencing (15–45 nt long
+fragments collected and sequenced  by using an Illumina HiSeq 2000 in
+\cite{li2014}). Counts of ribosome footprints from the sequencing data were then
+corrected empirically for position-dependent biases in ribosomal density across
+each gene, as well as dependencies on specific sequences including the
+Shine-Dalgarno sequence. These data-corrected ribosome densities represent
+relative protein synthesis rates. Absolute protein synthesis rates are obtained
+by multiplying the relative rates by the total cellular protein per cell. The
+total protein  per unit volume  was determined with the Lowry method to quantify
+total protein, calibrated against bovine serum albumin (BSA). By counting
+colony-forming units following serial dilution of their cell cultures, they then
+calculated the total protein per cell.
 
 \subsection{Mass spectrometry measurements}
 
@@ -81,17 +80,17 @@ Perhaps not surprisingly, the data is predominantly mass spectrometry based. Thi
 largely due to tremendous improvements in the sensitivity of mass spectrometers,
 as well as improvements in sample preparation and data analysis
 pipelines. It is now a relatively routine task to extract protein from a cell
-and quantify the majority of proteins by shotgun proteomics. In general, this
-involved lysing cells, enzymatically digesting the proteins into short peptide
-fragments, and then introducing them into the mass spectrometer (commonly
-employing liquid chromatography and electrospray ionization), which itself can
+and quantify the majority of proteins present by shotgun proteomics. In general, this
+involves lysing cells, enzymatically digesting the proteins into short peptide
+fragments, and then introducing them into the mass spectrometer (e.g.
+with liquid chromatography and electrospray ionization), which itself can
 have multiple rounds of detection and further fragmentation of the peptides.
 
 Most quantitative experiments rely on labeling protein with stable isotopes,
-which allow multiple samples to be measured simultaneously by the mass
-spectrometer. By combining samples of known total protein abundance (i.e. one
+which allow multiple samples to be measured together by the mass
+spectrometer. By measuring samples of known total protein abundance simultaneously (i.e. one
 sample of interest, and one reference), it is possible to determine relative
-protein abundances. With relative protein abundances in hand, absolute protein
+protein abundances. Absolute protein
 abundances can be estimated following the same approach used above for ribosomal
 profiling, which is to multiply each relative abundance measurement by the total
 cellular protein per cell. This is the approach taken by \cite{valgepea2013} and
@@ -104,17 +103,19 @@ not determine  cell quantities and instead report the cellular protein
 abundances in protein per unit  volume by assuming a mass density of 1.1 g/ml,
 with a 30\% dry mass fraction.
 
-A key distinction in the mass spectrometry work of \cite{schmidt2016} is that in
-addition to determining relative abundance, they performed absolute
-quantification of  41 enzymes covering over four orders of magnitude in cellular
-abundance. Here,  a synthetic peptide was generated for each of the 41 proteins,
-doped into each protein sample, and used to provide an calibration between
-measured mass spectrometry intensities and absolute protein abundances. These
-absolute measurements, determined for every growth condition considered in their
-work,  were then used as a calibration curve to convert proteomic-wide relative
-abundances into  absolute protein abundance per cell. A more extensive
-discussion of the \cite{schmidt2016} data set can be found in Section
-\nameref{sec:SI_schmidt}.
+An alternative way to arrive at absolute protein abundances is to dope in
+synthetic peptide  fragments of known abundance. These can serve as a direct way
+to calibrate mass spectrometry  signal intensities to absolute mass. This is the
+approach taken by \cite{schmidt2016}. In addition  to a set of shotgun proteomic
+measurements to determine proteome-wide relative abundances,  the authors also
+performed absolute quantification of  41 proteins covering over four orders of
+magnitude in cellular abundance. Here,  a synthetic peptide was generated for
+each of the proteins, doped into each protein sample, and used these to
+determine absolute protein abundances of the 41 proteins. These absolute
+measurements, determined for every growth condition,  were then used as a
+calibration curve to convert proteomic-wide relative abundances into  absolute
+protein abundance per cell. A more extensive discussion of the
+\cite{schmidt2016} data set can be found in Section \nameref{sec:SI_schmidt}.
 
 \section{Summary of Proteomic Data}
 \label{sec:SI_data_summary}
@@ -124,24 +125,27 @@ li2014, peebo2015, schmidt2016}. As shown in \FIG{total_protein_final}(A), the
 reported total protein abundances in the work of \cite{taniguchi2010} and
 \cite{soufi2015} differed quite substantially from the other work. For the work
 of \cite{taniguchi2010} this is in part due to a lower coverage in total
-proteomic mass quantified, though we also noticed that most proteins appear to
-be undercounted when compared to the other data.
+proteomic mass quantified, though we also noticed that most proteins appear
+undercounted when compared to the other data.
 
 \FIG{total_protein_final}(B) summarizes the total protein mass for each data
-point in our final compiled data set. Here we note that protein abundances were
-all scaled so they followed an identical growth rate-dependent change in total
-protein mass.  While our inclination initally was to leave reported copy numbers
-untouched,  a notable descrepency between the total protein per cell between
-\cite{schmidt2016} and the other data sets (see fast growth conditions in
-\FIG{total_protein_final}(A)) forced us to dig deeper into those measurements.
-The particular scaling in the total protein content observed in the data from
-\cite{schmidt2016}  appears to be due to their assumptions on cell size and we
-provide a more extensive discussion and analysis of that data set in section
-\nameref{sec:SI_schmidt}. As a compromise, and in an effort to treat all data
-equally, we instead scaled all protein abundance values from each data set using
-a common model growth-rate dependent cell size and protein concentration based
-on the size data available from \cite{si2017}. We consider those details in
-section \nameref{sec:protein_size_SV} that follows.
+point in our final compiled data set. We note that protein abundances were all
+scaled so they followed a common growth rate-dependent change in total protein
+mass.  While our inclination initally was to leave reported copy numbers
+untouched,  a notable descrepency in the scaling total protein per cell between
+\cite{schmidt2016} and the other data sets forced us to dig deeper into those
+measurements (compare \cite{schmidt2016} and \cite{li2014} data in
+\FIG{total_protein_final}(A)). The particular trend in \cite{schmidt2016}
+appears to be due to assumptions of cell size and we provide a more extensive
+discussion and analysis of that data set in section \nameref{sec:SI_schmidt}. As
+a compromise, and in an effort to treat all data equally, we instead scaled all
+protein abundance values to a data-driven estimate of total protein per cell.
+Here we used cell size measurements from \cite{si2017, si2019}, and an estimate
+of total protein content through expected dry mass. Total protein per cell was
+estimated using available data on total DNA, RNA, and protein from
+\cite{basan2015, dai2016}, which  account for the majority of dry mass in the
+cell. We consider these details in sections \nameref{sec:protein_size_SV} and
+\nameref{sec:estimate_protein_per_cell} that follows.
 
 \begin{figure*}
     \centering{
@@ -162,16 +166,17 @@ section \nameref{sec:protein_size_SV} that follows.
     }
 \end{figure*}
 
-In \FIG{upset} we also show the total proteomic coverage and overlap of proteins
-quantified across each data set. Here we have used  an UpSet diagram
+Lastly, in \FIG{upset} we show the total proteomic coverage and overlap of
+proteins quantified across each data set. Here we have used  an UpSet diagram
 \citep{Lex2014} to compare the data. Overall, the overlap in quantified proteins
-is quite good, with 1157 proteins with abundances values quantified in all data
-sets. The sequencing based approach of \cite{li2014} has substantially higher
-coverage compared to the mass spectrometry data sets (3394 genes versus the 2041
-genes quantified in the work of \cite{schmidt2016}). However, in terms of total
+is quite high, with 1157 proteins quantified across all data sets. The
+sequencing based approach of \cite{li2014} has substantially higher coverage
+compared to the mass spectrometry data sets (3394 genes versus the 2041 genes
+quantified in the work of \cite{schmidt2016}). However, in terms of total
 protein mass, the data from \cite{li2014, schmidt2016, peebo2015} each quantify
-roughly equivalent total protein.  We find that  the total protein quantified in
-\cite{valgepea2013} is 90-95 \% of the total protein  mass (when using the data
+roughly equivalent total protein mass.  An exception to this is in the data from
+\cite{valgepea2013}, where we find that  the total protein quantified in
+\cite{valgepea2013} is 90-95 \% of the total protein mass (when using the data
 from \cite{schmidt2016} as a reference).
 
 

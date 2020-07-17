@@ -43,16 +43,16 @@ In the work of \cite{taniguchi2010}, the authors used a chromosomal YFP fusion
 library where individual strains have a specific gene tagged with a YFP-coding
 sequence. 1018 of 1400 attempted strains were used in their work. For each
 strain, a fluorescence microscope was used to collect cellular YFP intensities.
-Through automated image analysis, the authors normalized intensity measurments
+Through automated image analysis, the authors normalized intensity measurements
 by cell size to account for the change in size and expression variability across
 the cell cycle. YFP intensities were also corrected for cellular
 autofluorescence, and final absolute protein levels were determined by a
-calibration with single-molecule fluorescence intensities, performed seperately
+calibration with single-molecule fluorescence intensities, performed separately
 using a purified YFP solution.
 
 \subsection{Ribosomal profiling measurements}
 The work of \cite{li2014} takes a sequencing based approach to estimate protein
-abundance. Ribsomal profiling, which refers to the deep sequencing of
+abundance. Ribosomal profiling, which refers to the deep sequencing of
 ribosome-protected mRNA fragments, provides a quantitative measurement of the
 protein synthesis rate.  As long as the protein life-time is long relative to
 the cell doubling time, it is possible to  also estimate absolute protein copy
@@ -127,7 +127,15 @@ across each data set using an UpSet diagram \citep{Lex2014}.
 \begin{figure*}
     \centering{
         \includegraphics{SI_figs/dataset_upset_diagram.pdf}
-        \caption{\textbf{Comparison of proteomic coverage across different data sets.} } \label{fig:upset}
+        \caption{\textbf{Comparison of proteomic coverage across different data sets.}
+        An UpSet diagram \citep{Lex2014} summarizes the total number of protein
+        coding genes whose protein abundance was reported in the data sets of
+        \cite{valgepea2013, li2014, schmidt2016, peebo2015}. The total number
+        of genes reported in each individual data set are noted on the bottom
+        left, while their overlap  is summarized in the bar chart. Each column
+        here refers to the intersection of a set of data sets  identified by
+        blue circles.
+        } \label{fig:upset}
     }
 \end{figure*}
 
@@ -135,6 +143,16 @@ across each data set using an UpSet diagram \citep{Lex2014}.
 \begin{figure*}
     \centering{
         \includegraphics{SI_figs/dataset_corrections.pdf}
-        \caption{\textbf{Summary of the growth-rate dependent total protein abundance for each data set.} } \label{fig:total_protein_final}
+        \caption{\textbf{Summary of the growth-rate dependent total protein abundance for each data set.}
+        (A) Total protein abundance per cell as original reported in the data sets of
+        \cite{valgepea2013, li2014, schmidt2016, peebo2015}. Note that the data from
+        \cite{peebo2015} only reported protein abundances per unit volume and total protein
+        per cell was found by multiplying these by the growth-rate dependent cell size as
+        determined by \cite{si2017}.
+         (B) Adjusted total protein abundances across the proteomic data sets are
+         summarized. Protein abundances were adjusted so that all data shared a common
+         set of growth-rate dependent total protein per cell and cellular protein concentration
+         following the cell size expectations of \cite{si2017}. (see section on \nameref{sec:protein_size_SV}
+         for further details.)} \label{fig:total_protein_final}
     }
 \end{figure*}

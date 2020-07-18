@@ -1,4 +1,5 @@
 \section{Extending Estimates to a Continuum of Growth Rates}
+\label{sec:SI_continuum_est}
 In the main text, we considered a standard stopwatch of 5000 s to estimate the
 abundance of the various protein complexes considered. In addition to point
 estimates, we also showed the estimate as a function of growth rate as
@@ -15,12 +16,12 @@ reasonable number to use as the typical cell mass is $\approx$ 1 pg and
 \textit{E. coli} cells can approximated as 70\% water by volume. However, as we
 have shown in the preceding sections, the cell size and therefore cell
 volume is highly dependent on the growth rate. This means that a dry mass of 300
-fg cannot be used reliably across all growth rates. 
+fg cannot be used reliably across all growth rates.
 
 Rather, using the phenomenological  description of cell volume scaling
 exponentially with growth rate, and using a rule-of-thumb of a cell buoyant
 density of $\approx 1.1$ pg / fL (BNID: 103875), we can calculate the cell dry mass across a
-range of physiological growth rates as 
+range of physiological growth rates as
 \begin{equation}
     m_\text{cell} \approx \rho V(\lambda) \approx \rho ae^{\lambda * b}
     \label{eq:def_mcell}
@@ -47,7 +48,7 @@ estimate the number of transporters for some substance $X$, which has been
 measured to be make up some fraction of the dry mass $\theta_X$. If we assume
 that, irrespective of growth rate, the cell dry mass is $\approx$ 30\% of the
 total cell mass, we can state that the total mass of substance $X$ as a function
-of growth rate is 
+of growth rate is
 \begin{equation}
 m_X \approx 0.3 \times \rho V(\lambda) \theta_X,
 \label{eq:m_x}
@@ -69,7 +70,7 @@ per transporter, we must provide a time window over which the transport process
 can occur. This is related to the cell doubling time $\tau$, which can be
 calculated from the the growth rate $\lambda$ as $\tau = \log(2) / \lambda$.
 Putting everything together, we arrive at a generalized transport scaling
-relation of 
+relation of
 \begin{equation}
 N_\text{transporters}(\lambda) = \frac{0.3 \times \rho V(\lambda)\theta_X}{w_X r_X \tau}.
 \label{eq:transporter_continuum}
@@ -83,7 +84,7 @@ initial approximation made of a dry cell mass of $\approx$ 300 fg for the point
 estimate while we consider more precise values in the continuum estimate. We
 note, however, that both this scaling relation and the point estimates are meant
 to describe the order-of-magnitude observed, and not the predict the exact
-values of the abundances. 
+values of the abundances.
 
 \EQ{transporter_continuum} is a very general relation for processes where the
 cell volume is the "natural variable" of the problem. This means that, as the
@@ -98,7 +99,7 @@ modified to the form
     N_\text{ATP synthases}(\lambda) = \frac{0.3 \times \rho V(\lambda)\theta_{protein}N_\text{ATP}}{w_{AA} r_\text{ATP} \tau},
 \end{equation}
 where we have included the term $N_\text{ATP}$ to account for the number of ATP
-equivalents needed per amino acid for translation ($\approx$ 4, BNID: 114971), 
+equivalents needed per amino acid for translation ($\approx$ 4, BNID: 114971),
 and $w_{AA}$ is the average mass of an amino acid. The grey curves in Figure 4
 o the main text were made using this type of expression.
 
@@ -118,18 +119,18 @@ crosslinked, respectively.
 \subsubsection{Number of Lipids}
 To compute the number of lipids as a function of growth rate, we make the
 assumption that some features, such as the surface area of a single lipid
-($A_\text{lipid} \approx$ 0.5 nm$^2$, BNID: 106993) and the total fraction of the membrane 
+($A_\text{lipid} \approx$ 0.5 nm$^2$, BNID: 106993) and the total fraction of the membrane
 composed of lipids ($\approx$ 40\%, BNID: 100078) are independent of the growth
 rate. Using these approximations combined with \EQ{surface_area}, and
 recognizing that each membrane is composed of two leaflets, we can
-compute the number of lipids as a function of growth rate as 
+compute the number of lipids as a function of growth rate as
 
 \begin{equation}
     N_\text{lipids}(\lambda) \approx \frac{4\,\text{leaflets} \times 0.4 \times
     \eta\pi\left(\frac{\eta\pi}{4} -
     \frac{\pi}{12}\right)^{-2/3}V(\lambda)^{2/3}}{A_\text{lipid}}
 \end{equation}
-where $\eta$ is the length-to-width aspect ratio and $V$ is the cell volume. 
+where $\eta$ is the length-to-width aspect ratio and $V$ is the cell volume.
 
 \subsubsection{Number of Murein Monomers}
 In calculation of the number of transpeptidases needed for maturation of the
@@ -140,12 +141,12 @@ not. As the peptidoglycan exists as a thin shell with a width of $w \approx 10$
 nm encapsulating the cell, one would expect the number of murein monomers scales
 with the surface area of this shell. In a similar spirit to our calculation of
 the number of lipids, the total number of murein monomers as a function of
-growth rate can be calculated as 
+growth rate can be calculated as
 \begin{equation}
 N_\text{murein monomers}(\lambda) \approx \frac{\rho_\text{pg} w \eta\pi\left(\frac{\eta\pi}{4} -
     \frac{\pi}{12}\right)^{-2/3}V(\lambda)^{2/3}}{m_\text{murein}},
 \end{equation}
-where $\rho_\text{pg}$ is the density of peptidoglycan. 
+where $\rho_\text{pg}$ is the density of peptidoglycan.
 
 
 \subsection{Complex Abundance Scaling With Number of Origins}
@@ -156,18 +157,18 @@ discussed in the main text, the ability of \textit{E. coli} to parallelize the
 replication of its chromosome by having multiple active origins of replication
 at a given is critical to synthesize enough rRNA, especially at fast growth
 rates. Derived in \cite{si2017} and reproduced in the main text, the average number of
-origins of replication at a given growth rate can be calculated as 
+origins of replication at a given growth rate can be calculated as
 \begin{equation}
 \langle\# \text{ori} \rangle \approx 2^{t_\text{cyc} \lambda / \ln 2}
 \label{eq:nori}
 \end{equation}
 where $t_\text{cyc}$ is the total time of replication and division. We can make
 the approximation that $t_\text{cyc} \approx$ 70 min, which is the  time it
-takes two replisomes to copy an entire chromosome. 
+takes two replisomes to copy an entire chromosome.
 
 In the case of rRNA synthesis,  the majority of the rRNA operons are surrounding
 the origin of replication. Thus, at a given growth rate $\lambda$, the average
-dosage of rRNA operons per cell $D_\text{rRNA}$ is 
+dosage of rRNA operons per cell $D_\text{rRNA}$ is
 \begin{equation}
 D_\text{rRNA}(\lambda) \approx N_\text{rRNA operons} \times 2^{t_{cyc} \lambda / \ln 2}.
 \label{eq:rRNA_dosage}
@@ -175,7 +176,7 @@ D_\text{rRNA}(\lambda) \approx N_\text{rRNA operons} \times 2^{t_{cyc} \lambda /
 
 This makes the approximation that \textit{all} rRNA operons are localized around
 the origin. In reality, the operons are some distance away from the origin,
-making \EQ{rRNA_dosage} an approximation. 
+making \EQ{rRNA_dosage} an approximation.
 
 In the main text, we stated that at the growth rate in question, there is
 $\approx$ 1 chromosome per cell. While a fair approximation, \EQ{nori}
@@ -184,14 +185,10 @@ the number of RNA polymerases as a function of growth rate, we consider that
 regardless of the number of rRNA operons, they are all sufficiently loaded with
 RNA polymerase such that each operon produces one rRNA per second. Thus, the
 total number of RNA polymerase as a function of the growth rate can be
-calculated as 
+calculated as
 \begin{equation}
     N_\text{RNA polymerase}(\lambda) \approx L_\text{operon}D_\text{rRNA}\rho_\text{RNA polymerase},
 \end{equation}
 where $L_\text{operon}$ is the total length of an rRNA operon ($\approx$ 4500
 bp) and $\rho_\text{RNA polymerase}$ is packing density of RNA polymerase on a
 given operon, taken to be 1 RNA polymerase per 80 nucleotides.
- 
-
-
-

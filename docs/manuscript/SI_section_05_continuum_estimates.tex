@@ -14,8 +14,7 @@ using knowledge of fractional composition of the dry mass. At modest growth
 rates, such as the 5000 s doubling time used in the main text, this is a
 reasonable number to use as the typical cell mass is $\approx$ 1 pg and
 \textit{E. coli} cells can approximated as 70\% water by volume. However, as we
-have shown in the preceding sections, the cell size and therefore cell
-volume is highly dependent on the growth rate. This means that a dry mass of 300
+have shown in the preceding sections, the cell size is highly dependent on the growth rate. This means that a dry mass of 300
 fg cannot be used reliably across all growth rates.
 
 Rather, using the phenomenological  description of cell volume scaling
@@ -28,13 +27,13 @@ range of physiological growth rates as
 \end{equation}
 where $a$ and $b$ are constants with units of \textmu m$^3$  and hr,
 respectively. The value of these constants can be estimated from the careful
-volume measurements performed by \cite{si2017}, as is described in the previous
-section.
+volume measurements performed by \cite{si2017, si2017}, as considered in Appendix \nameref{sec:protein_size_SV} earlier.
 
 \subsection{Complex Abundance Scaling With Cell Volume}
 Several of the estimates performed in the main text are implicitly dependent
-on the cell volume. This includes processes such as ATP synthesis and, most
-prominently, the transport of nutrients. Of the latter, we estimated the
+on the cell volume. This includes processes such as ATP utilization and, most
+prominently, the transport of nutrients, whose demand will be proportional to the volume
+of the cell. Of the latter, we estimated the
 number of transporters that would be needed to shuttle enough carbon,
 phosphorus, and sulfur across the membrane to build new cell mass. To do so,
 we used elemental composition measurements combined with a 300 fg cell dry
@@ -43,12 +42,12 @@ cell mass as a function of volume, we can generalize these estimates across
 growth rates.
 
 Rather than discussing the particular details of each transport system, we will
-derive this scaling expression in very general terms. Consider we wish to
+derive this scaling expression in very general terms. Consider that we wish to
 estimate the number of transporters for some substance $X$, which has been
-measured to be make up some fraction of the dry mass $\theta_X$. If we assume
-that, irrespective of growth rate, the cell dry mass is $\approx$ 30\% of the
-total cell mass, we can state that the total mass of substance $X$ as a function
-of growth rate is
+measured to be made up some fraction of the dry mass, $\theta_X$. If we assume
+that, irrespective of growth rate, the cell dry mass is relatively constant
+\citep{basan2015} and $\approx$ 30\% of the total cell mass, we can state that
+the total mass of substance $X$ as a function of growth rate is
 \begin{equation}
 m_X \approx 0.3 \times \rho V(\lambda) \theta_X,
 \label{eq:m_x}
@@ -79,9 +78,9 @@ N_\text{transporters}(\lambda) = \frac{0.3 \times \rho V(\lambda)\theta_X}{w_X r
 This function is used to draw the continuum estimates for the number of
 transporters seen in Figures 2 and 3 as transparent grey curves. Occasionally,
 this continuum scaling relationship will not precisely agree with the point
-estimate outlined in the main text. This is due to the fact that we make  an
-initial approximation made of a dry cell mass of $\approx$ 300 fg for the point
-estimate while we consider more precise values in the continuum estimate. We
+estimate outlined in the main text. This is due to the choice of $\approx$ 300 fg
+total dry mass per cell for the point
+estimate, whereas we considered more precise values of cell mass in the continuum estimate. We
 note, however, that both this scaling relation and the point estimates are meant
 to describe the order-of-magnitude observed, and not the predict the exact
 values of the abundances.
@@ -110,9 +109,9 @@ area ($\approx$ 5 \textmu$m$, BNID: 101792) and the fraction of dry mass
 attributable to peptidoglycan ($\approx$ 3\%, BNID: 101936). Both of these
 values come from glucose-fed \textit{E. coli} in balance growth. As we are
 interested in describing the scaling as a function of the growth rate, we must
-consider how these values scale with cell surface area, which is the natural
+also consider how these values scale with cell surface area, which is the natural
 variable for these types of processes. In the coming paragraphs, we highlight
-how we incorporate a condition dependent surface area in to our calculation of
+how we incorporate a condition-dependent surface area into our calculation of
 the number of lipids and murein monomers that need to be synthesized and
 crosslinked, respectively.
 
@@ -149,14 +148,14 @@ N_\text{murein monomers}(\lambda) \approx \frac{\rho_\text{pg} w \eta\pi\left(\f
 where $\rho_\text{pg}$ is the density of peptidoglycan.
 
 
-\subsection{Complex Abundance Scaling With Number of Origins}
+\subsection{Complex Abundance Scaling With Number of Origins, and rRNA Synthesis}
 While the majority of our estimates hinge on the total cell volume or surface
 area, processes related to the central dogma, namely DNA replication and
 synthesis of rRNA, depend on the number of chromosomes present in the cell. As
 discussed in the main text, the ability of \textit{E. coli} to parallelize the
 replication of its chromosome by having multiple active origins of replication
-at a given is critical to synthesize enough rRNA, especially at fast growth
-rates. Derived in \cite{si2017} and reproduced in the main text, the average number of
+is critical to synthesize enough rRNA, especially at fast growth
+rates. Derived in \cite{si2017} and reproduced in the main text and Appendix \nameref{sec:SI_ori} below, the average number of
 origins of replication at a given growth rate can be calculated as
 \begin{equation}
 \langle\# \text{ori} \rangle \approx 2^{t_\text{cyc} \lambda / \ln 2}
@@ -166,7 +165,7 @@ where $t_\text{cyc}$ is the total time of replication and division. We can make
 the approximation that $t_\text{cyc} \approx$ 70 min, which is the  time it
 takes two replisomes to copy an entire chromosome.
 
-In the case of rRNA synthesis,  the majority of the rRNA operons are surrounding
+In the case of rRNA synthesis, the majority of the rRNA operons are surrounding
 the origin of replication. Thus, at a given growth rate $\lambda$, the average
 dosage of rRNA operons per cell $D_\text{rRNA}$ is
 \begin{equation}
@@ -176,9 +175,9 @@ D_\text{rRNA}(\lambda) \approx N_\text{rRNA operons} \times 2^{t_{cyc} \lambda /
 
 This makes the approximation that \textit{all} rRNA operons are localized around
 the origin. In reality, the operons are some distance away from the origin,
-making \EQ{rRNA_dosage} an approximation.
+making \EQ{rRNA_dosage} an approximation \citep{dennis2004}.
 
-In the main text, we stated that at the growth rate in question, there is
+In the main text, we stated that at a growth rate of 0.5 hr$^{-1}$, there is
 $\approx$ 1 chromosome per cell. While a fair approximation, \EQ{nori}
 illustrates that is not precisely true, even at slow growth rates. In estimating
 the number of RNA polymerases as a function of growth rate, we consider that

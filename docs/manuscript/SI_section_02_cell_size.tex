@@ -119,27 +119,24 @@ summarized in \FIG{total_protein_final}(B)).
 
 \subsection{Estimating Volume and Number of Amino Acids from Ribosome Copy Number}
 Towards the end of the main text, we examine a coarse-grained model of
-translational regulation to describe the growth rate. A key feature of this
-model is that, given a ribosomal copy number, we must know both the cell volume
-and the total number of peptide bonds per cell. Rather than setting these as
-free parameters themselves, we decided to perform a phenomenological fit of
-these parameters ($N_\text{pep}$ and $V$) as a function of the ribosomal copy
-number observed in the combined proteomic data. As has been described in the
-preceding sections of this supplement, the volume measurements used for this
-inference were computed directly from the growth rate. The number of peptide
-bonds was approximated by taking the total protein mass for each condition and
-data set and dividing this number by the average mass of an amino acid, 110 Da
-(BNID: 104877). 
+nutrient-limited growth. A key point in our analysis was to consider  how
+elongation rate $r_t$ and growth rate $\lambda$ vary with respect to the
+experimentally observed changes in cell size, total number of peptide bonds per
+cell  $N_\text{pep}$, and ribosomal content.  In order to do maintain parameters
+in line with the experimental data, but otherwise  allow us to explore the
+model, we performed a phenomenological fit of $N_\text{pep}$ and $V$ as a
+function of the measured ribosomal copy number. As has been described in the
+preceding sections of this supplement, we estimate cell volume for each growth
+condition using the size measurements from \cite{si2017,si2019}, and
+$N_\text{pep}$ is approximated by taking the total protein mass and dividing
+this number by the average mass of an amino acid, 110 Da (BNID: 104877).
 
-As cell volume and the number of amino acids is exponential with growth rate, we
-considered that they too should be exponential as a function of the ribosome
-copy number. To phenomenologically describe this relationship, we performed a
-linear regression of the log transform of the volume or number of peptide bonds
+Given the  exponential scaling of $V$ and $N_\text{pep}$ with growth rate,
+we performed a linear regression of the log transform of these parameters
 as a function of the log transform of the ribosome copy number. Using
 optimization by minimization, we estimated the best-fit values of the intercept
 and slope for each regression. \FIG{naa_v_fit} shows the result of each
-regression as a dashed line, given in terms of the linear-scaled data. 
-
+regression as a dashed line, given in terms of the linear-scaled data.
 
 \begin{figure}
   \centering{

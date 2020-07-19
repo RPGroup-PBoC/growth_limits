@@ -30,10 +30,8 @@ merged = tot_prot.merge(ribos)
 # Do a simple linear regression on log transform
 naa_popt = scipy.stats.linregress(np.log(merged['n_ribosomes'].values), 
                               np.log(merged['naa'].values))
-
 vol_popt = scipy.stats.linregress(np.log(merged['n_ribosomes'].values), 
                               np.log(merged['volume'].values))
-
 
 # Results are 
 naa_slope = naa_popt.slope # Slope is 0.4905
@@ -42,28 +40,34 @@ vol_slope = vol_popt.slope
 vol_intercept = vol_popt.intercept
 
 # %%
-fig, ax = plt.subplots(2, 1, figsize=(5, 5))
+fig, ax = plt.subplots(1, 2, figsize=(6, 3))
 for a in ax:
     a.set_xscale('log')
     a.set_yscale('log')
-    a.set_xlim([5E3, 5E4])
+    a.set_xlim([5E3, 5E5])
+    a.xaxis.set_tick_params(labelsize=6)
+    a.yaxis.set_tick_params(labelsize=6)
+
 # ax.set_ylim([1E8, 5E9])
 for g, d in merged.groupby(['dataset', 'dataset_name']):
     ax[0].plot(d['n_ribosomes'],  d['naa'], 'o', color=dataset_colors[g[0]],
-            markeredgewidth=0.5, markeredgecolor='k', label=g[1])
+            markeredgewidth=0.5, markeredgecolor='k', label=g[1], ms=4.5)
     ax[1].plot(d['n_ribosomes'],  d['volume'], 'o', color=dataset_colors[g[0]],
-            markeredgewidth=0.5, markeredgecolor='k', label=g[1])
-ribosomes = np.logspace(2, 5,500)
+            markeredgewidth=0.5, markeredgecolor='k', label=g[1], ms=4.5)
+ribosomes = np.logspace(2, 6,500)
 naa = ribosomes**naa_slope * np.exp(naa_intercept)
 vol = ribosomes**vol_slope * np.exp(vol_intercept)
-ax[0].plot(ribosomes, naa, 'k--', lw=1, label=f'slope={naa_slope:.1f}; int={naa_intercept:.1f}')
-ax[1].plot(ribosomes, vol, 'k--', lw=1, label=f'slope={vol_slope:.1f}; int={vol_intercept:.1f}')
-ax[0].set_xlabel('ribosomes per cell')
-ax[0].set_ylabel('number of amino acids')
-ax[1].set_xlabel('ribosomes per cell')
-ax[1].set_ylabel('cell volume [µm$^3$]')
+ax[0].plot(ribosomes, naa, 'k--', lw=1, label='$R^{%s}e^{%s}$' %(np.round(naa_slope, decimals=1), 
+                                                                  np.round(naa_intercept, decimals=1)))
+ax[1].plot(ribosomes, vol, 'k--', lw=1, label='$R^{%s}e^{%s}$' %(np.round(vol_slope, decimals=1), 
+                                                                  np.round(vol_intercept, decimals=1)))
+ax[0].set_xlabel('ribosomes per cell', fontsize=6)
+ax[0].set_ylabel('number of amino acids', fontsize=6)
+ax[1].set_xlabel('ribosomes per cell', fontsize=6)
+ax[1].set_ylabel('cell volume [µm$^3$]', fontsize=6)
 ax[0].legend(fontsize=6, loc='lower right')
 ax[1].legend(fontsize=6, loc='lower right')
+plt.tight_layout()
 plt.savefig('../../figures/linear_regression_naa_volume_ribosomes.pdf')
-# ax.set_ylabel('amino acids per cubic micron')
+
 # %%

@@ -28,10 +28,10 @@ fig, ax = plt.subplots(1, 1, figsize=(3, 2))
 ax.xaxis.set_tick_params(labelsize=6)
 ax.yaxis.set_tick_params(labelsize=6)
 ax.set_xlim([0, 2])
-ax.set_ylim([1E2, 1E5])
+ax.set_ylim([1E2, 5E5])
 ax.set_yscale('log')
 ax.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
-ax.set_ylabel('mean number of carbohydrate\nimporters per cell', fontsize=6)
+ax.set_ylabel('total number of \n PTS transporters per cell', fontsize=6)
 
 # Plot the scaling argument
 ax.plot(0.5, 2E3, 'o', ms=6, color=colors['dark_brown'], alpha=0.4, label='point estimate')

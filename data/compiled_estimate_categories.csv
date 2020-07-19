@@ -6,7 +6,7 @@ sum total,synthesis,0.8994560828704375,MOPS complete,li_2014,Li et al. 2014,1.93
 sum total,synthesis,5.435863297142782,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,12995.703203831352,σ-70 (RpoD),40.0,nt/s,sigma70,3.97
 sum total,synthesis,8.558642246064503,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,20461.437011502778,all σ-factors,40.0,nt/s,all_sigma,3.97
 sum total,synthesis,32.51837384605491,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,77742.78197847423,tRNA ligases,20.0,AA/s,trna,3.97
-average,transport,1.3521595975476572,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,3232.6539232835007,Carbon Importers (average),200.0,carbs/s,carbon_tport,3.97
+sum total,transport,27.043191950953137,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,64653.078465670005,Carbon Importers (total),200.0,carbs/s,carbon_tport,3.97
 sum total,transport,27.043191950953137,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,64653.078465670005,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,3.97
 sum total,transport,10.106567498199901,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,24162.11454124144,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,3.97
 sum total,transport,0.0034523646988373997,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,8.253685665910334,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,3.97
@@ -28,7 +28,7 @@ sum total,synthesis,0.7111354954888718,MOPS complete without methionine,li_2014,
 sum total,synthesis,3.948761822194901,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,6468.0086845660935,σ-70 (RpoD),40.0,nt/s,sigma70,2.72
 sum total,synthesis,7.640693607173874,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,12515.333877453093,all σ-factors,40.0,nt/s,all_sigma,2.72
 sum total,synthesis,29.517845833204124,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,48349.75918925503,tRNA ligases,20.0,AA/s,trna,2.72
-average,transport,1.678484413473724,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,2749.3306135193448,Carbon Importers (average),200.0,carbs/s,carbon_tport,2.72
+sum total,transport,18.463328548210967,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,30242.636748712797,Carbon Importers (total),200.0,carbs/s,carbon_tport,2.72
 sum total,transport,18.463328548210967,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,30242.636748712797,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,2.72
 sum total,transport,5.363877906612608,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,8785.946188984948,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,2.72
 sum total,transport,0.06122111352240158,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,100.27920441187744,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,2.72
@@ -49,7 +49,7 @@ sum total,synthesis,0.5031109813317096,MOPS minimal,li_2014,Li et al. 2014,0.738
 sum total,synthesis,3.7644733214140045,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,2607.0107092788407,σ-70 (RpoD),40.0,nt/s,sigma70,1.15
 sum total,synthesis,23.491698007930736,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,16268.705621432273,all σ-factors,40.0,nt/s,all_sigma,1.15
 sum total,synthesis,25.773520067100975,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,17848.935852069437,tRNA ligases,20.0,AA/s,trna,1.15
-average,transport,2.657072317224323,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,1840.1022918473602,Carbon Importers (average),200.0,carbs/s,carbon_tport,1.15
+sum total,transport,55.79851866171078,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,38642.148128794564,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.15
 sum total,transport,55.79851866171078,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,38642.148128794564,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,1.15
 sum total,transport,15.331493360679977,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,10617.519097071705,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,1.15
 sum total,transport,0.003296386446071807,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,2.282846505498109,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,1.15
@@ -73,7 +73,7 @@ sum total,synthesis,1.003869206381104,glucose_minimal,peebo_2015,Peebo et al. 20
 sum total,synthesis,1.2137328216941867,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,482.400537447998,σ-70 (RpoD),40.0,nt/s,sigma70,0.66
 sum total,synthesis,1.4945834960887523,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,594.0251996874669,all σ-factors,40.0,nt/s,all_sigma,0.66
 sum total,synthesis,25.228683208608633,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,10027.19059862792,tRNA ligases,20.0,AA/s,trna,0.66
-average,transport,21.38782618883698,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,8500.634294405636,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.66
+sum total,transport,235.26608807720672,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,93506.97723846199,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.66
 sum total,transport,235.26608807720672,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,93506.97723846199,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.66
 sum total,transport,34.54360653905495,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,13729.425506160469,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.66
 sum total,transport,67.21883813294212,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,26716.261653614118,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,0.66
@@ -95,7 +95,7 @@ sum total,synthesis,0.9928173478305696,glucose_minimal,peebo_2015,Peebo et al. 2
 sum total,synthesis,1.1302564996868858,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,456.0291109546667,σ-70 (RpoD),40.0,nt/s,sigma70,0.67
 sum total,synthesis,1.7042068509494106,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,687.6031549799626,all σ-factors,40.0,nt/s,all_sigma,0.67
 sum total,synthesis,25.012662513572,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,10091.95899500095,tRNA ligases,20.0,AA/s,trna,0.67
-average,transport,23.834657778323127,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,9616.66471245115,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.67
+sum total,transport,262.1812355615544,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,105783.31183696263,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.67
 sum total,transport,262.1812355615544,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,105783.31183696263,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.67
 sum total,transport,37.86328350626951,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,15276.850449408588,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.67
 sum total,transport,52.824823818151756,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,21313.442965204966,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,0.67
@@ -117,7 +117,7 @@ sum total,synthesis,0.9730705243055771,glucose_minimal,peebo_2015,Peebo et al. 2
 sum total,synthesis,1.0915037526837406,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,460.1124919063041,σ-70 (RpoD),40.0,nt/s,sigma70,0.7
 sum total,synthesis,1.5433063807508525,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,650.5653717417144,all σ-factors,40.0,nt/s,all_sigma,0.7
 sum total,synthesis,25.983689750437335,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,10953.164577399355,tRNA ligases,20.0,AA/s,trna,0.7
-average,transport,21.223129327703337,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,8946.397936800066,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.7
+sum total,transport,233.4544226047367,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,98410.37730480071,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.7
 sum total,transport,233.4544226047367,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,98410.37730480071,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.7
 sum total,transport,36.94600012327711,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,15574.216891966233,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.7
 sum total,transport,41.093688400317326,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,17322.633408269765,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,0.7
@@ -139,7 +139,7 @@ sum total,synthesis,1.0276094817583088,glucose_minimal,peebo_2015,Peebo et al. 2
 sum total,synthesis,1.1371525108323615,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,506.7469990972037,σ-70 (RpoD),40.0,nt/s,sigma70,0.74
 sum total,synthesis,1.6347870659525634,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,728.506890626309,all σ-factors,40.0,nt/s,all_sigma,0.74
 sum total,synthesis,25.442064165400303,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,11337.696169899009,tRNA ligases,20.0,AA/s,trna,0.74
-average,transport,18.029275825392332,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,8034.350127517936,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.74
+sum total,transport,198.32203407931567,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,88377.8514026973,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.74
 sum total,transport,198.32203407931567,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,88377.8514026973,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.74
 sum total,transport,32.33273635753058,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,14408.372637533637,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.74
 sum total,transport,56.55932317098742,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,25204.418066040787,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,0.74
@@ -160,7 +160,7 @@ sum total,synthesis,1.0716586885617243,glucose_minimal,peebo_2015,Peebo et al. 2
 sum total,synthesis,1.0403982198630664,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,482.4264121611848,σ-70 (RpoD),40.0,nt/s,sigma70,0.77
 sum total,synthesis,1.4614695132389288,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,677.674644471812,all σ-factors,40.0,nt/s,all_sigma,0.77
 sum total,synthesis,26.966141596683112,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,12504.03806153238,tRNA ligases,20.0,AA/s,trna,0.77
-average,transport,17.210793198759916,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,7980.541541505782,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.77
+sum total,transport,172.10793198759916,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,79805.41541505783,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.77
 sum total,transport,172.10793198759916,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,79805.41541505783,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.77
 sum total,transport,34.1758858758484,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,15847.153225315653,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.77
 sum total,transport,31.327954182919914,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,14526.58438689487,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,0.77
@@ -180,7 +180,7 @@ sum total,synthesis,1.1051445711073051,glucose_minimal,peebo_2015,Peebo et al. 2
 sum total,synthesis,1.1570727340802385,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,571.3671443797582,σ-70 (RpoD),40.0,nt/s,sigma70,0.82
 sum total,synthesis,1.6567402365653388,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,818.1049557769105,all σ-factors,40.0,nt/s,all_sigma,0.82
 sum total,synthesis,26.200240770716483,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,12937.783693542884,tRNA ligases,20.0,AA/s,trna,0.82
-average,transport,13.10533834682875,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,6471.468497017425,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.82
+sum total,transport,144.15872181511625,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,71186.15346719167,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.82
 sum total,transport,144.15872181511625,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,71186.15346719167,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.82
 sum total,transport,34.42902920236492,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,17001.19233624461,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.82
 sum total,transport,29.263660674661978,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,14450.512695790783,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,0.82
@@ -201,7 +201,7 @@ sum total,synthesis,1.0082531969397122,glucose_minimal,peebo_2015,Peebo et al. 2
 sum total,synthesis,1.165374306663529,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,603.5380304265885,σ-70 (RpoD),40.0,nt/s,sigma70,0.86
 sum total,synthesis,1.56413977176414,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,810.0554746784742,all σ-factors,40.0,nt/s,all_sigma,0.86
 sum total,synthesis,28.162468794303095,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,14585.117288819221,tRNA ligases,20.0,AA/s,trna,0.86
-average,transport,11.74095285528691,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,6080.545556130249,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.86
+sum total,transport,129.150481408156,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,66886.00111743274,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.86
 sum total,transport,129.150481408156,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,66886.00111743274,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.86
 sum total,transport,33.524522060194904,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,17362.081778798463,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.86
 sum total,transport,19.088356869407132,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,9885.707315811,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,0.86
@@ -221,7 +221,7 @@ sum total,synthesis,0.9773639999791124,glucose_minimal,peebo_2015,Peebo et al. 2
 sum total,synthesis,1.1437777372836357,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,619.904658052985,σ-70 (RpoD),40.0,nt/s,sigma70,0.9
 sum total,synthesis,1.5654840988093208,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,848.4610718726758,all σ-factors,40.0,nt/s,all_sigma,0.9
 sum total,synthesis,28.859604904605433,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,15641.328666198053,tRNA ligases,20.0,AA/s,trna,0.9
-average,transport,9.231600293624641,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,5003.342727138683,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.9
+sum total,transport,110.77920352349567,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,60040.11272566419,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.9
 sum total,transport,110.77920352349567,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,60040.11272566419,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.9
 sum total,transport,27.252578355396555,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,14770.352417057826,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.9
 sum total,transport,9.004098704210206,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,4880.0414157078485,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,0.9
@@ -241,7 +241,7 @@ sum total,synthesis,0.8227012441579135,rich,peebo_2015,Peebo et al. 2015,0.25,34
 sum total,synthesis,1.3039418775593166,rich,peebo_2015,Peebo et al. 2015,0.25,541.8113210796921,σ-70 (RpoD),40.0,nt/s,sigma70,0.69
 sum total,synthesis,1.5321839154937096,rich,peebo_2015,Peebo et al. 2015,0.25,636.6499961981152,all σ-factors,40.0,nt/s,all_sigma,0.69
 sum total,synthesis,26.07328687417517,rich,peebo_2015,Peebo et al. 2015,0.25,10833.920015383519,tRNA ligases,20.0,AA/s,trna,0.69
-average,transport,20.61330759634218,rich,peebo_2015,Peebo et al. 2015,0.25,8565.20034581691,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.69
+sum total,transport,206.13307596342182,rich,peebo_2015,Peebo et al. 2015,0.25,85652.0034581691,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.69
 sum total,transport,206.13307596342182,rich,peebo_2015,Peebo et al. 2015,0.25,85652.0034581691,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.69
 sum total,transport,33.95838646414219,rich,peebo_2015,Peebo et al. 2015,0.25,14110.320826807434,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.69
 sum total,transport,37.898411895675196,rich,peebo_2015,Peebo et al. 2015,0.25,15747.472314067169,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,0.69
@@ -261,7 +261,7 @@ sum total,synthesis,0.8695849235076748,rich,peebo_2015,Peebo et al. 2015,0.35,40
 sum total,synthesis,1.201183028509645,rich,peebo_2015,Peebo et al. 2015,0.35,556.9813632217514,σ-70 (RpoD),40.0,nt/s,sigma70,0.77
 sum total,synthesis,1.4149317365265375,rich,peebo_2015,Peebo et al. 2015,0.35,656.0953566369363,all σ-factors,40.0,nt/s,all_sigma,0.77
 sum total,synthesis,25.91952459322578,rich,peebo_2015,Peebo et al. 2015,0.35,12018.728036731238,tRNA ligases,20.0,AA/s,trna,0.77
-average,transport,20.540712658750508,rich,peebo_2015,Peebo et al. 2015,0.35,9524.60521558666,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.77
+sum total,transport,205.40712658750505,rich,peebo_2015,Peebo et al. 2015,0.35,95246.0521558666,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.77
 sum total,transport,205.40712658750505,rich,peebo_2015,Peebo et al. 2015,0.35,95246.0521558666,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.77
 sum total,transport,32.799857290818196,rich,peebo_2015,Peebo et al. 2015,0.35,15209.097026608653,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.77
 sum total,transport,58.4680088098455,rich,peebo_2015,Peebo et al. 2015,0.35,27111.264877072503,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,0.77
@@ -281,7 +281,7 @@ sum total,synthesis,0.8793370294124965,rich,peebo_2015,Peebo et al. 2015,0.42,43
 sum total,synthesis,1.148797014316917,rich,peebo_2015,Peebo et al. 2015,0.42,567.280560857751,σ-70 (RpoD),40.0,nt/s,sigma70,0.82
 sum total,synthesis,1.5223349711373242,rich,peebo_2015,Peebo et al. 2015,0.42,751.7350980874953,all σ-factors,40.0,nt/s,all_sigma,0.82
 sum total,synthesis,24.684908263881525,rich,peebo_2015,Peebo et al. 2015,0.42,12189.506440337753,tRNA ligases,20.0,AA/s,trna,0.82
-average,transport,18.69254841146866,rich,peebo_2015,Peebo et al. 2015,0.42,9230.455175776871,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.82
+sum total,transport,205.61803252615522,rich,peebo_2015,Peebo et al. 2015,0.42,101535.00693354556,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.82
 sum total,transport,205.61803252615522,rich,peebo_2015,Peebo et al. 2015,0.42,101535.00693354556,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.82
 sum total,transport,32.50997618636706,rich,peebo_2015,Peebo et al. 2015,0.42,16053.5562807328,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.82
 sum total,transport,69.25772187250777,rich,peebo_2015,Peebo et al. 2015,0.42,34199.74009153183,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,0.82
@@ -301,7 +301,7 @@ sum total,synthesis,0.8815581272429676,rich,peebo_2015,Peebo et al. 2015,0.45,45
 sum total,synthesis,1.1946203306404408,rich,peebo_2015,Peebo et al. 2015,0.45,611.4903086449224,σ-70 (RpoD),40.0,nt/s,sigma70,0.85
 sum total,synthesis,1.3609762954223577,rich,peebo_2015,Peebo et al. 2015,0.45,696.6429363378422,all σ-factors,40.0,nt/s,all_sigma,0.85
 sum total,synthesis,26.666599649878076,rich,peebo_2015,Peebo et al. 2015,0.45,13649.83236278309,tRNA ligases,20.0,AA/s,trna,0.85
-average,transport,19.505573254190942,rich,peebo_2015,Peebo et al. 2015,0.45,9984.317781622718,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.85
+sum total,transport,175.55015928771846,rich,peebo_2015,Peebo et al. 2015,0.45,89858.86003460445,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.85
 sum total,transport,175.55015928771846,rich,peebo_2015,Peebo et al. 2015,0.45,89858.86003460445,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.85
 sum total,transport,30.099851228072378,rich,peebo_2015,Peebo et al. 2015,0.45,15407.21084811341,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.85
 sum total,transport,41.952482629928134,rich,peebo_2015,Peebo et al. 2015,0.45,21474.217283781316,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,0.85
@@ -321,7 +321,7 @@ sum total,synthesis,0.9063092278423804,rich,peebo_2015,Peebo et al. 2015,0.53,50
 sum total,synthesis,1.1457042552075496,rich,peebo_2015,Peebo et al. 2015,0.53,634.7476542871075,σ-70 (RpoD),40.0,nt/s,sigma70,0.92
 sum total,synthesis,1.2801133210441271,rich,peebo_2015,Peebo et al. 2015,0.53,709.2135025781517,all σ-factors,40.0,nt/s,all_sigma,0.92
 sum total,synthesis,25.716706625245507,rich,peebo_2015,Peebo et al. 2015,0.53,14247.67267134502,tRNA ligases,20.0,AA/s,trna,0.92
-average,transport,16.121134793952564,rich,peebo_2015,Peebo et al. 2015,0.53,8931.495583084778,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.92
+sum total,transport,177.33248273347823,rich,peebo_2015,Peebo et al. 2015,0.53,98246.45141393256,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.92
 sum total,transport,177.33248273347823,rich,peebo_2015,Peebo et al. 2015,0.53,98246.45141393256,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.92
 sum total,transport,28.910010853549885,rich,peebo_2015,Peebo et al. 2015,0.53,16016.839853127123,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.92
 sum total,transport,28.62277496381123,rich,peebo_2015,Peebo et al. 2015,0.53,15857.704276550558,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,0.92
@@ -341,7 +341,7 @@ sum total,synthesis,0.9814100506406337,rich,peebo_2015,Peebo et al. 2015,0.55,55
 sum total,synthesis,1.1284048403149851,rich,peebo_2015,Peebo et al. 2015,0.55,638.7538711474231,σ-70 (RpoD),40.0,nt/s,sigma70,0.94
 sum total,synthesis,1.292656545419423,rich,peebo_2015,Peebo et al. 2015,0.55,731.731505352482,all σ-factors,40.0,nt/s,all_sigma,0.94
 sum total,synthesis,28.075897870198595,rich,peebo_2015,Peebo et al. 2015,0.55,15892.86735558758,tRNA ligases,20.0,AA/s,trna,0.94
-average,transport,14.279466346227489,rich,peebo_2015,Peebo et al. 2015,0.55,8083.148955676303,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.94
+sum total,transport,157.0741298085024,rich,peebo_2015,Peebo et al. 2015,0.55,88914.63851243934,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.94
 sum total,transport,157.0741298085024,rich,peebo_2015,Peebo et al. 2015,0.55,88914.63851243934,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.94
 sum total,transport,27.654151651209162,rich,peebo_2015,Peebo et al. 2015,0.55,15654.13031689667,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.94
 sum total,transport,30.43907993278266,rich,peebo_2015,Peebo et al. 2015,0.55,17230.589099390418,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,0.94
@@ -361,7 +361,7 @@ sum total,synthesis,0.8801695946504628,rich,peebo_2015,Peebo et al. 2015,0.63,54
 sum total,synthesis,1.1653271722469238,rich,peebo_2015,Peebo et al. 2015,0.63,715.7952235896395,σ-70 (RpoD),40.0,nt/s,sigma70,1.02
 sum total,synthesis,1.2986300044552952,rich,peebo_2015,Peebo et al. 2015,0.63,797.6756884566383,all σ-factors,40.0,nt/s,all_sigma,1.02
 sum total,synthesis,25.623896677419598,rich,peebo_2015,Peebo et al. 2015,0.63,15739.324790724924,tRNA ligases,20.0,AA/s,trna,1.02
-average,transport,14.628611738469695,rich,peebo_2015,Peebo et al. 2015,0.63,8985.536988684578,Carbon Importers (average),200.0,carbs/s,carbon_tport,1.02
+sum total,transport,160.9147291231666,rich,peebo_2015,Peebo et al. 2015,0.63,98840.90687553036,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.02
 sum total,transport,160.9147291231666,rich,peebo_2015,Peebo et al. 2015,0.63,98840.90687553036,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,1.02
 sum total,transport,26.77745720912098,rich,peebo_2015,Peebo et al. 2015,0.63,16447.892425959308,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,1.02
 sum total,transport,64.15519430222261,rich,peebo_2015,Peebo et al. 2015,0.63,39406.94316897443,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,1.02
@@ -382,7 +382,7 @@ sum total,synthesis,0.9900788383895885,rich,peebo_2015,Peebo et al. 2015,0.65,62
 sum total,synthesis,1.1477714477027674,rich,peebo_2015,Peebo et al. 2015,0.65,725.7473640969371,σ-70 (RpoD),40.0,nt/s,sigma70,1.05
 sum total,synthesis,1.1477714477027674,rich,peebo_2015,Peebo et al. 2015,0.65,725.7473640969371,all σ-factors,40.0,nt/s,all_sigma,1.05
 sum total,synthesis,27.86791779599252,rich,peebo_2015,Peebo et al. 2015,0.65,17621.163101584032,tRNA ligases,20.0,AA/s,trna,1.05
-average,transport,15.009113989446616,rich,peebo_2015,Peebo et al. 2015,0.65,9490.412866666991,Carbon Importers (average),200.0,carbs/s,carbon_tport,1.05
+sum total,transport,135.08202590501955,rich,peebo_2015,Peebo et al. 2015,0.65,85413.71580000292,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.05
 sum total,transport,135.08202590501955,rich,peebo_2015,Peebo et al. 2015,0.65,85413.71580000292,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,1.05
 sum total,transport,25.36750682947514,rich,peebo_2015,Peebo et al. 2015,0.65,16040.128243345429,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,1.05
 sum total,transport,44.031908017390414,rich,peebo_2015,Peebo et al. 2015,0.65,27841.815758476136,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,1.05
@@ -402,7 +402,7 @@ sum total,synthesis,1.0707459292759134,rich,peebo_2015,Peebo et al. 2015,0.73,73
 sum total,synthesis,1.136098735349462,rich,peebo_2015,Peebo et al. 2015,0.73,779.9408706072885,σ-70 (RpoD),40.0,nt/s,sigma70,1.14
 sum total,synthesis,1.2216292582840853,rich,peebo_2015,Peebo et al. 2015,0.73,838.6582588460908,all σ-factors,40.0,nt/s,all_sigma,1.14
 sum total,synthesis,26.484506613951524,rich,peebo_2015,Peebo et al. 2015,0.73,18181.825666530633,tRNA ligases,20.0,AA/s,trna,1.14
-average,transport,11.336263303800536,rich,peebo_2015,Peebo et al. 2015,0.73,7782.435448165499,Carbon Importers (average),200.0,carbs/s,carbon_tport,1.14
+sum total,transport,124.69889634180589,rich,peebo_2015,Peebo et al. 2015,0.73,85606.78992982049,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.14
 sum total,transport,124.69889634180589,rich,peebo_2015,Peebo et al. 2015,0.73,85606.78992982049,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,1.14
 sum total,transport,23.317324021436107,rich,peebo_2015,Peebo et al. 2015,0.73,16007.529479308061,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,1.14
 sum total,transport,78.80289896955512,rich,peebo_2015,Peebo et al. 2015,0.73,54098.82056579135,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,1.14
@@ -421,7 +421,7 @@ sum total,synthesis,0.9678467450828635,rich,peebo_2015,Peebo et al. 2015,0.74,67
 sum total,synthesis,1.1812996066008221,rich,peebo_2015,Peebo et al. 2015,0.74,818.0854165592673,σ-70 (RpoD),40.0,nt/s,sigma70,1.15
 sum total,synthesis,1.4634025404326627,rich,peebo_2015,Peebo et al. 2015,0.74,1013.4501613258319,all σ-factors,40.0,nt/s,all_sigma,1.15
 sum total,synthesis,29.005942474212027,rich,peebo_2015,Peebo et al. 2015,0.74,20087.485341666055,tRNA ligases,20.0,AA/s,trna,1.15
-average,transport,12.068137877754012,rich,peebo_2015,Peebo et al. 2015,0.74,8357.547524480986,Carbon Importers (average),200.0,carbs/s,carbon_tport,1.15
+sum total,transport,108.61324089978609,rich,peebo_2015,Peebo et al. 2015,0.74,75217.92772032887,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.15
 sum total,transport,108.61324089978609,rich,peebo_2015,Peebo et al. 2015,0.74,75217.92772032887,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,1.15
 sum total,transport,24.903494748630592,rich,peebo_2015,Peebo et al. 2015,0.74,17246.417218269147,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,1.15
 sum total,transport,36.96110149155608,rich,peebo_2015,Peebo et al. 2015,0.74,25596.67161594733,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,1.15
@@ -441,7 +441,7 @@ sum total,synthesis,1.0184640638050637,rich,peebo_2015,Peebo et al. 2015,0.78,73
 sum total,synthesis,1.2951756854530114,rich,peebo_2015,Peebo et al. 2015,0.78,935.9457573357643,σ-70 (RpoD),40.0,nt/s,sigma70,1.2
 sum total,synthesis,1.3894857231061943,rich,peebo_2015,Peebo et al. 2015,0.78,1004.0979629454603,all σ-factors,40.0,nt/s,all_sigma,1.2
 sum total,synthesis,28.60908847548339,rich,peebo_2015,Peebo et al. 2015,0.78,20674.071695923318,tRNA ligases,20.0,AA/s,trna,1.2
-average,transport,9.74261640465345,rich,peebo_2015,Peebo et al. 2015,0.78,7040.40431865877,Carbon Importers (average),200.0,carbs/s,carbon_tport,1.2
+sum total,transport,107.16878045118798,rich,peebo_2015,Peebo et al. 2015,0.78,77444.44750524648,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.2
 sum total,transport,107.16878045118798,rich,peebo_2015,Peebo et al. 2015,0.78,77444.44750524648,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,1.2
 sum total,transport,23.95866161010802,rich,peebo_2015,Peebo et al. 2015,0.78,17313.48722592846,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,1.2
 sum total,transport,20.223748958775985,rich,peebo_2015,Peebo et al. 2015,0.78,14614.489947569878,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,1.2
@@ -461,7 +461,7 @@ sum total,synthesis,1.0569018074554686,rich,peebo_2015,Peebo et al. 2015,0.82,79
 sum total,synthesis,1.4261091065470672,rich,peebo_2015,Peebo et al. 2015,0.82,1073.503629953305,σ-70 (RpoD),40.0,nt/s,sigma70,1.25
 sum total,synthesis,1.4261091065470672,rich,peebo_2015,Peebo et al. 2015,0.82,1073.503629953305,all σ-factors,40.0,nt/s,all_sigma,1.25
 sum total,synthesis,33.216031996138504,rich,peebo_2015,Peebo et al. 2015,0.82,25003.368085093265,tRNA ligases,20.0,AA/s,trna,1.25
-average,transport,8.681116952077526,rich,peebo_2015,Peebo et al. 2015,0.82,6534.710785676359,Carbon Importers (average),200.0,carbs/s,carbon_tport,1.25
+sum total,transport,69.44893561662022,rich,peebo_2015,Peebo et al. 2015,0.82,52277.68628541088,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.25
 sum total,transport,69.44893561662022,rich,peebo_2015,Peebo et al. 2015,0.82,52277.68628541088,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,1.25
 sum total,transport,17.656183281408218,rich,peebo_2015,Peebo et al. 2015,0.82,13290.69196508004,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,1.25
 sum total,transport,1.9316122942737672,rich,peebo_2015,Peebo et al. 2015,0.82,1454.0211545145787,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,1.25
@@ -479,7 +479,7 @@ sum total,synthesis,0.4087587782936546,42C,schmidt_2016,Schmidt et al. 2016,0.66
 sum total,synthesis,1.46349551245403,42C,schmidt_2016,Schmidt et al. 2016,0.66,934.196017455806,σ-70 (RpoD),40.0,nt/s,sigma70,1.06
 sum total,synthesis,2.7446336115294163,42C,schmidt_2016,Schmidt et al. 2016,0.66,1751.9874625147957,all σ-factors,40.0,nt/s,all_sigma,1.06
 sum total,synthesis,34.44987382048559,42C,schmidt_2016,Schmidt et al. 2016,0.66,21990.45685557821,tRNA ligases,20.0,AA/s,trna,1.06
-average,transport,3.7888209706969156,42C,schmidt_2016,Schmidt et al. 2016,0.66,2418.525667866904,Carbon Importers (average),200.0,carbs/s,carbon_tport,1.06
+sum total,transport,56.83231456045373,42C,schmidt_2016,Schmidt et al. 2016,0.66,36277.88501800356,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.06
 sum total,transport,56.83231456045373,42C,schmidt_2016,Schmidt et al. 2016,0.66,36277.88501800356,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,1.06
 sum total,transport,26.805895849240493,42C,schmidt_2016,Schmidt et al. 2016,0.66,17111.061109237384,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,1.06
 sum total,transport,0.05949796961930321,42C,schmidt_2016,Schmidt et al. 2016,0.66,37.97945794302907,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,1.06
@@ -503,7 +503,7 @@ sum total,synthesis,0.24713859379440017,acetate,schmidt_2016,Schmidt et al. 2016
 sum total,synthesis,0.9149386238345882,acetate,schmidt_2016,Schmidt et al. 2016,0.3,402.212508669428,σ-70 (RpoD),40.0,nt/s,sigma70,0.73
 sum total,synthesis,1.8908731559248153,acetate,schmidt_2016,Schmidt et al. 2016,0.3,831.2391845834844,all σ-factors,40.0,nt/s,all_sigma,0.73
 sum total,synthesis,24.117387854150326,acetate,schmidt_2016,Schmidt et al. 2016,0.3,10602.14840501161,tRNA ligases,20.0,AA/s,trna,0.73
-average,transport,10.168706745981378,acetate,schmidt_2016,Schmidt et al. 2016,0.3,4470.22449777389,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.73
+sum total,transport,152.5306011897207,acetate,schmidt_2016,Schmidt et al. 2016,0.3,67053.36746660835,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.73
 sum total,transport,152.5306011897207,acetate,schmidt_2016,Schmidt et al. 2016,0.3,67053.36746660835,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.73
 sum total,transport,19.08909015003853,acetate,schmidt_2016,Schmidt et al. 2016,0.3,8391.678564497837,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.73
 sum total,transport,0.03680787567150641,acetate,schmidt_2016,Schmidt et al. 2016,0.3,16.180962992448247,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,0.73
@@ -527,7 +527,7 @@ sum total,synthesis,0.4328864684767178,chemostat_u0.12,schmidt_2016,Schmidt et a
 sum total,synthesis,1.361624709935858,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,491.9822401940242,σ-70 (RpoD),40.0,nt/s,sigma70,0.6
 sum total,synthesis,2.715378756808503,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,981.1206524100483,all σ-factors,40.0,nt/s,all_sigma,0.6
 sum total,synthesis,27.704621758226725,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,10010.23393368248,tRNA ligases,20.0,AA/s,trna,0.6
-average,transport,9.471869105295022,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,3422.3757451251977,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.6
+sum total,transport,142.07803657942534,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,51335.63617687797,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.6
 sum total,transport,142.07803657942534,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,51335.63617687797,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.6
 sum total,transport,34.242850063215116,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,12372.626584840888,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.6
 sum total,transport,0.07673896486632725,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,27.727322785501364,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,0.6
@@ -551,7 +551,7 @@ sum total,synthesis,0.546448355209644,chemostat_u0.2,schmidt_2016,Schmidt et al.
 sum total,synthesis,1.158564323920876,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,460.4737076710001,σ-70 (RpoD),40.0,nt/s,sigma70,0.66
 sum total,synthesis,2.603251820955815,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,1034.6676427425307,all σ-factors,40.0,nt/s,all_sigma,0.66
 sum total,synthesis,27.424778178526925,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,10900.032936611884,tRNA ligases,20.0,AA/s,trna,0.66
-average,transport,9.76608676656549,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,3881.5507175449875,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.66
+sum total,transport,146.49130149848233,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,58223.26076317481,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.66
 sum total,transport,146.49130149848233,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,58223.26076317481,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.66
 sum total,transport,33.106835489072985,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,13158.377978803039,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.66
 sum total,transport,0.07270342923390113,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,28.89612335587248,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,0.66
@@ -575,7 +575,7 @@ sum total,synthesis,0.5199913194015636,chemostat_u0.35,schmidt_2016,Schmidt et a
 sum total,synthesis,1.1139814034871958,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,516.5464929085919,σ-70 (RpoD),40.0,nt/s,sigma70,0.77
 sum total,synthesis,2.4699587671574266,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,1145.305060578296,all σ-factors,40.0,nt/s,all_sigma,0.77
 sum total,synthesis,27.242847496431928,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,12632.344927010508,tRNA ligases,20.0,AA/s,trna,0.77
-average,transport,11.116801237799466,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,5154.794033160186,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.77
+sum total,transport,166.75201856699195,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,77321.91049740279,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.77
 sum total,transport,166.75201856699195,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,77321.91049740279,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.77
 sum total,transport,31.739303485741775,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,14717.32459051755,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.77
 sum total,transport,0.06199896500557105,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,28.74854807929326,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,0.77
@@ -599,7 +599,7 @@ sum total,synthesis,0.5274481204876598,chemostat_u0.5,schmidt_2016,Schmidt et al
 sum total,synthesis,1.2861183285340123,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,697.050411698864,σ-70 (RpoD),40.0,nt/s,sigma70,0.9
 sum total,synthesis,2.614118393682429,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,1416.799887008003,all σ-factors,40.0,nt/s,all_sigma,0.9
 sum total,synthesis,29.217461189611043,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,15835.279615545394,tRNA ligases,20.0,AA/s,trna,0.9
-average,transport,8.758411894801908,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,4746.884078744738,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.9
+sum total,transport,131.3761784220286,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,71203.26118117107,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.9
 sum total,transport,131.3761784220286,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,71203.26118117107,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.9
 sum total,transport,31.623619597807135,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,17139.369349619512,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.9
 sum total,transport,0.039700396165737825,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,21.51682071390659,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,0.9
@@ -623,7 +623,7 @@ sum total,synthesis,0.3519613988305024,fructose,schmidt_2016,Schmidt et al. 2016
 sum total,synthesis,0.9458233391776596,fructose,schmidt_2016,Schmidt et al. 2016,0.65,598.053555595426,σ-70 (RpoD),40.0,nt/s,sigma70,1.05
 sum total,synthesis,1.9554275285301286,fructose,schmidt_2016,Schmidt et al. 2016,0.65,1236.4363805648857,all σ-factors,40.0,nt/s,all_sigma,1.05
 sum total,synthesis,31.482517182835622,fructose,schmidt_2016,Schmidt et al. 2016,0.65,19906.710439878796,tRNA ligases,20.0,AA/s,trna,1.05
-average,transport,5.715217326159016,fructose,schmidt_2016,Schmidt et al. 2016,0.65,3613.7890675036083,Carbon Importers (average),200.0,carbs/s,carbon_tport,1.05
+sum total,transport,85.72825989238525,fructose,schmidt_2016,Schmidt et al. 2016,0.65,54206.83601255412,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.05
 sum total,transport,85.72825989238525,fructose,schmidt_2016,Schmidt et al. 2016,0.65,54206.83601255412,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,1.05
 sum total,transport,25.548897386487326,fructose,schmidt_2016,Schmidt et al. 2016,0.65,16154.823306449802,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,1.05
 sum total,transport,0.029945886972318987,fructose,schmidt_2016,Schmidt et al. 2016,0.65,18.935083791467022,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,1.05
@@ -647,7 +647,7 @@ sum total,synthesis,0.2969194031422208,fumarate,schmidt_2016,Schmidt et al. 2016
 sum total,synthesis,1.136696220614416,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,561.3051405242811,σ-70 (RpoD),40.0,nt/s,sigma70,0.82
 sum total,synthesis,2.2563986439106767,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,1114.2186759576678,all σ-factors,40.0,nt/s,all_sigma,0.82
 sum total,synthesis,26.631111161519655,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,13150.549216003054,tRNA ligases,20.0,AA/s,trna,0.82
-average,transport,7.109172949029764,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,3510.538038922694,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.82
+sum total,transport,106.63759423544646,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,52658.07058384041,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.82
 sum total,transport,106.63759423544646,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,52658.07058384041,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.82
 sum total,transport,20.936987695868517,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,10338.768272170659,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.82
 sum total,transport,0.03162734500878982,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,15.617709474720447,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,0.82
@@ -671,7 +671,7 @@ sum total,synthesis,0.29763633979058207,galactose,schmidt_2016,Schmidt et al. 20
 sum total,synthesis,0.8156222350062358,galactose,schmidt_2016,Schmidt et al. 2016,0.26,343.81739694452864,σ-70 (RpoD),40.0,nt/s,sigma70,0.7
 sum total,synthesis,2.063173449303408,galactose,schmidt_2016,Schmidt et al. 2016,0.26,869.7101358193588,all σ-factors,40.0,nt/s,all_sigma,0.7
 sum total,synthesis,25.638345832074982,galactose,schmidt_2016,Schmidt et al. 2016,0.26,10807.588302052889,tRNA ligases,20.0,AA/s,trna,0.7
-average,transport,6.860627803013888,galactose,schmidt_2016,Schmidt et al. 2016,0.26,2892.0290440824747,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.7
+sum total,transport,102.90941704520833,galactose,schmidt_2016,Schmidt et al. 2016,0.26,43380.43566123712,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.7
 sum total,transport,102.90941704520833,galactose,schmidt_2016,Schmidt et al. 2016,0.26,43380.43566123712,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.7
 sum total,transport,28.37978030344503,galactose,schmidt_2016,Schmidt et al. 2016,0.26,11963.212589114219,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.7
 sum total,transport,0.0422062581286829,galactose,schmidt_2016,Schmidt et al. 2016,0.26,17.791626051564993,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,0.7
@@ -695,7 +695,7 @@ sum total,synthesis,0.3853244282013278,glucosamine,schmidt_2016,Schmidt et al. 2
 sum total,synthesis,1.1265419240480659,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,583.4270501291011,σ-70 (RpoD),40.0,nt/s,sigma70,0.86
 sum total,synthesis,2.3925432181149437,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,1239.0789923159846,all σ-factors,40.0,nt/s,all_sigma,0.86
 sum total,synthesis,27.00446037780002,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,13985.393993979611,tRNA ligases,20.0,AA/s,trna,0.86
-average,transport,7.27726728690238,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,3768.838509748448,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.86
+sum total,transport,109.15900930353573,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,56532.57764622673,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.86
 sum total,transport,109.15900930353573,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,56532.57764622673,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.86
 sum total,transport,30.178766183984305,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,15629.341576556,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.86
 sum total,transport,0.027620199906323153,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,14.304280569885512,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,0.86
@@ -719,7 +719,7 @@ sum total,synthesis,0.2904915109303034,glucose,schmidt_2016,Schmidt et al. 2016,
 sum total,synthesis,1.0680198529522642,glucose,schmidt_2016,Schmidt et al. 2016,0.58,623.866708784418,σ-70 (RpoD),40.0,nt/s,sigma70,0.97
 sum total,synthesis,2.561269832542931,glucose,schmidt_2016,Schmidt et al. 2016,0.58,1496.1247923626322,all σ-factors,40.0,nt/s,all_sigma,0.97
 sum total,synthesis,32.14333415513895,glucose,schmidt_2016,Schmidt et al. 2016,0.58,18776.014353377937,tRNA ligases,20.0,AA/s,trna,0.97
-average,transport,4.665866089104266,glucose,schmidt_2016,Schmidt et al. 2016,0.58,2725.4910220928314,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.97
+sum total,transport,69.987991336564,glucose,schmidt_2016,Schmidt et al. 2016,0.58,40882.36533139247,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.97
 sum total,transport,69.987991336564,glucose,schmidt_2016,Schmidt et al. 2016,0.58,40882.36533139247,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.97
 sum total,transport,29.553631149601028,glucose,schmidt_2016,Schmidt et al. 2016,0.58,17263.280777941047,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.97
 sum total,transport,0.018954056032331856,glucose,schmidt_2016,Schmidt et al. 2016,0.58,11.071708566390138,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,0.97
@@ -743,7 +743,7 @@ sum total,synthesis,0.37116060935325906,glycerol,schmidt_2016,Schmidt et al. 201
 sum total,synthesis,1.0596904353998842,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,555.186654772095,σ-70 (RpoD),40.0,nt/s,sigma70,0.87
 sum total,synthesis,2.305857698687396,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,1208.0711303501087,all σ-factors,40.0,nt/s,all_sigma,0.87
 sum total,synthesis,28.1862943290975,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,14767.19420713479,tRNA ligases,20.0,AA/s,trna,0.87
-average,transport,5.6936431308687165,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,2982.979347265953,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.87
+sum total,transport,85.40464696303077,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,44744.690208989305,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.87
 sum total,transport,85.40464696303077,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,44744.690208989305,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.87
 sum total,transport,23.69884398006185,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,12416.156144970124,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.87
 sum total,transport,0.5778092094883461,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,302.7223341798774,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,0.87
@@ -767,7 +767,7 @@ sum total,synthesis,0.40763175626894665,glycerol_pAA,schmidt_2016,Schmidt et al.
 sum total,synthesis,1.0584313245332169,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,1268.4008138314675,σ-70 (RpoD),40.0,nt/s,sigma70,1.99
 sum total,synthesis,2.476186514113095,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,2967.407442409823,all σ-factors,40.0,nt/s,all_sigma,1.99
 sum total,synthesis,25.875647150870996,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,31008.806281366487,tRNA ligases,20.0,AA/s,trna,1.99
-average,transport,4.4223603865377425,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,5299.659395298327,Carbon Importers (average),200.0,carbs/s,carbon_tport,1.99
+sum total,transport,66.33540579806613,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,79494.8909294749,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.99
 sum total,transport,66.33540579806613,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,79494.8909294749,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,1.99
 sum total,transport,15.391672135675732,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,18445.041270606813,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,1.99
 sum total,transport,0.687980360946591,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,824.4605289904539,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,1.99
@@ -791,7 +791,7 @@ sum total,synthesis,0.30489928340169575,lb_miller,schmidt_2016,Schmidt et al. 20
 sum total,synthesis,1.4251568761540472,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,3287.018873240475,σ-70 (RpoD),40.0,nt/s,sigma70,3.83
 sum total,synthesis,3.4128077758474706,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,7871.388587216779,all σ-factors,40.0,nt/s,all_sigma,3.83
 sum total,synthesis,26.721012845605124,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,61630.03877343765,tRNA ligases,20.0,AA/s,trna,3.83
-average,transport,3.79531772317036,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,8753.619474980922,Carbon Importers (average),200.0,carbs/s,carbon_tport,3.83
+sum total,transport,56.9297658475554,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,131304.29212471383,Carbon Importers (total),200.0,carbs/s,carbon_tport,3.83
 sum total,transport,56.9297658475554,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,131304.29212471383,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,3.83
 sum total,transport,11.711243114712476,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,27011.11561209384,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,3.83
 sum total,transport,0.13524798960484247,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,311.9394796723384,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,3.83
@@ -815,7 +815,7 @@ sum total,synthesis,0.36263614658775783,mannose,schmidt_2016,Schmidt et al. 2016
 sum total,synthesis,0.8929186699663951,mannose,schmidt_2016,Schmidt et al. 2016,0.47,467.812592056774,σ-70 (RpoD),40.0,nt/s,sigma70,0.87
 sum total,synthesis,1.8719017900500328,mannose,schmidt_2016,Schmidt et al. 2016,0.47,980.715554432273,all σ-factors,40.0,nt/s,all_sigma,0.87
 sum total,synthesis,28.112578689488064,mannose,schmidt_2016,Schmidt et al. 2016,0.47,14728.57355152445,tRNA ligases,20.0,AA/s,trna,0.87
-average,transport,6.078370495043813,mannose,schmidt_2016,Schmidt et al. 2016,0.47,3184.543399540384,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.87
+sum total,transport,91.17555742565717,mannose,schmidt_2016,Schmidt et al. 2016,0.47,47768.15099310576,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.87
 sum total,transport,91.17555742565717,mannose,schmidt_2016,Schmidt et al. 2016,0.47,47768.15099310576,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.87
 sum total,transport,24.52358692507438,mannose,schmidt_2016,Schmidt et al. 2016,0.47,12848.250520263418,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.87
 sum total,transport,0.035860187548851216,mannose,schmidt_2016,Schmidt et al. 2016,0.47,18.787654299468837,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,0.87
@@ -839,7 +839,7 @@ sum total,synthesis,0.3626608956643092,osmotic_stress_glucose,schmidt_2016,Schmi
 sum total,synthesis,0.9209899955009897,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,521.3429647732543,σ-70 (RpoD),40.0,nt/s,sigma70,0.94
 sum total,synthesis,2.1843993483036286,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,1236.5185702955387,all σ-factors,40.0,nt/s,all_sigma,0.94
 sum total,synthesis,24.86388862330028,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,14074.651705214344,tRNA ligases,20.0,AA/s,trna,0.94
-average,transport,4.207867100177953,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,2381.938913663534,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.94
+sum total,transport,63.118006502669296,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,35729.08370495301,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.94
 sum total,transport,63.118006502669296,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,35729.08370495301,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.94
 sum total,transport,30.101276038853552,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,17039.369124761753,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.94
 sum total,transport,0.044700063884205554,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,25.30327576280447,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,0.94
@@ -863,7 +863,7 @@ sum total,synthesis,0.26114929303664147,pH6,schmidt_2016,Schmidt et al. 2016,0.6
 sum total,synthesis,1.141584124202792,pH6,schmidt_2016,Schmidt et al. 2016,0.63,701.2111987868198,σ-70 (RpoD),40.0,nt/s,sigma70,1.02
 sum total,synthesis,2.4676024523157842,pH6,schmidt_2016,Schmidt et al. 2016,0.63,1515.7100007202566,all σ-factors,40.0,nt/s,all_sigma,1.02
 sum total,synthesis,29.402049737280432,pH6,schmidt_2016,Schmidt et al. 2016,0.63,18060.032638826084,tRNA ligases,20.0,AA/s,trna,1.02
-average,transport,4.189034603073693,pH6,schmidt_2016,Schmidt et al. 2016,0.63,2573.089370730397,Carbon Importers (average),200.0,carbs/s,carbon_tport,1.02
+sum total,transport,62.83551904610538,pH6,schmidt_2016,Schmidt et al. 2016,0.63,38596.340560955956,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.02
 sum total,transport,62.83551904610538,pH6,schmidt_2016,Schmidt et al. 2016,0.63,38596.340560955956,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,1.02
 sum total,transport,27.297852128743365,pH6,schmidt_2016,Schmidt et al. 2016,0.63,16767.54188296784,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,1.02
 sum total,transport,0.06240553882306349,pH6,schmidt_2016,Schmidt et al. 2016,0.63,38.33222778883381,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,1.02
@@ -887,7 +887,7 @@ sum total,synthesis,0.402697151914828,pyruvate,schmidt_2016,Schmidt et al. 2016,
 sum total,synthesis,1.1475677417880539,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,559.7628882248607,σ-70 (RpoD),40.0,nt/s,sigma70,0.81
 sum total,synthesis,2.4190422995499015,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,1179.9652909590502,all σ-factors,40.0,nt/s,all_sigma,0.81
 sum total,synthesis,27.247056283680372,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,13290.623608166181,tRNA ligases,20.0,AA/s,trna,0.81
-average,transport,5.649458933941334,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,2755.7043777157724,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.81
+sum total,transport,84.74188400912,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,41335.56566573658,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.81
 sum total,transport,84.74188400912,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,41335.56566573658,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.81
 sum total,transport,20.376634741782567,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,9939.355647616187,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.81
 sum total,transport,0.03907830349942709,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,19.061693037557554,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,0.81
@@ -911,7 +911,7 @@ sum total,synthesis,0.27669367376364223,succinate,schmidt_2016,Schmidt et al. 20
 sum total,synthesis,1.0421050551098112,succinate,schmidt_2016,Schmidt et al. 2016,0.44,527.1467579171879,σ-70 (RpoD),40.0,nt/s,sigma70,0.84
 sum total,synthesis,2.030626694265395,succinate,schmidt_2016,Schmidt et al. 2016,0.44,1027.1884520407616,all σ-factors,40.0,nt/s,all_sigma,0.84
 sum total,synthesis,27.90206567231754,succinate,schmidt_2016,Schmidt et al. 2016,0.44,14114.204116210487,tRNA ligases,20.0,AA/s,trna,0.84
-average,transport,6.917662830945366,succinate,schmidt_2016,Schmidt et al. 2016,0.44,3499.285907708052,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.84
+sum total,transport,103.76494246418052,succinate,schmidt_2016,Schmidt et al. 2016,0.44,52489.28861562079,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.84
 sum total,transport,103.76494246418052,succinate,schmidt_2016,Schmidt et al. 2016,0.44,52489.28861562079,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.84
 sum total,transport,19.246454724225924,succinate,schmidt_2016,Schmidt et al. 2016,0.44,9735.780629340235,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.84
 sum total,transport,0.023558225979876057,succinate,schmidt_2016,Schmidt et al. 2016,0.44,11.916881495468346,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,0.84
@@ -935,7 +935,7 @@ sum total,synthesis,0.3658008350585597,xylose,schmidt_2016,Schmidt et al. 2016,0
 sum total,synthesis,1.174613062056552,xylose,schmidt_2016,Schmidt et al. 2016,0.55,664.9108668122283,σ-70 (RpoD),40.0,nt/s,sigma70,0.94
 sum total,synthesis,2.3475384616676203,xylose,schmidt_2016,Schmidt et al. 2016,0.55,1328.8664019192668,all σ-factors,40.0,nt/s,all_sigma,0.94
 sum total,synthesis,32.23004050659376,xylose,schmidt_2016,Schmidt et al. 2016,0.55,18244.394569486518,tRNA ligases,20.0,AA/s,trna,0.94
-average,transport,3.8016222216276914,xylose,schmidt_2016,Schmidt et al. 2016,0.55,2151.9766877523443,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.94
+sum total,transport,57.02433332441536,xylose,schmidt_2016,Schmidt et al. 2016,0.55,32279.65031628516,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.94
 sum total,transport,57.02433332441536,xylose,schmidt_2016,Schmidt et al. 2016,0.55,32279.65031628516,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.94
 sum total,transport,20.942906478691018,xylose,schmidt_2016,Schmidt et al. 2016,0.55,11855.109184579667,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.94
 sum total,transport,0.052739451421360974,xylose,schmidt_2016,Schmidt et al. 2016,0.55,29.85411578718697,Glycerol Transporters,0.0,glyc/sec,glycerol_tport,0.94
@@ -959,7 +959,7 @@ sum total,synthesis,1.5496132830939318,glucose_minimal,valgepea_2013,Valgepea et
 sum total,synthesis,3.906829256054277,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,1411.6155467975314,σ-70 (RpoD),40.0,nt/s,sigma70,0.6
 sum total,synthesis,6.358333867933037,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,2297.393193161565,all σ-factors,40.0,nt/s,all_sigma,0.6
 sum total,synthesis,32.771420226344766,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,11840.96955618289,tRNA ligases,20.0,AA/s,trna,0.6
-average,transport,14.058616192546346,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,5079.659202690846,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.6
+sum total,transport,210.8792428881952,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,76194.88804036268,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.6
 sum total,transport,210.8792428881952,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,76194.88804036268,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.6
 sum total,transport,45.15435090232373,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,16315.170068027612,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.6
 sum total,transport,25.410788188512527,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,9181.425988273348,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,0.6
@@ -980,7 +980,7 @@ sum total,synthesis,1.8276921793260055,glucose_minimal,valgepea_2013,Valgepea et
 sum total,synthesis,3.7519551783032883,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,1491.2220895269986,σ-70 (RpoD),40.0,nt/s,sigma70,0.66
 sum total,synthesis,6.033887879692705,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,2398.1808055596252,all σ-factors,40.0,nt/s,all_sigma,0.66
 sum total,synthesis,39.217959209428976,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,15587.256323705968,tRNA ligases,20.0,AA/s,trna,0.66
-average,transport,12.731141079736695,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,5060.01748442351,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.66
+sum total,transport,127.31141079736697,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,50600.1748442351,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.66
 sum total,transport,127.31141079736697,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,50600.1748442351,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.66
 sum total,transport,45.20438339744294,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,17966.57259008049,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.66
 sum total,transport,1.580900084661633,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,628.3319004489356,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,0.66
@@ -1001,7 +1001,7 @@ sum total,synthesis,2.039488534851666,glucose_minimal,valgepea_2013,Valgepea et 
 sum total,synthesis,3.5090811789815217,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,1563.7448276271778,σ-70 (RpoD),40.0,nt/s,sigma70,0.74
 sum total,synthesis,5.939053935253688,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,2646.608727059231,all σ-factors,40.0,nt/s,all_sigma,0.74
 sum total,synthesis,40.416998364009636,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,18010.94614695689,tRNA ligases,20.0,AA/s,trna,0.74
-average,transport,11.451511712166,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,5103.114261269111,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.74
+sum total,transport,114.51511712166001,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,51031.14261269111,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.74
 sum total,transport,114.51511712166001,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,51031.14261269111,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.74
 sum total,transport,44.8223557787188,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,19974.096760958906,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.74
 sum total,transport,1.535552816667102,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,684.2853305857275,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,0.74
@@ -1022,7 +1022,7 @@ sum total,synthesis,2.0044461043207784,glucose_minimal,valgepea_2013,Valgepea et
 sum total,synthesis,3.1060915117125862,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,1515.095529766189,σ-70 (RpoD),40.0,nt/s,sigma70,0.81
 sum total,synthesis,5.115108758802625,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,2495.0579805862626,all σ-factors,40.0,nt/s,all_sigma,0.81
 sum total,synthesis,40.61710268106747,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,19812.29157997646,tRNA ligases,20.0,AA/s,trna,0.81
-average,transport,10.02310897135336,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,4889.092140264685,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.81
+sum total,transport,100.2310897135336,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,48890.921402646854,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.81
 sum total,transport,100.2310897135336,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,48890.921402646854,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.81
 sum total,transport,39.85312730523454,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,19439.63814320192,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.81
 sum total,transport,0.8913728400058194,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,434.79562664371866,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,0.81
@@ -1043,7 +1043,7 @@ sum total,synthesis,1.8336338653826105,glucose_minimal,valgepea_2013,Valgepea et
 sum total,synthesis,3.44694339208365,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,1847.4168865343693,σ-70 (RpoD),40.0,nt/s,sigma70,0.89
 sum total,synthesis,5.656364096806324,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,3031.5735885961244,all σ-factors,40.0,nt/s,all_sigma,0.89
 sum total,synthesis,44.56609869190676,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,23885.557122716968,tRNA ligases,20.0,AA/s,trna,0.89
-average,transport,7.656920144505397,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,4103.787606808824,Carbon Importers (average),200.0,carbs/s,carbon_tport,0.89
+sum total,transport,68.91228130054857,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,36934.08846127942,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.89
 sum total,transport,68.91228130054857,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,36934.08846127942,Carbohydrate Transporters (total),200.0,carbs/s,carbon_tport_tot,0.89
 sum total,transport,30.897228248972837,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,16559.616657862985,Glucose/Mannose Transporters,200.0,gluc/sec,glucose_tport,0.89
 sum total,transport,0.3685799684486102,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,197.54338272978023,Galactose Transporter (MglABC),10.0,gal/s,galactose_tport,0.89

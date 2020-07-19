@@ -1,7 +1,7 @@
 \begin{featurebox}
 \caption{The Rules of Engagement for Order-Of-Magnitude Estimates}
 This work relies heavily on so-called "back-of-the-envelope" estimates to
-understand the abundances and growth-rate dependences of a variety of molecular
+understand the growth-rate dependent abundances of molecular
 complexes. This moniker arises from the limitation that any estimate should be
 able to fit on the back of a postage envelope. Therefore, we must draw a set of
 rules governing our precision and sources of key values.
@@ -86,17 +86,18 @@ copy numbers of various transporters. While there is some variability in the
 exact elemental percentages (with different uncertainties), we can estimate that
 the dry mass of a typical \textit{E. coli} cell is $\approx$ 45\% carbon
 (BioNumber ID: 100649, see \BOX{estimate_rules}), $\approx$ 15\% nitrogen (BNID: 106666), $\approx$ 3\% phosphorus (BNID: 100653), and
-1\% sulfur (BNID: 100655).In the coming paragraphs, we will
-engage in a dialogue between back-of-the-envelope estimates for the numbers of
-transporters needed to facilitate these chemical stoichiometries and the
-experimental proteomic measurements of the biological reality. Such an approach
-provides the opportunity to test if our biological knowledge is sufficient to
-understand the scale at which these complexes are produced. At the end of this
-section, we discuss physical limits as to the number of transporters that can be
-present, and comment on the plausibility of this process acting as a molecular bottleneck.
+1\% sulfur (BNID: 100655).
+% In the coming paragraphs, we will
+% engage in a dialogue between back-of-the-envelope estimates for the numbers of
+% transporters needed to facilitate these chemical stoichiometries and the
+% experimental proteomic measurements of the biological reality. Such an approach
+% provides the opportunity to test if our biological knowledge is sufficient to
+% understand the scale at which these complexes are produced. At the end of this
+% section, we discuss physical limits as to the number of transporters that can be
+% present, and comment on the plausibility of this process acting as a molecular bottleneck.
 
 \subsection{Nitrogen Transport}
-We must first address which elemental sources must require proteinaceous
+We must first address which elemental sources must require active
 transport, meaning that the cell cannot acquire appreciable amounts simply
 via diffusion across the membrane. The permeability of the lipid membrane to
 a large number of solutes has been extensively characterized over the past
@@ -105,7 +106,7 @@ sulfate, and phosphate) have low permeabilities while small, non-polar
 compounds (such as oxygen, carbon dioxide, and ammonia) can readily diffuse
 across the membrane. Ammonia, a primary source of nitrogen in typical
 laboratory conditions, has a permeability on par with water ($\sim 10^5$
-nm/s, BNID:110824). In particularly nitrogen-poor conditions,
+nm/s, BNID:110824). In nitrogen-poor conditions,
 \textit{E. coli} expresses a transporter (AmtB) which appears to aid in
 nitrogen assimilation, though the mechanism and kinetic details of transport
 are still a matter of debate \citep{heeswijk2013a, khademi2004}. Beyond
@@ -121,8 +122,7 @@ by mass, carbon. Using $\approx$ 0.3 pg as the typical \textit{E. coli} dry
 mass (BNID: 103904), we estimate that $\sim 10^{10}$
 carbon atoms must be brought into the cell in order to double all of the
 carbon-containing molecules (\FIG{carbon_tport}(A, top)). Typical laboratory
-growth conditions, such as those explored in the aforementioned proteomic
-data sets, provide carbon as a single class of sugar such as glucose,
+growth conditions provide carbon as a single class of sugar such as glucose,
 galactose, or xylose to name a few. \textit{E. coli} has evolved myriad
 mechanisms by which these sugars can be transported across the cell membrane.
 One such mechanism of transport is via the PTS system which is a highly
@@ -131,17 +131,17 @@ modular system capable of transporting a diverse range of sugars
 transports $\approx$ 200 glucose molecules per second per transporter (BNID:
 114686). Making the assumption that this is a typical sugar
 transport rate, coupled with the need to transport $\sim 10^{10}$ carbon atoms, we
-arrive at the conclusion that on the order of 1,000 transporters must be
+arrive at the conclusion that on the order of 1000 transporters must be
 expressed in order to bring in enough carbon atoms to divide in 5000 s,
 diagrammed in the top panel of \FIG{carbon_tport}(A). This estimate, along
 with the observed average number of the PTS system carbohydrate transporters present in the
-proteomic data sets \citep{schmidt2016, peebo2015,valgepea2013,li2014}, is
+proteomic data, is
 shown in \FIG{carbon_tport}(A). While we estimate 1500 transporters are
 needed with a 5000 s division time, we can abstract this calculation to consider
 any particular growth rate given knowledge of the cell density and volume as a
 function of growth rate and direct the reader to the Appendix \nameref{sec:SI_continuum_est} for more information. As
 revealed in \FIG{carbon_tport}(A), experimental measurements exceed the estimate
-by several fold, illustrating that transport of carbon into the cell is not
+by several fold, suggesting that transport of carbon into the cell is not
 rate limiting for cell division. Abstracting this point estimate at 5000 s to a
 continuum of growth rates (grey line in \FIG{carbon_tport}(A)) reveals an excess
 of transporters at other growth rates, though in rapid growth regimes, the
@@ -178,7 +178,7 @@ abundance is below our simple estimate.
 \end{figure}
 
 The estimate presented in \FIG{carbon_tport}(A) neglects any specifics of the
-regulation of the carbon transport system and presents a  view of how
+regulation of the carbon transport system and the data shows how
 many carbohydrate transporters are present on average. Using the diverse array
 of growth conditions explored in the proteomic data sets, we can explore how
 individual carbon transport systems depend on the population growth rate. In

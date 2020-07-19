@@ -33,31 +33,51 @@ availability? In this paper, we address these two questions from two distinct
 angles. First, as a result of an array of high-quality proteome-wide
 measurements of the \textit{E. coli} proteome under myriad growth
 conditions, we have a census that allows us to explore how the number of key
-molecular players change as a function of growth rate. This census provides a
-window into the question of whether the rates of central processes such as
-energy generation or DNA synthesis are regulated systematically as a function of
-cell growth rate by altering protein copy number in individual cells. Second, by
+molecular players change as a function of growth rate. Here, we have compiled
+a combination of \textit{E. coli} proteomic data sets collected over the past decade using
+either mass spectrometry \citep{schmidt2016, peebo2015, valgepea2013} or
+ribosomal profiling \citep{li2014} across 31 unique growth conditions (see Appendix \nameref{sec:SI_exp_summary} for further discussion
+of these data sets). Second, by
 compiling molecular turnover rate measurements for many of the fundamental
-processes associated with bacterial growth, we can make quantitative estimates
-to determine whether the observed protein copy numbers under varying conditions
+processes associated with bacterial growth, we make quantitative estimates
+of key cellular processes (schematized in \FIG{categories}) to determine whether the observed protein copy numbers under varying conditions
 appear to be in excess of what would be minimally required to support cell
 growth at the observed rates.
+The census, combined with these estimates, provide a
+window into the question of whether the rates of central processes such as
+energy generation or DNA synthesis are regulated systematically as a function of
+cell growth rate by altering protein copy number in individual cells.
 
-In this paper, we make a series of order-of-magnitude estimates for the copy
-numbers and growth rate dependent expression of a variety of different
-processes, schematized in \FIG{categories}, informed by the collection of
-proteomic data sets. We use these estimates to explore which, if any, of the
-hypothesis illustrated n \FIG{categories} may act as molecular bottlenecks
-that limit bacterial growth. Specifically, we leverage a combination of
-\textit{E. coli} proteomic data sets collected over the past decade using
-either mass spectrometry \citep{schmidt2016, peebo2015, valgepea2013} or
-ribosomal profiling \citep{li2014} across 31 unique growth conditions.
-Throughout, our estimates we consider a modest growth rate of $\approx$ 0.5
-hr$^{-1}$ corresponding to a doubling time of $\approx$ 5000 seconds, as the
-the data sets heavily sample this regime. While we formulate point estimates
-for the complex abundances at this division time, we consider how these
-values will vary at other growth rates due to changes in cell size, surface
-area, and chromosome copy number \citep{taheriaraghi2015}.
+% Throughout this paper we make a series of order-of-magnitude estimates for the copy
+% numbers and growth rate dependent expression of a variety of key
+% processes required for growth, schematized in \FIG{categories}.
+% , informed by the collection of
+% proteomic data sets.
+% We use these estimates to explore which, if any, of the
+% hypothesis illustrated in \FIG{categories} act as molecular bottlenecks
+% that limit bacterial growth.
+% Specifically, we leverage a combination of
+% \textit{E. coli} proteomic data sets collected over the past decade using
+% either mass spectrometry \citep{schmidt2016, peebo2015, valgepea2013} or
+% ribosomal profiling \citep{li2014} across 31 unique growth conditions.
+
+Throughout our estimates, we consider a modest growth rate of $\approx$ 0.5
+hr$^{-1}$ corresponding to a doubling time of $\approx$ 5000 seconds, as the the
+data sets heavily sample this regime. While we formulate point estimates for the
+complex abundances at this division time, we consider how these values will vary
+at other growth rates due to changes in cell size, surface area, and chromosome
+copy number \citep{taheriaraghi2015}. Broadly, we find that for the majority of
+these estimates, the protein copy numbers appear well-tuned for the task of cell
+doubling at a given growth rate. It emerges that translation, particularly
+of ribosomal proteins, is the most plausible candidate for a molecular
+bottleneck. We reach this conclusion by considering that translation is 1) a
+rate limiting step for the \textit{fastest} bacterial division, and 2) a major
+determinant of bacterial growth across the nutrient conditions we have
+considered under steady state, exponential growth. This  enables us to suggest
+that the long-observed correlation between growth rate and cell size
+\citep{schaechter1958, si2017} can be simply attributed to the increased
+absolute number of ribosomes per cell under conditions supporting extremely
+rapid growth, a hypothesis which we formally mathematize and explore.
 
 % First, we consider potential limits on the transport
 % of nutrients into the cell. We address this hypothesis by performing an
@@ -75,18 +95,6 @@ area, and chromosome copy number \citep{taheriaraghi2015}.
 % the stages of the central dogma as we estimate the number of protein complexes
 % needed for DNA replication, transcription, and protein translation.
 
-Broadly, we find that for the majority of these estimates the protein copy
-numbers appear well-tuned for the task of cell doubling at a given growth
-rate. From our analysis, it emerges that translation, particularly of
-ribosomal proteins, is the most plausible candidate for a molecular
-bottleneck. We reach this conclusion by considering that translation is 1) a
-rate limiting step for the \textit{fastest} bacterial division, and 2) a
-major determinant of bacterial growth across the nutrient conditions we have
-considered under steady state, exponential growth. This  enables us to suggest that the
-long-observed correlation between growth rate and cell size
-\citep{schaechter1958, si2017} can be simply attributed to the increased
-absolute number of ribosomes per cell under conditions supporting extremely
-rapid growth, a hypothesis which we formally mathematize and explore.
 
 % This perspective is
 % consistent with the linear correlation observed between growth rate and

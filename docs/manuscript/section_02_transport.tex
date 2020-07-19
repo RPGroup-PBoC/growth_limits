@@ -117,35 +117,35 @@ permitting us to neglect nitrogen transport as a potential rate limiting
 process in cell division in typical experimental conditions.
 
 \subsection{Carbon Transport}
-We begin with the most abundant element in \textit{E. coli}
-by mass, carbon. Using $\approx$ 0.3 pg as the typical \textit{E. coli} dry
-mass (BNID: 103904), we estimate that $\sim 10^{10}$
-carbon atoms must be brought into the cell in order to double all of the
-carbon-containing molecules (\FIG{carbon_tport}(A, top)). Typical laboratory
-growth conditions provide carbon as a single class of sugar such as glucose,
-galactose, or xylose to name a few. \textit{E. coli} has evolved myriad
-mechanisms by which these sugars can be transported across the cell membrane.
-One such mechanism of transport is via the PTS system which is a highly
-modular system capable of transporting a diverse range of sugars
-\citep{escalante2012}. The glucose-specific component of this system
-transports $\approx$ 200 glucose molecules per second per transporter (BNID:
-114686). Making the assumption that this is a typical sugar
-transport rate, coupled with the need to transport $\sim 10^{10}$ carbon atoms, we
-arrive at the conclusion that on the order of 1000 transporters must be
-expressed in order to bring in enough carbon atoms to divide in 5000 s,
-diagrammed in the top panel of \FIG{carbon_tport}(A). This estimate, along
-with the observed average number of the PTS system carbohydrate transporters present in the
-proteomic data, is
-shown in \FIG{carbon_tport}(A). While we estimate 1500 transporters are
-needed with a 5000 s division time, we can abstract this calculation to consider
-any particular growth rate given knowledge of the cell density and volume as a
-function of growth rate and direct the reader to the Appendix \nameref{sec:SI_continuum_est} for more information. As
-revealed in \FIG{carbon_tport}(A), experimental measurements exceed the estimate
-by several fold, suggesting that transport of carbon into the cell is not
-rate limiting for cell division. Abstracting this point estimate at 5000 s to a
-continuum of growth rates (grey line in \FIG{carbon_tport}(A)) reveals an excess
-of transporters at other growth rates, though in rapid growth regimes, the
+We begin with the most abundant element in \textit{E. coli} by mass, carbon.
+Using $\approx$ 0.3 pg as the typical \textit{E. coli} dry mass (BNID: 103904),
+we estimate that $\sim 10^{10}$ carbon atoms must be brought into the cell in
+order to double all of the carbon-containing molecules (\FIG{carbon_tport}(A,
+top)). Typical laboratory growth conditions provide carbon as a single class of
+sugar such as glucose, galactose, or xylose to name a few. \textit{E. coli} has
+evolved myriad mechanisms by which these sugars can be transported across the
+cell membrane. One such mechanism of transport is via the PTS system which is a
+highly modular system capable of transporting a diverse range of sugars
+\citep{escalante2012}. The glucose-specific component of this system transports
+$\approx$ 200 glucose molecules per second per transporter (BNID: 114686).
+Making the assumption that this is a typical sugar transport rate, coupled with
+the need to transport $\sim 10^{10}$ carbon atoms, we arrive at the conclusion
+that on the order of 1000 transporters must be expressed in order to bring in
+enough carbon atoms to divide in 5000 s, diagrammed in the top panel of
+\FIG{carbon_tport}(A). This estimate, along with the observed average number of
+the PTS system carbohydrate transporters present in the proteomic data, is shown
+in \FIG{carbon_tport}(A). While we estimate 1500 transporters are needed with a
+5000 s division time, we can abstract this calculation to consider any
+particular growth rate given knowledge of the cell density and volume as a
+function of growth rate and direct the reader to the Appendix
+\nameref{sec:SI_continuum_est} for more information. As revealed in
+\FIG{carbon_tport}(A), experimental measurements exceed the estimate by several
+fold, suggesting that transport of carbon into the cell is not rate limiting for
+cell division. Abstracting this point estimate at 5000 s to a continuum of
+growth rates (grey line in \FIG{carbon_tport}(A)) reveals an excess of
+transporters at other growth rates, though in rapid growth regimes, the
 abundance is below our simple estimate.
+
 \begin{figure}
     \begin{fullwidth}
     \centering{
@@ -178,48 +178,49 @@ abundance is below our simple estimate.
 \end{figure}
 
 The estimate presented in \FIG{carbon_tport}(A) neglects any specifics of the
-regulation of the carbon transport system and the data shows how
-many carbohydrate transporters are present on average. Using the diverse array
-of growth conditions explored in the proteomic data sets, we can explore how
-individual carbon transport systems depend on the population growth rate. In
+regulation of the carbon transport system and the data shows how many
+carbohydrate transporters are present on average. Using the diverse array of
+growth conditions available in the data, we also explore how individual carbon
+transport systems depend on specific carbon availability. In
 \FIG{carbon_tport}(B), we show the total number of carbohydrate transporters
 specific to different carbon sources. A striking observation, shown in the
-top-left plot of \FIG{carbon_tport}(B), is the constancy in the expression of the
-glucose-specific transport systems. Additionally, we note that the total number
-of glucose-specific transporters is tightly distributed at $\approx 10^4$ per cell,
-the approximate number of transporters needed to sustain rapid growth of several
-divisions per hour. This
-illustrates that \textit{E. coli} maintains a substantial number of complexes
-present for transporting glucose regardless of growth rate, which is known to be the preferential carbon
-source \citep{monod1947, liu2005a, aidelberg2014}.
+top-left plot of \FIG{carbon_tport}(B), is the constancy in the expression of
+the glucose-specific transport systems. Additionally, we note that the total
+number of glucose-specific transporters is tightly distributed at $\approx 10^4$
+per cell, the approximate number of transporters needed to sustain rapid growth
+of several divisions per hour. This illustrates that \textit{E. coli} maintains
+a substantial number of complexes present for transporting glucose regardless of
+growth condition, which is known to be the preferential carbon source
+\citep{monod1947, liu2005a, aidelberg2014}.
 
-It is now understood that a large number of metabolic operons are regulated
-with dual-input logic gates that are only expressed when glucose
-concentrations are low (mediated by cyclic-AMP receptor protein CRP) and the
-concentration of other carbon sources are elevated \citep{gama-castro2016,
-zhang2014a}. A famed example of such dual-input regulatory logic is in the
-regulation of the \textit{lac} operon which is only natively activated in the
-absence of glucose and the presence of allolactose, an intermediate in
-lactose metabolism \citep{jacob1961}, though we now know of many other such
-examples \citep{ireland2020, gama-castro2016, belliveau2018}. This
-illustrates that once glucose is depleted from the environment, cells have a
-means to dramatically increase the abundance of the specific transporter
-needed to digest the next sugar that is present. Several examples of induced
-expression of specific carbon-source transporters are shown in
-\FIG{carbon_tport}(B). Points colored in red (labeled by red text-boxes)
-correspond to growth conditions in which the specific carbon source
-(glycerol, xylose, or fructose) is present. These plots show that, in the
-absence of the particular carbon source, expression of the transporters is
-maintained on the order of $\sim 10^2$ per cell. However, when the transport
-substrate is present, expression is induced and the transporters become
-highly-expressed. The grey lines in \FIG{carbon_tport}(B) show the estimated
-number of transporters needed at each growth rate to satisfy the cellular
-carbon requirement. It is notable that in all cases, the magnitude of induced
-expression (shown in red) falls close to the estimate, illustrating the
-ability of the cell to tune expression in response to changing environments.
+Many metabolic operons are regulated with dual-input logic gates that are only
+expressed when glucose concentrations are low (mediated by cyclic-AMP receptor
+protein CRP) and the concentration of other carbon sources are elevated
+\citep{gama-castro2016, zhang2014a}. A famed example of such dual-input
+regulatory logic is in the regulation of the \textit{lac} operon which is only
+activated in the absence of glucose and the presence of allolactose, an
+intermediate in lactose metabolism \citep{jacob1961}, though we now know of many
+other such examples \citep{ireland2020, gama-castro2016, belliveau2018}.
+Several examples are shown in \FIG{carbon_tport}(B). Points colored in red
+(labeled by red text-boxes) correspond to growth conditions in which the
+specific carbon source (glycerol, xylose, or fructose) is present. The grey
+lines in \FIG{carbon_tport}(B) show the estimated number of transporters needed
+at each growth rate to satisfy the cellular carbon requirement, adjusted for the
+specific carbon source. These plots show that, in the absence of the particular
+carbon source, expression of the transporters is maintained on the order of
+$\sim 10^2$ per cell. However, when the transport substrate is present,
+expression is induced and the transporters become highly-expressed. The low but
+non-zero abundances for many  of these alternative acroos growth conditions may
+reflect the specific regulatory logic, requiring the cell to transport some
+minimal  amount of an alternative carbon source in order to induce expression
+of these alternative carbon-source systems.
+% It is notable that in all cases, the magnitude of induced
+% expression (shown in red) falls close to the estimate, illustrating the
+% ability of the cell to tune expression in response to changing environments.
 Together, this generic estimation and the specific examples of induced
 expression suggest that transport of carbon across the cell membrane, while
 critical for growth, is not the rate-limiting step of cell division.
+
 
 \subsection{Phosphorus and Sulfur Transport}
 We now turn our attention towards other essential elements, namely phosphorus and
@@ -309,7 +310,7 @@ an areal density for 1000 transporters to be approximately 200
 transporters/ \textmu m$^2$. For a typical transporter occupying about 50
 nm$^2$/dimer, this amounts to about only 1 percent of the total inner membrane
 \citep{szenk2017}. In addition, bacterial cell membranes typically have
-densities of 10$^5$ proteins/$\mu m^2$ \citep{phillips2018}, implying that the
+densities of 10$^5$ proteins/\textmu m$^2$ \citep{phillips2018}, implying that the
 cell could accommodate more transporters of a variety of species if it were rate
 limiting. As we will see in the next section, however, occupancy of the membrane can
 impose other limits on the rate of energy production.

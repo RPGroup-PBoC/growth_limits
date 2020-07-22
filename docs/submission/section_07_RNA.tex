@@ -11,10 +11,10 @@ paragraphs, we will consider the synthesis of RNA as a rate limiting step in
 bacterial division by estimating how many RNA polymerases must be present to
 synthesize all necessary rRNA, mRNA, and tRNA.
 
-\subsubsection{rRNA}
-We begin with an estimation of the number of RNA polymerases needed to
-synthesize the rRNA that serve as catalytic and structural elements of the
-ribosome. Each ribosome contains three rRNA molecules of lengths 120, 1542,
+The ribosome is a major complex found in all known forms of life, composed
+primarily of RNA termed rRNA which serves as the catalytic and structural
+framework to which the myriad ribosomal proteins attach.
+Each ribosome contains three rRNA molecules of lengths 120, 1542,
 and 2904 nucleotides (BNID: 108093), meaning each ribosome
 contains $\approx$ 4500 nucleotides. As the \textit{E. coli} RNA polymerase
 transcribes DNA to RNA at a rate of $\approx$ 40 nucleotides per second
@@ -41,7 +41,7 @@ the observed number of $10^4$ ribosomes per cell.
 for the rate of rRNA production. Rather than having only one copy of each rRNA
 gene, \textit{E. coli} has seven copies of the operon (BIND: 100352) four of which are localized directly adjacent to the origin of
 replication \citep{birnbaum1971}. As fast growth also implies an increased gene
-dosage due to parallellzed chromosomal replication, the total number of rRNA
+dosage due to parallelized chromosomal replication, the total number of rRNA
 genes can be on the order of $\approx$ 10 -- 70 copies at moderate to fast
 growth rates \citep{stevenson2004}. Given a 5000
 second division time, we can make the lower-bound estimate that the typical cell
@@ -58,25 +58,68 @@ nucleotides (BNID: 107873), we can expect
 $\approx$ 1 RNA polymerase per 80 nucleotides. With a total length of
 $\approx$ 4500 nucleotides per operon and 7 operons per cell, the maximum
 number of RNA polymerases that can be transcribing rRNA at any given time is
-$\approx$ 500. As we will see in the coming sections, the
-synthesis of rRNA is the dominant requirement of the RNA polymerase pool.
+$\approx$ 500.
+
+
+The synthesis of rRNA demands the lions share of the required ribosomes. As
+outlined in \FIG{RNA_synthesis} and in the Appendix XX, synthesis of mRNA and
+tRNA, while important, together require on the order of $\approx$ 400 RNAP.
+Thus, on the order of $\approx$ 1000 RNAP would be needed to satisfy the cells'
+transcriptional demand.  As is revealed
+in \FIG{RNA_synthesis} (B), this estimate is about an order of magnitude below
+the observed number of RNA polymerase complexes per cell ($\approx$ 5000 -
+7000). The difference between the estimated number of RNA polymerase needed for
+transcription and and
+these observations are consistent with recent literature revealing that
+$\approx$ 80 \% of RNA polymerases in \textit{E. coli} are not transcriptionally
+active \citep{patrick2015}. Our estimate ignores the possibility that some
+fraction is only nonspecifically bound to DNA, as well as the obstacles that RNA
+polymerase and DNA polymerase present for each other at they move along the DNA
+\citep{finkelstein2013}. 
+
+In addition, it is also vital to consider the role of $\sigma$-factors which
+help RNA polymerase identify and bind to transcriptional start sites
+\citep{browning2016}. Here we consider $\sigma^{70}$ (RpoD) which is the
+dominant "general-purpose" $\sigma$-factor in \textit{E. coli}. While initially
+thought of as being solely involved in transcriptional initiation, the past two
+decades of single-molecule work has revealed a more multipurpose role for
+$\sigma^{70}$ including facilitating transcriptional elongation
+\citep{kapanidis2005, goldman2015, perdue2011,mooney2003,mooney2005}.
+\FIGSUPP[RNA_synthesis]{sigma_70} is suggestive of such a role as the number of
+$\sigma^{70}$ proteins per cell is in close agreement with our estimate of the
+number of transcriptional complexes needed.
+
+These estimates provide insight as to the observed magnitude of both RNA
+polymerase and the $\sigma$-70 factor. As we have done in the previous sections,
+and described in Appendix \nameref{sec:SI_continuum_est}, we can generalize these estimates
+across a wide range of growth rates (grey line in \FIG{RNA_synthesis}(B). While
+there remains some disagreement in the magnitude of the copy number, this
+estimate appears to very adequately describe the growth rate dependence of these
+complexes. Furthermore, these findings illustrate that transcription
+cannot be the rate limiting step in bacterial division. \FIG{RNA_synthesis} (A)
+reveals that the availability of RNA polymerase is not a limiting factor for
+cell division as the cell always has an apparent $\sim$ 10-fold excess than needed.
+Furthermore, if more transcriptional activity was needed to satisfy the cellular
+requirements, more $\sigma^{70}$-factors could be expressed to utilize a larger
+fraction of the RNA polymerase pool. 
+
 
 
 \begin{figure}
-    \begin{fullwidth}
     \centering{
-        \includegraphics{main_figs/fig7_RNA_synthesis.pdf}
+        \includegraphics{main_figs/RNA_synthesis_main.pdf}
+    }
         \caption{\textbf{Estimation of the RNA polymerase demand and
         comparison with experimental data.} (A) Estimations for the number of
         RNA polymerase needed to synthesize sufficient quantities of rRNA, mRNA,
         and tRNA from left to right, respectively.(B) The RNA
         polymerase core enzyme copy number as a function of growth rate. Colored
         points correspond to the average number RNA polymerase core enzymes that
-        could be formed given a subunit stoichiometry of [RpoA]$_2$[RpoC][RpoB].
-        (C) The abundance of $\sigma^{70}$ as a function of growth rate.
-        Estimated value for the number of RNAP is shown in (B) and (C) as a
-        translucent brown point at a growth rate of 0.5 hr$^{-1}$.}
-    \label{fig:RNA_synthesis}
-    }
-    \end{fullwidth}
+        could be formed given a subunit stoichiometry of
+        [RpoA]$_2$[RpoC][RpoB].} \label{fig:RNA_synthesis}
+
+        \figsupp[Abundance and growth rate dependence of $\sigma$-70.]{The abundance of $\sigma^{70}$ as a function of growth rate.
+        Estimated value for the number of RNAP is shown as a translucent brown
+        point and grey line.}{\includegraphics{main_figs/sigma_factor.pdf}}\label{figsupp:sigma_70} 
+
 \end{figure}

@@ -1,55 +1,54 @@
 \section{Energy Production}
-
 While the transport of nutrients is required to build new cell mass, the
 metabolic pathways both consume and generate energy in the form of NTPs. The
 high-energy phosophodiester bonds of (primarily) ATP power a variety of
 cellular processes that drive biological systems away from thermodynamic
 equilibrium. The next set of processes we consider as molecular bottlenecks
-controls the energy budget of a dividing cell via
-the synthesis of ATP from ADP and inorganic phosphate as well as maintenance
-of the electrochemical proton gradient which powers it.
+controls the energy budget of a dividing cell via the synthesis of ATP from
+ADP and inorganic phosphate as well as maintenance of the electrochemical
+proton gradient which powers it.
 
 \subsection{ATP Synthesis}
 
 Hydrolysis of the terminal phosphodiester bond of ATP forming ADP (or
-alternatively GTP and GDP) and an
-inorganic phosphate is a kinetic driving force in a wide array of biochemical
-reactions. One such reaction is the formation of peptide bonds during
-translation which requires $\approx$ 2 ATPs for the charging of an amino acid
-to the tRNA and $\approx$ 2 GTP for the formation of the peptide
-bond between amino acids. Assuming the ATP costs associated with error
-correction and post-translational modifications of proteins are negligible, we can make the
-approximation that each peptide bond has a net cost of $\approx$ 4 ATP (BNID:
-101442, \cite{milo2010}). Formation of GTP from ATP is achieved
-via the action of nucleoside diphosphate kinase, which catalyzes this reaction
-without an energy investment \citep{lascu2000} and therefore consider all NTP requirements of the
-cell to be functionally equivalent to being exclusively ATP. In total, the energetic costs of peptide bond
-formation consume $\approx$
-80\% of the cells ATP budget (BNID: 107782; 106158; 101637; 111918,
-\cite{lynch2015,stouthamer1973}). The pool of ATP is produced by
-the F$_1$-F$_0$ ATP synthase -- a membrane-bound rotary motor which under ideal conditions can yield
-$\approx$ 300 ATP per second (BNID: 114701; \cite{weber2003}).
-
+alternatively GTP and GDP) and an inorganic phosphate is a kinetic driving
+force in a wide array of biochemical reactions. One such reaction is the
+formation of peptide bonds during translation which requires $\approx$ 2 ATPs
+for the charging of an amino acid to the tRNA and $\approx$ 2 GTP for the
+formation of the peptide bond between amino acids. Assuming the ATP costs
+associated with error correction and post-translational modifications of
+proteins are negligible, we can make the approximation that each peptide bond
+has a net cost of $\approx$ 4 ATP (BNID: 101442, \cite{milo2010}). Formation
+of GTP from ATP is achieved via the action of nucleoside diphosphate kinase,
+which catalyzes this reaction without an energy investment \citep{lascu2000}
+and therefore consider all NTP requirements of the cell to be functionally
+equivalent to being exclusively ATP. In total, the energetic costs of peptide
+bond formation consume $\approx$ 80\% of the cells ATP budget (BNID: 107782;
+106158; 101637; 111918, \cite{lynch2015,stouthamer1973}). The pool of ATP is
+produced by the F$_1$-F$_0$ ATP synthase -- a membrane-bound rotary motor
+which under ideal conditions can yield $\approx$ 300 ATP per second (BNID:
+114701; \cite{weber2003}).
 
 To estimate the total number of ATP equivalents consumed during a cell cycle,
 we will make the approximation that there are $\approx 3\times10^6$ proteins
 per cell with an average protein length of $\approx$ 300 peptide bonds (BNID:
-115702; 108986; 104877). Taking these values together, we
-estimate that the typical \textit{E. coli} cell consumes $\sim 5 \times
-10^9$ ATP per cell cycle on protein synthesis alone. Assuming that the ATP synthases are operating at their
-fastest possible rate, $\approx$ 3000 ATP synthases are needed to keep up
-with the energy demands of the cell. This estimate and a comparison with the
-data are shown in \FIG{energy_production} (A). Despite our assumption of
-maximal ATP production rate per synthase and approximation of all NTP
-consuming reactions being the same as ATP, we find that an estimate of a few
-thousand complete synthases per cell to agree well with the experimental
-data. Much as we did for the estimates of transporter copy number in the
-previous section, we can generalize this estimate to consider a continuum of growth rates rather than a
-point estimate of 5000 s. Given knowledge of how the cell volume scales with
-growth rate \citep{si2017}, the density of the cytoplasm ($\rho \approx 1$ pg /
-fL), and the empirical determination that approximately half of the dry mass is
-protein, we can compute the energy demand as a function of growth rte, rindicated by the gray line in
-\FIG{energy_production}.
+115702; 108986; 104877). Taking these values together, we estimate that the
+typical \textit{E. coli} cell consumes $\sim 5 \times 10^9$ ATP per cell
+cycle on protein synthesis alone. Assuming that the ATP synthases are
+operating at their fastest possible rate, $\approx$ 3000 ATP synthases are
+needed to keep up with the energy demands of the cell. This estimate and a
+comparison with the data are shown in \FIG{energy_production} (A). Despite
+our assumption of maximal ATP production rate per synthase and approximation
+of all NTP consuming reactions being the same as ATP, we find that an
+estimate of a few thousand complete synthases per cell to agree well with the
+experimental data. Much as we did for the estimates of transporter copy
+number in the previous section, we can generalize this estimate to consider a
+continuum of growth rates rather than a point estimate of 5000 s. Given
+knowledge of how the cell volume scales with growth rate \citep{si2017}, the
+density of the cytoplasm ($\rho \approx 1$ pg / fL), and the empirical
+determination that approximately half of the dry mass is protein, we can
+compute the energy demand as a function of growth rte, rindicated by the gray
+line in \FIG{energy_production}.
 
 This simple estimate provides an intuition for thee observed abundance scale
 and the growth rate dependence, so is it a molecular bottleneck? If the
@@ -83,25 +82,27 @@ to our next estimate: how many electron transport complexes are needed to
 support the consumption rate of the ATP synthases?
 
 The electrochemistry of the electron transport complexes of \textit{E. coli}
-have been the subject of intense biochemical and biophysical study over the past
-half century \citep{ingledew1984, khademian2017,cox1970,henkel2014}. A recent
-work \citep{szenk2017} examined the respiratory capacity of the \textit{E. coli}
-electron transport complexes using structural and biochemical data, revealing
-that each electron transport chain rapidly pumps protons into the intermembrane
-space at a rate of $\approx$ 1500 protons per second (BIND: 114704; 114687). Using our estimate of the number of ATP synthases required per
-cell [\FIG{energy_production}(A)], coupled with these recent measurements, we
-estimate that $\approx 1000$ electron transport complexes would be necessary to
-facilitate the $\sim 5 \times 10^6$ protons per second diet of the cellular
-ATP synthases. This estimate (along with a generalization to the entire range of
-observed growth rates) is in agreement with the number of complexes
-identified in the proteomic datasets (plot in \FIG{energy_production}(B)). This
-suggests that every ATP synthase must be accompanied by $\approx$ 1 functional
-electron transport chain. Again, if this were a rate limiting process for
-bacterial growth, one must conclude that it is not possible for the cell to
-simply increase the production of both the number of electron transport chain
-complexes as well as ATP synthases. As both of these components only function
-bound to the inner membrane, we now turn our attention towards the available
-space in the membrane as well as surface-area-to-volume constraints.
+have been the subject of intense biochemical and biophysical study over the
+past half century \citep{ingledew1984, khademian2017,cox1970,henkel2014}. A
+recent work \citep{szenk2017} examined the respiratory capacity of the
+\textit{E. coli} electron transport complexes using structural and
+biochemical data, revealing that each electron transport chain rapidly pumps
+protons into the intermembrane space at a rate of $\approx$ 1500 protons per
+second (BIND: 114704; 114687). Using our estimate of the number of ATP
+synthases required per cell [\FIG{energy_production}(A)], coupled with these
+recent measurements, we estimate that $\approx 1000$ electron transport
+complexes would be necessary to facilitate the $\sim 5 \times 10^6$ protons
+per second diet of the cellular ATP synthases. This estimate (along with a
+generalization to the entire range of observed growth rates) is in agreement
+with the number of complexes identified in the proteomic datasets (plot in
+\FIG{energy_production}(B)). This suggests that every ATP synthase must be
+accompanied by $\approx$ 1 functional electron transport chain. Again, if
+this were a rate limiting process for bacterial growth, one must conclude
+that it is not possible for the cell to simply increase the production of
+both the number of electron transport chain complexes as well as ATP
+synthases. As both of these components only function bound to the inner
+membrane, we now turn our attention towards the available space in the
+membrane as well as surface-area-to-volume constraints.
 
 
 \begin{figure}
@@ -138,14 +139,14 @@ space in the membrane as well as surface-area-to-volume constraints.
 \end{figure}
 
 
-\subsection{Energy Production in a Crowded Membrane.}
+\subsection{Energy Production in a Crowded Membrane}
 
-For each protein considered so far, the data shows that in general their numbers
-increase with growth rate. This is in part a consequence of the increase in cell
-length and width at that is common to many rod-shaped bacteria at faster growth
-rates \citep{ojkic2019, harris2018}. For the particular case of \textit{E.
-coli}, the total cellular protein and cell size increase logarithmically with
-growth rate \citep{schaechter1958, si2017}.
+For each protein considered so far, the data shows that in general their
+numbers increase with growth rate. This is in part a consequence of the
+increase in cell length and width at that is common to many rod-shaped
+bacteria at faster growth rates \citep{ojkic2019, harris2018}. For the
+particular case of \textit{E. coli}, the total cellular protein and cell size
+increase logarithmically with growth rate \citep{schaechter1958, si2017}.
 
 Recall however that each transport process, as well as the ATP production via
 respiration, is performed at the bacterial membrane. This means that their
@@ -158,75 +159,99 @@ electron chain transport complexes both exhibit a clear increase in copy
 number with growth rate, it was important to also consider the consequences
 of this S/V ratio scaling in more detail.
 
-In our estimate of ATP production above we found that a cell demands about
-$5 \times 10^9$ ATP per cell cycle or $10^6$ ATP/s. With a cell volume of roughly 1 fl, this
-corresponds to about $2 \times 10^{10}$ ATP per fL of cell volume, in line  with
-previous estimates \citep{stouthamer1977, szenk2017}. In \FIG{energy_scaling} (A)
-we plot this ATP demand as a function of the S/V ratio in green, where we have
-considered a range of cell shapes from spherical to rod-shaped with an aspect
-ratio (length/width) equal to 4 (See appendix for calculations of cell volume
-and surface area).  In order to consider the maximum power that could be
-produced, we consider the amount of ATP that can generated by a membrane filled
-with ATP synthase and electron transport complexes, which provides a maximal
-production of about 3 ATP / (nm$^2 \cdot$s) \citep{szenk2017}. This is shown in
-blue in \FIG{energy_scaling}(A), which shows that at least for the growth rates
+In our estimate of ATP production above we found that a cell demands about $5
+\times 10^9$ ATP per cell cycle or $10^6$ ATP/s. With a cell volume of
+roughly 1 fl, this corresponds to about $2 \times 10^{10}$ ATP per fL of cell
+volume, in line with previous estimates \citep{stouthamer1977, szenk2017}. In
+\FIG{energy_scaling} (A) we plot this ATP demand as a function of the S/V
+ratio in green, where we have considered a range of cell shapes from
+spherical to rod-shaped with an aspect ratio (length/width) equal to 4 (See
+appendix for calculations of cell volume and surface area). In order to
+consider the maximum power that could be produced, we consider the amount of
+ATP that can generated by a membrane filled with ATP synthase and electron
+transport complexes, which provides a maximal production of about 3 ATP /
+(nm$^2 \cdot$s) \citep{szenk2017}. This is shown in blue in
+\FIG{energy_scaling}(A), which shows that at least for the growth rates
 observed, the energy demand is roughly an order of magnitude less.
-Interestingly, \cite{szenk2017} also found that ATP production by
-respiration is less efficient than by fermentation per membrane area occupied
-due to the additional proteins of the electron transport chain. This suggests
-that, even under anaerobic growth, there will be sufficient membrane space for
-ATP production in general.
+Interestingly, \cite{szenk2017} also found that ATP production by respiration
+is less efficient than by fermentation per membrane area occupied due to the
+additional proteins of the electron transport chain. This suggests that, even
+under anaerobic growth, there will be sufficient membrane space for ATP
+production in general.
 
-While the analysis in  \FIG{energy_scaling}(A) serves to highlight the
-diminishing capacity to provide resources to grow if the cell increases in size
-(and its S/V decreases), maximum energy production represents a somewhat
+While the analysis in \FIG{energy_scaling}(A) serves to highlight the
+diminishing capacity to provide resources to grow if the cell increases in
+size (and its S/V decreases), maximum energy production represents a somewhat
 unachievable limit since the inner membrane must also include other proteins
-including those required for lipid and membrane synthesis. We used the proteomic
-data to look at the distribution of proteins on the inner membrane, relying on
-the Gene Ontology (GO) annotations
+including those required for lipid and membrane synthesis -- two key processes
+in cell growth which we outline in the Appendix and in \FIGSUPP[energy_scaling]{envelope}. We used the
+proteomic data to look at the distribution of proteins on the inner membrane,
+relying on the Gene Ontology (GO) annotations
 \citep{ashburner2000,thegeneOntologyconsortium2018} to identify all proteins
 embedded or peripheral to the inner membrane (GO term: 0005886). Those
 associated but not membrane-bound include proteins like MreB and FtsZ, that
-traverse the inner membrane by treadmilling and must nonetheless be considered
-as a vital component occupying space on the membrane. In \FIG{energy_scaling}
-(B), we find that the total protein mass per $\mu$m$^2$ is surprisingly constant
-across growth rates. Interestingly, when we consider the distribution of
-proteins grouped by their Clusters of Orthologous Groups (COG)
-\citep{tatusov2000}, the relative abundance for those in metabolism (including
-ATP synthesis via respiration) is also relatively constant across growth rates,
-suggesting that many other membrane associated proteins also increase in similar
-proportions to proteins devoted to energy production \FIG{energy_scaling} (C).
+traverse the inner membrane by treadmilling and must nonetheless be
+considered as a vital component occupying space on the membrane. In
+\FIG{energy_scaling} (B), we find that the total protein mass per $\mu$m$^2$
+is surprisingly constant across growth rates. Interestingly, when we consider
+the distribution of proteins grouped by their Clusters of Orthologous Groups
+(COG) \citep{tatusov2000}, the relative abundance for those in metabolism
+(including ATP synthesis via respiration) is also relatively constant across
+growth rates, suggesting that many other membrane associated proteins also
+increase in similar proportions to proteins devoted to energy production
+\FIG{energy_scaling} (C).
+
 
 \begin{figure}
     \begin{fullwidth}
-        \centering{
             \includegraphics{main_figs/fig5_energy_SV_scaling.pdf}
             \caption{\textbf{Influence of cell size and S/V ratio on ATP
             production and inner membrane composition.} (A) Scaling of ATP
             demand and maximum ATP production as a function of S/V ratio.
             Cell volumes of 0.5 fL to 50 fL were considered, with the dashed
-            (\texttt{- -})
-            line corresponding to a sphere and the
-            dash-dot line (\texttt{-.}) reflecting a rod-shaped bacterium like \textit{E.
-            coli} with a typical aspect ratio (length / width) of 4
-            \citep{shi2018}. Approximately 50\% of the bacterial inner membrane
-            is assumed to be protein, with the remainder lipid. The right plot shows
-            the measured growth rates, and their estimated S/V ratio using growth
-            rate dependent size measurements from \cite{si2017} (See Appendix \nameref{sec:protein_size_SV}
-             on calculation).
-            (B)
-            Total protein mass per \textmu m$^2$ calculated for proteins with inner membrane
-            annotation (GO term: 0005886). (C) Relative protein abundances by
-            mass based on COG annotation. Metabolic proteins are further
-            separated into respiration (F$_1$-F$_0$ ATP synthase, NADH
-            dehydrogenase I, succinate:quinone oxidoreductase, cytochrome
-            bo$_3$ ubiquinol oxidase, cytochrome bd-I ubiquinol oxidase) and
-            carbohydrate transport (GO term: GO:0008643). Note that the
-            elongation factor EF-Tu can also associate with the inner
-            membrane, but was excluded in this analysis due to its high
-            relative abundance (roughly identical to the summed protein shown in
-            part (B)).}
-        \label{fig:energy_scaling}
-        }
+            (\texttt{- -}) line corresponding to a sphere and the dash-dot
+            line (\texttt{-.}) reflecting a rod-shaped bacterium like
+            \textit{E. coli} with a typical aspect ratio (length / width) of
+            4 \citep{shi2018}. Approximately 50\% of the bacterial inner
+            membrane is assumed to be protein, with the remainder lipid. The
+            right plot shows the measured growth rates, and their estimated
+            S/V ratio using growth rate dependent size measurements from
+            \cite{si2017} (See Appendix \nameref{sec:protein_size_SV} on
+            calculation). (B) Total protein mass per \textmu m$^2$ calculated
+            for proteins with inner membrane annotation (GO term: 0005886).
+            (C) Relative protein abundances by mass based on COG annotation.
+            Metabolic proteins are further separated into respiration
+            (F$_1$-F$_0$ ATP synthase, NADH dehydrogenase I,
+            succinate:quinone oxidoreductase, cytochrome bo$_3$ ubiquinol
+            oxidase, cytochrome bd-I ubiquinol oxidase) and carbohydrate
+            transport (GO term: GO:0008643). Note that the elongation factor
+            EF-Tu can also associate with the inner membrane, but was
+            excluded in this analysis due to its high relative abundance
+            (roughly identical to the summed protein shown in part
+            (B)).}\label{fig:energy_scaling}
+
+            \figsupp[Estimation of the key components involved in cell
+            envelope biosynthesis.]{(A) Top panel shows an estimation for the
+            number of ACP dehydratases necessary to form functional
+            phospholipids, which is assumed to be a rate-limiting step on
+            lipid synthesis. The rate of ACP dehydratases was inferred from
+            experimental measurements via a stochastic kinetic model
+            described in \cite{ruppe2018}. Bottom panel shows the
+            experimentally observed complex copy numbers using the
+            stoichiometries [FabA]$_2$ and [FabZ]$_2$. (B) An estimate for
+            the number of peptidoglycan transpeptidases needed to complete
+            maturation of the peptidoglycan. The mass of the murein monomer
+            was estimated by approximating each amino acid in the
+            pentapeptide chain as having a mass of 110 Da and each sugar in
+            the disaccharide having a mass of $\approx$ 250 Da. The
+            \textit{in vivo} rate of transpeptidation rein \textit{E. coli}
+            was taken from recent analysis by \cite{catherwood2020}. The
+            bottom panel shows experimental measurements of the
+            transpeptidase complexes in \textit{E. coli} following the
+            stoichiometries [MrcA]$_2$, [MrcB]$_2$, [MrdA]$_1$, and
+            [MrdB]$_1$. Grey curves in each plot show the estimated number of
+            complexes needed to satisfy the synthesis requirements scaled by
+            the surface area as a function of growth
+            rate.}{\includegraphics{main_figs/cell_wall_peptidoglycan.pdf}}\label{figsupp:envelope}
     \end{fullwidth}
 \end{figure}

@@ -120,12 +120,6 @@ numbers, the elongation rate at larger ribosome abundances can be increased by
 tuning $f_a$ such that not all ribosomes are elongating, reducing the total
 consumption rate.
 
-% It is important to note that thus far, this model quantifies only the
-% relationship between amino acid supply and consumption as a function of the
-% ribosome copy number and states nothing about the cellular growth rate. With a
-% sense of how elongation rate is tied to amino acid availability, we now turn to
-% how this relates to the cellular growth rate.
-
 \begin{figure}
     \centering{
         \includegraphics{main_figs/elongation_model.pdf}
@@ -166,7 +160,7 @@ influence the maximum growth rate as determined by \EQ{lambda_limit}.
 \FIG{elongation_rate_model}(C) shows how the observed growth rate depends on the
 rate of amino acid supply $r_{AA}$ as a function of the cellular ribosome copy
 number. A feature immediately apparent is the presence of a maximal growth rate
-whose dependence on $R$ (and consequently, the cell volume) increases with
+whose dependence on $R$ (and consequently, the cell size) increases with
 increasing $r_{AA}$. Importantly, however, there is an optimum set of $R$,
 $N_{pep}$, and $V$ that are strictly dependent on the value of $r_{AA}$.
 Increasing the ribosomal concentration beyond the cell's metabolic capacity has
@@ -180,6 +174,6 @@ growth, at least in the range of physiologically-relevant  ribosome copy
 numbers. Instead, cells limit their pool of actively translating ribosomes  by
 decreasing $f_a$ \citep{dai2016}, which would help maintain the pool of
 available amino acids $[AA]_\text{eff}$ and increase the achievable elongation
-rate. This observation is in
-agreement with the central premise of the cellular resource allocation principle
-proposed by \cite{scott2010, klumpp2009,klumpp2014} and \cite{hui2015}.
+rate. This observation is in agreement with the central premise of the cellular
+resource allocation principle proposed by \cite{scott2010,
+klumpp2009,klumpp2014} and \cite{hui2015}.

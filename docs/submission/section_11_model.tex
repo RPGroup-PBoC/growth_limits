@@ -84,24 +84,14 @@ r_t = \frac{r_{t}^{\text{max}}}{1 + K_D/[AA]_{\text{eff}}}.
 Under steady-state growth, the amino acid concentration is constant
 ($\frac{d[AA]_\text{eff}}{dt}=0$) and will relate to the rate of amino acid
 synthesis (or import, for rich media) and/or tRNA charging, as $r_{AA}$, and the
-rate of consumption, $r_t\times R \times f_a$ by,
-
-\begin{equation}
-\int_{0}^{t} \frac{d[AA]_{\text{eff}}}{dt} dt =  \int_{0}^{t}([r_{AA}] - [r_t\times R \times f_a]) dt,
-\label{eq:aaeff_int}
-\end{equation}
-where the time from 0 to $t$ is an arbitrary length of time, and the square
-brackets indicate concentrations per unit time. Integrating \EQ{aaeff_int}
-yields,
+rate of consumption, $r_t\times R \times f_a$. We calculate
+$[AA]_\text{eff}$ by,
 
 \begin{equation}
    [AA]_\text{eff} = \frac{t(r_{AA} - r_t \times R \times f_a)}{V},
    \label{eq:aa_final}
 \end{equation}
-where we instead consider $r_{AA}$ is in units of AA per unit time and $r_t$ is
-in units of AA per unit time per ribosome, for a cell with average volume $V$.
-Plugging \EQ{aa_final} into \EQ{rt_kd_simple} allows us to then solve for $r_t$
-and a complete derivation is provided in Appendix \ref{sec:SI_model}.
+which allows us to then solve for $r_t$ explicitly (further described in Appendix \ref{sec:SI_model}). Here $r_{AA}$ is in units of AA per unit time, and $V$ reflects the volume of the cell over a time period $t$.  
 
 In \FIG{elongation_rate_model}(B), we illustrate how the elongation rate depends
 on the ribosomal copy number. Here, we have considered a unit volume $V =

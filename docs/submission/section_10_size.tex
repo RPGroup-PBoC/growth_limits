@@ -21,17 +21,17 @@ and total protein abundance on cell size.
 
 As shown in \FIG{ribosome_limit}(C), cells grow at a near-maximal rate dictated
 by their total ribosomal mass fraction $\Phi_R$, at least at moderate growth
-rates above 0.5 hr$^{-1}$ (where $f_a$ is close to 1). Here,  growth rate can be
-increased only by making more ribosomes in a way that increases  $\Phi_R$. As
-\textit{E. coli} grows faster, however, large swaths of the proteome also
-increase in absolute protein, and the ability to add additional ribosomes is
-likely constrained by others factors such as  crowding due to their large size
-\citep{delarue2018, solerbistue2020}. It is now well-documented that
-\textit{E. coli} cells add a constant volume per origin of replication (termed a
-"unit cell" or "initiation mass"), which is robust to a remarkable array of
-cellular perturbations \citep{si2017}. To consider this dependency in the context of the
-proteomic data, we used measurements from \cite{si2017} for wild-type
-\textit{E. coli} cells grown in different nutrient conditions
+rates above 0.5 hr$^{-1}$ (where $f_a$ is close to 1, and $r_t$ is near its
+maximal rate).  Here, growth rate can be increased only by increasing  $\Phi_R$,
+though the simple addition of more ribosomes per cell is likely constrained by
+macromolecular crowding \citep{delarue2018, solerbistue2020}. As \textit{E.
+coli} grows faster, we've shown through our estimates that large swaths of the
+proteome increase in absolute protein. It is now well-documented that \textit{E.
+coli} cells add a constant volume per origin of replication (termed a "unit
+cell" or "initiation mass"), which is robust to a remarkable array of cellular
+perturbations \citep{si2017}. To consider this dependency in the context of the
+proteomic data, we used measurements from \cite{si2017} for wild-type \textit{E.
+coli} cells grown in different nutrient conditions
 (\FIG{translation_ecoli_partA}(A)) to estimate the average number of origins per
 cell $\langle$\# ori$\rangle$ across the data.
 
@@ -46,35 +46,24 @@ where $t_{cyc}$ is the cell cycle time (referring to the time from replication
 initiation to cell division), and $\tau$ is the cell doubling time. For
 ribosomal synthesis, we find an approximately linear correlation between
 ribosome copy number and $\langle$\# ori$\rangle$
-(\FIG{translation_ecoli_partA}(B)). For a constant cell cycle time, observed at
-growth rates above about 0.5 hr$^{-1}$ \citep{helmstetter1968}, \EQ{Nori} states
-that $\langle \text{\# ori} \rangle$ will need to increase exponentially with
-the growth rate in order to maintain steady-state growth.
+(\FIG{translation_ecoli_partA}(B)).
 
-
-Why does \textit{E. coli} add a constant volume per $\langle$\# ori$\rangle$?
-To consider how this trend pertains to growth, we must consider
-how the proteome size and composition changes with respect to growth rate. In
-\FIG{translation_ecoli_partA}(D), we analyze the position-dependent protein
-expression across the chromosome for each of the growth conditions from
-\cite{schmidt2016}. Here, we have calculated a running Gaussian average of
-protein copy number (20 kbp st. dev. averaging window) based on each gene's
-transcriptional start site, which were then median-subtracted to account for the
-differences in total protein abundance with each growth condition. Importantly,
-we find that the major deviations in protein copy number are largely restricted
-to regions of ribosomal protein genes, with substantially higher deviations
-observed for cells with high $\langle$\# ori$\rangle$ (teal), as compared to
-those with low $\langle$\# ori$\rangle$ (purple). This is particularly apparent
-for genes closer to the origin, where the majority of ribosomal proteins are
-found. This suggests that in addition to the linear scaling between protein
-abundance and $\langle$\# ori$\rangle$, the relative ribosomal abundance is
-tuned in proportion to $\langle$\# ori$\rangle$.  Given the increased rRNA gene
-dosage required at faster growth rates, additional rounds of DNA replication
-have the effect of skewing DNA dosage in favor of additional ribosomal synthesis
-Since growth rate depends specifically on the ribosomal fraction $\Phi_R$, this
-result suggests that cells are changing their size as a way to vary the absolute
-number of ribosomes per cell andtune $\Phi_R$ according to better match
-available nutrient conditions.
+For a constant cell cycle time, observed at growth rates above about 0.5
+hr$^{-1}$ \citep{helmstetter1968}, \EQ{Nori} states that $\langle \text{\# ori}
+\rangle$ will need to increase exponentially with the growth rate. While this
+exponential relationship says nothing of the observed scaling in cell size, the
+additional dependency on ribosomal content, which increase with $\langle$\#
+ori$\rangle$ provides this remaining link.  In \FIG{translation_ecoli_partA}(D),
+we consider the position-dependent protein expression across the chromosome by
+calculating a running Gaussian average of protein copy number (20 kbp st. dev.
+averaging window) based on each gene's transcriptional start site, which were
+then median-subtracted to account for the differences in total protein
+abundance. Importantly, major deviations in protein copy number are largely
+restricted to regions of ribosomal protein genes. This suggests that the
+relative ribosomal abundance $\Phi_R$ is also being tuned in proportion to
+$\langle$\# ori$\rangle$, with the exponential relationship between  cell size
+and growth rate a following from how cells vary their number of ribosomes per
+cell.
 
 
 \begin{figure*}

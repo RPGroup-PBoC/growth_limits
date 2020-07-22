@@ -131,21 +131,22 @@ condition using the size measurements from \cite{si2017,si2019}, and
 $N_\text{pep}$ is approximated by taking the total protein mass and dividing
 this number by the average mass of an amino acid, 110 Da (BNID: 104877).
 
-Given the  exponential scaling of $V$ and $N_\text{pep}$ with growth rate,
-we performed a linear regression of the log transform of these parameters
-as a function of the log transform of the ribosome copy number. Using
-optimization by minimization, we estimated the best-fit values of the intercept
-and slope for each regression. \FIG{naa_v_fit} shows the result of each
-regression as a dashed line, given in terms of the linear-scaled data.
+Given the  exponential scaling of $V$ and $N_\text{pep}$ with growth rate, we
+performed a linear regression of the log transform of these parameters as a
+function of the log transform of the ribosome copy number. Using optimization by
+minimization, we estimated the best-fit values of the intercept and slope for
+each regression. \FIG{naa_v_fit} shows the result of each regression as a dashed
+line.
 
 \begin{figure}
-  \centering{
+  \centering
     \includegraphics{SI_figs/log_log_regression_naa_vol.pdf}
-    \caption{\textbf{Phenomenological regression of cell volume and number of
+    \caption{{\textbf{Phenomenological regression of cell volume and number of
     amino acids per cell as a function of the ribosome copy number.} Colored
     points correspond to the measured value (or calculated value in the case of
     the cell volume) with colors denoting different data sets. The dashed black
     line shows the result of the fit, with the functional form of the equation
     given in the legend with $R$ representing the ribosome copy number.}
   }
+  \label{fig:naa_v_fit}
 \end{figure}

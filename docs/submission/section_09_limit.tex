@@ -2,21 +2,15 @@
 \subsection{Translation and Ribosomal Synthesis as a Growth-Rate Limiting Step}
 Thus far, the general back-of-the-envelope estimates have been reasonably
 successful in predicting the scale of absolute protein copy number as well as
-their observed dependence on the cellular growth rate. Only  A recurring theme
-across these varied biological processes is the ability of cells to  parallelize
-tasks through the expression of additional proteins.  Even when that is not
-possible, like in chromosomal replication which  requires a minimum of $\approx$
-40 minutes, \textit{E. coli} and many other bacteria surpass this limit by
-initiating additional rounds of replication per doubling.
-% The process of protein synthesis overall doesn't appear to be rate-limiting,
-% since for example, cells are able to induce the  expression of additional
-% enzymes to grow on alternative carbon sources.
-However, the synthesis of ribosomal proteins
-presents a special case where parallelization is not possible and must be
-doubled in quantity on average with every cell division
-(\FIG{ribosome_limit}).
-% Thus, it is plausible that translation may be a key
-% factor in determining the cellular growth rate.
+their observed dependence on the cellular growth rate. A recurring theme across
+these varied biological processes is the ability of cells to  parallelize tasks
+through the expression of additional proteins.  Even when that is not possible,
+like in chromosomal replication which  requires a minimum of $\approx$ 40
+minutes, \textit{E. coli} and many other bacteria surpass this limit by
+initiating additional rounds of replication per doubling. However, the synthesis
+of ribosomal proteins presents a special case where parallelization is not
+possible and must be doubled in quantity on average with every cell division
+(\FIG{ribosome_limit}(A)).
 
 To gain some intuition into how translation and ribosomal synthesis may limit
 bacterial growth, we again consider the total number of peptide bonds that must
@@ -61,24 +55,24 @@ in the form
 This is plotted as a function of ribosomal fraction $\Phi_R$ in
 \FIG{ribosome_limit}(B), where we take $L_R$ = 7459 AA, corresponding to the
 length in amino acids for all ribosomal subunits of the 50S and 30S complex
-(BNID: 101175), and $f_a$ = 1.
+(BNID: 101175), and $f_a$ = 1. In \FIG{ribosome_limit}(C) we use the
+recent measurements of $f_a$ from \cite{dai2016} to estimate the active fraction of
+ribosomal protein across the proteomic data sets and number of other recent
+measurements. We see that cells are consistently skirting the limit in growth
+rate set by \EQ{translation_limit_growth_rate} as nutrient conditions vary.
 
 The growth rate defined by \EQ{translation_limit_growth_rate} reflects
 mass-balance under steady-state growth and has long provided a rationalization
 of the apparent linear increase in \textit{E. coli}'s ribosomal content as a
-function of growth rate \citep{goldberger1979, scott2010}. Here we see that
-there will be a maximum rate when $\Phi_R$ = 1, only achieved if a cell
-contained only ribosomes. For an elongation rate of 17 amino acids per second,
-this gives us $\lambda \approx 8 \,\text{hr}^{-1}$ (\FIG{ribosome_limit}(B),
-dashed line) and corresponds to the synthesis time of all ribosomal subunits,
-$L_R/ r_t \approx$ 7 minutes \citep{dill2011}. Interestingly, this particular
-limit is independent of the absolute number of ribosomes and is simply given by
-the time to translate an entire ribosome. As shown in \FIG{ribosome_limit}(A),
-we can reconcile this with the observation that in order to double the average
-number of ribosomes, each ribosome must produce a second ribosome and this
-process cannot be parallelized. Unless the elongation rate can increase, or
-cells trim their total ribosomal protein mass, this dependency limits both the
-maximum growth rate (when $\Phi_R$ = 1), and the growth rate under more
+function of growth rate \citep{goldberger1979, scott2010}. The maximum rate,
+when $\Phi_R$ = 1, could only be achieved if a cell contained only ribosomes.
+This corresponds to the synthesis time of all ribosomal subunits, $L_R/ r_t
+\approx$ 7 minutes \citep{dill2011} and interestingly, is independent of the
+absolute number of ribosomes.  This is because, in order to double the cell's
+ribosomal mass, each ribosome must produce a second ribosome; a process which
+cannot be parallelized. Unless elongation rate increased, or cells could trim
+their total ribosomal protein mass, this dependency limits both the maximum
+growth rate (when $\Phi_R$ = 1), and also the achiveable growth rate under more
 realistic values of $\Phi_R$.
 
 \begin{figure}
@@ -115,35 +109,18 @@ realistic values of $\Phi_R$.
   \end{fullwidth}
 \end{figure}
 
-In recent work from \cite{dai2016}, the authors made independent measurements of
-$r_t$, $\Phi_R$ (via RNA-to-protein ratios, and directly by mass spectrometry),
-and growth rate, enabling inference of the active fraction $f_a$ across the
-entire range of growth rates considered here. In \FIG{ribosome_limit}(C) we use
-this measurement of $f_a$ to estimate the active fraction of ribosomal protein
-across the proteomic data sets and number of other recent measurements. We see
-that cells are essentially skirting the limit in growth rate set by
-\EQ{translation_limit_growth_rate} as nutrient conditions vary.
-
-Earlier, we considered rRNA synthesis (see Section \textit{\bf RNA Synthesis}),
-finding that, when the rRNA operons are maximally loaded with RNA polymerase,
-the cell can produce $\approx$ 1 functional rRNA unit per second per operon.
-While each \textit{E. coli} genome has 7 copies of the rRNA operon (BNID:
-107866), parallelization of chromosomal replication can drastically change the
-effective  number of rRNA operons. In the blue curve in \FIG{ribosome_limit}(C),
-we assume that the number of rRNA operons increases in proportion to the number
-of origins of replication $\langle\text{\# ori}\rangle$ and 1 functional rRNA
-unit per second per operon (solid blue line; with the calculation of
-$\langle\text{\# ori}\rangle$ described in the next section). Although we expect
-this value to drastically overestimate rRNA abundance at slower growth rates
-($\lambda < 0.5\, \text{hr}^{-1}$), it provides a useful reference alongside the
-proteomic measurements. For growth rates above about 1 hr$^{-1}$, we find that
-cells will need to transcribe rRNA near their maximal rate. As a counter
-example, if \textit{E. coli} did not initiate multiple rounds of replication,
-they would be unable to make enough rRNA for the observed number of ribosomes
-(dashed blue curve in \FIG{ribosome_limit}(C)).  The convergence between the
-maximum rRNA production and measured ribosome copy number suggests rRNA
-synthesis may begin to present a bottleneck in cell division at the fastest
-growth rates. Interestingly, while this strain of \textit{E. coli} is rarely
-reported to grow faster than 2 hr$^{-1}$, other bacteria with more copies of
-rRNA genes have been found that surpass this growth rate
-\citep{bremer2008,roller2016}.
+This strain of \textit{E. coli} rarely exhibits growth rates above 2 hr$^{-1}$
+\citep{bremer2008,roller2016} and in \FIG{ribosome_limit}(C) we consider
+ribosomal generation from the perspective of rRNA synthesis. Here we use our
+rule-of-thumb of 1 functional rRNA unit per second per operon and estimate the
+maximum number of ribosomes that could  be made as a function of growth rate
+(blue curve).  Although we expect this estimate to drastically overestimate rRNA
+abundance at slower growth rates ($\lambda < 0.5\, \text{hr}^{-1}$), it provides
+a useful reference alongside the proteomic measurements. For growth rates above
+about 1 hr$^{-1}$, we find that cells will need to transcribe rRNA near their
+maximal rate. As a counter example, if \textit{E. coli} did not initiate
+multiple rounds of replication, they would be unable to make enough rRNA for the
+observed number of ribosomes (dashed blue curve in \FIG{ribosome_limit}(C)). The
+convergence between the maximum rRNA production and measured ribosome copy
+number suggests rRNA synthesis may begin to present a bottleneck at the fastest
+growth rates due to its limited copies of rRNA genes.

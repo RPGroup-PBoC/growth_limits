@@ -1,41 +1,43 @@
-\babel@toc {english}{}
-\contentsline {section}{Introduction}{1}{section*.1}%
-\contentsline {section}{Uptake of Carbon}{4}{section*.4}%
-\contentsline {section}{Energy Production}{6}{section*.6}%
-\contentsline {subsection}{ATP Synthesis}{6}{subsection*.7}%
-\contentsline {subsection}{Generating the Proton Electrochemical Gradient}{7}{subsection*.8}%
-\contentsline {subsection}{Energy Production in a Crowded Membrane}{7}{subsection*.10}%
-\contentsline {section}{Function of the Central Dogma}{9}{section*.12}%
-\contentsline {subsection}{DNA Replication}{9}{subsection*.13}%
-\contentsline {subsection}{RNA Synthesis}{11}{subsection*.15}%
-\contentsline {subsubsection}{Protein Synthesis}{13}{subsubsection*.17}%
-\contentsline {subsection}{Translation and Ribosomal Synthesis as a Growth-Rate Limiting Step}{14}{subsection*.19}%
-\contentsline {subsection}{Relationship Between Cell Size and Growth Rate}{15}{subsection*.21}%
-\contentsline {subsection}{Alarmone-Mediated Regulation Controls the Rate of Protein Synthesis}{17}{subsection*.23}%
-\contentsline {subsection}{Ribosomal Elongation Rate and Cellular Growth Rate are Linked by Amino Acid Scarcity}{19}{subsection*.24}%
-\contentsline {subsubsection}{Optimal Growth Rate, Ribosomal Content, and Cell Size Depend on Nutrient Availability and Metabolic Capacity.}{21}{subsubsection*.26}%
-\contentsline {section}{Discussion}{21}{section*.27}%
-\contentsline {section}{Acknowledgements}{22}{section*.28}%
-\contentsline {section}{Competing Interests}{23}{section*.29}%
-\contentsline {section}{Experimental Details Behind Proteomic Data}{27}{section*.30}%
-\contentsline {subsection}{Fluorescence based measurements}{27}{subsection*.32}%
-\contentsline {subsection}{Ribosomal profiling measurements}{27}{subsection*.33}%
-\contentsline {subsection}{Mass spectrometry measurements}{28}{subsection*.34}%
-\contentsline {section}{Summary of Proteomic Data}{28}{section*.35}%
-\contentsline {section}{Estimation of Cell Size and Surface Area}{29}{section*.38}%
-\contentsline {section}{Estimation of Total Protein Content per Cell}{31}{section*.40}%
-\contentsline {subsection}{Estimating Volume and Number of Amino Acids from Ribosome Copy Number}{31}{subsection*.42}%
-\contentsline {section}{Additional Considerations of Schmidt \textit {et al.} Data Set}{31}{section*.44}%
-\contentsline {subsection}{Effect of cell volume on reported absolute protein abundances}{33}{subsection*.47}%
-\contentsline {subsection}{Relaxing assumption of constant protein concentration across growth conditions}{35}{subsection*.48}%
-\contentsline {subsection}{Comparison with total protein measurements from Basan \textit {et al.} 2015.}{35}{subsection*.49}%
-\contentsline {section}{Calculation of Complex Abundance}{36}{section*.51}%
-\contentsline {section}{Extending Estimates to a Continuum of Growth Rates}{38}{section*.53}%
-\contentsline {subsection}{Estimation of the total cell mass}{38}{subsection*.54}%
-\contentsline {subsection}{Complex Abundance Scaling With Cell Volume}{38}{subsection*.55}%
-\contentsline {subsection}{A Relation for Complex Abundance Scaling With Surface Area}{39}{subsection*.56}%
-\contentsline {subsubsection}{Number of Lipids}{39}{subsubsection*.57}%
-\contentsline {subsubsection}{Number of Murein Monomers}{39}{subsubsection*.58}%
-\contentsline {subsection}{Complex Abundance Scaling With Number of Origins, and rRNA Synthesis}{40}{subsection*.59}%
-\contentsline {section}{Calculation of active ribosomal fraction.}{40}{section*.60}%
-\contentsline {section}{Estimation of $\langle $\#ori$\rangle $ / $\langle $\#ter$\rangle $ and $\langle $\#ori$\rangle $.}{40}{section*.61}%
+\select@language {english}
+\contentsline {section}{Introduction}{1}{section*.1}
+\contentsline {section}{Nutrient Transport}{4}{section*.4}
+\contentsline {section}{Energy Production}{6}{section*.6}
+\contentsline {subsection}{ATP Synthesis}{6}{subsection*.7}
+\contentsline {subsection}{Generating the Proton Electrochemical Gradient}{7}{subsection*.8}
+\contentsline {section}{Biosynthesis in a Crowded Membrane}{7}{section*.10}
+\contentsline {section}{Function of the Central Dogma}{9}{section*.12}
+\contentsline {subsection}{DNA Replication}{10}{subsection*.13}
+\contentsline {subsection}{RNA Synthesis}{11}{subsection*.15}
+\contentsline {subsection}{Protein Synthesis}{12}{subsection*.17}
+\contentsline {section}{Translation and Ribosomal Synthesis as a Growth-Rate Limiting Step}{13}{section*.19}
+\contentsline {subsection}{Relationship Between Cell Size and Growth Rate}{14}{subsection*.21}
+\contentsline {subsection}{Nutrient-Mediated Model of Proteomic Composition and Growth Rate Control}{16}{subsection*.23}
+\contentsline {subsection}{Ribosomal Elongation Rate and Cellular Growth Rate are Linked by Amino Acid Scarcity}{17}{subsection*.24}
+\contentsline {subsection}{Optimal Growth Rate, Ribosomal Content, and Cell Size Depend on Nutrient Availability and Metabolic Capacity.}{17}{subsection*.26}
+\contentsline {section}{Discussion}{19}{section*.27}
+\contentsline {section}{Methods}{20}{section*.28}
+\contentsline {subsection}{Data Analysis and Availability}{20}{subsection*.29}
+\contentsline {section}{Acknowledgements}{20}{section*.30}
+\contentsline {section}{Competing Interests}{21}{section*.31}
+\contentsline {section}{Experimental Details Behind Proteomic Data}{25}{section*.32}
+\contentsline {subsection}{Fluorescence based measurements}{25}{subsection*.34}
+\contentsline {subsection}{Ribosomal profiling measurements}{25}{subsection*.35}
+\contentsline {subsection}{Mass spectrometry measurements}{26}{subsection*.36}
+\contentsline {section}{Summary of Proteomic Data}{26}{section*.37}
+\contentsline {section}{Estimation of Cell Size and Surface Area}{27}{section*.40}
+\contentsline {section}{Estimation of Total Protein Content per Cell}{29}{section*.42}
+\contentsline {subsection}{Estimating Volume and Number of Amino Acids from Ribosome Copy Number}{29}{subsection*.44}
+\contentsline {section}{Additional Considerations of Schmidt \textit {et al.} Data Set}{29}{section*.46}
+\contentsline {subsection}{Effect of cell volume on reported absolute protein abundances}{31}{subsection*.49}
+\contentsline {subsection}{Relaxing assumption of constant protein concentration across growth conditions}{33}{subsection*.50}
+\contentsline {subsection}{Comparison with total protein measurements from Basan \textit {et al.} 2015.}{33}{subsection*.51}
+\contentsline {section}{Calculation of Complex Abundance}{34}{section*.53}
+\contentsline {section}{Extending Estimates to a Continuum of Growth Rates}{36}{section*.55}
+\contentsline {subsection}{Estimation of the total cell mass}{36}{subsection*.56}
+\contentsline {subsection}{Complex Abundance Scaling With Cell Volume}{36}{subsection*.57}
+\contentsline {subsection}{A Relation for Complex Abundance Scaling With Surface Area}{37}{subsection*.58}
+\contentsline {subsubsection}{Number of Lipids}{37}{subsubsection*.59}
+\contentsline {subsubsection}{Number of Murein Monomers}{37}{subsubsection*.60}
+\contentsline {subsection}{Complex Abundance Scaling With Number of Origins, and rRNA Synthesis}{38}{subsection*.61}
+\contentsline {section}{Calculation of active ribosomal fraction.}{38}{section*.62}
+\contentsline {section}{Estimation of $\delimiter "43EA310 $\#ori$\delimiter "53EB311 $ / $\delimiter "43EA310 $\#ter$\delimiter "53EB311 $ and $\delimiter "43EA310 $\#ori$\delimiter "53EB311 $.}{38}{section*.63}

@@ -1,3 +1,62 @@
 
 \section{Derivation of Full Model of Nutrient-limited Growth.}
 \label{sec:SI_model}
+
+Here we return to our model of nutrient-limited growth and provide a more complete derivation of elongation rate $r_t$. Several of the steps are reproduced from the main text for completeness, and we begin with our coarse-grained description of peptide elongation, which includes 1) the time required to find and bind each
+correct amino-acyl tRNA, and 2) the remaining steps in peptide elongation that
+will not depend on the amino acid availability. These time scales are related to the inverse of the elongation rate $r_t$,
+
+\begin{equation}
+\frac{1}{r_t} = \frac{1}{k_{on} \alpha [AA]_{\text{eff}}} + \frac{1}{r_{t}^{\text{max}}}.
+\end{equation}
+where we have assumed that the rate of binding by amino-acyl tRNA $k_{on}$ is
+proportional to $[AA]_{\text{eff}}$ by a constant $\alpha$. $r_{t}^{\text{max}}$
+refers to the maximum elongation rate. This can be stated more
+succinctly in terms of an effective dissociation constant,
+
+\begin{equation}
+    K_D = \frac{r_{t}^{\text{max}}}{\alpha k_\text{on}},
+\end{equation}
+where the elongation rate $r_t$ is now given by
+
+\begin{equation}
+r_t = \frac{r_{t}^{\text{max}}}{1 + K_D/[AA]_{\text{eff}}}.
+\label{eq:rt_kd_simple}
+\end{equation}
+
+As the
+rate of amino acid supply, denote by $r_{AA}$, varies with changing nutrient
+condtions, the cell maintain [AA]_{\text{eff} by tuning the
+rate of amino acid consumption, $r_t \times R \times f_a$).
+Under steady-state growth, the amino acid concentration is constant
+($\frac{d[AA]_\text{eff}}{dt}=0$). The effective amino acid concentration
+$[AA]_{\text{eff}}$ will relate to the rate of amino acid synthesis (or import,
+for rich media) and/or tRNA charging, as $r_{AA}$, and the rate of consumption,
+$r_t\times R \times f_a$ by,
+
+\begin{equation}
+\int_{0}^{t} \frac{d[AA]_{\text{eff}}}{dt} dt =  \int_{0}^{t}([r_{AA}] - [r_t\times R \times f_a]) dt,
+\label{eq:aaeff_int}
+\end{equation}
+where the time from 0 to $t$ is an arbitrary length of time, and the square
+brackets indicate concentrations per unit time.
+Integrating \EQ{aaeff_int} yields.
+\begin{equation}
+[AA]_{\text{eff}} =  t([r_{AA}] - [r_t \times R \times f_a]).
+\label{eq:aaeff_concs}
+\end{equation}
+
+Alternatively, we can state this in terms of absolute ribosome copy number $R$
+by considering a unit volume $V$,
+\begin{equation}
+   [AA]_\text{eff} = \frac{t(r_{AA} - r_t \times R \times f_a)}{V},
+   \label{eq:aa_final}
+\end{equation}
+where $r_{AA}$ is in units of AA per unit time and $r_t$ is in units of AA per
+unit time per ribosome. With an expression for $[AA]_\text{eff}$ in hand, we can now solve
+\EQ{rt_kd_simple} for $r_t$ which is a quadratic function with a
+physically-meaningful root of
+\begin{equation}
+r_t = \frac{t(r_{AA} + r_t^\text{(max)}Rf_a) + K_D V - \sqrt{(r_{AA}t + r_t^\text{(max)}Rf_at + K_D V)^2 - 4(Rf_at)(r_t^\text{(max)}r_{AA} t)}}{2Rf_at}.
+\label{eq:rt_root}
+\end{equation}

@@ -72,12 +72,7 @@ rate of amino acid supply, denote by $r_{AA}$, varies with changing nutrient
 condtions, the cell can maximize the rate of protein synthesis by tuning the
 rate of amino acid consumption (mathematized as $r_t \times R \times f_a$) ,
 shown schematically in \FIG{elongation_rate_model}(A). This can be stated more
-succinctly in terms of an effective dissociation constant,
-
-\begin{equation}
-    K_D = \frac{r_{t}^{\text{max}}}{\alpha k_\text{on}},
-\end{equation}
-where the elongation rate $r_t$ is now given by
+succinctly in terms of an effective dissociation constant, $K_D = r_{t}^{\text{max}} / \alpha k_\text{on}$, where the elongation rate $r_t$ is now given by
 
 \begin{equation}
 r_t = \frac{r_{t}^{\text{max}}}{1 + K_D/[AA]_{\text{eff}}}.
@@ -85,37 +80,26 @@ r_t = \frac{r_{t}^{\text{max}}}{1 + K_D/[AA]_{\text{eff}}}.
 \end{equation}
 
 Under steady-state growth, the amino acid concentration is constant
-($\frac{d[AA]_\text{eff}}{dt}=0$). The effective amino acid concentration
-$[AA]_{\text{eff}}$ will relate to the rate of amino acid synthesis (or import,
-for rich media) and/or tRNA charging, as $r_{AA}$, and the rate of consumption,
-$r_t\times R \times f_a$ by,
+($\frac{d[AA]_\text{eff}}{dt}=0$) and will relate to the rate of amino acid
+synthesis (or import, for rich media) and/or tRNA charging, as $r_{AA}$, and the
+rate of consumption, $r_t\times R \times f_a$ by,
 
 \begin{equation}
 \int_{0}^{t} \frac{d[AA]_{\text{eff}}}{dt} dt =  \int_{0}^{t}([r_{AA}] - [r_t\times R \times f_a]) dt,
 \label{eq:aaeff_int}
 \end{equation}
 where the time from 0 to $t$ is an arbitrary length of time, and the square
-brackets indicate concentrations per unit time.
-Integrating \EQ{aaeff_int} yields.
-\begin{equation}
-[AA]_{\text{eff}} =  t([r_{AA}] - [r_t \times R \times f_a]).
-\label{eq:aaeff_concs}
-\end{equation}
+brackets indicate concentrations per unit time. Integrating \EQ{aaeff_int}
+yields,
 
-Alternatively, we can state this in terms of absolute ribosome copy number $R$
-by considering a unit volume $V$,
 \begin{equation}
    [AA]_\text{eff} = \frac{t(r_{AA} - r_t \times R \times f_a)}{V},
    \label{eq:aa_final}
 \end{equation}
-where $r_{AA}$ is in units of AA per unit time and $r_t$ is in units of AA per
-unit time per ribosome. With an expression for $[AA]_\text{eff}$ in hand, we can now solve
-\EQ{rt_kd_simple} for $r_t$ which is a quadratic function with a
-physically-meaningful root of
-\begin{equation}
-r_t = \frac{t(r_{AA} + r_t^\text{(max)}Rf_a) + K_D V - \sqrt{(r_{AA}t + r_t^\text{(max)}Rf_at + K_D V)^2 - 4(Rf_at)(r_t^\text{(max)}r_{AA} t)}}{2Rf_at}.
-\label{eq:rt_root}
-\end{equation}
+with  $r_{AA}$ is in units of AA per unit time and $r_t$ is in units of AA per
+unit time per ribosome, for a cell with average volume $V$. Plugging \EQ{aa_final}
+into \EQ{rt_kd_simple} allows us to then solve for $r_t$ and
+a complete derivation is provided in Appendix \ref{sec:SI_model}.
 
 In \FIG{elongation_rate_model}(B), we illustrate how the elongation rate depends
 on the ribosomal copy number. Here, we have considered a unit volume $V =
@@ -136,11 +120,11 @@ numbers, the elongation rate at larger ribosome abundances can be increased by
 tuning $f_a$ such that not all ribosomes are elongating, reducing the total
 consumption rate.
 
-It is important to note that thus far, this model quantifies only the
-relationship between amino acid supply and consumption as a function of the
-ribosome copy number and states nothing about the cellular growth rate. With a
-sense of how elongation rate is tied to amino acid availability, we now turn to
-how this relates to the cellular growth rate.
+% It is important to note that thus far, this model quantifies only the
+% relationship between amino acid supply and consumption as a function of the
+% ribosome copy number and states nothing about the cellular growth rate. With a
+% sense of how elongation rate is tied to amino acid availability, we now turn to
+% how this relates to the cellular growth rate.
 
 \begin{figure}
     \centering{
@@ -173,18 +157,12 @@ how this relates to the cellular growth rate.
 \subsubsection{Optimal Growth Rate, Ribosomal Content, and Cell Size Depend on Nutrient
 Availability and Metabolic Capacity.}
 
-To relate the elongation rate to growth rate, we constrain  the set of
-parameters based on measured proteomic changes; namely, we will restrict the
-values of $R$, $N_{pep}$, and $V$ to those associated with the amalgamated
-proteomic data. We will then consider how changes in the nutrient conditions,
-through the parameter $r_{AA}$, influence the maximum growth rate.
-
-Earlier, we considered ribosome biosynthesis as the growth-rate determining
-cellular process in \EQ{lambda_limit} by stating that the cellular growth rate
-$\lambda$ was related to the ribosome abundance, elongation rate, active
-ribosome fraction, and the total number of peptide bonds to be formed,
-$N_\text{pep}$. We return to this limit in light of our expression for a
-condition-dependent elongation rate $r_t$ given by \EQ{rt_root}.
+To relate elongation rate to growth rate, we constrain the set of parameters
+based on our available proteomic measurements; namely, we restrict the values of
+$R$, $N_{pep}$, and $V$ to those associated with the amalgamated proteomic data
+(described in Appendix \nameref{estimate_protein_per_cell}). We then consider
+how changes in the nutrient conditions, through the parameter $r_{AA}$,
+influence the maximum growth rate as determined by \EQ{lambda_limit}.
 \FIG{elongation_rate_model}(C) shows how the observed growth rate depends on the
 rate of amino acid supply $r_{AA}$ as a function of the cellular ribosome copy
 number. A feature immediately apparent is the presence of a maximal growth rate

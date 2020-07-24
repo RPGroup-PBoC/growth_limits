@@ -54,7 +54,7 @@
   title: Professor of Biology
   img: julie.jpg
   institute: University of Washington
-  other:
+  other_info:
     ø: Corresponding author
     email: jtheriot [at] uw [dot] edu
 
@@ -63,7 +63,7 @@
   title: Professor of Biology and Biophysics
   img: rob.jpg
   institute: California Institute of Technology
-  other:
+  other_info:
     ø: Correpsonding author
     email: phillips [at] pboc [dot] caltech [dot] edu
 

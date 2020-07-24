@@ -35,25 +35,53 @@ condition_dict ={
         'MOPS minimal': 'MOPS Minimal Medium',
         '42C': 'M9 Minimal Medium + Glucose (42° C)',
         'osmotic_stress_glucose': 'M9 Minimal Medium + Glucose (Osmotic Stress)'}
-       
+#  COG Letter Dict
+cog_dict = {
+    'D': 'Cell cycle control, cell division, chromosome partitioning',
+    'M': 'Cell wall/membrane/envelope biogenesis',
+    'N': 'Cell motility',
+    'O': 'Post-translational modification, protein turnover, and chaperones',
+    'T': 'Signal transduction mechanisms',
+    'U': 'Intracellular trafficking, secretion, and vesicular transport',
+    'V': 'Defense Mechanisms',
+    'W': 'Extracellular structures',
+    'Z': 'Cytoskeleton',
+    'A': 'RNA processsign and modification',
+    'B': 'Chromatin structure and dynamics',
+    'J': 'Translation, ribosomal structure, and biogenesis',
+    'K': 'Transcription', 
+    'L': 'Replication, recombination, and repair',
+    'C': 'Energy production and conversion',
+    'E': 'Aminio acid transport and metabolism',
+    'F': 'Nucleotide transport and metabolism',
+    'G': 'Carbohydrate transport and metabolism', 
+    'H': 'Coenzyme transport and metabolism',
+    'I': 'Lipid transport and metabolism', 
+    'P': 'Inorganic ion transport and metabolism', 
+    'Q': 'Secondary metabolites, biosynthesis, transport, and catabolism',
+    'R': 'General function prediction only',
+    'S': 'Function unknown',
+    'Not Assigned': 'Function unknown'}
         
 # Load the three datasets
 prots = pd.read_csv('../../../data/compiled_absolute_measurements.csv')
 cplx = pd.read_csv('../../../data/compiled_annotated_complexes.csv')
 cplx = cplx[['gene_name', 'b_number', 'condition', 'growth_rate_hr', 'go_terms',
              'complex', 'complex_annotation', 'dataset', 'dataset_name',
-             'n_subunits', 'n_units', 'gene_product']]
+             'n_subunits', 'n_units', 'gene_product', 'cog_letter']]
 cplx = cplx[cplx['complex_annotation'] != 'none assigned']
 cplx = cplx[cplx['complex'] != 'none assigned']
-cplx
+
 
 # Condense the complex data frame to an easily paresable form. 
 cplx_numeric_dfs = []
 cplx_desc_dfs = []
-
-for g, d in tqdm.tqdm(cplx.groupby(['complex_annotation', 'complex']), 
+prot_desc_dfs = []
+prot_numeric_dfs = []
+for g, d in tqdm.tqdm(cplx.groupby(['complex_annotation', 'complex', 'cog_letter']), 
                                     desc='Condensing complex data sets...'):
     cplx_desc = pd.DataFrame([])
+    prot_desc = pd.DataFrame([])
     for _g, _d in d.groupby(['gene_name', 'n_subunits', 'gene_product']):
         _list = [g[0], _g[-1]]
         for i, k in enumerate(_list):
@@ -94,12 +122,32 @@ for g, d in tqdm.tqdm(cplx.groupby(['complex_annotation', 'complex']),
                                   'complex': g[1],
                                   'protein': _g[0][0].upper() + _g[0][1:],
                                   'subunits': _g[1], 
-                                  'func': _list[1]},
+                                  'func': _list[1],
+                                  'cog': cog_dict[g[-1]]},
                                   ignore_index=True)
-
+        prot_desc = prot_desc.append({'gene_name':_g[0],
+                                      'complex':g[1],
+                                      'complex_annotation':_list[1],
+                                      'func':_list[1], 
+                                      'cog': cog_dict[g[-1]]},
+                                    ignore_index=True)
     cplx_desc_dfs.append(cplx_desc)
+    prot_desc_dfs.append(prot_desc)
+    prot_numeric = pd.DataFrame([])
+    for _g, _d in d.groupby(['gene_name', 'dataset', 'dataset_name', 'condition', 'growth_rate_hr']):
+        prot_numeric = prot_numeric.append({'gene_name':_g[0],
+                                            'tot_per_cell':_d['n_units'].values[0] * _d['n_subunits'].values[0],
+                                            'dataset':_g[1],
+                                            'dataset_name':_g[2],
+                                            'condition':condition_dict[_g[3]],
+                                            'growth_rate_hr':_g[4],
+                                            'color': dataset_colors[_g[1]]},
+                                            ignore_index=True)
+    prot_numeric_dfs.append(prot_numeric)
+
     # Iterate through each complex, dataset, and condition, and compute the aggs
     cplx_numeric = pd.DataFrame([])
+    prot_numeric = pd.DataFrame([])
     for _g, _d in d.groupby(['dataset', 'dataset_name', 'condition', 'growth_rate_hr']):
         cplx_numeric = cplx_numeric.append({
                           'min':_d['n_units'].min(),
@@ -107,6 +155,7 @@ for g, d in tqdm.tqdm(cplx.groupby(['complex_annotation', 'complex']),
                           'mean':_d['n_units'].mean(),
                           'median':_d['n_units'].median(),
                           'complex': g[1],
+                          'complex_annotation':_list[0],
                           'dataset': _g[0],
                           'dataset_name':_g[1],
                           'condition': condition_dict[_g[2]],
@@ -114,6 +163,7 @@ for g, d in tqdm.tqdm(cplx.groupby(['complex_annotation', 'complex']),
                           'growth_rate_hr':_g[3],
                           'color': dataset_colors[_g[0]]
                           }, ignore_index=True)
+        
     cplx_numeric_dfs.append(cplx_numeric)
 
 
@@ -122,5 +172,9 @@ cplx_desc = pd.concat(cplx_desc_dfs, sort=False)
 cplx_numeric = pd.concat(cplx_numeric_dfs, sort=False)
 cplx_desc.to_csv('./cplx_desc.csv', index=False)
 cplx_numeric.to_csv('./cplx_numeric.csv', index=False)
+prot_desc = pd.concat(prot_desc_dfs, sort=False)
+prot_desc.to_csv('./prot_desc.csv', index=False)
+prot_numeric = pd.concat(prot_numeric_dfs, sort=False)
+prot_numeric.to_csv('./prot_numeric.csv', index=False)
 
 # %%

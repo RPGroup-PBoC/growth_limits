@@ -3,20 +3,24 @@ var cplx_desc = cplx_desc_source.data;
 var cplx_numeric = cplx_numeric_source.data;
 var cplx_display = cplx_display_source.data;
 var cplx_table = cplx_table_source.data
-// Define the input widgets
-var cplx_select = cplx_select_input.value;
-var agg_method = agg_method_input.active;
 
-// Define the aggregate options
+// Define the input values
+var agg_method = agg_method_input.active;
 var agg_options = ['min', 'max', 'median', 'mean']
 var agg = agg_options[agg_method];
 
-// Define the constant for the ecocyc address
-ecocyc_link = "https://ecocyc.org/gene?orgid=ECOLI&id=" + cplx_select
+// Define the input widgets
+var cplx_annotation = cplx_select_input.value;
 
-// Find the empirical formula for the dataset and update display div and table
+// Define the constant for the ecocyc address
+var cplx_ind = getAllIndexes(cplx_desc['complex_annotation'], cplx_annotation);
+var cplx_select = cplx_desc['complex'][cplx_ind[0]];
+
+
+// Update the display table
+ecocyc_link = "https://ecocyc.org/gene?orgid=ECOLI&id=" + cplx_select
 cplx_desc_field.text = '<b> EcoCyc Complex Identifier<b>: <a href=' + ecocyc_link + '><span style="font-family:Courier">' + cplx_select + '</span></a><br/><br/><b>Subunit Composition</b>'
-var cplx_ind = getAllIndexes(cplx_desc['complex'], cplx_select);
+
 for (var i = 0; i < cplx_ind.length; i++) {
     if (i == 0) {
         cplx_table['protein'].length = 0;
@@ -33,15 +37,10 @@ for (var i = 0; i < cplx_ind.length; i++) {
     cplx_table['relative_subunits'].push(cplx_table['subunits'][i] / minimum_subunits);
     cplx_table['observed'].push('hover to view');
 } 
-
-
 cplx_table_source.change.emit();
-console.log(minimum_subunits,cplx_table)
-// Find the indices in the numeric dataset for the complex
-var cplx_ind = getAllIndexes(cplx_numeric['complex'], cplx_select);
-
 
 // Update the data. 
+cplx_ind = getAllIndexes(cplx_numeric['complex_annotation'], cplx_annotation);
 for (var i = 0; i < cplx_ind.length; i++) {
     if (i == 0) { 
         cplx_display['x'].length = 0;
@@ -57,8 +56,6 @@ for (var i = 0; i < cplx_ind.length; i++) {
     cplx_display['condition'].push(cplx_numeric['condition'][cplx_ind[i]]);
     cplx_display['cond'].push(cplx_numeric['cond'][cplx_ind[i]]);
 }
-
-// Update the display source. 
 cplx_display_source.change.emit()
 
 // Custom Function Definitions

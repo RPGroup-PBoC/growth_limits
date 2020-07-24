@@ -1,16 +1,16 @@
 
 \section{Translation and Ribosomal Synthesis as a Growth-Rate Limiting Step}
-Thus far, the general back-of-the-envelope estimates have been reasonably
-successful in predicting the scale of absolute protein copy number as well as
-their observed dependence on the cellular growth rate. A recurring theme across
-these varied biological processes is the ability of cells to  parallelize tasks
-through the expression of additional proteins.  Even when that is not possible,
-like in chromosomal replication which  requires a minimum of $\approx$ 40
-minutes, \textit{E. coli} and many other bacteria surpass this limit by
-initiating additional rounds of replication per doubling as we have noted. However, the synthesis
-of ribosomal proteins presents a special case where parallelization is not
-possible and must be doubled in quantity on average with every cell division
-(\FIG{ribosome_limit}(A)).
+%Thus far, the general back-of-the-envelope estimates have been reasonably
+%successful in predicting the scale of absolute protein copy number as well as
+%their observed dependence on the cellular growth rate. A recurring theme across
+%these varied biological processes is the ability of cells to  parallelize tasks
+%through the expression of additional proteins.  Even when that is not possible,
+%like in chromosomal replication which  requires a minimum of $\approx$ 40
+%minutes, \textit{E. coli} and many other bacteria surpass this limit by
+%initiating additional rounds of replication per doubling as we have noted. However, the synthesis
+%of ribosomal proteins presents a special case where parallelization is not
+%possible and must be doubled in quantity on average with every cell division
+%(\FIG{ribosome_limit}(A)).
 
 To gain some intuition into how translation and ribosomal synthesis may limit
 bacterial growth, we again consider the total number of peptide bonds that must
@@ -38,13 +38,13 @@ Alternatively, since $N_\text{pep}$ is related to the total protein mass through
 the molecular weight of each protein, we can also consider the growth rate in
 terms of the fraction of the total proteome mass dedicated to ribosomal
 proteins. By making the approximation that an average amino acid has a molecular
-weight of 110 Da (BNID: 104877), the total protein mass $m_{\textrm{protein}}$
-is related to $N_{AA}$ by $(m_{\textrm{protein}}/\text{110 Da}) \times N_A$,
+weight of 110 Da (BNID: 104877), the total protein mass $m_\text{protein}$
+is related to $N_\text{pep}$ by $(m_\text{protein}/\text{110 Da}) \times N_A$,
 where $N_A$ is Avogadro's number. Similarly, $R$ is related to the ribosomal
 protein mass by $R \approx (m_R/\text{800 Da}) \times N_A$, where 800 Da
 reflects the summed molecular weight of all ribosomal subunits.  This allows us
 to approximate  $R / N_\text{pep} \approx \Phi_R / L_R$,  where $\Phi_R$ is the
-ribosomal mass fraction $m_{\textrm{protein}}/m_R$, and $L_R$ the ratio of 800
+ribosomal mass fraction $m_\text{protein}/m_R$, and $L_R$ the ratio of 800
 kDa / 110 Da per amino acid or, alternatively, the total length in amino acids
 that make up a ribosome. The translation-limited growth rate can then be written
 in the form
@@ -53,7 +53,7 @@ in the form
 \label{eq:translation_limit_growth_rate}
 \end{equation}
 This is plotted as a function of ribosomal fraction $\Phi_R$ in
-\FIG{ribosome_limit}(B), where we take $L_R$ = 7459 AA, corresponding to the
+\FIG{ribosome_limit}(B), where we take $L_R \approx$ 7500 AA, corresponding to the
 length in amino acids for all ribosomal subunits of the 50S and 30S complex
 (BNID: 101175), and $f_a$ = 1. In \FIG{ribosome_limit}(C) we use the
 recent measurements of $f_a$ from \cite{dai2016} to estimate the active fraction of
@@ -72,7 +72,7 @@ absolute number of ribosomes.  This is because, in order to double the cell's
 ribosomal mass, each ribosome must produce a second ribosome; a process which
 cannot be parallelized. Unless elongation rate increased, or cells could trim
 their total ribosomal protein mass, this dependency limits both the maximum
-growth rate (when $\Phi_R$ = 1), and also the achiveable growth rate under more
+growth rate (when $\Phi_R$ = 1), and also the achieveable growth rate under more
 realistic values of $\Phi_R$.
 
 \begin{figure}

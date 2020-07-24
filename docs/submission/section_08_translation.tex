@@ -1,6 +1,43 @@
 \subsection{Protein Synthesis}
-Lastly, we consider the translation and estimate the number of ribosomes needed to
-replication the proteome.
+The final process of the central dogma -- the translation of RNA into function
+protein -- becomes the next and final target for our back-of-the-envelope
+estimates. To do so, we consider the abundance of ribosomes needed to replicate
+the cellular proteome.  While the rate at which ribosomes
+translates is well known to have a growth rate dependence \cite{dai2018} and
+we consider this more carefully in the sections that follow, here we make the
+approximation that translation occurs at a rate of $\approx$ 15 amino acids
+per second per ribosome (BNID: 100233). Under this approximation and assuming
+a division time of 5000 s, we can arrive at an estimate of $\approx 10^4$
+ribosomes are needed to replicate the cellular proteome, shown in
+\FIG{protein_synthesis}. This point estimate and the corresponding estimate
+across a continuum of growth rates proves to be notably comparable 
+to the experimental observations, shown in \FIG{protein_synthesis}(B).
+While the ribosome is responsible for the formation of peptide bonds, we do not
+diminish the importance of the charging of tRNAs with the appropriate amino
+acid, a process with occurs with remarkable accuracy. In the Appendix and in \FIGSUPP[protein_synthesis]{tRNA}, we consider
+the process of ligating tRNAs to their corresponding amino acid and again find
+notable comparability with the data. 
+
+To this point, the general back-of-the-envelope estimates have been reasonably
+successful in predicting the scale of absolute protein copy number as well as
+their observed dependence on the cellular growth rate. A recurring theme across
+these varied biological processes is the ability of cells to  parallelize tasks
+through the expression of additional proteins.  Even when that is not possible,
+like in chromosomal replication which  requires a minimum of $\approx$ 40
+minutes, \textit{E. coli} and many other bacteria surpass this limit by
+initiating additional rounds of replication per doubling as we have noted. However, the synthesis
+of ribosomal proteins presents a special case where parallelization is not
+possible and must be doubled in quantity on average with every cell division
+(\FIG{ribosome_limit}(A)). In the remaining sections of this work, we will
+consider in detail how this limit leads to the observed relationship between
+growth rate and cell volume.
+
+%While this is a critical step
+%in protein synthesis whose efficiency reflects the nutritional richness of the
+%growth medium, the ability to parallelize this process by expressing more tRNA
+%ligases makes it unlikely to be a bottleneck for cell division.
+
+
 % We will begin our exploration of protein translation in the same spirit as in
 % previous sections with an estimate of the number of ribosomes needed to
 % replicate the proteome.
@@ -10,27 +47,12 @@ replication the proteome.
 % the synthesis of the ribosome proteins and the limits that may place on the
 % observed bacterial growth rates, let's consider replication of the cellular
 % proteome.
-While the rate at which ribosomes translates is well known to have a growth
-rate dependence \cite{dai2018} and we consider this more carefully in the sections that follow, here we
 % is a topic which we discuss in detail in
 % the coming sections. However, for the purposes of our order-of-magnitude
 % estimate, we can
-make the approximation that translation occurs at a rate of
-$\approx$ 15 amino acids per second per ribosome (BNID: 100233). Under this
-approximation and assuming a division time of 5000 s, we can arrive at an
-estimate of $\approx 10^4$ ribosomes are needed to replicate the cellular
-proteome, shown in \FIG{protein_synthesis}. This point estimate
 % , while
 % glossing over important details such as chromosome copy number and
 % growth-rate dependent translation rates,
-proves to be notably accurate when
-compared to the experimental observations (\FIG{protein_synthesis}(B)). 
-In the
-Appendix and in \FIGSUPP[protein_synthesis]{tRNA}, we consider the process of
-ligating tRNAs to their corresponding amino acid. While this is a critical step
-in protein synthesis whose efficiency reflects the nutritional richness of the
-growth medium, the ability to parallelize this process by expressing more tRNA
-ligases makes it unlikely to be a bottleneck for cell division.
 
 \begin{figure}
     \centering{

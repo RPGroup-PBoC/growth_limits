@@ -1,0 +1,69 @@
+# ##############################################################################
+# Authors List
+# ------------------------------------------------------------------------------
+# This YAML data file contains entry for each author involved in the work
+# This YAML data file contains information for each author of the work. The 
+# author list will be generated in the order in which they are listed below. 
+# You can  add additional fields to each person, but these will not show up
+# automatically and must then be included manually in the Liquid template code 
+# of the `page01_people.md` file.
+# ##############################################################################
+- author:
+  name: Nathan M. Belliveau<sup>•</sup> 
+  title: Postdoctoral Scholar, Department of Biology
+  institute: University of Washington
+  img: nathan.jpg
+  other_info:
+    •: equal contribution
+    
+- author:
+  name: Griffin Chure<sup>•</sup>
+  link: "https://gchure.github.io"
+  title: Postdoctoral Scholar, Department of Applied Physics
+  img: griffin.jpg
+  institute: California Institute of Technology
+  other_info:
+    •: equal contribution
+    
+- author:
+  name: Christina L. Heuschen
+  title: Postdoctoral Scholar, Department of Chemical Engineering
+  institute: Stanford University
+  img: christina.jpg
+
+- author:
+  name: Hernan G. Garcia
+  title: Assistant Professor of Genetics, Genomics, and Development
+  img: hernan.jpg
+  institute: Stanford University
+
+- author: 
+  name: Jane Kondev
+  title: Professor of Physics
+  img: jane.jpg
+  institute: Brandeis University
+
+- author: 
+  name: Daniel S. Fisher
+  title: Professor of Applied Physics
+  img: dan.jpg
+  institute: Stanford University
+
+- author:
+  name: Julie A. Theriot<sup>ø</sup>
+  title: Professor of Biology
+  img: julie.jpg
+  institute: University of Washington
+  other:
+    ø: Corresponding author
+    email: jtheriot [at] uw [dot] edu
+
+- author:
+  name: Rob Phillips<sup>ø</sup>
+  title: Professor of Biology and Biophysics
+  img: rob.jpg
+  institute: California Institute of Technology
+  other:
+    ø: Correpsonding author
+    email: phillips [at] pboc [dot] caltech [dot] edu
+

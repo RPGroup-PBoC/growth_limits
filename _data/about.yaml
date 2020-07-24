@@ -1,0 +1,34 @@
+# ##############################################################################
+# ABOUT
+# ------------------------------------------------------------------------------
+# This data file contains all information that will be displayed on the home
+# page of your website. The fields `title` and `authors` are necessary. These
+# keys cannot be changed or they will not be displayed on the website. 
+#
+# The remainder of the fileds can be changed to fit your needs. The field name
+# (e.g. abstract, summary, etc) Will appear with as H2 headings on the website.
+# The content below will appear 
+
+title: >
+  Fundamental Limits on the Rate of Bacterial Cell Division  
+authors: >
+  Nathan M. Belliveau\*, Griffin Chure\*, Christina L. Heuschen, Hernan G. Garcia 
+  Jane Kondev, Daniel S. Fisher, Julie A. Theriot, and Rob Phillips
+Abstract: >
+  Recent years have seen a deluge of experiments dissecting the relationship
+  between bacterial growth rate, cell size, and protein content, quantifying
+  the abundance of proteins across growth conditions with unprecedented
+  resolution. However, we still lack a rigorous understanding of what sets the
+  scale of these quantities and when protein abundances should (or should not)
+  depend on growth rate. Here, we seek to quantitatively understand this
+  relationship across a collection of Escherichia coli proteomic data sets
+  covering ≈ 4000 proteins and 31 growth conditions. We estimate the basic
+  requirements for steady-state growth by considering key processes in nutrient
+  transport, energy generation, cell envelope biogenesis, and the central
+  dogma, from which ribosome biogenesis emerges as a primary determinant of
+  growth rate. We conclude by exploring a model of ribosomal regulation as a
+  function of the nutrient supply, revealing a mechanism that ties cell size
+  and growth rate to ribosomal content.
+Work in Progress:  >
+  This website is a draft of the website associated with this publication. All
+  data, figures, and writing on this page is subject to extensive change.

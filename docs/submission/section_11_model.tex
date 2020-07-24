@@ -1,6 +1,4 @@
-
-\subsection{Nutrient-Mediated Model of Proteomic Composition and Growth Rate Control}
-
+\subsection{Nutrient-Mediated Regulation of Proteomic Composition and Growth Rate}
 As we have seen, cell size, total proteomic content, and the number of ribosomes
 are all interconnected and influence the achievable growth rate. The drastic
 change in these parameters across different growth conditions suggests a
@@ -54,12 +52,14 @@ codons with their correct amino-acyl tRNA, along with the subsequent steps of
 peptide bond formation and translocation. We therefore coarse-grain the steps of
 elongation to two time-scales,  1) the time required to find and bind each
 correct amino-acyl tRNA, and 2) the remaining steps in peptide elongation that
-will not depend on the amino acid availability. Under this model, other
-molecular players required for translation like elongation factors and GTP are
-considered in sufficient abundance, which appear to be valid assumptions given
-our analysis of the proteomic data and energy production thus far. The time to
-translate each codon is given by the inverse of the elongation rate $r_t$, which
-can be written as,
+will not depend on the amino acid availability. The availability of amino acids
+will depend on their cellular concentration, which we treat as a single
+effective species, $[AA]_\text{eff}$. Under this model, other molecular players
+required for translation like elongation factors and GTP are considered in
+sufficient abundance, which appear to be valid assumptions given our analysis of
+the proteomic data and energy production thus far. The time to translate each
+codon is given by the inverse of the elongation rate $r_t$, which can be written
+as,
 
 \begin{equation}
 \frac{1}{r_t} = \frac{1}{k_{on} \alpha [AA]_{\text{eff}}} + \frac{1}{r_{t}^{\text{max}}}.
@@ -90,7 +90,9 @@ $[AA]_\text{eff}$ by,
    [AA]_\text{eff} = \frac{t(r_{AA} - r_t \times R \times f_a)}{V},
    \label{eq:aa_final}
 \end{equation}
-which allows us to then solve for $r_t$ explicitly (further described in Appendix \ref{sec:SI_model}). Here $r_{AA}$ is in units of AA per unit time, and $V$ reflects the volume of the cell over a time period $t$.
+which allows us to then solve for $r_t$ explicitly (further described in
+Appendix \ref{sec:SI_model}). Here $r_{AA}$ is in units of AA per unit time, and
+$V$ reflects the volume of the cell over a time period $t$.
 
 In \FIG{elongation_rate_model}(B), we illustrate how the elongation rate depends
 on the ribosomal copy number. Here, we have considered a unit volume $V =

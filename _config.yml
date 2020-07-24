@@ -1,6 +1,6 @@
 title: Fundamental Limits of Bacterial Growth
-baseurl:  "https://rpgroup.caltech.edu/" # the subpath of your site, In most cases this can be left blank
-url: "" # Base of your website.In most cases, this will be left blank
+baseurl: "" # "https://rpgroup.caltech.edu/" # the subpath of your site, In most cases this can be left blank
+url: ""
 
 # You can include social icons
 site-twitter: #if your site has a twitter account, enter it here

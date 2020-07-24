@@ -46,7 +46,6 @@ else {
       } 
     cplx_table_source.change.emit();
 }
-
 // Get the indices where the condition is met. 
 function getAllIndexes(arr, val) {
     var indices = [], i = -1;

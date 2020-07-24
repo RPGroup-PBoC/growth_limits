@@ -12,6 +12,8 @@ for (var i = 0; i < prot_inds.length; i++) {
         prot_display['c'].length = 0;
         prot_display['l'].length = 0;
         prot_display['condition'].length = 0;
+        var gene_fn = prot_source['gene_product'][prot_inds[i]]
+        prot_div.text = "<b>EcoCyc gene product annotation:</b> <br/>" + gene_fn
     }
 
     prot_display['x'].push(prot_source['growth_rate_hr'][prot_inds[i]]);
@@ -22,6 +24,7 @@ for (var i = 0; i < prot_inds.length; i++) {
 }
 
 prot_display_source.change.emit();
+
 
 
 // Get the indices where the condition is met. 

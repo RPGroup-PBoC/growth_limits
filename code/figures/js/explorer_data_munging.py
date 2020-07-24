@@ -82,6 +82,7 @@ for g, d in tqdm.tqdm(cplx.groupby(['complex_annotation', 'complex', 'cog_letter
                                     desc='Condensing complex data sets...'):
     cplx_desc = pd.DataFrame([])
     prot_desc = pd.DataFrame([])
+    gene_product = {}
     for _g, _d in d.groupby(['gene_name', 'n_subunits', 'gene_product']):
         _list = [g[0], _g[-1]]
         for i, k in enumerate(_list):
@@ -116,7 +117,7 @@ for g, d in tqdm.tqdm(cplx.groupby(['complex_annotation', 'complex', 'cog_letter
             # Replace others
             k = k.replace('&mdash;', '-')
             _list[i] = k
-
+            gene_product[_g[0]] =  _list[1]
         # Assemble a descriptive data frame
         cplx_desc = cplx_desc.append({'complex_annotation':_list[0],
                                   'complex': g[1],
@@ -141,7 +142,8 @@ for g, d in tqdm.tqdm(cplx.groupby(['complex_annotation', 'complex', 'cog_letter
                                             'dataset_name':_g[2],
                                             'condition':condition_dict[_g[3]],
                                             'growth_rate_hr':_g[4],
-                                            'color': dataset_colors[_g[1]]},
+                                            'color': dataset_colors[_g[1]],
+                                            'gene_product':gene_product[_g[0]]},
                                             ignore_index=True)
     prot_numeric_dfs.append(prot_numeric)
 

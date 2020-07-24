@@ -18,7 +18,11 @@ for (var i = 0; i < cplx_indices.length; i++ ) {
 var prot_menu = [];
 for (var i = 0; i< prot_indices.length; i++) {
     var prot = prot_desc_source.data['gene_name'][prot_indices[i]];
+    // Determine if the protein is already registered in teh menu.
+    var menu_inds = getAllIndexes(prot_menu, prot);
+    if (menu_inds.length == 0) {
     prot_menu.push(prot);
+    }
 }
 prot_menu.sort()
 // Update the menu on the selector

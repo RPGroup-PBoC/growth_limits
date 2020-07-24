@@ -41,7 +41,7 @@ prot_display_source = ColumnDataSource({'x':[], 'y':[], 'c':[], 'l':[],
 # ##############################################################################
 # FIGURE CANVAS DECLARATION AND INTERACTION INSTANTIATION
 # ##############################################################################
-bokeh.io.output_file('./explorer.html', mode='inline')
+bokeh.io.output_file('./data_explorer.html')
 
 # Define the menu for selecting complexes 
 cog_menu = [g for g in np.sort(cplx_desc_df['cog'].unique())]
@@ -56,8 +56,7 @@ complex_selection = Select(
                            width=400)
 
 # Define the menu for selecting proteins
-protein_selection = Select(title='protein name', options=[],
-                           value='select gene product')
+protein_selection = Select(options=[], value='select gene product')
 
 # Define the slector for min, max, or median complex abundance
 agg_fn = RadioButtonGroup(labels=['minimum', 'maximum', 'median', 'mean'],
@@ -78,13 +77,13 @@ complex_canvas = bokeh.plotting.figure(width=500, height=400,
                                        tooltips=TOOLTIPS)
 complex_canvas.y_range.range_padding = 1 
 complex_canvas.y_range.range_padding_units = 'percent'
-subunit_canvas = bokeh.plotting.figure(width=500, height=350,
-                                       x_axis_label='protein subunit',
-                                       y_axis_label='number of functional units')
-prot_canvas = bokeh.plotting.figure(width=500, height=350, 
+prot_canvas = bokeh.plotting.figure(width=500, height=400, 
                                   x_axis_label='growth rate [per hr]',
                                   y_axis_label='protein abundance per cell',
+                                  y_axis_type='log', 
                                   tooltips=TOOLTIPS)
+prot_canvas.y_range.range_padding = 1 
+prot_canvas.y_range.range_padding_units = 'percent'
 
 # Populate the canvases.
 complex_canvas.circle(x='x', y='y', color='c', legend_field='l',
@@ -96,7 +95,9 @@ prot_canvas.circle(x='x', y='y', color='c', legend_field='l',
 class_title = Div(text='<b>Clusters of Orthologous Groups (COG) class</b>')
 selector_title = Div(text='<b> EcoCyc complex annotation</b>')
 agg_title = Div(text='<b>complex abundance aggregation method</b>')
+prot_title = Div(text='<b>EcoCyc primary gene name</b>')
 complex_description_field = Div(text="")
+protein_description_field = Div(text="")
 complex_table_cols =  [
     TableColumn(field='protein', title='protein name'),
     TableColumn(field='relative_subunits', title='expected stoichiometry'),
@@ -134,7 +135,8 @@ cplx_hover_args = { 'cplx_desc_source': cplx_desc_source,
 # Arguments for protein selection.
 prot_args = {'prot_numeric_source': prot_numeric_source,
              'prot_display_source': prot_display_source,
-             'prot_select_input': protein_selection}
+             'prot_select_input': protein_selection,
+             'prot_div': protein_description_field}
 
 class_cb = prot.viz.load_js('class_selection.js', args=class_args)
 hover_cb = prot.viz.load_js('explorer_subunits.js', args=cplx_hover_args)
@@ -150,7 +152,8 @@ complex_canvas.hover.callback = hover_cb
 complex_box = bokeh.layouts.column(class_title, class_selection, selector_title,complex_selection, agg_title, agg_fn,
                                    complex_description_field, 
                                    complex_table)
-prot_box = bokeh.layouts.column(class_selection, protein_selection)
+prot_box = bokeh.layouts.column(class_title, class_selection, prot_title, protein_selection,
+                                protein_description_field)
 complex_plots = bokeh.layouts.column(complex_canvas)
 complex_layout = bokeh.layouts.row(complex_plots, complex_box)
 protein_layout = bokeh.layouts.row(prot_canvas, prot_box)

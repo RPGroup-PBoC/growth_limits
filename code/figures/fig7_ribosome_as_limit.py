@@ -266,22 +266,22 @@ dai_nut_df = dai_nut_df.sort_values(by='growth_rate_hr', ascending = True)
 popt_dai, pcov_dai = curve_fit(func, dai_nut_df.growth_rate_hr.values, dai_nut_df.f_a.values, p0=(1, 1e-6, 1))
 
 
-# Add Dai et al, Scott, and historical
-ax3.plot((R_P_dai/2.1)*func(lambda_dai, *popt_dai),lambda_dai, 'o', color=colors['light_yellow'],
-                alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
-                ms=4, zorder=1)
-
-ax3.plot((R_P_scott/2.1)*func(lambda_scott, *popt_dai),lambda_scott, 'o', color=colors['light_purple'],
-                alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
-                ms=4, zorder=1)
-
-ax3.plot((R_P_for/2.1)*func(lambda_for, *popt_dai),lambda_for, 'o', color=  '#1F4B99',
-                alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
-                ms=4, zorder=1)
-
-ax3.plot((R_P_brem/2.1)*func(lambda_brem, *popt_dai),lambda_brem, 'o', color=  '#B7741A',
-                alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
-                ms=4, zorder=1)
+# # Add Dai et al, Scott, and historical
+# ax3.plot((R_P_dai/2.1)*func(lambda_dai, *popt_dai),lambda_dai, 'o', color=colors['light_yellow'],
+#                 alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
+#                 ms=4, zorder=1)
+#
+# ax3.plot((R_P_scott/2.1)*func(lambda_scott, *popt_dai),lambda_scott, 'o', color=colors['light_purple'],
+#                 alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
+#                 ms=4, zorder=1)
+#
+# ax3.plot((R_P_for/2.1)*func(lambda_for, *popt_dai),lambda_for, 'o', color=  '#1F4B99',
+#                 alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
+#                 ms=4, zorder=1)
+#
+# ax3.plot((R_P_brem/2.1)*func(lambda_brem, *popt_dai),lambda_brem, 'o', color=  '#B7741A',
+#                 alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
+#                 ms=4, zorder=1)
 
 
 for g, d in df_ribo_frac.groupby(['dataset', 'condition', 'growth_rate_hr']):
@@ -293,17 +293,17 @@ for g, d in df_ribo_frac.groupby(['dataset', 'condition', 'growth_rate_hr']):
                     alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
                     label = g[2], ms=4, zorder=10)
 
-for c, d in data_si_mean.groupby(['type of perturbation', 'growth media', 'strain']):
-    if c[0] != 'nutrient conditions':
-        continue
-    if 'MG1655' in c[2]:
-        k = colors['pale_red']
-    elif 'NCM3722' in c[2]:
-        k = colors['light_green']
-
-    ax3.plot((d['RNA/protein']/2.1)*func( d.growth_rate_hr.unique(), *popt_dai),d.growth_rate_hr.unique(), 'o', color= k,
-                    alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
-                    label = g[2], ms=4, zorder=0)
+# for c, d in data_si_mean.groupby(['type of perturbation', 'growth media', 'strain']):
+#     if c[0] != 'nutrient conditions':
+#         continue
+#     if 'MG1655' in c[2]:
+#         k = colors['pale_red']
+#     elif 'NCM3722' in c[2]:
+#         k = colors['light_green']
+#
+#     ax3.plot((d['RNA/protein']/2.1)*func( d.growth_rate_hr.unique(), *popt_dai),d.growth_rate_hr.unique(), 'o', color= k,
+#                     alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
+#                     label = g[2], ms=4, zorder=0)
 
 
 ax3.xaxis.set_tick_params(labelsize=5)

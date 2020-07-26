@@ -1,5 +1,26 @@
+\section{Translation and Ribosomal Synthesis as a Rate-Limiting Step}
+Up to this point, our estimates have been reasonably successful in predicting
+the scale of absolute protein copy number as well as the observed dependence on
+the cellular growth rate. This suggests that cells modulate their proteomic
+composition and absolute protein abundance to better match the growth rate
+requirements, without any one process representing a particular bottleneck. In
+our effort to identify key limitations on growth, however, there are two notable
+observations that we highlight here. The first is a recurring theme throughout
+the majority of our estimates, which is that cells can divide faster by
+expressing more proteins. We can view this as a parallelization of each
+biosynthesis task, and this provides some basis to explain why bacteria tend to
+increase their protein content (and cell size) as they grow faster [cites]. The
+second is that the synthesis of ribosomal proteins presents a special case where
+parallelization is not possible (\FIG{ribosome_limit}(A)), suggesting the
+possibility that it may represent a rate-limiting step.  In the remaining
+sections we show how ribosome synthesis indeed limits the acheivable growth
+rate, and consider how \textit{E. coli} deals with this constraint through
+control its ribosome copy number. We then use a minimal model of growth rate
+control to gain insight into how the observed changes in proteomic abundance
+enable cells to better maximize their growth rate across different growth
+conditions.
 
-\section{Translation and Ribosomal Synthesis as a Growth-Rate Limiting Step}
+% \subsection{Translation and Ribosomal Synthesis as a Rate-Limiting Step}
 %Thus far, the general back-of-the-envelope estimates have been reasonably
 %successful in predicting the scale of absolute protein copy number as well as
 %their observed dependence on the cellular growth rate. A recurring theme across
@@ -12,7 +33,8 @@
 %possible and must be doubled in quantity on average with every cell division
 %(\FIG{ribosome_limit}(A)).
 
-To gain some intuition into how translation and ribosomal synthesis may limit
+\subsection{Maximum Growth Rate is Determined by the Ribosomal Mass Fraction}
+To gain some intuition into how ribosomes influence
 bacterial growth, we again consider the total number of peptide bonds that must
 be synthesized, which we denote as $N_\text{pep}$. With cells growing exponentially in time
 \citep{godin2010}, the rate of cellular growth will be related to the rate of protein synthesis by

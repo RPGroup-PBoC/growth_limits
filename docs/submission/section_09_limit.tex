@@ -56,32 +56,36 @@ rate as
 \label{eq:lambda_limit}
 \end{equation}
 
-Alternatively, since $N_\text{pep}$ is related to the total protein mass through
-the molecular weight of each protein, we can also consider the growth rate in
-terms of the fraction of the total proteome mass dedicated to ribosomal
+Alternatively, since we are most interested in the role of ribsomal synthesis on
+growth rate, will can rewrite this in terms of the ribosomal mass fraction, denoted by $\Phi_R$. $N_\text{pep}$ is related to the total protein mass
+through the molecular weight of each protein, we can also consider the growth
+rate in terms of the fraction of the total proteome mass dedicated to ribosomal
 proteins. By making the approximation that an average amino acid has a molecular
-weight of 110 Da (BNID: 104877), the total protein mass $m_\text{protein}$
-is related to $N_\text{pep}$ by $(m_\text{protein}/\text{110 Da}) \times N_A$,
+weight of 110 Da (BNID: 104877), the total protein mass $m_\text{protein}$ is
+related to $N_\text{pep}$ by $(m_\text{protein}/\text{110 Da}) \times N_A$,
 where $N_A$ is Avogadro's number. Similarly, $R$ is related to the ribosomal
 protein mass by $R \approx (m_R/\text{800 Da}) \times N_A$, where 800 Da
 reflects the summed molecular weight of all ribosomal subunits.  This allows us
 to approximate  $R / N_\text{pep} \approx \Phi_R / L_R$,  where $\Phi_R$ is the
-ribosomal mass fraction $m_\text{protein}/m_R$, and $L_R$ the ratio of 800
-kDa / 110 Da per amino acid or, alternatively, the total length in amino acids
-that make up a ribosome. The translation-limited growth rate can then be written
-in the form
+ribosomal mass fraction $m_\text{protein}/m_R$, and $L_R$ the ratio of 800 kDa /
+110 Da per amino acid or, alternatively, the total length in amino acids that
+make up a ribosome. The translation-limited growth rate can then be written in
+the form
 \begin{equation}
 \lambda_{\textrm{translation-limited}} \approx \frac{r_t}{L_R}  \Phi_R f_a.
 \label{eq:translation_limit_growth_rate}
 \end{equation}
-This is plotted as a function of ribosomal fraction $\Phi_R$ in
-\FIG{ribosome_limit}(B), where we take $L_R \approx$ 7500 AA, corresponding to the
-length in amino acids for all ribosomal subunits of the 50S and 30S complex
-(BNID: 101175), and $f_a$ = 1. In \FIG{ribosome_limit}(C) we use the
-recent measurements of $f_a$ from \cite{dai2016} to estimate the active fraction of
-ribosomal protein across the proteomic data sets and number of other recent
-measurements. We see that cells are consistently skirting the limit in growth
-rate set by \EQ{translation_limit_growth_rate} as nutrient conditions vary.
+This is plotted as a function of the ribosomal fraction $\Phi_R$ in
+\FIG{ribosome_limit}(B), where we take $L_R \approx$ 7500 AA, corresponding to
+the length in amino acids for all ribosomal subunits of the 50S and 30S complex
+(BNID: 101175), and $f_a$ = 1. To allow us to consider the the proteomic data,
+we use recent measurements of $f_a$ from \cite{dai2016} to estimate the active
+fraction of ribosomal protein across the proteomic data sets
+(\FIG{ribosome_limit}(C)). We find that cells are consistently skirting the
+limit in growth rate as nutrient conditions vary. There is a notable discrepency
+in the data from \cite{peebo2015, valgepea2013}, with a number of data sets from
+several recent studies most consistent with the measurements from \cite{li2014,
+schmidt2016}.
 
 The growth rate defined by \EQ{translation_limit_growth_rate} reflects
 mass-balance under steady-state growth and has long provided a rationalization

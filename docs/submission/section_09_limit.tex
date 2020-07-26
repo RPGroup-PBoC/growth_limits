@@ -48,16 +48,17 @@ number per cell. The addition factor $f_a$ refers to the fraction of actively
 translating ribosomes, and allows us to account for the possibility of
 nonfunctional, immature ribosomes or active sequestration of ribosomes, mediated
 by the secondary-messenger molecule alarmones, guanosine pentaphosphate
-[(p)ppGpp] at slow growth \citep{dennis2004, dai2016}. Knowing the number of
-peptide bonds formed per cell permits us to compute the translation-limited growth
-rate as
-\begin{equation}
-\lambda_\text{translation-limited} = \frac{r_t R f_a}{N_\text{pep}}.
-\label{eq:lambda_limit}
-\end{equation}
+[(p)ppGpp] at slow growth \citep{dennis2004, dai2016}.
+% Knowing the number of
+% peptide bonds formed per cell permits us to compute the translation-limited growth
+% rate as
+% \begin{equation}
+% \lambda_\text{translation-limited} = \frac{r_t R f_a}{N_\text{pep}}.
+% \label{eq:lambda_limit}
+% \end{equation}
 
 Alternatively, since we are most interested in the role of ribsomal synthesis on
-growth rate, will can rewrite this in terms of the ribosomal mass fraction, denoted by $\Phi_R$. $N_\text{pep}$ is related to the total protein mass
+growth rate, will can consider this in terms of the ribosomal mass fraction, denoted by $\Phi_R$. $N_\text{pep}$ is related to the total protein mass
 through the molecular weight of each protein, we can also consider the growth
 rate in terms of the fraction of the total proteome mass dedicated to ribosomal
 proteins. By making the approximation that an average amino acid has a molecular
@@ -80,12 +81,14 @@ This is plotted as a function of the ribosomal fraction $\Phi_R$ in
 the length in amino acids for all ribosomal subunits of the 50S and 30S complex
 (BNID: 101175), and $f_a$ = 1. To allow us to consider the the proteomic data,
 we use recent measurements of $f_a$ from \cite{dai2016} to estimate the active
-fraction of ribosomal protein across the proteomic data sets
-(\FIG{ribosome_limit}(C)). We find that cells are consistently skirting the
-limit in growth rate as nutrient conditions vary. There is a notable discrepency
-in the data from \cite{peebo2015, valgepea2013}, with a number of data sets from
-several recent studies most consistent with the measurements from \cite{li2014,
-schmidt2016}.
+fraction of ribosomal protein across each proteomic data set
+(\FIG{ribosome_limit}(C)). We find that cells in general appear to
+skirt this limit in growth rate as nutrient conditions vary. There is a notable discrepency
+in the data from \cite{peebo2015, valgepea2013}, where cells appear to grow
+substantially slower given their estimated ribosomal fraction. We have
+also collected a number of recent measurements of ribosomal fraction and
+find them most consistent with the measurements from \cite{li2014,
+schmidt2016} [supp fig].
 
 The growth rate defined by \EQ{translation_limit_growth_rate} reflects
 mass-balance under steady-state growth and has long provided a rationalization
@@ -134,6 +137,8 @@ rate under more moderate values of $\Phi_R$.
         }
   \end{fullwidth}
 \end{figure}
+
+\subsection{rRNA Synthesis Presents a Potential Bottleneck during Rapid Growth}
 
 \textit{E. coli} rarely exhibits growth rates above 2 hr$^{-1}$
 \citep{bremer2008,roller2016}, which is well-below the synthesis rate of a

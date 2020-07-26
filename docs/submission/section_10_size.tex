@@ -9,32 +9,34 @@
 % and total protein abundance on cell size.
 
 % though the simple addition of more ribosomes is likely constrained by aspects
-% physical constrains like macromolecular crowding \citep{delarue2018,
+% physical constraints like macromolecular crowding \citep{delarue2018,
 % solerbistue2020}.
 
-In \FIG{ribosome_limit}(C) we find that above growth rates of about 0.75
-hr$^{-1}$, growth rate is dictated by the ribosomal mass fraction $\Phi_R$
-(where $f_a$ is close to 1, and $r_t$ is near its maximal rate) [cite and refer
-to figure/ supplemental].  Here, cells can only increase their growth rate by
-increasing $\Phi_R$ and in this section we consider the implications of this on
-the apparent exponential scaling of cell volume with growth rate.
+In \FIG{ribosome_limit}(C) we find that above about  0.75 hr$^{-1}$, growth rate
+is dictated by the ribosomal mass fraction $\Phi_R$ (since $f_a$ is close to 1,
+and $r_t$ is near its maximal rate) [cite and refer to figure/ supplemental].
+While the preceeding section helps us understand that cells will need to
+increase $\Phi_R$ in order to grow faster, the fractional dependence gives
+little insight into how this is achieved. Here we consider how this growth rate
+dependence with $\Phi_R$ relates to total protein content and cell volume in
+\textit{E. coli}.
 
 It is now well-documented that \textit{E. coli} cells add a constant volume per
 origin of replication, which is robust to a remarkable array of cellular
-perturbations \citep{si2017}. To consider this dependency in the context of the
-proteomic data, we used measurements from \cite{si2017}
-(\FIG{translation_ecoli_partA}(A)) to estimate the average number of origins per
-cell $\langle$\# ori$\rangle$ at different growth rates. $\langle$\#
-ori$\rangle$ is set by how often replication must be initiated per cell doubling
+perturbations \citep{si2017}.  The average number of origins per cell, $\langle$\#
+ori$\rangle$, is set by how often replication must be initiated per cell doubling
 under steady-state growth. This can be quantified as
 \begin{equation}
     \langle \text{\# ori} \rangle = 2^{\tau_{cyc} / \tau} = 2^{\tau_{cyc} \lambda / ln(2)},
     \label{eq:Nori}
 \end{equation}
 where $t_{cyc}$ is the cell cycle time (referring to the time from replication
-initiation to cell division), and $\tau$ is the cell doubling time. For
-ribosomal synthesis, we find an approximately linear correlation between
-ribosome copy number and $\langle$\# ori$\rangle$
+initiation to cell division), and $\tau$ is the cell doubling time. To consider
+this  in the context of the proteomic data, we used measurements of $\tau_{cyc}$
+and  $\tau$ from \cite{si2017} (\FIG{translation_ecoli_partA}(A)) to estimate
+the calculate $\langle$\# ori$\rangle$  with \EQ{Nori} at different growth
+rates. For ribosomal synthesis, we find an approximately linear correlation
+between ribosome copy number and $\langle$\# ori$\rangle$
 (\FIG{translation_ecoli_partA}(B)).
 
 For a constant cell cycle time, which is observed at growth rates above about
@@ -60,7 +62,9 @@ increase in cell volume with growth rate.
     \centering{
         \includegraphics{main_figs/fig8_ribosome_growth_limit_ecoli_a_polar_coord.pdf}
         \caption{\textbf{Cells increase absolute ribosome abundance with
-        $\langle$\# ori$\rangle$.} (A) Experimental data from Si \textit{et al.}
+        $\langle$\# ori$\rangle$.} (A) Experimental measurements of
+        the cell doubling time $\tau$ and cell cycle time $t_{cyc}$
+         from Si \textit{et al.}
         (2017). Dashed line shows fit to the data, which were used to estimate
         $\langle$\# ori$\rangle$. $t_{cyc}$ was assumed to vary in proportion to
         $\tau$ for doubling times greater than 40 minutes, and reach a

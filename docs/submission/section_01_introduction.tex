@@ -20,34 +20,35 @@ of bacterial growth has recently undergone a renaissance. Many of the key questi
 addressed by the pioneering efforts in the middle of the last century can be
 revisited by examining them through the lens of the increasingly refined
 molecular census that is available for bacteria such as the microbial
-workhorse \textit{E. coli}. In this work, we explore an amalgamation
-of recent proteomic data sets to explore fundamental limits of bacterial growth.
+workhorse \textit{E. coli}.
+% In this work, we explore an amalgamation
+% of recent proteomic data sets to explore fundamental limits of bacterial growth.
 
-Several of the evergreen questions about bacterial growth that were
-originally raised by microbiologists in the middle of the 20th century can
-now be reframed in light of this newly available data. For example, what
-biological processes are the primary determinants for quickly bacterial
-cells can grow and reproduce? How do cells alter the absolute numbers and
-relative ratios of their molecular constituents as a function of changes in
-growth rate or nutrient availability? In this paper, we address these two
-questions from two distinct angles. First, as a result of an array of
-high-quality proteome-wide measurements of \textit{E. coli} 
-under diverse growth conditions, we have a census that allows us to explore
-how the number of key molecular players change as a function of growth rate.
-Here, we have compiled a combination of data sets collected over the past decade using either mass spectrometry
+Several of the evergreen questions about bacterial growth that were originally
+raised by microbiologists in the middle of the 20th century can now be reframed
+in light of this newly available data. For example, what biological processes
+are the primary determinants for how quickly bacterial cells can grow and
+reproduce? How do cells alter the absolute numbers and relative ratios of their
+molecular constituents as a function of changes in growth rate or nutrient
+availability? In this paper, we address these two questions from two distinct
+angles. First, as a result of an array of high-quality proteome-wide
+measurements of \textit{E. coli} under diverse growth conditions, we have a
+census that allows us to explore how the number of key molecular players change
+as a function of growth rate. Here, we have compiled a combination of data sets
+collected over the past decade using either mass spectrometry
 \citep{schmidt2016, peebo2015, valgepea2013} or ribosomal profiling
 \citep{li2014} of \textit{E. coli} across 36 unique growth rates (see Appendix
-\nameref{sec:SI_exp_summary} for further discussion of these data sets).
-Second, by compiling molecular turnover rate measurements for many of the
-fundamental processes associated with bacterial growth, we make quantitative
-estimates of key cellular processes (schematized in \FIG{categories}) to
-determine whether our current understanding of the dynamics of these processes 
-are sufficient to explain the magnitude of the observed protein copy numbers
-across conditions. The census, combined with these estimates,
-provide a window into the question of whether the rates of central processes
-such as energy generation or DNA synthesis are regulated systematically as a
-function of cell growth rate by altering protein copy number in individual
-cells.
+\nameref{sec:SI_exp_summary} for further discussion of the data). Second, by
+compiling molecular turnover rate measurements for many of the fundamental
+processes associated with bacterial growth, we make quantitative estimates of
+key cellular processes (schematized in \FIG{categories}) to determine whether
+our current understanding of the dynamics of these processes are sufficient to
+explain the magnitude of the observed protein copy numbers across conditions.
+The census, combined with these estimates, provide a window into the question of
+whether the rates of central processes such as energy generation or DNA
+synthesis are regulated systematically as a function of cell growth rate by
+altering protein copy number.
+ % in individual cells.
 
 % Throughout this paper we make a series of order-of-magnitude estimates for the copy
 % numbers and growth rate dependent expression of a variety of key
@@ -65,30 +66,38 @@ cells.
 Throughout this work, we consider an archetypal growth rate of $\approx$ 0.5
 hr$^{-1}$ corresponding to a doubling time of $\approx$ 5000 seconds, as the the
 data sets heavily sample this regime. While we formulate point estimates for the
-complex abundances at this division time, we consider how these values will vary
+protein abundances at this division time, we also consider how these values will vary
 at other growth rates due to changes in cell volume, surface area, and chromosome
 copy number \citep{taheriaraghi2015}. Broadly, we find that for the majority of
 these estimates, the protein copy numbers appear tuned for the task of cell
 doubling at a given growth rate. Thus, our understanding of the kinetics of
 myriad biological processes is sufficient to quantitatively explain the
-observed abundances of these proteins. Furthermore, the comparison between
-estimate and observation reveals at a quantitative level what key phenotypic
-variable (such as volume, surface area, and/or chromosome content) determines
-the observed dependence on growth rate.
+observed abundances of these proteins.
+% Furthermore, the comparison between
+% estimate and observation reveals at a quantitative level what key phenotypic
+% variable (such as volume, surface area, and/or chromosome content) determines
+% the observed dependence on growth rate.
+% [NB: we do not compare these different potential scalings for each process -
+% so I'm hesitent to say this]
 
-From these estimates, it emerges that translation, particularly of ribosomal
-proteins, is a plausible candidate for a molecular bottleneck for cell division.
-We reach this conclusion by considering that translation is 1) a rate limiting
-step for the \textit{fastest} bacterial division, and 2) a major determinant
-of bacterial growth across the nutrient conditions we have considered under
-steady state, exponential growth. We mathematically consider the effects of ribosome
-concentration, peptide chain elongation rate, and the regulation of ribosome
-activity through the small molecule alarmone ppGpp. Exploration of this model is
-suggestive that the long-observed correlation between growth rate and cell size
+From these estimates, it emerges that translation, particularly the synthesis of
+ribosomal proteins, is a plausible candidate that limits the rate of cell
+division. We reach this conclusion by considering that ribosome synthesis is 1)
+a rate limiting step for the \textit{fastest} bacterial division, and 2) a major
+determinant of bacterial growth across the nutrient conditions we have
+considered under steady state, exponential growth. This enables us to suggest
+that the long-observed correlation between growth rate and cell size
 \citep{schaechter1958, si2017} can be simply attributed to the increased
 absolute number of ribosomes per cell under conditions supporting extremely
-rapid growth. Our conclusions from this exploration present testable 
-hypotheses for how the observed growth rate should depend on ribosome abundance.
+rapid growth. To better understand how the observed alterations in absolute
+protein abundances, and in particular, changes in ribosome copy number,
+influence growth rate across different nutrient conditions we consider a minimal
+model of cellular growth. Our conclusions from these analyses provide important
+insight into how \textit{E. coli} optimizes growth across conditions of
+differing nutrient availability and identifies fundamental constraints in
+bacterial growth more broadly.
+
+
 
 % First, we consider potential limits on the transport
 % of nutrients into the cell. We address this hypothesis by performing an

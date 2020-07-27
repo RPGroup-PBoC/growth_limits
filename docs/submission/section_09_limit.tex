@@ -6,7 +6,7 @@ composition and absolute protein abundance to better match the growth rate
 requirements, without any one process representing a particular bottleneck. In
 our effort to identify key limitations on growth, however, there are two notable
 observations that we highlight here. The first is a recurring theme throughout
-the majority of our estimates, which is that cells can divide faster by
+the majority of our estimates, which is that [complete task in shorter time] by
 expressing more proteins. We can view this as a parallelization of each
 biosynthesis task, and this provides some basis to explain why bacteria tend to
 increase their protein content (and cell size) as they grow faster [cites]. The
@@ -142,17 +142,53 @@ rate under more moderate values of $\Phi_R$.
 
 \textit{E. coli} rarely exhibits growth rates above 2 hr$^{-1}$
 \citep{bremer2008,roller2016}, which is well-below the synthesis rate of a
-single ribosome. In \FIG{ribosome_limit}(C) we consider ribosomal generation
-from the perspective of rRNA synthesis. Here we use our rule-of-thumb of 1
-functional rRNA unit per second per operon and estimate the maximum number of
-ribosomes that could  be made as a function of growth rate (blue curve).
-Although we expect this estimate to drastically overestimate rRNA abundance at
-slower growth rates ($\lambda < 0.5\, \text{hr}^{-1}$), it provides a useful
-reference alongside the proteomic measurements. For growth rates above about 1
-hr$^{-1}$, we find that cells will need to transcribe rRNA near their maximal
-rate. As a counter example, if \textit{E. coli} did not initiate multiple rounds
-of replication, they would be unable to make enough rRNA for the observed number
-of ribosomes (dashed blue curve in \FIG{ribosome_limit}(C)). The convergence
-between the maximum rRNA production and measured ribosome copy number suggests
-rRNA synthesis may begin to present a bottleneck at the fastest growth rates due
-to the limited copies of rRNA genes.
+single ribosome. Here we consider ribosomal synthesis from the perspective of
+limiting rRNA synthesis, which will depend on the number of rRNA operons to
+transcribe rRNA.
+
+Due to multiple rounds of chromosomal replication per cell doubling, the
+effective number of rRNA operons increases with growth rate and can be estimated
+from the average number of origins per cell, $\langle$\# ori$\rangle$. This
+parameter is set by how often replication must be initiated per cell doubling in
+order to maintain steady-state growth. This can be quantified as
+\begin{equation}
+    \langle \text{\# ori} \rangle = 2^{\tau_{cyc} / \tau} = 2^{\tau_{cyc} \lambda / ln(2)},
+    \label{eq:Nori}
+\end{equation}
+where $t_{cyc}$ is the cell cycle time (referring to the time from replication
+initiation to cell division), and $\tau$ is the cell doubling time. While rRNA
+operons are predominantly located near to origin of replication, several are not
+and we describe our complete estimation of the number of rRNA operons in [ref
+appendix section].
+
+Returning to our rule-of-thumb of 1 functional rRNA unit per second per operon,
+we estimate the maximum number of ribosomes that could be made as a function of
+growth rate (\FIG{ribosome_limit}(C), blue curve). Although we expect this
+estimate to drastically overestimate rRNA abundance at slower growth rates
+($\lambda < 0.5\, \text{hr}^{-1}$), it provides a useful reference alongside the
+proteomic measurements. For growth rates above about 1 hr$^{-1}$, we find that
+cells will need to transcribe rRNA near their maximal rate. As a counter
+example, if \textit{E. coli} did not initiate multiple rounds of replication,
+they would be unable to make enough rRNA for the observed number of ribosomes
+(dashed blue curve in \FIG{ribosome_limit}(C)). The convergence between the
+maximum rRNA production and measured ribosome copy number suggests rRNA
+synthesis may begin to present a bottleneck at the fastest growth rates due to
+the still-limited copies of rRNA genes.
+
+
+% It is now well-documented that \textit{E. coli} cells add a constant volume per
+% origin of replication, which is robust to a remarkable array of cellular
+% perturbations \citep{si2017}.
+
+% To consider
+% this  in the context of the proteomic data, we used measurements of $\tau_{cyc}$
+% and  $\tau$ from \cite{si2017} (\FIG{translation_ecoli_partA}(A)) to
+% calculate $\langle$\# ori$\rangle$  with \EQ{Nori} at different growth
+% rates. For ribosomal synthesis, we find an approximately linear correlation
+% between ribosome copy number and $\langle$\# ori$\rangle$
+% (\FIG{translation_ecoli_partA}(B)).
+%
+% For a constant cell cycle time, which is observed at growth rates above about
+% 0.5 hr$^{-1}$ (\FIG{translation_ecoli_partA}(A), \citep{helmstetter1968}),
+% \EQ{Nori} states that $\langle \text{\# ori} \rangle$ will need to increase
+% exponentially with the growth rate.

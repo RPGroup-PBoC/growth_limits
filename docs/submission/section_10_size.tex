@@ -1,25 +1,32 @@
-\subsection{Rapid Growth Requires an Increase in Ribosomal Copy Number and Cell Size}
-In \FIG{ribosome_limit}(C) we find that above about 0.75 hr$^{-1}$, the growth
-rate is determined by the ribosomal mass fraction $\Phi_R$, since $f_a$ is close
-to 1, and $r_t$ is near its maximal rate [cite and refer to figure/
-supplemental]. While $\Phi_R$ will need to increase in order to grow faster, the
-fractional dependence in \EQ{translation_limit_growth_rate} gives little insight
-into how this is actually achieved in the cell.
+\subsection{Rapid Growth Requires an Increase in Both Cell Size and Ribosomal
+Mass Fraction} In \FIG{ribosome_limit}(C) we find that above about 0.75
+hr$^{-1}$, the growth rate is determined by the ribosomal mass fraction
+$\Phi_R$, since $f_a$ is close to 1, and $r_t$ is near its maximal rate [cite
+and refer to figure/ supplemental]. While $\Phi_R$ will need to increase in
+order to grow faster, the fractional dependence in
+\EQ{translation_limit_growth_rate} gives little insight into how this is
+actually achieved in the cell.
 
 It is now well-documented that \textit{E. coli} cells add a constant volume per
 origin of replication, which is robust to a remarkable array of cellular
-perturbations \citep{si2017}. To understand how this relates to growth rate, we
-neeed to consider the changes in proteome composition and ribosome abundance
-with $\langle$\# ori$\rangle$. In \FIG{translation_ecoli_partA}(D), we
-calculate the position-dependent protein expression across the chromosome by
-a running Gaussian average of protein copy number (20 kbp st. dev.
-averaging window) based on each gene's transcriptional start site. These were
-median-subtracted to account for the change in total protein abundance with
-$\langle$\# ori$\rangle$. Importantly, the major deviations in expression are
-largely restricted to regions of ribosomal protein genes. This suggests that
-$\Phi_R$ is also being tuned in proportion to $\langle$\# ori$\rangle$. It is
-through the additional dependence on $\Phi_R$ that \textit{E. coli} exhibits an
-exponential increase in cell volume with growth rate.
+perturbations \citep{si2017}. We find that ribsomal copy number also scales in
+proportion to $\langle$\# ori$\rangle$ [supp fig]. Importantly, then, it is only
+due to the increase in $\Phi_R$ at these moderate to fast growth rates that
+cells can achieve an increase in their growth rate. Indeed, we find  that the
+deviations in protein expression across the chromosome with $\langle$\#
+ori$\rangle$ are largely restricted to regions of ribosomal protein genes [supp
+fig], suggesting that $\Phi_R$ is also being tuned in proportion to $\langle$\#
+ori$\rangle$ under nutrient-limited growth. It is through this additional
+dependence on $\Phi_R$ that \textit{E. coli} exhibits an exponential increase in
+cell volume with growth rate.
+
+% To understand how this relates to growth rate, we
+% neeed to consider the changes in proteome composition and ribosome abundance
+% with $\langle$\# ori$\rangle$. In \FIG{translation_ecoli_partA}(D), we calculate
+% the position-dependent protein expression across the chromosome by a running
+% Gaussian average of protein copy number (20 kbp st. dev. averaging window) based
+% on each gene's transcriptional start site. These were median-subtracted to
+% account for the change in total protein abundance with $\langle$\# ori$\rangle$.
 
 
 % For a
@@ -27,11 +34,6 @@ exponential increase in cell volume with growth rate.
 % about 0.5 hr$^{-1}$ (\FIG{translation_ecoli_partA}(A), \citep{helmstetter1968}),
 % \EQ{Nori} states that $\langle \text{\# ori} \rangle$ will need to increase
 % exponentially with the growth rate.
-
-
-
-
-
 
 %
 %
@@ -41,7 +43,6 @@ exponential increase in cell volume with growth rate.
 % \EQ{translation_limit_growth_rate} provides an important link.
 %
 %
-
 
 
 
@@ -105,6 +106,9 @@ exponential increase in cell volume with growth rate.
 % it is through this dependence that \textit{E. coli} exhibits an exponential
 % increase in cell volume with growth rate.
 
+
+
+
 \begin{figure*}
     \begin{fullwidth}
     \centering{
@@ -124,7 +128,8 @@ exponential increase in cell volume with growth rate.
         Schematic shows the expected increase in replication forks (or number of
         ori regions) as \textit{E. coli} cells grow faster. (D) A running
         Gaussian average (20 kbp st. dev.) of protein copy number is calculated
-        for each growth condition considered by \citep{schmidt2016}. Since total
+        for each growth condition considered by \citep{schmidt2016} based
+        on each gene's transcriptional start site. Since total
         protein abundance increases with growth rate, protein copy numbers are
         median-subtracted to allow comparison between growth conditions.
         $\langle$\# ori$\rangle$ are estimated using the data in (A) and

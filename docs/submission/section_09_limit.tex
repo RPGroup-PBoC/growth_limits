@@ -1,5 +1,5 @@
 \section{Translation and Ribosomal Synthesis as a Rate-Limiting Step}
-Having now completed our circuit through key processes in growth, 
+Having now completed our circuit through key processes in growth,
 we find that our estimates have been reasonably successful in predicting
 the scale of absolute protein copy number as well as the observed dependence on
 the cellular growth rate. This suggests that cells modulate their proteomic
@@ -149,19 +149,21 @@ perspective of limiting rRNA synthesis, which as we have found earlier, will dep
 number of rRNA operons to transcribe rRNA.
 
 Due to multiple rounds of chromosomal replication per cell doubling, the
-effective number of rRNA operons increases with growth rate and can be estimated
-from the average number of origins per cell, $\langle$\# ori$\rangle$. This
+effective number of rRNA operons increases with growth rate and will
+vary in proportion to the average number of origins per cell, $\langle$\# ori$\rangle$. This
 parameter is set by how often replication must be initiated per cell doubling in
-order to maintain steady-state growth. This can be quantified as
+order to maintain steady-state growth, and quantified by
 \begin{equation}
-    \langle \text{\# ori} \rangle = 2^{\tau_{cyc} / \tau} = 2^{\tau_{cyc} \lambda / ln(2)},
+    \langle \text{\# ori} \rangle = 2^{\tau_{cyc} / \tau} = 2^{\tau_{cyc} \lambda / ln(2)}.
     \label{eq:Nori}
 \end{equation}
-where $t_{cyc}$ is the cell cycle time (referring to the time from replication
-initiation to cell division), and $\tau$ is the cell doubling time. While rRNA
-operons are predominantly located near to origin of replication, several are not
-and we describe our complete estimation of the number of rRNA operons in [ref
-appendix section].
+Here, $t_{cyc}$ is the cell cycle time (referring to the time from replication
+initiation to cell division), and $\tau$ is the cell doubling time.  We used the
+experimental measurements of $\tau_{cyc}$ and  $\tau$ from \cite{si2017}  [supp
+fig] to calculate $\langle$\# ori$\rangle$  with \EQ{Nori} as a function of
+growth rates. rRNA operons are predominantly located near to origin of
+replication, several are not and we describe our complete estimation of the
+number of rRNA operons in [ref appendix section].
 
 Returning to our rule-of-thumb of 1 functional rRNA unit per second per operon,
 we estimate the maximum number of ribosomes that could be made as a function of

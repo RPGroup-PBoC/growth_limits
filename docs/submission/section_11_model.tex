@@ -1,23 +1,23 @@
 \section{A Minimal Model of Nutrient-Mediated Growth Rate Control}
 While the preceeding subsections highlight a dominant role for ribosomes in
 setting the growth rate, our analysis on the whole emphasizes that the total
-proteomic content must change in response to variable growth conditions and
+proteomic content must also change in response to variable growth conditions and
 growth rate. In this final section we use a minimal model of growth rate control
-to better understand how this interconnection between ribosomal abundance and
-total protein influences the observed growth rates across the proteomic data.
+to better understand how the interconnection between ribosomal abundance and
+total protein influences the observed growth rate.
 
-Here we propose that cells modulate their proteomic composition in direct
-response to the availability of nutrients in the growth media. As noted earlier,
+Here we propose that cells modulate their protein abundance in direct
+response to the availability of nutrients in their environment. As noted earlier,
 bacteria can modulate ribosomal activity through the secondary-messenger
 molecules like (p)ppGpp in poorer nutrient conditions (\FIG{ribosome_limit}(C) -
-inset; \cite{dai2016}). Importantly, these molecules also cause global changes in
+inset; \cite{dai2016}). Importantly, these secondary-messengers also cause global changes in
 transcriptional and translational activity \citep{hauryliuk2015, zhu2019,
-Buke2020}. In \textit{E. coli}, amino acid starvation causes the accumulation of
-de-acylated tRNAs at the ribosome's A-site and leads to a strong increase in
+Buke2020}. In \textit{E. coli}, amino acid starvation leads to the accumulation of
+de-acylated tRNAs at the ribosome's A-site and a strong increase in
 (p)ppGpp synthesis activity by the enzyme RelA \citep{hauryliuk2015}. There is
-also increasing evidence that (p)ppGpp can inhibit the initiation of DNA
+also increasing evidence that (p)ppGpp inhibits the initiation of DNA
 replication \citep{kraemer2019}, resulting in a lower $\langle$\# ori$\rangle$
-per cell in poorer growth conditions \citep{fernandezcoll2020}.
+ and smaller cell size in poorer growth conditions \citep{fernandezcoll2020}.
 
 
 %
@@ -49,9 +49,9 @@ per cell in poorer growth conditions \citep{fernandezcoll2020}.
 %  and for simplicity, do not explicitly model changes in  $\langle$\#
 % ori$\rangle$ or regulation by (p)ppGpp.
 
-To impose this quantitatively, we assume that cells modulate their proteome
+To consider this quantitatively, we assume that cells modulate their proteome
 ($N_\text{pep}$, $R$, $\Phi_R$) to better maximize their rate of peptide
-elongation $r_t$.  Here, $r_t$ will depend on how quickly the ribosomes can
+elongation $r_t$. Here, $r_t$ will depend on how quickly the ribosomes can
 match codons with their correct amino-acyl tRNA, along with the subsequent steps
 of peptide bond formation and translocation. This ultimately depends on the
 cellular concentration amino acids, which we treat as a single effective
@@ -61,7 +61,7 @@ amino acids (and, therefore, also amino-acyl tRNAs), through a parameter
 $r_{AA}$ in units of AA per second, and the rate of amino acid consumption by
 protein synthesis ($r_t \times R \times f_a$). This is shown schematically in
 \FIG{elongation_rate_model}(A) and derived in Appendix XX. Given our observation
-that protein synthesis on the whole and energy production are not limiting, we
+that protein synthesis on the whole and energy production are not limited, we
 assume that other molecular players required by ribosomes like elongation
 factors and GTP are in sufficient abundance.
 

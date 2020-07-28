@@ -1,8 +1,8 @@
 \section{Translation and Ribosomal Synthesis as a Rate-Limiting Step}
-Having now completed our circuit through key processes in growth,
-we find that our estimates have been reasonably successful in predicting
+Having now completed our circuit through key processes of cellular growth,
+we find that on the whole our estimates have been reasonably successful in predicting
 the scale of absolute protein copy number as well as the observed dependence on
-the cellular growth rate. This suggests that cells modulate their proteomic
+the growth rate. This suggests that cells modulate their proteomic
 composition and absolute protein abundance to better match their growth rate
 requirements, without any one process representing a particular bottleneck. In
 our effort to identify key limitations on growth, however, there are two notable
@@ -20,7 +20,7 @@ deals with this constraint through control its ribosome copy number and
 proteomic composition.  We then use a minimal model of growth rate control to
 gain insight into how the observed changes in proteomic composition and absolute
 abundance enable cells to better maximize their growth rate across different
-growth conditions.
+nutrient conditions.
 
 % \subsection{Translation and Ribosomal Synthesis as a Rate-Limiting Step}
 %Thus far, the general back-of-the-envelope estimates have been reasonably
@@ -90,7 +90,7 @@ in the data from \cite{peebo2015, valgepea2013}, where cells appear to grow
 substantially slower given their estimated ribosomal fraction. We have
 also collected a number of recent measurements of ribosomal fraction and
 find them most consistent with the measurements from \cite{li2014,
-schmidt2016} [supp fig].
+schmidt2016} (\FIGSUPP[ribosome_limit]{ribosome_limit_supp}).
 
 The growth rate defined by \EQ{translation_limit_growth_rate} reflects
 mass-balance under steady state growth and has long provided a rationalization
@@ -136,6 +136,26 @@ rate under more moderate values of $\Phi_R$.
         number of functional rRNA units produced from a single chromosomal
         initiation per cell cycle. }
         \label{fig:ribosome_limit}
+
+
+        \figsupp[Comparison of $\Phi_R f_a$ with literature and estimation of $\langle$\# ori$\rangle$.]{(A) Actively translating ribosomal fraction versus growth rate.
+        The actively translating ribosomal fraction is calculated using the
+        estimated values of $f_a$ from  \cite{dai2016} (shown in inset; see
+        Appendix \nameref{sec:SI_f_a} for additional detail). Additional measurements
+        in addition to the proteomic measurements are based on measurements of cellular RNA to
+        protein ratio, with $\Phi_R \approx$ the cellular RNA to
+        protein ratio divided by 2.1 \citep{dai2016}. (B) Experimental measurements of
+        the cell doubling time $\tau$ and cell cycle time $t_{cyc}$
+         from Si \textit{et al.}
+        (2017). Dashed line shows fit to the data, which were used to estimate
+        $\langle$\# ori$\rangle$. $t_{cyc}$ was assumed to vary in proportion to
+        $\tau$ for doubling times greater than 40 minutes, and reach a
+        minimum value of 73 minutes. See Appendix
+        \nameref{sec:SI_ori} for additional details exact estimation of rRNA copy number. Red data points correspond
+        to measurements in strain MG1655, while light green points are for
+        strain NCM3722.
+        Schematic shows the expected increase in replication forks (or number of
+        ori regions) as \textit{E. coli} cells grow faster. }{\includegraphics{main_figs/fig7_ribosome_as_limit_Supp.pdf}}\label{figsupp:ribosome_limit_supp}
         }
   \end{fullwidth}
 \end{figure}
@@ -161,9 +181,9 @@ Here, $t_{cyc}$ is the cell cycle time (referring to the time from replication
 initiation to cell division), and $\tau$ is the cell doubling time.  We used the
 experimental measurements of $\tau_{cyc}$ and  $\tau$ from \cite{si2017}  [supp
 fig] to calculate $\langle$\# ori$\rangle$  with \EQ{Nori} as a function of
-growth rates. rRNA operons are predominantly located near to origin of
-replication, several are not and we describe our complete estimation of the
-number of rRNA operons in [ref appendix section].
+growth rates. While rRNA operons are predominantly located near to origin of
+replication, 2 of the 7 operons are not (BNID: 100352) and we describe our complete estimation of the
+number of rRNA operons in Appendix [ref appendix section].
 
 Returning to our rule-of-thumb of 1 functional rRNA unit per second per operon,
 we estimate the maximum number of ribosomes that could be made as a function of

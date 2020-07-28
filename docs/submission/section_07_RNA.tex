@@ -1,5 +1,6 @@
 \subsection{RNA Synthesis}\label{sec:RNA_synthesis}
-With the machinery governing the replication of the genome accounted for, we
+% With the machinery governing the replication of the genome accounted for,
+We
 now turn our attention to the next stage of the central dogma -- the
 transcription of DNA to form RNA. We consider three major groupings
 of RNA, namely the RNA associated with ribosomes (rRNA), the RNA encoding the
@@ -10,39 +11,45 @@ rRNA serves as the catalytic and structural
 framework along with myriad ribosomal proteins as part of a complete ribosomal complex.
 Each ribosome contains three rRNA molecules of lengths 120, 1542,
 and 2904 nucleotides (BNID: 108093), meaning each ribosome
-contains $\approx$ 4500 nucleotides overall. As the \textit{E. coli} RNA polymerase
-transcribes DNA to RNA at a rate of $\approx$ 40 nucleotides per second
-(BNID: 101904), it takes a single RNA polymerase
-$\approx$ 100 s to synthesize the RNA needed to form a single functional ribosome.
+contains $\approx$ 4500 nucleotides overall.
+% Since RNA polymerase
+% transcribes DNA to RNA at a rate of $\approx$ 40 nucleotides per second
+% (BNID: 101904), it takes a single RNA polymerase
+% $\approx$ 100 s to synthesize the RNA needed to form a single functional ribosome.
 % Therefore, in a 5000 s division time, a single RNA polymerase transcribing
 % rRNA at a time would result in only $\approx$ 50 functional ribosomal rRNA
 % units -- far below the observed number of $\approx 10^4$ ribosomes per cell.
 % Of course, there can be more than one RNA polymerase transcribing the rRNA genes
 % at any given time.
-Rather than rely on an estimate for the number of ribosomes needed per cell
-(an estimate we consider in depth towards the end of this work), we will aim
-to elucidate the \textit{maximum} number of rRNA units that can
-be synthesized given the 7 copies of the rRNA genes present on the \textit{E.
-coli} chromosome (BNID: 100352). To do so, we will imagine that each rRNA operon is completely
-tiled with RNA polymerase. 
+% Rather than rely on an estimate for the number of ribosomes needed per cell
+% (an estimate we consider in depth towards the end of this work), we will aim
+% to elucidate the \textit{maximum} number of rRNA units that can
+% be synthesized given the 7 copies of the rRNA genes present on the \textit{E.
+% coli} chromosome (BNID: 100352). To do so, we will imagine that each rRNA operon is completely
+% tiled with RNA polymerase.
 \textit{In vivo} measurements of the kinetics of rRNA transcription have revealed that
 RNA polymerases are loaded onto the promoter of an rRNA gene at a rate of
 $\approx$ 1 per second (BNID: 111997, 102362). If RNA
 polymerases are constantly loaded at this rate,
 then we can assume that $\approx$ 1 functional rRNA unit is
 synthesized per second per rRNA operon. While \textit{E. coli} possesses 7
-of these operons per chromosome (5 of which are located closely to the origin of
-replication), the fact that chromosome
+of these operons per chromosome,
+% (5 of which are located closely to the origin of
+% replication; BNID: 100352),
+the fact that chromosome
 replication can be parallelized means that the average dosage of rRNA genes can
-be in the range of 10 to 70 copies per cell at fast growth rates. At a growth
-rate of $\approx$ 0.5 hr$^{-1}$, the average cell has $\approx$ 1 copy of its
+be substantially higher at fast growth rates.
+% in the range of 10 to 70 copies per cell at fast growth rates.
+At a growth
+rate of $\approx$ 0.5 hr$^{-1}$, however, the average cell has $\approx$ 1 copy of its
 chromosome and therefore approximately $\approx$ 7 copies of the rRNA operons,
-therefore producing $\approx$ 7 rRNA units per second. 
-At fast growth rates, this can be
-further increased as multiple copies of the chromosome will be present per cell,
-yielding large rRNA gene dosages between 10 and 70 copies per cell.
-With a 5000 second division time, this means the cell is able to generate around 3 $\times$ 10$^4$ functional rRNA units,
-comparable within an order of magnitude to the number of ribosomes per cell.
+therefore producing $\approx$ 7 rRNA units per second.
+% At fast growth rates, this can be
+% further increased as multiple copies of the chromosome will be present per cell,
+% yielding large rRNA gene dosages between 10 and 70 copies per cell.
+With a 5000 second division time, this means the cell is able to generate around
+3 $\times$ 10$^4$ functional rRNA units, comparable within an order of magnitude
+to the number of ribosomes per cell.
 
 
 % With a 5000 second division time, this hypothesis
@@ -61,46 +68,51 @@ comparable within an order of magnitude to the number of ribosomes per cell.
 %rRNA unit per second per rRNA operon, a total of $5 \times 10^4$ rRNA units can
 %be synthesized, comfortably above the observed number of ribosomes per cell.
 
-How many RNA polymerases are then needed to constantly transcribe 7 copies of
-the rRNA genes? If one polymerase is loaded per second, and the transcription
-rate is $\approx$ 40 nucleotides per second, then the the typical spacing
-between polymerases will be $\approx$ 40 nucleotides. However, we must note that
-the polymerase itself has a footprint of $\approx$ 40 nucleotides (BNID: 107873), meaning that
-one could expect to find one RNA polymerase per 80 nucleotide stretch of an rRNA
-gene.  With a total length of
-$\approx$ 4500 nucleotides per operon and 7 operons per cell, the maximum
-number of RNA polymerases that can be transcribing rRNA at any given time is then
-$\approx$ 500 per cell.
+How many RNA polymerases are then needed to constantly transcribe the required rRNA?
+% 7 copies of the rRNA genes?
+If one polymerase is loaded per second, and the transcription rate is $\approx$
+40 nucleotides per second, then the the typical spacing between polymerases will
+be $\approx$ 40 nucleotides. However, we must note that the polymerase itself
+has a footprint of $\approx$ 40 nucleotides (BNID: 107873), meaning that one
+could expect to find one RNA polymerase per 80 nucleotide stretch of an rRNA
+gene.  With a total length of $\approx$ 4500 nucleotides per operon and 7
+operons per cell, the number of RNA polymerases transcribing rRNA at any given
+time is then $\approx$ 500 per cell.
 
-The synthesis of rRNA demands the majority share of the required RNA polymerase
-per cell. As outlined in \FIG{RNA_synthesis}, and discussed further the Appendix
+% The synthesis of rRNA demands the major share of RNA polymerase
+% per cell.
+As outlined in \FIG{RNA_synthesis}, and discussed further the Appendix
 \nameref{sec:SI_central_dogma}, synthesis of mRNA and tRNA together require on
 the order of $\approx$ 400 RNAP. Thus, in total, one would expect the typical
 cell to require $\approx$ 1000 RNAP to satisfy its transcriptional demands.
 As is revealed in \FIG{RNA_synthesis}(B), this estimate is about an order of magnitude below the
 observed number of RNA polymerase complexes per cell ($\approx$ 5000 - 7000).
 The difference between the estimated number of RNA polymerase needed for
-transcription and and these observations are consistent with recent literature
+transcription and these observations, however, are consistent with recent literature
 revealing that $\approx$ 80 \% of RNA polymerases in \textit{E. coli} are not
-transcriptionally active \citep{patrick2015}. 
+transcriptionally active \citep{patrick2015}.
 
-Our estimate neglects other mechanitic features of transcription and
+Our estimates also neglect other mechanistic features of transcription and
 transcriptional initiation more broadly. For example, we acknowledge that some
-fraction of the RNAP pool is nonspecifically bound to DNA searching for a
-promoter from which to begin transcription. Furthermore, we ignore 
-the obstacles that RNA polymerase and DNA polymerase present for each other at
-they move along the DNA \citep{finkelstein2013}. Finally, we neglect the fact
-that, while they are the machinery for transcription, RNA polymerase is not
-sufficient to initiate transcription. Promoter recognition and initiation of
-transcription is dependent on the presence of $\sigma$-factors, proteinaceous
-cofactors which bind directly to the polymerase \citep{browning2016}. In
-\FIGSUPP[RNA_synthesis]{sigma_70}, we show that the predicted RNA polymerase
-copy number is more comparable wit the abundance of $\sigma$-70 (RpoD), the
-primary sigma factor in \textit{E. coli}. There remains more to be investigated as  to what sets the observed abundance of
-RNA polymerase in these proteomic data sets.
+fraction of the RNAP pool is nonspecifically bound to DNA during its search for
+promoters from which to begin transcription. Furthermore, we ignore the
+obstacles that RNA polymerase and DNA polymerase present to each other as they
+move along the DNA \citep{finkelstein2013}. Finally, we neglect the fact that
+RNA polymerase also require $\sigma$-factors for promoter recognition and
+transcription initiation \citep{browning2016}.
+% , while they
+% are the machinery for transcription, RNA polymerase is not sufficient to
+% initiate transcription. Promoter recognition and initiation of transcription is
+% dependent on the presence of $\sigma$-factors, proteinaceous cofactors which
+% bind directly to the polymerase \citep{browning2016}.
+In \FIGSUPP[RNA_synthesis]{sigma_70}, we show that the predicted RNA polymerase
+copy number indeed is more comparable with the abundance of $\sigma$-70 (RpoD), the
+primary sigma factor in \textit{E. coli}. There therefore remains more to be investigated
+as to what sets the observed abundance of RNA polymerase in these proteomic
+data sets.
 
 %. However, we conclude that our
-%the observed excess in abundance for RNA polymerase 
+%the observed excess in abundance for RNA polymerase
 %abundances are generally in excess of what appears to be needed for growth, suggesting
 %that the abundance of RNA polymerase itself is not particularly limiting.
 

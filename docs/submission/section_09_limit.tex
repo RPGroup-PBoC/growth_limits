@@ -90,7 +90,7 @@ in the data from \cite{peebo2015, valgepea2013}, where cells appear to grow
 substantially slower given their estimated ribosomal fraction. We have
 also collected a number of recent measurements of ribosomal fraction and
 find them most consistent with the measurements from \cite{li2014,
-schmidt2016} (\FIGSUPP[ribosome_limit]{ribosome_limit_supp}).
+schmidt2016} (\FIGSUPP[ribosome_limit]{ribosome_limit_supp}(A)).
 
 The growth rate defined by \EQ{translation_limit_growth_rate} reflects
 mass-balance under steady state growth and has long provided a rationalization
@@ -169,21 +169,25 @@ perspective of limiting rRNA synthesis, which as we have found earlier, will dep
 number of rRNA operons to transcribe rRNA.
 
 Due to multiple rounds of chromosomal replication per cell doubling, the
-effective number of rRNA operons increases with growth rate and will
-vary in proportion to the average number of origins per cell, $\langle$\# ori$\rangle$. This
-parameter is set by how often replication must be initiated per cell doubling in
-order to maintain steady state growth, and quantified by
+effective number of rRNA operons increases with growth rate and will vary in
+proportion to the average number of origins per cell, $\langle$\# ori$\rangle$.
+This parameter is set by how often replication must be initiated per cell
+doubling in order to maintain steady state growth, and quantified by
 \begin{equation}
     \langle \text{\# ori} \rangle = 2^{\tau_{cyc} / \tau} = 2^{\tau_{cyc} \lambda / ln(2)}.
     \label{eq:Nori}
 \end{equation}
 Here, $t_{cyc}$ is the cell cycle time (referring to the time from replication
 initiation to cell division), and $\tau$ is the cell doubling time.  We used the
-experimental measurements of $\tau_{cyc}$ and  $\tau$ from \cite{si2017}  [supp
-fig] to calculate $\langle$\# ori$\rangle$  with \EQ{Nori} as a function of
-growth rates. While rRNA operons are predominantly located near to origin of
-replication, 2 of the 7 operons are not (BNID: 100352) and we describe our complete estimation of the
-number of rRNA operons in Appendix [ref appendix section].
+experimental measurements of $\tau_{cyc}$ and  $\tau$ from \cite{si2017}
+(\FIGSUPP[ribosome_limit]{ribosome_limit_supp}(B)) to calculate $\langle$\#
+ori$\rangle$  with \EQ{Nori} as a function of growth rates. For growth rates
+above about 0.5 hr$^{-1}$, $t_{cyc}$ is approximately  constant at about 70
+minutes, which means that $\langle$\# ori$\rangle$ will  grow exponentially with
+growth rate. While rRNA operons are predominantly located near to origin of
+replication, 2 of the 7 operons are not (BNID: 100352) and we describe our
+complete estimation of the number of rRNA operons in Appendix [ref appendix
+section].
 
 Returning to our rule-of-thumb of 1 functional rRNA unit per second per operon,
 we estimate the maximum number of ribosomes that could be made as a function of

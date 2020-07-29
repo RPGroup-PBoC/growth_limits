@@ -80,41 +80,43 @@ attention over the past half century \citep{neidhardt1991,
 taymaz-nikerel2010, heldal1985, bauer1976}, providing us with a starting
 point for estimating how many atoms of each element must be scavenged from
 the environment. A synthesis of these studies presents an approximate dry mass
-composition of $\approx$ 45\% carbon (BNID: 100649, see \BOX{estimate_rules}), $\approx$ 15\% nitrogen (BNID: 106666),
+composition of $\approx$ 50\% carbon (BNID: 100649, see \BOX{estimate_rules}), $\approx$ 15\% nitrogen (BNID: 106666),
 $\approx$ 3\% phosphorus (BNID: 100653), and 1\% sulfur (BNID: 100655) with
-remainder being attributable to oxygen, hydrogen, and various metals.
+remainder being attributable to oxygen, hydrogen, and various transition metals.
 We use this stoichiometric breakdown to estimate the abundance and growth
 rate dependence of a variety of transporters responsible for carbon uptake,
 and provide more extensive investigation of the other critical elements --
 phosphorus, sulfur, and nitrogen -- in the Appendix \nameref{sec:SI_nutr_trans}.
 
-Using $\approx$ 0.3 pg as the typical \textit{E. coli} dry mass (BNID: 103904)
-at a growth rate of $\approx$ 0.5 hr$^{-1}$, coupled with an approximation that
-$\approx$ 50\% of this is carbon, we estimate that $\sim 10^{10}$ carbon atoms must be
+Using $\approx$ 0.3 pg as the typical \textit{E. coli} dry mass 
+at a growth rate of $\approx$ 0.5 hr$^{-1}$ (BNID: 103904), coupled with an approximation that
+$\approx$ 50\% of this mass is carbon, we estimate that $\sim 10^{10}$ carbon atoms must be
 brought into the cell in order to double all of the carbon-containing molecules
-(\FIG{carbon_tport}(A, top)). Typical laboratory growth conditions provide
+(\FIG{carbon_tport}(A), top). Typical laboratory growth conditions provide
 carbon as a single class of sugar (such as glucose, galactose, or xylose) often
-transported cross the cell membrane by a specific transporter. One such mechanism of transport is via
+transported cross the cell membrane by a transporter complex specific to that
+particular sugar. One such mechanism of transport is via
 the PTS system which is a highly modular system capable of transporting a
-diverse range of sugars \citep{escalante2012}. The glucose-specific component of
+diverse range of sugars with high specificity \citep{escalante2012}. The glucose-specific component of
 this system transports $\approx$ 200 glucose molecules ($\approx$ 1200 carbon
 atoms) per second per transporter (BNID: 114686). Making the assumption that this is a typical sugar
-transport rate, coupled with the need to transport $\sim 10^{10}$ carbon atoms,
-we then expect on the order of $\approx$ 1000 transporters must be expressed in order to
-bring in enough carbon atoms (\FIG{carbon_tport}(A), top). 
+transport rate for the PTS system, coupled with the need to transport $\sim 10^{10}$ carbon atoms,
+we then expect on the order of $\approx$ 1000 transporters must be expressed per
+cell in order to bring in enough carbon atoms (\FIG{carbon_tport}(A), top). 
 
-Experimental measurements exceed the
-estimate by several fold (\FIG{carbon_tport}(A), bottom), implying that the cell is capable of transporting
-more carbon atoms than needed. While we estimate $\approx$ 1000 transporters
-are needed with a 5000 s division time, we can abstract this calculation to
-consider any particular growth rate given knowledge of the cell density and
-volume as a function of growth rate and direct the reader to the Appendix
-\nameref{sec:SI_continuum_est} for more information. This abstraction, shown as
-a grey line in \FIG{carbon_tport}(A), reveals an excess of transporters even at
-faster growth rates. This contrasts with our observations for uptake of
-phosphorus and sulfur, which align well with our expectations across different
-growth conditions (\FIGSUPP[carbon_tport]{phospho_sulfo} and discussed further
-in Appendix \nameref{sec:SI_nutr_trans})
+However, we find this estimate to be exceeded by several fold by experimental
+measurements (\FIG{carbon_tport}(A), bottom), implying that the cell is
+capable of transporting more carbon atoms than strictly needed for
+biosynthesis. While we estimate $\approx$ 1000 transporters are needed with a
+5000 second division time, we can abstract this calculation to consider any
+particular growth rate given knowledge of the cell density and volume as a
+function of growth rate and direct the reader to the Appendix
+\nameref{sec:SI_continuum_est} for more information. This abstraction, shown
+as a grey line in \FIG{carbon_tport}(A), reveals an excess of transporters
+even at faster growth rates. This contrasts with our observations for uptake
+of phosphorus and sulfur, which align well with our expectations across
+different growth conditions (\FIGSUPP[carbon_tport]{phospho_sulfo} and
+discussed further in Appendix \nameref{sec:SI_nutr_trans}).
 
 \begin{figure}
     \begin{fullwidth}
@@ -156,9 +158,8 @@ in Appendix \nameref{sec:SI_nutr_trans})
 \end{figure}
 
 It is important to note, however, that this estimate neglects any specifics of the
-regulation of the carbon transport system and the data shows how many
-carbohydrate transporters are present on average. Using the diverse array of
-growth conditions available in the data, we also explore how individual carbon
+regulation of the carbon transport system. Using the diverse array of
+growth conditions available in the data, we can explore how individual carbon
 transport systems depend on specific carbon availability. In
 \FIG{carbon_tport}(B), we show the total number of carbohydrate transporters
 specific to different carbon sources. A striking observation, shown in the
@@ -173,22 +174,24 @@ growth condition, which is known to be the preferential carbon source
 \citep{monod1947, liu2005a, aidelberg2014}.
 
 Many metabolic operons are regulated with dual-input logic gates that are
-only expressed when glucose concentrations are low and the concentration of other carbon sources are
-elevated \citep{gama-castro2016, zhang2014a, gama-castro2016, belliveau2018,
-ireland2020}. Points colored in red in \FIG{carbon_tport}(B) (labeled by red
-text-boxes) correspond to growth conditions in which the specific carbon
-source (glycerol, xylose, or fructose) is present. The grey lines in
+only expressed when glucose concentrations are low and the concentration of
+other carbon sources are elevated \citep{gama-castro2016, zhang2014a,
+gama-castro2016, belliveau2018, ireland2020}. Points colored in red in
+\FIG{carbon_tport}(B) (labeled by red text-boxes) correspond to growth
+conditions in which the specific carbon source (glycerol, xylose, or
+fructose) is present as the sole source of carbon. The grey lines in
 \FIG{carbon_tport}(B) show the estimated number of transporters needed at
 each growth rate to satisfy the cellular carbon requirement, adjusted for the
-specific carbon source in terms of number of carbon atoms per molecule and the
-rate of transport for the particular transporter species. These plots show that, in the absence of the
-particular carbon source, expression of the transporters is maintained on the
-order of $\sim 10^2$ per cell. The low but non-zero abundances may reflect
-the specific regulatory logic involved, requiring that cells are able to
-transport some minimal amount of an alternative carbon source in order to
-induce expression of these alternative carbon-source systems.
+specific carbon source in terms of number of carbon atoms per molecule and
+the rate of transport for the particular transporter species. These plots
+show that, in the absence of the particular carbon source, expression of the
+transporters is maintained on the order of $\sim 10^2$ per cell. The low but
+non-zero abundances may reflect the specific regulatory logic involved,
+requiring that cells are able to transport some minimal amount of an
+alternative carbon source in order to induce expression of these alternative
+carbon-source systems.
 
-\subsubsection{Limits on Transporter Expression}
+\subsection{Limits on Transporter Expression}
 If acquisition of nutrients was a limiting process in cell division under the
 typical growth conditions explored here, the growth rate could be theoretically
 increased simply by expressing more transporters, but is this feasible at a
@@ -197,7 +200,7 @@ amount of space in the bacterial membrane that could be occupied by nutrient
 transporters. Considering a rule-of-thumb for the surface area of \textit{E.
 coli} of about 5 \textmu m$^2$ (BNID: 101792), we expect an areal density for
 1000 transporters to be approximately 200 transporters/ \textmu m$^2$. For a
-typical transporter occupying about 50 nm$^2$/dimer, this amounts to about only
+typical transporter occupying about 50 nm$^2$, this amounts to about only
 $\approx$ 1\% of the total inner membrane area \citep{szenk2017}. Additionally,
 bacterial cell membranes typically have densities of 10$^5$ proteins/\textmu
 m$^2$ \citep{phillips2018}, implying that the cell could accommodate more

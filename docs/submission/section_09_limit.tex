@@ -1,43 +1,5 @@
-% \section{Translation and Ribosomal Synthesis as a Rate-Limiting Step}
-% Having now completed our circuit through key processes of cellular growth,
-% we find that on the whole our estimates have been reasonably successful in predicting
-% the scale of absolute protein copy number as well as the observed dependence on
-% the growth rate. This suggests that cells modulate their proteomic
-% composition and absolute protein abundance to better match their growth rate
-% requirements, without any one process representing a particular bottleneck. In
-% our effort to identify key limitations on growth, however, there are two notable
-% observations that we highlight here. The first is a recurring theme throughout
-% our estimates, which is that any inherent biochemical rate limitation can be
-% overcome by expressing more proteins. We can view this as a parallelization of
-% each biosynthesis task, and helps explain why bacteria
-% tend to increase their protein content (and cell size) as they grow faster
-% \citep{ojkic2019}. The second is that the synthesis of ribosomal proteins presents a
-% special case where parallelization is not possible (\FIG{ribosome_limit}(A)),
-% suggesting the possibility that it may represent a rate-limiting step in
-% maximizing growth rate. In the remaining sections we show how ribosome synthesis
-% indeed limits the achievable growth rate, and we consider how \textit{E. coli}
-% deals with this constraint through control its ribosome copy number and
-% proteomic composition. This culminates in a minimal model of growth rate control
-% which we mathematize and use
-% to gain insight into how the observed changes in proteomic composition and absolute
-% abundance enable cells to better optimize their growth rate across different
-% nutrient conditions.
-
-% \subsection{Translation and Ribosomal Synthesis as a Rate-Limiting Step}
-%Thus far, the general back-of-the-envelope estimates have been reasonably
-%successful in predicting the scale of absolute protein copy number as well as
-%their observed dependence on the cellular growth rate. A recurring theme across
-%these varied biological processes is the ability of cells to  parallelize tasks
-%through the expression of additional proteins.  Even when that is not possible,
-%like in chromosomal replication which  requires a minimum of $\approx$ 40
-%minutes, \textit{E. coli} and many other bacteria surpass this limit by
-%initiating additional rounds of replication per doubling as we have noted. However, the synthesis
-%of ribosomal proteins presents a special case where parallelization is not
-%possible and must be doubled in quantity on average with every cell division
-%(\FIG{ribosome_limit}(A)).
-
 \subsection{Maximum Growth Rate is Determined by the Ribosomal Mass Fraction}
-To begin to gain some intuition into how ribosomal synthesis influences
+To  gain some intuition into how ribosomal synthesis influences
 bacterial growth, we again consider the total number of peptide bonds that must
 be synthesized, which we denote as $N_\text{pep}$. With cells growing exponentially in time
 \citep{godin2010}, the rate of cellular growth will be related to the rate of protein synthesis by
@@ -45,24 +7,18 @@ be synthesized, which we denote as $N_\text{pep}$. With cells growing exponentia
     N_\text{pep} \lambda = r_t R f_a,
     \label{eq:mass_balance}
 \end{equation}
-where $\lambda$ is the cell growth rate in s$^{-1}$, $r_t$ is the maximum
-elongation rate in AA$\cdot$s$^{-1}$, and $R$ is the average ribosome copy
-number per cell. The addition factor $f_a$ refers to the fraction of actively
-translating ribosomes, and allows us to account for the possibility of
+where $\lambda$ is the cell growth rate,  $r_t$ is the maximum
+elongation rate in AA per second, and $R$ is the average ribosome copy
+number per cell. The multiplicative factor $f_a$ refers to the fraction of
+ribosomes actively translating, and allows us to account for the possibility of
 nonfunctional, immature ribosomes or active sequestration of ribosomes, mediated
-by the secondary-messenger molecule alarmones, guanosine pentaphosphate
+by the secondary-messenger molecule alarmones, such as guanosine pentaphosphate
 [(p)ppGpp] at slow growth \citep{dennis2004, dai2016}.
-% Knowing the number of
-% peptide bonds formed per cell permits us to compute the translation-limited growth
-% rate as
-% \begin{equation}
-% \lambda_\text{translation-limited} = \frac{r_t R f_a}{N_\text{pep}}.
-% \label{eq:lambda_limit}
-% \end{equation}
 
-Alternatively, since we are most interested in the role of ribsomal synthesis on
-growth rate, we instead consider this in terms of the ribosomal mass fraction, denoted by $\Phi_R$. $N_\text{pep}$ is related to the total protein mass
-through the molecular weight of each protein, we can also consider the growth
+Rather than speaking in terms of absolute ribosome abundance, we can account for
+the ribosome content as was defined by \cite{scott2010} as the mass of fraction
+of the proteome occupied by ribosomes $\Phi_R$. Similarly, as $N_\text{pep}$ is related to
+the total protein mass through the molecular weight of each protein, we can also consider the growth
 rate in terms of the fraction of the total proteome mass dedicated to ribosomal
 proteins. By making the approximation that an average amino acid has a molecular
 weight of 110 Da (BNID: 104877), the total protein mass $m_\text{protein}$ is
@@ -73,7 +29,7 @@ reflects the summed molecular weight of all ribosomal subunits.  This allows us
 to approximate  $R / N_\text{pep} \approx \Phi_R / L_R$,  where $\Phi_R$ is the
 ribosomal mass fraction $m_\text{protein}/m_R$, and $L_R$ the ratio of 800 kDa /
 110 Da per amino acid or, alternatively, the total length in amino acids that
-make up a ribosome. The translation-limited growth rate can then be written in
+make up a ribosome. Under this parameterization, the translation-limited growth rate can then be written in
 the form
 \begin{equation}
 \lambda_{\textrm{translation-limited}} \approx \frac{r_t}{L_R}  \Phi_R f_a.
@@ -82,11 +38,12 @@ the form
 This is plotted as a function of the ribosomal fraction $\Phi_R$ in the top panel of
 \FIG{ribosome_limit}(A), where we take $L_R \approx$ 7500 AA, corresponding to
 the length in amino acids for all ribosomal subunits of the 50S and 30S complex
-(BNID: 101175), and $f_a$ = 1. To allow us to consider the proteomic data,
-we use recent measurements of $f_a$ from \cite{dai2016} to estimate the active
+(BNID: 101175), and $f_a$ = 1. To compare this relationship to the proteomic
+data, we make use of recent measurements of $f_a$ from \cite{dai2016}
+(\FIG{ribosome_limit}(A), bottom inset) to estimate the active
 fraction of ribosomal protein across each proteomic data set
-(\FIG{ribosome_limit}(A), bottom; values for $f_a$ are shown in inset). We find that cells in general appear to
-skirt this limit in growth rate as nutrient conditions vary. There is a notable discrepency
+(\FIG{ribosome_limit}(A), colored points, bottom). In general, the data appear to
+skirt this limit in growth rate as nutrient conditions vary. There is a notable discrepancy
 in the data from \cite{peebo2015, valgepea2013}, where cells appear to grow
 substantially slower given their estimated ribosomal fraction. Here we have
 also collected a number of recent non-proteomic measurements of ribosomal fraction and

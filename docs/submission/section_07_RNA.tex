@@ -1,7 +1,5 @@
 \subsection{RNA Synthesis}\label{sec:RNA_synthesis}
-% With the machinery governing the replication of the genome accounted for,
-We
-now turn our attention to the next stage of the central dogma -- the
+We now turn our attention to the next stage of the central dogma -- the
 transcription of DNA to form RNA. We consider three major groupings
 of RNA, namely the RNA associated with ribosomes (rRNA), the RNA encoding the
 amino-acid sequence of proteins (mRNA), and the RNA which links codon
@@ -12,6 +10,7 @@ framework along with myriad ribosomal proteins as part of a complete ribosomal c
 Each ribosome contains three rRNA molecules of lengths 120, 1542,
 and 2904 nucleotides (BNID: 108093), meaning each ribosome
 contains $\approx$ 4500 nucleotides overall.
+
 % Since RNA polymerase
 % transcribes DNA to RNA at a rate of $\approx$ 40 nucleotides per second
 % (BNID: 101904), it takes a single RNA polymerase
@@ -69,9 +68,8 @@ to the number of ribosomes per cell.
 %be synthesized, comfortably above the observed number of ribosomes per cell.
 
 How many RNA polymerases are then needed to constantly transcribe the required rRNA?
-% 7 copies of the rRNA genes?
 If one polymerase is loaded per second, and the transcription rate is $\approx$
-40 nucleotides per second, then the the typical spacing between polymerases will
+40 nucleotides per second (BNID: 101094), then the the typical spacing between polymerases will
 be $\approx$ 40 nucleotides. However, we must note that the polymerase itself
 has a footprint of $\approx$ 40 nucleotides (BNID: 107873), meaning that one
 could expect to find one RNA polymerase per 80 nucleotide stretch of an rRNA
@@ -79,8 +77,6 @@ gene.  With a total length of $\approx$ 4500 nucleotides per operon and 7
 operons per cell, the number of RNA polymerases transcribing rRNA at any given
 time is then $\approx$ 500 per cell.
 
-% The synthesis of rRNA demands the major share of RNA polymerase
-% per cell.
 As outlined in \FIG{RNA_synthesis}, and discussed further the Appendix
 \nameref{sec:SI_central_dogma}, synthesis of mRNA and tRNA together require on
 the order of $\approx$ 400 RNAP. Thus, in total, one would expect the typical
@@ -100,48 +96,19 @@ obstacles that RNA polymerase and DNA polymerase present to each other as they
 move along the DNA \citep{finkelstein2013}. Finally, we neglect the fact that
 RNA polymerase also require $\sigma$-factors for promoter recognition and
 transcription initiation \citep{browning2016}.
-% , while they
-% are the machinery for transcription, RNA polymerase is not sufficient to
-% initiate transcription. Promoter recognition and initiation of transcription is
-% dependent on the presence of $\sigma$-factors, proteinaceous cofactors which
-% bind directly to the polymerase \citep{browning2016}.
-In \FIGSUPP[RNA_synthesis]{sigma_70}, we show that the predicted RNA polymerase
-copy number indeed is more comparable with the abundance of $\sigma$-70 (RpoD), the
-primary sigma factor in \textit{E. coli}. There therefore remains more to be investigated
-as to what sets the observed abundance of RNA polymerase in these proteomic
-data sets.
 
-%. However, we conclude that our
-%the observed excess in abundance for RNA polymerase
-%abundances are generally in excess of what appears to be needed for growth, suggesting
-%that the abundance of RNA polymerase itself is not particularly limiting.
-
-%It is also vital to consider the role of $\sigma$-factors which
-%help RNA polymerase identify and bind to transcriptional start sites
-%\citep{browning2016}. Here we consider $\sigma^{70}$ (RpoD) which is the
-%dominant "general-purpose" $\sigma$-factor in \textit{E. coli}. While initially
-%thought of as being solely involved in transcriptional initiation, the past two
-%decades of single-molecule work has revealed a more multipurpose role for
-%$\sigma^{70}$ including facilitating transcriptional elongation
-%\citep{kapanidis2005, goldman2015, perdue2011,mooney2003,mooney2005}.
-%\FIGSUPP[RNA_synthesis]{sigma_70} is suggestive of such a role as the number of
-%$\sigma^{70}$ proteins per cell is in close agreement with our estimate of the
-%number of transcriptional complexes needed.
-
-%These estimates provide insight as to the observed magnitude of both RNA
-%polymerase and the $\sigma$-70 factor.
-% As we have done in the previous sections,
-% and described in Appendix \nameref{sec:SI_continuum_est}, we can generalize these estimates
-% across a wide range of growth rates (grey line in \FIG{RNA_synthesis}(B).
-% estimate appears to very adequately describe the growth rate dependence of these
-% complexes. Furthermore, these findings illustrate that transcription
-% cannot be the rate limiting step in bacterial division. \FIG{RNA_synthesis} (A)
-% reveals that the availability of RNA polymerase is not a limiting factor for
-% cell division as the cell always has an apparent $\sim$ 10-fold excess than needed.
-% Furthermore, if more transcriptional activity was needed to satisfy the cellular
-% requirements, more $\sigma^{70}$-factors could be expressed to utilize a larger
-% fraction of the RNA polymerase pool.
-
+While they are the machinery for transcription, RNA polymerase is not
+sufficient to initiate transcription. Promoter recognition and initiation of
+transcription is dependent on the presence of $\sigma$-factors, proteinaceous
+cofactors which bind directly to the polymerase \citep{browning2016}. In
+\FIGSUPP[RNA_synthesis]{sigma_70}, we show that the predicted RNA polymerase
+copy number indeed is more comparable with the abundance of $\sigma$-70
+(RpoD), the primary sigma factor in \textit{E. coli}. There therefore remains
+more to be investigated as to what sets the observed abundance of RNA
+polymerase in these proteomic data sets. However, we conclude that our
+the observed excess in abundance for RNA polymerase
+abundances are generally in excess of what appears to be needed for growth, suggesting
+that the abundance of RNA polymerase itself is not particularly limiting.
 
 
 \begin{figure}

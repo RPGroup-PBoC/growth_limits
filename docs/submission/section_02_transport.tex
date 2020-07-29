@@ -3,17 +3,17 @@
 This work relies heavily on "back-of-the-envelope" estimates to
 understand the growth-rate dependent abundances of molecular
 complexes. This moniker arises from the limitation that any estimate should be
-able to fit on the back of a postage envelope. Therefore, we must draw a set of
+able to fit on the back of a postage envelope. As such, we must draw a set of
 rules governing our precision and sources of key values.
 
 \textbf{\itshape The rule of "one, few, and ten".} The philosophy behind
 order-of-magnitude estimates is to provide a estimate of the appropriate scale,
-not a prediction with infinite accuracy. As such, we define three different
+not a prediction with many significant digits. We therefore define three different
 scales of precision in making estimates. The scale of "one" is reserved for
 values that range between 1 and 2. For example, If a particular process has been
 experimentally measured to transport 1.87 protons for a process to occur, we approximate
 this process to require 2 protons per event. The scale of "few" is reserved for
-values ranging between 3 and 5. For example, we will often use Avogadro's number
+values ranging between 3 and 7. For example, we will often use Avogadro's number
 to compute the number of molecules in a cell given a concentration and a volume.
 Rather than using Avogadro's number as $6.02214 \times 10^{23}$, we will
 approximate it as $5 \times 10^{23}$. Finally, the scale of "ten" is reserved
@@ -35,8 +35,9 @@ within an order of magnitude.
 \textbf{\itshape The BioNumbers Database as a source for values.} In making our
 estimates, we often require approximate values for key cellular properties, such
 as the elemental composition of the cell, the average dry mass, or approximate
-rates of synthesis. We rely heavily on the BioNumbers Database \citep{milo2010}
-as a repository for such information. Every value we draw from this database has
+rates of synthesis. We rely heavily on the BioNumbers Database
+(\href{https://bionumbers.hms.harvard.edu}{bionumbers.hms.harvard.edu},
+\cite{milo2010}) as a repository for such information. Every value we draw from this database has
 an associated BioNumbers ID number, abbreviated as BNID, and we provide this
 reference in grey-boxes in each  figure.
 
@@ -70,8 +71,7 @@ receiving preferential treatment in their consumption \citep{monod1947}.
 Phosphorus, sulfur, and nitrogen, on the other hand, are harvested primarily
 in the forms of inorganic salts, namely phosphate, sulfate, and ammonia
 \citep{jun2018, assentoft2016, stasi2019, antonenko1997, rosenberg1977,
-willsky1973}. All of these compounds have different permeabilities across the
-cell membrane \citep{phillips2018} and most require some energetic investment
+willsky1973}. All of these compounds have different membrane permeabilities \citep{phillips2018} and most require some energetic investment
 either via ATP hydrolysis or through the proton electrochemical gradient to
 bring the material across the hydrophobic cell membrane.
 
@@ -80,8 +80,7 @@ attention over the past half century \citep{neidhardt1991,
 taymaz-nikerel2010, heldal1985, bauer1976}, providing us with a starting
 point for estimating how many atoms of each element must be scavenged from
 the environment. A synthesis of these studies presents an approximate dry mass
-composition of $\approx$ 45\% carbon (BioNumber ID:
-100649, see \BOX{estimate_rules}), $\approx$ 15\% nitrogen (BNID: 106666),
+composition of $\approx$ 45\% carbon (BNID: 100649, see \BOX{estimate_rules}), $\approx$ 15\% nitrogen (BNID: 106666),
 $\approx$ 3\% phosphorus (BNID: 100653), and 1\% sulfur (BNID: 100655) with
 remainder being attributable to oxygen, hydrogen, and various metals.
 We use this stoichiometric breakdown to estimate the abundance and growth
@@ -90,24 +89,22 @@ and provide more extensive investigation of the other critical elements --
 phosphorus, sulfur, and nitrogen -- in the Appendix \nameref{sec:SI_nutr_trans}.
 
 Using $\approx$ 0.3 pg as the typical \textit{E. coli} dry mass (BNID: 103904)
-at a growth rate of $\approx$ 0.5 hr$^{-1}$ coupled with an approximation that
+at a growth rate of $\approx$ 0.5 hr$^{-1}$, coupled with an approximation that
 $\approx$ 50\% of this is carbon, we estimate that $\sim 10^{10}$ carbon atoms must be
 brought into the cell in order to double all of the carbon-containing molecules
 (\FIG{carbon_tport}(A, top)). Typical laboratory growth conditions provide
-carbon as a single class of sugar (such as glucose, galactose, or xylose) for
-which \textit{E. coli} has evolved myriad mechanisms by which they can be
-transported across the cell membrane. One such mechanism of transport is via
+carbon as a single class of sugar (such as glucose, galactose, or xylose) often
+transported cross the cell membrane by a specific transporter. One such mechanism of transport is via
 the PTS system which is a highly modular system capable of transporting a
 diverse range of sugars \citep{escalante2012}. The glucose-specific component of
 this system transports $\approx$ 200 glucose molecules ($\approx$ 1200 carbon
 atoms) per second per transporter (BNID: 114686). Making the assumption that this is a typical sugar
 transport rate, coupled with the need to transport $\sim 10^{10}$ carbon atoms,
 we then expect on the order of $\approx$ 1000 transporters must be expressed in order to
-bring in enough carbon atoms, diagrammed in the top panel of
-\FIG{carbon_tport}(A).
+bring in enough carbon atoms (\FIG{carbon_tport}(A), top). 
 
-As revealed in \FIG{carbon_tport}(A), experimental measurements exceed the
-estimate by several fold, implying that the cell is capable of transporting
+Experimental measurements exceed the
+estimate by several fold (\FIG{carbon_tport}(A), bottom), implying that the cell is capable of transporting
 more carbon atoms than needed. While we estimate $\approx$ 1000 transporters
 are needed with a 5000 s division time, we can abstract this calculation to
 consider any particular growth rate given knowledge of the cell density and
@@ -134,13 +131,15 @@ in Appendix \nameref{sec:SI_nutr_trans})
     GO:0098704) for different growth conditions across different published
     datasets. (B) The abundance of various specific carbon transport systems
     plotted as a function of the population growth rate. The rates of substrate
-    transport to compute the continuum growth rate estimate (grey line) were 200
+    transport differ between these transporter species. To compute the continuum
+    growth rate estimate (grey line), we used the following transport rates for
+    each transporter species: 200
     glucose$\cdot$ s$^{-1}$ (BNID: 103693),  2000 glycerol$\cdot$s$^{-1}$
     \citep{lu2003}, 200 fructose$\cdot$ s$^{-1}$ (assumed to be similar to PtsI,
     BNID: 103693), and 50 xylose$\cdot$s$^{-1}$ (assumed to be comparable to
     LacY, BNID:103159). Red points and highlighted text indicate conditions in
     which the only source of carbon in the growth medium induces expression of
-    the transport system. Grey line in (A) and (B) represents the estimated
+    the transport system. Grey lines in (A) and (B) represents the estimated
     number of transporters per cell at a continuum of growth
     rates.}\label{fig:carbon_tport} \figsupp[Estimates and observed abundances
     of phosphate and sulfate transporters.]{(A) Estimate for the number of PitA
@@ -174,15 +173,15 @@ growth condition, which is known to be the preferential carbon source
 \citep{monod1947, liu2005a, aidelberg2014}.
 
 Many metabolic operons are regulated with dual-input logic gates that are
-only expressed when glucose concentrations are low (mediated by cyclic-AMP
-receptor protein CRP) and the concentration of other carbon sources are
+only expressed when glucose concentrations are low and the concentration of other carbon sources are
 elevated \citep{gama-castro2016, zhang2014a, gama-castro2016, belliveau2018,
 ireland2020}. Points colored in red in \FIG{carbon_tport}(B) (labeled by red
 text-boxes) correspond to growth conditions in which the specific carbon
 source (glycerol, xylose, or fructose) is present. The grey lines in
 \FIG{carbon_tport}(B) show the estimated number of transporters needed at
 each growth rate to satisfy the cellular carbon requirement, adjusted for the
-specific carbon source. These plots show that, in the absence of the
+specific carbon source in terms of number of carbon atoms per molecule and the
+rate of transport for the particular transporter species. These plots show that, in the absence of the
 particular carbon source, expression of the transporters is maintained on the
 order of $\sim 10^2$ per cell. The low but non-zero abundances may reflect
 the specific regulatory logic involved, requiring that cells are able to
@@ -191,8 +190,9 @@ induce expression of these alternative carbon-source systems.
 
 \subsubsection{Limits on Transporter Expression}
 If acquisition of nutrients was a limiting process in cell division under the
-typical growth conditions explored here, could expression simply be increased to
-accommodate faster growth? A way to approach this question is to compute the
+typical growth conditions explored here, the growth rate could be theoretically
+increased simply by expressing more transporters, but is this feasible at a
+physiological level? A way to approach this question is to compute the
 amount of space in the bacterial membrane that could be occupied by nutrient
 transporters. Considering a rule-of-thumb for the surface area of \textit{E.
 coli} of about 5 \textmu m$^2$ (BNID: 101792), we expect an areal density for
@@ -201,7 +201,5 @@ typical transporter occupying about 50 nm$^2$/dimer, this amounts to about only
 $\approx$ 1\% of the total inner membrane area \citep{szenk2017}. Additionally,
 bacterial cell membranes typically have densities of 10$^5$ proteins/\textmu
 m$^2$ \citep{phillips2018}, implying that the cell could accommodate more
-transporters if any one species was limiting. As we will see, processes
-like cell wall synthesis and energy production also require space on the
 membrane and this places additional limitations on cell size and surface area
 that we will consider further in the coming sections.

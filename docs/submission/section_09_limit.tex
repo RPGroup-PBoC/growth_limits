@@ -79,19 +79,19 @@ the form
 \lambda_{\textrm{translation-limited}} \approx \frac{r_t}{L_R}  \Phi_R f_a.
 \label{eq:translation_limit_growth_rate}
 \end{equation}
-This is plotted as a function of the ribosomal fraction $\Phi_R$ in
-\FIG{ribosome_limit}(B), where we take $L_R \approx$ 7500 AA, corresponding to
+This is plotted as a function of the ribosomal fraction $\Phi_R$ in the top panel of
+\FIG{ribosome_limit}(A), where we take $L_R \approx$ 7500 AA, corresponding to
 the length in amino acids for all ribosomal subunits of the 50S and 30S complex
-(BNID: 101175), and $f_a$ = 1. To allow us to consider the the proteomic data,
+(BNID: 101175), and $f_a$ = 1. To allow us to consider the proteomic data,
 we use recent measurements of $f_a$ from \cite{dai2016} to estimate the active
 fraction of ribosomal protein across each proteomic data set
-(\FIG{ribosome_limit}(C)). We find that cells in general appear to
+(\FIG{ribosome_limit}(A), bottom; values for $f_a$ are shown in inset). We find that cells in general appear to
 skirt this limit in growth rate as nutrient conditions vary. There is a notable discrepency
 in the data from \cite{peebo2015, valgepea2013}, where cells appear to grow
-substantially slower given their estimated ribosomal fraction. We have
-also collected a number of recent measurements of ribosomal fraction and
+substantially slower given their estimated ribosomal fraction. Here we have
+also collected a number of recent non-proteomic measurements of ribosomal fraction and
 find them most consistent with the measurements from \cite{li2014,
-schmidt2016} (\FIGSUPP[ribosome_limit]{ribosome_limit_supp}(A)).
+schmidt2016} (gray points; also see \FIGSUPP[ribosome_limit]{ribosome_limit_supp}(A)).
 
 The growth rate defined by \EQ{translation_limit_growth_rate} reflects
 mass-balance under steady state growth and has long provided a rationalization
@@ -100,7 +100,7 @@ function of growth rate \citep{goldberger1979, scott2010}. The maximum rate,
 when $\Phi_R$ = 1, could only be achieved if a cell contained only ribosomes \citep{dill2011}.
 This corresponds to the synthesis time of all ribosomal subunits, $L_R/ r_t
 \approx$ 7 minutes and interestingly, is independent of the
-absolute number of ribosomes. To return to our earlier comments on
+absolute number of ribosomes (\FIG{ribosome_limit}(B)). To return to our earlier comments on
 parallelization, it is this step that is rate-limiting, with each ribosome being
 required to produce a second ribosome. Unless elongation rate increased, or
 cells could trim their total ribosomal protein mass, this dependency limits both
@@ -111,22 +111,25 @@ rate under more moderate values of $\Phi_R$.
   \begin{fullwidth}
         \centering{
         \includegraphics{main_figs/fig7_ribosome_as_limit.pdf}
-        \caption{\textbf{Translation-limited growth rate.}  (A) An inherent
+        \caption{\textbf{Translation-limited growth rate.}  (A) \textit{top}:
+        Translation-limited growth as a function of the ribosomal fraction. The
+        solid line is calculated for an elongation rate of 17 aa per second.
+        The dashed line corresponds to the maximum rate of ribosomal protein
+        (R-protein) synthesis considered in part (C).
+        \textit{bottom}: Actively translating ribosomal fraction versus growth rate.
+        The actively translating ribosomal fraction is calculated using the
+        estimated values of $f_a$ from  \cite{dai2016} (shown in inset; see
+        Appendix \nameref{sec:SI_f_a} for additional detail). Gray data points
+        show additional measurements from literature and consider further in
+        \FIGSUPP[ribosome_limit]{ribosome_limit_supp}(A).
+        (B) An inherent
         maximum growth rate is set by the time to synthesize all ribosomal
         subunits. This growth rate is given by $r_t/ L_R$, where $r_t$ is
         the elongation rate and $L_R$ is the total number of amino acids
         that make up the entire ribosomal complex. This rate is independent
         of the number of ribosomes and instead is limited by the time required to
-        double an individual ribosome. (B)
-        Translation-limited growth as a function of the ribosomal fraction. The
-        solid line is calculated for an elongation rate of 17 aa per second.
-        The dashed line corresponds to the maximum rate of ribosomal protein
-        (R-protein) synthesis considered in part (A).
-        (C) Actively translating ribosomal fraction versus growth rate.
-        The actively translating ribosomal fraction is calculated using the
-        estimated values of $f_a$ from  \cite{dai2016} (shown in inset; see
-        Appendix \nameref{sec:SI_f_a} for additional detail).
-        (D) Maximum number of
+        double an individual ribosome.
+        (C) Maximum number of
         rRNA units that can be synthesized as a function of growth rate.
         Solid curve corresponding to the rRNA copy number is calculated by
         multipyling the number of rRNA operons by the estimated number of

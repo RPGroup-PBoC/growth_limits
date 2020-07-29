@@ -1,8 +1,48 @@
 
-\section{Derivation of Full Model of Nutrient-limited Growth.}
+\section{Derivation of Minimal Model for Nutrient-Mediated Growth Rate Control}
 \label{sec:SI_model}
 
-Here we return to our model of nutrient-limited growth and provide a more complete derivation of elongation rate $r_t$. Several of the steps are reproduced from the main text for completeness, and we begin with our coarse-grained description of peptide elongation, which includes 1) the time required to find and bind each
+Here we provide a complete derivation of our model for growth rate
+control under nutrient-limited growth. By growth rate control, we are
+specifically referring to the ability of bacteria to modulate their proteome
+($N_\text{pep}$, $R$, $\Phi_R$) as nutrient conditions change, with slower
+growing cells generally being smaller in size \citep{ojkic2019}. This provides a
+particular benefit when nutrients are more scarse since it means that there will
+be a lower net demand for carbon, phosphorus, sulfur, and nitrogen. The goal of
+developing this model is to help us better explore the overall constraints on
+growth given the myraid cellular processes we've considered in the main text,
+which demand additional protein synthesis at faster growth rates, and the strict
+limit on growth rate that is governed by the ribosomal synthesis rate and the
+ribosomal mass fraction $\Phi_R$ in the cell.
+
+In \FIG{elongation_rate_model}(A) of the main text we provide a schematic of the
+model, where we consider growth as simply governed by the rate of protein synthesis,
+which can proceed only as quickly  
+
+
+
+elongation rate $r_t$ will depend on how quickly the ribosomes can
+match codons with their correct amino-acyl tRNA, along with the subsequent steps
+of peptide bond formation and translocation. This ultimately depends on the
+cellular concentration amino acids, which we treat as a single effective
+species, $[AA]_\text{eff}$. In our model, we determine the the rate of peptide
+elongation $r_t$ and achievable growth rate as simply depending on the supply of
+amino acids (and, therefore, also amino-acyl tRNAs), through a parameter
+$r_{AA}$ in units of AA per second, and the rate of amino acid consumption by
+protein synthesis ($r_t \times R \times f_a$). This is shown schematically in
+\FIG{elongation_rate_model}(A) and derived in Appendix \nameref{SI_model}. Given our observation
+that protein synthesis and energy production are not limiting, we
+assume that other molecular players required by ribosomes like elongation
+factors and GTP are available in sufficient abundance.
+
+The basic premise in our formulation is that
+
+
+
+. By elongation rate $r_t$. Several of the steps are reproduced from the main text for completeness,
+
+
+and we begin with our coarse-grained description of peptide elongation, which includes 1) the time required to find and bind each
 correct amino-acyl tRNA, and 2) the remaining steps in peptide elongation that
 will not depend on the amino acid availability. These time scales are related to the inverse of the elongation rate $r_t$,
 

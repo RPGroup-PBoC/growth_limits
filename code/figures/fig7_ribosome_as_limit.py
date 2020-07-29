@@ -268,19 +268,19 @@ popt_dai, pcov_dai = curve_fit(func, dai_nut_df.growth_rate_hr.values, dai_nut_d
 
 # Add Dai et al, Scott, and historical
 ax3.plot((R_P_dai/2.1)*func(lambda_dai, *popt_dai),lambda_dai, 'o', color=  'k', #color=colors['light_yellow'],
-                alpha=0.2, markeredgecolor='k', markeredgewidth=0.25,
+                alpha=0.2, markeredgecolor='k', markeredgewidth=0,
                 ms=4, zorder=0, label = 'non-proteomic data')
 
 ax3.plot((R_P_scott/2.1)*func(lambda_scott, *popt_dai),lambda_scott, 'o', color=  'k', #color=colors['light_purple'],
-                alpha=0.2, markeredgecolor='k', markeredgewidth=0.25,
+                alpha=0.2, markeredgecolor='k', markeredgewidth=0,
                 ms=4, zorder=0, label = 'non-proteomic data')
 
 ax3.plot((R_P_for/2.1)*func(lambda_for, *popt_dai),lambda_for, 'o', color=  'k', #color=  '#1F4B99',
-                alpha=0.2, markeredgecolor='k', markeredgewidth=0.25,
+                alpha=0.2, markeredgecolor='k', markeredgewidth=0,
                 ms=4, zorder=0, label = 'non-proteomic data')
 
 ax3.plot((R_P_brem/2.1)*func(lambda_brem, *popt_dai),lambda_brem, 'o', color=  'k', #'#B7741A',
-                alpha=0.2, markeredgecolor='k', markeredgewidth=0.25,
+                alpha=0.2, markeredgecolor='k', markeredgewidth=0,
                 ms=4, zorder=0, label = 'non-proteomic data')
 
 
@@ -302,7 +302,7 @@ for c, d in data_si_mean.groupby(['type of perturbation', 'growth media', 'strai
         k = colors['light_green']
 
     ax3.plot((d['RNA/protein']/2.1)*func( d.growth_rate_hr.unique(), *popt_dai),d.growth_rate_hr.unique(), 'o', color=  'k', #color= k,
-                    alpha=0.2, markeredgecolor='k', markeredgewidth=0.25,
+                    alpha=0.2, markeredgecolor='k', markeredgewidth=0,
                     ms=4, zorder=0, label = 'non-proteomic data') #label = g[2], )
 
 

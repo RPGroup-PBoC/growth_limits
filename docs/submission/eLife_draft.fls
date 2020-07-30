@@ -451,6 +451,8 @@ INPUT /Users/gchure/Dropbox/git/growth_limits/docs/submission/section_10_size.te
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/ascender/opensans/OpenSans-BoldItalic-T1-TLF.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/vf/ascender/opensans/OpenSans-BoldItalic-T1-TLF.vf
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/ascender/opensans/OpenSans-BoldItalic-T1-TLF--base.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/vf/ascender/opensans/OpenSans-BoldItalic-T1-TLF.vf
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/ascender/opensans/OpenSans-BoldItalic-T1-TLF--base.tfm
 INPUT /Users/gchure/Dropbox/git/growth_limits/docs/submission/main_figs/fig8_ribosome_growth_limit_ecoli_a_polar_coord.pdf
 INPUT /Users/gchure/Dropbox/git/growth_limits/docs/submission/main_figs/fig8_ribosome_growth_limit_ecoli_a_polar_coord.pdf
 INPUT /Users/gchure/Dropbox/git/growth_limits/docs/submission/main_figs/fig8_ribosome_growth_limit_ecoli_a_polar_coord.pdf

@@ -14,27 +14,27 @@ replicate. As each ribosome would therefore need to copy itself, this  7 minute
 speed limit is independent of the number of ribosomes per cell
 (\FIG{ribosome_limit}(A)), yet assumes that the only proteins that need
 to be replicated for division to occur are ribosomal proteins, a regime we know is not met in
-biological reality. 
+biological reality.
 
 However, we can consider the translation limited growth rate as a function of
 the fraction $\Phi_R$ of the total number of amino acids in the proteome $N_\text{pep}$
 that are sequestered in a ribosome, $N_\text{pep}^\text{(ribosome)}$. To compute this quantity, we
 note that the number of amino acids in a ribosome is related to the protein mass
-via 
+via
 \begin{equation}
   m_\text{ribosome} \approx L_R \times m_\text{AA}
   \label{eq:mribo}
 \end{equation}
 where $m_\text{AA}$ is the average mass of an amino acid which is $\approx$ 110
 Da (BNID: 104877). Similarly, we can compute the mass of the total cellular
-proteome as 
+proteome as
 \begin{equation}
   m_\text{proteome} \approx N_\text{pep} \teims m_\text{AA}.
   \label{eq:mproteome}
 \end{equation}
 
 Together, \EQ{mribo} and \EQ{mproteome} allow us to define the ribosomal mass
-fraction as 
+fraction as
 \begin{equation}
   \Phi_R = \frac{m_\text{ribosome} \times R}{m_\text{proteome}} \approx \frac{R \times L_R}{N_\text{pep}}.
   \label{eq:phir}
@@ -42,7 +42,7 @@ fraction as
 Relating the number of peptide bonds to be synthesized to complete division to
 the number of ribosomes per cell in this manner allows us to enumerate an
 expression for translation-limited growth. As cells grow exponentially in time
-\cite{godin2010}, the rate of cellular growth can be computed as 
+\cite{godin2010}, the rate of cellular growth can be computed as
 \begin{equation}
 N_\text{pep} \lambda = r_t \times R \times f_a,
 \label{eq:exp_cell_growth}
@@ -53,7 +53,7 @@ allows us to account for the possibility of nonfunctional, immature ribosomes or
 active sequestration of ribosomes through small-molecule alarmones such as
 (p)ppGpp which can be significant at slow growth rates \citep{dennis2004,
 dai2016}. Combining \EQ{phir} and \EQ{exp_cell_growth} yields an expression for
-the translation limited growth rate 
+the translation limited growth rate
 \begin{equation}
 \lambda_\text{translation-limited} \approx \frac{r_t}{L_R}\Phi_Rf_a.
 \label{eq:lam_lim}
@@ -78,7 +78,7 @@ collected from \cite{valgepea2013, peebo2015}. When compared to other,
 non-proteomic wide measurements of the active ribosome mass fraction
 (\FIG{limit} (B), grey points in bottom plot), the data from \cite{valgepea2013}
 and \cite{peebo2015} are notably aberrant, suggesting a systematic error in
-these data. 
+these data.
 
 
 The translation-limited view of growth defined \EQ{lam_lim} reflects

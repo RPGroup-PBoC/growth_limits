@@ -1,58 +1,63 @@
-
 \section{Derivation of Minimal Model for Nutrient-Mediated Growth Rate Control}
 \label{sec:SI_model}
 
-Here we provide a complete derivation of our model for growth rate
-control under nutrient-limited growth. By growth rate control, we are
-specifically referring to the ability of bacteria to modulate their proteome
-($N_\text{pep}$, $R$, $\Phi_R$) as nutrient conditions change, with slower
-growing cells generally being smaller in size \citep{ojkic2019}. This provides a
-particular benefit when nutrients are more scarse since it means that there will
-be a lower net demand for carbon, phosphorus, sulfur, and nitrogen. The goal of
-developing this model is to help us better explore the overall constraints on
-growth given the myraid cellular processes we've considered in the main text,
-which demand additional protein synthesis at faster growth rates, and the strict
-limit on growth rate that is governed by the ribosomal synthesis rate and the
-ribosomal mass fraction $\Phi_R$ in the cell.
+Here we provide a derivation of the minimal model for growth rate control under
+nutrient-limited growth. By growth rate control, we are specifically referring
+to the ability of bacteria to modulate their proteome ($N_\text{pep}$, $R$,
+$\Phi_R$) and cell size as nutrient conditions change, with slower growing cells
+generally being smaller in size \citep{ojkic2019}. This capability provides
+bacteria with  a particular benefit when nutrients are more scarce since it will
+mean there is a  smaller net demand on carbon, phosphorus, sulfur, and nitrogen.
+The specific goal  of developing this model is to help us better explore the
+overall constraints on  growth that follow from 1) our observation that many  of
+the cellular processes we've considered require increased protein abundance at
+faster growth rates, and 2) a strict limit on growth rate that is
+governed by the ribosomal synthesis rate and ribosomal mass fraction $\Phi_R$.
 
 In \FIG{elongation_rate_model}(A) of the main text we provide a schematic of the
-model, where we consider growth as simply governed by the rate of protein synthesis,
-which can proceed only as quickly  
+model, where we consider growth as simply governed by the rate of protein
+synthesis ($r_t \times R \times f_a$). In order to grow rapidly, at least to the
+extent possible, these three parameters need to be maximized (with $r_t \leq$ 17
+amino acids per second, and $f_a \leq$ 1 reported in the work of
+\cite{dai2016}). The elongation rate $r_t$ will depend on how quickly
+ribosomes can match codons with their correct amino-acyl tRNA, along with the
+subsequent steps of peptide bond formation and translocation. This ultimately
+depends on the cellular concentration amino acids, which we treat as a single
+effective species, $[AA]_\text{eff}$.
 
+In our model, we need to determine the rate of peptide elongation $r_t$, which we
+consider as simply depending on the supply of amino acids (and,
+therefore, also amino-acyl tRNAs) through a parameter $r_{AA}$ in units of AA
+per second, and the rate of amino acid consumption by protein synthesis ($r_t
+\times R \times f_a$). The balance between these two rates will determine the
+effective amino acid concentration in the cell $[AA]_\text{eff}$. An important
+premise for this formulation is growing evidence that cells are able to modulate
+their biosynthesis activity according to nutrient availability (i.e. extent of
+chromosomal replication, transcriptional, and translation activity) through
+secondary-messenger molecules like (p)ppGpp \citep{hauryliuk2015, zhu2019,
+kraemer2019, fernandezcoll2020, Buke2020}. Given our observation that protein
+synthesis and energy production are not limiting, we assume that other molecular
+players required by ribosomes like elongation factors and GTP are available in
+sufficient abundance. In addition, experimentally, the relative number of tRNA
+and elongation factor EF-Tu per ribosome have been found to increase in poorer
+nutrient conditions \cite{pedersen1978, dong1996, klumpp2013}).
 
-
-elongation rate $r_t$ will depend on how quickly the ribosomes can
-match codons with their correct amino-acyl tRNA, along with the subsequent steps
-of peptide bond formation and translocation. This ultimately depends on the
-cellular concentration amino acids, which we treat as a single effective
-species, $[AA]_\text{eff}$. In our model, we determine the the rate of peptide
-elongation $r_t$ and achievable growth rate as simply depending on the supply of
-amino acids (and, therefore, also amino-acyl tRNAs), through a parameter
-$r_{AA}$ in units of AA per second, and the rate of amino acid consumption by
-protein synthesis ($r_t \times R \times f_a$). This is shown schematically in
-\FIG{elongation_rate_model}(A) and derived in Appendix \nameref{SI_model}. Given our observation
-that protein synthesis and energy production are not limiting, we
-assume that other molecular players required by ribosomes like elongation
-factors and GTP are available in sufficient abundance.
-
-The basic premise in our formulation is that
-
-
-
-. By elongation rate $r_t$. Several of the steps are reproduced from the main text for completeness,
-
-
-and we begin with our coarse-grained description of peptide elongation, which includes 1) the time required to find and bind each
-correct amino-acyl tRNA, and 2) the remaining steps in peptide elongation that
-will not depend on the amino acid availability. These time scales are related to the inverse of the elongation rate $r_t$,
+We begin by considering a coarse-grained description of peptide elongation,
+which includes 1) the time required to find and bind each correct amino-acyl
+tRNA, and 2) the remaining steps in peptide elongation that will not depend on
+the amino acid availability. These time scales will be related to the inverse of the
+elongation rate $r_t$,
 
 \begin{equation}
 \frac{1}{r_t} = \frac{1}{k_{on} \alpha [AA]_{\text{eff}}} + \frac{1}{r_{t}^{\text{max}}}.
 \end{equation}
 where we have assumed that the rate of binding by amino-acyl tRNA $k_{on}$ is
 proportional to $[AA]_{\text{eff}}$ by a constant $\alpha$. $r_{t}^{\text{max}}$
-refers to the maximum elongation rate. This can be stated more
-succinctly in terms of an effective dissociation constant,
+refers to the maximum elongation rate. This leads to a Michaelis-Mention
+dependence of the elongation rate $r_t$ on the effective amino acid
+concentration $[AA]_{\text{eff}}$ \citep{klumpp2013, dai2016}.
+We can re-write this more succinctly in terms of an effective dissociation
+constant,
 
 \begin{equation}
     K_D = \frac{r_{t}^{\text{max}}}{\alpha k_\text{on}},
@@ -64,39 +69,90 @@ r_t = \frac{r_{t}^{\text{max}}}{1 + K_D/[AA]_{\text{eff}}}.
 \label{eq:rt_kd_simple}
 \end{equation}
 
-As the
-rate of amino acid supply, denote by $r_{AA}$, varies with changing nutrient
-condtions, the cell maintain [AA]_{\text{eff} by tuning the
-rate of amino acid consumption, $r_t \times R \times f_a$).
-Under steady state growth, the amino acid concentration is constant
-($\frac{d[AA]_\text{eff}}{dt}=0$). The effective amino acid concentration
-$[AA]_{\text{eff}}$ will relate to the rate of amino acid synthesis (or import,
-for rich media) and/or tRNA charging, as $r_{AA}$, and the rate of consumption,
-$r_t\times R \times f_a$ by,
+The rate of amino acid supply $r_{AA}$ will vary with changing nutrient
+conditions and the cell can maintain $[AA]_{\text{eff}}$ by tuning the rate of
+amino acid consumption, $r_t \times R \times f_a$.  Thus, $[AA]_{\text{eff}}$ is
+determined by the difference in the rate of amino acid synthesis (or import, for
+rich media) and/or tRNA charging,  $r_{AA}$, and the rate of consumption,
+$r_t\times R \times f_a$. Over an  arbitrary length of time $t$ of cellular
+growth, the cell will grow in volume, requiring us to consider these rates in
+terms of concentration rather than absolute numbers, with $[AA]_{\text{eff}}$
+given by,
 
 \begin{equation}
-\int_{0}^{t} \frac{d[AA]_{\text{eff}}}{dt} dt =  \int_{0}^{t}([r_{AA}] - [r_t\times R \times f_a]) dt,
+\int_{0}^{t} \frac{d[AA]_{\text{eff}}}{dt} dt =  \int_{0}^{t}([r_{AA}] - [r_t\times R \times f_a]) dt.
 \label{eq:aaeff_int}
 \end{equation}
-where the time from 0 to $t$ is an arbitrary length of time, and the square
-brackets indicate concentrations per unit time.
+This considers the net change in amino acid concentration over a time from 0 to
+$t$, with the square brackets indicating concentrations per unit time.
 Integrating \EQ{aaeff_int} yields.
 \begin{equation}
 [AA]_{\text{eff}} =  t([r_{AA}] - [r_t \times R \times f_a]).
 \label{eq:aaeff_concs}
 \end{equation}
 
-Alternatively, we can state this in terms of absolute ribosome copy number $R$
-by considering a unit volume $V$,
+Alternatively, to connect to the experimental data in terms of absolute ribosome
+copy number $R$ we can consider a unit volume $V$,
 \begin{equation}
-   [AA]_\text{eff} = \frac{t(r_{AA} - r_t \times R \times f_a)}{V},
+   [AA]_\text{eff} = \frac{t(r_{AA} - r_t \times R \times f_a)}{V \times N_A},
    \label{eq:aa_final}
 \end{equation}
 where $r_{AA}$ is in units of AA per unit time and $r_t$ is in units of AA per
-unit time per ribosome. With an expression for $[AA]_\text{eff}$ in hand, we can now solve
-\EQ{rt_kd_simple} for $r_t$ which is a quadratic function with a
-physically-meaningful root of
+unit time per ribosome. $N_A$ refers to Avogadro's number and is needed to
+convert between  concentration and absolute numbers per cell. With an expression
+for $[AA]_\text{eff}$ in hand, we can now solve \EQ{rt_kd_simple} for $r_t$
+which is a quadratic function with a physically-meaningful root of
+
 \begin{equation}
-r_t = \frac{t(r_{AA} + r_t^\text{(max)}Rf_a) + K_D V - \sqrt{(r_{AA}t + r_t^\text{(max)}Rf_at + K_D V)^2 - 4(Rf_at)(r_t^\text{(max)}r_{AA} t)}}{2Rf_at}.
+r_t = \frac{t(r_{AA} + r_t^\text{(max)}Rf_a) + K_D V N_A - \sqrt{(r_{AA}t + r_t^\text{(max)}Rf_at + K_D V N_A)^2 - 4(Rf_at)(r_t^\text{(max)}r_{AA} t)}}{2Rf_at}.
 \label{eq:rt_root}
 \end{equation}
+This is the key equation that allows us to calculate growth rate for any
+combination of $N_\text{pep}$, $R$, $f_a$, and cell size $V$ as a function of
+amino acid supply $r_{AA}$ (\EQ{lam_limited} of the main text). We refer the
+reader to \nameref{minimal_model} of the main text for our exploration of this
+model in the context of the proteomic data.
+
+We end this section by noting several distinctions of this formulation with
+previous work. The first, as noted in the main text, relates to the now seminal
+work of \cite{scott2010}, which provides a treatment of resource allocation that
+partitions of the proteome into sectors -- including one for ribosome-associated
+proteins and one for metabolic proteins. As cells grow faster, there is a
+notable change in the mass fraction of these sectors, with an increase in
+ribosomal content that is predominantly achieved at the expense of a decrease in
+the metabolic sector. By including an additional constraint through the
+phenomenological parameter $\nu$,  which characterizes the quality of the growth
+medium \cite{scott2010, klumpp2013, klumpp2014}, the authors derive a model of
+growth rate, dependent on optimal resource allocation. Here we have developed a
+model that considers the effect of changes in absolute protein abundance and
+ribosomal content, and consider how these influence the achievable growth rate.
+In addition, by accounting for the metabolic supply of amino acids directly
+though their availability in the cell (i.e. $[AA]_\text{eff}$), we are able to
+consider how the balance between translation-specific metabolic capacity and
+translational capacity influences both the elongation rate $r_t$ and growth
+rate $\lambda$.
+
+The second and last point we note is that the recent works from \cite{dai2016}
+and \cite{klumpp2013} also employ a similar coarse-graining of translation
+elongation as we've considered above. Here, however, a notable distinction is
+that the authors consider the entire ternary complex (i.e. the complex of
+amino-acyl tRNA, EF-Tu, and GTP) as rate limiting. Further, through an assumed
+proportionality between ternary complex and ribosome abundance, they arrive at a
+formulation of elongation rate $r_t$ that exhibits a Michaelis-Mention
+dependence on the ribosomal fraction $\Phi_R$. They demonstrate that all their
+measurements of elongation rate, even upon addition of sublethal doses of
+chloramphenicol (which cause an increase in both $r_t$ and $\Phi_R$), can be
+collapsed onto a single curve described by this Michaelis-Mention dependence.
+There is always a benefit to increase their ribosomal fraction $\Phi_R$ on
+growth rate when nutrient conditions allow (see \namref{limit}), and this trend
+in the data in part follows from the tendency for cells to increase $\Phi_R$ and
+better maximize $r_t$ as nutrient conditions improve.  In addition, it does not
+account for the decrease in the fraction of actively translating ribosome $f_a$
+that was strikingly apparent at slow growth rates or in sublethal doses of
+chloramphenicol in the work of \cite{dai2016}. Through \EQ{rt_root} we also
+account for changes in the fraction of actively translating ribosomes.
+Ultimately, we find that cells are able to maximize both $\Phi_R$, $r_t$, and
+their growth rate  only to the extent allowed by the nutrient conditions (i.e.
+via $r_{AA}$) and through the maintenance of the cellular pool of amino acids
+$[AA]_\text{eff}$, amino-acyl tRNA, GTP, as well as the synthesis of other key
+molecular constituents like EF-Tu.

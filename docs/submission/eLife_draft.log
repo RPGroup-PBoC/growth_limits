@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  30 JUL 2020 12:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  30 JUL 2020 12:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -784,6 +784,18 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
  (/usr/local/texlive/2020/texmf-dist/tex/latex/translator/translator.sty
 Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
 )) (/Users/gchure/Dropbox/git/growth_limits/docs/submission/eLife_draft.aux)
+Runaway argument?
+{{9}{17}{\textbf {Translation-limited growth rate.} (A) \textit {left\ETC.
+/Users/gchure/Dropbox/git/growth_limits/docs/submission/eLife_draft.tex:26: File ended while scanning use of \@newl@bel.
+<inserted text> 
+                \par 
+l.26 \begin{document}
+                     
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
 \openout1 = `eLife_draft.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -802,7 +814,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 26.
 LaTeX Font Info:    Trying to load font information for LS1+stix on input line 26.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ls1stix.fd
+(/usr/local/texlive/2020/texmf-dist/tex/latex/stix/ls1stix.fd
 File: ls1stix.fd 2015/04/17 v1.1.2-latex STIX LS1 font definitions
 )
 LaTeX Font Info:    ... okay on input line 26.
@@ -913,6 +925,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
 LaTeX Info: Redefining \nameref on input line 26.
+ (/Users/gchure/Dropbox/git/growth_limits/docs/submission/eLife_draft.out) (/Users/gchure/Dropbox/git/growth_limits/docs/submission/eLife_draft.out)
 \@outlinefile=\write4
 \openout4 = `eLife_draft.out'.
 
@@ -1015,9 +1028,6 @@ LaTeX Warning: Reference `sec:SI_exp_summary' on page 1 undefined on input line 
 
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/it' will be
 (Font)              scaled to size 9.0pt on input line 43.
-
-LaTeX Warning: Reference `fig:categories' on page 1 undefined on input line 43.
-
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 50.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
@@ -1037,7 +1047,7 @@ Package natbib Warning: Citation `schaechter1958' on page 2 undefined on input l
 
 Package natbib Warning: Citation `si2017' on page 2 undefined on input line 69.
 
-<main_figs/schematic_categories_grouped.pdf, id=15, 300.69843pt x 163.67549pt>
+<main_figs/schematic_categories_grouped.pdf, id=16, 300.69843pt x 163.67549pt>
 File: main_figs/schematic_categories_grouped.pdf Graphic file (type pdf)
 <use main_figs/schematic_categories_grouped.pdf>
 Package pdftex.def Info: main_figs/schematic_categories_grouped.pdf  used on input line 81.
@@ -1067,9 +1077,6 @@ LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 64.
 LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 64.
 
 [3]
-
-LaTeX Warning: Reference `fig:categories' on page 4 undefined on input line 66.
-
 
 Package natbib Warning: Citation `monod1947' on page 4 undefined on input line 70.
 
@@ -1107,39 +1114,18 @@ Package natbib Warning: Citation `heldal1985' on page 4 undefined on input line 
 Package natbib Warning: Citation `bauer1976' on page 4 undefined on input line 80.
 
 
-LaTeX Warning: Reference `box:estimate_rules' on page 4 undefined on input line 83.
-
-
 LaTeX Warning: Reference `sec:SI_nutr_trans' on page 4 undefined on input line 89.
-
-
-LaTeX Warning: Reference `fig:carbon_tport' on page 4 undefined on input line 95.
 
 
 Package natbib Warning: Citation `escalante2012' on page 4 undefined on input line 100.
 
 
-LaTeX Warning: Reference `fig:carbon_tport' on page 4 undefined on input line 105.
-
-
-LaTeX Warning: Reference `fig:carbon_tport' on page 4 undefined on input line 108.
-
-
 LaTeX Warning: Reference `sec:SI_continuum_est' on page 4 undefined on input line 114.
-
-
-LaTeX Warning: Reference `fig:carbon_tport' on page 4 undefined on input line 115.
-
-
-LaTeX Warning: Reference `fig:carbon_tport' on page 4 undefined on input line 118.
-
-
-LaTeX Warning: Reference `figsupp:phospho_sulfo' on page 4 undefined on input line 118.
 
 
 LaTeX Warning: Reference `sec:SI_nutr_trans' on page 4 undefined on input line 119.
 
-<main_figs/fig2_carbon_transport.pdf, id=114, 488.69475pt x 300.322pt>
+<main_figs/fig2_carbon_transport.pdf, id=123, 488.69475pt x 300.322pt>
 File: main_figs/fig2_carbon_transport.pdf Graphic file (type pdf)
 <use main_figs/fig2_carbon_transport.pdf>
 Package pdftex.def Info: main_figs/fig2_carbon_transport.pdf  used on input line 123.
@@ -1151,12 +1137,6 @@ Overfull \hbox (18.93852pt too wide) in paragraph at lines 123--146
 
 
 Package natbib Warning: Citation `lu2003' on page 4 undefined on input line 146.
-
-
-LaTeX Warning: Reference `fig:carbon_tport' on page 4 undefined on input line 164.
-
-
-LaTeX Warning: Reference `fig:carbon_tport' on page 4 undefined on input line 166.
 
 
 Package natbib Warning: Citation `monod1947' on page 4 undefined on input line 174.
@@ -1181,12 +1161,6 @@ Package natbib Warning: Citation `belliveau2018' on page 4 undefined on input li
 
 
 Package natbib Warning: Citation `ireland2020' on page 4 undefined on input line 179.
-
-
-LaTeX Warning: Reference `fig:carbon_tport' on page 4 undefined on input line 180.
-
-
-LaTeX Warning: Reference `fig:carbon_tport' on page 4 undefined on input line 183.
 
 
 LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 193.
@@ -1242,12 +1216,6 @@ Package natbib Warning: Citation `yu2011' on page 6 undefined on input line 34.
 Package natbib Warning: Citation `ruppe2018' on page 6 undefined on input line 35.
 
 
-LaTeX Warning: Reference `fig:cell_envelope' on page 6 undefined on input line 39.
-
-
-LaTeX Warning: Reference `fig:cell_envelope' on page 6 undefined on input line 41.
-
-
 Package natbib Warning: Citation `shi2018' on page 6 undefined on input line 48.
 
 
@@ -1273,12 +1241,6 @@ Package natbib Warning: Citation `rogers1980' on page 7 undefined on input line 
 Package natbib Warning: Citation `catherwood2020' on page 7 undefined on input line 74.
 
 
-LaTeX Warning: Reference `fig:cell_envelope' on page 7 undefined on input line 79.
-
-
-LaTeX Warning: Reference `fig:cell_envelope' on page 7 undefined on input line 81.
-
-
 Package natbib Warning: Citation `ojkic2019' on page 7 undefined on input line 90.
 
 
@@ -1287,7 +1249,7 @@ Package natbib Warning: Citation `yu2011' on page 7 undefined on input line 94.
 
 Package natbib Warning: Citation `ruppe2018' on page 7 undefined on input line 94.
 
-<main_figs/cell_wall_peptidoglycan.pdf, id=979, 477.34233pt x 292.19362pt>
+<main_figs/cell_wall_peptidoglycan.pdf, id=997, 477.34233pt x 292.19362pt>
 File: main_figs/cell_wall_peptidoglycan.pdf Graphic file (type pdf)
 <use main_figs/cell_wall_peptidoglycan.pdf>
 Package pdftex.def Info: main_figs/cell_wall_peptidoglycan.pdf  used on input line 110.
@@ -1330,12 +1292,6 @@ LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 30.
 
 [8 </Users/gchure/Dropbox/git/growth_limits/docs/submission/main_figs/cell_wall_peptidoglycan.pdf>]
 
-LaTeX Warning: Reference `fig:energy_production' on page 9 undefined on input line 41.
-
-
-LaTeX Warning: Reference `fig:energy_production' on page 9 undefined on input line 45.
-
-
 Package natbib Warning: Citation `szenk2017' on page 9 undefined on input line 47.
 
 
@@ -1353,13 +1309,7 @@ Package natbib Warning: Citation `henkel2014' on page 9 undefined on input line 
 
 Package natbib Warning: Citation `szenk2017' on page 9 undefined on input line 68.
 
-
-LaTeX Warning: Reference `fig:energy_production' on page 9 undefined on input line 73.
-
-
-LaTeX Warning: Reference `fig:energy_production' on page 9 undefined on input line 78.
-
-<main_figs/fig4_energy_production.pdf, id=1509, 471.23854pt x 272.6205pt>
+<main_figs/fig4_energy_production.pdf, id=1530, 471.23854pt x 272.6205pt>
 File: main_figs/fig4_energy_production.pdf Graphic file (type pdf)
 <use main_figs/fig4_energy_production.pdf>
 Package pdftex.def Info: main_figs/fig4_energy_production.pdf  used on input line 84.
@@ -1376,19 +1326,10 @@ Package natbib Warning: Citation `stouthamer1977' on page 9 undefined on input l
 Package natbib Warning: Citation `szenk2017' on page 9 undefined on input line 126.
 
 
-LaTeX Warning: Reference `fig:energy_scaling' on page 9 undefined on input line 127.
-
-
 Package natbib Warning: Citation `szenk2017' on page 9 undefined on input line 133.
 
 
-LaTeX Warning: Reference `fig:energy_scaling' on page 9 undefined on input line 133.
-
-
 Package natbib Warning: Citation `szenk2017' on page 9 undefined on input line 135.
-
-
-LaTeX Warning: Reference `fig:energy_scaling' on page 9 undefined on input line 143.
 
 
 Package natbib Warning: Citation `ashburner2000' on page 9 undefined on input line 148.
@@ -1397,13 +1338,7 @@ Package natbib Warning: Citation `ashburner2000' on page 9 undefined on input li
 Package natbib Warning: Citation `thegeneOntologyconsortium2018' on page 9 undefined on input line 148.
 
 
-LaTeX Warning: Reference `fig:energy_scaling' on page 9 undefined on input line 151.
-
-
 Package natbib Warning: Citation `tatusov2000' on page 9 undefined on input line 154.
-
-
-LaTeX Warning: Reference `fig:energy_scaling' on page 9 undefined on input line 158.
 
 
 LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 159.
@@ -1413,7 +1348,7 @@ LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 159.
 LaTeX Warning: Reference `LastPage' on page 10 undefined on input line 159.
 
 [10 </Users/gchure/Dropbox/git/growth_limits/docs/submission/main_figs/fig4_energy_production.pdf>]
-<main_figs/fig5_energy_SV_scaling.pdf, id=1607, 488.18585pt x 311.83502pt>
+<main_figs/fig5_energy_SV_scaling.pdf, id=1634, 488.18585pt x 311.83502pt>
 File: main_figs/fig5_energy_SV_scaling.pdf Graphic file (type pdf)
 <use main_figs/fig5_energy_SV_scaling.pdf>
 Package pdftex.def Info: main_figs/fig5_energy_SV_scaling.pdf  used on input line 163.
@@ -1449,18 +1384,12 @@ LaTeX Warning: Reference `LastPage' on page 11 undefined on input line 8.
 
 [11 </Users/gchure/Dropbox/git/growth_limits/docs/submission/main_figs/fig5_energy_SV_scaling.pdf>]
 
-LaTeX Warning: Reference `fig:DNA_synthesis' on page 12 undefined on input line 12.
-
-
-LaTeX Warning: Reference `figsupp:dntp' on page 12 undefined on input line 12.
-
-
 LaTeX Warning: Reference `sec:SI_central_dogma' on page 12 undefined on input line 13.
 
 
 Package natbib Warning: Citation `fijalkowska2012' on page 12 undefined on input line 23.
 
-<main_figs/DNA_replication_main.pdf, id=2210, 409.86426pt x 141.36012pt>
+<main_figs/DNA_replication_main.pdf, id=2238, 409.86426pt x 141.36012pt>
 File: main_figs/DNA_replication_main.pdf Graphic file (type pdf)
 <use main_figs/DNA_replication_main.pdf>
 Package pdftex.def Info: main_figs/DNA_replication_main.pdf  used on input line 32.
@@ -1480,16 +1409,7 @@ Package natbib Warning: Citation `bremer2008' on page 12 undefined on input line
 Package natbib Warning: Citation `si2017' on page 12 undefined on input line 59.
 
 
-LaTeX Warning: Reference `fig:DNA_synthesis' on page 12 undefined on input line 60.
-
-
 Package natbib Warning: Citation `ason2000' on page 12 undefined on input line 64.
-
-
-LaTeX Warning: Reference `fig:DNA_synthesis' on page 12 undefined on input line 65.
-
-
-LaTeX Warning: Reference `fig:DNA_synthesis' on page 12 undefined on input line 72.
 
 
 Package natbib Warning: Citation `jensen2001' on page 12 undefined on input line 76.
@@ -1500,13 +1420,7 @@ LaTeX Warning: Reference `LastPage' on page 12 undefined on input line 7.
 
 [12 </Users/gchure/Dropbox/git/growth_limits/docs/submission/main_figs/DNA_replication_main.pdf>]
 
-LaTeX Warning: Reference `fig:RNA_synthesis' on page 13 undefined on input line 41.
-
-
 LaTeX Warning: Reference `sec:SI_central_dogma' on page 13 undefined on input line 42.
-
-
-LaTeX Warning: Reference `fig:RNA_synthesis' on page 13 undefined on input line 45.
 
 
 Package natbib Warning: Citation `patrick2015' on page 13 undefined on input line 51.
@@ -1520,13 +1434,7 @@ Package natbib Warning: Citation `browning2016' on page 13 undefined on input li
 
 Package natbib Warning: Citation `browning2016' on page 13 undefined on input line 65.
 
-
-LaTeX Warning: Reference `fig:RNA_synthesis' on page 13 undefined on input line 66.
-
-
-LaTeX Warning: Reference `figsupp:sigma_70' on page 13 undefined on input line 66.
-
-<main_figs/RNA_synthesis_main.pdf, id=2660, 384.94214pt x 310.30026pt>
+<main_figs/RNA_synthesis_main.pdf, id=2696, 384.94214pt x 310.30026pt>
 File: main_figs/RNA_synthesis_main.pdf Graphic file (type pdf)
 <use main_figs/RNA_synthesis_main.pdf>
 Package pdftex.def Info: main_figs/RNA_synthesis_main.pdf  used on input line 77.
@@ -1540,18 +1448,6 @@ l.90 ...cludegraphics{main_figs/sigma_factor.pdf}}
 Package natbib Warning: Citation `dai2018' on page 13 undefined on input line 7.
 
 
-LaTeX Warning: Reference `fig:protein_synthesis' on page 13 undefined on input line 13.
-
-
-LaTeX Warning: Reference `fig:protein_synthesis' on page 13 undefined on input line 16.
-
-
-LaTeX Warning: Reference `fig:protein_synthesis' on page 13 undefined on input line 20.
-
-
-LaTeX Warning: Reference `figsupp:tRNA' on page 13 undefined on input line 20.
-
-
 LaTeX Warning: Reference `LastPage' on page 13 undefined on input line 23.
 
 [13]
@@ -1560,16 +1456,10 @@ LaTeX Warning: Reference `LastPage' on page 14 undefined on input line 23.
 
 [14 </Users/gchure/Dropbox/git/growth_limits/docs/submission/main_figs/RNA_synthesis_main.pdf>]
 
-LaTeX Warning: Reference `fig:categories' on page 15 undefined on input line 25.
-
-
 Package natbib Warning: Citation `ojkic2019' on page 15 undefined on input line 39.
 
 
 Package natbib Warning: Citation `dill2011' on page 15 undefined on input line 48.
-
-
-LaTeX Warning: Reference `fig:protein_synthesis' on page 15 undefined on input line 51.
 
 
 Package natbib Warning: Citation `scott2010' on page 15 undefined on input line 60.
@@ -1589,7 +1479,7 @@ Package natbib Warning: Citation `dai2016' on page 15 undefined on input line 65
 
 Package natbib Warning: Citation `erickson2017' on page 15 undefined on input line 65.
 
-<main_figs/protein_synthesis_main.pdf, id=2745, 445.58269pt x 233.21127pt>
+<main_figs/protein_synthesis_main.pdf, id=2786, 445.58269pt x 233.21127pt>
 File: main_figs/protein_synthesis_main.pdf Graphic file (type pdf)
 <use main_figs/protein_synthesis_main.pdf>
 Package pdftex.def Info: main_figs/protein_synthesis_main.pdf  used on input line 88.
@@ -1599,11 +1489,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{figsupp.1}) ha
                    \relax 
 l.108 ...).}{\includegraphics{main_figs/tRNA.pdf}}
                                                   \label{figsupp:tRNA}) (/Users/gchure/Dropbox/git/growth_limits/docs/submission/section_09_limit.tex
-
-LaTeX Warning: Reference `fig:protein_synthesis' on page 15 undefined on input line 2.
-
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 6.
+
 
 LaTeX Warning: Reference `LastPage' on page 15 undefined on input line 11.
 
@@ -1613,12 +1501,6 @@ Package natbib Warning: Citation `godin2010' on page 16 undefined on input line 
 
 
 Package natbib Warning: Citation `hauryliuk2015' on page 16 undefined on input line 25.
-
-
-LaTeX Warning: Reference `eq:phir' on page 16 undefined on input line 27.
-
-
-LaTeX Warning: Reference `eq:lam_npep' on page 16 undefined on input line 27.
 
 
 Package natbib Warning: Citation `klumpp2013' on page 16 undefined on input line 33.
@@ -1636,9 +1518,6 @@ Package natbib Warning: Citation `scott2010' on page 16 undefined on input line 
 LaTeX Warning: Reference `fig:ribosome_limit' on page 16 undefined on input line 37.
 
 
-LaTeX Warning: Reference `eq:lam_limited' on page 16 undefined on input line 43.
-
-
 Package natbib Warning: Citation `dai2016' on page 16 undefined on input line 46.
 
 
@@ -1649,9 +1528,6 @@ LaTeX Warning: Reference `sec:SI_f_a' on page 16 undefined on input line 50.
 
 
 LaTeX Warning: Reference `fig:ribosome_limit' on page 16 undefined on input line 51.
-
-
-LaTeX Warning: Reference `eq:lam_limited' on page 16 undefined on input line 53.
 
 
 Package natbib Warning: Citation `dai2016' on page 16 undefined on input line 54.
@@ -1696,7 +1572,7 @@ Package natbib Warning: Citation `li2014' on page 17 undefined on input line 67.
 
 Package natbib Warning: Citation `basan2015' on page 17 undefined on input line 70.
 
-<main_figs/fig7_ribosome_as_limit.pdf, id=2815, 406.41335pt x 336.82236pt>
+<main_figs/fig7_ribosome_as_limit.pdf, id=2862, 406.41335pt x 336.82236pt>
 File: main_figs/fig7_ribosome_as_limit.pdf Graphic file (type pdf)
 <use main_figs/fig7_ribosome_as_limit.pdf>
 Package pdftex.def Info: main_figs/fig7_ribosome_as_limit.pdf  used on input line 79.
@@ -1726,105 +1602,100 @@ pdfTeX warning (ext4): destination with the same identifier (name{figsupp.1}) ha
                    \relax 
 l.121 ...in_figs/fig7_ribosome_as_limit_Supp.pdf}}
                                                   \label{figsupp:ribosome_li...
-Overfull \vbox (7.27094pt too high) has occurred while \output is active []
+
+Package natbib Warning: Citation `bremer2008' on page 17 undefined on input line 128.
 
 
-
-LaTeX Warning: Reference `LastPage' on page 17 undefined on input line 126.
-
-[17 </Users/gchure/Dropbox/git/growth_limits/docs/submission/main_figs/fig7_ribosome_as_limit.pdf>]
-
-Package natbib Warning: Citation `bremer2008' on page 18 undefined on input line 128.
+Package natbib Warning: Citation `roller2016' on page 17 undefined on input line 130.
 
 
-Package natbib Warning: Citation `roller2016' on page 18 undefined on input line 130.
+Package natbib Warning: Citation `dennis2004' on page 17 undefined on input line 141.
 
 
-Package natbib Warning: Citation `dennis2004' on page 18 undefined on input line 141.
+Package natbib Warning: Citation `si2017' on page 17 undefined on input line 149.
 
 
-Package natbib Warning: Citation `si2017' on page 18 undefined on input line 149.
+LaTeX Warning: Reference `fig:ribosome_limit' on page 17 undefined on input line 149.
 
 
-LaTeX Warning: Reference `fig:ribosome_limit' on page 18 undefined on input line 149.
+LaTeX Warning: Reference `figsupp:ribosome_limit_supp' on page 17 undefined on input line 149.
 
 
-LaTeX Warning: Reference `figsupp:ribosome_limit_supp' on page 18 undefined on input line 149.
+LaTeX Warning: Reference `eq:Nori' on page 17 undefined on input line 150.
 
 
-LaTeX Warning: Reference `eq:Nori' on page 18 undefined on input line 150.
+LaTeX Warning: Reference `fig:ribosome_limit' on page 17 undefined on input line 160.
 
 
-LaTeX Warning: Reference `fig:ribosome_limit' on page 18 undefined on input line 160.
-
-
-LaTeX Warning: Reference `fig:ribosome_limit' on page 18 undefined on input line 169.
+LaTeX Warning: Reference `fig:ribosome_limit' on page 17 undefined on input line 169.
 
 ) (/Users/gchure/Dropbox/git/growth_limits/docs/submission/section_10_size.tex
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/it' will be
 (Font)              scaled to size 10.0pt on input line 2.
 
 
-LaTeX Warning: Reference `fig:ribosome_limit' on page 18 undefined on input line 3.
+LaTeX Warning: Reference `fig:ribosome_limit' on page 17 undefined on input line 3.
 
 
-Package natbib Warning: Citation `dai2016' on page 18 undefined on input line 6.
+Package natbib Warning: Citation `dai2016' on page 17 undefined on input line 6.
 
 
-LaTeX Warning: Reference `eq:lam_limited' on page 18 undefined on input line 7.
+Package natbib Warning: Citation `si2017' on page 17 undefined on input line 12.
 
 
-Package natbib Warning: Citation `si2017' on page 18 undefined on input line 12.
+LaTeX Warning: Reference `fig:translation_ecoli_partA' on page 17 undefined on input line 14.
 
 
-LaTeX Warning: Reference `fig:translation_ecoli_partA' on page 18 undefined on input line 14.
+LaTeX Warning: Reference `fig:translation_ecoli_partA' on page 17 undefined on input line 18.
 
 
-LaTeX Warning: Reference `fig:translation_ecoli_partA' on page 18 undefined on input line 18.
+LaTeX Warning: Reference `LastPage' on page 17 undefined on input line 27.
 
-<main_figs/fig8_ribosome_growth_limit_ecoli_a_polar_coord.pdf, id=3434, 338.71744pt x 142.04367pt>
+[17]
+
+LaTeX Warning: Reference `LastPage' on page 18 undefined on input line 27.
+
+[18 </Users/gchure/Dropbox/git/growth_limits/docs/submission/main_figs/fig7_ribosome_as_limit.pdf>]
+<main_figs/fig8_ribosome_growth_limit_ecoli_a_polar_coord.pdf, id=3489, 338.71744pt x 142.04367pt>
 File: main_figs/fig8_ribosome_growth_limit_ecoli_a_polar_coord.pdf Graphic file (type pdf)
 <use main_figs/fig8_ribosome_growth_limit_ecoli_a_polar_coord.pdf>
 Package pdftex.def Info: main_figs/fig8_ribosome_growth_limit_ecoli_a_polar_coord.pdf  used on input line 116.
 (pdftex.def)             Requested size: 338.71661pt x 142.04332pt.
 
-LaTeX Warning: Reference `sec:SI_ori' on page 18 undefined on input line 127.
+
+LaTeX Warning: Reference `sec:SI_ori' on page 19 undefined on input line 127.
 
 
-Package natbib Warning: Citation `schmidt2016' on page 18 undefined on input line 127.
+Package natbib Warning: Citation `schmidt2016' on page 19 undefined on input line 127.
 
 
-LaTeX Warning: Reference `eq:Nori' on page 18 undefined on input line 127.
+LaTeX Warning: Reference `eq:Nori' on page 19 undefined on input line 127.
 
 ) (/Users/gchure/Dropbox/git/growth_limits/docs/submission/section_11_model.tex
 
-LaTeX Warning: Reference `fig:ribosome_limit' on page 18 undefined on input line 12.
+LaTeX Warning: Reference `fig:ribosome_limit' on page 19 undefined on input line 12.
 
 
-Package natbib Warning: Citation `dai2016' on page 18 undefined on input line 13.
+Package natbib Warning: Citation `dai2016' on page 19 undefined on input line 13.
 
 
-Package natbib Warning: Citation `hauryliuk2015' on page 18 undefined on input line 15.
+Package natbib Warning: Citation `hauryliuk2015' on page 19 undefined on input line 15.
 
 
-Package natbib Warning: Citation `zhu2019' on page 18 undefined on input line 15.
+Package natbib Warning: Citation `zhu2019' on page 19 undefined on input line 15.
 
 
-Package natbib Warning: Citation `Buke2020' on page 18 undefined on input line 15.
+Package natbib Warning: Citation `Buke2020' on page 19 undefined on input line 15.
 
 
-Package natbib Warning: Citation `hauryliuk2015' on page 18 undefined on input line 18.
+Package natbib Warning: Citation `hauryliuk2015' on page 19 undefined on input line 18.
 
 
-Package natbib Warning: Citation `kraemer2019' on page 18 undefined on input line 20.
+Package natbib Warning: Citation `kraemer2019' on page 19 undefined on input line 20.
 
 
-Package natbib Warning: Citation `fernandezcoll2020' on page 18 undefined on input line 22.
+Package natbib Warning: Citation `fernandezcoll2020' on page 19 undefined on input line 22.
 
-
-LaTeX Warning: Reference `LastPage' on page 18 undefined on input line 23.
-
-[18]
 
 LaTeX Warning: Reference `fig:elongation_rate_model' on page 19 undefined on input line 35.
 
@@ -1832,81 +1703,66 @@ LaTeX Warning: Reference `fig:elongation_rate_model' on page 19 undefined on inp
 LaTeX Warning: Reference `sec:SI_model' on page 19 undefined on input line 35.
 
 
-LaTeX Warning: Reference `fig:elongation_rate_model' on page 19 undefined on input line 40.
+LaTeX Warning: Reference `LastPage' on page 19 undefined on input line 39.
+
+[19 </Users/gchure/Dropbox/git/growth_limits/docs/submission/main_figs/fig8_ribosome_growth_limit_ecoli_a_polar_coord.pdf>]
+
+LaTeX Warning: Reference `fig:elongation_rate_model' on page 20 undefined on input line 40.
 
 
-LaTeX Warning: Reference `fig:elongation_rate_model' on page 19 undefined on input line 46.
+LaTeX Warning: Reference `fig:elongation_rate_model' on page 20 undefined on input line 46.
 
 
-LaTeX Warning: Reference `fig:elongation_rate_model' on page 19 undefined on input line 48.
+LaTeX Warning: Reference `fig:elongation_rate_model' on page 20 undefined on input line 48.
 
 
-LaTeX Warning: Reference `fig:elongation_rate_model' on page 19 undefined on input line 52.
+LaTeX Warning: Reference `fig:elongation_rate_model' on page 20 undefined on input line 52.
 
-<main_figs/elongation_model.pdf, id=3443, 371.07533pt x 279.31752pt>
+<main_figs/elongation_model.pdf, id=3877, 371.07533pt x 279.31752pt>
 File: main_figs/elongation_model.pdf Graphic file (type pdf)
 <use main_figs/elongation_model.pdf>
 Package pdftex.def Info: main_figs/elongation_model.pdf  used on input line 60.
 (pdftex.def)             Requested size: 371.07442pt x 279.31683pt.
 
-LaTeX Warning: Reference `SI_model' on page 19 undefined on input line 81.
+LaTeX Warning: Reference `SI_model' on page 20 undefined on input line 82.
 
 pdfTeX warning (ext4): destination with the same identifier (name{figsupp.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.90 ...enshot.png}\label{figsupp:model_explorer}}
+l.91 ...enshot.png}\label{figsupp:model_explorer}}
                                                   
-/Users/gchure/Dropbox/git/growth_limits/docs/submission/section_11_model.tex:90: Use of \\figsupp doesn't match its definition.
+/Users/gchure/Dropbox/git/growth_limits/docs/submission/section_11_model.tex:91: Use of \\figsupp doesn't match its definition.
 \new@ifnextchar ...served@d = #1\def \reserved@a {
                                                   #2}\def \reserved@b {#3}\f...
-l.90 ...enshot.png}\label{figsupp:model_explorer}}
+l.91 ...enshot.png}\label{figsupp:model_explorer}}
                                                   
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-/Users/gchure/Dropbox/git/growth_limits/docs/submission/section_11_model.tex:90: Use of \\figsupp doesn't match its definition.
+/Users/gchure/Dropbox/git/growth_limits/docs/submission/section_11_model.tex:91: Use of \\figsupp doesn't match its definition.
 <argument> \def \reserved@a *
                              {\def \caption@tempa {*}\caption@@withoptargs {...
-l.90 ...enshot.png}\label{figsupp:model_explorer}}
+l.91 ...enshot.png}\label{figsupp:model_explorer}}
                                                   
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-/Users/gchure/Dropbox/git/growth_limits/docs/submission/section_11_model.tex:90: Use of \\figsupp doesn't match its definition.
+/Users/gchure/Dropbox/git/growth_limits/docs/submission/section_11_model.tex:91: Use of \\figsupp doesn't match its definition.
 \@ifnextchar ... \reserved@d =#1\def \reserved@a {
                                                   #2}\def \reserved@b {#3}\f...
-l.90 ...enshot.png}\label{figsupp:model_explorer}}
+l.91 ...enshot.png}\label{figsupp:model_explorer}}
                                                   
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-/Users/gchure/Dropbox/git/growth_limits/docs/submission/section_11_model.tex:90: Argument of \caption@@@withoptargs has an extra }.
+/Users/gchure/Dropbox/git/growth_limits/docs/submission/section_11_model.tex:91: Argument of \caption@@@withoptargs has an extra }.
 <inserted text> 
                 \par 
-l.90 ...enshot.png}\label{figsupp:model_explorer}}
+l.91 ...enshot.png}\label{figsupp:model_explorer}}
                                                   
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-{\caption@@xlabel }
-/Users/gchure/Dropbox/git/growth_limits/docs/submission/section_11_model.tex:90: Paragraph ended before \caption@@@withoptargs was complete.
-<to be read again> 
-                   \par 
-l.90 ...enshot.png}\label{figsupp:model_explorer}}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-/U

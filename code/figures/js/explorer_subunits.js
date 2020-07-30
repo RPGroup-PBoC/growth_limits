@@ -5,7 +5,8 @@ var cplx_select = cplx_select_input.value;
 var cplx_table = cplx_table_source.data;
 var cplx_display = cplx_display_source.data;
 var condition = cplx_display['cond'][hover_idx];
-var dataset = cplx_display['l'][hover_idx]
+var dataset = cplx_display['l'][hover_idx];
+var hr = cplx_display['x'][hover_idx];
 
 // Find the indices of the complex 
 var _cplx_inds = getAllIndexes(cplx_desc_source.data['complex_annotation'], cplx_select)
@@ -13,7 +14,7 @@ var cplx = cplx_desc_source.data['complex'][_cplx_inds[0]]
 var cplx_inds = getAllIndexes(cplx_source['complex'], cplx);
 var approved_inds = [];
 for (var i = 0; i < cplx_inds.length; i++) {
-    if ((cplx_source['dataset_name'][cplx_inds[i]]==dataset) & (cplx_source['condition'][cplx_inds[i]]==condition)) {
+    if ((cplx_source['dataset_name'][cplx_inds[i]]==dataset) & (cplx_source['growth_rate_hr'][cplx_inds[i]]==hr)) {
         approved_inds.push(cplx_inds[i]);
     }
 }

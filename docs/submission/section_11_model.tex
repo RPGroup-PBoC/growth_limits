@@ -21,36 +21,6 @@ A-site and a strong increase in (p)ppGpp synthesis activity by the enzyme RelA
 ori$\rangle$ and maintain a smaller cell size in poorer growth conditions
 \citep{fernandezcoll2020}.
 
-
-%
-%  These observations raise the possibility that
-% it is through (p)ppGpp that cells mediate the growth-rate dependent changes in
-% $\langle$\# ori$\rangle$, cell size, and ribosomal abundance and activity
-% . Indeed, recent work in a (p)ppGpp deficient strain of
-% \textit{E. coli} found that cells exhibited $\langle$\# ori$\rangle$ and cell
-% sizes that were more consistent with a fast growth state where (p)ppGpp levels
-% are normally low . In this final section, we consider
-% the interconnection between proteomic composition and ribosome abundance by
-% formulating a minimal model of growth rate control. We use it to quantitatively
-% show how tuning these parameters help cells maximize growth rate for a
-% particular environment.
-
-% The drastic changes observed in cell size, proteomic composition, and
-% ribosome abundance across different growth conditions suggests a hypothesis
-% that each parameter is being tuned to better match the cell's biosynthetic
-% capacity to the specific environment.
-
-
-% \subsubsection{Ribosomal Elongation Rate and Cellular Growth Rate are Linked by
-% Amino Acid Scarcity}
-% Here we consider a mode of regulation in which the rate of peptide elongation
-% $r_t$ depends only on the availability of amino acids (and, therefore, also
-% amino-acyl tRNAs). It is through the elongation rate $r_t$ that we assume cells
-% adjust their ribosomal content ($R$, $\Phi_R$) according to nutrient
-% availability.
-%  and for simplicity, do not explicitly model changes in  $\langle$\#
-% ori$\rangle$ or regulation by (p)ppGpp.
-
 To consider this quantitatively, we assume that cells modulate their proteome
 ($N_\text{pep}$, $R$, $\Phi_R$) to better maximize their rate of peptide
 elongation $r_t$. The elongation rate $r_t$ will depend on how quickly the ribosomes can
@@ -67,67 +37,23 @@ that protein synthesis and energy production are not limiting, we
 assume that other molecular players required by ribosomes like elongation
 factors and GTP are available in sufficient abundance.
 
-% We therefore coarse-grain the steps of
-% elongation to two time-scales,  1) the time required to find and bind each
-% correct amino-acyl tRNA, and 2) the remaining steps in peptide elongation that
-% will not depend on the amino acid availability. The availability of amino acids
-% will depend on their cellular concentration, which we treat as a single
-% effective species, $[AA]_\text{eff}$. The time to translate each codon is given
-% by the inverse of the elongation rate $r_t$, which can be written as,
-%
-% \begin{equation}
-% \frac{1}{r_t} = \frac{1}{k_{on} \alpha [AA]_{\text{eff}}} + \frac{1}{r_{t}^{\text{max}}}.
-% \end{equation}
-% where we have assumed that the rate of binding by amino-acyl tRNA $k_{on}$ is
-% proportional to $[AA]_{\text{eff}}$ by a constant $\alpha$. The second term on
-% the right-hand side reflects our assumption that other steps in peptide
-% elongation are not rate-limiting, with a maximum elongation rate
-% $r_{t}^{\text{max}}$ of about 17 amino acids per second \cite{dai2016}.
-
-%
-% This can be stated more
-% succinctly in terms of an effective dissociation constant, $K_D = r_{t}^{\text{max}} / \alpha k_\text{on}$, where the elongation rate $r_t$ is now given by
-%
-% \begin{equation}
-% r_t = \frac{r_{t}^{\text{max}}}{1 + K_D/[AA]_{\text{eff}}}.
-% \label{eq:rt_kd_simple}
-% \end{equation}
-%
-% Under steady state growth, the amino acid concentration is constant
-% ($\frac{d[AA]_\text{eff}}{dt}=0$) and will relate to the rate of amino acid
-% synthesis (or import, for rich media) and/or tRNA charging, as $r_{AA}$, and the
-% rate of consumption, $r_t\times R \times f_a$. We calculate
-% $[AA]_\text{eff}$ by,
-%
-% \begin{equation}
-%    [AA]_\text{eff} = \frac{t(r_{AA} - r_t \times R \times f_a)}{V},
-%    \label{eq:aa_final}
-% \end{equation}
-% which allows us to then solve for $r_t$ explicitly (further described in
-% Appendix \ref{sec:SI_model}). Here $r_{AA}$ is in units of AA per unit time, and
-% $V$ reflects the volume of the cell over a time period $t$.
-
-In \FIG{elongation_rate_model}(B), we illustrate how the elongation rate will depend
-on the ribosomal copy number. Here, we have considered
-% a unit cell volume $V =
-% 1$\textmu m$^3$,
-% a unit time $t = 1$ s, a $K_D = 5$ mM (inferred from
-% \cite{bennett2009}), $f_a = 1$, and
-an arbitrarily chosen $r_{AA} = 5\times 10^6$ AA $\cdot$ s$^{-1} \cdot$ \textmu
-m$^{-3}$ and $f_a = 1$ for a unit cell volume $V = 1$fL. At low ribosome copy
-numbers, the observed elongation rate is dependent
-primarily on $[AA]_\text{eff}$ through $r_{AA}$ [as $r_t^{\text{max}} \times R
-\times f_a << r_{AA}$, point (1) in \FIG{elongation_rate_model}(B)]. As the
-ribosome copy number is increased such that the amino acid supply rate and
-consumption rate are nearly equal [point (2) in \FIG{elongation_rate_model}(B)],
-the observed elongation rate begins to decrease sharply. When the ribosome copy
-number is increased even further, consumption at the maximum elongation rate
-exceeds the supply rate, yielding a significantly reduced elongation rate
-[point (3) in \FIG{elongation_rate_model}{B)]. While the elongation rate will
-always be dominated by the amino acid supply rate at sufficiently low ribosome
-copy numbers, the elongation rate at larger ribosome abundances can be increased
-by tuning $f_a$ such that not all ribosomes are elongating, reducing the total
-consumption rate.
+In \FIG{elongation_rate_model}(B), we illustrate how the elongation rate will
+depend on the ribosomal copy number. Here, we have considered an arbitrarily
+chosen $r_{AA} = 5\times 10^6$ AA $\cdot$ s$^{-1} \cdot$ \textmu m$^{-3}$ and
+$f_a = 1$ for a unit cell volume $V = 1$fL. At low ribosome copy numbers, the
+observed elongation rate is dependent primarily on $[AA]_\text{eff}$ through
+$r_{AA}$ [as $r_t^{\text{max}} \times R \times f_a << r_{AA}$, point (1) in
+\FIG{elongation_rate_model}(B)]. As the ribosome copy number is increased
+such that the amino acid supply rate and consumption rate are nearly equal
+[point (2) in \FIG{elongation_rate_model}(B)], the observed elongation rate
+begins to decrease sharply. When the ribosome copy number is increased even
+further, consumption at the maximum elongation rate exceeds the supply rate,
+yielding a significantly reduced elongation rate [point (3) in
+\FIG{elongation_rate_model}{B)]. While the elongation rate will always be
+dominated by the amino acid supply rate at sufficiently low ribosome copy
+numbers, the elongation rate at larger ribosome abundances can be increased
+by tuning $f_a$ such that not all ribosomes are elongating, reducing the
+total consumption rate.
 
 \begin{figure}
     \centering{

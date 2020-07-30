@@ -1,12 +1,11 @@
 \subsection{Maximum Growth Rate is Determined by the Ribosomal Mass Fraction}
 The 7 minute speed limit shown in \FIG{protein_synthesis}(B) assumes all
-proteins in the cell are ribosomes and in order to connect this to the
-experimental data, we first need to relax this assumption and determine a
+proteins in the cell are ribosomes. In order to connect this to the
+experimental data (and physiological reality more broadly), we first need to relax this assumption and determine a
 translation-limited growth rate. Here, we will assume that the cell is composed
-of $N_\text{pep}$ peptide bonds and $R$ ribosomes, whose values will depend on the
-growth rate $\lambda$. The protein subunits of each ribosomal protein correspond to
-is made up of $\approx$ 7500
-amino acids as noted earlier, which we denote by $L_R$.
+of $N_\text{pep}$ peptide bonds and $R$ ribosomes, whose precise values will depend on the
+growth rate $\lambda$. The protein subunits of each ribosomal protein sum to a
+total of $\approx$ 7500 amino acids as noted earlier, which we denote by $L_R$.
 With an average mass of an amino acid of $m_\text{AA} \approx$ 110
 Da (BNID: 104877), the total ribosomal mass fraction  $\Phi_R$ is given by
 \begin{equation}
@@ -14,7 +13,7 @@ Da (BNID: 104877), the total ribosomal mass fraction  $\Phi_R$ is given by
   \label{eq:phir}
 \end{equation}
 For exponentially growing cells \citep{godin2010}, the rate of cellular growth will
-be related to the rate of protein synthesis by
+be related to the rate of protein synthesis via
 \begin{equation}
   \lambda N_\text{pep} = r_t \times R \times f_a,
   \label{eq:lam_npep}
@@ -22,8 +21,8 @@ be related to the rate of protein synthesis by
 where $r_t$ is the translation rate. Here, we've introduced a multiplicative
 factor $f_a$ which represents the fraction of the ribosomes that are actively
 translating. This term allows us to account for immature or
-non-functional ribosomes or active sequesteration of ribosomes through the action of
-secondary messenger alarmones (p)ppGpp in poorer nutrient conditions \cite{hauryliuk2015}.
+non-functional ribosomes or active sequestration of ribosomes through the action
+of the secondary messenger alarmone (p)ppGpp in poorer nutrient conditions \cite{hauryliuk2015}.
 
 Combining \EQ{phir} and \EQ{lam_npep} results in an expression for a
 translation-limited growth rate, which is given by
@@ -41,29 +40,30 @@ active ($f_a = 1$) and the entire proteome is composed of ribosomal proteins
 ($\Phi_R = 1$), indeed, we arrive at the maximum theoretical growth rate of $r_t
 / L_R$, and $\approx$ 7 min for \textit{E. coli}.
 
-To connect this expectation to the proteomic data, however, requires knowledge
-of $f_a$ at each growth rate, since the proteomic measurements only provide a
+Connecting \EQ{lam_limited} to the proteomic data serving as the centerpiece of
+our work, however, requires knowledge
+of $f_a$ at each growth rate as proteomic measurements only provide a
 measure of $\Phi_R$. Recently, \cite{dai2016} determined $f_a$ as a function of
 the growth rate (\FIG{ribosome_limit}(A), right-hand panel, inset), revealing
 that $f_a \approx 1$ at growth rates above 0.75 hr$^{-1}$ and $f_a < 1$ as the
 growth rate slows. Using these data, we inferred the approximate active fraction
-(see Appendix \nameref{SI_f_a}) at each growth rate and used this to compute
-$\Phi_R \times f_a$ (\FIG{ribosome_limit}(BA, colored points in right-hand
+(see Appendix \nameref{sec:SI_f_a}) at each growth rate and used this to compute
+$\Phi_R \times f_a$ (\FIG{ribosome_limit}(A, colored points in right-hand
 panel). In general, these data skirt the translation-limited growth rate
 determined using \EQ{lam_limited} with $r_t$ taken to be the maximal elongation
 rate of 17 amino acids per second measured by \cite{dai2016}. There is a notable
 discrepancy between the data collected in \cite{schmidt2016, li2014} and that
-collected from \cite{valgepea2013, peebo2015}. When compared to other,
-non-proteomic wide measurements of the active ribosome mass fraction
-(\FIG{ribosome_limit}(B), grey points in bottom plot), the data from
+collected from \cite{valgepea2013, peebo2015}. When compared to other
+measurements (non-proteomic with significantly lower resolution) of the active ribosome mass fraction
+(\FIG{ribosome_limit}(B), grey points in right-hand panel), the data from
 \cite{valgepea2013} and \cite{peebo2015} are notably aberrant, suggesting a
 systematic error in these data. These additional measurements come from a number
 of recent studies and are determined from measurements of total RNA to total
 protein mass ratios (\FIGSUPP[ribosome_limit]{ribosome_limit_supp}).
 
 Together, these results illustrate that the growth rates observed across the
-amalgamated data sets are close to limiting growth rate determined through their
-ribosomal  activity, at least for the data reported in \cite{schmidt2016} and
+amalgamated data sets are close to the translation-limited rowth rate determined through their
+ribosomal activity, at least for the data reported in \cite{schmidt2016} and
 \cite{li2014}. While this is a useful framework to consider how the relative
 abundance of ribosomes (compared to all other proteins) defines the growth rate,
 it is worth noting that as growth rate increases, so does the cell size and
@@ -72,6 +72,122 @@ how elongation rate and the total number of peptide bonds per proteome is
 related to the growth rate, we now expand this description to account for the
 increasing cell size and ribosome copy number at faster growth rates,  enabling
 us to identify a potential bottleneck in the synthesis of rRNA.
+
+\begin{figure}
+  \begin{fullwidth}
+        \centering{
+        \includegraphics{main_figs/fig7_ribosome_as_limit.pdf}
+        \caption{\textbf{Translation-limited growth rate.}  (A) \textit{left}:
+        Translation-limited growth as a function of the ribosomal fraction. The
+        solid line is calculated for an elongation rate of 17 aa per second.
+        The dashed line corresponds to the maximum rate of ribosomal protein
+        (R-protein).
+        \textit{right}: Actively translating ribosomal fraction versus growth rate.
+        The actively translating ribosomal fraction is calculated using the
+        estimated values of $f_a$ from  \cite{dai2016} (shown in inset; see
+        Appendix \nameref{sec:SI_f_a} for additional detail). Gray data points
+        show additional measurements from literature and consider further in
+        \FIGSUPP[ribosome_limit]{ribosome_limit_supp}(A).
+        (B) Maximum number of
+        rRNA units that can be synthesized as a function of growth rate.
+        Solid curve corresponding to the rRNA copy number is calculated by
+        multipyling the number of rRNA operons by the estimated number of
+        $\langle\text{\# ori}\rangle$ at each growth rate. The quantity
+        $\langle\text{\# ori}\rangle$ was calculated using Equation 4 and
+        the measurements from \cite{si2017} that are plotted in
+        \FIG{translation_ecoli_partA}(A). The dashed line shows the maximal
+        number of functional rRNA units produced from a single chromosomal
+        initiation per cell cycle. }
+        \label{fig:ribosome_limit}
+
+
+        \figsupp[Comparison of $\Phi_R f_a$ with literature and estimation of $\langle$\# ori$\rangle$.]{(A) Actively translating ribosomal fraction versus growth rate.
+        The actively translating ribosomal fraction is calculated using the
+        estimated values of $f_a$ from  \cite{dai2016} (shown in inset; see
+        Appendix \nameref{sec:SI_f_a} for additional detail). Additional measurements
+        in addition to the proteomic measurements are based on measurements of cellular RNA to
+        protein ratio, with $\Phi_R \approx$ the cellular RNA to
+        protein ratio divided by 2.1 \citep{dai2016}. (B) Experimental measurements of
+        the cell doubling time $\tau$ and cell cycle time $t_{cyc}$
+         from Si \textit{et al.}
+        (2017). Dashed line shows fit to the data, which were used to estimate
+        $\langle$\# ori$\rangle$. $t_{cyc}$ was assumed to vary in proportion to
+        $\tau$ for doubling times greater than 40 minutes, and reach a
+        minimum value of 73 minutes. See Appendix
+        \nameref{sec:SI_ori} for additional details exact estimation of rRNA copy number. Red data points correspond
+        to measurements in strain MG1655, while light green points are for
+        strain NCM3722.
+        Schematic shows the expected increase in replication forks (or number of
+        ori regions) as \textit{E. coli} cells grow faster. }{\includegraphics{main_figs/fig7_ribosome_as_limit_Supp.pdf}}\label{figsupp:ribosome_limit_supp}
+        }
+  \end{fullwidth}
+\end{figure}
+
+\subsection{rRNA Synthesis Presents a Potential Bottleneck During Rapid Growth}
+Even under idealized experimental conditions, \textit{E. coli} rarely
+exhibits growth rates above 2 hr$^{-1}$ \citep{bremer2008}, which is still
+well-below the synthesis rate of a single ribosome, and below the maximum
+growth rates reported for several other bacteria \citep{roller2016}. While we
+have considered potential limits imposed by translation of ribosomal
+\textit{proteins}, here we consider potential limiting regimes for the
+production of rRNA.
+
+Due to multiple initiations of chromosomal replication per cell doubling, the
+effective number of rRNA operons increases with growth rate and will do so in
+proportion to the average number of origins per cell, $\langle$\# ori$\rangle$.
+This later parameter is set by how often replication must be initiated in order
+to keep up with cell doubling times $\tau$ whose time may be shorter than the
+cell cycle time $t_{cyc}$ (referring to the time from replication initiation to
+cell division) \cite{dennis2004}. This is quantified by
+\begin{equation}
+    \langle \text{\# ori} \rangle = 2^{\tau_{cyc} / \tau} = 2^{\tau_{cyc} \lambda / \log(2)}.
+    \label{eq:Nori}
+\end{equation}
+We used the experimental measurements of $\tau_{cyc}$ (the timescale of
+chromosome replication and cell division) and $\tau$ (the timescale of a cell
+doubling) from
+\cite{si2017} (\FIGSUPP[ribosome_limit]{ribosome_limit_supp}(B)) to calculate
+$\langle$\# ori$\rangle$  with \EQ{Nori} as a function of growth rates. For
+growth rates above about 0.5 hr$^{-1}$, $t_{cyc}$ is approximately constant at
+about 70 minutes, implying that $\langle$\# ori$\rangle$ will grow
+exponentially with growth rates beyond 0.5 hr$^{-1}$. As the rRNA operons are predominantly located
+close to origin of replication (BNID: 100352), we make the simplifying
+assumption that that the number of rRNA operons  will be directly proportional
+to $\langle$\# ori$\rangle$.
+
+Returning to our rule-of-thumb of 1 functional rRNA unit per second per
+transcribing operon, we estimate the maximum number of ribosomes that could be made as a function of
+growth rate (\FIG{ribosome_limit}(B), blue curve). Although we expect this
+estimate to significantly overestimate rRNA abundance at slower growth rates
+($\lambda < 0.5\, \text{hr}^{-1}$), this provides a useful reference alongside the
+proteomic measurements particularly in the regime of fast growth. For growth
+rates above about 1 hr$^{-1}$, for example, we find that
+cells will need to transcribe rRNA near their maximal rate. As a counter
+example, if \textit{E. coli} did not initiate multiple rounds of replication,
+but manged to replicate their chromosome within the requisite time limit,
+they would be unable to make enough rRNA for the observed number of ribosomes
+(dashed blue curve in \FIG{ribosome_limit}(C)). The convergence between the
+maximum rRNA production and measured ribosome copy number suggests rRNA
+synthesis may begin to present a bottleneck at the fastest growth rates due to
+the still-limited copies of rRNA genes.
+
+
+% It is now well-documented that \textit{E. coli} cells add a constant volume per
+% origin of replication, which is robust to a remarkable array of cellular
+% perturbations \citep{si2017}.
+
+% To consider
+% this  in the context of the proteomic data, we used measurements of $\tau_{cyc}$
+% and  $\tau$ from \cite{si2017} (\FIG{translation_ecoli_partA}(A)) to
+% calculate $\langle$\# ori$\rangle$  with \EQ{Nori} at different growth
+% rates. For ribosomal synthesis, we find an approximately linear correlation
+% between ribosome copy number and $\langle$\# ori$\rangle$
+% (\FIG{translation_ecoli_partA}(B)).
+%
+% For a constant cell cycle time, which is observed at growth rates above about
+% 0.5 hr$^{-1}$ (\FIG{translation_ecoli_partA}(A), \citep{helmstetter1968}),
+% \EQ{Nori} states that $\langle \text{\# ori} \rangle$ will need to increase
+% exponentially with the growth rate.
 
 % speak in  mor
 % We begin by considering the length of time needed to replicate a single
@@ -214,113 +330,3 @@ us to identify a potential bottleneck in the synthesis of rRNA.
 % the maximum growth rate (when $\Phi_R$ = 1), and also the achieveable growth
 % rate under more moderate values of $\Phi_R$.
 
-\begin{figure}
-  \begin{fullwidth}
-        \centering{
-        \includegraphics{main_figs/fig7_ribosome_as_limit.pdf}
-        \caption{\textbf{Translation-limited growth rate.}  (A) \textit{left}:
-        Translation-limited growth as a function of the ribosomal fraction. The
-        solid line is calculated for an elongation rate of 17 aa per second.
-        The dashed line corresponds to the maximum rate of ribosomal protein
-        (R-protein).
-        \textit{right}: Actively translating ribosomal fraction versus growth rate.
-        The actively translating ribosomal fraction is calculated using the
-        estimated values of $f_a$ from  \cite{dai2016} (shown in inset; see
-        Appendix \nameref{sec:SI_f_a} for additional detail). Gray data points
-        show additional measurements from literature and consider further in
-        \FIGSUPP[ribosome_limit]{ribosome_limit_supp}(A).
-        (B) Maximum number of
-        rRNA units that can be synthesized as a function of growth rate.
-        Solid curve corresponding to the rRNA copy number is calculated by
-        multipyling the number of rRNA operons by the estimated number of
-        $\langle\text{\# ori}\rangle$ at each growth rate. The quantity
-        $\langle\text{\# ori}\rangle$ was calculated using Equation 4 and
-        the measurements from \cite{si2017} that are plotted in
-        \FIG{translation_ecoli_partA}(A). The dashed line shows the maximal
-        number of functional rRNA units produced from a single chromosomal
-        initiation per cell cycle. }
-        \label{fig:ribosome_limit}
-
-
-        \figsupp[Comparison of $\Phi_R f_a$ with literature and estimation of $\langle$\# ori$\rangle$.]{(A) Actively translating ribosomal fraction versus growth rate.
-        The actively translating ribosomal fraction is calculated using the
-        estimated values of $f_a$ from  \cite{dai2016} (shown in inset; see
-        Appendix \nameref{sec:SI_f_a} for additional detail). Additional measurements
-        in addition to the proteomic measurements are based on measurements of cellular RNA to
-        protein ratio, with $\Phi_R \approx$ the cellular RNA to
-        protein ratio divided by 2.1 \citep{dai2016}. (B) Experimental measurements of
-        the cell doubling time $\tau$ and cell cycle time $t_{cyc}$
-         from Si \textit{et al.}
-        (2017). Dashed line shows fit to the data, which were used to estimate
-        $\langle$\# ori$\rangle$. $t_{cyc}$ was assumed to vary in proportion to
-        $\tau$ for doubling times greater than 40 minutes, and reach a
-        minimum value of 73 minutes. See Appendix
-        \nameref{sec:SI_ori} for additional details exact estimation of rRNA copy number. Red data points correspond
-        to measurements in strain MG1655, while light green points are for
-        strain NCM3722.
-        Schematic shows the expected increase in replication forks (or number of
-        ori regions) as \textit{E. coli} cells grow faster. }{\includegraphics{main_figs/fig7_ribosome_as_limit_Supp.pdf}}\label{figsupp:ribosome_limit_supp}
-        }
-  \end{fullwidth}
-\end{figure}
-
-\subsection{rRNA Synthesis Presents a Potential Bottleneck during Rapid Growth}
-\textit{E. coli} rarely exhibits growth rates above 2 hr$^{-1}$
-\citep{bremer2008}, which is still well-below the synthesis rate of a single
-ribosome, and below the maximum growth rates reported for several other bacteria
-\citep{roller2016}. Here we need to also consider ribosomal synthesis, which as
-we have found earlier, is ultimately  limited by the available  number of rRNA
-operons to transcribe rRNA.
-
-Due to multiple initiations of chromosomal replication per cell doubling, the
-effective number of rRNA operons increases with growth rate and will do so in
-proportion to the average number of origins per cell, $\langle$\# ori$\rangle$.
-This later parameter is set by how often replication must be initiated in order
-to keep up with cell doubling times $\tau$ whose time may be shorter than the
-cell cycle time $t_{cyc}$ (referring to the time from replication initiation to
-cell division) \cite{dennis2004}. This is quantified by
-\begin{equation}
-    \langle \text{\# ori} \rangle = 2^{\tau_{cyc} / \tau} = 2^{\tau_{cyc} \lambda / ln(2)}.
-    \label{eq:Nori}
-\end{equation}
-We used the experimental measurements of $\tau_{cyc}$ and $\tau$ from
-\cite{si2017} (\FIGSUPP[ribosome_limit]{ribosome_limit_supp}(B)) to calculate
-$\langle$\# ori$\rangle$  with \EQ{Nori} as a function of growth rates. For
-growth rates above about 0.5 hr$^{-1}$, $t_{cyc}$ is approximately constant at
-about 70 minutes, which means that $\langle$\# ori$\rangle$ will grow
-exponentially with growth rate. Since the rRNA operons are predominantly located
-near to origin of replication (BNID: 100352), we make the simplifying
-assumption that that the number of rRNA operons  will be directly proportional
-to $\langle$\# ori$\rangle$.
-
-Returning to our rule-of-thumb of 1 functional rRNA unit per second per operon,
-we estimate the maximum number of ribosomes that could be made as a function of
-growth rate (\FIG{ribosome_limit}(C), blue curve). Although we expect this
-estimate to drastically overestimate rRNA abundance at slower growth rates
-($\lambda < 0.5\, \text{hr}^{-1}$), it provides a useful reference alongside the
-proteomic measurements. For growth rates above about 1 hr$^{-1}$, we find that
-cells will \textit{need} to transcribe rRNA near their maximal rate. As a counter
-example, if \textit{E. coli} did not initiate multiple rounds of replication,
-they would be unable to make enough rRNA for the observed number of ribosomes
-(dashed blue curve in \FIG{ribosome_limit}(C)). The convergence between the
-maximum rRNA production and measured ribosome copy number suggests rRNA
-synthesis may begin to present a bottleneck at the fastest growth rates due to
-the still-limited copies of rRNA genes.
-
-
-% It is now well-documented that \textit{E. coli} cells add a constant volume per
-% origin of replication, which is robust to a remarkable array of cellular
-% perturbations \citep{si2017}.
-
-% To consider
-% this  in the context of the proteomic data, we used measurements of $\tau_{cyc}$
-% and  $\tau$ from \cite{si2017} (\FIG{translation_ecoli_partA}(A)) to
-% calculate $\langle$\# ori$\rangle$  with \EQ{Nori} at different growth
-% rates. For ribosomal synthesis, we find an approximately linear correlation
-% between ribosome copy number and $\langle$\# ori$\rangle$
-% (\FIG{translation_ecoli_partA}(B)).
-%
-% For a constant cell cycle time, which is observed at growth rates above about
-% 0.5 hr$^{-1}$ (\FIG{translation_ecoli_partA}(A), \citep{helmstetter1968}),
-% \EQ{Nori} states that $\langle \text{\# ori} \rangle$ will need to increase
-% exponentially with the growth rate.

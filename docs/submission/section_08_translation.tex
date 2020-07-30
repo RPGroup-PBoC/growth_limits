@@ -1,20 +1,22 @@
 \subsection{Protein Synthesis}
-The last process of the central dogma -- the translation of RNA into protein
--- is the final subject in our dialogue between back-of-the-envelope
-estimates and comparison with proteomic data. Here we consider the number of
-ribosomes needed to replicate the cellular proteome. While the rate at which
-ribosomes translates is well known to have a growth rate dependence
-\citep{dai2018}, here we make the approximation that translation occurs at a
-rate of $\approx$ 15 amino acids per second per ribosome (BNID: 100233).
-Under this approximation and assuming a division time of 5000 seconds, we can
-easily arrive at an estimate of $\approx 10^4$ ribosomes needed per cell to
-replicate the entire protein mass (\FIG{protein_synthesis}(A), top). This point
-estimate and the corresponding estimate as a function of growth rate
-proves to be notably comparable to the experimental observations, shown in
-\FIG{protein_synthesis}(A). While the ribosome is responsible for the
-formation of peptide bonds, we do not diminish the importance of charging
+We conclude our dialogue between back-of-the-envelope estimates and
+comparison with the proteomic data by examining the final process in the
+central dogma -- translation. In doing so, we will begin with an estimate of
+the number of ribosomes needed to replicate the cellular proteome. While the
+rate at which ribosomes translate is well known to be dependent on the growth
+rate (\cite{dai2018}, phenomenon we consider later in this work) we will make
+the approximation that translation occurs at a modest rate of $\approx$ 15
+amino acids per second per ribosome (BNID: 100233) Under this approximation
+and our previous estimate of 10$^{9}$ peptide bonds per cell at a growth rate
+of 0.5 hr$^{-1}$, we can easily arrive at an estimate of $\approx 10^4$
+ribosomes needed per cell to replicate the entire protein mass
+(\FIG{protein_synthesis}(A), top). This point estimate, as well as the
+corresponding estimate across a continuum of growth rates, proves to be
+notably comparable to the experimental observations, shown in the bottom
+panel of \FIG{protein_synthesis}(A). While the ribosome is responsible for
+the formation of peptide bonds, we do not diminish the importance of charging
 tRNAs with their appropriate amino acid, a process with occurs with
-remarkable accuracy. In the Appendix and in
+remarkable fidelity. In the Appendix and in
 \FIGSUPP[protein_synthesis]{tRNA}, we consider the process of ligating tRNAs
 to their corresponding amino acid and again find notable comparability with
 the data.
@@ -22,16 +24,16 @@ the data.
 Having completed our circuit through key processes of cellular growth
 outlined in \FIG{categories}, we can now take stock on our understanding of the
 observed growth rate dependence and abundances of various protein complexes. We
-note that in general, these simple estimates have been reasonably successful in
+note that, broadly speaking, these simple estimates have been reasonably successful in
 quantitatively describing the observations in the proteomic data, suggesting
 that the proteome is tuned in composition and absolute abundance to match the
-growth rate requirements, without any one process representing a particular
+growth rate requirements without any one process representing a singular 
 bottleneck or rate limiting step in division. However, in our effort to identify
 key limitations on growth, there are two notable observations that we
-emphasize here.
+wish to emphasize.
 
-The first is a recurring theme throughout our estimates, which is that any
-inherent biochemical rate limitation can be overcome by expressing more
+The first is a recurring theme throughout our estimates. Of those investigated
+here, any inherent biochemical rate limitation can be overcome by expressing more
 proteins. We can view this as a parallelization of each biosynthesis task,
 which helps explain why bacteria tend to increase their protein content (and
 cell size) as growth rate increases \citep{ojkic2019}. The second, and
@@ -39,10 +41,11 @@ ultimately the most significant in defining the cellular growth rate, is that
 the synthesis of ribosomal proteins presents a special case where
 parallelization is \textit{not} possible and thereby imposes a limit on the
 fastest possible growth rate. Each ribosome has $\approx$ 7500 amino acids
-across all of its protein components. Again using a modest elongation rate of
+across all of its protein components which must be strung together as peptide
+bonds through the action of another ribosome. Once again using a modest elongation rate of
 $\approx$ 15 amino acids per second, we arrive an estimate of $\approx$ 500
 seconds or $\approx$ 7 minutes to replicate a single ribosome. This limit, as remarked upon by others
-\citep{dill2011}, serves as a hard boundary for how quickly \textit{E. coli}
+\citep{dill2011}, serves as a hard theoretical boundary for how quickly \textit{E. coli}
 could replicate. As each ribosome would therefore need to copy itself, this 7
 minute speed limit is independent of the number of ribosomes per cell
 (\FIG{protein_synthesis}(B)), yet assumes that the only proteins that need to be
@@ -60,7 +63,7 @@ ribosome-associated proteins whose relative size ultimately defines
 the total cellular growth rate. In more recent years, this view has been more
 thoroughly dissected experimentally
 \citep{klumpp2014,basan2015,dai2018, dai2016, erickson2017} and together
-has led to a paradigm-shift in how we think of cellular physiology at the
+have led to a paradigm-shift in how we think of cellular physiology at the
 proteomic-level. However, the quantitative description of these  observations is
 often couched in terms of phenomenological constants and effective parameters
 with the key observable features of expression often computed in relative, rather

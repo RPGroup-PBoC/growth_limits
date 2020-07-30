@@ -100,14 +100,14 @@ modified to the form
 where we have included the term $N_\text{ATP}$ to account for the number of ATP
 equivalents needed per amino acid for translation ($\approx$ 4, BNID: 114971),
 and $w_{AA}$ is the average mass of an amino acid. The grey curves in Figure 4
-o the main text were made using this type of expression.
+of the main text were made using this type of expression.
 
 \subsection{A Relation for Complex Abundance Scaling With Surface Area}
 In our estimation for the number of complexes needed for lipid synthesis and
 peptidoglycan maturation, we used a particular estimate for the cell surface
 area ($\approx$ 5 \textmu$m$, BNID: 101792) and the fraction of dry mass
 attributable to peptidoglycan ($\approx$ 3\%, BNID: 101936). Both of these
-values come from glucose-fed \textit{E. coli} in balance growth. As we are
+values come from glucose-fed \textit{E. coli} in balanced growth. As we are
 interested in describing the scaling as a function of the growth rate, we must
 also consider how these values scale with cell surface area, which is the natural
 variable for these types of processes. In the coming paragraphs, we highlight
@@ -162,8 +162,11 @@ origins of replication at a given growth rate can be calculated as
 \label{eq:nori}
 \end{equation}
 where $t_\text{cyc}$ is the total time of replication and division. We can make
-the approximation that $t_\text{cyc} \approx$ 70 min, which is the  time it
-takes two replisomes to copy an entire chromosome.
+the approximation that $t_\text{cyc} \approx$ 70 min, which is the  time from
+the initiation of chromosomal replication until division. This time corresponds to
+the sum of the so-called C and D periods of the cell cycle, which correspond to
+the time it takes to replicate the entire chromosome (C period) and the time
+from completion to eventual division (D period) \cite{helmstetter1968}.
 
 In the case of rRNA synthesis, the majority of the rRNA operons are surrounding
 the origin of replication. Thus, at a given growth rate $\lambda$, the average

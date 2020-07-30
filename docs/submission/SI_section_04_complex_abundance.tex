@@ -2,9 +2,20 @@
 
 All protein data quantified the abundance of individual proteins per cell.
 However, this work requires estimates on the abundance of individual protein
-\textit{complexes}, rather than the copy number of individual proteins. In this
-section, we outline the approach we used to annotate proteins as being part of
-a macromolecular complex and how we computed their absolute abundances per cell.
+\textit{complexes}, rather than the copy number of individual proteins. In our
+analysis of the protein copy number data, it became clear that the reported copy
+numbers do not always align with those based on reported stiochometry. As one
+example of this, the F-O subunit of ATP synthase consists of three protein
+subunits with a stiochometry of [AtpB][AtpF]$_2$[AtpE]$_{10}$ (also referred to
+as subunits a, b, and c, respectively). In the experimental data of
+\cite{schmidt2016}, the values deviate from this quite substantially, with
+approximately 1000 AtpB, 9000 AtpF, and 300 AtpE reported per cell (minimal
+media + glucose growth condition).  This highlights the technical challenges
+that still remain in our ability to quantify cellular composition, particularly
+for membrane-bound proteins like the ATP synthase complex considered here.  In
+this section, we outline the approach we used to annotate proteins as part of
+each macromolecular complex and how we used averaging across the individual
+protein measurements to estimate an absolute complex abundances per cell.
 
 Protein complexes, and proteins individually, often have a variety of names,
 both longform and shorthand. As individual proteins can have a variety of

@@ -9,11 +9,11 @@ rate of $\approx$ 15 amino acids per second per ribosome (BNID: 100233).
 Under this approximation and assuming a division time of 5000 seconds, we can
 easily arrive at an estimate of $\approx 10^4$ ribosomes needed per cell to
 replicate the entire protein mass (\FIG{protein_synthesis}(A), top). This point
-estimate and the corresponding estimate across a continuum of growth rates
+estimate and the corresponding estimate as a function of growth rate
 proves to be notably comparable to the experimental observations, shown in
 \FIG{protein_synthesis}(A). While the ribosome is responsible for the
-formation of peptide bonds, we do not diminish the importance of the charging
-of tRNAs with the appropriate amino acid, a process with occurs with
+formation of peptide bonds, we do not diminish the importance of charging
+tRNAs with their appropriate amino acid, a process with occurs with
 remarkable accuracy. In the Appendix and in
 \FIGSUPP[protein_synthesis]{tRNA}, we consider the process of ligating tRNAs
 to their corresponding amino acid and again find notable comparability with
@@ -27,13 +27,13 @@ quantitatively describing the observations in the proteomic data, suggesting
 that the proteome is tuned in composition and absolute abundance to match the
 growth rate requirements, without any one process representing a particular
 bottleneck or rate limiting step in division. However, in our effort to identify
-key limitations on growth, there are two notable observations that we wish to
-emphasize.
+key limitations on growth, there are two notable observations that we
+emphasize here.
 
 The first is a recurring theme throughout our estimates, which is that any
 inherent biochemical rate limitation can be overcome by expressing more
 proteins. We can view this as a parallelization of each biosynthesis task,
-and helps explain why bacteria tend to increase their protein content (and
+which helps explain why bacteria tend to increase their protein content (and
 cell size) as growth rate increases \citep{ojkic2019}. The second, and
 ultimately the most significant in defining the cellular growth rate, is that
 the synthesis of ribosomal proteins presents a special case where
@@ -41,44 +41,44 @@ parallelization is \textit{not} possible and thereby imposes a limit on the
 fastest possible growth rate. Each ribosome has $\approx$ 7500 amino acids
 across all of its protein components. Again using a modest elongation rate of
 $\approx$ 15 amino acids per second, we arrive an estimate of $\approx$ 500
-seconds or $\approx$ 7 minutes to replicate a single ribosome [\FIG{protein_synthesis}(B)]. This limit, as remarked upon by others
+seconds or $\approx$ 7 minutes to replicate a single ribosome. This limit, as remarked upon by others
 \citep{dill2011}, serves as a hard boundary for how quickly \textit{E. coli}
 could replicate. As each ribosome would therefore need to copy itself, this 7
 minute speed limit is independent of the number of ribosomes per cell
-(\FIG{protein_synthesis}(B)), yet assumes that the only proteins that need to be 
-replicated for division to occur are ribosomal proteins, a regime we know is
+(\FIG{protein_synthesis}(B)), yet assumes that the only proteins that need to be
+replicated for division to occur are ribosomal proteins, an unrealistic regime
 not met in biological reality. This poses an optimization problem for the
 cell -- how are the translational demands of the entire proteome met without
-investing resources in the production of an excess of ribosomes? 
+investing resources in the production of an excess of ribosomes?
 
 This question, more frequently presented as a question of optimal resource
 allocation, has been the target of an extensive dialogue between experiment and
 theory over the past decade. In a now seminal work,
 \cite{scott2010} presents an elegant treatment of resource allocation through
 partitioning of the proteome into sectors -- one of which being
-ribosome-associated proteins -- the relative sizes of which ultimately define
+ribosome-associated proteins whose relative size ultimately defines
 the total cellular growth rate. In more recent years, this view has been more
 thoroughly dissected experimentally
 \citep{klumpp2014,basan2015,dai2018, dai2016, erickson2017} and together
-represent a paradigm-shift in how we think of cellular physiology at the
-proteome-level. However, the quantitative description of these  observations is
+has led to a paradigm-shift in how we think of cellular physiology at the
+proteomic-level. However, the quantitative description of these  observations is
 often couched in terms of phenomenological constants and effective parameters
-with the key observable features of expression being computed in relative, rather
+with the key observable features of expression often computed in relative, rather
 than absolute, abundances. Furthermore, these approaches often exclude or
 integrate away effects of cell size and chromosome content, which we have
-illustrated in our estimates to have deep connections to the observed cellular
+found through our estimates to have important connections to the observed cellular
 growth rate.
 
-In the closing sections of this work, we explore how ribosome content, cell
-size, and chromosome content are intertwined in their control over the cellular
-growth rate. To do so, we take a more detailed view of ribosome abundance,
-exchanging our order-of-magnitude estimates for a minimal mathematical model of
-growth rate control. This is defined by parameters with tangible connections to
-the biological processes underlying cellular growth and protein synthesis. Using
-this model, we interrogate how the size of the ribosome pool and its
-corresponding activity is regulated to balance the supply of amino acids via
-metabolism and catabolism with the consumption of amino acids through peptide
-bond formation required for growth.
+In the closing sections of this work, we explore how ribosomal content, total
+protein abundance, and chromosomal replication are intertwined in their control
+over the cellular growth rate. To do so, we take a more careful view of ribosome
+abundance, exchanging our order-of-magnitude estimates for a minimal
+mathematical model of growth rate control. This is defined by parameters with
+tangible connections to the biological processes underlying cellular growth and
+protein synthesis. Using this model, we interrogate how the size of the ribosome
+pool and its corresponding translational capacity enable cells to maintain a
+balance  between the of amino acids via metabolism and catabolism and their
+consumption through the peptide bond formation required for growth.
 
 \begin{figure}
     \centering{

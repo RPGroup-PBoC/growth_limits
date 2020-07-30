@@ -526,11 +526,6 @@ INPUT ./main_figs/fig8_ribosome_growth_limit_ecoli_a_polar_coord.pdf
 INPUT ./main_figs/fig8_ribosome_growth_limit_ecoli_a_polar_coord.pdf
 INPUT section_11_model.tex
 INPUT section_11_model.tex
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/opensans/OpenSans-Bold-t1.vf
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/opensans/OpenSans-Bold-01.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/opensans/OpenSans-Bold-02.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/opensans/OpenSans-Bold-03.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/opensans/OpenSans-Bold-04.tfm
 INPUT main_figs/elongation_model.pdf
 INPUT ./main_figs/elongation_model.pdf
 INPUT ./main_figs/elongation_model.pdf
@@ -544,6 +539,11 @@ INPUT section_15_competing_interests.tex
 INPUT section_15_competing_interests.tex
 INPUT eLife_draft.toc
 INPUT eLife_draft.toc
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/opensans/OpenSans-Bold-t1.vf
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/opensans/OpenSans-Bold-01.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/opensans/OpenSans-Bold-02.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/opensans/OpenSans-Bold-03.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/opensans/OpenSans-Bold-04.tfm
 OUTPUT eLife_draft.toc
 INPUT SI_section_xx_estimates.tex
 INPUT SI_section_xx_estimates.tex
@@ -608,6 +608,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/stix/stix-mathtt.tfm
 INPUT SI_figs/supplemental_ori_ter.pdf
 INPUT ./SI_figs/supplemental_ori_ter.pdf
 INPUT ./SI_figs/supplemental_ori_ter.pdf
+INPUT SI_section_07_model.tex
+INPUT SI_section_07_model.tex
 INPUT eLife_draft.bbl
 INPUT eLife_draft.bbl
 INPUT eLife_draft.suppinfo
@@ -644,6 +646,7 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/opensans/OpenSans-It
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/opensans/OpenSans-Regular.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt8.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt9.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathcal.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathex.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb

@@ -1,14 +1,19 @@
 \section{Experimental Details Behind Proteomic Data}
 \label{sec:SI_exp_summary}
 Here we provide a brief summary of the experiments behind each proteomic data
-set. The purpose of this section is to identify how the authors arrived at
-absolute protein abundances. In the following section
-(Section~\nameref{sec:SI_data_summary}) we will then provide a summary of the
-final protein abundance measurements that were used throughout the main text.
-Table \ref{tab:datasets} provides an overview of the publications we considered.
-These are predominately mass spectrometry-based, with the exception of the work
-from \cite{li2014} which used ribosomal profiling, and the fluorescence-based
-counting done in \cite{taniguchi2010}.
+set considered. The purpose of this section is to identify how the authors
+arrived at absolute protein abundances. In the following section
+(see section on~\nameref{sec:SI_data_summary}) we will then provide a summary of the
+protein abundance measurements. Table \ref{tab:datasets} provides an overview of
+the publications we considered. These are predominately mass spectrometry-based,
+with the exception of the work from \cite{li2014} which used ribosomal
+profiling, and the fluorescence-based counting done in \cite{taniguchi2010}.
+After having compiled and comparing these  measurements, we noted substantial
+deviations in the measurements from \cite{taniguchi2010} and \cite{soufi2015}
+(shown in the following section), and decided to only use the data from
+\cite{taniguchi2010, li2014, valgepea2013, peebo2015} in the main text. For
+completeness, we include these additional datasets in our discussion of the experimental
+data.
 
 \begin{table}[bt]
 \caption{\label{tab:datasets}Overview of proteomic data sets.}
@@ -33,7 +38,7 @@ that may alter absolute protein abundances.
 b. This mass spectrometry approach differs substantially from the others since
 in addition to the relative proteome-wide abundance measurements, the authors
 performed absolute quantification of 41 proteins across all growth conditions
-(see Section~\nameref{sec:SI_schmidt} for more details on this).
+(see section on~\nameref{sec:SI_schmidt} for more details on this).
 \end{table}
 
 \subsection{Fluorescence based measurements}
@@ -85,21 +90,21 @@ with liquid chromatography and electrospray ionization), which itself can
 have multiple rounds of detection and further fragmentation of the peptides.
 
 Most quantitative experiments rely on labeling protein with stable isotopes,
-which allow multiple samples to be measured together by the mass
-spectrometer. By measuring samples of known total protein abundance simultaneously (i.e. one
+which allow multiple samples to be measured together by the mass spectrometer.
+By measuring samples of known total protein abundance simultaneously (i.e. one
 sample of interest, and one reference), it is possible to determine relative
-protein abundances. Absolute protein
-abundances can be estimated following the same approach used above for ribosomal
-profiling, which is to multiply each relative abundance measurement by the total
-cellular protein per cell. This is the approach taken by \cite{valgepea2013} and
-\cite{peebo2015}, with relative protein abundances determined based on the
-relative peptide intensities (label free quantification 'LFQ' intensities). For
-the data of \cite{valgepea2013}, total protein per cell was determined by
-measuring  total protein by the Lowry method, and counting colony-forming units
-following serial dilution. For the data from   \cite{peebo2015}, the authors did
-not determine  cell quantities and instead report the cellular protein
-abundances in protein per unit  volume by assuming a mass density of 1.1 g/ml,
-with a 30\% dry mass fraction.
+protein abundances. Absolute protein abundances can be estimated following the
+same approach used above for ribosomal profiling, which is to multiply each
+relative abundance measurement by the total cellular protein per cell. This is
+the approach taken by \cite{valgepea2013, peebo2015} and \cite{soufi2015}, with
+relative protein abundances determined based on the relative peptide intensities
+(label free quantification 'LFQ' intensities). For the data of
+\cite{valgepea2013}, total protein per cell was determined by measuring  total
+protein by the Lowry method, and counting colony-forming units following serial
+dilution. For the data from   \cite{peebo2015}, the authors did not determine
+cell quantities and instead report the cellular protein abundances in protein
+per unit  volume by assuming a mass density of 1.1 g/ml, with a 30\% dry mass
+fraction.
 
 An alternative way to arrive at absolute protein abundances is to dope in
 synthetic peptide  fragments of known abundance. These can serve as a direct way
@@ -126,22 +131,21 @@ proteomic mass quantified, though we also noticed that most proteins appear
 undercounted when compared to the other data.
 
 \FIG{total_protein_final}(B) summarizes the total protein mass for each data
-point in our final compiled data set. We note that protein abundances were all
-scaled so they followed a common growth rate-dependent change in total protein
-mass.  While our inclination initally was to leave reported copy numbers
-untouched,  a notable descrepency in the scaling total protein per cell between
-\cite{schmidt2016} and the other data sets forced us to dig deeper into those
-measurements (compare \cite{schmidt2016} and \cite{li2014} data in
-\FIG{total_protein_final}(A)). The particular trend in \cite{schmidt2016}
-appears to be due to assumptions of cell size and we provide a more extensive
-discussion and analysis of that data set in section \nameref{sec:SI_schmidt}. As
-a compromise, and in an effort to treat all data equally, we instead scaled all
-protein abundance values to a data-driven estimate of total protein per cell.
-Here we used cell size measurements from \cite{si2017, si2019}, and an estimate
-of total protein content through expected dry mass. Total protein per cell was
-estimated using available data on total DNA, RNA, and protein from
-\cite{basan2015, dai2016}, which  account for the majority of dry mass in the
-cell. We consider these details in sections \nameref{sec:protein_size_SV} and
+set used in our final compiled data set. Our inclination initally was to
+leave reported copy numbers untouched, but a notable descrepency between the scaling
+of the total protein per cell between \cite{schmidt2016} and the other data sets
+forced us to dig deeper into those measurements (compare \cite{schmidt2016} and
+\cite{li2014} data in \FIG{total_protein_final}(A)). The particular trend in
+\cite{schmidt2016} appears to be due to assumptions made about cell size and we
+provide a more extensive discussion and analysis of their data in
+\nameref{sec:SI_schmidt}. As a compromise, and in an effort to treat all data
+equally, we instead applied an correction factor to all protein abundance values
+based on a data-driven estimate of total protein per cell. Here we used cell
+size measurements from \cite{si2017, si2019}, and an estimate of total protein
+content through expected dry mass. Total protein per cell was then determined
+using available data on total DNA, RNA, and protein from \cite{basan2015,
+dai2016}, which  account for the majority of dry mass in the cell. We describe
+these details further in sections  on \nameref{sec:protein_size_SV} and
 \nameref{sec:estimate_protein_per_cell} that follows.
 
 \begin{figure}
@@ -150,7 +154,7 @@ cell. We consider these details in sections \nameref{sec:protein_size_SV} and
         \includegraphics{SI_figs/dataset_corrections.pdf}
         \caption{\textbf{Summary of the growth-rate dependent total protein
         abundance for each data set.} (A) Total protein abundance per cell as
-        original reported in the data sets of \cite{taniguchi2010, valgepea2013, li2014,
+        originally reported in the data sets of \cite{taniguchi2010, valgepea2013, li2014,
         soufi2015, peebo2015, schmidt2016}. Note that the data from \cite{peebo2015} only
         reported protein abundances per unit volume and total protein per cell
         was found by multiplying these by the growth-rate dependent cell size as
@@ -185,11 +189,16 @@ from \cite{schmidt2016} as a reference).
         \caption{\textbf{Comparison of proteomic coverage across different data sets.}
         An UpSet diagram \citep{Lex2014} summarizes the total number of protein
         coding genes whose protein abundance was reported in the data sets of
-        \cite{valgepea2013, li2014, schmidt2016, peebo2015}. The total number
-        of genes reported in each individual data set are noted on the bottom
-        left, while their overlap  is summarized in the bar chart. Each column
-        here refers to the intersection of a set of data sets  identified by
-        blue circles.
+        \cite{valgepea2013, li2014, schmidt2016, peebo2015}. Bar plot on bottom
+        left indicates the total number of genes reported in each individual
+        data. The main bar plot summarizes the number of unique proteins
+        identified across overlapping subsets of the data.  For example, in the
+        first column only the data from \cite{li2014}  is considered (indicated
+        by solid blue circle) and 1288 proteins are identified as exclusive to
+        the data set. In the second column, the intersection of all four data
+        sets is considered, with 1157 proteins quantified across them. This
+        follows for each additional column in the plot, with the subset under
+        consideration denoted by the solid blue circles.
         } \label{fig:upset}
     }
 \end{figure*}

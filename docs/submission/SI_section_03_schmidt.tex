@@ -15,7 +15,7 @@ reported in three other recent papers: measurements from Taheri-Araghi
 \textit{et al.} and Si \textit{et al.} come from the lab of Suckjoon Jun, while
 those from Basan \textit{et al.} come  from the lab of Terence Hwa.  Each set of
 measurements used microscopy and cell segmentation to determine the length and
-width, and then calculated cell size by treating the cell is a cylinder with two
+width, and then calculated cell size by treating the cell as a cylinder with two
 hemispherical ends, as we considered in the previous section. While there is
 notable discrepancy between the two research groups, which are both using strain
 NCM3722, Basan \textit{et al.} found that this came specifically from
@@ -25,7 +25,7 @@ supplemental text). Perhaps the more concerning point is that while each of
 these alternative measurements show an exponential increase in  cell size at
 faster growth rates, the measurements used by Schmidt \textit{et al.} appear to
 plateau. This resulted in an analogous trend in their final reported total
-cellular protein per cell as shown in Figure \FIG{schmidt_adjustment_summary}
+cellular protein per cell as shown in \FIG{schmidt_adjustment_summary}
 (purple data points), and is in disagreement with other measurements of total
 protein at these growth rates \citep{basan2015}.
 
@@ -37,7 +37,7 @@ protein at these growth rates \citep{basan2015}.
 	 	in blue come from Volkmer and Heinemann, 2011 (\cite{volkmer2011}) and were
 	 	used in the work of Schmidt \textit{et al.}. Data from the lab of Terence Hwa
 	 	are shown in purple (\cite{basan2015}), while the two data sets shown in green
-	 	and red come from the lab of Suckjoon Jun (\cite{taheriaraghi2015,
+	 	and light red come from the lab of Suckjoon Jun (\cite{taheriaraghi2015,
 	 	si2017}). (B) Same as in (A) but with the data plotted on a logarithmic
 	 	y-axis to highlight the exponential scaling that is expected for \textit{E.
 	 	coli}.}
@@ -46,17 +46,17 @@ protein at these growth rates \citep{basan2015}.
 \end{figure}
 
 Since it is not obvious how measurements of cell size influenced their reported
-protein abundances, in the following subsections we begin by considering this
-calculation. We then consider three different approaches to estimate the
-growth-rate dependent total protein mass to compare with those values reported
-from \cite{schmidt2016}. The results of this are summarized in
-\FIG{cell_size_literature}(B), with the original values from both
+protein abundances, in the following subsections we begin by considering how the
+authors determined total protein mass per cell. We then consider three different
+approaches to estimate the growth-rate dependent total protein mass and compare
+these estimates with those reported by \cite{schmidt2016}. Those results are
+summarized in \FIG{cell_size_literature}(B), with the original values from both
 \cite{schmidt2016} and \cite{li2014} shown in \FIG{cell_size_literature}(A) for
-reference. For most growth conditions, we find that total protein per cell is
-still in reasonable agreement. However, for the fastest growth conditions, with
-glycerol + supplemented amino acids, and LB media, all estimates are
-substantially higher than those originally reported. This is the main reason why
-we chose to readjusted protein abundance as shown in
+reference. For most growth conditions, we find reasonable agreement between  our
+estimates and the reported total protein per cell. However, for the fastest
+growth conditions, with glycerol + supplemented amino acids, and LB media, all
+estimates are substantially higher than those originally reported. This is the
+main reason why we chose to readjuste protein abundance as shown in
 \FIG{total_protein_final}(B) (with the calculation described in section
 \nameref{sec:estimate_protein_per_cell}).
 
@@ -75,7 +75,7 @@ we chose to readjusted protein abundance as shown in
     cell volumes estimated from Si \textit{et al.} 2017. Total protein per cell
 		is calculated by assuming a 1.1 g/ml cellular mass density, 30\% dry mass, with
 		90\% of the dry mass corresponding to DNA, RNA, and protein \citep{basan2015}. See
-		\nameref{sec:estimate_protein_per_cell} for details on calculation. 3.\textit{light purple}: Rescaling
+		\nameref{sec:estimate_protein_per_cell} for details on calculation. 3. \textit{light purple}: Rescaling
     of total protein mass using the experimental measurements from Basan
     \textit{et al.} 2015.
 	 	}
@@ -83,8 +83,8 @@ we chose to readjusted protein abundance as shown in
 \end{figure}
 
 \subsection{Effect of cell volume on reported absolute protein abundances}
-As noted in section \nameref{sec:SI_exp_summary},
-the authors calculated proteome-wide protein abundances by first determining
+As noted in \nameref{sec:SI_exp_summary},
+the authors from the work in \cite{schmidt2016} calculated proteome-wide protein abundances by first determining
 absolute abundances of 41 pre-selected proteins, which relied on adding
 synthetic heavy reference peptides into their protein samples at known abundance.  This
 absolute quantitation was performed in replicate for each growth condition.
@@ -147,7 +147,7 @@ Figure \FIG{schmidt_adjustment_summary}(B).
 \subsection{Relaxing assumption of constant protein concentration across growth conditions}
 We next relax the assumption that cellular protein concentration is constant and
 instead, attempt to  estimate it using experimental data. Here we use the
-estimation of total protein mass per cell detailed in section
+estimation of total protein mass per cell detailed in
 \nameref{sec:estimate_protein_per_cell} for all data points in the
 \cite{schmidt2016} data set. The green data points in
 \FIG{schmidt_adjustment_summary}(B) show this prediction, and this represents

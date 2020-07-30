@@ -8,12 +8,12 @@ the Keio collection \citep{datsenko2000, baba2006}), we fit the MG1655 cell size
 data from the supplemental material of \cite{si2017, si2019} using the optimize.curve\_fit function
 from the Scipy python package \citep{2020scipynmeth}.
 
-The average size measurements from each of their experiments are shown in Figure
+The average size measurements from each of their experiments are shown in
 \FIG{final_size_data_Si}, with  cell length and width shown in (A) and (B),
 respectively. The length data was well described by the exponential function 0.5
 $e^{1.09 \cdot \lambda}$ + 1.76 \textmu m, while the width data was well
 described by 0.64 $e^{0.24 \cdot \lambda}$ \textmu m. In order to estimate cell
-size we take the cell as a cylinders with two hemispherical ends \citep{si2017,
+size we take the cell as a cylinder with two hemispherical ends \citep{si2017,
 basan2015}. Specifically,  cell size  is estimated from,
 
 \begin{equation}
@@ -41,7 +41,7 @@ where $\eta$ is the aspect ratio ($\eta$ = $l/w$) \citep{ojkic2019}.
     means about 1,000-5,000 measurements per mean value reported here since they
     considered about 6 conditions at a time). Fits were made to the  MG1655 strain
     data; length: 0.5 $e^{1.09 \cdot \lambda}$ + 1.76 \textmu m, width:  0.64
-    $e^{0.24 \cdot \lambda}$ \textmu m. (C) Cell size, $V$, was calculated as
+    $e^{0.24 \cdot \lambda}$ \textmu m. (C) Cell volume, $V$, was calculated as
     cylinders with two hemispherical ends (Equation \ref{eq:cell_size}). The
     MG1655 strain data gave a best fit of 0.533 $e^{1.037 \cdot \lambda}$ \textmu m$^3$.}
   \label{fig:final_size_data_Si}
@@ -51,8 +51,9 @@ where $\eta$ is the aspect ratio ($\eta$ = $l/w$) \citep{ojkic2019}.
 \section{Estimation of Total Protein Content per Cell}
 \label{sec:estimate_protein_per_cell}
 In order to estimate total protein per cell for a particular growth rate, we
-begin by estimating the cell size from the fit shown in Figure
-\FIG{final_size_data_Si}(C) (0.533 $e^{1.037 \cdot \lambda}$ \textmu m$^3$). We
+begin by estimating the cell size from the fit shown in
+\FIG{final_size_data_Si}(C) (cell size = 0.533 $e^{1.037 \cdot \lambda}$ \textmu m$^3$,
+as noted in the previous section). We
 then estimate the total protein content from the total dry mass of the cell.
 Here we begin by noting that  for almost the entire range of growth rates
 considered here, protein, DNA, and RNA were reported to account for at least 90
@@ -64,16 +65,15 @@ per fl. Multiplying this by our prediction of cell size gives the total dry mass
 per cell.
 
 However, even if dry mass concentration is relatively constant across growth
-conditions, it is not obvious how protein concentration might vary due to
-the substantial increase in rRNA at faster
-growth rates (\cite{dai2016}). This is a well-documented result that arises from
-an increase in ribosomal abundance at faster growth rates
-(\cite{scott2010}). To proceed therefore rely on experimental
-measurements of total DNA content per cell that also come from Basan \textit{et
-al.}, and RNA to protein ratios that were measured in Dai \textit{et al.} (and
-cover the entire range of growth conditions considered here). These are
-reproduced in Figure \FIG{schmidt_adjustment_varying_conc}(A) and (B),
-respectively.
+conditions, it is not obvious how protein concentration might vary due to the
+substantial increase in rRNA at faster growth rates (\cite{dai2016}). The
+increase in rRNA increases from the linear increase in ribosomal content with
+faster growth rate (\cite{scott2010}), since it makes up about about 2/3 or the
+ribosomal mass. To proceed we therefore relied on experimental measurements of
+total DNA content per cell from \cite{basan2015}, and RNA to protein ratios that
+were measured in Dai \textit{et al.} (and cover the entire range of growth
+conditions considered here). These are reproduced in
+\FIG{schmidt_adjustment_varying_conc}(A) and (B), respectively.
 
 Assuming that the protein, DNA, and RNA account for 90 \% of the total dry mass,
 the protein mass can then determined by first subtracting the experimentally
@@ -85,9 +85,9 @@ and protein mass by,
 	M_{P} = \frac{[M_P + M_{RNA}]}{1 + (RP_{ratio})}.
 \end{equation}
 $(RP_{ratio}$ refers to the RNA to protein ratio as measured by Dai \textit{et
-al.}. In Figure \FIG{schmidt_adjustment_varying_conc}(C) we plot the estimated
+al.}. In \FIG{schmidt_adjustment_varying_conc}(C) we plot the estimated
 cellular concentrations for protein, DNA, and RNA from these calculations, and
-in Figure \FIG{schmidt_adjustment_varying_conc}(D) we plot their total expected
+in \FIG{schmidt_adjustment_varying_conc}(D) we plot their total expected
 mass per cell. This later quantity is the growth rate-dependent total protein
 mass that was used to estimate total protein abundance across all data sets (and
 summarized in \FIG{total_protein_final}(B)).
@@ -101,16 +101,16 @@ summarized in \FIG{total_protein_final}(B)).
   growth rate, reproduced from Basan \textit{et al.} 2015. The data was fit to
   an exponential curve (DNA mass in fg per cell is given by 0.42 $e^{2.23 \cdot
   \lambda}$ + 7.2 fg per cell, where $\lambda$ is the growth rate in hr$^{-1}$).
-  (B) RNA to protein measurements as a function fo growth rate. The data was for
-  to two lines: for growth rates below 0.7 hr$^{-1}$, the RNA/protein ratio is
+  (B) RNA to protein measurements as a function of growth rate. The data was fit
+  to two lines (shown in black) due to the change in slope at slower growth rates \cite{neidhardt1991, dai2016}.
+  For growth rates below 0.7 hr$^{-1}$, the RNA/protein ratio is
   0.18$\cdot \lambda$ + 0.093, while for growth rates faster than 0.7 hr$^{-1}$
   the RNA/protein ratio is given by 0.25$\cdot \lambda$ + 0.035. For (A) and (B)
   cells are grown under varying levels of nutrient limitation, with cells grown
   in minimal media with different carbon sources for the slowest growth
-  conditions, and rich-defined media for fast growth rates. (C) Predictions of
+  conditions, and rich-defined media for fast growth rates. (C) Estimation of
   cellular protein, DNA, and RNA concentration.  (D) Total cellular mass
-  predicted for protein, DNA, and RNA using the cell size predictions from Si
-  \textit{et al.}. Symbols (diamond: DNA, square: RNA, circle: protein)
+  estimated for protein, DNA, and RNA using the cell size calculated in  \nameref{protein_size_SV}. Symbols (diamond: DNA, square: RNA, circle: protein)
 	show estimated values of mass concentration and mass per cell for the specific
 	growth rates in \cite{schmidt2016}.
 	 	}
@@ -122,8 +122,8 @@ Towards the end of the main text, we examine a coarse-grained model of
 nutrient-limited growth. A key point in our analysis was to consider  how
 elongation rate $r_t$ and growth rate $\lambda$ vary with respect to the
 experimentally observed changes in cell size, total number of peptide bonds per
-cell  $N_\text{pep}$, and ribosomal content.  In order to do maintain parameters
-in line with the experimental data, but otherwise allow us to explore the
+cell  $N_\text{pep}$, and ribosomal content.  In order to restrict parameters
+to those observed experimentally, but otherwise allow us to explore the
 model, we performed a phenomenological fit of $N_\text{pep}$ and $V$ as a
 function of the measured ribosomal copy number $R$. As has been described in the
 preceding sections of this supplement, we estimate cell volume for each growth

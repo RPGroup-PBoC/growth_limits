@@ -1,17 +1,18 @@
 \section{Cell Envelope Biogenesis}
-In contrast to nutrient transporters, which support the synthesis of biomolecules
-throughout the cell and therefore need to scale with the cell size, here we must
-consider the synthesis of components that will need to scale with the surface
-area of the cell. \textit{E. coli} is a rod-shaped bacterium with a remarkably robust length-to-width aspect
-ratio of $\approx$ 4:1 \citep{harris2018, ojkic2019}. At modest growth rates,
-the total cell surface area is $\approx$ 5 \textmu m$^2$ (BNID: 101792). Assuming this surface area is approximately the same between
-the inner and outer membranes of \textit{E. coli}, and the fact that each
-membrane is itself a lipid bilayer, cells have a the total membrane surface area
-of $\approx 20$\textmu m$^2$ (see  Appendix \nameref{sec:protein_size_SV} for a
-description of the calculation of cell surface area as a function of cell size).
-In this section, we will estimate the number of protein complexes needed to
-produce this membrane surface area as well as the complexes involved in
-assembling the peptidoglycan scaffold it encapsulates.
+In contrast to nutrient transporters, which support the synthesis of
+biomolecules throughout the cell and therefore need to scale with the cell size,
+here we must consider the synthesis of components that will need to scale with
+the surface area of the cell. \textit{E. coli} is a rod-shaped bacterium with a
+remarkably robust length-to-width aspect ratio of $\approx$ 4:1
+\citep{harris2018, ojkic2019}.  Assuming this surface area is approximately the
+same between the inner and outer membranes of \textit{E. coli}, and the fact
+that each membrane is itself a lipid bilayer, our  rule-of-thumb of 5 \textmu
+m$^2$ per surface suggests a total membrane surface area of $\approx 20$\textmu
+m$^2$ (see  Appendix \nameref{sec:protein_size_SV} for a description of the
+calculation of cell surface area as a function of cell size). In this section,
+we will estimate the number of key protein complexes needed to synthesize the lipids
+as well as the complexes involved in assembling the peptidoglycan
+scaffold that make up the cell envelope.
 
 \subsection{Lipid Synthesis}
 The dense packing of the membrane with proteins means that the cell membranes
@@ -27,33 +28,33 @@ each of which are unique in their structures and biosynthetic pathways
 \citep{ruppe2018} and \textit{in vitro} kinetic measurements
 \citep{ranganathan2012, yu2011} have revealed remarkably slow steps in the fatty
 acid synthesis pathways which may serve as the rate limiting reactions for
-making new membrane phospholipids. One such
-step is the removal of hydroxyl groups from the fatty-acid chain by ACP
-dehydratase that leads to the formation of carbon-carbon double bonds. This
-reaction, catalyzed by proteins FabZ and FabA in \textit{E. coli}
-\citep{yu2011}, have been estimated to have kinetic turnover rates of $\approx$
-1 dehydration per second per enzyme \citep{ruppe2018}. Thus, given this rate and
-the need to synthesize $\approx$ 2 $\times$ 10$^7$ lipids over 5000 seconds, one
-can estimate that a typical cell requires $\approx$ 4000 ACP dehydratases. This
-is in reasonable agreement with the experimentally observed copy numbers of FabZ
-and FabA (\FIG{cell_envelope}(A)). Furthermore, we can extend this estimate to
-account for the change in membrane surface area as a function of the growth rate
-(grey line in \FIG{cell_envelope}(A)), which captures the observed growth rate
+making new membrane phospholipids in \textit{E. coli}. One such step is the removal of hydroxyl
+groups from the fatty-acid chain by ACP dehydratase that leads to the formation
+of carbon-carbon double bonds. This reaction, catalyzed by proteins FabZ and
+FabA\citep{yu2011}, have been estimated to have kinetic
+turnover rates of $\approx$ 1 dehydration per second per enzyme
+\citep{ruppe2018}. Thus, given this rate and the need to synthesize $\approx$ 2
+$\times$ 10$^7$ lipids over 5000 seconds, one can estimate that a typical cell
+requires $\approx$ 4000 ACP dehydratases. This is in reasonable agreement with
+the experimentally observed copy numbers of FabZ and FabA
+(\FIG{cell_envelope}(A)). Furthermore, we can extend this estimate to account
+for the change in membrane surface area as a function of the growth rate (grey
+line in \FIG{cell_envelope}(A)), which captures the observed growth rate
 dependent expression of these two enzymes.
 
 \subsection{Peptidoglycan Synthesis}
 Bacterial cells demonstrate exquisite control over their cell shape. This is
-primarily due to the cell wall, a stiff, several nanometer thick meshwork of
-polymerized discaccharides. The formation of the peptidoglycan is an intricate
+primarily due to a stiff, several nanometer thick meshwork of
+polymerized discaccharides that makes up the cell wall. The formation of the peptidoglycan is an intricate
 process involving many macromolecular players \citep{shi2018, morgenstein2015},
 whose coordinated action maintains cell shape and integrity even in the face of
 large-scale perturbations \citep{harris2018,shi2018}.
 The peptidoglycan alone comprises $\approx$ 3\% of the cellular dry mass (BNID:
-1019360, making it the most massive molecule in \textit{E. coli}. The
+1019360), making it the most massive molecule in \textit{E. coli}. The
 polymerized unit of the peptidoglycan is a N-acetylglucosamine and
 N-acetylmuramic acid disaccharide, of which the former is functionalized with a
 short pentapeptide. With a mass of $\approx$ 1000 Da, this unit, which we refer
-to as a murein monomer, it is polymerized to form long strands in the periplasm
+to as a murein monomer, is polymerized to form long strands in the periplasm
 which are then attached to each other via their peptide linkers. Together, these
 quantities provide an estimate of $\approx$ 5 $\times$ 10$^6$ murein monomers
 per cell.
@@ -61,17 +62,17 @@ per cell.
 The crosslinking of the pentapeptides between adjacent glycan strands is
 responsible for maintaining the structural integrity of the cell wall and, in
 principle, each murein monomer can be involved in such a crosslink. In some
-microbes, such as in gram-positive bacterium \textit{Staphylococcus aureus},
-the extent of crosslinking can be large with $>$ 90\% of pentapeptides
-forming a connection between glycan strands. In \textit{E. coli}, however, a
-much smaller proportion ($\approx$ 20\%) of the peptides are crosslinked,
-resulting in a weaker and more porous cell wall \cite{vollmer2008a,
-rogers1980}. The formation of these crosslinks occurs primarily during the
-polymerization of the murein monomers and is facilitated by a family of
-enzymes called transpeptidases. The four primary transpeptidases of
-\textit{E. coli} have only recently been quantitatively characterized
-\textit{in vivo} via liquid chromatography mass spectrometry which revealed a notably slow kinetic turnover rate
-of $\approx 2$ crosslinking reactions formed per second per enzyme \citep{catherwood2020}.
+microbes, such as in gram-positive bacterium \textit{Staphylococcus aureus}, the
+extent of crosslinking can be large with $>$ 90\% of pentapeptides forming a
+connection between glycan strands. In \textit{E. coli}, however, a much smaller
+proportion ($\approx$ 20\%) of the peptides are crosslinked, resulting in a
+weaker and more porous cell wall \citep{vollmer2008a, rogers1980}. The formation
+of these crosslinks occurs primarily during the polymerization of the murein
+monomers and is facilitated by a family of enzymes called transpeptidases. The
+four primary transpeptidases of \textit{E. coli} have only recently been
+quantitatively characterized \textit{in vivo}, via liquid chromatography mass
+spectrometry, which revealed a notably slow kinetic turnover rate of $\approx 2$
+crosslinking reactions formed per second per enzyme \citep{catherwood2020}.
 
 Assembling these quantities permits us to make an estimate that on the order of
 $\approx$ 100 transpeptidases per cell are needed for complete maturation of the

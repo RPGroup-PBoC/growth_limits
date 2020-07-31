@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  31 JUL 2020 11:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  31 JUL 2020 13:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2173,27 +2173,27 @@ LaTeX Font Info:    Font shape `T1/fos/bx/n' in size <8> not available
 Package hyperref Info: bookmark level for unknown featurebox defaults to 0 on i
 nput line 2.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 62.
+ mdframed uses option nobreak mdframed on input line 61.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 62.
+ mdframed uses option nobreak mdframed on input line 61.
 
 [2] [3] <main_figs/fig2_carbon_transport.pdf, id=359, 488.69475pt x 300.322pt>
 File: main_figs/fig2_carbon_transport.pdf Graphic file (type pdf)
 
 <use main_figs/fig2_carbon_transport.pdf>
 Package pdftex.def Info: main_figs/fig2_carbon_transport.pdf used on input line
- 124.
+ 123.
 (pdftex.def)             Requested size: 488.69354pt x 300.32127pt.
 
-Overfull \hbox (18.93852pt too wide) in paragraph at lines 124--147
+Overfull \hbox (18.93852pt too wide) in paragraph at lines 123--146
 [][] 
  []
 
 LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <8> not available
-(Font)              Font shape `T1/fos/b/it' tried instead on input line 147.
+(Font)              Font shape `T1/fos/b/it' tried instead on input line 146.
 [4 <./main_figs/schematic_categories_grouped.pdf>] [5 <./main_figs/fig2_carbon_
 transport.pdf>]
-LaTeX Font Info:    Try loading font information for TS1+fos on input line 202.
+LaTeX Font Info:    Try loading font information for TS1+fos on input line 201.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/opensans/ts1fos.fd
@@ -2205,45 +2205,45 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 )
 (./section_03_membrane.tex [6]
-<main_figs/cell_wall_peptidoglycan.pdf, id=1392, 477.34233pt x 292.19362pt>
+<main_figs/cell_wall_peptidoglycan.pdf, id=1394, 477.34233pt x 292.19362pt>
 File: main_figs/cell_wall_peptidoglycan.pdf Graphic file (type pdf)
 
 <use main_figs/cell_wall_peptidoglycan.pdf>
 Package pdftex.def Info: main_figs/cell_wall_peptidoglycan.pdf used on input li
-ne 110.
+ne 111.
 (pdftex.def)             Requested size: 477.34117pt x 292.1929pt.
 
-Overfull \hbox (7.58615pt too wide) in paragraph at lines 110--132
+Overfull \hbox (7.58615pt too wide) in paragraph at lines 111--133
  [] 
  []
 
 ) (./section_04_energy.tex [7] [8 <./main_figs/cell_wall_peptidoglycan.pdf>]
-[9] <main_figs/fig4_energy_production.pdf, id=1973, 471.23854pt x 272.6205pt>
+[9] <main_figs/fig4_energy_production.pdf, id=1977, 471.23854pt x 272.6205pt>
 File: main_figs/fig4_energy_production.pdf Graphic file (type pdf)
 
 <use main_figs/fig4_energy_production.pdf>
 Package pdftex.def Info: main_figs/fig4_energy_production.pdf used on input lin
-e 84.
+e 83.
 (pdftex.def)             Requested size: 471.23738pt x 272.61981pt.
 
-Overfull \hbox (1.48236pt too wide) in paragraph at lines 84--108
+Overfull \hbox (1.48236pt too wide) in paragraph at lines 83--107
  [] 
  []
 
 [10 <./main_figs/fig4_energy_production.pdf>]
-<main_figs/fig5_energy_SV_scaling.pdf, id=2087, 488.18585pt x 311.83502pt>
+<main_figs/fig5_energy_SV_scaling.pdf, id=2091, 488.18585pt x 311.83502pt>
 File: main_figs/fig5_energy_SV_scaling.pdf Graphic file (type pdf)
 
 <use main_figs/fig5_energy_SV_scaling.pdf>
 Package pdftex.def Info: main_figs/fig5_energy_SV_scaling.pdf used on input lin
-e 163.
+e 164.
 (pdftex.def)             Requested size: 488.18466pt x 311.83426pt.
 
-Overfull \hbox (18.42964pt too wide) in paragraph at lines 163--187
+Overfull \hbox (18.42964pt too wide) in paragraph at lines 164--188
  [] 
  []
 
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 187.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 188.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2254,11 +2254,11 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 )
 (./section_06_DNA.tex
-Overfull \vbox (7.74364pt too high) has occurred while \output is active []
+Overfull \vbox (7.26064pt too high) has occurred while \output is active []
 
 
 [11 <./main_figs/fig5_energy_SV_scaling.pdf>]
-<main_figs/DNA_replication_main.pdf, id=2702, 409.86426pt x 141.36012pt>
+<main_figs/DNA_replication_main.pdf, id=2706, 409.86426pt x 141.36012pt>
 File: main_figs/DNA_replication_main.pdf Graphic file (type pdf)
 
 <use main_figs/DNA_replication_main.pdf>
@@ -2272,7 +2272,7 @@ as been already used, duplicate ignored
 l.53 ...udegraphics{main_figs/dntp_synthesis.pdf}}
                                                   \label{figsupp:dntp})
 (./section_07_RNA.tex [12 <./main_figs/DNA_replication_main.pdf>]
-<main_figs/RNA_synthesis_main.pdf, id=3183, 384.94214pt x 310.30026pt>
+<main_figs/RNA_synthesis_main.pdf, id=3189, 384.94214pt x 310.30026pt>
 File: main_figs/RNA_synthesis_main.pdf Graphic file (type pdf)
 
 <use main_figs/RNA_synthesis_main.pdf>
@@ -2286,50 +2286,53 @@ as been already used, duplicate ignored
 l.90 ...cludegraphics{main_figs/sigma_factor.pdf}}
                                                   \label{figsupp:sigma_70})
 (./section_08_translation.tex [13] [14 <./main_figs/RNA_synthesis_main.pdf>]
-<main_figs/protein_synthesis_main.pdf, id=3294, 445.58269pt x 233.21127pt>
+<main_figs/protein_synthesis_main.pdf, id=3301, 445.58269pt x 233.21127pt>
 File: main_figs/protein_synthesis_main.pdf Graphic file (type pdf)
 
 <use main_figs/protein_synthesis_main.pdf>
 Package pdftex.def Info: main_figs/protein_synthesis_main.pdf used on input lin
-e 88.
+e 89.
 (pdftex.def)             Requested size: 445.5816pt x 233.2107pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figsupp.1}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.108 ...).}{\includegraphics{main_figs/tRNA.pdf}}
+l.109 ...).}{\includegraphics{main_figs/tRNA.pdf}}
                                                   \label{figsupp:tRNA})
 (./section_09_limit.tex [15] [16 <./main_figs/protein_synthesis_main.pdf>]
-<main_figs/fig7_ribosome_as_limit.pdf, id=3428, 406.41335pt x 336.82236pt>
+<main_figs/fig7_ribosome_as_limit.pdf, id=3434, 406.41335pt x 336.82236pt>
 File: main_figs/fig7_ribosome_as_limit.pdf Graphic file (type pdf)
 
 <use main_figs/fig7_ribosome_as_limit.pdf>
 Package pdftex.def Info: main_figs/fig7_ribosome_as_limit.pdf used on input lin
-e 80.
+e 81.
 (pdftex.def)             Requested size: 406.41234pt x 336.82153pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figsupp.1}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.122 ...in_figs/fig7_ribosome_as_limit_Supp.pdf}}
+l.123 ...in_figs/fig7_ribosome_as_limit_Supp.pdf}}
                                                   \label{figsupp:ribosome_li...
 [17] [18 <./main_figs/fig7_ribosome_as_limit.pdf>]) (./section_10_size.tex
 LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <10> not available
 (Font)              Font shape `T1/fos/b/it' tried instead on input line 2.
 
-<main_figs/fig8_ribosome_growth_limit_ecoli_a_polar_coord.pdf, id=4081, 338.717
+<main_figs/fig8_ribosome_growth_limit_ecoli_a_polar_coord.pdf, id=4088, 338.717
 44pt x 142.04367pt>
 File: main_figs/fig8_ribosome_growth_limit_ecoli_a_polar_coord.pdf Graphic file
  (type pdf)
 
 <use main_figs/fig8_ribosome_growth_limit_ecoli_a_polar_coord.pdf>
 Package pdftex.def Info: main_figs/fig8_ribosome_growth_limit_ecoli_a_polar_coo
-rd.pdf used on input line 116.
+rd.pdf used on input line 119.
 (pdftex.def)             Requested size: 338.71661pt x 142.04332pt.
 )
-(./section_11_model.tex [19 <./main_figs/fig8_ribosome_growth_limit_ecoli_a_pol
-ar_coord.pdf>]
-<main_figs/elongation_model.pdf, id=4498, 371.07533pt x 279.31752pt>
+(./section_11_model.tex
+Overfull \vbox (3.31158pt too high) has occurred while \output is active []
+
+
+[19 <./main_figs/fig8_ribosome_growth_limit_ecoli_a_polar_coord.pdf>]
+<main_figs/elongation_model.pdf, id=4505, 371.07533pt x 279.31752pt>
 File: main_figs/elongation_model.pdf Graphic file (type pdf)
 
 <use main_figs/elongation_model.pdf>
@@ -2358,7 +2361,7 @@ Overfull \vbox (1.6916pt too high) has occurred while \output is active []
 
 
 [30] [31]
-<SI_figs/dataset_corrections.pdf, id=5031, 436.94643pt x 171.04503pt>
+<SI_figs/dataset_corrections.pdf, id=5034, 436.94643pt x 171.04503pt>
 File: SI_figs/dataset_corrections.pdf Graphic file (type pdf)
 
 <use SI_figs/dataset_corrections.pdf>
@@ -2366,7 +2369,7 @@ Package pdftex.def Info: SI_figs/dataset_corrections.pdf used on input line 154
 .
 (pdftex.def)             Requested size: 436.94536pt x 171.04459pt.
 
-<SI_figs/dataset_upset_diagram.pdf, id=5070, 365.2275pt x 181.89156pt>
+<SI_figs/dataset_upset_diagram.pdf, id=5073, 365.2275pt x 181.89156pt>
 File: SI_figs/dataset_upset_diagram.pdf Graphic file (type pdf)
 
 <use SI_figs/dataset_upset_diagram.pdf>
@@ -2378,14 +2381,14 @@ Overfull \vbox (3.19547pt too high) has occurred while \output is active []
 
 
 [32 <./SI_figs/dataset_corrections.pdf>]
-<SI_figs/Si_size_data_fit.pdf, id=5153, 493.3652pt x 171.02896pt>
+<SI_figs/Si_size_data_fit.pdf, id=5156, 493.3652pt x 171.02896pt>
 File: SI_figs/Si_size_data_fit.pdf Graphic file (type pdf)
 
 <use SI_figs/Si_size_data_fit.pdf>
 Package pdftex.def Info: SI_figs/Si_size_data_fit.pdf used on input line 37.
 (pdftex.def)             Requested size: 469.75502pt x 162.84975pt.
  [33 <./SI_figs/dataset_upset_diagram.pdf>]
-<SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf, id=5202, 353.22464pt
+<SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf, id=5205, 353.22464pt
  x 279.66583pt>
 File: SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.pdf Graphic file (ty
 pe pdf)
@@ -2394,7 +2397,7 @@ Package pdftex.def Info: SI_figs/schmidt_estimate_protein_RNA_DNA_corrections.p
 df used on input line 100.
 (pdftex.def)             Requested size: 469.75502pt x 371.93379pt.
 
-<SI_figs/log_log_regression_naa_vol.pdf, id=5214, 433.62pt x 216.81pt>
+<SI_figs/log_log_regression_naa_vol.pdf, id=5217, 433.62pt x 216.81pt>
 File: SI_figs/log_log_regression_naa_vol.pdf Graphic file (type pdf)
 
 <use SI_figs/log_log_regression_naa_vol.pdf>
@@ -2410,14 +2413,14 @@ Overfull \vbox (1.16461pt too high) has occurred while \output is active []
 
 [34 <./SI_figs/Si_size_data_fit.pdf>] [35 <./SI_figs/schmidt_estimate_protein_R
 NA_DNA_corrections.pdf>]
-<SI_figs/size_data_lit.pdf, id=5343, 424.64044pt x 171.26083pt>
+<SI_figs/size_data_lit.pdf, id=5346, 424.64044pt x 171.26083pt>
 File: SI_figs/size_data_lit.pdf Graphic file (type pdf)
 
 <use SI_figs/size_data_lit.pdf>
 Package pdftex.def Info: SI_figs/size_data_lit.pdf used on input line 34.
 (pdftex.def)             Requested size: 469.75502pt x 189.46152pt.
 
-<SI_figs/schmidt_protein_corrections.pdf, id=5362, 461.54936pt x 171.26083pt>
+<SI_figs/schmidt_protein_corrections.pdf, id=5365, 461.54936pt x 171.26083pt>
 File: SI_figs/schmidt_protein_corrections.pdf Graphic file (type pdf)
 
 <use SI_figs/schmidt_protein_corrections.pdf>
@@ -2430,7 +2433,7 @@ df> <./SI_figs/schmidt_protein_corrections.pdf
 pdfTeX warning: pdflatex (file ./SI_figs/schmidt_protein_corrections.pdf): PDF 
 inclusion: multiple pdfs with page group included in a single page
 >] [38]
-<SI_figs/schmidt_protein_estimate_basan.pdf, id=5554, 172.46527pt x 135.12544pt
+<SI_figs/schmidt_protein_estimate_basan.pdf, id=5557, 172.46527pt x 135.12544pt
 >
 File: SI_figs/schmidt_protein_estimate_basan.pdf Graphic file (type pdf)
  <use SI_figs/schmidt_protein_estimate_basan.pdf>
@@ -2440,7 +2443,7 @@ ut line 190.
 )
 (./SI_section_04_complex_abundance.tex [39 <./SI_figs/schmidt_protein_estimate_
 basan.pdf>]
-<SI_figs/figSX_subunit_counting.pdf, id=5621, 467.14525pt x 354.02646pt>
+<SI_figs/figSX_subunit_counting.pdf, id=5624, 467.14525pt x 354.02646pt>
 File: SI_figs/figSX_subunit_counting.pdf Graphic file (type pdf)
 
 <use SI_figs/figSX_subunit_counting.pdf>
@@ -2528,7 +2531,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 13.
 
-[44] <SI_figs/supplemental_ori_ter.pdf, id=5794, 379.10834pt x 257.44983pt>
+[44] <SI_figs/supplemental_ori_ter.pdf, id=5797, 379.10834pt x 257.44983pt>
 File: SI_figs/supplemental_ori_ter.pdf Graphic file (type pdf)
 
 <use SI_figs/supplemental_ori_ter.pdf>
@@ -2543,7 +2546,7 @@ Overfull \vbox (2.30035pt too high) has occurred while \output is active []
 [48] [49] [50] [51] [52]) 
 AED: lastpage setting LastPage
 [53] (./eLife_draft.suppinfo
-<main_figs/fig3_phospho_sulfo_transport.pdf, id=5936, 443.74184pt x 300.41835pt
+<main_figs/fig3_phospho_sulfo_transport.pdf, id=5939, 443.74184pt x 300.41835pt
 >
 File: main_figs/fig3_phospho_sulfo_transport.pdf Graphic file (type pdf)
  <use main_figs/fig3_phospho_sulfo_transport.pdf>
@@ -2551,7 +2554,7 @@ Package pdftex.def Info: main_figs/fig3_phospho_sulfo_transport.pdf used on inp
 ut line 1.
 (pdftex.def)             Requested size: 443.74075pt x 300.4176pt.
 
-<main_figs/dntp_synthesis.pdf, id=5937, 211.12677pt x 259.57977pt>
+<main_figs/dntp_synthesis.pdf, id=5940, 211.12677pt x 259.57977pt>
 File: main_figs/dntp_synthesis.pdf Graphic file (type pdf)
 
 <use main_figs/dntp_synthesis.pdf>
@@ -2560,14 +2563,14 @@ Package pdftex.def Info: main_figs/dntp_synthesis.pdf used on input line 2.
  [54
 
  <./main_figs/fig3_phospho_sulfo_transport.pdf>] <main_figs/sigma_factor.pdf, i
-d=6416, 215.77013pt x 154.69193pt>
+d=6419, 215.77013pt x 154.69193pt>
 File: main_figs/sigma_factor.pdf Graphic file (type pdf)
 
 <use main_figs/sigma_factor.pdf>
 Package pdftex.def Info: main_figs/sigma_factor.pdf used on input line 3.
 (pdftex.def)             Requested size: 215.76959pt x 154.69153pt.
 
-<main_figs/tRNA.pdf, id=6417, 255.79666pt x 231.263pt>
+<main_figs/tRNA.pdf, id=6420, 255.79666pt x 231.263pt>
 File: main_figs/tRNA.pdf Graphic file (type pdf)
 
 <use main_figs/tRNA.pdf>
@@ -2578,7 +2581,7 @@ Package pdftex.def Info: main_figs/tRNA.pdf used on input line 4.
 pdfTeX warning: pdflatex (file ./main_figs/sigma_factor.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
 >]
-<main_figs/fig7_ribosome_as_limit_Supp.pdf, id=6719, 399.68925pt x 210.656pt>
+<main_figs/fig7_ribosome_as_limit_Supp.pdf, id=6722, 399.68925pt x 210.656pt>
 File: main_figs/fig7_ribosome_as_limit_Supp.pdf Graphic file (type pdf)
 
 <use main_figs/fig7_ribosome_as_limit_Supp.pdf>
@@ -2586,7 +2589,7 @@ Package pdftex.def Info: main_figs/fig7_ribosome_as_limit_Supp.pdf used on inpu
 t line 5.
 (pdftex.def)             Requested size: 399.68828pt x 210.65549pt.
 
-<SI_figs/model_explorer_screenshot.png, id=6726, 1060.96375pt x 421.575pt>
+<SI_figs/model_explorer_screenshot.png, id=6729, 1060.96375pt x 421.575pt>
 File: SI_figs/model_explorer_screenshot.png Graphic file (type png)
 
 <use SI_figs/model_explorer_screenshot.png>
@@ -2617,11 +2620,11 @@ Package rerunfilecheck Info: File `eLife_draft.out' has not changed.
 ### simple group (level 1) entered at line 53 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 28673 strings out of 492995
- 526691 string characters out of 6132704
- 662971 words of memory out of 5000000
- 30565 multiletter control sequences out of 15000+600000
- 768907 words of font info for 896 fonts, out of 8000000 for 9000
+ 28678 strings out of 492995
+ 526806 string characters out of 6132704
+ 662849 words of memory out of 5000000
+ 30564 multiletter control sequences out of 15000+600000
+ 769705 words of font info for 901 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,12n,55p,10456b,1345s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/op
@@ -2640,10 +2643,10 @@ ocal/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathex.pfb></usr/loca
 l/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/stix/stix-mathscr.pfb>
-Output written on eLife_draft.pdf (57 pages, 11598496 bytes).
+Output written on eLife_draft.pdf (57 pages, 11599369 bytes).
 PDF statistics:
- 7649 PDF objects out of 8907 (max. 8388607)
- 4617 compressed objects within 47 object streams
+ 7652 PDF objects out of 8907 (max. 8388607)
+ 4620 compressed objects within 47 object streams
  282 named destinations out of 1000 (max. 500000)
  61520 words of extra memory for PDF output out of 61914 (max. 10000000)
 

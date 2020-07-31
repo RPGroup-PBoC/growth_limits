@@ -1,25 +1,25 @@
 \section{A Minimal Model of Nutrient-Mediated Growth Rate Control}
 \label{sec:minimal_model}
 While the preceeding subsections highlight a dominant role for ribosomes in
-setting the growth rate, our analysis on the whole emphasizes that the total
-proteomic content must also change in response to variable growth conditions and
+setting the growth rate, our analysis on the whole emphasizes how the total
+proteomic content also changes in response to variable growth conditions and
 growth rate. In this final section we use a minimal model of growth rate control
 to better understand how this interconnection between ribosomal abundance and
-total protein influences the observed growth rate.
+total protein abundance influences the observed growth rate.
 
 Here we propose that cells modulate their protein abundance in direct response
 to the availability of nutrients in their environment. As noted earlier,
-bacteria can modulate ribosomal activity through the secondary-messenger
+bacteria can modulate ribosomal activity through the secondary messenger
 molecules like (p)ppGpp in poorer nutrient conditions (\FIG{ribosome_limit}(C) -
-inset; \cite{dai2016}). Importantly, these secondary-messengers also cause
+inset; \cite{dai2016}). Importantly, these secondary messengers also cause
 global changes in transcriptional and translational activity
 \citep{hauryliuk2015, zhu2019, Buke2020}. In \textit{E. coli}, amino acid
 starvation leads to the accumulation of de-acylated tRNAs at the ribosome's
 A-site and a strong increase in (p)ppGpp synthesis activity by the enzyme RelA
 \citep{hauryliuk2015}. Along with this,  there is increasing evidence that
 (p)ppGpp also acts to inhibit the initiation of DNA replication
-\citep{kraemer2019}, providing a potential mechanism to lower $\langle$\#
-ori$\rangle$ and maintain a smaller cell size in poorer growth conditions
+\citep{kraemer2019}, providing a potential mechanism for cells to lower $\langle$\#
+ori$\rangle$ and maintain a smaller cell size in poorer nutrient conditions
 \citep{fernandezcoll2020}.
 
 To consider this quantitatively, we assume that cells modulate their proteome
@@ -53,7 +53,7 @@ yielding a significantly reduced elongation rate [point (3) in
 \FIG{elongation_rate_model}{B)]. While the elongation rate will always be
 dominated by the amino acid supply rate at sufficiently low ribosome copy
 numbers, the elongation rate at larger ribosome abundances can be increased
-by tuning $f_a$ such that not all ribosomes are elongating, reducing the
+by tuning $f_a$ such that not all ribosomes are elongating, reducing their
 total consumption rate.
 
 \begin{figure}
@@ -99,27 +99,29 @@ total consumption rate.
 Availability and Metabolic Capacity}
 To relate elongation rate to growth rate, we constrain the set of parameters
 based on our available proteomic measurements; namely, we restrict the values of
-$R$, $N_{pep}$, and cell size to those associated with the amalgamated proteomic
+$R$, $N_{pep}$, and cell size $V$ to those associated with the amalgamated proteomic
 data (described in Appendix \nameref{sec:estimate_protein_per_cell}). We then
 consider how changes in the nutrient conditions, through the parameter $r_{AA}$,
 influence the maximum growth rate as determined by \EQ{lam_limited}.
-\FIG{elongation_rate_model}(C) shows how the observed growth rate depends on the
+\FIG{elongation_rate_model}(C) shows how the growth rate depends on the
 rate of amino acid supply $r_{AA}$ as a function of the cellular ribosome copy
 number. A feature immediately apparent is the presence of a maximal growth rate
 whose dependence on $R$ (and consequently, the cell size) increases with
 increasing $r_{AA}$. Importantly, however, there is an optimum set of $R$,
 $N_\text{pep}$, and $V$ that are strictly dependent on the value of $r_{AA}$.
-Increasing the ribosomal concentration beyond the cell's metabolic capacity has
-the adverse consequence of depleting the supply of amino acids and a concomitant
-decrease in the elongation rate $r_t$ [\FIG{elongation_rate_model}(B)].
+This shows that increasing the ribosomal concentration beyond the cell's metabolic capacity
+will have the adverse consequence of depleting the supply of amino acids and a concomitant
+decrease in the elongation rate $r_t$ (\FIG{elongation_rate_model}(B)) and
+growth rate.
 
-Also of note is the growth rate profiles shown for low amino acid supply rates
-[purple and blue lines in \FIG{elongation_rate_model}(C)], representing growth
-in nutrient-poor media. In these conditions, there no longer exists a peak in
-growth, at least in the range of physiologically-relevant  ribosome copy
-numbers. Instead, cells limit their pool of actively translating ribosomes  by
-decreasing $f_a$ \citep{dai2016}, which would help maintain the pool of
-available amino acids $[AA]_\text{eff}$ and increase the achievable elongation
-rate. This observation is in agreement with the central premise of the cellular
-resource allocation principle proposed by \cite{scott2010,
-klumpp2009,klumpp2014} and \cite{hui2015}.
+Also of note is the growth rate trends obaserved at low values of $r_{AA}$
+[purple and blue lines in \FIG{elongation_rate_model}(C)], representative of
+growth in nutrient-poor media. In these conditions, there no longer exists a
+peak in growth, at least within the range of physiologically-relevant  ribosome
+copy numbers. This is a regime, associated with slower growth rates, where cells
+limit their pool of actively translating ribosomes  by decreasing $f_a$
+\citep{dai2016}, which we find would help maintain the pool of available amino
+acids $[AA]_\text{eff}$ and increase the achievable elongation rate. This
+observation is in agreement with the central premise of the cellular resource
+allocation principle proposed by \cite{scott2010, klumpp2009,klumpp2014} and
+\cite{hui2015}.

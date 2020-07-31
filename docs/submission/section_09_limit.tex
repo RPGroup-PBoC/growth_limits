@@ -49,13 +49,13 @@ the growth rate (\FIG{ribosome_limit}(A), right-hand panel, inset), revealing
 that $f_a \approx 1$ at growth rates above 0.75 hr$^{-1}$ and $f_a < 1$ as the
 growth rate slows. Using these data, we inferred the approximate active fraction
 (see Appendix \nameref{sec:SI_f_a}) at each growth rate and used this to compute
-$\Phi_R \times f_a$ (\FIG{ribosome_limit}(A, colored points in right-hand
+$\Phi_R \times f_a$ (\FIG{ribosome_limit}(A), colored points in right-hand
 panel). In general, these data skirt the translation-limited growth rate
-determined using \EQ{lam_limited} with $r_t$ taken to be the maximal elongation
+determined using \EQ{lam_limited}, where we have taken $r_t$ to be the maximal elongation
 rate of 17 amino acids per second measured by \cite{dai2016}. There is a notable
 discrepancy between the data collected in \cite{schmidt2016, li2014} and that
 collected from \cite{valgepea2013, peebo2015}. When compared to other
-measurements (non-proteomic with significantly lower resolution) of the active ribosome mass fraction
+measurements (non-proteomic based) of the active ribosome mass fraction
 (\FIG{ribosome_limit}(B), grey points in right-hand panel), the data from
 \cite{valgepea2013} and \cite{peebo2015} are notably aberrant, suggesting a
 systematic error in these data. These additional measurements come from a number
@@ -63,16 +63,17 @@ of recent studies and are determined from measurements of total RNA to total
 protein mass ratios (\FIGSUPP[ribosome_limit]{ribosome_limit_supp}).
 
 Together, these results illustrate that the growth rates observed across the
-amalgamated data sets are close to the translation-limited growth rate determined through their
-ribosomal activity, at least for the data reported in \cite{schmidt2016} and
-\cite{li2014}. While this is a useful framework to consider how the relative
-abundance of ribosomes (compared to all other proteins) defines the growth rate,
-it is worth noting that as growth rate increases, so does the cell size and
-therefore so will the total proteomic mass \citep{basan2015}. With a handle on
-how elongation rate and the total number of peptide bonds per proteome is
-related to the growth rate, we now expand this description to account for the
-increasing cell size and ribosome copy number at faster growth rates,  enabling
-us to identify a potential bottleneck in the synthesis of rRNA.
+amalgamated data sets are close to the translation-limited growth rate
+determined through  ribosomal activity, at least for the data reported in
+\cite{schmidt2016} and \cite{li2014}. While this is a useful framework to
+consider how the relative abundance of ribosomes (compared to all other
+proteins) defines the growth rate, it is worth noting that as growth rate
+increases, so does the cell size and therefore so will the total proteomic mass
+\citep{basan2015}. With a handle on how elongation rate and the total number of
+peptide bonds per proteome is related to the growth rate, we now expand this
+description to account for the increasing cell size and ribosome copy number at
+faster growth rates,  enabling us to identify a potential bottleneck in the
+synthesis of rRNA.
 
 \begin{figure}
   \begin{fullwidth}
@@ -130,16 +131,16 @@ exhibits growth rates above 2 hr$^{-1}$ \citep{bremer2008}, which is still
 well-below the synthesis rate of a single ribosome, and below the maximum
 growth rates reported for several other bacteria \citep{roller2016}. While we
 have considered potential limits imposed by translation of ribosomal
-\textit{proteins}, here we consider potential limiting regimes for the
-production of rRNA.
+\textit{proteins}, here we consider potential limiting regimes specific to the
+synthesis of rRNA.
 
 Due to multiple initiations of chromosomal replication per cell doubling, the
 effective number of rRNA operons increases with growth rate and will do so in
 proportion to the average number of origins per cell, $\langle$\# ori$\rangle$.
 This later parameter is set by how often replication must be initiated in order
-to keep up with cell doubling times $\tau$ whose time may be shorter than the
-cell cycle time $t_{cyc}$ (referring to the time from replication initiation to
-cell division) \cite{dennis2004}. This is quantified by
+to keep up with cell doubling times $\tau$, whose time may be shorter than the
+cell cycle time $\tau_{cyc}$ (referring to the time from replication initiation to
+cell division) \citep{dennis2004}. This is quantified by
 \begin{equation}
     \langle \text{\# ori} \rangle = 2^{\tau_{cyc} / \tau} = 2^{\tau_{cyc} \lambda / \log(2)}.
     \label{eq:Nori}
@@ -157,20 +158,20 @@ assumption that that the number of rRNA operons  will be directly proportional
 to $\langle$\# ori$\rangle$.
 
 Returning to our rule-of-thumb of 1 functional rRNA unit per second per
-transcribing operon, we estimate the maximum number of ribosomes that could be made as a function of
-growth rate (\FIG{ribosome_limit}(B), blue curve). Although we expect this
-estimate to significantly overestimate rRNA abundance at slower growth rates
-($\lambda < 0.5\, \text{hr}^{-1}$), this provides a useful reference alongside the
-proteomic measurements particularly in the regime of fast growth. For growth
-rates above about 1 hr$^{-1}$, for example, we find that
+transcribing operon, we estimate the maximum number of ribosomes that could be
+made as a function of growth rate (\FIG{ribosome_limit}(B), blue curve).
+Although we expect this estimate to significantly overestimate rRNA abundance at
+slower growth rates ($\lambda < 0.5\, \text{hr}^{-1}$), this provides a useful
+reference alongside the proteomic measurements, particularly in the regime of
+fast growth. For growth rates above about 1 hr$^{-1}$, for example, we find that
 cells will need to transcribe rRNA near their maximal rate. As a counter
 example, if \textit{E. coli} did not initiate multiple rounds of replication,
-but manged to replicate their chromosome within the requisite time limit,
-they would be unable to make enough rRNA for the observed number of ribosomes
-(dashed blue curve in \FIG{ribosome_limit}(C)). The convergence between the
-maximum rRNA production and measured ribosome copy number suggests rRNA
-synthesis may begin to present a bottleneck at the fastest growth rates due to
-the still-limited copies of rRNA genes.
+but manged to replicate their chromosome within the requisite time limit, they
+would be unable to make enough rRNA for the observed number of ribosomes (dashed
+blue curve in \FIG{ribosome_limit}(C)). The convergence between the maximum rRNA
+production and measured ribosome copy number suggests rRNA synthesis may begin
+to present a bottleneck at the fastest growth rates due to the still-limited
+copies of rRNA genes.
 
 
 % It is now well-documented that \textit{E. coli} cells add a constant volume per

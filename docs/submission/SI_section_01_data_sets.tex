@@ -169,9 +169,10 @@ these details further in sections  on \nameref{sec:protein_size_SV} and
     \end{fullwidth}
 \end{figure}
 
-Lastly, in \FIG{upset} we show the total proteomic coverage and overlap of
-proteins quantified across each data set. Here we have used  an UpSet diagram
-\citep{Lex2014} to compare the data. Overall, the overlap in quantified proteins
+Lastly, in \FIG{venn} we show the total proteomic coverage and overlap of
+proteins quantified across each data set. In part (A) we plot the total number
+of  unique proteins, while in part (B) we plot a Venn diagram to also show the
+intersections across each data set. Overall, the overlap in quantified proteins
 is quite high, with 1157 proteins quantified across all data sets. The
 sequencing based approach of \cite{li2014} has substantially higher coverage
 compared to the mass spectrometry data sets (3394 genes versus the 2041 genes
@@ -183,22 +184,35 @@ roughly equivalent total protein mass.  An exception to this is in the data from
 from \cite{schmidt2016} as a reference).
 
 
+% \begin{figure*}
+%     \centering{
+%         \includegraphics{SI_figs/dataset_upset_diagram.pdf}
+%         \caption{\textbf{Comparison of proteomic coverage across different data sets.}
+%         An UpSet diagram \citep{Lex2014} summarizes the total number of protein
+%         coding genes whose protein abundance was reported in the data sets of
+%         \cite{valgepea2013, li2014, schmidt2016, peebo2015}. Bar plot on bottom
+%         left indicates the total number of genes reported in each individual
+%         data. The main bar plot summarizes the number of unique proteins
+%         identified across overlapping subsets of the data.  For example, in the
+%         first column only the data from \cite{li2014}  is considered (indicated
+%         by solid blue circle) and 1288 proteins are identified as exclusive to
+%         the data set. In the second column, the intersection of all four data
+%         sets is considered, with 1157 proteins quantified across them. This
+%         follows for each additional column in the plot, with the subset under
+%         consideration denoted by the solid blue circles.
+%         } \label{fig:upset}
+%     }
+% \end{figure*}
+
 \begin{figure*}
     \centering{
-        \includegraphics{SI_figs/dataset_upset_diagram.pdf}
+        \includegraphics{SI_figs/intersections_venn.pdf}
         \caption{\textbf{Comparison of proteomic coverage across different data sets.}
-        An UpSet diagram \citep{Lex2014} summarizes the total number of protein
-        coding genes whose protein abundance was reported in the data sets of
-        \cite{valgepea2013, li2014, schmidt2016, peebo2015}. Bar plot on bottom
-        left indicates the total number of genes reported in each individual
-        data. The main bar plot summarizes the number of unique proteins
-        identified across overlapping subsets of the data.  For example, in the
-        first column only the data from \cite{li2014}  is considered (indicated
-        by solid blue circle) and 1288 proteins are identified as exclusive to
-        the data set. In the second column, the intersection of all four data
-        sets is considered, with 1157 proteins quantified across them. This
-        follows for each additional column in the plot, with the subset under
-        consideration denoted by the solid blue circles.
-        } \label{fig:upset}
+        (A) Total number of unique proteins quantified in the data sets of
+        \cite{valgepea2013, li2014, schmidt2016, peebo2015}. (2) Venn diagram
+        showing the number of unique proteins and their intersections across each
+        of the four data sets in (A). The intersection of all four data
+        sets identifies 1157 proteins with measured protein copy number values.
+        } \label{fig:venn}
     }
 \end{figure*}

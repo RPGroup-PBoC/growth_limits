@@ -33,7 +33,7 @@ elongation $r_t$ and achievable growth rate as simply depending on the supply of
 amino acids (and, therefore, also amino-acyl tRNAs), through a parameter
 $r_{AA}$ in units of AA per second, and the rate of amino acid consumption by
 protein synthesis ($r_t \times R \times f_a$). This is shown schematically in
-\FIG{elongation_rate_model}(A) and derived in Appendix \nameref{sec:SI_model}. Given our observation
+\FIG{elongation_rate_model}(A) and derived in the Appendix Section "\nameref{sec:SI_model}". Given our observation
 that protein synthesis and energy production are not limiting, we
 assume that other molecular players required by ribosomes such as elongation
 factors and GTP are available in sufficient abundance.
@@ -41,7 +41,10 @@ factors and GTP are available in sufficient abundance.
 In \FIG{elongation_rate_model}(B), we illustrate how the elongation rate will
 depend on the ribosomal copy number. Here, we have considered an arbitrarily
 chosen $r_{AA} = 5\times 10^6$ AA $\cdot$ s$^{-1} \cdot$ \textmu m$^{-3}$ and
-$f_a = 1$ for a unit cell volume $V = 1$fL. At low ribosome copy numbers, the
+$f_a = 1$ for a unit cell volume $V = 1$fL (we provide the interactive figure
+\FIGSUPP[elongation_rate_model]{model_explorer} which allows the user to explore
+different regimes of this parameter space). At low ribosome copy numbers,
+the
 observed elongation rate is dependent primarily on $[AA]_\text{eff}$ through
 $r_{AA}$ [as $r_t^{\text{max}} \times R \times f_a << r_{AA}$, point (1) in
 \FIG{elongation_rate_model}(B)]. As the ribosome copy number is increased
@@ -100,7 +103,7 @@ Availability and Metabolic Capacity}
 To relate elongation rate to growth rate, we constrain the set of parameters
 based on our available proteomic measurements; namely, we restrict the values of
 $R$, $N_{pep}$, and cell size $V$ to those associated with the amalgamated proteomic
-data (described in Appendix \nameref{sec:estimate_protein_per_cell}). We then
+data (described in the Appendix Section "\nameref{sec:estimate_protein_per_cell}"). We then
 consider how changes in the nutrient conditions, through the parameter $r_{AA}$,
 influence the maximum growth rate as determined by \EQ{lam_limited}.
 \FIG{elongation_rate_model}(C) shows how the growth rate depends on the
@@ -114,14 +117,11 @@ will have the adverse consequence of depleting the supply of amino acids and a c
 decrease in the elongation rate $r_t$ (\FIG{elongation_rate_model}(B)) and
 growth rate.
 
-Also of note is the growth rate trends obaserved at low values of $r_{AA}$
+Also of note is the growth rate trends observed at low values of $r_{AA}$
 [purple and blue lines in \FIG{elongation_rate_model}(C)], representative of
 growth in nutrient-poor media. In these conditions, there no longer exists a
 peak in growth, at least within the range of physiologically-relevant  ribosome
 copy numbers. This is a regime, associated with slower growth rates, where cells
 limit their pool of actively translating ribosomes  by decreasing $f_a$
 \citep{dai2016}, which we find would help maintain the pool of available amino
-acids $[AA]_\text{eff}$ and increase the achievable elongation rate. This
-observation is in agreement with the central premise of the cellular resource
-allocation principle proposed by \cite{scott2010, klumpp2009,klumpp2014} and
-\cite{hui2015}.
+acids $[AA]_\text{eff}$ and increase the achievable elongation rate. 

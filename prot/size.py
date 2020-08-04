@@ -76,9 +76,9 @@ def lambda2SV(x):
     SA_data / V_data : float
         surface area to volume ratio in \mu m**-1
     """
-    V_data = func_size(x)
-    l = func_length(x)
-    w = func_width(x)
+    V_data = lambda2size(x)
+    l = lambda2length(x)
+    w = lambda2width(x)
     SA_data = rod_SA(l, w, V_data)
 
     return SA_data / V_data
@@ -109,7 +109,7 @@ def rod_SA(l, w, V):
 def lambda2SA(x):
     """
     Computes the cellular surface area as a function of the growth rate. It is
-    assumed that the cell is cylinder capped with hemispherical ends. 
+    assumed that the cell is cylinder capped with hemispherical ends.
 
     Parameters
     ----------
@@ -119,7 +119,7 @@ def lambda2SA(x):
     Returns
     -------
     SA: int, float, or list/array of ints and floats
-        The computed surface area in units of square microns for the provided 
+        The computed surface area in units of square microns for the provided
         growth rates
     """
 
@@ -127,8 +127,8 @@ def lambda2SA(x):
     length = lambda2length(x)
     width = lambda2width(x)
     vol = lambda2size(x)
-    
-    # Compute the rod surface area 
+
+    # Compute the rod surface area
     SA = rod_SA(length, width, vol)
     return SA
 

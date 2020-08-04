@@ -2,6 +2,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from matplotlib.lines import Line2D
 import prot.viz
 import prot.size as size
 colors, palette = prot.viz.bokeh_theme()
@@ -10,56 +11,34 @@ dataset_colors = {'li_2014':colors['purple'], 'schmidt_2016':colors['light_blue'
 prot.viz.plotting_style()
 
 
-def rod_SA(l,w, V):
-    asp_ratio = l/w
-    gamma = asp_ratio * np.pi * (asp_ratio * np.pi /4 - np.pi/12)**(-2/3)
-    return gamma * V**(2/3)
-
-def func_size(x):
-    a, c = 0.53319063, -1.03724839
-    return a*np.exp(-c*x)
-
-def func_length(x):
-    a, c, d = 0.49656209, -1.09303027,  1.75967254
-    return a*np.exp(-c*x)+d
-
-def func_width(x):
-    a, c = 0.63830175, -0.24341639
-    return a*np.exp(-c*x)
-
-def lambda2SV(x):
-    V_data = func_size(x)
-    l = func_length(x)
-    w = func_width(x)
-    SA_data = rod_SA(l, w, V_data)
-
-    return SA_data / V_data
-
-def SV2lambda(x):
-    a, c, d = 14.57246783,  0.38603366, -0.80393099
-    return a*np.exp(-c*x)+d
-
-
-
 ######################
 # plot configuration #
 ######################
 fig = plt.figure(constrained_layout=True)
-widths = [6, 1, 7]
-heights = [2, 1, 1, 0.25]
-spec = fig.add_gridspec(ncols=3, nrows=4, width_ratios=widths,
+widths = [6, 7]
+heights = [2, 0.5, 0.5, 0.25]
+spec = fig.add_gridspec(ncols=2, nrows=4, width_ratios=widths,
                           height_ratios=heights)
 
 ax1 = fig.add_subplot(spec[0, 0])
-ax2 = fig.add_subplot(spec[0, 1])
-ax3 = fig.add_subplot(spec[2:, :2])
-ax4 = fig.add_subplot(spec[:2, 2])
+# ax2 = fig.add_subplot(spec[0, 1])
+ax3 = fig.add_subplot(spec[2:, 0])
+ax4 = fig.add_subplot(spec[:2, 1])
 
 
 # Parameters and calculations #
 ###############################
-
+# use estimates of E. coli rod cell size based
+# on the values used from Si et al. (2017,2019);
+# Use our fit of that data as fcn of growth rate
+# to determine cell size, length, width, and surface area.
+# gr = np.linspace(0.01, 4.4, 100)
 V = np.linspace(0.5,50, 500)
+# V = size.lambda2size(gr)
+# print(V)
+# w = size.lambda2width(gr)
+# l = size.lambda2length(gr)
+# SA_rod = size.rod_SA(l, w, V)
 
 SA_rod = 2 * np.pi *  V**(2/3)
 SA_V_ratio_rod = SA_rod / V
@@ -117,26 +96,26 @@ ax1.plot(Ps_resp_sphere, SA_V_ratio_sphere, color=colors['blue'],
 ax1.fill_between(Ps_resp_, y1 = SA_V_ratio_sphere_, y2 = SA_V_ratio_rod_,
         color=colors['blue'],alpha=0.2, lw = 0)
 
-# # plot the max for fermentation
-# ax[0].plot(Ps_ferm_rod, SA_V_ratio_rod, color=colors['red'],
-#             label='rod', alpha=0.9)
-# ax[0].plot(Ps_ferm_sphere, SA_V_ratio_sphere, color=colors['red'],
-#             label='sphere', alpha=0.4)
-
-
 # # Populate second plot with growth rates
 # S/V for E. coli datasets
 # Load the data set
 data = pd.read_csv('../../data/compiled_absolute_measurements.csv')
 
 for g, d in data.groupby(['dataset', 'condition', 'growth_rate_hr']):
-    SV = lambda2SV(g[2])
-    ax2.plot(1, SV, 'o', color=dataset_colors[g[0]],
+    V = size.lambda2size(g[2])
+    # ATP equivalents demand w.r.t. volume ; 1E6 ATP/(um3 s)
+    Pv = 1E6 * V
+    # assume aspect ratio of 4 (length/width), which is
+    # appoximately correct for E. coli
+    SA_rod = 2 * np.pi *  V**(2/3)
+    SV = SA_rod/V
+
+    ax1.plot(Pv, SV, 'o', color=dataset_colors[g[0]],
                     alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
                     label = g[2], ms=4, zorder=10)
 
 # Format the axes
-for a in [ax1,ax2]:
+for a in [ax1]:#,ax2]:
     a.xaxis.set_tick_params(labelsize=5)
     a.yaxis.set_tick_params(labelsize=5)
     a.set_xscale('log')
@@ -147,22 +126,19 @@ ax1.set_xlim([np.min(Pv), np.max(Ps_resp_)])
 ax1.set_xlabel('ATP equivalents per s', fontsize=6)
 ax1.set_ylabel('S/V ratio [$\mu$m]', fontsize=6)
 
-ax2_ = ax2.twinx()
 
-ax2_.xaxis.set_ticks([])
-ax2_.set_yticks(lambda2SV(np.array([0,0.5,1,2])))
-ax2_.set_yticklabels(np.array([0,0.5,1,2]))
-ax2_.yaxis.set_label_position("right")
-ax2_.yaxis.tick_right()
-ax2_.set_ylabel('growth rate [hr$^{-1}$]', fontsize=6)
-ax2_.xaxis.set_tick_params(labelsize=5)
-ax2_.yaxis.set_tick_params(labelsize=5)
 
-# # move second plot closer
-# box = ax2.get_position()
-# box.x0 = box.x0 + 0.045
-# box.x1 = box.x1 + 0.045
-# ax2.set_position(box)
+legend_elements = [Line2D([0], [0], marker='o', color='gray', lw = 0,
+                   alpha=0.5, markeredgecolor='k', markeredgewidth=0.25,
+                   label = 'estimated for\n$E. coli$ data', ms=4),
+                   Line2D([0], [0], ls = '-.', color='gray', label='rod (aspect\nratio = 4)',
+                     alpha = 1.0, lw = 0.5, markeredgewidth=0.0, markeredgecolor='k'),
+                   Line2D([0], [0], ls = '--', color='gray', label='sphere',
+                     alpha = 1.0, lw = 0.5, markeredgewidth=0.0, markeredgecolor='k')]
+
+legend = ax1.legend(handles = legend_elements, loc = 'upper right',
+                        fontsize = 5)
+ax1.add_artist(legend)
 
 
 
@@ -307,8 +283,8 @@ ax4_twin.set_ylim(0,len(df_mem_.condition.unique()))
 ax4_twin.xaxis.set_tick_params(labelsize=5)
 ax4_twin.yaxis.set_tick_params(labelsize=5)
 
-
-fig.savefig('../../figures/energy_estimate_SV_scaling_plots_gridspec.pdf')
+plt.tight_layout()
+fig.savefig('../../figures/energy_estimate_SV_scaling_plots_gridspec_2.pdf')
 
 
 # %%

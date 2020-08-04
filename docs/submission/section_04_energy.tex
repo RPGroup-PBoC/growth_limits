@@ -160,29 +160,30 @@ particularly dominating even at fast growth rates [\FIG{energy_scaling}(C)].
     \begin{fullwidth}
         \centering{
             \includegraphics{main_figs/fig5_energy_SV_scaling.pdf}
-            \caption{\textbf{Influence of cell size and S/V ratio on ATP
-            production and inner membrane composition.} (A) Scaling of ATP
-            demand and maximum ATP production as a function of S/V ratio.
-            Cell volumes of 0.5 fL to 50 fL were considered, with the dashed
-            (\texttt{- -}) line corresponding to a sphere and the dash-dot
-            line (\texttt{-.}) reflecting a rod-shaped bacterium like
-            \textit{E. coli} with a typical aspect ratio (length / width) of
-            4 \citep{shi2018}. Approximately 50\% of the bacterial inner
-            membrane is assumed to be protein, with the remainder lipid. The
-            right plot shows the measured growth rates, and their estimated
-            S/V ratio using growth rate dependent size measurements from
-            \cite{si2017} (See Appendix \nameref{sec:protein_size_SV} on
-            calculation). (B) Total protein mass per \textmu m$^2$ calculated
-            for proteins with inner membrane annotation (GO term: 0005886).
-            (C) Relative protein abundances by mass based on COG annotation.
-            Metabolic proteins are further separated into respiration
-            (F$_1$-F$_0$ ATP synthase, NADH dehydrogenase I,
+            \caption{\textbf{Influence of cell size and surface area to volume
+            ratio on ATP production and inner membrane composition.} (A) Scaling
+            of ATP demand and maximum ATP production through respiration as a
+            function of S/V ratio. Cell volumes of 0.5 fL to 50 fL were
+            considered, with the dashed (\texttt{- -}) line corresponding to a
+            sphere and the dash-dot line (\texttt{-.}) reflecting a rod-shaped
+            bacterium like \textit{E. coli} with a typical aspect ratio (length
+            / width) of 4 \citep{shi2018}. The ATP demand is calculated as
+            $10^6$ ATP/(\textmu m$^3$ s), while the maximum ATP production rate
+            is taken to be 3 ATP / (nm$^2 \cdot$s)
+            \citep{szenk2017}, with calculations of \textit{E. coli} volume and
+            surface area detailed in Appendix \nameref{sec:protein_size_SV}. In
+            this calculation, 50\% of the bacterial inner membrane is assumed to
+            be protein, with the remainder lipid. (B) Total protein mass per
+            \textmu m$^2$ calculated for proteins with inner membrane annotation
+            (GO term: 0005886). (C) Relative protein abundances by mass based on
+            COG annotation. Metabolic proteins are further separated into
+            respiration (F$_1$-F$_0$ ATP synthase, NADH dehydrogenase I,
             succinate:quinone oxidoreductase, cytochrome bo$_3$ ubiquinol
             oxidase, cytochrome bd-I ubiquinol oxidase) and carbohydrate
             transport (GO term: GO:0008643). Note that the elongation factor
-            EF-Tu can also associate with the inner membrane, but was
-            excluded in this analysis due to its high relative abundance
-            (roughly identical to the summed protein shown in part
+            EF-Tu can also associate with the inner membrane, but was excluded
+            in this analysis due to its high relative abundance (roughly
+            identical to the summed protein shown in part
             (B)).}\label{fig:energy_scaling}
             }
                 \end{fullwidth}

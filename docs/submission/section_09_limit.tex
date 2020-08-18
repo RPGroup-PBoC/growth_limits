@@ -143,17 +143,18 @@ to keep up with cell doubling times $\tau$, whose time may be shorter than the
 cell cycle time $\tau_{cyc}$ (referring to the time from replication initiation to
 cell division) \citep{dennis2004}. This is quantified by
 \begin{equation}
-    \langle \text{\# ori} \rangle = 2^{\tau_{cyc} / \tau} = 2^{\tau_{cyc} \lambda / \log(2)}.
+    \langle \text{\# ori} \rangle = 2^{\tau_{cyc} / \tau} = 2^{\tau_{cyc} \lambda / \log(2)},
     \label{eq:Nori}
 \end{equation}
-We used the experimental measurements of $\tau_{cyc}$ (the timescale of
-chromosome replication and cell division) and $\tau$ (the timescale of a cell
-doubling) from
-\cite{si2017} (\FIGSUPP[ribosome_limit]{ribosome_limit_supp}(B)) to calculate
-$\langle$\# ori$\rangle$  with \EQ{Nori} as a function of growth rates. For
-growth rates above about 0.5 hr$^{-1}$, $t_{cyc}$ is approximately constant at
-about 70 minutes, implying that $\langle$\# ori$\rangle$ will grow
-exponentially with growth rates beyond 0.5 hr$^{-1}$. As the rRNA operons are predominantly located
+where the doubling time $\tau$ is related to the growth rate by $tau =
+\log(2)/\lambda$.  We used the experimental measurements of $\tau_{cyc}$ (the
+timescale of chromosome replication and cell division) and $\tau$ (the timescale
+of a cell doubling) from \cite{si2017}
+(\FIGSUPP[ribosome_limit]{ribosome_limit_supp}(B)) to calculate $\langle$\#
+ori$\rangle$  with \EQ{Nori} as a function of growth rates. For growth rates
+above about 0.5 hr$^{-1}$, $t_{cyc}$ is approximately constant at about 70
+minutes, implying that $\langle$\# ori$\rangle$ will grow exponentially with
+growth rates beyond 0.5 hr$^{-1}$. As the rRNA operons are predominantly located
 close to the origin of replication (BNID: 100352), we make the simplifying
 assumption that that the number of rRNA operons  will be directly proportional
 to $\langle$\# ori$\rangle$.

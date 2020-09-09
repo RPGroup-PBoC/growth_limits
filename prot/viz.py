@@ -68,7 +68,6 @@ def assign_rect_bounds(df, key, width=500, height=500, text_pad=0,
         df = df.copy()
 
     # Compute the values and rects. 
-
     # Drop the quantities that are equal to zero in hte key dimension
     df = df[df[key] > 0]
     values = sq.normalize_sizes(df[key], width, height)

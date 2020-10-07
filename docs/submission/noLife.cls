@@ -77,10 +77,10 @@
 \RequirePackage{booktabs}
 \RequirePackage{authblk}
 
-\RequirePackage[left=1in,%
+\RequirePackage[left=0.5in,%
                 marginparwidth=4cm,%
                 marginparsep=0.5cm,%
-                right=1in,%
+                right=0.5in,%
                 top=2cm,%
                 bottom=2.5cm,%
                 headheight=21pt,%

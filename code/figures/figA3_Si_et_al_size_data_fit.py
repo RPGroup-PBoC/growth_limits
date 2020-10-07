@@ -26,7 +26,7 @@ def func2(x, a, c):
 ##############################################
 
 # %% Si et al. 2019 data
-Si_filelist = glob.glob('../../../data/si_2019_raw/*.csv')
+Si_filelist = glob.glob('../../data/si_2019_raw/*.csv')
 
 Si_2019 = pd.DataFrame()
 for f in Si_filelist:
@@ -57,7 +57,7 @@ for c, d in Si_2019.groupby('condition'):
 
 
 # %% Si et al. 2017 data
-Si_filelist = glob.glob('../../../data/si_2017_raw/*.csv')
+Si_filelist = glob.glob('../../data/si_2017_raw/*.csv')
 Si_2017 = pd.DataFrame()
 for f in Si_filelist:
     Si_temp = pd.read_csv(f)

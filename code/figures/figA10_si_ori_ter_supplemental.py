@@ -20,7 +20,7 @@ def func_lin(l, a, b):
     return a*x + b
 
 # Load the full Si 2017 SI
-data_si = pd.read_csv('../../../data/si_2017_raw/si2017_full.csv')
+data_si = pd.read_csv('../../data/si_2017_raw/si2017_full.csv')
 
 # consider the mean values for each strain/condition they considered
 data_si_mean = pd.DataFrame()

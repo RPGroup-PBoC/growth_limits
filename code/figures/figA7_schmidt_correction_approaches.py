@@ -15,7 +15,7 @@ from scipy.optimize import curve_fit
 def func(x, a, c, d):
     return a*np.exp(-c*x)+d
 
-basan_df = pd.read_csv('../../../data/basan2015_raw_data/basan2015_data.csv')
+basan_df = pd.read_csv('../../data/basan2015_raw_data/basan2015_data.csv')
 
 
 ##############################################
@@ -39,7 +39,7 @@ fig, ax = plt.subplots(1, 2, figsize=(5, 2.5))
 # Load the original dataset with aboslute measurements
 
 # Load the original dataset with aboslute measurements
-data_orig = pd.read_csv('../../../data/compiled_datasets.csv')
+data_orig = pd.read_csv('../../data/compiled_datasets.csv')
 data_orig = data_orig[data_orig.dataset == 'li_2014']
 
 for d, df in data_orig.groupby(['dataset', 'dataset_name', 'condition', 'growth_rate_hr']):
@@ -49,7 +49,7 @@ for d, df in data_orig.groupby(['dataset', 'dataset_name', 'condition', 'growth_
             markeredgewidth=0.5, markeredgecolor='k', label=d[1])
 
 
-data_orig = pd.read_csv('../../../data/compiled_datasets.csv')
+data_orig = pd.read_csv('../../data/compiled_datasets.csv')
 data_orig = data_orig[data_orig.dataset == 'schmidt_2016']
 
 for d, df in data_orig.groupby(['dataset', 'dataset_name', 'condition', 'growth_rate_hr']):
@@ -89,7 +89,7 @@ ax[1].plot(x, (mass_glu/vol_glu) * vol, '-', alpha = 0.6,
 
 # perform linear fit of RNA-ro-protein ratios
 #  pairwise for < 0.7 hr-1 and >= 0.7 hr-1
-dai_df = pd.read_csv('../../../data/dai2016_raw_data/dai2016_summary.csv')
+dai_df = pd.read_csv('../../data/dai2016_raw_data/dai2016_summary.csv')
 
 dai_df_slow = dai_df[dai_df.growth_rate_hr < 0.7]
 dai_df_fast = dai_df[dai_df.growth_rate_hr >= 0.7]
@@ -99,7 +99,7 @@ slope_dia_RP_A, intercept_dia_RP_A, r_value, p_value, std_err = stats.linregress
 slope_dia_RP_B, intercept_dia_RP_B, r_value, p_value, std_err = stats.linregress(dai_df_fast.growth_rate_hr.values,
                                             dai_df_fast.RNA_P_ratio.values)
 
-basan_df = pd.read_csv('../../../data/basan2015_raw_data/basan2015_data.csv')
+basan_df = pd.read_csv('../../data/basan2015_raw_data/basan2015_data.csv')
 popt_dna, pcov_dna = curve_fit(func, basan_df.growth_rate_hr.values, basan_df.dna_fg.values, p0=(1, 1e-6, 1))
 
 

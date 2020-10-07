@@ -15,7 +15,7 @@ from scipy.optimize import curve_fit
 def func(x, a, c, d):
     return a*np.exp(-c*x)+d
 
-basan_df = pd.read_csv('../../../data/basan2015_raw_data/basan2015_data.csv')
+basan_df = pd.read_csv('../../data/basan2015_raw_data/basan2015_data.csv')
 
 ##############################################
 ##############################################

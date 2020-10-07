@@ -19,11 +19,11 @@ dataset_colors = {'li_2014':colors['purple'], 'schmidt_2016':colors['light_blue'
 prot.viz.plotting_style()
 
 # Load the original dataset with aboslute measurements
-data_orig = pd.read_csv('../../../data/compiled_datasets.csv')
+data_orig = pd.read_csv('../../data/compiled_datasets.csv')
 
 
 # Load the final dataset with aboslute measurements
-data = pd.read_csv('../../../data/compiled_absolute_measurements.csv')
+data = pd.read_csv('../../data/compiled_absolute_measurements.csv')
 
 d_names = ['Schmidt et al. 2016', 'Li et al. 2014', 'Valgepea et al. 2013', 'Peebo et al. 2015',
         'Soufi et al. 2015', 'Taniguichi et al. 2010']

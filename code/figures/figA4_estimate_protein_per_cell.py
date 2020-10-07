@@ -23,7 +23,7 @@ def func(x, a, c, d):
 
 # perform linear fit of RNA-ro-protein ratios
 #  pairwise for < 0.7 hr-1 and >= 0.7 hr-1
-dai_df = pd.read_csv('../../../data/dai2016_raw_data/dai2016_summary.csv')
+dai_df = pd.read_csv('../../data/dai2016_raw_data/dai2016_summary.csv')
 
 dai_df_slow = dai_df[dai_df.growth_rate_hr < 0.7]
 dai_df_fast = dai_df[dai_df.growth_rate_hr >= 0.7]
@@ -33,7 +33,7 @@ slope_dia_RP_A, intercept_dia_RP_A, r_value, p_value, std_err = stats.linregress
 slope_dia_RP_B, intercept_dia_RP_B, r_value, p_value, std_err = stats.linregress(dai_df_fast.growth_rate_hr.values,
                                             dai_df_fast.RNA_P_ratio.values)
 
-basan_df = pd.read_csv('../../../data/basan2015_raw_data/basan2015_data.csv')
+basan_df = pd.read_csv('../../data/basan2015_raw_data/basan2015_data.csv')
 popt_dna, pcov_dna = curve_fit(func, basan_df.growth_rate_hr.values, basan_df.dna_fg.values, p0=(1, 1e-6, 1))
 
 ##############################################
@@ -43,7 +43,7 @@ popt_dna, pcov_dna = curve_fit(func, basan_df.growth_rate_hr.values, basan_df.dn
 ##############################################
 
 # # Load the compiled data and grab schmidt growth rates
-data = pd.read_csv('../../../data/compiled_absolute_measurements.csv')
+data = pd.read_csv('../../data/compiled_absolute_measurements.csv')
 data = data[data.dataset == 'schmidt_2016']
 
 schmidt_gr = data.sort_values(by='growth_rate_hr', ascending = True).growth_rate_hr.unique() #np.array([lambda_dict[c] for c in data_condition])

@@ -1,5 +1,3 @@
-## Here we are plotting the correlations across individual proteomic datasets
-
 import numpy as np
 import pandas as pd
 from scipy import stats
@@ -63,7 +61,7 @@ for d in d_order:
 
         ax[0, d_dict[d]].set_ylabel('Schmidt et al. 2015\ncopies per cell',
             bbox={'facecolor': '#EFCE9A', 'alpha': 0.5, 'pad': 2})
-        ax[1, d_dict[d]].set_ylabel('Li et al. 2014\nccopies per cell',
+        ax[1, d_dict[d]].set_ylabel('Li et al. 2014\ncopies per cell',
             bbox={'facecolor': '#EFCE9A', 'alpha': 0.5, 'pad': 2} )
     else:
         ax[0, d_dict[d]].get_yaxis().set_visible(False)

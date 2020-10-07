@@ -1,16 +1,17 @@
 \section{Introduction}
-The observed range of bacterial growth rates is enormously diverse. In
-natural environments, some microbial organisms may double only once per
-year \citep{mikucki2009} while in comfortable laboratory conditions, growth
-can be rapid with several divisions per hour \citep{schaechter1958}. This six
-order-of-magnitude difference in time scales of growth encompasses different microbial
-species and lifestyles, yet even for a single species such as \textit{Escherichia
-coli}, the growth rate can be modulated over a comparably large scale by tuning the
-type and amount of nutrients in the growth medium \citep{liu2005a}. This remarkable
-plasticity in growth rate illustrates the intimate relationship between
-environmental conditions and the rates at which cells convert nutrients into
-new cellular material -- a relationship that has remained a major topic of
-inquiry in bacterial physiology for over a century \citep{jun2018}.
+The observed range of bacterial growth rates is enormously diverse. In natural
+environments, some microbial organisms may double only once per year
+\citep{mikucki2009} while in comfortable laboratory conditions, growth can be
+rapid with several divisions per hour \citep{schaechter1958}. This six
+order-of-magnitude difference in time scales of growth encompasses different
+microbial species and lifestyles, yet even for a single species such as
+\textit{Escherichia coli}, the growth rate can be modulated over a comparably
+large scale by tuning the type and amount of nutrients in the growth medium
+\citep{liu2005a}. This remarkable plasticity in growth rate illustrates the
+intimate relationship between environmental conditions and the rates at which
+cells convert nutrients into new cellular material -- a relationship that has
+remained a major topic of inquiry in bacterial physiology for over a century
+\citep{jun2018}.
 
 % Jacques Monod once remarked that ``the study of the growth of bacterial
 % cultures does not constitute a specialized subject or branch of research, it
@@ -22,18 +23,18 @@ inquiry in bacterial physiology for over a century \citep{jun2018}.
 % increasingly refined molecular census that is available for bacteria such as
 % the microbial workhorse \textit{E. coli}.
 
-A key discovery of the past 70 years was the identification of
-bacterial "growth laws" \citep{schaechter1958}; empirical relationships that
-relate the bacterial growth rate to the protein and RNA composition of the
-intracellular milieu in a number of different species. Over the past decade, a
-flurry of work \citep{molenaar2009, scott2010, klumpp2014, basan2015, dai2016,
-erickson2017} have examined these growth laws at a quantitative level,
-developing a series of phenomenological models from which the growth laws
-naturally emerge. In parallel, a "molecular revolution" in biology has yielded
-an increasingly refined molecular census of the cell, particularly for bacteria
-such as the microbial workhorse \textit{E. coli} \citep{schmidt2016,
-davidi2016a}. In light of the now expansive trove of quantitative biological data,
-we can revisit several of the evergreen questions about bacterial growth and physiology that
+A key discovery of the past 70 years was the identification of bacterial "growth
+laws" \citep{schaechter1958}; empirical relationships that relate the bacterial
+growth rate to the protein and RNA composition of the intracellular milieu in a
+number of different species. Over the past decade, a flurry of work
+\citep{molenaar2009, scott2010, klumpp2014, basan2015, dai2016, erickson2017}
+have examined these growth laws at a quantitative level, developing a series of
+phenomenological models from which the growth laws naturally emerge. In
+parallel, a "molecular revolution" in biology has yielded an increasingly
+refined molecular census of the cell, particularly for bacteria such as the
+microbial workhorse \textit{E. coli} \citep{schmidt2016, davidi2016a}. In light
+of the now expansive trove of quantitative biological data, we can revisit
+several of the evergreen questions about bacterial growth and physiology that
 were originally raised by microbiologists in the middle of the 20th century.
 Specifically, what biological processes are the primary determinants for how
 quickly bacterial cells can grow and reproduce? Why do cells modulate the
@@ -45,23 +46,27 @@ function of changes in growth rate or nutrient availability?
 
 In this paper, we begin by considering these two questions from two distinct
 angles. First, as a result of an array of high-quality proteome-wide
-measurements of \textit{E. coli} under diverse growth conditions, we have a
-census that allows us to explore how the number of key molecular players change
-as a function of growth rate. Here, we have assembled a singular data set using
-measurements collected over the past decade via mass spectrometry
-\citep{schmidt2016, peebo2015, valgepea2013} or ribosomal profiling
-\citep{li2014} of the composition of the \textit{E. coli} proteome across 36
-unique growth rates (see the Appendix Section "\nameref{sec:SI_exp_summary}" for
-a further discussion of the data). Second, by compiling molecular turnover rate
-measurements for many of the fundamental processes associated with bacterial
-growth, we make quantitative estimates of a handful of key cellular processes
-(schematized in \FIG{categories}) to determine whether our current understanding
-of the dynamics of these processes are sufficient to explain the magnitude of
-the observed protein copy numbers across conditions (see \BOX{estimate_rules}
-describing the philosophy behind this approach). The census, combined with these
-estimates, provide a window into the question of whether the rates of central
-processes such as energy generation or DNA synthesis vary systematically as a
-function of cell growth rate by altering protein copy number.
+measurements of \textit{E. coli} under diverse growth conditions, we have
+generated a census that allows us to explore how the number of key molecular
+players change as a function of growth rate. Here, we have assembled a singular
+data set of protein copy numbers using measurements collected over the past
+decade via mass spectrometry \citep{schmidt2016, peebo2015, valgepea2013} or
+ribosomal profiling \citep{li2014} of the composition of the \textit{E. coli}
+proteome across 36 unique growth rates. Due to notable changes in cell size and
+cellular composition as a function of growth rate \citep{bremer2008,
+taheriaraghi2015}, substantial care was taken to ensure consistency on a per
+cellular basis, and detailed analysis and additional discussion is provided in
+Appendix Section "\nameref{sec:SI_exp_summary}". Second, by compiling molecular
+turnover rate measurements for many of the fundamental processes associated with
+bacterial growth, we make quantitative estimates of a handful of key cellular
+processes (schematized in \FIG{categories}) to determine whether our current
+understanding of the dynamics of these processes are sufficient to explain the
+magnitude of the observed protein copy numbers across conditions (see
+\BOX{estimate_rules} describing the philosophy behind this approach). The
+census, combined with these estimates, provide a window into the question of
+whether the rates of central processes such as energy generation or DNA
+synthesis vary systematically as a function of cell growth rate by altering
+protein copy number.
 
 Throughout our estimates, we consider an archetypal growth rate of $\approx$
 0.5 hr$^{-1}$ corresponding to a doubling time of $\approx$ 5000 seconds, as
@@ -75,19 +80,23 @@ of cell doubling across a continuum of growth rates. Thus, our understanding
 of the kinetics of various biological processes is sufficient to
 quantitatively explain the observed abundances of these proteins.
 
-From these estimates, it emerges that translation, particularly the synthesis of
-ribosomal proteins, is a plausible candidate that limits the rate of cellular
-growth in \textit{E. coli}. We reach this conclusion by considering that
-ribosome synthesis is 1) a rate limiting step for the \textit{fastest} bacterial
-division, and  2) the main determinant of bacterial growth rate across  nutrient
-conditions associated with moderate to fast growth rates. A strict dependence
-between the maximal growth rate and ribosomal mass fraction coincides with the
-regime where the growth laws appear most valid \citep{amir2017, scott2010}, and
-enables us to  suggest that the long-observed correlation between growth rate
-and cell size \citep{schaechter1958, si2017} can be simply attributed to the
-increased absolute number of ribosomes per cell under conditions supporting
-extremely rapid growth. To better understand how the observed alterations in
-absolute protein abundances, and in particular, changes in ribosome copy number,
+% From these estimates, it emerges that translation, particularly the synthesis of
+% ribosomal proteins, is a plausible candidate that limits the rate of cellular
+% growth in \textit{E. coli}.
+
+From these estimates, it emerges that the synthesis of ribosomal proteins is a
+plausible candidate that limits the rate of cellular growth in \textit{E. coli}.
+We reach this conclusion by considering that ribosome synthesis is 1) a rate
+limiting step for the \textit{fastest} bacterial division, and  2) the main
+determinant of bacterial growth rate across  nutrient conditions associated with
+moderate to fast growth rates. In addition, a strict dependence between the
+maximal growth rate and ribosomal mass fraction coincides with the regime where
+the growth laws appear most valid \citep{amir2017, scott2010}. This enables us
+to suggest that the long-observed correlation between growth rate and cell size
+\citep{schaechter1958, si2017} can be simply attributed to the increased
+absolute number of ribosomes per cell under conditions supporting extremely
+rapid growth. To better understand how the observed alterations in absolute
+protein abundances, and in particular, changes in ribosome copy number,
 influence growth rate across different nutrient conditions we consider a minimal
 model of cellular growth. Our conclusions from these analyses provide important
 insight into how \textit{E. coli} regulates growth across conditions of

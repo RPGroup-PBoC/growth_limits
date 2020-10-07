@@ -51,35 +51,14 @@ ax4 = fig.add_subplot(spec[2, 1:])
 ############################
 # Plot 2 - growth rate vs. ribosomal fraction
 ############################
+#
+# # Add in data from Dai et al.
 
-# Add in data from Dai et al.
-[lambda_dai, R_P_dai] = np.array(\
-        [[0.0, 0.08853279947047754],
-        [0.03324706890845652, 0.09742834356027935],
-        [0.12844176066233703, 0.12157153165470358],
-        [0.19652012565308674, 0.12917148174069676],
-        [0.23055930814846148, 0.13297145678369332],
-        [0.2849547247405284, 0.14694954887503597],
-        [0.33601892391911736, 0.15201256530868013],
-        [0.4074068045812377, 0.17107537557577435],
-        [0.417639175984852, 0.16979497279144085],
-        [0.4517000602223341, 0.17104716331103476],
-        [0.485674137491387, 0.18249049192423916],
-        [0.5503561798423366, 0.1888187199227418],
-        [0.6727865579409387, 0.21549233114688282],
-        [0.6864152519843529, 0.21548365045003987],
-        [0.7000547968988209, 0.21420107749149564],
-        [0.7170798135820351, 0.21546411888214323],
-        [0.744196140345166, 0.2320073568905744],
-        [0.9177883754618401, 0.25227895419304786],
-        [0.9448830004828637, 0.27136997672488156],
-        [0.9926268331190284, 0.2662440252391261],
-        [0.9753630972726335, 0.29300661360590724],
-        [1.0979236858238794, 0.3043935176896325],
-        [1.1624538159800777, 0.32855623735195344],
-        [1.2677832212980895, 0.36288405301735593],
-        [1.566952587118931, 0.4404005056505911],
-        [1.7949076862145108, 0.4784718718295111]]).T
+# load in the Dai et al. 2016 data
+dai_nut_df = pd.read_csv('../../data/dai2016_raw_data/dai2016_summary.csv')
+dai_nut_df = dai_nut_df[dai_nut_df['Cm (μM)'] == 0]
+lambda_dai = dai_nut_df.growth_rate_hr.values
+R_P_dai = dai_nut_df.RNA_P_ratio.values
 
 # add in data from Scott et al.
 [lambda_scott, R_P_scott] = np.array(\
@@ -119,42 +98,6 @@ for c, d in data.groupby(['dataset', 'condition', 'growth_rate_hr']):
     df_ribo_frac = df_ribo_frac.append(data_list,
                                         ignore_index = True)
 
-# inset axes....
-# axins = ax2.inset_axes([0.5, 0.5, 0.47, 0.47])
-# axins = ax2.inset_axes([0.5, 0.05, 0.5, 0.5])
-
-# axins.imshow(Z2, extent=extent, interpolation="nearest",
-#           origin="lower")
-#
-# for ax_ in [ax2, axins]:
-#
-#     for g, d in df_ribo_frac.groupby(['dataset', 'condition', 'growth_rate_hr']):
-#         # if g[0] == 'peebo_2015':
-#         #     continue
-#         # if g[0] == 'valgepea_2013':
-#         #     continue
-#         ax_.plot(d['frac_ribo'], g[2], 'o', color=dataset_colors[g[0]],
-#                         alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
-#                         label = g[2], ms=4, zorder=10)
-#
-#
-#     ax_.plot(R_P_dai/2.1, lambda_dai, 'o', color= colors['pale_yellow'],
-#                         alpha=1, markeredgecolor='k', markeredgewidth=0.25,
-#                         ms=4, zorder=10)
-#
-#     ax_.plot(R_P_scott/2.1, lambda_scott, 'o', color= colors['light_purple'],
-#                     alpha=1, markeredgecolor='k', markeredgewidth=0.25,
-#                     ms=4, zorder=10)
-#
-#
-#     ax_.plot(R_P_for/2.1, lambda_for, 'o', color= '#1F4B99',
-#                     alpha=1, markeredgecolor='k', markeredgewidth=0.25,
-#                     ms=4, zorder=10)
-#
-#
-#     ax_.plot(R_P_brem/2.1, lambda_brem, 'o', color= '#B7741A',
-#                     alpha=1, markeredgecolor='k', markeredgewidth=0.25,
-#                     ms=4, zorder=10)
 #
 # Plot the prediction.
 frac = np.linspace(0,1.0,100)
@@ -197,68 +140,6 @@ for c, d in data_si.groupby(['strain type (background)', 'growth media', 'induce
                  'growth_rate_hr' : d['growth rate (1/hours)'].mean()}
     data_si_mean = data_si_mean.append(data_list,
                                       ignore_index = True)
-
-## grab nutrient limitation data from Dai et al. 2016
-# nutrient limitation data from SI PDF:
-conditions = ['RDM + 0.2% glucose+10 mM NH4Cl',
-            '0. 2 % glucose+cAA+10 mM NH4Cl',
-           ' 10 mM glucose-6-phosphate+10 mM gluconate +10 mM NH4Cl',
-            '0.2% glucose+10 mM NH4Cl',
-            '0.2% xylose+10 mM NH4Cl',
-            '0.2 % glycerol+10 mM NH4Cl',
-            '0.2% fructose+10 mM NH4Cl',
-            '0.2% sorbitol+10 mM NH4Cl',
-            '0.2% galactose+10 mM NH4Cl',
-            '60 mM acetate+10 mM NH4Cl',
-            '0.2% mannose+10 mM NH4Cl',
-            '0.1% mannose+10 mM NH4Cl',
-            '20 mM potassium aspartate',
-            '0.075% mannose+10 mM NH4Cl',
-            '20 mM aspartate+10 mM NH4Cl',
-            '0.2% glycerol +10 mM Arginine',
-            '20 mM glutamate+10 mM NH4Cl',
-            '0.2% glycerol+20 mM Threonine']
-
-erate = [16.7, 16.3, 16.1, 15.9, 14.9, 15.0, 14.7, 13.7, 13.1, 12.6, 13.0, 12.4,
-        12.0, 12.1, 12.3, 11.6, 10.7, 9.4]
-
-RNA_P = [0.476, 0.364, 0.306, 0.294, 0.233, 0.227, 0.217, 0.193, 0.184, 0.172,
-        0.172, 0.152, 0.152, 0.147, 0.137, 0.130, 0.118, 0.097]
-
-r_prot_frac = [np.nan, np.nan, np.nan, 11.6, np.nan, np.nan, np.nan, np.nan,
-        np.nan, 7.2, np.nan, np.nan, np.nan, 5.1, np.nan, 6.1, 4.7, 4.4]
-
-
-gr_dai, fa = np.array([[1.8, 0.958],
-            [1.28, 0.9],
-            [1.12, 0.927],
-            [0.98, 0.865],
-            [0.75, 0.902],
-            [0.69, 0.849],
-            [0.69, 0.888],
-            [0.55, 0.879],
-            [0.5, 0.860],
-            [0.46, 0.879],
-            [0.41, 0.756],
-            [0.34, 0.751],
-            [0.33, 0.756],
-            [0.29, 0.683],
-            [0.23, 0.590],
-            [0.201, 0.554],
-            [0.13, 0.441],
-            [0.035, 0.168]]).T
-
-dai_nut_df = pd.DataFrame({'condition' : conditions,
-     'Cm (μM)' : np.zeros(len(gr_dai)),
-     'RNA_P_ratio' : RNA_P,
-     'growth_rate_hr' : gr_dai,
-     'Translational elongation rate (aa/s)' : erate,
-     'measured_prot_frac' : r_prot_frac,
-     'f_a' : fa,
-    'type' : ['nutrient limitation' for i in np.arange(len(gr_dai))]},
-        columns = ['condition', 'Cm (μM)', 'RNA_P_ratio', 'growth_rate_hr',
-                   'Translational elongation rate (aa/s)', 'measured_prot_frac',
-                   'f_a', 'type'])
 
 # fit measurements of active fraction from Dai et al. data
 dai_nut_df = dai_nut_df.sort_values(by='growth_rate_hr', ascending = True)
@@ -322,7 +203,7 @@ ax3.plot(frac, gr,  color='k', alpha=1.0, label='maximum growth rate',
                 linestyle='-', lw=0.75)
 
 axins = ax3.inset_axes([0.12, 0.65, 0.32, 0.32])
-axins.plot(gr_dai, fa, 'o', color=colors['light_yellow'],
+axins.plot(dai_nut_df.growth_rate_hr, dai_nut_df.f_a, 'o', color=colors['light_yellow'],
                 alpha=0.9, markeredgecolor='k', markeredgewidth=0.25,
                  ms=3, zorder=1)
 
@@ -385,12 +266,6 @@ for g, d in data.groupby(['dataset', 'dataset_name']):
             markeredgewidth=0.25, color=dataset_colors[g[0]], label='__nolegend__')
 
 ax4.legend(fontsize=6, bbox_to_anchor=(1, 1))
-
-
-
-
-
-
 
 
 plt.tight_layout()

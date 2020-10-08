@@ -35,7 +35,7 @@ ax.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
 ax.set_ylabel('number of ribosomes', fontsize=6)
 
 # Plot the cell size dependence
-ax.plot(growth_rate, N_synthase, lw=3, color='grey', alpha=0.4, label='cell size dependence')
+ax.plot(growth_rate, N_ribosomes, lw=3, color='grey', alpha=0.4, label='cell size dependence')
 
 # Plot the point estimate.
 estimate = 1E4

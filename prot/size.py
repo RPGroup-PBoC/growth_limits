@@ -214,9 +214,10 @@ def lambda2P(x):
 
     #### predict RNA/Protein ratio:
     pred_RNA_protein_ratio = []
-    if (type(x) == int) | (type(x) == float) :
+    if (isinstance(x, int)) | (isinstance(x, float)) :
         x = [x]
-    for i, l in enumerate(x):
+
+    for l in x:
         if l <= 0.69:
             pred_RNA_protein_ratio.append(slope_dia_RP_A * l + intercept_dia_RP_A)
         else:

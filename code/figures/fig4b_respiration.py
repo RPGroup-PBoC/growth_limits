@@ -12,7 +12,7 @@ constants = prot.estimate.load_constants()
 data = pd.read_csv('../../data/compiled_estimate_categories.csv')
 data = data[data['shorthand']=='proton_gradient']
 
-# Compute the scaling trend. 
+# Compute the scaling trend.
 growth_rate = constants['growth_rate']['value']
 t_double = constants['t_double']['value']
 cell_mass = constants['cell_mass']['value']
@@ -24,7 +24,9 @@ atp_aa = 5
 prot_atp = 4
 r_etc = 1500
 
-N_synthase = (cell_mass * theta_dry * theta_prot * atp_aa) / (m_aa * r_atp * t_double)
+# N_synthase = (cell_mass * theta_dry * theta_prot * atp_aa) / (m_aa * r_atp * t_double)
+tot_prot = prot.size.lambda2P(growth_rate) / 1E3
+N_synthase = (tot_prot * atp_aa) / (m_aa * r_atp * t_double / np.log(2))
 N_ETC = N_synthase * prot_atp * r_atp / r_etc
 
 
@@ -37,7 +39,7 @@ ax.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
 ax.set_ylabel('electron transport complexes\nper cell', fontsize=6)
 ax.set_xlim([0, 2])
 ax.set_ylim([1E2, 5E4])
-# Plot the scaling relationship 
+# Plot the scaling relationship
 ax.plot(growth_rate, N_ETC, '-', lw=3, color='grey', alpha=0.4, label='cell size dependence')
 
 # Plot the estimate value

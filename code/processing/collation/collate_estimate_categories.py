@@ -1,15 +1,15 @@
 #%%
-import pandas as pd 
+import pandas as pd
 import tqdm
 import numpy as np
 import prot.size
 
-# Load  the necessary datasets. 
-data = pd.read_csv('../../data/compiled_annotated_complexes.csv', comment='#')
+# Load  the necessary datasets.
+data = pd.read_csv('../../../data/compiled_annotated_complexes.csv', comment='#')
 data.dropna(subset=['n_units'], inplace=True)
 
-# define necessary complexes. 
-complexes = {'dnap': {'name': 'DNA polymerase III (holo enzyme)', 
+# define necessary complexes.
+complexes = {'dnap': {'name': 'DNA polymerase III (holo enzyme)',
                        'complexes': ['CPLX0-3803'],
                        'rate_per_sec': 600,
                        'units': 'bp/s',
@@ -47,7 +47,7 @@ complexes = {'dnap': {'name': 'DNA polymerase III (holo enzyme)',
                           'units':'nt/s',
                           'method':'sum',
                           'category':'synthesis'},
-             'trna': {'name': 'tRNA ligases', 
+             'trna': {'name': 'tRNA ligases',
                       'go_terms': ['GO:0006419', 'GO:0006420', 'GO:0006421',
                                    'GO:0006422', 'GO:0006423', 'GO:0006424',
                                    'GO:0006425', 'GO:0006426', 'GO:0006427',
@@ -59,13 +59,13 @@ complexes = {'dnap': {'name': 'DNA polymerase III (holo enzyme)',
                     'units': 'AA/s',
                     'method':'sum',
                     'category':'synthesis'},
-            'carbon_tport': {'name': 'Carbon Importers (total)', 
+            'carbon_tport': {'name': 'Carbon Importers (total)',
                               'go_terms': ['GO:0009401'],
                               'rate_per_sec': 200,
                               'units': 'carbs/s',
                               'method': 'sum',
                               'category':'transport'},
-            'carbon_tport_tot': {'name': 'Carbohydrate Transporters (total)', 
+            'carbon_tport_tot': {'name': 'Carbohydrate Transporters (total)',
                               'go_terms': ['GO:0009401'],
                               'rate_per_sec': 200,
                               'units': 'carbs/s',
@@ -131,7 +131,7 @@ complexes = {'dnap': {'name': 'DNA polymerase III (holo enzyme)',
                          'units': 'AA/s',
                          'method':'sum',
                          'category':'synthesis'},
-            'eftu': {'name': 'Elongation Factor EF-Tu', 
+            'eftu': {'name': 'Elongation Factor EF-Tu',
                      'gene_name': ['tufA', 'tufB'],
                      'method': 'sum',
                      'rate_per_sec': 20,
@@ -139,11 +139,11 @@ complexes = {'dnap': {'name': 'DNA polymerase III (holo enzyme)',
                      'category':'synthesis'},
             'atp_synthase': {'name': 'F1-F0 ATP Synthase',
                             'complexes':  ['ATPSYN-CPLX'],
-                            'method': 'sum', 
+                            'method': 'sum',
                             'rate_per_sec': 300,
                             'units':'atp/s',
-                            'category': 'energy production'}, 
-            'proton_gradient': {'name': 'respiratory complex', 
+                            'category': 'energy production'},
+            'proton_gradient': {'name': 'respiratory complex',
                     'go_terms': ['GO:0019646', 'GO:0006136', 'GO:0006137', 'GO:0006138'],
                     'method':'sum',
                     'rate_per_sec': 5E3,
@@ -151,7 +151,7 @@ complexes = {'dnap': {'name': 'DNA polymerase III (holo enzyme)',
                     'category': 'energy production'},
             'fas': {'name': 'Fatty Acid Synthetases (FabA + FabZ)',
                     'gene_name': ['fabZ', 'fabA'],
-                    'method': 'sum', 
+                    'method': 'sum',
                     'rate_per_sec': 1,
                     'units':'lipid/s',
                     'category': 'synthesis'},
@@ -188,12 +188,12 @@ for g, d in tqdm.tqdm(data.groupby(['dataset', 'dataset_name', 'condition', 'gro
                 units = _d['n_units'].mean()
                 _method = 'average'
 
-            # assemble a dictionary 
+            # assemble a dictionary
             volume = np.round(prot.size.lambda2size(g[3]), 2)
             _data = {'dataset':g[0], 'dataset_name':g[1],
                      'condition':g[2], 'growth_rate_hr':g[3],
                      'volume': volume,
-                     'n_complex':units, 
+                     'n_complex':units,
                      'rate': v['rate_per_sec'],
                      'rate_units': v['units'],
                      'shorthand': k,
@@ -201,10 +201,10 @@ for g, d in tqdm.tqdm(data.groupby(['dataset', 'dataset_name', 'condition', 'gro
                      'aggregation_method': _method,
                      'category': v['category'],
                      'concentration_uM': 1E6 * (units / 6.022E23) / (volume * 1E-15)}
-        
+
             complex_df = complex_df.append(_data, ignore_index=True)
 
-complex_df.to_csv('../../data/compiled_estimate_categories.csv', index=False)
+complex_df.to_csv('../../../data/compiled_estimate_categories.csv', index=False)
 # %%
 
 

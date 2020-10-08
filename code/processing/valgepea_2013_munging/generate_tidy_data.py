@@ -69,6 +69,7 @@ data_schmidt = pd.read_csv('../../../data/schmidt2016_longform_annotated.csv')
 # for c, d in data[data.dataset == 'valgepea_2013'].groupby(['condition', 'growth_rate_hr']):
 
 for g in df['growth_rate_hr'].unique():
+    print(g)
     d = df[df.growth_rate_hr == g]
 
     # determine Schmidt dataset with most similar growth rate
@@ -94,9 +95,9 @@ for g in df['growth_rate_hr'].unique():
             ' abundance relative to Schmidt: ', np.round(rel_schmidt,2))
 
     df.loc[df['growth_rate_hr']==g, 'tot_per_cell'] = \
-                    df.loc[df['growth_rate_hr']==g]['reported_tot_per_cell'] / (rel_corr_fg * rel_schmidt)
+                    (df.loc[df['growth_rate_hr']==g]['reported_tot_per_cell'] / rel_corr_fg) * rel_schmidt
     df.loc[df['growth_rate_hr']==g, 'fg_per_cell'] =  \
-                    df.loc[df['growth_rate_hr']==g]['reported_fg_per_cell'] / (rel_corr_fg * rel_schmidt)
+                    (df.loc[df['growth_rate_hr']==g]['reported_fg_per_cell'] / rel_corr_fg) * rel_schmidt
 
 #%%
 df['dataset'] = 'valgepea_2013'

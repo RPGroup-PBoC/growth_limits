@@ -85,7 +85,7 @@ for g, d in pg.groupby(['dataset', 'dataset_name']):
     ax.plot(d['growth_rate_hr'], d['n_complex'], 'o', ms=4,
             color=dataset_colors[g[0]], alpha=0.75, markeredgecolor='k',
             markeredgewidth=0.5, label=g[1])
-ax.legend(fontsize=6, loc='top left', ncol=2)
+ax.legend(fontsize=6, loc='upper left', ncol=2)
 plt.savefig('../../figures/fig3b_pg_biosynthesis.svg', bbox_inches='tight')
 
 

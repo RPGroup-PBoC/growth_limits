@@ -6,6 +6,7 @@ import prot.viz
 import prot.estimate
 colors = prot.viz.plotting_style()
 dataset_colors = prot.viz.dataset_colors()
+constants = prot.estimate.load_constants()
 
 # Load the data and restrict
 data = pd.read_csv('../../data/compiled_estimate_categories.csv')

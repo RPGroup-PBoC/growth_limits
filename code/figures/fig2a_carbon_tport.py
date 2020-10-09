@@ -23,7 +23,7 @@ m_carbon = 12/6E11 # in pg
 r_carbon = 1000 # in C / s
 N_tporters = (theta_C * mass)/ (m_carbon * r_carbon * t_double)
 
-# Set up the figure canvas. 
+# Set up the figure canvas.
 fig, ax = plt.subplots(1, 1, figsize=(3, 2))
 ax.xaxis.set_tick_params(labelsize=6)
 ax.yaxis.set_tick_params(labelsize=6)

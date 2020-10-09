@@ -33,7 +33,7 @@ ax4 = fig.add_subplot(spec[1])
 data = pd.read_csv('../../data/compiled_absolute_measurements.csv')
 
 # total fg per cell cytosol GO:0005829 - cytosol
-data_cytosol = data[data.go_terms.str.contains('GO:0005829')]
+data_cytosol = data[data.go_terms.str.contains('GO:0005737')]#0005829')]
 
 data_cytosol_fg_summary = pd.DataFrame()
 for c, d in data_cytosol.groupby(['dataset', 'condition', 'growth_rate_hr']):
@@ -76,21 +76,8 @@ ax3.yaxis.set_tick_params(labelsize=5)
 # Plot distribution of inner membrane proteins, GO:0005886
 # Load the complex subunit counts.
 subunits = pd.read_csv('../../data/compiled_annotated_complexes.csv')
-# complex_energy = ['NADH-DHI-CPLX', 'CPLX0-8160', 'CYT-O-UBIOX-CPLX', 'CYT-D-UBIOX-CPLX', 'ATPSYN-CPLX']
 
 df_cyt_schmidt= data_cytosol[data_cytosol.dataset == 'schmidt_2016']
-# df_mem = df_mem[df_mem.gene_name != 'tufA']
-
-# genes_respiration = []
-# for c, d in subunits.groupby('complex'):
-#     if c in complex_energy:
-#         for gene, d_ in d.groupby('gene_name'):
-#             genes_respiration = np.append(genes_respiration, gene)
-
-# genes_carbon = subunits[subunits.go_terms.str.contains('GO:0005829')].gene_name.unique()
-
-# df_mem = df_mem.replace(genes_respiration, 'respiration')
-# df_mem = df_mem.replace(genes_carbon, 'carbon_uptake')
 
 df_cyt_schmidt = df_cyt_schmidt.replace('Not Assigned', 'poorly characterized or not assigned')
 df_cyt_schmidt = df_cyt_schmidt.replace('poorly characterized', 'poorly characterized or not assigned')
@@ -158,6 +145,7 @@ ax4.set_ylim(0,len(df_cyt_schmidt_.condition.unique()))
 ax4.set_yticks(np.arange(len(df_cyt_schmidt_.condition.unique()))-0.5)
 ax4.set_yticklabels(df_cyt_schmidt_.condition.unique())
 ax4.set_xlabel('relative protein abundance', fontsize=6)
+ax4.set_xlabel('relative cytoplasmic protein\nabundance (GO term : 0005829)', fontsize=6)
 ax4.xaxis.set_tick_params(labelsize=5)
 ax4.yaxis.set_tick_params(labelsize=5)
 
@@ -171,7 +159,7 @@ ax4_twin.xaxis.set_tick_params(labelsize=5)
 ax4_twin.yaxis.set_tick_params(labelsize=5)
 #
 plt.tight_layout()
-fig.savefig('../../figures/fig5-S1_COG_cytosol_barplot.svg')
+fig.savefig('../../figures/fig5-S1_COG_cytosol_barplot_2.svg')
 
 
 # %%

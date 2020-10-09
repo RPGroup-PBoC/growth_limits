@@ -7,7 +7,38 @@ dataset_colors = prot.viz.dataset_colors()
 # ##############################################################################
 # DATA CLEANING AND AGGREGATION
 # ##############################################################################
+def rename(k):
+    k = k.replace('<sup>', '')
+    k = k.replace('</sup>', '')
+    k = k.replace('<sub>', '')
+    k = k.replace('</sub>', '')
+    k = k.replace('<SUP>', '')
+    k = k.replace('</SUP>', '')
+    k = k.replace('<SUB>', '')
+    k = k.replace('</SUB>', '')
 
+    # Remove itaicization and other spans
+    k = k.replace('<i>', '')
+    k = k.replace('</i>', '')
+    k = k.replace('<I>', '')
+    k = k.replace('</I>', '')
+    k = k.replace('<small>', '')
+    k = k.replace('</small>', '')
+
+    # Replace greeks
+    k = k.replace('&alpha;', 'α')
+    k = k.replace('&beta;', 'β')
+    k = k.replace('&gamma;', 'γ')
+    k = k.replace('&epsilon;', 'ε')
+    k = k.replace('&theta;', 'θ')
+    k = k.replace('&Psi;', 'Ψ')
+    k = k.replace('&psi;', 'ψ')
+    k = k.replace('&chi;', 'χ')
+    k = k.replace('&Chi;', 'Χ')
+
+    # Replace others
+    k = k.replace('&mdash;', '-') 
+    return k
 # Set up a dictionary to translate the conditions to something meaningful
 condition_dict ={
         'lb_miller': 'LB Miller',
@@ -61,7 +92,8 @@ cog_dict = {
     'Q': 'Secondary metabolites, biosynthesis, transport, and catabolism',
     'R': 'General function prediction only',
     'S': 'Function unknown',
-    'Not Assigned': 'Function unknown'}
+    'X': 'Not Assigned',
+    'Not Assigned': 'No Specific COG Annotation'}
         
 # Load the three datasets
 prots = pd.read_csv('../../../data/compiled_absolute_measurements.csv')
@@ -76,48 +108,20 @@ cplx = cplx[cplx['complex'] != 'none assigned']
 # Condense the complex data frame to an easily paresable form. 
 cplx_numeric_dfs = []
 cplx_desc_dfs = []
-prot_desc_dfs = []
-prot_numeric_dfs = []
+cplx_prot_desc_dfs = []
+cplx_prot_numeric_dfs = []
 for g, d in tqdm.tqdm(cplx.groupby(['complex_annotation', 'complex', 'cog_letter']), 
                                     desc='Condensing complex data sets...'):
     cplx_desc = pd.DataFrame([])
-    prot_desc = pd.DataFrame([])
+    cplx_prot_desc = pd.DataFrame([])
     gene_product = {}
     for _g, _d in d.groupby(['gene_name', 'n_subunits', 'gene_product']):
         _list = [g[0], _g[-1]]
         for i, k in enumerate(_list):
-            k = k.replace('<sup>', '')
-            k = k.replace('</sup>', '')
-            k = k.replace('<sub>', '')
-            k = k.replace('</sub>', '')
-            k = k.replace('<SUP>', '')
-            k = k.replace('</SUP>', '')
-            k = k.replace('<SUB>', '')
-            k = k.replace('</SUB>', '')
-
-            # Remove itaicization and other spans
-            k = k.replace('<i>', '')
-            k = k.replace('</i>', '')
-            k = k.replace('<I>', '')
-            k = k.replace('</I>', '')
-            k = k.replace('<small>', '')
-            k = k.replace('</small>', '')
-
-            # Replace greeks
-            k = k.replace('&alpha;', 'α')
-            k = k.replace('&beta;', 'β')
-            k = k.replace('&gamma;', 'γ')
-            k = k.replace('&epsilon;', 'ε')
-            k = k.replace('&theta;', 'θ')
-            k = k.replace('&Psi;', 'Ψ')
-            k = k.replace('&psi;', 'ψ')
-            k = k.replace('&chi;', 'χ')
-            k = k.replace('&Chi;', 'Χ')
-
-            # Replace others
-            k = k.replace('&mdash;', '-')
+            k = rename(k)
             _list[i] = k
             gene_product[_g[0]] =  _list[1]
+
         # Assemble a descriptive data frame
         cplx_desc = cplx_desc.append({'complex_annotation':_list[0],
                                   'complex': g[1],
@@ -126,17 +130,17 @@ for g, d in tqdm.tqdm(cplx.groupby(['complex_annotation', 'complex', 'cog_letter
                                   'func': _list[1],
                                   'cog': cog_dict[g[-1]]},
                                   ignore_index=True)
-        prot_desc = prot_desc.append({'gene_name':_g[0],
+        cplx_prot_desc = cplx_prot_desc.append({'gene_name':_g[0],
                                       'complex':g[1],
                                       'complex_annotation':_list[1],
                                       'func':_list[1], 
                                       'cog': cog_dict[g[-1]]},
                                     ignore_index=True)
     cplx_desc_dfs.append(cplx_desc)
-    prot_desc_dfs.append(prot_desc)
-    prot_numeric = pd.DataFrame([])
+    cplx_prot_desc_dfs.append(cplx_prot_desc)
+    cplx_prot_numeric = pd.DataFrame([])
     for _g, _d in d.groupby(['gene_name', 'dataset', 'dataset_name', 'condition', 'growth_rate_hr']):
-        prot_numeric = prot_numeric.append({'gene_name':_g[0],
+        cplx_prot_numeric = cplx_prot_numeric.append({'gene_name':_g[0],
                                             'tot_per_cell':_d['n_units'].values[0] * _d['n_subunits'].values[0],
                                             'dataset':_g[1],
                                             'dataset_name':_g[2],
@@ -145,11 +149,10 @@ for g, d in tqdm.tqdm(cplx.groupby(['complex_annotation', 'complex', 'cog_letter
                                             'color': dataset_colors[_g[1]],
                                             'gene_product':gene_product[_g[0]]},
                                             ignore_index=True)
-    prot_numeric_dfs.append(prot_numeric)
+    cplx_prot_numeric_dfs.append(cplx_prot_numeric) 
 
     # Iterate through each complex, dataset, and condition, and compute the aggs
     cplx_numeric = pd.DataFrame([])
-    prot_numeric = pd.DataFrame([])
     for _g, _d in d.groupby(['dataset', 'dataset_name', 'condition', 'growth_rate_hr']):
         cplx_numeric = cplx_numeric.append({
                           'min':_d['n_units'].min(),
@@ -164,8 +167,7 @@ for g, d in tqdm.tqdm(cplx.groupby(['complex_annotation', 'complex', 'cog_letter
                           'cond':_g[2],
                           'growth_rate_hr':_g[3],
                           'color': dataset_colors[_g[0]]
-                          }, ignore_index=True)
-        
+                          }, ignore_index=True)        
     cplx_numeric_dfs.append(cplx_numeric)
 
 
@@ -174,9 +176,38 @@ cplx_desc = pd.concat(cplx_desc_dfs, sort=False)
 cplx_numeric = pd.concat(cplx_numeric_dfs, sort=False)
 cplx_desc.to_csv('./cplx_desc.csv', index=False)
 cplx_numeric.to_csv('./cplx_numeric.csv', index=False)
-prot_desc = pd.concat(prot_desc_dfs, sort=False)
+cplx_prot_desc = pd.concat(cplx_prot_desc_dfs, sort=False)
+cplx_prot_desc.to_csv('./cplx_prot_desc.csv', index=False)
+cplx_prot_numeric.to_csv('./cplx_prot_numeric.csv', index=False)
+
+
+#%% Do the same, but now for *all* proteins
+prot_desc = pd.DataFrame([])
+prot_numeric_dfs = []
+for g, d in tqdm.tqdm(prots.groupby(['gene_name', 'gene_product', 'cog_letter']), 
+                                    desc='Condensing protein data sets...'):
+    prot_desc = prot_desc.append({'gene_name':g[0],
+                        'gene_product':rename(g[1]),
+                        'cog': cog_dict[g[-1]]},
+                         ignore_index=True)
+    # Iterate through each complex, dataset, and condition, and compute the aggs
+    prot_numeric = pd.DataFrame([])
+    for _g, _d in d.groupby(['dataset', 'dataset_name', 'condition', 'growth_rate_hr']):
+        prot_numeric = prot_numeric.append({
+                          'n_units': _d['tot_per_cell'],
+                          'gene_name': g[0],
+                          'dataset': _g[0],
+                          'dataset_name':_g[1],
+                          'condition': condition_dict[_g[2]],
+                          'cond':_g[2],
+                          'growth_rate_hr':_g[3],
+                          'color': dataset_colors[_g[0]]
+                          }, ignore_index=True)        
+    prot_numeric_dfs.append(prot_numeric)
+
 prot_desc.to_csv('./prot_desc.csv', index=False)
-prot_numeric = pd.concat(prot_numeric_dfs, sort=False)
 prot_numeric.to_csv('./prot_numeric.csv', index=False)
+
+
 
 # %%

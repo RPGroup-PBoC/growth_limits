@@ -1,3 +1,5 @@
+% !TeX root = ./eLife_draft.tex
+
 \section{Introduction}
 The observed range of bacterial growth rates is enormously diverse. In natural
 environments, some microbial organisms may double only once per year
@@ -23,50 +25,59 @@ remained a major topic of inquiry in bacterial physiology for over a century
 % increasingly refined molecular census that is available for bacteria such as
 % the microbial workhorse \textit{E. coli}.
 
-A key discovery of the past 70 years was the identification of bacterial "growth
-laws" \citep{schaechter1958}; empirical relationships that relate the bacterial
-growth rate to the protein and RNA composition of the intracellular milieu in a
-number of different species. Over the past decade, a flurry of work
-\citep{molenaar2009, scott2010, klumpp2014, basan2015, dai2016, erickson2017}
-have examined these growth laws at a quantitative level, developing a series of
-phenomenological models from which the growth laws naturally emerge. In
-parallel, a "molecular revolution" in biology has yielded an increasingly
-refined molecular census of the cell, particularly for bacteria such as the
-microbial workhorse \textit{E. coli} \citep{schmidt2016, davidi2016a}. In light
-of the now expansive trove of quantitative biological data, we can revisit
-several of the evergreen questions about bacterial growth and physiology that
-were originally raised by microbiologists in the middle of the 20th century.
-Specifically, what biological processes are the primary determinants for how
-quickly bacterial cells can grow and reproduce? Why do cells modulate the
-absolute numbers and relative ratios of their molecular constituents as a
-function of changes in growth rate or nutrient availability?
+A key discovery in bacterial physiology of the past 70 years was the
+identification of bacterial "growth laws" \citep{schaechter1958}; empirical
+relationships that relate the bacterial growth rate to the protein and RNA
+composition of the intracellular milieu in a number of different species.
+Over the past decade, a flurry of work \citep{molenaar2009, scott2010,
+klumpp2014, basan2015, dai2016, erickson2017} have examined these growth laws
+at a quantitative level, developing a series of phenomenological models from
+which the growth laws naturally emerge. In parallel, a "molecular revolution"
+in biology has yielded an increasingly refined molecular census of the cell,
+particularly for bacteria such as the microbial workhorse \textit{E. coli}
+\citep{schmidt2016, davidi2016a}. In light of the now expansive trove of
+quantitative biological data, we can revisit several of the evergreen
+questions about bacterial growth and physiology that were originally raised
+by microbiologists in the middle of the 20th century. Specifically, what
+biological processes are the primary determinants for how quickly bacterial
+cells can grow and reproduce? Why do cells modulate the absolute numbers and
+relative ratios of their molecular constituents as a function of changes in
+growth rate or nutrient availability?
 
-% GC suggests we add somoething to say [we tie the growth laws to direct copy numbers and rates rather than relative
-% abundances and with phenomenological prefactors]. NB We might be okay without.
-
-In this paper, we begin by considering these two questions from two distinct
+In this work, we begin by considering these two questions from two distinct
 angles. First, as a result of an array of high-quality proteome-wide
 measurements of \textit{E. coli} under diverse growth conditions, we have
 generated a census that allows us to explore how the number of key molecular
-players change as a function of growth rate. Here, we have assembled a singular
-data set of protein copy numbers using measurements collected over the past
-decade via mass spectrometry \citep{schmidt2016, peebo2015, valgepea2013} or
-ribosomal profiling \citep{li2014} of the composition of the \textit{E. coli}
-proteome across 36 unique growth rates. Due to notable changes in cell size and
-cellular composition as a function of growth rate \citep{bremer2008,
-taheriaraghi2015}, substantial care was taken to ensure consistency on a per
-cellular basis, and detailed analysis and additional discussion is provided in
-Appendix Section "\nameref{sec:SI_exp_summary}". Second, by compiling molecular
-turnover rate measurements for many of the fundamental processes associated with
-bacterial growth, we make quantitative estimates of a handful of key cellular
-processes (schematized in \FIG{categories}) to determine whether our current
-understanding of the dynamics of these processes are sufficient to explain the
-magnitude of the observed protein copy numbers across conditions (see
-\BOX{estimate_rules} describing the philosophy behind this approach). The
-census, combined with these estimates, provide a window into the question of
-whether the rates of central processes such as energy generation or DNA
-synthesis vary systematically as a function of cell growth rate by altering
-protein copy number.
+players change as a function of growth rate. Here, we have assembled a
+singular data set of protein copy numbers using measurements collected over
+the past decade via mass spectrometry \citep{schmidt2016, peebo2015,
+valgepea2013} or ribosomal profiling \citep{li2014} of the composition of the
+\textit{E. coli} proteome across a gamut of growth rates. Due to notable
+changes in cell size and cellular composition as a function of growth rate
+\citep{bremer2008, taheriaraghi2015}, as well as differences in normalization
+and standardization schemes used in each experimental work, substantial care
+was taken to ensure consistency on a per cellular basis (see the Appendix for
+a detailed analysis and additional discussion). To our knowledge, this
+compiled and curated dataset represents the most comprehensive view of the
+\textit{E. coli} proteome, covering $\approx$ 4000 proteins and 36 unique
+growth rates, with the observed abundance of any given protein being directly
+comparable between data sets and across growth rates. This allows us to interrogate 
+the \textit{E. coli} specific physiology underlying the observed abundances while 
+minimizing the effects of experimental noise, as 
+$\approx$ 75\% of the  proteins are observed in at least two separate datasets.
+
+
+Second, by compiling molecular turnover rate measurements for many of the
+fundamental processes associated with bacterial growth, we make quantitative
+estimates of a handful of key cellular processes (schematized in
+\FIG{categories}) to determine whether our current understanding of the
+dynamics of these processes are sufficient to explain the magnitude of the
+observed protein copy numbers across conditions (see \BOX{estimate_rules}
+describing the philosophy behind this approach). The census, combined with
+these estimates, provide a window into the question of whether the rates of
+central processes such as energy generation or DNA synthesis vary
+systematically as a function of cell growth rate by altering protein copy
+number.
 
 Throughout our estimates, we consider an archetypal growth rate of $\approx$
 0.5 hr$^{-1}$ corresponding to a doubling time of $\approx$ 5000 seconds, as

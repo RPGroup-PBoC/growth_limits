@@ -13,12 +13,15 @@ dataset_colors = prot.viz.dataset_colors()
 # ##############################################################################
 # DATA CLEANING AND AGGREGATION
 # ##############################################################################
-# Load the three datasets
+# Load the data
+cplx_prot_numeric_df = pd.read_csv('./cplx_prot_numeric.csv')
+cplx_prot_desc_df = pd.read_csv('./cplx_prot_desc.csv')
+cplx_prot_numeric_source = ColumnDataSource(cplx_prot_numeric_df)
+cplx_prot_desc_source = ColumnDataSource(cplx_prot_desc_df)
 prot_numeric_df = pd.read_csv('./prot_numeric.csv')
 prot_desc_df = pd.read_csv('prot_desc.csv')
 prot_numeric_source = ColumnDataSource(prot_numeric_df)
 prot_desc_source = ColumnDataSource(prot_desc_df)
-
 
 # Define the data sources
 cplx_df = pd.read_csv('../../../data/compiled_annotated_complexes.csv')
@@ -35,8 +38,11 @@ cplx_table_source = ColumnDataSource({'protein':[], 'subunits':[],
                                       'relative_subunits':[],
                                       'observed':[],
                                       'func':[]})
+cplx_prot_display_source = ColumnDataSource({'x':[], 'y':[], 'c':[], 'l':[],
+                                         'condition':[]})
 prot_display_source = ColumnDataSource({'x':[], 'y':[], 'c':[], 'l':[],
                                          'condition':[]})
+
 
 # ##############################################################################
 # FIGURE CANVAS DECLARATION AND INTERACTION INSTANTIATION
@@ -57,6 +63,7 @@ complex_selection = Select(
 
 # Define the menu for selecting proteins
 protein_selection = Select(options=[], value='select gene product')
+protein_name_selection = Select(options=[], value='select gene product')
 
 # Define the slector for min, max, or median complex abundance
 agg_fn = RadioButtonGroup(labels=['minimum', 'maximum', 'median', 'mean'],
@@ -89,7 +96,7 @@ prot_canvas.y_range.range_padding_units = 'percent'
 complex_canvas.circle(x='x', y='y', color='c', legend_field='l',
                      source=cplx_display_source, line_color='black', size=10)
 prot_canvas.circle(x='x', y='y', color='c', legend_field='l',
-                   source=prot_display_source, line_color='black', size=10)
+                   source=cplx_prot_display_source, line_color='black', size=10)
 
 # Define description divs and tables. 
 class_title = Div(text='<b>Clusters of Orthologous Groups (COG) class</b>')
@@ -113,7 +120,7 @@ complex_table = DataTable(columns=complex_table_cols, source=cplx_table_source,
 class_args = {'class_select_input': class_selection,
               'complex_select_input': complex_selection,
               'cplx_desc_source': cplx_desc_source,
-              'prot_desc_source': prot_desc_source,
+              'prot_desc_source': cplx_prot_desc_source,
               'prot_select_input':protein_selection}
 
 # Arguments for complex selection
@@ -133,6 +140,10 @@ cplx_hover_args = { 'cplx_desc_source': cplx_desc_source,
                    'cplx_display_source':cplx_display_source}
 
 # Arguments for protein selection.
+cplx_prot_args = {'prot_numeric_source': cplx_prot_numeric_source,
+             'prot_display_source': cplx_prot_display_source,
+             'prot_select_input': protein_selection,
+             'prot_div': protein_description_field}
 prot_args = {'prot_numeric_source': prot_numeric_source,
              'prot_display_source': prot_display_source,
              'prot_select_input': protein_selection,
@@ -141,7 +152,8 @@ prot_args = {'prot_numeric_source': prot_numeric_source,
 class_cb = prot.viz.load_js('class_selection.js', args=class_args)
 hover_cb = prot.viz.load_js('explorer_subunits.js', args=cplx_hover_args)
 cplx_cb = prot.viz.load_js('explorer_complex.js',args=cplx_args)
-prot_cb = prot.viz.load_js('prot_explorer.js', args=prot_args)
+prot_cb = prot.viz.load_js('prot_explorer.js', args=cplx_prot_args)
+prot_name_cb = prot.viz.load_js('prot_name_explorer.js', args=prot_args)
 class_selection.js_on_change('value', class_cb)
 protein_selection.js_on_change('value', prot_cb)
 complex_selection.js_on_change('value', cplx_cb)
@@ -149,9 +161,10 @@ agg_fn.js_on_change('active', cplx_cb)
 complex_canvas.hover.callback = hover_cb
 
 # Define the widget boxes 
-complex_box = bokeh.layouts.column(class_title, class_selection, selector_title,complex_selection, agg_title, agg_fn,
-                                   complex_description_field, 
-                                   complex_table)
+complex_box = bokeh.layouts.column(class_title, class_selection, selector_title,
+                                   complex_selection, agg_title, agg_fn,
+                                   complex_description_field, complex_table)
+
 prot_box = bokeh.layouts.column(class_title, class_selection, prot_title, protein_selection,
                                 protein_description_field)
 complex_plots = bokeh.layouts.column(complex_canvas)

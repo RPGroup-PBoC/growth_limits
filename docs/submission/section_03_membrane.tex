@@ -1,23 +1,26 @@
 \section{Cell Envelope Biogenesis}
 In contrast to nutrient transporters, which support the synthesis of
-biomolecules throughout the cell and therefore need to scale with the cell size,
-here we must consider the synthesis of components that will need to scale with
-the surface area of the cell. \textit{E. coli} is a rod-shaped bacterium with a
-remarkably robust length-to-width aspect ratio of $\approx$ 4:1
-\citep{harris2018, ojkic2019}.  Assuming this surface area is approximately the
-same between the inner and outer membranes of \textit{E. coli}, and the fact
-that each membrane is itself a lipid bilayer, our  rule-of-thumb of 5 \textmu
-m$^2$ per surface suggests a total membrane surface area of $\approx 20 $\textmu
-m$^2$ (see the Appendix Section "\nameref{sec:protein_size_SV}" for a description of the
-calculation of cell surface area as a function of cell size). In this section,
-we will estimate the number of key protein complexes needed to synthesize the lipids
-as well as the complexes involved in assembling the peptidoglycan
-scaffold that make up the cell envelope.
+biomolecules throughout the cell and therefore need to scale with the cell
+size, here we must consider the synthesis of components that will need to
+scale with the surface area of the cell. \textit{E. coli} is a rod-shaped
+bacterium with a remarkably robust length-to-width aspect ratio of $\approx$
+4:1 \citep{harris2018, ojkic2019}. Assuming this surface area is
+approximately the same between the inner and outer membranes of \textit{E.
+coli}, and the fact that each membrane is itself is a lipid bilayer (or,
+bilayer with lipopolysaccharides for the outer membranee), our rule-of-thumb
+of 5 \textmu m$^2$ per surface suggests a total membrane surface area of
+$\approx 20 $\textmu m$^2$ (see the Appendix Section
+"\nameref{sec:protein_size_SV}" for a description of the calculation of cell
+surface area as a function of cell size). In this section, we will estimate
+the number of key protein complexes needed to synthesize the lipids as well
+as the complexes involved in assembling the peptidoglycan scaffold that make
+up the cell envelope.
 
 \subsection{Lipid Synthesis}
 The dense packing of the membrane with proteins means that the cell membranes
 are not composed entirely of lipid molecules, with only $\approx$ 40 \% of the
-membrane area occupied by lipids (BNID: 100078). Using a rule-of-thumb of 0.5
+membrane area occupied by lipids or lipopolysaccharide, both of which have fatty 
+acid chains of similar length (BNID: 100078). Using a rule-of-thumb of 0.5
 nm$^2$ as the surface area of the typical lipid (BNID: 106993), we can
 estimate $\sim$ 2 $\times$ 10$^7$ lipids per cell, which is in close
 agreement with experimental measurements (BNID: 100071, 102996).
@@ -28,7 +31,8 @@ each of which are unique in their structures and biosynthetic pathways
 \citep{ruppe2018} and \textit{in vitro} kinetic measurements
 \citep{ranganathan2012, yu2011} has revealed remarkably slow steps in the fatty
 acid synthesis pathways which may serve as the rate limiting reactions for
-making new membrane phospholipids in \textit{E. coli}. One such step is the removal of hydroxyl
+making new membrane fatty acids (that become components of a variety of 
+membrane lipids) in \textit{E. coli}. One such step is the removal of hydroxyl
 groups from the fatty-acid chain by ACP dehydratase that leads to the formation
 of carbon-carbon double bonds. This reaction, catalyzed by proteins FabZ and
 FabA \citep{yu2011}, have been estimated to have kinetic
@@ -46,28 +50,47 @@ dependent expression of these two enzymes.
 The exquisite control of bacteria over their cell shape is due primarily to a stiff, several nanometer thick meshwork of
 polymerized discaccharides that makes up the cell wall termed the peptidoglycan. The formation of the peptidoglycan is an intricate
 process involving many macromolecular players \citep{shi2018, morgenstein2015},
-whose coordinated action maintains cell shape and integrity even in the face of
+whose coordinated action synthesizes the individual subunits and integrates them 
+into the peptidodglycan network which maintains cell shape and integrity even in the face of
 large-scale perturbations \citep{harris2018,shi2018}.
-The peptidoglycan alone comprises $\approx$ 3\% of the cellular dry mass (BNID:
+Due to the extensive degree of chemical crosslinks between glycan strands, the 
+entire peptidoglycan is a single molecule comprising $\approx$ 3\% of the cellular dry mass (BNID:
 1019360), making it the most massive molecule in \textit{E. coli}. The
 polymerized unit of the peptidoglycan is a N-acetylglucosamine and
 N-acetylmuramic acid disaccharide, of which the former is functionalized with a
 short pentapeptide. With a mass of $\approx$ 1000 Da, this unit, which we refer
-to as a murein monomer, is polymerized to form long strands in the periplasm
+to as a murein subunit, is polymerized to form long strands in the periplasm
 which are then attached to each other via their peptide linkers. Together, these
-quantities provide an estimate of $\approx$ 5 $\times$ 10$^6$ murein monomers
+quantities provide an estimate of $\approx$ 5 $\times$ 10$^6$ murein subunits
 per cell.
 
-The crosslinking of the pentapeptides between adjacent glycan strands is
-responsible for maintaining the structural integrity of the cell wall and, in
-principle, each murein monomer can be involved in such a crosslink. In some
+There are various steps which one could consider \textit{a priori} to be a
+limiting process in the synthesis of peptidoglycan, including the
+biosynthesis steps that occur in the cytoplasm, the transglycosylation
+reaction which adds new subunits to the glycan filaments, and the formation
+of the peptide crosslinks between strands
+\cite{shi2018,morgenstein2015,lovering2012,barreteau2008}. Despite the
+extensive mechanistic characterization of these components, it remains
+difficult to find quantitative characterization of the individual reaction
+rates as well as understanding the kinetics of the entire pathway to identify
+particularly slow steps. However, such measurements have recently been made
+for the crosslinking machinery (transpeptidases) of the peptodioglycan which
+provides lateral structural integrity to the peptidoglycan shell. As the
+primary mechanism of subutnit integration occurs by a complex with both
+transglycosylation and transpeptidation activities \cite{shi2018} we
+therefore consider only the transpeptidation reaction in this work. We
+believe that, in lieu of other quantitative measurements, crosslinking
+represents a reasonable candidate for a rate-limiting step in growth as it is
+required for cell size and shape homeostasis.
+
+In principle, each murein subunit can be involved in such a crosslink. In some
 microbes, such as in gram-positive bacterium \textit{Staphylococcus aureus}, the
 extent of crosslinking can be large with $>$ 90\% of pentapeptides forming a
 connection between glycan strands. In \textit{E. coli}, however, a much smaller
 proportion ($\approx$ 20\%) of the peptides are crosslinked, resulting in a
 weaker and more porous cell wall \citep{vollmer2008a, rogers1980}. The formation
 of these crosslinks occurs primarily during the polymerization of the murein
-monomers and is facilitated by a family of enzymes called transpeptidases. The
+subunits and is facilitated by a family of enzymes called transpeptidases. The
 four primary transpeptidases of \textit{E. coli} have only recently been
 quantitatively characterized \textit{in vivo}, via liquid chromatography mass
 spectrometry, which revealed a notably slow kinetic turnover rate of $\approx 2$
@@ -118,7 +141,7 @@ cell wall.
             experimentally observed complex copy numbers using the
             stoichiometries [FabA]$_2$ and [FabZ]$_2$. (B) An estimate for
             the number of peptidoglycan transpeptidases needed to complete
-            maturation of the peptidoglycan. The mass of the murein monomer
+            maturation of the peptidoglycan. The mass of the murein subunit
             was estimated by approximating each amino acid in the
             pentapeptide chain as having a mass of 110 Da and each sugar in
             the disaccharide having a mass of $\approx$ 250 Da. The

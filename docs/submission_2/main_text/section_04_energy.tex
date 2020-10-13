@@ -38,11 +38,11 @@ protein synthesis alone. Assuming that each ATP synthases operates at its
 maximal speed (300 ATP per second per synthase), $\approx$ 3000 ATP synthases
 are needed to keep up with the energy demands of the cell. This estimate
 is comparable with the experimental observations,  shown in
-\FIG{energy_production} (A). Since this estimate assumes all ATP is
+\FIG{energy_production}(A). Since this estimate assumes all ATP is
 synthesized via ATP synthase and neglects synthesis via fermentative metabolism,
 this may explain why at the fastest growth rates ($\approx$ 2
 hr$^{-1}$), our continuum estimate predicts more synthase than is experimentally
-observed (data points below the gray line in \FIG{energy_production} at fast growth rates). In particular, at faster growth rates,
+observed (data points below the gray line in \FIG{energy_production}(A) at fast growth rates). In particular, at faster growth rates,
 \textit{E. coli} enters a type of overflow metabolism where non-respiratory
 routes for ATP synthesis become more pronounced and provide the remaining ATP demand \citep{molenaar2009, zhuang2011, szenk2017} .
 
@@ -114,12 +114,22 @@ accompanied by $\approx$ 1 functional electron transport chain.
 
 
 \subsubsection{Limits on Biosynthesis in a Crowded Membrane}
-Our estimates thus far have focused on biochemistry at the periphery of the cell.
-Since surface area and volume do not scale identically as cell size changes,  in
-order to better understand the physical constraints on transport and  energy
-production it is necessary to consider the consequence of a changing S/V
-ratio, which will decrease at faster growth rates. Here we use our analysis of
-ATP production  to consider this constraint.
+Our estimates thus far have focused on biochemistry at the periphery of the
+cell, with the processes of nutrient transport, cell envelope biogenesis, and
+energy generation all requiring space to perform their biological functions.
+Since the cell's surface area will not scale as rapidly as cell size
+\citep{harris2018}, there will be diminishing space available to support the
+proteomic requirements at faster growth rates. It is therefore  necessary to
+consider the consequence of a changing S/V ratio in our effort to identify
+limitations on growth. Here we use our analysis of ATP production to further
+consider this constraint.
+
+% Our estimates thus far have focused on biochemistry at the periphery of the cell.
+% Since surface area and volume do not scale identically as cell size changes,  in
+% order to better understand the physical constraints on transport and  energy
+% production it is necessary to consider the consequence of a changing S/V
+% ratio, which will decrease at faster growth rates. Here we use our analysis of
+% ATP production  to better consider this constraint.
 
 In our estimate of ATP production above we found that a cell demands about $5
 \times 10^9$ ATP per cell cycle or $10^6$ ATP/s. With a cell volume of roughly 1
@@ -139,35 +149,35 @@ by fermentation on a per membrane area basis, due to the additional proteins of
 the electron transport chain. This suggests that, even under anaerobic growth,
 cells will have sufficient membrane space for ATP production.
 
-The analysis highlights that there will indeed be a maximum attainable cell size
-due to a diminishing capacity to provide resources as the cell increases in
-size. The maximum energy production in \FIG{energy_scaling}(A), however, does
-represent a somewhat unachievable limit since the inner membrane must also
-include other proteins, including those we've considered for nutrient transport
-and cell wall biogenesis. To better understand the overall proteomic makeup of
-the inner membrane, we therefore used Gene Ontology (GO) annotations
-\citep{ashburner2000, thegeneOntologyconsortium2018} to identify all proteins
-embedded or peripheral to the inner membrane (GO term: 0005886). Those
-associated but not membrane-bound include proteins like MreB and FtsZ that must
-nonetheless be considered as a vital component occupying space on the membrane.
-In \FIG{energy_scaling}(B), we find that the total protein mass per \textmu
-m$^2$ is nearly constant across growth rates. Interestingly, when we consider
-the distribution of proteins grouped by their Clusters of Orthologous Groups
-(COG) \citep{tatusov2000}, the relative abundance of each category is nearly
-constant across growth rates. This suggests that no one process (energy
+Importantly, this analysis highlights that there will indeed be a maximum
+attainable cell size due to the diminishing capacity to provide resources as the
+cell increases in size. The maximum energy production in
+\FIG{energy_scaling}(A), however, does represent a somewhat unachievable limit
+since the inner membrane also includes other proteins like those we've
+considered for nutrient transport and cell wall biogenesis. To better understand
+the overall proteomic makeup of the inner membrane, we therefore used Gene
+Ontology (GO) annotations \citep{ashburner2000, thegeneOntologyconsortium2018}
+to identify all proteins embedded or peripheral to the inner membrane (GO term:
+0005886). Those associated but not membrane-bound include proteins like MreB and
+FtsZ that must nonetheless be considered as a vital component occupying space on
+the membrane. In \FIG{energy_scaling}(B), we find that the total protein mass
+per \textmu m$^2$ is nearly constant across growth rates. Interestingly, when we
+consider the distribution of proteins grouped by their Clusters of Orthologous
+Groups (COG) \citep{tatusov2000}, the relative abundance of each category is
+nearly constant across growth rates. This suggests that no one process (energy
 production, nutrient uptake, etc.) is dominating even at fast growth rates
 [\FIG{energy_scaling}(C)] and in line with our supposition that each of the
 processes we've considered so far are not fundamentally limiting the maximum
 growth rate. In contrast, when we apply such an analysis to cytosolic proteins
 (GO term: 0005829), we observe a clear change in the proteomic composition
-[\FIG{cog_cytosol}(A, B)]. In particular, with increasing
-growth rates there is a substantial increase in protein mass associated with
-'information storage and processing,' which refer to the processes associated
-with the central dogma. This increase in protein mass is predominantly at the
-expense of 'metabolic' proteins  as shown in \FIG{cog_cytosol}(C, D),
-with this notable anticorrelation consistent with previous reports
-\citep{schmidt2016, scott2010, zhu2019}. In the next section we therefore turn
-our attention to the processes of the central dogma.
+[\FIG{cog_cytosol}(A, B)]. In particular, with increasing growth rates there is
+a substantial increase in protein mass associated with 'information storage and
+processing,' which refer to the processes of the central dogma.
+This increase in protein mass is predominantly at the expense of 'metabolic'
+proteins as shown in \FIG{cog_cytosol}(C, D), with this notable anticorrelation
+consistent with previous reports \citep{schmidt2016, scott2010, zhu2019}. In the
+next section we therefore turn our attention to the processes of the central
+dogma.
 
 \begin{figure}
     \begin{fullwidth}

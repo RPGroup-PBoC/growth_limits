@@ -1,0 +1,1155 @@
+class,complex,complex_annotation
+RNA processsing and modification,CPLX0-1821,oligoribonuclease
+Energy production and conversion,2OXOGLUTARATEDEH-CPLX,2-oxoglutarate dehydrogenase complex
+Energy production and conversion,3-ISOPROPYLMALDEHYDROG-CPLX,3-isopropylmalate dehydrogenase
+Energy production and conversion,ACETOLACTSYNII-CPLX,acetohydroxybutanoate synthase
+Energy production and conversion,ADHC-CPLX,S-(hydroxymethyl)glutathione dehydrogenase
+Energy production and conversion,ADHE-CPLX,alcohol dehydrogenase/aldehyde-dehydrogenase
+Energy production and conversion,AERGLYC3PDEHYDROG-CPLX,aerobic glycerol 3-phosphate dehydrogenase
+Energy production and conversion,ALD-CPLX,"aldehyde dehydrogenase A, NAD-linked"
+Energy production and conversion,ALPHA-SUBUNIT-CPLX,"formate dehydrogenase N, subcomplex"
+Energy production and conversion,ANGLYC3PDEHYDROG-CPLX,anaerobic glycerol-3-phosphate dehydrogenase
+Energy production and conversion,APP-UBIOX-CPLX,cytochrome bd-II ubiquinol oxidase
+Energy production and conversion,ATPA-CPLX,ATP synthase F1 complex subunit α
+Energy production and conversion,ATPD-CPLX,ATP synthase F1 complex subunit β
+Energy production and conversion,ATPE-CPLX,ATP synthase F0 complex - subunit c
+Energy production and conversion,ATPF-CPLX,ATP synthase F0 complex - subunit b
+Energy production and conversion,ATPSYN-CPLX,ATP synthase
+Energy production and conversion,BADH-CPLX,betaine aldehyde dehydrogenase
+Energy production and conversion,CITRATE-SI-SYNTHASE,citrate synthase
+Energy production and conversion,CPLX0-1,reduced flavorubredoxin
+Energy production and conversion,CPLX0-1601,selenate reductase
+Energy production and conversion,CPLX0-1762,"phenylacetyl-CoA 1,2-epoxidase"
+Energy production and conversion,CPLX0-1841,predicted xanthine dehydrogenase
+Energy production and conversion,CPLX0-1962,3-hydroxy acid dehydrogenase
+Energy production and conversion,CPLX0-2,oxidized flavorubredoxin
+Energy production and conversion,CPLX0-224,NADPH-dependent FMN reductase
+Energy production and conversion,CPLX0-235,glyoxylate reductase
+Energy production and conversion,CPLX0-244,NADPH-dependent nitroreductase NfsA
+Energy production and conversion,CPLX0-250,hydrogenase 4
+Energy production and conversion,CPLX0-251,2-methylcitrate synthase
+Energy production and conversion,CPLX0-3121,chromate reductase
+Energy production and conversion,CPLX0-3141,putative quinol monooxygenase YgiN
+Energy production and conversion,CPLX0-3361,"NADH:quinone oxidoreductase I, peripheral arm"
+Energy production and conversion,CPLX0-3482,aldehyde dehydrogenase B
+Energy production and conversion,CPLX0-3641,γ-aminobutyraldehyde dehydrogenase
+Energy production and conversion,CPLX0-7458,glycolate dehydrogenase
+Energy production and conversion,CPLX0-761,putative xanthine dehydrogenase
+Energy production and conversion,CPLX0-7632,NAD(P)H:quinone oxidoreductase
+Energy production and conversion,CPLX0-7667,NADPH-dependent aldehyde reductase YqhD
+Energy production and conversion,CPLX0-7668,putative oxidoreductase YdjA
+Energy production and conversion,CPLX0-7687,succinate semialdehyde dehydrogenase (NAD(P)+) Sad
+Energy production and conversion,CPLX0-7688,succinate-semialdehyde dehydrogenase (NADP+) GabD
+Energy production and conversion,CPLX0-7693,FMN dependent NADH:quinone oxidoreductase
+Energy production and conversion,CPLX0-7760,aconitate hydratase A
+Energy production and conversion,CPLX0-7805,aldehyde dehydrogenase
+Energy production and conversion,CPLX0-7955,acetate/glycolate:cation symporter
+Energy production and conversion,CPLX0-7984,glutathionyl-hydroquinone reductase YqjG
+Energy production and conversion,CPLX0-7988,PaaF-PaaG hydratase-isomerase complex
+Energy production and conversion,CPLX0-8121,acrylyl-CoA reductase
+Energy production and conversion,CPLX0-8158,D-lactate dehydrogenase
+Energy production and conversion,CPLX0-8160,succinate:quinone oxidoreductase
+Energy production and conversion,CPLX0-8167,"hydrogenase 1, oxygen tolerant hydrogenase"
+Energy production and conversion,CPLX0-8175,sulfurtransferase for molybdenum cofactor sulfuration
+Energy production and conversion,CPLX0-8189,peptidyl-lysine N-acetyltransferase
+Energy production and conversion,CPLX0-8213,periplasmic protein-L-methionine sulfoxide reducing system
+Energy production and conversion,CPLX0-8232,carnitine monooxygenase
+Energy production and conversion,CPLX0-8301,Ubi complex
+Energy production and conversion,CPLX0-8306,DcuS-DctA sensor complex
+Energy production and conversion,CYT-D-UBIOX-CPLX,cytochrome bd-I ubiquinol oxidase
+Energy production and conversion,CYT-O-UBIOX-CPLX,cytochrome bo3 ubiquinol oxidase
+Energy production and conversion,DIHYDROPTERIREDUCT-CPLX,NAD(P)H nitroreductase NfsB
+Energy production and conversion,DIMESULFREDUCT-CPLX,dimethyl sulfoxide reductase
+Energy production and conversion,E1O,"2-oxoglutarate decarboxylase, thiamine-requiring"
+Energy production and conversion,E1P-CPLX,pyruvate dehydrogenase
+Energy production and conversion,E2O,dihydrolipoyltranssuccinylase
+Energy production and conversion,E3-CPLX,lipoamide dehydrogenase
+Energy production and conversion,F-1-CPLX,ATP synthase F1 complex
+Energy production and conversion,F-O-CPLX,ATP synthase F0 complex
+Energy production and conversion,FHLMULTI-CPLX,formate hydrogenlyase complex
+Energy production and conversion,FORMATEDEHYDROGN-CPLX,formate dehydrogenase N
+Energy production and conversion,FORMATEDEHYDROGO-CPLX,formate dehydrogenase O
+Energy production and conversion,FORMHYDROG2-CPLX,hydrogenase 2
+Energy production and conversion,FORMHYDROGI-CPLX,hydrogenase 1
+Energy production and conversion,FUMARASE-A,fumarase A
+Energy production and conversion,FUMARASE-B,fumarase B
+Energy production and conversion,FUMARASE-C,fumarase C
+Energy production and conversion,FUMARATE-REDUCTASE,fumarate reductase
+Energy production and conversion,GCVMULTI-CPLX,glycine cleavage system
+Energy production and conversion,GLUTATHIONE-REDUCT-NADPH-CPLX,glutathione reductase
+Energy production and conversion,GLYC3PDEHYDROGBIOSYN-CPLX,"glycerol-3-phosphate dehydrogenase, biosynthetic"
+Energy production and conversion,GLYCDEH-CPLX,"L-1,2-propanediol dehydrogenase / glycerol dehydrogenase"
+Energy production and conversion,GLYCEROL-KIN-CPLX,glycerol kinase
+Energy production and conversion,HYDROG3-CPLX,hydrogenase 3
+Energy production and conversion,ISOCIT-LYASE,isocitrate lyase
+Energy production and conversion,ISOCITHASE-CPLX,isocitrate dehydrogenase
+Energy production and conversion,ISOCITHASE-P,isocitrate dehydrogenase-P
+Energy production and conversion,LACTALDREDUCT-CPLX,"L-1,2-propanediol oxidoreductase"
+Energy production and conversion,MALATE-DEHASE,malate dehydrogenase
+Energy production and conversion,MALIC-NAD-CPLX,NAD+-dependent malate dehydrogenase
+Energy production and conversion,MALIC-NADP-CPLX,NADP+-dependent malate dehydrogenase
+Energy production and conversion,NADH-DHI-CPLX,NADH:quinone oxidoreductase I
+Energy production and conversion,NAP-CPLX,periplasmic nitrate reductase
+Energy production and conversion,NITRITREDUCT-CPLX,nitrite reductase - NADH dependent
+Energy production and conversion,PEPCARBOX-CPLX,phosphoenolpyruvate carboxylase
+Energy production and conversion,PHENDEHYD-CPLX,phenylacetaldehyde dehydrogenase
+Energy production and conversion,PHOSACETYLTRANS-CPLX,phosphate acetyltransferase
+Energy production and conversion,PYRNUTRANSHYDROGEN-CPLX,pyridine nucleotide transhydrogenase
+Energy production and conversion,PYRUVATEDEH-CPLX,pyruvate dehydrogenase
+Energy production and conversion,PYRUVFORMLY-CPLX,activated pyruvate-formate lyase
+Energy production and conversion,PYRUVFORMLY-INACTIVE-CPLX,pyruvate formate-lyase (inactive)
+Energy production and conversion,QOR-CPLX,putative quinone oxidoreductase 1
+Energy production and conversion,SUCC-DEHASE,succinate:quinone oxidoreductase subcomplex
+Energy production and conversion,SUCCCOASYN,succinyl-CoA synthetase
+Energy production and conversion,TMAOREDUCTI-CPLX,menaquinol:trimethylamine N-oxide oxidoreductase I
+Energy production and conversion,UDHA-CPLX,soluble pyridine nucleotide transhydrogenase
+"Cell cycle control, cell division, chromosome partitioning",ABC-54-CPLX,divisome protein complex FtsEX
+"Cell cycle control, cell division, chromosome partitioning",B2-CPLX,"ribonucleoside-diphosphate reductase 1, β subunit dimer"
+"Cell cycle control, cell division, chromosome partitioning",CPLX0-2561,bacterial condensin MukBEF
+"Cell cycle control, cell division, chromosome partitioning",CPLX0-7538,cell division protein ZapA
+"Cell cycle control, cell division, chromosome partitioning",CPLX0-7686,cell division factor ZapB
+"Cell cycle control, cell division, chromosome partitioning",CPLX0-7696,chromosome partitioning protein MukB
+"Cell cycle control, cell division, chromosome partitioning",CPLX0-7697,MukEF complex
+"Cell cycle control, cell division, chromosome partitioning",CPLX0-7698,MukF dimer
+"Cell cycle control, cell division, chromosome partitioning",CPLX0-7934,FtsLBQ cell division complex
+"Cell cycle control, cell division, chromosome partitioning",CPLX0-7973,cell division factor ZapD
+"Cell cycle control, cell division, chromosome partitioning",CPLX0-8188,Z-ring inhibitor complex MinCD
+"Cell cycle control, cell division, chromosome partitioning",CPLX0-8196,Z-ring positioning protein MinC
+"Cell cycle control, cell division, chromosome partitioning",RIBONUCLEOSIDE-DIP-REDUCTI-CPLX,ribonucleoside-diphosphate reductase 1
+Aminio acid transport and metabolism,3-ISOPROPYLMALISOM-CPLX,3-isopropylmalate dehydratase
+Aminio acid transport and metabolism,ABC-12-CPLX,L-glutamine ABC transporter
+Aminio acid transport and metabolism,ABC-13-CPLX,glutamate / aspartate ABC transporter
+Aminio acid transport and metabolism,ABC-14-CPLX,histidine ABC transporter
+Aminio acid transport and metabolism,ABC-15-CPLX,branched chain amino acid / phenylalanine ABC transporter
+Aminio acid transport and metabolism,ABC-20-CPLX,Ni(2+) ABC transporter
+Aminio acid transport and metabolism,ABC-22-CPLX,oligopeptide ABC transporter
+Aminio acid transport and metabolism,ABC-24-CPLX,spermidine preferential ABC transporter
+Aminio acid transport and metabolism,ABC-25-CPLX,putrescine ABC transporter
+Aminio acid transport and metabolism,ABC-26-CPLX,glycine betaine ABC transporter
+Aminio acid transport and metabolism,ABC-3-CPLX,lysine / arginine / ornithine ABC transporter
+Aminio acid transport and metabolism,ABC-304-CPLX,leucine / L-phenylalanine ABC transporter
+Aminio acid transport and metabolism,ABC-4-CPLX,L-arginine ABC transporter
+Aminio acid transport and metabolism,ABC-40-CPLX,"glycine betaine ABC transporter, non-osmoregulatory"
+Aminio acid transport and metabolism,ABC-41-CPLX,putative oligopeptide ABC transporter
+Aminio acid transport and metabolism,ABC-49-CPLX,glutathione ABC transporter
+Aminio acid transport and metabolism,ABC-51-CPLX,"putative transport complex, ABC superfamily"
+Aminio acid transport and metabolism,ABC-52-CPLX,"putative transport complex, ABC superfamily"
+Aminio acid transport and metabolism,ABC-59-CPLX,"putative D,D-dipeptide ABC transporter"
+Aminio acid transport and metabolism,ABC-8-CPLX,dipeptide ABC transporter
+Aminio acid transport and metabolism,ACETOLACTSYNI-CPLX,acetohydroxybutanoate synthase
+Aminio acid transport and metabolism,ACETOLACTSYNIII-CPLX,acetolactate synthase
+Aminio acid transport and metabolism,ACETYLGLUTKIN-CPLX,acetylglutamate kinase
+Aminio acid transport and metabolism,ACETYLORNDEACET-CPLX,acetylornithine deacetylase
+Aminio acid transport and metabolism,ACETYLORNTRANSAM-CPLX,N-acetylornithine aminotransferase / N-succinyldiaminopimelate aminotransferase
+Aminio acid transport and metabolism,ACNEULY-CPLX,N-acetyl-β-neuraminate lyase
+Aminio acid transport and metabolism,ACSERLYA-CPLX,cysteine synthase A
+Aminio acid transport and metabolism,ACSERLYB-CPLX,cysteine synthase B
+Aminio acid transport and metabolism,ADCLY-CPLX,aminodeoxychorismate lyase
+Aminio acid transport and metabolism,AGMATIN-CPLX,agmatinase
+Aminio acid transport and metabolism,ANGLYC3PDEHYDROG-CPLX,anaerobic glycerol-3-phosphate dehydrogenase
+Aminio acid transport and metabolism,ANTHRANSYN-CPLX,anthranilate synthase
+Aminio acid transport and metabolism,ARGDECARBOXBIO-CPLX,"arginine decarboxylase, biosynthetic"
+Aminio acid transport and metabolism,ARGDECARBOXDEG-CPLX,"arginine decarboxylase, degradative"
+Aminio acid transport and metabolism,AROC-CPLX,chorismate synthase
+Aminio acid transport and metabolism,AROD-CPLX,3-dehydroquinate dehydratase
+Aminio acid transport and metabolism,AROF-CPLX,3-deoxy-7-phosphoheptulonate synthase
+Aminio acid transport and metabolism,AROG-CPLX,3-deoxy-7-phosphoheptulonate synthase
+Aminio acid transport and metabolism,AROH-CPLX,3-deoxy-7-phosphoheptulonate synthase
+Aminio acid transport and metabolism,ASNSYNA-CPLX,asparagine synthetase A
+Aminio acid transport and metabolism,ASNSYNB-CPLX,asparagine synthetase B
+Aminio acid transport and metabolism,ASP-SEMIALDEHYDE-DEHYDROGENASE-CPLX,aspartate-semialdehyde dehydrogenase
+Aminio acid transport and metabolism,ASPAMINOTRANS-DIMER,aspartate aminotransferase
+Aminio acid transport and metabolism,ASPARTASE-CPLX,aspartate ammonia-lyase
+Aminio acid transport and metabolism,ASPKINIHOMOSERDEHYDROGI-CPLX,fused aspartate kinase/homoserine dehydrogenase 1
+Aminio acid transport and metabolism,ASPKINIIHOMOSERDEHYDROGII-CPLX,fused aspartate kinase/homoserine dehydrogenase 2
+Aminio acid transport and metabolism,ASPKINIII-CPLX,aspartate kinase III
+Aminio acid transport and metabolism,BRANCHED-CHAINAMINOTRANSFER-CPLX,branched-chain-amino-acid aminotransferase
+Aminio acid transport and metabolism,CARBPSYN-CPLX,carbamoyl phosphate synthetase
+Aminio acid transport and metabolism,CHORISMUTPREPHENDEHYDRAT-CPLX,fused chorismate mutase/prephenate dehydratase
+Aminio acid transport and metabolism,CHORISMUTPREPHENDEHYDROG-CPLX,fused chorismate mutase/prephenate dehydrogenase
+Aminio acid transport and metabolism,CPLX-7524,allantoate amidohydrolase
+Aminio acid transport and metabolism,CPLX0-237,serine acetyltransferase
+Aminio acid transport and metabolism,CPLX0-238,argininosuccinate synthetase
+Aminio acid transport and metabolism,CPLX0-2401,"tryptophan synthase, β subunit dimer"
+Aminio acid transport and metabolism,CPLX0-246,L-cysteine desulfurase
+Aminio acid transport and metabolism,CPLX0-248,cysteine desulfurase
+Aminio acid transport and metabolism,CPLX0-3001,peptidase D
+Aminio acid transport and metabolism,CPLX0-3041,peptidase T
+Aminio acid transport and metabolism,CPLX0-3061,aminopeptidase A/I and DNA-binding transcriptional repressor
+Aminio acid transport and metabolism,CPLX0-3081,Xaa-Pro aminopeptidase
+Aminio acid transport and metabolism,CPLX0-3161,succinyl-diaminopimelate desuccinylase
+Aminio acid transport and metabolism,CPLX0-3181,tetrahydrodipicolinate succinylase
+Aminio acid transport and metabolism,CPLX0-3943,γ-glutamyl-γ-aminobutyrate hydrolase
+Aminio acid transport and metabolism,CPLX0-3970,murein tripeptide ABC transporter
+Aminio acid transport and metabolism,CPLX0-7462,shikimate dehydrogenase
+Aminio acid transport and metabolism,CPLX0-7535,arginine:agmatine antiporter
+Aminio acid transport and metabolism,CPLX0-7614,ATP phosphoribosyltransferase
+Aminio acid transport and metabolism,CPLX0-7622,L-serine deaminase III
+Aminio acid transport and metabolism,CPLX0-7630,multifunctional acyl-CoA thioesterase I and protease I and lysophospholipase L1
+Aminio acid transport and metabolism,CPLX0-7643,ketol-acid reductoisomerase (NADP+)
+Aminio acid transport and metabolism,CPLX0-7684,L-valine exporter
+Aminio acid transport and metabolism,CPLX0-7694,glutaminase 1
+Aminio acid transport and metabolism,CPLX0-7695,glutaminase 2
+Aminio acid transport and metabolism,CPLX0-7709,glutamate-putrescine ligase
+Aminio acid transport and metabolism,CPLX0-7788,NAD-dependent dihydropyrimidine dehydrogenase
+Aminio acid transport and metabolism,CPLX0-7801,"predicted structural protein, ethanolamine utilization microcompartment"
+Aminio acid transport and metabolism,CPLX0-7838,cysteine sulfinate desulfinase
+Aminio acid transport and metabolism,CPLX0-7878,oxalyl-CoA decarboxylase
+Aminio acid transport and metabolism,CPLX0-7887,glutamate-pyruvate aminotransferase AlaC
+Aminio acid transport and metabolism,CPLX0-7888,glutamate-pyruvate aminotransferase AlaA
+Aminio acid transport and metabolism,CPLX0-7940,CP4-6 prophage; putative 2-dehydro-3-deoxygluconate aldolase
+Aminio acid transport and metabolism,CPLX0-7945,zinc-binding phosphatase YcdX
+Aminio acid transport and metabolism,CPLX0-7947,N-succinylarginine dihydrolase
+Aminio acid transport and metabolism,CPLX0-7957,"selenide, water dikinase"
+Aminio acid transport and metabolism,CPLX0-7962,L-amino acid N-acyltransferase
+Aminio acid transport and metabolism,CPLX0-7997,diaminopimelate epimerase
+Aminio acid transport and metabolism,CPLX0-8092,negative regulator of MalT activity/cystathionine β-lyase
+Aminio acid transport and metabolism,CPLX0-8120,putative ABC transporter ArtPQMI
+Aminio acid transport and metabolism,CPLX0-8122,aminopeptidase B
+Aminio acid transport and metabolism,CPLX0-8152,cystine ABC transporter
+Aminio acid transport and metabolism,CPLX0-8156,Xaa-Pro dipeptidase
+Aminio acid transport and metabolism,CPLX0-8159,putrescine aminotransferase
+Aminio acid transport and metabolism,CPLX0-8184,nonspecific DNA-binding protein YbiB
+Aminio acid transport and metabolism,CPLX0-8186,galactitol-1-phosphate 5-dehydrogenase
+Aminio acid transport and metabolism,CPLX0-8249,5-oxoprolinase
+Aminio acid transport and metabolism,CPLX0-8299,ribose-phosphate diphosphokinase
+Aminio acid transport and metabolism,CYSSYNMULTI-CPLX,cysteine synthase complex
+Aminio acid transport and metabolism,CYSTATHIONINE-BETA-LYASE-CPLX,cystathionine β-lyase
+Aminio acid transport and metabolism,DALADEHYDROG-CPLX,D-amino acid dehydrogenase
+Aminio acid transport and metabolism,DCYSDESULF-CPLX,"D-cysteine desulfhydrase, PLP-dependent"
+Aminio acid transport and metabolism,DIAMINOPIMDECARB-CPLX,diaminopimelate decarboxylase
+Aminio acid transport and metabolism,DIHYDRODIPICSYN-CPLX,4-hydroxy-tetrahydrodipicolinate synthase
+Aminio acid transport and metabolism,DIHYDROPICRED-CPLX,4-hydroxy-tetrahydrodipicolinate reductase
+Aminio acid transport and metabolism,DIHYDROXYACIDDEHYDRAT-CPLX,dihydroxy-acid dehydratase
+Aminio acid transport and metabolism,ETHAMLY-CPLX,ethanolamine ammonia-lyase
+Aminio acid transport and metabolism,GABATRANSAM-CPLX,4-aminobutyrate aminotransferase GabT
+Aminio acid transport and metabolism,GCVMULTI-CPLX,glycine cleavage system
+Aminio acid transport and metabolism,GCVP-CPLX,glycine decarboxylase
+Aminio acid transport and metabolism,GDHA-CPLX,glutamate dehydrogenase
+Aminio acid transport and metabolism,GLUTAMATESYN-CPLX,glutamate synthase
+Aminio acid transport and metabolism,GLUTAMATESYN-DIMER,glutamate synthase
+Aminio acid transport and metabolism,GLUTAMIDOTRANS-CPLX,imidazole glycerol phosphate synthase
+Aminio acid transport and metabolism,GLUTAMINESYN-OLIGOMER,glutamine synthetase
+Aminio acid transport and metabolism,GLUTDECARBOXA-CPLX,glutamate decarboxylase A
+Aminio acid transport and metabolism,GLUTDECARBOXB-CPLX,glutamate decarboxylase B
+Aminio acid transport and metabolism,GLUTKIN-CPLX,glutamate 5-kinase
+Aminio acid transport and metabolism,GLUTSEMIALDEHYDROG-CPLX,glutamate-5-semialdehyde dehydrogenase
+Aminio acid transport and metabolism,GLYOHMETRANS-CPLX,serine hydroxymethyltransferase
+Aminio acid transport and metabolism,GSP-CPLX,fused glutathionylspermidine amidase / glutathionylspermidine synthetase
+Aminio acid transport and metabolism,HISTDEHYD-CPLX,histidinal dehydrogenase
+Aminio acid transport and metabolism,HISTPHOSTRANS-CPLX,histidinol-phosphate aminotransferase
+Aminio acid transport and metabolism,HOMOSERKIN-CPLX,homoserine kinase
+Aminio acid transport and metabolism,HOMSUCTRAN-CPLX,homoserine O-succinyltransferase
+Aminio acid transport and metabolism,IMIDHISTID-CPLX,imidazoleglycerol-phosphate dehydratase
+Aminio acid transport and metabolism,LDC2-CPLX,lysine decarboxylase 2
+Aminio acid transport and metabolism,LTAA-CPLX,low-specificity L-threonine aldolase
+Aminio acid transport and metabolism,METHYLENETHFREDUCT-CPLX,"5,10-methylenetetrahydrofolate reductase"
+Aminio acid transport and metabolism,METNIQ-METHIONINE-ABC-CPLX,L-methionine/D-methionine ABC transporter
+Aminio acid transport and metabolism,N-ACETYLTRANSFER-CPLX,N-acetylglutamate synthase
+Aminio acid transport and metabolism,O-SUCCHOMOSERLYASE-CPLX,O-succinylhomoserine(thiol)-lyase
+Aminio acid transport and metabolism,ORNCARBAMTRANSFERF-CPLX,ornithine carbamoyltransferase
+Aminio acid transport and metabolism,ORNCARBAMTRANSFERI-CPLX,ornithine carbamoyltransferase
+Aminio acid transport and metabolism,ORNDECARBOX-BIO-CPLX,"ornithine decarboxylase, biosynthetic"
+Aminio acid transport and metabolism,PABASYN-CPLX,4-amino-4-deoxychorismate synthase
+Aminio acid transport and metabolism,PAPSSULFOTRANS-CPLX,phosphoadenosine phosphosulfate reductase
+Aminio acid transport and metabolism,PSERTRANSAM-CPLX,phosphoserine/phosphohydroxythreonine aminotransferase
+Aminio acid transport and metabolism,PUTA-CPLX,fused DNA-binding transcriptional repressor / proline dehydrogenase / 1-pyrroline-5-carboxylate dehydrogenase PutA
+Aminio acid transport and metabolism,PYRROLINECARBREDUCT-CPLX,pyrroline-5-carboxylate reductase
+Aminio acid transport and metabolism,PYRUVOXID-CPLX,pyruvate oxidase
+Aminio acid transport and metabolism,SPERMIDINESYN-CPLX,spermidine synthase
+Aminio acid transport and metabolism,SUCCORNTRANSAM-CPLX,succinylornithine transaminase
+Aminio acid transport and metabolism,SULFATE-ADENYLYLTRANS-CPLX,sulfate adenylyltransferase
+Aminio acid transport and metabolism,THREDEHYDSYN-CPLX,threonine deaminase
+Aminio acid transport and metabolism,THREODEHYD-CPLX,threonine dehydrogenase
+Aminio acid transport and metabolism,TRYPSYN,tryptophan synthase
+Aminio acid transport and metabolism,TRYPTOPHAN-CPLX,tryptophanase
+Aminio acid transport and metabolism,TYRB-DIMER,tyrosine aminotransferase
+Nucleotide transport and metabolism,ADENPRIBOSYLTRAN-CPLX,adenine phosphoribosyltransferase
+Nucleotide transport and metabolism,ADENYLOSUCCINATE-SYN-DIMER,adenylosuccinate synthetase
+Nucleotide transport and metabolism,AIRS-CPLX,phosphoribosylformylglycinamide cyclo-ligase
+Nucleotide transport and metabolism,AMP-NUCLEOSID-CPLX,AMP nucleosidase
+Nucleotide transport and metabolism,ASPCARBCAT-TRIMER,aspartate carbamoyltransferase catalytic subunit
+Nucleotide transport and metabolism,ASPCARBREG-DIMER,"aspartate carbamoyltransferase, regulatory subunit"
+Nucleotide transport and metabolism,ASPCARBTRANS-CPLX,aspartate carbamoyltransferase
+Nucleotide transport and metabolism,B1-CPLX,"ribonucleoside-diphosphate reductase 1, α subunit dimer"
+Nucleotide transport and metabolism,CPLX-64,allantoinase
+Nucleotide transport and metabolism,CPLX0-1541,5'-methylthioadenosine/S-adenosylhomocysteine nucleosidase
+Nucleotide transport and metabolism,CPLX0-1683,adenine deaminase
+Nucleotide transport and metabolism,CPLX0-3021,isoaspartyl dipeptidase
+Nucleotide transport and metabolism,CPLX0-3948,XTPase
+Nucleotide transport and metabolism,CPLX0-3961,hydroxyisourate hydrolase / transthyretin-related protein
+Nucleotide transport and metabolism,CPLX0-682,NAD kinase
+Nucleotide transport and metabolism,CPLX0-7685,hypoxanthine phosphoribosyltransferase
+Nucleotide transport and metabolism,CPLX0-7788,NAD-dependent dihydropyrimidine dehydrogenase
+Nucleotide transport and metabolism,CPLX0-7826,dITP/XTP pyrophosphatase
+Nucleotide transport and metabolism,CPLX0-7959,adenylosuccinate lyase
+Nucleotide transport and metabolism,CPLX0-7974,RNA decapping hydrolase
+Nucleotide transport and metabolism,CPLX0-8233,pseudouridine-5'-phosphate glycosidase
+Nucleotide transport and metabolism,CPLX0-8247,uracil:H+ symporter UraA
+Nucleotide transport and metabolism,CPLX0-8260,dTMP kinase
+Nucleotide transport and metabolism,CPLX0-8261,thymidine kinase
+Nucleotide transport and metabolism,CPLX0-8280,pyrimidine-specific ribonucleoside hydrolase RihA
+Nucleotide transport and metabolism,CTPSYN-CPLX,CTP synthetase
+Nucleotide transport and metabolism,CYTIDEAM-CPLX,cytidine/deoxycytidine deaminase
+Nucleotide transport and metabolism,DCTP-DEAM-CPLX,dCTP deaminase
+Nucleotide transport and metabolism,DEOA-CPLX,thymidine phosphorylase
+Nucleotide transport and metabolism,DEOD-CPLX,purine nucleoside phosphorylase
+Nucleotide transport and metabolism,DGTPTRIPHYDRO-CPLX,dGTP triphosphohydrolase
+Nucleotide transport and metabolism,DIHYDROOROT-CPLX,dihydroorotase
+Nucleotide transport and metabolism,DUTP-PYROP-CPLX,dUTP diphosphatase
+Nucleotide transport and metabolism,FORMYLTHFDEFORMYL-CPLX,formyltetrahydrofolate deformylase
+Nucleotide transport and metabolism,GMP-REDUCT-CPLX,GMP reductase
+Nucleotide transport and metabolism,GMP-SYN-CPLX,GMP synthetase
+Nucleotide transport and metabolism,GPT-CPLX,xanthine-guanine phosphoribosyltransferase
+Nucleotide transport and metabolism,GUANYL-KIN-CPLX,guanylate kinase
+Nucleotide transport and metabolism,IMP-DEHYDROG-CPLX,inosine 5'-monophosphate dehydrogenase
+Nucleotide transport and metabolism,MONOMER0-2863,oxidized ribonucleoside-triphosphate reductase
+Nucleotide transport and metabolism,NRDACTMULTI-CPLX,anaerobic nucleoside-triphosphate reductase activating system
+Nucleotide transport and metabolism,NRDE-CPLX,"ribonucleoside-diphosphate reductase 2, α subunit dimer"
+Nucleotide transport and metabolism,NRDF-CPLX,"ribonucleoside-diphosphate reductase 2, β subunit dimer"
+Nucleotide transport and metabolism,NUCLEOSIDE-DIP-KIN-CPLX,nucleoside diphosphate kinase
+Nucleotide transport and metabolism,OROPRIBTRANS-CPLX,orotate phosphoribosyltransferase
+Nucleotide transport and metabolism,OROTPDECARB-CPLX,orotidine-5'-phosphate decarboxylase
+Nucleotide transport and metabolism,PRPPAMIDOTRANS-CPLX,amidophosphoribosyltransferase
+Nucleotide transport and metabolism,PURE-CPLX,N5-carboxyaminoimidazole ribonucleotide mutase
+Nucleotide transport and metabolism,PURK-CPLX,5-(carboxyamino)imidazole ribonucleotide synthase
+Nucleotide transport and metabolism,RIBONUCLEOSIDE-DIP-REDUCTI-CPLX,ribonucleoside-diphosphate reductase 1
+Nucleotide transport and metabolism,RIBONUCLEOSIDE-DIP-REDUCTII-CPLX,ribonucleoside-diphosphate reductase 2
+Nucleotide transport and metabolism,RIBONUCLEOSIDE-TRIP-REDUCT-CPLX,anaerobic ribonucleoside-triphosphate reductase
+Nucleotide transport and metabolism,SAICARSYN-CPLX,phosphoribosylaminoimidazole-succinocarboxamide synthase
+Nucleotide transport and metabolism,THYMIDYLATESYN-CPLX,thymidylate synthase
+Nucleotide transport and metabolism,UMPKI-CPLX,UMP kinase
+Nucleotide transport and metabolism,URACIL-PRIBOSYLTRANS-CPLX,uracil phosphoribosyltransferase
+Nucleotide transport and metabolism,URPHOS-CPLX,uridine phosphorylase
+Carbohydrate transport and metabolism,1-PFK,1-phosphofructokinase
+Carbohydrate transport and metabolism,6PFK-1-CPX,6-phosphofructokinase 1
+Carbohydrate transport and metabolism,6PFK-2-CPX,6-phosphofructokinase 2
+Carbohydrate transport and metabolism,6PGLUCONDEHYDROG-CPLX,"6-phosphogluconate dehydrogenase, decarboxylating"
+Carbohydrate transport and metabolism,ABC-16-CPLX,maltose ABC transporter
+Carbohydrate transport and metabolism,ABC-18-CPLX,D-galactose / methyl-β-D-galactoside ABC transporter
+Carbohydrate transport and metabolism,ABC-2-CPLX,arabinose ABC transporter
+Carbohydrate transport and metabolism,ABC-21-CPLX,"putative transport complex, ABC superfamily"
+Carbohydrate transport and metabolism,ABC-28-CPLX,ribose ABC transporter
+Carbohydrate transport and metabolism,ABC-33-CPLX,xylose ABC transporter
+Carbohydrate transport and metabolism,ABC-34-CPLX,sn-glycerol 3-phosphate / glycerophosphodiester ABC transporter
+Carbohydrate transport and metabolism,ABC-42-CPLX,D-allose ABC transporter
+Carbohydrate transport and metabolism,ABC-46-CPLX,galactofuranose ABC transporter
+Carbohydrate transport and metabolism,ABC-58-CPLX,Autoinducer-2 ABC transporter
+Carbohydrate transport and metabolism,ABC-60-CPLX,"putative transport complex, ABC superfamily"
+Carbohydrate transport and metabolism,ALPHAGALACTOSID-CPLX,α-galactosidase
+Carbohydrate transport and metabolism,ARABISOM-CPLX,L-arabinose isomerase
+Carbohydrate transport and metabolism,BETAGALACTOSID-CPLX,β-galactosidase
+Carbohydrate transport and metabolism,CPLX-153,β-glucoside specific PTS enzyme II
+Carbohydrate transport and metabolism,CPLX-155,"N,N'-diacetylchitobiose-specific PTS enzyme II"
+Carbohydrate transport and metabolism,CPLX-157,glucose-specific PTS enzyme II
+Carbohydrate transport and metabolism,CPLX-158,fructose-specific PTS enzyme II
+Carbohydrate transport and metabolism,CPLX-160,putative PTS enzyme II FrwCBDPtsA
+Carbohydrate transport and metabolism,CPLX-165,mannose-specific PTS enzyme II
+Carbohydrate transport and metabolism,CPLX-166,mannitol-specific PTS enzyme II
+Carbohydrate transport and metabolism,CPLX-167,N-acetylglucosamine-specific PTS enzyme II
+Carbohydrate transport and metabolism,CPLX-168,trehalose-specific PTS enzyme II
+Carbohydrate transport and metabolism,CPLX-169,sorbitol-specific PTS enzyme II
+Carbohydrate transport and metabolism,CPLX-171,hydroxypyruvate isomerase
+Carbohydrate transport and metabolism,CPLX-8401,5-dehydro-4-deoxy-D-glucuronate isomerase
+Carbohydrate transport and metabolism,CPLX0-1261,transketolase 2
+Carbohydrate transport and metabolism,CPLX0-1262,D-arabinose 5-phosphate isomerase KdsD
+Carbohydrate transport and metabolism,CPLX0-201,fructose-6-phosphate aldolase 1
+Carbohydrate transport and metabolism,CPLX0-2081,dihydroxyacetone kinase
+Carbohydrate transport and metabolism,CPLX0-231,galactitol-specific PTS enzyme II
+Carbohydrate transport and metabolism,CPLX0-2381,degradosome
+Carbohydrate transport and metabolism,CPLX0-240,"tagatose-1,6-bisphosphate aldolase 1"
+Carbohydrate transport and metabolism,CPLX0-241,"tagatose-1,6-bisphosphate aldolase 2"
+Carbohydrate transport and metabolism,CPLX0-303,"fructose-1,6-bisphosphatase 2"
+Carbohydrate transport and metabolism,CPLX0-322,inosine/guanosine kinase
+Carbohydrate transport and metabolism,CPLX0-3221,DnaA initiator-associating factor for replication initiation
+Carbohydrate transport and metabolism,CPLX0-3861,fructoselysine 3-epimerase
+Carbohydrate transport and metabolism,CPLX0-3901,α-D-xyloside xylohydrolase
+Carbohydrate transport and metabolism,CPLX0-3929,D-arabinose 5-phosphate isomerase GutQ
+Carbohydrate transport and metabolism,CPLX0-7,N-acetylmuramic acid-specific PTS enzyme II
+Carbohydrate transport and metabolism,CPLX0-7466,xylulokinase
+Carbohydrate transport and metabolism,CPLX0-7610,N-acetyl-D-galactosamine specific PTS (cryptic)
+Carbohydrate transport and metabolism,CPLX0-7615,α-dehydro-β-deoxy-D-glucarate aldolase
+Carbohydrate transport and metabolism,CPLX0-7631,L-fucose isomerase
+Carbohydrate transport and metabolism,CPLX0-7642,osmolyte:H+ symporter ProP
+Carbohydrate transport and metabolism,CPLX0-7645,L-fucose mutarotase
+Carbohydrate transport and metabolism,CPLX0-7646,D-ribose pyranase
+Carbohydrate transport and metabolism,CPLX0-7647,ribokinase
+Carbohydrate transport and metabolism,CPLX0-7652,L-rhamnose isomerase
+Carbohydrate transport and metabolism,CPLX0-7653,water channel AqpZ
+Carbohydrate transport and metabolism,CPLX0-7654,glycerol facilitator
+Carbohydrate transport and metabolism,CPLX0-7655,maltose outer membrane channel / phage lambda receptor protein
+Carbohydrate transport and metabolism,CPLX0-7660,D-sedoheptulose 7-phosphate isomerase
+Carbohydrate transport and metabolism,CPLX0-7662,β-D-glucuronidase
+Carbohydrate transport and metabolism,CPLX0-7683,sulfoquinovose isomerase
+Carbohydrate transport and metabolism,CPLX0-7723,2-keto-3-deoxy-L-rhamnonate aldolase
+Carbohydrate transport and metabolism,CPLX0-7744,3-keto-L-gulonate-6-phosphate decarboxylase UlaD
+Carbohydrate transport and metabolism,CPLX0-7820,"3-hydroxy-2,4-pentadione 5-phosphate thiolase"
+Carbohydrate transport and metabolism,CPLX0-7848,L-ascorbate-6-phosphate lactonase
+Carbohydrate transport and metabolism,CPLX0-7877,glucose-6-phosphate isomerase
+Carbohydrate transport and metabolism,CPLX0-7921,mannose-specific PTS enzyme IIAB component
+Carbohydrate transport and metabolism,CPLX0-7979,monoacetylchitobiose-6-phosphate hydrolase
+Carbohydrate transport and metabolism,CPLX0-8015,ethanol dehydrogenase / alcohol dehydrogenase
+Carbohydrate transport and metabolism,CPLX0-8255,Mlc-PtsG
+Carbohydrate transport and metabolism,EIISGA,L-ascorbate specific PTS enzyme II
+Carbohydrate transport and metabolism,ENOLASE-CPLX,enolase
+Carbohydrate transport and metabolism,ERYTH4PDEHYDROG-CPLX,D-erythrose-4-phosphate dehydrogenase
+Carbohydrate transport and metabolism,F16B-CPLX,"fructose-1,6-bisphosphatase 1"
+Carbohydrate transport and metabolism,FRUCBISALD-CLASSI,fructose-bisphosphate aldolase class I
+Carbohydrate transport and metabolism,FRUCBISALD-CLASSII,fructose-bisphosphate aldolase class II
+Carbohydrate transport and metabolism,GALACTURIDYLYLTRANS-CPLX,galactose-1-phosphate uridylyltransferase
+Carbohydrate transport and metabolism,GAPDH-A-CPLX,glyceraldehyde-3-phosphate dehydrogenase
+Carbohydrate transport and metabolism,GLUC1PADENYLTRANS-CPLX,glucose-1-phosphate adenylyltransferase
+Carbohydrate transport and metabolism,GLUCONOKINII-CPLX,"D-gluconate kinase, thermostable"
+Carbohydrate transport and metabolism,GLUCOSAMINE-6-P-DEAMIN-CPLX,glucosamine-6-phosphate deaminase
+Carbohydrate transport and metabolism,GLYCOPHOSPHORYL-CPLX,glycogen phosphorylase
+Carbohydrate transport and metabolism,KDPGALDOL-4OH2OXOGLUTARALDOL-CPLX,KHG/KDPG aldolase
+Carbohydrate transport and metabolism,MALDEXPHOSPHORYL-CPLX,maltodextrin phosphorylase
+Carbohydrate transport and metabolism,METHGLYSYN-CPLX,methylglyoxal synthase
+Carbohydrate transport and metabolism,NAG6PDEACET-CPLX,N-acetylglucosamine-6-phosphate deacetylase
+Carbohydrate transport and metabolism,PEPSYNTH-CPLX,phosphoenolpyruvate synthetase
+Carbohydrate transport and metabolism,PHOSGLYCMUTASE,"2,3-bisphosphoglycerate-dependent phosphoglycerate mutase"
+Carbohydrate transport and metabolism,PKI-COMPLEX,pyruvate kinase I
+Carbohydrate transport and metabolism,PKII-CPLX,pyruvate kinase II
+Carbohydrate transport and metabolism,RHAMNULPALDOL-CPLX,rhamnulose-1-phosphate aldolase
+Carbohydrate transport and metabolism,RIB5PISOMA-CPLX,ribose-5-phosphate isomerase A
+Carbohydrate transport and metabolism,RIB5PISOMB-CPLX,allose-6-phosphate isomerase / ribose-5-phosphate isomerase B
+Carbohydrate transport and metabolism,RIBULOKIN-CPLX,ribulokinase
+Carbohydrate transport and metabolism,TPI,triose-phosphate isomerase
+Carbohydrate transport and metabolism,TRANSALDOLB-CPLX,transaldolase B
+Carbohydrate transport and metabolism,TRANSKETOI-CPLX,transketolase 1
+Carbohydrate transport and metabolism,XYLISOM-CPLX,xylose isomerase
+Coenzyme transport and metabolism,3-METHYL-2-OXOBUT-OHCH3XFER-CPLX,3-methyl-2-oxobutanoate hydroxymethyltransferase
+Coenzyme transport and metabolism,7KAPSYN-CPLX,8-amino-7-oxononanoate synthase
+Coenzyme transport and metabolism,ABC-32-CPLX,thiamin(e) ABC transporter
+Coenzyme transport and metabolism,ABC-5-CPLX,vitamin B12 ABC transporter
+Coenzyme transport and metabolism,AKBLIG-CPLX,2-amino-3-ketobutyrate CoA ligase
+Coenzyme transport and metabolism,BIOTIN-SYN-CPLX,biotin synthase
+Coenzyme transport and metabolism,COADTRI-CPLX,pantetheine-phosphate adenylyltransferase
+Coenzyme transport and metabolism,COBU-CPLX,cobinamide-P guanylyltransferase
+Coenzyme transport and metabolism,CPLX-8331,cyclic pyranopterin monophosphate synthase
+Coenzyme transport and metabolism,CPLX0-1863,radiation resistance protein YbgI
+Coenzyme transport and metabolism,CPLX0-1924,vitamin B12 outer membrane transport complex
+Coenzyme transport and metabolism,CPLX0-2502,molybdopterin synthase
+Coenzyme transport and metabolism,CPLX0-2521,protein MoaB
+Coenzyme transport and metabolism,CPLX0-2901,aspartate 1-decarboxylase
+Coenzyme transport and metabolism,CPLX0-301,3-octaprenyl-4-hydroxybenzoate decarboxylase
+Coenzyme transport and metabolism,CPLX0-321,pyridoxine 5'-phosphate synthase
+Coenzyme transport and metabolism,CPLX0-341,fused 4'-phosphopantothenoylcysteine decarboxylase and phosphopantothenoylcysteine synthetase
+Coenzyme transport and metabolism,CPLX0-3741,glutamyl-tRNA reductase
+Coenzyme transport and metabolism,CPLX0-3936,dihydroneopterin aldolase
+Coenzyme transport and metabolism,CPLX0-3949,thiazole synthase
+Coenzyme transport and metabolism,CPLX0-3952,riboflavin synthase
+Coenzyme transport and metabolism,CPLX0-7426,all-trans-octaprenyl-diphosphate synthase
+Coenzyme transport and metabolism,CPLX0-743,1-deoxy-D-xylulose-5-phosphate synthase
+Coenzyme transport and metabolism,CPLX0-7525,2-succinyl-5-enolpyruvyl-6-hydroxy-3-cyclohexene-1-carboxylate synthase
+Coenzyme transport and metabolism,CPLX0-7659,fused diaminohydroxyphosphoribosylaminopyrimidine deaminase / 5-amino-6-(5-phosphoribosylamino)uracil reductase
+Coenzyme transport and metabolism,CPLX0-7719,quinolinate synthase
+Coenzyme transport and metabolism,CPLX0-7808,coproporphyrinogen III oxidase
+Coenzyme transport and metabolism,CPLX0-7811,protoporphyrinogen oxidase
+Coenzyme transport and metabolism,CPLX0-782,lipoyl synthase
+Coenzyme transport and metabolism,CPLX0-7847,4-hydroxythreonine-4-phosphate dehydrogenase
+Coenzyme transport and metabolism,CPLX0-7882,"1,4-dihydroxy-2-naphthoyl-CoA synthase"
+Coenzyme transport and metabolism,CPLX0-7975,DNA-binding transcriptional repressor/NMN adenylyltransferase NadR
+Coenzyme transport and metabolism,CPLX0-8031,pyridoxal kinase 2
+Coenzyme transport and metabolism,CPLX0-8044,molybdopterin-guanine dinucleotide biosynthesis adaptor protein
+Coenzyme transport and metabolism,CPLX0-8045,molybdopterin molybdotransferase
+Coenzyme transport and metabolism,CPLX0-8123,"6-carboxy-5,6,7,8-tetrahydropterin synthase"
+Coenzyme transport and metabolism,CPLX0-8163,molybdopterin adenylyltransferase
+Coenzyme transport and metabolism,CPLX0-8164,molybdopterin-synthase adenylyltransferase
+Coenzyme transport and metabolism,CPLX0-8185,PF10636 family protein YdiE
+Coenzyme transport and metabolism,CPLX0-8211,hydroxyethylthiazole kinase
+Coenzyme transport and metabolism,CPLX0-8291,heme chaperone HemW
+Coenzyme transport and metabolism,CPLX0-8301,Ubi complex
+Coenzyme transport and metabolism,CPLXECOLI-7943,NMN amidohydrolase
+Coenzyme transport and metabolism,DAPASYN-CPLX,adenosylmethionine-8-amino-7-oxononanoate aminotransferase
+Coenzyme transport and metabolism,DETHIOBIOTIN-SYN-CPLX,dethiobiotin synthetase
+Coenzyme transport and metabolism,DIOHBUTANONEPSYN-CPLX,"3,4-dihydroxy-2-butanone-4-phosphate synthase"
+Coenzyme transport and metabolism,DMBPPRIBOSYLTRANS-CPLX,nicotinate-nucleotide-dimethylbenzimidazole phosphoribosyltransferase
+Coenzyme transport and metabolism,FOLD-CPLX,"bifunctional 5,10-methylene-tetrahydrofolate dehydrogenase/ 5,10-methylene-tetrahydrofolate cyclohydrolase"
+Coenzyme transport and metabolism,FOLE-CPLX,GTP cyclohydrolase 1
+Coenzyme transport and metabolism,FOLXTET-CPLX,dihydroneopterin triphosphate 2'-epimerase
+Coenzyme transport and metabolism,GSAAMINOTRANS-CPLX,glutamate-1-semialdehyde aminotransferase
+Coenzyme transport and metabolism,GTP-CYCLOHYDRO-II-CPLX,GTP cyclohydrolase 2
+Coenzyme transport and metabolism,H2PTEROATESYNTH-CPLX,dihydropteroate synthase
+Coenzyme transport and metabolism,HMP-P-KIN-CPLX,hydroxymethylpyrimidine kinase
+Coenzyme transport and metabolism,NAD-SYNTH-CPLX,"NAD synthetase, NH3-dependent"
+Coenzyme transport and metabolism,PANTOATE-BETA-ALANINE-LIG-CPLX,pantothenate synthetase
+Coenzyme transport and metabolism,PANTOTHENATE-KIN-CPLX,pantothenate kinase
+Coenzyme transport and metabolism,PDXH-CPLX,pyridoxine 5'-phosphate oxidase
+Coenzyme transport and metabolism,PDXK-CPLX,pyridoxal kinase I / hydroxymethylpyrimidine kinase
+Coenzyme transport and metabolism,PORPHOBILSYNTH-CPLX,porphobilinogen synthase
+Coenzyme transport and metabolism,QUINOPRIBOTRANS-CPLX,quinolinate phosphoribosyltransferase (decarboxylating)
+Coenzyme transport and metabolism,S-ADENMETSYN-CPLX,methionine adenosyltransferase
+Coenzyme transport and metabolism,SIROHEMESYN-CPLX,siroheme synthase
+Lipid transport and metabolism,ACETYL-COA-CARBOXYLMULTI-CPLX,acetyl-CoA carboxylase complex
+Lipid transport and metabolism,ACETYL-COA-CARBOXYLTRANSFER-CPLX,acetyl-CoA carboxyltransferase
+Lipid transport and metabolism,BIOTIN-CARBOXYL-CPLX,biotin carboxylase
+Lipid transport and metabolism,CARNDEHYDRA-CPLX,γ-butyrobetainyl-CoA:carnitine CoA transferase
+Lipid transport and metabolism,CFA-CPLX,cyclopropane fatty acyl phospholipid synthase
+Lipid transport and metabolism,CPLX0-1142,formyl-CoA transferase
+Lipid transport and metabolism,CPLX0-1668,anaerobic fatty acid β-oxidation complex
+Lipid transport and metabolism,CPLX0-234,2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase
+Lipid transport and metabolism,CPLX0-252,β-ketoacyl-[acyl carrier protein] synthase III
+Lipid transport and metabolism,CPLX0-254,methylmalonyl-CoA decarboxylase
+Lipid transport and metabolism,CPLX0-3841,4-(cytidine 5'-diphospho)-2-C-methyl-D-erythritol kinase
+Lipid transport and metabolism,CPLX0-721,"2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase"
+Lipid transport and metabolism,CPLX0-7564,1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase
+Lipid transport and metabolism,CPLX0-7616,tartronate semialdehyde reductase 2
+Lipid transport and metabolism,CPLX0-7691,isovaleryl-CoA dehydrogenase and DNA-binding transcriptional repressor
+Lipid transport and metabolism,CPLX0-8005,3-oxoacyl-[acyl-carrier-protein] reductase FabG
+Lipid transport and metabolism,CPLX0-8006,enoyl-[acyl-carrier-protein] reductase
+Lipid transport and metabolism,CPLX0-8032,acetyl-CoA:oxalate CoA-transferase
+Lipid transport and metabolism,CPLX0-8033,acetylesterase
+Lipid transport and metabolism,CPLX0-8097,peptide antibiotic transporter
+Lipid transport and metabolism,DIACYLGLYKIN-CPLX,diacylglycerol kinase
+Lipid transport and metabolism,DXPREDISOM-CPLX,1-deoxy-D-xylulose 5-phosphate reductoisomerase
+Lipid transport and metabolism,FABA-CPLX,β-hydroxyacyl-acyl carrier protein dehydratase/isomerase
+Lipid transport and metabolism,FABZ-CPLX,3-hydroxy-acyl-[acyl-carrier-protein] dehydratase
+Lipid transport and metabolism,FADA-CPLX,"fatty acid oxidation complex, β component"
+Lipid transport and metabolism,FADB-CPLX,"fatty acid oxidation complex, α component"
+Lipid transport and metabolism,FAO-CPLX,aerobic fatty acid oxidation complex
+Lipid transport and metabolism,GLYCPDIESTER-PERI-CPLX,"glycerophosphoryl diester phosphodiesterase, periplasmic"
+Lipid transport and metabolism,HCAMULTI-CPLX,putative 3-phenylpropionate/cinnamate dioxygenase
+Lipid transport and metabolism,HOLO-ACP-SYNTH-CPLX,holo-[acyl-carrier-protein] synthase
+Lipid transport and metabolism,THIOESTERII-CPLX,acyl-CoA thioesterase II
+Lipid transport and metabolism,UPPSYN-CPLX,"ditrans,polycis-undecaprenyl-diphosphate synthase [(2E,6E)-farnesyl-diphosphate specific]"
+"Translation, ribosomal structure, and biogenesis",ALAS-CPLX,alanine-tRNA ligase/DNA-binding transcriptional repressor
+"Translation, ribosomal structure, and biogenesis",ASNS-CPLX,asparagine-tRNA ligase
+"Translation, ribosomal structure, and biogenesis",ASPS-CPLX,aspartate-tRNA ligase
+"Translation, ribosomal structure, and biogenesis",CPLX0-1101,tRNA-guanine transglycosylase
+"Translation, ribosomal structure, and biogenesis",CPLX0-1121,23S rRNA 2'-O-ribose G2251 methyltransferase
+"Translation, ribosomal structure, and biogenesis",CPLX0-1141,selenocysteine synthase
+"Translation, ribosomal structure, and biogenesis",CPLX0-1382,RNase P
+"Translation, ribosomal structure, and biogenesis",CPLX0-1621,RNase G
+"Translation, ribosomal structure, and biogenesis",CPLX0-1642,ribonuclease E inhibitor protein A
+"Translation, ribosomal structure, and biogenesis",CPLX0-2381,degradosome
+"Translation, ribosomal structure, and biogenesis",CPLX0-3461,ribonuclease E
+"Translation, ribosomal structure, and biogenesis",CPLX0-3501,7-cyano-7-deazaguanine reductase
+"Translation, ribosomal structure, and biogenesis",CPLX0-3521,polynucleotide phosphorylase
+"Translation, ribosomal structure, and biogenesis",CPLX0-3581,D-aminoacyl-tRNA deacylase
+"Translation, ribosomal structure, and biogenesis",CPLX0-3601,ribonuclease BN
+"Translation, ribosomal structure, and biogenesis",CPLX0-3950,tRNA m1G37 methyltransferase
+"Translation, ribosomal structure, and biogenesis",CPLX0-3953,30S ribosomal subunit
+"Translation, ribosomal structure, and biogenesis",CPLX0-3955,50S ribosomal subunit protein L7/L12 dimer
+"Translation, ribosomal structure, and biogenesis",CPLX0-3956,50S ribosomal protein complex L8
+"Translation, ribosomal structure, and biogenesis",CPLX0-3962,50S ribosomal subunit
+"Translation, ribosomal structure, and biogenesis",CPLX0-3964,ribosome
+"Translation, ribosomal structure, and biogenesis",CPLX0-7420,tRNA Cm32/Um32 methyltransferase
+"Translation, ribosomal structure, and biogenesis",CPLX0-7421,tRNA (cytidine/uridine-2'-O)-ribose methyltransferase
+"Translation, ribosomal structure, and biogenesis",CPLX0-7422,predicted rRNA methyltransferase
+"Translation, ribosomal structure, and biogenesis",CPLX0-7423,23S rRNA m3Ψ1915 methyltransferase
+"Translation, ribosomal structure, and biogenesis",CPLX0-7597,5-carboxymethylaminomethyluridine-tRNA synthase subunit MnmG
+"Translation, ribosomal structure, and biogenesis",CPLX0-7608,5-carboxymethylaminomethyluridine-tRNA synthase GTPase subunit
+"Translation, ribosomal structure, and biogenesis",CPLX0-7609,5-carboxymethylaminomethyluridine-tRNA synthase
+"Translation, ribosomal structure, and biogenesis",CPLX0-7718,UDP-4-amino-4-deoxy-L-arabinose formyltransferase/UDP-glucuronate dehydrogenase
+"Translation, ribosomal structure, and biogenesis",CPLX0-7726,23S rRNA m5C1962 methyltransferase
+"Translation, ribosomal structure, and biogenesis",CPLX0-7727,16S rRNA m3U1498 methyltransferase
+"Translation, ribosomal structure, and biogenesis",CPLX0-7728,tRNA pseudouridine38-40 synthase
+"Translation, ribosomal structure, and biogenesis",CPLX0-7758,"2'-O-acetyl-ADP-ribose deacetylase, regulator of RNase III activity"
+"Translation, ribosomal structure, and biogenesis",CPLX0-7787,DinJ-YafQ antitoxin/toxin complex / DNA-binding transcriptional repressor
+"Translation, ribosomal structure, and biogenesis",CPLX0-7853,Der GTPase-activating protein YihI
+"Translation, ribosomal structure, and biogenesis",CPLX0-7879,NusB-S10 complex
+"Translation, ribosomal structure, and biogenesis",CPLX0-7889,EF-P-lysine lysyltransferase
+"Translation, ribosomal structure, and biogenesis",CPLX0-7946,ribosomal protein S6 modification protein
+"Translation, ribosomal structure, and biogenesis",CPLX0-7977,16S rRNA m4C1402 methyltransferase
+"Translation, ribosomal structure, and biogenesis",CPLX0-8053,SelB-L-selenocysteinyl-tRNAsec
+"Translation, ribosomal structure, and biogenesis",CPLX0-8096,ribonuclease E inhibitor protein B
+"Translation, ribosomal structure, and biogenesis",CPLX0-8112,ribosomal protein-arginine oxygenase
+"Translation, ribosomal structure, and biogenesis",CPLX0-8124,tRNA cytosine32 2-sulfurtransferase TtcA
+"Translation, ribosomal structure, and biogenesis",CPLX0-8176,tRNA threonylcarbamoyladenosine dehydratase
+"Translation, ribosomal structure, and biogenesis",CPLX0-8181,"N6-L-threonylcarbamoyladenine synthase, TsaB-TsaD dimer subunit"
+"Translation, ribosomal structure, and biogenesis",CPLX0-8182,N6-L-threonylcarbamoyladenine synthase
+"Translation, ribosomal structure, and biogenesis",CPLX0-8208,S6:S18 ribosomal subunit complex
+"Translation, ribosomal structure, and biogenesis",CPLX0-8228,HigB translation-dependent mRNA interferase and toxin of the HigB-HigA toxin-antitoxin system
+"Translation, ribosomal structure, and biogenesis",CPLX0-8230,HigB-HigA toxin/antitoxin complex and DNA-binding transcriptional repressor
+"Translation, ribosomal structure, and biogenesis",CPLX0-8231,16S rRNA 2'-O-ribose C1402 methyltransferase
+"Translation, ribosomal structure, and biogenesis",CPLX0-8240,redox-responsive ATPase YchF
+"Translation, ribosomal structure, and biogenesis",CPLX0-8269,putative tRNA-binding protein YgjH
+"Translation, ribosomal structure, and biogenesis",CPLX0-901,tRNA adenosine34 deaminase
+"Translation, ribosomal structure, and biogenesis",GLUTATHIONE-SYN-CPLX,glutathione synthetase
+"Translation, ribosomal structure, and biogenesis",GLYS-CPLX,glycine-tRNA ligase
+"Translation, ribosomal structure, and biogenesis",HISS-CPLX,histidine-tRNA ligase
+"Translation, ribosomal structure, and biogenesis",LYSS-CPLX,"lysine-tRNA ligase, constitutive"
+"Translation, ribosomal structure, and biogenesis",LYSU-CPLX,lysine-tRNA ligase
+"Translation, ribosomal structure, and biogenesis",METG-CPLX,methionine-tRNA ligase
+"Translation, ribosomal structure, and biogenesis",PHES-CPLX,phenylalanine-tRNA ligase
+"Translation, ribosomal structure, and biogenesis",PROS-CPLX,proline-tRNA ligase
+"Translation, ribosomal structure, and biogenesis",SERS-CPLX,serine-tRNA ligase
+"Translation, ribosomal structure, and biogenesis",SPERMACTRAN-CPLX,spermidine N-acetyltransferase
+"Translation, ribosomal structure, and biogenesis",THRS-CPLX,threonine-tRNA ligase
+"Translation, ribosomal structure, and biogenesis",TRPS-CPLX,tryptophan-tRNA ligase
+"Translation, ribosomal structure, and biogenesis",TYRS-CPLX,tyrosine-tRNA ligase
+Transcription,APORNAP-CPLX,"RNA polymerase, core enzyme"
+Transcription,CPLX0-221,RNA polymerase sigma 19
+Transcription,CPLX0-222,RNA polymerase sigma 28
+Transcription,CPLX0-2441,transcription termination factor Rho
+Transcription,CPLX0-2541,DNA-binding transcriptional dual regulator ModE
+Transcription,CPLX0-2821,TorR-TorI
+Transcription,CPLX0-3281,RNase III
+Transcription,CPLX0-3301,DNA replication inhibitor
+Transcription,CPLX0-7418,DNA-binding transcriptional repressor MprA
+Transcription,CPLX0-7425,HipAB toxin/antitoxin complex / DNA-binding transcriptional repressor
+Transcription,CPLX0-7624,YhaV-PrlF toxin-antitoxin complex
+Transcription,CPLX0-7669,DNA-binding transcriptional dual regulator ArgP
+Transcription,CPLX0-7672,MntR-Mn2+ DNA-binding transcriptional dual regulator
+Transcription,CPLX0-7678,ZntR-Zn2+ DNA-binding transcriptional activator
+Transcription,CPLX0-7705,DNA-binding transcriptional dual regulator Fis
+Transcription,CPLX0-7707,NikR-Ni DNA-binding transcriptional repressor
+Transcription,CPLX0-7708,DNA-binding transcriptional dual regulator CueR-Cu+
+Transcription,CPLX0-7710,DNA-binding transcriptional repressor MarR
+Transcription,CPLX0-7713,DNA-binding transcriptional dual regulator DsdC
+Transcription,CPLX0-7721,DcuR-Phosphorylated DNA-binding transcriptional activator
+Transcription,CPLX0-7731,DNA-binding transcriptional repressor PaaX
+Transcription,CPLX0-7733,DNA-binding transcriptional dual regulator AsnC
+Transcription,CPLX0-7734,DNA-binding transcriptional repressor ArsR
+Transcription,CPLX0-7740,DNA-binding transcriptional repressor CytR
+Transcription,CPLX0-7745,DNA-binding transcriptional dual regulator MurR
+Transcription,CPLX0-7748,CpxR-Pasp DNA-binding transcriptional dual regulator
+Transcription,CPLX0-7754,UhpA-Phosphorylated DNA-binding transcriptional activator
+Transcription,CPLX0-7756,DNA-binding transcriptional repressor NsrR
+Transcription,CPLX0-7757,HipB antitoxin / DNA-binding transcriptional repressor
+Transcription,CPLX0-7759,DNA-binding transcriptional dual regulator MetR
+Transcription,CPLX0-7796,MetJ-S-adenosylmethionine DNA-binding transcriptional repressor
+Transcription,CPLX0-7822,MqsA-MqsR antitoxin/toxin complex
+Transcription,CPLX0-7852,GadE-RcsB DNA-binding transcriptional activator
+Transcription,CPLX0-7854,DNA-binding transcriptional repressor TreR
+Transcription,CPLX0-7879,NusB-S10 complex
+Transcription,CPLX0-7916,RcsB-BglJ DNA-binding transcriptional activator
+Transcription,CPLX0-7922,nucleoid occlusion factor SlmA
+Transcription,CPLX0-7970,HypT-[Met]reduced
+Transcription,CPLX0-8043,DNA-binding transcriptional repressor LsrR
+Transcription,CPLX0-8075,HypT-[Met-oxidized] DNA-binding transcriptional dual regulator
+Transcription,CPLX0-8223,transcription antiterminator and regulator of RNA stability
+Transcription,CPLX0-8234,DNA-binding transcriptional repressor FrmR
+Transcription,CPLX0-8255,Mlc-PtsG
+Transcription,CPLX0-8285,OmpR dimer
+Transcription,CPLX0-8312,DNA-binding transcriptional  repressor CRP-Sxy
+Transcription,CPLX0-981,DNA-binding transcriptional dual regulator PspF
+Transcription,MONOMER0-2461,MtlR-HPr
+Transcription,NARX-CPLX,sensory histidine kinase NarX
+Transcription,PC00003,DNA-binding transcriptional dual regulator AraC
+Transcription,PC00005,DNA-binding transcriptional dual regulator ArgR
+Transcription,PC00007,DNA-binding transcriptional repressor TrpR
+Transcription,PC00010,DNA-binding transcriptional repressor LexA
+Transcription,PC00033,DNA-binding transcriptional repressor PurR
+Transcription,PC00040,DNA-binding transcriptional dual regulator CysB
+Transcription,PC00061,DNA-binding transcriptional dual regulator Cra
+Transcription,PC00084,RcsAB DNA-binding transcriptional dual regulator
+Transcription,PC00103,DNA-binding transcriptional repressor MngR
+Transcription,PHOSPHO-NARX,sensory histidine kinase NarX - phosphorylated
+Transcription,PHOSPHO-TORR,TorR-Phosphorylated DNA-binding transcriptional dual regulator
+Transcription,RNAP32-CPLX,RNA polymerase sigma 32
+Transcription,RNAP54-CPLX,RNA polymerase sigma 54
+Transcription,RNAP70-CPLX,RNA polymerase sigma 70
+Transcription,RNAPE-CPLX,RNA polymerase sigma 24
+Transcription,RNAPS-CPLX,RNA polymerase sigma S
+Transcription,TORR-CPLX,DNA-binding transcriptional dual regulator TorR
+"Replication, recombination, and repair",CPLX-3946,exodeoxyribonuclease VII
+"Replication, recombination, and repair",CPLX0-2021,DNA-binding transcriptional dual regulator HU
+"Replication, recombination, and repair",CPLX0-2361,"DNA polymerase III, core enzyme"
+"Replication, recombination, and repair",CPLX0-2381,degradosome
+"Replication, recombination, and repair",CPLX0-2423,dimer of DNA topoisomerase IV subunit A
+"Replication, recombination, and repair",CPLX0-2424,DNA topoisomerase IV
+"Replication, recombination, and repair",CPLX0-2425,DNA gyrase
+"Replication, recombination, and repair",CPLX0-3,primosomal replication protein N
+"Replication, recombination, and repair",CPLX0-3541,ATP-dependent RNA helicase RhlB
+"Replication, recombination, and repair",CPLX0-3602,RNase T
+"Replication, recombination, and repair",CPLX0-3621,replicative DNA helicase
+"Replication, recombination, and repair",CPLX0-3761,β sliding clamp
+"Replication, recombination, and repair",CPLX0-3801,"DNA polymerase III, preinitiation complex"
+"Replication, recombination, and repair",CPLX0-3802,"DNA polymerase III, &tau; subunit dimer"
+"Replication, recombination, and repair",CPLX0-3803,"DNA polymerase III, holoenzyme"
+"Replication, recombination, and repair",CPLX0-3922,primosome
+"Replication, recombination, and repair",CPLX0-3925,DNA polymerase V
+"Replication, recombination, and repair",CPLX0-3931,ATP-dependent DNA helicase Rep
+"Replication, recombination, and repair",CPLX0-3957,ATP dependent structure specific DNA nuclease
+"Replication, recombination, and repair",CPLX0-3959,Xer site-specific recombination system
+"Replication, recombination, and repair",CPLX0-7789,macrodomain Ter protein
+"Replication, recombination, and repair",CPLX0-7910,"DNA polymerase III, ψ-χ subunit"
+"Replication, recombination, and repair",CPLX0-8111,DNA helicase II
+"Replication, recombination, and repair",CPLX0-8165,ssDNA-binding protein
+"Replication, recombination, and repair",CPLX0-8256,HUαα
+"Replication, recombination, and repair",MUTHLS-CPLX,"MutHLS complex, methyl-directed mismatch repair"
+"Replication, recombination, and repair",PC00027,DNA-binding transcriptional dual regulator IHF
+"Replication, recombination, and repair",RECBCD,exodeoxyribonuclease V
+"Replication, recombination, and repair",RECFOR-CPLX,RecFOR complex
+"Replication, recombination, and repair",RUVABC-CPLX,resolvasome
+"Replication, recombination, and repair",UVRABC-CPLX,excision nuclease UvrABC
+Cell wall/membrane/envelope biogenesis,ABC-40-CPLX,"glycine betaine ABC transporter, non-osmoregulatory"
+Cell wall/membrane/envelope biogenesis,ABC-45-CPLX,intermembrane phospholipid transport system
+Cell wall/membrane/envelope biogenesis,ABC-62-CPLX,lipoprotein release complex
+Cell wall/membrane/envelope biogenesis,CPLX-3945,curli secretion and assembly complex
+Cell wall/membrane/envelope biogenesis,CPLX0-1721,copper/silver export system
+Cell wall/membrane/envelope biogenesis,CPLX0-1923,energy transducing Ton complex
+Cell wall/membrane/envelope biogenesis,CPLX0-1924,vitamin B12 outer membrane transport complex
+Cell wall/membrane/envelope biogenesis,CPLX0-1941,ferric enterobactin outer membrane transport complex
+Cell wall/membrane/envelope biogenesis,CPLX0-1942,ferrichrome outer membrane transport complex
+Cell wall/membrane/envelope biogenesis,CPLX0-1943,ferric citrate outer membrane transport complex
+Cell wall/membrane/envelope biogenesis,CPLX0-2121,multidrug efflux pump EmrAB-TolC
+Cell wall/membrane/envelope biogenesis,CPLX0-2141,multidrug efflux pump AcrEF-TolC
+Cell wall/membrane/envelope biogenesis,CPLX0-2161,tripartite efflux pump EmrKY-TolC
+Cell wall/membrane/envelope biogenesis,CPLX0-2201,The Tol-Pal Cell Envelope Complex
+Cell wall/membrane/envelope biogenesis,CPLX0-3201,peptidoglycan DD-endopeptidase/peptidoglycan LD-endopeptidase
+Cell wall/membrane/envelope biogenesis,CPLX0-3661,fused heptose 7-phosphate kinase/heptose 1-phosphate adenyltransferase
+Cell wall/membrane/envelope biogenesis,CPLX0-3681,ADP-L-glycero-D-mannoheptose 6-epimerase
+Cell wall/membrane/envelope biogenesis,CPLX0-3932,multidrug efflux pump AcrAD-TolC
+Cell wall/membrane/envelope biogenesis,CPLX0-3933,Outer Membrane Protein Assembly Complex
+Cell wall/membrane/envelope biogenesis,CPLX0-3976,Enterobacterial Common Antigen Biosynthesis Protein Complex
+Cell wall/membrane/envelope biogenesis,CPLX0-7415,lipid A disaccharide synthase
+Cell wall/membrane/envelope biogenesis,CPLX0-7465,alanine racemase 2
+Cell wall/membrane/envelope biogenesis,CPLX0-7529,polysaccharide export complex
+Cell wall/membrane/envelope biogenesis,CPLX0-7530,outer membrane porin PhoE
+Cell wall/membrane/envelope biogenesis,CPLX0-7533,outer membrane porin C
+Cell wall/membrane/envelope biogenesis,CPLX0-7534,outer membrane porin F
+Cell wall/membrane/envelope biogenesis,CPLX0-7626,small conductance mechanosensitive channel MscS
+Cell wall/membrane/envelope biogenesis,CPLX0-7627,large conductance mechanosensitive channel
+Cell wall/membrane/envelope biogenesis,CPLX0-7628,lipopolysaccharide transport system - outer membrane assembly complex
+Cell wall/membrane/envelope biogenesis,CPLX0-7658,N-acetylneuraminate mutarotase
+Cell wall/membrane/envelope biogenesis,CPLX0-7711,periplasmic chaperone Skp
+Cell wall/membrane/envelope biogenesis,CPLX0-7717,peptidoglycan glycosyltransferase / peptidoglycan DD-transpeptidase MrcA
+Cell wall/membrane/envelope biogenesis,CPLX0-7732,N-acetylmuramic acid 6-phosphate etherase
+Cell wall/membrane/envelope biogenesis,CPLX0-7944,outer membrane phospholipase A
+Cell wall/membrane/envelope biogenesis,CPLX0-7952,ferric coprogen outer membrane transport complex
+Cell wall/membrane/envelope biogenesis,CPLX0-7964,outer membrane channel TolC
+Cell wall/membrane/envelope biogenesis,CPLX0-7976,translocation and assembly module
+Cell wall/membrane/envelope biogenesis,CPLX0-7982,small conductance mechanosensitive channel YnaI
+Cell wall/membrane/envelope biogenesis,CPLX0-7983,moderate conductance mechanosensitive channel YbiO
+Cell wall/membrane/envelope biogenesis,CPLX0-7985,miniconductance mechanosensitive channel MscM
+Cell wall/membrane/envelope biogenesis,CPLX0-7989,murein tripeptide amidase A
+Cell wall/membrane/envelope biogenesis,CPLX0-7992,lipopolysaccharide transport system
+Cell wall/membrane/envelope biogenesis,CPLX0-8008,UDP-N-acetylglucosamine 2-epimerase
+Cell wall/membrane/envelope biogenesis,CPLX0-8011,UDP-N-acetylglucosamine-undecaprenyl-phosphate N-acetylglucosaminephosphotransferase
+Cell wall/membrane/envelope biogenesis,CPLX0-8012,dTDP-glucose pyrophosphorylase
+Cell wall/membrane/envelope biogenesis,CPLX0-8013,UDP-N-acetyl-D-mannosamine dehydrogenase
+Cell wall/membrane/envelope biogenesis,CPLX0-8014,UDP-N-acetylmuramate-L-alanine ligase
+Cell wall/membrane/envelope biogenesis,CPLX0-8016,UDP-3-O-(3-hydroxymyristoyl)glucosamine N-acyltransferase
+Cell wall/membrane/envelope biogenesis,CPLX0-8034,dTDP-glucose pyrophosphorylase
+Cell wall/membrane/envelope biogenesis,CPLX0-8098,UDP-glucose 6-dehydrogenase
+Cell wall/membrane/envelope biogenesis,CPLX0-8198,lipoprotein NlpI
+Cell wall/membrane/envelope biogenesis,CPLX0-8202,alanine racemase 1
+Cell wall/membrane/envelope biogenesis,CPLX0-8205,UTP-glucose-1-phosphate uridylyltransferase
+Cell wall/membrane/envelope biogenesis,CPLX0-821,fructoselysine 6-phosphate deglycase
+Cell wall/membrane/envelope biogenesis,CPLX0-8251,amino acid racemase YgeA
+Cell wall/membrane/envelope biogenesis,CPLX0-8252,D-alanyl-D-alanine carboxypeptidase DacA
+Cell wall/membrane/envelope biogenesis,CPLX0-8254,D-alanyl-D-alanine carboxypeptidase DacC
+Cell wall/membrane/envelope biogenesis,CPLX0-8279,murein lipoprotein
+Cell wall/membrane/envelope biogenesis,DTDPGLUCDEHYDRAT-CPLX,"dTDP-glucose 4,6-dehydratase 1"
+Cell wall/membrane/envelope biogenesis,GDPMANDEHYDRA-CPLX,"GDP-mannose 4,6-dehydratase"
+Cell wall/membrane/envelope biogenesis,KDO-8PSYNTH-CPLX,3-deoxy-D-manno-octulosonate 8-phosphate synthase
+Cell wall/membrane/envelope biogenesis,L-GLN-FRUCT-6-P-AMINOTRANS-CPLX,L-glutamine-D-fructose-6-phosphate aminotransferase
+Cell wall/membrane/envelope biogenesis,NAG1P-URIDYLTRANS-CPLX,fused N-acetylglucosamine-1-phosphate uridyltransferase and glucosamine-1-phosphate acetyltransferase
+Cell wall/membrane/envelope biogenesis,SEC-SECRETION-CPLX,Sec Holo-Translocon
+Cell wall/membrane/envelope biogenesis,SECD-SECF-YAJC-YIDC-CPLX,Sec translocon accessory complex
+Cell wall/membrane/envelope biogenesis,TRANS-200-CPLX,ABC-type tripartite efflux pump
+Cell wall/membrane/envelope biogenesis,TRANS-CPLX-201,multidrug efflux pump AcrAB-TolC
+Cell wall/membrane/envelope biogenesis,TRANS-CPLX-202,multidrug efflux pump MdtABC-TolC
+Cell wall/membrane/envelope biogenesis,TRANS-CPLX-204,multidrug efflux pump MdtEF-TolC
+Cell wall/membrane/envelope biogenesis,UDPGLUCEPIM-CPLX,UDP-glucose 4-epimerase
+Cell wall/membrane/envelope biogenesis,UDPNACETYLGLUCOSAMACYLTRANS-CPLX,acyl-[acyl-carrier-protein]-UDP-N-acetylglucosamine O-acyltransferase
+Cell motility,CPLX0-3401,fimbrial complex
+Cell motility,CPLX0-7450,flagellar motor switch complex
+Cell motility,CPLX0-7451,flagellar export apparatus
+Cell motility,CPLX0-7452,flagellum
+Cell motility,CPLX0-7992,lipopolysaccharide transport system
+Cell motility,CPLX0-8125,cellulose synthase
+Cell motility,FLAGELLAR-MOTOR-COMPLEX,flagellar motor complex
+No Specific COG Annotation,ABC-45-CPLX,intermembrane phospholipid transport system
+No Specific COG Annotation,ACETOLACTSYNI-CPLX,acetohydroxybutanoate synthase
+No Specific COG Annotation,CPLX-3945,curli secretion and assembly complex
+No Specific COG Annotation,CPLX-722,periplasmic phosphoanhydride phosphatase/multiple inositol-polyphosphate phosphatase
+No Specific COG Annotation,CPLX0-0,primosomal protein DnaT
+No Specific COG Annotation,CPLX0-1221,ADP-sugar diphosphatase NudE
+No Specific COG Annotation,CPLX0-2081,dihydroxyacetone kinase
+No Specific COG Annotation,CPLX0-2121,multidrug efflux pump EmrAB-TolC
+No Specific COG Annotation,CPLX0-2361,"DNA polymerase III, core enzyme"
+No Specific COG Annotation,CPLX0-2802,curved DNA-binding protein
+No Specific COG Annotation,CPLX0-3241,ubiquinol-[NapC cytochrome c] reductase NapGH
+No Specific COG Annotation,CPLX0-3401,fimbrial complex
+No Specific COG Annotation,CPLX0-3721,ADP-sugar pyrophosphatase
+No Specific COG Annotation,CPLX0-3801,"DNA polymerase III, preinitiation complex"
+No Specific COG Annotation,CPLX0-3803,"DNA polymerase III, holoenzyme"
+No Specific COG Annotation,CPLX0-3922,primosome
+No Specific COG Annotation,CPLX0-3923,putative monooxygenase YdhR
+No Specific COG Annotation,CPLX0-3925,DNA polymerase V
+No Specific COG Annotation,CPLX0-3930,FlhDC DNA-binding transcriptional dual regulator
+No Specific COG Annotation,CPLX0-3953,30S ribosomal subunit
+No Specific COG Annotation,CPLX0-3964,ribosome
+No Specific COG Annotation,CPLX0-3976,Enterobacterial Common Antigen Biosynthesis Protein Complex
+No Specific COG Annotation,CPLX0-7623,"regulator of acid resistance, influenced by indole"
+No Specific COG Annotation,CPLX0-7624,YhaV-PrlF toxin-antitoxin complex
+No Specific COG Annotation,CPLX0-7666,DNA-binding transcriptional activator CaiF
+No Specific COG Annotation,CPLX0-7674,voltage-gated K+ channel
+No Specific COG Annotation,CPLX0-7684,L-valine exporter
+No Specific COG Annotation,CPLX0-7692,nucleoside triphosphate pyrophosphohydrolase
+No Specific COG Annotation,CPLX0-7720,undecaprenyl-phosphate-α-L-Ara4N flippase
+No Specific COG Annotation,CPLX0-7725,CRISPR-associated complex for antiviral defense
+No Specific COG Annotation,CPLX0-7822,MqsA-MqsR antitoxin/toxin complex
+No Specific COG Annotation,CPLX0-7835,putative ethanolamine catabolic microcompartment shell protein EutM
+No Specific COG Annotation,CPLX0-7852,GadE-RcsB DNA-binding transcriptional activator
+No Specific COG Annotation,CPLX0-7909,RnlA-RnlB toxin-antitoxin complex
+No Specific COG Annotation,CPLX0-7913,tellurite methyltransferase
+No Specific COG Annotation,CPLX0-7990,dTDP-4-dehydro-6-deoxy-D-glucose transaminase
+No Specific COG Annotation,CPLX0-7994,poly-N-acetyl-D-glucosamine synthase
+No Specific COG Annotation,CPLX0-801,periplasmic acid stress chaperone HdeA
+No Specific COG Annotation,CPLX0-8010,carboxy-S-adenosyl-L-methionine synthase
+No Specific COG Annotation,CPLX0-8095,"CP4-57 prophage; RNase LS, toxin of the RnlAB toxin-antitoxin system"
+No Specific COG Annotation,CPLX0-8125,cellulose synthase
+No Specific COG Annotation,CPLX0-8173,CRISPR-associated endoribonuclease Cas2
+No Specific COG Annotation,CPLX0-8174,Cas1-Cas2 complex
+No Specific COG Annotation,CPLX0-8177,putative phosphatidylethanolamine synthesis regulator GnsA
+No Specific COG Annotation,CPLX0-8190,tRNA U34 carboxymethyltransferase
+No Specific COG Annotation,CPLX0-8201,glutarate hydroxylase GlaH
+No Specific COG Annotation,CPLX0-8206,"dihydroxyacetone kinase, phosphotransferase component"
+No Specific COG Annotation,CPLX0-8207,periplasmic acid stress chaperone HdeB
+No Specific COG Annotation,CPLX0-8227,FicT-FicA complex
+No Specific COG Annotation,CPLX0-921,"periplasmic chaperone, inhibitor of vertebrate C-type lysozyme"
+No Specific COG Annotation,FHLMULTI-CPLX,formate hydrogenlyase complex
+No Specific COG Annotation,GLUCOSE-1-PHOSPHAT-CPLX,glucose-1-phosphatase
+No Specific COG Annotation,MONOMER0-2461,MtlR-HPr
+No Specific COG Annotation,PC00086,transcriptional activator RhaS
+No Specific COG Annotation,TATABCE-CPLX,twin arginine protein translocation system
+"Post-translational modification, protein turnover, and chaperones",ABC-35-CPLX,heme trafficking system CcmABCDE
+"Post-translational modification, protein turnover, and chaperones",ABC-49-CPLX,glutathione ABC transporter
+"Post-translational modification, protein turnover, and chaperones",ABC-6-CPLX,glutathione / L-cysteine ABC exporter CydDC
+"Post-translational modification, protein turnover, and chaperones",CPLX-3942,sulfurtransferase complex TusBCD
+"Post-translational modification, protein turnover, and chaperones",CPLX-9344,protein sulfenic acid reductase DsbGreduced
+"Post-translational modification, protein turnover, and chaperones",CPLX0-1161,HslU hexamer
+"Post-translational modification, protein turnover, and chaperones",CPLX0-1162,HslV hexamer
+"Post-translational modification, protein turnover, and chaperones",CPLX0-1163,HslVU protease
+"Post-translational modification, protein turnover, and chaperones",CPLX0-1321,HflK-HflC complex; regulator of FtsH protease
+"Post-translational modification, protein turnover, and chaperones",CPLX0-1341,SufBC2D Fe-S cluster scaffold complex
+"Post-translational modification, protein turnover, and chaperones",CPLX0-1441,serine protease inhibitor ecotin
+"Post-translational modification, protein turnover, and chaperones",CPLX0-2641,chaperone protein HtpG
+"Post-translational modification, protein turnover, and chaperones",CPLX0-2881,Lon protease
+"Post-translational modification, protein turnover, and chaperones",CPLX0-2921,periplasmic serine endoprotease DegP
+"Post-translational modification, protein turnover, and chaperones",CPLX0-2941,"protease IV, a signal peptide peptidase"
+"Post-translational modification, protein turnover, and chaperones",CPLX0-2982,FtsH/HflKC protease complex
+"Post-translational modification, protein turnover, and chaperones",CPLX0-3101,ClpP serine protease
+"Post-translational modification, protein turnover, and chaperones",CPLX0-3102,ClpX ATP-dependent protease specificity component and chaperone
+"Post-translational modification, protein turnover, and chaperones",CPLX0-3104,ClpAP
+"Post-translational modification, protein turnover, and chaperones",CPLX0-3107,ClpXP
+"Post-translational modification, protein turnover, and chaperones",CPLX0-3108,ClpAXP
+"Post-translational modification, protein turnover, and chaperones",CPLX0-3323,holocytochrome c synthetase
+"Post-translational modification, protein turnover, and chaperones",CPLX0-3561,hydrogenase isozymes nickel incorporation protein HypB
+"Post-translational modification, protein turnover, and chaperones",CPLX0-3821,HypA-HypB heterodimer
+"Post-translational modification, protein turnover, and chaperones",CPLX0-3921,"heat shock protein, hemimethylated DNA-binding protein"
+"Post-translational modification, protein turnover, and chaperones",CPLX0-3924,FKBP-type peptidyl-prolyl cis-trans isomerase FklB
+"Post-translational modification, protein turnover, and chaperones",CPLX0-3934,GroEL-GroES chaperonin complex
+"Post-translational modification, protein turnover, and chaperones",CPLX0-7536,FKBP-type peptidyl-prolyl cis-trans isomerase SlyD
+"Post-translational modification, protein turnover, and chaperones",CPLX0-7617,iron-sulfur cluster insertion protein ErpA
+"Post-translational modification, protein turnover, and chaperones",CPLX0-7682,iron-sulfur cluster carrier protein NfuA
+"Post-translational modification, protein turnover, and chaperones",CPLX0-7724,formate dehydrogenase formation protein
+"Post-translational modification, protein turnover, and chaperones",CPLX0-7806,disulfide reductase
+"Post-translational modification, protein turnover, and chaperones",CPLX0-7817,glutaredoxin 4
+"Post-translational modification, protein turnover, and chaperones",CPLX0-7824,iron-sulfur cluster insertion protein SufA
+"Post-translational modification, protein turnover, and chaperones",CPLX0-7827,carboxylate-amine ligase
+"Post-translational modification, protein turnover, and chaperones",CPLX0-7839,sulfur acceptor protein CsdE
+"Post-translational modification, protein turnover, and chaperones",CPLX0-7908,iron-sulfur cluster insertion protein IscA
+"Post-translational modification, protein turnover, and chaperones",CPLX0-7917,disulfide reductase / organic hydroperoxide reductase
+"Post-translational modification, protein turnover, and chaperones",CPLX0-7923,ATP-independent periplasmic chaperone
+"Post-translational modification, protein turnover, and chaperones",CPLX0-7942,Grx4-BolA complex
+"Post-translational modification, protein turnover, and chaperones",CPLX0-7986,HypCD complex involved in hydrogenase maturation
+"Post-translational modification, protein turnover, and chaperones",CPLX0-8004,protein sulfenic acid reductase DsbGoxidized
+"Post-translational modification, protein turnover, and chaperones",CPLX0-8107,small heat shock protein IbpB homodimer
+"Post-translational modification, protein turnover, and chaperones",CPLX0-8108,small heat shock protein IbpA
+"Post-translational modification, protein turnover, and chaperones",CPLX0-8110,molybdenum cofactor insertion chaperone PaoD
+"Post-translational modification, protein turnover, and chaperones",CPLX0-8155,periplasmic protein CpxP
+"Post-translational modification, protein turnover, and chaperones",CPLX0-8183,serine endoprotease
+"Post-translational modification, protein turnover, and chaperones",CPLX0-8187,periplasmic serine endoprotease
+"Post-translational modification, protein turnover, and chaperones",CPLX0-8191,chaperone protein DnaJ
+"Post-translational modification, protein turnover, and chaperones",CPLX0-8192,nucleotide exchange factor GrpE
+"Post-translational modification, protein turnover, and chaperones",CPLX0-8204,signaling pathway modulator ZraP
+"Post-translational modification, protein turnover, and chaperones",CPLX0-8239,Grx4-IbaG complex
+"Post-translational modification, protein turnover, and chaperones",CPLX0-8308,ubiquinone biosynthesis complex UbiUV
+"Post-translational modification, protein turnover, and chaperones",CPLX0-881,ClpA ATP-dependent protease specificity component and chaperone
+"Post-translational modification, protein turnover, and chaperones",DSBC-CPLX,protein disulfide isomerase DsbC
+"Post-translational modification, protein turnover, and chaperones",DSBG-CPLX,protein sulfenic acid reductase and chaperone DsbG
+"Post-translational modification, protein turnover, and chaperones",GST-CPLX,glutathione S-transferase GstA
+"Post-translational modification, protein turnover, and chaperones",THIOREDOXIN-REDUCT-NADPH-CPLX,thioredoxin reductase
+Inorganic ion transport and metabolism,ABC-10-CPLX,ferric enterobactin ABC transporter
+Inorganic ion transport and metabolism,ABC-11-CPLX,iron(III) hydroxamate ABC transporter
+Inorganic ion transport and metabolism,ABC-19-CPLX,molybdate ABC transporter
+Inorganic ion transport and metabolism,ABC-20-CPLX,Ni(2+) ABC transporter
+Inorganic ion transport and metabolism,ABC-22-CPLX,oligopeptide ABC transporter
+Inorganic ion transport and metabolism,ABC-23-CPLX,cryptic phosphonate/phosphate ABC transporter
+Inorganic ion transport and metabolism,ABC-27-CPLX,phosphate ABC transporter
+Inorganic ion transport and metabolism,ABC-32-CPLX,thiamin(e) ABC transporter
+Inorganic ion transport and metabolism,ABC-49-CPLX,glutathione ABC transporter
+Inorganic ion transport and metabolism,ABC-5-CPLX,vitamin B12 ABC transporter
+Inorganic ion transport and metabolism,ABC-56-CPLX,aliphatic sulfonate ABC transporter
+Inorganic ion transport and metabolism,ABC-59-CPLX,"putative D,D-dipeptide ABC transporter"
+Inorganic ion transport and metabolism,ABC-63-CPLX,Zn2+ ABC transporter
+Inorganic ion transport and metabolism,ABC-64-CPLX,taurine ABC transporter
+Inorganic ion transport and metabolism,ABC-7-CPLX,thiosulfate/sulfate ABC transporter
+Inorganic ion transport and metabolism,ABC-70-CPLX,sulfate/thiosulfate ABC transporter
+Inorganic ion transport and metabolism,ABC-8-CPLX,dipeptide ABC transporter
+Inorganic ion transport and metabolism,ABC-9-CPLX,ferric citrate ABC transporter
+Inorganic ion transport and metabolism,ADENYLYLSULFKIN-CPLX,adenylyl-sulfate kinase
+Inorganic ion transport and metabolism,ALKAPHOSPHA-CPLX,alkaline phosphatase
+Inorganic ion transport and metabolism,APHA-CPLX,acid phosphatase / phosphotransferase
+Inorganic ion transport and metabolism,ATPASE-1-CPLX,K+ transporting P-type ATPase
+Inorganic ion transport and metabolism,CARBODEHYDRAT-CPLX,carbonic anhydrase 1
+Inorganic ion transport and metabolism,CPLX-3942,sulfurtransferase complex TusBCD
+Inorganic ion transport and metabolism,CPLX-3944,FecAR Signal Transduction System
+Inorganic ion transport and metabolism,CPLX-7,arsenite/antimonite:H+ antiporter
+Inorganic ion transport and metabolism,CPLX0-1421,bacterioferritin
+Inorganic ion transport and metabolism,CPLX0-1521,stationary phase nucleoid component that sequesters iron and protects DNA from damage
+Inorganic ion transport and metabolism,CPLX0-1721,copper/silver export system
+Inorganic ion transport and metabolism,CPLX0-1941,ferric enterobactin outer membrane transport complex
+Inorganic ion transport and metabolism,CPLX0-1942,ferrichrome outer membrane transport complex
+Inorganic ion transport and metabolism,CPLX0-1943,ferric citrate outer membrane transport complex
+Inorganic ion transport and metabolism,CPLX0-2381,degradosome
+Inorganic ion transport and metabolism,CPLX0-242,thiosulfate sulfurtransferase GlpE
+Inorganic ion transport and metabolism,CPLX0-243,inorganic pyrophosphatase
+Inorganic ion transport and metabolism,CPLX0-3938,copper binding protein CutA
+Inorganic ion transport and metabolism,CPLX0-3969,ferritin iron-storage complex
+Inorganic ion transport and metabolism,CPLX0-3970,murein tripeptide ABC transporter
+Inorganic ion transport and metabolism,CPLX0-7444,DUF892 domain-containing protein YciF
+Inorganic ion transport and metabolism,CPLX0-7521,carbonic anhydrase 2
+Inorganic ion transport and metabolism,CPLX0-7532,ammonia / ammonium transporter
+Inorganic ion transport and metabolism,CPLX0-7629,Na+:H+ antiporter NhaA
+Inorganic ion transport and metabolism,CPLX0-7641,Zn2+/Fe2+/Cd2+ exporter
+Inorganic ion transport and metabolism,CPLX0-7679,DNA-binding transcriptional repressor Zur
+Inorganic ion transport and metabolism,CPLX0-7810,heme-containing peroxidase/deferrochelatase
+Inorganic ion transport and metabolism,CPLX0-7819,K+ : H+ antiporter KefC
+Inorganic ion transport and metabolism,CPLX0-7841,"sulfite reductase, flavoprotein subunit complex"
+Inorganic ion transport and metabolism,CPLX0-7843,formate channel FocA
+Inorganic ion transport and metabolism,CPLX0-7936,"5-phospho-α-D-ribosyl 1,2-cyclic phosphate phosphodiesterase"
+Inorganic ion transport and metabolism,CPLX0-7952,ferric coprogen outer membrane transport complex
+Inorganic ion transport and metabolism,CPLX0-7961,chloride:H+ antiporter ClcA
+Inorganic ion transport and metabolism,CPLX0-8113,phosphate signaling protein PhoU
+Inorganic ion transport and metabolism,CPLX0-8219,thiosulfate sulfurtransferase YgaP
+Inorganic ion transport and metabolism,CPLX0-8271,F- channel
+Inorganic ion transport and metabolism,CYANLY-CPLX,cyanase
+Inorganic ion transport and metabolism,HCAMULTI-CPLX,putative 3-phenylpropionate/cinnamate dioxygenase
+Inorganic ion transport and metabolism,HYDROPEROXIDI-CPLX,catalase/hydroperoxidase HPI
+Inorganic ion transport and metabolism,HYDROPEROXIDII-CPLX,catalase HPII
+Inorganic ion transport and metabolism,METNIQ-METHIONINE-ABC-CPLX,L-methionine/D-methionine ABC transporter
+Inorganic ion transport and metabolism,NADH-DHI-CPLX,NADH:quinone oxidoreductase I
+Inorganic ion transport and metabolism,NAP-CPLX,periplasmic nitrate reductase
+Inorganic ion transport and metabolism,NITRATREDUCTA-CPLX,nitrate reductase A
+Inorganic ion transport and metabolism,NITRATREDUCTZ-CPLX,nitrate reductase Z
+Inorganic ion transport and metabolism,NITRITREDUCT-CPLX,nitrite reductase - NADH dependent
+Inorganic ion transport and metabolism,NRFMULTI-CPLX,periplasmic nitrite reductase NrfAB
+Inorganic ion transport and metabolism,PPK-CPLX,polyphosphate kinase
+Inorganic ion transport and metabolism,PPPGPPHYDRO-CPLX,"guanosine-5'-triphosphate,3'-diphosphate phosphatase"
+Inorganic ion transport and metabolism,PPX-CPLX,exopolyphosphatase
+Inorganic ion transport and metabolism,SULFATE-ADENYLYLTRANS-CPLX,sulfate adenylyltransferase
+Inorganic ion transport and metabolism,SULFITE-REDUCT-CPLX,assimilatory sulfite reductase (NADPH)
+Inorganic ion transport and metabolism,SUPEROX-DISMUTFE-CPLX,superoxide dismutase (Fe)
+Inorganic ion transport and metabolism,SUPEROX-DISMUTMN-CPLX,superoxide dismutase (Mn)
+"Secondary metabolites, biosynthesis, transport, and catabolism",3-OXOACYL-ACP-SYNTHII-CPLX,β-ketoacyl-[acyl carrier protein] synthase II
+"Secondary metabolites, biosynthesis, transport, and catabolism",7-ALPHA-HYDROXYSTEROID-DEH-CPLX,7-α-hydroxysteroid dehydrogenase
+"Secondary metabolites, biosynthesis, transport, and catabolism",ABC-41-CPLX,putative oligopeptide ABC transporter
+"Secondary metabolites, biosynthesis, transport, and catabolism",ABC-61-CPLX,"putative transport complex, ABC superfamily"
+"Secondary metabolites, biosynthesis, transport, and catabolism",ACYLCOASYN-CPLX,long-chain-fatty-acid-CoA ligase
+"Secondary metabolites, biosynthesis, transport, and catabolism",AMINEOXID-CPLX,copper-containing amine oxidase
+"Secondary metabolites, biosynthesis, transport, and catabolism",CPLX0-1762,"phenylacetyl-CoA 1,2-epoxidase"
+"Secondary metabolites, biosynthesis, transport, and catabolism",CPLX0-227,α-ketoglutarate-dependent taurine dioxygenase
+"Secondary metabolites, biosynthesis, transport, and catabolism",CPLX0-236,arylamine N-acetyltransferase
+"Secondary metabolites, biosynthesis, transport, and catabolism",CPLX0-7766,proofreading thioesterase in enterobactin biosynthesis
+"Secondary metabolites, biosynthesis, transport, and catabolism",CPLX0-7927,NADPH-dependent curcumin/dihydrocurcumin reductase
+"Secondary metabolites, biosynthesis, transport, and catabolism",CPLX0-7951,2-hydroxypentadienoate hydratase
+"Secondary metabolites, biosynthesis, transport, and catabolism",CPLX0-8106,nucleoside triphosphate pyrophosphatase YhdE
+"Secondary metabolites, biosynthesis, transport, and catabolism",CPLX0-8128,"1,4-dihydroxy-2-naphthoyl-CoA hydrolase"
+"Secondary metabolites, biosynthesis, transport, and catabolism",CPLX0-8154,c-di-GMP-binding biofilm dispersal mediator protein
+"Secondary metabolites, biosynthesis, transport, and catabolism",CPLX0-8292,5-keto-D-gluconate 5-reductase
+"Secondary metabolites, biosynthesis, transport, and catabolism",CPLX0-902,putative 4-oxalocrotonate tautomerase (4-OT)
+"Secondary metabolites, biosynthesis, transport, and catabolism",ENTA-CPLX,"2,3-dihydro-2,3-dihydroxybenzoate dehydrogenase"
+"Secondary metabolites, biosynthesis, transport, and catabolism",ENTE-CPLX,"2,3-dihydroxybenzoate-[aryl-carrier protein] ligase"
+"Secondary metabolites, biosynthesis, transport, and catabolism",ENTMULTI-CPLX,enterobactin synthase
+"Secondary metabolites, biosynthesis, transport, and catabolism",FABB-CPLX,β-ketoacyl-[acyl carrier protein] synthase I
+"Secondary metabolites, biosynthesis, transport, and catabolism",GLYOCARBOLIG-CPLX,glyoxylate carboligase
+"Secondary metabolites, biosynthesis, transport, and catabolism",GLYOXI-CPLX,glyoxalase I
+"Secondary metabolites, biosynthesis, transport, and catabolism",MENE-CPLX,o-succinylbenzoate-CoA ligase
+"Secondary metabolites, biosynthesis, transport, and catabolism",MENF-CPLX,isochorismate synthase MenF
+"Secondary metabolites, biosynthesis, transport, and catabolism",SORB6PDEHYDROG-CPLX,sorbitol-6-phosphate 2-dehydrogenase
+General function prediction only,ABC-48-CPLX,"putative transport complex, ABC superfamily"
+General function prediction only,CPLX0-225,FMNH2-dependent alkanesulfonate monooxygenase
+General function prediction only,CPLX0-229,anaerobic ribonucleoside-triphosphate reductase activating protein
+General function prediction only,CPLX0-253,NADPH:quinone oxidoreductase MdaB
+General function prediction only,CPLX0-2681,ClpXP protease specificity-enhancing factor
+General function prediction only,CPLX0-3927,regulatory ATPase RavA
+General function prediction only,CPLX0-661,putative hydrolase
+General function prediction only,CPLX0-7625,dCMP phosphohydrolase
+General function prediction only,CPLX0-7755,purine nucleoside phosphoramidase
+General function prediction only,CPLX0-7816,putative nucleoid-associated protein YbaB
+General function prediction only,CPLX0-7844,p-aminobenzoyl-glutamate hydrolase
+General function prediction only,CPLX0-7932,cytosine/isoguanine deaminase
+General function prediction only,CPLX0-7939,regulator of KefC-mediated potassium transport and quinone oxidoreductase
+General function prediction only,CPLX0-7950,2-hydroxy-6-oxononatrienedioate hydrolase
+General function prediction only,CPLX0-7960,protein/nucleic acid deglycase 3
+General function prediction only,CPLX0-8127,"2-hydroxycyclohepta-1,4,6-triene-1-carboxyl-CoA thioesterase"
+General function prediction only,CPLX0-8212,erythronate-4-phosphate dehydrogenase
+General function prediction only,CPLX0-8248,phosphodiesterase YfcE
+General function prediction only,CPLX0-8249,5-oxoprolinase
+General function prediction only,CPLX0-8262,nucleotide 5'-monophosphate nucleosidase
+General function prediction only,CPLX0-861,protein/nucleic acid deglycase 1
+General function prediction only,DALADALALIGB-CPLX,D-alanine-D-alanine ligase B
+General function prediction only,GALACTOACETYLTRAN-CPLX,galactoside O-acetyltransferase
+General function prediction only,KDO-8PPHOSPHAT-CPLX,3-deoxy-D-manno-octulosonate 8-phosphate phosphatase KdsC
+General function prediction only,MALTACETYLTRAN-CPLX,maltose O-acetyltransferase
+General function prediction only,NRDACTMULTI-CPLX,anaerobic nucleoside-triphosphate reductase activating system
+General function prediction only,PGLYCDEHYDROG-CPLX,phosphoglycerate dehydrogenase
+Function unknown,CPLX0-3933,Outer Membrane Protein Assembly Complex
+Function unknown,CPLX0-4,aromatic carboxylic acid efflux pump
+Function unknown,CPLX0-8244,intermembrane transport protein PqiB
+Function unknown,CPLX0-8259,2-amino-6-N-hydroxylaminopurine resistance protein
+Function unknown,CPLX0-8281,DUF945 domain-containing protein YdgA
+Function unknown,CPLX0-8301,Ubi complex
+Function unknown,CYT-D-UBIOX-CPLX,cytochrome bd-I ubiquinol oxidase
+Signal transduction mechanisms,ABC-12-CPLX,L-glutamine ABC transporter
+Signal transduction mechanisms,ABC-13-CPLX,glutamate / aspartate ABC transporter
+Signal transduction mechanisms,ABC-14-CPLX,histidine ABC transporter
+Signal transduction mechanisms,ABC-3-CPLX,lysine / arginine / ornithine ABC transporter
+Signal transduction mechanisms,ABC-4-CPLX,L-arginine ABC transporter
+Signal transduction mechanisms,ARCB-CPLX,sensor histidine kinase ArcB
+Signal transduction mechanisms,CHEA-CPLX,chemotaxis protein CheA(L)
+Signal transduction mechanisms,CHEZ-CPLX,chemotaxis protein CheZ
+Signal transduction mechanisms,CPLX-158,fructose-specific PTS enzyme II
+Signal transduction mechanisms,CPLX0-1041,CsrA complex with CsrB RNA
+Signal transduction mechanisms,CPLX0-1242,MazE-MazF antitoxin/toxin complex / DNA-binding transcriptional repressor
+Signal transduction mechanisms,CPLX0-1461,RNA-binding protein Hfq
+Signal transduction mechanisms,CPLX0-230,isocitrate dehydrogenase kinase
+Signal transduction mechanisms,CPLX0-231,galactitol-specific PTS enzyme II
+Signal transduction mechanisms,CPLX0-3939,universal stress protein G
+Signal transduction mechanisms,CPLX0-7425,HipAB toxin/antitoxin complex / DNA-binding transcriptional repressor
+Signal transduction mechanisms,CPLX0-7561,ChpB-ChpS complex
+Signal transduction mechanisms,CPLX0-7648,anti-sigma factor stabilizing protein RseB
+Signal transduction mechanisms,CPLX0-7797,DNA-binding transcriptional dual regulator FNR
+Signal transduction mechanisms,CPLX0-7802,diguanylate cyclase DgcZ
+Signal transduction mechanisms,CPLX0-7823,DosC-DosP complex
+Signal transduction mechanisms,CPLX0-7837,phosphoenolpyruvate synthetase regulatory protein
+Signal transduction mechanisms,CPLX0-7870,sensor histidine kinase AtoS
+Signal transduction mechanisms,CPLX0-7938,PTS enzyme I
+Signal transduction mechanisms,CPLX0-7942,Grx4-BolA complex
+Signal transduction mechanisms,CPLX0-7956,carbon storage regulator
+Signal transduction mechanisms,CPLX0-7998,RNase adaptor protein
+Signal transduction mechanisms,CPLX0-8028,CsrA complex with McaS RNA
+Signal transduction mechanisms,CPLX0-8090,diguanylate cyclase DgcM
+Signal transduction mechanisms,CPLX0-8102,methyl-accepting chemotaxis protein Tar
+Signal transduction mechanisms,CPLX0-8103,methyl-accepting chemotaxis protein - serine-sensing
+Signal transduction mechanisms,CPLX0-8104,methyl-accepting chemotaxis protein - dipeptide-sensing
+Signal transduction mechanisms,CPLX0-8105,methyl-accepting chemotaxis protein Trg - ribose/galactose/glucose-sensing
+Signal transduction mechanisms,CPLX0-8109,DNA-binding transcriptional activator/c-di-GMP phosphodiesterase PdeL
+Signal transduction mechanisms,CPLX0-8119,putative PTS enzyme II FryBCA
+Signal transduction mechanisms,CPLX0-8120,putative ABC transporter ArtPQMI
+Signal transduction mechanisms,CPLX0-8152,cystine ABC transporter
+Signal transduction mechanisms,CPLX0-8168,bifunctional sensor histidine kinase PhoQ
+Signal transduction mechanisms,CPLX0-8199,oxygen-sensing c-di-GMP phosphodiesterase DosP
+Signal transduction mechanisms,CPLX0-8214,carboxylesterase
+Signal transduction mechanisms,CPLX0-8217,free methionine-(R)-sulfoxide reductase
+Signal transduction mechanisms,CPLX0-8218,diguanylate cyclase DosC
+Signal transduction mechanisms,CPLX0-8227,FicT-FicA complex
+Signal transduction mechanisms,CPLX0-8239,Grx4-IbaG complex
+Signal transduction mechanisms,CPLX0-8245,regulator of CsrB and CsrC decay
+Signal transduction mechanisms,CPLX0-8253,CsrA complex with CsrC RNA
+Signal transduction mechanisms,CPLX0-8265,sensory histidine kinase TorS - his443 phosphorylated
+Signal transduction mechanisms,CPLX0-8267,sensory histidine kinase TorS - asp723 phosphorylated
+Signal transduction mechanisms,CPLX0-8268,sensory histidine kinase TorS - his850 phosphorylated
+Signal transduction mechanisms,CPLX0-8270,sensor histidine kinase CpxA
+Signal transduction mechanisms,CPLX0-8274,CheA(L) - phosphorylated
+Signal transduction mechanisms,CPLX0-8275,sensory histidine kinase GlrK
+Signal transduction mechanisms,CPLX0-8288,sensor histidine kinase CusS
+Signal transduction mechanisms,CPLX0-8302,sensor histidine kinase BarA
+Signal transduction mechanisms,CPLX0-8304,DcuS-DcuB sensor complex
+Signal transduction mechanisms,CPLX0-8306,DcuS-DctA sensor complex
+Signal transduction mechanisms,CPLX0-8307,sensor histidine kinase DcuS
+Signal transduction mechanisms,CPLX0-8312,DNA-binding transcriptional  repressor CRP-Sxy
+Signal transduction mechanisms,CPLX0-841,MazE antitoxin of the MazF-MazE toxin-antitoxin system / DNA-binding transcriptional repressor
+Signal transduction mechanisms,CREC-CPLX,sensor histidine kinase CreC
+Signal transduction mechanisms,EIISGA,L-ascorbate specific PTS enzyme II
+Signal transduction mechanisms,EIISGC,putative PTS enzyme II SgcBCA
+Signal transduction mechanisms,ENVZ-CPLX,sensor histidine kinase EnvZ
+Signal transduction mechanisms,GLNG-CPLX,DNA-binding transcriptional dual regulator NtrC
+Signal transduction mechanisms,GLNL-CPLX,sensory histidine kinase NtrB
+Signal transduction mechanisms,KDPD-CPLX,sensory histidine kinase KdpD
+Signal transduction mechanisms,NARQ-CPLX,sensory histidine kinase NarQ
+Signal transduction mechanisms,PC00004,DNA-binding transcriptional dual regulator CRP
+Signal transduction mechanisms,PHOR-CPLX,sensor histidine kinase PhoR
+Signal transduction mechanisms,PHOSPHO-ATOS,AtoS-N-phospho-L-histidine
+Signal transduction mechanisms,PHOSPHO-CPXA,CpxA-N-phospho-L-histidine
+Signal transduction mechanisms,PHOSPHO-CREC,CreC-N-phospho-L-histidine
+Signal transduction mechanisms,PHOSPHO-ENVZ,EnvZ-N-phospho-L-histidine
+Signal transduction mechanisms,PHOSPHO-KDPD,sensory histidine kinase KdpD - phosphorylated
+Signal transduction mechanisms,PHOSPHO-NARQ,sensory histidine kinase NarQ  - phosphorylated
+Signal transduction mechanisms,PHOSPHO-PHOQ,PhoQ-N-phospho-L-histidine
+Signal transduction mechanisms,PHOSPHO-PHOR,PhoR-N-phospho-L-histidine
+Signal transduction mechanisms,PII2-CPLX,nitrogen regulator GlnK
+Signal transduction mechanisms,PIIPROTEIN-CPLX,nitrogen regulatory protein PII-1
+Signal transduction mechanisms,PROTEIN-NRIIP,sensory histidine kinase NtrB - phosphorylated
+Signal transduction mechanisms,TAP-CPLX,chemotaxis signaling complex - dipeptide sensing
+Signal transduction mechanisms,TAP-GLN,Tapgln
+Signal transduction mechanisms,TAP-GLU,Tapglu
+Signal transduction mechanisms,TAP-GLUME,Tapglu-Me
+Signal transduction mechanisms,TAR-CPLX,chemotaxis signaling complex - aspartate sensing
+Signal transduction mechanisms,TAR-GLN,Targln
+Signal transduction mechanisms,TAR-GLU,Targlu
+Signal transduction mechanisms,TAR-GLUME,Targlu-Me
+Signal transduction mechanisms,TORS-CPLX,sensory histidine kinase TorS
+Signal transduction mechanisms,TRG-CPLX,chemotaxis signaling complex - ribose/galactose/glucose sensing
+Signal transduction mechanisms,TRG-GLN,Trggln
+Signal transduction mechanisms,TRG-GLU,Trgglu
+Signal transduction mechanisms,TRG-GLUME,Trgglu-Me
+Signal transduction mechanisms,TSR-CPLX,chemotaxis signaling complex - serine sensing
+Signal transduction mechanisms,TSR-GLN,Tsrgln
+Signal transduction mechanisms,TSR-GLU,Tsrglu
+Signal transduction mechanisms,TSR-GLUME,Tsrglu-Me
+"Intracellular trafficking, secretion, and vesicular transport",ABC-35-CPLX,heme trafficking system CcmABCDE
+"Intracellular trafficking, secretion, and vesicular transport",ANSA-CPLX,L-asparaginase 1
+"Intracellular trafficking, secretion, and vesicular transport",ANSB-CPLX,L-asparaginase 2
+"Intracellular trafficking, secretion, and vesicular transport",CPLX0-1923,energy transducing Ton complex
+"Intracellular trafficking, secretion, and vesicular transport",CPLX0-1924,vitamin B12 outer membrane transport complex
+"Intracellular trafficking, secretion, and vesicular transport",CPLX0-1941,ferric enterobactin outer membrane transport complex
+"Intracellular trafficking, secretion, and vesicular transport",CPLX0-1942,ferrichrome outer membrane transport complex
+"Intracellular trafficking, secretion, and vesicular transport",CPLX0-1943,ferric citrate outer membrane transport complex
+"Intracellular trafficking, secretion, and vesicular transport",CPLX0-2201,The Tol-Pal Cell Envelope Complex
+"Intracellular trafficking, secretion, and vesicular transport",CPLX0-3382,Type II secretion system
+"Intracellular trafficking, secretion, and vesicular transport",CPLX0-7450,flagellar motor switch complex
+"Intracellular trafficking, secretion, and vesicular transport",CPLX0-7451,flagellar export apparatus
+"Intracellular trafficking, secretion, and vesicular transport",CPLX0-7452,flagellum
+"Intracellular trafficking, secretion, and vesicular transport",CPLX0-7952,ferric coprogen outer membrane transport complex
+"Intracellular trafficking, secretion, and vesicular transport",CPLX0-7976,translocation and assembly module
+"Intracellular trafficking, secretion, and vesicular transport",CPLX0-8046,SecB chaperone
+"Intracellular trafficking, secretion, and vesicular transport",CPLX0-8089,protein translocation ATPase
+"Intracellular trafficking, secretion, and vesicular transport",FLAGELLAR-MOTOR-COMPLEX,flagellar motor complex
+"Intracellular trafficking, secretion, and vesicular transport",SEC-SECRETION-CPLX,Sec Holo-Translocon
+"Intracellular trafficking, secretion, and vesicular transport",SECD-SECF-YAJC-YIDC-CPLX,Sec translocon accessory complex
+"Intracellular trafficking, secretion, and vesicular transport",SECE-G-Y-CPLX,SecYEG translocon
+"Intracellular trafficking, secretion, and vesicular transport",SRP-CPLX,Signal Recognition Particle
+"Intracellular trafficking, secretion, and vesicular transport",TATABCE-CPLX,twin arginine protein translocation system
+Defense Mechanisms,ABC-21-CPLX,"putative transport complex, ABC superfamily"
+Defense Mechanisms,ABC-29-CPLX,putrescine ABC exporter
+Defense Mechanisms,ABC-57-CPLX,putative ABC exporter YbhFSR
+Defense Mechanisms,CPLX0-1241,MazF toxin of the MazF-MazE toxin-antitoxin system that exhibits ribonuclease activity
+Defense Mechanisms,CPLX0-1242,MazE-MazF antitoxin/toxin complex / DNA-binding transcriptional repressor
+Defense Mechanisms,CPLX0-1881,"enamine/imine deaminase, redox-regulated chaperone"
+Defense Mechanisms,CPLX0-2121,multidrug efflux pump EmrAB-TolC
+Defense Mechanisms,CPLX0-2141,multidrug efflux pump AcrEF-TolC
+Defense Mechanisms,CPLX0-245,alkyl hydroperoxide reductase
+Defense Mechanisms,CPLX0-2661,McrBC restriction endonuclease
+Defense Mechanisms,CPLX0-3781,YefM-YoeB antitoxin/toxin complex / DNA-binding transcriptional repressor
+Defense Mechanisms,CPLX0-3932,multidrug efflux pump AcrAD-TolC
+Defense Mechanisms,CPLX0-3954,S-formylglutathione hydrolase
+Defense Mechanisms,CPLX0-3958,EcoKI restriction-modification system
+Defense Mechanisms,CPLX0-3971,GDP-mannose hydrolase
+Defense Mechanisms,CPLX0-4,aromatic carboxylic acid efflux pump
+Defense Mechanisms,CPLX0-7561,ChpB-ChpS complex
+Defense Mechanisms,CPLX0-7704,ATP-dependent Lipid A-core flippase
+Defense Mechanisms,CPLX0-7787,DinJ-YafQ antitoxin/toxin complex / DNA-binding transcriptional repressor
+Defense Mechanisms,CPLX0-7791,RelB-RelE antitoxin/toxin complex / DNA-binding transcriptional repressor
+Defense Mechanisms,CPLX0-7914,multifunctional nuclease Cas1
+Defense Mechanisms,CPLX0-7928,Qin prophage; antitoxin/DNA-binding transcriptional repressor RelB
+Defense Mechanisms,CPLX0-7929,antitoxin/DNA-binding transcriptional repressor YefM
+Defense Mechanisms,CPLX0-7963,multidrug efflux pump EmrE / betaine:H+ antiporter / choline:H+ antiporter
+Defense Mechanisms,CPLX0-7987,predicted enamine/imine deaminase
+Defense Mechanisms,CPLX0-8157,osmotically inducible peroxiredoxin OsmC
+Defense Mechanisms,CPLX0-8174,Cas1-Cas2 complex
+Defense Mechanisms,CPLX0-8229,HigA antitoxin of the HigB-HigA toxin-antitoxin system and DNA-binding transcriptional repressor
+Defense Mechanisms,CPLX0-8230,HigB-HigA toxin/antitoxin complex and DNA-binding transcriptional repressor
+Defense Mechanisms,CPLX0-8263,guanidinium exporter
+Defense Mechanisms,CPLX0-8311,ribosome-dependent mRNA interferase
+Defense Mechanisms,TRANS-CPLX-201,multidrug efflux pump AcrAB-TolC
+Defense Mechanisms,TRANS-CPLX-202,multidrug efflux pump MdtABC-TolC
+Defense Mechanisms,TRANS-CPLX-204,multidrug efflux pump MdtEF-TolC
+Defense Mechanisms,YDGEF-CPLX,multidrug/spermidine efflux pump

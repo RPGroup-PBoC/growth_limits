@@ -160,11 +160,11 @@ production, nutrient uptake, etc.) is dominating even at fast growth rates
 processes we've considered so far are not fundamentally limiting the maximum
 growth rate. In contrast, when we apply such an analysis to cytosolic proteins
 (GO term: 0005829), we observe a clear change in the proteomic composition
-\FIG{cog_cytosol}(A, B). In particular, with increasing
+[\FIG{cog_cytosol}(A, B)]. In particular, with increasing
 growth rates there is a substantial increase in protein mass associated with
 'information storage and processing,' which refer to the processes associated
 with the central dogma. This increase in protein mass is predominantly at the
-expense of 'metabolic' proteins  \FIG{cog_cytosol}(C, D),
+expense of 'metabolic' proteins  as shown in \FIG{cog_cytosol}(C, D),
 with this notable anticorrelation consistent with previous reports
 \citep{schmidt2016, scott2010, zhu2019}. In the next section we therefore turn
 our attention to the processes of the central dogma.
@@ -189,7 +189,7 @@ our attention to the processes of the central dogma.
             be protein, with the remainder lipid. (B) Total protein mass per
             \textmu m$^2$ calculated for proteins with inner membrane annotation
             (GO term: 0005886). (C) Relative protein abundances are grouped by
-            COG annotations for the data from \cite{schmidt2016}. Metabolic proteins are further separated into
+            their COG annotations ('metabolic', 'cellular processes and signaling', 'information storage and processing', and 'poorly characterized or not annotated') for the data from \cite{schmidt2016}. Metabolic proteins are further separated into
             respiration (F$_1$-F$_0$ ATP synthase, NADH dehydrogenase I,
             succinate:quinone oxidoreductase, cytochrome bo$_3$ ubiquinol
             oxidase, cytochrome bd-I ubiquinol oxidase) and carbohydrate
@@ -207,16 +207,19 @@ our attention to the processes of the central dogma.
     \begin{fullwidth}
         \centering{
             \includegraphics{main_figs/fig6_cytosolic_proteins.pdf}
-            \caption{\textbf{Characterization of cytosolic proteomic composition.} (A) Total protein mass per
-            \textmu m$^3$ calculated for proteins associated with the cytosol
-            GO term: 0005886. (B) Relative protein abundances are grouped by
-            COG annotations for the data from \cite{schmidt2016}. (C) Relative
-            protein abundances grouped by COG annotations and plotted as a function
-            of growth rate. (D) The relative protein abundances associated
-            with the 'information storage and processing' and 'metabolic' COG
-            categories are plotted against each other and show an anticorrelative
-            trend, with faster growth rates associated with a larger mass fraction
-            associated with 'information storage and processing' proteins.}\label{fig:cog_cytosol}
+            \caption{\textbf{Characterization of cytosolic proteomic
+            composition.} (A) Total protein mass per \textmu m$^3$ calculated
+            for cytosolic proteins (GO term: 0005886), with
+            calculations of \textit{E. coli} volume detailed in Appendix Section
+            "Estimation of Cell Size and Surface Area". (B) The distribution
+            of cytosolic proteins is compared across the different growth conditions in \cite{schmidt2016} by grouping their relative abundances by COG annotation ('metabolic', 'cellular processes and signaling', 'information storage and processing', 'poorly characterized or not annotated'). (C)
+            Relative cytosolic protein abundances, grouped by their COG annotations, are
+            plotted as a function of growth rate. (D) The relative protein
+            abundances associated with the 'information storage and processing'
+            and 'metabolic' COG categories are plotted against each other and
+            highlight that faster growth rates are associated with a larger mass
+            fraction devoted to the 'information storage and processing'
+            proteins of the central dogma.}\label{fig:cog_cytosol}
             }
                 \end{fullwidth}
 \end{figure}

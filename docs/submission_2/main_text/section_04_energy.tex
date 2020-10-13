@@ -160,11 +160,11 @@ production, nutrient uptake, etc.) is dominating even at fast growth rates
 processes we've considered so far are not fundamentally limiting the maximum
 growth rate. In contrast, when we apply such an analysis to cytosolic proteins
 (GO term: 0005829), we observe a clear change in the proteomic composition
-\FIGSUPP[energy_scaling]{cog_cytosol}(A, B). In particular, with increasing
+\FIG{cog_cytosol}(A, B). In particular, with increasing
 growth rates there is a substantial increase in protein mass associated with
 'information storage and processing,' which refer to the processes associated
 with the central dogma. This increase in protein mass is predominantly at the
-expense of 'metabolic' proteins  \FIGSUPP[energy_scaling]{cog_cytosol}(C, D),
+expense of 'metabolic' proteins  \FIG{cog_cytosol}(C, D),
 with this notable anticorrelation consistent with previous reports
 \citep{schmidt2016, scott2010, zhu2019}. In the next section we therefore turn
 our attention to the processes of the central dogma.
@@ -199,8 +199,15 @@ our attention to the processes of the central dogma.
             identical to the summed protein shown in part
             (B)).}\label{fig:energy_scaling}
             }
+                \end{fullwidth}
+\end{figure}
 
-            \figsupp[Characterization of cytosolic proteomic composition]{(A) Total protein mass per
+
+\begin{figure}
+    \begin{fullwidth}
+        \centering{
+            \includegraphics{main_figs/fig5-S1_cytosolic_proteins.pdf}
+            \caption{\textbf{Characterization of cytosolic proteomic composition.} (A) Total protein mass per
             \textmu m$^3$ calculated for proteins associated with the cytosol
             GO term: 0005886. (B) Relative protein abundances are grouped by
             COG annotations for the data from \cite{schmidt2016}. (C) Relative
@@ -209,6 +216,7 @@ our attention to the processes of the central dogma.
             with the 'information storage and processing' and 'metabolic' COG
             categories are plotted against each other and show an anticorrelative
             trend, with faster growth rates associated with a larger mass fraction
-            associated with 'information storage and processing' proteins. }{\includegraphics{main_figs/fig5-S1_cytosolic_proteins.pdf}}\label{figsupp:cog_cytosol}
+            associated with 'information storage and processing' proteins.}\label{fig:cog_cytosol}
+            }
                 \end{fullwidth}
 \end{figure}

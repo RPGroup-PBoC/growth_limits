@@ -48,7 +48,7 @@ for g, d in rnr.groupby(['dataset', 'dataset_name']):
             alpha=0.75, markeredgewidth=0.5, markeredgecolor='k', label=g[1])
 
 ax.legend(fontsize=6, ncol=2)
-plt.savefig('../../figures/fig6-S1_dNTP_plots.svg', bbox_inches='tight')
+plt.savefig('../../figures/fig7-S1_dNTP_plots.svg', bbox_inches='tight')
 
 # %%
 
@@ -91,7 +91,7 @@ for g, d in dnap.groupby(['dataset', 'dataset_name']):
 ax[1].legend(fontsize=6)
 ax[0].legend(fontsize=6, ncol=2)
 plt.tight_layout()
-plt.savefig('../../figures/fig6_DNA_polymerase_plots.svg', bbox_inches='tight')
+plt.savefig('../../figures/fig7_DNA_polymerase_plots.svg', bbox_inches='tight')
 #
 
 

@@ -15,21 +15,12 @@ dataset_colors = {'li_2014':colors['purple'], 'schmidt_2016':colors['light_blue'
 prot.viz.plotting_style()
 
 from scipy.optimize import curve_fit
-def func(x, a, c, d):
-    return a*np.exp(-c*x)+d
+# def func(x, a, c, d):
+#     return a*np.exp(-c*x)+d
 
-# %%
 ######################
-# plot configuration #
+# grab data from Si 2017 to extimate <# ori>
 ######################
-fig = plt.figure(constrained_layout=True)
-# widths = [6, 2.5, 2.5, 5]
-widths = [6, 5, 5]
-heights = [1.5, 1, 0.75, 1.25, 0.75, 2]
-spec = fig.add_gridspec(ncols=3, nrows=6, width_ratios=widths,
-                          height_ratios=heights)
-ax2 = fig.add_subplot(spec[0, 2])
-
 # Load the full Si 2017 SI
 data_si = pd.read_csv('../../data/si_2017_raw/si2017_full.csv')
 
@@ -63,6 +54,12 @@ def func_lin(l, a, b):
     x = 60*(np.log(2)/l)
     return a*x + b
 
+#### piecewise fit for t_C- piecewise fit works well with transition at 40 min
+t_C_const = data_si_mean[data_si_mean.tau <=40]['C period (minutes)'].mean()
+t_C_lin = data_si_mean[data_si_mean.tau > 40]['C period (minutes)'].values
+l_lin =  data_si_mean[data_si_mean.tau > 40]['growth_rate_hr'].values
+popt_tC_lin, pcov_tC_lin = curve_fit(func_lin, l_lin, t_C_lin, p0=(1, 1))
+
 #### piecewise fit for t_cyc - piecewise fit works well with transition at 43 min
 t_cyc_const = data_si_mean[data_si_mean.tau <=43]['C+D period (minutes)'].mean()
 t_cyc_lin = data_si_mean[data_si_mean.tau > 43]['C+D period (minutes)'].values
@@ -70,47 +67,48 @@ l_lin =  data_si_mean[data_si_mean.tau > 43]['growth_rate_hr'].values
 popt_tcyc_lin, pcov_tcyc_lin = curve_fit(func_lin, l_lin, t_cyc_lin, p0=(1, 1))
 
 
-# Now plot!
-for c, d in data_si_mean.groupby(['type of perturbation', 'growth media', 'strain']):
-    if c[0] != 'nutrient conditions':
-        continue
-    if 'MG1655' in c[2]:
-        k = colors['pale_red']
-    elif 'NCM3722' in c[2]:
-        k = colors['light_green']
+# %%
+######################
+# plot 2  #
+######################
+# %%
+fig, ax = plt.subplots(1, 1, figsize=(2, 2))
 
-    ax2.plot(d['growth_rate_hr'],  d['C+D period (minutes)'], 'o', color= k,
-                    alpha=1, markeredgecolor='k', markeredgewidth=0.25,
-                    ms=4, zorder=10)
+# plot of RNA/protein vs. num ori
+# Load the complex subunit counts.
+subunits = pd.read_csv('../../data/compiled_annotated_complexes.csv')
 
+# # Load the compiled data
+data = pd.read_csv('../../data/compiled_absolute_measurements.csv')
 
+# Compute the minimum number of complexes.
+complex_count = subunits.groupby(['dataset', 'dataset_name', 'condition',
+                    'growth_rate_hr', 'complex_annotation',
+                    'complex'])['n_units'].mean().reset_index()
 
-# plot 2 ; t_cyc vs. tau and lambda
-tau = np.linspace(0.1, 40, 100)
-x = (np.log(2)/tau)*60
-tcyc_x = t_cyc_const.mean()*np.ones(100)
-ax2.plot(x,  tcyc_x, color = 'k', lw = 0.5,
-                alpha=0.75,
-                zorder=1, ls = '--')
+complex_ribo = complex_count[complex_count.complex_annotation == 'ribosome']
 
-tau = np.linspace(40, (np.log(2)/0.1)*60, 100)
-x = (np.log(2)/tau)*60
-tcyc_x = func_lin(x, *popt_tcyc_lin)
-ax2.plot(x,  tcyc_x, color = 'k', lw = 0.5,
-                alpha=0.75,
-                zorder=1, ls = '--')
+complex_ribo['tau']  = 60*(np.log(2)/(complex_ribo['growth_rate_hr']))
+t_cyc_arr = []
+for i, val in enumerate(complex_ribo['tau'].values):
+    if val <= 40:
+        t_cyc_ = t_cyc_const
+    else:
+        t_cyc_ = func_lin(complex_ribo['growth_rate_hr'].values[i], *popt_tcyc_lin)
+    t_cyc_arr = np.append(t_cyc_arr, t_cyc_)
 
+complex_ribo['t_cyc'] = t_cyc_arr #func_lin(complex_ribo['growth_rate_hr'], *popt_tcyc_lin)
+complex_ribo['# ori'] =  2**(complex_ribo['t_cyc'] / complex_ribo['tau'] )
 
-for a in [ax2]:
-    a.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
-    a.xaxis.set_tick_params(labelsize=5)
-    a.yaxis.set_tick_params(labelsize=5)
-    a.set_xlim([0, 2])
-    a.set_ylim([0, 150])
+# for g, d in complex_ribo.groupby(['dataset', 'condition', 'growth_rate_hr']):
+for g, d in complex_ribo.groupby(['dataset', 'dataset_name']):
+    ax.plot(d['# ori'], d['n_units'], 'o', color=dataset_colors[g[0]],
+                    alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
+                    label = g[1], ms=4, zorder=10)
 
-ax2.set_ylabel('t$_{cyc}$ [min]', fontsize=6)
-
-
-
-
-fig.savefig('../../figures/fig9-S1b_translation_limit.pdf')
+ax.set_xlabel('estimated # ori', fontsize=6)
+ax.set_ylabel('ribosomes per cell', fontsize=6)
+ax.xaxis.set_tick_params(labelsize=5)
+ax.yaxis.set_tick_params(labelsize=5)
+ax.legend(fontsize=6, loc = 'upper left')
+plt.savefig('../../figures/fig11a_ribosome_vs_ori.pdf', bbox_inches='tight')

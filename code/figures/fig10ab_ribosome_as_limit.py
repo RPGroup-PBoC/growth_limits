@@ -269,4 +269,4 @@ ax4.legend(fontsize=6, bbox_to_anchor=(1, 1))
 
 
 plt.tight_layout()
-plt.savefig('../../figures/fig9_ribosome_as_limit.pdf')
+plt.savefig('../../figures/fig10_ribosome_as_limit.pdf')

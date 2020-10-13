@@ -10,7 +10,7 @@ dataset_colors = prot.viz.dataset_colors()
 
 # Load the data
 data = pd.read_csv('../../data/compiled_estimate_categories.csv', comment='#')
-data = data[data['shorthand']=='ribosome']
+data = data[data['shorthand']=='trna']
 
 # Compute the trend
 growth_rate = constants['growth_rate']['value']
@@ -19,9 +19,9 @@ theta_dry = constants['dry_mass_frac']['value']
 theta_prot = constants['theta_prot']['value']
 t_double = constants['t_double']['value']
 m_aa = 110 / 6E11 # in pg
-k_tsl = 15 # per sec
+k_trna = 20 # per sec
 
-N_ribosomes = cell_mass * theta_dry * theta_prot / (m_aa * k_tsl * t_double)
+N_synthase = cell_mass * theta_dry * theta_prot / (m_aa * k_trna * t_double)
 
 
 # Instantiate the figure canvas
@@ -32,10 +32,10 @@ ax.set_yscale('log')
 ax.set_xlim([0, 2])
 ax.set_ylim([1E3, 3E5])
 ax.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
-ax.set_ylabel('number of ribosomes', fontsize=6)
+ax.set_ylabel('number of tRNA synthetases', fontsize=6)
 
 # Plot the cell size dependence
-ax.plot(growth_rate, N_ribosomes, lw=3, color='grey', alpha=0.4, label='cell size dependence')
+ax.plot(growth_rate, N_synthase, lw=3, color='grey', alpha=0.4, label='cell size dependence')
 
 # Plot the point estimate.
 estimate = 1E4
@@ -49,7 +49,7 @@ for g, d in data.groupby(['dataset', 'dataset_name']):
             markeredgewidth=0.5, markeredgecolor='k', label=g[1])
 
 ax.legend(fontsize=6)
-plt.savefig('../../figures/fig8a_ribosomes.svg', bbox_inches='tight')
+plt.savefig('../../figures/fig9-S1_tRNA_synthases.svg', bbox_inches='tight')
 # %%
 
 

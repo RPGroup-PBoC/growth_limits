@@ -71,5 +71,5 @@ for a in ax:
     a.yaxis.set_tick_params(labelsize=6)
 
 plt.tight_layout()
-plt.savefig('../../figures/fig7_RNA_synthesis_plots.svg', bbox_inches='tight')
+plt.savefig('../../figures/fig8_RNA_synthesis_plots.svg', bbox_inches='tight')
 # %%

@@ -53,7 +53,7 @@ ax.plot(1E5, compute_elongation_rate(r_aa, 1E5), 'o', ms=7, color=colors['light_
         markeredgecolor='k')
 ax.plot(1E6, compute_elongation_rate(r_aa, 1E6), 'o', ms=7, color=colors['light_blue'], markeredgewidth=0.25,
         markeredgecolor='k')
-plt.savefig('../../figures/fig11_rt_vs_R.svg')
+plt.savefig('../../figures/fig12_rt_vs_R.svg')
 
 
 # %%
@@ -93,7 +93,7 @@ for i, r in enumerate(r_aa):
 leg = ax.legend(title=r'r$_{AA}$ [$\frac{AA}{s\cdot \mu m^3}$]',
                fontsize=6, bbox_to_anchor=(1,1))
 leg.get_title().set_fontsize(6)
-plt.savefig('../../figures/fig11_lambda_v_R.svg', bbox_inches='tight')
+plt.savefig('../../figures/fig12_lambda_v_R.svg', bbox_inches='tight')
 
 
 #%% Connection with data

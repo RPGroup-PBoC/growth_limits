@@ -174,4 +174,4 @@ by_label = dict(zip(labels, handles))
 ax1.legend(by_label.values(), by_label.keys(), loc = 'upper left', fontsize = 6)
 
 plt.tight_layout()
-plt.savefig('../../figures/fig9-S1a_ribosome_as_limit.pdf')
+plt.savefig('../../figures/fig10-S1a_ribosome_as_limit.pdf')

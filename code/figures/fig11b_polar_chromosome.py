@@ -112,5 +112,5 @@ ribosomes = data_schmidt[data_schmidt['gene_name'].isin(['rpsA', 'rpsB', 'rpsC',
 for g, d in ribosomes.groupby(['pos', 'shifted_pos']):
     ax.plot([pos_to_rad[g[1]], pos_to_rad[g[1]]], [-15, -5], '-', lw=1, color=colors['red'])
 
-plt.savefig('../../figures/fig10b_polar_chromosome.svg')
+plt.savefig('../../figures/fig11b_polar_chromosome.svg')
 #%%

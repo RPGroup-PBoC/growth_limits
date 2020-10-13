@@ -249,6 +249,6 @@ ax4_twin.xaxis.set_tick_params(labelsize=5)
 ax4_twin.yaxis.set_tick_params(labelsize=5)
 #
 plt.tight_layout()
-fig.savefig('../../figures/fig5-S1_COG_cytosol_barplot.svg')
+fig.savefig('../../figures/fig6_COG_cytosol_barplot.svg')
 
 # %%

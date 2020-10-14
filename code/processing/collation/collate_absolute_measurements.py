@@ -3,7 +3,7 @@ import pandas as pd
 import tqdm
 import glob
 
-# Define the author names which did absolute measurments that are trustworth.
+# Define the author names which did absolute measurements that are trustworthy.
 authors = ['schmidt2016', 'li2014', 'valgepea2013', 'peebo2015']
 
 # Load inthe datasets and concatenate.

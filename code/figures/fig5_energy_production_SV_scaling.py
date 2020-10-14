@@ -34,11 +34,7 @@ ax4 = fig.add_subplot(spec[:2, 1])
 # to determine cell size, length, width, and surface area.
 # gr = np.linspace(0.01, 4.4, 100)
 V = np.linspace(0.5,50, 500)
-# V = size.lambda2size(gr)
-# print(V)
-# w = size.lambda2width(gr)
-# l = size.lambda2length(gr)
-# SA_rod = size.rod_SA(l, w, V)
+
 
 SA_rod = 2 * np.pi *  V**(2/3)
 SA_V_ratio_rod = SA_rod / V

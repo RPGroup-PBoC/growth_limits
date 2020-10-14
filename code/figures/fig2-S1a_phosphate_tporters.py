@@ -50,6 +50,6 @@ for g, d in data.groupby(['dataset', 'dataset_name']):
 ax.plot(growth_rate, N_tporters, '-', lw=3, color='grey', label='cell size dependence',
 alpha=0.3)
 ax.legend(ncol=2, fontsize=6)
-plt.savefig('../../figures/fig3a_phos_transporters.svg', bbox_inches='tight')
+plt.savefig('../../figures/fig2-S1a_phos_transporters.svg', bbox_inches='tight')
 
 # %%

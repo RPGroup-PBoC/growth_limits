@@ -1,3 +1,7 @@
+"""
+This script generates a master list of all genes in ecoli with their associated 
+GO terms and gene products.
+"""
 #%%
 import numpy  as np
 import pandas as pd 

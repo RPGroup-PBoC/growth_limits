@@ -32,9 +32,6 @@ m_aa = 110 / 6E11 # in pg
 r_atp = 300 # per second per synthase
 atp_aa = 5
 
-# N_synthase = (cell_mass * theta_dry * theta_prot * atp_aa) / (m_aa * r_atp * t_double)
-# N_synthase = (constants['n_aa']['value'] * atp_aa) / (r_atp * t_double)
-
 tot_prot = prot.size.lambda2P(growth_rate) / 1E3
 N_synthase = (tot_prot * atp_aa) / (m_aa * r_atp * t_double / np.log(2))
 

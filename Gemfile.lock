@@ -17,10 +17,6 @@ GEM
     eventmachine (1.2.7)
     ffi (1.13.1)
     forwardable-extended (2.6.0)
-    gemoji (3.0.1)
-    html-pipeline (2.13.0)
-      activesupport (>= 2)
-      nokogiri (>= 1.4)
     http_parser.rb (0.6.0)
     i18n (1.8.3)
       concurrent-ruby (~> 1.0)
@@ -46,10 +42,6 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    jemoji (0.12.0)
-      gemoji (~> 3.0)
-      html-pipeline (~> 2.2)
-      jekyll (>= 3.0, < 5.0)
     kramdown (2.3.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -59,10 +51,7 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    mini_portile2 (2.4.0)
     minitest (5.14.1)
-    nokogiri (1.10.9)
-      mini_portile2 (~> 2.4.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.5)
@@ -89,8 +78,6 @@ DEPENDENCIES
   activesupport (>= 5.2.4.3)
   jekyll-paginate
   jekyll-sitemap
-  jemoji
-  nokogiri (>= 1.10.8)
 
 BUNDLED WITH
    2.1.2

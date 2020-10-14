@@ -1,20 +1,17 @@
 - dataset:
   storage: local
-  name: Sampling statistics from some fancy experiment
+  name: Compiled absolute measurements of individual protein abundances
   filetype: ".csv"
-  link: dataset1.csv
-  filesize: "24 MB"
+  link: compiled_absolute_measurements.csv
 
 - dataset:
   storage: local
-  name: Table of measurements from an old-school study for comparison
+  name: Compiled absolute measurements of macromolecular complex and subunit abundances
   filetype: ".csv"
-  link: dataset2.csv
+  link: compiled_annotated_complexes.csv
 
 - dataset:
-  storage: remote 
-  link: "https://data.caltech.edu"
-  DOI:  "10.1.1./journal.0000"
-  name: "Anonymized data from web scraping"
-  filetype: .zip 
-  filesize: 2 gb
+  storage: local
+  name: Compiled complex abundances by estimation category
+  filetype: ".csv"
+  link: compiled_estimation_categories.csv

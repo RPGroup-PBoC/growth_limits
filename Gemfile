@@ -4,8 +4,8 @@ source "https://rubygems.org"
 group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-paginate"
-  gem "jemoji"
+  # gem "jemoji"
 end
 
-gem "nokogiri", ">= 1.10.8"
+# gem "nokogiri", ">= 1.10.8"
 gem "activesupport", ">= 5.2.4.3"

@@ -2,7 +2,7 @@
 layout: page
 title: People
 description: About the authors
-# img: people.png 
+img: seg.png 
 permalink: people
 sidebar: true
 ---

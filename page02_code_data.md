@@ -2,7 +2,8 @@
 layout: page
 title: Code and Data
 permalink: code
-sidebar: False
+img: seg.png
+sidebar: true
 ---
 
 ---

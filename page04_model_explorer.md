@@ -47,11 +47,5 @@ translation rate and the cellular growth rate.
 
 </center>
 
-This figure was made using the [Bokeh Python plotting framework](). The code
-used to generate this figure can be downloaded below:
-
-1. [**`model_explorer.py`**](code/model_explorer.py) \| This is a Python file
-   which defines the layout and interactive widgets of the figure. 
-2. [**`model_explorer.js`**](code/model_explorer.js) \| This is the Javascript
-   code which defines the mathematics of the model and accommodates all
-   interactions with the widgets.
+This figure was made using the [Bokeh Python plotting framework](https://docs.bokeh.org/en/latest/index.html). The code
+used to generate this figure can be accessed via the associated [GitHub Repository](https://github.com/RPGroup-PBoC/growth_limits/tree/publication/code/figures/model_explorer).

@@ -3,7 +3,7 @@ layout: page
 title: Dataset Explorer
 permalink: data_explorer
 sidebar: true
-interactive: data_explorer.html
+interactive: complex_explorer.html
 ---
 ---
 
@@ -37,14 +37,6 @@ same result
 right-hand side below the aggregation method buttons. This is presented as a
 clickable link to the  EcoCyc web page associated with that complex
 
-**Stoichiometric breakdown.** For each complex, the expected stoichiometric
-ratios of each complex is given for each subunit in the table on the right-hand
-side. Hovering your mouse over a point in the plot on the left-hand side will
-populate this table with the observed stoichiometry for that data set and growth
-condition. Note that the expected stoichiometry is computed relative to the
-minimum subunit copy number, identified as the first subunit with stoichiometry
-equal to 1 from the top of the table.
-
 
 ### Explore by Individual Protein
 
@@ -59,35 +51,9 @@ about the annotated function of the protein of interest.
 {% include_relative interactives/{{page.interactive}} %}
 
 </center>
-This interactive figure was made using the [Bokeh Python plotting library]().
-The code and data used to generate this figure can be found here:
+This interactive figure was made using the [Bokeh Python plotting library](https://docs.bokeh.org/en/latest/index.html).
+The code and data used to generate this figure can be found on the [GitHub Repository](https://github.com/RPGroup-PBoC/growth_limits/tree/publication/code/figures/complex_explorer).
 
-### Code
-* [**`data_explorer.py`**](code/data_explorer.py) \| Python file for defining layout and plotting canvas
-* [**`explorer_complex.js`**](code/explorer_complex.js) \| Javascript code for
-  defining interaction with complex annotations.
-* [**`explorer_subunits.js`**](code/explorer_subunits.js) \| Javascript code for
-  defining hovering feature and population of stoichiometry table.
-* [**`explorer_prot.js`**](code/explorer_prot.js) \| Javascript code for
-  defining interaction with individual protein annotations.
-* [**class_selection.js`**](code/class_selection.js) \| Javascript code for
-  filtering data by COG class associations.
-* [**`explorer_data_munging.py`**](code/explorer_data_munging.py) \| Python file
-  used to generate data files for visualization. This script requires access to
-  `compiled_annotated_complexes.csv` and `compiled_absolute_measurements.csv`,
-  accessible on the [data]({{site.url}}/data) page of this website. 
-
-### Data 
-* [**`cplx_desc.csv`**](data/cplx_desc.csv) \| Data file containing list of
-  complexes, their COG classifications, and their EcoCyc complex identification
-  number.
-* [**`cplx_numeric.csv`**](data/cplx_numeric.csv) \| Data file containing all
-  measurements and aggregations of complex abundances.
-* [**`prot_desc.csv`**](data/prot_desc.csv) \| Data file containing list of
-  individual proteins, their COG classification, and their EcoCyc gene product
-  annotation.
-* [**`prot_numeric.csv`**](data/prot_numeric.csv) \| Data file containing all
-  measurements of protein abundances.
 
 ## References 
 

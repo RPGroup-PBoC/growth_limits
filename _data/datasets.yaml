@@ -14,4 +14,4 @@
   storage: local
   name: Compiled complex abundances by estimation category
   filetype: ".csv"
-  link: compiled_estimation_categories.csv
+  link: compiled_estimate_categories.csv

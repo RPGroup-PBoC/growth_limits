@@ -5,8 +5,8 @@ for any analysis requiring cell size or surface area. Since each of the data
 sets used either K-12 MG1655 or its derivative, BW25113 (from the lab of Barry
 L. Wanner; the parent strain of the Keio collection \citep{datsenko2000,
 baba2006}), below we fit the MG1655 cell size data from the supplemental material of
-\cite{si2017, si2019} using the optimize.curve\_fit function from the Scipy
-python package \citep{2020scipynmeth}. A quick comment on nomenclature: throughout
+\cite{si2017, si2019} using non-linear least squares regression as implemented by the \texttt{optimize.curve\_fit} function from the Scipy
+Python package \citep{2020scipynmeth}. Throughout
 the text, we usually refer to cell size, in units of \textmu m$^3$; however,
 on occasion we will mention size as a volume in units of fL.
 

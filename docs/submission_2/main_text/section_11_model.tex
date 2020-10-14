@@ -1,9 +1,9 @@
 \section{A Minimal Model of Nutrient-Mediated Growth Rate Control}
 \label{sec:minimal_model}
 While the preceeding subsections highlight a dominant role for ribosomes in
-setting the growth rate, our analysis on the whole emphasizes how the total
-proteomic content also changes in response to variable growth conditions and
-growth rate. In this final section we use a minimal model of growth rate control
+setting the growth rate, our analysis on the whole has emphasized how the total
+proteomic content changes in response to variable growth conditions and
+growth rate. In this final section we employ a minimal model of growth rate control
 to better understand how this interconnection between ribosomal abundance and
 total protein abundance influences the observed growth rate.
 
@@ -23,18 +23,20 @@ ori$\rangle$ and maintain a smaller cell size in poorer nutrient conditions
 \citep{fernandezcoll2020}.
 
 To consider this quantitatively, we assume that cells modulate their proteome
-($N_\text{pep}$, $R$, $\Phi_R$) to better maximize their rate of peptide
-elongation $r_t$. The elongation rate $r_t$ will depend on how quickly the ribosomes can
-match codons with an amino-acyl tRNA, along with the subsequent steps
-of peptide bond formation and translocation. This ultimately depends on the
-cellular concentration of amino acids, which we treat as a single effective
-species, $[AA]_\text{eff}$. In our model, we determine the the rate of peptide
-elongation $r_t$ and achievable growth rate as simply depending on the supply of
-amino acids (and, therefore, also amino-acyl tRNAs), through a parameter
-$r_{AA}$ in units of AA per second, and the rate of amino acid consumption by
-protein synthesis ($r_t \times R \times f_a$). This is shown schematically in
-\FIG{elongation_rate_model}(A) and derived in the Appendix Section "Derivation of Minimal Model for Nutrient-Mediated Growth Rate Control". Given our observation
-that protein synthesis and energy production are not limiting, we
+(total number of peptide bonds $N_\text{pep}$, number of ribosomes $R$, and
+ribosomal fraction $\Phi_R$) to better maximize their rate of peptide elongation
+$r_t$. The elongation rate $r_t$ will depend on how quickly the ribosomes can
+match codons with an amino-acyl tRNA, along with the subsequent steps of peptide
+bond formation and translocation. This ultimately depends on the cellular
+concentration of amino acids, which we treat as a single effective species,
+$[AA]_\text{eff}$. In our model, we determine the the rate of peptide elongation
+$r_t$ and achievable growth rate as simply depending on the supply of amino
+acids (and, therefore, also amino-acyl tRNAs), through a parameter $r_{AA}$ in
+units of AA per second, and the rate of amino acid consumption by protein
+synthesis ($r_t \times R \times f_a$). This is shown schematically in
+\FIG{elongation_rate_model}(A) and derived in the Appendix Section "Derivation
+of Minimal Model for Nutrient-Mediated Growth Rate Control". Given our
+observation that general protein synthesis and energy production are not limiting, we
 assume that other molecular players required by ribosomes such as elongation
 factors and GTP are available in sufficient abundance.
 
@@ -102,25 +104,24 @@ total consumption rate.
 Availability and Metabolic Capacity}
 To relate elongation rate to growth rate, we constrain the set of parameters
 based on our available proteomic measurements; namely, we restrict the values of
-$R$, $N_{pep}$, and cell size $V$ to those associated with the amalgamated
+$R$, $N_{pep}$, and cell size to those associated with the amalgamated
 proteomic data (described in the Appendix Section
 "Estimation of Total Protein Content per Cell"). We then consider how changes in the
 nutrient conditions, through the parameter $r_{AA}$, influence the maximum
 growth rate as determined by \EQ{lam_limited}. \FIG{elongation_rate_model}(C)
 shows how the growth rate depends on the rate of amino acid supply $r_{AA}$ as a
 function of the cellular ribosome copy number. A feature immediately apparent is
-the presence of a maximal growth rate whose dependence on $R$ (and consequently,
-the cell size) increases with increasing $r_{AA}$. Importantly, however, there
-is an optimum set of $R$, $N_\text{pep}$, and $V$ that are strictly dependent on
+the presence of a maximal growth rate increases with increasing $r_{AA}$. Importantly, however, there
+is an optimum set of $R$, $N_\text{pep}$, and cell size that are strictly dependent on
 the value of $r_{AA}$. This shows that increasing the ribosomal concentration
 beyond the cell's metabolic capacity will have the adverse consequence of
-depleting the supply of amino acids and a concomitant decrease in the elongation
+depleting the supply of amino acids and lead to a concomitant decrease in the elongation
 rate $r_t$ [\FIG{elongation_rate_model}(B)] and growth rate.
 This helps us understand that while it is important for cells to increase
-their ribosomal content and cell size $V$ in order to increase growth rate,
+their ribosomal content and cell size in order to increase growth rate,
 cells will better maximize their achievable growth rate by tuning these
-parameters according to the available nutrient conditions, since this
-ultimately is what allows cells to reach the peak for each curve shown in
+parameters according to the available nutrient conditions, since this is
+ultimately what allows cells to reach the peak for each curve shown in
 \FIG{elongation_rate_model}(C).
 
 Also of note is the growth rate trends observed at low values of $r_{AA}$
@@ -128,6 +129,8 @@ Also of note is the growth rate trends observed at low values of $r_{AA}$
 growth in nutrient-poor media. In these conditions, there no longer exists a
 peak in growth, at least within the range of physiologically-relevant  ribosome
 copy numbers. This is a regime, associated with slower growth rates, where cells
-limit their pool of actively translating ribosomes  by decreasing $f_a$
-\citep{dai2016}, which we find would help maintain the pool of available amino
-acids $[AA]_\text{eff}$ and increase the achievable elongation rate.
+limit their pool of actively translating ribosomes by decreasing $f_a$
+\citep{dai2016}, likely due to having excess ribosomes relative to the cell's
+metabolic capacity. By reducing the fraction of actively  translating ribosomes,
+we find that cells instead prioritize maintaining their pool of available amino
+acids $[AA]_\text{eff}$ and the achievable elongation rate.

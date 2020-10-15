@@ -1,5 +1,5 @@
 # Fundamental Limits on the Rate of Bacterial Growth
-
+[![DOI](https://zenodo.org/badge/230800765.svg)](https://zenodo.org/badge/latestdoi/230800765)
 
 ## Branches
 This repository contains three branches -- `master`, `gh-pages`, and
@@ -19,11 +19,7 @@ reproduce everything presented in this work.
 To run the code used in this work, you will need to install the `prot` module. `prot` 
 is a custom Python package written specifically for this project and contains an 
 array of functions used for everything from stylizing the plots to computing cell 
-volumes as a function of growth rate. The requirements can be installed by executing the folliwng command using `pip` in the command line:
-
-> pip install -r requirements.txt
-
-The software module itself can be installed locally by executing the command in the root directory,
+volumes as a function of growth rate. The software module itself can be installed locally by executing the command in the root directory,
 
 > pip install -e ./
 

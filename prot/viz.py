@@ -58,35 +58,6 @@ def ylabelbox(ax, text, color, bgcolor=None, size=6, boxsize=0.1, pad=0.05, **kw
     )
     cax.add_artist(at)
 
-def assign_rect_bounds(df, key, width=500, height=500, text_pad=0,
-                       copy_df=False):
-    """
-    Uses squarify to assign the bounds for a tree map. 
-    """
-    # Make a copy of the dataframe
-    if copy_df:
-        df = df.copy()
-
-    # Compute the values and rects. 
-    # Drop the quantities that are equal to zero in hte key dimension
-    df = df[df[key] > 0]
-    values = sq.normalize_sizes(df[key], width, height)
-    rects = sq.squarify(values, 0, 0, width, height)
-
-    # Assign the information to the data frame and return
-    df['left'] = [r['x'] for r in rects] 
-    df['right'] = [r['x'] + r['dx'] for r in rects]
-    df['bottom'] = [r['y'] for r in rects]
-    df['top'] = [r['y'] + r['dy'] for r in rects]
-
-    # Determine if text padding should be applied
-    df['text_left'] = df['left'] + text_pad
-    df['text_bottom'] = df['bottom'] + text_pad
-    df['text_right'] = df['right'] - text_pad
-    df['text_top'] = df['top'] - text_pad
-
-    return df
-
 def altair_theme():
     colors = {'green': '#7AA974', 'light_green': '#BFD598',
               'pale_green': '#DCECCB', 'yellow': '#EAC264',

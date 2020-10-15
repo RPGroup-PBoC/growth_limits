@@ -1,0 +1,3 @@
+# `model_explorer`
+This folder contains the code used to produce the [model explorer](https://rpgroup.caltech.edu/growth_limits/model_explorer.html) interactive figure. The Python file (`model_explorer.py`) generates the figure. The javascript file `model_explorer.js` contains the javascript used to calculate the 
+quantities in response to changed parameters. The HTML file (`model_explorer.html`) is the interactive figure file embedded on the website.

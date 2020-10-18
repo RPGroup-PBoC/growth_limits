@@ -2,8 +2,8 @@ aggregation_method,category,concentration_uM,condition,dataset,dataset_name,grow
 sum total,synthesis,0.10299554684864912,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,246.23495569965831,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,3.97
 sum total,synthesis,8.826008712185578,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,21100.639112518274,RNA polymerase (core enzyme),40.0,nt/s,rnap,3.97
 sum total,synthesis,0.8994560828704375,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,2150.360238825173,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,3.97
-sum total,synthesis,0.8994560828704375,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,2150.360238825173,σ-70 (RpoD),,none,sigma70,3.97
-sum total,synthesis,0.8994560828704375,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,2150.360238825173,all σ-factors,,none,all_sigma,3.97
+sum total,synthesis,5.435863297142782,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,12995.703203831352,σ-70 (RpoD),,none,sigma70,3.97
+sum total,synthesis,5.435863297142782,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,12995.703203831352,all σ-factors,,none,all_sigma,3.97
 sum total,synthesis,32.51837384605491,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,77742.78197847423,tRNA ligases,20.0,AA/s,trna,3.97
 sum total,transport,27.043191950953137,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,64653.078465670005,Carbon Importers (total),200.0,carbs/s,carbon_tport,3.97
 sum total,transport,27.043191950953137,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,64653.078465670005,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,3.97
@@ -13,7 +13,7 @@ sum total,transport,0.13222556796547244,MOPS complete,li_2014,Li et al. 2014,1.9
 average,transport,0.009666621156744723,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,23.11031986454894,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,3.97
 sum total,transport,0.8430674594560932,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,2015.5500396153038,Phosphate Transport System,300.0,Pi/s,phosphate_tport,3.97
 sum total,synthesis,62.821280647784484,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,150188.9715682004,Ribosome (50S + 30S),15.0,AA/s,ribosome,3.97
-sum total,no aggregation,133.27830904097127,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,318632.9848867574,Elongation Factor EF-Tu,,none,eftu,3.97
+sum total,sum,133.27830904097127,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,318632.9848867574,Elongation Factor EF-Tu,,none,eftu,3.97
 sum total,energy production,4.777606673956619,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,11421.986714055005,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,3.97
 sum total,energy production,9.400726068915429,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,22474.635437642464,respiratory complex,1500.0,protons/s,proton_gradient,3.97
 sum total,synthesis,6.730960374499984,MOPS complete,li_2014,Li et al. 2014,1.934364224818452,16091.935819969849,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,3.97
@@ -21,8 +21,8 @@ sum total,synthesis,0.32390852796647784,MOPS complete,li_2014,Li et al. 2014,1.9
 sum total,synthesis,0.07939613159936453,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,130.0495932216535,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,2.72
 sum total,synthesis,8.341998883215043,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,13664.06069872411,RNA polymerase (core enzyme),40.0,nt/s,rnap,2.72
 sum total,synthesis,0.7111354954888718,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,1164.8285634428446,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,2.72
-sum total,synthesis,0.7111354954888718,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,1164.8285634428446,σ-70 (RpoD),,none,sigma70,2.72
-sum total,synthesis,0.7111354954888718,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,1164.8285634428446,all σ-factors,,none,all_sigma,2.72
+sum total,synthesis,3.948761822194901,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,6468.0086845660935,σ-70 (RpoD),,none,sigma70,2.72
+sum total,synthesis,3.948761822194901,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,6468.0086845660935,all σ-factors,,none,all_sigma,2.72
 sum total,synthesis,29.517845833204124,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,48349.75918925503,tRNA ligases,20.0,AA/s,trna,2.72
 sum total,transport,18.463328548210967,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,30242.636748712797,Carbon Importers (total),200.0,carbs/s,carbon_tport,2.72
 sum total,transport,18.463328548210967,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,30242.636748712797,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,2.72
@@ -31,7 +31,7 @@ sum total,transport,0.1254286228263837,MOPS complete without methionine,li_2014,
 average,transport,11.799856344667942,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,19327.97589486458,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,2.72
 sum total,transport,0.5315784491213403,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,870.7169944055697,Phosphate Transport System,300.0,Pi/s,phosphate_tport,2.72
 sum total,synthesis,48.95996445201569,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,80195.63841297048,Ribosome (50S + 30S),15.0,AA/s,ribosome,2.72
-sum total,no aggregation,126.66125768523106,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,207469.11350828558,Elongation Factor EF-Tu,,none,eftu,2.72
+sum total,sum,126.66125768523106,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,207469.11350828558,Elongation Factor EF-Tu,,none,eftu,2.72
 sum total,energy production,3.7931146070536497,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,6213.061036520166,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,2.72
 sum total,energy production,8.166111460163613,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,13375.959913964638,respiratory complex,1500.0,protons/s,proton_gradient,2.72
 sum total,synthesis,6.03973660193156,MOPS complete without methionine,li_2014,Li et al. 2014,1.5693898427772346,9892.991918178266,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,2.72
@@ -39,8 +39,8 @@ sum total,synthesis,0.1905071642333268,MOPS complete without methionine,li_2014,
 sum total,synthesis,0.17755848242330538,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,122.96457583261167,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,1.15
 sum total,synthesis,6.591399397791085,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,4564.741824952261,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.15
 sum total,synthesis,0.5031109813317096,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,348.4194479016489,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.15
-sum total,synthesis,0.5031109813317096,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,348.4194479016489,σ-70 (RpoD),,none,sigma70,1.15
-sum total,synthesis,0.5031109813317096,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,348.4194479016489,all σ-factors,,none,all_sigma,1.15
+sum total,synthesis,3.7644733214140045,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,2607.0107092788407,σ-70 (RpoD),,none,sigma70,1.15
+sum total,synthesis,3.7644733214140045,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,2607.0107092788407,all σ-factors,,none,all_sigma,1.15
 sum total,synthesis,25.773520067100975,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,17848.935852069437,tRNA ligases,20.0,AA/s,trna,1.15
 sum total,transport,55.79851866171078,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,38642.148128794564,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.15
 sum total,transport,55.79851866171078,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,38642.148128794564,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,1.15
@@ -52,7 +52,7 @@ sum total,transport,0.07252050181357977,MOPS minimal,li_2014,Li et al. 2014,0.73
 average,transport,1.5326136732705113,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,1061.3809471500272,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,1.15
 sum total,transport,0.6955375401211514,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,481.680612660101,Phosphate Transport System,300.0,Pi/s,phosphate_tport,1.15
 sum total,synthesis,36.75817757125642,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,25456.140713422206,Ribosome (50S + 30S),15.0,AA/s,ribosome,1.15
-sum total,no aggregation,96.07565526059739,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,66535.27353762151,Elongation Factor EF-Tu,,none,eftu,1.15
+sum total,sum,96.07565526059739,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,66535.27353762151,Elongation Factor EF-Tu,,none,eftu,1.15
 sum total,energy production,4.8304216859971865,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,3345.2119302036317,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.15
 sum total,energy production,8.03552725135332,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,5564.8436873797145,respiratory complex,1500.0,protons/s,proton_gradient,1.15
 sum total,synthesis,4.47072411748489,MOPS minimal,li_2014,Li et al. 2014,0.738700370046123,3096.110573081811,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.15
@@ -60,8 +60,8 @@ sum total,synthesis,0.2703036885778883,MOPS minimal,li_2014,Li et al. 2014,0.738
 sum total,synthesis,0.1095383376214931,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,43.53623136433768,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.66
 sum total,synthesis,8.05032165563135,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,3199.6164426739924,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.66
 sum total,synthesis,1.003869206381104,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,398.9898238145827,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.66
-sum total,synthesis,1.003869206381104,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,398.9898238145827,σ-70 (RpoD),,none,sigma70,0.66
-sum total,synthesis,1.003869206381104,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,398.9898238145827,all σ-factors,,none,all_sigma,0.66
+sum total,synthesis,1.2137328216941867,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,482.400537447998,σ-70 (RpoD),,none,sigma70,0.66
+sum total,synthesis,1.2137328216941867,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,482.400537447998,all σ-factors,,none,all_sigma,0.66
 sum total,synthesis,25.228683208608633,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,10027.19059862792,tRNA ligases,20.0,AA/s,trna,0.66
 sum total,transport,235.26608807720672,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,93506.97723846199,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.66
 sum total,transport,235.26608807720672,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,93506.97723846199,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.66
@@ -71,7 +71,7 @@ sum total,transport,0.14923384405847448,glucose_minimal,peebo_2015,Peebo et al. 
 average,transport,1.1909592233747748,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,473.349125248751,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.66
 sum total,transport,0.18694839497470223,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,74.30301347948536,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.66
 sum total,synthesis,25.08835104377058,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,9971.415299048705,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.66
-sum total,no aggregation,197.30528481517598,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,78419.38006036133,Elongation Factor EF-Tu,,none,eftu,0.66
+sum total,sum,197.30528481517598,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,78419.38006036133,Elongation Factor EF-Tu,,none,eftu,0.66
 sum total,energy production,6.977038368306172,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,2773.0378535600253,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.66
 sum total,energy production,7.039814011334381,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,2797.9881584328728,respiratory complex,1500.0,protons/s,proton_gradient,0.66
 sum total,synthesis,12.718657341880062,glucose_minimal,peebo_2015,Peebo et al. 2015,0.21,5055.055797844915,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.66
@@ -79,8 +79,8 @@ sum total,synthesis,1.0526701686112683,glucose_minimal,peebo_2015,Peebo et al. 2
 sum total,synthesis,0.10826558250153205,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,43.682347634223156,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.67
 sum total,synthesis,7.824263596453505,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,3156.8869303154825,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.67
 sum total,synthesis,0.9928173478305696,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,400.5759865985914,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.67
-sum total,synthesis,0.9928173478305696,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,400.5759865985914,σ-70 (RpoD),,none,sigma70,0.67
-sum total,synthesis,0.9928173478305696,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,400.5759865985914,all σ-factors,,none,all_sigma,0.67
+sum total,synthesis,1.1302564996868858,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,456.0291109546667,σ-70 (RpoD),,none,sigma70,0.67
+sum total,synthesis,1.1302564996868858,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,456.0291109546667,all σ-factors,,none,all_sigma,0.67
 sum total,synthesis,25.012662513572,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,10091.95899500095,tRNA ligases,20.0,AA/s,trna,0.67
 sum total,transport,262.1812355615544,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,105783.31183696263,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.67
 sum total,transport,262.1812355615544,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,105783.31183696263,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.67
@@ -90,7 +90,7 @@ sum total,transport,0.19522655317449342,glucose_minimal,peebo_2015,Peebo et al. 
 average,transport,1.073241509810058,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,433.02504492910344,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.67
 sum total,transport,0.1921705766354974,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,77.5358312374307,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.67
 sum total,synthesis,25.261514098202927,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,10192.36413925833,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.67
-sum total,no aggregation,198.89282491524776,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,80248.0836398547,Elongation Factor EF-Tu,,none,eftu,0.67
+sum total,sum,198.89282491524776,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,80248.0836398547,Elongation Factor EF-Tu,,none,eftu,0.67
 sum total,energy production,6.964682138434035,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,2810.0681611225345,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.67
 sum total,energy production,6.946941743821412,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,2802.910373146601,respiratory complex,1500.0,protons/s,proton_gradient,0.67
 sum total,synthesis,12.659490533351585,glucose_minimal,peebo_2015,Peebo et al. 2015,0.22,5107.7752834534995,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.67
@@ -98,8 +98,8 @@ sum total,synthesis,0.9090033829830761,glucose_minimal,peebo_2015,Peebo et al. 2
 sum total,synthesis,0.11383820059004449,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,47.98735507672736,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.7
 sum total,synthesis,8.071825745309269,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,3402.59742467767,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.7
 sum total,synthesis,0.9730705243055771,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,410.188148815773,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.7
-sum total,synthesis,0.9730705243055771,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,410.188148815773,σ-70 (RpoD),,none,sigma70,0.7
-sum total,synthesis,0.9730705243055771,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,410.188148815773,all σ-factors,,none,all_sigma,0.7
+sum total,synthesis,1.0915037526837406,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,460.1124919063041,σ-70 (RpoD),,none,sigma70,0.7
+sum total,synthesis,1.0915037526837406,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,460.1124919063041,all σ-factors,,none,all_sigma,0.7
 sum total,synthesis,25.983689750437335,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,10953.164577399355,tRNA ligases,20.0,AA/s,trna,0.7
 sum total,transport,233.4544226047367,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,98410.37730480071,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.7
 sum total,transport,233.4544226047367,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,98410.37730480071,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.7
@@ -109,7 +109,7 @@ sum total,transport,0.18614048717943546,glucose_minimal,peebo_2015,Peebo et al. 
 average,transport,1.2661906364819493,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,533.750000902601,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.7
 sum total,transport,0.2293577143972619,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,96.6834509270218,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.7
 sum total,synthesis,27.578980906944107,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,11625.64361151322,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.7
-sum total,no aggregation,206.19345220649802,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,86918.78784312718,Elongation Factor EF-Tu,,none,eftu,0.7
+sum total,sum,206.19345220649802,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,86918.78784312718,Elongation Factor EF-Tu,,none,eftu,0.7
 sum total,energy production,7.244107621268768,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,3053.6811266696363,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.7
 sum total,energy production,7.947761717194984,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,3350.299474266374,respiratory complex,1500.0,protons/s,proton_gradient,0.7
 sum total,synthesis,13.607367653818438,glucose_minimal,peebo_2015,Peebo et al. 2015,0.26,5736.049760790625,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.7
@@ -117,8 +117,8 @@ sum total,synthesis,0.9986288104512723,glucose_minimal,peebo_2015,Peebo et al. 2
 sum total,synthesis,0.10637389775536421,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,47.40318730892744,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.74
 sum total,synthesis,8.229339898929105,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,3667.2242804799794,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.74
 sum total,synthesis,1.0276094817583088,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,457.93155813699167,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.74
-sum total,synthesis,1.0276094817583088,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,457.93155813699167,σ-70 (RpoD),,none,sigma70,0.74
-sum total,synthesis,1.0276094817583088,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,457.93155813699167,all σ-factors,,none,all_sigma,0.74
+sum total,synthesis,1.1371525108323615,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,506.7469990972037,σ-70 (RpoD),,none,sigma70,0.74
+sum total,synthesis,1.1371525108323615,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,506.7469990972037,all σ-factors,,none,all_sigma,0.74
 sum total,synthesis,25.442064165400303,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,11337.696169899009,tRNA ligases,20.0,AA/s,trna,0.74
 sum total,transport,198.32203407931567,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,88377.8514026973,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.74
 sum total,transport,198.32203407931567,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,88377.8514026973,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.74
@@ -127,7 +127,7 @@ sum total,transport,0.13735019700302933,glucose_minimal,peebo_2015,Peebo et al. 
 average,transport,1.3501069245827204,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,601.6454485879486,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.74
 sum total,transport,0.2265004874511604,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,100.93495922188572,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.74
 sum total,synthesis,29.636032061053026,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,13206.64569530294,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.74
-sum total,no aggregation,208.8662010073717,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,93076.62742251305,Elongation Factor EF-Tu,,none,eftu,0.74
+sum total,sum,208.8662010073717,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,93076.62742251305,Elongation Factor EF-Tu,,none,eftu,0.74
 sum total,energy production,7.595915636459681,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,3384.9526932442554,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.74
 sum total,energy production,6.950424352852092,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,3097.303703512773,respiratory complex,1500.0,protons/s,proton_gradient,0.74
 sum total,synthesis,13.480591617566981,glucose_minimal,peebo_2015,Peebo et al. 2015,0.31,6007.329081353139,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.74
@@ -135,8 +135,8 @@ sum total,synthesis,0.8951239102413995,glucose_minimal,peebo_2015,Peebo et al. 2
 sum total,synthesis,0.11460475768403021,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,53.141538509538705,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.77
 sum total,synthesis,8.712271920350354,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,4039.8282158349375,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.77
 sum total,synthesis,1.0716586885617243,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,496.92170393394025,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.77
-sum total,synthesis,1.0716586885617243,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,496.92170393394025,σ-70 (RpoD),,none,sigma70,0.77
-sum total,synthesis,1.0716586885617243,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,496.92170393394025,all σ-factors,,none,all_sigma,0.77
+sum total,synthesis,1.0403982198630664,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,482.4264121611848,σ-70 (RpoD),,none,sigma70,0.77
+sum total,synthesis,1.0403982198630664,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,482.4264121611848,all σ-factors,,none,all_sigma,0.77
 sum total,synthesis,26.966141596683112,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,12504.03806153238,tRNA ligases,20.0,AA/s,trna,0.77
 sum total,transport,172.10793198759916,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,79805.41541505783,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.77
 sum total,transport,172.10793198759916,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,79805.41541505783,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.77
@@ -144,7 +144,7 @@ sum total,transport,34.1758858758484,glucose_minimal,peebo_2015,Peebo et al. 201
 average,transport,1.3444649709591234,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,623.4203402439199,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.77
 sum total,transport,0.23398063096588204,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,108.49541469509373,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.77
 sum total,synthesis,35.05111546009388,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,16252.991932152774,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.77
-sum total,no aggregation,225.1985949365915,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,104423.23728052787,Elongation Factor EF-Tu,,none,eftu,0.77
+sum total,sum,225.1985949365915,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,104423.23728052787,Elongation Factor EF-Tu,,none,eftu,0.77
 sum total,energy production,8.051824008852082,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,3733.5824819606573,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.77
 sum total,energy production,8.440432194779898,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,3913.7777661262708,respiratory complex,1500.0,protons/s,proton_gradient,0.77
 sum total,synthesis,16.186866831268873,glucose_minimal,peebo_2015,Peebo et al. 2015,0.36,7505.75302845839,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.77
@@ -152,8 +152,8 @@ sum total,synthesis,1.008344970730993,glucose_minimal,peebo_2015,Peebo et al. 20
 sum total,synthesis,0.10992979086669,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,54.28377044913499,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.82
 sum total,synthesis,8.961467494362221,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,4425.208494586043,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.82
 sum total,synthesis,1.1051445711073051,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,545.7248097910717,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.82
-sum total,synthesis,1.1051445711073051,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,545.7248097910717,σ-70 (RpoD),,none,sigma70,0.82
-sum total,synthesis,1.1051445711073051,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,545.7248097910717,all σ-factors,,none,all_sigma,0.82
+sum total,synthesis,1.1570727340802385,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,571.3671443797582,σ-70 (RpoD),,none,sigma70,0.82
+sum total,synthesis,1.1570727340802385,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,571.3671443797582,all σ-factors,,none,all_sigma,0.82
 sum total,synthesis,26.200240770716483,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,12937.783693542884,tRNA ligases,20.0,AA/s,trna,0.82
 sum total,transport,144.15872181511625,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,71186.15346719167,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.82
 sum total,transport,144.15872181511625,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,71186.15346719167,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.82
@@ -162,7 +162,7 @@ sum total,transport,0.1342277881465086,glucose_minimal,peebo_2015,Peebo et al. 2
 average,transport,1.2723044315235343,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,628.2690175040474,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.82
 sum total,transport,0.2579625106744727,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,127.38291962109732,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.82
 sum total,synthesis,37.865516404219896,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,18698.1434624694,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.82
-sum total,no aggregation,225.87135197412675,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,111536.17709023168,Elongation Factor EF-Tu,,none,eftu,0.82
+sum total,sum,225.87135197412675,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,111536.17709023168,Elongation Factor EF-Tu,,none,eftu,0.82
 sum total,energy production,7.746592093596803,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,3825.2981621864765,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.82
 sum total,energy production,7.397147115632301,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,3652.740834287693,respiratory complex,1500.0,protons/s,proton_gradient,0.82
 sum total,synthesis,15.542776760891009,glucose_minimal,peebo_2015,Peebo et al. 2015,0.41,7675.085335635024,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.82
@@ -170,8 +170,8 @@ sum total,synthesis,0.7607567697010227,glucose_minimal,peebo_2015,Peebo et al. 2
 sum total,synthesis,0.11157471510795741,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,57.78365235669028,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.86
 sum total,synthesis,9.11738313732752,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,4721.819787756825,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.86
 sum total,synthesis,1.0082531969397122,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,522.1662646695015,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.86
-sum total,synthesis,1.0082531969397122,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,522.1662646695015,σ-70 (RpoD),,none,sigma70,0.86
-sum total,synthesis,1.0082531969397122,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,522.1662646695015,all σ-factors,,none,all_sigma,0.86
+sum total,synthesis,1.165374306663529,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,603.5380304265885,σ-70 (RpoD),,none,sigma70,0.86
+sum total,synthesis,1.165374306663529,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,603.5380304265885,all σ-factors,,none,all_sigma,0.86
 sum total,synthesis,28.162468794303095,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,14585.117288819221,tRNA ligases,20.0,AA/s,trna,0.86
 sum total,transport,129.150481408156,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,66886.00111743274,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.86
 sum total,transport,129.150481408156,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,66886.00111743274,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.86
@@ -180,7 +180,7 @@ sum total,transport,0.14765841241658204,glucose_minimal,peebo_2015,Peebo et al. 
 average,transport,1.313278998885138,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,680.1366872906219,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.86
 sum total,transport,0.2598009670972663,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,134.54884245193745,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.86
 sum total,synthesis,41.02919214955297,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,21248.69038071629,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.86
-sum total,no aggregation,229.2601174790996,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,118731.98076148586,Elongation Factor EF-Tu,,none,eftu,0.86
+sum total,sum,229.2601174790996,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,118731.98076148586,Elongation Factor EF-Tu,,none,eftu,0.86
 sum total,energy production,7.9776250915191005,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,4131.54821389701,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.86
 sum total,energy production,8.198123879607934,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,4245.742772257912,respiratory complex,1500.0,protons/s,proton_gradient,0.86
 sum total,synthesis,15.165669324062643,glucose_minimal,peebo_2015,Peebo et al. 2015,0.46,7854.178817577451,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.86
@@ -188,8 +188,8 @@ sum total,synthesis,0.7070384539342991,glucose_minimal,peebo_2015,Peebo et al. 2
 sum total,synthesis,0.09966854565387992,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,54.018358373489846,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.9
 sum total,synthesis,9.321430041244893,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,5052.028653753908,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.9
 sum total,synthesis,0.9773639999791124,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,529.7117407086794,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.9
-sum total,synthesis,0.9773639999791124,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,529.7117407086794,σ-70 (RpoD),,none,sigma70,0.9
-sum total,synthesis,0.9773639999791124,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,529.7117407086794,all σ-factors,,none,all_sigma,0.9
+sum total,synthesis,1.1437777372836357,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,619.904658052985,σ-70 (RpoD),,none,sigma70,0.9
+sum total,synthesis,1.1437777372836357,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,619.904658052985,all σ-factors,,none,all_sigma,0.9
 sum total,synthesis,28.859604904605433,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,15641.328666198053,tRNA ligases,20.0,AA/s,trna,0.9
 sum total,transport,110.77920352349567,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,60040.11272566419,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.9
 sum total,transport,110.77920352349567,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,60040.11272566419,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.9
@@ -198,7 +198,7 @@ sum total,transport,0.14001480352518506,glucose_minimal,peebo_2015,Peebo et al. 
 average,transport,1.4471417259836288,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,784.3218726486073,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.9
 sum total,transport,0.269573436819685,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,146.10341128753288,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.9
 sum total,synthesis,44.37735815597444,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,24051.64057337503,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.9
-sum total,no aggregation,235.62724287556648,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,127705.25309369953,Elongation Factor EF-Tu,,none,eftu,0.9
+sum total,sum,235.62724287556648,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,127705.25309369953,Elongation Factor EF-Tu,,none,eftu,0.9
 sum total,energy production,7.734244763181283,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,4191.805976748992,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.9
 sum total,energy production,8.117583122146167,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,4399.56770054078,respiratory complex,1500.0,protons/s,proton_gradient,0.9
 sum total,synthesis,14.988994765815383,glucose_minimal,peebo_2015,Peebo et al. 2015,0.51,8123.735383176622,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.9
@@ -206,8 +206,8 @@ sum total,synthesis,0.742529692800872,glucose_minimal,peebo_2015,Peebo et al. 20
 sum total,synthesis,0.0982960819444885,rich,peebo_2015,Peebo et al. 2015,0.25,40.84379137740997,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.69
 sum total,synthesis,8.315747337947974,rich,peebo_2015,Peebo et al. 2015,0.25,3455.342702369466,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.69
 sum total,synthesis,0.8227012441579135,rich,peebo_2015,Peebo et al. 2015,0.25,341.84717557000783,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.69
-sum total,synthesis,0.8227012441579135,rich,peebo_2015,Peebo et al. 2015,0.25,341.84717557000783,σ-70 (RpoD),,none,sigma70,0.69
-sum total,synthesis,0.8227012441579135,rich,peebo_2015,Peebo et al. 2015,0.25,341.84717557000783,all σ-factors,,none,all_sigma,0.69
+sum total,synthesis,1.3039418775593166,rich,peebo_2015,Peebo et al. 2015,0.25,541.8113210796921,σ-70 (RpoD),,none,sigma70,0.69
+sum total,synthesis,1.3039418775593166,rich,peebo_2015,Peebo et al. 2015,0.25,541.8113210796921,all σ-factors,,none,all_sigma,0.69
 sum total,synthesis,26.07328687417517,rich,peebo_2015,Peebo et al. 2015,0.25,10833.920015383519,tRNA ligases,20.0,AA/s,trna,0.69
 sum total,transport,206.13307596342182,rich,peebo_2015,Peebo et al. 2015,0.25,85652.0034581691,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.69
 sum total,transport,206.13307596342182,rich,peebo_2015,Peebo et al. 2015,0.25,85652.0034581691,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.69
@@ -215,7 +215,7 @@ sum total,transport,33.95838646414219,rich,peebo_2015,Peebo et al. 2015,0.25,141
 average,transport,0.6278569446029699,rich,peebo_2015,Peebo et al. 2015,0.25,260.8858619075368,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.69
 sum total,transport,0.25691165326319604,rich,peebo_2015,Peebo et al. 2015,0.25,106.75141634061669,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.69
 sum total,synthesis,27.328721685218486,rich,peebo_2015,Peebo et al. 2015,0.25,11355.575777198615,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.69
-sum total,no aggregation,249.88217923778456,rich,peebo_2015,Peebo et al. 2015,0.25,103830.54335252577,Elongation Factor EF-Tu,,none,eftu,0.69
+sum total,sum,249.88217923778456,rich,peebo_2015,Peebo et al. 2015,0.25,103830.54335252577,Elongation Factor EF-Tu,,none,eftu,0.69
 sum total,energy production,8.686667812122918,rich,peebo_2015,Peebo et al. 2015,0.25,3609.4668359576904,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.69
 sum total,energy production,10.733282921415727,rich,peebo_2015,Peebo et al. 2015,0.25,4459.87225294082,respiratory complex,1500.0,protons/s,proton_gradient,0.69
 sum total,synthesis,13.571987499987804,rich,peebo_2015,Peebo et al. 2015,0.25,5639.405102019932,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.69
@@ -223,8 +223,8 @@ sum total,synthesis,0.9418566304784998,rich,peebo_2015,Peebo et al. 2015,0.25,39
 sum total,synthesis,0.11551509354143316,rich,peebo_2015,Peebo et al. 2015,0.35,53.563655784601316,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.77
 sum total,synthesis,8.322769429905096,rich,peebo_2015,Peebo et al. 2015,0.35,3859.218248030414,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.77
 sum total,synthesis,0.8695849235076748,rich,peebo_2015,Peebo et al. 2015,0.35,403.2213115209678,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.77
-sum total,synthesis,0.8695849235076748,rich,peebo_2015,Peebo et al. 2015,0.35,403.2213115209678,σ-70 (RpoD),,none,sigma70,0.77
-sum total,synthesis,0.8695849235076748,rich,peebo_2015,Peebo et al. 2015,0.35,403.2213115209678,all σ-factors,,none,all_sigma,0.77
+sum total,synthesis,1.201183028509645,rich,peebo_2015,Peebo et al. 2015,0.35,556.9813632217514,σ-70 (RpoD),,none,sigma70,0.77
+sum total,synthesis,1.201183028509645,rich,peebo_2015,Peebo et al. 2015,0.35,556.9813632217514,all σ-factors,,none,all_sigma,0.77
 sum total,synthesis,25.91952459322578,rich,peebo_2015,Peebo et al. 2015,0.35,12018.728036731238,tRNA ligases,20.0,AA/s,trna,0.77
 sum total,transport,205.40712658750505,rich,peebo_2015,Peebo et al. 2015,0.35,95246.0521558666,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.77
 sum total,transport,205.40712658750505,rich,peebo_2015,Peebo et al. 2015,0.35,95246.0521558666,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.77
@@ -232,7 +232,7 @@ sum total,transport,32.799857290818196,rich,peebo_2015,Peebo et al. 2015,0.35,15
 average,transport,2.0084888250723933,rich,peebo_2015,Peebo et al. 2015,0.35,931.3242172531185,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.77
 sum total,transport,0.2458388124893743,rich,peebo_2015,Peebo et al. 2015,0.35,113.99398231844795,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.77
 sum total,synthesis,32.146948916900634,rich,peebo_2015,Peebo et al. 2015,0.35,14906.347331073322,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.77
-sum total,no aggregation,240.0333964864488,rich,peebo_2015,Peebo et al. 2015,0.35,111302.0457503874,Elongation Factor EF-Tu,,none,eftu,0.77
+sum total,sum,240.0333964864488,rich,peebo_2015,Peebo et al. 2015,0.35,111302.0457503874,Elongation Factor EF-Tu,,none,eftu,0.77
 sum total,energy production,9.576380827428995,rich,peebo_2015,Peebo et al. 2015,0.35,4440.510331393862,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.77
 sum total,energy production,9.426631306962035,rich,peebo_2015,Peebo et al. 2015,0.35,4371.072377250455,respiratory complex,1500.0,protons/s,proton_gradient,0.77
 sum total,synthesis,13.957048914683677,rich,peebo_2015,Peebo et al. 2015,0.35,6471.799839445333,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.77
@@ -240,8 +240,8 @@ sum total,synthesis,0.9124007804561352,rich,peebo_2015,Peebo et al. 2015,0.35,42
 sum total,synthesis,0.09083957620975147,rich,peebo_2015,Peebo et al. 2015,0.42,44.85694609068011,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.82
 sum total,synthesis,8.336094905235692,rich,peebo_2015,Peebo et al. 2015,0.42,4116.397008585006,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.82
 sum total,synthesis,0.8793370294124965,rich,peebo_2015,Peebo et al. 2015,0.42,434.2201424720085,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.82
-sum total,synthesis,0.8793370294124965,rich,peebo_2015,Peebo et al. 2015,0.42,434.2201424720085,σ-70 (RpoD),,none,sigma70,0.82
-sum total,synthesis,0.8793370294124965,rich,peebo_2015,Peebo et al. 2015,0.42,434.2201424720085,all σ-factors,,none,all_sigma,0.82
+sum total,synthesis,1.148797014316917,rich,peebo_2015,Peebo et al. 2015,0.42,567.280560857751,σ-70 (RpoD),,none,sigma70,0.82
+sum total,synthesis,1.148797014316917,rich,peebo_2015,Peebo et al. 2015,0.42,567.280560857751,all σ-factors,,none,all_sigma,0.82
 sum total,synthesis,24.684908263881525,rich,peebo_2015,Peebo et al. 2015,0.42,12189.506440337753,tRNA ligases,20.0,AA/s,trna,0.82
 sum total,transport,205.61803252615522,rich,peebo_2015,Peebo et al. 2015,0.42,101535.00693354556,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.82
 sum total,transport,205.61803252615522,rich,peebo_2015,Peebo et al. 2015,0.42,101535.00693354556,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.82
@@ -250,7 +250,7 @@ sum total,transport,0.14663244769866987,rich,peebo_2015,Peebo et al. 2015,0.42,7
 average,transport,1.3769351604632958,rich,peebo_2015,Peebo et al. 2015,0.42,679.9360899774174,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.82
 sum total,transport,0.2555649634061127,rich,peebo_2015,Peebo et al. 2015,0.42,126.19900118979209,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.82
 sum total,synthesis,34.76176027669797,rich,peebo_2015,Peebo et al. 2015,0.42,17165.49627167456,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.82
-sum total,no aggregation,245.28318393790173,rich,peebo_2015,Peebo et al. 2015,0.42,121121.81736127163,Elongation Factor EF-Tu,,none,eftu,0.82
+sum total,sum,245.28318393790173,rich,peebo_2015,Peebo et al. 2015,0.42,121121.81736127163,Elongation Factor EF-Tu,,none,eftu,0.82
 sum total,energy production,9.631522311867492,rich,peebo_2015,Peebo et al. 2015,0.42,4756.084243689415,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.82
 sum total,energy production,7.363185077160201,rich,peebo_2015,Peebo et al. 2015,0.42,3635.970243842016,respiratory complex,1500.0,protons/s,proton_gradient,0.82
 sum total,synthesis,15.031514832418202,rich,peebo_2015,Peebo et al. 2015,0.42,7422.622150307438,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.82
@@ -258,8 +258,8 @@ sum total,synthesis,0.7487611730069417,rich,peebo_2015,Peebo et al. 2015,0.42,36
 sum total,synthesis,0.1051760109413896,rich,peebo_2015,Peebo et al. 2015,0.45,53.836444720569105,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.85
 sum total,synthesis,8.607682596113301,rich,peebo_2015,Peebo et al. 2015,0.45,4406.014490472516,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.85
 sum total,synthesis,0.8815581272429676,rich,peebo_2015,Peebo et al. 2015,0.45,451.2431585918578,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.85
-sum total,synthesis,0.8815581272429676,rich,peebo_2015,Peebo et al. 2015,0.45,451.2431585918578,σ-70 (RpoD),,none,sigma70,0.85
-sum total,synthesis,0.8815581272429676,rich,peebo_2015,Peebo et al. 2015,0.45,451.2431585918578,all σ-factors,,none,all_sigma,0.85
+sum total,synthesis,1.1946203306404408,rich,peebo_2015,Peebo et al. 2015,0.45,611.4903086449224,σ-70 (RpoD),,none,sigma70,0.85
+sum total,synthesis,1.1946203306404408,rich,peebo_2015,Peebo et al. 2015,0.45,611.4903086449224,all σ-factors,,none,all_sigma,0.85
 sum total,synthesis,26.666599649878076,rich,peebo_2015,Peebo et al. 2015,0.45,13649.83236278309,tRNA ligases,20.0,AA/s,trna,0.85
 sum total,transport,175.55015928771846,rich,peebo_2015,Peebo et al. 2015,0.45,89858.86003460445,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.85
 sum total,transport,175.55015928771846,rich,peebo_2015,Peebo et al. 2015,0.45,89858.86003460445,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.85
@@ -267,7 +267,7 @@ sum total,transport,30.099851228072378,rich,peebo_2015,Peebo et al. 2015,0.45,15
 average,transport,1.3805682727035655,rich,peebo_2015,Peebo et al. 2015,0.45,706.6714817487741,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.85
 sum total,transport,0.27705815684974705,rich,peebo_2015,Peebo et al. 2015,0.45,141.81775874668003,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.85
 sum total,synthesis,36.990205659651075,rich,peebo_2015,Peebo et al. 2015,0.45,18934.1765710056,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.85
-sum total,no aggregation,250.60239537296718,rich,peebo_2015,Peebo et al. 2015,0.45,128275.84811956072,Elongation Factor EF-Tu,,none,eftu,0.85
+sum total,sum,250.60239537296718,rich,peebo_2015,Peebo et al. 2015,0.45,128275.84811956072,Elongation Factor EF-Tu,,none,eftu,0.85
 sum total,energy production,10.091083944022262,rich,peebo_2015,Peebo et al. 2015,0.45,5165.3231384266755,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.85
 sum total,energy production,9.830446745286695,rich,peebo_2015,Peebo et al. 2015,0.45,5031.9107755099,respiratory complex,1500.0,protons/s,proton_gradient,0.85
 sum total,synthesis,16.417476483343,rich,peebo_2015,Peebo et al. 2015,0.45,8403.61368752878,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.85
@@ -275,8 +275,8 @@ sum total,synthesis,0.7861104073903308,rich,peebo_2015,Peebo et al. 2015,0.45,40
 sum total,synthesis,0.11645853878829517,rich,peebo_2015,Peebo et al. 2015,0.53,64.52082549364646,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.92
 sum total,synthesis,8.685672688527509,rich,peebo_2015,Peebo et al. 2015,0.53,4812.071125588765,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.92
 sum total,synthesis,0.9063092278423804,rich,peebo_2015,Peebo et al. 2015,0.53,502.11706364614713,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.92
-sum total,synthesis,0.9063092278423804,rich,peebo_2015,Peebo et al. 2015,0.53,502.11706364614713,σ-70 (RpoD),,none,sigma70,0.92
-sum total,synthesis,0.9063092278423804,rich,peebo_2015,Peebo et al. 2015,0.53,502.11706364614713,all σ-factors,,none,all_sigma,0.92
+sum total,synthesis,1.1457042552075496,rich,peebo_2015,Peebo et al. 2015,0.53,634.7476542871075,σ-70 (RpoD),,none,sigma70,0.92
+sum total,synthesis,1.1457042552075496,rich,peebo_2015,Peebo et al. 2015,0.53,634.7476542871075,all σ-factors,,none,all_sigma,0.92
 sum total,synthesis,25.716706625245507,rich,peebo_2015,Peebo et al. 2015,0.53,14247.67267134502,tRNA ligases,20.0,AA/s,trna,0.92
 sum total,transport,177.33248273347823,rich,peebo_2015,Peebo et al. 2015,0.53,98246.45141393256,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.92
 sum total,transport,177.33248273347823,rich,peebo_2015,Peebo et al. 2015,0.53,98246.45141393256,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.92
@@ -285,15 +285,15 @@ sum total,transport,0.1517708557467796,rich,peebo_2015,Peebo et al. 2015,0.53,84
 average,transport,0.7577078260705423,rich,peebo_2015,Peebo et al. 2015,0.53,419.78832063090624,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.92
 sum total,transport,0.28028242569558937,rich,peebo_2015,Peebo et al. 2015,0.53,155.28319061357325,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.92
 sum total,synthesis,40.47541177248439,rich,peebo_2015,Peebo et al. 2015,0.53,22424.349531838896,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.92
-sum total,no aggregation,250.7033060885574,rich,peebo_2015,Peebo et al. 2015,0.53,138895.64845240695,Elongation Factor EF-Tu,,none,eftu,0.92
+sum total,sum,250.7033060885574,rich,peebo_2015,Peebo et al. 2015,0.53,138895.64845240695,Elongation Factor EF-Tu,,none,eftu,0.92
 sum total,energy production,9.925895854304668,rich,peebo_2015,Peebo et al. 2015,0.53,5499.184524785291,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.92
 sum total,energy production,9.578615014628447,rich,peebo_2015,Peebo et al. 2015,0.53,5306.782604864511,respiratory complex,1500.0,protons/s,proton_gradient,0.92
 sum total,synthesis,17.612854813942185,rich,peebo_2015,Peebo et al. 2015,0.53,9757.944275439508,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.92
 sum total,synthesis,0.5947283116380586,rich,peebo_2015,Peebo et al. 2015,0.53,329.4937581269639,transpeptidases,2.0,crosslinks/s^-1,transpeptidases,0.92
 sum total,synthesis,8.902476773743405,rich,peebo_2015,Peebo et al. 2015,0.55,5039.407222359383,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.94
 sum total,synthesis,0.9814100506406337,rich,peebo_2015,Peebo et al. 2015,0.55,555.5448245460424,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.94
-sum total,synthesis,0.9814100506406337,rich,peebo_2015,Peebo et al. 2015,0.55,555.5448245460424,σ-70 (RpoD),,none,sigma70,0.94
-sum total,synthesis,0.9814100506406337,rich,peebo_2015,Peebo et al. 2015,0.55,555.5448245460424,all σ-factors,,none,all_sigma,0.94
+sum total,synthesis,1.1284048403149851,rich,peebo_2015,Peebo et al. 2015,0.55,638.7538711474231,σ-70 (RpoD),,none,sigma70,0.94
+sum total,synthesis,1.1284048403149851,rich,peebo_2015,Peebo et al. 2015,0.55,638.7538711474231,all σ-factors,,none,all_sigma,0.94
 sum total,synthesis,28.075897870198595,rich,peebo_2015,Peebo et al. 2015,0.55,15892.86735558758,tRNA ligases,20.0,AA/s,trna,0.94
 sum total,transport,157.0741298085024,rich,peebo_2015,Peebo et al. 2015,0.55,88914.63851243934,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.94
 sum total,transport,157.0741298085024,rich,peebo_2015,Peebo et al. 2015,0.55,88914.63851243934,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.94
@@ -301,7 +301,7 @@ sum total,transport,27.654151651209162,rich,peebo_2015,Peebo et al. 2015,0.55,15
 sum total,transport,0.22518711499825703,rich,peebo_2015,Peebo et al. 2015,0.55,127.47121981283337,Fructose Transporter FruBA,200.0,frc/s,fructose_tport,0.94
 average,transport,0.7346710212314427,rich,peebo_2015,Peebo et al. 2015,0.55,415.8737556464403,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.94
 sum total,synthesis,42.97700031291926,rich,peebo_2015,Peebo et al. 2015,0.55,24327.904613133585,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.94
-sum total,no aggregation,257.30237677633437,rich,peebo_2015,Peebo et al. 2015,0.55,145650.64181702604,Elongation Factor EF-Tu,,none,eftu,0.94
+sum total,sum,257.30237677633437,rich,peebo_2015,Peebo et al. 2015,0.55,145650.64181702604,Elongation Factor EF-Tu,,none,eftu,0.94
 sum total,energy production,9.733880372129889,rich,peebo_2015,Peebo et al. 2015,0.55,5510.038194490823,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.94
 sum total,energy production,10.01455141145704,rich,peebo_2015,Peebo et al. 2015,0.55,5668.9170883806655,respiratory complex,1500.0,protons/s,proton_gradient,0.94
 sum total,synthesis,18.129209326424913,rich,peebo_2015,Peebo et al. 2015,0.55,10262.3652649907,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.94
@@ -309,8 +309,8 @@ sum total,synthesis,0.5490683930321195,rich,peebo_2015,Peebo et al. 2015,0.55,31
 sum total,synthesis,0.08839569076132106,rich,peebo_2015,Peebo et al. 2015,0.63,54.2965226759969,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,1.02
 sum total,synthesis,8.703645942086453,rich,peebo_2015,Peebo et al. 2015,0.63,5346.162298050952,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.02
 sum total,synthesis,0.8801695946504628,rich,peebo_2015,Peebo et al. 2015,0.63,540.638892496479,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.02
-sum total,synthesis,0.8801695946504628,rich,peebo_2015,Peebo et al. 2015,0.63,540.638892496479,σ-70 (RpoD),,none,sigma70,1.02
-sum total,synthesis,0.8801695946504628,rich,peebo_2015,Peebo et al. 2015,0.63,540.638892496479,all σ-factors,,none,all_sigma,1.02
+sum total,synthesis,1.1653271722469238,rich,peebo_2015,Peebo et al. 2015,0.63,715.7952235896395,σ-70 (RpoD),,none,sigma70,1.02
+sum total,synthesis,1.1653271722469238,rich,peebo_2015,Peebo et al. 2015,0.63,715.7952235896395,all σ-factors,,none,all_sigma,1.02
 sum total,synthesis,25.623896677419598,rich,peebo_2015,Peebo et al. 2015,0.63,15739.324790724924,tRNA ligases,20.0,AA/s,trna,1.02
 sum total,transport,160.9147291231666,rich,peebo_2015,Peebo et al. 2015,0.63,98840.90687553036,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.02
 sum total,transport,160.9147291231666,rich,peebo_2015,Peebo et al. 2015,0.63,98840.90687553036,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,1.02
@@ -319,7 +319,7 @@ sum total,transport,0.13018564102492255,rich,peebo_2015,Peebo et al. 2015,0.63,7
 average,transport,0.7824410967149379,rich,peebo_2015,Peebo et al. 2015,0.63,480.60974901057034,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,1.02
 sum total,transport,0.2692814908338073,rich,peebo_2015,Peebo et al. 2015,0.63,165.40454005572116,Phosphate Transport System,300.0,Pi/s,phosphate_tport,1.02
 sum total,synthesis,46.42417077086982,rich,peebo_2015,Peebo et al. 2015,0.63,28515.768350982165,Ribosome (50S + 30S),15.0,AA/s,ribosome,1.02
-sum total,no aggregation,246.7894751558464,rich,peebo_2015,Peebo et al. 2015,0.63,151588.9543776277,Elongation Factor EF-Tu,,none,eftu,1.02
+sum total,sum,246.7894751558464,rich,peebo_2015,Peebo et al. 2015,0.63,151588.9543776277,Elongation Factor EF-Tu,,none,eftu,1.02
 sum total,energy production,9.83333562686582,rich,peebo_2015,Peebo et al. 2015,0.63,6040.067408788569,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.02
 sum total,energy production,8.297327684639969,rich,peebo_2015,Peebo et al. 2015,0.63,5096.583746323993,respiratory complex,1500.0,protons/s,proton_gradient,1.02
 sum total,synthesis,19.307320468858244,rich,peebo_2015,Peebo et al. 2015,0.63,11859.405754073363,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.02
@@ -327,8 +327,8 @@ sum total,synthesis,0.6924567423281676,rich,peebo_2015,Peebo et al. 2015,0.63,42
 sum total,synthesis,0.12396540317513408,rich,peebo_2015,Peebo et al. 2015,0.65,78.38456408166904,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,1.05
 sum total,synthesis,8.910697575817386,rich,peebo_2015,Peebo et al. 2015,0.65,5634.323184165092,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.05
 sum total,synthesis,0.9900788383895885,rich,peebo_2015,Peebo et al. 2015,0.65,626.0367503021209,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.05
-sum total,synthesis,0.9900788383895885,rich,peebo_2015,Peebo et al. 2015,0.65,626.0367503021209,σ-70 (RpoD),,none,sigma70,1.05
-sum total,synthesis,0.9900788383895885,rich,peebo_2015,Peebo et al. 2015,0.65,626.0367503021209,all σ-factors,,none,all_sigma,1.05
+sum total,synthesis,1.1477714477027674,rich,peebo_2015,Peebo et al. 2015,0.65,725.7473640969371,σ-70 (RpoD),,none,sigma70,1.05
+sum total,synthesis,1.1477714477027674,rich,peebo_2015,Peebo et al. 2015,0.65,725.7473640969371,all σ-factors,,none,all_sigma,1.05
 sum total,synthesis,27.86791779599252,rich,peebo_2015,Peebo et al. 2015,0.65,17621.163101584032,tRNA ligases,20.0,AA/s,trna,1.05
 sum total,transport,135.08202590501955,rich,peebo_2015,Peebo et al. 2015,0.65,85413.71580000292,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.05
 sum total,transport,135.08202590501955,rich,peebo_2015,Peebo et al. 2015,0.65,85413.71580000292,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,1.05
@@ -336,7 +336,7 @@ sum total,transport,25.36750682947514,rich,peebo_2015,Peebo et al. 2015,0.65,160
 average,transport,0.5635194057501307,rich,peebo_2015,Peebo et al. 2015,0.65,356.3189554498652,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,1.05
 sum total,transport,0.2863505926668445,rich,peebo_2015,Peebo et al. 2015,0.65,181.06234324917244,Phosphate Transport System,300.0,Pi/s,phosphate_tport,1.05
 sum total,synthesis,48.22021331497876,rich,peebo_2015,Peebo et al. 2015,0.65,30490.123081194222,Ribosome (50S + 30S),15.0,AA/s,ribosome,1.05
-sum total,no aggregation,256.1164366930633,rich,peebo_2015,Peebo et al. 2015,0.65,161944.98408539087,Elongation Factor EF-Tu,,none,eftu,1.05
+sum total,sum,256.1164366930633,rich,peebo_2015,Peebo et al. 2015,0.65,161944.98408539087,Elongation Factor EF-Tu,,none,eftu,1.05
 sum total,energy production,9.91186275463864,rich,peebo_2015,Peebo et al. 2015,0.65,6267.369938385559,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.05
 sum total,energy production,10.257214134819208,rich,peebo_2015,Peebo et al. 2015,0.65,6485.739069587534,respiratory complex,1500.0,protons/s,proton_gradient,1.05
 sum total,synthesis,19.48730265167546,rich,peebo_2015,Peebo et al. 2015,0.65,12322.016339680913,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.05
@@ -344,8 +344,8 @@ sum total,synthesis,0.4347881052373155,rich,peebo_2015,Peebo et al. 2015,0.65,27
 sum total,synthesis,0.08577920960547689,rich,peebo_2015,Peebo et al. 2015,0.73,58.888113627836724,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,1.14
 sum total,synthesis,8.599124018871036,rich,peebo_2015,Peebo et al. 2015,0.73,5903.3674319471165,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.14
 sum total,synthesis,1.0707459292759134,rich,peebo_2015,Peebo et al. 2015,0.73,735.0756464153488,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.14
-sum total,synthesis,1.0707459292759134,rich,peebo_2015,Peebo et al. 2015,0.73,735.0756464153488,σ-70 (RpoD),,none,sigma70,1.14
-sum total,synthesis,1.0707459292759134,rich,peebo_2015,Peebo et al. 2015,0.73,735.0756464153488,all σ-factors,,none,all_sigma,1.14
+sum total,synthesis,1.136098735349462,rich,peebo_2015,Peebo et al. 2015,0.73,779.9408706072885,σ-70 (RpoD),,none,sigma70,1.14
+sum total,synthesis,1.136098735349462,rich,peebo_2015,Peebo et al. 2015,0.73,779.9408706072885,all σ-factors,,none,all_sigma,1.14
 sum total,synthesis,26.484506613951524,rich,peebo_2015,Peebo et al. 2015,0.73,18181.825666530633,tRNA ligases,20.0,AA/s,trna,1.14
 sum total,transport,124.69889634180589,rich,peebo_2015,Peebo et al. 2015,0.73,85606.78992982049,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.14
 sum total,transport,124.69889634180589,rich,peebo_2015,Peebo et al. 2015,0.73,85606.78992982049,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,1.14
@@ -354,15 +354,15 @@ sum total,transport,0.19422776651454027,rich,peebo_2015,Peebo et al. 2015,0.73,1
 average,transport,1.2252494786435377,rich,peebo_2015,Peebo et al. 2015,0.73,841.1435690846179,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,1.14
 sum total,transport,0.2937711882101328,rich,peebo_2015,Peebo et al. 2015,0.73,201.67627087576184,Phosphate Transport System,300.0,Pi/s,phosphate_tport,1.14
 sum total,synthesis,48.397143082561065,rich,peebo_2015,Peebo et al. 2015,0.73,33225.025903322836,Ribosome (50S + 30S),15.0,AA/s,ribosome,1.14
-sum total,no aggregation,246.71537267832275,rich,peebo_2015,Peebo et al. 2015,0.73,169372.07706665,Elongation Factor EF-Tu,,none,eftu,1.14
+sum total,sum,246.71537267832275,rich,peebo_2015,Peebo et al. 2015,0.73,169372.07706665,Elongation Factor EF-Tu,,none,eftu,1.14
 sum total,energy production,9.241698171884478,rich,peebo_2015,Peebo et al. 2015,0.73,6344.49972858407,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.14
 sum total,energy production,8.511378270674555,rich,peebo_2015,Peebo et al. 2015,0.73,5843.129273844248,respiratory complex,1500.0,protons/s,proton_gradient,1.14
 sum total,synthesis,19.95084729265929,rich,peebo_2015,Peebo et al. 2015,0.73,13696.416273188945,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.14
 sum total,synthesis,0.528807443087869,rich,peebo_2015,Peebo et al. 2015,0.73,363.03054013936674,transpeptidases,2.0,crosslinks/s^-1,transpeptidases,1.14
 sum total,synthesis,9.455325586949922,rich,peebo_2015,Peebo et al. 2015,0.74,6548.09662873043,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.15
 sum total,synthesis,0.9678467450828635,rich,peebo_2015,Peebo et al. 2015,0.74,670.2629063722354,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.15
-sum total,synthesis,0.9678467450828635,rich,peebo_2015,Peebo et al. 2015,0.74,670.2629063722354,σ-70 (RpoD),,none,sigma70,1.15
-sum total,synthesis,0.9678467450828635,rich,peebo_2015,Peebo et al. 2015,0.74,670.2629063722354,all σ-factors,,none,all_sigma,1.15
+sum total,synthesis,1.1812996066008221,rich,peebo_2015,Peebo et al. 2015,0.74,818.0854165592673,σ-70 (RpoD),,none,sigma70,1.15
+sum total,synthesis,1.1812996066008221,rich,peebo_2015,Peebo et al. 2015,0.74,818.0854165592673,all σ-factors,,none,all_sigma,1.15
 sum total,synthesis,29.005942474212027,rich,peebo_2015,Peebo et al. 2015,0.74,20087.485341666055,tRNA ligases,20.0,AA/s,trna,1.15
 sum total,transport,108.61324089978609,rich,peebo_2015,Peebo et al. 2015,0.74,75217.92772032887,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.15
 sum total,transport,108.61324089978609,rich,peebo_2015,Peebo et al. 2015,0.74,75217.92772032887,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,1.15
@@ -370,7 +370,7 @@ sum total,transport,24.903494748630592,rich,peebo_2015,Peebo et al. 2015,0.74,17
 average,transport,0.7061978898253968,rich,peebo_2015,Peebo et al. 2015,0.74,489.06322464078204,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,1.15
 sum total,transport,0.31775696940156134,rich,peebo_2015,Peebo et al. 2015,0.74,220.05623401966326,Phosphate Transport System,300.0,Pi/s,phosphate_tport,1.15
 sum total,synthesis,52.79623289870816,rich,peebo_2015,Peebo et al. 2015,0.74,36562.97516934236,Ribosome (50S + 30S),15.0,AA/s,ribosome,1.15
-sum total,no aggregation,254.84485236472915,rich,peebo_2015,Peebo et al. 2015,0.74,176487.7056081459,Elongation Factor EF-Tu,,none,eftu,1.15
+sum total,sum,254.84485236472915,rich,peebo_2015,Peebo et al. 2015,0.74,176487.7056081459,Elongation Factor EF-Tu,,none,eftu,1.15
 sum total,energy production,10.019121667312719,rich,peebo_2015,Peebo et al. 2015,0.74,6938.542328264078,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.15
 sum total,energy production,10.84757398301527,rich,peebo_2015,Peebo et al. 2015,0.74,7512.270410457564,respiratory complex,1500.0,protons/s,proton_gradient,1.15
 sum total,synthesis,19.567361801405145,rich,peebo_2015,Peebo et al. 2015,0.74,13550.985068327105,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.15
@@ -378,8 +378,8 @@ sum total,synthesis,0.6395620238069993,rich,peebo_2015,Peebo et al. 2015,0.74,44
 sum total,synthesis,0.09045579935541125,rich,peebo_2015,Peebo et al. 2015,0.78,65.36697884619439,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,1.2
 sum total,synthesis,9.468676193978467,rich,peebo_2015,Peebo et al. 2015,0.78,6842.4441648166,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.2
 sum total,synthesis,1.0184640638050637,rich,peebo_2015,Peebo et al. 2015,0.78,735.9828710680913,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.2
-sum total,synthesis,1.0184640638050637,rich,peebo_2015,Peebo et al. 2015,0.78,735.9828710680913,σ-70 (RpoD),,none,sigma70,1.2
-sum total,synthesis,1.0184640638050637,rich,peebo_2015,Peebo et al. 2015,0.78,735.9828710680913,all σ-factors,,none,all_sigma,1.2
+sum total,synthesis,1.2951756854530114,rich,peebo_2015,Peebo et al. 2015,0.78,935.9457573357643,σ-70 (RpoD),,none,sigma70,1.2
+sum total,synthesis,1.2951756854530114,rich,peebo_2015,Peebo et al. 2015,0.78,935.9457573357643,all σ-factors,,none,all_sigma,1.2
 sum total,synthesis,28.60908847548339,rich,peebo_2015,Peebo et al. 2015,0.78,20674.071695923318,tRNA ligases,20.0,AA/s,trna,1.2
 sum total,transport,107.16878045118798,rich,peebo_2015,Peebo et al. 2015,0.78,77444.44750524648,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.2
 sum total,transport,107.16878045118798,rich,peebo_2015,Peebo et al. 2015,0.78,77444.44750524648,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,1.2
@@ -388,7 +388,7 @@ sum total,transport,0.12801913487602304,rich,peebo_2015,Peebo et al. 2015,0.78,9
 average,transport,0.6660835666780461,rich,peebo_2015,Peebo et al. 2015,0.78,481.33862862422325,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,1.2
 sum total,transport,0.3477916465026299,rich,peebo_2015,Peebo et al. 2015,0.78,251.32815542866047,Phosphate Transport System,300.0,Pi/s,phosphate_tport,1.2
 sum total,synthesis,53.59475565579387,rich,peebo_2015,Peebo et al. 2015,0.78,38729.71422710288,Ribosome (50S + 30S),15.0,AA/s,ribosome,1.2
-sum total,no aggregation,266.2922989127172,rich,peebo_2015,Peebo et al. 2015,0.78,192433.46688628593,Elongation Factor EF-Tu,,none,eftu,1.2
+sum total,sum,266.2922989127172,rich,peebo_2015,Peebo et al. 2015,0.78,192433.46688628593,Elongation Factor EF-Tu,,none,eftu,1.2
 sum total,energy production,9.581838063925717,rich,peebo_2015,Peebo et al. 2015,0.78,6924.219458515281,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.2
 sum total,energy production,9.195617585278068,rich,peebo_2015,Peebo et al. 2015,0.78,6645.121091825344,respiratory complex,1500.0,protons/s,proton_gradient,1.2
 sum total,synthesis,20.47377093771641,rich,peebo_2015,Peebo et al. 2015,0.78,14795.165830431384,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.2
@@ -396,8 +396,8 @@ sum total,synthesis,0.6488764619226329,rich,peebo_2015,Peebo et al. 2015,0.78,46
 sum total,synthesis,0.1411625327849996,rich,peebo_2015,Peebo et al. 2015,0.82,106.26009655390848,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,1.25
 sum total,synthesis,10.589921655154635,rich,peebo_2015,Peebo et al. 2015,0.82,7971.563525917653,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.25
 sum total,synthesis,1.0569018074554686,rich,peebo_2015,Peebo et al. 2015,0.82,795.582835562104,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.25
-sum total,synthesis,1.0569018074554686,rich,peebo_2015,Peebo et al. 2015,0.82,795.582835562104,σ-70 (RpoD),,none,sigma70,1.25
-sum total,synthesis,1.0569018074554686,rich,peebo_2015,Peebo et al. 2015,0.82,795.582835562104,all σ-factors,,none,all_sigma,1.25
+sum total,synthesis,1.4261091065470672,rich,peebo_2015,Peebo et al. 2015,0.82,1073.503629953305,σ-70 (RpoD),,none,sigma70,1.25
+sum total,synthesis,1.4261091065470672,rich,peebo_2015,Peebo et al. 2015,0.82,1073.503629953305,all σ-factors,,none,all_sigma,1.25
 sum total,synthesis,33.216031996138504,rich,peebo_2015,Peebo et al. 2015,0.82,25003.368085093265,tRNA ligases,20.0,AA/s,trna,1.25
 sum total,transport,69.44893561662022,rich,peebo_2015,Peebo et al. 2015,0.82,52277.68628541088,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.25
 sum total,transport,69.44893561662022,rich,peebo_2015,Peebo et al. 2015,0.82,52277.68628541088,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,1.25
@@ -405,15 +405,15 @@ sum total,transport,17.656183281408218,rich,peebo_2015,Peebo et al. 2015,0.82,13
 average,transport,0.3763996617933377,rich,peebo_2015,Peebo et al. 2015,0.82,283.33484541493505,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,1.25
 sum total,transport,0.3945373393319141,rich,peebo_2015,Peebo et al. 2015,0.82,296.9879821820984,Phosphate Transport System,300.0,Pi/s,phosphate_tport,1.25
 sum total,synthesis,58.95933600689681,rich,peebo_2015,Peebo et al. 2015,0.82,44381.640179191585,Ribosome (50S + 30S),15.0,AA/s,ribosome,1.25
-sum total,no aggregation,276.2167375091087,rich,peebo_2015,Peebo et al. 2015,0.82,207922.1491599816,Elongation Factor EF-Tu,,none,eftu,1.25
+sum total,sum,276.2167375091087,rich,peebo_2015,Peebo et al. 2015,0.82,207922.1491599816,Elongation Factor EF-Tu,,none,eftu,1.25
 sum total,energy production,9.199460903225217,rich,peebo_2015,Peebo et al. 2015,0.82,6924.894194902783,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.25
 sum total,energy production,11.521823444824415,rich,peebo_2015,Peebo et al. 2015,0.82,8673.052598091579,respiratory complex,1500.0,protons/s,proton_gradient,1.25
 sum total,synthesis,14.585765242715434,rich,peebo_2015,Peebo et al. 2015,0.82,10979.434786454045,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.25
 sum total,synthesis,0.06067173908798337,42C,schmidt_2016,Schmidt et al. 2016,0.66,38.728712555510604,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,1.06
 sum total,synthesis,8.299580411440726,42C,schmidt_2016,Schmidt et al. 2016,0.66,5297.887763195781,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.06
 sum total,synthesis,0.4087587782936546,42C,schmidt_2016,Schmidt et al. 2016,0.66,260.92380846574514,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.06
-sum total,synthesis,0.4087587782936546,42C,schmidt_2016,Schmidt et al. 2016,0.66,260.92380846574514,σ-70 (RpoD),,none,sigma70,1.06
-sum total,synthesis,0.4087587782936546,42C,schmidt_2016,Schmidt et al. 2016,0.66,260.92380846574514,all σ-factors,,none,all_sigma,1.06
+sum total,synthesis,1.46349551245403,42C,schmidt_2016,Schmidt et al. 2016,0.66,934.196017455806,σ-70 (RpoD),,none,sigma70,1.06
+sum total,synthesis,1.46349551245403,42C,schmidt_2016,Schmidt et al. 2016,0.66,934.196017455806,all σ-factors,,none,all_sigma,1.06
 sum total,synthesis,34.44987382048559,42C,schmidt_2016,Schmidt et al. 2016,0.66,21990.45685557821,tRNA ligases,20.0,AA/s,trna,1.06
 sum total,transport,56.83231456045373,42C,schmidt_2016,Schmidt et al. 2016,0.66,36277.88501800356,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.06
 sum total,transport,56.83231456045373,42C,schmidt_2016,Schmidt et al. 2016,0.66,36277.88501800356,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,1.06
@@ -425,7 +425,7 @@ sum total,transport,0.0010302678721957267,42C,schmidt_2016,Schmidt et al. 2016,0
 average,transport,1.5355498717657186,42C,schmidt_2016,Schmidt et al. 2016,0.66,980.1906207439547,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,1.06
 sum total,transport,0.3631694249489936,42C,schmidt_2016,Schmidt et al. 2016,0.66,231.82266536654103,Phosphate Transport System,300.0,Pi/s,phosphate_tport,1.06
 sum total,synthesis,33.013175484575655,42C,schmidt_2016,Schmidt et al. 2016,0.66,21073.36633342015,Ribosome (50S + 30S),15.0,AA/s,ribosome,1.06
-sum total,no aggregation,386.7089852929217,42C,schmidt_2016,Schmidt et al. 2016,0.66,246848.72000000128,Elongation Factor EF-Tu,,none,eftu,1.06
+sum total,sum,386.7089852929217,42C,schmidt_2016,Schmidt et al. 2016,0.66,246848.72000000128,Elongation Factor EF-Tu,,none,eftu,1.06
 sum total,energy production,6.581885619045004,42C,schmidt_2016,Schmidt et al. 2016,0.66,4201.428210976236,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.06
 sum total,energy production,4.440488806136514,42C,schmidt_2016,Schmidt et al. 2016,0.66,2834.5061005987336,respiratory complex,1500.0,protons/s,proton_gradient,1.06
 sum total,synthesis,3.180952055404307,42C,schmidt_2016,Schmidt et al. 2016,0.66,2030.5034874303424,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.06
@@ -433,8 +433,8 @@ sum total,synthesis,0.1305864528008084,42C,schmidt_2016,Schmidt et al. 2016,0.66
 sum total,synthesis,0.03404853696470368,acetate,schmidt_2016,Schmidt et al. 2016,0.3,14.967941140905529,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.73
 sum total,synthesis,7.3924236396259735,acetate,schmidt_2016,Schmidt et al. 2016,0.3,3249.753786521416,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.73
 sum total,synthesis,0.24713859379440017,acetate,schmidt_2016,Schmidt et al. 2016,0.3,108.64360866358109,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.73
-sum total,synthesis,0.24713859379440017,acetate,schmidt_2016,Schmidt et al. 2016,0.3,108.64360866358109,σ-70 (RpoD),,none,sigma70,0.73
-sum total,synthesis,0.24713859379440017,acetate,schmidt_2016,Schmidt et al. 2016,0.3,108.64360866358109,all σ-factors,,none,all_sigma,0.73
+sum total,synthesis,0.9149386238345882,acetate,schmidt_2016,Schmidt et al. 2016,0.3,402.212508669428,σ-70 (RpoD),,none,sigma70,0.73
+sum total,synthesis,0.9149386238345882,acetate,schmidt_2016,Schmidt et al. 2016,0.3,402.212508669428,all σ-factors,,none,all_sigma,0.73
 sum total,synthesis,24.117387854150326,acetate,schmidt_2016,Schmidt et al. 2016,0.3,10602.14840501161,tRNA ligases,20.0,AA/s,trna,0.73
 sum total,transport,152.5306011897207,acetate,schmidt_2016,Schmidt et al. 2016,0.3,67053.36746660835,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.73
 sum total,transport,152.5306011897207,acetate,schmidt_2016,Schmidt et al. 2016,0.3,67053.36746660835,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.73
@@ -446,7 +446,7 @@ sum total,transport,0.0,acetate,schmidt_2016,Schmidt et al. 2016,0.3,0.0,Ammoniu
 average,transport,2.0094470982665964,acetate,schmidt_2016,Schmidt et al. 2016,0.3,883.3650010805854,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.73
 sum total,transport,0.19350426067306228,acetate,schmidt_2016,Schmidt et al. 2016,0.3,85.06563401744222,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.73
 sum total,synthesis,19.107484527387104,acetate,schmidt_2016,Schmidt et al. 2016,0.3,8399.764843146535,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.73
-sum total,no aggregation,313.9774893994933,acetate,schmidt_2016,Schmidt et al. 2016,0.3,138026.3882049537,Elongation Factor EF-Tu,,none,eftu,0.73
+sum total,sum,313.9774893994933,acetate,schmidt_2016,Schmidt et al. 2016,0.3,138026.3882049537,Elongation Factor EF-Tu,,none,eftu,0.73
 sum total,energy production,7.1011155950257665,acetate,schmidt_2016,Schmidt et al. 2016,0.3,3121.693022266897,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.73
 sum total,energy production,4.356816886504457,acetate,schmidt_2016,Schmidt et al. 2016,0.3,1915.2828442086786,respiratory complex,1500.0,protons/s,proton_gradient,0.73
 sum total,synthesis,2.0381046586108402,acetate,schmidt_2016,Schmidt et al. 2016,0.3,895.9630365532772,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.73
@@ -454,8 +454,8 @@ sum total,synthesis,0.09044220879284431,acetate,schmidt_2016,Schmidt et al. 2016
 sum total,synthesis,0.0313202417451986,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,11.31662974737516,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.6
 sum total,synthesis,9.8693742222101,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,3566.0022939689534,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.6
 sum total,synthesis,0.4328864684767178,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,156.41053879000768,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.6
-sum total,synthesis,0.4328864684767178,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,156.41053879000768,σ-70 (RpoD),,none,sigma70,0.6
-sum total,synthesis,0.4328864684767178,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,156.41053879000768,all σ-factors,,none,all_sigma,0.6
+sum total,synthesis,1.361624709935858,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,491.9822401940242,σ-70 (RpoD),,none,sigma70,0.6
+sum total,synthesis,1.361624709935858,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,491.9822401940242,all σ-factors,,none,all_sigma,0.6
 sum total,synthesis,27.704621758226725,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,10010.23393368248,tRNA ligases,20.0,AA/s,trna,0.6
 sum total,transport,142.07803657942534,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,51335.63617687797,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.6
 sum total,transport,142.07803657942534,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,51335.63617687797,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.6
@@ -467,7 +467,7 @@ sum total,transport,0.025361025425908724,chemostat_u0.12,schmidt_2016,Schmidt et
 average,transport,0.9766181084270195,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,352.8716549368507,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.6
 sum total,transport,0.2807203159212655,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,101.42986454867166,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.6
 sum total,synthesis,17.434603882499875,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,6299.471074824854,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.6
-sum total,no aggregation,267.94622976967077,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,96814.33174037744,Elongation Factor EF-Tu,,none,eftu,0.6
+sum total,sum,267.94622976967077,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,96814.33174037744,Elongation Factor EF-Tu,,none,eftu,0.6
 sum total,energy production,5.79410886022553,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,2093.527413376689,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.6
 sum total,energy production,5.896982075829162,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,2130.697563638593,respiratory complex,1500.0,protons/s,proton_gradient,0.6
 sum total,synthesis,3.2370288142759014,chemostat_u0.12,schmidt_2016,Schmidt et al. 2016,0.12,1169.6032511741687,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.6
@@ -475,8 +475,8 @@ sum total,synthesis,0.19807835375752847,chemostat_u0.12,schmidt_2016,Schmidt et 
 sum total,synthesis,0.03223632081162144,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,12.812390179220568,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.66
 sum total,synthesis,9.915809638739807,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,3941.058372536414,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.66
 sum total,synthesis,0.546448355209644,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,217.18699167478346,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.66
-sum total,synthesis,0.546448355209644,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,217.18699167478346,σ-70 (RpoD),,none,sigma70,0.66
-sum total,synthesis,0.546448355209644,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,217.18699167478346,all σ-factors,,none,all_sigma,0.66
+sum total,synthesis,1.158564323920876,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,460.4737076710001,σ-70 (RpoD),,none,sigma70,0.66
+sum total,synthesis,1.158564323920876,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,460.4737076710001,all σ-factors,,none,all_sigma,0.66
 sum total,synthesis,27.424778178526925,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,10900.032936611884,tRNA ligases,20.0,AA/s,trna,0.66
 sum total,transport,146.49130149848233,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,58223.26076317481,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.66
 sum total,transport,146.49130149848233,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,58223.26076317481,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.66
@@ -488,7 +488,7 @@ sum total,transport,0.002345271910771004,chemostat_u0.2,schmidt_2016,Schmidt et 
 average,transport,0.9996721519661406,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,397.3216961432466,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.66
 sum total,transport,0.28846844502483354,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,114.65236041201015,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.66
 sum total,synthesis,18.566771494693338,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,7379.400464108857,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.66
-sum total,no aggregation,264.119832047209,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,104974.95548682733,Elongation Factor EF-Tu,,none,eftu,0.66
+sum total,sum,264.119832047209,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,104974.95548682733,Elongation Factor EF-Tu,,none,eftu,0.66
 sum total,energy production,6.787099646175748,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,2697.546328571844,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.66
 sum total,energy production,5.197463644194731,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,2065.742320312485,respiratory complex,1500.0,protons/s,proton_gradient,0.66
 sum total,synthesis,3.375628036903066,chemostat_u0.2,schmidt_2016,Schmidt et al. 2016,0.2,1341.6501145231975,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.66
@@ -496,8 +496,8 @@ sum total,synthesis,0.1794133011739818,chemostat_u0.2,schmidt_2016,Schmidt et al
 sum total,synthesis,0.031204240989363058,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,14.469219321321715,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.77
 sum total,synthesis,10.220162720622652,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,4739.028132576401,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.77
 sum total,synthesis,0.5199913194015636,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,241.11685485858868,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.77
-sum total,synthesis,0.5199913194015636,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,241.11685485858868,σ-70 (RpoD),,none,sigma70,0.77
-sum total,synthesis,0.5199913194015636,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,241.11685485858868,all σ-factors,,none,all_sigma,0.77
+sum total,synthesis,1.1139814034871958,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,516.5464929085919,σ-70 (RpoD),,none,sigma70,0.77
+sum total,synthesis,1.1139814034871958,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,516.5464929085919,all σ-factors,,none,all_sigma,0.77
 sum total,synthesis,27.242847496431928,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,12632.344927010508,tRNA ligases,20.0,AA/s,trna,0.77
 sum total,transport,166.75201856699195,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,77321.91049740279,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.77
 sum total,transport,166.75201856699195,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,77321.91049740279,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.77
@@ -509,7 +509,7 @@ sum total,transport,0.0013333110753886242,chemostat_u0.35,schmidt_2016,Schmidt e
 average,transport,1.0383576659299973,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,481.48021954574426,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.77
 sum total,transport,0.28599522567086,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,132.61427017222377,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.77
 sum total,synthesis,20.257270921351783,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,9393.174982605295,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.77
-sum total,no aggregation,284.48925081120854,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,131915.95866565255,Elongation Factor EF-Tu,,none,eftu,0.77
+sum total,sum,284.48925081120854,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,131915.95866565255,Elongation Factor EF-Tu,,none,eftu,0.77
 sum total,energy production,7.688813311637802,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,3565.2565997265797,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.77
 sum total,energy production,4.919720152853459,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,2281.244716557232,respiratory complex,1500.0,protons/s,proton_gradient,0.77
 sum total,synthesis,3.1636138541283594,chemostat_u0.35,schmidt_2016,Schmidt et al. 2016,0.35,1466.9487624761955,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.77
@@ -517,8 +517,8 @@ sum total,synthesis,0.1559973958204691,chemostat_u0.35,schmidt_2016,Schmidt et a
 sum total,synthesis,0.0341909534325334,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,18.530812941364452,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.9
 sum total,synthesis,10.525113087514438,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,5704.400791171075,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.9
 sum total,synthesis,0.5274481204876598,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,285.86633234190185,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.9
-sum total,synthesis,0.5274481204876598,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,285.86633234190185,σ-70 (RpoD),,none,sigma70,0.9
-sum total,synthesis,0.5274481204876598,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,285.86633234190185,all σ-factors,,none,all_sigma,0.9
+sum total,synthesis,1.2861183285340123,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,697.050411698864,σ-70 (RpoD),,none,sigma70,0.9
+sum total,synthesis,1.2861183285340123,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,697.050411698864,all σ-factors,,none,all_sigma,0.9
 sum total,synthesis,29.217461189611043,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,15835.279615545394,tRNA ligases,20.0,AA/s,trna,0.9
 sum total,transport,131.3761784220286,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,71203.26118117107,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.9
 sum total,transport,131.3761784220286,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,71203.26118117107,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.9
@@ -530,7 +530,7 @@ sum total,transport,0.0005816907863111769,chemostat_u0.5,schmidt_2016,Schmidt et
 average,transport,1.2344205599006064,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,669.0312550549307,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.9
 sum total,transport,0.32109331404376973,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,174.0261543454423,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.9
 sum total,synthesis,26.474936957617413,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,14348.886332289487,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.9
-sum total,no aggregation,315.5422388700021,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,171017.58262276376,Elongation Factor EF-Tu,,none,eftu,0.9
+sum total,sum,315.5422388700021,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,171017.58262276376,Elongation Factor EF-Tu,,none,eftu,0.9
 sum total,energy production,8.256708070406397,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,4474.970639998859,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.9
 sum total,energy production,5.198721509339665,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,2817.6030836319114,respiratory complex,1500.0,protons/s,proton_gradient,0.9
 sum total,synthesis,3.6887921213923285,chemostat_u0.5,schmidt_2016,Schmidt et al. 2016,0.5,1999.2515539522142,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.9
@@ -538,8 +538,8 @@ sum total,synthesis,0.14222339725308278,chemostat_u0.5,schmidt_2016,Schmidt et a
 sum total,synthesis,0.03490908901844238,fructose,schmidt_2016,Schmidt et al. 2016,0.65,22.0733660772513,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,1.05
 sum total,synthesis,8.641268111691945,fructose,schmidt_2016,Schmidt et al. 2016,0.65,5463.960239703934,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.05
 sum total,synthesis,0.3519613988305024,fructose,schmidt_2016,Schmidt et al. 2016,0.65,222.54871209451503,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.05
-sum total,synthesis,0.3519613988305024,fructose,schmidt_2016,Schmidt et al. 2016,0.65,222.54871209451503,σ-70 (RpoD),,none,sigma70,1.05
-sum total,synthesis,0.3519613988305024,fructose,schmidt_2016,Schmidt et al. 2016,0.65,222.54871209451503,all σ-factors,,none,all_sigma,1.05
+sum total,synthesis,0.9458233391776596,fructose,schmidt_2016,Schmidt et al. 2016,0.65,598.053555595426,σ-70 (RpoD),,none,sigma70,1.05
+sum total,synthesis,0.9458233391776596,fructose,schmidt_2016,Schmidt et al. 2016,0.65,598.053555595426,all σ-factors,,none,all_sigma,1.05
 sum total,synthesis,31.482517182835622,fructose,schmidt_2016,Schmidt et al. 2016,0.65,19906.710439878796,tRNA ligases,20.0,AA/s,trna,1.05
 sum total,transport,85.72825989238525,fructose,schmidt_2016,Schmidt et al. 2016,0.65,54206.83601255412,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.05
 sum total,transport,85.72825989238525,fructose,schmidt_2016,Schmidt et al. 2016,0.65,54206.83601255412,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,1.05
@@ -551,7 +551,7 @@ sum total,transport,0.005703978470917903,fructose,schmidt_2016,Schmidt et al. 20
 average,transport,2.070933092566216,fructose,schmidt_2016,Schmidt et al. 2016,0.65,1309.4717037605444,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,1.05
 sum total,transport,0.37490694858851326,fructose,schmidt_2016,Schmidt et al. 2016,0.65,237.05741266200283,Phosphate Transport System,300.0,Pi/s,phosphate_tport,1.05
 sum total,synthesis,33.94493213618416,fructose,schmidt_2016,Schmidt et al. 2016,0.65,21463.720039030606,Ribosome (50S + 30S),15.0,AA/s,ribosome,1.05
-sum total,no aggregation,362.6423577890449,fructose,schmidt_2016,Schmidt et al. 2016,0.65,229302.389253591,Elongation Factor EF-Tu,,none,eftu,1.05
+sum total,sum,362.6423577890449,fructose,schmidt_2016,Schmidt et al. 2016,0.65,229302.389253591,Elongation Factor EF-Tu,,none,eftu,1.05
 sum total,energy production,8.943533598094575,fructose,schmidt_2016,Schmidt et al. 2016,0.65,5655.085729411182,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.05
 sum total,energy production,4.48221654724837,fructose,schmidt_2016,Schmidt et al. 2016,0.65,2834.150344990617,respiratory complex,1500.0,protons/s,proton_gradient,1.05
 sum total,synthesis,3.1719305733277112,fructose,schmidt_2016,Schmidt et al. 2016,0.65,2005.6434208208452,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.05
@@ -559,8 +559,8 @@ sum total,synthesis,0.1890091047863251,fructose,schmidt_2016,Schmidt et al. 2016
 sum total,synthesis,0.03964320231521089,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,19.5759718760604,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.82
 sum total,synthesis,7.998728637695629,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,3949.8041962086522,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.82
 sum total,synthesis,0.2969194031422208,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,146.6199889492412,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.82
-sum total,synthesis,0.2969194031422208,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,146.6199889492412,σ-70 (RpoD),,none,sigma70,0.82
-sum total,synthesis,0.2969194031422208,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,146.6199889492412,all σ-factors,,none,all_sigma,0.82
+sum total,synthesis,1.136696220614416,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,561.3051405242811,σ-70 (RpoD),,none,sigma70,0.82
+sum total,synthesis,1.136696220614416,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,561.3051405242811,all σ-factors,,none,all_sigma,0.82
 sum total,synthesis,26.631111161519655,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,13150.549216003054,tRNA ligases,20.0,AA/s,trna,0.82
 sum total,transport,106.63759423544646,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,52658.07058384041,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.82
 sum total,transport,106.63759423544646,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,52658.07058384041,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.82
@@ -572,7 +572,7 @@ sum total,transport,0.0006293999006724342,fumarate,schmidt_2016,Schmidt et al. 2
 average,transport,1.5614231410869328,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,771.0369927612919,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.82
 sum total,transport,0.2945591535146992,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,145.45448824217252,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.82
 sum total,synthesis,25.491176609885002,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,12587.644974667655,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.82
-sum total,no aggregation,359.2413225070039,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,177394.80201924854,Elongation Factor EF-Tu,,none,eftu,0.82
+sum total,sum,359.2413225070039,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,177394.80201924854,Elongation Factor EF-Tu,,none,eftu,0.82
 sum total,energy production,9.778844641769961,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,4828.832599484574,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.82
 sum total,energy production,4.489137355813757,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,2216.7539828502568,respiratory complex,1500.0,protons/s,proton_gradient,0.82
 sum total,synthesis,2.785723960376193,fumarate,schmidt_2016,Schmidt et al. 2016,0.42,1375.6016345296057,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.82
@@ -580,8 +580,8 @@ sum total,synthesis,0.09535408495187378,fumarate,schmidt_2016,Schmidt et al. 201
 sum total,synthesis,0.039679624989006644,galactose,schmidt_2016,Schmidt et al. 2016,0.26,16.72654911786586,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.7
 sum total,synthesis,7.3647179768439415,galactose,schmidt_2016,Schmidt et al. 2016,0.26,3104.5232159587954,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.7
 sum total,synthesis,0.29763633979058207,galactose,schmidt_2016,Schmidt et al. 2016,0.26,125.46562267532198,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.7
-sum total,synthesis,0.29763633979058207,galactose,schmidt_2016,Schmidt et al. 2016,0.26,125.46562267532198,σ-70 (RpoD),,none,sigma70,0.7
-sum total,synthesis,0.29763633979058207,galactose,schmidt_2016,Schmidt et al. 2016,0.26,125.46562267532198,all σ-factors,,none,all_sigma,0.7
+sum total,synthesis,0.8156222350062358,galactose,schmidt_2016,Schmidt et al. 2016,0.26,343.81739694452864,σ-70 (RpoD),,none,sigma70,0.7
+sum total,synthesis,0.8156222350062358,galactose,schmidt_2016,Schmidt et al. 2016,0.26,343.81739694452864,all σ-factors,,none,all_sigma,0.7
 sum total,synthesis,25.638345832074982,galactose,schmidt_2016,Schmidt et al. 2016,0.26,10807.588302052889,tRNA ligases,20.0,AA/s,trna,0.7
 sum total,transport,102.90941704520833,galactose,schmidt_2016,Schmidt et al. 2016,0.26,43380.43566123712,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.7
 sum total,transport,102.90941704520833,galactose,schmidt_2016,Schmidt et al. 2016,0.26,43380.43566123712,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.7
@@ -593,7 +593,7 @@ sum total,transport,0.003654221483002849,galactose,schmidt_2016,Schmidt et al. 2
 average,transport,1.4947592976223152,galactose,schmidt_2016,Schmidt et al. 2016,0.26,630.1008343197109,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.7
 sum total,transport,0.27187407833541194,galactose,schmidt_2016,Schmidt et al. 2016,0.26,114.60579898150957,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.7
 sum total,synthesis,21.798879546627074,galactose,schmidt_2016,Schmidt et al. 2016,0.26,9189.099684085179,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.7
-sum total,no aggregation,307.5794764458327,galactose,schmidt_2016,Schmidt et al. 2016,0.26,129657.05250097635,Elongation Factor EF-Tu,,none,eftu,0.7
+sum total,sum,307.5794764458327,galactose,schmidt_2016,Schmidt et al. 2016,0.26,129657.05250097635,Elongation Factor EF-Tu,,none,eftu,0.7
 sum total,energy production,7.360625248782979,galactose,schmidt_2016,Schmidt et al. 2016,0.26,3102.7979673719774,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.7
 sum total,energy production,3.6817733403782134,galactose,schmidt_2016,Schmidt et al. 2016,0.26,1552.0147339030323,respiratory complex,1500.0,protons/s,proton_gradient,0.7
 sum total,synthesis,3.15542025057296,galactose,schmidt_2016,Schmidt et al. 2016,0.26,1330.1358524265256,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.7
@@ -601,8 +601,8 @@ sum total,synthesis,0.09099011492677096,galactose,schmidt_2016,Schmidt et al. 20
 sum total,synthesis,0.03813786853575675,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,19.751297011720137,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.86
 sum total,synthesis,8.214519126237947,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,4254.233739325623,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.86
 sum total,synthesis,0.3853244282013278,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,199.55643877004206,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.86
-sum total,synthesis,0.3853244282013278,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,199.55643877004206,σ-70 (RpoD),,none,sigma70,0.86
-sum total,synthesis,0.3853244282013278,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,199.55643877004206,all σ-factors,,none,all_sigma,0.86
+sum total,synthesis,1.1265419240480659,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,583.4270501291011,σ-70 (RpoD),,none,sigma70,0.86
+sum total,synthesis,1.1265419240480659,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,583.4270501291011,all σ-factors,,none,all_sigma,0.86
 sum total,synthesis,27.00446037780002,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,13985.393993979611,tRNA ligases,20.0,AA/s,trna,0.86
 sum total,transport,109.15900930353573,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,56532.57764622673,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.86
 sum total,transport,109.15900930353573,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,56532.57764622673,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.86
@@ -614,7 +614,7 @@ sum total,transport,0.0006037202165316537,glucosamine,schmidt_2016,Schmidt et al
 average,transport,2.179618644246936,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,1128.807058906334,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.86
 sum total,transport,0.30427498913195344,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,157.58158267152564,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.86
 sum total,synthesis,28.542846303968872,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,14782.111758055049,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.86
-sum total,no aggregation,314.6638066180302,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,162961.8681370249,Elongation Factor EF-Tu,,none,eftu,0.86
+sum total,sum,314.6638066180302,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,162961.8681370249,Elongation Factor EF-Tu,,none,eftu,0.86
 sum total,energy production,9.67595974740153,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,5011.102145501274,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.86
 sum total,energy production,4.668321666670164,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,2417.686444595145,respiratory complex,1500.0,protons/s,proton_gradient,0.86
 sum total,synthesis,4.216080132148804,glucosamine,schmidt_2016,Schmidt et al. 2016,0.46,2183.4741717988086,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.86
@@ -622,8 +622,8 @@ sum total,synthesis,0.12406450449725481,glucosamine,schmidt_2016,Schmidt et al. 
 sum total,synthesis,0.041145606107453304,glucose,schmidt_2016,Schmidt et al. 2016,0.58,24.03454747797113,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.97
 sum total,synthesis,7.704411732446543,glucose,schmidt_2016,Schmidt et al. 2016,0.58,4500.408842920929,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.97
 sum total,synthesis,0.2904915109303034,glucose,schmidt_2016,Schmidt et al. 2016,0.58,169.68596824576187,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.97
-sum total,synthesis,0.2904915109303034,glucose,schmidt_2016,Schmidt et al. 2016,0.58,169.68596824576187,σ-70 (RpoD),,none,sigma70,0.97
-sum total,synthesis,0.2904915109303034,glucose,schmidt_2016,Schmidt et al. 2016,0.58,169.68596824576187,all σ-factors,,none,all_sigma,0.97
+sum total,synthesis,1.0680198529522642,glucose,schmidt_2016,Schmidt et al. 2016,0.58,623.866708784418,σ-70 (RpoD),,none,sigma70,0.97
+sum total,synthesis,1.0680198529522642,glucose,schmidt_2016,Schmidt et al. 2016,0.58,623.866708784418,all σ-factors,,none,all_sigma,0.97
 sum total,synthesis,32.14333415513895,glucose,schmidt_2016,Schmidt et al. 2016,0.58,18776.014353377937,tRNA ligases,20.0,AA/s,trna,0.97
 sum total,transport,69.987991336564,glucose,schmidt_2016,Schmidt et al. 2016,0.58,40882.36533139247,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.97
 sum total,transport,69.987991336564,glucose,schmidt_2016,Schmidt et al. 2016,0.58,40882.36533139247,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.97
@@ -635,7 +635,7 @@ sum total,transport,0.029117825209089516,glucose,schmidt_2016,Schmidt et al. 201
 average,transport,2.0588843365120475,glucose,schmidt_2016,Schmidt et al. 2016,0.58,1202.6643430241286,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.97
 sum total,transport,0.3428211873673935,glucose,schmidt_2016,Schmidt et al. 2016,0.58,200.25351146166503,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.97
 sum total,synthesis,34.045275445274456,glucose,schmidt_2016,Schmidt et al. 2016,0.58,19887.002926949954,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.97
-sum total,no aggregation,416.08603073689056,glucose,schmidt_2016,Schmidt et al. 2016,0.58,243049.99747846284,Elongation Factor EF-Tu,,none,eftu,0.97
+sum total,sum,416.08603073689056,glucose,schmidt_2016,Schmidt et al. 2016,0.58,243049.99747846284,Elongation Factor EF-Tu,,none,eftu,0.97
 sum total,energy production,7.9729137914147,glucose,schmidt_2016,Schmidt et al. 2016,0.58,4657.250024634234,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.97
 sum total,energy production,4.333613508744573,glucose,schmidt_2016,Schmidt et al. 2016,0.58,2531.410993317003,respiratory complex,1500.0,protons/s,proton_gradient,0.97
 sum total,synthesis,3.057646343418636,glucose,schmidt_2016,Schmidt et al. 2016,0.58,1786.0751891665016,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.97
@@ -643,8 +643,8 @@ sum total,synthesis,0.10630753165960038,glucose,schmidt_2016,Schmidt et al. 2016
 sum total,synthesis,0.0385803821799563,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,20.212802349429627,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.87
 sum total,synthesis,8.364262717542966,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,4382.154337398806,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.87
 sum total,synthesis,0.37116060935325906,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,194.45623948870337,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.87
-sum total,synthesis,0.37116060935325906,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,194.45623948870337,σ-70 (RpoD),,none,sigma70,0.87
-sum total,synthesis,0.37116060935325906,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,194.45623948870337,all σ-factors,,none,all_sigma,0.87
+sum total,synthesis,1.0596904353998842,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,555.186654772095,σ-70 (RpoD),,none,sigma70,0.87
+sum total,synthesis,1.0596904353998842,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,555.186654772095,all σ-factors,,none,all_sigma,0.87
 sum total,synthesis,28.1862943290975,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,14767.19420713479,tRNA ligases,20.0,AA/s,trna,0.87
 sum total,transport,85.40464696303077,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,44744.690208989305,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.87
 sum total,transport,85.40464696303077,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,44744.690208989305,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.87
@@ -656,7 +656,7 @@ sum total,transport,0.0011953642813309468,glycerol,schmidt_2016,Schmidt et al. 2
 average,transport,1.9956606676820152,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,1045.5545630479555,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.87
 sum total,transport,0.272543056143456,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,142.7891227163426,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.87
 sum total,synthesis,29.51998277275825,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,15465.932254406867,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.87
-sum total,no aggregation,342.54538150461815,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,179464.32100561052,Elongation Factor EF-Tu,,none,eftu,0.87
+sum total,sum,342.54538150461815,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,179464.32100561052,Elongation Factor EF-Tu,,none,eftu,0.87
 sum total,energy production,9.928232517075829,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,5201.540010951267,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.87
 sum total,energy production,4.336535608517617,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,2271.9717168008992,respiratory complex,1500.0,protons/s,proton_gradient,0.87
 sum total,synthesis,3.160842000909356,glycerol,schmidt_2016,Schmidt et al. 2016,0.47,1656.0093760644245,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.87
@@ -664,8 +664,8 @@ sum total,synthesis,0.0968245067878067,glycerol,schmidt_2016,Schmidt et al. 2016
 sum total,synthesis,0.03655788193943301,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,43.81016144281386,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,1.99
 sum total,synthesis,8.090576673359296,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,9695.569092666965,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.99
 sum total,synthesis,0.40763175626894665,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,488.49692881406776,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.99
-sum total,synthesis,0.40763175626894665,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,488.49692881406776,σ-70 (RpoD),,none,sigma70,1.99
-sum total,synthesis,0.40763175626894665,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,488.49692881406776,all σ-factors,,none,all_sigma,1.99
+sum total,synthesis,1.0584313245332169,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,1268.4008138314675,σ-70 (RpoD),,none,sigma70,1.99
+sum total,synthesis,1.0584313245332169,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,1268.4008138314675,all σ-factors,,none,all_sigma,1.99
 sum total,synthesis,25.875647150870996,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,31008.806281366487,tRNA ligases,20.0,AA/s,trna,1.99
 sum total,transport,66.33540579806613,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,79494.8909294749,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.99
 sum total,transport,66.33540579806613,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,79494.8909294749,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,1.99
@@ -677,7 +677,7 @@ sum total,transport,0.0014474274523531177,glycerol_pAA,schmidt_2016,Schmidt et a
 average,transport,0.7630204279295231,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,914.3868943813259,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,1.99
 sum total,transport,0.28984734733371176,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,347.3466844030788,Phosphate Transport System,300.0,Pi/s,phosphate_tport,1.99
 sum total,synthesis,37.88417334239954,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,45399.55988171809,Ribosome (50S + 30S),15.0,AA/s,ribosome,1.99
-sum total,no aggregation,400.4539635327275,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,479895.219910423,Elongation Factor EF-Tu,,none,eftu,1.99
+sum total,sum,400.4539635327275,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,479895.219910423,Elongation Factor EF-Tu,,none,eftu,1.99
 sum total,energy production,11.00871254399447,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,13192.598921047005,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.99
 sum total,energy production,4.323814242196174,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,5181.563863934567,respiratory complex,1500.0,protons/s,proton_gradient,1.99
 sum total,synthesis,4.150317291191019,glycerol_pAA,schmidt_2016,Schmidt et al. 2016,1.27,4973.648934782911,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.99
@@ -685,8 +685,8 @@ sum total,synthesis,0.08141779419486284,glycerol_pAA,schmidt_2016,Schmidt et al.
 sum total,synthesis,0.034808771705702346,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,80.28385609009626,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,3.83
 sum total,synthesis,9.63378525636782,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,22219.612793703414,RNA polymerase (core enzyme),40.0,nt/s,rnap,3.83
 sum total,synthesis,0.30489928340169575,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,703.2276346190396,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,3.83
-sum total,synthesis,0.30489928340169575,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,703.2276346190396,σ-70 (RpoD),,none,sigma70,3.83
-sum total,synthesis,0.30489928340169575,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,703.2276346190396,all σ-factors,,none,all_sigma,3.83
+sum total,synthesis,1.4251568761540472,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,3287.018873240475,σ-70 (RpoD),,none,sigma70,3.83
+sum total,synthesis,1.4251568761540472,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,3287.018873240475,all σ-factors,,none,all_sigma,3.83
 sum total,synthesis,26.721012845605124,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,61630.03877343765,tRNA ligases,20.0,AA/s,trna,3.83
 sum total,transport,56.9297658475554,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,131304.29212471383,Carbon Importers (total),200.0,carbs/s,carbon_tport,3.83
 sum total,transport,56.9297658475554,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,131304.29212471383,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,3.83
@@ -698,7 +698,7 @@ sum total,transport,0.00028669420160009,lb_miller,schmidt_2016,Schmidt et al. 20
 average,transport,0.3535477057357109,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,815.4316207491929,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,3.83
 sum total,transport,0.24770379018247773,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,571.3104619754115,Phosphate Transport System,300.0,Pi/s,phosphate_tport,3.83
 sum total,synthesis,45.52912556598865,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,105009.55896266096,Ribosome (50S + 30S),15.0,AA/s,ribosome,3.83
-sum total,no aggregation,381.7493843058094,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,880476.7054469108,Elongation Factor EF-Tu,,none,eftu,3.83
+sum total,sum,381.7493843058094,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,880476.7054469108,Elongation Factor EF-Tu,,none,eftu,3.83
 sum total,energy production,6.676480811700094,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,15398.808932606205,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,3.83
 sum total,energy production,4.789336464500646,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,11046.250144472368,respiratory complex,1500.0,protons/s,proton_gradient,3.83
 sum total,synthesis,3.819626847917998,lb_miller,schmidt_2016,Schmidt et al. 2016,1.9,8809.686672336118,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,3.83
@@ -706,8 +706,8 @@ sum total,synthesis,0.07181689750082253,lb_miller,schmidt_2016,Schmidt et al. 20
 sum total,synthesis,0.03656458408998935,mannose,schmidt_2016,Schmidt et al. 2016,0.47,19.156697508922683,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.87
 sum total,synthesis,7.930779311324686,mannose,schmidt_2016,Schmidt et al. 2016,0.47,4155.046312113362,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.87
 sum total,synthesis,0.36263614658775783,mannose,schmidt_2016,Schmidt et al. 2016,0.47,189.9901541033786,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.87
-sum total,synthesis,0.36263614658775783,mannose,schmidt_2016,Schmidt et al. 2016,0.47,189.9901541033786,σ-70 (RpoD),,none,sigma70,0.87
-sum total,synthesis,0.36263614658775783,mannose,schmidt_2016,Schmidt et al. 2016,0.47,189.9901541033786,all σ-factors,,none,all_sigma,0.87
+sum total,synthesis,0.8929186699663951,mannose,schmidt_2016,Schmidt et al. 2016,0.47,467.812592056774,σ-70 (RpoD),,none,sigma70,0.87
+sum total,synthesis,0.8929186699663951,mannose,schmidt_2016,Schmidt et al. 2016,0.47,467.812592056774,all σ-factors,,none,all_sigma,0.87
 sum total,synthesis,28.112578689488064,mannose,schmidt_2016,Schmidt et al. 2016,0.47,14728.57355152445,tRNA ligases,20.0,AA/s,trna,0.87
 sum total,transport,91.17555742565717,mannose,schmidt_2016,Schmidt et al. 2016,0.47,47768.15099310576,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.87
 sum total,transport,91.17555742565717,mannose,schmidt_2016,Schmidt et al. 2016,0.47,47768.15099310576,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.87
@@ -719,7 +719,7 @@ sum total,transport,0.0011953395849617068,mannose,schmidt_2016,Schmidt et al. 20
 average,transport,1.6635765130084252,mannose,schmidt_2016,Schmidt et al. 2016,0.47,871.5710252362962,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.87
 sum total,transport,0.3926690536599206,mannose,schmidt_2016,Schmidt et al. 2016,0.47,205.7248145791837,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.87
 sum total,synthesis,25.48748159957874,mannose,schmidt_2016,Schmidt et al. 2016,0.47,13353.2484347617,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.87
-sum total,no aggregation,344.28828162838795,mannose,schmidt_2016,Schmidt et al. 2016,0.47,180377.45078105526,Elongation Factor EF-Tu,,none,eftu,0.87
+sum total,sum,344.28828162838795,mannose,schmidt_2016,Schmidt et al. 2016,0.47,180377.45078105526,Elongation Factor EF-Tu,,none,eftu,0.87
 sum total,energy production,9.236523448702417,mannose,schmidt_2016,Schmidt et al. 2016,0.47,4839.143946103479,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.87
 sum total,energy production,4.240003585873455,mannose,schmidt_2016,Schmidt et al. 2016,0.47,2221.3972386893056,respiratory complex,1500.0,protons/s,proton_gradient,0.87
 sum total,synthesis,3.3152743388912937,mannose,schmidt_2016,Schmidt et al. 2016,0.47,1736.9186399858934,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.87
@@ -727,8 +727,8 @@ sum total,synthesis,0.1748184143006496,mannose,schmidt_2016,Schmidt et al. 2016,
 sum total,synthesis,0.04124615059216451,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,23.34812597340538,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.94
 sum total,synthesis,7.4955541086835735,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,4242.993323194294,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.94
 sum total,synthesis,0.3626608956643092,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,205.29072788690422,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.94
-sum total,synthesis,0.3626608956643092,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,205.29072788690422,σ-70 (RpoD),,none,sigma70,0.94
-sum total,synthesis,0.3626608956643092,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,205.29072788690422,all σ-factors,,none,all_sigma,0.94
+sum total,synthesis,0.9209899955009897,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,521.3429647732543,σ-70 (RpoD),,none,sigma70,0.94
+sum total,synthesis,0.9209899955009897,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,521.3429647732543,all σ-factors,,none,all_sigma,0.94
 sum total,synthesis,24.86388862330028,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,14074.651705214344,tRNA ligases,20.0,AA/s,trna,0.94
 sum total,transport,63.118006502669296,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,35729.08370495301,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.94
 sum total,transport,63.118006502669296,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,35729.08370495301,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.94
@@ -740,7 +740,7 @@ sum total,transport,0.008433974317774632,osmotic_stress_glucose,schmidt_2016,Sch
 average,transport,1.2034227104674675,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,681.2190868688986,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.94
 sum total,transport,0.16361910176482786,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,92.61953769781258,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.94
 sum total,synthesis,31.319456287564776,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,17728.94198178922,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.94
-sum total,no aggregation,361.79050951471476,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,204798.0301399756,Elongation Factor EF-Tu,,none,eftu,0.94
+sum total,sum,361.79050951471476,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,204798.0301399756,Elongation Factor EF-Tu,,none,eftu,0.94
 sum total,energy production,6.242813733392919,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,3533.857084434263,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.94
 sum total,energy production,4.476864203659554,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,2534.209566037157,respiratory complex,1500.0,protons/s,proton_gradient,0.94
 sum total,synthesis,3.7140411570706875,osmotic_stress_glucose,schmidt_2016,Schmidt et al. 2016,0.55,2102.3998497006905,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.94
@@ -748,8 +748,8 @@ sum total,synthesis,0.11807564044884482,osmotic_stress_glucose,schmidt_2016,Schm
 sum total,synthesis,0.037307041862377356,pH6,schmidt_2016,Schmidt et al. 2016,0.63,22.915626621714118,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,1.02
 sum total,synthesis,7.612415769724605,pH6,schmidt_2016,Schmidt et al. 2016,0.63,4675.880712058721,RNA polymerase (core enzyme),40.0,nt/s,rnap,1.02
 sum total,synthesis,0.26114929303664147,pH6,schmidt_2016,Schmidt et al. 2016,0.63,160.40938635199882,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,1.02
-sum total,synthesis,0.26114929303664147,pH6,schmidt_2016,Schmidt et al. 2016,0.63,160.40938635199882,σ-70 (RpoD),,none,sigma70,1.02
-sum total,synthesis,0.26114929303664147,pH6,schmidt_2016,Schmidt et al. 2016,0.63,160.40938635199882,all σ-factors,,none,all_sigma,1.02
+sum total,synthesis,1.141584124202792,pH6,schmidt_2016,Schmidt et al. 2016,0.63,701.2111987868198,σ-70 (RpoD),,none,sigma70,1.02
+sum total,synthesis,1.141584124202792,pH6,schmidt_2016,Schmidt et al. 2016,0.63,701.2111987868198,all σ-factors,,none,all_sigma,1.02
 sum total,synthesis,29.402049737280432,pH6,schmidt_2016,Schmidt et al. 2016,0.63,18060.032638826084,tRNA ligases,20.0,AA/s,trna,1.02
 sum total,transport,62.83551904610538,pH6,schmidt_2016,Schmidt et al. 2016,0.63,38596.340560955956,Carbon Importers (total),200.0,carbs/s,carbon_tport,1.02
 sum total,transport,62.83551904610538,pH6,schmidt_2016,Schmidt et al. 2016,0.63,38596.340560955956,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,1.02
@@ -761,7 +761,7 @@ sum total,transport,0.02490921719476844,pH6,schmidt_2016,Schmidt et al. 2016,0.6
 average,transport,1.9023752153323679,pH6,schmidt_2016,Schmidt et al. 2016,0.63,1168.5225617666151,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,1.02
 sum total,transport,0.2814211559664264,pH6,schmidt_2016,Schmidt et al. 2016,0.63,172.86125652544163,Phosphate Transport System,300.0,Pi/s,phosphate_tport,1.02
 sum total,synthesis,31.143124604130836,pH6,schmidt_2016,Schmidt et al. 2016,0.63,19129.477429339746,Ribosome (50S + 30S),15.0,AA/s,ribosome,1.02
-sum total,no aggregation,305.8205291837189,pH6,schmidt_2016,Schmidt et al. 2016,0.63,187848.42512792425,Elongation Factor EF-Tu,,none,eftu,1.02
+sum total,sum,305.8205291837189,pH6,schmidt_2016,Schmidt et al. 2016,0.63,187848.42512792425,Elongation Factor EF-Tu,,none,eftu,1.02
 sum total,energy production,5.173015056131728,pH6,schmidt_2016,Schmidt et al. 2016,0.63,3177.493460138577,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,1.02
 sum total,energy production,4.7566317522714865,pH6,schmidt_2016,Schmidt et al. 2016,0.63,2921.732514042247,respiratory complex,1500.0,protons/s,proton_gradient,1.02
 sum total,synthesis,3.0982826323535386,pH6,schmidt_2016,Schmidt et al. 2016,0.63,1903.101517227367,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,1.02
@@ -769,8 +769,8 @@ sum total,synthesis,0.09698695205622608,pH6,schmidt_2016,Schmidt et al. 2016,0.6
 sum total,synthesis,0.03771215142586989,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,18.39530864681367,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.81
 sum total,synthesis,8.213115640355204,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,4006.209973283743,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.81
 sum total,synthesis,0.402697151914828,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,196.42842215531869,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.81
-sum total,synthesis,0.402697151914828,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,196.42842215531869,σ-70 (RpoD),,none,sigma70,0.81
-sum total,synthesis,0.402697151914828,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,196.42842215531869,all σ-factors,,none,all_sigma,0.81
+sum total,synthesis,1.1475677417880539,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,559.7628882248607,σ-70 (RpoD),,none,sigma70,0.81
+sum total,synthesis,1.1475677417880539,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,559.7628882248607,all σ-factors,,none,all_sigma,0.81
 sum total,synthesis,27.247056283680372,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,13290.623608166181,tRNA ligases,20.0,AA/s,trna,0.81
 sum total,transport,84.74188400912,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,41335.56566573658,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.81
 sum total,transport,84.74188400912,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,41335.56566573658,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.81
@@ -782,7 +782,7 @@ sum total,transport,0.0006354195690963757,pyruvate,schmidt_2016,Schmidt et al. 2
 average,transport,1.5424015765353143,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,752.3557258055489,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.81
 sum total,transport,0.48037719423685993,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,234.31934855924405,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.81
 sum total,synthesis,23.25722271015793,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,11344.45460800626,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.81
-sum total,no aggregation,356.91453654186506,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,174096.48646346404,Elongation Factor EF-Tu,,none,eftu,0.81
+sum total,sum,356.91453654186506,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,174096.48646346404,Elongation Factor EF-Tu,,none,eftu,0.81
 sum total,energy production,12.0021860728338,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,5854.4503269790175,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.81
 sum total,energy production,5.66868428184428,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,2765.0821563665672,respiratory complex,1500.0,protons/s,proton_gradient,0.81
 sum total,synthesis,2.376151478635896,pyruvate,schmidt_2016,Schmidt et al. 2016,0.4,1159.043920551975,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.81
@@ -790,8 +790,8 @@ sum total,synthesis,0.15536008464406378,pyruvate,schmidt_2016,Schmidt et al. 201
 sum total,synthesis,0.030764271573720497,succinate,schmidt_2016,Schmidt et al. 2016,0.44,15.562045247023367,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.84
 sum total,synthesis,7.484740946939706,succinate,schmidt_2016,Schmidt et al. 2016,0.44,3786.1412385275567,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.84
 sum total,synthesis,0.27669367376364223,succinate,schmidt_2016,Schmidt et al. 2016,0.44,139.9649414859909,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.84
-sum total,synthesis,0.27669367376364223,succinate,schmidt_2016,Schmidt et al. 2016,0.44,139.9649414859909,σ-70 (RpoD),,none,sigma70,0.84
-sum total,synthesis,0.27669367376364223,succinate,schmidt_2016,Schmidt et al. 2016,0.44,139.9649414859909,all σ-factors,,none,all_sigma,0.84
+sum total,synthesis,1.0421050551098112,succinate,schmidt_2016,Schmidt et al. 2016,0.44,527.1467579171879,σ-70 (RpoD),,none,sigma70,0.84
+sum total,synthesis,1.0421050551098112,succinate,schmidt_2016,Schmidt et al. 2016,0.44,527.1467579171879,all σ-factors,,none,all_sigma,0.84
 sum total,synthesis,27.90206567231754,succinate,schmidt_2016,Schmidt et al. 2016,0.44,14114.204116210487,tRNA ligases,20.0,AA/s,trna,0.84
 sum total,transport,103.76494246418052,succinate,schmidt_2016,Schmidt et al. 2016,0.44,52489.28861562079,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.84
 sum total,transport,103.76494246418052,succinate,schmidt_2016,Schmidt et al. 2016,0.44,52489.28861562079,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.84
@@ -803,7 +803,7 @@ sum total,transport,0.0012318026656144342,succinate,schmidt_2016,Schmidt et al. 
 average,transport,1.438322081271354,succinate,schmidt_2016,Schmidt et al. 2016,0.44,727.572348166952,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.84
 sum total,transport,0.34736835170327046,succinate,schmidt_2016,Schmidt et al. 2016,0.44,175.71558597239598,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.84
 sum total,synthesis,27.51307681406137,succinate,schmidt_2016,Schmidt et al. 2016,0.44,13917.434880239318,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.84
-sum total,no aggregation,361.93380232282834,succinate,schmidt_2016,Schmidt et al. 2016,0.44,183083.4900373981,Elongation Factor EF-Tu,,none,eftu,0.84
+sum total,sum,361.93380232282834,succinate,schmidt_2016,Schmidt et al. 2016,0.44,183083.4900373981,Elongation Factor EF-Tu,,none,eftu,0.84
 sum total,energy production,10.25593510253916,succinate,schmidt_2016,Schmidt et al. 2016,0.44,5187.94425974923,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.84
 sum total,energy production,4.450544598350339,succinate,schmidt_2016,Schmidt et al. 2016,0.44,2251.2990839863223,respiratory complex,1500.0,protons/s,proton_gradient,0.84
 sum total,synthesis,3.319708183830901,succinate,schmidt_2016,Schmidt et al. 2016,0.44,1679.2677453744936,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.84
@@ -811,8 +811,8 @@ sum total,synthesis,0.14319705987767797,succinate,schmidt_2016,Schmidt et al. 20
 sum total,synthesis,0.044964149440383176,xylose,schmidt_2016,Schmidt et al. 2016,0.55,25.452766145418828,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.94
 sum total,synthesis,8.520445133097958,xylose,schmidt_2016,Schmidt et al. 2016,0.55,4823.151335602495,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.94
 sum total,synthesis,0.3658008350585597,xylose,schmidt_2016,Schmidt et al. 2016,0.55,207.0681470999288,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.94
-sum total,synthesis,0.3658008350585597,xylose,schmidt_2016,Schmidt et al. 2016,0.55,207.0681470999288,σ-70 (RpoD),,none,sigma70,0.94
-sum total,synthesis,0.3658008350585597,xylose,schmidt_2016,Schmidt et al. 2016,0.55,207.0681470999288,all σ-factors,,none,all_sigma,0.94
+sum total,synthesis,1.174613062056552,xylose,schmidt_2016,Schmidt et al. 2016,0.55,664.9108668122283,σ-70 (RpoD),,none,sigma70,0.94
+sum total,synthesis,1.174613062056552,xylose,schmidt_2016,Schmidt et al. 2016,0.55,664.9108668122283,all σ-factors,,none,all_sigma,0.94
 sum total,synthesis,32.23004050659376,xylose,schmidt_2016,Schmidt et al. 2016,0.55,18244.394569486518,tRNA ligases,20.0,AA/s,trna,0.94
 sum total,transport,57.02433332441536,xylose,schmidt_2016,Schmidt et al. 2016,0.55,32279.65031628516,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.94
 sum total,transport,57.02433332441536,xylose,schmidt_2016,Schmidt et al. 2016,0.55,32279.65031628516,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.94
@@ -824,7 +824,7 @@ sum total,transport,0.002812770742472585,xylose,schmidt_2016,Schmidt et al. 2016
 average,transport,1.1201859481897072,xylose,schmidt_2016,Schmidt et al. 2016,0.55,634.1014193198512,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.94
 sum total,transport,0.32909417686929254,xylose,schmidt_2016,Schmidt et al. 2016,0.55,186.2896825120467,Phosphate Transport System,300.0,Pi/s,phosphate_tport,0.94
 sum total,synthesis,32.843268990259226,xylose,schmidt_2016,Schmidt et al. 2016,0.55,18591.52359077806,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.94
-sum total,no aggregation,365.8244623327965,xylose,schmidt_2016,Schmidt et al. 2016,0.55,207081.52174380148,Elongation Factor EF-Tu,,none,eftu,0.94
+sum total,sum,365.8244623327965,xylose,schmidt_2016,Schmidt et al. 2016,0.55,207081.52174380148,Elongation Factor EF-Tu,,none,eftu,0.94
 sum total,energy production,8.602078771971367,xylose,schmidt_2016,Schmidt et al. 2016,0.55,4869.3615262922885,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.94
 sum total,energy production,4.651104653724302,xylose,schmidt_2016,Schmidt et al. 2016,0.55,2632.8415091244087,respiratory complex,1500.0,protons/s,proton_gradient,0.94
 sum total,synthesis,3.2220288855023465,xylose,schmidt_2016,Schmidt et al. 2016,0.55,1823.8874471585427,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.94
@@ -832,8 +832,8 @@ sum total,synthesis,0.13670065808416765,xylose,schmidt_2016,Schmidt et al. 2016,
 sum total,synthesis,0.17969629490892652,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,64.92786527649332,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.6
 sum total,synthesis,8.633192806219132,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,3119.3452247430964,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.6
 sum total,synthesis,1.4686529616340378,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,530.6536880976105,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.6
-sum total,synthesis,1.4686529616340378,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,530.6536880976105,σ-70 (RpoD),,none,sigma70,0.6
-sum total,synthesis,1.4686529616340378,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,530.6536880976105,all σ-factors,,none,all_sigma,0.6
+sum total,synthesis,3.702715006447718,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,1337.8649861296894,σ-70 (RpoD),,none,sigma70,0.6
+sum total,synthesis,3.702715006447718,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,1337.8649861296894,all σ-factors,,none,all_sigma,0.6
 sum total,synthesis,31.05926097657061,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,11222.332176054493,tRNA ligases,20.0,AA/s,trna,0.6
 sum total,transport,199.8617513116129,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,72214.04798391198,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.6
 sum total,transport,199.8617513116129,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,72214.04798391198,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.6
@@ -842,7 +842,7 @@ sum total,transport,3.36469170575417,glucose_minimal,valgepea_2013,Valgepea et a
 sum total,transport,0.6313653604908229,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,228.12493205254412,Fructose Transporter FruBA,200.0,frc/s,fructose_tport,0.6
 average,transport,4.389446252396968,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,1585.9947199160724,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.6
 sum total,synthesis,27.085757235117395,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,9786.625804192618,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.6
-sum total,no aggregation,152.4057700345416,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,55067.25282888058,Elongation Factor EF-Tu,,none,eftu,0.6
+sum total,sum,152.4057700345416,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,55067.25282888058,Elongation Factor EF-Tu,,none,eftu,0.6
 sum total,energy production,7.781011458110489,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,2811.4350600444823,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.6
 sum total,energy production,8.704070558576328,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,3144.9547742247987,respiratory complex,1500.0,protons/s,proton_gradient,0.6
 sum total,synthesis,9.047627504387465,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.11,3269.088769885279,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.6
@@ -850,8 +850,8 @@ sum total,synthesis,0.8120329867235817,glucose_minimal,valgepea_2013,Valgepea et
 sum total,synthesis,0.1739429229877952,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,69.1339626273452,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.66
 sum total,synthesis,9.263205463987726,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,3681.6795380728504,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.66
 sum total,synthesis,1.561437569552277,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,620.5964848936917,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.66
-sum total,synthesis,1.561437569552277,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,620.5964848936917,σ-70 (RpoD),,none,sigma70,0.66
-sum total,synthesis,1.561437569552277,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,620.5964848936917,all σ-factors,,none,all_sigma,0.66
+sum total,synthesis,3.2053777112726785,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,1273.9837821007488,σ-70 (RpoD),,none,sigma70,0.66
+sum total,synthesis,3.2053777112726785,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,1273.9837821007488,all σ-factors,,none,all_sigma,0.66
 sum total,synthesis,33.504763878430076,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,13316.535413009795,tRNA ligases,20.0,AA/s,trna,0.66
 sum total,transport,108.7649343255488,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,43228.84067755802,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.66
 sum total,transport,108.7649343255488,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,43228.84067755802,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.66
@@ -860,7 +860,7 @@ sum total,transport,3.4498297769560096,glucose_minimal,valgepea_2013,Valgepea et
 sum total,transport,0.5339749809770263,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,212.2294241392811,Fructose Transporter FruBA,200.0,frc/s,fructose_tport,0.66
 average,transport,4.412359785584126,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,1753.7012214999825,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.66
 sum total,synthesis,28.496059356781696,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,11325.8157834716,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.66
-sum total,no aggregation,169.77501526789447,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,67477.4193682552,Elongation Factor EF-Tu,,none,eftu,0.66
+sum total,sum,169.77501526789447,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,67477.4193682552,Elongation Factor EF-Tu,,none,eftu,0.66
 sum total,energy production,9.982556594774612,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,3967.58708370636,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.66
 sum total,energy production,9.899861285883429,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,3934.719667796941,respiratory complex,1500.0,protons/s,proton_gradient,0.66
 sum total,synthesis,8.239053163801936,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.21,3274.6281580594077,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.66
@@ -868,8 +868,8 @@ sum total,synthesis,0.7914135626497842,glucose_minimal,valgepea_2013,Valgepea et
 sum total,synthesis,0.16499720513992266,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,73.52737453209348,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.74
 sum total,synthesis,10.112968151521681,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,4506.621771426305,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.74
 sum total,synthesis,1.7875660767086228,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,796.5894956315103,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.74
-sum total,synthesis,1.7875660767086228,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,796.5894956315103,σ-70 (RpoD),,none,sigma70,0.74
-sum total,synthesis,1.7875660767086228,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,796.5894956315103,all σ-factors,,none,all_sigma,0.74
+sum total,synthesis,3.075631153974733,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,1370.5873598834526,σ-70 (RpoD),,none,sigma70,0.74
+sum total,synthesis,3.075631153974733,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,1370.5873598834526,all σ-factors,,none,all_sigma,0.74
 sum total,synthesis,35.424594923327774,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,15786.191386492712,tRNA ligases,20.0,AA/s,trna,0.74
 sum total,transport,100.36993841295725,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,44727.654915089326,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.74
 sum total,transport,100.36993841295725,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,44727.654915089326,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.74
@@ -878,7 +878,7 @@ sum total,transport,1.3990652993644461,glucose_minimal,valgepea_2013,Valgepea et
 sum total,transport,0.5116416487345186,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,228.00184464226606,Fructose Transporter FruBA,200.0,frc/s,fructose_tport,0.74
 average,transport,4.472962074868892,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,1993.2771434996753,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.74
 sum total,synthesis,33.832932178874984,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,15076.901901007705,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.74
-sum total,no aggregation,164.99951764454977,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,73528.40504890544,Elongation Factor EF-Tu,,none,eftu,0.74
+sum total,sum,164.99951764454977,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,73528.40504890544,Elongation Factor EF-Tu,,none,eftu,0.74
 sum total,energy production,10.653837289292508,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,4747.648203552842,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.74
 sum total,energy production,9.963340853365137,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,4439.9436578034,respiratory complex,1500.0,protons/s,proton_gradient,0.74
 sum total,synthesis,8.455673168803468,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.31,3768.084722867552,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.74
@@ -886,8 +886,8 @@ sum total,synthesis,0.6613763233359199,glucose_minimal,valgepea_2013,Valgepea et
 sum total,synthesis,0.15345478094178372,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,74.85247995734517,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.81
 sum total,synthesis,9.790323287584409,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,4775.543473864499,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.81
 sum total,synthesis,1.7878424827093236,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,872.0773819009195,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.81
-sum total,synthesis,1.7878424827093236,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,872.0773819009195,σ-70 (RpoD),,none,sigma70,0.81
-sum total,synthesis,1.7878424827093236,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,872.0773819009195,all σ-factors,,none,all_sigma,0.81
+sum total,synthesis,2.7704423420775037,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,1351.3719065032492,σ-70 (RpoD),,none,sigma70,0.81
+sum total,synthesis,2.7704423420775037,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,1351.3719065032492,all σ-factors,,none,all_sigma,0.81
 sum total,synthesis,36.22795421700102,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,17671.343963877192,tRNA ligases,20.0,AA/s,trna,0.81
 sum total,transport,89.39995936624456,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,43607.69097958551,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.81
 sum total,transport,89.39995936624456,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,43607.69097958551,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.81
@@ -896,7 +896,7 @@ sum total,transport,0.34248293853496736,glucose_minimal,valgepea_2013,Valgepea e
 sum total,transport,0.46428862649606434,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,226.4716348095033,Fructose Transporter FruBA,200.0,frc/s,fructose_tport,0.81
 average,transport,4.774375250291033,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,2328.854308337461,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.81
 sum total,synthesis,39.06196094503625,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,19053.721433691677,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.81
-sum total,no aggregation,161.38081466216445,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,78718.65653753991,Elongation Factor EF-Tu,,none,eftu,0.81
+sum total,sum,161.38081466216445,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,78718.65653753991,Elongation Factor EF-Tu,,none,eftu,0.81
 sum total,energy production,9.896556421296642,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,4827.36208429292,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.81
 sum total,energy production,9.73037543677776,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,4746.30199130233,respiratory complex,1500.0,protons/s,proton_gradient,0.81
 sum total,synthesis,9.37682950167463,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.4,4573.848647985856,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.81
@@ -904,8 +904,8 @@ sum total,synthesis,0.6074994981155968,glucose_minimal,valgepea_2013,Valgepea et
 sum total,synthesis,0.14752608626940655,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,79.06778614477862,DNA polymerase III (holo enzyme),600.0,bp/s,dnap,0.89
 sum total,synthesis,10.460195811388346,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,5606.225626680076,RNA polymerase (core enzyme),40.0,nt/s,rnap,0.89
 sum total,synthesis,1.6213758694588902,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,868.989368243448,Ribonucleoside-diphosphate reductase (I),10.0,dNTP/s,dntp,0.89
-sum total,synthesis,1.6213758694588902,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,868.989368243448,σ-70 (RpoD),,none,sigma70,0.89
-sum total,synthesis,1.6213758694588902,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,868.989368243448,all σ-factors,,none,all_sigma,0.89
+sum total,synthesis,3.0479317298980146,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,1633.5633940926803,σ-70 (RpoD),,none,sigma70,0.89
+sum total,synthesis,3.0479317298980146,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,1633.5633940926803,all σ-factors,,none,all_sigma,0.89
 sum total,synthesis,39.407211210021686,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,21120.610105700805,tRNA ligases,20.0,AA/s,trna,0.89
 sum total,transport,60.93512566466376,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,32658.668080981868,Carbon Importers (total),200.0,carbs/s,carbon_tport,0.89
 sum total,transport,60.93512566466376,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,32658.668080981868,Carbohydrate Transporters (total),200.0,carbs/s,carbohydrate_tport_tot,0.89
@@ -913,7 +913,7 @@ sum total,transport,27.32062341442136,glucose_minimal,valgepea_2013,Valgepea et 
 sum total,transport,0.3741636621828208,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,200.5360080561803,Fructose Transporter FruBA,200.0,frc/s,fructose_tport,0.89
 average,transport,5.41171749354204,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,2900.453284403805,Sulfate Transporter (CysUWA),10.0,SO4/s,sulfur_tport,0.89
 sum total,synthesis,44.12817638614227,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,23650.84915956404,Ribosome (50S + 30S),15.0,AA/s,ribosome,0.89
-sum total,no aggregation,159.28083372951505,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,85367.83708400345,Elongation Factor EF-Tu,,none,eftu,0.89
+sum total,sum,159.28083372951505,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,85367.83708400345,Elongation Factor EF-Tu,,none,eftu,0.89
 sum total,energy production,8.955499526770733,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,4799.77161536899,F1-F0 ATP Synthase,300.0,atp/s,atp_synthase,0.89
 sum total,energy production,10.854245028265021,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,5817.419456858865,respiratory complex,1500.0,protons/s,proton_gradient,0.89
 sum total,synthesis,8.596660491465636,glucose_minimal,valgepea_2013,Valgepea et al. 2013,0.49,4607.44896368494,Fatty Acid Synthetases (FabA + FabZ),1.0,lipid/s,fas,0.89

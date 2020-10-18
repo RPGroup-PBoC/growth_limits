@@ -31,7 +31,7 @@ L_mRNA = 1000
 L_rRNA = 4500
 r_txn = 40 # in nt/s
 n_operon = 7
-footprint = 80 # in nt
+footprint = 40 # in nt
 n_tRNA = theta_prot * theta_dry * cell_mass / (m_aa * t_double)
 L_tRNA = 80
 
@@ -41,7 +41,7 @@ N_polymerase = (L_rRNA * n_operon  * N_ori/ footprint) + (n_mRNA * L_mRNA / r_tx
 #%%
 fig, ax = plt.subplots(1, 2, figsize=(6.5, 2.5))
 for a in ax:
-    a.plot(growth_rate, N_polymerase, '-', lw=3, color='grey', alpha=0.4, label='replication fork scaling')
+    a.plot(growth_rate, N_polymerase, '-', lw=3, color='grey', alpha=0.4, label='scaling with DNA content')
     a.set_xlabel('growth rate [hr$^{-1}$]', fontsize=8)
     a.set_yscale('log')
     a.set_xlim([0, 2])
@@ -54,9 +54,9 @@ ax[1].set_ylim([1E2, 1E4])
 
 # Plot the predictions
 for a in ax:
-    a.plot(0.5, 1E3, 'o', ms=6, alpha=0.4, color=colors['dark_brown'], label='estimated value')
-    a.vlines(0.5, 1, 1E3, color='k', linestyle='--', label='__nolegend__', lw=0.75)
-    a.hlines(1E3, 0, 0.5, color='k', linestyle='--', label='__nolegend__', lw=0.75)
+    a.plot(0.5, 1.5E3, 'o', ms=6, alpha=0.4, color=colors['dark_brown'], label='estimated value')
+    a.vlines(0.5, 1, 1.5E3, color='k', linestyle='--', label='__nolegend__', lw=0.75)
+    a.hlines(1.5E3, 0, 0.5, color='k', linestyle='--', label='__nolegend__', lw=0.75)
 
 # plot the data
 for p, a in zip([rnap, sig70], ax.ravel()):

@@ -1,0 +1,44 @@
+color,condition,dataset,dataset_name,gene_name,gene_product,growth_rate_hr,tot_per_cell
+#AB85AC,MOPS Complete,li_2014,Li et al. 2014,ycdX,zinc-binding phosphatase YcdX,1.934364224818452,1014.6530911959101
+#AB85AC,MOPS Complete (- Met.),li_2014,Li et al. 2014,ycdX,zinc-binding phosphatase YcdX,1.5693898427772346,914.7420109766381
+#AB85AC,MOPS Minimal Medium,li_2014,Li et al. 2014,ycdX,zinc-binding phosphatase YcdX,0.738700370046123,740.7836910341365
+#7AA974,Glucose Minimal Medium,peebo_2015,Peebo et al. 2015,ycdX,zinc-binding phosphatase YcdX,0.21,172.44938760420246
+#7AA974,Glucose Minimal Medium,peebo_2015,Peebo et al. 2015,ycdX,zinc-binding phosphatase YcdX,0.22,191.3692891733912
+#7AA974,Glucose Minimal Medium,peebo_2015,Peebo et al. 2015,ycdX,zinc-binding phosphatase YcdX,0.26,189.67099696542363
+#7AA974,Glucose Minimal Medium,peebo_2015,Peebo et al. 2015,ycdX,zinc-binding phosphatase YcdX,0.31,170.44926201449414
+#7AA974,Glucose Minimal Medium,peebo_2015,Peebo et al. 2015,ycdX,zinc-binding phosphatase YcdX,0.36,194.80198480318148
+#7AA974,Glucose Minimal Medium,peebo_2015,Peebo et al. 2015,ycdX,zinc-binding phosphatase YcdX,0.41,193.31724551969933
+#7AA974,Glucose Minimal Medium,peebo_2015,Peebo et al. 2015,ycdX,zinc-binding phosphatase YcdX,0.46,211.49094453107415
+#7AA974,Glucose Minimal Medium,peebo_2015,Peebo et al. 2015,ycdX,zinc-binding phosphatase YcdX,0.51,244.3835203070638
+#7AA974,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,ycdX,zinc-binding phosphatase YcdX,0.25,176.86531788671437
+#7AA974,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,ycdX,zinc-binding phosphatase YcdX,0.35,216.5401845423396
+#7AA974,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,ycdX,zinc-binding phosphatase YcdX,0.42,194.60690141861485
+#7AA974,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,ycdX,zinc-binding phosphatase YcdX,0.45,213.7251870083448
+#7AA974,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,ycdX,zinc-binding phosphatase YcdX,0.53,184.57220495997933
+#7AA974,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,ycdX,zinc-binding phosphatase YcdX,0.55,205.02283263298136
+#7AA974,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,ycdX,zinc-binding phosphatase YcdX,0.63,204.99049140897654
+#7AA974,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,ycdX,zinc-binding phosphatase YcdX,0.65,234.88523188559526
+#7AA974,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,ycdX,zinc-binding phosphatase YcdX,0.73,220.4187095911293
+#7AA974,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,ycdX,zinc-binding phosphatase YcdX,0.74,240.42839824578408
+#7AA974,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,ycdX,zinc-binding phosphatase YcdX,0.78,227.40683911236263
+#7AA974,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,ycdX,zinc-binding phosphatase YcdX,0.82,217.6019633010408
+#A9BFE3,M9 Minimal Medium + Glucose (42° C),schmidt_2016,Schmidt et al. 2016,ycdX,zinc-binding phosphatase YcdX,0.66,273.254801304391
+#A9BFE3,M9 Minimal Medium + Acetate,schmidt_2016,Schmidt et al. 2016,ycdX,zinc-binding phosphatase YcdX,0.3,141.46784787683325
+#A9BFE3,"M9 Minimal Medium, Chemostat (µ=0.12)",schmidt_2016,Schmidt et al. 2016,ycdX,zinc-binding phosphatase YcdX,0.12,122.28460305400607
+#A9BFE3,"M9 Minimal Medium, Chemostat (µ=0.2)",schmidt_2016,Schmidt et al. 2016,ycdX,zinc-binding phosphatase YcdX,0.2,154.73407990563973
+#A9BFE3,"M9 Minimal Medium, Chemostat (µ=0.35)",schmidt_2016,Schmidt et al. 2016,ycdX,zinc-binding phosphatase YcdX,0.35,186.40187625606282
+#A9BFE3,"M9 Minimal Medium, Chemostat (µ=0.5)",schmidt_2016,Schmidt et al. 2016,ycdX,zinc-binding phosphatase YcdX,0.5,195.77942363862257
+#A9BFE3,M9 Minimal Medium + Fructose,schmidt_2016,Schmidt et al. 2016,ycdX,zinc-binding phosphatase YcdX,0.65,228.20464621404415
+#A9BFE3,M9 Minimal Medium + Fumarate,schmidt_2016,Schmidt et al. 2016,ycdX,zinc-binding phosphatase YcdX,0.42,210.72252783801918
+#A9BFE3,M9 Minimal Medium + Galactose,schmidt_2016,Schmidt et al. 2016,ycdX,zinc-binding phosphatase YcdX,0.26,137.71180684068491
+#A9BFE3,M9 Minimal Medium + Glucosamine,schmidt_2016,Schmidt et al. 2016,ycdX,zinc-binding phosphatase YcdX,0.46,186.65913661686665
+#A9BFE3,M9 Minimal Medium + Glucose,schmidt_2016,Schmidt et al. 2016,ycdX,zinc-binding phosphatase YcdX,0.58,230.0989867275863
+#A9BFE3,M9 Minimal Medium + Glycerol,schmidt_2016,Schmidt et al. 2016,ycdX,zinc-binding phosphatase YcdX,0.47,208.54727133571083
+#A9BFE3,M9 Minimal Medium + Glycerol + Amino Acids,schmidt_2016,Schmidt et al. 2016,ycdX,zinc-binding phosphatase YcdX,1.27,340.8420648449687
+#A9BFE3,LB Miller,schmidt_2016,Schmidt et al. 2016,ycdX,zinc-binding phosphatase YcdX,1.9,438.40143089085393
+#A9BFE3,M9 Minimal Medium + Mannose,schmidt_2016,Schmidt et al. 2016,ycdX,zinc-binding phosphatase YcdX,0.47,165.33135783532572
+#A9BFE3,M9 Minimal Medium + Glucose (Osmotic Stress),schmidt_2016,Schmidt et al. 2016,ycdX,zinc-binding phosphatase YcdX,0.55,328.4651646190466
+#A9BFE3,M9 Minimal Medium + Glucose (pH = 6),schmidt_2016,Schmidt et al. 2016,ycdX,zinc-binding phosphatase YcdX,0.63,303.7279705051544
+#A9BFE3,M9 Minimal Medium + Pyruvate,schmidt_2016,Schmidt et al. 2016,ycdX,zinc-binding phosphatase YcdX,0.4,256.63547699345776
+#A9BFE3,M9 Minimal Medium + Succinate,schmidt_2016,Schmidt et al. 2016,ycdX,zinc-binding phosphatase YcdX,0.44,161.69572538949203
+#A9BFE3,M9 Minimal Medium + Xylose,schmidt_2016,Schmidt et al. 2016,ycdX,zinc-binding phosphatase YcdX,0.55,260.8055555168653

@@ -1,0 +1,49 @@
+color,cond,condition,dataset,dataset_name,gene_name,growth_rate_hr,n_units
+#AB85AC,MOPS complete,MOPS Complete,li_2014,Li et al. 2014,zwf,1.934364224818452,5706.048023699344
+#AB85AC,MOPS complete without methionine,MOPS Complete (- Met.),li_2014,Li et al. 2014,zwf,1.5693898427772346,3989.155668189563
+#AB85AC,MOPS minimal,MOPS Minimal Medium,li_2014,Li et al. 2014,zwf,0.738700370046123,2200.664031300177
+#7AA974,glucose_minimal,Glucose Minimal Medium,peebo_2015,Peebo et al. 2015,zwf,0.21,967.7496244400093
+#7AA974,glucose_minimal,Glucose Minimal Medium,peebo_2015,Peebo et al. 2015,zwf,0.22,1005.5344315717124
+#7AA974,glucose_minimal,Glucose Minimal Medium,peebo_2015,Peebo et al. 2015,zwf,0.26,1018.3724759857423
+#7AA974,glucose_minimal,Glucose Minimal Medium,peebo_2015,Peebo et al. 2015,zwf,0.31,1004.7964725197104
+#7AA974,glucose_minimal,Glucose Minimal Medium,peebo_2015,Peebo et al. 2015,zwf,0.36,1135.8442642614518
+#7AA974,glucose_minimal,Glucose Minimal Medium,peebo_2015,Peebo et al. 2015,zwf,0.41,1156.6939960434672
+#7AA974,glucose_minimal,Glucose Minimal Medium,peebo_2015,Peebo et al. 2015,zwf,0.46,1230.994610803243
+#7AA974,glucose_minimal,Glucose Minimal Medium,peebo_2015,Peebo et al. 2015,zwf,0.51,1275.3618635141715
+#7AA974,rich,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,zwf,0.25,1002.505870002643
+#7AA974,rich,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,zwf,0.35,976.6574932993589
+#7AA974,rich,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,zwf,0.42,975.883410637006
+#7AA974,rich,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,zwf,0.45,1054.1912323173324
+#7AA974,rich,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,zwf,0.53,1010.4347200032802
+#7AA974,rich,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,zwf,0.55,995.1855822924324
+#7AA974,rich,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,zwf,0.63,1037.3570964593762
+#7AA974,rich,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,zwf,0.65,1074.8054466612653
+#7AA974,rich,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,zwf,0.73,1079.4107640775703
+#7AA974,rich,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,zwf,0.74,1197.3554322664086
+#7AA974,rich,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,zwf,0.78,1287.429090662519
+#7AA974,rich,EZ MOPS Rich Defined Medium,peebo_2015,Peebo et al. 2015,zwf,0.82,1623.0550695080258
+#A9BFE3,42C,M9 Minimal Medium + Glucose (42° C),schmidt_2016,Schmidt et al. 2016,zwf,0.66,1824.000460692487
+#A9BFE3,acetate,M9 Minimal Medium + Acetate,schmidt_2016,Schmidt et al. 2016,zwf,0.3,577.8915354445802
+#A9BFE3,chemostat_u0.12,"M9 Minimal Medium, Chemostat (µ=0.12)",schmidt_2016,Schmidt et al. 2016,zwf,0.12,872.1072465867096
+#A9BFE3,chemostat_u0.2,"M9 Minimal Medium, Chemostat (µ=0.2)",schmidt_2016,Schmidt et al. 2016,zwf,0.2,805.3629219185103
+#A9BFE3,chemostat_u0.35,"M9 Minimal Medium, Chemostat (µ=0.35)",schmidt_2016,Schmidt et al. 2016,zwf,0.35,756.7359752484938
+#A9BFE3,chemostat_u0.5,"M9 Minimal Medium, Chemostat (µ=0.5)",schmidt_2016,Schmidt et al. 2016,zwf,0.5,942.9569341435107
+#A9BFE3,fructose,M9 Minimal Medium + Fructose,schmidt_2016,Schmidt et al. 2016,zwf,0.65,1494.1502482721253
+#A9BFE3,fumarate,M9 Minimal Medium + Fumarate,schmidt_2016,Schmidt et al. 2016,zwf,0.42,786.0136768471243
+#A9BFE3,galactose,M9 Minimal Medium + Galactose,schmidt_2016,Schmidt et al. 2016,zwf,0.26,1107.2398966116812
+#A9BFE3,glucosamine,M9 Minimal Medium + Glucosamine,schmidt_2016,Schmidt et al. 2016,zwf,0.46,1047.7299276434176
+#A9BFE3,glucose,M9 Minimal Medium + Glucose,schmidt_2016,Schmidt et al. 2016,zwf,0.58,1188.0424670369935
+#A9BFE3,glycerol,M9 Minimal Medium + Glycerol,schmidt_2016,Schmidt et al. 2016,zwf,0.47,1100.0398861897181
+#A9BFE3,glycerol_pAA,M9 Minimal Medium + Glycerol + Amino Acids,schmidt_2016,Schmidt et al. 2016,zwf,1.27,1501.2661940118087
+#A9BFE3,lb_miller,LB Miller,schmidt_2016,Schmidt et al. 2016,zwf,1.9,2991.445057843474
+#A9BFE3,mannose,M9 Minimal Medium + Mannose,schmidt_2016,Schmidt et al. 2016,zwf,0.47,926.2313569638136
+#A9BFE3,osmotic_stress_glucose,M9 Minimal Medium + Glucose (Osmotic Stress),schmidt_2016,Schmidt et al. 2016,zwf,0.55,1232.6992079162478
+#A9BFE3,pH6,M9 Minimal Medium + Glucose (pH = 6),schmidt_2016,Schmidt et al. 2016,zwf,0.63,1525.4761734053095
+#A9BFE3,pyruvate,M9 Minimal Medium + Pyruvate,schmidt_2016,Schmidt et al. 2016,zwf,0.4,927.9790073893872
+#A9BFE3,succinate,M9 Minimal Medium + Succinate,schmidt_2016,Schmidt et al. 2016,zwf,0.44,814.0865711806218
+#A9BFE3,xylose,M9 Minimal Medium + Xylose,schmidt_2016,Schmidt et al. 2016,zwf,0.55,1693.8031133018399
+#D56C55,glucose_minimal,Glucose Minimal Medium,valgepea_2013,Valgepea et al. 2013,zwf,0.11,1382.7880496723444
+#D56C55,glucose_minimal,Glucose Minimal Medium,valgepea_2013,Valgepea et al. 2013,zwf,0.21,1459.7983852098193
+#D56C55,glucose_minimal,Glucose Minimal Medium,valgepea_2013,Valgepea et al. 2013,zwf,0.31,1503.524028624028
+#D56C55,glucose_minimal,Glucose Minimal Medium,valgepea_2013,Valgepea et al. 2013,zwf,0.4,1588.036007862906
+#D56C55,glucose_minimal,Glucose Minimal Medium,valgepea_2013,Valgepea et al. 2013,zwf,0.49,1778.9641979874289

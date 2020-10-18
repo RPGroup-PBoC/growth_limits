@@ -63,116 +63,116 @@ marker_dict = dict(zip(data.dataset.unique(),
 
 label_dict = dict(zip(data.dataset_name.unique(),
                     ['o', 's', 'd', 'v']))
-# ######################
-# # Plot 1
-# ######################
-# # relative dist of different COG categories
-#
-#
-# # Compute the mass fraction
-# mass_frac = []
-# for g, d in data_cytosol.groupby(['dataset', 'condition', 'growth_rate_hr']):
-#     tot_mass = d['fg_per_cell'].sum()
-#     sector_mass = d.groupby(['dataset', 'dataset_name', 'condition', 'growth_rate_hr', 'cog_class'])['fg_per_cell'].sum().reset_index()
-#     frac = sector_mass['fg_per_cell'].values / tot_mass
-#     sector_mass['frac'] = frac
-#     sector_mass['dataset_name'] = sector_mass['dataset_name']
-#     mass_frac.append(sector_mass)
-# mass_frac = pd.concat(mass_frac, sort=False)
-#
-# for g, d in mass_frac.groupby(['dataset', 'cog_class', 'dataset_name']):
-#     ax1.plot(d.growth_rate_hr, d['frac'], marker = marker_dict[g[0]], color=color_dict[g[1]],
-#                     alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
-#                     label = g[2], ms=4, zorder=10, linewidth = 0)
-#
-# ax1.set_ylim(0,1)
-# ax1.set_xlim(0,2)
-# ax1.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
-# ax1.set_ylabel('relative cytosolic protein\nfraction (GO term : 0005829)', fontsize=6)
-# ax1.xaxis.set_tick_params(labelsize=5)
-# ax1.yaxis.set_tick_params(labelsize=5)
-#
-# legend_elements = [Line2D([0], [0],
-#                     marker=label_dict[i],
-#                     color='w', linewidth = 0,
-#                     label=i, markeredgecolor='k',
-#                     markeredgewidth=0.25,
-#                     markerfacecolor='gray',
-#                     markersize=4) for i in data.dataset_name.unique()]
-#
-#
-#
-# ax1.legend(handles=legend_elements, loc='upper left', fontsize = 6)
-#
-#
-# ######################
-# # Plot 2
-# ######################
-# # metabolism vs information processing
-#
-# cm = plt.cm.get_cmap('viridis')
-#
-# for g, d in mass_frac.groupby(['dataset', 'growth_rate_hr', 'dataset_name', 'condition']):
-#     ax2.scatter(d[d.cog_class == 'information storage and processing']['frac'],
-#                     d[d.cog_class == 'metabolism']['frac'], marker = marker_dict[g[0]],
-#                     c = d.growth_rate_hr.unique(), cmap=cm,#'viridis',
-#                     vmin=0, vmax=2, alpha=0.75, edgecolors='k', linewidths=0.25)
-#
-# ax2.set_ylim(0.25,0.65)
-# ax2.set_xlim(0.25,0.55)
-# ax2.set_xlabel('relative mass fraction,\ninformation storage and processing', fontsize=6)
-# ax2.set_ylabel('relative mass fraction,\nmetabolism', fontsize=6)
-# ax2.xaxis.set_tick_params(labelsize=5)
-# ax2.yaxis.set_tick_params(labelsize=5)
-#
-# cbaxes = inset_axes(ax2, width="30%", height="5%", loc=3)
-# cb = plt.colorbar(plt.cm.ScalarMappable(norm=mpl.colors.Normalize(vmin=0, vmax=2), cmap=cm),
-#         cax=cbaxes, ticks=[0.,2], orientation='horizontal')
-# # cbaxes.ax.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)#, rotation=270)
-# cbaxes.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
-# cbaxes.xaxis.set_tick_params(labelsize=5)
-# cbaxes.yaxis.set_tick_params(labelsize=5)
-# cbaxes.xaxis.tick_top()
-# cbaxes.xaxis.set_label_position('top')
-# cb.outline.set_linewidth(0)
-#
-# ######################
-# # Plot 3 - protein concentration in cell
-# ######################
-#
-# data_cytosol_fg_summary = pd.DataFrame()
-# for c, d in data_cytosol.groupby(['dataset', 'condition', 'growth_rate_hr']):
-#     d_ = d[d.gene_name != 'tufA']
-#     d_ = d_[d_.gene_name != 'tufB']
-#
-#     # V = 0.28 * np.exp(1.33 * c[2])
-#     # SA = 2 * np.pi *  V**(2/3)
-#     w = size.lambda2width(c[2])
-#     l = size.lambda2length(c[2])
-#     V = size.lambda2size(c[2])
-#     SA = size.rod_SA(l, w, V)
-#
-#     fg_tot = d_.fg_per_cell.sum()
-#     fg_SA = fg_tot / V
-#
-#     data_list = {'fg per um2' : fg_SA,
-#                 'growth_rate_hr' : c[2],
-#                 'dataset' : c[0],
-#                 'condition' : c[1]}
-#     data_cytosol_fg_summary = \
-#             data_cytosol_fg_summary.append(data_list,
-#             ignore_index = True)
-#
-# for g, d in data_cytosol_fg_summary.groupby(['dataset', 'condition', 'growth_rate_hr']):
-#     ax3.plot(g[2], d['fg per um2'], 'o', color=dataset_colors[g[0]],
-#                     alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
-#                     label = g[0], ms=4, zorder=10)
-# ax3.set_ylim(0,210)
-# ax3.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
-# ax3.set_ylabel('[fg per $\mu m^3$]', fontsize=6)
-# ax3.xaxis.set_tick_params(labelsize=5)
-# ax3.yaxis.set_tick_params(labelsize=5)
-#
+######################
+# Plot 1
+######################
+# relative dist of different COG categories
+
+
+# Compute the mass fraction
+mass_frac = []
+for g, d in data_cytosol.groupby(['dataset', 'condition', 'growth_rate_hr']):
+    tot_mass = d['fg_per_cell'].sum()
+    sector_mass = d.groupby(['dataset', 'dataset_name', 'condition', 'growth_rate_hr', 'cog_class'])['fg_per_cell'].sum().reset_index()
+    frac = sector_mass['fg_per_cell'].values / tot_mass
+    sector_mass['frac'] = frac
+    sector_mass['dataset_name'] = sector_mass['dataset_name']
+    mass_frac.append(sector_mass)
+mass_frac = pd.concat(mass_frac, sort=False)
+
+for g, d in mass_frac.groupby(['dataset', 'cog_class', 'dataset_name']):
+    ax1.plot(d.growth_rate_hr, d['frac'], marker = marker_dict[g[0]], color=color_dict[g[1]],
+                    alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
+                    label = g[2], ms=4, zorder=10, linewidth = 0)
+
+ax1.set_ylim(0,1)
+ax1.set_xlim(0,2)
+ax1.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
+ax1.set_ylabel('cytosolic protein mass\n fraction (GO term : 0005829)', fontsize=6)
+ax1.xaxis.set_tick_params(labelsize=5)
+ax1.yaxis.set_tick_params(labelsize=5)
+
+legend_elements = [Line2D([0], [0],
+                    marker=label_dict[i],
+                    color='w', linewidth = 0,
+                    label=i, markeredgecolor='k',
+                    markeredgewidth=0.25,
+                    markerfacecolor='gray',
+                    markersize=4) for i in data.dataset_name.unique()]
+
+
+
+ax1.legend(handles=legend_elements, loc='upper left', fontsize = 6)
+
+
+######################
+# Plot 2
+######################
+# metabolism vs information processing
+
+cm = plt.cm.get_cmap('viridis')
+
+for g, d in mass_frac.groupby(['dataset', 'growth_rate_hr', 'dataset_name', 'condition']):
+    ax2.scatter(d[d.cog_class == 'information storage and processing']['frac'],
+                    d[d.cog_class == 'metabolism']['frac'], marker = marker_dict[g[0]],
+                    c = d.growth_rate_hr.unique(), cmap=cm,#'viridis',
+                    vmin=0, vmax=2, alpha=0.75, edgecolors='k', linewidths=0.25)
+
+ax2.set_ylim(0.25,0.65)
+ax2.set_xlim(0.25,0.55)
+ax2.set_xlabel('proteomic mass fraction,\ninformation storage and processing', fontsize=6)
+ax2.set_ylabel('proteomic mass fraction,\nmetabolism', fontsize=6)
+ax2.xaxis.set_tick_params(labelsize=5)
+ax2.yaxis.set_tick_params(labelsize=5)
+
+cbaxes = inset_axes(ax2, width="30%", height="5%", loc=3)
+cb = plt.colorbar(plt.cm.ScalarMappable(norm=mpl.colors.Normalize(vmin=0, vmax=2), cmap=cm),
+        cax=cbaxes, ticks=[0.,2], orientation='horizontal')
+# cbaxes.ax.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)#, rotation=270)
+cbaxes.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
+cbaxes.xaxis.set_tick_params(labelsize=5)
+cbaxes.yaxis.set_tick_params(labelsize=5)
+cbaxes.xaxis.tick_top()
+cbaxes.xaxis.set_label_position('top')
+cb.outline.set_linewidth(0)
+
+######################
+# Plot 3 - protein concentration in cell
+######################
+
+data_cytosol_fg_summary = pd.DataFrame()
+for c, d in data_cytosol.groupby(['dataset', 'condition', 'growth_rate_hr']):
+    d_ = d[d.gene_name != 'tufA']
+    d_ = d_[d_.gene_name != 'tufB']
+
+    # V = 0.28 * np.exp(1.33 * c[2])
+    # SA = 2 * np.pi *  V**(2/3)
+    w = size.lambda2width(c[2])
+    l = size.lambda2length(c[2])
+    V = size.lambda2size(c[2])
+    SA = size.rod_SA(l, w, V)
+
+    fg_tot = d_.fg_per_cell.sum()
+    fg_SA = fg_tot / V
+
+    data_list = {'fg per um2' : fg_SA,
+                'growth_rate_hr' : c[2],
+                'dataset' : c[0],
+                'condition' : c[1]}
+    data_cytosol_fg_summary = \
+            data_cytosol_fg_summary.append(data_list,
+            ignore_index = True)
+
+for g, d in data_cytosol_fg_summary.groupby(['dataset', 'condition', 'growth_rate_hr']):
+    ax3.plot(g[2], d['fg per um2'], 'o', color=dataset_colors[g[0]],
+                    alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
+                    label = g[0], ms=4, zorder=10)
+ax3.set_ylim(0,210)
+ax3.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
+ax3.set_ylabel('[fg per $\mu m^3$]', fontsize=6)
+ax3.xaxis.set_tick_params(labelsize=5)
+ax3.yaxis.set_tick_params(labelsize=5)
+
 
 
 ######################

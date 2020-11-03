@@ -38,8 +38,9 @@ lipid synthesis as key determinants of growth rate and cell size
 \citep{bremer2008, scott2010, si2017, vadia2017, harris2018, Buke2020, zhang2020}.
 
 In this work, we consider these two questions in \textit{E. coli} by considering
-both the biosynthetic capacity of key cellular processes --  refering to [blah
-blah blah, define biosynthetic capacity]   --  as well as the physical constraints given the now
+both the biosynthetic capacity of key cellular processes --  meaning, the minimal
+number of enzymes needed to synthesize one cell's worth of a particular biomolecule 
+given the observed doubling time --  as well as the physical constraints given the now
 well-characterized change in cell size as a function of growth rate
 \cite{taheriaraghi2015, si2017, basan2015}. As a result of an array of
 high-quality proteome-wide measurements under diverse growth conditions, we have
@@ -114,16 +115,17 @@ whether any of these processes may be limiting growth.
 For the majority of the processes considered, we find that the protein copy
 numbers are tuned for the task of cell doubling across a continuum of growth
 rates. This suggests that most processes must be operating near their maximal
-biosynthetic capacity, particularly under moderate to fast growth rates,  with
+biosynthetic capacity, particularly under moderate to fast growth rates, with
 cellular protein abundances increasing at faster growth rates to support the
-more rapid cell doublings. This observation contrasts with a perspective that
-any single process may be limiting growth rate. Rather, it
-is through the coordinated increase in protein abundance across these disperate
-processes that \textit{E. coli} is able to increase its growth rate as nutrient
-conditions improve. Indeed, when we consider the change in cell size and  the
-diminishing  surface area to volume ratio at faster growth rates, there still
-appear to be sufficient space  for the key proteins required for energy
-production  and nutrient uptake.
+more rapid cell doublings. This observation contrasts with the perspective
+that there exists any single process that is the arbiter of growth rate.
+Rather, it is through the coordinated increase in protein abundance across
+these disparate processes that \textit{E. coli} is able to increase its
+growth rate as nutrient conditions improve. This hypothesis is bolstered by
+the observation that, when we consider the change in cell size and the
+diminishing surface area to volume ratio at faster growth rates, there still
+appears to be sufficient space in the cell membrane for the key proteins
+required for energy production and nutrient uptake.
 
 Given the observed importance of parallelization, where the synthesis of
 additional proteins provides increased biosynthetic capacity of each cellular
@@ -131,7 +133,7 @@ process, our analysis also provides insight into the well-characterized
 dependence of growth rate on ribosomal mass fraction. Here, a theoretical
 inability to parallelize ribosomal protein synthesis places a firm upper bound on the
 achievable growth rate that is observed at moderate to fast growth
-rates, where ribsomes appear maximally utilized. Importantly, the strict
+rates, where ribosomes appear maximally utilized. Importantly, the strict
 dependence between the maximal growth rate and ribosomal mass fraction coincides
 with the regime where the growth laws appear most valid \citep{amir2017,
 scott2010}. This enables us to suggest that the long-observed correlation
@@ -144,9 +146,6 @@ conditions, we consider a minimal model of cellular growth. Our conclusions from
 these analyses provide important insight into how \textit{E. coli} regulates
 growth across conditions of differing nutrient availability and identifies
 fundamental constraints in bacterial growth more broadly.
-
-
-
 
 % Throughout our estimates, we consider an archetypal growth rate of $\approx$
 % 0.5 hr$^{-1}$ corresponding to a doubling time of $\approx$ 5000 seconds, as

@@ -1,20 +1,20 @@
 \subsection{Rapid Growth Requires \textit{E. coli} to Increase Both Cell Size and Ribosomal
 Mass Fraction}
-In the right-hand side of \FIG{ribosome_limit}(B) we also find that above about 0.75
+In the right-hand side of Figure \ref{fig:ribosome_limit}(B) we also find that above about 0.75
 hr$^{-1}$ the growth rate is determined solely by the ribosomal mass fraction
 $\Phi_R$, since $f_a$ is close to 1, and $r_t$ is near its maximal rate
 \citep{dai2016}. While $\Phi_R$ will need to increase in order for cells to
-grow faster, the fractional dependence in \EQ{lam_limited}
+grow faster, the fractional dependence in Equation \ref{eq:lam_limited}
 gives little insight into how this scaling is actually achieved by the cell.
 
 It is now well-documented that \textit{E. coli} cells add a constant volume per
 origin of replication, which is robust to a remarkable array of cellular
 perturbations \citep{si2017}. Given the proteomic measurements featured in this
 work, we find that the ribosome copy number also scales in proportion to
-$\langle$\# ori$\rangle$ (\FIG{translation_ecoli_partA}(A)). However,  an
+$\langle$\# ori$\rangle$ (Figure \ref{fig:translation_ecoli_partA}(A)). However,  an
 increase in ribosome abundance alone is not necessarily sufficient to increase
 growth rate and we also need to consider how $\Phi_R$ varies with $\langle$\#
-ori$\rangle$. As shown in \FIG{translation_ecoli_partA}(B), we find
+ori$\rangle$. As shown in Figure \ref{fig:translation_ecoli_partA}(B), we find
 that the deviations in protein expression with $\langle$\# ori$\rangle$ are
 largely restricted to regions of ribosomal protein genes. Here we have calculated the position-dependent
 protein expression across the chromosome by a running Gaussian average of
@@ -28,10 +28,9 @@ $\langle$\# ori$\rangle$ that was noted in the previous section, that \textit{E.
 exhibits an exponential increase in cell size with growth rate.
 
 
-\begin{figure*}
-    \begin{fullwidth}
+\begin{figure}
     \centering{
-        \includegraphics{main_figs/fig11_ribosome_growth_limit_ecoli_a_polar_coord.pdf}
+        \includegraphics[scale=0.9]{main_figs/fig11_ribosome_growth_limit_ecoli_a_polar_coord.pdf}
         \caption{\textbf{Cells increase both absolute ribosome abundance and $\Phi_R$ with
         $\langle$\# ori$\rangle$.} (A) Plot of the ribosome copy number estimated from the
         proteomic data against the estimated $\langle$\# ori$\rangle$ (see Appendix
@@ -42,7 +41,6 @@ exhibits an exponential increase in cell size with growth rate.
         protein abundance increases with growth rate, protein copy numbers are
         median-subtracted to allow comparison between growth conditions.
         $\langle$\# ori$\rangle$ are estimated using the data in (A) and
-        Equation \ref{eq:Nori}. } \label{fig:translation_ecoli_partA}
+        Equation \ref{eq:Nori}.} \label{fig:translation_ecoli_partA}
     }
-    \end{fullwidth}
-\end{figure*}
+\end{figure}

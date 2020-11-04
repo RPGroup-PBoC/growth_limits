@@ -28,21 +28,18 @@ units, comparable within an order of magnitude to the number of ribosomes per
 cell.
 
 How many RNA polymerases are then needed to constantly transcribe the required
-rRNA? If one polymerase is loaded once every two seconds on average (BNID:
-111997), and the transcription rate is $\approx$ 40 nucleotides per second
-(BNID: 101094), then the typical spacing between polymerases will be $\approx$
-40 nucleotides. However, we must note that the polymerase itself has a footprint
-of $\approx$ 40 nucleotides (BNID: 107873), meaning that one could expect to
-find one RNA polymerase per 80 nucleotide stretch of an rRNA gene. With a total
-length of $\approx$ 4500 nucleotides per operon and 7 operons per cell, the
-number of RNA polymerases transcribing rRNA at any given time is then $\approx$
-500 per cell.
+rRNA? If one polymerase is loaded once every second on average (BNID: 111997),
+and the transcription rate is $\approx$ 40 nucleotides per second (BNID:
+101094), then the typical spacing between polymerases will be $\approx$ 40
+nucleotides. With a total length of $\approx$ 4500 nucleotides per operon and 7
+operons per cell, the number of RNA polymerases transcribing rRNA at any given
+time is then $\approx$ 1000 per cell.
 
-As outlined in \FIG{RNA_synthesis}, and discussed further the Appendix
+As outlined in Figure \ref{fig:RNA_synthesis}, and discussed further the Appendix
 Section "Additional Process of the Central Dogma", synthesis of mRNA and tRNA together require
 on the order of another $\approx$ 400 RNAP. Thus, in total, one would expect the
-typical cell to require $\approx$ 1000 RNAP to satisfy its transcriptional
-demands. As is revealed in \FIG{RNA_synthesis}(B), this estimate is about an
+typical cell to require $\approx$ 1500 RNAP to satisfy its transcriptional
+demands. As is revealed in Figure \ref{fig:RNA_synthesis}(B), this estimate is about an
 order of magnitude below the observed number of RNA polymerase complexes per
 cell ($\approx$ 5000 - 7000). The difference between the estimated number of
 RNA polymerase needed for transcription and these observations, however, are
@@ -60,7 +57,7 @@ Additionally, while they represent the core machinery for transcription, RNA
 polymerase is not sufficient to initiate transcription. Initiation of
 transcription is often dependent on the presence of $\sigma$-factors, protein
 cofactors that bind directly to the polymerase \citep{browning2016} and aid in
-promoter recognition. In \FIGSUPP[RNA_synthesis]{sigma_70}, we show that the
+promoter recognition. In Figure \ref{fig:sigma_70}, we show that the
 predicted RNA polymerase copy number indeed is more comparable with the
 abundance of $\sigma$-70 (RpoD), the primary sigma factor in \textit{E. coli}.
 There therefore remains more to be investigated as to what sets the observed
@@ -79,10 +76,5 @@ themselves are not particularly limiting.
     polymerase core enzyme copy number as a function of growth rate. Colored
     points correspond to the average number RNA polymerase core enzymes that
     could be formed given a subunit stoichiometry of
-    [RpoA]$_2$[RpoC][RpoB].} \label{fig:RNA_synthesis}
-    }
-    \figsupp[Abundance and growth rate dependence of $\sigma$-70.]{The abundance
-    of $\sigma^{70}$ as a function of growth rate. Estimated value for the
-    number of RNAP is shown as a translucent brown point and grey
-    line.}{\includegraphics{main_figs/fig8-S1_sigma_factor.pdf}}\label{figsupp:sigma_70}
+    [RpoA]$_2$[RpoC][RpoB].} \label{fig:RNA_synthesis}}
 \end{figure}

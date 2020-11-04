@@ -10,18 +10,18 @@ amino acids per second per ribosome (BNID: 100233). Under this approximation
 and our previous estimate of 10$^{9}$ peptide bonds per cell at a growth rate
 of 0.5 hr$^{-1}$, we can easily arrive at an estimate of $\approx 10^4$
 ribosomes needed per cell to replicate the entire protein mass
-[\FIG{protein_synthesis}(A, top)]. This point estimate, as well as the
+[Figure \ref{fig:protein_synthesis}(A, top)]. This point estimate, as well as the
 corresponding estimate across a continuum of growth rates, proves to be
 notably comparable to the experimental observations, shown in the bottom
-panel of \FIG{protein_synthesis}(A). While the ribosome is responsible for
+panel of Figure \ref{fig:protein_synthesis}(A). While the ribosome is responsible for
 the formation of peptide bonds, we do not diminish the importance of charging
 tRNAs with their appropriate amino acid, a process with occurs with
-remarkable fidelity. In \FIGSUPP[protein_synthesis]{tRNA} we consider the process of ligating tRNAs
+remarkable fidelity. In Figure \ref{fig:tRNA} we consider the process of ligating tRNAs
 to their corresponding amino acid, with further details provided in the Appendix Section "Additional Estimates of Fundamental Biological Processes," with notable accord observed between the
 data and our quantitative expectations.
 
 Having completed our circuit through key processes of cellular growth
-outlined in \FIG{categories}, we can now take stock of our understanding of the
+outlined in Figure \ref{fig:categories}, we can now take stock of our understanding of the
 observed growth rate dependence and abundances of various protein complexes. We
 note that, broadly speaking, these simple estimates have been reasonably successful in
 quantitatively describing the observations in the proteomic data, suggesting
@@ -48,7 +48,7 @@ This limit, as remarked upon by others \citep{dill2011}, serves as a hard
 theoretical boundary for how quickly a bacterium like \textit{E. coli} can
 replicate. As each ribosome would therefore need to copy itself, this 7 minute
 speed limit is independent of the number of ribosomes per cell
-[\FIG{protein_synthesis}(B)], yet assumes that the only proteins that need to be
+[Figure \ref{fig:protein_synthesis}(B)], yet assumes that the only proteins that need to be
 replicated for division to occur are ribosomal proteins, a regime
 not met in biological reality. This poses an optimization problem for the cell
 -- how are the translational demands of the entire proteome met without
@@ -85,8 +85,7 @@ consumption through the peptide bond formation required for growth.
 
 \begin{figure}
     \centering{
-        \includegraphics{main_figs/fig9_protein_synthesis_main.pdf}
-    }
+        \includegraphics[scale=0.9]{main_figs/fig9_protein_synthesis_main.pdf}
         \caption{\textbf{Estimation of the required number of ribosomes and the
         speed limit for bacterial replication.} (A) Estimation of the
         number of ribosomes required to synthesize 10$^9$ peptide bonds with an
@@ -97,13 +96,5 @@ consumption through the peptide bond formation required for growth.
         different growth rates. (B) Estimation for the time to replicate a
         ribosome. This rate is independent of the number of ribosomes $R$ and instead is limited by the time required to
         double an individual ribosome.} \label{fig:protein_synthesis}
-
-        \figsupp[Estimate and observed abundance and growth rate dependence
-        of tRNA ligases.]{Estimation for the number of tRNA synthetases that
-        will supply the required amino acid demand. The sum of all tRNA
-        synthetases copy numbers are plotted as a function of growth rate
-        ([ArgS], [CysS], [GlnS], [GltX], [IleS], [LeuS], [ValS], [AlaS]$_2$,
-        [AsnS]$_2$, [AspS]$_2$, [TyrS]$_2$, [TrpS]$_2$, [ThrS]$_2$,
-        [SerS]$_2$, [ProS]$_2$, [PheS]$_2$[PheT]$_2$, [MetG]$_2$,
-        [lysS]$_2$, [HisS]$_2$, [GlyS]$_2$[GlyQ]$_2$).}{\includegraphics{main_figs/fig9-S1_tRNA.pdf}}\label{figsupp:tRNA}
+    }
 \end{figure}

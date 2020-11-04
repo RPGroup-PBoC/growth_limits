@@ -1,5 +1,7 @@
-\begin{featurebox}
-\caption{The Rules of Engagement for Order-Of-Magnitude Estimates}
+
+\begin{tcolorbox}[breakable, enhanced, enhanced jigsaw, width=\linewidth, sharp corners=all, colback=white!95!black]
+% \caption{The Rules of Engagement for Order-Of-Magnitude Estimates}
+\textbf{\large Box 1: The Rules of Engagement for Order-Of-Magnitude Estimates}\\
 This work relies heavily on "back-of-the-envelope" estimates to understand
 the growth-rate dependent abundances of molecular complexes. This moniker
 arises from the limitation that any estimate should be able to fit on the
@@ -26,10 +28,10 @@ hard-and-fast predictions of precise copy numbers, but as approximate lower (or 
 bounds for the number of complexes that may be needed to satisfy some cellular requirement.
 
 Furthermore, we use equality symbols ($=$) sparingly and frequently defer to
-an approximation ($\approx$) symbol when reporting an estimate, indicating that 
-we are confident in the estimate to within a factor of a few.  
+an approximation ($\approx$) symbol when reporting an estimate, indicating that
+we are confident in the estimate to within a factor of a few.
 % or scaling ($\sim$) symbols when reporting an
-% estimate. 
+% estimate.
 % When $\approx$ is used, we are implicitly stating that
 % we are confident in this estimate within a factor of a few. When a scaling
 % symbol $\sim$ is used, we are stating that we are confident in our estimate to
@@ -83,15 +85,21 @@ the accuracy of our estimates by examining whether the 1) the point
 \textit{and} continuum estimates are within the same order of magnitude as
 the observations and 2) whether the continuum estimate qualitatively captures
 the growth-rate dependence observed in the data. We direct the reader to the
-Appendix Section "Extending Estimates to a Continuum of Growth Rates" for a more 
+Appendix Section "Extending Estimates to a Continuum of Growth Rates" for a more
 in-depth discussion of point versus continuum estimates.
-
-\end{featurebox}
+\end{tcolorbox}
 
 
 \section{Nutrient Transport}
-We begin by considering the critical transport processes diagrammed in
-\FIG{categories}(A). In order to build new cellular mass, the molecular and
+Throughout our estimates we will consider an archetypal growth rate of $\approx$
+0.5 hr$^{-1}$ corresponding to a doubling time of $\approx$ 5000 seconds, as the
+data sets examined here heavily sample this growth regime. We will also consider
+how these values will vary at other growth rates due to changes in cell size,
+surface area, and chromosome copy number \citep{taheriaraghi2015, harris2018}.
+Here we begin by considering the critical transport processes diagrammed in
+Figure \ref{fig:categories}(A).
+
+In order to build new cellular mass, the molecular and
 elemental building blocks must be scavenged from the environment in different
 forms. Carbon, for example, is acquired via the transport of carbohydrates
 and sugar alcohols with some carbon sources receiving preferential treatment
@@ -110,7 +118,7 @@ taymaz-nikerel2010, heldal1985, bauer1976}, providing us with a starting
 point for estimating how many atoms of each element must be scavenged from
 the environment. A synthesis of these studies presents an approximate dry
 mass composition of $\approx$ 50\% carbon (BNID: 100649; see
-\BOX{estimate_rules} for explanation of BNID references), $\approx$ 15\%
+Box 1 for an explanation of BNID references), $\approx$ 15\%
 nitrogen (BNID: 106666), $\approx$ 3\% phosphorus (BNID: 100653), and 1\%
 sulfur (BNID: 100655) with the remainder being attributable to oxygen,
 hydrogen, and various transition metals. Here we use this stoichiometric breakdown
@@ -123,7 +131,7 @@ Using $\approx$ 0.3 pg as the typical \textit{E. coli} dry mass at a growth rate
 of $\approx$ 0.5 hr$^{-1}$ (BNID: 103904), coupled with the approximation that
 $\approx$ 50\% of this mass is carbon, we estimate that $\approx 1\times 10^{10}$ carbon
 atoms must be brought into the cell in order to double all of the
-carbon-containing molecules [\FIG{carbon_tport}(A, top)]. Typical laboratory
+carbon-containing molecules [Figure \ref{fig:carbon_tport}(A, top)]. Typical laboratory
 growth conditions provide carbon as a single class of sugar (such as glucose,
 galactose, or xylose) often transported cross the cell membrane by a transporter
 complex specific to that particular sugar. One such mechanism of transport is
@@ -134,25 +142,25 @@ molecules ($\approx$ 1200 carbon atoms) per second per transporter (BNID:
 114686). Making the assumption that this is a typical sugar transport rate for
 the PTS system, coupled with the need to transport $\approx 1 \times 10^{10}$ carbon atoms,
 we then expect on the order of $\approx$ 2000 transporters must be expressed per
-cell in order to bring in enough carbon atoms [\FIG{carbon_tport}(A, top)].
+cell in order to bring in enough carbon atoms [Figure \ref{fig:carbon_tport}(A, top)].
 
 We find, however, that the experimental measurements exceed this by several
-fold (\FIG{carbon_tport}(A), bottom), implying that the cell is capable of
+fold (Figure \ref{fig:carbon_tport}(A), bottom), implying that the cell is capable of
 transporting more carbon atoms than strictly needed for biosynthesis. We can
 also abstract this calculation to consider any particular growth rate given
 knowledge of the cell density and volume as a function of growth rate
 (described further in the Appendix Section "Extending Estimates to a
 Continuum of Growth Rates"). This abstraction, shown as a grey line in
-\FIG{carbon_tport}(A), reveals an excess of transporters even at faster
+Figure \ref{fig:carbon_tport}(A), reveals an excess of transporters even at faster
 growth rates. This contrasts with our observations for uptake of phosphorus
 and sulfur, which turn out to align well with our expectations across
-different growth conditions (\FIGSUPP[carbon_tport]{phospho_sulfo} and
+different growth conditions (Figure \ref{fig:phospho_sulfo} and
 discussed further in the Appendix Section "Additional Estimates of
 Fundamental Biological Processes").
 
-\begin{figure}
-    \begin{fullwidth}
-    \includegraphics{main_figs/fig2_carbon_transport.pdf}
+\begin{figure*}
+    \centering{
+    \includegraphics[scale=0.95]{main_figs/fig2_carbon_transport.pdf}
     \caption{\textbf{The abundance of carbon transport systems across growth
     rates.} (A) A simple estimate for the minimum number of generic carbohydrate
     transport systems (top) assumes $\approx 1 \times 10^{10}$ C are needed to complete
@@ -175,27 +183,17 @@ Fundamental Biological Processes").
     which the only source of carbon in the growth medium induces expression of
     the transport system. Grey lines in (A) and (B) represents the estimated
     number of transporters per cell at a continuum of growth
-    rates.}\label{fig:carbon_tport} \figsupp[Estimates and observed abundances
-    of phosphate and sulfate transporters.]{(A) Estimate for the number of PitA
-    phosphate transport systems needed to maintain a 3\% phosphorus \textit{E.
-    coli} dry mass. Points in plot correspond to the total number of PitA
-    transporters per cell. (B) Estimate of the number of CysUWA complexes
-    necessary to maintain a 1\% sulfur \textit{E. coli} dry mass. Points in plot
-    correspond to average number of CysUWA transporter complexes that can be
-    formed given the transporter stoichiometry [CysA]$_2$[CysU][CysW][Sbp/CysP].
-    Grey line in (A) and (B) represents the estimated number of transporters per
-    cell at a continuum of growth
-    rates.}{\includegraphics{main_figs/fig2-S1_phospho_sulfo_transport.pdf}}\label{figsupp:phospho_sulfo}
-    \end{fullwidth}
-\end{figure}
+    rates.}\label{fig:carbon_tport} 
+    }
+\end{figure*}
 
 It is important to note that so far we have neglected any specifics of the
 regulation of the carbon transport system. Using the diverse array of growth
 conditions available in the data, we can explore how individual carbon
 transport systems depend on specific carbon availability. In
-\FIG{carbon_tport}(B), we show the total number of carbohydrate transporters
+Figure \ref{fig:carbon_tport}(B), we show the total number of carbohydrate transporters
 specific to different carbon sources. A striking observation, shown in the
-top-left plot of \FIG{carbon_tport}(B), is the constancy in the expression of
+top-left plot of Figure \ref{fig:carbon_tport}(B), is the constancy in the expression of
 the glucose-specific transport systems, an observation that stands in
 contrast with other species of transporters. Additionally, we note that the
 total number of glucose-specific transporters is tightly distributed at
@@ -210,10 +208,10 @@ Many metabolic operons are regulated with dual-input logic gates that are
 only expressed when glucose concentrations are low and the concentration of
 other carbon sources are elevated \citep{gama-castro2016, zhang2014a,
 gama-castro2016, belliveau2018, ireland2020}. Points colored in red in
-\FIG{carbon_tport}(B) (labeled by red text-boxes) correspond to growth
+Figure \ref{fig:carbon_tport}(B) (labeled by red text-boxes) correspond to growth
 conditions in which the specific carbon source (glycerol, xylose, or
 fructose) is present as the sole source of carbon. The grey lines in
-\FIG{carbon_tport}(B) show the estimated number of transporters needed at
+Figure \ref{fig:carbon_tport}(B) show the estimated number of transporters needed at
 each growth rate to satisfy the cellular carbon requirement, adjusted for the
 specific carbon source in terms of number of carbon atoms per molecule and
 the rate of transport for the particular transporter species. These plots

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  24 NOV 2020 07:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  24 NOV 2020 09:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2166,7 +2166,7 @@ LaTeX Warning: Reference `box:estimate_rules' on page 2 undefined on input line
  108.
 
 
-<main_figs/fig1_schematic_categories_grouped.pdf, id=164, 375.81003pt x 378.818
+<main_figs/fig1_schematic_categories_grouped.pdf, id=152, 375.81003pt x 378.818
 28pt>
 File: main_figs/fig1_schematic_categories_grouped.pdf Graphic file (type pdf)
  <use main_figs/fig1_schematic_categories_grouped.pdf>
@@ -2183,7 +2183,7 @@ LaTeX Warning: Reference `box:estimate_rules' on page 4 undefined on input line
  119.
 
 
-<main_figs/fig2_nutrient_cellwall_energy.pdf, id=568, 865.34792pt x 474.55994pt
+<main_figs/fig2_nutrient_cellwall_energy.pdf, id=553, 865.34792pt x 474.55994pt
 >
 File: main_figs/fig2_nutrient_cellwall_energy.pdf Graphic file (type pdf)
  <use main_figs/fig2_nutrient_cellwall_energy.pdf>
@@ -2202,7 +2202,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 )
 (./section_03_membrane.tex [4]
-Overfull \vbox (0.4844pt too high) has occurred while \output is active []
+Overfull \vbox (2.40433pt too high) has occurred while \output is active []
 
 
 [5 <./main_figs/fig2_nutrient_cellwall_energy.pdf>]) (./section_04_energy.tex
@@ -2210,11 +2210,11 @@ Overfull \vbox (0.4844pt too high) has occurred while \output is active []
 LaTeX Warning: Reference `fig:energy_production' on page 6 undefined on input l
 ine 44.
 
+[6]
 
-LaTeX Warning: Reference `fig:energy_production' on page 6 undefined on input l
+LaTeX Warning: Reference `fig:energy_production' on page 7 undefined on input l
 ine 79.
 
-[6]
 
 LaTeX Warning: Reference `fig:cog_cytosol' on page 7 undefined on input line 16
 7.
@@ -2227,7 +2227,7 @@ LaTeX Warning: Reference `fig:cog_cytosol' on page 7 undefined on input line 17
 LaTeX Warning: Reference `fig:cog_cytosol' on page 7 undefined on input line 17
 4.
 
-<main_figs/fig5_energy_SV_scaling.pdf, id=2243, 644.77588pt x 310.0122pt>
+<main_figs/fig5_energy_SV_scaling.pdf, id=2227, 644.77588pt x 310.0122pt>
 File: main_figs/fig5_energy_SV_scaling.pdf Graphic file (type pdf)
 
 <use main_figs/fig5_energy_SV_scaling.pdf>
@@ -2248,19 +2248,19 @@ LaTeX Font Info:    Font shape `T1/fos/bx/it' in size <8> not available
 (Font)              Font shape `T1/fos/b/it' tried instead on input line 205.
 )
 (./section_06_DNA.tex [7] [8 <./main_figs/fig5_energy_SV_scaling.pdf>]
-<main_figs/fig4_central_dogma.pdf, id=4465, 393.89658pt x 443.16566pt>
+<main_figs/fig4_central_dogma.pdf, id=4455, 393.89658pt x 443.16566pt>
 File: main_figs/fig4_central_dogma.pdf Graphic file (type pdf)
 
 <use main_figs/fig4_central_dogma.pdf>
-Package pdftex.def Info: main_figs/fig4_central_dogma.pdf used on input line 54
+Package pdftex.def Info: main_figs/fig4_central_dogma.pdf used on input line 23
 .
-(pdftex.def)             Requested size: 325.2183pt x 365.91371pt.
-) (./section_07_RNA.tex [9 <./main_figs/fig4_central_dogma.pdf>]
+(pdftex.def)             Requested size: 271.0125pt x 304.92584pt.
+) (./section_07_RNA.tex
 
-LaTeX Warning: Reference `fig:RNA_synthesis' on page 10 undefined on input line
- 33.
+LaTeX Warning: Reference `fig:RNA_synthesis' on page 9 undefined on input line 
+31.
 
-) (./section_08_translation.tex
+[9 <./main_figs/fig4_central_dogma.pdf>]) (./section_08_translation.tex
 
 LaTeX Warning: Reference `fig:protein_synthesis' on page 10 undefined on input 
 line 13.
@@ -2276,13 +2276,13 @@ line 19.
 
 LaTeX Warning: Reference `figsupp:tRNA' on page 10 undefined on input line 19.
 
-[10]) (./section_09_limit.tex
+) (./section_09_limit.tex [10]
 
 LaTeX Warning: Reference `figsupp:ribosome_limit_supp' on page 11 undefined on 
 input line 60.
 
 
-<main_figs/fig10_ribosome_as_limit_update.pdf, id=5187, 383.14845pt x 186.74266
+<main_figs/fig10_ribosome_as_limit_update.pdf, id=5159, 383.14845pt x 186.74266
 pt>
 File: main_figs/fig10_ribosome_as_limit_update.pdf Graphic file (type pdf)
  <use main_figs/fig10_ribosome_as_limit_update.pdf>
@@ -2294,31 +2294,31 @@ nput line 133.
 LaTeX Warning: Reference `figsupp:ribosome_limit_supp' on page 11 undefined on 
 input line 160.
 
-) (./section_11_model.tex [11]
+) (./section_11_model.tex [11 <./main_figs/fig10_ribosome_as_limit_update.pdf>]
 
 LaTeX Warning: Reference `fig:translation_ecoli_partA' on page 12 undefined on 
 input line 59.
 
-[12 <./main_figs/fig10_ribosome_as_limit_update.pdf>]
-<main_figs/fig12_elongation_model_update.pdf, id=5843, 491.10277pt x 298.73907p
+
+<main_figs/fig12_elongation_model_update.pdf, id=5801, 491.10277pt x 298.73907p
 t>
 File: main_figs/fig12_elongation_model_update.pdf Graphic file (type pdf)
  <use main_figs/fig12_elongation_model_update.pdf>
 Package pdftex.def Info: main_figs/fig12_elongation_model_update.pdf used on in
 put line 204.
-(pdftex.def)             Requested size: 542.02501pt x 329.7399pt.
-
-Overfull \vbox (4.68623pt too high) has occurred while \output is active []
-
-
-[13 <./main_figs/fig12_elongation_model_update.pdf>])
+(pdftex.def)             Requested size: 406.51875pt x 247.28783pt.
+ [12])
 (./section_12_discussion.tex
+Overfull \vbox (1.8389pt too high) has occurred while \output is active []
+
+
+[13 <./main_figs/fig12_elongation_model_update.pdf>]
 
 LaTeX Warning: Reference `fig:carbon_tport' on page 14 undefined on input line 
 43.
 
-[14]) (./section_13_methods.tex) (./section_14_acknowledgements.tex)
-(./section_15_competing_interests.tex [15]) (./eLife_draft.bbl [16] [17]
+) (./section_13_methods.tex [14]) (./section_14_acknowledgements.tex)
+(./section_15_competing_interests.tex) (./eLife_draft.bbl [15] [16] [17]
 [18]) 
 AED: lastpage setting LastPage
 [19] (./eLife_draft.suppinfo)
@@ -2328,20 +2328,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 54.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 54.
 Package rerunfilecheck Info: File `eLife_draft.out' has not changed.
-(rerunfilecheck)             Checksum: 5F9663B0C030ED7FAA3B40F970D3EA54;1082.
+(rerunfilecheck)             Checksum: CAC45F472B85C9A905D40D57A15794B9;884.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 27988 strings out of 492995
- 512388 string characters out of 6132704
- 637560 words of memory out of 5000000
- 30260 multiletter control sequences out of 15000+600000
- 727738 words of font info for 732 fonts, out of 8000000 for 9000
+ 27966 strings out of 492995
+ 511980 string characters out of 6132704
+ 637368 words of memory out of 5000000
+ 30249 multiletter control sequences out of 15000+600000
+ 726940 words of font info for 727 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,12n,55p,10456b,1032s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,12n,55p,10456b,1054s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-03.enc}
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-02.enc}{/
 usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/opensans/opensans-04.enc}{/us
@@ -2356,10 +2356,10 @@ cal/texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathex.pfb></usr/local
 /texlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/public/stix/stix-mathscr.pfb>
-Output written on eLife_draft.pdf (19 pages, 5441103 bytes).
+Output written on eLife_draft.pdf (19 pages, 5440584 bytes).
 PDF statistics:
- 6573 PDF objects out of 7423 (max. 8388607)
- 3631 compressed objects within 37 object streams
- 132 named destinations out of 1000 (max. 500000)
- 59039 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 6540 PDF objects out of 7423 (max. 8388607)
+ 3603 compressed objects within 37 object streams
+ 127 named destinations out of 1000 (max. 500000)
+ 59015 words of extra memory for PDF output out of 61914 (max. 10000000)
 

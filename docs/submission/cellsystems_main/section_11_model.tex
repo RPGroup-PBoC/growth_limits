@@ -17,7 +17,7 @@ synthesis specifically in favor of ribosomes as they increase their size. To see
 this, we have calculated the position-dependent protein expression across the
 chromosome by a running Gaussian average of protein copy number (20 kbp st. dev.
 averaging window) based on each gene's transcriptional start site
-[\FIG{elongation_rate_model}(B)]. These were median-subtracted to account  for
+[\FIG{elongation_rate_model}(A)]. These were median-subtracted to account  for
 the increasing total protein abundance with $\langle$\# ori$\rangle$. In
 particular, we find that the deviations in protein expression with $\langle$\#
 ori$\rangle$ are largely restricted to regions of ribosomal protein genes. This
@@ -43,7 +43,7 @@ replication, which is robust to a remarkable array of cellular perturbations
 \citep{si2017}. In addition, there is increasing evidence that (p)ppGpp acts to
 inhibit the initiat From the proteomic measurements, we find that
 cells also tune their ribosome copy number in direct proportion to $\langle$\#
-ori$\rangle$ (\FIG{translation_ecoli_partA}(A)). With cellular (p)ppGpp levels
+ori$\rangle$ [\FIG{elongation_rate_model}(B)]. With cellular (p)ppGpp levels
 following directly from the state of ribosomal activity,
 cells appear to use ribosome activity as a direct proxy for nutrient
 availability, and hence are able to better match cell size (and $\langle$\#
@@ -90,7 +90,7 @@ constant $r_{AA}$, and further described in the Appendix Section
 
 \begin{figure}
     \centering{
-    \includegraphics[width=0.75\textwidth]{main_figs/fig6_elongation_model_update.pdf}
+    \includegraphics[width=0.8\textwidth]{main_figs/fig6_elongation_model_update.pdf}
     \caption{\textbf{Coordination of cell size and proteomic composition via ribosome activity.}
     (A) A running
         Gaussian average (20 kbp st. dev.) of protein copy number is calculated
@@ -132,7 +132,6 @@ constant $r_{AA}$, and further described in the Appendix Section
     }
 \end{figure}
 
-
 To relate elongation rate to growth rate, we constrain the set of parameters
 based on our available proteomic measurements; namely, we restrict the values of
 $R$, $N_{pep}$, and cell size to those associated with the amalgamated proteomic
@@ -147,7 +146,7 @@ there is an optimum set of $R$, $N_\text{pep}$, and cell size that are strictly
 dependent on the value of $r_{AA}$. This shows that increasing the ribosomal
 concentration beyond the cell's metabolic capacity will have the adverse
 consequence of depleting the supply of amino acids and lead to a concomitant
-decrease in the elongation rate $r_t$ [\FIG{elongation_rate_model}(B)] and
+decrease in the elongation rate $r_t$ [\FIG{elongation_rate_model}(D)] and
 growth rate. This helps us understand that while it is important for cells to
 increase their ribosomal content and cell size in order to increase growth rate,
 cells will better maximize their achievable growth rate by tuning these

@@ -8,13 +8,12 @@ the corresponding process, we left out additional estimates of related
 processes for brevity. In this section of the appendix, we present these
 additional estimates in full.
 
-
 \subsection{Nutrient Transport}
-In the main text, we make passing mention that in typical laboratory conditions, transport carbon often
-comes in the form of carbohydrates and sugar alcohols while other critical
-elements -- such as nitrogen, sulfur, and phosphorus -- are transported as
-inorganic ions. Below, we present estimates for the transport requirements of
-these materials.
+In the main text, we make passing mention that in typical laboratory conditions,
+transport carbon often comes in the form of carbohydrates and sugar alcohols
+while other critical elements -- such as nitrogen, sulfur, and phosphorus -- are
+transported as inorganic ions. Below, we present estimates for the transport
+requirements of these materials.
 
 \subsubsection{Nitrogen}
 We must first address which elemental sources must require active transport,
@@ -37,34 +36,37 @@ transport as a potential rate limiting process in cell division in typical
 experimental conditions.
 
 \subsubsection{Phosphorus}
-Phosphorus is critical to the cellular energy economy in the form of
-high-energy phosphodiester bonds making up DNA, RNA, and the NTP energy pool as
-well as playing a critical role in the post-translational modification of
-proteins and defining the polar-heads of lipids. In total, phosphorus
-makes up $\approx$3\% of the cellular dry mass which in typical experimental conditions is in the form of inorganic phosphate. The cell membrane
-has remarkably low permeability to this highly-charged and critical molecule,
-therefore requiring the expression of active transport systems. In \textit{E. coli}, the proton
-electrochemical gradient across the inner membrane is leveraged to transport
-inorganic phosphate into the cell \citep{rosenberg1977}.
-Proton-solute symporters are widespread in \textit{E. coli} \citep{ramos1977,
-booth1979} and can have rapid transport rates of 50 to 100 molecules per second for
-sugars and other solutes (BNID: 103159; 111777). As a more
-extreme example, the proton transporters in the F$_1$-F$_0$ ATP synthase, which
-use the proton electrochemical gradient for rotational motion, can shuttle
-protons across the membrane at a rate of $\approx$ 1000 per second (BNID:
-104890; 103390). In \textit{E.
-coli} the PitA phosphate transport system has been shown to be very tightly coupled
-with the proton electrochemical gradient with a 1:1 proton:phosphate
-stoichiometric ratio \citep{harris2001, feist2007}. Taking the geometric mean of
-the aforementioned estimates gives a plausible rate of phosphate transport on
-the order of 300  per second. Illustrated in
-\textbf{\textit{Figure 2–Figure Supplement 1}}(A), we can estimate that $\approx$ 200
-phosphate transporters are necessary to maintain an $\approx$ 3\% dry mass with
-a 5000 s division time. This estimate is consistent with observation when we examine the
-observed copy numbers of PitA in proteomic data sets (plot in \textbf{\textit{Figure 2–Figure Supplement 1}}(A)). While our estimate is very much in line with the
+Phosphorus is critical to the cellular energy economy in the form of high-energy
+phosphodiester bonds making up DNA, RNA, and the NTP energy pool as well as
+playing a critical role in the post-translational modification of proteins and
+defining the polar-heads of lipids. In total, phosphorus makes up $\approx$3\%
+of the cellular dry mass which in typical experimental conditions is in the form
+of inorganic phosphate. The cell membrane has remarkably low permeability to
+this highly-charged and critical molecule, therefore requiring the expression of
+active transport systems. In \textit{E. coli}, the proton electrochemical
+gradient across the inner membrane is leveraged to transport inorganic phosphate
+into the cell \citep{rosenberg1977}. Proton-solute symporters are widespread in
+\textit{E. coli} \citep{ramos1977, booth1979} and can have rapid transport rates
+of 50 to 100 molecules per second for sugars and other solutes (BNID: 103159;
+111777). As a more extreme example, the proton transporters in the F$_1$-F$_0$
+ATP synthase, which use the proton electrochemical gradient for rotational
+motion, can shuttle protons across the membrane at a rate of $\approx$ 1000 per
+second (BNID: 104890; 103390).
+
+In \textit{E. coli} the PitA phosphate transport system has been shown to be
+very tightly coupled with the proton electrochemical gradient with a 1:1
+proton:phosphate stoichiometric ratio \citep{harris2001, feist2007}. Taking the
+geometric mean of the aforementioned estimates gives a plausible rate of
+phosphate transport on the order of 300  per second. Illustrated in
+\textbf{\textit{Figure 2}}(B), we can estimate that $\approx$ 200 phosphate
+transporters are necessary to maintain an $\approx$ 3\% dry mass with a 5000 s
+division time. This estimate is consistent with observation when we examine the
+observed copy numbers of PitA in proteomic data sets (plot in
+\textbf{\textit{Figure 2}}(B)). While our estimate is very much in line with the
 observed numbers, we emphasize that this is likely a slight overestimate of the
 number of transporters needed as there are other phosphorous scavenging systems,
-such as the ATP-dependent phosphate transporter Pst system which we have neglected.
+such as the ATP-dependent phosphate transporter Pst system which we have
+neglected.
 
 \subsubsection{Sulfur}
 Similar to phosphate, sulfate is highly-charged and not particularly membrane
@@ -78,7 +80,7 @@ ATP transport systems in prokaryotes transport on the order of 1 to 10
 molecules per second (BNID: 109035). Combining this generic transport rate,
 measurement of sulfur comprising 1\% of dry mass, and a 5000 second division
 time yields an estimate of $\approx$ 1000 CysUWA complexes per cell
-(\textbf{\textit{Figure 2–Figure Supplement 1}}(B)). Once again, this estimate is in notable
+(\textbf{\textit{Figure 2}(C)). Once again, this estimate is in notable
 agreement with proteomic data sets, suggesting that there are sufficient
 transporters present to acquire the necessary sulfur. In a similar spirit of
 our estimate of phosphorus transport, we emphasize that this is likely an
@@ -91,12 +93,46 @@ other sulfur scavenging systems that are in lower abundance.
 \label{sec:SI_central_dogma}
 In the main text, we consider the processes underlying the backbone of the
 central dogma, namely DNA replication, RNA transcription, and protein
-translation. In this section we turn our attention to additional processes
+translation. In this section we expand on our discussion of DNA replication and also
+turn our attention to additional processes
 related to the central dogma, primarily dNTP synthesis for DNA replication and
 amino-acyl tRNA synthesis for translation. Additionally, we explore in more
-detail the estimates shown in \textbf{\textit{Figure 8}}(A) for the RNA polymerase
+detail the estimates shown in \textbf{\textit{Figure 4}}(A) for the RNA polymerase
 requirements of mRNA and tRNA synthesis.
 
+\subsection{DNA Replication}
+To successfully divide and produce viable progeny, the DNA must be
+faithfully replicated and segregated into each nascent cell. Most bacteria
+(including \textit{E. coli}) harbor a single, circular chromosome and can have
+extra-chromosomal plasmids up to $\sim$ 100 kbp in length. Replication is initiated at a single region of the
+chromosome termed the \textit{oriC} locus where a pair of replisomes, each
+consisting of two DNA polymerase III, begin their high-fidelity replication of
+the genome in opposite directions \citep{fijalkowska2012}. \textit{In vitro}
+measurements have shown that DNA Polymerase III copies DNA at a rate of $\approx
+600$ nucleotides per second (BNID: 104120). To replicate a single chromosome of
+$\approx 5\times 10^6$ base pairs, two replisomes moving at their maximal rate
+would copy the entire genome in $\approx$ 4000 s; well within our division time
+of 5000 seconds.
+
+In rapidly growing cultures, bacteria like \textit{E. coli} can initiate as many
+as 10 - 12 replication forks at a given time \citep{bremer2008, si2017},
+suggesting  only $\approx 10$ are needed. However, as shown in
+\textbf{\textit{Figure 4}}(A), DNA polymerase III is nearly an order of magnitude more
+abundant but still maintains the expected growth rate dependence. This
+discrepancy can be understood by considering its binding constant to DNA as we noted in
+the main text and plotted in  \textbf{\textit{Figure 4}}(B).
+The concentration of DNA polymerase III across
+all data sets apear in this range and cells vary their copy number such that its
+concentration is approximately equal to the dissociation constant to the DNA.
+While the processes regulating the initiation of DNA replication are complex and
+involve more than just the holoenzyme, these data indicate that the kinetics of
+replication rather than the explicit copy number of the DNA polymerase III
+holoenzyme is the more relevant feature of DNA replication to consider. In light
+of this, DNA replication does not represent a rate-limiting step in
+cell division. Interestingly, it is worth noting that for bacterium like \textit{C.
+crescentus} whose chromosomal replication is initiated only once per cell cycle
+\citep{jensen2001}, the time to double their chromosome indeed represents an
+upper limit to their growth rate.
 
 \subsubsection{dNTP synthesis}
 The four major dNTPs (dATP, dTTP, dCTP, and dGTP) serve as the fundamental
@@ -115,20 +151,20 @@ characterization. One such work \citep{ge2003} performed a detailed
 \textit{in vitro} measurement of the steady-state kinetic rates of these
 complexes, revealing a turnover rate of $\approx$ 10 dNTP per second.
 
-Since this reaction is central to the synthesis of all dNTPs, it is
-reasonable to consider the abundance of these complexes is a measure of the
-total dNTP production in \textit{E. coli}. Illustrated schematically in
-\textbf{\textit{Figure 7}}(A), we consider the fact that to replicate the cell's
-genome, on the order of $\approx 1\times 10^{7}$ dNTPs must be synthesized. Assuming a
-production rate of 10 per second per ribonucleotide reductase complex and a
-cell division time of 5000 seconds, we arrive at an estimate of $\approx$ 200
-complexes needed per cell. As shown in \textbf{\textit{Figure 7–Figure Supplement 1}}, this estimate agrees with the experimental measurements of these
-complexes abundances within $\approx 1/2$ an order of magnitude. Extension of
-this estimate across a continuum of growth rate, including the fact that
-multiple chromosomes can be replicated at a given time, is shown as a grey
-transparent line in \textbf{\textit{Figure 7–Figure Supplement 1}}. Similarly to our point estimate, this
-refinement agrees well with the data, accurately describing both the
-magnitude of the complex abundance and the dependence on growth rate.
+Since this reaction is central to the synthesis of all dNTPs, it is reasonable
+to consider the abundance of these complexes is a measure of the total dNTP
+production in \textit{E. coli}. We consider the fact that to replicate the
+cell's genome, on the order of $\approx 1\times 10^{7}$ dNTPs must be
+synthesized. Assuming a production rate of 10 per second per ribonucleotide
+reductase complex and a cell division time of 5000 seconds, we arrive at an
+estimate of $\approx$ 200 complexes needed per cell. We find that this estimate
+agrees with the experimental measurements of these complexes abundances within
+$\approx 1/2$ an order of magnitude. Extension of this estimate across a
+continuum of growth rate, including the fact that multiple chromosomes can be
+replicated at a given time, is shown as a grey transparent line in
+\textbf{\textit{Figure 7–Figure Supplement 1}}.  Similarly to our point
+estimate, we find that this estimate agrees  across a continuum of growth rate,
+including the fact that multiple chromosomes can be replicated at a given time.
 
 Recent work has revealed that during replication, the ribonucleotide
 reductase complexes coalesce to form discrete foci colocalized with the DNA
@@ -137,12 +173,13 @@ in conditions where growth is slow, indicating that spatial organization and
 regulation of the activity of the complexes plays an important role.
 
 \subsubsection{mRNA and tRNA Synthesis}
-In \textbf{\textit{Figure 8}} of the main text, we presented
-estimates for the number of RNA polymerases needed to synthesize enough mRNA
-and tRNA molecules. Here, we present a more detailed rationalization of these estimates.
+Here we expand on our discussion on RNA polymerase and consider the synthesis of
+mRNA and tRNA. In \textbf{\textit{Figure 4}}(B,C) of the main text, we plotted
+the measured  number of core RNA polymerase, as well as the number of RpoD sigma
+factors.
 
 To form a functional protein, all protein coding genes must first be
-transcribed from DNA to form an mRNA molecule. While each protein requires an
+transcribed from DNA to form a mRNA molecule. While each protein requires an
 mRNA blueprint, many copies of the protein can be synthesized from a single
 mRNA. Factors such as strength of the ribosomal binding site, mRNA stability,
 and rare codon usage frequency dictate the number of proteins that can be
@@ -237,12 +274,12 @@ has charging rate of $\approx$ 20 AA per tRNA synthetase per second (BNID:
 We can make an assumption that amino-acyl tRNAs are in steady-state where
 they are produced at the same rate they are consumed, meaning that $2 \times
 10^5$ tRNAs must be charged per second. Combining these estimates together,
-as shown schematically in \textbf{\textit{Figure 9–Figure Supplement 1}}, yields an estimate of $\approx 1\times 10^{4}$
+as shown schematically in \textbf{\textit{Figure 4}}(F), yields an estimate of $\approx 1\times 10^{4}$
 tRNA synthetases per cell with a division time of 5000 s. This point estimate
 is in very close agreement with the observed number of synthetases (the sum
 of all 20 tRNA synthetases in \textit{E. coli}). This estimation strategy
 seems to adequately describe the observed growth rate dependence of the tRNA
-synthetase copy number (shown as the grey line in \textbf{\textit{Figure 9–Figure Supplement 1}}, suggesting
+synthetase copy number (shown as the grey line in \textbf{\textit{Figure 4}}(F), suggesting
 that the copy number scales with the cell volume.
 
 In total, the estimated and observed $\approx 1\times 10^{4}$ tRNA synthetases occupy

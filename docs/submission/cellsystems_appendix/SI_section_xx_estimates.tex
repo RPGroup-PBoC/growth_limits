@@ -12,8 +12,62 @@ additional estimates in full.
 In the main text, we make passing mention that in typical laboratory conditions,
 transport carbon often comes in the form of carbohydrates and sugar alcohols
 while other critical elements -- such as nitrogen, sulfur, and phosphorus -- are
-transported as inorganic ions. Below, we present estimates for the transport
-requirements of these materials.
+transported as inorganic ions. Below, we expand on our discussion of carbon uptake by
+considering specific carbohydrate transporters and then present estimates for the transport
+requirements of these other vital elements.
+
+\subsubsection{Specific Carbon Transport}
+It is important to note that so far we have neglected any specifics of the
+regulation of the carbon transport system. Using the diverse array of growth
+conditions available in the data, we can explore how individual carbon transport
+systems depend on specific carbon availability. In
+\textbf{\textit{Figure 2}}(A) of the main text, we showed the total number of
+carbohydrate transporters specific to different carbon sources. A striking
+observation is the  constancy in the expression of the glucose-specific
+transport systems, an observation that stands in contrast with other species of
+transporters [\FIG{specific_carbon_tport}(A)]. Additionally, we note that the
+total number of glucose-specific transporters is tightly distributed at $\approx
+1\times 10^4$ per cell, the approximate number of transporters needed to sustain
+rapid growth of several divisions per hour. Interestingly, this illustrates that
+\textit{E. coli} maintains a substantial number of complexes present for
+transporting glucose regardless of growth condition, which is known to be the
+preferential carbon source \citep{monod1947, liu2005a, aidelberg2014}.
+
+Many metabolic operons are regulated with dual-input logic gates that are only
+expressed when glucose concentrations are low and the concentration of other
+carbon sources are elevated \citep{gama-castro2016, zhang2014a, gama-castro2016,
+belliveau2018, ireland2020}. Points colored in red in
+\FIG{specific_carbon_tport} correspond to growth conditions in which the
+specific carbon source [glycerol, xylose, or fructose for (B, C, and D),
+respectively] is present as the sole source of carbon. The grey lines in
+\FIG{specific_carbon_tport} show the estimated number of transporters needed at
+each growth rate to satisfy the cellular carbon requirement, adjusted for the
+specific carbon source in terms of number of carbon atoms per molecule and the
+rate of transport for the particular transporter species. These plots show that,
+even in the absence of the particular carbon source, expression of the
+transporters is maintained on the order of $\approx 1 \times 10^2$ per cell. The
+low but non-zero abundances may reflect the specific regulatory logic involved,
+requiring that cells are able to transport some minimal amount of an alternative
+carbon source in order to induce expression of these alternative carbon-source
+systems when needed \citep{laxhuber2020}.
+
+\begin{figure*}
+    \centering{
+    \includegraphics{SI_figs/figS1_specific_carbon.pdf}
+    \caption{\textbf{The abundance of specific carbon transport systems across growth
+    rates.}  Since the rates of substrate transport differ between these transporter
+    species, we used the following transport rates for
+    each transporter species: (A) 200
+    glucose$\cdot$ s$^{-1}$ (BNID: 103693),  (B) 2000 glycerol$\cdot$s$^{-1}$
+    \citep{lu2003}, (C) 200 fructose$\cdot$ s$^{-1}$ (assumed to be similar to PtsI,
+    BNID: 103693), and (D) 50 xylose$\cdot$s$^{-1}$ (assumed to be comparable to
+    LacY, BNID:103159). Red points and highlighted text indicate conditions in
+    which the only source of carbon in the growth medium induces expression of
+    the transport system. Grey lines represents the estimated
+    number of transporters per cell across the continuum of growth
+    rates.} \label{fig:specific_carbon_tport}
+    }
+\end{figure*}
 
 \subsubsection{Nitrogen}
 We must first address which elemental sources must require active transport,

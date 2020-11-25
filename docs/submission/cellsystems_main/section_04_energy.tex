@@ -7,7 +7,6 @@ of ATP as another process that may limit growth, which will also require us
 to consider the maintenance of the electrochemical proton gradient that powers
 it.
 
-% \subsection{ATP Synthesis}
 Hydrolysis of the terminal phosphodiester bond of ATP into ADP (or
 alternatively GTP and GDP) and an inorganic phosphate provides the
 thermodynamic driving force in a wide array of biochemical reactions. One
@@ -53,66 +52,22 @@ the electrochemical potential established across the inner membrane through
 cellular respiration. This electrochemical gradient is manifest by the pumping
 of protons into the intermembrane space via the electron transport chains as
 they reduce NADH. In \textit{E. coli}, this potential difference is $\approx
--$200 mV (BNID: 102120).
-% A simple estimate of the inner membrane as a capacitor
-% with a working voltage of -200 mV reveals that $\approx 2\times 10^4$ protons
-% must be present in the intermembrane space.
-However, each rotation of an ATP
-synthase shuttles $\approx$ 4 protons into the cytosol (BNID: 103390). With a few thousand ATP
+-$200 mV (BNID: 102120). However, each rotation of an ATP synthase shuttles
+$\approx$ 4 protons into the cytosol (BNID: 103390). With a few thousand ATP
 synthases producing ATP at their maximal rate, the potential difference would be
 rapidly abolished in a few milliseconds if it were not being actively
-maintained.
-
-% The electrochemistry of the electron transport complexes of \textit{E. coli}
-% have been the subject of intense biochemical and biophysical study
-% \citep{ingledew1984, khademian2017,cox1970,henkel2014}.
-A recent work \citep{szenk2017} examined the respiratory capacity of the \textit{E. coli}
-electron transport complexes using structural and biochemical data, revealing
-that each electron transport chain rapidly pumps protons into the
-intermembrane space at a rate of $\approx$ 1500 protons per second (BIND:
-114704; 114687). Using our estimate of the number of ATP synthases required
-per cell, coupled with these recent
-measurements, we estimate that $\approx 3000$ electron transport complexes
-would be necessary to facilitate the $\approx 5 \times 10^6$ protons per second
-diet of the cellular ATP synthases. This estimate is in agreement with the
-number of complexes identified in the proteomic datasets [plot in
-\FIG{nutrient_cellwall_energy}(G)]. This suggests that every ATP synthase must be
-accompanied by $\approx$ 1 functional electron transport chain.
-
-% \begin{figure}
-%     \begin{fullwidth}
-%         \centering{
-%             \includegraphics{main_figs/fig4_energy_production.pdf}
-%             \caption{\textbf{The abundance of F$_1$-F$_0$ ATP synthases and
-%             electron transport chain complexes as a function of growth
-%             rate.} (A) Estimate of the number of F$_1$-F$_0$ ATP synthase
-%             complexes needed to accommodate peptide bond formation and other NTP
-%             dependent processes. Points in plot correspond to the
-%             mean number of complete F$_1$-F$_0$ ATP synthase complexes that
-%             can be formed given proteomic measurements and the subunit
-%             stoichiometry
-%             [AtpE]$_{10}$[AtpF]$_2$[AtpB][AtpC][AtpH][AtpA]$_{3}$[AtpG][AtpD]$_3$.
-%             (B) Estimate of the number of electron transport chain complexes
-%             needed to maintain a membrane potential of $-$200 mV given
-%             estimate of number of F$_1$-F$_0$ ATP synthases from (A). Points
-%             in plot correspond to the average number of complexes identified
-%             as being involved in aerobic respiration by the Gene Ontology
-%             identifier GO:0019646 that could be formed given proteomic
-%             observations. These complexes include cytochromes \textit{bd1}
-%             ([CydA][CydB][CydX][CydH]), \textit{bdII} ([AppC][AppB]),
-%             \textit{bo$_3$},([CyoD][CyoA][CyoB][CyoC]) and NADH:quinone
-%             oxioreducase I
-%             ([NuoA][NuoH][NuoJ][NuoK][NuoL][NuoM][NuoN][NuoB][NuoC][NuoE][NuoF][NuoG][NuoI])
-%             and II ([Ndh]). Grey lines in both (A) and (B) correspond to the
-%             estimate procedure described, but applied to a continuum of growth
-%             rates. We direct the reader to the Supporting Information for a more
-%             thorough description of this approach.}
-%         \label{fig:energy_production}
-%         }
-%
-%     \end{fullwidth}
-% \end{figure}
-
+maintained. A recent work \citep{szenk2017} examined the respiratory capacity of
+the \textit{E. coli} electron transport complexes using structural and
+biochemical data, revealing that each electron transport chain rapidly pumps
+protons into the intermembrane space at a rate of $\approx$ 1500 protons per
+second (BIND: 114704; 114687). Using our estimate of the number of ATP synthases
+required per cell, coupled with these recent measurements, we estimate that
+$\approx 3000$ electron transport complexes would be necessary to facilitate the
+$\approx 5 \times 10^6$ protons per second diet of the cellular ATP synthases.
+This estimate is in agreement with the number of complexes identified in the
+proteomic datasets [plot in \FIG{nutrient_cellwall_energy}(G)]. This suggests
+that every ATP synthase must be accompanied by $\approx$ 1 functional electron
+transport chain.
 
 \section{Limits on Biosynthesis in a Crowded Cell}
 Our estimates thus far have focused on the biochemistry at the periphery of the
@@ -163,17 +118,20 @@ nearly constant across growth rates. This suggests that no one process (energy
 production, nutrient uptake, etc.) is dominating even at fast growth rates
 [\FIG{energy_scaling}(C)] and in line with our supposition that each of the
 processes we've considered so far are not fundamentally limiting the maximum
-growth rate. In contrast, when we apply such an analysis to cytosolic proteins
+growth rate. 
+
+In contrast, when we apply such an analysis to cytosolic proteins
 (GO term: 0005829), we observe a clear change in the proteomic composition
-[\FIG{cog_cytosol}(A, B)]. In particular, with increasing growth rates there is
-a substantial increase in the relative protein mass associated with 'information
-storage and processing'. This category includes proteins such as DNA polymerase,
-RNA polymerase, and ribosomes that are associated with the processes of the
-central dogma, whose increase is predominantly at the expense of 'metabolic'
-proteins as shown in \FIG{cog_cytosol}(C). This notable anticorrelation shown in
-\FIG{cog_cytosol}(D) is consistent with  previous reports \citep{scott2010,
-hui2015, zhu2019}. In the next section we therefore turn our attention to the
-processes of the central dogma.
+[\FIG{energy_scaling}(D, E)]. In particular, with increasing growth rates there
+is a substantial increase in the relative protein mass associated with
+'information storage and processing'. This category includes proteins such as
+DNA polymerase, RNA polymerase, and ribosomes that are associated with the
+processes of the central dogma, whose increase is predominantly at the expense
+of 'metabolic' proteins as shown in \FIG{energy_scaling}(E). The notable
+anticorrelation  provides a more extensive characterization of a trend that is
+consistent with previous reports \citep{scott2010, hui2015, zhu2019}. In the
+next section we therefore turn our attention to the processes of the central
+dogma.
 
 \begin{figure}
     \begin{fullwidth}

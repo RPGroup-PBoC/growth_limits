@@ -143,6 +143,12 @@ Escalante, A., Salinas~Cervantes, A., Gosset, G., and Bol{\'i}var, F. (2012).
   Peculiarities of regulation and impact on growth and product formation.
 \newblock {\em Applied Microbiology and Biotechnology}, 94(6):1483--1494.
 
+\bibitem[Forchhammer and Lindahl, 1971]{forchhammer1971}
+Forchhammer, J. and Lindahl, L. (1971).
+\newblock {Growth rate of polypeptide chains as a function of the cell growth
+  rate in a mutant of Escherichia coli 15}.
+\newblock {\em Journal of Molecular Biology}, 55(3):563--568.
+
 \bibitem[Gallagher et~al., 2020]{gallagher2020}
 Gallagher, L.~A., Bailey, J., and Manoil, C. (2020).
 \newblock Ranking essential bacterial processes by speed of mutant death.
@@ -303,6 +309,12 @@ Mikucki, J.~A., Pearson, A., Johnston, D.~T., Turchyn, A.~V., Farquhar, J.,
   Schrag, D.~P., Anbar, A.~D., Priscu, J.~C., and Lee, P.~A. (2009).
 \newblock {A Contemporary Microbially Maintained Subglacial Ferrous "Ocean"}.
 \newblock {\em Science}, 324(5925):397--400.
+
+\bibitem[Milo et~al., 2010]{milo2010}
+Milo, R., Jorgensen, P., Moran, U., Weber, G., and Springer, M. (2010).
+\newblock {{BioNumbers}}\textemdash{}the database of key numbers in molecular
+  and cell biology.
+\newblock {\em Nucleic Acids Research}, 38(suppl\_1):D750--D753.
 
 \bibitem[Molenaar et~al., 2009]{molenaar2009}
 Molenaar, D., van Berlo, R., de~Ridder, D., and Teusink, B. (2009).

@@ -4,45 +4,45 @@ The top-level auxiliary file: eLife_draft.aux
 The style file: apalike.bst
 Database file #1: ./library.bib.bib
 Warning--can't use both author and editor fields in goldberger1979
-You've used 84 entries,
+You've used 86 entries,
             1935 wiz_defined-function locations,
-            962 strings with 22768 characters,
-and the built_in function-call counts, 41801 in all, are:
-= -- 3924
-> -- 2470
-< -- 23
-+ -- 908
-- -- 890
-* -- 4124
-:= -- 7355
-add.period$ -- 256
-call.type$ -- 84
-change.case$ -- 863
-chr.to.int$ -- 84
-cite$ -- 85
-duplicate$ -- 1182
-empty$ -- 2506
-format.name$ -- 1002
-if$ -- 7839
+            975 strings with 23158 characters,
+and the built_in function-call counts, 42704 in all, are:
+= -- 4012
+> -- 2511
+< -- 24
++ -- 922
+- -- 904
+* -- 4211
+:= -- 7510
+add.period$ -- 262
+call.type$ -- 86
+change.case$ -- 880
+chr.to.int$ -- 86
+cite$ -- 87
+duplicate$ -- 1210
+empty$ -- 2568
+format.name$ -- 1020
+if$ -- 8014
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 86
-newline$ -- 425
-num.names$ -- 252
-pop$ -- 687
+missing$ -- 88
+newline$ -- 435
+num.names$ -- 258
+pop$ -- 699
 preamble$ -- 1
-purify$ -- 865
+purify$ -- 882
 quote$ -- 0
-skip$ -- 873
+skip$ -- 894
 stack$ -- 0
-substring$ -- 3015
-swap$ -- 93
+substring$ -- 3091
+swap$ -- 95
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 500
+type$ -- 512
 warning$ -- 1
-while$ -- 307
+while$ -- 314
 width$ -- 0
-write$ -- 1098
+write$ -- 1124
 (There was 1 warning)

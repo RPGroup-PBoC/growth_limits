@@ -9,20 +9,7 @@ size in \textit{E. coli} and other bacteria, however, has remained unclear
 \citep{si2017}  [cite others]. Here we consider the consequences of the
 translation-limiting growth rate on cell size and its underlying mechanism.
 
-% Indeed, while $\Phi_R$ will need to increase in
-% order for cells to grow faster, the fractional dependence in \EQ{lam_limited}
-% gives little insight into how the scaling is actually achieved by the cell.
-
-%
-
-% To better understand how this might also relate to ribosomal content,
-% we next
-%
-%
-% [get into mechanism of growth rate control following
-% our analysis and highlight of current literature]
-
-Under translation-limited growth conditions (> $\approx$ 0.5 hr$^{-1}$ ), cells can
+Under translation-limited growth conditions (> $\approx$ 0.5 hr$^{-1}$), cells can
 only increase growth rate by increasing ribosome content. While the simple
 addition of more ribosomes is likely constrained by macromolecular crowding
 \citep{delarue2018, solerbistue2020}, cells appear to bias their protein
@@ -41,8 +28,8 @@ $\langle$\# ori$\rangle$ that was noted in the previous section, that \textit{E.
 coli} exhibits an exponential increase in cell size with growth rate.
 Interestingly, this also predicts that the size scaling relationship is not
 necessarily expected for growth rates below about $\approx$ 0.5 hr$^{-1}$  where
-ribosomes are not maximally utilized, which indeed seems to be the case [SI fig
-on single-cell sizes from Si et al.].
+ribosomes are not maximally utilized, which indeed seems to be the case [SI single-cell
+sizes from Si].
 
 In \textit{E. coli}, an accumulation of de-acylated tRNAs at the ribosome's
 A-site and a strong increase in (p)ppGpp synthesis activity by the enzyme RelA
@@ -63,59 +50,6 @@ availability, and hence are able to better match cell size (and $\langle$\#
 ori$\rangle$) and ribosomal content according to the required biosynthetic
 capacity for growth [\FIG{elongation_rate_model}(C)].
 
-
-% providing a potential mechanism for cells to lower $\langle$\# ori$\rangle$ and maintain a smaller
-% cell size in poorer nutrient conditions \citep{fernandezcoll2020}.
-
-% it appears that is also tuning we find that
-% the
-
-% As noted earlier,
-% bacteria can modulate ribosomal activity and its rate of synthesis through the
-% secondary messenger molecules like (p)ppGpp in poorer nutrient conditions
-% [\FIG{ribosome_limit}(C, inset); \cite{dai2016}] as also considered in the work of
-% \cite{bosdriesz2015}.
-%
-% Importantly, these secondary messengers also cause
-%
-% [maybe include look at how ribosomal content changes with ori first?]
-
-% In the right-hand side of \FIG{ribosome_limit}(B) we also find that above about 0.75
-% hr$^{-1}$ the growth rate is determined solely by the ribosomal mass fraction
-% $\Phi_R$, since $f_a$ is close to 1, and $r_t$ is near its maximal rate
-% \citep{dai2016}.
-
-
-
-
-% However,  an
-% increase in ribosome abundance alone is not necessarily sufficient to increase
-% growth rate and we also need to consider how $\Phi_R$ varies with $\langle$\#
-% ori$\rangle$.
-
-% In this final section we employ a minimal model of growth rate control
-% to better understand how this interconnection between ribosomal abundance and
-% total protein abundance influences the observed growth rate.
-
-% Here we propose that cells modulate their protein abundance in direct response
-% to the availability of nutrients in their environment. As noted earlier,
-% bacteria can modulate ribosomal activity and its rate of synthesis through the
-% secondary messenger molecules like (p)ppGpp in poorer nutrient conditions
-% [\FIG{ribosome_limit}(C, inset); \cite{dai2016}] as also considered in the work of
-% \cite{bosdriesz2015}. Importantly, these secondary messengers also cause global
-% changes in transcriptional and translational activity \citep{hauryliuk2015,
-% zhu2019, Buke2020}. In \textit{E. coli}, amino acid starvation leads to the
-% accumulation of de-acylated tRNAs at the ribosome's A-site and a strong increase
-% in (p)ppGpp synthesis activity by the enzyme RelA \citep{hauryliuk2015}. Along
-% with this,  there is increasing evidence that (p)ppGpp also acts to inhibit the
-% initiation of DNA replication and coordinate different cellular processes
-% \citep{kraemer2019, vadia2017}, providing a potential mechanism for cells to
-% lower $\langle$\# ori$\rangle$ and maintain a smaller cell size in poorer
-% nutrient conditions \citep{fernandezcoll2020}.
-
-% \subsubsection{Optimal Ribosomal Content and Cell Size Depend on Nutrient
-% Availability and Metabolic Capacity}
-
 To consider this quantitatively, we assume that cells modulate their proteome
 (total number of peptide bonds $N_\text{pep}$, number of ribosomes $R$, and
 ribosomal fraction $\Phi_R$) to better maximize their rate of peptide elongation
@@ -130,13 +64,8 @@ acids (and, therefore, also amino-acyl tRNAs), through a parameter $r_{AA}$ in
 units of AA per second, and the rate of amino acid consumption by protein
 synthesis ($r_t \times R \times f_a$). In \FIG{elongation_rate_model}(D), we
 illustrate how the elongation rate will depend on the ribosomal copy number for
-constant $r_{AA}$, and further described the  model in the Appendix Section
+constant $r_{AA}$, and further described in the Appendix Section
 "Derivation of Minimal Model for Nutrient-Mediated Growth Rate Control".
-
-% Given our
-% observation that general protein synthesis and energy production are not limiting, we
-% assume that other molecular players required by ribosomes such as elongation
-% factors and GTP are available in sufficient abundance.
 
 % In \FIG{elongation_rate_model}(B), we illustrate how the elongation rate will
 % depend on the ribosomal copy number. Here, we have considered an arbitrarily
@@ -159,50 +88,46 @@ constant $r_{AA}$, and further described the  model in the Appendix Section
 % by tuning $f_a$ such that not all ribosomes are elongating, reducing their
 % total consumption rate.
 
-%
-% \begin{figure}
-%     \centering{
-%         \includegraphics{main_figs/fig12_elongation_model.pdf}
-%         \caption{\textbf{A minimal model of growth rate control under
-%         nutrient limitation.} (A) We consider a unit volume of cellular material
-%         composed of amino acids (colored spheres) provided at a supply rate
-%         $r_{AA}$. These amino acids are polymerized by a pool of ribosomes
-%         (brown blobs) at a rate $r_t \times R \times f_a$, where $r_t$ is the
-%         elongation rate, $R$ is the ribosome copy number in the unit volume, and
-%         $f_a$ is the fraction of those ribosomes actively translating. (B) The
-%         observed elongation rate is plotted as a function of the number of ribosomes. The three points correspond to three regimes of
-%         ribosome copy numbers and are shown schematically on the left-hand side.
-%         The region of the curve shown as dashed lines represents a non-physical
-%         copy number, but is shown for illustrative purposes. This curve was
-%         generated using an amino acid supply rate of $5 \times 10^6$ AA / s,
-%         a maximal elongation rate of 17.1 AA / s, $f_a = 1$, and a unit cell
-%         volume of $V = 1$ fL.
-%         See Appendix Section "Derivation of Minimal Model for Nutrient-Mediated Growth Rate Control" for additional model details. (C) The cellular growth
-%         rate is plotted as a function of total cellular ribosome copy number for
-%         different cellular amino acid supply rates, with blue and green curves
-%         corresponding to low and high supply rates, respectively. As the
-%         ribosome copy number is increased, so too is the cell size and total
-%         protein abundance $N_\text{pep}$. We direct the reader to the Supplemental Information
-%         for discussion on the inference of the relationship between cell
-%         size, number of peptide bonds, and ribosome copy number.}\label{fig:elongation_rate_model}
-%
-%         \figsupp[An interactive figure for exploration of the model parameter
-%         space.]{An interactive version of parts (B) and (C) of
-%         \FIG{elongation_rate_model} which permit the user to modulate the rate
-%         of amino acid supply, the dissociation constant of amino acids to the
-%         ribosome, and the fraction of the ribosome pool that is actively
-%         translating. This interactive figure, and the code used to generate it,
-%         is available on the
-%         \href{https://rpgroup.caltech.edu/growth_limit}{paper
-%         website.}}{\includegraphics[scale=0.5]{main_figs/fig12-S1_model_explorer_screenshot.png}}\label{figsupp:model_explorer}
-%
-%         }
-% \end{figure}
-
 \begin{figure}
     \centering{
-    \includegraphics[width=0.75\textwidth]{main_figs/fig12_elongation_model_update.pdf}
-    \caption{\textbf{Coordination of cell size and proteomic composition via protein synthesis.}}
+    \includegraphics[width=0.75\textwidth]{main_figs/fig6_elongation_model_update.pdf}
+    \caption{\textbf{Coordination of cell size and proteomic composition via ribosome activity.}
+    (A) A running
+        Gaussian average (20 kbp st. dev.) of protein copy number is calculated
+        for each growth condition considered by \citep{schmidt2016} based
+        on each gene's transcriptional start site. Since total
+        protein abundance increases with growth rate, protein copy numbers are
+        median-subtracted to allow comparison between growth conditions.
+        $\langle$\# ori$\rangle$ are estimated using the data in (A) and
+        Equation \ref{eq:Nori}.
+    (B) Plot of the ribosome copy number estimated from the
+        proteomic data against the estimated $\langle$\# ori$\rangle$ (see Appendix
+        Section "Estimation of $\langle$\# ori$\rangle$/ $\langle$\# ter$\rangle$ and $\langle$\# ori$\rangle$ for additional details).
+    (C) We consider a unit volume of cellular material
+        composed of amino acids (colored spheres) provided at a supply rate
+        $r_{AA}$. These amino acids are polymerized by a pool of ribosomes
+        (brown blobs) at a rate $r_t \times R \times f_a$, where $r_t$ is the
+        elongation rate, $R$ is the ribosome copy number in the unit volume, and
+        $f_a$ is the fraction of those ribosomes actively translating. In addition to
+        determining total protein synthesis rate, the nutrient status is gauged
+        by any accumulation of de-acylated tRNAs and synthesis of the secondary messenger
+        (p)ppGpp, which ultimately determine $\langle$\# ori$\rangle$, cell size,
+        and proteomic composition.
+    (D) The observed elongation rate is plotted as a function of the number of ribosomes.
+        The three points correspond to three regimes of ribosome copy numbers
+        and are shown schematically on the left-hand side. The region of the
+        curve shown as dashed lines represents a non-physical copy number, but
+        is shown for illustrative purposes. This curve was generated using an
+        amino acid supply rate of $5 \times 10^6$ AA / s, a maximal elongation
+        rate of 17.1 AA / s, $f_a = 1$, and a unit cell volume of 1 fL.
+        See Appendix Section "Derivation of Minimal Model for Nutrient-Mediated
+        Growth Rate Control" for additional model details. (C) The cellular
+        growth rate is plotted as a function of total cellular ribosome copy
+        number for different cellular amino acid supply rates, with blue and
+        green curves corresponding to low and high supply rates, respectively.
+        As the ribosome copy number is increased, so too is the cell size and
+        total protein abundance $N_\text{pep}$.
+    }
     \label{fig:elongation_rate_model}
     }
 \end{figure}

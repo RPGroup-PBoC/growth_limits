@@ -69,14 +69,14 @@ proteomic datasets [\FIG{nutrient_cellwall_energy}(G)]. This suggests
 that every ATP synthase must be accompanied by $\approx$ 1 functional electron
 transport chain.
 
-\section{Limits on Biosynthesis in a Crowded Cell}
+\section{Limits on Biosynthesis within a Crowded Cell}
 Our estimates thus far have focused on the biochemistry at the periphery of the
 cell, with the processes of nutrient transport, cell envelope biogenesis, and
 energy generation all requiring space to perform their biological functions. The
 cell's surface area, however, does not scale as rapidly as cell size
 \citep{harris2018} and there will be diminishing space available at the
 periphery to support the proteomic requirements at faster growth rates. It is
-therefore necessary to consider the consequences of a changing surface area to
+therefore necessary to consider the consequences of a changing cell size and surface area to
 volume ratio in our effort to identify limitations on growth. Here we use our
 analysis of ATP production to better understand this constraint.
 
@@ -110,15 +110,16 @@ Ontology (GO) annotations \citep{ashburner2000, thegeneOntologyconsortium2018}
 to identify all proteins embedded or peripheral to the inner membrane (GO term:
 0005886). Those associated but not membrane-bound include proteins like MreB and
 FtsZ that must nonetheless be considered as a vital component occupying space on
-the membrane. In \FIG{energy_scaling}(B), we find that the total protein mass
-per \textmu m$^2$ is nearly constant across growth rates. Interestingly, when we
-consider the distribution of proteins grouped by their Clusters of Orthologous
-Groups (COG) \citep{tatusov2000}, the relative abundance of each category is
-nearly constant across growth rates. This suggests that no one process (energy
-production, nutrient uptake, etc.) is dominating even at fast growth rates
-[\FIG{energy_scaling}(C)] and in line with our supposition that each of the
-processes we've considered so far are not fundamentally limiting the maximum
-growth rate.
+the membrane. Surprisingly, we find that the total protein mass per \textmu
+m$^2$ is nearly constant across growth rates [\FIG{energy_scaling}(B)],
+even though the volumetric demand for resources grows with cell size and growth
+rate. Interestingly, when we consider the distribution of proteins grouped by
+their Clusters of Orthologous Groups (COG) \citep{tatusov2000}, the relative
+abundance of each category is nearly constant across growth rates
+[\FIG{energy_scaling}(C)]. This suggests that no one process (energy production,
+nutrient uptake, etc.) is dominating even at fast growth rates and in line with
+our supposition that each of the processes we've considered so far are not
+fundamentally limiting the maximum growth rate.
 
 In contrast, when we apply such an analysis to cytosolic proteins
 (GO term: 0005829), we observe a clear change in the proteomic composition

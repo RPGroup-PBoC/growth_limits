@@ -6,7 +6,7 @@ proteomic content and cell size will need to change in response to variable
 growth conditions and growth rate. The specific mechanism of growth rate control
 under nutrient limitation that leads to the observed exponential scaling in cell
 size in \textit{E. coli} and other bacteria, however, has remained unclear
-\citep{si2017}  [cite others]. Here we consider the consequences of the
+\citep{si2017, harris2018, ojkic2019}. Here we consider the consequences of the
 translation-limiting growth rate on cell size and its underlying mechanism.
 
 Under translation-limited growth conditions (> $\approx$ 0.5 hr$^{-1}$), cells can
@@ -29,23 +29,26 @@ coli} exhibits an exponential increase in cell size with growth rate at moderate
 fast growth rates.
 
 In \textit{E. coli}, an accumulation of de-acylated tRNAs at the ribosome's
-A-site and a strong increase in (p)ppGpp synthesis activity by the enzyme RelA
-\citep{hauryliuk2015}. While conventionally associated with a dynamic global
-response to changes in nutrient conditions through the stringent response,
-(p)ppGpp increasingly appears to play a role in both the control of the active
-ribosomal fraction and cell size homeostasis under steady-state nutrient-limited
-growth \citep{dai2016, zhu2019, Buke2020, vadia2017, parker2020}. It is now
-well-documented that \textit{E. coli} cells add a constant volume per origin of
-replication, which is robust to a remarkable array of cellular perturbations
-\citep{si2017}. In addition, there is increasing evidence that (p)ppGpp acts to
-inhibit the initiat From the proteomic measurements, we find that
-cells also tune their ribosome copy number in direct proportion to $\langle$\#
+A-site leads to a strong increase in (p)ppGpp synthesis activity by the enzyme
+RelA \citep{hauryliuk2015}. While conventionally associated with a dynamic
+global response to changes in nutrient conditions through the stringent
+response, (p)ppGpp increasingly appears to play a role in both the control of
+the active ribosomal fraction and cell size homeostasis under steady-state
+nutrient-limited growth \citep{dai2016, zhu2019, Buke2020, vadia2017,
+parker2020}. It is now well-documented that \textit{E. coli} cells add a
+constant volume per origin of replication, which is robust to a remarkable array
+of cellular perturbations \citep{si2017}. Here, there is increasing evidence
+that (p)ppGpp acts to inhibit the initiation of DNA replication
+\citep{fernandezcoll2020}, providing a potential mechanism for cells to lower
+$\langle$\# ori$\rangle$ and maintain a smaller, more economical cell size in
+poorer nutrient conditions. From the proteomic measurements, we find that cells
+also vary their ribosome copy number in direct proportion to $\langle$\#
 ori$\rangle$ [\FIG{elongation_rate_model}(B)]. With cellular (p)ppGpp levels
-following directly from the state of ribosomal activity,
-cells appear to use ribosome activity as a direct proxy for nutrient
-availability, and hence are able to better match cell size (and $\langle$\#
-ori$\rangle$) and ribosomal content according to the required biosynthetic
-capacity for growth [\FIG{elongation_rate_model}(C)].
+following directly from the state of ribosomal activity, cells appear to use
+ribosome activity as a direct proxy for nutrient availability, and hence are
+able to better match cell size (and $\langle$\# ori$\rangle$) and ribosomal
+content according to the required biosynthetic capacity for growth
+[\FIG{elongation_rate_model}(C)].
 
 To consider this quantitatively, we assume that cells modulate their proteome
 (total number of peptide bonds $N_\text{pep}$, number of ribosomes $R$, and
@@ -54,8 +57,8 @@ $r_t$. The elongation rate $r_t$ will depend on how quickly ribosomes can match
 codons with an amino-acyl tRNA, along with the subsequent steps of peptide bond
 formation and translocation. This ultimately depends on the cellular
 concentration of amino acids, which we treat as a single effective species,
-$[AA]_\text{eff}$ \citep{bosdriesz2015}. Having found that cells do not appear
-in the synthesis of tRNA or GTP, we determine the the rate of peptide elongation
+$[AA]_\text{eff}$ \citep{bosdriesz2015}. Having found that cells do not appear limited
+in their synthesis of tRNA or GTP, we determine the the rate of peptide elongation
 $r_t$ and achievable growth rate as simply depending on the supply of amino
 acids (and, therefore, also amino-acyl tRNAs), through a parameter $r_{AA}$ in
 units of AA per second, and the rate of amino acid consumption by protein
@@ -145,11 +148,11 @@ concentration beyond the cell's metabolic capacity will have the adverse
 consequence of depleting the supply of amino acids and lead to a concomitant
 decrease in the elongation rate $r_t$ [\FIG{elongation_rate_model}(D)] and
 growth rate. This helps us understand that while it is important for cells to
-increase their ribosomal content and cell size in order to increase growth rate,
-cells will better maximize their achievable growth rate by tuning these
-parameters according to the available nutrient conditions, since this is
-ultimately what allows cells to reach the peak for each curve shown in
-\FIG{elongation_rate_model}(E).
+increase their ribosomal content and total protein content (and hence, also cell
+size) in order to increase growth rate, cells will better maximize their
+achievable growth rate by tuning these parameters according to the available
+nutrient conditions, since this is ultimately what allows cells to reach the
+peak for each curve shown in \FIG{elongation_rate_model}(E).
 
 Also of note is the growth rate trends observed at low values of $r_{AA}$
 [purple and blue lines in \FIG{elongation_rate_model}(E)], representative of
@@ -158,11 +161,11 @@ peak in the maximum growth rate, at least within the range of
 physiologically-relevant ribosome copy numbers considered here. This is the
 regime, associated with slower growth rates, where cells limit their pool of
 actively translating ribosomes by decreasing $f_a$ (\FIG{ribosome_limit}(A),
-right-hand panel, inset), likely due to having excess ribosomes relative to the
-cell's metabolic capacity. By reducing the fraction of actively translating
-ribosomes, we find that cells instead appear to be prioritizing their pool of
-available amino acids $[AA]_\text{eff}$ in order to increase their translation
-elongation rate. Consistent with this hypothesis and our model, while inhibition
-of translation with chloramphenicol further reduces the fraction of actively
-translating ribosomes $f_a$, it results in an increase in the elongation rate
+inset), likely due to having excess ribosomes relative to the cell's metabolic
+capacity. By reducing the fraction of actively translating ribosomes, we find
+that cells instead appear to be prioritizing their pool of available amino acids
+$[AA]_\text{eff}$ in order to increase their translation elongation rate.
+Consistent with this hypothesis and our model, while inhibition of translation
+with chloramphenicol further reduces the fraction of actively translating
+ribosomes $f_a$, it results in an increase in the elongation rate
 \citep{dai2016}.

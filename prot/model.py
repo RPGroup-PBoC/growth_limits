@@ -4,5 +4,3 @@ from . import estimate
 
 
 
-
-class 

@@ -57,7 +57,7 @@ def lambda2size(x):
     Returns
     -------
     a*np.exp(-c*x) : float
-        Cell volume ratio in \mu m**3
+        Cell volume in \mu m**3
     """
     a, c = 0.53319063, -1.0372483
     return a*np.exp(-c*x)

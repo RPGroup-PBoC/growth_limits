@@ -52,7 +52,6 @@ n_pol = 2 # per replication fork
 n_fork = 2
 N_rnr = 2 * n_ori * L_genome  / (r_rnr * t_double)
 N_dnap = n_fork * n_pol * n_ori
-# %%
 
 ax2.xaxis.set_tick_params(labelsize=8)
 ax2.yaxis.set_tick_params(labelsize=8)
@@ -64,7 +63,9 @@ ax2.set_yscale('log')
 ax2.set_ylim([1E1, 1E4])
 ax2.set_xlim([0, 2])
 
-ax2.plot(growth_rate, N_rnr,'-', color='grey', lw=3, alpha=0.5, label='replication fork dependence')
+ax2.plot(growth_rate[growth_rate > 0.23], N_rnr[growth_rate > 0.23],'-', color='grey', lw=3, alpha=0.5, label='replication fork dependence')
+ax2.plot(growth_rate[growth_rate <= 0.23], N_rnr[growth_rate <= 0.23], ':', color='grey', lw=3, alpha=0.5, label='__nolegend__')
+
 
 # Plot the predictions
 ax2.plot(0.5, 200, 'o', ms=4.5, color=colors['dark_brown'], alpha=0.4, label='estimated value')
@@ -98,6 +99,8 @@ ax6.set_xlim([0, 2])
 
 # Plot the predictions
 ax1.plot(growth_rate, N_dnap, '-', lw=3, color='grey', alpha=0.3, label='replication fork dependence')
+ax1.plot(growth_rate[growth_rate > 0.23], N_dnap[growth_rate > 0.23], '-', lw=3, color='grey', alpha=0.3, label='replication fork dependence')
+ax1.plot(growth_rate[growth_rate <= 0.23], N_dnap[growth_rate <= 0.23], ':', lw=3, color='grey', alpha=0.3, label='__nolegend__')
 ax1.plot(0.5, 6.5, 'o', ms=4.5, color=colors['dark_brown'], alpha=0.4, label='estimated value')
 ax1.hlines(6, 0, 0.5, 'k', linestyle='--', lw=0.75, label='__nolegend__')
 ax1.vlines(0.5, 1, 6.5, 'k', linestyle='--', lw=0.75, label='__nolegend__')
@@ -148,9 +151,9 @@ L_tRNA = 80
 N_polymerase = (L_rRNA * n_operon  * N_ori/ footprint) + (n_mRNA * L_mRNA / r_txn) + (n_tRNA * L_tRNA) / (r_txn * t_double)
 
 
-#%%
 for a in [ax3, ax7]:
-    a.plot(growth_rate, N_polymerase, '-', lw=3, color='grey', alpha=0.4, label='replication fork scaling')
+    a.plot(growth_rate[growth_rate > 0.23], N_polymerase[growth_rate > 0.23], '-', lw=3, color='grey', alpha=0.4, label='replication fork scaling')
+    a.plot(growth_rate[growth_rate <= 0.23], N_polymerase[growth_rate <= 0.23], ':', lw=3, color='grey', alpha=0.4, label='__nolegend__')
     a.set_xlabel('growth rate [hr$^{-1}$]', fontsize=8)
     a.set_yscale('log')
     a.set_xlim([0, 2])
@@ -205,7 +208,8 @@ ax4.set_xlabel('growth rate [hr$^{-1}$]', fontsize=8)
 ax4.set_ylabel('ribosomes\nper cell', fontsize=8)
 
 # Plot the cell size dependence
-ax4.plot(growth_rate, N_ribosomes, lw=3, color='grey', alpha=0.4, label='cell size dependence')
+ax4.plot(growth_rate[growth_rate > 0.23], N_ribosomes[growth_rate > 0.23], lw=3, color='grey', alpha=0.4, label='cell size dependence')
+ax4.plot(growth_rate[growth_rate <= 0.23], N_ribosomes[growth_rate <= 0.23], ':', lw=3, color='grey', alpha=0.4, label='__nolegend__')
 
 # Plot the point estimate.
 estimate = 1E4
@@ -245,7 +249,8 @@ ax5.set_xlabel('growth rate [hr$^{-1}$]', fontsize=8)
 ax5.set_ylabel('tRNA synthetases\nper cell', fontsize=8)
 
 # Plot the cell size dependence
-ax5.plot(growth_rate, N_synthase, lw=3, color='grey', alpha=0.4, label='cell size dependence')
+ax5.plot(growth_rate[growth_rate > 0.23], N_synthase[growth_rate > 0.23], lw=3, color='grey', alpha=0.4, label='cell size dependence')
+ax5.plot(growth_rate[growth_rate <= 0.23], N_synthase[growth_rate <= 0.23], ':', lw=3, color='grey', alpha=0.4, label='__nolegend__')
 
 # Plot the point estimate.
 estimate = 1E4

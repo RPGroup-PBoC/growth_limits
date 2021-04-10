@@ -302,7 +302,7 @@ ax4_twin.xaxis.set_tick_params(labelsize=4.5)
 ax4_twin.yaxis.set_tick_params(labelsize=4.5)
 
 plt.tight_layout()
-fig.savefig('../../figures/fig5abc_SV_scaling_COG_characterization_all.pdf')
+# fig.savefig('../../figures/fig5abc_SV_scaling_COG_characterization_all.pdf')
 
 
 # %%

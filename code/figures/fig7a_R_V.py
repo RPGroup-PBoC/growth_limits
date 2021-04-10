@@ -101,4 +101,4 @@ ax.yaxis.set_tick_params(labelsize=5)
 ax.legend(fontsize=6, loc = 'upper left')
 
 plt.tight_layout()
-plt.savefig('../../figures/fig6a_R_V.pdf', bbox_inches='tight')
+plt.savefig('../../figures/fig7a_R_V.pdf', bbox_inches='tight')

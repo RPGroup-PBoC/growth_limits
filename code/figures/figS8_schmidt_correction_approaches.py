@@ -188,4 +188,4 @@ for ax_ in ax:
 
 
 plt.tight_layout()
-fig.savefig('../../figures/figA7_schmidt_corrections_approaches.pdf', bbox_inches='tight')
+fig.savefig('../../figures/figS8_schmidt_corrections_approaches.pdf', bbox_inches='tight')

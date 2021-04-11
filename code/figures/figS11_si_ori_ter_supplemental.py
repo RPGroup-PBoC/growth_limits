@@ -162,4 +162,4 @@ ax3.set_ylabel('t$_{C}$ [min]', fontsize=6)
 ax2.set_ylabel('t$_{cyc}$ [min]', fontsize=6)
 ax4.set_ylabel('t$_{cyc}$ [min]', fontsize=6)
 
-fig.savefig('../../figures/figA10_supplemental_ori_ter.pdf', bbox_inches = 'tight')
+fig.savefig('../../figures/figS11_supplemental_ori_ter.pdf', bbox_inches = 'tight')

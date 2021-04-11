@@ -52,7 +52,7 @@ datasets = {
 }
 venn(datasets, cmap = [colors['light_blue'], colors['green'], colors['purple'], colors['red']])
 
-plt.savefig('../../figures/figA2_intersections_venn.pdf', bbox_inches='tight')
+plt.savefig('../../figures/figS3_intersections_venn.pdf', bbox_inches='tight')
 
 
 # %%

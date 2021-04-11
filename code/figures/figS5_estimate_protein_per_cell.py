@@ -222,4 +222,4 @@ for ax_ in ax:
 #
 
 plt.tight_layout()
-fig.savefig('../../figures/figA4_predict_protein_per_cell.pdf', bbox_inches='tight')
+fig.savefig('../../figures/figS5_predict_protein_per_cell.pdf', bbox_inches='tight')

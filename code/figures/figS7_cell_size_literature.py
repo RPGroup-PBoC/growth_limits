@@ -82,4 +82,4 @@ ax[0].legend(by_label.values(), by_label.keys(), loc = 'upper left', fontsize = 
 
 
 plt.tight_layout()
-fig.savefig('../../figures/figA6_size_data_lit.pdf', bbox_inches='tight')
+fig.savefig('../../figures/figS7_size_data_lit.pdf', bbox_inches='tight')

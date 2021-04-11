@@ -263,11 +263,8 @@ for g, d in data.groupby(['dataset', 'dataset_name']):
     ax5.plot(d['growth_rate_hr'], d['n_complex'], 'o', ms=4, color=dataset_colors[g[0]],
             markeredgewidth=0.5, markeredgecolor='k', label=g[1])
 
-
-
-# ax2.legend(ncol=2, fontsize=8)
 plt.tight_layout()
-plt.savefig('../../figures/fig4_central_dogma.pdf')#, bbox_inches='tight')
+plt.savefig('../../figures/fig5_central_dogma.pdf')
 
 
 

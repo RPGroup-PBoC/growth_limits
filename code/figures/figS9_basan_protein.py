@@ -49,4 +49,4 @@ ax.set_xlim([0, 2])
 
 
 plt.tight_layout()
-fig.savefig('../../figures/figA8_protein_basan.pdf', bbox_inches='tight')
+fig.savefig('../../figures/figS9_protein_basan.pdf', bbox_inches='tight')

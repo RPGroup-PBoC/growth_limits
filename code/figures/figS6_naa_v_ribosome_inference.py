@@ -68,6 +68,6 @@ ax[1].set_ylabel('cell volume [µm$^3$]', fontsize=6)
 ax[0].legend(fontsize=6, loc='lower right')
 ax[1].legend(fontsize=6, loc='lower right')
 plt.tight_layout()
-plt.savefig('../../figures/figA5_linear_regression_naa_volume_ribosomes.pdf')
+plt.savefig('../../figures/figS6_linear_regression_naa_volume_ribosomes.pdf')
 
 # %%

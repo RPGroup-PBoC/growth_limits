@@ -72,7 +72,7 @@ popt_tcyc_lin, pcov_tcyc_lin = curve_fit(func_lin, l_lin, t_cyc_lin, p0=(1, 1))
 # plot 2  #
 ######################
 # %%
-fig, ax = plt.subplots(1, 2, figsize=(4, 2))
+fig, ax = plt.subplots(1, 3, figsize=(6, 2))
 
 # plot of RNA/protein vs. num ori
 # Load the complex subunit counts.
@@ -127,6 +127,18 @@ ax[1].xaxis.set_tick_params(labelsize=5)
 ax[1].yaxis.set_tick_params(labelsize=5)
 ax[1].set_ylim(0,40000)
 # ax[1].legend(fontsize=6, loc = 'upper left')
+
+
+for g, d in complex_ribo.groupby(['dataset', 'dataset_name']):
+    ax[2].plot(size.lambda2size(d['growth_rate_hr']), d['n_units'], 'o', color=dataset_colors[g[0]],
+                    alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
+                    label = g[1], ms=4, zorder=10)
+
+ax[2].set_xlabel('estimated cell volume [fL]', fontsize=6)
+ax[2].set_ylabel('ribosomes per cell', fontsize=6)
+ax[2].xaxis.set_tick_params(labelsize=5)
+ax[2].yaxis.set_tick_params(labelsize=5)
+ax[2].legend(fontsize=6, loc = 'upper left')
 
 plt.tight_layout()
 plt.savefig('../../figures/fig7bc_R_ori_conc.pdf', bbox_inches='tight')

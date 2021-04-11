@@ -187,7 +187,7 @@ ax[3].plot(x, pred_proteinmass_Si, '-', alpha = 0.6,
 ax[2].set_ylabel('concentration [fg/fL]', fontsize=6)
 ax[2].set_ylim(0,270)
 
-ax[3].set_ylabel('protein mass per cell [fg]', fontsize=6)
+ax[3].set_ylabel('mass per cell [fg]', fontsize=6)
 ax[3].legend(loc = 'upper left', fontsize=6)
 ax[3].set_ylim(0,850)
 
@@ -222,4 +222,4 @@ for ax_ in ax:
 #
 
 plt.tight_layout()
-fig.savefig('../../figures/figA4_predict_protein_per_cell.pdf', bbox_inches='tight')
+fig.savefig('../../figures/figS5_predict_protein_per_cell.pdf', bbox_inches='tight')

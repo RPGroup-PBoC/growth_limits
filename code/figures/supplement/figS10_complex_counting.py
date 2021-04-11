@@ -46,4 +46,4 @@ for i, cplx in enumerate(cplxs):
         ax[i].xaxis.set_tick_params(labelsize=3)
         ax[i].set_xticklabels(labels, rotation=90)
 ax[0].legend(loc='lower right', fontsize=6)
-plt.savefig('../../figures/figA9_subunit_counting.pdf', bbox_inches='tight')
+plt.savefig('../../figures/figS10_subunit_counting.pdf', bbox_inches='tight')

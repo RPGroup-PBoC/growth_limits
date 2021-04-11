@@ -78,4 +78,4 @@ for ax_ in ax:
     ax_.set_xlabel('growth rate [hr$^{-1}$]', fontsize=6)
 
 plt.tight_layout()
-fig.savefig('../../figures/figA1_dataset_corrections.pdf', bbox_inches='tight')
+fig.savefig('../../figures/figS2_dataset_corrections.pdf', bbox_inches='tight')

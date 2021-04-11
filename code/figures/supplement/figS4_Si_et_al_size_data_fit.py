@@ -202,4 +202,4 @@ ax[1].add_artist(legend2)
 
 
 plt.tight_layout()
-fig.savefig('../../figures/figA3_Si_size_data_fit.pdf', bbox_inches='tight')
+fig.savefig('../../figures/figS4_Si_size_data_fit.pdf', bbox_inches='tight')

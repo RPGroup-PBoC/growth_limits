@@ -88,27 +88,17 @@ complex_count = subunits.groupby(['dataset', 'dataset_name', 'condition',
 
 complex_ribo = complex_count[complex_count.complex_annotation == 'ribosome']
 
-complex_ribo['tau']  = 60*(np.log(2)/(complex_ribo['growth_rate_hr']))
-t_cyc_arr = []
-for i, val in enumerate(complex_ribo['tau'].values):
-    if val <= 40:
-        t_cyc_ = t_cyc_const
-    else:
-        t_cyc_ = func_lin(complex_ribo['growth_rate_hr'].values[i], *popt_tcyc_lin)
-    t_cyc_arr = np.append(t_cyc_arr, t_cyc_)
 
-complex_ribo['t_cyc'] = t_cyc_arr #func_lin(complex_ribo['growth_rate_hr'], *popt_tcyc_lin)
-complex_ribo['# ori'] =  2**(complex_ribo['t_cyc'] / complex_ribo['tau'] )
-
-# for g, d in complex_ribo.groupby(['dataset', 'condition', 'growth_rate_hr']):
 for g, d in complex_ribo.groupby(['dataset', 'dataset_name']):
-    ax.plot(d['# ori'], d['n_units'], 'o', color=dataset_colors[g[0]],
+    ax.plot(size.lambda2size(d['growth_rate_hr']), d['n_units'], 'o', color=dataset_colors[g[0]],
                     alpha=0.75, markeredgecolor='k', markeredgewidth=0.25,
                     label = g[1], ms=4, zorder=10)
 
-ax.set_xlabel('estimated # ori', fontsize=6)
+ax.set_xlabel('estimated cell volume [fL]', fontsize=6)
 ax.set_ylabel('ribosomes per cell', fontsize=6)
 ax.xaxis.set_tick_params(labelsize=5)
 ax.yaxis.set_tick_params(labelsize=5)
 ax.legend(fontsize=6, loc = 'upper left')
-plt.savefig('../../figures/fig11a_ribosome_vs_ori.pdf', bbox_inches='tight')
+
+plt.tight_layout()
+plt.savefig('../../figures/fig7a_R_V.pdf', bbox_inches='tight')

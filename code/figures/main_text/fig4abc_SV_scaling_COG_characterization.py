@@ -16,14 +16,14 @@ prot.viz.plotting_style()
 ######################
 fig = plt.figure(constrained_layout=True)
 widths = [6, 7]
-heights = [2, 0.5, 0.5, 0.25]
+heights = [2, 0.5, 0.1, 0.65]
 spec = fig.add_gridspec(ncols=2, nrows=4, width_ratios=widths,
                           height_ratios=heights)
 
 ax1 = fig.add_subplot(spec[0, 0])
 # ax2 = fig.add_subplot(spec[0, 1])
 ax3 = fig.add_subplot(spec[2:, 0])
-ax4 = fig.add_subplot(spec[:2, 1])
+ax4 = fig.add_subplot(spec[:3, 1])
 
 
 # Parameters and calculations #
@@ -124,7 +124,7 @@ for a in [ax1]:#,ax2]:
 
 ax1.set_xlim([np.min(Pv), np.max(Ps_resp_)])
 ax1.set_xlabel('ATP equivalents per s', fontsize=6)
-ax1.set_ylabel('S/V ratio [$\mu$m]', fontsize=6)
+ax1.set_ylabel('S/V ratio [$\mu$m$^{-1}$]', fontsize=6)
 
 
 
@@ -191,8 +191,10 @@ ax3.yaxis.set_tick_params(labelsize=5)
 subunits = pd.read_csv('../../data/compiled_annotated_complexes.csv')
 complex_energy = ['NADH-DHI-CPLX', 'CPLX0-8160', 'CYT-O-UBIOX-CPLX', 'CYT-D-UBIOX-CPLX', 'ATPSYN-CPLX']
 
-df_mem = data_membrane[data_membrane.dataset == 'schmidt_2016']
+# df_mem = data_membrane[data_membrane.dataset == 'schmidt_2016']
+df_mem = data_membrane
 df_mem = df_mem[df_mem.gene_name != 'tufA']
+df_mem = df_mem[df_mem.gene_name != 'tufB']
 
 genes_respiration = []
 for c, d in subunits.groupby('complex'):
@@ -221,32 +223,40 @@ for c,d in df_mem.groupby(['dataset', 'condition',
     df_mem_ = df_mem_.append(data_list,
                                             ignore_index=True)
 
-df_mem_['rel_fg_per_cell'] = df_mem_.groupby('condition').transform(lambda x: (x / x.sum()))['fg_per_cell']
+df_mem_['rel_fg_per_cell'] = df_mem_.groupby(['dataset', 'growth_rate_hr', 'condition']).transform(lambda x: (x / x.sum()))['fg_per_cell']
 df_mem_ = df_mem_.sort_values(by=['growth_rate_hr', 'gene_name'], ascending = False)
 
-y_order = dict(zip(df_mem_.condition.unique(), np.arange(len(df_mem_.condition.unique()))))
+# y_order = dict(zip(df_mem_.growth_rate_hr, np.arange(len(df_mem_.growth_rate_hr))))
+# cog_class_order = ['metabolism',
+#                 'cellular processes and signaling',
+#                 'information storage and processing',
+#                 'poorly characterized or not assigned']
 cog_class_order = ['metabolism',
-                'cellular processes and signaling',
                 'information storage and processing',
+                'cellular processes and signaling',
                 'poorly characterized or not assigned']
 order_dict = dict(zip(cog_class_order,
                 np.arange(4)))
 # color_dict = dict(zip(cog_class_order,
 #                     ['', '#C8715B', '#A587AA', '#788FBD']))
 color_dict = dict(zip(cog_class_order,
-                    ['', '#BF703A', '#D3B15E', '#788FBD']))
+                    ['', '#D3B15E', '#BF703A', '#788FBD']))
+                    # ['', '#BF703A', '#D3B15E', '#788FBD']))
 
-
-for c, d in df_mem_.groupby('condition', sort=False):
+gr_yaxis = []
+count = -1
+for c, d in df_mem_.groupby(['dataset', 'growth_rate_hr', 'condition'], sort=False):
+    gr_yaxis = np.append(gr_yaxis,c[1])
+    count += 1
     for c_ in cog_class_order:
         if c_ == 'metabolism':
             resp = d[d.gene_name == 'respiration']
-            ax4.barh(y_order[c], resp.rel_fg_per_cell, height=0.9, color='#679B48', alpha=0.3, #84A779
+            ax4.barh(count, resp.rel_fg_per_cell, height=0.9, color='#679B48', alpha=0.3, #84A779
                         linewidth=0.1)
 
             c_uptake = d[d.gene_name == 'carbon_uptake']
             lefts = resp.rel_fg_per_cell.sum()
-            ax4.barh(y_order[c], c_uptake.rel_fg_per_cell.sum(),  height=0.9, color='#679B48', alpha=0.7,
+            ax4.barh(count, c_uptake.rel_fg_per_cell.sum(),  height=0.9, color='#679B48', alpha=0.7,
                             left=lefts, linewidth=0.1)
 
             # lefts = d[d.gene_name == 'respiration']
@@ -254,37 +264,45 @@ for c, d in df_mem_.groupby('condition', sort=False):
             meta = d[d.gene_name != 'respiration'].copy()
             meta = meta[meta.gene_name !='carbon_uptake'].copy()
 
-            ax4.barh(y_order[c], meta.rel_fg_per_cell.sum(), height=0.9, color='#679B48',
+            ax4.barh(count, meta.rel_fg_per_cell.sum(), height=0.9, color='#679B48',
                             left=lefts,  linewidth=0.1)
 
             lefts += meta[meta.cog_class == c_].rel_fg_per_cell.sum()
 
         else:
-            ax4.barh(y_order[c], d[d.cog_class == c_].rel_fg_per_cell.sum(), height=0.9,
+            if c[0] == 'li_2014':
+                print(c,  d[d.cog_class == c_].sort_values(by='rel_fg_per_cell')[['gene_name', 'rel_fg_per_cell']])
+            ax4.barh(count, d[d.cog_class == c_].rel_fg_per_cell.sum(), height=0.9,
                         color=color_dict[c_], left=lefts, linewidth=0.1)
             lefts += d[d.cog_class == c_].rel_fg_per_cell.sum()
 
 
 
 ax4.set_xlim(0,1)
-ax4.set_ylim(0,len(df_mem_.condition.unique()))
-ax4.set_yticks(np.arange(len(df_mem_.condition.unique()))-0.5)
-ax4.set_yticklabels(df_mem_.condition.unique())
+# ax4.set_ylim(0,count)
+ax4.set_ylim(-0.5,count+0.5)
+# ax4.set_ylim(0,len(df_mem_.condition.unique()))
+# ax4.set_yticks(np.arange(len(df_mem_.condition.unique()))-0.5)
+# ax4.set_yticklabels(df_mem_.condition.unique())
 ax4.set_xlabel('relative plasma membrane abundance (GO term : 0005886)', fontsize=6)
 ax4.xaxis.set_tick_params(labelsize=5)
 ax4.yaxis.set_tick_params(labelsize=5)
 
-growth_rates_list = [d.growth_rate_hr.unique()[0] for c, d in df_mem_.groupby('condition', sort=False)]
+# growth_rates_list = [d.growth_rate_hr.unique()[0] for c, d in df_cyt_schmidt_.groupby('condition', sort=False)]
 ax4_twin = ax4.twinx()
-ax4_twin.set_yticks(np.arange(len(growth_rates_list))-0.5)
-ax4_twin.set_yticklabels(growth_rates_list)
+# ax4_twin.set_yticks(np.arange(len(growth_rates_list))-0.5)
+# ax4_twin.set_yticklabels(growth_rates_list)
+ax4_twin.set_yticks(np.arange(len(gr_yaxis))-0.5)
+ax4_twin.set_yticklabels(gr_yaxis)
+print(gr_yaxis)
 ax4_twin.set_ylabel('growth rate [hr$^{-1}$]', fontsize=6)
-ax4_twin.set_ylim(0,len(df_mem_.condition.unique()))
-ax4_twin.xaxis.set_tick_params(labelsize=5)
-ax4_twin.yaxis.set_tick_params(labelsize=5)
+# ax4_twin.set_ylim(0,len(df_mem_.condition.unique()))
+ax4_twin.set_ylim(-0.5,count+0.5)
+ax4_twin.xaxis.set_tick_params(labelsize=4.5)
+ax4_twin.yaxis.set_tick_params(labelsize=4.5)
 
 plt.tight_layout()
-fig.savefig('../../figures/fig5abc_SV_scaling_COG_characterization.pdf')
+# fig.savefig('../../figures/fig5abc_SV_scaling_COG_characterization_all.pdf')
 
 
 # %%
